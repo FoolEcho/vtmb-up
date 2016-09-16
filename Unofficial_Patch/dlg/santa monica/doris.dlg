@@ -1,0 +1,185 @@
+{	1	}{	[Monotone, robotique et traînant]Qu'est-ce qu'il vous faut ?	}{	[Monotone, robotique et traînant]Qu'est-ce qu'il vous faut, chérie ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	La crème a tourné, je le sens. Et je pense que ce sont des crottes de rat, là-bas.	}{	La crème a tourné, je le sens. Et je pense que ce sont des crottes de rat, là-bas.	}{	11	}{	not IsClan(pc,"Gangrel") and G.Doris_Bribe == 0	}{	}{	}{	}{	}{	}{	}{	}{	Dans l'air, la pourriture. Au sol, des excréments. Vendez-vous de la saleté, ici ?	}
+{	3	}{	Vos murs sont infestés de rats. Vous le saviez ?	}{	Vos murs sont infestés de rats. Vous le saviez ?	}{	11	}{	IsClan(pc,"Gangrel") and G.Doris_Bribe == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Voyez-vous parfois des gens pâles et bizarres, la nuit, ici ?	}{	Voyez-vous parfois des gens pâles et bizarres, la nuit, ici ?	}{	111	}{	G.E_Quest == 1 and G.Doris_Lily == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je vois dans mon esprit une fille pâle ? Avez-vous aussi vu la fille pâle ?	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	A mon avis, vous ne servez pas de gens comme moi, ici.	}{	A mon avis, vous ne servez pas de gens comme moi, ici.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	A mon avis, vous ne servez pas de gens comme moi, ici.	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Vous faites une inspection sanitaire ?	}{	Vous faites une inspection sanitaire ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Oui.	}{	Oui.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	OK.	}
+{	13	}{	Laissez-moi prendre ma plaque de police, et je vous montre.	}{	Laissez-moi prendre ma plaque de police, et je vous montre.	}{	31	}{	Persuasion 2	}{	}{	}{	}{	}{	}{	}{	}{	Je parlerai aussi de votre insolence dans mon rapport.	}
+{	14	}{	En fait, oui. Et je pourrais bien faire fermer cet endroit. . .	}{	En fait, oui. Et je pourrais bien faire fermer cet endroit. . .	}{	31	}{	Intimidate 2	}{	}{	}{	}{	}{	}{	}{	}{	Vous comprenez. Je pense qu'il faut lutter contre la contamination.	}
+{	15	}{	Non. Je m'amuse, c'est tout. Bon, j'ai fini.	}{	Non. Je m'amuse, c'est tout. Bon, j'ai fini.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La plaisanterie vous échappe, je m'en vais. 	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Alors je vous conseille de prendre quelque chose de sain, comme l'omelette surprise au fromage. Pour votre inspection [sévère, sarcastique]. Si le cuistot ne crache pas dedans - surprise.	}{	Alors je vous conseille de prendre quelque chose de sain, comme l'omelette surprise au fromage. Pour votre inspection [sévère, sarcastique]. Si le cuistot ne crache pas dedans - surprise.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Bribe = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Eurgh.. Dégoûtant !	}{	Eurgh.. Dégoûtant !	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Miam...	}
+{	23	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Vous savez, le dernier inspecteur sanitaire a eu l'honnêteté de demander son pot-de-vin ouvertement. Tenez, cinquante dollars. Et comme ça, je pourrai rester dans ce palace un mois de plus. [sans enthousiasme]Youpi.	}{	Vous savez, le dernier inspecteur sanitaire a eu l'honnêteté de demander son pot-de-vin ouvertement. Tenez, cinquante dollars. Et comme ça, je pourrai rester dans ce palace un mois de plus. [sans enthousiasme]Youpi.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Bribe = 1; pc.MoneyAdd(50)	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Si vous voulez bien m'excusez, j'ai d'autres établissements de haut vol à inspecter.	}{	Si vous voulez bien m'excusez, j'ai d'autres établissements de haut vol à inspecter.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je dois chercher d'autres occasions de me corrompre. Adieu.	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Oh, cette fille-là. Sympa. Le premier être humain fréquentable à entrer ici depuis des années - pas comme tous les junkies et les dingues que je vois. Ouais, je me souviens d'elle. Bizarre. Elle a laissé un pourboire mais elle n'a rien commandé.	}{	Oh, cette fille-là. Sympa. Le premier être humain fréquentable à entrer ici depuis des années - pas comme tous les junkies et les dingues que je vois. Ouais, je me souviens d'elle. Bizarre. Elle a laissé un pourboire mais elle n'a rien commandé.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Lily = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	(Auto-Link)	}{	(Auto-Link)	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Elle avait l'air de mourir de faim. Elle est restée là toute la nuit, avec un verre plein d'eau devant elle, à parler de choses et d'autres. Elle avait l'air de se sentir seule, d'avoir peur, alors je l'ai laissée rester jusqu'à la fermeture. Elle a laissé quelques affaires. Eh, si vous la connaissez, je vous les donne, vous lui rendrez quand vous la verrez.	}{	Elle avait l'air de mourir de faim. Elle est restée là toute la nuit, avec un verre plein d'eau devant elle, à parler de choses et d'autres. Elle avait l'air de se sentir seule, d'avoir peur, alors je l'ai laissée rester jusqu'à la fermeture. Elle a laissé quelques affaires. Eh, si vous la connaissez, je vous les donne, vous lui rendrez quand vous la verrez.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Merci beaucoup. Je n'y manquerai pas.	}{	Merci beaucoup. Je n'y manquerai pas.	}{	0	}{	}{	G.Doris_Purse = 1; playerGotPurse()	}{	}{	}{	}{	}{	}{	}{	Mais la fille fleur est si proche. Ah, elle ne peut pas venir, je ferai la livraison.	}
+{	63	}{	Bien sûr, pourquoi pas ?	}{	Bien sûr, pourquoi pas ?	}{	0	}{	}{	G.Doris_Purse = 1; playerGotPurse()	}{	}{	}{	}{	}{	}{	}{	Oui. Nos chemins pourraient se croiser.	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Que vous f-OH MON DIEU ! OH DOUX JESUS !	}{	Que vous f-OH MON DIEU ! OH DOUX JESUS !	}{	#	}{	npc.SetDisposition("Fear", 2)	}{	G.Doris_Scare = G.Doris_Scare +1	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Je cherche-	}{	Je cherche-	}{	91	}{	G.Doris_Scare == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Du calme. Qu'y a-t-il ?	}{	Du calme. Qu'y a-t-il ?	}{	91	}{	G.Doris_Scare == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	Bouh !	}{	Bouh !	}{	91	}{	G.Doris_Scare == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	JE VAIS AVALER VOTRE AME !	}{	JE VAIS AVALER VOTRE AME !	}{	101	}{	Humanity 3 & G.Doris_Scare == 3	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	JE VAIS AVALER VOTRE AME !	}{	JE VAIS AVALER VOTRE AME !	}{	101	}{	Humanity -3 & G.Doris_Scare == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	[Crie et s'évanouit]. . .	}{	[Crie et s'évanouit]. . .	}{	#	}{	npc.SetDisposition("Fear", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Mon. . . Oh non. . . Mon coeur ![A une crise cardiaque, meurt]	}{	Mon. . . Oh non. . . Mon coeur ![A une crise cardiaque, meurt]	}{	#	}{	npc.SetDisposition("Fear", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	C'est une question piège ?	}{	C'est une question piège ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Question = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Quelqu'un qui aurait essayé de boire le sang des autres ?	}{	Quelqu'un qui aurait essayé de boire le sang des autres ?	}{	121	}{	G.Doris_Vamp == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez bien vu des buveurs de sang courtiser la liqueur écarlate ?	}
+{	113	}{	Vous voyez des filles qui viennent traîner ici ? Des filles pâles ?	}{	Vous voyez des filles qui viennent traîner ici ? Des filles pâles ?	}{	131	}{	G.Doris_Albino == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les filles pâlottes viennent-elles jouer ici ?	}
+{	114	}{	Connaissez-vous le terme 'sang clair' ?	}{	Connaissez-vous le terme 'sang clair' ?	}{	141	}{	G.Doris_Blood == 0	}{	}{	}{	}{	}{	}{	}{	}{	'Sang clair', ces mots vous interpellent-ils ?	}
+{	115	}{	Vous avez vu un couple ici il y a quelques mois, un surfeur et une fille mignonne ?	}{	Vous avez vu un couple ici il y a quelques mois, un surfeur et une fille mignonne ?	}{	151	}{	G.Doris_Surfer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Un enfant des vagues et sa beauté. Avez-vous déjà vu ce couple ?	}
+{	116	}{	Essayez de vous rappeler où vous avez entendu les mots 'sang clair'. . .	}{	Essayez de vous rappeler où vous avez entendu les mots 'sang clair'. . .	}{	161	}{	G.Doris_Blood == 1	}{	}{	}{	}{	}{	}{	}{	}{	Quand les mots 'sang clair' se sont-ils fixés dans votre cerveau ?	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Non, non, je n'ai jamais vu ça.	}{	Non, non, je n'ai jamais vu ça.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Vamp = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Essayez de vous rappeler où vous avez entendu les mots 'Sang Clair'.	}{	Essayez de vous rappeler où vous avez entendu les mots 'Sang Clair'.	}{	161	}{	G.Doris_Blood == 1	}{	}{	}{	}{	}{	}{	}{	}{	Quand les mots 'sang clair' se sont-ils fixés dans votre cerveau ?	}
+{	123	}{	Vous voyez des filles qui viennent traîner ici ? Des filles pâles ?	}{	Vous voyez des filles qui viennent traîner ici ? Des filles pâles ?	}{	131	}{	G.Doris_Albino == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les filles pâlottes viennent-elles jouer ici ?	}
+{	124	}{	Connaissez-vous le terme 'sang clair' ?	}{	Connaissez-vous le terme 'sang clair' ?	}{	141	}{	G.Doris_Blood == 0	}{	}{	}{	}{	}{	}{	}{	}{	'Sang clair', ces mots vous interpellent-ils ?	}
+{	125	}{	Vous avez vu un couple ici il y a quelques mois, un surfeur et une fille mignonne ?	}{	Vous avez vu un couple ici il y a quelques mois, un surfeur et une fille mignonne ?	}{	151	}{	G.Doris_Surfer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Un enfant des vagues et sa beauté. Avez-vous déjà vu ce couple ?	}
+{	126	}{	Peu importe. Au revoir.	}{	Peu importe. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Des filles pâles ? Blanche comme une albinos ? Elle n'est pas venue depuis une éternité.	}{	Des filles pâles ? Blanche comme une albinos ? Elle n'est pas venue depuis une éternité.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Albino = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Quelqu'un qui aurait essayé de boire le sang des autres ?	}{	Quelqu'un qui aurait essayé de boire le sang des autres ?	}{	121	}{	G.Doris_Vamp == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez bien vu des buveurs de sang courtiser la liqueur écarlate ?	}
+{	133	}{	Essayez de vous rappeler où vous avez entendu les mots 'Sang Clair'.	}{	Essayez de vous rappeler où vous avez entendu les mots 'Sang Clair'.	}{	161	}{	G.Doris_Blood == 1	}{	}{	}{	}{	}{	}{	}{	}{	Quand les mots 'sang clair' se sont-ils fixés dans votre cerveau ?	}
+{	134	}{	Connaissez-vous le terme 'sang clair' ?	}{	Connaissez-vous le terme 'sang clair' ?	}{	141	}{	G.Doris_Blood == 0	}{	}{	}{	}{	}{	}{	}{	}{	'Sang clair', ces mots vous interpellent-ils ?	}
+{	135	}{	Vous avez vu un couple ici il y a quelques mois, un surfeur et une fille mignonne ?	}{	Vous avez vu un couple ici il y a quelques mois, un surfeur et une fille mignonne ?	}{	151	}{	G.Doris_Surfer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Un enfant des vagues et sa beauté. Avez-vous déjà vu ce couple ?	}
+{	136	}{	Peu importe. Au revoir.	}{	Peu importe. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Sang clair. . . Je connais ça. . . Ce n'est pas une maladie tropicale ?	}{	Sang clair. . . Je connais ça. . . Ce n'est pas une maladie tropicale ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Blood = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Quelqu'un qui aurait essayé de boire le sang des autres ?	}{	Quelqu'un qui aurait essayé de boire le sang des autres ?	}{	121	}{	G.Doris_Vamp == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez bien vu des buveurs de sang courtiser la liqueur écarlate ?	}
+{	143	}{	Vous voyez des filles qui viennent traîner ici ? Des filles pâles ?	}{	Vous voyez des filles qui viennent traîner ici ? Des filles pâles ?	}{	131	}{	G.Doris_Albino == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les filles pâlottes viennent-elles jouer ici ?	}
+{	144	}{	Essayez de vous rappeler où vous avez entendu ça.	}{	Essayez de vous rappeler où vous avez entendu ça.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quand les mots 'sang clair' se sont-ils fixés dans votre cerveau ?	}
+{	145	}{	Vous avez vu un couple ici il y a quelques mois, un surfeur et une fille mignonne ?	}{	Vous avez vu un couple ici il y a quelques mois, un surfeur et une fille mignonne ?	}{	151	}{	G.Doris_Surfer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Un enfant des vagues et sa beauté. Avez-vous déjà vu ce couple ?	}
+{	146	}{	Peu importe. Au revoir.	}{	Peu importe. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Laissez-moi réfléchir. . . Oh oui, environ une quarantaine par semaine.	}{	Laissez-moi réfléchir. . . Oh oui, environ une quarantaine par semaine.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Doris_Surfer = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Quelqu'un qui aurait essayé de boire le sang des autres ?	}{	Quelqu'un qui aurait essayé de boire le sang des autres ?	}{	121	}{	G.Doris_Vamp == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez bien vu des buveurs de sang courtiser la liqueur écarlate ?	}
+{	153	}{	Vous voyez des filles qui viennent traîner ici ? Des filles pâles ?	}{	Vous voyez des filles qui viennent traîner ici ? Des filles pâles ?	}{	131	}{	G.Doris_Albino == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les filles pâlottes viennent-elles jouer ici ?	}
+{	154	}{	Connaissez-vous le terme 'sang clair' ?	}{	Connaissez-vous le terme 'sang clair' ?	}{	141	}{	G.Doris_Blood == 0	}{	}{	}{	}{	}{	}{	}{	}{	'Sang clair', ces mots vous interpellent-ils ?	}
+{	155	}{	Essayez de vous rappeler où vous avez entendu les mots 'Sang Clair'.	}{	Essayez de vous rappeler où vous avez entendu les mots 'Sang Clair'.	}{	161	}{	G.Doris_Blood == 1	}{	}{	}{	}{	}{	}{	}{	}{	Quand les mots 'sang clair' se sont-ils fixés dans votre cerveau ?	}
+{	156	}{	Peu importe. Au revoir.	}{	Peu importe. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Hmmm. . . Je sais que j'ai déjà entendu ça quelque part. . .	}{	Hmmm. . . Je sais que j'ai déjà entendu ça quelque part. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Peut-être une fille jolie et un peu étrange en a-t-elle parlé récemment. . .	}{	Peut-être une fille jolie et un peu étrange en a-t-elle parlé récemment. . .	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Peut-être la jolie fille fleur a-t-elle murmuré quelque chose. . .	}
+{	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	(Starting Condition)	}{	}{	81	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

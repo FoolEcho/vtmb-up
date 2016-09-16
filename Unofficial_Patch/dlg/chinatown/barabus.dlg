@@ -1,0 +1,115 @@
+{	1	}{	[Dans une prison, veut désespérément sortir]LAISSEZ-MOI SORTIR !	}{	[Dans une prison, veut désespérément sortir]LAISSEZ-MOI SORTIR !	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[A été battu, torturé, sujet à des expériences au cours des derniers jours et n'est pas dans les meilleures dispositions]Ils vous ont eu aussi ?. . . Je n'ai aucune excuse. . . Un Nosferatu pris par une poignée d'humains. . . Quel coup au moral.	}{	[A été battu, torturé, sujet à des expériences au cours des derniers jours et n'est pas dans les meilleures dispositions]Ils vous ont eue aussi ?. . . Je n'ai aucune excuse. . . Un Nosferatu pris par une poignée d'humains. . . Quel coup au moral.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	pc.SetQuest("Barabus",2); pc.SetQuest("Mandarin",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Vous devez être Barabus. C'est Gary qui m'envoie. Filons d'ici.	}{	Vous devez être Barabus. C'est Gary qui m'envoie. Filons d'ici.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes les yeux de Gary à Chinatown ?	}
+{	13	}{	Ne vous en faites pas. Ils m'ont eu aussi. Il faut qu'on se tire.	}{	Ne vous en faites pas. Ils m'ont eue aussi. Il faut qu'on se tire.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les regrets sont pour les nuits à venir. Cette nuit ne sert qu'aux évasions.	}
+{	14	}{	Ouais, bon travail. Grâce à vous, il a fallu que je retourne Chinatown.	}{	Ouais, bon travail. Grâce à vous, il a fallu que je retourne Chinatown.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il a fallu que je retourne toute la ville pour retrouver un petit rat d'égout !	}
+{	15	}{	Je n'ai eu besoin de personne pour me libérer. Et vous, pourquoi ?	}{	Je n'ai eu besoin de personne pour me libérer. Et vous, pourquoi ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai fait un trou dans le mur, pourquoi vous n'avez pas fait pareil ?	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Attendez. . . On ne peut pas partir. Il y a des serveurs, ici. . . Il faut les pirater et effacer toutes leurs recherches. Il doit y avoir un serveur principal à cet étage.	}{	Attendez. . . On ne peut pas partir. Il y a des serveurs, ici. . . Il faut les pirater et effacer toutes leurs recherches. Il doit y avoir un serveur principal à cet étage.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Laissez-moi faire. Je peux faire parler tous les ordinateurs.	}{	Laissez-moi faire. Je peux faire parler tous les ordinateurs.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les ordinateurs sont comme moi, pleins de puces et de bugs, alors nous nous comprenons. . .	}
+{	23	}{	Du piratage ? Je sais à peine taper sur un clavier.	}{	Du piratage ? Je sais à peine taper sur un clavier.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les ordinateurs ne me comprennent pas, même quand je leur crie dessus pendant des heures.	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	J'ai payé pour mon erreur ! Les expériences. . . La torture. . . La voix. . . Vous ne savez pas. . . Vous. . . ne savez pas.	}{	J'ai payé pour mon erreur ! Les expériences. . . La torture. . . La voix. . . Vous ne savez pas. . . Vous. . . ne savez pas.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Bon, allez, on s'en va.	}{	Bon, allez, on s'en va.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	. . . On fuit ou on se plaint ?	}
+{	33	}{	Pathétique. . . Enfin, c'est comme ça. Gary voulait que je vous trouve, alors rentrez chez vous.	}{	Pathétique. . . Enfin, c'est comme ça. Gary voulait que je vous trouve, alors rentrez chez vous.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes l'objet de ma quête, alors je dois vous sauver.	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	On vérifie les ordinateurs. Il faut effacer tout ce qu'il y a sur les vampires. Si quelqu'un nous ennuie, laissez-moi faire. . . [Grogne]Même si je leur arrachais les poumons à tous, je ne me sentirais pas encore mieux.	}{	On vérifie les ordinateurs. Il faut effacer tout ce qu'il y a sur les vampires. Si quelqu'un nous ennuie, laissez-moi faire. . . [Grogne]Même si je leur arrachais les poumons à tous, je ne me sentirais pas encore mieux.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Barrabus_Defender = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Bon, allez, on efface ces fichiers.	}{	Bon, allez, on efface ces fichiers.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je sais faire disparaître les choses. Surtout moi-même. . .	}
+{	43	}{	Je suis d'accord. On y va.	}{	Je suis d'accord. On y va.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Allez, montrez-nous la sortie. Gentil garçon !	}
+{	44	}{	Je pense que vous avez besoin d'aide. On y va.	}{	Je pense que vous avez besoin d'aide. On y va.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mais ce serait de l'art. . . Allons faire une exposition.	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	D'accord, je m'en charge. Couvrez-moi. S'il reste des coeurs qui battent quand on aura fini, je les arracherai moi-même.	}{	D'accord, je m'en charge. Couvrez-moi. S'il reste des coeurs qui battent quand on aura fini, je les arracherai moi-même.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Barrabus_Hacker = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Bon, allez, on efface ces fichiers.	}{	Bon, allez, on efface ces fichiers.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je sais faire disparaître les choses. Surtout moi-même. . .	}
+{	53	}{	Je suis d'accord. On y va.	}{	Je suis d'accord. On y va.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Allez, montrez-nous la sortie. Gentil garçon !	}
+{	54	}{	Je pense que vous avez besoin d'aide. On y va.	}{	Je pense que vous avez besoin d'aide. On y va.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mais ce serait de l'art. . . Allons faire une exposition.	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Voilà, il n'y en a plus. On fiche le camp.	}{	Voilà, il n'y en a plus. On fiche le camp.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Barabus",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Vous devez contacter Gary tout de suite. Il faut lui dire que vous allez bien.	}{	Vous devez contacter Gary tout de suite. Il faut lui dire que vous allez bien.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Accélérez votre récit vers les sous-sols ! COUREZ !	}
+{	63	}{	Appelez Gary dès que vous partez. J'ai besoin d'info, et c'est vous le paiement.	}{	Appelez Gary dès que vous partez. J'ai besoin d'info, et c'est vous le paiement.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Souvenez-vous, je vous ai échangé contre ma réussite. Ne gardez pas votre liberté secrète.	}
+{	64	}{	Qu'en est-il des portes?	}{	Qu'en est-il des portes?	}{	77	}{	G.Barrabus_Hacker == 1	}{	}{	}{	}{	}{	}{	}{	}{	Qui laissera les chiens sortir?	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Promis. Et. . . merci.	}{	Promis. Et. . . merci.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Story_State = 55; G.Barrabus_Exit = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	Merci.	}{	Merci.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	Le mot de passe est Crane.	}{	Le mot de passe est Crane.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	Vous devez contacter Gary tout de suite. Il doit savoir que vous allez bien.	}{	Vous devez contacter Gary tout de suite. Il doit savoir que vous allez bien.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Accélérez votre récit vers les sous-sols ! COUREZ !	}
+{	79	}{	Appelez Gary dès que vous partez. J'ai besoin d'infos et vous étiez le paiement.	}{	Appelez Gary dès que vous partez. J'ai besoin d'infos et vous étiez le paiement.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Souvenez-vous, je vous ai échangé contre ma réussite. Ne gardez pas votre liberté secrète.	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	[Grognement d'attaque]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	[Grognement rapide]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	[Comprend, en colère]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	[Blessé, en colère]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	[Grognement bestial]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	C'est ça.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	Le mot de passe, c'est Grue.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	On y va.	}{	On y va.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	[Salutation amicale]Salut.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	[Salutation neutre]Ouais ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	[hostile]Quoi ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Dégage. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	Oui.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	Merci. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	QUOI ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	Je ne sais pas.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	J'y peux rien.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	[Excité, positif]Ouiiii. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	[Propose quelque chose au joueur]Tenez.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	FAITES-MOI SORTIR D'ICI !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	(Starting Condition)	}{	}{	75	}{	G.Barrabus_Exit == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	(Starting Condition)	}{	}{	61	}{	G.Files_Deleted == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	(Starting Condition)	}{	}{	88	}{	G.Barrabus_Hacker == 1 or G.Barrabus_Defender == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	(Starting Condition)	}{	}{	11	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

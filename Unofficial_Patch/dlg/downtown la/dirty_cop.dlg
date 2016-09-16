@@ -1,0 +1,150 @@
+{	1	}{	[loud whisper]Eh, monsieur, là-bas. . .	}{	[loud whisper]Eh, mademoiselle, là-bas. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	[loud whisper]C'est moi, le type de Jacobson.	}{	[loud whisper]Pssst. . . Venez ici.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	[loud whisper]C'est vous ? C'est bien vous ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	[louder, to someone 30 yards away]Je regrette, euh, officier, je vous ai pris pour quelqu'un d'autre. Continuez.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	C'était quoi ce truc ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	[over the radio]Heinz à Jacobson euh, Anderson. Heinz à Anderson. Répondez, Anderson.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	[Anderson(voix différente)]Ouais ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	[over the radio]Venez voir ça, je viens d'apercevoir une baleine !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	[Anderson(voix différente)]J'arrive.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Ah bon sang, dites à Jacobson que s'il veut devenir rédac' chef, il devrait faire un effort. Je ne peux pas continuer de lui filer des scoops s'il m'envoie des tocards qui ne peuvent pas s'habiller comme il faut.	}{	Ah bon sang, dites à Jacobson que s'il veut devenir rédac' chef, il devrait faire un effort. Je ne peux pas continuer de lui filer des scoops s'il m'envoie des tocards qui ne peuvent pas s'habiller comme il faut.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Il ne m'avait rien dit sur les vêtements.	}{	Il ne m'avait rien dit sur les vêtements.	}{	21	}{	Persuasion 3 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Euh. . . Jacobson ne m'a pas dit grand-chose. . .	}{	Euh. . . Jacobson ne m'a pas dit grand-chose. . .	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Les paroles échangées avec mon rédacteur restent entre lui et moi.	}{	Les paroles échangées avec mon rédacteur restent entre lui et moi.	}{	21	}{	Intimidate 3 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	Ma folie ne convient-elle pas pour ce navire fantôme ?	}{	Ma folie ne convient-elle pas pour ce navire fantôme ?	}{	31	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	Voyez en moi une vision du mercenaire corrompu de Jacobson !	}{	Voyez en moi une vision du mercenaire corrompu de Jacobson !	}{	61	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	C'est moi que vous insultez ?	}{	C'est moi que vous insultez ?	}{	21	}{	Persuasion -2 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	Euh, eh bien, Jacobson, euh. . .	}{	Euh, eh bien, Jacobson, euh. . .	}{	21	}{	Intimidate -3 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	Que voulez-vous dire ?	}{	Que voulez-vous dire ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes oreilles n'arrivent pas à suivre votre histoire.	}
+{	20	}{	Je pense que je vais y aller. . .	}{	Je pense que je vais y aller. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sortie par ici.	}
+{	21	}{	Bon sang, et vous. . . Quel genre de grand reporter vous êtes ? Vous pensez même pas à venir en policier, en garde côte, je ne sais pas, moi. . . vous n'avez jamais vu de série policière ? On donne le diplôme à n'importe qui, ou quoi ?	}{	Bon sang, et vous. . . Quel genre de grand reporter vous êtes ? Vous pensez même pas à venir en policier, en garde côte, je ne sais pas, moi. . . vous n'avez jamais vu de série policière ? Vous avez eu votre diplôme dans une pochette surprise, ou quoi ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Bon, finissons-en avant que l'un de nous deux soit obligé de piquer une tête.	}{	Bon, finissons-en avant que l'un de nous deux soit obligé de piquer une tête.	}{	61	}{	Intimidate 2	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez envie d'un petit plouf ?	}
+{	23	}{	Mes vêtements ne devraient pas vous déranger. Je peux les enlever, vous savez.	}{	Mes vêtements ne devraient pas vous déranger. Je peux les enlever, vous savez.	}{	61	}{	F_Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	Mes vêtements sont amovibles s'ils ne sont pas appropriés.	}
+{	24	}{	Ca suffit. Il faut faire vite, et sans qu'on nous voie.	}{	Ca suffit. Il faut faire vite, et sans qu'on nous voie.	}{	71	}{	Persuasion 3	}{	}{	}{	}{	}{	}{	}{	}{	Notre essence est pressée.	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	Fermez-la et faites ce que Jacobstein vous a dit de faire pour moi.	}{	Fermez-la et faites ce que Jacobstein vous a dit de faire pour moi.	}{	31	}{	Intimidate -2	}{	}{	}{	}{	}{	}{	}{	}{	Votre orifice doit être fermé. Dois-je le faire pour vous ?	}
+{	28	}{	Comment osez-vous, je suis super. . . Woodstein.	}{	Comment osez-vous, je suis super. . . Woodstein.	}{	31	}{	Persuasion -3	}{	}{	}{	}{	}{	}{	}{	}{	Je suis la descendance de Woodstein.	}
+{	29	}{	C'est pas la peine.	}{	C'est pas la peine.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas écouter les lamentations d'un amateur de donuts.	}
+{	30	}{	Quel diplôme ? Mais de quoi parlez-vous ?	}{	Quel diplôme ? Mais de quoi parlez-vous ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles me laissent perplexe.	}
+{	31	}{	[alarmed]Eh, ce n'est pas Jacobson qui vous envoie !	}{	[alarmed]Eh, ce n'est pas Jacobson qui vous envoie !	}{	#	}{	}{	G.Dirtycop_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Bon, vous pouvez rentrer à la nage, si ça vous amuse. Vous aurez de la chance si Jacobson vous laisse écrire des nécros, après un coup pareil.	}{	Bon, vous pouvez rentrer à la nage, si ça vous amuse. Vous aurez de la chance si Jacobson vous laisse écrire des nécros, après un coup pareil.	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	G.Dirtycop_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Ouais. Ouais...	}{	Ouais. Ouais...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne crois pas.	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	C'est pas une grosse surprise. Je vous aurais pris pour une garce. Je suppose que ce n'est pas pour vos études que Jacobson vous a embauchée.	}{	C'est pas une grosse surprise. Je vous aurais pris pour une garce. Je suppose que ce n'est pas pour vos études que Jacobson vous a embauchée.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Allons-y.	}{	Allons-y.	}{	71	}{	Persuasion 3	}{	}{	}{	}{	}{	}{	}{	}{	Sale petit flic. Donnez-moi les renseignements que je cherche.	}
+{	53	}{	Je n'ai pas besoin de votre aide, poulet.	}{	Je n'ai pas besoin de votre aide, poulet.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'odeur de poulet emplit mes narines.	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Du calme, Flash. Je suis quand même flic, hein.	}{	Du calme, Lois Lane. Je suis quand même flic, hein.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Allez, au boulot, volaille.	}{	Allez, au boulot, volaille.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où en sommes-nous ?	}
+{	63	}{	A présent que les formalités sont réglées, qu'est-ce que vous avez pour nous ?	}{	A présent que les formalités sont réglées, qu'est-ce que vous avez pour nous ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Bien, j'essaierai de faire preuve de politesse. . . pour le bien de l'histoire.	}{	Bien, j'essaierai de faire preuve de politesse. . . pour le bien de l'histoire.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	Vous êtes flic quand ça vous arrange, c'est ça ?	}{	Vous êtes flic quand ça vous arrange, c'est ça ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes un dévoreur de donuts après tout.	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Bon, écoutez, je peux vous faire entrer dans le poste de pilotage, mais il faudra faire discret. Si quelqu'un vous coince, on ne se connaît pas. Et pas de photo au flash, le malin.	}{	Bon, écoutez, je peux vous faire entrer dans le poste de pilotage, mais il faudra faire discret. Si quelqu'un vous coince, on ne se connaît pas. Et pas de photo au flash, petite maligne.	}{	#	}{	}{	pc.GiveItem("item_g_edane_report");G.Dane_Report = 1;daneQuest()	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Où je vais ?	}{	Où je vais ?	}{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où ma voie me mène-t-elle ?	}
+{	73	}{	OK.	}{	OK.	}{	76	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	Attendez un peu. [dans sa radio]Heinz à Marsh, Heinz à Marsh[pause]...Marsh, on a besoin de toi sur le pont, terminé. [au joueur]Voilà, le poste de pilotage sera désert, comme ça.	}{	Attendez un peu. [dans sa radio]Heinz à Marsh, Heinz à Marsh[pause]...Marsh, on a besoin de toi sur le pont, terminé. [au joueur]Voilà, le poste de pilotage sera désert, comme ça.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	OK.	}{	OK.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	La clarté n'est pas mon gobelet d'Earl Grey.	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Arrivez par la coursive B. Quand vous approcherez, j'appellerai pour écarter le type qui surveille la porte. Je vous donne quelques minutes, mais ne traînez pas, OK ? Faites vite.	}{	Arrivez par la coursive B. Quand vous approcherez, j'appellerai pour écarter le type qui surveille la porte. Je vous donne quelques minutes, mais ne traînez pas, OK ? Faites vite.	}{	#	}{	}{	G.Dirtycop_Radio = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Compris.	}{	Compris.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Traînasser. . . Voilà une drôle d'idée pour quelqu'un de pressé.	}
+{	83	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Allez, en route.	}{	Allez, en route.	}{	#	}{	}{	G.Dirtycop_Ending = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je pense m'en souvenir.	}
+{	93	}{	[impatient]Passez par là.	}{	[impatient]Passez par là.	}{	#	}{	}{	G.Dirtycop_Ending = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	[impatient]Coursive B, et maintenant allez-y.	}{	[impatient]Coursive B, et maintenant allez-y.	}{	#	}{	}{	G.Dirtycop_Ending = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	Vous attendez que votre chauffeur amène le canot ?	}{	Vous attendez que votre chauffeur amène le canot ?	}{	#	}{	}{	G.Dirtycop_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	Je vous le dis, foutez le camp, c'est la dernière fois que je vous préviens.	}{	Je vous le dis, foutez le camp, c'est la dernière fois que je vous préviens.	}{	#	}{	}{	G.Dirtycop_Pissed = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	[shouting]Bordel ! Il y a une sorte de monstre !	}{	[shouting]Bordel ! Il y a une sorte de monstre !	}{	#	}{	}{	G.Dirtycop_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	A l'aide ! Un officier en danger ! 	}{	A l'aide ! Un officier en danger ! 	}{	#	}{	}{	G.Dirtycop_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	Vous attendez que votre chauffeur amène le canot ?	}{	Vous attendez que votre chauffeur amène le canot ?	}{	#	}{	}{	G.Dirtycop_Ending = 5	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	Allez, en route.	}{	Allez, en route.	}{	#	}{	}{	G.Dirtycop_Ending = 4	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	N'oubliez pas de rester dans l'ombre. Si quelqu'un vous voit, je ne vous connais pas. Prenez l'escalier jusqu'à la salle de sécurité. Il y a un ordinateur. Le mot de passe est Lighthouse. Lighthouse. En un seul mot. Vous avez compris ?	}{	N'oubliez pas de rester dans l'ombre. Si quelqu'un vous voit, je ne vous connais pas. Prenez l'escalier jusqu'à la salle de sécurité. Il y a un ordinateur. Le mot de passe est Lighthouse. Lighthouse. En un seul mot. Vous avez compris ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Ouaip. Tout compris.	}{	Ouaip. Tout compris.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je fais voile vers cet appel si clair.	}
+{	113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	(Starting Condition)	}{	}{	101	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	(Starting Condition)	}{	}{	93	}{	G.Dirtycop_Ending == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	(Starting Condition)	}{	}{	95	}{	G.Dirtycop_Ending == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	(Starting Condition)	}{	}{	91	}{	G.Dirtycop_Ending == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	(Starting Condition)	}{	}{	105	}{	G.Dirtycop_Ending == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	(Starting Condition)	}{	}{	107	}{	G.Dirtycop_Ending == 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	(Starting Condition)	}{	}{	97	}{	G.Dirtycop_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	(Starting Condition)	}{	}{	99	}{	G.Dirtycop_Pissed == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	(Starting Condition)	}{	}{	103	}{	G.Dirtycop_Pissed == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	(Starting Condition)	}{	}{	11	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

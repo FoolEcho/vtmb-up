@@ -1,0 +1,61 @@
+TerminalDefinition	// added by wesp
+{
+	"screen saver"		"Liberté pour les bâtiments Vorlon !"		// Bounces around on the screen when the terminal is not being used, changed by wesp. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Librairie Municipale"  
+		"line1"		"de Los Angeles"
+		"line2"		"Secrète"
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+	SubDir
+	{
+		"name"			"Notes"				// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
+		"password"		"gangrel"				// password required to run commands in this menu (16 characters)
+		"description"		"Activités Lasombra" 	// This is printed each time the user enters this menu (128 characters)
+
+		Function
+		{
+			"name"		"Note 1"		// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Première note"		// this is a description of this function  (128 characters)
+			"runtext"	"Lors de mes recherches pour un projet d'histoire à la bibliothèque municipale de Los Angeles, j'ai remarqué un Lasombra qui entrait dans la salle d'arts. Je lui emboîtait le pas en me dissimulant, mais la chambre était vide! J'ai attendu qu'il revienne et l'ai suivi dans les égouts à travers la trappe que j'utilisais moi-même pour entrer. Il pris ensuite un taxi dans la rue principale vers Santa Monica."
+		}
+		
+		Function
+		{
+			"name"		"Note 2"		// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Seconde note"		// this is a description of this function  (128 characters)
+			"runtext"	"A Santa Monica, j'ai observé comment le Lasombra a pénétré dans la vieille casse, probablement pour parler avec le Caïtiff qui y vit. Avant que je ne puisse faire quoi que ce soit, le nouvel agent du prince est arrivé, et tout à coup le Lasombra s'est téléporté derrière moi! J'espère ne pas avoir été repéré. Encore une fois, il a pris un taxi, retour en centre-ville vers sa tanière quelque part dans la Bibliothèque de LA."
+		}
+
+		Function
+		{
+			"name"		"Note 3"		// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Troisième note"	// this is a description of this function  (128 characters)
+			"runtext"	"Aujourd'hui, le Lasombra s'est rendu dans la vieille maison du centre-ville avec le symbole rouge. Je l'ai suivi à l'intérieur après un certain temps, mais je n'ai trouvé qu'un noir qui m'a demandé si j'avais été éveillé. Je suis parti et une fois encore l'agent du prince est entré dans le bâtiment peu de temps après. Juste après, le noir s'est enfui, paniqué, et est parti dans les égouts où je l'ai perdu."
+		}
+
+		Function
+		{
+			"name"		"Note 4"		// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Quatrième note"	// this is a description of this function  (128 characters)
+			"runtext"	"D'après mes observations, j'en déduis que le Lasombra tente de recruter des vampires ou des goules pour servir de chair à canon pour le Sabbat. Je suis presque sûr qu'il n'a pas réussi à convaincre le Caïtiff, je ne sais pas pour le noir. Je n'aime pas le nouveau prince de Los Angeles, mais j'entendu dire que Beckett, de mon propre clan, est en ville. C'est un savant, je vais lui parler à ce sujet!"
+		}
+
+		Function
+		{
+			"name"		"Note 5"		// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Cinquième note"	// this is a description of this function  (128 characters)
+			"runtext"	"J'ai fixé un rendez-vous avec Beckett dans la boutique du fumeur de Santa Monica alors que je suivais le noir ici, il semble être un client régulier. Je l'ai entendu dire qu'il doit rencontrer quelqu'un au bout de la jetée de Santa Monica... ce doit être le Lasombra. J'espère qu'il va y aller depuis la boutique du fumeur, afin que Beckett et moi puissions facilement le filer pour qu'il nous mène jusqu'au type!"
+			"runscript"	"G.Library_Coffee = 2; librarySetQuest()"
+		}
+	}
+}

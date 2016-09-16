@@ -1,0 +1,239 @@
+TerminalDefinition
+{
+	"screen saver"		"EEP Shipping"	// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"EEP Shipping"
+		"line1"		"NZ Elizabeth Dane"
+	}
+
+	SubDir
+	{
+		"name"			"Rapports"
+		"description"		"Rapports du navire"
+
+		Function
+		{
+			"name"		"Climat"
+			"description"	"ETAT DU NAVIRE" // RM: Old coordinates had it smack dab in the middle of Long Beach Airport
+			"runtext"	"Emplacement   33.98 N, 118.60 O
+					Mer       CALME
+					Temp Atm   18 C
+					Temp Eau   6 C
+					"
+		}
+
+		Function
+		{
+			"name"		"Etat"
+			"description"	"ETAT DU NAVIRE"
+			"runtext"	"Moteurs    OFF
+					Caméras pont  OFF
+					Verrous    FER.
+					"
+			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 0 and G.Dane_Engines == 0"
+		}
+
+		Function
+		{
+			"name"		"Etat"
+			"description"	"ETAT DU NAVIRE"
+			"runtext"	"Moteurs    OFF
+					Caméras pont  ON
+					Verrous    FER.
+					"
+			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 0 and G.Dane_Engines == 0"
+		}
+
+		Function
+		{
+			"name"		"Etat"
+			"description"	"ETAT DU NAVIRE"
+			"runtext"	"Moteurs    OFF
+					Caméras pont  OFF
+					Verrous    OUV.
+					"
+			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 1 and G.Dane_Engines == 0"
+		}
+
+		Function
+		{
+			"name"		"Etat"
+			"description"	"ETAT DU NAVIRE"
+			"runtext"	"Moteurs    ON
+					Caméras pont  OFF
+					Verrous    FER.
+					"
+			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 0 and G.Dane_Engines == 1"
+		}
+
+		Function
+		{
+			"name"		"Etat"
+			"description"	"ETAT DU NAVIRE"
+			"runtext"	"Moteurs    OFF
+					Caméras pont  ON
+					Verrous    OUV.
+					"
+			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 1 and G.Dane_Engines == 0"
+		}
+
+		Function
+		{
+			"name"		"Etat"
+			"description"	"ETAT DU NAVIRE"
+			"runtext"	"Moteurs    ON
+					Caméras pont  ON
+					Verrous    FER.
+					"
+			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 0 and G.Dane_Engines == 1"
+		}
+
+		Function
+		{
+			"name"		"Etat"
+			"description"	"ETAT DU NAVIRE"
+			"runtext"	"Moteurs    ON
+					Caméras pont  OFF
+					Verrous    OUV.
+					"
+			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 1 and G.Dane_Engines == 1"
+		}
+
+		Function
+		{
+			"name"		"Etat"
+			"description"	"ETAT DU NAVIRE"
+			"runtext"	"Moteurs    ON
+					Caméras pont  ON
+					Verrous    OUV.
+					"
+			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 1 and G.Dane_Engines == 1"
+		}
+	}
+
+	SubDir
+	{
+		"name"			"Journal de bord"
+		"password"		"AntonioBay"
+		"difficulty"		"6"	// changed by wesp from 9
+		"description"		"Journal du capitaine"
+	
+		Function
+		{
+			"name"		"10/10/04"
+			"description"	"Journal de bord : 10 oct. 2004"
+			"runtext"	"Mer calme à notre départ d'Istanbul. Le professeur Johansen est inquiet quant à la sécurité du sarcophage et des autres artefacts qu'il a découverts, mais je lui ai garanti que tout irait bien."
+		}
+	
+		Function
+		{
+			"name"		"14/10/04"
+			"description"	"Journal de bord : 14 oct. 2004"
+			"runtext"	"Mer agitée la nuit dernière. Opérations normales, mais l'équipage semble agité lui aussi. L'un des Turcs leur a raconté des histoires de fantôme. J'ai pris le Lt Stygian à part pour lui parler."
+		}
+	
+		Function
+		{
+			"name"		"15/10/04"
+			"description"	"Journal de bord : 15 oct. 2004"
+			"runtext"	"Rien à signaler. Situation normale."
+		}
+
+		Function
+		{
+			"name"		"17/10/04"
+			"description"	"Journal de bord : 17 oct. 2004"
+			"runtext"	"Deux membres de l'équipage ont disparu et j'ai peur qu'ils soient passés par-dessus bord pendant la nuit. Aucune trace. Le Lt Stygian a essayé de contacter leur famille mais la radio ne semble pas fonctionner. 
+Un saboteur pourrait bien se trouver à bord. . . la caisse contenant le sarcophage a été ouverte, semble-t-il. "
+		}
+
+		Function
+		{
+			"name"		"19/10/04"
+			"description"	"Journal du capitaine : 19 oct. 2004"
+			"runtext"	"Nous avons découvert du sang sur les ponts supérieurs et inférieurs et il semblerait que trois autres membres de l'?quipage soient manquants. Les hommes sont affolés. J'ai trouvé un Turc dans sa cabine, recroquevillé sur lui-même, murmurant des choses incompréhensibles. Lt Stygian fait partie des hommes disparus, ainsi que l'opérateur radio.
+L'un des hommes avait une radio à ondes courtes, mais tous les appels à l'aide sont restés sans réponse."
+		}
+	
+		Function
+		{
+			"name"		"20/10/04"
+			"description"	"Journal de bord : 20 oct. 2004"
+			"runtext"	"Je laisse ceci à quiconque le trouvera. CE NAVIRE EST MAUDIT. Qu'il plonge dans les profondeurs de l'océan avant therhbnkhjljsdlkajkl"
+		}
+	}
+
+	Subdir
+	{
+		"name"			"Controle"
+		"password"		"lighthouse"
+		"difficulty"		"4"	// changed by wesp from 7
+		"description"		"Fonctions du navire"
+
+		Function
+		{
+			"name"		"Demar. moteurs"
+			"description"	"Allumage des moteurs"
+			"runtext"	"Moteurs prêts et en marche. Contrôle au pont."
+			"dependency"	"G.Dane_Engines == 0"
+			"runscript"	"daneSetEngines()"
+		}
+
+		Function
+		{
+			"name"		"Arret moteurs"
+			"description"	"Eteint les moteurs"
+			"runtext"	"Moteurs arrêtés. Contrôle de la barre désactivé."
+			"dependency"	"G.Dane_Engines == 1"
+			"runscript"	"daneSetEngines()"
+		}
+
+		Function
+		{
+			"name"		"Corne de brume"
+			"description"	"Corne de brume"
+			"runtext"	"Corne de brume"
+			"runscript"	"daneSoundHorn()"
+		}
+
+		Function
+		{
+			"name"		"Cam. pont ON"
+			"description"	"Caméras de sécurité du pont"
+			"runtext"	"Sécurité du pont activée."
+			"dependency"	"G.Dane_Cams == 0"
+			"runscript"	"daneSetCams()"
+		}
+
+		Function
+		{
+			"name"		"Cam. pont OFF"
+			"description"	"Caméras de sécurité du pont"
+			"runtext"	"Sécurité du pont désactivée."
+			"dependency"	"G.Dane_Cams == 1"
+			"runscript"	"daneSetCams()"
+		}
+
+		Function
+		{
+			"name"		"Ouvrir portes"
+			"description"	"Verrous coursives"
+			"runtext"	"Toutes coursives ouvertes."
+			"dependency"	"G.Dane_Locks == 0"
+			"runscript"	"daneSetLocks()"
+		}
+
+		Function
+		{
+			"name"		"Fermer portes"
+			"description"	"Verrous coursives"
+			"runtext"	"Toutes coursives fermées."
+			"dependency"	"G.Dane_Locks == 1"
+			"runscript"	"daneSetLocks()"
+		}
+	}
+}

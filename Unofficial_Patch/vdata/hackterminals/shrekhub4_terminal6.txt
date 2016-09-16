@@ -1,0 +1,37 @@
+TerminalDefinition
+{
+	"screen saver"		"Kamikazi Zen"					// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""						// these surround the command prompt (2 characters), changed by wesp
+
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Rob Nesler"  
+		"line1"		"Directeur artistique"
+	}
+	
+	SubDir
+	{
+		"name"			"mitnick!"	//(128 characters)
+		"description"		"pour tous vos besoins érotiques"
+		"difficulty"		"0"
+		"dependency"		"G.Shubs_Act == 4"	
+
+		Function
+		{
+			"name"		"SAUVETAGE"
+			"description"	"Quand ton cul sera cuit."	
+			"runtext"	"Vous avez réussi. Fait un peu chaud, non ? Du calme. Ouvrez l'aération derrière vous.
+
+
+Merci. Prenez soin de vous.
+
+
+<m1tn1ck<"
+			"runscript"	""
+			"trigger"	"0"
+			
+		}
+	}
+}

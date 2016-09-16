@@ -1,0 +1,720 @@
+{	1	}{	Entrez, je vous prie. Pardonnez la bêtise de ma soeur si elle vous a causé une gêne quelconque. Elle est scandaleuse, en toutes choses. Mais dans notre métier, je crains qu'une telle personnalité soit un mal nécessaire.	}{	Entrez, je vous prie. Pardonnez la bêtise de ma soeur si elle vous a causé une gêne quelconque. Elle est scandaleuse, en toutes choses. Mais dans notre métier, je crains qu'une telle personnalité soit un mal nécessaire.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Si vous le dites. Vous devez donc être Therese ?	}{	Si vous le dites. Vous devez donc être Therese ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes Therese ? La sombre fille de Janus ?	}
+{	3	}{	Elle est partie ? Tant mieux. Vous êtes Therese ?	}{	Elle est partie ? Tant mieux. Vous êtes Therese ?	}{	61	}{	}{	G.Therese_Seduce = G.Therese_Seduce + 1	}{	}{	}{	}{	}{	}{	}{	Ses privautés allaient avoir raison de moi. Vous êtes donc Therese, la fille sombre ?	}
+{	4	}{	Jeanette ? Elle n'était pas vraiment dérangeante.	}{	Jeanette ? Elle n'était pas vraiment dérangeante.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sa blancheur n'était pas un fardeau. . .	}
+{	5	}{	Où est-elle ?	}{	Où est-elle ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où est la princesse ivoirine ?	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Mais si, c'est exactement ce qu'elle est.	}{	Mais si, c'est exactement ce qu'elle est.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Etes-vous Therese ?	}{	Etes-vous Therese ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous appelle-t-on Therese, sombre fille ?	}
+{	13	}{	Où est-elle ?	}{	Où est-elle ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où est la princesse ivoirine ?	}
+{	14	}{	En fait, je l'aimais bien. 	}{	En fait, je l'aimais bien. 	}{	31	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	On était un peu comme des petits pois-carottes. Enfin. . . vous voyez. . .	}
+{	15	}{	Je suis d'accord. Vous me paraissez bien plus sensée. . .	}{	Je suis d'accord. Vous me paraissez bien plus sensée. . .	}{	51	}{	}{	G.Therese_Seduce = G.Therese_Seduce + 1	}{	}{	}{	}{	}{	}{	}{	Oui. Je préférerai largement votre poids à vous, chère ténébreuse. . .	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Elle a des problèmes qu'elle tente de surmonter, et elle s'est donc enfermée dans la salle de bains. C'est de la jalousie. Vous voyez, j'étais la préférée de la famille, et je suis celle qui réussit. Comme vous l'avez remarqué, elle a désespérément besoin d'attention.	}{	Elle a des problèmes qu'elle tente de surmonter, et elle s'est donc enfermée dans la salle de bains. C'est de la jalousie. Vous voyez, j'étais la préférée de la famille, et je suis celle qui réussit. Comme vous l'avez remarqué, elle a désespérément besoin d'attention.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Etes-vous Therese ?	}{	Etes-vous Therese ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous appelle-t-on Therese, sombre fille ?	}
+{	23	}{	Dommage. J'aurais vraiment aimé la revoir.	}{	Dommage. J'aurais vraiment aimé la revoir.	}{	31	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Je saurai satisfaire ses appétits infinis. . .	}
+{	24	}{	Je préfère de loin parler à la soeur sensée.	}{	Je préfère de loin parler à la soeur sensée.	}{	51	}{	}{	G.Therese_Seduce = G.Therese_Seduce + 1	}{	}{	}{	}{	}{	}{	}{	Je cherche une interlocutrice plus raisonnable. . .	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Pfff. Sous sa minijupe et son chemisier trop court, elle est pourrie jusqu'aux os.	}{	Pfff. Sous sa minijupe et son chemisier trop court, elle est pourrie jusqu'aux os.	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Etes-vous Therese ?	}{	Etes-vous Therese ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous appelle-t-on Therese, sombre fille ?	}
+{	33	}{	On dirait que vous êtes jalouse.	}{	On dirait que vous êtes jalouse.	}{	41	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Vous portez la jalousie comme une couronne d'épines, sombre fille. . .	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Veuillez en venir au fait de votre présence dans ma ville.	}{	Veuillez en venir au fait de votre présence dans ma ville.	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Etes-vous Therese ?	}{	Etes-vous Therese ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous appelle-t-on Therese, sombre fille ?	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Exactement. C'est peut-être l'attitude de ma soeur, cette écolière en péril, qui attire les clients, mais c'est ma compétence qui nous permet de rester ouvertes. 	}{	Exactement. C'est peut-être l'attitude de ma soeur, cette écolière en péril, qui attire les clients, mais c'est ma compétence qui nous permet de rester ouvertes. 	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Vous êtes Therese ?	}{	Vous êtes Therese ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous appelle-t-on Therese, sombre fille ?	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Therese Voerman, oui. Je suis la propriétaire du club, et la seule personne dans cette ville que vous avez intérêt à cajoler. Qu'est-ce qui vous amène à Santa Monica ?	}{	Therese Voerman, oui. Je suis la propriétaire du club, et la seule personne dans cette ville que vous avez intérêt à cajoler. Qu'est-ce qui vous amène à Santa Monica ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	J'ai besoin que vous apaisiez votre querelle avec Bertram Tung. 	}{	J'ai besoin que vous apaisiez votre querelle avec Bertram Tung. 	}{	81	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Mettez fin à votre conflit avec le ver, ténébreuse.	}
+{	63	}{	J'ai besoin que vous apaisiez votre querelle avec Bertram Tung. 	}{	J'ai besoin que vous apaisiez votre querelle avec Bertram Tung. 	}{	91	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Cessez votre querelle.	}{	Cessez votre querelle.	}{	181	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	Je pensais que le club était à Jeanette.	}{	Je pensais que le club était à Jeanette.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cet asile n'est-il pas à la maîtresse blanche ?	}
+{	66	}{	Cessez votre querelle.	}{	Cessez votre querelle.	}{	181	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Jeanette est la bête de foire que je garde à mes côtés pour attirer les amateurs de curiosités. Elle est très douée avec la clientèle, mais son sens des affaires vaut à peu près celui d'un enfant de quatre ans dans un magasin de bonbons. 	}{	Jeanette est la bête de foire que je garde à mes côtés pour attirer les amateurs de curiosités. Elle est très douée avec la clientèle, mais son sens des affaires vaut à peu près celui d'un enfant de quatre ans dans un magasin de bonbons. 	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	J'ai besoin que vous apaisiez votre querelle avec Bertram Tung. 	}{	J'ai besoin que vous apaisiez votre querelle avec Bertram Tung. 	}{	81	}{	not IsClan(pc,"Nosferatu") and G.Therese_Bother == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mettez fin à votre conflit avec le ver, ténébreuse.	}
+{	73	}{	J'ai besoin que vous apaisiez votre querelle avec Bertram Tung. 	}{	J'ai besoin que vous apaisiez votre querelle avec Bertram Tung. 	}{	91	}{	IsClan(pc,"Nosferatu") and G.Therese_Bother == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	Cessez votre querelle.	}{	Cessez votre querelle.	}{	181	}{	Dominate 1 & G.Therese_Bother == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	J'ai encore quelques questions à vous poser.	}{	J'ai encore quelques questions à vous poser.	}{	671	}{	G.Therese_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je extraire d'autres réponses de votre esprit ?	}
+{	76	}{	Cessez votre querelle.	}{	Cessez votre querelle.	}{	181	}{	Thaumaturgy 1 & G.Patch_Plus == 1 and G.Therese_Bother == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	J'ai à faire. A plus tard. 	}{	J'ai à faire. A plus tard. 	}{	0	}{	G.Therese_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	L'exil de Tung est volontaire, je vous l'assure. Mais quelle raison aurais-je de ne pas haïr ce méprisable voyou Nosferatu ? Maudits Nosferatu. . . Ils sont tellement. . . impurs.	}{	L'exil de Tung est volontaire, je vous l'assure. Mais quelle raison aurais-je de ne pas haïr ce méprisable voyou Nosferatu ? Maudits Nosferatu. . . Ils sont tellement. . . impurs.	}{	#	}{	npc.SetDisposition("Apathy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Vos phobies ne me concernent pas. Dites-lui juste qu'il n'y a plus de problème entre vous.	}{	Vos phobies ne me concernent pas. Dites-lui juste qu'il n'y a plus de problème entre vous.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas participer de votre folie, faites simplement la paix avec le ver.	}
+{	83	}{	Pourquoi le haïssez-vous ?	}{	Pourquoi le haïssez-vous ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qu'est-ce qui amène votre courroux sur lui ?	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	L'exil de Tung est volontaire, je vous l'assure. Mais quelle raison aurais-je de ne pas haïr ce méprisable voyou Nosferatu ? Sans vouloir vous offenser.	}{	L'exil de Tung est volontaire, je vous l'assure. Mais quelle raison aurais-je de ne pas haïr ce méprisable voyou Nosferatu ? Sans vouloir vous offenser.	}{	#	}{	npc.SetDisposition("Apathy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Pas le moins du monde. Mais dites-lui que tout va bien entre vous.	}{	Pas le moins du monde. Mais dites-lui que tout va bien entre vous.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Pourquoi le haïssez-vous ?	}{	Pourquoi le haïssez-vous ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Il se mêle de mes affaires. Il a une mauvaise influence sur ma soeur, et elle sur lui. Si vous étiez à ma place, le laisseriez-vous saper votre autorité ? Certainement pas. J'aimerais bien ne plus jamais entendre ce nom.	}{	Il se mêle de mes affaires. Il a une mauvaise influence sur ma soeur, et elle sur lui. Si vous étiez à ma place, le laisseriez-vous saper votre autorité ? Certainement pas. J'aimerais bien ne plus jamais entendre ce nom.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Alors pourriez-vous faire savoir que vous n'avez aucune intention de lui nuire.	}{	Alors pourriez-vous faire savoir que vous n'avez aucune intention de lui nuire.	}{	111	}{	G.Therese_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Dites au ver que tout est pardonné. . .	}
+{	103	}{	Vous voulez que je le tue pour vous ?	}{	Vous voulez que je le tue pour vous ?	}{	121	}{	G.Therese_Kill == 0 and G.Therese_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'arracherai ce ver à la terre pour le disséquer. . .	}
+{	104	}{	Parlez-moi un peu de votre jumelle Jeanette. . .	}{	Parlez-moi un peu de votre jumelle Jeanette. . .	}{	71	}{	G.Therese_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de votre soeur, la princesse blanche.	}
+{	105	}{	Vous voulez que je le trouve et que je le tue ?	}{	Vous voulez que je le trouve et que je le tue ?	}{	121	}{	G.Therese_Kill == 0 and G.Therese_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'arracherai ce ver à la terre pour le disséquer. . .	}
+{	106	}{	Plus que quelques questions. . .	}{	Plus que quelques questions. . .	}{	671	}{	G.Therese_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Encore quelques réponses de votre matière grise. . .	}
+{	107	}{	Je pense qu'il est temps que je parte. A bientôt.	}{	Je pense qu'il est temps que je parte. A bientôt.	}{	0	}{	G.Therese_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à quelqu'un qui n'est plus là.	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Pourquoi ferais-je cela ? Qu'il pense que je compte le tuer. Ainsi, je n'aurai pas à craindre qu'il sabote tout. Comprenez-vous ce que la Camarilla pense de moi, avec le subterfuge de cette vermine ?	}{	Pourquoi ferais-je cela ? Qu'il pense que je compte le tuer. Ainsi, je n'aurai pas à craindre qu'il sabote tout. Comprenez-vous ce que la Camarilla pense de moi, avec le subterfuge de cette vermine ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Therese_Feud = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	C'est malheureux, mais j'ai besoin de le voir.	}{	C'est malheureux, mais j'ai besoin de le voir.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne viens pas me mêler de politique. Je dois voir le ver.	}
+{	113	}{	Vous voulez que je le tue pour vous ?	}{	Vous voulez que je le tue pour vous ?	}{	121	}{	G.Therese_Kill == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'arracherai ce ver à la terre pour le disséquer. . .	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Je ne suis pas certaine que la Camarilla verrait là une façon acceptable de traiter un rival, et pour l'heure, j'ai besoin de leur aval pour devenir l'administratrice légale de cette ville.	}{	Je ne suis pas certaine que la Camarilla verrait là une façon acceptable de traiter un rival, et pour l'heure, j'ai besoin de leur aval pour devenir l'administratrice légale de cette ville.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Therese_Kill = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Pourriez-vous faire savoir que vous n'avez rien contre lui ?	}{	Pourriez-vous faire savoir que vous n'avez rien contre lui ?	}{	111	}{	G.Therese_Feud == 0 and G.Therese_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Dites au ver que tout est pardonné. . .	}
+{	123	}{	Que puis-je faire pour vous convaincre de renoncer à cette querelle ?	}{	Que puis-je faire pour vous convaincre de renoncer à cette querelle ?	}{	131	}{	G.Therese_Feud == 1 and G.Therese_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Que peut faire cette âme brisée pour apaiser le feu qui vous sépare tous deux ?	}
+{	124	}{	C'est à vous de voir, bien sûr. J'ai encore quelques questions.	}{	C'est à vous de voir, bien sûr. J'ai encore quelques questions.	}{	671	}{	G.Therese_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Encore quelques réponses de votre matière grise. . .	}
+{	125	}{	Je vois. . . Bon, je m'en vais.	}{	Je vois. . . Bon, je m'en vais.	}{	0	}{	G.Therese_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à quelqu'un qui n'est plus là.	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Les actions de Tung et de son co-conspirateur ont ruiné toute chance de partenariat pour moi dans un achat crucial. J'ai plusieurs autres entreprises fort prometteuses, et une en particulier a été une épreuve.	}{	Les actions de Tung et de son co-conspirateur ont ruiné toute chance de partenariat pour moi dans un achat crucial. J'ai plusieurs autres entreprises fort prometteuses, et une en particulier a été une épreuve.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	(Auto-Link)	}{	(Auto-Link)	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Hmm. . . Je pourrais faire savoir que tout est oublié avec Tung. Mais en échange, il faudra m'aider à chasser un esprit particulièrement agaçant d'une propriété que j'aimerais acheter.	}{	Hmm. . . Je pourrais faire savoir que tout est oublié avec Tung. Mais en échange, il faudra m'aider à chasser un esprit particulièrement agaçant d'une propriété que j'aimerais acheter.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Encore une perte de temps.	}{	Encore une perte de temps.	}{	191	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Je ferais mieux d'utiliser mon temps autrement.	}
+{	143	}{	Avec joie. Que faut-il faire ?	}{	Avec joie. Que faut-il faire ?	}{	191	}{	}{	G.Therese_Seduce = G.Therese_Seduce + 1	}{	}{	}{	}{	}{	}{	}{	Dites-moi votre quête, ténébreuse.	}
+{	144	}{	Un esprit ? Un fantôme ?	}{	Un esprit ? Un fantôme ?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Un esprit ? Un vestige d'un vivant ?	}
+{	145	}{	Je pourrais me contenter de vous tuer, aussi. Bertram serait prêt à m'aider alors, c'est certain. . .	}{	Je pourrais me contenter de vous tuer, aussi. Bertram serait prêt à m'aider alors, c'est certain. . .	}{	161	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 2	}{	}{	}{	}{	}{	}{	}{	Je vais peut-être vous envoyer sur le versant de la nuit et le ver me remerciera. . .	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	J'ai oublié que vous n'êtes pas parmi nous depuis très longtemps. Alors, ça va peut-être vous surprendre, mais. . . les fantômes existent. Les loups-garous, les momies, et sans doute plein d'autres choses que je n'ai jamais vues. 	}{	J'ai oublié que vous n'êtes pas parmi nous depuis très longtemps. Alors, ça va peut-être vous surprendre, mais. . . les fantômes existent. Les loups-garous, les momies, et sans doute plein d'autres choses que je n'ai jamais vues. 	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Je n'ai pas de temps à perdre avec cet Halloween du pauvre.	}{	Je n'ai pas de temps à perdre avec cet Halloween du pauvre.	}{	191	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Je ferai cet acte peu glorieux. Mais comment ?	}
+{	153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	Bien sûr, volontiers ? Que faudra-t-il faire pour se débarrasser de ce fantôme ?	}{	Bien sûr, volontiers ? Que faudra-t-il faire pour se débarrasser de ce fantôme ?	}{	191	}{	}{	G.Therese_Seduce = G.Therese_Seduce + 1	}{	}{	}{	}{	}{	}{	}{	Je passerai donc dans le monde des esprits. Que faut-il faire ?	}
+{	155	}{	Si je vous tuais, Bertram sortirait de son exil, non ?	}{	Si je vous tuais, Bertram sortirait de son exil, non ?	}{	161	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Je vais peut-être vous envoyer sur le versant de la nuit et le ver me remerciera. . .	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Sans doute, si vous me tuez. Mais à ce que j'ai cru comprendre, votre existence est déjà menacée, et la moindre erreur pourrait bien être l'étincelle proverbiale. . .	}{	Sans doute, si vous me tuez. Mais à ce que j'ai cru comprendre, votre existence est déjà menacée, et la moindre erreur pourrait bien être l'étincelle proverbiale. . .	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	163	}{	Bien, dites-moi comment me débarrasser du fantôme.	}{	Bien, dites-moi comment me débarrasser du fantôme.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le prochain fantôme sera le vôtre. Comment me débarrasser de celui-ci ?	}
+{	164	}{	Et pourquoi ne pas tenter le coup ?	}{	Et pourquoi ne pas tenter le coup ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais lancer ces dés si périlleux. . .	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Ecoutez, vous êtes jeune, ne laissez pas passer votre chance par naïveté - la survie ou un beau lever de soleil. Réfléchissez bien. . .	}{	Ecoutez, vous êtes jeune, ne laissez pas passer votre chance par naïveté - la survie ou un beau lever de soleil. Réfléchissez bien. . .	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Si ce n'était l'Elysium. . . Qu'en est-il de ce fantôme ?	}{	Si ce n'était l'Elysium. . . Qu'en est-il de ce fantôme ?	}{	191	}{	G.Therese_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je sens encore la chaleur du soleil dans mes souvenirs. . . L'esprit. . . de quoi ?	}
+{	173	}{	S'il le faut, très bien.	}{	S'il le faut, très bien.	}{	241	}{	G.Therese_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je sens encore la chaleur du soleil dans mes souvenirs. . . L'esprit. . . de quoi ?	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	[rire]Vous n'avez pas beaucoup d'expérience, hein ? Vous cherchiez à me Dominer ? C'était tellement stupide que c'en est presque touchant. [Sérieuse]Presque.	}{	[rire]Vous n'avez pas beaucoup d'expérience, hein ? Vous cherchiez à me Dominer ? C'était tellement stupide que c'en est presque touchant. [Sérieuse]Presque.	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	J'ai besoin que vous apaisiez votre querelle avec Bertram Tung. 	}{	J'ai besoin que vous apaisiez votre querelle avec Bertram Tung. 	}{	81	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	J'ai besoin que vous apaisiez votre querelle avec Bertram Tung. 	}{	J'ai besoin que vous apaisiez votre querelle avec Bertram Tung. 	}{	91	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	La rumeur veut qu'un objet personnel du fantôme puisse servir à l'exorciser de son lieu de hantise. Je ne mets pas beaucoup de foi dans les racontars, mais c'est la dernière chose à tenter. Allez donc au Ocean House Hotel, trouvez un objet appartenant à l'esprit et rapportez-le moi.	}{	La rumeur veut qu'un objet personnel du fantôme puisse servir à l'exorciser de son lieu de hantise. Je ne mets pas beaucoup de foi dans les racontars, mais c'est la dernière chose à tenter. Allez donc au Ocean House Hotel, trouvez un objet appartenant à l'esprit et rapportez-le moi.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Si vous promettez de calmer cette querelle.	}{	Si vous promettez de calmer cette querelle.	}{	231	}{	G.Therese_Go == 0 and G.Therese_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Si vous dites à ce ver qu'il n'est pas désiré, je pars.	}
+{	193	}{	Et si je ne trouve rien ?	}{	Et si je ne trouve rien ?	}{	221	}{	G.Therese_Ghostitem == 0 and G.Therese_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Et s'il n'y a aucune babiole à trouver ?	}
+{	194	}{	Pourquoi ne pas y aller vous-même ?	}{	Pourquoi ne pas y aller vous-même ?	}{	201	}{	G.Therese_Go == 0 and G.Therese_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi n'allez-vous pas parler aux esprits vous-même ?	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	Bien, encore quelques questions. . .	}{	Bien, encore quelques questions. . .	}{	671	}{	G.Therese_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Encore quelques réponses de votre matière grise. . .	}
+{	197	}{	Je m'en charge. A plus tard.	}{	Je m'en charge. A plus tard.	}{	0	}{	G.Therese_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je suis déjà ailleurs.	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Même si je compte que la chose soit bien faite, vous n'avez pas le choix, si vous voulez que je mette fin à ma querelle avec Tung. 	}{	Même si je compte que la chose soit bien faite, vous n'avez pas le choix, si vous voulez que je mette fin à ma querelle avec Tung. 	}{	#	}{	npc.SetDisposition("Anger",1)	}{	G.Therese_Go = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Si vous promettez de calmer cette querelle.	}{	Si vous promettez de calmer cette querelle.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si vous dites à ce ver qu'il n'est pas désiré, je pars.	}
+{	203	}{	Et si je ne trouve aucun objet personnel du fantôme ?	}{	Et si je ne trouve aucun objet personnel du fantôme ?	}{	221	}{	G.Therese_Ghostitem == 0	}{	}{	}{	}{	}{	}{	}{	}{	Et si cette babiole décide de se cacher ?	}
+{	204	}{	Comment combattre un fantôme ?	}{	Comment combattre un fantôme ?	}{	211	}{	G.Therese_Ghostbust == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment affronter l'éthéré ?	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	On ne peut pas. Ils sont tout à fait inoffensifs. 	}{	On ne peut pas. Ils sont tout à fait inoffensifs. 	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Therese_Ghostbust = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Si vous promettez de calmer cette querelle.	}{	Si vous promettez de calmer cette querelle.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si vous dites à ce ver qu'il n'est pas désiré, je pars.	}
+{	213	}{	Et si je ne trouve aucun objet personnel du fantôme ?	}{	Et si je ne trouve aucun objet personnel du fantôme ?	}{	221	}{	G.Therese_Ghostitem == 0	}{	}{	}{	}{	}{	}{	}{	}{	Et si cette babiole décide de se cacher ?	}
+{	214	}{	Pourquoi ne pas y aller vous-même ?	}{	Pourquoi ne pas y aller vous-même ?	}{	201	}{	G.Therese_Go == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi ne pas y aller vous-même, sombre maîtresse ?	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	S'il faut ravager l'édifice, faites-le. Trois équipes de construction ont déjà refusé de retourner au travail, parce qu'elles avaient. . . peur.	}{	S'il faut ravager l'édifice, faites-le. Trois équipes de construction ont déjà refusé de retourner au travail, parce qu'elles avaient. . . peur.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Therese_Ghostitem = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Si vous promettez de calmer cette querelle.	}{	Si vous promettez de calmer cette querelle.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous rapporterai une babiole. Mais ensuite vous appellerez le ver pour l'apaiser.	}
+{	223	}{	Comment combattre un fantôme ?	}{	Comment combattre un fantôme ?	}{	211	}{	G.Therese_Ghostbust == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment affronter l'éthéré ?	}
+{	224	}{	Pourquoi ne pas y aller vous-même ?	}{	Pourquoi ne pas y aller vous-même ?	}{	201	}{	G.Therese_Go == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi ne pas y aller vous-même, sombre maîtresse ?	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Oh, c'est ce que je compte faire. Vous allez vous rendre compte que tout accord passé avec moi est bien plus prévisible qu'avec certains mégalomanes de mes pairs. Tant que nos affaires se déroulent comme il faut, ma parole est d'or.	}{	Oh, c'est ce que je compte faire. Vous allez vous rendre compte que tout accord passé avec moi est bien plus prévisible qu'avec certains mégalomanes de mes pairs. Tant que nos affaires se déroulent comme il faut, ma parole est d'or.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Therese_Quest = 1; pc.SetQuest("Hotel",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Un accord ? Est-ce ce que l'on dit quand un chien va chercher un bâton ?	}{	Un accord ? Est-ce ce que l'on dit quand un chien va chercher un bâton ?	}{	661	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Alors je pars pour Ocean House.	}
+{	233	}{	Je saurai l'apprécier et le respecter. Au revoir.	}{	Je saurai l'apprécier et le respecter. Au revoir.	}{	661	}{	}{	G.Therese_Seduce = G.Therese_Seduce + 1	}{	}{	}{	}{	}{	}{	}{	Vos paroles sont comme le nectar rouge, sombre fille. Adieu.	}
+{	234	}{	Bien. Adieu.	}{	Bien. Adieu.	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Si vous voulez bien m'excuser, j'ai des situations à régler.	}{	Si vous voulez bien m'excuser, j'ai des situations à régler.	}{	#	}{	npc.SetDisposition("Apathy",1)	}{	G.Therese_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	J'avais quelques questions.	}{	J'avais quelques questions.	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Encore quelques réponses de votre matière grise. . .	}
+{	243	}{	C'est ça. Au revoir.	}{	C'est ça. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors je pars pour la maison de l'océan.	}
+{	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Vous ? Ne savez-vous donc rien ?	}{	Vous ? Ne savez-vous donc rien ?	}{	#	}{	npc.SetDisposition("Anger",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Je. . .	}{	Je. . .	}{	471	}{	G.Jeanette_Scorn == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je. . .	}
+{	253	}{	Euh. . .	}{	Euh. . .	}{	471	}{	G.Extra_Lines == 1 and G.Jeanette_Scorn == 1	}{	}{	}{	}{	}{	}{	}{	}{	Euh. . .	}
+{	254	}{	A propos. . .	}{	A propos. . .	}{	471	}{	G.Extra_Lines == 1 and G.Jeanette_Scorn == 1	}{	}{	}{	}{	}{	}{	}{	}{	A propos. . .	}
+{	255	}{	Je. . .	}{	Je. . .	}{	261	}{	G.Jeanette_Scorn == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je. . .	}
+{	256	}{	Euh. . .	}{	Euh. . .	}{	261	}{	G.Extra_Lines == 1 and G.Jeanette_Scorn == 0	}{	}{	}{	}{	}{	}{	}{	}{	Euh. . .	}
+{	257	}{	A propos. . .	}{	A propos. . .	}{	261	}{	G.Extra_Lines == 1 and G.Jeanette_Scorn == 0	}{	}{	}{	}{	}{	}{	}{	}{	A propos. . .	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Comment avez-vous pu lui donner l'objet pris à l'hôtel ? Vous savez ce qu'elle en a fait ?	}{	Comment avez-vous pu lui donner l'objet pris à l'hôtel ? Vous savez ce qu'elle en a fait ?	}{	#	}{	npc.SetDisposition("Anger",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Attendez un. . .	}{	Attendez un. . .	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Furieuse. . .	}
+{	263	}{	Je ne. . .	}{	Je ne. . .	}{	271	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Délicat. . .	}
+{	264	}{	Quoi ?	}{	Quoi ?	}{	271	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Dangereux. . .	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Elle l'a jeté dans le Pacifique ! Vous savez ce que ça signifie ! Que je ne peux plus me débarrasser de l'esprit. Donc, l'hôtel ne me sert à rien ! Et pour ne rien arranger, quelqu'un vient de massacrer le vernissage que j'avais organisé !	}{	Elle l'a jeté dans le Pacifique ! Vous savez ce que ça signifie ! Que je ne peux plus me débarrasser de l'esprit. Donc, l'hôtel ne me sert à rien ! Et pour ne rien arranger, quelqu'un vient de massacrer le vernissage que j'avais organisé !	}{	#	}{	npc.SetDisposition("Anger",3)	}{	pc.SetQuest("Release the Spirit",2); pc.SetQuest("Hotel",6)	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Je peux. . .	}{	Je peux. . .	}{	281	}{	pc.GetQuestState("Slashterpiece") == 3	}{	pc.SetQuest("Slashterpiece",5)	}{	}{	}{	}{	}{	}{	}{	Oiseaux, abeilles et. . .	}
+{	273	}{	Ecoutez. . .	}{	Ecoutez. . .	}{	281	}{	G.Extra_Lines == 1 and pc.GetQuestState("Slashterpiece") != 3	}{	G.Gallery_Slashed = 1	}{	}{	}{	}{	}{	}{	}{	Boules de bingo et dés velus. . .	}
+{	274	}{	Fermez un. . .	}{	Fermez un. . .	}{	281	}{	G.Extra_Lines == 1 and pc.GetQuestState("Slashterpiece") != 3	}{	G.Gallery_Slashed = 1	}{	}{	}{	}{	}{	}{	}{	Phéromones de poulet. . .	}
+{	275	}{	Je peux. . .	}{	Je peux. . .	}{	281	}{	pc.GetQuestState("Slashterpiece") != 3	}{	G.Gallery_Slashed = 1	}{	}{	}{	}{	}{	}{	}{	Pièces de huit...	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	La ferme ! Je pensais pouvoir contrôler ma soeur une fois Tung éliminé, mais rien n'a changé ! A cause d'eux, je suis encore plus mal en point qu'avant. L'Ocean House ne vaut plus rien. Notre affaire est donc compromise. . . Et Tung reste mon ennemi.	}{	La ferme ! Je pensais pouvoir contrôler ma soeur une fois Tung éliminé, mais rien n'a changé ! A cause d'eux, je suis encore plus mal en point qu'avant. L'Ocean House ne vaut plus rien. Notre affaire est donc compromise. . . Et Tung reste mon ennemi.	}{	#	}{	npc.SetDisposition("Anger",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Jeanette est VOTRE problème. Vous et moi avions un accord personnel. . .	}{	Jeanette est VOTRE problème. Vous et moi avions un accord personnel. . .	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Portez seule le fardeau de votre soeur et honorez votre accord. . .	}
+{	283	}{	Ce n'est pas juste !	}{	Ce n'est pas juste !	}{	291	}{	}{	}{	}{	}{	}{	}{	}{	}{	La balance n'est pas équilibrée.	}
+{	284	}{	Vous êtes une femme rationnelle et professionnelle. Je peux sans doute faire quelque chose.	}{	Vous êtes une femme rationnelle et professionnelle. Je peux sans doute faire quelque chose.	}{	371	}{	Persuasion 2	}{	G.Therese_Seduce = G.Therese_Seduce + 1	}{	}{	}{	}{	}{	}{	}{	Parlons entre gens du monde, ténébreuse. Que les affaires soient de petits riens tendres. . .	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Cette vie l'est rarement. Je n'aurais jamais dû vous confier cette tâche. La peste soit des amateurs ! Aviez-vous ne serait-ce qu'un instant envisagé les conséquences d'un échec ? Un seul instant ? Si cela vous console, vous n'êtes pas la première personne que Jeanette aura utilisée. 	}{	Cette vie l'est rarement. Je n'aurais jamais dû vous confier cette tâche. La peste soit des amateurs ! Aviez-vous ne serait-ce qu'un instant envisagé les conséquences d'un échec ? Un seul instant ? Si cela vous console, vous n'êtes pas la première personne que Jeanette aura utilisée. 	}{	#	}{	npc.SetDisposition("Anger",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	C'est ça. Cela n'a rien à voir avec NOTRE accord. . .	}{	C'est ça. Cela n'a rien à voir avec NOTRE accord. . .	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Portez seule le fardeau de votre soeur et honorez votre accord. . .	}
+{	293	}{	Pourquoi Jeanette vous ferait-elle une chose pareille ?	}{	Pourquoi Jeanette vous ferait-elle une chose pareille ?	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi la maîtresse blanche vous trahirait-elle ?	}
+{	294	}{	Cette garce ! Je savais qu'elle tramait quelque chose !	}{	Cette garce ! Je savais qu'elle tramait quelque chose !	}{	351	}{	}{	G.Therese_Seduce = G.Therese_Seduce + 1	}{	}{	}{	}{	}{	}{	}{	Je n'aurais jamais dû écouter ses mensonges enamourés !	}
+{	295	}{	Vous l'avez bien mérité. Il ne fallait pas la sous-estimer.	}{	Vous l'avez bien mérité. Il ne fallait pas la sous-estimer.	}{	341	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Vous portez votre faiblesse comme un vieux chapeau. Vous l'avez sous-estimée. . .	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Nous avions un accord. Vous ne l'avez pas respecté. Même si ma soeur était en faute, vous l'avez servie. Et je l'ai presque détruite pour ses actions contre moi. En fait, j'ai peut-être été trop sévère.	}{	Nous avions un accord. Vous ne l'avez pas respecté. Même si ma soeur était en faute, vous l'avez servie. Et je l'ai presque détruite pour ses actions contre moi. En fait, j'ai peut-être été trop sévère.	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	J'ai besoin de parler à Tung. Que puis-je faire ?	}{	J'ai besoin de parler à Tung. Que puis-je faire ?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de trouver le ver. Que dois-je faire ?	}
+{	303	}{	Pourquoi ne vous débarrassez-vous pas de Jeanette ? 	}{	Pourquoi ne vous débarrassez-vous pas de Jeanette ? 	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors tuez la princesse ivoirine. . .	}
+{	304	}{	Je m'en fiche. Je suis en mission pour le prince.	}{	Je m'en fiche. Je suis en mission pour le prince.	}{	321	}{	G.Therese_Prince == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mon seul souci est pour la quête confiée par le bouffon. . .	}
+{	305	}{	Mettez fin à cette querelle ou je vous démembre. . .	}{	Mettez fin à cette querelle ou je vous démembre. . .	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Libérez le ver ou vous connaîtrez la mort ultime.	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	Je puis à peu près pardonner l'incompétence. Mais pas les menaces. Si vous voulez rester dans mes bonnes grâces, si vous voulez vraiment retrouver Tung, je vous suggère de faire ce que je demande.	}{	Je puis à peu près pardonner l'incompétence. Mais pas les menaces. Si vous voulez rester dans mes bonnes grâces, si vous voulez vraiment retrouver Tung, je vous suggère de faire ce que je demande.	}{	#	}{	npc.SetDisposition("Anger",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	C'est-à-dire ?	}{	C'est-à-dire ?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelle sera la nouvelle quête, ténébreuse ?	}
+{	313	}{	Ecoutez, vilaine, j'ai assez dansé pour vous. Je travaille pour le prince !	}{	Ecoutez, vilaine, j'ai assez dansé pour vous. Je travaille pour le prince !	}{	321	}{	G.Therese_Prince == 0	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Mon seul souci est pour la quête confiée par le bouffon. . .	}
+{	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	Vous croyez que je ne suis pas au courant ? C'est ma ville. Je sais tout ce qui s'y passe, de la frontière à la plage. Mais écoutez-moi bien, jeune vampire. Si vous voulez plaire à votre prince, faites ce que je vous dis. Cette fois, ce sera facile. 	}{	Vous croyez que je ne suis pas au courant ? C'est ma ville. Je sais tout ce qui s'y passe, de la frontière à la plage. Mais écoutez-moi bien, jeune vampire. Si vous voulez plaire à votre prince, faites ce que je vous dis. Cette fois, ce sera facile. 	}{	#	}{	npc.SetDisposition("Anger",1)	}{	G.Therese_Prince = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Que voulez-vous que je fasse ? 	}{	Que voulez-vous que je fasse ? 	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelle sera la nouvelle quête, ténébreuse ?	}
+{	323	}{	Tout est de la faute de Jeanette et Tung. 	}{	Tout est de la faute de Jeanette et Tung. 	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	La faute en incombe pour parts égales au ver et à l'ivoire.	}
+{	324	}{	J'ai une autre idée : je vous tue, je tue le prince, je tue tout le monde !	}{	J'ai une autre idée : je vous tue, je tue le prince, je tue tout le monde !	}{	361	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Je devrais peut-être incendier toute la ville et regarder les flammes vous lécher. . .	}
+{	325	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	Jeanette et Tung sont une Belle et une Bête bien bruyantes. A eux deux, ils ont presque renversé tous mes plans. Je peux contrôler Jeanette, mais une fois qu'elle a trouvé un allié, elle devient franchement problématique.	}{	Jeanette et Tung sont une Belle et une Bête bien bruyantes. A eux deux, ils ont presque renversé tous mes plans. Je peux contrôler Jeanette, mais une fois qu'elle a trouvé un allié, elle devient franchement problématique.	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Puis-je faire autre chose pour vous convaincre de mettre fin à cette dispute ?	}{	Puis-je faire autre chose pour vous convaincre de mettre fin à cette dispute ?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que dois-je faire pour que le ver sorte de sa cachette ?	}
+{	333	}{	Vous n'auriez pas dû sous-estimer Jeanette.	}{	Vous n'auriez pas dû sous-estimer Jeanette.	}{	341	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Vous sous-estimez la princesse blanche. . .	}
+{	334	}{	C'est votre problème, pas le mien. Moi, je suis en mission pour le prince.	}{	C'est votre problème, pas le mien. Moi, je suis en mission pour le prince.	}{	321	}{	G.Therese_Prince == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je ne me soucie que de la quête du bouffon. . .	}
+{	335	}{	Faudra-t-il que je vous force à mettre fin à cette querelle ?	}{	Faudra-t-il que je vous force à mettre fin à cette querelle ?	}{	311	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	De sombres choses vont vous échoir, si vous n'exécutez pas ma volonté. . .	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	La sous-estimer ? C'est un clown ! Une Colombine peinturlurée aux ordres de Tung ! Jeanette agit par caprice - par fantaisie. La sous-estimer. . . ne m'insultez pas !	}{	La sous-estimer ? C'est un clown ! Une Colombine peinturlurée aux ordres de Tung ! Jeanette agit par caprice - par fantaisie. La sous-estimer. . . ne m'insultez pas !	}{	#	}{	npc.SetDisposition("Anger",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	D'accord, d'accord ! Que puis-je faire pour rattraper mon erreur ?	}{	D'accord, d'accord ! Que puis-je faire pour rattraper mon erreur ?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelle sera ma pénitence ?	}
+{	343	}{	Attention à ce que vous me dites. Je ne vais pas accepter tout cela.	}{	Attention à ce que vous me dites. Je ne vais pas accepter tout cela.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles me font voir le sang et les os, ténébreuse. . .	}
+{	344	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	Vous n'êtes pas la première personne à tomber devant sa duplicité. J'aimerais faire une exception pour vous, mais c'est inexcusable. Si vous voulez revenir dans mes bonnes grâces, j'ai besoin que vous fassiez quelque chose pour moi.	}{	Vous n'êtes pas la première personne à tomber devant sa duplicité. J'aimerais faire une exception pour vous, mais c'est inexcusable. Si vous voulez revenir dans mes bonnes grâces, j'ai besoin que vous fassiez quelque chose pour moi.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	Que devrais-je faire ?	}{	Que devrais-je faire ?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelle sera la nouvelle quête, ténébreuse ?	}
+{	353	}{	Je m'amenderai avec joie. J'en veux mortellement à Jeanette.	}{	Je m'amenderai avec joie. J'en veux mortellement à Jeanette.	}{	371	}{	}{	G.Therese_Seduce = G.Therese_Seduce + 1	}{	}{	}{	}{	}{	}{	}{	Je ne désire rien tant que faire oublier la maudite fille blanche. 	}
+{	354	}{	Chargez-vous en vous-même. Je suis en mission pour le prince.	}{	Chargez-vous en vous-même. Je suis en mission pour le prince.	}{	321	}{	G.Therese_Prince == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mon seul souci est pour la quête confiée par le bouffon. . .	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Quoi ? Vous ne pouvez plus me dire ce que je dois faire, père ! Vous ne me direz plus jamais ce que je fois faire !	}{	Quoi ? Vous ne pouvez plus me dire ce que je dois faire, Mère ! Vous ne me direz plus jamais ce que je fois faire !	}{	#	}{	npc.SetDisposition("Therese",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	D'accord, d'accord, que puis-je faire pour rattraper cette erreur ?	}{	D'accord, d'accord, que puis-je faire pour rattraper cette erreur ?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelle action dois-je accomplir pour ma pénitence ?	}
+{	363	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	364	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	[Soupire, se reprend]J'ai proféré des menaces contre ma soeur, des menaces en l'air - qui la concernait, elle et ses scandaleux draps de satin. Elle les a prises très au sérieux, et m'évite. Je veux la retrouver et lui expliquer que ce n'était que la colère du moment qui parlait.	}{	[Soupire, se reprend]J'ai proféré des menaces contre ma soeur, des menaces en l'air - qui la concernait, elle et ses scandaleux draps de satin. Elle les a prises très au sérieux, et m'évite. Je veux la retrouver et lui expliquer que ce n'était que la colère du moment qui parlait.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	(Auto-Link)	}{	(Auto-Link)	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	373	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	374	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	Je lui ai demandé de me retrouver au restaurant Surfside, pour nous réconcilier, mais je serai retenue au club par mes autres devoirs. J'aimerais que vous alliez au restaurant à ma place pour l'assurer que je ne la menace pas du tout. Attendez-la à la dernière table, près des téléphones.	}{	Je lui ai demandé de me retrouver au restaurant Surfside, pour nous réconcilier, mais je serai retenue au club par mes autres devoirs. J'aimerais que vous alliez au restaurant à ma place pour l'assurer que je ne la menace pas du tout. Attendez-la à la dernière table, près des téléphones.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Therese_Quest = 3; pc.SetQuest("Diner",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	Je pars - alors la querelle est oubliée ?	}{	Je pars - alors la querelle est oubliée ?	}{	411	}{	}{	G.Therese_Questions = 2	}{	}{	}{	}{	}{	}{	}{	Cela a plus de tours que mon esprit. Je la trouverai, puis nous conclurons nos affaires. . .	}
+{	383	}{	Si le baron de Santa Monica veut revoir sa soeur, je lui ramène sa soeur.	}{	Si le baron de Santa Monica veut revoir sa soeur, je lui ramène sa soeur.	}{	401	}{	}{	G.Therese_Seduce = G.Therese_Seduce + 1; G.Therese_Questions = 2	}{	}{	}{	}{	}{	}{	}{	Des roses alors qu'elle fut si rosse, baronne. . .	}
+{	384	}{	Pourquoi vous ne plantez pas cette sale folle pour que ça ne se reproduise jamais ?	}{	Pourquoi vous ne plantez pas cette sale folle pour que ça ne se reproduise jamais ?	}{	391	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1; G.Therese_Questions = 2	}{	}{	}{	}{	}{	}{	}{	Dois-je lui faire voir le lever du soleil ?	}
+{	385	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	Jeanette est ma soeur et mon enfant. L'aviez-vous oublié ? Quel genre de monstre serais-je pour demander une telle action ? Vous n'avez pas plus le droit de faire cela que de le proposer. Sortez. Je veux qu'elle revienne.	}{	Jeanette est ma soeur et mon enfant. L'aviez-vous oublié ? Quel genre de monstre serais-je pour demander une telle action ? Vous n'avez pas plus le droit de faire cela que de le proposer. Sortez. Je veux qu'elle revienne.	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	Très bien. Je m'en occupe. A plus tard. . .	}{	Très bien. Je m'en occupe. A plus tard. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	393	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	394	}{	Si vous voulez vous ramollir, ça vous regarde. Je vais la retrouver. Au revoir.	}{	Si vous voulez vous ramollir, ça vous regarde. Je vais la retrouver. Au revoir.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	395	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	Pour toutes ses diversions insupportables et ses interruptions irritantes, je devrais être moins tolérante avec elle. Mais elle est ma soeur, et je dois être obligée de lui pardonner ses exagérations. Après tout, c'est moi qui l'ai étreinte. Je vous en prie. . . Faites vite.	}{	Pour toutes ses diversions insupportables et ses interruptions irritantes, je devrais être moins tolérante avec elle. Mais elle est ma soeur, et je dois être obligée de lui pardonner ses exagérations. Après tout, c'est moi qui l'ai étreinte. Je vous en prie. . . Faites vite.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	OK. Je m'en occuperai plus tard.	}{	OK. Je m'en occuperai plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	403	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	404	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	405	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	406	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	407	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	Je veux revoir ma soeur. Oui, j'annulerai cette querelle en la revoyant. Faites ce que je vous demande. 	}{	Je veux revoir ma soeur. Oui, j'annulerai cette querelle en la revoyant. Faites ce que je vous demande. 	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	413	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	414	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	[Soupir]J'ai besoin de parler à Jeanette face à face. Je n'ai pas le temps de vous expliquer.	}{	[Soupir]J'ai besoin de parler à Jeanette face à face. Je n'ai pas le temps de vous expliquer.	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	423	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	Je n'ai rien d'autre à vous dire. Je n'oublierai pas ce qui vient de se passer, mais je vous conseille de le faire. Si vous gardez le silence et ne vous mêlez plus de mes affaires, nous n'aurons jamais de différend. Et souvenez-vous que nous sommes dans ma ville. 	}{	Je n'ai rien d'autre à vous dire. Je n'oublierai pas ce qui vient de se passer, mais je vous conseille de le faire. Si vous gardez le silence et ne vous mêlez plus de mes affaires, nous n'aurons jamais de différend. Et souvenez-vous que nous sommes dans ma ville. 	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	433	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	434	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	435	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	436	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	Bonsoir. J'imagine que vous allez bien. Qu'est-ce qui vous ramène dans mon domaine ?	}{	Bonsoir. J'imagine que vous allez bien. Qu'est-ce qui vous ramène dans mon domaine ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	443	}{	Comment vont les choses à Santa Monica ?	}{	Comment vont les choses à Santa Monica ?	}{	451	}{	G.Story_State > 20	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame près de la mer. . .	}
+{	444	}{	Comment va votre ville ?	}{	Comment va votre ville ?	}{	461	}{	G.Story_State > 35	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de votre royaume, ténébreuse.	}
+{	445	}{	Il est plaisant de vous revoir, Therese, Au revoir.	}{	Il est plaisant de vous revoir, Therese, Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	446	}{	Vous aimez le pouvoir, hein ? Alors savourez-le. Au revoir.	}{	Vous aimez le pouvoir, hein ? Alors savourez-le. Au revoir.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Depuis le trépas de Jeanette, je n'ai aucun problème à administrer cette ville. En fait, mon allégeance a la Camarilla, et non aux anarchs, est à présent officielle. S'il arrivait quelque chose à LaCroix, j'aurais de bonnes chances d'être le prince suivant. . .	}{	Depuis le trépas de Jeanette, je n'ai aucun problème à administrer cette ville. En fait, mon allégeance a la Camarilla, et non aux anarchs, est à présent officielle. S'il arrivait quelque chose à LaCroix, j'aurais de bonnes chances d'être le prince suivant. . .	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Félicitations, Therese. Au revoir, Therese.	}{	Félicitations, Therese. Au revoir, Therese.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous partagerez peut-être son sort, ténébreuse. Adieu.	}
+{	453	}{	Alors personne n'a dû entendre parler de Jeanette. Au revoir, Therese.	}{	Alors personne n'a dû entendre parler de Jeanette. Au revoir, Therese.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	454	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	455	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	Je fais le ménage. Le Sabbat ne mettra plus jamais les pieds ici, vous pouvez me croire. Je suis enfin pleinement aux commandes de cette ville. 	}{	Je fais le ménage. Le Sabbat ne mettra plus jamais les pieds ici, vous pouvez me croire. Je suis enfin pleinement aux commandes de cette ville. 	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	Si vous avez un jour besoin d'un service, faites-le moi savoir. Au revoir, Therese. 	}{	Si vous avez un jour besoin d'un service, faites-le moi savoir. Au revoir, Therese. 	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre ombre est comme une encre de Chine. Adieu.	}
+{	463	}{	Vous dites cela d'une façon fort troublante. Au revoir, Therese.	}{	Vous dites cela d'une façon fort troublante. Au revoir, Therese.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	464	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	Le musée ! C'était mon vernissage. Vous pensiez que je ne l'apprendrais pas ?	}{	Le musée ! C'était mon vernissage. Vous pensiez que je ne l'apprendrais pas ?	}{	#	}{	npc.SetDisposition("Anger",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	Mais. . .	}{	Mais. . .	}{	481	}{	pc.GetQuestState("Slashterpiece") != 2	}{	pc.SetQuest("Slashterpiece",5)	}{	}{	}{	}{	}{	}{	}{	}
+{	473	}{	Attendez. . .	}{	Attendez. . .	}{	481	}{	G.Extra_Lines == 1 and pc.GetQuestState("Slashterpiece") == 2	}{	G.Gallery_Slashed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	474	}{	Je. . .	}{	Je. . .	}{	481	}{	G.Extra_Lines == 1 and pc.GetQuestState("Slashterpiece") == 2	}{	G.Gallery_Slashed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	475	}{	Mais. . .	}{	Mais. . .	}{	481	}{	pc.GetQuestState("Slashterpiece") == 2	}{	G.Gallery_Slashed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	La ferme ! Je pensais pouvoir contrôler ma soeur une fois Tung éliminé, mais rien n'a changé ! J'aurais dû me douter que vous tomberiez sous sa coupe comme tout le monde. Mais comment osez-vous ?	}{	La ferme ! Je pensais pouvoir contrôler ma soeur une fois Tung éliminé, mais rien n'a changé ! J'aurais dû me douter que vous tomberiez sous sa coupe comme tout le monde. Mais comment osez-vous ?	}{	#	}{	npc.SetDisposition("Anger",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	Ce n'est pas moi ! Je vous le jure !	}{	Ce n'est pas moi ! Je vous le jure !	}{	511	}{	G.Therese_Seduce >= 3	}{	}{	}{	}{	}{	}{	}{	}{	Je ne comprends pas ce que disent vos lèvres !	}
+{	483	}{	Ce n'est pas moi ! Je vous le jure !	}{	Ce n'est pas moi ! Je vous le jure !	}{	491	}{	G.Therese_Seduce < 3	}{	}{	}{	}{	}{	}{	}{	}{	Je ne comprends pas ce que disent vos lèvres !	}
+{	484	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	485	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Ne me mentez pas ! Jeanette m'a déjà tout avoué, même votre participation. C'était sans doute une idée de Tung ! Je m'occuperai d'eux plus tard. Mais cela n'excuse toujours pas ce que vous avez fait dans le musée.	}{	Ne me mentez pas ! Jeanette m'a déjà tout avoué, même votre participation. C'était sans doute une idée de Tung ! Je m'occuperai d'eux plus tard. Mais cela n'excuse toujours pas ce que vous avez fait dans le musée.	}{	#	}{	npc.SetDisposition("Anger",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	Mais je n'ai vraiment rien fait !	}{	Mais je n'ai vraiment rien fait !	}{	501	}{	not pc.HasItem("item_g_ghost_pendant")	}{	}{	}{	}{	}{	}{	}{	}{	Non ! Je ne suis pas l'âme qui a projeté cette ombre !	}
+{	493	}{	Je jure que je n'y suis pour rien ! Je vous ai même apporté l'objet d'Ocean House, tenez !	}{	Je jure que je n'y suis pour rien ! Je vous ai même apporté l'objet d'Ocean House, tenez !	}{	521	}{	Persuasion 3 & (pc.HasItem("item_g_ghost_pendant") and (not pc.HasItem("item_g_oh_diary") or G.Patch_Plus == 0))	}{	G.Therese_Liar = 1; pc.RemoveItem("item_g_ghost_pendant"); G.Therese_Seduce = G.Therese_Seduce + 2	}{	}{	}{	}{	}{	}{	}{	Je vous rapporte la babiole de l'océan. . .	}
+{	494	}{	Ce n'est pas moi. Mettez fin à cette querelle, ou bien. . .	}{	Ce n'est pas moi. Mettez fin à cette querelle, ou bien. . .	}{	311	}{	not pc.HasItem("item_g_ghost_pendant")	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Vos paroles sont comme des couteaux. Permettez que j'utilise les miens. Libérez le ver. VITE.	}
+{	495	}{	J'ai enfin trouvé ce satané objet de l'Ocean House. Tenez, prenez-le !	}{	J'ai enfin trouvé ce satané objet de l'Ocean House. Tenez, prenez-le !	}{	501	}{	Persuasion -3 & (pc.HasItem("item_g_ghost_pendant") and (not pc.HasItem("item_g_oh_diary") or G.Patch_Plus == 0))	}{	pc.SetQuest("Hotel",3); pc.SetQuest("Release the Spirit",3); pc.RemoveItem("item_g_ghost_pendant"); G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Mais, regardez, je vous rapporte la babiole de l'océan. . .	}
+{	496	}{	Je jure que je n'y suis pour rien ! Je vous ai même apporté l'objet d'Ocean House, tenez !	}{	Je jure que je n'y suis pour rien ! Je vous ai même apporté l'objet d'Ocean House, tenez !	}{	521	}{	Persuasion 3 & (pc.HasItem("item_g_ghost_pendant") and pc.HasItem("item_g_oh_diary") and G.Patch_Plus == 1)	}{	G.Therese_Liar = 1; pc.RemoveItem("item_g_ghost_pendant"); pc.RemoveItem("item_g_oh_diary"); G.Therese_Seduce = G.Therese_Seduce + 2	}{	}{	}{	}{	}{	}{	}{	Je vous rapporte la babiole de l'océan. . .	}
+{	497	}{	J'ai enfin trouvé ce satané objet de l'Ocean House. Tenez, prenez-le !	}{	J'ai enfin trouvé ce satané objet de l'Ocean House. Tenez, prenez-le !	}{	501	}{	Persuasion -3 & (pc.HasItem("item_g_ghost_pendant") and pc.HasItem("item_g_oh_diary") and G.Patch_Plus == 1)	}{	pc.SetQuest("Hotel",3); pc.SetQuest("Release the Spirit",3); pc.RemoveItem("item_g_ghost_pendant"); pc.RemoveItem("item_g_oh_diary"); G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Mais, regardez, je vous rapporte la babiole de l'océan. . .	}
+{	498	}{	Je jure que je n'y suis pour rien ! Je vous ai même apporté l'objet d'Ocean House, tenez !	}{	Je jure que je n'y suis pour rien ! Je vous ai même apporté l'objet d'Ocean House, tenez !	}{	521	}{	Persuasion 3 & (pc.HasItem("item_g_ghost_pendant") and pc.HasItem("item_g_oh_diary") and G.Patch_Plus == 1)	}{	G.Therese_Liar = 1; pc.RemoveItem("item_g_ghost_pendant"); G.Therese_Seduce = G.Therese_Seduce + 2	}{	}{	}{	}{	}{	}{	}{	Je vous rapporte la babiole de l'océan. . .	}
+{	499	}{	J'ai enfin trouvé ce satané objet de l'Ocean House. Tenez, prenez-le !	}{	J'ai enfin trouvé ce satané objet de l'Ocean House. Tenez, prenez-le !	}{	501	}{	Persuasion -3 & (pc.HasItem("item_g_ghost_pendant") and pc.HasItem("item_g_oh_diary") and G.Patch_Plus == 1)	}{	pc.SetQuest("Hotel",3); pc.SetQuest("Release the Spirit",3); pc.RemoveItem("item_g_ghost_pendant"); G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Mais, regardez, je vous rapporte la babiole de l'océan. . .	}
+{	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	Mon musée est détruit, vous m'entendez ? J'aimerais que vous fassiez amende honorable, ou si vous voulez m'assurer encore de votre innocence, accomplissez une autre tâche. . .	}{	Mon musée est détruit, vous m'entendez ? J'aimerais que vous fassiez amende honorable, ou si vous voulez m'assurer encore de votre innocence, accomplissez une autre tâche. . .	}{	#	}{	npc.SetDisposition("Anger",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	C'est-à-dire ?	}{	C'est-à-dire ?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quel est ce nouvel acte ?	}
+{	503	}{	Nous avions un accord !	}{	Nous avions un accord !	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Notre parole donnée ne contenait nulle clause. . .	}
+{	504	}{	Ce n'est pas moi. Mettez fin à cette querelle, ou bien. . .	}{	Ce n'est pas moi. Mettez fin à cette querelle, ou bien. . .	}{	311	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Libérez le ver ou je libérerai votre crâne de ses attaches de chair. . .	}
+{	505	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	Jeanette affirme que c'est vous - mais mettons que je vous croie. Après tout, vous avez agi avec raison et honnêteté jusqu'à maintenant. Vous voulez toujours que je mette fin à la querelle ?	}{	Jeanette affirme que c'est vous - mais mettons que je vous croie. Après tout, vous avez agi avec raison et honnêteté jusqu'à maintenant. Vous voulez toujours que je mette fin à la querelle ?	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	Oui.	}{	Oui.	}{	531	}{	not pc.HasItem("item_g_ghost_pendant")	}{	}{	}{	}{	}{	}{	}{	}{	Oui, le ver se tord d'impatience. . .	}
+{	513	}{	Oui. Et j'ai l'objet pris dans Ocean House.	}{	Oui. Et j'ai l'objet pris dans Ocean House.	}{	521	}{	pc.HasItem("item_g_ghost_pendant") and (not pc.HasItem("item_g_oh_diary") or G.Patch_Plus == 0)	}{	pc.RemoveItem("item_g_ghost_pendant"); G.Therese_Seduce = G.Therese_Seduce + 2	}{	}{	}{	}{	}{	}{	}{	Oui. Et je vous ai rapporté la babiole de l'océan, charmante ténébreuse. . .	}
+{	514	}{	A votre avis ?	}{	A votre avis ?	}{	531	}{	G.Extra_Lines == 1 and not pc.HasItem("item_g_ghost_pendant")	}{	}{	}{	}{	}{	}{	}{	}{	Bien sûr, ténébreuse.	}
+{	515	}{	Oui. Et j'ai l'objet pris dans Ocean House ainsi qu'un journal intime.	}{	Oui. Et j'ai l'objet pris dans Ocean House ainsi qu'un journal intime.	}{	521	}{	pc.HasItem("item_g_ghost_pendant") and pc.HasItem("item_g_oh_diary") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_ghost_pendant"); pc.RemoveItem("item_g_oh_diary"); G.Therese_Seduce = G.Therese_Seduce + 2	}{	}{	}{	}{	}{	}{	}{	Oui. Et je vous ai rapporté la babiole de l'océan, charmante ténébreuse. . .	}
+{	516	}{	Oui. Et j'ai aussi l'objet pris dans Ocean House.	}{	Oui. Et j'ai aussi l'objet pris dans Ocean House.	}{	521	}{	pc.HasItem("item_g_ghost_pendant") and pc.HasItem("item_g_oh_diary") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_ghost_pendant"); G.Therese_Seduce = G.Therese_Seduce + 2	}{	}{	}{	}{	}{	}{	}{	Oui. Et je vous ai rapporté la babiole de l'océan, charmante ténébreuse... }
+{	517	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	520	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	521	}{	Excellent. Je vous le prends. Toutefois. . .	}{	Excellent. Je vous le prends. Toutefois. . .	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	pc.SetQuest("Hotel",3); pc.SetQuest("Release the Spirit",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	(Auto-Link)	}{	(Auto-Link)	}{	531	}{	G.Therese_Liar == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	523	}{	(Auto-Link)	}{	(Auto-Link)	}{	511	}{	G.Therese_Liar == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	524	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Il y a un problème. Si Tung apprend que j'ai menacé Jeanette, ce qui est sans doute déjà le cas, il ne me croira sans doute pas. Donc, pour faire disparaître cette querelle, vous allez devoir convaincre Therese de me pardonner, avant tout.	}{	Il y a un problème. Si Tung apprend que j'ai menacé Jeanette, ce qui est sans doute déjà le cas, il ne me croira sans doute pas. Donc, pour faire disparaître cette querelle, vous allez devoir convaincre Therese de me pardonner, avant tout.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Therese_Respect = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	Et comment y parviendrai-je ?	}{	Et comment y parviendrai-je ?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Comment cela pourra-t-il se faire ?	}
+{	533	}{	Pour la vampire la plus puissante de Santa Monica, ce sera un plaisir.	}{	Pour la vampire la plus puissante de Santa Monica, ce sera un plaisir.	}{	371	}{	}{	G.Therese_Seduce = G.Therese_Seduce + 1	}{	}{	}{	}{	}{	}{	}{	Je m'allie à celle qui détient le pouvoir. Commandez-moi, sombre fille. . .	}
+{	534	}{	Pas question. Je ne veux plus rien avoir à faire avec l'une ou l'autre de vous deux.	}{	Pas question. Je ne veux plus rien avoir à faire avec l'une ou l'autre de vous deux.	}{	541	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Je me lasse des vicissitudes des filles de Janus.	}
+{	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	536	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	Vous savez, quand vous me parlez de la sorte, j'ai presque envie de croire que vous êtes coupable du saccage de mon musée. Alors, une dernière fois - voulez-vous arranger les choses avec ma soeur ?	}{	Vous savez, quand vous me parlez de la sorte, j'ai presque envie de croire que vous êtes coupable du saccage de mon musée. Alors, une dernière fois - voulez-vous arranger les choses avec ma soeur ?	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Je perdais la tête. Bien sûr. Que faut-il faire ?	}{	Je perdais la tête. Bien sûr. Que faut-il faire ?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bien sûr. Comment y parviendrai-je ?	}
+{	543	}{	Et je vous le répète - je ne veux plus vous voir, votre soeur ou vous.	}{	Et je vous le répète - je ne veux plus vous voir, votre soeur ou vous.	}{	551	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Je me désolidarise des jumelles maléfiques. . .	}
+{	544	}{	Mettez fin à votre querelle immédiatement, ou je vous y forcerai.	}{	Mettez fin à votre querelle immédiatement, ou je vous y forcerai.	}{	311	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Libérez le ver ou je libérerai votre crâne de ses attaches de chair. . .	}
+{	545	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	546	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	547	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	548	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	Laissez-moi vous expliquer la situation. Soit vous le faites et je vous absous, ou vous refusez, et je pense que vous avez effectivement détruit mon musée. Et dans ce cas, je ne vous aiderai pas à trouver Tung.	}{	Laissez-moi vous expliquer la situation. Soit vous le faites et je vous absous, ou vous refusez, et je pense que vous avez effectivement détruit mon musée. Et dans ce cas, je ne vous aiderai pas à trouver Tung.	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	Présenté comme ça. . . Que puis-je bien faire ?	}{	Présenté comme ça. . . Que puis-je bien faire ?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les esclaves n'ont aucun choix. Commandez-moi, ténébreuse. . .	}
+{	553	}{	Bien, nous ferons comme vous l'entendez. Peste.	}{	Bien, nous ferons comme vous l'entendez. Peste.	}{	371	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	554	}{	Mettez fin à votre querelle immédiatement, ou je vous y forcerai.	}{	Mettez fin à votre querelle immédiatement, ou je vous y forcerai.	}{	311	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Libérez le ver ou je libérerai votre crâne de ses attaches de chair. . .	}
+{	555	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	556	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	558	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	Je regrette terriblement tout cela. Ma soeur était absolument furieuse quand vous avez refusé de l'aider, alors elle a envoyé ces hommes pour vous tuer. Mais je vais m'assurer que cela ne se reproduira pas. Passez me voir, et nous règlerons l'histoire de Tung.	}{	Je regrette terriblement tout cela. Ma soeur était absolument furieuse quand vous avez refusé de l'aider, alors elle a envoyé ces hommes pour vous tuer. Mais je vais m'assurer que cela ne se reproduira pas. Passez me voir, et nous règlerons l'histoire de Tung.	}{	#	}{	}{	pc.SetQuest("Tourette",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	(Auto-Link)	}{	(Auto-Link)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	563	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	564	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	565	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	566	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	Bien sûr que non ! Comme tu ne travaillais pas avec lui.	}{	Bien sûr que non ! Comme tu ne travaillais pas avec lui.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	573	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	574	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	575	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	576	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	577	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	Tellement vulgaire que je ne peux parfois même pas te regarder, dévergondée !	}{	Tellement vulgaire que je ne peux parfois même pas te regarder, dévergondée !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	583	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	584	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	585	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	586	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	587	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	Rien que la vue de toi, de cette moue vicieuse et peinturlurée masquant un cerveau malade et pervers. . . Péché ! Tu n'as aucune honte !	}{	Rien que la vue de toi, de cette moue vicieuse et peinturlurée masquant un cerveau malade et pervers. . . Péché ! Tu n'as aucune honte !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	593	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	594	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	595	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	596	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	597	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	598	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	599	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	600	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	601	}{	Vas-y, moque-toi de moi. Fais tes plaisanteries, raille mes allures. Cela te va bien. Tout le monde se rit de toi.	}{	Vas-y, moque-toi de moi. Fais tes plaisanteries, raille mes allures. Cela te va bien. Tout le monde se rit de toi.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	603	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	604	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	605	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	Dois-je appeler cette oie une truie, en plus ?	}{	Dois-je appeler cette oie une truie, en plus ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	613	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	614	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	615	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	616	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	617	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	618	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	619	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	620	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	En quoi cela diffère-t-il de la façon dont tu as traité notre père ?	}{	En quoi cela diffère-t-il de la façon dont tu as traité notre père ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	623	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	624	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	625	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	626	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	627	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	628	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	629	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	630	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	631	}{	Ne dis pas un mot sur père !	}{	Ne dis pas un mot sur père !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	633	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	634	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	635	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	636	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	637	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	638	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	640	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	641	}{	Au moins lui m'aimait.	}{	Au moins lui m'aimait.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	643	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	644	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	645	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	646	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	647	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	648	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	650	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	651	}{	C'est ça, Jeanette. Fuis la vérité. Je m'occuperai de tout, comme toujours.	}{	C'est ça, Jeanette. Fuis la vérité. Je m'occuperai de tout, comme toujours.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	652	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	653	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	654	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	655	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	656	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	657	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	658	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	659	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	660	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	661	}{	Avant que j'oublie, prenez cela. La seule façon d'atteindre Ocean House à cette heure de la nuit est de passer par un tunnel dans les égouts. Il vous faudra cette clé pour ouvrir la porte.	}{	Avant que j'oublie, prenez cela. La seule façon d'atteindre Ocean House à cette heure de la nuit est de passer par un tunnel dans les égouts. Il vous faudra cette clé pour ouvrir la porte.	}{	#	}{	}{	pc.GiveItem("item_k_oceanhouse_sewer_key"); G.Therese_Questions = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	Des égouts ? Pas de souci.	}{	Des égouts ? Pas de souci.	}{	241	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	663	}{	Des égouts ? Vous comptez vraiment me faire patauger dans une telle saleté ?	}{	Des égouts ? Vous comptez vraiment me faire patauger dans une telle saleté ?	}{	171	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	664	}{	Si le travail ne peut se faire qu'à ce prix. . .	}{	Si le travail ne peut se faire qu'à ce prix. . .	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ferai ce qu'il faudra, ténébreuse. . .	}
+{	665	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	666	}{	Des égouts ? Vous exagérez là.	}{	Des égouts ? Vous exagérez là.	}{	171	}{	not IsClan(pc,"Malkavian") and not IsClan(pc,"Toreador") and not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	667	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	668	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	669	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	670	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	671	}{	[Soupir]. . .	}{	[Soupir]. . .	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	672	}{	Pourquoi haïssez-vous Bertram Tung ?	}{	Pourquoi haïssez-vous Bertram Tung ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi tant de haine entre le ver et vous ?	}
+{	673	}{	Parlez-moi de votre soeur.	}{	Parlez-moi de votre soeur.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de votre soeur, la princesse blanche.	}
+{	674	}{	Je m'occupe de votre problème à l'Ocean House. Que faut-il faire ?	}{	Je m'occupe de votre problème à l'Ocean House. Que faut-il faire ?	}{	191	}{	G.Therese_Quest == 0	}{	G.Therese_Questions = 0	}{	}{	}{	}{	}{	}{	}{	Je me rends dans votre maison de l'océan. Que dois-je y faire ?	}
+{	675	}{	Que dois-je faire à l'Ocean House Hotel ?	}{	Que dois-je faire à l'Ocean House Hotel ?	}{	191	}{	G.Therese_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Quel est l'acte à accomplir dans la maison de l'océan ?	}
+{	676	}{	J'ai changé d'avis. Au revoir.	}{	J'ai changé d'avis. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est parti. Mon corps le rejoint. 	}
+{	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	678	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	679	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	680	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	681	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	682	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	683	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	684	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	685	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	686	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	687	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	688	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	689	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	690	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	691	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	692	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	693	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	694	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	695	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	696	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	697	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	698	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	699	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	700	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	701	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	702	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	703	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	704	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	705	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	706	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	707	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	708	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	709	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	710	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	711	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	712	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	713	}{	(Starting Condition)	}{	}{	431	}{	G.Jeanette_Dead == 1 and G.Therese_Side < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	714	}{	(Starting Condition)	}{	}{	441	}{	G.Jeanette_Dead == 1 and G.Therese_Side >= 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	715	}{	(Starting Condition)	}{	}{	421	}{	G.Therese_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	716	}{	(Starting Condition)	}{	}{	251	}{	G.Jeanette_Refuse == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	717	}{	(Starting Condition)	}{	}{	251	}{	G.Jeanette_Refuse == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	718	}{	(Starting Condition)	}{	}{	251	}{	G.Jeanette_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	719	}{	(Starting Condition)	}{	}{	241	}{	G.Therese_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	720	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

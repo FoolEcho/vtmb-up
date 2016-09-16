@@ -1,0 +1,84 @@
+TerminalDefinition
+{
+	"screen saver"		"Nocturne Theater"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""						// these surround the command prompt (2 characters), changed by wesp
+
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Nocturne Theater"  
+		"line1"		"Qu'est-ce que l'art dramatique"
+
+	}
+	
+	SubDir
+	{
+		"name"			"Caméra"	//(128 characters)
+		"description"		"Caméras du réseau"	
+		"dependency"		"G.Shubs_Email == 2"
+
+		Function
+		{
+			"name"		"aucune caméra"
+			"description"	"activation caméra"	
+			"runtext"	"aucune caméra détectée"
+			"dependency"	"G.Shubtwo_Camera == 0"
+		}
+
+		Function
+		{
+			"name"		"net cam"
+			"description"	"activation caméra"	
+			"runtext"	"caméra détectée : activée"
+			"dependency"	"G.Shubtwo_Camera == 1"
+			"runscript"	"G.Shubtwo_Camera = 2"
+		}
+	}
+
+	SubDir
+	{
+		"name"			"Net Security"	//(128 characters)
+		"password"		"Break a Leg"
+		"description"		"Connexions disponibles"
+		"dependency"		"G.Shubs_Email == 2"
+
+		Function
+		{
+			"name"		"conn 1"
+			"description"	"debug"
+			"runtext"	"aucune connexion disponible"
+			"dependency"	"G.Shubtwo_Camera <= 1"
+		}
+
+		Function
+		{
+			"name"		"schrecknet"
+			"description"	"activation hub"
+			//changed by dan_upright 29/11/04
+			"dependency"	"G.Shubs_Botch == 0 and G.Shubtwo_Camera == 2"
+			//changes end
+			"runtext"	"schrecknet hub enabled:
+
+
+Tu es un vrai James Bond. Vérifie tes e-mails. . . Je reste en contact.
+
+>m1tn1ck<"
+			"runscript"	"G.Shubs_Act = 2; G.Shubtwo_Camera == 3; mitSetQuestFive()"	// changed by wesp
+		}
+
+		Function
+		{
+			"name"		"schrecknet"
+			"description"	"socket 1"
+			//changed by dan_upright 29/11/04
+			"dependency"	"G.Shubs_Botch == 1 and G.Shubtwo_Camera == 2"
+			//changes end
+			"runtext"	"Hub schrecknet d?sactiv? :
+
+CA CRAINT. T'AS TOUT FAIT FOIRER, IMBECILE. TU PEUX M'OUBLIER.
+
+>m1tn1ck<"
+		}
+	}
+}

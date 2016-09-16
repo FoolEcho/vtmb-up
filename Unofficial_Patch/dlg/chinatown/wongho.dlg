@@ -1,0 +1,698 @@
+{	1	}{	[désespéré, paniqué]Ils l'ont prise ! Ils l'ont prise !	}{	[désespéré, paniqué]Ils l'ont prise ! Ils l'ont prise !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Qui a-t-on pris ?	}{	Qui a-t-on pris ?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Que s'est-il passé ?	}{	Que s'est-il passé ?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Mais qu'est-ce qui se passe par ici ?	}{	Mais qu'est-ce qui se passe par ici ?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Ah ! Votre trésor le plus précieux vous a été ôté !	}{	Ah ! Votre trésor le plus précieux vous a été ôté !	}{	641	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[désespéré, paniqué]Kiki, ma fille. Ils l'ont kidnappée. Ils ont appelé pour dire que Wong Ho avait dérangé les Tong pour la dernière fois.	}{	[désespéré, paniqué]Kiki, ma fille. Ils l'ont kidnappée. Ils ont appelé pour dire que Wong Ho avait dérangé les Tong pour la dernière fois.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Tong_Known = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Ce n'est peut-être pas le moment, mais Ming-Xiao m'envoie vous parler.	}{	Ce n'est peut-être pas le moment, mais Ming-Xiao m'envoie vous parler.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Ah oui ? Bon, moi aussi j'ai des problèmes. C'est Ming-Xiao qui m'envoie.	}{	Ah oui ? Bon, moi aussi j'ai des problèmes. C'est Ming-Xiao qui m'envoie.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	[se reprend]Ming-Xiao ? Oh, bien sûr. Veuillez me pardonner, mais comme vous le voyez je suis dans une situation terrible. Je suis Wong Ho, propriétaire du Red Dragon, et conseiller municipal de Chinatown. Pardonnez-moi pour mon comportement si peu civil.	}{	[se reprend]Ming-Xiao ? Oh, bien sûr. Veuillez me pardonner, mais comme vous le voyez je suis dans une situation terrible. Je suis Wong Ho, propriétaire du Red Dragon, et conseiller municipal de Chinatown. Pardonnez-moi pour mon comportement si peu civil.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Je comprends. Que vous arrive-t-il, Wong Ho ?	}{	Je comprends. Que vous arrive-t-il, Wong Ho ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dites-moi votre histoire. . .	}
+{	23	}{	Ca ira. Pour cette fois. Et maintenant, que vous arrive-t-il ?	}{	Ca ira. Pour cette fois. Et maintenant, que vous arrive-t-il ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez, et je fermerai l'œil sur votre entêtement. . .	}
+{	24	}{	Je n'ai pas le temps pour les politesses d'usage. Je cherche quelqu'un, et j'ai besoin de votre aide.	}{	Je n'ai pas le temps pour les politesses d'usage. Je cherche quelqu'un, et j'ai besoin de votre aide.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche mes propres réponses dans cette maison de miroirs. . .	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Le gang de rue des Tong de Chinatown vient d'entrer par effraction dans mon restaurant pour kidnapper ma fille. Les Tong sont de plus en plus audacieux. Et maintenant ils ont ma Kiki. . .	}{	Le gang de rue des Tong de Chinatown vient d'entrer par effraction dans mon restaurant pour kidnapper ma fille. Les Tong sont de plus en plus audacieux. Et maintenant ils ont ma Kiki. . .	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	Whisper("Quest")	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Ca met papa en colère. Vous savez où elle est ? Je vais aller la chercher. . .	}{	Ca met maman en colère. Vous savez où elle est ? Je vais aller la chercher. . .	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais trouver votre trésor perdu. Vous savez où il est enterré ?	}
+{	33	}{	Vous avez des ennemis ?	}{	Vous avez des ennemis ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quels ennemis projettent leur ombre sur votre huis ?	}
+{	34	}{	Pourquoi les Tongs veulent votre fille ?	}{	Pourquoi les Tongs veulent votre fille ?	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	Je n'ai pas le temps d'écouter vos problèmes de famille. J'ai quelques questions. . .	}{	Je n'ai pas le temps d'écouter vos problèmes de famille. J'ai quelques questions. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche mon propre trésor perdu. . .	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Je suis un homme important à Chinatown. J'ai beaucoup d'alliés, mais il y en a tout autant qui aimeraient me voir chuter. Les Tong ont choisi la voie des pleutres, et utilisent ma fille comme monnaie d'échange.	}{	Je suis un homme important à Chinatown. J'ai beaucoup d'alliés, mais il y en a tout autant qui aimeraient me voir chuter. Les Tong ont choisi la voie des pleutres, et utilisent ma fille comme monnaie d'échange.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	On dirait qu'il faut du bois. Vous savez où ils sont ?	}{	On dirait que je vais avoir besoin de dérouiller du Tong. Vous savez où ils sont ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je devrais peut-être revêtir la robe de la mort. Où est ce trésor perdu ?	}
+{	43	}{	Monnaie d'échange contre quoi ?	}{	Monnaie d'échange contre quoi ?	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Qu'avez-vous que les Tong veulent ?	}{	Qu'avez-vous que les Tong veulent ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Avez-vous des jouets pour ces enfants perdus ?	}
+{	45	}{	Tout ceci est très intéressant, mais j'ai moi aussi à faire.	}{	Tout ceci est très intéressant, mais j'ai moi aussi à faire.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche mes propres réponses dans cette maison de miroirs. . .	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Je ne sais pas. Les Tong me contacteront sans doute très bientôt. Ils auront des demandes à formuler, et nous en saurons sans doute plus à ce moment-là.	}{	Je ne sais pas. Les Tong me contacteront sans doute très bientôt. Ils auront des demandes à formuler, et nous en saurons sans doute plus à ce moment-là.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Savez-vous où ils ont emmené votre fille ?	}{	Savez-vous où ils ont emmené votre fille ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où ont-ils emporté votre trésor ?	}
+{	53	}{	Ecoutez, Wong Ho. J'ai besoin de vous parler de quelque chose de très important.	}{	Ecoutez, Wong Ho. J'ai besoin de vous parler de quelque chose de très important.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche mes propres réponses dans cette maison de miroirs. . .	}
+{	54	}{	La sécurité de votre fille ne me concerne pas. Pour l'heure, j'ai besoin de votre aide.	}{	La sécurité de votre fille ne me concerne pas. Pour l'heure, j'ai besoin de votre aide.	}{	61	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Oui, et j'ai très envie de vous aider de mon mieux. Mais comme vous le voyez, ma fille. . . Rien n'a d'importance tant que ma fille n'est pas à mes côtés. Je ne veux pas vous manquer de respect, à vous ou Ming-Xiao, mais je ne peux pas vous aider tant que cette affaire n'est pas réglée.	}{	Oui, et j'ai très envie de vous aider de mon mieux. Mais comme vous le voyez, ma fille. . . Rien n'a d'importance tant que ma fille n'est pas à mes côtés. Je ne veux pas vous manquer de respect, à vous ou Ming-Xiao, mais je ne peux pas vous aider tant que cette affaire n'est pas réglée.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Je comprends. Vous savez où les Tong l'ont emmenée ?	}{	Je comprends. Vous savez où les Tong l'ont emmenée ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où ont-ils emporté votre trésor ?	}
+{	63	}{	Je vais perdre patience. Vous savez où elle est, au moins ?	}{	Je vais perdre patience. Vous savez où elle est, au moins ?	}{	71	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Non. Les Tong ont beaucoup de. . . euh, attendez. Excusez-moi.	}{	Non. Les Tong ont beaucoup de. . . euh, attendez. Excusez-moi.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Auto-Link)	}{	(Auto-Link)	}{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	Allô, Zhao ! Hein ? Oui ! Comment as-tu. . . Ah, bien sûr, je vois. . . Merci, mon ami. Ta dette a été remboursée au centuple. Oui, bien sûr. Au revoir.	}{	Allô, Zhao ! Hein ? Oui ! Comment as-tu. . . Ah, bien sûr, je vois. . . Merci, mon ami. Ta dette a été remboursée au centuple. Oui, bien sûr. Au revoir.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	Cela ne ressemble pas aux Tong.	}{	Cela ne ressemble pas aux Tong.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce n'était pas les enfants perdus, mais qui ?	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Quelqu'un qui me devait une longue dette, et qui la payait. Je sais où les Tong gardent ma fille.	}{	Quelqu'un qui me devait une longue dette, et qui la payait. Je sais où les Tong gardent ma fille.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Dites-moi où. Et quelqu'un ferait mieux d'appeler la police. . .	}{	Dites-moi où. Et quelqu'un ferait mieux d'appeler la police. . .	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je peux peut-être vous aider à trouver cette cargaison précieuse. . .	}
+{	83	}{	Bien. Maintenant j'ai besoin de votre aide pour résoudre un autre problème. . .	}{	Bien. Maintenant j'ai besoin de votre aide pour résoudre un autre problème. . .	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche mes propres réponses dans cette maison de miroirs. . .	}
+{	84	}{	Euh, félicitations. A présent, parlons affaires, vous et moi.	}{	Euh, félicitations. A présent, parlons affaires, vous et moi.	}{	91	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Je regrette, mais tant que Kiki ne me sera pas rendue, je ne pourrai pas vous aider.	}{	Je regrette, mais tant que Kiki ne me sera pas rendue, je ne pourrai pas vous aider.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Très bien. Je vais piétiner ces Tong. Où diable est-elle ?	}{	Très bien. Je vais piétiner ces Tong. Où diable est-elle ?	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je peux peut-être vous aider à trouver cette cargaison précieuse. . .	}
+{	93	}{	Merde ! Et qu'est-ce que je vais faire en attendant ?	}{	Merde ! Et qu'est-ce que je vais faire en attendant ?	}{	101	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	Je ne pense pas que ce soit une bonne idée. Ming-Xiao ne sera pas contente.	}{	Je ne pense pas que ce soit une bonne idée. Ming-Xiao ne sera pas contente.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	La maîtresse des miroirs sera mécontente. . .	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Hmmm. Votre venue ici est peut-être plus importante qu'il n'y paraît. Ming-Xiao est une femme sage, une femme sainte qui parle souvent aux dieux. Peut-être voit-elle que nos destins sont liés.	}{	Hmmm. Votre venue ici est peut-être plus importante qu'il n'y paraît. Ming-Xiao est une femme sage, une femme sainte qui parle souvent aux dieux. Peut-être voit-elle que nos destins sont liés.	}{	#	}{	}{	G.Wong_ZQ = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Comment ça ?	}{	Comment ça ?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne sais pas si je suis en train de lire cette carte. . .	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Réfléchissez. Je suis sûr que les Tong surveillent mes faits et gestes. Mais vous, ils ne vous connaissent pas. Nous pouvons peut-être utiliser cela à notre avantage.	}{	Réfléchissez. Je suis sûr que les Tong surveillent mes faits et gestes. Mais vous, ils ne vous connaissent pas. Nous pouvons peut-être utiliser cela à notre avantage.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Parfait. En quoi puis-je vous aider ?	}{	Parfait. En quoi puis-je vous aider ?	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je pourrais peut-être devenir l'aventurier de cette arche perdue. . .	}
+{	113	}{	Quoi ? Comment ?	}{	Quoi ? Comment ?	}{	121	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	Ca ne me dit rien qui vaille.	}{	Ca ne me dit rien qui vaille.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ces paroles ont un écho sombre à mes oreilles. . .	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Kiki est retenue prisonnière dans un salon de massage appelé le Lotus Blossom. Si vous me la ramenez, je vous aiderai de toutes les manières possibles.	}{	Kiki est retenue prisonnière dans un salon de massage appelé le Lotus Blossom. Si vous me la ramenez, je vous aiderai de toutes les manières possibles.	}{	#	}{	}{	G.WongHo_Kiki = 1; pc.SetQuest("Kiki",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Bien sûr. Je vous la ramène saine et sauve.	}{	Bien sûr. Je vous la ramène saine et sauve.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai avec ce trésor précieux. . .	}
+{	123	}{	Très bien. Mais ensuite, nous parlerons affaires.	}{	Très bien. Mais ensuite, nous parlerons affaires.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce trésor dans votre main, et les réponses sur vos lèvres. . .	}
+{	124	}{	Peut-être.	}{	Peut-être.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je réfléchirai sur cet obstacle. . .	}
+{	125	}{	On verra. Quelles conneries ! Bon, voilà ce que j'ai besoin de savoir.	}{	On verra. Quelles conneries ! Bon, voilà ce que j'ai besoin de savoir.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non ! J'ai besoin de réponses pour mes propres fouilles. . .	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Merci. Je vous attends ici jusqu'à votre retour. Frappez vite. Les Tong ne s'attendent pas à une réaction aussi rapide. Bonne chance, camarade.	}{	Merci. Je vous attends ici jusqu'à votre retour. Frappez vite. Les Tong ne s'attendent pas à une réaction aussi rapide. Bonne chance, camarade.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Je ne peux parler de rien d'autre jusqu'à ce que Kiki soit en sécurité. Je reste ici, j'attends les instructions des Tong. Au revoir.	}{	Je ne peux parler de rien d'autre jusqu'à ce que Kiki soit en sécurité. Je reste ici, j'attends les instructions des Tong. Au revoir.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	143	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Bonjour. Vous avez trouvé Kiki ? Elle va bien ?	}{	Bonjour. Vous avez trouvé Kiki ? Elle va bien ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Non, j'y travaille encore.	}{	Non, j'y travaille encore.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non, le. . .	}
+{	153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Alors que les dieux éclairent votre route et vous guident dans le sauvetage de ma fille.	}{	Alors que les dieux éclairent votre route et vous guident dans le sauvetage de ma fille.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Ah, bienvenue mon ami. J'ai envers vous une grande dette de gratitude ! Vous m'avez rendu mon plus grand trésor. Kiki m'a raconté comment vous l'avez sauvée. Vous êtes un homme doué d'un grand courage, et d'un grand honneur. Merci.	}{	Ah, bienvenue mon amie. J'ai envers vous une grande dette de gratitude ! Vous m'avez rendu mon plus grand trésor. Kiki m'a raconté comment vous l'avez sauvée. Vous êtes une femme douée d'un grand courage, et d'un grand honneur. Merci.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	pc.SetQuest("Kiki",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Bien sûr. Vous avez appris pourquoi les Tong l'avaient enlevée ?	}{	Bien sûr. Vous avez appris pourquoi les Tong l'avaient enlevée ?	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi les enfants perdus ont-il pris vos trésors ?	}
+{	173	}{	C'était le moins que je pouvais faire. Et maintenant, pouvez-vous m'aider ?	}{	C'était le moins que je pouvais faire. Et maintenant, pouvez-vous m'aider ?	}{	251	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	Pas de problème. Bien, discutons sérieusement à présent.	}{	Pas de problème. Bien, discutons sérieusement à présent.	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Gardez vos remerciements et donnez-moi vos réponses. . .	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Non. Je ne sais toujours pas pourquoi ils avaient enlevé Kiki. Mais je crains que la raison dépasse même les Tong.	}{	Non. Je ne sais toujours pas pourquoi ils avaient enlevé Kiki. Mais je crains que la raison dépasse même les Tong.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Comment cela ?	}{	Comment ça ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles sont légèrement opaques. . .	}
+{	183	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	J'essaie depuis longtemps de nettoyer Chinatown. Le travail est difficile, mais la communauté s'est ralliée à ma cause, et nous avons commencé à reconquérir les rues. Les commerces ont rouvert, les familles sont revenues chez elles.	}{	J'essaie depuis longtemps de nettoyer Chinatown. Le travail est difficile, mais la communauté s'est ralliée à ma cause, et nous avons commencé à reconquérir les rues. Les commerces ont rouvert, les familles sont revenues chez elles.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Que s'est-il passé ? Les Tong ont l'air plus forts que jamais.	}{	Que s'est-il passé ? Les Tong ont l'air plus forts que jamais.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ces enfants perdus sont forts. . .	}
+{	193	}{	On dirait que vous n'avez pas tout nettoyé.	}{	On dirait que vous n'avez pas tout nettoyé.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il semble que les scarabées soient retournés dans leur panier. . .	}
+{	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Oui. Je pensais que les Tong étaient presque tous partis. Mais il s'est passé quelque chose. Leurs rangs ont recommencé à grossir, et soudain ils avaient beaucoup d'argent pour acheter des armes. La drogue et la violence ont suivi. C'est presque pire qu'avant.	}{	Oui. Je pensais que les Tong étaient presque tous partis. Mais il s'est passé quelque chose. Leurs rangs ont recommencé à grossir, et soudain ils avaient beaucoup d'argent pour acheter des armes. La drogue et la violence ont suivi. C'est presque pire qu'avant.	}{	#	}{	}{	Whisper("Moaning")	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Il doit y avoir quelqu'un derrière tout cela.	}{	Il doit y avoir quelqu'un derrière tout cela.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qui est la main qui tire les ficelles ?	}
+{	203	}{	Qui les finance ?	}{	Qui les finance ?	}{	211	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	C'est triste à entendre. Vous pouvez m'aider avec mon problème, à présent ?	}{	C'est triste à entendre. Vous pouvez m'aider avec mon problème, à présent ?	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Penchons-nous sur mon épreuve. . .	}
+{	205	}{	Cette histoire commence à me fatiguer. J'ai besoin de votre aide.	}{	Cette histoire commence à me fatiguer. J'ai besoin de votre aide.	}{	251	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Je ne sais pas. Mais il y a un changement dans l'air. Je médite, mais mon esprit n'arrive pas à trouver le repos. Les paroles du I Ching sont obscures. On dirait que tout a changé depuis que, euh. . .	}{	Je ne sais pas. Mais il y a un changement dans l'air. Je médite, mais mon esprit n'arrive pas à trouver le repos. Les paroles du I Ching sont obscures. On dirait que tout a changé depuis que, euh. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Quoi ? Depuis que quoi ?	}{	Quoi ? Depuis que quoi ?	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Donnez voix à vos vexations. . .	}
+{	213	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Je regrette, j'ai trop parlé.	}{	Je regrette, j'ai trop parlé.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Allons, vous pouvez me faire confiance, Wong Ho.	}{	Allons, vous pouvez me faire confiance, Wong Ho.	}{	231	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	Mettez votre confiance dans ma psyché brisée. . .	}
+{	223	}{	Dites-le moi !	}{	Dites-le moi !	}{	231	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	Parlez ou les choses vont se gâter.	}{	Parlez ou les choses vont se gâter.	}{	231	}{	Intimidate 7	}{	}{	}{	}{	}{	}{	}{	}{	Parlez sans contrainte, ou je vous ouvrirai de force. . .	}
+{	225	}{	Bien. J'ai besoin de votre aide.	}{	Bien. J'ai besoin de votre aide.	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors penchons-nous sur mon dilemme. . .	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	[hésitant]Eh bien, on dirait que tout a changé depuis que Ming-Xiao est revenue pour ouvrir le Temple de la Vertu Dorée. C'était il y a trois ans. Je ne cherche pas à insinuer qu'elle a quoi que ce soit à voir avec la résurgence des Tong. Mais ces deux événements paraissent coïncider.	}{	[hésitant]Eh bien, on dirait que tout a changé depuis que Ming-Xiao est revenue pour ouvrir le Temple de la Vertu Dorée. C'était il y a trois ans. Je ne cherche pas à insinuer qu'elle a quoi que ce soit à voir avec la résurgence des Tong. Mais ces deux événements paraissent coïncider.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Je doute que Ming-Xiao ait quelque chose à voir là-dedans. Vous pouvez m'aider, à présent ?	}{	Je doute que Ming-Xiao ait quelque chose à voir là-dedans. Vous pouvez m'aider, à présent ?	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	La maîtresse des miroirs ne vous tromperait jamais. . .	}
+{	233	}{	Intéressant. Certains disent que les coïncidences n'existent pas, Wong Ho.	}{	Intéressant. Certains disent que les coïncidences n'existent pas, Wong Ho.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai appris à me fier aux nombreuses voix sous mon crâne. . .	}
+{	234	}{	Ouvrez les yeux. On vous manipule, comme des pièces d'échecs chinois.	}{	Ouvrez les yeux. On vous manipule, comme des pièces d'échecs chinois.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre cécité est aussi profonde que ma folie. . .	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Non ! Je refuse d'en entendre davantage. Ming-Xiao est une conseillère à qui je fais toute confiance depuis qu'elle est arrivée. Je lui confierais ma vie.	}{	Non ! Je refuse d'en entendre davantage. Ming-Xiao est une conseillère à qui je fais toute confiance depuis qu'elle est arrivée. Je lui confierais ma vie.	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Bon, bon. Mais parlons des renseignements dont j'ai besoin.	}{	Bon, bon. Mais parlons des renseignements dont j'ai besoin.	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors penchons-nous sur mon dilemme. . .	}
+{	243	}{	Gardez la tête dans le sable si vous voulez. Bon, et mon problème à moi ?	}{	Gardez la tête dans le sable si vous voulez. Bon, et mon problème à moi ?	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vois votre tête sur un plateau de jade. A présent, travaillons à mes propres problèmes. . .	}
+{	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Bien sûr. Que puis-je faire pour vous ?	}{	Bien sûr. Que puis-je faire pour vous ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Je cherche quelqu'un qui a disparu dans Chinatown.	}{	Je cherche quelqu'un qui a disparu dans Chinatown.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vois l'ombre d'une âme qui manque. . .	}
+{	253	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Qui est cette personne ?	}{	Qui est cette personne ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Il s'appelle Barrabus C'est un. . . associé à moi.	}{	Il s'appelle Barrabus C'est un. . . associé à moi.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Barrabus. . .	}
+{	263	}{	C'est un vieil ami à moi, du nom de Barrabus.	}{	C'est un vieil ami à moi, du nom de Barrabus.	}{	271	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Hmmm. Que pouvez-vous me dire d'autre sur lui ?	}{	Hmmm. Que pouvez-vous me dire d'autre sur lui ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	C'est. . . enfin, il travaille pour. . . enfin, je ne peux pas vous dire grand-chose.	}{	C'est. . . enfin, il travaille pour. . . enfin, je ne peux pas vous dire grand-chose.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	On dirait que mes personnalités s'obstinent à garder le silence. . .	}
+{	273	}{	Il est dans les technologies de surveillance. Les ordinateurs, tout ça. . .	}{	Il est dans les technologies de surveillance. Les ordinateurs, tout ça. . .	}{	281	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	274	}{	C'est un oiseau de nuit, un peu abîmé du visage, très discret.	}{	C'est un oiseau de nuit, un peu abîmé du visage, très discret.	}{	281	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	Il a sans doute un grave problème de teint.	}{	Il a sans doute un grave problème de teint.	}{	281	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	Je vois. Je ne pense pas pouvoir le trouver pour vous, mais je sais qui le pourrait.	}{	Je vois. Je ne pense pas pouvoir le trouver pour vous, mais je sais qui le pourrait.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Cool. Où puis-je trouver cette personne ?	}{	Cool. Où puis-je trouver cette personne ?	}{	291	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	Ah oui ? Qui ça ?	}{	Ah oui ? Qui ça ?	}{	291	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	284	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Il s'appelle Zhao. C'est lui qui m'a appelé pour me dire où était retenue Kiki. Zhao connaît beaucoup de gens. Il possède un entrepôt d'import-export à Chinatown. Allez le voir. Je vais l'appeler pour lui dire de vous attendre.	}{	Il s'appelle Zhao. C'est lui qui m'a appelé pour me dire où était retenue Kiki. Zhao connaît beaucoup de gens. Il possède un entrepôt d'import-export à Chinatown. Allez le voir. Je vais l'appeler pour lui dire de vous attendre.	}{	#	}{	}{	G.WongHo_Info = 1; pc.SetQuest("Gangster",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	J'ai quelques questions à vous poser sur Chinatown.	}{	J'ai quelques questions à vous poser sur Chinatown.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dépeins-moi Chinatown. . .	}
+{	293	}{	Merci, Wong Ho. J'apprécie beaucoup.	}{	Merci, Wong Ho. J'apprécie beaucoup.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je m'auto-exporte. Adieu.	}
+{	294	}{	J'espère qu'il saura où est Barrabus, sinon nous nous reverrons. Très bientôt.	}{	J'espère qu'il saura où est Barrabus, sinon nous nous reverrons. Très bientôt.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Oui ? Que puis-je faire pour vous ?	}{	Oui ? Que puis-je faire pour vous ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	J'ai encore besoin de parler à Zhao.	}{	J'ai encore besoin de parler à Zhao.	}{	311	}{	G.Zhao_Know == 0 and pc.GetQuestState("Barabus") > 3	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche encore celui qui importe les renseignements. . .	}
+{	303	}{	J'ai parlé à Zhao.	}{	J'ai parlé à Zhao.	}{	321	}{	G.Zhao_Know == 1 and G.Zhao_Asked == 0	}{	G.Zhao_Asked = 1	}{	}{	}{	}{	}{	}{	}{	J'ai parlé avec l'importateur d'informations. . .	}
+{	304	}{	Que pouvez-vous me dire sur un homme aux cheveux argentés ?	}{	Que pouvez-vous me dire sur un homme aux cheveux argentés ?	}{	491	}{	G.Silver_Know >= 1 and G.WongHo_Silver == 0	}{	G.WongHo_Silver = 1	}{	}{	}{	}{	}{	}{	}{	Je vois un homme à la crinière d'argent. . .	}
+{	305	}{	J'ai trouvé qui est l'homme aux cheveux argentés.	}{	J'ai trouvé qui est l'homme aux cheveux argentés.	}{	531	}{	IsDead("Mandarin") and G.Wong_Mandarin == 0 and (pc.GetQuestState("Barabus") == 2 or pc.GetQuestState("Barabus") == 3)	}{	G.Wong_Mandarin = 1	}{	}{	}{	}{	}{	}{	}{	J'ai trouvé le démon aux cheveux de feu. . .	}
+{	306	}{	J'ai quelques questions à vous poser sur Chinatown.	}{	J'ai quelques questions à vous poser sur Chinatown.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dépeins-moi Chinatown. . .	}
+{	307	}{	Rien. A plus tard.	}{	Rien. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici. . .	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	Alors j'espère qu'il aura les renseignements qu'il vous faut. Vous pourrez le trouver dans son entrepôt, ici à Chinatown.	}{	Alors j'espère qu'il aura les renseignements qu'il vous faut. Vous pourrez le trouver dans son entrepôt, ici à Chinatown.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Merci. Encore quelques questions.	}{	Merci. Encore quelques questions.	}{	301	}{	G.Zhao_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller votre cervelle. . .	}
+{	313	}{	Moi aussi. A plus tard.	}{	Moi aussi. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici. . .	}
+{	314	}{	Pour votre propre bien, j'espère que vous avez raison. Au revoir.	}{	Pour votre propre bien, j'espère que vous avez raison. Au revoir.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	Ah, très bien. Et il avait les renseignements qu'il vous fallait ?	}{	Ah, très bien. Et il avait les renseignements qu'il vous fallait ?	}{	#	}{	}{	G.Wong_Zhao = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Oui. Mais les Tong sont arrivés juste après moi. Il a fallu que nous les tuions.	}{	Oui. Mais les Tong sont arrivés juste après moi. Il a fallu que nous les tuions.	}{	331	}{	G.Zhao_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	On a joué à 'chat mort' avec les enfants perdus. . .	}
+{	323	}{	Oui, il m'a dit ce que je voulais. Juste avant que les Tong arrivent et qu'on les répande sur les murs.	}{	Oui, il m'a dit ce que je voulais. Juste avant que les Tong arrivent et qu'on les répande sur les murs.	}{	331	}{	G.Zhao_Dead == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	324	}{	Oui. Mais les Tong sont arrivés et l'ont tué. Je regrette, Wong Ho.	}{	Oui. Mais les Tong sont arrivés et l'ont tué. Je regrette, Wong Ho.	}{	381	}{	G.Zhao_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	Les enfants perdus sont venus jouer et ont exporté sa vie. . .	}
+{	325	}{	Oui. Il m'a tout dit juste avant que les Tong lui fassent la peau.	}{	Oui. Il m'a tout dit juste avant que les Tong lui fassent la peau.	}{	381	}{	G.Zhao_Dead == 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	326	}{	Oui, merci. Au revoir, Wong Ho.	}{	Oui, merci. Au revoir, Wong Ho.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui. Mais à présent j'ai d'autres marchands à mutiler. Adieu.	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	Ah, je vois. C'est logique. Les Tong ont dû savoir que la seule personne capable de retrouver Kiki était Zhao. Un homme n'échappe jamais à son passé. Il le porte toujours avec lui, et c'est parfois un grand fardeau.	}{	Ah, je vois. C'est logique. Les Tong ont dû savoir que la seule personne capable de retrouver Kiki était Zhao. Un homme n'échappe jamais à son passé. Il le porte toujours avec lui, et c'est parfois un grand fardeau.	}{	#	}{	}{	G.Zhao_Past = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Comment ça ?	}{	Comment ça ?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Démêlez cette énigme. . .	}
+{	333	}{	Ouais. Bon, j'ai d'autres questions.	}{	Ouais. Bon, j'ai d'autres questions.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller votre cervelle. . .	}
+{	334	}{	Intéressant. Il faut que je parte.	}{	Intéressant. Il faut que je parte.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon cerveau est parti. Mon corps le suit.	}
+{	335	}{	La philosophie, ça suffit. A plus tard, vieil homme.	}{	La philosophie, ça suffit. A plus tard, vieil homme.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas le temps de filtrer votre philosophie faiblarde. Adieu.	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Rien. Ce n'est pas à moi d'en parler.	}{	Rien. Ce n'est pas à moi d'en parler.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	Allons, nous sommes amis, non ? Vous pouvez bien m'en parler.	}{	Allons, nous sommes amis, non ? Vous pouvez bien m'en parler.	}{	351	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	Il est facile de se confier à quelqu'un d'aussi dément que moi. . .	}
+{	343	}{	Dites-moi votre secret !	}{	Dites-moi votre secret !	}{	351	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	344	}{	Non, mais ça va être à vous d'aller à l'hosto si vous ne crachez pas le morceau.	}{	Non, mais ça va être à vous d'aller à l'hosto si vous ne crachez pas le morceau.	}{	351	}{	Intimidate 7	}{	}{	}{	}{	}{	}{	}{	}{	Parlez, ou je vous fais exploser le pancréas. . .	}
+{	345	}{	J'ai d'autres questions à vous poser.	}{	J'ai d'autres questions à vous poser.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller votre cervelle. . .	}
+{	346	}{	Comme vous voulez. Je pars.	}{	Comme vous voulez. Je pars.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrira d'autres lieux. . .	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	[divisé]C'est quelque chose que peu de gens savent. Il y a plusieurs années, Zhao était le chef des Tong à Chinatown. Il avait une réputation de chef très brutal, et on le craignait autant qu'on le respectait.	}{	[divisé]C'est quelque chose que peu de gens savent. Il y a plusieurs années, Zhao était le chef des Tong à Chinatown. Il avait une réputation de chef très brutal, et on le craignait autant qu'on le respectait.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	(Auto-Link)	}{	(Auto-Link)	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	353	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	354	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Au bout d'un certain temps, Zhao a fini par comprendre que la peur et le respect sont deux choses très différentes, et que si l'on gagnait l'un par l'autre, on n'avait aucun honneur. Il a quitté les Tong, jurant de ne jamais retourner à sa vie d'avant.	}{	Au bout d'un certain temps, Zhao a fini par comprendre que la peur et le respect sont deux choses très différentes, et que si l'on gagnait l'un par l'autre, on n'avait aucun honneur. Il a quitté les Tong, jurant de ne jamais retourner à sa vie d'avant.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Je vois. Mais comment était-il au courant pour Kiki ?	}{	Je vois. Mais comment était-il au courant pour Kiki ?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Comment savait-il où état enterré votre trésor ?	}
+{	363	}{	Hmm. Il faut que je m'en aille. Au revoir.	}{	Hmm. Il faut que je m'en aille. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	364	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	Quand un homme vit un temps dans une forêt, il devient ami avec les loups. Les loups savent tout ce qui se passe dans la forêt.	}{	Quand un homme vit un temps dans une forêt, il devient ami avec les loups. Les loups savent tout ce qui se passe dans la forêt.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	Je comprends. Merci de me l'avoir dit. J'ai encore quelques questions.	}{	Je comprends. Merci de me l'avoir dit. J'ai encore quelques questions.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller votre cervelle. . .	}
+{	373	}{	Super, votre histoire. Il est temps que je m'en aille.	}{	Super, votre histoire. Il est temps que je m'en aille.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	374	}{	Vos métaphores me donnent mal au crâne. A plus tard.	}{	Vos métaphores me donnent mal au crâne. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre symbolique me donne la colique. Adieu.	}
+{	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	[triste]Ah, je vois. Les Tong ont dû savoir que Zhao était la seule à pouvoir me prévenir pour Kiki. On dirait que son passé a fini par le rattraper. Le passé est une chose que nous portons tous, et c'est parfois un fardeau bien lourd.	}{	[triste]Ah, je vois. Les Tong ont dû savoir que Zhao était la seule à pouvoir me prévenir pour Kiki. On dirait que son passé a fini par le rattraper. Le passé est une chose que nous portons tous, et c'est parfois un fardeau bien lourd.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	Comment ça ?	}{	Comment ça ?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Clarifiez ces atermoiements. . .	}
+{	383	}{	Ouais. Bon, j'ai d'autres questions.	}{	Ouais. Bon, j'ai d'autres questions.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller votre cervelle. . .	}
+{	384	}{	Intéressant, enfin, je crois. . . Il faut que je parte.	}{	Intéressant, enfin, je crois. . . Il faut que je parte.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Lourd est le poids de mon ennui. Adieu.	}
+{	385	}{	La philosophie, ça suffit. A plus tard, vieil homme.	}{	La philosophie, ça suffit. A plus tard, vieil homme.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vos réflexions sont brouillées. Adieu.	}
+{	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	393	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	394	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	395	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	Que voulez-vous savoir ?	}{	Que voulez-vous savoir ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	Parlez-moi du Temple de la Vertu Dorée.	}{	Parlez-moi du Temple de la Vertu Dorée.	}{	411	}{	G.WongHo_Secret == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le Temple de la Vertu Dorée !	}
+{	403	}{	Parlez-moi du 'Glaze'.	}{	Parlez-moi du 'Glaze'.	}{	461	}{	G.Glaze_Password == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je voix un reflet dans l'ombre. . .	}
+{	404	}{	Où peut-on trouver une arme par ici ?	}{	Où peut-on trouver une arme par ici ?	}{	471	}{	G.WongHo_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	Où trouver une baguette magique calibre 12 ?	}
+{	405	}{	En fait, j'avais d'autres questions.	}{	En fait, j'avais d'autres questions.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller votre cervelle. . .	}
+{	406	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	407	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	Le Temple de la Vertu Dorée est à Chinatown depuis longtemps. Avant même ma naissance. Pendant des années, il est resté vieux et en ruines. Mais Ming-Xiao l'a racheté et lui a rendu sa gloire passée.	}{	Le Temple de la Vertu Dorée est à Chinatown depuis longtemps. Avant même ma naissance. Pendant des années, il est resté vieux et en ruines. Mais Ming-Xiao l'a racheté et lui a rendu sa gloire passée.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Vraiment ? Pourquoi a-t-elle fait cela ?	}{	Vraiment ? Pourquoi a-t-elle fait cela ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi la maîtresse promène-t-elle son ombre sur ce temple doré ?	}
+{	413	}{	Parlez-moi un peu de Ming-Xiao.	}{	Parlez-moi un peu de Ming-Xiao.	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi encore de la maîtresse des miroirs. . .	}
+{	414	}{	Hmmm, intéressant. Dites-m'en un peu plus sur Chinatown.	}{	Hmmm, intéressant. Dites-m'en un peu plus sur Chinatown.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dépeins-moi Chinatown. . .	}
+{	415	}{	Je pars.	}{	Je pars.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon cerveau est parti. Mon corps le suit.	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	Ming-Xiao a la plus grande considération pour notre culture et nos traditions. Le temple est un symbole de notre force en tant que peuple. Il rend l'espoir à la communauté.	}{	Ming-Xiao a la plus grande considération pour notre culture et nos traditions. Le temple est un symbole de notre force en tant que peuple. Il rend l'espoir à la communauté.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	Vraiment ? Vous y êtes déjà entré ?	}{	Vraiment ? Vous y êtes déjà entré ?	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	Avez-vous prié dans ce temple d'or ?	}
+{	423	}{	Ca a l'air bien. J'ai encore quelques questions sur Chinatown.	}{	Ca a l'air bien. J'ai encore quelques questions sur Chinatown.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dépeins-moi Chinatown. . .	}
+{	424	}{	J'ai d'autres questions.	}{	J'ai d'autres questions.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller votre cervelle. . .	}
+{	425	}{	Il faut que je parte.	}{	Il faut que je parte.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	[hésitant]N-non. Ming-Xiao reçoit ses visiteurs dans une antichambre, mais personne n'a le droit d'entrer dans le temple lui-même. Elle m'a dit que c'était un lieu saint, et qu'il ne faut pas le, euh. . . déranger.	}{	[hésitant]N-non. Ming-Xiao reçoit ses visiteurs dans une antichambre, mais personne n'a le droit d'entrer dans le temple lui-même. Elle m'a dit que c'était un lieu saint, et qu'il ne faut pas le, euh. . . déranger.	}{	#	}{	}{	G.WongHo_Secret = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	C'est certainement vrai. Ming-Xiao est sage, on peut lui faire confiance.	}{	C'est certainement vrai. Ming-Xiao est sage, on peut lui faire confiance.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	La maîtresse est aussi sage que ma psyché est dérangée. . .	}
+{	433	}{	C'est un peu trop pratique. Elle cache peut-être quelque chose.	}{	C'est un peu trop pratique. Elle cache peut-être quelque chose.	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les secrets sont souvent dorés. . .	}
+{	434	}{	J'ai encore quelques questions sur Chinatown.	}{	J'ai encore quelques questions sur Chinatown.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dépeins-moi Chinatown. . .	}
+{	435	}{	Je pars.	}{	Je pars.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	436	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	[soulagé]Oui, je le pense aussi. Beaucoup des choses qu'elle m'avait dites ce sont produites. Je pense que c'est une sainte, envoyée par les dieux pour nous aider à reconstruire la communauté.	}{	[soulagé]Oui, je le pense aussi. Beaucoup des choses qu'elle m'avait dites ce sont produites. Je pense que c'est une sainte, envoyée par les dieux pour nous aider à reconstruire la communauté.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	Quelque chose comme ça, c'est certain. Il me reste quelques questions à poser sur Chinatown.	}{	Quelque chose comme ça, c'est certain. Il me reste quelques questions à poser sur Chinatown.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dépeins-moi Chinatown. . .	}
+{	443	}{	J'ai d'autres questions.	}{	J'ai d'autres questions.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller votre cervelle. . .	}
+{	444	}{	Oui, un véritable ange. A bientôt, Wong Ho.	}{	Oui, un véritable ange. A bientôt, Wong Ho.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	445	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	446	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Je refuse d'entendre de pareils sous-entendus ! Ming-Xiao a fait beaucoup pour mon peuple, et je refuse que vous jetiez le doute sur elle !	}{	Je refuse d'entendre de pareils sous-entendus ! Ming-Xiao a fait beaucoup pour mon peuple, et je refuse que vous jetiez le doute sur elle !	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Bon, bon. Il me reste quelques questions sur Chinatown.	}{	Bon, bon. Il me reste quelques questions sur Chinatown.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dépeins-moi Chinatown. . .	}
+{	453	}{	J'ai d'autres questions.	}{	J'ai d'autres questions.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller votre cervelle. . .	}
+{	454	}{	Eh ben, sacrées oeillères. Allez, je m'en vais.	}{	Eh ben, sacrées oeillères. Allez, je m'en vais.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	455	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon cerveau est parti. Mon corps le suit.	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	Le Glaze ? Mff. Une tache au blason de notre communauté. C'est une cachette connue des Tong et de leur chef, Johnny Tiger. Personne ne peut y entrer à moins d'être connu des Tong. C'est un endroit très dangereux, je vous déconseille d'y aller.	}{	Le Glaze ? Mff. Une tache au blason de notre communauté. C'est une cachette connue des Tong et de leur chef, Johnny Tiger. Personne ne peut y entrer à moins d'être connu des Tong. C'est un endroit très dangereux, je vous déconseille d'y aller.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	J'ai encore quelques questions sur Chinatown.	}{	J'ai encore quelques questions sur Chinatown.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dépeins-moi Chinatown. . .	}
+{	463	}{	J'ai d'autres questions.	}{	J'ai d'autres questions.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller votre cervelle. . .	}
+{	464	}{	Je pourrais aller y prendre un verre. A bientôt, Wong Ho.	}{	Je pourrais aller y prendre un verre. A bientôt, Wong Ho.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrira d'autres lieux. . .	}
+{	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	Des armes ? Non ! Même si je le savais, je ne vous dirais pas où en trouver. Nous avons assez de problèmes sans dire aux gens où acheter leurs armes. Je regrette.	}{	Des armes ? Non ! Même si je le savais, je ne vous dirais pas où en trouver. Nous avons assez de problèmes sans dire aux gens où acheter leurs armes. Je regrette.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	Faites-moi confiance. Si je vous demande ça, c'est pour éviter cet endroit.	}{	Faites-moi confiance. Si je vous demande ça, c'est pour éviter cet endroit.	}{	481	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	J'ai simplement besoin d'éviter ses atrocités. . .	}
+{	473	}{	Où sont les armes ?	}{	Où sont les armes ?	}{	481	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	474	}{	Bon, soit vous me le dites maintenant, soit je reviens avec une arme quand je les aurai trouvées.	}{	Bon, soit vous me le dites maintenant, soit je reviens avec une arme quand je les aurai trouvées.	}{	481	}{	Intimidate 7	}{	}{	}{	}{	}{	}{	}{	}{	Montrez-moi les baguettes à boum, ou devenez une tache. . . de sang.	}
+{	475	}{	Très bien. Encore quelques questions sur Chinatown.	}{	Très bien. Encore quelques questions sur Chinatown.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dépeins-moi Chinatown. . .	}
+{	476	}{	Je pars.	}{	Je pars.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	[hésitant]Je ne suis pas sûr, mais il paraît que le vieux Tseng vend des armes dans son magasin de remèdes naturels.	}{	[hésitant]Je ne suis pas sûr, mais il paraît que le vieux Tseng vend des armes dans son magasin de remèdes naturels.	}{	#	}{	}{	G.WongHo_Guns = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	Merci. Encore quelques questions sur Chinatown.	}{	Merci. Encore quelques questions sur Chinatown.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dépeignez-moi Chinatown. . .	}
+{	483	}{	Encore quelques questions.	}{	Encore quelques questions.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller votre cervelle. . .	}
+{	484	}{	C'est exactement le genre de remède que je cherche. A plus tard, Wong Ho.	}{	C'est exactement le genre de remède que je cherche. A plus tard, Wong Ho.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrira d'autres lieux. . .	}
+{	485	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Un homme aux cheveux argentés ? Je ne sais p. . . Attendez. Si. J'ai vu un homme comme cela il y a quelques nuits. C'est un homme très remarquable. Il sortait du Temple. . .	}{	Un homme aux cheveux argentés ? Je ne sais p. . . Attendez. Si. J'ai vu un homme comme cela il y a quelques nuits. C'est un homme très remarquable. Il sortait du Temple. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	Vous voulez dire, le Temple secret où personne n'a le droit d'aller ?	}{	Vous voulez dire, le Temple secret où personne n'a le droit d'aller ?	}{	501	}{	G.WongHo_Secret == 1	}{	}{	}{	}{	}{	}{	}{	}{	Le même temple aux secrets dorés ?	}
+{	493	}{	Vraiment ? Vous savez qui c'est ?	}{	Vraiment ? Vous savez qui c'est ?	}{	511	}{	G.WongHo_Secret == 0	}{	}{	}{	}{	}{	}{	}{	}{	Connaissez-vous ce mystère aux cheveux d'argent ?	}
+{	494	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	495	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	[penaud]Oui, celui-là même.	}{	[penaud]Oui, celui-là même.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	L'intrigue se complique. Vous savez qui c'est ?	}{	L'intrigue se complique. Vous savez qui c'est ?	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	Suivez la route de briques jaunes. . .	}
+{	503	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	504	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	505	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	Non. Je ne l'ai pas reconnu. Pourquoi ces questions ?	}{	Non. Je ne l'ai pas reconnu. Pourquoi ces questions ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Mandarin_Knows = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	Comme ça. D'ailleurs, il m'en reste quelques-unes.	}{	Comme ça. D'ailleurs, il m'en reste quelques-unes.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pas moi. J'ai besoin de fouiller votre cervelle. . .	}
+{	513	}{	C'est peut-être lui qui finance les Tong.	}{	C'est peut-être lui qui finance les Tong.	}{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il pourrait être le père de ces enfants perdus.	}
+{	514	}{	Je ne veux pas vraiment en parler. Au revoir.	}{	Je ne veux pas vraiment en parler. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	515	}{	Parce que j'ai découvert qu'il était financer les Tong.	}{	Parce que j'ai découvert qu'il était financer les Tong.	}{	531	}{	IsDead("Mandarin") and G.Wong_Mandarin == 0 and G.Patch_Plus == 1 and (pc.GetQuestState("Barabus") == 2 or pc.GetQuestState("Barabus") == 3)	}{	G.Wong_Mandarin = 1	}{	}{	}{	}{	}{	}{	}{	Parce qu'il était le père des enfants perdus.	}
+{	516	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	517	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	520	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	521	}{	Ah, il y a donc bien un pouvoir plus grand derrière eux. L'information est intéressante. Je vous remercie, mon ami. Si vous apprenez autre chose, venez me le dire, je vous en prie.	}{	Ah, il y a donc bien un pouvoir plus grand derrière eux. L'information est intéressante. Je vous remercie, mon amie. Si vous apprenez autre chose, venez me le dire, je vous en prie.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	Il me reste quelques questions.	}{	Il me reste quelques questions.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pas moi. J'ai besoin de fouiller votre cervelle. . .	}
+{	523	}{	Je l'ai déjà fait.	}{	Je l'ai déjà fait.	}{	531	}{	IsDead("Mandarin") and G.Wong_Mandarin == 0 and G.Patch_Plus == 1 and (pc.GetQuestState("Barabus") == 2 or pc.GetQuestState("Barabus") == 3)	}{	G.Wong_Mandarin = 1	}{	}{	}{	}{	}{	}{	}{	Déjà trouvé.	}
+{	524	}{	Bien sûr. Il faut que je parte, Wong Ho.	}{	Bien sûr. Il faut que je parte, Wong Ho.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrira d'autres lieux. . .	}
+{	525	}{	Peut-être. Au revoir.	}{	Peut-être. Au revoir.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Vraiment ? Qui était-ce ?	}{	Vraiment ? Qui était-ce ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	Il tenait une sorte de laboratoire secret où il faisait des expériences.	}{	Il tenait une sorte de laboratoire secret où il faisait des expériences.	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les sciences secrètes, les expériences de choc. . .	}
+{	533	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	534	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	536	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	Des expériences ? Quelles sortes ?	}{	Des expériences ? Quelles sortes ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Ils cherchaient des faiblesses chez. . . certains individus.	}{	Ils cherchaient des faiblesses chez. . . certains individus.	}{	551	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	543	}{	Le genre pour lequel on ne passe pas d'annonce dans la presse.	}{	Le genre pour lequel on ne passe pas d'annonce dans la presse.	}{	551	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	544	}{	Mieux vaut que vous l'ignoriez.	}{	Mieux vaut que vous l'ignoriez.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	La vérité est trop terrible à dire. . .	}
+{	545	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	546	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	547	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	548	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	Je vois. Et où est-il à présent ?	}{	Je vois. Et où est-il à présent ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	Il n'ennuiera plus jamais personne.	}{	Il n'ennuiera plus jamais personne.	}{	561	}{	G.Mandarin_Knows == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	553	}{	Malheureusement, il a fallu que je le tue.	}{	Malheureusement, il a fallu que je le tue.	}{	561	}{	G.Mandarin_Knows == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	554	}{	Il mange les pissenlits par la racine.	}{	Il mange les pissenlits par la racine.	}{	561	}{	G.Mandarin_Knows == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	555	}{	J'ai tué cette ordure.	}{	J'ai tué cette ordure.	}{	561	}{	G.Mandarin_Knows == 0	}{	}{	}{	}{	}{	}{	}{	}{	La mort est venue frapper à sa porte.	}
+{	556	}{	Je l'ai tué. Et j'ai la preuve qu'il travaillait avec Ming-Xiao.	}{	Je l'ai tué. Et j'ai la preuve qu'il travaillait avec Ming-Xiao.	}{	591	}{	G.Mandarin_Knows == 1	}{	}{	}{	}{	}{	}{	}{	}{	La mort a visité son huis. Et il fréquentait la maîtresse des miroirs. . .	}
+{	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	558	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	Je comprends. On dirait que vous avez rendu un grand service à la communauté. Je vous remercie. Et je suis sûr que Ming-Xiao sera tout aussi ravie.	}{	Je comprends. On dirait que vous avez rendu un grand service à la communauté. Je vous remercie. Et je suis sûr que Ming-Xiao sera tout aussi ravie.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	Je n'en doute pas. Saluez-la de ma part. Adieu, Wong Ho.	}{	Je n'en doute pas. Saluez-la de ma part. Adieu, Wong Ho.	}{	0	}{	}{	G.WongHo_Dead = 1	}{	}{	}{	}{	}{	}{	}{	Le destin est un miroir, fendu et sans chance. Adieu.	}
+{	563	}{	Peut-être. Peut-être pas. A plus tard.	}{	Peut-être. Peut-être pas. A plus tard.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	G.WongHo_Dead = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	564	}{	Ecoutez, Wong Ho, un conseil amical : arrêtez de parler avec Ming-Xiao.	}{	Ecoutez, Wong Ho, un conseil amical : arrêtez de parler avec Ming-Xiao.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne regardez plus son reflet.	}
+{	565	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	566	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	Quoi ? Pourquoi ? Ming-Xiao est une bonne amie, et ma conseillère spirituelle. Pourquoi devrais-je arrêter de lui parler ?	}{	Quoi ? Pourquoi ? Ming-Xiao est une bonne amie, et ma conseillère spirituelle. Pourquoi devrais-je arrêter de lui parler ?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	Les gens ne sont pas toujours ce qu'on croit.	}{	Les gens ne sont pas toujours ce qu'on croit.	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	Son visage est craquelé et a bien des facettes. . .	}
+{	573	}{	C'est juste une impression. 	}{	C'est juste une impression. 	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	Un démon reconnaît ses frères. . .	}
+{	574	}{	Vous savez, par ici, vous avez des monstres et des histoires de fantômes, et là. . .	}{	Vous savez, par ici, vous avez des monstres et des histoires de fantômes, et là. . .	}{	581	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	575	}{	Je ne peux pas trop en dire. Faites-moi confiance.	}{	Je ne peux pas trop en dire. Faites-moi confiance.	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes paroles sont distordues, mais vraies.	}
+{	576	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	577	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	[visiblement secoué]Hmm. . . Vous m'avez prouvé votre amitié, et je vous fais confiance. Je vais y réfléchir un moment. J'en parlerai peut-être à Ming-Xiao.	}{	[visiblement secoué]Hmm. . . Vous m'avez prouvé votre amitié, et je vous fais confiance. Je vais y réfléchir un moment. J'en parlerai peut-être à Ming-Xiao.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	Ne réfléchissez pas trop. Et si vous voulez un avis, quittez la ville. Au revoir.	}{	Ne réfléchissez pas trop. Et si vous voulez un avis, quittez la ville. Au revoir.	}{	0	}{	G.Mandarin_Knows == 0	}{	G.WongHo_Dead = 1; G.WongHo_End = 1	}{	}{	}{	}{	}{	}{	}{	Ne jetez plus d'ombre sur ces rues. Adieu.	}
+{	583	}{	Faites comme vous voulez. Je vous aurai prévenu.	}{	Faites comme vous voulez. Je vous aurai prévenu.	}{	0	}{	G.Mandarin_Knows == 0 and not IsClan(pc,"Malkavian")	}{	G.WongHo_Dead = 1; G.WongHo_End = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	584	}{	Faites-moi confiance, Wong Ho. N'y allez pas. Quittez la ville.	}{	Faites-moi confiance, Wong Ho. N'y allez pas. Quittez la ville.	}{	611	}{	Persuasion 7 & G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ne parlez plus à ma maîtresse, et emportez vos trésors vers des terres lointaines !	}
+{	585	}{	Faites-moi confiance, Wong Ho. N'y allez pas. Quittez la ville.	}{	Faites-moi confiance, Wong Ho. N'y allez pas. Quittez la ville.	}{	611	}{	Persuasion 7 & G.Patch_Plus == 1	}{	FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Ne parlez plus à ma maîtresse, et emportez vos trésors vers des terres lointaines !	}
+{	586	}{	Non ! Ne faites pas ça ! Vous signeriez votre arrêt de mort !	}{	Non ! Ne faites pas ça ! Vous signeriez votre arrêt de mort !	}{	601	}{	G.Mandarin_Knows == 1 and pc.CalcFeat("Persuasion") < 7	}{	}{	}{	}{	}{	}{	}{	}{	Ne partagez plus vos mots avec ma maîtresse, vous inviteriez la mort chez vous. . .	}
+{	587	}{	Faites comme vous voulez. Je vous aurai prévenu.	}{	Faites comme vous voulez. Je vous aurai prévenu.	}{	601	}{	G.Mandarin_Knows == 1	}{	}{	}{	}{	}{	}{	}{	}{	Laisse tomber, Jake. C'est Chinatown. . .	}
+{	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	[hors de lui]Quoi ? Comment est-ce possible ? Ming-Xiao ne se compromettrait jamais avec une telle chose ! Je ne vous crois pas !	}{	[hors de lui]Quoi ? Comment est-ce possible ? Ming-Xiao ne se compromettrait jamais avec une telle chose ! Je ne vous crois pas !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	Vous feriez mieux de me croire, Wong Ho. Vous étiez le prochain sur sa liste.	}{	Vous feriez mieux de me croire, Wong Ho. Vous étiez le prochain sur sa liste.	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre âme sera la prochaine à tomber sous la faux.	}
+{	593	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	594	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	595	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	596	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	597	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	598	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	599	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	600	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	601	}{	Je regrette, mais par honnêteté envers Ming-Xiao, je me dois de lui en parler. Je suis certain qu'il y a un malentendu. Une fois de plus, je vous remercie pour votre aide dans cette affaire. Adieu.	}{	Je regrette, mais par honnêteté envers Ming-Xiao, je me dois de lui en parler. Je suis certain qu'il y a un malentendu. Une fois de plus, je vous remercie pour votre aide dans cette affaire. Adieu.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	J'espère que vous changerez d'avis. Au revoir.	}{	J'espère que vous changerez d'avis. Au revoir.	}{	0	}{	}{	G.WongHo_Dead = 1; G.WongHo_End = 1	}{	}{	}{	}{	}{	}{	}{	Les oreilles sourdes deviennent bientôt mortes. Adieu.	}
+{	603	}{	Vous feriez mieux de prendre une bonne assurance vie avant ça. . .	}{	Vous feriez mieux de prendre une bonne assurance vie avant ça. . .	}{	0	}{	not IsClan(pc,"Malkavian")	}{	G.WongHo_Dead = 1; G.WongHo_End = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	604	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	605	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	J-je vous crois. Je vais peut-être fermer le restaurant, emmener Kiki et partir un moment. Merci, je vous dois à nouveau une vie. Que les dieux vous accompagnent, quel que soit le chemin que vous déciderez de prendre.	}{	J-je vous crois. Je vais peut-être fermer le restaurant, emmener Kiki et partir un moment. Merci, je vous dois à nouveau une vie. Que les dieux vous accompagnent, quel que soit le chemin que vous déciderez de prendre.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.WongHo_Alive = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	Merci, Wong Ho. Prenez soin de vous.	}{	Merci, Wong Ho. Prenez soin de vous.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	G.WongHo_End = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	613	}{	Si je croyais encore en eux, cela me réconforterait. Au revoir.	}{	Si je croyais encore en eux, cela me réconforterait. Au revoir.	}{	0	}{	}{	G.WongHo_End = 1	}{	}{	}{	}{	}{	}{	}{	Mes dieux sont beaux et tachés de sang. Adieu.	}
+{	614	}{	Comment vous parlez ! Faut vraiment que vous sortiez un peu plus. Bonne chance.	}{	Comment vous parlez ! Faut vraiment que vous sortiez un peu plus. Bonne chance.	}{	0	}{	}{	G.WongHo_End = 1	}{	}{	}{	}{	}{	}{	}{	Vous pontifiez un peu trop pour moi. Je vous quitte.	}
+{	615	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	616	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	617	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	618	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	619	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	620	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	J'ai des affaires à régler. Adieu.	}{	J'ai des affaires à régler. Adieu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	623	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	624	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	625	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	626	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	627	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	628	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	629	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	630	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	631	}{	Oh, Kiki, ma fille ! Pardon. . . [levant les yeux et remarquant le PJ pour la première fois] Ha, un démon !	}{	Oh, Kiki, ma fille ! Pardon. . . [levant les yeux et remarquant le PJ pour la première fois] Ha, un démon !	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Tong_Known = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	Je ne suis pas un démon. C'est Ming-Xiao qui m'envoie vous parler.	}{	Je ne suis pas un démon. C'est Ming-Xiao qui m'envoie vous parler.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	633	}{	Attention à ce que vous dites, vieillard. C'est Ming-Xiao qui m'envoie.	}{	Attention à ce que vous dites, vieillard. C'est Ming-Xiao qui m'envoie.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	634	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	635	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	636	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	637	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	638	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	640	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	641	}{	[Secoué et confus]Oui, oui, c'est vrai. Kiki, ma fille est bien mon trésor le plus précieux. Comment saviez-vous. . .	}{	[Secoué et confus]Oui, oui, c'est vrai. Kiki, ma fille est bien mon trésor le plus précieux. Comment saviez-vous. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	Prise par les enfants, serviteurs d'une ombre inconnue. . .	}{	Prise par les enfants, serviteurs d'une ombre inconnue. . .	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	643	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	644	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	645	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	646	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	647	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	648	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	650	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	651	}{	Vous avez encore raison. Elle a été kidnappée par les Tong, un gang local. Je ne sais pas qui en a donné l'ordre, mais je compte le découvrir. Qui êtes-vous ? Vous paraissez voir ces choses comme par les yeux des dieux.	}{	Vous avez encore raison. Elle a été kidnappée par les Tong, un gang local. Je ne sais pas qui en a donné l'ordre, mais je compte le découvrir. Qui êtes-vous ? Vous paraissez voir ces choses comme par les yeux des dieux.	}{	#	}{	}{	G.Tong_Known = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	652	}{	Souvent, les dieux se déguisent en démon. C'est Ming-Xiao, la maîtresse des miroirs, qui m'envoie.	}{	Souvent, les dieux se déguisent en démon. C'est Ming-Xiao, la maîtresse des miroirs, qui m'envoie.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	653	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	654	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	655	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	656	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	657	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	658	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	659	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	660	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	663	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	664	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	665	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	666	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	667	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	668	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	669	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	670	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	671	}{	Il est bon de vous voir.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	672	}{	Oui.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	673	}{	Que faites-vous ici ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	674	}{	Je n'ai plus envie de vous parler.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	675	}{	Hai !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	676	}{	Oui.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	677	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	678	}{	Merci.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	679	}{	Qu'est-ce que vous avez dit ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	680	}{	Quoi ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	681	}{	Je ne sais pas.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	682	}{	Je ne peux pas vous aider avec ça.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	683	}{	C'est très bien !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	684	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	685	}{	C'est pour vous.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	686	}{	Je vous enverrai un e-mail. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	687	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	688	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	689	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	690	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	692	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	693	}{	(Starting Condition)	}{	}{	621	}{	G.WongHo_End == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	694	}{	(Starting Condition)	}{	}{	301	}{	G.WongHo_Info == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	695	}{	(Starting Condition)	}{	}{	171	}{	G.Kiki_Rescued == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	696	}{	(Starting Condition)	}{	}{	151	}{	G.WongHo_Kiki == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	697	}{	(Starting Condition)	}{	}{	631	}{	IsClan(pc,"Nosferatu") and npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	698	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

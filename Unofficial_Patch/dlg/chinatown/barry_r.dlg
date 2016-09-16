@@ -1,0 +1,63 @@
+{	1	}{	[lourd, accent lourd] Personne n'est autorisée à l'étage.	}{	[lourd, accent lourd] Personne n'est autorisée à l'étage.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Le type à la table m'a donné la permission.	}{	Le type à la table m'a donné la permission.	}{	11	}{	G.Johnny_Permission == 1	}{	}{	}{	}{	}{	}{	}{	}{	Permission accordée. Passez une bonne journée.	}
+{	3	}{	Bouge.	}{	Bouge.	}{	1	}{	G.Johnny_Permission == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mais je me suis laissé là-haut.	}
+{	4	}{	C'est ce que tu penses. Tu vois, généralement, j'obtiens ce que je veux par la violence.	}{	C'est ce que tu penses. Tu vois, généralement, j'obtiens ce que je veux par la violence.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Oh ... c'est beau ... parce que j'étais sur le point de TE DEMANDER DE DANCER!	}
+{	5	}{	Mauvaise réponse, mon pote. Non, je vais te le faire regretter.	}{	Mauvaise réponse, mon pote. Non, je vais te le faire regretter.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Quand ils demandent qui t'a tué, tu leur dis «personne», c'est moi.	}
+{	6	}{	Je pense que je vais trouver une autre manière, alors.	}{	Je pense que je vais trouver une autre manière, alors.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Avez-vous des conduits autour? Je vais vérifier.	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[Grognement affirmatif]Huh.	}{	[Grognement affirmatif]Huh.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Barry_Move = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	[Criant à quelqu'un qui ne veut pas sortir] Zhao! Nous savons que c'était toi!	}{	[Criant à quelqu'un qui ne veut pas sortir] Zhao! Nous savons que c'était toi!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Tong un jour, Tong toujours, Zhao! Vous savez ce qui arrive aux traîtres!	}{	Tong un jour, Tong toujours, Zhao! Vous savez ce qui arrive aux traîtres!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	ZHAO! Ne sois pas lâche! Sors et meurs comme un homme!	}{	ZHAO! Ne sois pas lâche! Sors et meurs comme un homme!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	(Starting Condition)	}{	(Starting Condition)	}{	11	}{	G.Barry_Move == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	(Starting Condition)	}{	(Starting Condition)	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

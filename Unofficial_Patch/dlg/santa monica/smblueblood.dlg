@@ -1,0 +1,219 @@
+{	1	}{	Euh, oui ? Puis-je vous aider en quoi que ce soit ?	}{	Euh, oui ? Puis-je vous aider en quoi que ce soit ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Que faites-vous ici ?	}{	Que faites-vous ici ?	}{	21	}{	G.Smblue_Plans == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	Non. Je regrette de vous avoir dérangé.	}{	Non. Je regrette de vous avoir dérangé.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Ahem. [se racle la gorge, regarde sa montre]	}{	Ahem. [se racle la gorge, regarde sa montre]	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Que faites-vous ici ?	}{	Que faites-vous ici ?	}{	31	}{	G.Smblue_Plans == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quelle route vous guide, étranger ?	}
+{	13	}{	Je regrette profondément de vous importuner. On m'a volé mon portefeuille, et j'ai besoin de prendre un taxi.	}{	Je regrette profondément de vous importuner. On m'a volé mon portefeuille, et j'ai besoin de prendre un taxi.	}{	51	}{	Persuasion 4 & (G.Smblue_Plans == 1 and G.Smblue_Persuade == 0)	}{	}{	}{	}{	}{	}{	}{	}{	J'ai apparemment perdu l'or de ma cassette. Pourriez-vous m'aider à la remplir ?	}
+{	14	}{	Excusez-moi, vous pourriez me dépanner ? On m'a volé mon portefeuille. . .	}{	Excusez-moi, vous pourriez me dépanner ? On m'a volé mon portefeuille. . .	}{	41	}{	Persuasion -4 & G.Smblue_Plans == 1	}{	}{	}{	}{	}{	}{	}{	}{	Excusez-moi, vous pourriez me dépanner pour remplacer l'argent qu'on vient de me voler ?	}
+{	15	}{	Vous pourriez me dépanner de quelques dollars ? Je traverse une sale période, là.	}{	Vous pourriez me dépanner de quelques dollars ? Je traverse une sale période, là.	}{	71	}{	Intimidate 3 & G.Smblue_Plans == 1	}{	}{	}{	}{	}{	}{	}{	}{	La fortune vous sourit. Vous partagerez vos gains. TOUT DE SUITE.	}
+{	16	}{	On cherche de la compagnie ?	}{	On cherche de la compagnie ?	}{	61	}{	Seduction 4 & G.Smblue_Plans == 1	}{	G.Smblue_Seduced = 1	}{	}{	}{	}{	}{	}{	}{	Nous pourrions peut-être profiter d'un petit rendez-vous au clair de lune. . .	}
+{	17	}{	On cherche de la compagnie ?	}{	On cherche de la compagnie ?	}{	131	}{	Seduction -4 & G.Smblue_Plans == 1	}{	}{	}{	}{	}{	}{	}{	}{	Nous pourrions peut-être profiter d'un petit rendez-vous au clair de lune. . .	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	A plus tard.	}{	A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	J'attends cette maudite dépanneuse que j'ai appelée il y a une heure. Je préférerais ne pas rester une seconde de plus dans cette partie de la ville, à cette heure de la nuit - c'est assez terrible, non ? J'aurais dû écouter mon mécano - achetez allemand, m'avait-il dit.	}{	J'attends cette maudite dépanneuse que j'ai appelée il y a une heure. Je préférerais ne pas rester une seconde de plus dans cette partie de la ville, à cette heure de la nuit - c'est assez terrible, non ? J'aurais dû écouter mon mécano - achetez allemand, m'avait-il dit.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Smblue_Plans = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Je regrette profondément de vous importuner. On m'a volé mon portefeuille, et j'ai besoin de prendre un taxi.	}{	Je regrette profondément de vous importuner. On m'a volé mon portefeuille, et j'ai besoin de prendre un taxi.	}{	51	}{	Persuasion 4 & G.Smblue_Persuade == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'ai apparemment perdu l'or de ma cassette. Pourriez-vous m'aider à la remplir ?	}
+{	23	}{	Excusez-moi, vous pourriez me dépanner ? On m'a volé mon portefeuille. . .	}{	Excusez-moi, vous pourriez me dépanner ? On m'a volé mon portefeuille. . .	}{	41	}{	Persuasion -4	}{	}{	}{	}{	}{	}{	}{	}{	Excusez-moi, vous pourriez me dépanner pour remplacer l'argent qu'on vient de me voler ?	}
+{	24	}{	Vous pourriez me dépanner de quelques dollars ? Je traverse une sale période, là.	}{	Vous pourriez me dépanner de quelques dollars ? Je traverse une sale période, là.	}{	71	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	La fortune vous sourit. Vous partagerez vos gains. TOUT DE SUITE.	}
+{	25	}{	Retrouvez-moi dans l'impasse.	}{	Retrouvez-moi dans l'impasse.	}{	61	}{	Dominate 1	}{	G.Smblue_Dominated = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	Retrouvez-moi dans l'impasse.	}{	Retrouvez-moi dans l'impasse.	}{	61	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	Vous voulez juste m'admirer en privé.	}{	Vous voulez juste m'admirer en privé.	}{	61	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1; G.Dialog_Presence = 1;dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	On cherche de la compagnie ?	}{	On cherche de la compagnie ?	}{	61	}{	Seduction 4	}{	G.Smblue_Seduced = 1	}{	}{	}{	}{	}{	}{	}{	Nous pourrions peut-être profiter d'un petit rendez-vous au clair de lune. . .	}
+{	29	}{	On cherche de la compagnie ?	}{	On cherche de la compagnie ?	}{	121	}{	Seduction -4	}{	}{	}{	}{	}{	}{	}{	}{	Nous pourrions peut-être profiter d'un petit rendez-vous au clair de lune. . .	}
+{	30	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	31	}{	Rien, rien. . . J'attends simplement un ami qui. . . doit arriver du travail. C'est. . . un policier. Un ancien copain de régiment. Il devrait venir avec son chien. C'est un rotweiller. . . Un merveilleux chien d'attaque, d'ailleurs.	}{	Rien, rien. . . J'attends simplement un ami qui. . . doit arriver du travail. C'est. . . un policier. Un ancien copain de régiment. Il devrait venir avec son chien. C'est un rotweiller. . . Un merveilleux chien d'attaque, d'ailleurs.	}{	#	}{	Whisper("Lying"); npc.SetDisposition("Fear", 1)	}{	G.Smblue_Plans = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Je regrette profondément de vous importuner. On m'a volé mon portefeuille, et j'ai besoin de prendre un taxi.	}{	Je regrette profondément de vous importuner. On m'a volé mon portefeuille, et j'ai besoin de prendre un taxi.	}{	51	}{	Persuasion 4 & G.Smblue_Persuade == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'ai apparemment perdu l'or de ma cassette. Pourriez-vous m'aider à la remplir ?	}
+{	33	}{	Excusez-moi, vous pourriez me dépanner ? On m'a volé mon portefeuille. . .	}{	Excusez-moi, vous pourriez me dépanner ? On m'a volé mon portefeuille. . .	}{	41	}{	Persuasion -4	}{	}{	}{	}{	}{	}{	}{	}{	Excusez-moi, vous pourriez me dépanner pour remplacer l'argent qu'on vient de me voler ?	}
+{	34	}{	Vous pourriez me dépanner de quelques dollars ? Je traverse une sale période, là.	}{	Vous pourriez me dépanner de quelques dollars ? Je traverse une sale période, là.	}{	71	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	La fortune vous sourit. Vous partagerez vos gains. TOUT DE SUITE.	}
+{	35	}{	On cherche de la compagnie ?	}{	On cherche de la compagnie ?	}{	61	}{	Seduction 4	}{	G.Smblue_Seduced = 1	}{	}{	}{	}{	}{	}{	}{	Nous pourrions peut-être profiter d'un petit rendez-vous au clair de lune. . .	}
+{	36	}{	On cherche de la compagnie ?	}{	On cherche de la compagnie ?	}{	131	}{	Seduction -4	}{	}{	}{	}{	}{	}{	}{	}{	Nous pourrions peut-être profiter d'un petit rendez-vous au clair de lune. . .	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	Alors je vais continuer mon chemin.	}{	Alors je vais continuer mon chemin.	}{	0	}{	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	Nous portons tous la nuit comme un châle à dents de scie. Adieu.	}
+{	41	}{	J'ai peur de n'avoir pas de liquide sur moi. Je regrette.	}{	J'ai peur de n'avoir pas de liquide sur moi. Je regrette.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Smblue_Persuade = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Quelques dollars ? Je n'ai vraiment pas eu de chance ces derniers temps. Aidez-moi. . .	}{	Quelques dollars ? Je n'ai vraiment pas eu de chance ces derniers temps. Aidez-moi. . .	}{	71	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	La fortune vous sourit. Vous partagerez vos gains. TOUT DE SUITE.	}
+{	43	}{	Alors, on cherche de la compagnie ?	}{	Alors, on cherche de la compagnie ?	}{	61	}{	Seduction 4	}{	G.Smblue_Seduced = 1	}{	}{	}{	}{	}{	}{	}{	Nous pourrions peut-être profiter d'un petit rendez-vous au clair de lune. . .	}
+{	44	}{	Alors, on cherche de la compagnie ?	}{	Alors, on cherche de la compagnie ?	}{	131	}{	Seduction -4 & not (IsClan(pc,"Ventrue") or IsClan(pc,"Toreador"))	}{	}{	}{	}{	}{	}{	}{	}{	Nous pourrions peut-être profiter d'un petit rendez-vous au clair de lune. . .	}
+{	45	}{	Alors, on cherche de la compagnie ?	}{	Alors, on cherche de la compagnie ?	}{	121	}{	Seduction -4 & (IsClan(pc,"Ventrue") or IsClan(pc,"Toreador"))	}{	}{	}{	}{	}{	}{	}{	}{	Nous pourrions peut-être profiter d'un petit rendez-vous au clair de lune. . .	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	Alors je vais continuer mon chemin.	}{	Alors je vais continuer mon chemin.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La chance est un chancre chaleureux. Adieu.	}
+{	51	}{	Oh, je vous comprends tout à fait. Tenez, voici quelques dollars. Je vous en prie. Je ne serais pas du tout étonné qu'on vous l'aie volé. . . Dans un quartier pareil. Enfin, bonne soirée. . . Et surtout, prudence !	}{	Oh, je vous comprends tout à fait. Tenez, voici quelques dollars. Je vous en prie. Je ne serais pas du tout étonné qu'on vous l'aie volé. . . Dans un quartier pareil. Enfin, bonne soirée. . . Et surtout, prudence !	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Smblue_Persuade = 1; pc.MoneyAdd(20)	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Merci!	}{	Merci!	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Merci!	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	J'ai soudain l'envie de marcher dans cette allée sombre et menaçante. Vous joindrez-vous à moi ?	}{	J'ai soudain l'envie de marcher dans cette allée sombre et menaçante. Vous joindrez-vous à moi ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Je vous y retrouve.	}{	Je vous y retrouve.	}{	0	}{	G.Smblue_Dominated == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je vous y retrouve, mon inséparable libidineux.	}
+{	63	}{	Nul besoin d'aller si loin.	}{	Nul besoin d'aller si loin.	}{	0	}{	G.Smblue_Seduced == 1	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Joignons nous ici.	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Euh. . . bien sûr, je peux vous donner quelques dollars. Tenez. . . Euh. . . Bonne chance, hein, bon nouveau départ. . .	}{	Euh. . . bien sûr, je peux vous donner quelques dollars. Tenez. . . Euh. . . Bonne chance, hein, bon nouveau départ. . .	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Smblue_Mug = 1; pc.MoneyAdd(20)	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Vous savez, j'aime vraiment bien votre montre. . .	}{	Vous savez, j'aime vraiment bien votre montre. . .	}{	81	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Je vais aussi prendre votre mesureur de temps. . .	}
+{	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	Vous êtes d'une extrême gentillesse. Bonne nuit.	}{	Vous êtes d'une extrême gentillesse. Bonne nuit.	}{	0	}{	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	Vous avez un coeur d'or que j'ai hâte de goûter. Adieu. 	}
+{	81	}{	Ma montre ? C'est une édition limitée. . . Il n'y en a que cinquante au monde. . . Tout à fait irremplaçable. . . C'était un cadeau de ma femme pour notre anniversaire de mariage. . .	}{	Ma montre ? C'est une édition limitée. . . Il n'y en a que cinquante au monde. . . Tout à fait irremplaçable. . . C'était un cadeau de ma femme pour notre anniversaire de mariage. . .	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Alors ça ne vous fera sans doute rien de l'échanger contre votre vie. . .	}{	Alors ça ne vous fera sans doute rien de l'échanger contre votre vie. . .	}{	91	}{	Intimidate 3 & G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Considérez ça comme un emprunt sur votre mortalité. . .	}
+{	83	}{	Alors ça ne vous fera sans doute rien de l'échanger contre votre vie. . .	}{	Alors ça ne vous fera sans doute rien de l'échanger contre votre vie. . .	}{	91	}{	Intimidate 3 & G.Patch_Plus == 1	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	Considérez ça comme un emprunt sur votre mortalité. . .	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	Oui, elle est superbe. Passez une bonne nuit.	}{	Oui, elle est superbe. Passez une bonne nuit.	}{	0	}{	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	Gardez votre babiole. Adieu.	}
+{	91	}{	Bon, eh bien. . . tenez. . .	}{	Bon, eh bien. . . tenez. . .	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Smblue_Mug = 2; spawnWatch()	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Pendant que vous en êtes à enlever votre montre, pourquoi vous ne me donneriez pas votre argent ?	}{	Pendant que vous en êtes à enlever votre montre, pourquoi vous ne me donneriez pas votre argent ?	}{	101	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Vous pouvez ajouter toute votre oseille à cette poignée de tic-tac.	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	J'ai ce que je voulais. Pour l'heure.	}{	J'ai ce que je voulais. Pour l'heure.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une poignée de dignité vaut mieux que rien.	}
+{	101	}{	Ce sont des gens comme vous qui ont ruiné cette ville. Voilà mon argent. Allez vous acheter vos. . . narcotiques, vermine. Et laissez-moi. Vous avez ce que vous vouliez.	}{	Ce sont des gens comme vous qui ont ruiné cette ville. Voilà mon argent. Allez vous acheter vos. . . narcotiques, vermine. Et laissez-moi. Vous avez ce que vous vouliez.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	G.Smblue_Mug = 3; pc.MoneyAdd(100)	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Je pourrais, mais cela manque de classe sans un passage à tabac.	}{	Je pourrais, mais cela manque de classe sans un passage à tabac.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Votre sang sera la cerise sur le gâteau de cette petite rue.	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	Vous avez été très serviable. Passez une excellente nuit.	}{	Vous avez été très serviable. Passez une excellente nuit.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Soyez heureux d'encore respirer, monétaire. . . Adieu. . .	}
+{	111	}{	Où est cette satanée dépanneuse ?	}{	Où est cette satanée dépanneuse ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Que faites-vous ici ?	}{	Que faites-vous ici ?	}{	21	}{	G.Smblue_Plans == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	Je regrette profondément de vous importuner. On m'a volé mon portefeuille, et j'ai besoin de prendre un taxi.	}{	Je regrette profondément de vous importuner. On m'a volé mon portefeuille, et j'ai besoin de prendre un taxi.	}{	51	}{	Persuasion 4 & G.Smblue_Persuade == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	Excusez-moi, vous pourriez me dépanner ? On m'a volé mon portefeuille. . .	}{	Excusez-moi, vous pourriez me dépanner ? On m'a volé mon portefeuille. . .	}{	41	}{	Persuasion -4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	Vous pourriez me dépanner de quelques dollars ? Je traverse une sale période, là.	}{	Vous pourriez me dépanner de quelques dollars ? Je traverse une sale période, là.	}{	71	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	Retrouvez-moi dans l'impasse.	}{	Retrouvez-moi dans l'impasse.	}{	61	}{	Dominate 1	}{	G.Smblue_Dominated = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	On cherche de la compagnie ?	}{	On cherche de la compagnie ?	}{	61	}{	Seduction 4	}{	G.Smblue_Seduced = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	On cherche de la compagnie ?	}{	On cherche de la compagnie ?	}{	121	}{	Seduction -4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	Retrouvez-moi dans l'impasse.	}{	Retrouvez-moi dans l'impasse.	}{	61	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1;dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	A plus tard.	}{	A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Je suis marié. . . à mon travail. Et j'ai une femme, en plus.	}{	Je suis marié. . . à mon travail. Et j'ai une femme, en plus.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Que faites-vous ici ?	}{	Que faites-vous ici ?	}{	21	}{	G.Smblue_Plans == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quelle route vous guide, étranger ?	}
+{	123	}{	Je regrette de vous importuner. On m'a volé mon portefeuille, et j'ai besoin de prendre un taxi.	}{	Je regrette de vous importuner. On m'a volé mon portefeuille, et j'ai besoin de prendre un taxi.	}{	51	}{	Persuasion 4 & G.Smblue_Persuade == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'ai apparemment perdu l'or de ma cassette. Pourriez-vous m'aider à la remplir ?	}
+{	124	}{	Excusez-moi, vous pourriez me dépanner ? On m'a volé mon portefeuille. . .	}{	Excusez-moi, vous pourriez me dépanner ? On m'a volé mon portefeuille. . .	}{	41	}{	Persuasion -4	}{	}{	}{	}{	}{	}{	}{	}{	Excusez-moi, vous pourriez me dépanner pour remplacer l'argent qu'on vient de me voler ?	}
+{	125	}{	Vous pourriez me dépanner de quelques dollars ? Je traverse une sale période, là.	}{	Vous pourriez me dépanner de quelques dollars ? Je traverse une sale période, là.	}{	71	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	La fortune vous sourit. Vous partagerez vos gains. TOUT DE SUITE.	}
+{	126	}{	Retrouvez-moi dans l'impasse.	}{	Retrouvez-moi dans l'impasse.	}{	61	}{	Dominate 1	}{	G.Smblue_Dominated = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	Retrouvez-moi dans l'impasse.	}{	Retrouvez-moi dans l'impasse.	}{	61	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	Vous voulez juste m'admirer en privé.	}{	Vous voulez juste m'admirer en privé.	}{	61	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1; G.Dialog_Presence = 1;dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	Peu importe. Je m'en vais.	}{	Peu importe. Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	131	}{	Je suis marié. . . à mon travail. Et j'ai une femme, en plus.	}{	Je suis marié. . . à mon travail. Et j'ai une femme, en plus.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Que faites-vous ici ?	}{	Que faites-vous ici ?	}{	31	}{	G.Smblue_Plans == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quelle route vous guide, étranger ?	}
+{	133	}{	Je regrette de vous importuner. On m'a volé mon portefeuille, et j'ai besoin de prendre un taxi.	}{	Je regrette de vous importuner. On m'a volé mon portefeuille, et j'ai besoin de prendre un taxi.	}{	41	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	J'ai apparemment perdu l'or de ma cassette. Pourriez-vous m'aider à la remplir ?	}
+{	134	}{	Excusez-moi, vous pourriez me dépanner ? On m'a volé mon portefeuille. . .	}{	Excusez-moi, vous pourriez me dépanner ? On m'a volé mon portefeuille. . .	}{	41	}{	Persuasion -4	}{	}{	}{	}{	}{	}{	}{	}{	Excusez-moi, vous pourriez me dépanner pour remplacer l'argent qu'on vient de me voler ?	}
+{	135	}{	Vous pourriez me dépanner de quelques dollars ? Je traverse une sale période, là.	}{	Vous pourriez me dépanner de quelques dollars ? Je traverse une sale période, là.	}{	71	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	La fortune vous sourit. Vous partagerez vos gains. TOUT DE SUITE.	}
+{	136	}{	Je regrette de vous avoir dérangé. Bonne nuit.	}{	Je regrette de vous avoir dérangé. Bonne nuit.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Euh. . .	}{	Euh. . .	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Vous savez, j'aime vraiment bien votre montre. . .	}{	Vous savez, j'aime vraiment bien votre montre. . .	}{	81	}{	Intimidate 3 & G.Smblue_Mug == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'admirais votre compteur de temps en or.	}
+{	143	}{	C'est un bon début, mais ce qui me serait le plus utile, je pense que c'est votre montre. . .	}{	C'est un bon début, mais ce qui me serait le plus utile, je pense que c'est votre montre. . .	}{	81	}{	Intimidate 3 & (G.Smblue_Mug == 1 and not IsClan(pc,"Malkavian"))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	Je voulais encore vous remercier pour votre aide.	}{	Je voulais encore vous remercier pour l'argent que vous m'avez donné tout à l'heure.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La nuit est un cocktail enivrant. Adieu.	}
+{	146	}{	Vous devriez partir d'ici. Il y a beaucoup de fous, à cette heure de la nuit. OUPS !!	}{	Vous devriez partir d'ici. Il y a beaucoup de fous, à cette heure de la nuit. OUPS !!	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Reculez ! A l'aide ! Appelez la police ! [crie]	}{	Reculez ! A l'aide ! Appelez la police ! [crie]	}{	#	}{	npc.SetDisposition("Fear", 2)	}{	G.Smblue_Shock = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	[Choqué]Oh mon. . .	}{	[Choqué]Oh mon. . .	}{	#	}{	npc.SetDisposition("Fear", 2)	}{	G.Smblueblood_Fear = G.Smblueblood_Fear +1	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	(Auto-Link)	}{	(Auto-Link)	}{	151	}{	G.Smblueblood_Fear == 3	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	163	}{	Que faites-vous ici ?	}{	Que faites-vous ici ?	}{	161	}{	G.Smblueblood_Fear < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	Je regrette de vous importuner. On m'a volé mon portefeuille, et j'ai besoin de prendre un taxi.	}{	Je regrette de vous importuner. On m'a volé mon portefeuille, et j'ai besoin de prendre un taxi.	}{	161	}{	Persuasion 5 & (G.Smblueblood_Fear < 3 and G.Smblue_Persuade == 0)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	Vous pourriez me dépanner de quelques dollars ? Je traverse une sale période, là.	}{	Vous pourriez me dépanner de quelques dollars ? Je traverse une sale période, là.	}{	161	}{	Intimidate 4 & G.Smblueblood_Fear < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	On cherche de la compagnie ?	}{	On cherche de la compagnie ?	}{	161	}{	G.Smblueblood_Fear < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	J'ai compris. Je m'en vais.	}{	J'ai compris. Je m'en vais.	}{	0	}{	G.Smblueblood_Fear < 3	}{	G.Smblue_Shock = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	D'accord, je vois le genre. Pauvre type.	}{	D'accord, je vois le genre. Pauvre type.	}{	0	}{	G.Smblueblood_Fear < 3	}{	G.Smblue_Shock = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Ce que je ne donnerais pas pour un verre de Château Montebleau 79, là tout de suite. . .	}{	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	J'ai peine à croire que des gens puissent vivre dans un endroit pareil. . .	}{	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	C'est vraiment le pire endroit où tomber en panne. . .	}{	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	193	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	203	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	(Starting Condition)	}{	}{	151	}{	G.Smblue_Shock == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	213	}{	(Starting Condition)	}{	}{	151	}{	G.Smblue_Mug == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	(Starting Condition)	}{	}{	141	}{	G.Smblue_Mug == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	(Starting Condition)	}{	}{	141	}{	G.Smblue_Mug == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	(Starting Condition)	}{	}{	111	}{	(IsClan(pc,"Ventrue") or IsClan(pc,"Tremere") or IsClan(pc,"Toreador")) and npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	(Starting Condition)	}{	}{	161	}{	IsClan(pc,"Nosferatu") and npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	(Starting Condition)	}{	}{	11	}{	(IsClan(pc,"Gangrel") or IsClan(pc,"Malkavian") or IsClan(pc,"Brujah"))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	(Starting Condition)	}{	}{	1	}{	(IsClan(pc,"Ventrue") or IsClan(pc,"Tremere") or IsClan(pc,"Toreador")) and npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

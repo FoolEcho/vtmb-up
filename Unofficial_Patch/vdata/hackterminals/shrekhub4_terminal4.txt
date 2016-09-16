@@ -1,0 +1,69 @@
+TerminalDefinition
+{
+	"screen saver"		"Kamikazi Zen"				// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""					// these surround the command prompt (2 characters), changed by wesp
+
+
+	"email_password"	"waterloo"				// the user must type this to access email from this terminal
+	"email_username"	"Buckfinster"
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Buckfinster"
+	}
+
+	SubDir
+	{
+		"name"			"PERSONNEL"	//(128 characters)
+		"description"		"Fichiers personnels"	
+		"password"		"elba"
+		"difficulty"		"5"
+
+		Function
+		{
+			"name"		"MANIFESTE 1"
+			"description"	"Voyage spirituel"	
+			"runtext"	"Oh, comme j'ai souffert. Les bouffons insensibles et illettrés qui m'entourent me rappellent constamment dans quel triste état est ce pays. J'ai des solutions. Aussi extrêmes qu'elles puissent paraître à l'heure actuelle, l'histoire se souviendra de moi comme un visionnaire. Tel est mon destin."
+
+		}
+
+		Function
+		{
+			"name"		"MANIFESTE 2"
+			"description"	"Voyage spirituel"	
+			"runtext"	"L'intelligence est-elle une denrée si rare ? Aujourd'hui, j'ai parlé avec Shinto et il a réussi à jacasser une minute sans utiliser un seul pronom. Oh mon dieu, comme ça m'afflige. Si ses yeux n'étaient pas si rapprochés, je les lui aurais bien arrachés."
+
+
+		}
+
+
+		Function
+		{
+			"name"		"MANIFESTE 3"
+			"description"	"Voyage spirituel"	
+			"runtext"	"Je n'arrive pas à comprendre comment Larry a pu devenir mon chef. . . ça me dépasse. Outre son niveau de langage, qui dépasse à peine celui de notre cher ami Shinto, je ne peux plus supporter ses programmes minables et ses horribles protocoles de sécurité. Il inverse les lettres de son nom et s'en sert de code d'accès pour le coffre-fort de la banque. Mon royaume pour une batte de base-ball. Je suis à bout."
+
+
+		}
+	}
+
+	Email
+	{
+		"subject"	"FUCK-BINSTER !"				
+		"sender"	"shinto-X@Kamikazi.vtm"
+		"body"		"FUCK_BINSTER ! T'es TROP laid ! Même la grosse secrétaire, elle crache sur ta tête ! Ha ! Moi tuer toi pas beau à SLAUGHTER-GRUDGE ce soir ! TU M'ENTENDS ? FUCK_BINSTER!!!
+
+
+--shinto-X"
+	}
+
+	Email
+	{
+		"subject"	"espèce de taré !"				
+		"sender"	"SCUDmuffin@Kamikazi.vtm"
+		"body"		"Lâche l'affaire, Bucky sans couilles ! Tes conneries serviront plus à rien quand t'auras un WAR-BRINGER dans le crâne ! FAUT PAS FAIRE CHIER LE CLAN DEATHGURGLE !!!  BUCKY SANS COUILLES !
+
+--SCUDmuffin"
+	}
+}

@@ -1,0 +1,292 @@
+{	1	}{	Quoi. . . ? Hein ? Oh, tu viens d'essayer de me lancer un mouchard. . . D'accord. Prends ça. J'espère que t'avais backupé ton serveur, ce soir. Ton boss va être super énervé quand sa mère commencera à recevoir des lettres d'amour de sites pornos. . . 	}{	Quoi. . . ? Hein ? Oh, tu viens d'essayer de me lancer un mouchard. . . D'accord. Prends ça. J'espère que t'avais backupé ton serveur, ce soir. Ton boss va être super énervé quand sa mère commencera à recevoir des lettres d'amour de sites pornos. . . 	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Mitnick_Talked = 1; G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Euh. . . bonjour ?	}{	Euh. . . bonjour ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Salutations, maître du réseau. . .	}
+{	3	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Quoi ? Ah ouais, attends un peu. . . Oh mon dieu. Tu te fous de moi ? T'utilises quoi pour la sécurité, par ici ? Un Merdium 80 ? Eh, les mecs, le cryptage, c'est pas pour les chiens. C'est trop facile. Cette fois, je te laisse passer, mais la bêtise, ça me rend toujours méchant.	}{	Quoi ? Ah ouais, attends un peu. . . Oh mon dieu. Tu te fous de moi ? T'utilises quoi pour la sécurité, par ici ? Un Merdium 80 ? Eh, les mecs, le cryptage, c'est pas pour les chiens. C'est trop facile. Cette fois, je te laisse passer, mais la bêtise, ça me rend toujours méchant.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Mmmm. . . Salut. . .	}{	Mmmm. . . Salut. . .	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je te parler, maître des courants électroniques ?	}
+{	13	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Hein ? Ouais, j'arrive, une minute. Non, non. . . pas de souci. . . c'est juste un petit mail inoffensif, pas du tout un virus auto-répliquant. . . Hé hé. . . Ah. Tu l'as ouvert. J'arrive pas à croire que tu l'as ouvert. Mais il faut être idiot pour l'ouvrir comme ça. . .	}{	Hein ? Ouais, j'arrive, une minute. Non, non. . . pas de souci. . . c'est juste un petit mail inoffensif, pas du tout un virus auto-répliquant. . . Hé hé. . . Ah. Tu l'as ouvert. J'arrive pas à croire que tu l'as ouvert. Mais il faut être idiot pour l'ouvrir comme ça. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Je reviendrai peut-être une autre fois. . .	}{	Je reviendrai peut-être une autre fois. . .	}{	31	}{	not IsClan(pc,"Malkavian")	}{	MitnickTurn()	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Il faudra remettre ce tango à une autre fois ?	}{	Il faudra remettre ce tango à une autre fois ?	}{	221	}{	IsClan(pc,"Malkavian")	}{	MitnickTurn()	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Quoi ? Oh ouais, pardon. Je m'appelle Mitnick, je m'occupe des systèmes informatiques, de la sécurité réseau, ce genre de choses. Tu es l'émissaire de LaCroix, c'est ça ? La nouvelle tête ? Je suis étonné que tu aies pu descendre jusqu'ici.	}{	Quoi ? Ah ouais. . . Pardon. Je m'appelle Mitnick. Je m'occupe des systèmes informatiques, sécurité réseau, tout ça. T'es la nouvelle, c'est ça ? La gamine de LaCroix ? Je suis étonné que tu sois arrivée jusqu'ici.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Je ne suis pas là pour discuter, je viens voir Gary.	}{	Je ne suis pas là pour discuter, je viens voir Gary.	}{	81	}{	G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche Gary, roi de cette crypte. . .	}
+{	33	}{	Etonné ? Comment ça ?	}{	Etonné ? Comment ça ?	}{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi une telle surprise, binaire-man ?	}
+{	34	}{	Moi aussi. Parle-moi un peu de toi.	}{	Moi aussi. Parle-moi un peu de toi.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	J'ai suivi ta progression sur les caméras. . . Tu as grave assuré, avec les trucs chelous qui se trimballent dans les tunnels. On dirait un mauvais remake de C.H.U.D.	}{	J'ai suivi ta progression sur les caméras. . . Tu as grave assuré, avec les trucs chelous qui se trimballent dans les tunnels. On dirait un mauvais remake de C.H.U.D.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	T'es un marrant, toi. J'ai besoin de savoir où est Gary.	}{	T'es un marrant, toi. J'ai besoin de savoir où est Gary.	}{	81	}{	G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche Gary, roi de cette crypte. . .	}
+{	38	}{	Tu as vu ça ? Un peu d'aide, ça ne m'aurait pas fait de mal.	}{	Tu as vu ça ? Un peu d'aide, ça ne m'aurait pas fait de mal.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne pouvais-tu pas me tendre cette main flétrie ?	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Je ne pouvais rien faire d'ici. Ces vieux égouts sont câblés en cartes perforées et tubes à vide. Désolé, mais je ne fais pas dans l'analogique.	}{	Je ne pouvais rien faire d'ici. Ces vieux égouts sont câblés en cartes perforées et tubes à vide. Désolé, mais je ne fais pas dans l'analogique.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Quel planqué. Je cherche Gary.	}{	Quel planqué. Je cherche Gary.	}{	81	}{	G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche Gary, roi de cette crypte. . .	}
+{	43	}{	Bon. J'ai quelques questions.	}{	Bon. J'ai quelques questions.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiner dans ton crâne. . .	}
+{	44	}{	Je me casse.	}{	Je me casse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Continue. . .	}{	Continue. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Je cherche Gary.	}{	Je cherche Gary.	}{	81	}{	G.Mitnick_Gary == 0 and G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche Gary, roi de cette crypte. . .	}
+{	53	}{	Où je peux trouver Gary ?	}{	Où je peux trouver Gary ?	}{	91	}{	G.Mitnick_Gary == 1 and G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Où est le repaire du roi de cette crypte ?	}
+{	54	}{	Parle-moi de cet endroit.	}{	Parle-moi de cet endroit.	}{	61	}{	G.Mitnick_Place == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi de ces mondes inférieurs. . .	}
+{	55	}{	Parle-moi de ce que tu fais.	}{	Parle-moi de ce que tu fais.	}{	101	}{	G.Mitnick_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Par où regarde-t-on ce qui se passe dans cette boîte ?	}
+{	56	}{	Je peux peut-être t'aider avec tes problèmes de réseau.	}{	Je peux peut-être t'aider avec tes problèmes de réseau.	}{	151	}{	G.Mitnick_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je pourrais peut-être m'occuper de ta matrice. . .	}
+{	57	}{	Dis-moi ce que tu fais ici. . .	}{	Dis-moi ce que tu fais ici. . .	}{	231	}{	G.Mitnick_Quest > 1 and G.Mitnick_Hacker == 0	}{	}{	}{	}{	}{	}{	}{	}{	Raconte-moi ton histoire, cyber-cowboy. . .	}
+{	58	}{	En fait, je me casse. Salut Mitnick.	}{	En fait, je me casse. Salut Mitnick.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre se porte sur d'autres domaines.	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Quoi, les Clapiers ? Pas grand-chose à dire. On est quelques-uns à vivre ici, on essaye de pas apparaître sur le radar. C'est moche, mais c'est chez nous. C'est Gary, le chef. . . il donne les ordres.	}{	Quoi, les Clapiers ? Pas grand-chose à dire. On est quelques-uns à vivre ici, on essaye de pas apparaître sur le radar. C'est moche, mais c'est chez nous. C'est Gary, le chef. . . il donne les ordres.	}{	#	}{	}{	G.Mitnick_Place = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Je vois. Et d'ailleurs, c'est lui que je cherche.	}{	Je vois. Et d'ailleurs, c'est lui que je cherche.	}{	81	}{	G.Mitnick_Gary == 0 and G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Dis-moi où trouver ce colosse cordial. . .	}
+{	63	}{	Où je peux le trouver, déjà ?	}{	Où je peux le trouver, déjà ?	}{	91	}{	G.Mitnick_Gary == 1 and G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Où est le roi de cette crypte ?	}
+{	64	}{	Ca a l'air un peu vide, ici ?	}{	Ca a l'air un peu vide, ici ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce monde souterrain paraît vide de démons.	}
+{	65	}{	Super. Je peux te poser d'autres questions ?	}{	Super. Je peux te poser d'autres questions ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiner dans ton crâne. . .	}
+{	66	}{	Merci du renseignement. A plus. 	}{	Merci du renseignement. A plus. 	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est parti, mon corps suit.	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	On est plus nombreux que tu penses. Ils sont dans le coin. On en voit pas beaucoup, mais eux te regardent.	}{	On est plus nombreux que tu penses. Ils sont dans le coin. On en voit pas beaucoup, mais eux te regardent.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	C'est rassurant. Enfin bon. . . je cherche Gary.	}{	C'est rassurant. Enfin bon. . . je cherche Gary.	}{	81	}{	G.Mitnick_Gary == 0 and G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Les rats d'égout ne projettent nulle ombre. Mais où est le roi de cette crypte ?	}
+{	73	}{	Je les comprends bien. Je peux me joindre à toi ?	}{	Je les comprends bien. Je peux me joindre à toi ?	}{	171	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	Super. J'ai quelques questions pour toi, si tu veux bien.	}{	Super. J'ai quelques questions pour toi, si tu veux bien.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiner dans ton crâne. . .	}
+{	75	}{	Je vais essayer d'être sage. A plus.	}{	Je vais essayer d'être sage. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Ouais, il sait pourquoi tu es là. LaCroix doit être furax. Mais j'espère que tu ne viens pas te venger. LaCroix sait qu'il ne faut pas embêter Gary, shérif ou pas.	}{	Ouais, il sait pourquoi tu es là. LaCroix doit être furax. Mais j'espère que tu ne viens pas te venger. LaCroix sait qu'il ne faut pas embêter Gary, shérif ou pas.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Je viens juste discuter. Où je peux le trouver ?	}{	Je viens juste discuter. Où je peux le trouver ?	}{	91	}{	G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Je viens échanger des mots, pas des coups. 	}
+{	83	}{	Gary a des trucs à expliquer. Où est-il ?	}{	Gary a des trucs à expliquer. Où est-il ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il y aura châtiment dans ce nid de rats. . .	}
+{	84	}{	Si tu me menaces encore, je te botte le train. Où il se cache ?	}{	Si tu me menaces encore, je te botte le train. Où il se cache ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le souffle amer de la mort et ton tas de cendres.	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Sa chambre est au bout du couloir. Tu le trouveras peut-être. A moins que ce soit lui qui te trouve.	}{	Sa chambre est au bout du couloir. Tu le trouveras peut-être. A moins que ce soit lui qui te trouve.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Mitnick_Gary = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Bon. J'ai d'autres questions à te poser. 	}{	Bon. J'ai d'autres questions à te poser. 	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiner dans ton crâne. . .	}
+{	93	}{	J'y vais. A plus.	}{	J'y vais. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche ce roi sombre. . . Adieu.	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Moi ? Comme j'ai dit, je suis le technicien en chef. J'entretiens le réseau avec l'extérieur. Gary voulait qu'on garde un oeil sur ce qui se passe, et dans le même temps, je suis censé mettre Shre. . . le réseau à niveau.	}{	Moi ? Comme j'ai dit, je suis le technicien en chef. J'entretiens le réseau avec l'extérieur. Gary voulait qu'on garde un oeil sur ce qui se passe, et dans le même temps, je suis censé mettre Shre. . . le réseau à niveau.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Mettre quoi à niveau ? Tu allais dire quoi ?	}{	Mettre quoi à niveau ? Tu allais dire quoi ?	}{	111	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Quoi ? Je vois une toile secrète, tissée par des rongeurs furtifs. . .	}
+{	103	}{	Mettre quoi à niveau ? Tu allais dire quoi ?	}{	Mettre quoi à niveau ? Tu allais dire quoi ?	}{	121	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Rien. Laisse tomber. Comme je disais, des trucs de réseau.	}{	Rien. Laisse tomber. Comme je disais, des trucs de réseau.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Ouais, c'est ça. Alors tu fais quoi ?	}{	Ouais, c'est ça. Alors tu fais quoi ?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Garde ton secret, petit rat. Et cette toile problématique ?	}
+{	113	}{	Super. J'ai encore quelques questions.	}{	Super. J'ai encore quelques questions.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiner dans ton crâne. . .	}
+{	114	}{	C'est nul, ici. Je me casse.	}{	C'est nul, ici. Je me casse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je traverse d'autres tunnels. Adieu.	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Hmmm. Bah, tu es du même clan, ça c'est sûr. . . Bon, je te donne un secret. Entre Nosferatus. On a un réseau d'information mondial appelé SchreckNet. Top secret. Réservé au clan. Aucun des autres clans ne sait qu'il existe.	}{	Hmmm. Bah, tu es du même clan, ça c'est sûr. . . Bon, je te donne un secret. Entre Nosferatus. On a un réseau d'information mondial appelé SchreckNet. Top secret. Réservé au clan. Aucun des autres clans ne sait qu'il existe.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Ca sert à quoi ?	}{	Ca sert à quoi ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Plein de trucs. Reconnaissance, décodage, espionnage. . . si t'as l'autorisation, tu peux accéder à toute la base de données Nosferatu. Tu veux le nom du tailleur de LaCroix ? J'ai. La taille de soutien-gorge de Jeanette Voerman ? J'ai ça, aussi.	}{	Plein de trucs. Reconnaissance, décodage, espionnage. . . si t'as l'autorisation, tu peux accéder à toute la base de données Nosferatu. Tu veux le nom du tailleur de LaCroix ? J'ai. La taille de soutien-gorge de Jeanette Voerman ? J'ai ça, aussi.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Super cool. Et tu essayes de le mettre à niveau ?	}{	Super cool. Et tu essayes de le mettre à niveau ?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	De rajouter des hubs de réseau dans la ville, pour qu'on ait un backup en cas d'urgence. Mais Gary ne veut pas qu'on sorte d'ici avant que les choses soient calmées avec LaCroix. Et en gros, je me retrouve comme un con.	}{	De rajouter des hubs de réseau dans la ville, pour qu'on ait un backup en cas d'urgence. Mais Gary ne veut pas qu'on sorte d'ici avant que les choses soient calmées avec LaCroix. Et en gros, je me retrouve comme un con.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Mitnick_Quest = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Je peux peut-être t'aider. . .	}{	Je peux peut-être t'aider. . .	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je pourrais peut-être aller tisser un coup moi aussi. . .	}
+{	143	}{	Intéressant. J'ai encore deux ou trois questions. 	}{	Intéressant. J'ai encore deux ou trois questions. 	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiner dans ton crâne. . .	}
+{	144	}{	On dirait que tu t'es fait avoir. A plus.	}{	On dirait que tu t'es fait avoir. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Ouais ? Tu ferais ça ? Bon sang, ce serait super cool. Je pourrais te filer deux trois trucs en chemin, histoire que tu fasses pas ça pour rien. J'ai accès à plein de trucs bien. . .	}{	Ouais ? Tu ferais ça ? Bon sang, ce serait super cool. Je pourrais te filer deux trois trucs en chemin, histoire que tu fasses pas ça pour rien. J'ai accès à plein de trucs bien. . .	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Ca marche. Qu'est-ce que je dois faire ?	}{	Ca marche. Qu'est-ce que je dois faire ?	}{	161	}{	}{	G.Mitnick_Quest = 2	}{	}{	}{	}{	}{	}{	}{	Je tisserai cette toile secrète. . .	}
+{	153	}{	J'y réfléchirai. J'ai encore quelques questions.	}{	J'y réfléchirai. J'ai encore quelques questions.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiner dans ton crâne. . .	}
+{	154	}{	M'intéresse pas. A plus.	}{	M'intéresse pas. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre se porte sur d'autres domaines.	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	J'ai besoin d'un peu de temps pour préparer les trucs. Détails techniques. Je t'enverrai un e-mail dans ton refuge pour te dire ce qu'il faut faire. Pour l'instant, c'est tout ce que tu as besoin de savoir.	}{	J'ai besoin d'un peu de temps pour préparer les trucs. Détails techniques. Je t'enverrai un e-mail dans ton refuge pour te dire ce qu'il faut faire. Pour l'instant, c'est tout ce que tu as besoin de savoir.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Mitnick",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	J'ai encore quelques questions.	}{	J'ai encore quelques questions.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiner dans ton crâne. . .	}
+{	163	}{	Au fait, comment t'as atterri ici, Mitnick ?	}{	Au fait, comment t'as atterri ici, Mitnick ?	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Raconte-moi ton histoire, cyber-cowboy. . .	}
+{	164	}{	Cool. Je consulterai mes e-mails dès que je rentrerai. A plus, Mitnick.	}{	Cool. Je consulterai mes e-mails dès que je rentrerai. A plus, Mitnick.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Toi ? Eh ! L'agent de LaCroix ? Dis donc, j'ai vraiment l'air si bête que ça ?	}{	Toi ? Eh ! L'agent de LaCroix ? Dis donc, j'ai vraiment l'air si bête que ça ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	LaCroix est de la Camarilla, et toi aussi. On est tous dans la même équipe.	}{	LaCroix est de la Camarilla, et toi aussi. On est tous dans la même équipe.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nous sommes tous frères en la Camarilla. . .	}
+{	173	}{	Je ne bosse pas pour LaCroix. . . Je suis avec les anarchs. . .	}{	Je ne bosse pas pour LaCroix. . . Je suis avec les anarchs. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne sers pas le bouffon, mais les enfants de l'Entropie !	}
+{	174	}{	C'est ça. Je m'intéresse pas à ces trucs sociaux. Moi, je suis dans mon coin.	}{	C'est ça. Je m'intéresse pas à ces trucs sociaux. Moi, je suis dans mon coin.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis ce chemin sans personne.	}
+{	175	}{	Je n'ai aucune loyauté pour LaCroix. Pour l'instant, j'ai juste pas beaucoup le choix.	}{	Je n'ai aucune loyauté pour LaCroix. Pour l'instant, j'ai juste pas beaucoup le choix.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je porte une paire de menottes, tissées du sang de mon père assassiné.	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Ha ha ha ha ! Si tu penses qu'on est dans le même camp que LaCroix, il te reste beaucoup de choses à apprendre. Je doute que Gary aura envie que tu t'installes par ici.	}{	Ha ha ha ha ! Si tu penses qu'on est dans le même camp que LaCroix, il te reste beaucoup de choses à apprendre. Je doute que Gary aura envie que tu t'installes par ici.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Dis-moi juste où il est.	}{	Dis-moi juste où il est.	}{	81	}{	G.Mitnick_Gary == 0 and G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Où puis-je trouver le roi des rats ?	}
+{	183	}{	Je le laisserai décider. Où je peux le trouver, déjà ?	}{	Je le laisserai décider. Où je peux le trouver, déjà ?	}{	91	}{	G.Mitnick_Gary == 1 and G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Où se trouve son repaire miteux ?	}
+{	184	}{	Je me casse.	}{	Je me casse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Les anarchs ? Tu penses qu'on les aime plus que LaCroix ? Commence à raconter tes âneries d'anarch par ici et trouve très vite la porte de sortie. Et sinon, Gary te raccompagnera.	}{	Les anarchs ? Tu penses qu'on les aime plus que LaCroix ? Commence à raconter tes âneries d'anarch par ici et trouve très vite la porte de sortie. Et sinon, Gary te raccompagnera.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Dis-moi juste où il est.	}{	Dis-moi juste où il est.	}{	81	}{	G.Mitnick_Gary == 0 and G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Où puis-je trouver le roi des rats ?	}
+{	193	}{	C'est assez déconseillé. Où je peux le trouver, déjà ?	}{	Je le laisserai décider. Où je peux le trouver, déjà ?	}{	91	}{	G.Mitnick_Gary == 1 and G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Où se trouve son repaire miteux ?	}
+{	194	}{	J'ai besoin de te poser encore quelques questions. . .	}{	J'ai besoin de te poser encore quelques questions. . .	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiner dans ton réseau neuronal. . .	}
+{	195	}{	Je me casse.	}{	Je me casse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Bon, ouais, j'imagine. Je peux te donner quelques conseils. Si tu veux t'entendre avec Gary, écoute ce qu'il dit et ne raconte pas n'importe quoi. Il est plutôt coriace, mais il sera sympa avec toi si tu ne lui fais pas de faux plan.	}{	Bon, ouais, j'imagine. Je peux te donner quelques conseils. Si tu veux t'entendre avec Gary, écoute ce qu'il dit et ne raconte pas n'importe quoi. Il est plutôt coriace, mais il sera sympa avec toi si tu ne lui fais pas de faux plan.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Super. Merci du conseil. Où je peux le trouver ?	}{	Super. Merci du conseil. Où je peux le trouver ?	}{	81	}{	G.Mitnick_Gary == 0 and G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Où puis-je trouver le roi de cette crypte ?	}
+{	203	}{	Rappelle-moi où il est ?	}{	Rappelle-moi où il est ?	}{	91	}{	G.Mitnick_Gary == 1 and G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Où se trouve son repaire miteux ?	}
+{	204	}{	Je peux vous poser quelques questions ?	}{	Je peux te poser quelques questions ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiner dans ton crâne. . .	}
+{	205	}{	Je me casse.	}{	Je me casse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Eh, salut. Qu'est-ce qu'il te faut ?	}{	Eh, salut. Qu'est-ce qu'il te faut ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Salut Mitnick. Je peux te poser des questions ?	}{	Salut Mitnick. Je peux te poser des questions ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Salutations, cyberpunk. Puis-je fouiner dans ta connexion ?	}
+{	213	}{	Rien. A plus. 	}{	Rien. A plus. 	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est parti, mon corps suit.	}
+{	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Hein ? Tango. . . Tu es pas au bon endroit pour les cours de danse. . . Ah ouais, c'est vrai. Ces Malkaviens. . . Vous, vous avez un max de bugs dans le programme, hein ? Désolé, mais ton problème technique me dépasse.	}{	Hein ? Tango. . . Tu es pas au bon endroit pour les cours de danse. . . Ah ouais, c'est vrai. Ces Malkaviens. . . Vous, vous avez un max de bugs dans le programme, hein ? Désolé, mais ton problème technique me dépasse.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	T'es qui, le malin ?	}{	T'es qui, le malin ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	223	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Moi ? Avant tout ça, j'étais pirate. Et pas mauvais, en plus. Je pouvais tout craquer. Telcos, l'armée, tout. Une fois, j'ai envoyé au président les codes d'activation de tous les missiles nucléaires. . . Ha ha ha ! Le FBI a fait dans son froc.	}{	Moi ? Avant tout ça, j'étais pirate. Et pas mauvais, en plus. Je pouvais tout craquer. Telcos, l'armée, tout. Une fois, j'ai envoyé au président les codes d'activation de tous les missiles nucléaires. . . Ha ha ha ! Le FBI a fait dans son froc.	}{	#	}{	}{	G.Mitnick_Hacker = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	(Auto-Link)	}{	(Auto-Link)	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	233	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Et après, un jour, je tombe sur un système. . . complètement noir. Une sécurité pas possible. J'ai grillé trois portables à essayer de le casser. J'y ai travaillé pendant des mois. J'ai pas beaucoup dormi. J'ai failli abandonner, mais j'ai eu un coup de chance et je suis rentré. . .	}{	Et après, un jour, je tombe sur un système. . . complètement noir. Une sécurité pas possible. J'ai grillé trois portables à essayer de le casser. J'y ai travaillé pendant des mois. J'ai pas beaucoup dormi. J'ai failli abandonner, mais j'ai eu un coup de chance et je suis rentré. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Ouais ? C'était quoi ?	}{	Ouais ? C'était quoi ?	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Décris cette toile sombre !	}
+{	243	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	C'était. . . oh, une base de données des Nosferatus, un tout petit truc. C'est sans doute pour ça que j'ai pu rentrer. Je me suis trimballé dedans un moment, j'ai flippé, je me suis débranché. Deux heures plus tard, devine qui se pointe à ma porte ? Gary. Et me voilà !	}{	C'était. . . oh, une base de données des Nosferatus, un tout petit truc. C'est sans doute pour ça que j'ai pu rentrer. Je me suis trimballé dedans un moment, j'ai flippé, je me suis débranché. Deux heures plus tard, devine qui se pointe à ma porte ? Gary. Et me voilà !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Ouah, c'est nul. Tu t'es fait chopper et on t'a. . . euh. . . Pardon.	}{	Ouah, c'est nul. Tu t'es fait chopper et on t'a. . . euh. . . Pardon.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le roi de la crypte t'a coincé et démoli la tête !	}
+{	253	}{	Et comment va la vie. . . enfin, la mort. . . depuis ?	}{	Et comment va la vie. . . enfin, la mort. . . depuis ?	}{	261	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Tu déconnes ? Je suis trop heureux. OK, je vais pas gagner de concours de beauté, mais j'étais déjà pas top avant. Maintenant, j'ai tous les super jouets, et en plus je suis éternel. Pas trop mal, je trouve.	}{	Tu déconnes ? Je suis trop heureux. OK, je vais pas gagner de concours de beauté, mais j'étais déjà pas top avant. Maintenant, j'ai tous les super jouets, et en plus je suis éternel. Pas trop mal, je trouve.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	J'imagine. J'ai encore quelques questions.	}{	J'imagine. J'ai encore quelques questions.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiner dans ton crâne. . .	}
+{	263	}{	Merci pour ton histoire, mais je me casse.	}{	Merci pour ton histoire, mais je me casse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Eh. Ca me fait plaisir de te voir.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Ca boume ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	273	}{	Oh, c'est toi ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	274	}{	J'ai pas envie de te parler.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	Ouais.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	Nan. 	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	Merci.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	Qu'est-ce que tu viens de dire ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	Quoi ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	Je ne sais pas trop.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	Je regrette, ça me regarde pas.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Ca marche.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	284	}{	Prends ça.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	Je t'enverrai un e-mail.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	(Starting Condition)	}{	}{	211	}{	G.Mitnick_Talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

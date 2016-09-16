@@ -1,0 +1,83 @@
+{	1	}{	Eh ! Qu'est-ce que tu cherches ? C'est mon vestiaire, connard !	}{	Eh ! Qu'est-ce que tu cherches ? C'est mon vestiaire, grognasse !	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Bouh !	}{	Bouh !	}{	71	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Il a dû y avoir un malentendu. Je croyais que c'était le mien, je regrette.	}{	Il a dû y avoir un malentendu. Je croyais que c'était le mien, je regrette.	}{	11	}{	Persuasion 5 & (pc.humanity >= 5 and not IsClan(pc,"Nosferatu"))	}{	}{	}{	}{	}{	}{	}{	}{	C'est à moi, non. . . c'est mon erreur. J'ai mal compris.	}
+{	4	}{	Et je fouillais dedans. Si tu as un problème, on peut en parler.	}{	Et je fouillais dedans. Si tu as un problème, on peut en parler.	}{	21	}{	Intimidate 5 & not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Certainement. Et je l'explore.	}
+{	5	}{	C'est un rêve. Dors. 	}{	C'est un rêve. Dors. 	}{	31	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	C'est un rêve. Dors. 	}
+{	6	}{	Même les plus grosses grenouilles doivent retourner dans l'eau. Croa. Croa. . .	}{	Même les plus grosses grenouilles doivent retourner dans l'eau. Croa. Croa. . .	}{	41	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	Même les plus grosses grenouilles doivent retourner dans l'eau. Croa. Croa. . .	}
+{	7	}{	Et alors ?	}{	Et alors ?	}{	51	}{	Humanity 5 & not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Oui.	}
+{	8	}{	Si tu tiens à la vie, tu fais demi-tour et tu t'en vas.	}{	Si tu tiens à la vie, tu fais demi-tour et tu t'en vas.	}{	21	}{	Humanity -5 & not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Va-t-en, petite grenouille, va-t-en.	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Pas de malentendu ! Je t'ai vu ! Qu'est-ce que tu as mis dans mon vestiaire ? Tu sais qui je suis ? Tu veux crever, gros con ?	}{	Pas de malentendu ! Je t'ai vue ! Qu'est-ce que tu as mis dans mon vestiaire ? Tu sais qui je suis ? Tu veux crever, garce ?	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Du calme, ce n'est rien. Une simple erreur. Je t'ai demandé pardon, non ?	}{	Du calme, ce n'est rien. Une simple erreur. Je t'ai demandé pardon, non ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Arrête de sauter dans tous les sens, grenouille.	}
+{	13	}{	Bon. Tu ne crois pas que tu en fais un peu trop, là ?	}{	Bon. Tu ne crois pas que tu en fais un peu trop, là ?	}{	61	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Bon. Tu ne crois pas que tu en fais un peu trop, là ?	}
+{	14	}{	Non, c'est toi qui ne sais pas à qui tu as affaire, connard.	}{	Non, c'est toi qui ne sais pas à qui tu as affaire, connard.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je connais déjà la mort, veux-tu en apprendre plus ?	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Ha ! Ah ouais ? Je suis fou, connard. Je vais te tuer - j'en n'ai rien à foutre !	}{	Ha ! Ah ouais ? Je suis fou, pétasse. Je vais te tuer - j'en n'ai rien à foutre !	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Moi non plus. Viens, gros lard.	}{	Moi non plus. Viens, gros lard.	}{	0	}{	Humanity 5	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Ah, un bel exemple de Darwinisme.	}
+{	23	}{	Bon, maintenant tu me gonfles. Arrr !	}{	Bon, maintenant tu me gonfles. Arrr !	}{	0	}{	Humanity -5	}{	pc.FrenzyTrigger()	}{	}{	}{	}{	}{	}{	}{	Mon animal se réveille, grenouille. . . ARR !	}
+{	24	}{	Je m'en vais, d'accord ? On s'arrête là, et il ne vous arrivera rien.	}{	Je m'en vais, d'accord ? On s'arrête là, et il ne vous arrivera rien.	}{	61	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Va-t-en et tu auras encore de nombreuses occasions de t'en aller.	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Je suis fou, espèce de. . . Je. . . je vais. . . fermer les yeux, sale. . .	}{	Je suis fou, espèce de. . . Je. . . je vais. . . fermer les yeux, sale. . .	}{	#	}{	npc.SetDisposition("Neutral", 3)	}{	G.Shu_Sleep = 1; pc.SetQuest("Ox",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Je vais te. . . te. . . Croa, croa, croa !	}{	Je vais te. . . te. . . Croa, croa, croa !	}{	#	}{	npc.SetDisposition("Neutral", 3)	}{	G.Shu_Frog = 1; pc.SetQuest("Ox",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Alors, pauvre tache ? Tu sais qui je suis ? Bon sang. . . tu sais ce que je fais à ceux qui touchent à mes affaires ? Hein, raclure ?	}{	Alors, petite garce ? Tu sais qui je suis ? Bon sang. . . tu sais ce que je fais à ceux qui touchent à mes affaires ? Hein, connasse ?	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Bon sang, je t'ai demandé pardon. . .	}{	Bon sang, je t'ai demandé pardon. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu manges de tout sauf des excuses, on dirait.	}
+{	53	}{	Je ne sais pas, tu les manges ?	}{	Je ne sais pas, tu les manges ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne sais pas, tu les manges ?	}
+{	54	}{	Tu ne devrais vraiment pas me parler comme ça. . .	}{	Tu ne devrais vraiment pas me parler comme ça. . .	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas la plus longue, mais c'est sans doute moi qui te l'arracherai le plus vite. . .	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Il est temps que je te donne une leçon sur le respect du bien d'autrui. . . Eh ouais, ordure, tu vas dérouiller. . .	}{	Il est temps que je te donne une leçon sur le respect du bien d'autrui. . . Eh ouais, salope, tu vas dérouiller. . .	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	C'est un rêve. Dors. 	}{	C'est un rêve. Dors. 	}{	31	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	C'est un rêve. Dors. 	}
+{	63	}{	Même les plus grosses grenouilles doivent retourner dans l'eau. Croa. Croa. . .	}{	Même les plus grosses grenouilles doivent retourner dans l'eau. Croa. Croa. . .	}{	41	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	Même les plus grosses grenouilles doivent retourner dans l'eau. Croa. Croa. . .	}
+{	64	}{	Attends un peu. . .	}{	Attends un peu. . .	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Pour quoi ?	}
+{	65	}{	Bon, si c'est comme ça que tu veux partir, viens. . .	}{	Bon, si c'est comme ça que tu veux partir, viens. . .	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Ha ha. . . Enfin.	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	. . .	}{	. . .	}{	#	}{	npc.SetDisposition("Fear", 2)	}{	npc.SetRelationship("player D_FR 5"); pc.SetQuest("Ox",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

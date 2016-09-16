@@ -1,0 +1,73 @@
+{	1	}{	Oui ? Je peux vous aider ?	}{	Oui ? Je peux vous aider ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Avez-vous une résidente appelée Jezebel Locke ?	}{	Avez-vous une résidente appelée Jezebel Locke ?	}{	11	}{	G.Hannah_Jezebel == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche la reine Jezebel !	}
+{	3	}{	Pas pour l'instant. A plus.	}{	Pas pour l'instant. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de colle à matière grise. Adieu.	}
+{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Oui. Mme Locke est l'une de nos résidentes les plus, euh, populaires. Pourquoi cette question ?	}{	Oui. Mme Locke est l'une de nos résidentes les plus, euh, populaires. Pourquoi cette question ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	J'ai besoin de la clé de sa chambre.	}{	J'ai besoin de la clé de sa chambre.	}{	21	}{	G.Jezebel_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de la clé de son royaume.	}
+{	13	}{	Oh, laissez tomber.	}{	Oh, laissez tomber.	}{	0	}{	G.Jezebel_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	Sorry, I already forgot.	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Je ne peux pas faire ça. C'est contre la politique de l'hôtel.	}{	Je ne peux pas faire ça. C'est contre la politique de l'hôtel.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Nous sommes de vieilles connaissances, je lui fais une surprise.	}{	Nous sommes de vieilles connaissances, je lui fais une surprise.	}{	31	}{	Persuasion 4 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Je suis la soeur de sang de la reine, on me croit disparue depuis longtemps.	}{	Je suis la soeur de sang de la reine, on me croit disparue depuis longtemps.	}{	31	}{	Persuasion 4 & IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Mais vous le ferez pour moi.	}{	Mais vous le ferez pour moi.	}{	31	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1;dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	Allez, donnez-moi la clé, et après, je vous ferai du service en chambre. . .	}{	Allez, donnez-moi la clé, et après, je vous ferai du service en chambre. . .	}{	31	}{	Seduction 4 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Allez, donnez-moi la clé, et après, je vous ferai du service en chambre. . .	}
+{	26	}{	Si vous ne me donnez pas la clé, je vous arrache la langue. 	}{	Si vous ne me donnez pas la clé, je vous arrache la langue. 	}{	31	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	A vous de choisir : la clé ou une fracture du crâne.	}
+{	27	}{	Donnez-moi la clé ! 	}{	Donnez-moi la clé ! 	}{	31	}{	Dominate 2 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	Considérez-moi comme votre supérieur et donnez-moi la clé !	}{	Considérez-moi comme votre supérieure et donnez-moi la clé !	}{	31	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	Ecoutez, j'ai vraiment besoin d'aller dans sa chambre !	}{	Ecoutez, j'ai vraiment besoin d'aller dans sa chambre !	}{	41	}{	IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Je vous en prie ! J'ai besoin de trouver cette reine des Ténèbres !	}
+{	30	}{	C'est ça. Au revoir.	}{	C'est ça. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	31	}{	Je vois. Eh bien, dans ce cas, je peux sans doute faire une exception. Tenez, voici la clé de sa suite. Passez une bonne soirée.	}{	Je vois. Eh bien, dans ce cas, je peux sans doute faire une exception. Tenez, voici la clé de sa suite. Passez une bonne soirée.	}{	#	}{	}{	pc.AwardExperience("Plague02"); pc.GiveItem("item_k_empire_jezebel_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Merci. A plus.	}{	Merci. A plus.	}{	0	}{	}{	G.Clerk_End = 1	}{	}{	}{	}{	}{	}{	}{	Merci. Maintenant j'ai Zebel.	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Je regrette, monsieur. Mais si je retournais dans l'office et que je faisais une clé pour tous les gens qui me disent cela, j'aurais perdu mon emploi depuis longtemps. A présent, à moins que je puisse faire autre chose pour vous, j'ai du travail.	}{	Je regrette, madame. Mais si je retournais dans l'office et que je faisais une clé pour tous les gens qui me disent cela, j'aurais perdu mon emploi depuis longtemps. A présent, à moins que je puisse faire autre chose pour vous, j'ai du travail.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Allez, donnez-moi la clé, et après, je vous ferai du service en chambre. . .	}{	Allez, donnez-moi la clé, et après, je vous ferai du service en chambre. . .	}{	31	}{	Seduction 4 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Allez, donnez-moi la clé, et après, je vous ferai du service en chambre. . .	}
+{	43	}{	Je comprends. Passez une bonne soirée.	}{	Je comprends. Passez une bonne soirée.	}{	0	}{	}{	G.Clerk_End = 1	}{	}{	}{	}{	}{	}{	}{	Mon ombre ira assombrir d'autres domaines. Adieu.	}
+{	44	}{	Ouais, bon. A plus.	}{	Ouais, bon. A plus.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	G.Clerk_End = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	Ouais. Occupe-toi de CA ! 	}{	Ouais. Occupe-toi de CA ! 	}{	0	}{	not IsClan(pc,"Malkavian")	}{	G.Clerk_End = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Que puis-je faire d'autre ?	}{	Que puis-je faire d'autre ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Rien. A plus.	}{	Rien. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Hein ? Oh ! Ahhhh ! Appelez les pompiers ! C'est une des victimes de l'épidémie ! Ne m'approchez pas !	}{	Hein ? Oh ! Ahhhh ! Appelez les pompiers ! C'est une des victimes de l'épidémie ! Ne m'approchez pas !	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Starting Condition)	}{	}{	61	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	(Starting Condition)	}{	}{	51	}{	G.Clerk_End == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

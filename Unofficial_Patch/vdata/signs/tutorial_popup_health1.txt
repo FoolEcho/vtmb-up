@@ -1,0 +1,39 @@
+SignData
+{
+	BackgroundImage
+	{
+		"Name"		"interface/Pop_Ups/health"
+//		"Tiled"		"0"
+		"XPos"		"1"
+		"YPos"		"1"
+		"Wide"		"2048"	//1024, ws-fix
+		"Tall"		"1024"
+	}
+
+	TextBlock
+	{
+		"Text"		"Le Sabbat a réussi à vous blesser.
+Cette barre bleue représente votre niveau de santé actuel. Au fur et à mesure des dégâts ordinaires que vous subirez, elle virera au noir.
+Si votre santé est entièrement vidée, vous subissez la Mort ultime et votre partie s'arrête.
+Votre santé se régénère au fil du temps. Elle se régénère bien plus vite si vous vous nourrissez."
+		"Font"		"ParagraphText"
+		"XPos"		"324"
+		"YPos"		"182"
+		"Wide"		"375"
+		"Tall"		"375"
+		"TextRGBA"		"[245, 245, 245, 200]"
+		"BackgroundRGBA"		"[0, 0, 0, 100]"
+	}
+
+	TextBlock
+	{
+		"Text"		"Continuer"
+		"XPos"		"410"
+		"YPos"		"578"	//572
+		"Wide"		"215"
+		"Tall"		"28"
+		"TextRGBA"		"[245, 245, 245, 200]"
+		"BackgroundRGBA"		"[0, 0, 0, 100]"
+		"Font"		"Trebuchet"
+	}
+}

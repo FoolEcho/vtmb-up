@@ -1,0 +1,105 @@
+{	1	}{	Quoi ? Laissez-moi ! N'approchez pas !	}{	Quoi ? Laissez-moi ! N'approchez pas !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	J'aimerais vous poser quelques questions sur la maladie qui frappe les sans-abri. . .	}{	J'aimerais vous poser quelques questions sur la maladie qui frappe les sans-abri. . .	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de renseignements sur la maladie qui afflige les sans-abri. . .	}
+{	3	}{	Je ne fais que passer.	}{	Je ne fais que passer.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Ah oui ? Eh bien je ne vous crois pas ! Vous voulez mes boîtes d'aluminium, hein ? Eh bien vous ne les aurez pas ! Fichez le camp !	}{	Ah oui ? Eh bien je ne vous crois pas ! Vous voulez mes boîtes d'aluminium, hein ? Eh bien vous ne les aurez pas ! Fichez le camp !	}{	#	}{	}{	G.TinCanBill_Heard_F = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Dites-moi tout ce que vous savez !	}{	Dites-moi tout ce que vous savez !	}{	21	}{	Dominate 2 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Entonnez le chant de la maladie des ténèbres, sans-âme !	}{	Entonnez le chant de la maladie des ténèbres, sans-âme !	}{	21	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Quoi ? Vous ne vous souvenez pas de moi ? Nous nous sommes rencontrés au foyer pour sans-abri. . .	}{	Quoi ? Vous ne vous souvenez pas de moi ? Nous nous sommes rencontrées au foyer pour sans-abri. . .	}{	21	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne voulez pas rappeler votre histoire à un visage familier et amical ?	}
+{	15	}{	Si vous parlez pas, c'est vous que je mets au recyclage !	}{	Si vous parlez pas, c'est vous que je mets au recyclage !	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Parlez ou je vous rôtis les tripes !	}
+{	16	}{	Du calme, chérie. Vous savez, j'ai toujours trouvé les femmes mûres très attirantes. . .	}{	Du calme, chérie. Vous savez, j'ai toujours trouvé les femmes mûres très attirantes. . .	}{	21	}{	Seduction 4 & pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Votre beauté fanée me fait tourner la tête. Racontez-moi votre histoire, par pitié !	}
+{	17	}{	Un billet de dix, ça vous ferait changer d'avis ?	}{	Un billet de dix, ça vous ferait changer d'avis ?	}{	21	}{	Haggle 5 & pc.CurrentMoney() >= 10	}{	pc.MoneyRemove( 10 )	}{	}{	}{	}{	}{	}{	}{	Dix dollars vous délieraient-ils la langue ?	}
+{	18	}{	Vingt dollars, ça changerait votre façon de voir ? 	}{	Vingt dollars, ça changerait votre façon de voir ? 	}{	21	}{	Haggle -5 & pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Vingt beaux billets pour vous écouter rabâcher vos histoires. . .	}
+{	19	}{	Je ne veux pas vos boîtes. . . Juste quelques renseignements. . .	}{	Je ne veux pas vos boîtes. . . Juste quelques renseignements. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai aucun désir de dérober votre trésor recyclable !	}
+{	20	}{	Vous ne seriez pas en train de cacher quelque chose à quelqu'un comme moi?	}{	Vous ne seriez pas en train de cacher quelque chose à quelqu'un comme moi?	}{	21	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Bon, bon. Tout ce que je sais, c'est que le vieux Tin Can Bill, y radote qu'y a une sorte de monstre qui l'a emmené quelque part pour y filer une maladie. C'est tout ce que je sais, et c'est tout ce que je dirai.	}{	Bon, bon. Tout ce que je sais, c'est que le vieux Tin Can Bill, y radote qu'y a une sorte de monstre qui l'a emmené quelque part pour y filer une maladie. C'est tout ce que je sais, et c'est tout ce que je dirai.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Où se trouve ce Tin Can Bill ?	}{	Où se trouve ce Tin Can Bill ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où est cet homme qui crache sa bile ?	}
+{	23	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	En général, on le trouve dans son allée. . . Juste en face de cet endroit appelé le Last Round.	}{	En général, on le trouve dans son allée. . . Juste en face de cet endroit appelé le Last Round.	}{	#	}{	}{	G.TinCanBill_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Merci. A plus.	}{	Merci. A plus.	}{	0	}{	pc.GetQuestState("Plague") == 9 and pc.GetQuestState("AllPlague") != 11	}{	pc.SetQuest("AllPlague",10)	}{	}{	}{	}{	}{	}{	}{	Adieu, ma beauté maltraitée.	}
+{	33	}{	Merci. A plus.	}{	Merci. A plus.	}{	0	}{	not (pc.GetQuestState("Plague") == 9 or pc.GetQuestState("Plague") == 6)	}{	pc.SetQuest("Plague",5)	}{	}{	}{	}{	}{	}{	}{	Adieu, ma beauté maltraitée.	}
+{	34	}{	Merci. A plus.	}{	Merci. A plus.	}{	0	}{	pc.GetQuestState("Plague") == 6 or pc.GetQuestState("AllPlague") == 11	}{	}{	}{	}{	}{	}{	}{	}{	Adieu, ma beauté maltraitée.	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Ouais, on me l'a déjà faite, celle-là. Revenez me voir avec des billets, et je vous croirai peut-être !	}{	Ouais, on me l'a déjà faite, celle-là. Revenez me voir avec des billets, et je vous croirai peut-être !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Dites-moi tout ce que vous savez !	}{	Dites-moi tout ce que vous savez !	}{	21	}{	Dominate 2 & IsClan(pc, "Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	Entonnez le chant de la maladie des ténèbres, sans-âme !	}{	Entonnez le chant de la maladie des ténèbres, sans-âme !	}{	21	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Eh, on se connaît, on jouait ensemble au bingo ! Dites-moi ce que je veux. . .	}{	Eh, on se connaît, on jouait ensemble au bingo ! Dites-moi ce que je veux. . .	}{	21	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne voulez pas rappeler votre histoire à un visage familier et amical ?	}
+{	45	}{	C'est votre dernière chance, clocharde.	}{	C'est votre dernière chance, clocharde.	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Parlez ou je vous rôtis les tripes !	}
+{	46	}{	Vous êtes si belle quand vous vous énervez. Vous ne voulez vraiment rien me dire ?	}{	Vous êtes si belle quand vous vous énervez. Vous ne voulez vraiment rien me dire ?	}{	21	}{	Seduction 4 & pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Votre beauté fanée me fait tourner la tête. Racontez-moi votre histoire, par pitié !	}
+{	47	}{	Bon, bon. Tenez, dix dollars. Maintenant, dites-moi tout.	}{	Bon, bon. Tenez, dix dollars. Maintenant, dites-moi tout.	}{	21	}{	Haggle 5 & pc.CurrentMoney() >= 10	}{	pc.MoneyRemove( 10 )	}{	}{	}{	}{	}{	}{	}{	Dix dollars vous délieraient-ils la langue ?	}
+{	48	}{	Bon, prenez ces vingt dollars et crachez le morceau.	}{	Bon, prenez ces vingt dollars et crachez le morceau.	}{	21	}{	Haggle -5 & pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Vingt beaux billets pour vous écouter rabâcher vos histoires. . .	}
+{	49	}{	Vous ne voulez pas d'argent, ma présence est tout ce dont vous avez besoin.	}{	Vous ne voulez pas d'argent, ma présence est tout ce dont vous avez besoin.	}{	21	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	Ouais, c'est ça. Je m'en vais.	}{	Ouais, c'est ça. Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai aucun désir de dérober votre trésor recyclable !	}
+{	51	}{	Pitié. . . Laissez-moi tranquille !	}{	Pitié. . . Laissez-moi tranquille !	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Calmez-vous, je ne suis pas un monstre ! Je veux juste avoir des infos sur cette épidémie. . .	}{	Calmez-vous, je ne suis pas un monstre ! Je veux juste avoir des infos sur cette épidémie. . .	}{	61	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	A moins que vous ne vouliez me ressembler, vous feriez mieux de me parler de l'épidémie. . .	}{	A moins que vous ne vouliez me ressembler, vous feriez mieux de me parler de l'épidémie. . .	}{	61	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Tout ce que je sais c'est que le vieux Tin Can Bill. . . il m'a parlé d'un monstre. . . qui l'a mordu et lui a filé la maladie. . . Il est dans l'allée en face de ce bar. . . Pitié. . . me faites pas de mal. . .	}{	Tout ce que je sais c'est que le vieux Tin Can Bill. . . il m'a parlé d'un monstre. . . qui l'a mordu et lui a filé la maladie. . . Il est dans l'allée en face de ce bar. . . Pitié. . . me faites pas de mal. . .	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.TinCanBill_Nos = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Ouais, c'est ça. Je m'en vais.	}{	Ouais, c'est ça. Je m'en vais.	}{	0	}{	pc.GetQuestState("Plague") == 9 and pc.GetQuestState("AllPlague") != 11	}{	pc.SetQuest("AllPlague",10)	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	Parlez de ceci à qui que ce soit, et je vous tue vieille femme. A bientôt.	}{	Parlez de ceci à qui que ce soit, et je vous tue vieille femme. A bientôt.	}{	0	}{	pc.GetQuestState("Plague") == 9 and pc.GetQuestState("AllPlague") != 11	}{	pc.SetQuest("AllPlague",10)	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Excusez le dérangement.	}{	Excusez le dérangement.	}{	0	}{	not (pc.GetQuestState("Plague") == 9 or pc.GetQuestState("Plague") == 6)	}{	pc.SetQuest("Plague",5)	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	Parlez de ceci à qui que ce soit et je vous tue vieille femme. A bientôt.	}{	Parlez de ceci à qui que ce soit et je vous tue vieille femme. A bientôt.	}{	0	}{	not (pc.GetQuestState("Plague") == 9 or pc.GetQuestState("Plague") == 6)	}{	pc.SetQuest("Plague",5)	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	Excusez le dérangement.	}{	Excusez le dérangement.	}{	0	}{	pc.GetQuestState("Plague") == 6 or pc.GetQuestState("AllPlague") == 11	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	Parlez de ceci à qui que ce soit et je vous tue vieille femme. A bientôt.	}{	Parlez de ceci à qui que ce soit et je vous tue vieille femme. A bientôt.	}{	0	}{	pc.GetQuestState("Plague") == 6 or pc.GetQuestState("AllPlague") == 11	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Laissez-moi tranquille.	}{	Laissez-moi tranquille.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	Pitié. . . Laissez-moi tranquille !	}{	Pitié. . . Laissez-moi tranquille !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Vous m'avez apporté de l'argent ? Ou vous voulez encore me voler mes boîtes ?	}{	Vous m'avez apporté de l'argent ? Ou vous voulez encore me voler mes boîtes ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Dites-moi tout ce que vous savez !	}{	Dites-moi tout ce que vous savez !	}{	21	}{	Dominate 2 & IsClan(pc, "Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Entonnez le chant de la maladie des ténèbres, sans-âme !	}{	Entonnez le chant de la maladie des ténèbres, sans-âme !	}{	21	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	Allons, on est presque de la même famille ! Vous ne voulez pas parler à la famille ?	}{	Allons, on est presque de la même famille ! Vous ne voulez pas parler à la famille ?	}{	21	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne voulez pas rappeler votre histoire à un visage familier et amical ?	}
+{	85	}{	Vous allez manger ces boîtes jusqu'à ce que vous commenciez à parler !	}{	Vous allez manger ces boîtes jusqu'à ce que vous commenciez à parler !	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Parlez ou je vous rôtis les tripes !	}
+{	86	}{	Vos cheveux ont un éclat si pur à la lumière de la lune. . . Dites-moi tout, ma chère.	}{	Vos cheveux ont un éclat si pur à la lumière de la lune. . . Dites-moi tout, ma chère.	}{	21	}{	Seduction 4 & pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Votre beauté fanée me fait tourner la tête. Racontez-moi votre histoire, par pitié !	}
+{	87	}{	Bon, tenez, prenez ces dix dollars, et parlez-moi de l'épidémie. . .	}{	Bon, tenez, prenez ces dix dollars, et parlez-moi de l'épidémie. . .	}{	21	}{	Haggle 5 & pc.CurrentMoney() >= 10	}{	pc.MoneyRemove( 10 )	}{	}{	}{	}{	}{	}{	}{	Dix dollars vous délieraient-ils la langue ?	}
+{	88	}{	Voici vingt dollars. Dites-moi tout ce que je dois savoir sur cette épidémie. . .	}{	Voici vingt dollars. Dites-moi tout ce que je dois savoir sur cette épidémie. . .	}{	21	}{	Haggle -5 & pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Vingt beaux billets pour vous écouter rabâcher vos histoires. . .	}
+{	89	}{	Vous ne seriez pas en train de cacher quelque chose à quelqu'un comme moi?	}{	Vous ne seriez pas en train de cacher quelque chose à quelqu'un comme moi?	}{	21	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	Je vous ai déjà dit que je ne veux pas vos boîtes.	}{	Je vous ai déjà dit que je ne veux pas vos boîtes.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai aucun désir de dérober votre trésor recyclable !	}
+{	91	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	(Starting Condition)	}{	}{	51	}{	IsClan(pc,"Nosferatu") and G.TinCanBill_Nos == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	(Starting Condition)	}{	}{	76	}{	IsClan(pc,"Nosferatu") and G.TinCanBill_Nos == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	(Starting Condition)	}{	}{	71	}{	G.TinCanBill_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	(Starting Condition)	}{	}{	81	}{	G.TinCanBill_Heard_F == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

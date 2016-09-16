@@ -1,0 +1,207 @@
+{	1	}{	Bon. . . bon, bon, bon. . . Euh. . . Vous savez qui est le chef des vampires ?	}{	Bon. . . bon, bon, bon. . . Euh. . . Vous savez qui est le chef des vampires ?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	De quoi parlez-vous ?	}{	De quoi parlez-vous ?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Qui ne le sait pas ?	}{	Qui ne le sait pas ?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Il marche parmi nous, jouant à ses jeux ancestraux.	}{	Il marche parmi nous, jouant à ses jeux ancestraux.	}{	191	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Je refuse de me mêler à cette conversation.	}{	Je refuse de me mêler à cette conversation.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cette conversation continuera sans moi.	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Si le chef des vampires meurt, on redevient tous humains, c'est ça ?	}{	Si le chef des vampires meurt, on redevient tous humains, c'est ça ?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Seulement dans les films.	}{	Seulement dans les films.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Seulement dans le rêve des grands écrans.	}
+{	13	}{	Si on le tue avec le Pieu Sacré, oui. Vous voulez l'acheter ?	}{	Si on le tue avec le Pieu Sacré, oui. Vous voulez l'acheter ?	}{	51	}{	Persuasion 3	}{	G.Copper_Stake = 1	}{	}{	}{	}{	}{	}{	}{	Il suffit d'avoir le Pieu Sacré.	}
+{	14	}{	Je n'ai pas le temps. Au revoir.	}{	Je n'ai pas le temps. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes plus malade que l'être que je vois dans le miroir. Au revoir.	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Oh. Mais. . .	}{	Oh. Mais. . .	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	(Auto-Link)	}{	(Auto-Link)	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Et les transfusions de sang. Si on me fait une transfusion complète, je peux redevenir humain, hein ?	}{	Et les transfusions de sang. Si on me fait une transfusion complète, je peux redevenir humain, hein ?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Non. Je crois que c'est permanent.	}{	Non. Je crois que c'est permanent.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	La maladie est aussi collante qu'un sous-vêtement sale.	}
+{	33	}{	Bien sûr. Si c'est du sang de licorne.	}{	Bien sûr. Si c'est du sang de licorne.	}{	71	}{	Persuasion 3	}{	G.Copper_Uni = 1	}{	}{	}{	}{	}{	}{	}{	Vous pouvez vous transfuser le sang d'un cheval à une corne.	}
+{	34	}{	Je n'ai pas le temps. Au revoir.	}{	Je n'ai pas le temps. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Mais comment ? Je ne veux pas de ça. . . Je veux redevenir humain !	}{	Mais comment ? Je ne veux pas de ça. . . Je veux redevenir humain !	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Eh oui. Mais ça n'est pas possible.	}{	Eh oui. Mais ça n'est pas possible.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dans vos rêves, vous le serez. Et moi, je serai un dinosaure. ROARRRR !!	}
+{	43	}{	Les morts ne peuvent pas revenir à la vie. Mais ils peuvent survivre. Vous comprenez ?	}{	Les morts ne peuvent pas revenir à la vie. Mais ils peuvent survivre. Vous comprenez ?	}{	181	}{	G.Patch_Plus == 1	}{	G.Copper_Humanity = 1; pc.HumanityAdd(1)	}{	}{	}{	}{	}{	}{	}{	Le léopard ne peut pas enlever ses taches. Mais il peut chasser. Vous comprenez ?	}
+{	44	}{	Les morts ne peuvent pas revenir à la vie. Mais ils peuvent survivre. Vous comprenez ?	}{	Les morts ne peuvent pas revenir à la vie. Mais ils peuvent survivre. Vous comprenez ?	}{	181	}{	G.Patch_Plus == 0	}{	G.Copper_Humanity = 1	}{	}{	}{	}{	}{	}{	}{	Le léopard ne peut pas enlever ses taches. Mais il peut chasser. Vous comprenez ?	}
+{	45	}{	Alors vous mourrez de nouveau.	}{	Alors vous mourrez de nouveau.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	La mort rend deux fois visite aux faibles.	}
+{	46	}{	Vous ne méritez pas d'être des nôtres.	}{	Vous ne méritez pas d'être des nôtres.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ca fera plus de sang pour les autres.	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	D'accord. Mais avant, j'ai une question.	}{	D'accord. Mais avant, j'ai une question.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	(Auto-Link)	}{	(Auto-Link)	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Quoi ? Oh, non. Je n'y peux rien ?	}{	Quoi ? Oh, non. Je n'y peux rien ?	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	G.Copper_Damn = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Vous pouvez tenter de ne pas vous laisser abattre par votre état.	}{	Vous pouvez tenter de ne pas vous laisser abattre par votre état.	}{	41	}{	Persuasion 2	}{	}{	}{	}{	}{	}{	}{	}{	Quoi ? Vous ne vous éclatez pas ?	}
+{	63	}{	Vous pouvez rester en dehors de mon chemin. Au revoir. 	}{	Vous pouvez rester en dehors de mon chemin. Au revoir. 	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	64	}{	Ouais. Je regrette. Bonne chance.	}{	Ouais. Je regrette. Bonne chance.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse ma pitié.	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Du sang de licorne ?	}{	Du sang de licorne ?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Oh, alors les vampires existent d'accord, mais les licornes ce n'est pas possible ?	}{	Oh, alors les vampires existent d'accord, mais les licornes ce n'est pas possible ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nous sommes des mythes errants.	}
+{	73	}{	Bon, alors je ne vous en vendrai pas.	}{	Bon, alors je ne vous en vendrai pas.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ca en fera plus pour moi.	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	J'achète, j'achète. . . Il va me falloir de l'argent. Revenez dans un petit moment.	}{	J'achète, j'achète. . . Il va me falloir de l'argent. Revenez dans un petit moment.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Copper_Quest = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Ouais, je pourrais aussi te trouver des chewing gum spéciaux pour éroder tes crocs.	}{	Ouais, je pourrais aussi te trouver des chewing gum spéciaux pour éroder tes crocs.	}{	0	}{	G.Patch_Plus == 1	}{ pc.SetQuest("Copper", 1)	}{	}{	}{	}{	}{	}{	}{	Je pourrais aussi produire un caoutchouc spécial pour faire tomber tes crocs.	}
+{	83	}{	Je le ferai.	}{	Je le ferai.	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Là et de retour encore.	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Je ne peux rien faire. . . Je suis damné.	}{	Je ne peux rien faire. . . Je suis damné.	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Attendez. . . Ce n'est pas permanent. . . en fait. . .	}{	Attendez. . . Ce n'est pas permanent. . . en fait. . .	}{	11	}{	Persuasion 5 & G.Copper_Stake == 0 and G.Copper_Uni == 0	}{	}{	}{	}{	}{	}{	}{	}{	Au temps pour moi. Le léopard peut se transformer en gazelle. . .	}
+{	93	}{	Bonne chance.	}{	Bonne chance.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La tristesse sera votre compagnon.	}
+{	94	}{	Remettez-vous, mon vieux.	}{	Remettez-vous, mon vieux.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Un sort pire que le fil.	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Avez-vous l'un des objets que vous avez mentionné ?	}{	Avez-vous l'un des objets que vous avez mentionné ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	J'ai le chewing gum spécial pour tes crocs pour $100.	}{	J'ai le chewing gum spécial pour tes crocs pour $100.	}{	111	}{	G.Copper_Gum == 0 and pc.HasItem("item_g_ring_serial_killer_1") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_ring_serial_killer_1"); G.Copper_Gum = 1; pc.MoneyAdd(100)	}{	}{	}{	}{	}{	}{	}{	J'ai le caoutchouc spécial pour tes crocs pour $100.	}
+{	103	}{	Il vous faut encore du sang de licorne ?	}{	Il vous faut encore du sang de licorne ?	}{	161	}{	G.Copper_Blood >=3 and G.Copper_Uni == 1 and pc.HasItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai encore du sang de cheval à une corne.	}
+{	104	}{	Bien sûr. Quelle quantité de sang de licorne vous faut-il ?	}{	Bien sûr. Quelle quantité de sang de licorne vous faut-il ?	}{	141	}{	G.Copper_Blood < 3 and G.Copper_Uni == 1 and pc.HasItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai le sang de l'étalon magique. Combien en voulez-vous ?	}
+{	105	}{	Voici le pieu. Vous avez 100 dollars ?	}{	Voici le pieu. Vous avez 100 dollars ?	}{	121	}{	G.Copper_Stake == 1 and pc.HasItem("item_g_stake")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai le Pieu Sacré, si vous avez les 100 dollars consacrés.	}
+{	106	}{	J'ai aussi du sang de minotaure ici, mais ça va pas t'aider.	}{	J'ai aussi du sang de minotaure ici, mais ça va pas t'aider.	}{	0	}{	pc.HasItem("item_g_bluebloodpack") or pc.HasItem("item_g_eldervitaepack")	}{	}{	}{	}{	}{	}{	}{	}{	Je transporte du Sang de Taureau Magique, mais cela ne te sauvera pas.	}
+{	107	}{	Pas encore, mais donnez-moi votre argent, et je vous les apporterai plus tard.	}{	Pas encore, mais donnez-moi votre argent, et je vous les apporterai plus tard.	}{	111	}{	Intimidate 3 & G.Copper_Gum == 0	}{	G.Copper_Rob = 1; pc.MoneyAdd(200)	}{	}{	}{	}{	}{	}{	}{	Je vous conseille de me donner l'argent pour la magie. D'avance.	}
+{	108	}{	Je reviendrai avec la marchandise. Au revoir.	}{	Je reviendrai avec la marchandise. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai que mes autres personnalités. Adieu.	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Euh, d'accord. . . Oui, d'accord. Tenez.	}{	Euh, d'accord. . . Oui, d'accord. Tenez.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Ne vous inquiétez pas, je reviens dès que j'ai ce que vous voulez.	}{	Ne vous inquiétez pas, je reviens dès que j'ai ce que vous voulez.	}{	0	}{	G.Copper_Rob == 1	}{	pc.SetQuest("Copper", 3)	}{	}{	}{	}{	}{	}{	}{	Un idiot mérite d'être ruiné. Adieu.	}
+{	113	}{	Bon. Il vous faut encore du sang de licorne ?	}{	Bon. Il vous faut encore du sang de licorne ?	}{	161	}{	G.Copper_Rob == 0 and G.Copper_Blood >=3 and G.Copper_Uni == 1 and pc.HasItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai encore du sang de cheval à une corne.	}
+{	114	}{	Bon. Il vous faut du sang de licorne ?	}{	Bon. Il te faut du sang de licorne ?	}{	141	}{	G.Copper_Rob == 0 and G.Copper_Blood < 3 and G.Copper_Uni == 1 and pc.HasItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai le sang de l'étalon magique. En voulez-vous ?	}
+{	115	}{	Voici le pieu. Vous avez 100 dollars ?	}{	Voici le pieu. Vous avez 100 dollars ?	}{	121	}{	G.Copper_Stake == 1 and pc.HasItem("item_g_stake")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai le Pieu Sacré, si vous avez les 100 dollars consacrés.	}
+{	116	}{	Je reviendrai avec la marchandise. Au revoir.	}{	Je reviendrai avec la marchandise. Au revoir.	}{	0	}{	G.Copper_Rob == 0 and G.Copper_Uni < 2	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai que mes autres personnalités. Adieu.	}
+{	117	}{	Amusez-vous bien. Au revoir.	}{	Amusez-vous bien. Au revoir.	}{	0	}{	G.Copper_Uni == 2 and G.Copper_Stake == 0 and G.Patch_Plus == 1	}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	Bien sûr. . . Je pars.	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Ouais, tenez. Bon, où puis-je trouver le chef des vampires ?	}{	Ouais, tenez. Bon, où puis-je trouver le chef des vampires ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.RemoveItem("item_g_stake"); pc.MoneyAdd(100)	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Il est dans le plus haut immeuble du centre ville. Il s'appelle LaCroix.	}{	Il est dans le plus haut immeuble du centre ville. Il s'appelle LaCroix.	}{	131	}{	Humanity 3 & G.Patch_Plus == 1	}{	G.Copper_Prince = 1; pc.HumanityAdd(-1)	}{	}{	}{	}{	}{	}{	}{	LaCroix vit dans une maison dans le ciel. . .	}
+{	123	}{	Il s'appelle Rodriguez. Il doit être dans le centre ville.	}{	Il s'appelle Rodriguez. Il doit être dans le centre ville.	}{	131	}{	Humanity 3 & G.Patch_Plus == 1	}{	G.Copper_Nines = 1; pc.HumanityAdd(-1)	}{	}{	}{	}{	}{	}{	}{	Il porte le nom de Rodriguez. Il siège sur son trône dans le centre ville.	}
+{	124	}{	Vous n'avez pas compris ? C'est le Président des Etats-Unis !	}{	Vous n'avez pas compris ? C'est le Président des Etats-Unis !	}{	131	}{	Humanity 3 & G.Patch_Plus == 1	}{	G.Copper_Prez = 1; pc.HumanityAdd(-1); G.Copper_Masquerade = 1	}{	}{	}{	}{	}{	}{	}{	Vive le chef ! Le président USA est une sangsue !	}
+{	125	}{	Il est dans le plus haut immeuble du centre ville. Il s'appelle LaCroix.	}{	Il est dans le plus haut immeuble du centre ville. Il s'appelle LaCroix.	}{	131	}{	Humanity -3 & G.Patch_Plus == 1	}{	G.Copper_Prince = 1	}{	}{	}{	}{	}{	}{	}{	LaCroix vit dans une maison dans le ciel. . .	}
+{	126	}{	Il s'appelle Rodriguez. Il doit être dans le centre ville.	}{	Il s'appelle Rodriguez. Il doit être dans le centre ville.	}{	131	}{	Humanity -3 & G.Patch_Plus == 1	}{	G.Copper_Nines = 1	}{	}{	}{	}{	}{	}{	}{	Il porte le nom de Rodriguez. Il siège sur son trône dans le centre ville.	}
+{	127	}{	Vous n'avez pas compris ? C'est le Président des Etats-Unis !	}{	Vous n'avez pas compris ? C'est le Président des Etats-Unis !	}{	131	}{	Humanity -3 & G.Patch_Plus == 1	}{	G.Copper_Prez = 1; G.Copper_Masquerade = 1	}{	}{	}{	}{	}{	}{	}{	Vive le chef ! Le président USA est une sangsue !	}
+{	128	}{	Il est dans le plus haut immeuble du centre ville. Il s'appelle LaCroix.	}{	Il est dans le plus haut immeuble du centre ville. Il s'appelle LaCroix.	}{	131	}{	G.Patch_Plus == 0	}{	G.Copper_Prince = 1	}{	}{	}{	}{	}{	}{	}{	LaCroix vit dans une maison dans le ciel. . .	}
+{	129	}{	Il s'appelle Rodriguez. Il doit être dans le centre ville.	}{	Il s'appelle Rodriguez. Il doit être dans le centre ville.	}{	131	}{	G.Patch_Plus == 0	}{	G.Copper_Nines = 1	}{	}{	}{	}{	}{	}{	}{	Il porte le nom de Rodriguez. Il siège sur son trône dans le centre ville.	}
+{	130	}{	Vous n'avez pas compris ? C'est le Président des Etats-Unis !	}{	Vous n'avez pas compris ? C'est le Président des Etats-Unis !	}{	131	}{	G.Patch_Plus == 0	}{	G.Copper_Prez = 1	}{	}{	}{	}{	}{	}{	}{	Vive le chef ! Le président USA est une sangsue !	}
+{	131	}{	Nous ne pouvons plus vivre comme ça. Je vais tuer le chef des vampires.	}{	Nous ne pouvons plus vivre comme ça. Je vais tuer le chef des vampires.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Copper_Slayer = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Patch_Plus == 1	}{	pc.SetQuest("Copper", 2)	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	J'en achète tant que vous en avez.	}{	J'en achète tant que vous en avez.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	J'ai une poche. 120 dollars.	}{	J'ai une poche. 120 dollars.	}{	151	}{	pc.AmmoCount("item_g_bloodpack") > 0 and G.Copper_Blood < 2	}{	G.Copper_Blood = G.Copper_Blood +1; pc.MoneyAdd(120); pc.RemoveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	Une poche de magie pour 120 dollars.	}
+{	143	}{	J'ai une poche. 120 dollars.	}{	J'ai une poche. 120 dollars.	}{	161	}{	pc.AmmoCount("item_g_bloodpack") > 0 and G.Copper_Blood == 2	}{	G.Copper_Blood = G.Copper_Blood +1; pc.MoneyAdd(120); pc.RemoveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	Une poche de magie pour 120 dollars.	}
+{	144	}{	J'ai deux poches. 240 dollars.	}{	J'ai deux poches. 240 dollars.	}{	151	}{	pc.AmmoCount("item_g_bloodpack") > 1 and G.Copper_Blood == 0	}{	G.Copper_Blood = G.Copper_Blood +2; pc.MoneyAdd(240); pc.RemoveItem("item_g_bloodpack"); pc.RemoveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	Deux poches de magie pour 240 dollars.	}
+{	145	}{	J'ai deux poches. 240 dollars.	}{	J'ai deux poches. 240 dollars.	}{	161	}{	pc.AmmoCount("item_g_bloodpack") > 1 and G.Copper_Blood == 1	}{	G.Copper_Blood = G.Copper_Blood +2; pc.MoneyAdd(240); pc.RemoveItem("item_g_bloodpack"); pc.RemoveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	Deux poches de magie pour 240 dollars.	}
+{	146	}{	J'ai trois poches. 360 dollars.	}{	J'ai trois poches. 360 dollars.	}{	161	}{	pc.AmmoCount("item_g_bloodpack") > 2 and G.Copper_Blood == 0	}{	G.Copper_Blood = G.Copper_Blood +3; pc.MoneyAdd(360); pc.RemoveItem("item_g_bloodpack"); pc.RemoveItem("item_g_bloodpack"); pc.RemoveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	Trois poches de magie pour 360 dollars.	}
+{	147	}{	Je reviendrai quand j'en aurai d'autres.	}{	Je reviendrai quand j'en aurai d'autres.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrais avec un autre sac plein de magie.	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Trois poches devraient me suffire pour redevenir humain.	}{	Trois poches devraient me suffire pour redevenir humain.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Je pense que j'en ai assez pour l'opération, à présent. Merci pour le sang.	}{	Je pense que j'en ai assez pour l'opération, à présent. Merci pour le sang.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Copper_Uni = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Juste au cas où, il vaut mieux tuer le chef des vampires avec ce pieu sacré. 100 dollars.	}{	Juste au cas où, il vaut mieux tuer le chef des vampires avec ce pieu sacré. 100 dollars.	}{	121	}{	G.Copper_Stake == 1 and pc.HasItem("item_g_stake")	}{	}{	}{	}{	}{	}{	}{	}{	C'est un bon début, mais le coeur du Père Noir nous libérera tous. 100 brouzoufs pour la liberté.	}
+{	163	}{	J'ai aussi le chewing gum spécial pour tes crocs pour $100.	}{	J'ai aussi le chewing gum spécial pour tes crocs pour $100.	}{	111	}{	G.Copper_Gum == 0 and pc.HasItem("item_g_ring_serial_killer_1") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_ring_serial_killer_1"); G.Copper_Gum = 1; pc.MoneyAdd(100)	}{	}{	}{	}{	}{	}{	}{	J'ai le caoutchouc spécial pour tes crocs pour $100.	}
+{	164	}{	Amusez-vous bien. Au revoir.	}{	Amusez-vous bien. Au revoir.	}{	0	}{	G.Copper_Uni == 2 and G.Copper_Stake == 0 and G.Patch_Plus == 1	}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	Bien sûr. . . Je pars.	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Euh. . . J'ai un peu besoin de l'argent que je vous ai donné. . .	}{	Euh. . . J'ai un peu besoin de l'argent que je vous ai donné. . .	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Ne vous inquiétez pas, je vais trouver la marchandise. Au revoir.	}{	Ne vous inquiétez pas, je vais trouver la marchandise. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le temps s'écoule comme votre sang. Adieu.	}
+{	173	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	. . .	}{	. . .	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Tout va bien se passer, champion.	}{	Tout va bien se passer, champion.	}{	0	}{	}{	npc.SetDisposition("joy", 2)	}{	}{	}{	}{	}{	}{	}{	HA HA HA HA HA HA HA !	}
+{	183	}{	Souvenez-vous toujours de ce que vous êtes.	}{	Souvenez-vous toujours de ce que vous êtes.	}{	0	}{	}{	npc.SetDisposition("joy", 2)	}{	}{	}{	}{	}{	}{	}{	Vous avez vérifié votre pouls ? Vous l'avez peut-être retrouvé. . . Nan. . .	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Hein ? Vous voulez dire qu'il est par ici ? Où ça ? Et quels sont ces jeux ? Il faut vraiment que je le trouve.	}{	Hein ? Vous voulez dire qu'il est par ici ? Où ça ? Et quels sont ces jeux ? Il faut vraiment que je le trouve.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Pourquoi cherchez-vous notre Père Noir ?	}{	Pourquoi cherchez-vous notre Père Noir ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	193	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	(Starting Condition)	}{	}{	161	}{	G.Copper_Uni == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	203	}{	(Starting Condition)	}{	}{	181	}{	G.Copper_Humanity == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	(Starting Condition)	}{	}{	171	}{	G.Copper_Rob == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	(Starting Condition)	}{	}{	101	}{	G.Copper_Stake == 1 or G.Copper_Uni == 1 or G.Copper_Gum == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	(Starting Condition)	}{	}{	91	}{	G.Copper_Damn == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

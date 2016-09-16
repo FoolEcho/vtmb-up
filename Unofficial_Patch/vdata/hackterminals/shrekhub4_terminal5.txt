@@ -1,0 +1,62 @@
+TerminalDefinition
+{
+	"screen saver"		"Kamikazi Zen"					// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""						// these surround the command prompt (2 characters), changed by wesp
+
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Kamikazi Zen : Admin. réseau"  
+		"line1"		""
+
+	}
+	
+	SubDir
+	{
+		"name"			"Net Security"	//(128 characters)
+		"description"		"HUB RESEAU : connexions dispo."
+		"password"		"nirvana"
+		"difficulty"		"8"	
+
+		Function
+		{
+			"name"		"schrecknet"
+			"description"	"Connexions disponibles"	
+			"runtext"	"Hub schrecknet activé :
+
+Fais ton boulot et dégage d'ici, junior. tic-tac. . .
+
+Besoin d'aide ? Trouve le bureau d'un certain Rob Nesler. Je suis connecté. Tu verras le répertoire. Je verrai ce que je peux faire d'ici. Sinon, débrouille-toi. 
+Pas mal pour un toutou de la Cama.
+
+>m1tn1ck<"
+			"runscript"	"mitSetQuestNine()"
+			"trigger"	"0"
+		}
+	}
+
+	SubDir
+	{
+		"name"			"Coffre-fort"	//(128 characters)
+		"password"		"nippelhcs"
+		"description"		"Connexions disponibles"	
+
+		Function
+		{
+			"name"		"ouvrir"
+			"description"	"ouvert"
+			"runtext"	"coffre-fort ouvert"
+			"trigger"	"0"
+
+		}
+
+		Function
+		{
+			"name"		"fermer"
+			"description"	"fermé"	
+			"runtext"	"coffre-fort fermé"
+			"trigger"	"1"
+		}
+	}
+}

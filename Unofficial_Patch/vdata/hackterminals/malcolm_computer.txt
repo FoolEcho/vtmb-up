@@ -1,0 +1,85 @@
+TerminalDefinition
+{
+	"screen saver"		"Clinique médicale de Santa Monica"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+
+
+	"email_password"	"panacea"		// the user must type this to access email from this terminal
+	"email_username"	"mstmartin"
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Dr. Malcolm St. Martin"
+	}
+	
+	SubDir
+	{
+		"name"			"Patients"	//(128 characters)
+		"password"		"hippocrates"
+		"description"		"Liste patients"	
+
+		Function
+		{
+			"name"		"H. Poe"
+			"description"	"Informations sur le patient"	
+			"runtext"	"Diagnostic : organes éclatés. Lacérations. Hémorragie interne. Etat : critique."
+			"dependency"	"G.Story_State < 10"
+
+		}
+
+		Function
+		{
+			"name"		"A. Kilpatrick"
+			"description"	"Informations sur le patient"	
+			"runtext"	"Diagnostic : teigne à champignons grave composée d'herpès simplex 2 non traité."
+
+		}
+
+		Function
+		{
+			"name"		"D. Marsh"
+			"description"	"Feuille de soins"	
+			"runtext"	"Diagnostic : crises fréquentes de sexlexie"
+		}
+
+		Function
+		{
+			"name"		"M. Barber"
+			"description"	"Feuille de soins"	
+			"runtext"	"Diagnostic : marbopperite chronique. Incurable."
+		}
+	}
+
+	Email
+	{
+		"subject"	"Ce soir ?"
+		"sender"	"PBenice@SMMCmail.vtm"
+		"body"		"Malcolm, tu es libre ce soir ? Tu pourrais peut-être passer chez moi après le boulot. Tu fais toujours des visites à domicile, docteur ? J'ai besoin d'une auscultation. - Paige"
+		"runscript"	"G.Malcolm_Affair = G.Malcolm_Affair +1"
+	}
+
+	Email
+	{
+		"subject"	"Re : Elle a des doutes."
+		"sender"	"PBenice@SMMCmail.vtm"
+		"body"		"Dois-je vraiment te le demander deux fois ? Si tu ne veux pas, on peut aussi ne rien faire. Mais j'ai vraiment besoin d'aide pour mon test d'anatomie. S'il te plaît. . . - Paige"
+		"runscript"	"G.Malcolm_Affair = G.Malcolm_Affair +1"
+	}
+
+	Email
+	{
+		"subject"	"Re : Elle a des doutes."
+		"sender"	"PBenice@SMMCmail.vtm"
+		"body"		"On se voit vers 17h. Je suis très contente que tu te sois décidé à venir. Et si tu veux savoir à quel point je suis contente. . . il te suffira de demander. - Paige"
+		"runscript"	"G.Malcolm_Affair = G.Malcolm_Affair +1"
+	}
+
+	Email
+	{
+		"subject"	"En rentrant"
+		"sender"	"Trina@SOL.vtm"
+		"body"		"Malcolm, penses-tu pouvoir prendre un jour la semaine prochaine ? Ma mère arrive jeudi. J'ai acheté un nouveau matelas et des rideaux pour la chambre d'amis. Et pourrais-tu acheter des beignets et du jus d'orange en rentrant, pour le petit déjeuner ?"
+		"runscript"	"G.Malcolm_Wife = 1"
+	}
+}

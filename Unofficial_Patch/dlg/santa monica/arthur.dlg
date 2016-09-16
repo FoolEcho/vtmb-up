@@ -1,0 +1,1011 @@
+{	1	}{	Je m'en fous ! J'ai besoin de le trouver, afin qu'il le trouve ! C'est une histoire de 250.000 dollars de mon argent ! [Regarde en l'air] Ecoute, écoute, je te parle plus tard, d'accord ? Fais moi savoir si tu apprends quoi que ce soit !	}{	Je m'en fous ! J'ai besoin de le trouver, afin qu'il le trouve ! C'est une histoire de 250.000 dollars de mon argent ! [Regarde en l'air] Ecoute, écoute, je te parle plus tard, d'accord ? Fais moi savoir si tu apprends quoi que ce soit !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Je ne ferai rien, gros porc.	}{		Je ne ferai rien, gros porc.	}{	751	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pas question, cochonou.	}
+{	3	}{	Bonjour !	}{	Bonjour !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Faites-moi savoir si vous avez besoin de quelque chose...	}{	Faites-moi savoir si vous avez besoin de quelque chose...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Belle nuit, hein ?	}{	Belle nuit, hein ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[avec le panache d'un bonimenteur de foire]Bienvenue chez Kilpatrick, une caution à n'importe quelle heure. Je m'appelle Arthur Kilpatrick. Que puis-je pour vous ?	}{	[avec le panache d'un bonimenteur de foire]Bienvenue chez Kilpatrick, une caution à n'importe quelle heure. Je m'appelle Arthur Kilpatrick. Que puis-je pour vous ?	}{	#	}{	npc.SetDisposition("Joy",1)	}{	G.Arthur_Talked = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	J'en déduis que vous êtes le propriétaire des lieux.	}{	J'en déduis que vous êtes le propriétaire des lieux.	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Je viens d'arriver dans le coin. J'ai quelques questions. 	}{	Je viens d'arriver dans le coin. J'ai quelques questions.	}{	81	}{	not IsClan(pc,"Malkavian") and G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Tu peux arrêter de me lécher le cul, mon gros.	}{	Tu peux arrêter de me lécher le cul, mon gros.	}{	711	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	Etes-vous le maître des clés ?	}{	Etes-vous le maître des clés ?	}{	571	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	Rien pour l'instant. Au revoir.	}{	Rien pour l'instant. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je dois être parti.	}
+{	21	}{	Oui, c'est moi. Troisième génération dans la partie. J'ai quelques employés, mais je gère presque toute l'affaire moi-même.	}{	Oui, c'est moi. Troisième génération dans la partie. J'ai quelques employés, mais je gère presque toute l'affaire moi-même.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Je ne vois aucun employé, Arthur.	}{	Je ne vois aucun employé, Arthur.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous paraissez seul ici, ô guerrier à l'ample taille.	}
+{	23	}{	Comment ça va, les affaires ?	}{	Comment ça va, les affaires ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Comment va la chasse des primes ?	}
+{	24	}{	Vous cherchez de l'aide ?	}{	Vous cherchez de l'aide ?	}{	741	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je peux vous aider avec vos primes ?	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Il me faut d'autres personnes pour rester ouvert en permanence. Plus un chasseur de primes. Je fais la nuit, parce que c'est là qu'il se passe tous les trucs de dingue à Santa Monica. [rire sifflant]	}{	Il me faut d'autres personnes pour rester ouvert en permanence. Plus un chasseur de primes. Je fais la nuit, parce que c'est là qu'il se passe tous les trucs de dingue à Santa Monica. [rire sifflant]	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	La dame près de la mer est-elle malade ?	}{	La dame près de la mer est-elle malade ?	}{	581	}{	G.Arthur_BJ == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	Santa Monica ne paraît pas très sain, comme coin.	}{	Santa Monica ne paraît pas très sain, comme coin.	}{	41	}{	G.Arthur_BJ == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	Chasseur de prime - ça, ça doit être un travail intéressant.	}{	Chasseur de prime - ça, ça doit être un travail intéressant.	}{	181	}{	G.Arthur_BH == 0 and G.Arthur_Knox < 1	}{	}{	}{	}{	}{	}{	}{	}{	La chasse des primes, cela me paraît excitant. . . 	}
+{	35	}{	Je vous crois volontiers. Une question. . .	}{	Sans doute. Je voulais vous poser une question.	}{	81	}{	G.Arthur_BJ == 1 and G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon cerveau a des questions, le vôtre a les réponses.	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	Je vous crois. Je m'en vais.	}{	Je vous crois. Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	41	}{	Eh bien, ça ne va pas trop mal, je peux vous le dire. Santa Monica fout le camp. Avant, c'était plutôt sympa. On fait plus de chiffre qu'il y a quelques années, mais il y a aussi plus de gens qui fuient sous caution, ce genre de conneries.	}{	Eh bien, ça ne va pas trop mal, je peux vous le dire. Santa Monica fout le camp. Avant, c'était plutôt sympa. On fait plus de chiffre qu'il y a quelques années, mais il y a aussi plus de gens qui fuient sous caution, ce genre de conneries.	}{	#	}{	npc.SetDisposition("Neutral",1); G.Arthur_BJ = 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	On dirait que Santa Monica a connu des jours meilleurs.	}{	On dirait que Santa Monica a connu des jours meilleurs.	}{	61	}{	G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	On dirait que la beauté de Monica s'est fannée. Non ?	}
+{	43	}{	Vous avez beaucoup de gens qui fuient quand ils sont libérés sous caution ?	}{	Vous avez beaucoup de gens qui fuient quand ils sont libérés sous caution ?	}{	71	}{	G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez beaucoup de gens à chasser ?	}
+{	44	}{	Je peux vous poser quelques questions de plus, Arthur ?	}{	J'ai encore quelques questions, si cela ne vous dérange pas. . .	}{	81	}{	G.Arthur_SM == 1 and G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon cerveau a des questions, le vôtre a les réponses.	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	On dirait que vous avez plein de choses à faire. A bientôt.	}{	On dirait que vous avez plein de choses à faire. A bientôt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	51	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Oh oui. Je ne me plains pas. Je suis bien placé pour tout regarder partir à vau-l'eau. Vous voyez le topo ? [rire sifflant]	}{	Oh oui. Je ne me plains pas. Je suis bien placé pour tout regarder partir à vau-l'eau. Vous voyez le topo ? [rire sifflant]	}{	#	}{	npc.SetDisposition("Joy",1)	}{	G.Arthur_SM = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Certains essaient-ils de partir à vau-l'eau sans payer vos clés ?	}{	Certains essaient-ils de partir à vau-l'eau sans payer vos clés ?	}{	591	}{	G.Arthur_BJ == 0 and G.Arthur_BH == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	Vous devez avoir beaucoup de fuyards, j'imagine.	}{	Vous devez avoir beaucoup de fuyards, j'imagine.	}{	71	}{	G.Arthur_BJ == 1 and G.Arthur_BH == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Je vous crois volontiers. Une question. . .	}{	Je vous crois volontiers. Une question. . .	}{	81	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon cerveau a des questions, le vôtre a les réponses.	}
+{	65	}{	On dirait qu'il y a beaucoup de travail pour les chasseurs de primes.	}{	On dirait qu'il y a beaucoup de travail pour les chasseurs de primes.	}{	181	}{	G.Arthur_BJ == 1 and G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	On dirait l'endroit idéal pour les chasseurs de primes.	}
+{	66	}{	Vous avez besoin de chasseurs de primes ?	}{	Vous avez besoin de chasseurs de primes ?	}{	721	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_Knox < 2	}{	G.Arthur_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Vous avez besoin de quelqu'un qui saurait chasser la prime ?	}
+{	67	}{	Je m'en vais. A plus tard.	}{	Je m'en vais. A plus tard.	}{	0	}{	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	Il est temps de marcher ailleurs.	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	Je fais partie des plus grands humanistes. Je vous ferai savoir ce que je trouve.	}{	Je fais partie des plus grands humanistes. Je vous ferai savoir ce que je trouve.	}{	0	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_Knox == 2	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes un homme joufflu et bien aimable. Adieu.	}
+{	71	}{	Bien sûr. Ca fait partie du métier. Dans ce cas-là, on leur lâche un chasseur de primes au train.	}{	Bien sûr. Ca fait partie du métier. Dans ce cas-là, on leur lâche un chasseur de primes au train.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Ca doit être un boulot intéressant.	}{	Ca doit être un boulot intéressant.	}{	181	}{	G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	J'espère que votre chasseur de primes est bon.	}{	J'espère que votre chasseur de primes est bon.	}{	671	}{	G.Arthur_BH == 1 and G.Arthur_Knox < 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	Eh, je peux vous poser quelques questions de plus, Arthur ?	}{	Eh, je peux vous poser quelques questions de plus, Arthur ?	}{	81	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon cerveau a des questions, le vôtre a les réponses.	}
+{	75	}{	Je m'en vais. A plus tard.	}{	Je m'en vais. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il est temps de marcher ailleurs.	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Bien sûr, mon vieux. Qu'est-ce que vous voulez ?	}{	Bien sûr, poupée. Qu'est-ce que vous voulez ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Santa Monica descend la colline, n'est-ce pas ?	}{	Santa Monica descend la colline, n'est-ce pas ?	}{	61	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	La dame près de la mer coule, n'est-ce pas ?	}
+{	83	}{	Votre affaire m'intrigue. . .	}{	Votre affaire m'intrigue. . .	}{	551	}{	G.Arthur_BH == 0 and G.Arthur_BJ == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de votre commerce. . .	}
+{	84	}{	Je veux connaître quelques endroits en ville. . .	}{	Je veux connaître quelques endroits en ville. . .	}{	91	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_SM == 1	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame et de ses endroits. . .	}
+{	85	}{	Vous avez beaucoup de gens à rattraper ?	}{	Vous avez beaucoup de gens à rattraper ?	}{	71	}{	G.Arthur_BJ == 1 and G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez beaucoup de gens qui se sauvent sans vous payer les clefs ?	}
+{	86	}{	Avez-vous entendu parler des meurtres dans la ville ?	}{	Avez-vous entendu parler des meurtres dans la ville ?	}{	451	}{	G.Know_Murder == 1 and G.Arthur_Killer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Avez-vous entendu parler du tueur drapé dans l'ombre ?	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	En fait, je m'en vais. Au revoir.	}{	En fait, je m'en vais. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	91	}{	De quel endroit voulez-vous que je vous parle ?	}{	De quel endroit voulez-vous que je vous parle ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Que savez-vous du club des déments ?	}{	Que savez-vous du club des déments ?	}{	701	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Que savez-vous sur l'Asylum ?	}{	Que savez-vous sur l'Asylum ?	}{	661	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	Parlez-moi de la maison des morts.	}{	Parlez-moi de la maison des morts.	}{	611	}{	G.Therese_Quest > 1 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	Que savez-vous sur l'Ocean House Hotel ?	}{	Que savez-vous sur l'Ocean House Hotel ?	}{	131	}{	G.Therese_Quest > 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	Que savez-vous sur la galerie de nuit ?	}{	Que savez-vous sur la galerie de nuit ?	}{	621	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	Que savez-vous sur la Gallery Noir ?	}{	Que savez-vous sur la Gallery Noir ?	}{	141	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	Un lieu proche d'ici.	}{	Un lieu proche d'ici.	}{	101	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Un lieu pas trop éloigné.	}
+{	99	}{	En fait, je voulais vous poser une question sur autre chose.	}{	En fait, je voulais vous poser une question sur autre chose.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon cerveau a des questions, le vôtre a les réponses.	}
+{	100	}{	Peu importe. Il faut que je m'en aille.	}{	Peu importe. Il faut que je m'en aille.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il est temps d'éloigner mes pas.	}
+{	101	}{	Bien sûr, où ça ?	}{	Bien sûr, où ça ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Je vois une cuiller trempée dans la graisse. . .	}{	Je vois une cuiller trempée dans la graisse. . .	}{	631	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	Que savez-vous sur le restaurant ?	}{	Que savez-vous sur le restaurant ?	}{	151	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	Un orgue à vapeur, une roue dans le ciel, l'océan comme un tombeau en contrebas. . .	}{	Un orgue à vapeur, une roue dans le ciel, l'océan comme un tombeau en contrebas. . .	}{	641	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	Que pouvez-vous me dire sur la jetée ?	}{	Que pouvez-vous me dire sur la jetée ?	}{	161	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Oh, le club ? Knox, le chasseur de primes, y va de temps en temps. Moi, je n'y mets jamais les pieds. On a des troubles de l'ordre public, de temps en temps, ou des rafles des stups. Quelques bastons. Mais les propriétaires sont sérieux.	}{	Oh, le club ? Knox, le chasseur de primes, y va de temps en temps. Moi, je n'y mets jamais les pieds. On a des troubles de l'ordre public, de temps en temps, ou des rafles des stups. Quelques bastons. Mais les propriétaires sont sérieux.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Oui, ça fait peur, hein ? Il paraît que c'est hanté. Mais c'est une super propriété. Ceux qui la possèdent devraient en faire quelque chose, au lieu de la laisser à l'abandon.	}{	Oui, ça fait peur, hein ? Il paraît que c'est hanté. Mais c'est une super propriété. Ceux qui la possèdent devraient en faire quelque chose, au lieu de la laisser à l'abandon.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	En effet. Je voulais des renseignements sur un autre endroit.	}{	Oui, ça pourrait être sympa. Je voulais des renseignements sur un autre endroit.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	Je peux vous poser d'autres questions ?	}{	Je peux vous poser d'autres questions ?	}{	81	}{	G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	Merci. Au revoir.	}{	Merci. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Ah oui, je connais. Le plus bizarre, c'est qu'avant, il y avait une pauvre animalerie. Maintenant, c'est une galerie d'art super friquée, avec du vin et du fromage et tout ça. [rire sifflant]	}{	Ah oui, je connais. Le plus bizarre, c'est qu'avant, il y avait une pauvre animalerie. Maintenant, c'est une galerie d'art super friquée, avec du vin et du fromage et tout ça. [rire sifflant]	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Oui, très ironique. Bon, je voulais vous parler d'un autre endroit.	}{	Oui, très ironique. Bon, je voulais vous parler d'un autre endroit.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	C'est amusant. Vous pourriez répondre à une autre question ?	}{	C'est amusant. Vous pourriez répondre à une autre question ?	}{	81	}{	G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	Merci Arthur. Au revoir.	}{	Merci Arthur. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Oui, ce vieux resto est là depuis des dizaines d'années. D'ailleurs, c'est les mêmes gens qui y travaillent depuis Nixon. Y sont sympas, remarquez.	}{	Oui, ce vieux resto est là depuis des dizaines d'années. D'ailleurs, c'est les mêmes gens qui y travaillent depuis Nixon. Y sont sympas, remarquez.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Intéressant. Je voulais en savoir plus sur un autre endroit.	}{	Ca a l'air cool. Je voulais aussi parler d'un autre endroit. . .	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	Je peux vous poser d'autres questions ?	}{	Je peux vous poser d'autres questions ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	Il faudra que j'aille y faire un tour. Au revoir, Arthur.	}{	Il faudra que j'aille y faire un tour. Au revoir, Arthur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	La vieille jetée, ça attirait plein de touristes, avant. Mais plus maintenant. Ce n'est plus qu'un endroit battu par les vents.	}{	La vieille jetée, ça attirait plein de touristes, avant. Mais plus maintenant. Ce n'est plus qu'un endroit battu par les vents.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Merci. Je voulais vous poser des questions sur un autre endroit.	}{	Je voulais vous poser des questions sur un autre endroit.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	163	}{	Je peux vous poser d'autres questions ?	}{	Je peux vous poser d'autres questions ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	C'est dommage, il faut que je file. A plus tard, Arthur.	}{	Dommage, il faut que je file. A plus tard, Arthur. 	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Eh bien, je ne suis pas trop sûr. Un couple de dames. Des soeurs, il me semble. On les voit rarement.	}{	Eh bien, je ne suis pas trop sûr. Un couple de dames. Des soeurs, il me semble. On les voit rarement.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Intéressant. Je voulais en savoir plus sur un autre endroit.	}{	Je vois. Je voulais vous poser des questions sur un autre endroit.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vois un autre endroit. . .	}
+{	173	}{	Je peux vous poser d'autres questions ?	}{	Je peux vous poser d'autres questions ?	}{	81	}{	G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
+{	174	}{	Merci, Arthur. Au revoir.	}{	Merci, Arthur. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à l'air que je remplissais il y a peu.	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Bien sûr. Avant, je faisais un peu de primes moi-même. Il faut des couilles en acier pour faire un bon chasseur de primes.	}{	Bien sûr. Avant, je faisais un peu de primes moi-même. Il faut des couilles en acier - euh, désolé mademoiselle - mais c'est la vérité, il en faut pour faire un bon chasseur de primes.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_BH = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Le chasseur de primes que vous avez pour l'instant est bon ?	}{	Le chasseur de primes que vous avez pour l'instant est bon ?	}{	671	}{	G.Arthur_Knox < 1	}{	}{	}{	}{	}{	}{	}{	}{	Les grelots de votre chasseur sont-ils en acier ?	}
+{	183	}{	Compris. Je peux vous parler d'autre chose ?	}{	Compris. Je peux vous parler d'autre chose ?	}{	81	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon cerveau a des questions, le vôtre a les réponses.	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	La conversation est intéressante, mais je pars, Arthur.	}{	La conversation est intéressante, mais je pars, Arthur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai l'impression que ma cervelle tourne comme une boule de loto. Adieu.	}
+{	191	}{	Il s'appelle Knox. Mais je n'arrive pas à le joindre, là.	}{	Il s'appelle Knox. Mais je n'arrive pas à le joindre, là.	}{	#	}{	}{	G.Arthur_Knoxold = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Jamais entendu ce nom.	}{	Jamais entendu ce nom.	}{	681	}{	G.Knox_Vamp != 3	}{	}{	}{	}{	}{	}{	}{	}{	Ce nom ne sonne pas dans mon esprit.	}
+{	193	}{	J'ai déjà entendu ce nom.	}{	J'ai déjà entendu ce nom.	}{	681	}{	G.Knox_Vamp == 3	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit a le souvenir de ce nom.	}
+{	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Eh bien, ça m'ennuierait de virer Knox tout de suite. Ca fait longtemps. . . Et je connaissais son papa. . . Je vais vous dire, puisque je suis coincé, pourquoi vous n'iriez pas chercher Knox ? Genre rapide. Je vous paie, bien sûr.	}{	Eh bien, ça m'ennuierait de virer Knox tout de suite. Ca fait longtemps. . . Et je connaissais son papa. . . Je vais vous dire, puisque je suis coincé, pourquoi vous n'iriez pas chercher Knox ? Genre rapide. Je vous paie, bien sûr.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	203	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Bon, d'accord. Si vous changez d'avis, venez me voir.	}{	Bon, d'accord. Si vous changez d'avis, venez me voir.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Entre temps, vous pourriez répondre à une ou deux questions ?	}{	Entre temps, vous pourriez répondre à une ou deux questions ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
+{	213	}{	Je peux le faire, si ça ne prend pas trop longtemps.	}{	En fait, j'ai un peu de temps. OK, je m'en charge.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais retrouver ce chasseur perdu.	}
+{	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	Entendu. A bientôt, Arthur.	}{	Bien sûr. A bientôt, Arthur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai plus d'esprits que la plupart des gens. Adieu.	}
+{	221	}{	Super ! Bon, il n'est pas chez lui, je le sais, et il n'a pas quitté la ville. Allez voir là où il y a de l'alcool et des femmes, c'est sans doute plus rapide. Il est un peu costaud, avec les cheveux longs.	}{	Super ! Bon, il n'est pas chez lui, je le sais, et il n'a pas quitté la ville. Allez voir là où il y a de l'alcool et des femmes, c'est sans doute plus rapide. Il est un peu costaud, avec les cheveux longs.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	J'y penserai.	}{	J'y penserai.	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit y est déjà.	}
+{	223	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	Je vais le trouver. Au revoir.	}{	Je vais le trouver. Au revoir, Arthur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Salut. Qu'est-ce que je peux faire pour vous ?	}{	Salut. Qu'est-ce que je peux faire pour vous ?	}{	#	}{	npc.SetDisposition("Joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Ecoutez, je vais vous ramener Carson.	}{	Ecoutez, je vais vous ramener Carson.	}{	691	}{	G.Arthur_Knox == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je vais retrouver votre chasseur aux couilles d'acier.	}
+{	233	}{	Je chasse encore Carson. 	}{	Je chasse encore Carson. 	}{	221	}{	G.Arthur_Knox == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je chasse encore le chasseur de primes. . .	}
+{	234	}{	J'ai trouvé Carson. Malheureusement, il ne reviendra pas.	}{	J'ai trouvé Carson. Malheureusement, il ne reviendra pas.	}{	241	}{	G.Arthur_Knox == 3	}{	}{	}{	}{	}{	}{	}{	}{	J'ai trouvé le chasseur, mais il ne veut plus trouver de primes.	}
+{	235	}{	Votre affaire m'intrigue. . .	}{	Votre affaire m'intrigue. . .	}{	551	}{	G.Arthur_BJ == 0	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi vos histoires de chasse, maître des clés.	}
+{	236	}{	J'avais une question pour vous. . .	}{	J'avais une question pour vous. . .	}{	81	}{	G.Arthur_BJ == 1 and G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	Des questions me rongent la cervelle.	}
+{	237	}{	Vous avez besoin de chasseurs de primes ?	}{	Vous avez besoin de chasseurs de primes ?	}{	721	}{	G.Arthur_BJ == 1 and G.Arthur_BH == 1 and G.Arthur_Knox == 0	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Avez-vous besoin de mes aptitudes de chasseur pour vos primes ?	}
+{	238	}{	Ca m'a l'air chaud. Vous savez où je pourrais trouver une arme... ou deux ?	}{	Ca m'a l'air chaud. Vous savez où je pourrais trouver une arme... ou deux ?	}{	471	}{	G.Arthur_Muddy == 2 and G.Trip_Know < 4 and not G.Trip_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je pourrais avoir besoin d'un balai qui crache des balles.	}
+{	239	}{	J'avais quelques questions pour vous, Arthur.	}{	J'avais quelques questions pour vous, Arthur.	}{	81	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_Knox >= 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
+{	240	}{	Rien pour l'instant, Arthur. Au revoir.	}{	Rien pour l'instant, Arthur. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hé, faut que je m'en aille d'ici vite fait.	}
+{	241	}{	Comment ça il ne revient pas ? Vous voulez dire qu'il ne revient pas ?	}{	Comment ça il ne revient pas ? Vous voulez dire qu'il ne revient pas ?	}{	#	}{	npc.SetDisposition("Anger",1)	}{	G.Arthur_Knox = 4; pc.SetQuest("Arthur Knox", 4)	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Son index lui a été arraché par un psychopathe.	}{	Son index lui a été arraché par un psychopathe.	}{	991	}{	}{	}{	}{	}{	}{	}{	}{	}{	Son index est un extraordinaire trophée.	}
+{	243	}{	Carson a dit qu'il passait à autre chose, et qu'il ne vous a jamais aimé.	}{	Carson a dit qu'il passait à autre chose, et qu'il ne vous a jamais aimé.	}{	261	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	C'est un secret que lui seul pourra révéler.	}
+{	244	}{	Il n'a pas dit pourquoi. Vous pouvez me payer, maintenant ?	}{	Il n'a pas dit pourquoi. Vous pouvez me payer, maintenant ?	}{	301	}{	}{	G.Arthur_Knoxpay = 1	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fraîche pour trouver de l'or. . .	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	253	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Bordel. Ca me fout vraiment dans la mouise. Ca va coûter bien cher à ce pauvre Arthur.	}{	Bordel. Ca me fout vraiment dans la mouise. Ca va coûter bien cher à ce pauvre Arthur.	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Qui vouliez-vous que Carson retrouve ?	}{	Qui vouliez-vous que Carson retrouve ?	}{	271	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je peux peut-être retrouver une prime pour vous.	}
+{	263	}{	Quel est le problème ?	}{	Quel est le problème ?	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le destin vous a-t-il nui ?	}
+{	264	}{	Je regrette, mais vous pourriez me payer ?	}{	Je regrette, mais vous pourriez me payer ?	}{	301	}{	G.Arthur_Knoxpay == 0	}{	G.Arthur_Knoxpay = 2	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fraîche pour trouver de l'or. . .	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	J'ai un type avec un casier d'un kilomètre, trois mandats sur le dos. Sa copine a avancé la caution, et il a raté la date de son procès. Je n'arrive pas à les trouver, l'un comme l'autre. Ca vous dit ?	}{	J'ai un type avec un casier d'un kilomètre, trois mandats sur le dos. Sa copine a avancé la caution, et il a raté la date de son procès. Je n'arrive pas à les trouver, l'un comme l'autre. Ca vous dit ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Ca peut m'intéresser. . .	}{	Ca peut m'intéresser. . .	}{	281	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Chante toujours, mon rond.	}
+{	273	}{	Je ne sais pas, que devrais-je faire ?	}{	Je ne sais pas, que devrais-je faire ?	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Peut-être. Mes personnalités débattent, pour l'instant. . .	}
+{	274	}{	Pour l'instant, vous ne m'avez pas payé pour avoir retrouvé Carson. . .	}{	Pour l'instant, vous ne m'avez pas payé pour avoir retrouvé Carson. . .	}{	301	}{	G.Arthur_Knoxpay == 0	}{	G.Arthur_Knoxpay = 3	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fraîche pour trouver de l'or. . .	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	Eh bien, ce ne sera pas un super boulot, puisque vous n'avez pas de licence. . . mais jusqu'à ce que je trouve un autre chasseur de primes, j'ai besoin de savoir si ce mec a quitté la ville ou pas.	}{	Eh bien, ce ne sera pas un super boulot, puisque vous n'avez pas de licence. . . mais jusqu'à ce que je trouve un autre chasseur de primes, j'ai besoin de savoir si ce mec a quitté la ville ou pas.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Alors vous voulez juste que je voie s'il est là ou pas ?	}{	Alors vous voulez juste que je voie s'il est là ou pas ?	}{	291	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Vous voulez savoir si son ombre le suit toujours dans la dame près de la mer ?	}
+{	283	}{	Vous ne voulez pas que je vous le ramène par la peau du cul ? 	}{	Vous ne voulez pas que je vous le ramène par la peau du cul ? 	}{	291	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne voulez pas que je tire cette limace de son trou pourri ?	}
+{	284	}{	Ca va m'amuser. Ca marche.	}{	Ca va m'amuser. Ca marche.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais chasser cette prime pour vous. . .	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Ouais, pas de contact, rien du tout, voyez juste s'il est là, ou alors l'endroit où il est parti. Je vous paierai. Ca marche ?	}{	Ouais, pas de contact, rien du tout, voyez juste s'il est là, ou alors l'endroit où il est parti. Je vous paierai. Ca marche ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Je dois pouvoir faire ça.	}{	Je dois pouvoir faire ça.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Aucune proie ne sera à l'abri. Ce soir, je suis en chasse.	}
+{	293	}{	Non, je regrette, c'est impossible.	}{	Non, je regrette, c'est impossible.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Trouvez-le vous-même.	}
+{	294	}{	Pourquoi vous ne paieriez pas d'abord pour avoir retrouvé Carson ?	}{	Pourquoi vous ne paieriez pas d'abord pour avoir retrouvé Carson ?	}{	301	}{	G.Arthur_Knoxpay == 0	}{	G.Arthur_Knoxpay = 4	}{	}{	}{	}{	}{	}{	}{	Je n'ai toujours pas eu mes billets verts pour ma quête de l'or. . .	}
+{	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Ah oui, désolé. Tenez, voilà.	}{	Ah oui, désolé. Tenez, voilà.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	pc.SetQuest("Arthur Knox", 5); pc.MoneyAdd( 200 )	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Merci.	}{	Merci.	}{	261	}{	G.Arthur_Knoxpay == 1	}{	}{	}{	}{	}{	}{	}{	}{	Merci bien, mon ventre rond.	}
+{	303	}{	Merci. Vous disiez ?	}{	Merci. Vous disiez ?	}{	271	}{	G.Arthur_Knoxpay == 2	}{	}{	}{	}{	}{	}{	}{	}{	Merci bien, mon ventre rond. Et pour l'autre prime ?	}
+{	304	}{	Merci. Et pour ce boulot ?	}{	Merci. Et pour ce boulot ?	}{	281	}{	G.Arthur_Knoxpay == 3	}{	}{	}{	}{	}{	}{	}{	}{	Merci bien, mon ventre rond. Et pour l'autre prime ?	}
+{	305	}{	Merci. Je dois pouvoir vous aider à trouver ce mec.	}{	Merci. Je dois pouvoir vous aider à trouver ce mec.	}{	331	}{	G.Arthur_Knoxpay == 4	}{	}{	}{	}{	}{	}{	}{	}{	Merci, mon ventre rond. Je peux peut-être vous aider pour l'autre problème. . .	}
+{	306	}{	Merci. Je ne peux pas vraiment vous aider, cette fois. Excusez-moi.	}{	Merci. Je ne peux pas vraiment vous aider, cette fois. Excusez-moi.	}{	311	}{	G.Arthur_Knoxpay == 4	}{	}{	}{	}{	}{	}{	}{	}{	Merci. Je ne chasse plus ce soir.	}
+{	307	}{	Merci.	}{	Merci.	}{	351	}{	G.Arthur_Knoxpay == 5	}{	}{	}{	}{	}{	}{	}{	}{	Merci bien, mon ventre rond.	}
+{	308	}{	Merci.	}{	Merci.	}{	401	}{	G.Arthur_Knoxpay == 6	}{	}{	}{	}{	}{	}{	}{	}{	Merci bien, mon ventre rond.	}
+{	309	}{	Merci, ce fut un plaisir de faire affaire avec vous.	}{	Merci, ce fut un plaisir de faire affaire avec vous.	}{	0	}{	G.Arthur_Knoxpay == 7	}{	}{	}{	}{	}{	}{	}{	}{	Merci bien, mon ventre rond.	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	D'accord. Eh bien, dites-moi quand vous changerez d'avis. Je suis coincé ici 18 heures par jour, sans ça je le ferais moi-même !	}{	D'accord. Eh bien, dites-moi quand vous changerez d'avis. Je suis coincé ici 18 heures par jour, sans ça je le ferais moi-même !	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Muddy = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Finalement, je vais le faire.	}{	Finalement, je vais le faire.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'une de mes personnalités me dit que je vais le faire.	}
+{	313	}{	Je vais y penser. Pendant ce temps, j'ai quelques questions.	}{	Je vais y penser. Pendant ce temps, j'ai quelques questions.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je m'interroge sur des lieux que je vois en mon esprit. . .	}
+{	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	D'accord. Au revoir.	}{	D'accord. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	321	}{	Salut mec.	}{	Salut chérie.	}{	#	}{	npc.SetDisposition("Joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Parlez-moi de ce fugitif que vous cherchez.	}{	Parlez-moi de ce fugitif que vous cherchez.	}{	271	}{	G.Arthur_Muddy == 1 and G.Muddy_Message == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de cette prime disparue. . .	}
+{	323	}{	J'ai réfléchi, Arthur. . . Je vais retrouver votre fugitif.	}{	J'ai réfléchi, Arthur. . . Je vais retrouver votre fugitif.	}{	331	}{	G.Arthur_Muddy == 1 and G.Muddy_Message == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je vais nettoyer cette tache. . .	}
+{	324	}{	J'ai encore besoin d'aller chez Marian. . .	}{	J'ai encore besoin d'aller chez Marian. . .	}{	351	}{	G.Arthur_Muddy == 2 and G.Muddy_Message == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'ai encore besoin d'aller chez Marian. . .	}
+{	325	}{	Eh. . . J'ai des infos sur Muddy. . .	}{	Eh. . . J'ai des infos sur Muddy. . .	}{	361	}{	G.Muddy_Message == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai des infos sur Muddy.	}
+{	326	}{	J'ai quelques questions pour vous, Arthur. . .	}{	J'ai quelques questions pour vous, Arthur. . .	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
+{	327	}{	Je peux avoir mon argent, maintenant ?	}{	Je peux avoir mon argent, maintenant ?	}{	301	}{	G.Arthur_Knox == 4 and G.Arthur_Knoxpay == 0	}{	G.Arthur_Knoxpay = 7	}{	}{	}{	}{	}{	}{	}{	Votre oseille va me fleurir dans la main.	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	Je m'en vais, Arthur.	}{	Je m'en vais, Arthur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quoi ? Je ne vous entends plus, je ne suis plus là.	}
+{	331	}{	Super. Bon, il s'appelle Mike Durbin, on le surnomme Muddy. Sa copine a payé la caution. Elle vit par là, au-dessus du prêteur sur gage, Trip. Elle s'appelle Marian Murietta. Mais je n'ai pas réussi à la joindre.	}{	Super. Bon, il s'appelle Mike Durbin, on le surnomme Muddy. Sa copine a payé la caution. Elle vit par là, au-dessus du prêteur sur gage, Trip. Elle s'appelle Marian Murietta. Mais je n'ai pas réussi à la joindre.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Muddy = 2; pc.SetQuest("Bail Jumper", 1)	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Ca paraît dangereux. . . Vous savez où je pourrais trouver une arme ou deux ?	}{	Ca paraît dangereux. . . Vous savez où je pourrais trouver une arme ou deux ?	}{	471	}{	G.Trip_Know < 4	}{	}{	}{	}{	}{	}{	}{	}{	J'aurai peut-être besoin d'un arc à balles. . .	}
+{	333	}{	Il a un casier ? Lequel ?	}{	Il a un casier ? Lequel ?	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelles empreintes a-t-il laissé dans le monde du crime ?	}
+{	334	}{	Alors je vais droit chez elle ?	}{	Alors je vais droit chez elle ?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais rendre visite à la Belle Marian. . .	}
+{	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	C'est ça. Dans le taudis au-dessus du prêteur sur gages. Si vous apprenez où se trouve Muddy, où il va, je ne sais pas. . . Mais attention. Vous n'avez pas de permis, et s'il y a un pépin, je ne vous connais pas. Compris ?	}{	C'est ça. Dans le taudis au-dessus du prêteur sur gages. Si vous apprenez où se trouve Muddy, où il va, je ne sais pas. . . Mais attention. Vous n'avez pas de permis, et s'il y a un pépin, je ne vous connais pas. Compris ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	Compris. Et si vous me payiez pour avoir retrouvé Carson ?	}{	Compris. Bon, et l'argent que vous me devez pour Carson ?	}{	301	}{	G.Arthur_Knoxpay == 0	}{	G.Arthur_Knoxpay = 5	}{	}{	}{	}{	}{	}{	}{	Vous me devez de l'or pour le chasseur aux bourses d'acier.	}
+{	343	}{	Oui, je comprends.	}{	Oui, je comprends.	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Au moins l'une de mes personnalités vous a entendu.	}
+{	344	}{	Oui - et j'ai quelques questions pour vous, Arthur.	}{	Oui - et j'ai quelques questions pour vous, Arthur.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
+{	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	Oui. Je file, Arthur.	}{	Oui. Je file, Arthur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quoi ? Je ne vous entends plus, je ne suis plus là.	}
+{	351	}{	Super. Revenez quand vous aurez du nouveau. Merci d'avance.	}{	Super. Revenez quand vous aurez du nouveau. Merci d'avance.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	En fait, j'avais quelques questions.	}{	En fait, j'avais quelques questions.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon cerveau a des questions, le vôtre a les réponses.	}
+{	353	}{	Je veux connaître quelques endroits en ville. . .	}{	Je veux connaître quelques endroits en ville. . .	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame et de ses endroits. . .	}
+{	354	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	Je vous ferai savoir si je trouve quelque chose.	}{	Je vous ferai savoir si je trouve quelque chose.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais errer jusque à ce que les mots s'arrachent à moi. Adieu.	}
+{	361	}{	Alors, qu'avez-vous trouvé au sujet de Muddy ?	}{	Alors, qu'avez-vous trouvé au sujet de Muddy ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Muddy = 4; pc.SetQuest("Bail Jumper", 3)	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Il a quitté la ville, je ne sais pas où il est allé.	}{	Il a quitté la ville, je ne sais pas où il est allé.	}{	381	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Il a abandonné la femme. . .	}
+{	363	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	364	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	Il est parti, je ne sais pas trop où.	}{	Il est parti, je ne sais pas trop où.	}{	381	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Quelque part, ailleurs.	}
+{	373	}{	Il a fui quelque part.	}{	Il a fui quelque part.	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une galaxie très, très lointaine. . .	}
+{	374	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	Bon. Il va falloir que j'appelle des chasseurs de primes pour m'aider à trouver Muddy et d'autres fugitifs. Merci pour votre aide.	}{	Bon. Il va falloir que j'appelle des chasseurs de primes pour m'aider à trouver Muddy et d'autres fugitifs. Merci pour votre aide.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	pc.SetQuest("Muddy", 1)	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	Vous pouvez me remercier en dollars américains.	}{	Vous pouvez me remercier en dollars américains.	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	Remerciez-moi avec des portraits de présidents.	}
+{	383	}{	Pas de problème, mais si on reparlait de l'argent que vous m'avez promis ?	}{	Pas de problème, mais si on reparlait de l'argent que vous m'avez promis ?	}{	391	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Rien n'est gratuit, mon gros. . .	}
+{	384	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	385	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	Ah oui, oui. Désolé. Tenez, voilà tout.	}{	Ah oui, oui. Désolé. Tenez, voilà tout.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	pc.MoneyAdd( 150 )	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	Au fait, vous n'avez jamais payé le boulot que j'ai fait pour retrouver Carson.	}{	Au fait, vous n'avez jamais payé le boulot que j'ai fait pour retrouver Carson.	}{	301	}{	G.Arthur_Knoxpay == 0	}{	G.Arthur_Knoxpay = 6	}{	}{	}{	}{	}{	}{	}{	Et l'oseille que vous me devez pour avoir retrouvé le chasseur ?	}
+{	393	}{	Merci.	}{	Merci.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	394	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	395	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	Alors à bientôt. Si vous ou l'un de vos proches se fait arrêter, n'hésitez pas à m'appeler !!	}{	Alors à bientôt. Si vous ou l'un de vos proches se fait arrêter, n'hésitez pas à m'appeler !!	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	Sans faute. A plus tard.	}{	Sans faute. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre cou est aussi rouge que le divin nectar. Au revoir.	}
+{	403	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	404	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	405	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	406	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	407	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	413	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	414	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	423	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	Eh bien, il a été arrêté pour coups et blessures ayant entraîné la mort il y a quelques années, mais il a été acquitté. Depuis, c'est un peu de tout, mais généralement des petits coups.	}{	Eh bien, il a été arrêté pour coups et blessures ayant entraîné la mort il y a quelques années, mais il a été acquitté. Depuis, c'est un peu de tout, mais généralement des petits coups.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Muddyrecord = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Qu'est-ce qu'il a fait cette fois ?	}{	Qu'est-ce qu'il a fait cette fois ?	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi voulez-vous sa prime ?	}
+{	433	}{	Très bien. Au-dessus du prêteur sur gages, vous avez dit ?	}{	Très bien. Au-dessus du prêteur sur gages, vous avez dit ?	}{	341	}{	G.Arthur_Muddy < 3	}{	}{	}{	}{	}{	}{	}{	}{	Je vais au lieu des gages.	}
+{	434	}{	OK. Vous pouvez me parler de quelques coins en ville ?	}{	OK. Vous pouvez me parler de quelques coins en ville ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame et de ses endroits. . .	}
+{	435	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	436	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	Je pars, Arthur.	}{	Je pars, Arthur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	Récemment, on l'arrêté pour un gros coup de pièces détachées d'auto volées. C'est un gros atelier clandestin qui s'est fait serrer à Santa Monica. Toute la presse en parle.	}{	Récemment, on l'arrêté pour un gros coup de pièces détachées d'auto volées. C'est un gros atelier clandestin qui s'est fait serrer à Santa Monica. Toute la presse en parle.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	OK. Bon, au-dessus du prêteur sur gages.	}{	OK. Bon, au-dessus du prêteur sur gages.	}{	341	}{	G.Arthur_Muddy < 3	}{	}{	}{	}{	}{	}{	}{	}{	Je vais au lieu des gages.	}
+{	443	}{	J'avais une question sur un coin de la ville. . .	}{	J'avais une question sur un coin de la ville. . .	}{	91	}{	G.Arthur_Muddy == 3	}{	}{	}{	}{	}{	}{	}{	}{	Dites-moi quelques histoires sur la dame et ses recoins. . .	}
+{	444	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	445	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	446	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	Merci. Je reviendrai plus tard.	}{	Merci. Je reviendrai plus tard.	}{	0	}{	G.Arthur_Muddy == 3	}{	}{	}{	}{	}{	}{	}{	}{	Merci. Maintenant, je dois partir.	}
+{	451	}{	Ouais. On raconte qu'il y a eu un meurtre sur la jetée, comme l'autre jour à Long Beach. Cruel. La victime était massacrée. On parle d'un serial killer.	}{	Ouais. On raconte qu'il y a eu un meurtre sur la jetée, comme l'autre jour à Long Beach. Cruel. La victime était massacrée. On parle d'un serial killer.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Killer = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Ca vous fait peur ?	}{	Ca vous fait peur ?	}{	461	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Cela vous effraie-t-il, mon gros ?	}
+{	453	}{	Que vont faire les flics ?	}{	Que vont faire les flics ?	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que vont faire les amateurs de donuts, à votre avis ?	}
+{	454	}{	Je peux vous demander autre chose ?	}{	Je peux vous demander autre chose ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
+{	455	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	Je m'en vais, Arthur.	}{	Je m'en vais, Arthur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Portez-vous bien.	}
+{	461	}{	Eh bien, en général, quand ça en arrive là, les flics renforcent les patrouilles et commencent à arrêter plus de gens. Ca peut être bon pour les affaires !	}{	Eh bien, en général, quand ça en arrive là, les flics renforcent les patrouilles et commencent à arrêter plus de gens. Ca peut être bon pour les affaires !	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	Si vous le dites. Il me reste quelques questions, si ça ne vous fait rien. . .	}{	Si vous le dites. Il me reste quelques questions, si ça ne vous fait rien. . .	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon cerveau a des questions, le vôtre a les réponses.	}
+{	463	}{	Quelle ironie. Je vous laisse.	}{	Quelle ironie. Je vous laisse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à mon ombre. Adieu.	}
+{	464	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	Eh bien, normalement je ne dirais rien, mais puisque vous me rendez service. . . Trip, le prêteur sur gage, il est un peu parano, alors il ne vend pas ses flingues à n'importe qui. Mais si vous lui dites que c'est Arthur qui vous envoie, ça ira !	}{	Eh bien, normalement je ne dirais rien, mais puisque vous me rendez service. . . Trip, le prêteur sur gage, il est un peu parano, alors il ne vend pas ses flingues à n'importe qui. Mais si vous lui dites que c'est Arthur qui vous envoie, ça ira !	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Trip_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	Parlez-moi des empreintes que ma proie a laissées dans la forêt. . .	}{	Parlez-moi des empreintes que ma proie a laissées dans la forêt. . .	}{	651	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	473	}{	Merci. Alors, à quoi ressemble le casier de ce Muddy ?	}{	Merci, Arthur. Alors, à quoi ressemble le casier de ce Muddy ?	}{	431	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	474	}{	Merci. Alors je vais juste chez Marian ?	}{	Merci, Arthur. Alors je vais juste chez Marian ?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais rendre visite à la Belle Marian. . .	}
+{	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Dites donc mec. . . Je ne veux pas être méchant, mais c'est vous qui vous êtes fait ça ? C'est une nouvelle mode, comme le piercing, le tatouage et tout ça ? Vous n'êtes quand même pas né comme ça, hein ?	}{	Dites donc ma belle. . . Je ne veux pas être méchant, mais c'est vous qui vous êtes fait ça ? C'est une nouvelle mode, comme le piercing, le tatouage et tout ça ? Vous n'êtes quand même pas née comme ça, hein ?	}{	#	}{	npc.SetDisposition("Disgust",1)	}{	G.Arthur_Talked = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	Non, ce n'est pas de naissance.	}{	Non, ce n'est pas de naissance.	}{	491	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	483	}{	Si. Je ne suis pas comme les autres, ce n'est pas de ma faute.	}{	Si. Je ne suis pas comme les autres, ce n'est pas de ma faute.	}{	491	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	484	}{	Vous ne trouvez pas que ça fait de moi quelqu'un d'unique ? Personne d'autre n'a cette tête là !	}{	Vous ne trouvez pas que ça fait de moi quelqu'un d'unique ? Personne d'autre n'a cette tête là !	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	485	}{	Au moins je ne suis pas un gros porc.	}{	Au moins je ne suis pas un gros porc.	}{	711	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Ca non. Merci de ne pas l'avoir mal pris. Je m'appelle Arthur Kilpatrick. Bienvenue chez Kilpatrick, Caution en tous genres. Que puis-je pour vous ?	}{	Ca non. Merci de ne pas l'avoir mal pris. Je m'appelle Arthur Kilpatrick. Bienvenue chez Kilpatrick, Caution en tous genres. Que puis-je pour vous ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	C'est vous qui gérez cet endroit ?	}{	C'est vous qui gérez cet endroit ?	}{	21	}{	G.Arthur_Run == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	493	}{	Vous avez besoin d'aide, par ici ?	}{	Vous avez besoin d'aide, par ici ?	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	494	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	495	}{	En fait, je trouve ça très vexant, gros connard.	}{	En fait, je trouve ça très vexant, gros connard.	}{	711	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	500	}{	Rien pour l'instant, merci. Au revoir.	}{	Rien pour l'instant. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	503	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	504	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	505	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	Eh, salut. Je suis content que vous passiez. J'ai eu des nouvelles de Knox. Cet imbécile a filé pour s'engager dans la Légion Etrangère en France. Alors vous pouvez arrêter de le chercher, si vous vous en occupiez. . .	}{	Eh, salut. Je suis content que vous passiez. J'ai eu des nouvelles de Knox. Cet imbécile a filé pour s'engager dans la Légion Etrangère en France. Alors vous pouvez arrêter de le chercher, si vous vous en occupiez. . .	}{	#	}{	}{	G.Arthur_Foreign = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	Vraiment ? Voyez-vous cela. . . J'avais quelques questions.	}{	Vraiment ? Voyez-vous cela. . . J'avais quelques questions.	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon cerveau a des questions, le vôtre a les réponses.	}
+{	513	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	514	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	515	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	516	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	517	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	520	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	521	}{	Eh, salut ! Il vous faut quelque chose de particulier, ou vous venez juste tailler le bout de gras ?	}{	Eh, salut ! Il vous faut quelque chose de particulier, ou vous venez juste tailler le bout de gras ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	Quelques questions, ça vous dérangerait, Arthur ?	}{	Quelques questions, ça vous dérangerait, Arthur ?	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon cerveau a des questions, le vôtre a les réponses.	}
+{	523	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	524	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	Je passais comme ça, Arthur. A bientôt.	}{	Je passais comme ça, Arthur. A bientôt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre diamètre évoque des beignets bien digérés. Adieu.	}
+{	531	}{	Eh, salut. Je suis content que vous passiez. J'ai eu des nouvelles de Muddy Mike. On dirait qu'il s'est fait avoir par un tueur en série. Dingue, non ? Alors vous pouvez arrêter de le chercher, si vous vous en occupiez. . .	}{	Eh, salut. Je suis content que vous passiez. J'ai eu des nouvelles de Muddy Mike. On dirait qu'il s'est fait avoir par un tueur en série. Dingue, non ? Alors vous pouvez arrêter de le chercher, si vous vous en occupiez. . .	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Muddyrecord = 1; G.Arthur_Muddy = 4; G.Arthur_Killer = 1; pc.SetQuest("Bail Jumper", 4)	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	Cool. En fait, j'avais d'autres questions à vous poser.	}{	Cool. En fait, j'avais d'autres questions à vous poser.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
+{	533	}{	Merci Arthur.	}{	Merci Arthur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis déjà ailleurs.	}
+{	534	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	536	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	Oui ? Que voulez-vous savoir ?	}{	Oui ? Que voulez-vous savoir ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Je veux connaître quelques endroits en ville. . .	}{	Je veux connaître quelques endroits en ville. . .	}{	91	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_SM == 1	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame et de ses endroits. . .	}
+{	543	}{	Vous aimez Santa Monica ?	}{	Vous aimez Santa Monica ?	}{	41	}{	G.Arthur_BJ == 0	}{	}{	}{	}{	}{	}{	}{	}{	Aimez-vous la dame près de la mer ?	}
+{	544	}{	On dirait que Santa Monica a connu des jours meilleurs.	}{	On dirait que Santa Monica a connu des jours meilleurs.	}{	61	}{	G.Arthur_BJ == 1 and G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	La beauté de la dame paraît fanée.	}
+{	545	}{	Avez-vous entendu parler des meurtres dans la ville ?	}{	Avez-vous entendu parler des meurtres dans la ville ?	}{	451	}{	G.Know_Murder == 1 and G.Arthur_Killer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Avez-vous entendu parler du tueur drapé dans l'ombre ?	}
+{	546	}{	En fait, j'aimerais vous poser des questions sur autre chose. . .	}{	En fait, j'aimerais vous poser des questions sur autre chose. . .	}{	81	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
+{	547	}{	Rien. A plus tard.	}{	Rien. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Seul votre coeur est plus gros que votre panse. Adieu.	}
+{	548	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	Les cautions ? Que voulez-vous savoir ?	}{	Les cautions ? Que voulez-vous savoir ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	C'est vous qui gérez cet endroit ?	}{	C'est vous qui gérez cet endroit ?	}{	21	}{	G.Arthur_Run == 0	}{	}{	}{	}{	}{	}{	}{	}{	Etes-vous le seul à détenir les clés de la liberté ?	}
+{	553	}{	Vous avez beaucoup de personnes qui disparaissent alors qu'elles sont sous caution ?	}{	Vous avez beaucoup de personnes qui disparaissent alors qu'elles sont sous caution ?	}{	71	}{	G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	Y a-t-il beaucoup de primes à chasser ?	}
+{	554	}{	Votre chasseur de primes, il est bon ?	}{	Votre chasseur de primes, il est bon ?	}{	671	}{	G.Arthur_BH == 1	}{	}{	}{	}{	}{	}{	}{	}{	Avez-vous un chasseur de primes talentueux ?	}
+{	555	}{	En fait, j'aimerais vous poser des questions sur autre chose. . .	}{	En fait, j'aimerais vous poser des questions sur autre chose. . .	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
+{	556	}{	Rien. A plus tard.	}{	Rien. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis quelque part ailleurs qu'ici.	}
+{	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	558	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	563	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	564	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	565	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	566	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	Hein ? Ah, je comprends de quoi vous parlez. Ouais, on pourrait dire ça. . . Maître des clés, hein ? Ca vaut le coup d'essayer. . . Arthur Kilpatrick : le Maître des Clés de Santa Monica. Hé. . . Je ne sais pas, ça fait mauvais film d'horreur.	}{	Hein ? Ah, je comprends de quoi vous parlez. Ouais, on pourrait dire ça. . . Maître des clés, hein ? Ca vaut le coup d'essayer. . . Arthur Kilpatrick : le Maître des Clés de Santa Monica. Hé. . . Je ne sais pas, ça fait mauvais film d'horreur.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	Etes-vous le seul à détenir ces clés ?	}{	Etes-vous le seul à détenir ces clés ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	573	}{	Puis-je cueillir quelques réponses dans votre esprit ?	}{	Puis-je cueillir quelques réponses dans votre esprit ?	}{	81	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	574	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	575	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	576	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	577	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	Vous voulez dire Santa Monica ? Vous avez une drôle de façon de parler. Ce bon vieux coin fout le camp depuis quelques années, si vous voulez savoir. Beaucoup de gens louches qui rappliquent. Ce qui est bon pour les affaires, hein, vous savez. . .	}{	Vous voulez dire Santa Monica ? Vous avez une drôle de façon de parler. Ce bon vieux coin fout le camp depuis quelques années, si vous voulez savoir. Beaucoup de gens louches qui rappliquent. Ce qui est bon pour les affaires, hein, vous savez. . .	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	La beauté de la dame se fane ?	}{	La beauté de la dame se fane ?	}{	61	}{	G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	583	}{	Et ces louches vous volent vos clés ?	}{	Et ces louches vous volent vos clés ?	}{	591	}{	G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	584	}{	Mon cerveau a des questions, le vôtre a les réponses.	}{	Mon cerveau a des questions, le vôtre a les réponses.	}{	81	}{	G.Arthur_SM == 1 and G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	585	}{	Je ne suis plus là.	}{	Je ne suis plus là.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	586	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	587	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	Vous parlez des gens qui s'enfuient ? Oui, en fait, j'en ai plein. C'est pour ça que j'ai un chasseur de primes.	}{	Vous parlez des gens qui s'enfuient ? Oui, en fait, j'en ai plein. C'est pour ça que j'ai un chasseur de primes.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	La chasse des primes, cela me paraît excitant. . .	}{	La chasse des primes, cela me paraît excitant. . .	}{	181	}{	G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	593	}{	Votre chasseur est-il doué pour retrouver des primes ?	}{	Votre chasseur est-il doué pour retrouver des primes ?	}{	671	}{	G.Arthur_BH == 1 and G.Arthur_Knox < 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	594	}{	Mon cerveau a des questions, le vôtre a les réponses.	}{	Mon cerveau a des questions, le vôtre a les réponses.	}{	81	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	595	}{	Je ne suis plus là.	}{	Je ne suis plus là.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	596	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	597	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	598	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	599	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	600	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	601	}{	Oh, vous parlez du club, l'Asylum ? Knox, le chasseur de primes, il y va de temps en temps. Moi, je n'y ai jamais mis les pieds. De temps en temps, il y a des descentes des stups, ou des troubles de l'ordre public. Quelques bagarres. Mais les proprios sont assez stricts.	}{	Oh, vous parlez du club, l'Asylum ? Knox, le chasseur de primes, il y va de temps en temps. Moi, je n'y ai jamais mis les pieds. De temps en temps, il y a des descentes des stups, ou des troubles de l'ordre public. Quelques bagarres. Mais les proprios sont assez stricts.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	603	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	604	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	605	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	Les seuls fantômes que je connais, ils seraient au vieil hôtel Ocean House. La bicoque fait peur. Il paraît qu'elle est hantée. Le terrain est sympa. Les propriétaires devraient faire autre chose que de la laisser pourrir.	}{	Les seuls fantômes que je connais, ils seraient au vieil hôtel Ocean House. La bicoque fait peur. Il paraît qu'elle est hantée. Le terrain est sympa. Les propriétaires devraient faire autre chose que de la laisser pourrir.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	J'ai d'autres endroits que je veux voir dans vos paroles.	}{	J'ai d'autres endroits que je veux voir dans vos paroles.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	613	}{	J'ai d'autres questions qui me brûlent la tête. . .	}{	J'ai d'autres questions qui me brûlent la tête. . .	}{	81	}{	G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	614	}{	La nuit tourne comme une vieille vis véloce. Adieu.	}{	La nuit tourne comme une vieille vis véloce. Adieu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	615	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	616	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	617	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	618	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	619	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	620	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	Vous parlez du Gallery Noir. Le plus drôle, c'est qu'avant, il y avait une vieille animalerie pourrie. Maintenant, c'est une galerie d'art chic, avec du vin et du fromage. Je vous jure, on sent encore les hamsters ! [rire laborieux]	}{	Vous parlez du Gallery Noir. Le plus drôle, c'est qu'avant, il y avait une vieille animalerie pourrie. Maintenant, c'est une galerie d'art chic, avec du vin et du fromage. Je vous jure, on sent encore les hamsters ! [rire laborieux]	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	Je vois un autre endroit. . .	}{	Je vois un autre endroit. . .	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	623	}{	J'ai d'autres questions qui me brûlent la tête. . .	}{	J'ai d'autres questions qui me brûlent la tête. . .	}{	81	}{	G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	624	}{	Vous parlez à l'air que je remplissais il y a peu.	}{	Vous parlez à l'air que je remplissais il y a peu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	625	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	626	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	627	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	628	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	629	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	630	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	631	}{	Le Surfside ? Ouais, le vieux resto est là depuis près de quarante ans. Il n'y a pas eu de changement d'équipe depuis que Nixon était président. Mais ils sont sympas.	}{	Le Surfside ? Ouais, le vieux resto est là depuis près de quarante ans. Il n'y a pas eu de changement d'équipe depuis que Nixon était président. Mais ils sont sympas.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	Je vois un autre endroit. . .	}{	Je vois un autre endroit. . .	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	633	}{	J'ai d'autres questions qui me brûlent la tête. . .	}{	J'ai d'autres questions qui me brûlent la tête. . .	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	634	}{	Vous parlez à l'air que je remplissais il y a peu.	}{	Vous parlez à l'air que je remplissais il y a peu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	635	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	636	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	637	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	638	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	640	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	641	}{	On dirait la vieille jetée. Avant, c'était une attraction pour les touristes. Plus maintenant. Ce n'est plus qu'un endroit battu par les vents.	}{	On dirait la vieille jetée. Avant, c'était une attraction pour les touristes. Plus maintenant. Ce n'est plus qu'un endroit battu par les vents.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	Je vois un autre endroit. . .	}{	Je vois un autre endroit. . .	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	643	}{	J'ai d'autres questions qui me brûlent la tête. . .	}{	J'ai d'autres questions qui me brûlent la tête. . .	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	644	}{	Vous parlez à l'air que je remplissais il y a peu.	}{	Vous parlez à l'air que je remplissais il y a peu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	645	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	646	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	647	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	648	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	650	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	651	}{	Quoi ? Des empreintes ? Ah, son casier ! Eh bien, il a été arrêté pour homicide involontaire il y a quelques années, mais il a été acquitté. Depuis, c'est un peu de tout, mais plutôt des petits coups.	}{	Quoi ? Des empreintes ? Ah, son casier ! Eh bien, il a été arrêté pour homicide involontaire il y a quelques années, mais il a été acquitté. Depuis, c'est un peu de tout, mais plutôt des petits coups.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	652	}{	Pourquoi voulez-vous sa prime ?	}{	Pourquoi voulez-vous sa prime ?	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	653	}{	Je vais au lieu des gages.	}{	Je vais au lieu des gages.	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	654	}{	Parlez-moi de la dame et de ses endroits. . .	}{	Parlez-moi de la dame et de ses endroits. . .	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	655	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	656	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	657	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	658	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	659	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	660	}{	Je ne suis plus là.	}{	Je ne suis plus là.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	661	}{	Oh, vous voulez parler de ce club ? On a surtout des troubles de l'ordre public et des états d'ébriété. Quelques bagarres. Les propriétaires tiennent bien leur truc, quoi.	}{	Oh, vous voulez parler de ce club ? On a surtout des troubles de l'ordre public et des états d'ébriété. Quelques bagarres. Les propriétaires tiennent bien leur truc, quoi.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	663	}{	Votre affaire m'intrigue. . .	}{	Votre affaire m'intrigue. . .	}{	551	}{	G.Arthur_BH == 0 and G.Arthur_BJ == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	664	}{	Qui sont les proprios ?	}{	Qui sont les proprios ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	665	}{	Je vois. Je voulais vous poser des questions sur un autre endroit.	}{	Je vois. Je voulais vous poser des questions sur un autre endroit.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	666	}{	J'ai une question sur autre chose.	}{	J'ai une question sur autre chose.	}{	81	}{	G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	667	}{	Merci Arthur. A plus tard.	}{	Merci Arthur. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	668	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	669	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	670	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	671	}{	Ouaip. Sacrément bon. Il s'appelle Carson, et il est super dans son métier, quand il a envie. Là, je n'arrive pas à le trouver. En fait, il me gonfle un peu. J'ai besoin de lui pour me trouver quelqu'un.	}{	Ouaip. Sacrément bon. Il s'appelle Carson, et il est super dans son métier, quand il a envie. Là, je n'arrive pas à le trouver. En fait, il me gonfle un peu. J'ai besoin de lui pour me trouver quelqu'un.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_BH = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	672	}{	Vous ne pouvez pas trouver un autre chasseur de primes ?	}{	Vous connaissez d'autres chasseurs de primes ?	}{	681	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez peut-être besoin de vous trouver d'autres oeufs d'or. . . 	}
+{	673	}{	Alors virez-le.	}{	Alors virez-le.	}{	681	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Flanquez-le dehors, votre chasseur de choc.	}
+{	674	}{	Je pourrais peut-être m'en occuper pour vous. . .	}{	Je pourrais peut-être trouver ce quelqu'un pour vous.	}{	681	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je pourrais peut-être trouver le chasseur chassé. . .	}
+{	675	}{	Vous pourriez utiliser le chasseur que vous aviez avant Carson ?	}{	Vous pourriez utiliser le chasseur que vous aviez avant Carson ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Maybe you need to find the set of brass balls you owned before Carson.	}
+{	676	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	678	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	679	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	680	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	681	}{	Bah, je ne me sens pas encore de virer Carson. Ca fait longtemps qu'on se connaît. Et je connaissais son père. . . Bon, puisque je suis coincé ici, pourquoi vous n'iriez pas le chercher ? Rapidement. Je vous paierai, bien sûr. . .	}{	Bah, je ne me sens pas encore de virer Carson. Ca fait longtemps qu'on se connaît. Et je connaissais son père. . . Bon, puisque je suis coincé ici, pourquoi vous n'iriez pas le chercher ? Rapidement. Je vous paierai, bien sûr. . .	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Knox = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	682	}{	Je pourrais sans doute, mais il faudrait que ça en vaille la peine. . .	}{	Oui, je dois pouvoir faire ça.	}{	691	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je vais trouver ce chasseur doré.	}
+{	683	}{	Bien sûr. Où devrais-je le chercher ?	}{	Bien sûr. Où ai-je le plus de chances de le trouver ?	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chasserai avec joie le chasseur. . .	}
+{	684	}{	Pas question, j'ai mieux à faire.	}{	Pas question. J'ai mieux à faire.	}{	841	}{	G.Player_Asked == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres oeufs à trouver, maître des clés.	}
+{	685	}{	Je n'ai pas le temps pour l'instant.	}{	Je n'ai pas le temps pour l'instant.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	La lune éclaire un autre chemin.	}
+{	686	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	687	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	688	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	689	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	690	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	691	}{	Super. Il vaudrait mieux commencer par son appartement dans les Santa Monica Suites - appartement un, il me semble. Vous trouverez peut-être quelque chose qui vous aidera à trouver ce qu'il fabrique. Tenez, voilà la clé. 	}{	Super. Il vaudrait mieux commencer par son appartement dans les Santa Monica Suites - appartement un, il me semble. Vous trouverez peut-être quelque chose qui vous aidera à trouver ce qu'il fabrique. Tenez, voilà la clé. 	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Knox = 2; pc.SetQuest("Arthur Knox", 1); pc.GiveItem("item_k_carson_apartment_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	692	}{	Avant que je parte, vous pourriez répondre à une question ?	}{	Avant de partir, vous pouvez répondre à quelques questions ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
+{	693	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	694	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	695	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	696	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	697	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	698	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	699	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	700	}{	Je lui dirai. Au revoir.	}{	Je lui dirai. A plus tard Arthur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous le ramène, joli petit ouvreur de cellules.	}
+{	701	}{	Oh, vous parlez de ce club, l'Asylum ? On a surtout des troubles de l'ordre public et des états d'ébriété. Quelques bagarres. Les propriétaires tiennent bien leur truc, quoi.	}{	Oh, vous parlez de ce club, l'Asylum ? On a surtout des troubles de l'ordre public et des états d'ébriété. Quelques bagarres. Les propriétaires tiennent bien leur truc, quoi.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	702	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	703	}{	Qui possède cette maison de miroirs brisés ?	}{	Qui possède cette maison de miroirs brisés ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	704	}{	J'aimerais que vous me parliez d'autres endroits.	}{	J'ai d'autres endroits que je veux voir dans vos paroles.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	705	}{	J'ai d'autres questions qui me brûlent la tête. . .	}{	J'ai d'autres questions qui me brûlent la tête. . .	}{	81	}{	G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	706	}{	Avec vous, je me sens comme un Apache à Pâques. Adieu.	}{	Avec vous, je me sens comme un Apache à Pâques. Adieu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	707	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	708	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	709	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	710	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	711	}{	[rire sifflant]Je vous aime bien, mon gars. Vous avez des couilles, vous faites un grand chasseur de primes.	}{	[rire sifflant]Je vous aime bien, vous avez des couilles - oups, pardon miss. Enfin, vous faites un super chasseur de primes.	}{	#	}{	npc.SetDisposition("Joy",1)	}{	G.Arthur_BH = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	712	}{	Vraiment ? Vous en cherchez un ?	}{	Vraiment ? Vous en cherchez un ?	}{	721	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	713	}{	C'est bien, parce que vous, vous n'en avez pas du tout.	}{	C'est bien, parce que vous, vous n'en avez pas du tout.	}{	731	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	714	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	715	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	716	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	717	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	718	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	719	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	720	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	721	}{	Nan, j'en ai déjà un terrible. [Marque une pause, réfléchit]. . . Enfin, hmm, je n'arrive pas à le retrouver, en ce moment, et il me gonfle, en fait. J'ai besoin qu'il me retrouve quelqu'un.	}{	Nan, j'en ai déjà un terrible. [Marque une pause, réfléchit]. . . Enfin, hmm, je n'arrive pas à le retrouver, en ce moment, et il me gonfle, en fait. J'ai besoin qu'il me retrouve quelqu'un.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	722	}{	Vous ne pouvez pas trouver un autre chasseur de primes ?	}{	Vous ne pouvez pas trouver un autre chasseur de primes ?	}{	681	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	723	}{	Alors virez-le.	}{	Alors virez-le.	}{	681	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	724	}{	Je pourrais peut-être trouver ce quelqu'un pour vous.	}{	Je pourrais peut-être trouver ce quelqu'un pour vous.	}{	681	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	725	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	726	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	727	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	728	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	729	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	730	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	731	}{	Eh, attendez un peu, vous allez un peu loin, là.	}{	Eh, attendez un peu, vous allez un peu loin, là.	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	732	}{	Vous avez raison, je regrette. Vous avez besoin d'aide ?	}{	Vous avez raison, je regrette. Vous avez besoin d'aide ?	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	733	}{	Oh, je vous ai fait de la peine ?	}{	Oh, je vous ai fait de la peine ?	}{	751	}{	}{	G.Arthur_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	734	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	735	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	736	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	737	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	738	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	739	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	740	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	741	}{	Eh bien. . . Je n'arrive pas à mettre la main sur mon satané chasseur de primes Carson et ça me gonfle, en fait. J'ai vraiment besoin qu'il aille me trouver quelqu'un. Puisque je suis coincé ici, pourquoi vous n'iriez pas me le chercher ? Je vous paierai. . .	}{	Eh bien. . . Je n'arrive pas à mettre la main sur mon satané chasseur de primes Carson et ça me gonfle, en fait. J'ai vraiment besoin qu'il aille me trouver quelqu'un. Puisque je suis coincé ici, pourquoi vous n'iriez pas me le chercher ? Je vous paierai. . .	}{	#	}{	npc.SetDisposition("Anger",1)	}{	G.Arthur_BH = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	742	}{	Je pourrais, mais il y a intérêt à ce que ça vaille la peine.	}{	Oui, je pourrais faire ça.	}{	691	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je vais déterrer ce chasseur.	}
+{	743	}{	Bien sûr. Où ai-je le plus de chances de le trouver ?	}{	Bien sûr. Où ai-je le plus de chances de le trouver ?	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chasserai avec joie le chasseur. . .	}
+{	744	}{	Pas question. J'ai mieux à faire.	}{	Pas question. J'ai mieux à faire.	}{	841	}{	G.Player_Asked == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres grelots à secouer, maître des clés.	}
+{	745	}{	Je n'ai pas le temps pour l'instant. Excusez-moi.	}{	Je n'ai pas le temps pour l'instant. Excusez-moi.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	La lune éclaire pour moi un autre chemin.	}
+{	746	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	747	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	748	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	749	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	750	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	751	}{	Bon, ça suffit ! Foutez le camp !	}{	Bon, ça suffit ! Foutez le camp !	}{	#	}{	npc.SetDisposition("Anger",2)	}{	G.Arthur_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	752	}{	Hmm, susceptible, hein ? A plus tard.	}{	Hmm, susceptible, hein ? A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit me rend impopulaire. . .	}
+{	753	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	754	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	755	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	756	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	757	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	758	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	759	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	760	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	761	}{	Je croyais vous avoir dit de foutre le camp !	}{	Je croyais vous avoir dit de foutre le camp !	}{	#	}{	npc.SetDisposition("Anger",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	762	}{	Oh, allez, vous ne m'en voulez pas, quand même ?	}{	Oh, allez, vous ne m'en voulez pas, quand même ?	}{	771	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Allez, mon visage ne vous dérange pas tant que ça ?	}
+{	763	}{	Nos cerveaux se ressemblent au point que c'en est fascinant.	}{	Nos cerveaux se ressemblent au point que c'en est fascinant.	}{	781	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	764	}{	Parlez-moi avec respect !	}{	Parlez-moi avec respect !	}{	801	}{	Dominate 2 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	765	}{	Comment osez-vous me parler comme ça!	}{	Comment osez-vous me parler comme ça!	}{	801	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	766	}{	Continuez de parler comme ça et je vous casse le bras.	}{	Continuez de parler comme ça et je vous casse le bras.	}{	811	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Les fractures, c'est rigolo. Venez, je vais vous montrer !	}
+{	767	}{	Vous êtes sexy quand vous êtes en colère. . .	}{	Vous êtes sexy quand vous êtes en colère. . .	}{	821	}{	Seduction 4 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Vous me réchauffez beaucoup les parties. . .	}
+{	768	}{	Vous êtes sexy quand vous êtes en colère. . .	}{	Vous êtes sexy quand vous êtes en colère. . .	}{	831	}{	Seduction 4 & IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Vous me réchauffez beaucoup les parties. . .	}
+{	769	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	770	}{	J'imagine, sans doute.	}{	J'imagine, sans doute.	}{	881	}{	}{	}{	}{	}{	}{	}{	}{	}{	Avant, c'est moi qui étais à cette place.	}
+{	771	}{	Hein ? Oh, bien sûr que non. Qu'est-ce que je peux faire pour vous ?	}{	Hein ? Oh, bien sûr que non. Qu'est-ce que je peux faire pour vous ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	772	}{	Vous avez besoin d'aide, par ici ?	}{	Vous avez besoin d'aide, par ici ?	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Je viens vous aider à payer vos cautions !	}
+{	773	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	774	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	775	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	776	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	777	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	778	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	779	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	780	}{	Rien pour l'instant. Au revoir.	}{	Rien pour l'instant. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à l'endroit où j'étais. Avant.	}
+{	781	}{	[Perdu]Ma tête ressemble à une sphère gélatineuse molle.	}{	[Perdu]Ma tête ressemble à une sphère gélatineuse molle.	}{	#	}{	npc.SetDisposition("Confused",1)	}{	G.Arthur_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	782	}{	Je viens vous aider à payer vos cautions !	}{	Je viens vous aider à payer vos cautions !	}{	791	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je viens vous aider à payer vos cautions !	}
+{	783	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	784	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	785	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	786	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	787	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	788	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	789	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	790	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	791	}{	Payer mes cautions ? [secoue la tête]Ha, ça c'est bizarre. [Comme s'il vous remarquait pour la première fois]Eh salut. Qu'est-ce que je peux faire pour vous ?	}{	Payer mes cautions ? [secoue la tête]Ha, ça c'est bizarre. [Comme s'il vous remarquait pour la première fois]Eh salut. Qu'est-ce que je peux faire pour vous ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	792	}{	Parlez-moi du chasseur.	}{	Parlez-moi du chasseur.	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	793	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	794	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	795	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	796	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	797	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	798	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	799	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	800	}{	Mon corps est parti. Mon esprit suit.	}{	Mon corps est parti. Mon esprit suit.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	801	}{	[Se met presque au garde-à-vous]Bien sûr, m'sieur. Tout ce que vous voudrez. Qu'est-ce que je peux faire pour vous en cette belle soirée ?	}{	[Se met presque au garde-à-vous]Bien sûr, m'dame. Tout ce que vous voudrez. Qu'est-ce que je peux faire pour vous en cette belle soirée ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	802	}{	Vous avez besoin d'aide, par ici ?	}{	Vous avez besoin d'aide, par ici ?	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	803	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	804	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	805	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	806	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	807	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	808	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	809	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	810	}{	Rien pour l'instant. Au revoir.	}{	Rien pour l'instant. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à l'air que je remplissais il y a peu.	}
+{	811	}{	[Terrifié]Pitié, ne me faites pas de mal. . . Pardonnez-moi si je vous ai fait de la peine. . .	}{	[Terrifié]Pitié, ne me faites pas de mal. . . Pardonnez-moi si je vous ai fait de la peine. . .	}{	#	}{	npc.SetDisposition("Fear",2)	}{	G.Arthur_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	812	}{	Ne vous inquiétez pas. Vous avez besoin d'aide, par ici ?	}{	Ne vous inquiétez pas. Vous avez besoin d'aide, par ici ?	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Je viens vous aider à payer vos cautions !	}
+{	813	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	814	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	815	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	816	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	817	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	818	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	819	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	820	}{	Que ça ne se reproduise pas. Au revoir.	}{	Que ça ne se reproduise pas. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à l'air que je remplissais il y a peu.	}
+{	821	}{	[rougit]Eh bien, vous savez. . . On me le dit souvent, hé hé.	}{	[rougit]Eh bien, vous savez. . . On me le dit souvent, hé hé.	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	G.Arthur_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	822	}{	C'est certain. Vous avez besoin d'aide, par ici ?	}{	C'est certain. Vous avez besoin d'aide, par ici ?	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Je viens vous aider à payer vos cautions !	}
+{	823	}{	Venez par ici, je veux vous montrer quelque chose. . .	}{	Venez par ici, je veux vous montrer quelque chose. . .	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
+{	824	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	825	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	826	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	827	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	828	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	829	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	830	}{	Au revoir, Arthur.	}{	Au revoir, Arthur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à l'air que je remplissais il y a peu.	}
+{	831	}{	Eh, n'allez pas penser que je ne suis pas flatté, mais ce n'est pas mon genre. . .	}{	Eh, n'allez pas penser que je ne suis pas flatté, mais ce n'est pas mon genre. . .	}{	#	}{	npc.SetDisposition("Joy",1)	}{	G.Arthur_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	832	}{	Pas de problème. Vous avez besoin d'aide, par ici ?	}{	Pas de problème. Vous avez besoin d'aide, par ici ?	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Je viens vous aider à payer vos cautions !	}
+{	833	}{	Venez par ici, je veux vous montrer quelque chose. . .	}{	Venez par ici, je veux vous montrer quelque chose. . .	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
+{	834	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	835	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	836	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	837	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	838	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	839	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	840	}{	Au revoir, Arthur.	}{	Au revoir, Arthur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à l'air que je remplissais il y a peu.	}
+{	841	}{	[Un peu énervé]Alors pourquoi vous me demandez du travail ?	}{	[Un peu énervé]Alors pourquoi vous me demandez du travail ?	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	842	}{	Juste pour vous embêter, le gros.	}{	Juste pour vous embêter, le gros.	}{	1	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre graisse me procure une grande joie.	}
+{	843	}{	Je plaisante, c'est tout. Où devrais-je le chercher ?	}{	Je plaisante, c'est tout. Où devrais-je le chercher ?	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes plaisanteries ne sont pas sérieuses. Où dois-je chercher le chasseur ?	}
+{	844	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	845	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	846	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	847	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	848	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	849	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	850	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Au revoir, le gros.	}
+{	851	}{	[Heureux]Eh, mec ! Ca me fait plaisir de vous revoir !	}{	[Heureux]Eh, ma belle ! Ca me fait plaisir de vous revoir !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	852	}{	Ecoutez, je vais vous ramener Carson.	}{	Ecoutez, je vais vous ramener Carson.	}{	691	}{	G.Arthur_Knox == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je vais retrouver votre chasseur aux couilles d'acier.	}
+{	853	}{	Je chasse encore Carson. 	}{	Je chasse encore Carson. 	}{	221	}{	G.Arthur_Knox == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je chasse encore le chasseur de primes. . .	}
+{	854	}{	J'ai trouvé Carson. Malheureusement, il ne reviendra pas.	}{	J'ai trouvé Carson. Malheureusement, il ne reviendra pas.	}{	241	}{	G.Arthur_Knox == 3	}{	}{	}{	}{	}{	}{	}{	}{	J'ai trouvé le chasseur, mais il ne veut plus trouver de primes.	}
+{	855	}{	Votre affaire m'intrigue. . .	}{	Votre affaire m'intrigue. . .	}{	551	}{	G.Arthur_BJ == 0	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi vos histoires de chasse, maître des clés.	}
+{	856	}{	J'avais une question pour vous. . .	}{	J'avais une question pour vous. . .	}{	81	}{	G.Arthur_BJ == 1 and G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	Des questions me rongent la cervelle.	}
+{	857	}{	Vous avez besoin de chasseurs de primes ?	}{	Vous avez besoin de chasseurs de primes ?	}{	721	}{	G.Arthur_BJ == 1 and G.Arthur_BH == 1 and G.Arthur_Knox == 0	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Avez-vous besoin de mes aptitudes de chasseur pour vos primes ?	}
+{	858	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	859	}{	J'avais quelques questions pour vous, Arthur.	}{	J'avais quelques questions pour vous, Arthur.	}{	81	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_Knox >= 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
+{	860	}{	Rien pour l'instant, Arthur. Au revoir.	}{	Rien pour l'instant, Arthur. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hé, faut que je m'en aille d'ici vite fait.	}
+{	861	}{	[Neutre]Ca boume ?	}{	[Neutre]Ca boume ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	862	}{	Ecoutez, je vais vous ramener Carson.	}{	Ecoutez, je vais vous ramener Carson.	}{	691	}{	G.Arthur_Knox == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je vais retrouver votre chasseur aux couilles d'acier.	}
+{	863	}{	Je chasse encore Carson. 	}{	Je chasse encore Carson. 	}{	221	}{	G.Arthur_Knox == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je chasse encore le chasseur de primes. . .	}
+{	864	}{	J'ai trouvé Carson. Malheureusement, il ne reviendra pas.	}{	J'ai trouvé Carson. Malheureusement, il ne reviendra pas.	}{	241	}{	G.Arthur_Knox == 3	}{	}{	}{	}{	}{	}{	}{	}{	J'ai trouvé le chasseur, mais il ne veut plus trouver de primes.	}
+{	865	}{	Votre affaire m'intrigue. . .	}{	Votre affaire m'intrigue. . .	}{	551	}{	G.Arthur_BJ == 0	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi vos histoires de chasse, maître des clés.	}
+{	866	}{	J'avais une question pour vous. . .	}{	J'avais une question pour vous. . .	}{	81	}{	G.Arthur_BJ == 1 and G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	Des questions me rongent la cervelle.	}
+{	867	}{	Vous avez besoin de chasseurs de primes ?	}{	Vous avez besoin de chasseurs de primes ?	}{	721	}{	G.Arthur_BJ == 1 and G.Arthur_BH == 1 and G.Arthur_Knox == 0	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Avez-vous besoin de mes aptitudes de chasseur pour vos primes ?	}
+{	868	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	869	}{	J'avais quelques questions pour vous, Arthur.	}{	J'avais quelques questions pour vous, Arthur.	}{	81	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_Knox >= 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
+{	870	}{	Rien pour l'instant, Arthur. Au revoir.	}{	Rien pour l'instant, Arthur. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hé, faut que je m'en aille d'ici vite fait.	}
+{	871	}{	[hostile]Qu'est-ce que vous voulez, bon dieu ?	}{	[hostile]Qu'est-ce que vous voulez, bon dieu ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	872	}{	(Auto-Link)	}{	(Auto-Link)	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	873	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	874	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	875	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	876	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	877	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	878	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	879	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	880	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	881	}{	[hostile]Foutez le camp !	}{	[hostile]Foutez le camp !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	882	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	883	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	884	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	885	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	886	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	887	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	888	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	889	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	890	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	891	}{	Ouais. 	}{	Ouais. 	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	892	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	893	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	894	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	895	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	896	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	897	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	898	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	899	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	900	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	901	}{	Nan.	}{	Nan.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	902	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	903	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	904	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	905	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	906	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	907	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	908	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	909	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	910	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	911	}{	Merci, mec.	}{	Merci, miss.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	912	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	913	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	914	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	915	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	916	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	917	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	918	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	919	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	920	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	921	}{	Quoi ?	}{	Quoi ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	922	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	923	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	924	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	925	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	926	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	927	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	928	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	929	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	930	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	931	}{	[Incertain]Je ne sais pas.	}{	[Incertain]Je ne sais pas.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	932	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	933	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	934	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	935	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	936	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	937	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	938	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	939	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	940	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	941	}{	Je ne peux rien pour vous.	}{	Je ne peux rien pour vous.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	942	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	943	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	944	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	945	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	946	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	947	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	948	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	949	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	950	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	951	}{	C'est super !	}{	C'est super !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	952	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	953	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	954	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	955	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	956	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	957	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	958	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	959	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	960	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	961	}{	Au fait. . .	}{	Au fait. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	962	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	963	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	964	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	965	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	966	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	967	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	968	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	969	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	970	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	971	}{	Tenez, prenez ça. . .	}{	Tenez, prenez ça. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	972	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	973	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	974	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	975	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	976	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	977	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	978	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	979	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	980	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	981	}{	Je vous contacterai par mail un peu plus tard.	}{	Je vous contacterai par mail un peu plus tard.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	982	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	983	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	984	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	985	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	986	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	987	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	988	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	989	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	990	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	991	}{	Mec, c'est méchant. Un chasseur de prime qui ne peut plus tirer, ça sert à rien.	}{	Mec, c'est méchant. Un chasseur de prime qui ne peut plus tirer, ça sert à rien.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	992	}{	(Auto-Link)	}{	(Auto-Link)	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	993	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	994	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	995	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	996	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	997	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	998	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	999	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1000	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1001	}{	(Starting Condition)	}{	}{	511	}{	G.Arthur_Muddy == 4 and G.Arthur_Knoxout == 1 and G.Arthur_Foreign == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1002	}{	(Starting Condition)	}{	}{	521	}{	G.Arthur_Muddy == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1003	}{	(Starting Condition)	}{	}{	481	}{	IsClan(pc,"Nosferatu") and G.Arthur_Talked == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1004	}{	(Starting Condition)	}{	}{	11	}{	G.Arthur_Talked == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1005	}{	(Starting Condition)	}{	}{	851	}{	G.Arthur_Knox >= 4 and G.Arthur_Muddy >= 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1006	}{	(Starting Condition)	}{	}{	531	}{	pc.GetQuestState("Serial") >= 6 and pc.GetQuestState("Bail Jumper") < 3 and pc.GetQuestState("Bail Jumper") > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1007	}{	(Starting Condition)	}{	}{	321	}{	G.Arthur_Muddy == 1 or G.Arthur_Muddy == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1008	}{	(Starting Condition)	}{	}{	871	}{	G.Arthur_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1009	}{	(Starting Condition)	}{	}{	861	}{	G.Arthur_Knox > 1 and G.Arthur_Knox < 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1010	}{	(Starting Condition)	}{	}{	361	}{	G.Arthur_Muddy == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1011	}{	(Starting Condition)	}{	}{	231	}{	G.Arthur_Talked > 0	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -1,0 +1,173 @@
+{	1	}{	[tousse, tousse]Qui c'est ? Le Vieux Bill voit plus très bien, de nos jours. C'est toi, Fred ? J'ai pas d'alcool ce soir, alors tu peux repartir tout de suite.	}{	[tousse, tousse]Qui c'est ? Le Vieux Bill voit plus très bien, de nos jours. C'est toi, Betty ? J'ai pas d'alcool ce soir, alors tu peux repartir tout de suite.	}{	#	}{	}{	Whisper("Moaning")	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Tu t'es trompé, Bill. Il paraît que tu sais pourquoi tout le monde tombe malade.	}{	Tu t'es trompé, Bill. Il paraît que tu sais pourquoi tout le monde tombe malade.	}{	11	}{	Humanity 6 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Je n'ai pas besoin de ton alcool, vieillard. Dis-moi ce que tu sais sur l'épidémie.	}{	Je n'ai pas besoin de ton alcool, vieillard. Dis-moi ce que tu sais sur l'épidémie.	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Tu pues, mec ! Parle-moi de l'épidémie avant que je gerbe. . .	}{	Tu pues, mec ! Parle-moi de l'épidémie avant que je gerbe. . .	}{	21	}{	Humanity -6 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Ah, je vois que tu portes la marque du Frère Ténébreux !	}{	Ah, je vois que tu portes la marque du Frère Ténébreux !	}{	6	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	Hein ? [tousse, tousse]'Frère Ténébreux' ? De quoi tu parles ? C'est moi, le vieux Tin Can Bill. . . Laisse-moi tranquille, je suis vieux, j'ai sommeil. Je ne veux pas qu'on me dérange sauf pour une bouteille. . .	}{	Hein ? [tousse, tousse]'Frère Ténébreux' ? De quoi tu parles ? C'est moi, le vieux Tin Can Bill. . . Laisse-moi tranquille, je suis vieux, j'ai sommeil. Je ne veux pas qu'on me dérange sauf pour une bouteille. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	Que les ombres du passé hantent ton présent. Parle !	}{	Que les ombres du passé hantent ton présent. Parle !	}{	61	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	Dis-moi la source de ta maladie. . .	}{	Dis-moi la source de ta maladie. . .	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Oui. . . Ca se pourrait. . .[tousse, tousse]. Mais j'ai très soif, ce soir, m'sieur. Vous auriez cinq dollars pour un type dans le besoin ?	}{	Oui. . . Ca se pourrait. . .[tousse, tousse]. Mais j'ai très soif, ce soir, miss. Vous auriez cinq dollars pour un type dans le besoin ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Bien sûr. Tiens, cinq dollars.	}{	Bien sûr. Tiens, cinq dollars.	}{	31	}{	pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Prends tes cinq morceaux d'or. . .	}
+{	13	}{	Euh bien sûr, dès qu'on aura discuté. . .	}{	Euh bien sûr, dès qu'on aura discuté. . .	}{	31	}{	Persuasion 4	}{	G.Bill_Persuade = 1	}{	}{	}{	}{	}{	}{	}{	Je promets de te payer quand tu m'auras tout dit.	}
+{	14	}{	Je n'ai pas d'argent sur moi. . .	}{	Je n'ai pas d'argent sur moi. . .	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes poches sont aussi vides que ma tête. . .	}
+{	15	}{	Tu peux te brosser. Trouve-toi un boulot.	}{	Tu peux te brosser. Trouve-toi un boulot.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne te décernerai aucun prix, être puant.	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Alors je ne vais pas me rappeler quoi que ce soit sans billet vert. [tousse, tousse]Reviens si tu as de quoi me délier la langue. . .	}{	Alors je ne vais pas me rappeler quoi que ce soit sans billet vert. [tousse, tousse]Reviens si tu as de quoi me délier la langue. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Dis-moi tout !	}{	Dis-moi tout !	}{	41	}{	Dominate 2 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Tu ne voudrais pas me mettre en colère, vieillard. Dis-moi tout.	}{	Tu ne voudrais pas me mettre en colère, vieillard. Dis-moi tout.	}{	41	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Délie ta langue ou tu la perdras. . .	}
+{	24	}{	Allez, vieillard. Confie-moi ton secret en échange d'un des miens.	}{	Allez, vieillard. Confie-moi ton secret en échange d'un des miens.	}{	51	}{	Seduction 4 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Si tu enlèves ta veste, j'enlèverai ma chemise.	}
+{	25	}{	Très bien. Voilà cinq dollars. Dis-moi ce qui se passe. . .	}{	Très bien. Voilà cinq dollars. Dis-moi ce qui se passe. . .	}{	31	}{	pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Voici ton or. Parle. 	}
+{	26	}{	Tu vas te souvenir pour moi.	}{	Tu vas te souvenir pour moi.	}{	31	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	Peu importe. Je reviendrai.	}{	Peu importe. Je reviendrai.	}{	0	}{	}{	G.Bill_ComeBackLater = 1	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Eh eh. . . merci beaucoup ! [tousse, tousse]Je vais pouvoir me payer une boutanche. [tousse, tousse]Pour raisons médicales, bien sûr. . .[rit encore, finit en toussant]	}{	Eh eh. . . merci beaucoup ! [tousse, tousse]Je vais pouvoir me payer une boutanche. [tousse, tousse]Pour raisons médicales, bien sûr. . .[rit encore, finit en toussant]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	(Auto-Link)	}{	(Auto-Link)	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	[effrayé]Bien sûr. . . si tu le prends sur ce ton, je te raconte tout.[tousse, tousse] Pas de raison de s'énerver.	}{	[effrayé]Bien sûr. . . si tu le prends sur ce ton, je te raconte tout.[tousse, tousse] Pas de raison de s'énerver.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	(Auto-Link)	}{	(Auto-Link)	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	[tousse, tousse]Bon, je sais que tu ne vas pas croire le vieux Bill, parce que j'ai tout dit à mes amis et aux flics et que les gens disent que j'ai halluciné, à cause de l'alcool. Mais c'est pas ça. . .	}{	[tousse, tousse]Bon, je sais que tu ne vas pas croire le vieux Bill, parce que j'ai tout dit à mes amis et aux flics et que les gens disent que j'ai halluciné, à cause de l'alcool. Mais c'est pas ça. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Moi je te croirai, Bill. . .	}{	Moi je te croirai, Bill. . .	}{	61	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Tes paroles ont l'écho de la vérité. . .	}
+{	53	}{	Etonnant qu'ils pensent ça, vu ce que tu sens. . .	}{	Etonnant qu'ils pensent ça, vu ce que tu sens. . .	}{	61	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	Tes odeurs sont plus fortes que tes paroles. . .	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	[il baisse la voix, murmure presque]C'était un monstre, tu sais. Un monstre avec le visage hideux et tordu, des dents plus longues que les doigts. . . Et ces yeux. . . Jaune pisseux, pleins de haine. Jamais vu des yeux pareils. . . J'en fais encore des cauchemars. . .	}{	[il baisse la voix, murmure presque]C'était un monstre, tu sais. Un monstre avec le visage hideux et tordu, des dents plus longues que les doigts. . . Et ces yeux. . . Jaune pisseux, pleins de haine. Jamais vu des yeux pareils. . . J'en fais encore des cauchemars. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Et ensuite ? Que s'est-il passé ?	}{	Et ensuite ? Que s'est-il passé ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Continue de remuer la langue. . .	}
+{	63	}{	Dis-moi juste d'où ce soi-disant 'monstre' est venu. . .	}{	Dis-moi juste d'où ce soi-disant 'monstre' est venu. . .	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ah. . . Dis-moi où se trouve le repaire du Frère Ténébreux.	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	[s'agite un peu plus]Il m'a emporté sur son épaule, jusqu'à l'endroit qui fait peur, où il fait noir. [tousse, tousse]Oh mon dieu, cette odeur. . . pire que tout. . . Et après, il m'a mordu dans le cou. . . Oh, c'était horrible. . . [tousse, tousse]	}{	[s'agite un peu plus]Il m'a emporté sur son épaule, jusqu'à l'endroit qui fait peur, où il fait noir. [tousse, tousse]Oh mon dieu, cette odeur. . . pire que tout. . . Et après, il m'a mordu dans le cou. . . Oh, c'était horrible. . . [tousse, tousse]	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Auto-Link)	}{	(Auto-Link)	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Après, je ne me rappelle rien. . . évanoui, et je me suis réveillé dans mon allée. [tousse, tousse]Depuis, je me sens patraque. [tousse, tousse, tousse]	}{	Après, je ne me rappelle rien. . . évanoui, et je me suis réveillé dans mon allée. [tousse, tousse]Depuis, je me sens patraque. [tousse, tousse, tousse]	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Bill ! J'ai besoin de savoir où le monstre t'a emporté. . .	}{	Bill ! J'ai besoin de savoir où le monstre t'a emporté. . .	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où le Frère Bestial t'a-t-il emporté ?	}
+{	83	}{	Suffit, vieillard ! Dites-moi simplement où le monstre t'a emporté. . .	}{	Suffit, vieillard ! Dites-moi simplement où le monstre t'a emporté. . .	}{	91	}{	not IsClan(pc, "Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	[tousse, tousse, tousse]Il est passé par les égouts. Juste au coin, là. [tousse, tousse, tousse, tousse]Je veux pas y retourner, hein. [tousse, tousse, tousse, tousse]Laisse pas le monstre revenir me chercher. . .[tousse, tousse, tousse, tousse]	}{	[tousse, tousse, tousse]Il est passé par les égouts. Juste au coin, là. [tousse, tousse, tousse, tousse]Je veux pas y retourner, hein. [tousse, tousse, tousse, tousse]Laisse pas le monstre revenir me chercher. . .[tousse, tousse, tousse, tousse]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Bill ! Reste avec moi ! Tout va bien se passer !	}{	Bill ! Reste avec moi ! Tout va bien se passer !	}{	101	}{	Humanity 6 & pc.GetQuestState("AllPlague") == 0	}{	pc.SetQuest("Plague",6)	}{	}{	}{	}{	}{	}{	}{	Le Frère Bestial ne reviendra pas.	}
+{	93	}{	Merci du renseignement. A plus.	}{	Merci du renseignement. A plus.	}{	101	}{	Humanity 6 & pc.GetQuestState("AllPlague") == 0	}{	pc.SetQuest("Plague",6)	}{	}{	}{	}{	}{	}{	}{	Protège-toi, Maître Soiffard.	}
+{	94	}{	Tu vas mourir, oui ?	}{	Tu vas mourir, oui ?	}{	101	}{	Humanity -6 & pc.GetQuestState("AllPlague") == 0	}{	pc.SetQuest("Plague",6)	}{	}{	}{	}{	}{	}{	}{	La mort met tant de temps à s'approprier ton âme imbibée. . .	}
+{	95	}{	Bill ! Reste avec moi ! Tout va bien se passer !	}{	Bill ! Reste avec moi ! Tout va bien se passer !	}{	101	}{	Humanity 6 & pc.GetQuestState("AllPlague") != 0	}{	pc.SetQuest("AllPlague",11)	}{	}{	}{	}{	}{	}{	}{	Le frère bestial ne reviendra pas.	}
+{	96	}{	Merci du renseignement. A plus.	}{	Merci du renseignement. A plus.	}{	101	}{	Humanity 6 & pc.GetQuestState("AllPlague") != 0	}{	pc.SetQuest("AllPlague",11)	}{	}{	}{	}{	}{	}{	}{	Protège-toi, Maître Soiffard.	}
+{	97	}{	Tu vas mourir, oui ?	}{	Tu vas mourir, oui ?	}{	101	}{	Humanity -6 & pc.GetQuestState("AllPlague") != 0	}{	pc.SetQuest("AllPlague",11)	}{	}{	}{	}{	}{	}{	}{	La mort met tant de temps à s'approprier ton âme imbibée. . .	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	[Bill meurt]. . .	}{	[Bill meurt]. . .	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	G.Bill_Dead = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Nul souci, Bill. Quelqu'un va payer pour cela.	}{	Nul souci, Bill. Quelqu'un va payer pour cela.	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Le Frère Bestial va payer le prix de ta vie.	}
+{	103	}{	Trop dur.	}{	Trop dur.	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Encore un fil qui quitte la tapisserie. Adieu.	}
+{	104	}{	Bon débarras, ivrogne pathétique.	}{	Bon débarras, ivrogne pathétique.	}{	0	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	Savoure cette dernière liqueur. Les alcooliques meurent toujours seuls.	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Eh eh.[tousse, tousse] Tu m'as trouvé un peu d'oseille ?	}{	Eh eh.[tousse, tousse] Tu m'as trouvé un peu d'oseille ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Oui. . . Tiens, cinq dollars.	}{	Oui. . . Tiens, cinq dollars.	}{	31	}{	pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Voici ton or. . .	}
+{	113	}{	Euh bien sûr, dès qu'on aura discuté. . .	}{	Euh bien sûr, dès qu'on aura discuté. . .	}{	31	}{	Persuasion 4	}{	G.Bill_Persuade = 1	}{	}{	}{	}{	}{	}{	}{	Je promets de te payer quand tu m'auras tout dit.	}
+{	114	}{	Non, je n'ai toujours rien. . .	}{	Non, je n'ai toujours rien. . .	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis ici, sans le sou ni le son. . .	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Ahhh ! Non, pitié ! Le monstre ! Ne m'emmène pas là-bas. . . Je ne veux pas aller là où ça fait peur !	}{	Ahhh ! Non, pitié ! Le monstre ! Ne m'emmène pas là-bas. . . Je ne veux pas aller là où ça fait peur !	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	De quoi parles-tu ?	}{	De quoi parles-tu ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Oh mon dieu, tu es encore plus horrible que je me souvenais. . . Ton visage. . . tes yeux. . . [tousse, tousse, tousse]Pitié, laisse-moi tranquille !	}{	Oh mon dieu, tu es encore plus horrible que je me souvenais. . . Ton visage. . . tes yeux. . . [tousse, tousse, tousse]Pitié, laisse-moi tranquille !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Tu es Tin Can Bill ?	}{	Tu es Tin Can Bill ?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Tu me connais ! [tousse, tousse, tousse, tousse] Tu m'as emporté dans l'endroit qui fait peur. . . qui sentait mauvais. . . non ! [tousse, tousse, tousse, tousse]plus les égouts, non !	}{	Tu me connais ! [tousse, tousse, tousse, tousse] Tu m'as emporté dans l'endroit qui fait peur. . . qui sentait mauvais. . . non ! [tousse, tousse, tousse, tousse]plus les égouts, non !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Quels égouts ? Calme-toi ! Tu me confonds avec quelqu'un d'autre !	}{	Quels égouts ? Calme-toi ! Tu me confonds avec quelqu'un d'autre !	}{	151	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	Euh, ouais, je suis le monstre ! Dis-moi où je t'ai emporté. . . ou alors je t'y renvoie !	}{	Euh, ouais, je suis le monstre ! Dis-moi où je t'ai emporté. . . ou alors je t'y renvoie !	}{	151	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	[tousse, tousse, tousse, tousse]Les égouts, juste au coin. . . Mal. . . Oh mon dieu. . . [tousse, tousse, tousse, tousse, tousse]Mon coeur. . . Peux pas. . . respirer. . .	}{	[tousse, tousse, tousse, tousse]Les égouts, juste au coin. . . Mal. . . Oh mon dieu. . . [tousse, tousse, tousse, tousse, tousse]Mon coeur. . . Peux pas. . . respirer. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Attends Bill, je vais chercher du secours !	}{	Attends Bill, je vais chercher du secours !	}{	101	}{	Humanity 6 & pc.GetQuestState("AllPlague") == 0	}{	pc.SetQuest("Plague",6)	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	Détends-toi.	}{	Détends-toi.	}{	101	}{	Humanity 6 & pc.GetQuestState("AllPlague") == 0	}{	pc.SetQuest("Plague",6)	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	Eh, on dirait une vilaine toux, mon vieux. . .	}{	Eh, on dirait une vilaine toux, mon vieux. . .	}{	101	}{	Humanity -6 & pc.GetQuestState("AllPlague") == 0	}{	pc.SetQuest("Plague",6)	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	Attends Bill, je vais chercher du secours !	}{	Attends Bill, je vais chercher du secours !	}{	101	}{	Humanity 6 & pc.GetQuestState("AllPlague") != 0	}{	pc.SetQuest("AllPlague",11)	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	Détends-toi.	}{	Détends-toi.	}{	101	}{	Humanity 6 & pc.GetQuestState("AllPlague") != 0	}{	pc.SetQuest("AllPlague",11)	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	Eh, on dirait une vilaine toux, mon vieux. . .	}{	Eh, on dirait une vilaine toux, mon vieux. . .	}{	101	}{	Humanity -6 & pc.GetQuestState("AllPlague") != 0	}{	pc.SetQuest("AllPlague",11)	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	(Starting Condition)	}{	}{	121	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	(Starting Condition)	}{	}{	111	}{	G.Bill_ComeBackLater == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

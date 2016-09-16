@@ -1,0 +1,880 @@
+﻿Ne pas oublier gameui_english dans resource (Plus_Patch & Unofficial_Patch)
++dlg
++vdata
++lips... (sound/character)
+====================================================================================================
+Présentation dans le tuto des choix de dialogues (aliénation, domination, séduction, persuasion, intimidation, présence):
+
+Dans Vampire/materials/interface/pop_ups/
+
+Méthode d'édition:
+
+ttz --> VPKTools (texture) --> export tga --> édition (gimp + plugin pour dds) --> sauvegarde dds (attention un seul calque !) --> VPKTools (texture) --> export ttz (nécessite aussi le tth)
+
+
+Polices inutilisables (situés dans Vampire/materials/fonts/) >_<
+
+Donc Utilisation d'un dialogue fictif et persos...
+
+{	2	}{	Ceci indique une réponse de Domination (et dépense de sang)...	}{	Ceci indique une réponse de Domination (et dépense de sang)...	}{	21	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+
+{	2	}{	Ceci indique une réponse de Présence (et dépense de sang)...	}{	Ceci indique une réponse de Présence (et dépense de sang)...	}{	21	}{	Presence 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+
+{	2	}{	Ceci indique une réponse d'Aliénation (et dépense de sang)...	}{	Ceci indique une réponse d'Aliénation (et dépense de sang)...	}{	21	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Ceci indique une réponse de Persuasion...	}{	Ceci indique une réponse de Persuasion...	}{	11	}{	Persuasion 1	}{	}{	}{	}{	}{	}{	}{	}{	Ceci indique une réponse de Persuasion...	}
+{	4	}{	Ceci indique une réponse de Séduction...	}{	Ceci indique une réponse de Séduction...	}{	11	}{	Seduction 1}{	}{	}{	}{	}{	}{	}{	}{	Ceci indique une réponse de Séduction...	}
+{	5	}{	Ceci indique une réponse d'Intimidation...	}{	Ceci indique une réponse d'Intimidation...	}{	41	}{	Intimidate 1	}{	}{	}{	}{	}{	}{	}{	}{	Ceci indique une réponse d'Intimidation...	}
+
+
+{	3	}{	Ceci indique une réponse de Persuasion...	}{	Ceci indique une réponse de Persuasion...	}{	11	}{	Persuasion 1	}{	}{	}{	}{	}{	}{	}{	}{	Ceci indique une réponse de Persuasion...	}
+{	4	}{	Ceci indique une réponse de Séduction...	}{	Ceci indique une réponse de Séduction...	}{	11	}{	Seduction 1}{	}{	}{	}{	}{	}{	}{	}{	Ceci indique une réponse de Séduction...	}
+{	5	}{	Ceci indique une réponse d'Intimidation...	}{	Ceci indique une réponse d'Intimidation...	}{	41	}{	Intimidate 1	}{	}{	}{	}{	}{	}{	}{	}{	Ceci indique une réponse d'Intimidation...	}
+
+
+{	3	}{	Ceci indique une réponse de Persuasion...	}{	Ceci indique une réponse de Persuasion...	}{	11	}{	Persuasion 1	}{	}{	}{	}{	}{	}{	}{	}{	Ceci indique une réponse de Persuasion...	}
+{	5	}{	Ceci indique une réponse d'Intimidation...	}{	Ceci indique une réponse d'Intimidation...	}{	41	}{	Intimidate 1	}{	}{	}{	}{	}{	}{	}{	}{	Ceci indique une réponse d'Intimidation...	}
+
+
+
+GIMP 2.8 + plugin dds (à installer dans "C:\Program files\GIMP\lib\gimp\2.0\plug-ins\")
+Plugin disponible à http://code.google.com/p/gimp-dds/
+
+
+xcf. dialog{dementation,domination,feats,feats_nosferatu,presence}.xcf conservés dans tmp/
+
+
+====================================================================================================
+
+Pour memo, emplacements des fichiers de traduction: 
+
+-dlg/{chinatown,downtown la,generic,giovanni,hollywood,main characters,santa monica,warrens} (dialogues)
+
+-resource/gameui_english.txt
+
+-scripts/kb_act.lst
+
+-vdata/{hackterminals,items,signs,system}
+
+-sound/cinematic/santa_monica/haven/ (.lip)
+
+-sound/character/dlg/**/ (TODO: .lip)
+
+(plus)
+-sound/radio
+-sound/whispers
+
+
+====================================================================================================
+
+Détails des fichiers du patch. 
+
+up: Modifiés par rapport à la V.F. originale.
+new: nouveau fichier.
+
+
+
+
+dlg/chinatown
+
+Mis à jour 8.5.1 (terminée):
+
+	barabus.dlg (up)
+	barry_r.dlg (up)
+	garyphone.dlg (up)
+	hostess.dlg (up)
+	ji.dlg (up)
+	johnny.dlg (up)
+	kiki.dlg (up)
+	lufang.dlg (up)
+	mandarin.dlg (up)
+	mugger.dlg (up)
+	ox.dlg (up)
+	ricky.dlg (up)
+	shu.dlg (up)
+	tseng.dlg (up)
+	wongho.dlg (up)
+	yukie.dlg (up)
+	zhao.dlg (up)
+	zygaena.dlg (up)
+
+
+
+dlg/downtown la
+
+Mis à jour 8.5.1 (terminée):
+
+	bishop_vick.dlg (up)
+	bomberman.dlg (up)
+	boris.dlg (up)
+	brother_kanker.dlg (up)
+	bum_disease_female.dlg (up)
+	bum_disease_male.dlg (up)
+	bum.dlg (up)
+	chunk2.dlg (up)
+	chunk3.dlg (up)
+	damsel.dlg (up)
+	danecopconvo1.dlg (up)
+	danecopconvo2.dlg (up)
+	danecopconvo3.dlg (up)
+	dema.dlg (up)
+	dirty_cop.dlg (up)
+	empire_desk_clerk.dlg (up)
+	hannah.dlg (up)
+	hannahs_message.dlg (up)
+	igor.dlg (up)
+	jezebel_locke.dlg (up)
+	jumbles.dlg (up)
+	junkie_girl.dlg
+	larry.dlg (up)
+	milligan.dlg (up)
+	patty.dlg (up)
+	pisha.dlg (up)
+	prince1.dlg (up)
+	prince2.dlg (up)
+	skelter.dlg (up)
+	tin_can_bill.dlg (up)
+	tutorial_security_guard.dlg (up)
+	venus.dlg (up)
+
+
+
+dlg/generic
+
+Mis à jour 8.5.1 (terminée):
+
+	cabbie.dlg (up)
+	cabbiesewer.dlg
+	doll1.dlg (up)
+	doll2.dlg (up)
+	doll3.dlg (up)
+	doll4.dlg (up)
+	mcfly.dlg (up)
+	newscaster.dlg
+	prophet.dlg (new)
+	prostitute.dlg (up)
+	sabbat1.dlg
+	sabbat2.dlg
+	sabbat3.dlg (up)
+	stop.dlg
+
+
+
+dlg/giovanni
+
+Mis à jour 8.5.1 (terminée):
+
+	adam.dlg (up)
+	bodyguard5.dlg
+	bodyguard.dlg (up)
+	chang.dlg (up)
+	christopher.dlg (up)
+	luca.dlg (up)
+	maria.dlg (up)
+	mira.dlg (up)
+	nadia.dlg (up)
+	victor.dlg (up)
+
+
+
+dlg/hollywood
+
+Mis à jour 8.5.1 (terminée):
+
+	andrei.dlg (up)
+	anoncaller.dlg (up)
+	ash.dlg (up)
+	ash_lookalike.dlg (up)
+	courier.dlg (up)
+	dhatter.dlg (up)
+	flynn.dlg (up)
+	gargoyle.dlg (up)
+	isaac.dlg (up)
+	kerri.dlg (up)
+	misti.dlg (up)
+	razor.dlg (up)
+	romero.dlg (up)
+	samantha.dlg
+	slater.dlg (up)
+	spicoli.dlg (up)
+	sweeper.dlg (up)
+	tommy.dlg (up)
+	vv.dlg (up)
+
+
+
+dlg/main characters
+
+Mis à jour 8.5.1 (terminée):
+
+	bach.dlg (up)
+	beckett.dlg (up)
+	caine.dlg (up)
+	gary.dlg (up)
+	heather_dead.dlg (new)
+	heather.dlg (up)
+	jack.dlg (up)
+	jack_tutorial.dlg (up)
+	johansen.dlg (en)
+	mingxiao2.dlg (en)
+	mingxiao.dlg (up)
+	nines.dlg (up)
+	regent.dlg (up)
+
+
+
+dlg/santa monica
+
+Mis à jour 8.5.1 (terminée):
+
+	arthur.dlg (up)
+	asianvampiretest.dlg
+	bertram.dlg (up)
+	brian.dlg (up)
+	cal.dlg (up)
+	carson.dlg (up)
+	chunk.dlg (up)
+	clinic_guard.dlg (up)
+	copper.dlg (up)
+	danielle.dlg (up)
+	dennis.dlg (up)
+	doris.dlg (up)
+	e.dlg
+	havenbum.dlg (up)
+	intercom.dlg (up)
+	jeanette.dlg (up)
+	julius.dlg (up)
+	killer.dlg (up)
+	knox.dlg (up)
+	lily.dlg (up)
+	malcolm.dlg (up)
+	mercurio.dlg (up)
+	noir_cop.dlg (up)
+	nurse.dlg (up)
+	ocean_house.dlg
+	phil.dlg (up)
+	rosa.dlg (up)
+	smblueblood.dlg (up)
+	smphone.dlg (up)
+	stan_gimble.dlg (up)
+	therese.dlg (up)
+	tourette.dlg (up)
+	trip.dlg (up)
+	vandal.dlg (up)
+
+
+
+dlg/warrens
+
+Mis à jour 8.5.1 (terminée):
+
+	imalia.dlg (up)
+	mitnick.dlg (up)
+
+
+
+
+
+vdata/hackterminals
+
+Mis à jour 8.5.1:
+
+asianvamp_laptop.txt (up)
+beachouse_computer.txt (up)
+bertrams_computer.txt (up)
+blood_bank_computer.txt (up)
+carson_computer.txt (up)
+clinic_administration_computer.txt (up)
+clinic_cis_computer.txt (up)
+clinic_security_computer.txt (up)
+confessione3_computer.txt (up)
+dane_computer.txt (up)
+empire_lobby_computer.txt (up)
+fu_server.txt (up)
+fu_terminals2.txt (up)
+fu_terminals.txt (up)
+hack_charlimits.txt
+hack_example.txt
+haven_pc.txt (pc)
+jeanette_laptop.txt (up)
+kilpatricks_computer.txt (up)
+krime_computer.txt (up)
+library_computer.txt (new)
+lucky_pc.txt (up)
+malcolm_computer.txt (up)
+milligan_computer.txt (up)
+morgue_computer.txt (up)
+museum_computer_2.txt (up)
+museum_computer_3.txt (up)
+museum_computer_4.txt (up)
+museum_computer.txt (up)
+netcafe_computer_2.txt (up)
+netcafe_computer_3.txt (up)
+netcafe_computer_4.txt (up)
+netcafe_computer.txt (up)
+prop_keypad.txt (up)
+shrekhub1_terminal.txt (up)
+shrekhub2_terminal.txt (up)
+shrekhub3_metalop.txt (up)
+shrekhub3_metalsec.txt (up)
+shrekhub4_terminal1.txt (up)
+shrekhub4_terminal2.txt (up)
+shrekhub4_terminal3.txt (up)
+shrekhub4_terminal4.txt (up)
+shrekhub4_terminal5.txt (up)
+shrekhub4_terminal6.txt (up)
+sinbin.txt (up)
+skyline_apt3.txt (up)
+skyline_security.txt (up)
+soc_int_hack.txt (up)
+tawni_terminal.txt (up)
+therese_pc.txt (up)
+tutorial_computer.txt (up)
+ventruetower2_terminal.txt
+warrens2_computer.txt (up)
+
+
+
+vdata/items
+
+Mis à jour 8.5.1:
+
+item_a_body_armor.txt (up)
+item_a_hvy_cloth.txt (up)
+item_a_hvy_leather.txt (up)
+item_a_lt_cloth.txt (up)
+item_a_lt_leather.txt (up)
+item_d_animalism-null.txt
+item_d_dementation-null.txt
+item_d_dominate-null.txt
+item_d_holy_light.txt
+item_d_thaumaturgy-null.txt
+item_g_animaltrainingbook.txt
+item_g_astrolite.txt (up)
+item_g_bach_journal.txt
+item_g_badlucktalisman.txt (up)
+item_g_bailbond_receipt.txt
+item_g_bertrams_cd.txt (up)
+item_g_bloodpack.txt
+item_g_bluebloodpack.txt
+item_g_brotherhood_flyer.txt
+item_g_car_stereo.txt (up)
+item_g_cash_box.txt (up)
+item_g_chewinggum.txt (up)
+item_g_computerbookhighgrade.txt
+item_g_computerbooklowgrade.txt
+item_g_driver_license_gimble.txt
+item_g_drugs_drug_box.txt (up)
+item_g_drugs_morphine_bottle.txt (up)
+item_g_drugs_perscription_bottle.txt (up)
+item_g_drugs_pill_bottle.txt (up)
+item_g_edane_print_report.txt
+item_g_edane_report.txt (up)
+item_g_eldervitaepack.txt (up)
+item_g_eyes.txt
+item_g_gargoyle_book.txt (up)
+item_g_garys_cd.txt (up)
+item_g_garys_film.txt (up)
+item_g_garys_photo.txt
+item_g_garys_tape.txt (up)
+item_g_ghost_pendant.txt (up)
+item_g_giovanni_invitation_maria.txt
+item_g_giovanni_invitation_victor.txt
+item_g_guy_magazine.txt (up)
+item_g_hannahs_appt_book.txt (up)
+item_g_hatters_screenplay.txt (up)
+item_g_horrortape_1.txt
+item_g_horrortape_2.txt (up)
+item_g_idol_cat.txt (up)
+item_g_idol_crane.txt (up)
+item_g_idol_dragon.txt (up)
+item_g_idol_elephant.txt (up)
+item_g_jumbles_flyer.txt (up)
+item_g_junkyard_businesscard.txt
+item_g_keyring.txt
+item_g_larry_briefcase.txt
+item_g_lilly_diary.txt
+item_g_lillyonbeachphoto.txt
+item_g_lilly_photo.txt
+item_g_lilly_purse.txt (up)
+item_g_linedpaper-null.txt
+item_g_locket.txt
+item_g_lockpick.txt (up)
+item_g_mercurio_journal.txt
+item_g_milligans_businesscard.txt
+item_g_oh_diary.txt
+item_g_pearl_of_dubai-null.txt (new)
+item_g_pisha_book.txt (up)
+item_g_pisha_fetish.txt (up)
+item_g_pulltoy.txt
+item_g_ring03.txt (up)
+item_g_ring_gold.txt (up)
+item_g_ring_serial_killer_1.txt (up)
+item_g_ring_serial_killer_2-null.txt
+item_g_ring_silver.txt (up)
+item_g_sewerbook_1.txt
+item_g_stake.txt (up)
+item_g_vampyr_apocrypha.txt
+item_g_vv_photo.txt (up)
+item_g_wallet.txt
+item_g_warr_clipboard.txt
+item_g_warrens4_passkey.txt (up)
+item_g_warr_ledger_1.txt
+item_g_warr_ledger_2.txt
+item_g_watch_fancy.txt (up)
+item_g_watch_normal.txt (up)
+item_g_werewolf_bloodpack.txt
+item_g_wireless_camera_1.txt (up)
+item_g_wireless_camera_2.txt (up)
+item_g_wireless_camera_3.txt (up)
+item_g_wireless_camera_4.txt (up)
+item_i_written.txt
+item_k_ash_cell_key.txt
+item_k_carson_apartment_key.txt
+item_k_chinese_theatre_key.txt
+item_k_clinic_cs_key.txt
+item_k_clinic_maintenance_key.txt
+item_k_clinic_stairs_key.txt
+item_k_edane_key.txt
+item_k_empire_jezebel_key.txt
+item_k_empire_mafia_key.txt
+item_k_fu_cell_key.txt
+item_k_fu_office_key.txt
+item_k_gallery_noir_key.txt
+item_k_gimble_key.txt (up)
+item_k_hannahs_safe_key.txt
+item_k_hitman_ji_key.txt
+item_k_hitman_lu_key.txt
+item_k_key_generic.txt (up)
+item_k_kiki_key.txt
+item_k_leopold_int_key.txt
+item_k_lilly_key.txt (up)
+item_k_lucky_star_murder_key.txt (up)
+item_k_malcolm_office_key.txt
+item_k_malkavian_refrigerator_key.txt
+item_k_murietta_key.txt
+item_k_museum_basement_key.txt
+item_k_museum_office_key.txt
+item_k_museum_storage_key.txt
+item_k_museum_storeroom_key.txt
+item_k_netcafe_office_key.txt
+item_k_oceanhouse_basement_key.txt
+item_k_oceanhouse_sewer_key.txt (up)
+item_k_oceanhouse_upstairs_key.txt
+item_k_oh_front_key.txt
+item_k_sarcophagus_key.txt (up)
+item_k_shrekhub_four_key.txt
+item_k_shrekhub_one_key.txt
+item_k_shrekhub_three_key.txt
+item_k_skyline_haven_key.txt (up)
+item_k_tatoo_parlor_key.txt
+item_k_tawni_apartment_key.txt
+item_k_tutorial_chopshop_stairs_key.txt
+item_m_money_clip.txt (up)
+item_m_money_envelope.txt (up)
+item_m_wallet.txt (up)
+item_p_gargoyle_talisman.txt (up)
+item_p_occult_blood_buff.txt (up)
+item_p_occult_dexterity.txt (up)
+item_p_occult_dodge.txt (up)
+item_p_occult_experience.txt
+item_p_occult_frenzy.txt (up)
+item_p_occult_hacking.txt (up)
+item_p_occult_heal_rate.txt (up)
+item_p_occult_lockpicking.txt (up)
+item_p_occult_obfuscate.txt (up)
+item_p_occult_passive_durations.txt (up)
+item_p_occult_presence.txt (up)
+item_p_occult_regen.txt (up)
+item_p_occult_strength.txt (up)
+item_p_occult_thaum_damage.txt (up)
+item_p_research_hg_computers.txt (up)
+item_p_research_hg_dodge.txt (up)
+item_p_research_hg_firearms.txt (up)
+item_p_research_hg_melee.txt
+item_p_research_lg_computers.txt (up)
+item_p_research_lg_dodge.txt
+item_p_research_lg_firearms.txt (up)
+item_p_research_lg_stealth.txt
+item_p_research_mg_brawl.txt (up)
+item_p_research_mg_finance.txt (up)
+item_p_research_mg_melee.txt (up)
+item_p_research_mg_security.txt (up)
+item_s_physicshand-null.txt
+item_w_avamp_blade.txt (up)
+item_w_baseball_bat.txt (up)
+item_w_baton.txt (up)
+item_w_bush_hook.txt (up)
+item_w_chang_blade.txt (up)
+item_w_chang_claw.txt (up)
+item_w_chang_energy_ball.txt (up)
+item_w_chang_ghost.txt (up)
+item_w_claws_ghoul.txt (up)
+item_w_claws_protean4.txt (up)
+item_w_claws_protean5.txt (up)
+item_w_claws.txt (up)
+item_w_colt_anaconda.txt (up)
+item_w_crossbow_flaming.txt (up)
+item_w_crossbow.txt (up)
+item_w_deserteagle.txt (up)
+item_w_fireaxe.txt (up)
+item_w_fists.txt (up)
+item_w_flamethrower.txt (up)
+item_w_gargoyle_fist.txt (up)
+item_w_glock_17c.txt (up)
+item_w_grenade_frag.txt (up)
+item_w_hengeyokai_fist.txt (up)
+item_w_ithaca_m_37.txt (up)
+item_w_katana.txt (up)
+item_w_knife.txt (up)
+item_w_mac_10.txt (up)
+item_w_manbat_claw.txt (up)
+item_w_mingxiao_melee.txt (up)
+item_w_mingxiao_spit.txt (up)
+item_w_mingxiao_tentacle.txt (up)
+item_w_occultblade.txt (up)
+item_w_remington_m_700.txt (up)
+item_w_rem_m_700_bach.txt (up)
+item_w_sabbatleader_attack.txt (up)
+item_w_severed_arm.txt (up)
+item_w_sheriff_sword.txt (up)
+item_w_sledgehammer.txt (up)
+item_w_steyr_aug.txt (up)
+item_w_supershotgun.txt (up)
+item_w_thirtyeight.txt (up)
+item_w_throwing_star-null.txt
+item_w_tire_iron.txt (up)
+item_w_torch.txt (up)
+item_w_tzimisce2_claw.txt (up)
+item_w_tzimisce2_head.txt (up)
+item_w_tzimisce3_claw.txt (up)
+item_w_tzimisce_melee.txt (up)
+item_w_unarmed.txt (up)
+item_w_uzi.txt (up)
+item_w_werewolf_attacks.txt (up)
+item_w_wolf_head-null.txt
+item_w_zombie_fists.txt (up)
+weapon_physcannon.txt (up)
+
+
+
+vdata/signs
+
+Mis à jour 8.5.1:
+
+childs_drawing.txt
+chinatown_a.txt
+chinatown_b.txt
+chinatown_c.txt
+chinatown_d.txt
+chinatownsewer1.txt
+clinic_phil_note.txt
+death.txt
+downtownsewer1.txt
+downtownsewer2.txt
+downtownsewer3.txt
+downtownsewer4.txt
+empire_note.txt
+flynns_password.txt
+hollywood_a.txt
+hollywood_b.txt
+hollywood_c.txt
+hollywoodsewer1.txt
+hollywoodsewer2.txt
+la_a.txt
+la_b.txt
+la_c.txt
+la_d.txt
+la_e.txt
+la_f.txt
+library_note.txt (new)
+luckystar_note.txt (up)
+malcolm_password_note.txt
+malkmansion_clue_1.txt
+malkmansion_clue_2.txt
+mercurios_note.txt
+museum_note_2.txt
+museum_note_3.txt
+museum_note.txt
+newspaper_all.txt (up)
+newspaper_ash_rivers.txt
+newspaper_dane_facts.txt
+newspaper_dane_slaughter.txt
+newspaper_elizabeth_dane.txt
+newspaper_epidemic.txt
+newspaper_fu.txt
+newspaper_glaze_stealth.txt (new)
+newspaper_glaze.txt
+newspaper_griffith.txt
+newspaper_halloween.txt
+newspaper_johansen2.txt
+newspaper_johansen.txt
+newspaper_malk_mansion.txt
+newspaper_museum.txt
+newspaper_oh_1.txt (up)
+newspaper_oh_2.txt
+newspaper_oh_3.txt
+newspaper_oh_4.txt
+newspaper_oh_5.txt
+newspaper_oh_6.txt
+newspaper_oh_7.txt
+newspaper_sabbat_attack.txt
+newspaper_serial_killer.txt
+newspaper_society.txt
+newspaper_tawni.txt
+newspaper_test.txt
+newspaper_war_1.txt
+newspaper_war_2.txt
+newspaper_warehouse.txt
+newspaper_wong_ho_dead.txt
+oh_fade1.txt
+psych_report.txt
+regents_invitation.txt
+santamonica_a.txt
+santamonica_b.txt
+santamonica_c.txt
+santamonicasewer1.txt
+santamonicasewer2.txt
+sarcophagus.txt
+shub4_name1.txt
+shub4_name2.txt
+shub4_name3.txt
+shub4_name4.txt
+shub4_name5.txt
+sign_test_scripted.txt
+sign_test.txt
+sinbin_note.txt
+sinbin_temp.txt
+start_game_popup.txt
+temp_intro.txt
+temp_la.txt
+tutorial_note.txt
+tutorial_popup_animalism1.txt
+tutorial_popup_animalism2.txt
+tutorial_popup_animalism3.txt
+tutorial_popup_auspex1.txt
+tutorial_popup_auspex2.txt
+tutorial_popup_blood_buff1.txt
+tutorial_popup_bloodpool1.txt
+tutorial_popup_brujahdisc1.txt
+tutorial_popup_celerity1.txt
+tutorial_popup_celerity2.txt
+tutorial_popup_computers1.txt
+tutorial_popup_computers2.txt
+tutorial_popup_containers1.txt
+tutorial_popup_containers2.txt
+tutorial_popup_dementation1.txt
+tutorial_popup_dementation2.txt
+tutorial_popup_dementation3.txt
+tutorial_popup_detected_1.txt
+tutorial_popup_dialogue_dementate.txt
+tutorial_popup_dialogue_dominate.txt
+tutorial_popup_dialogue_feats.txt
+tutorial_popup_dialogue_nosferatu.txt
+tutorial_popup_dialogue_presence.txt (new)
+tutorial_popup_disciplines1.txt (up)
+tutorial_popup_disciplines2.txt
+tutorial_popup_dominate1.txt
+tutorial_popup_dominate2.txt
+tutorial_popup_dominate3.txt
+tutorial_popup_drain_pool_1.txt
+tutorial_popup_experience_1.txt
+tutorial_popup_fail_animalism_1.txt
+tutorial_popup_fail_animalism_2.txt
+tutorial_popup_fail_auspex_1.txt
+tutorial_popup_fail_celerity_1.txt
+tutorial_popup_fail_dementation_1.txt
+tutorial_popup_fail_dementation_2.txt
+tutorial_popup_fail_dominate_1.txt
+tutorial_popup_fail_fortitude_1.txt
+tutorial_popup_fail_obfuscate_1.txt
+tutorial_popup_fail_potence_1.txt
+tutorial_popup_fail_presence_1.txt
+tutorial_popup_fail_protean_1.txt
+tutorial_popup_fail_thaumaturgy_1.txt
+tutorial_popup_fail_thaumaturgy_2.txt
+tutorial_popup_feed1.txt
+tutorial_popup_feed2.txt
+tutorial_popup_feed_fail_1.txt
+tutorial_popup_fortitude1.txt
+tutorial_popup_fortitude2.txt
+tutorial_popup_frenzy1.txt
+tutorial_popup_frenzy2.txt
+tutorial_popup_gangreldisc1.txt
+tutorial_popup_get1.txt
+tutorial_popup_health1.txt
+tutorial_popup_health2.txt
+tutorial_popup_inspection1.txt
+tutorial_popup_inspection2.txt
+tutorial_popup_inventory1.txt
+tutorial_popup_jump1.txt
+tutorial_popup_lockpicking1.txt
+tutorial_popup_lockpicking2.txt
+tutorial_popup_malkaviandisc1.txt
+tutorial_popup_masquerade1.txt
+tutorial_popup_masquerade2.txt
+tutorial_popup_masquerade3.txt
+tutorial_popup_moving1.txt
+tutorial_popup_nosferatudisc1.txt
+tutorial_popup_note1.txt
+tutorial_popup_obfuscate1.txt
+tutorial_popup_obfuscate2.txt
+tutorial_popup_obfuscate3.txt
+tutorial_popup_obfuscate4.txt
+tutorial_popup_physics1.txt
+tutorial_popup_physics2.txt
+tutorial_popup_pickup_1.txt
+tutorial_popup_potence1.txt
+tutorial_popup_potence2.txt
+tutorial_popup_presence1.txt
+tutorial_popup_presence2.txt
+tutorial_popup_protean1.txt
+tutorial_popup_protean2.txt
+tutorial_popup_protean3.txt
+tutorial_popup_questlog1.txt
+tutorial_popup_rangedcombat1.txt
+tutorial_popup_rangedcombat2.txt
+tutorial_popup_rats1.txt
+tutorial_popup_rats2.txt
+tutorial_popup_sneaking1.txt
+tutorial_popup_sneaking2.txt
+tutorial_popup_stealthkill1.txt (up)
+tutorial_popup_thaumaturgy1.txt
+tutorial_popup_thaumaturgy2.txt
+tutorial_popup_thaumaturgy3.txt
+tutorial_popup_thirty_eight1.txt
+tutorial_popup_tireiron1.txt
+tutorial_popup_toreadordisc1.txt
+tutorial_popup_tremeredisc1.txt
+tutorial_popup.txt
+tutorial_popup_unarmedcombat1.txt
+tutorial_popup_unarmedcombat2.txt
+tutorial_popup_use1.txt
+tutorial_popup_ventruedisc1.txt
+tutorial_popup_weapons1.txt
+werewolf_note.txt (new)
+
+
+
+vdata/system
+
+Mis à jour 8.5.1:
+
+charcreatewizard.txt (up)
+chareditor.txt (up)
+clandoc000.txt (up)
+credits.txt (up)
+dialog.txt
+dicerolls.txt
+disciplinetgt_000.txt (up)
+disciplinetgt_001.txt (up)
+disciplinetgt_002.txt (up)
+disciplinetgt_003.txt (up)
+disciplinetgt_004.txt (up)
+dispositiontable.txt
+engineerrors.txt
+experience_table.txt (up)
+feats.txt (up)
+histories000.txt (up)
+history.txt
+infobartypes.txt (up)
+interestingplacetypelist.txt (up)
+items.txt (up)
+keynames.txt
+levelingtemplate_000.txt (up)
+loadingtips.txt (up)
+mapnames_localized.txt
+newscaster_main.txt (up)
+newscaster_side.txt (up)
+npctemplate001.txt (up)
+npctemplate002.txt (up)
+npctemplate004.txt (up)
+npctemplate005.txt (up)
+npctemplate007.txt (up)
+npctemplate011.txt (up)
+npctemplate012.txt (up)
+npctemplate014.txt (up)
+npctemplate016.txt (up)
+npctemplate018.txt (up)
+npctemplate020.txt (up)
+npctemplate022.txt (up)
+npctemplate024.txt (up)
+npctemplate025.txt (up)
+npctemplate_bomberman.txt (up)
+npctemplate_crackhouse.txt (up)
+npctemplate_malkmansion.txt (up)
+particleimpacttable.txt (up)
+quests_chinatown.txt (up)
+quests_downtown.txt (up)
+quests_hollywood.txt (up)
+quests_santamonica.txt (up)
+reactions000.txt
+rules_tables.txt (up)
+rules.txt (up)
+sndscheme_char.txt (up)
+stats.txt (up)
+stealth.txt (up)
+strings.txt (up)
+traiteffects000.txt (up)
+vendors.txt (up)
+
+
+
+
+
+====================================================================================================
+
+NOTES:
+COMPARAISON / MISE A NIVEAU DES DIALOGUES:
+
+{       n°     }{ ***** }{ ***** }{  }{      }{      }{      }{      }{    }{       }{      }{      }{   *****    }
+
+
+Comparaison rapide des champs autres que le texte (mâle 2/ femelle 3/ etc. / malkavien 13).
+
+Objectif: faciliter le répérage des modifications sur les champs de condition, exécution, lignes entre version (fr) et version (en)...
+
+/!\ Travail sur copie, bien sûr...
+
+#attention à l'encodage, tous ces fichiers sont soient ASCII, soit ISO88591 ! (test en UTF: passe pas en jeu)
+export LANG=fr_FR.iso88591
+
+#Reformatage pour comparaison rapide complète (+texte):
+
+# retour à la ligne après chaque accolade
+sed -e 's#}#}\n#g' -i ./dlg/en/**/*
+
+#suppression textes (du moins, ceux terminant par .!?)
+sed -e 's#{\t.*[.!?][ \t]*}#{\tblabla\t}#g' -i ./dlg/en/**/*
+
+Comparaison... (objectif, nettoyage/visualiser simple: diff, winmerge et cie...)
+diff -aur ./dlg/fr/ ./dlg/en/
+
+Ensuite, mieux contrôler manuellement les différences (traduction)... mais ça devrait être plus simple ou au moins coller dans l'ensemble... :-P
+
+#pour recomposer un fichier sous espace:
+tr -d '\n' < fichier.dlg > fichier.dlg.newscaster
+#renommage
+mv fichier.dlg{.bak,}
+
+
+
+
+
+==========
+
+#lip > n° ligne > correspondance texte dans dlg...
+ ls *lip|grep -o "[0-9]*"|while read line;do echo -e "\n\n$line\n\n";grep -E ^{$'\t'"$line"$'\t'} ../../../../../dlg/downtown\ la/damsel.dlg ;done
+
+
+
+#base pour récupérer/trier originaux disponibles et les nouveaux fichiers du patch (à traduire) 
+
+find . -name "*lip" |while read line; do if [ -f ../../../Vampire\ -\ Bloodlines\ \(fr\)\ -\ all/Vampire/sound/"$line" ]; then echo -e "$line\n" >> recopie_originaux.txt ;else echo -e "$line\n" >> TODO_lip_manquants_a_traduire ;fi;done
+
+
+
+
+
+==========
+
+Pas de logo, cinématiques: désactiver thème visuel et composition sur l'exécutable/raccourci.

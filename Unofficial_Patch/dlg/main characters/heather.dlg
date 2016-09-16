@@ -1,0 +1,1021 @@
+{	1	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	P-p-pitié, un docteur, vite.	}{	P-p-pitié, un docteur, vite.	}{	#	}{	}{	G.Heather_Know = 1; heatherQuest1()	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Je vais voir ce que je peux faire.	}{	Je vais voir ce que je peux faire.	}{	13	}{	}{	}{	}{	}{	}{	}{	}{	}{	La cassée sera réparée.	}
+{	13	}{	Ah, j'ai mal. . . dedans. . . tellement. . . mal. . .	}{	Ah, j'ai mal. . . dedans. . . tellement. . . mal. . .	}{	#	}{	}{	G.Heather_Insides = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	15	}{	V-v-vous pouvez appeler ma grand-mère ? S'il vous plaît ?	}{	V-v-vous pouvez appeler ma grand-mère ? S'il vous plaît ?	}{	#	}{	}{	G.Heather_Grandma = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	Restez avec moi, je peux vous sauver !	}{	Restez avec moi, je peux vous sauver !	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne partez pas avant que je ne commence !	}
+{	17	}{	[Lutte contre la douleur]Nnnnnn. . . ahhhh.	}{	Nnnnnn. . . ahhhh.	}{	#	}{	}{	G.Heather_Groan = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	19	}{	[Râle inconscient de douleur]Ngh. . .	}{	[Râle inconscient de douleur]Ngh. . .	}{	#	}{	}{	G.Heather_Groan = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	21	}{	[Râle inconscient de douleur]Ngh. . .	}{	[Râle inconscient de douleur]Ngh. . .	}{	#	}{	}{	G.Heather_Grandma = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	(Auto-Link)	}{	(Auto-Link)	}{	31	}{	G.Knox_Ghoul == 2 or G.Mercurio_Ghoul == 1 }{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	23	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	[Râle inconscient de douleur]Ngh. . .	}{	[Râle inconscient de douleur]Ngh. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Peut-être mon sang peut vous sauver.	}{	Peut-être mon sang peut vous sauver. 	}{	0	}{	pc.bloodpool > 1	}{	G.Heather_Steve = 1	}{	}{	}{	}{	}{	}{	}{	Bois de mon Rouge Nectar et sois mienne.	}
+{	33	}{	Désolé, je ne peux rien faire.	}{	Désolé, je ne peux rien faire.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Me voila incapable de rien !	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	[Grognement douloureux, bruit de succion, se reprend]Mmm. . .	}{	[Grognement douloureux, bruit de succion, se reprend]Mmm. . .	}{	#	}{	npc.SetDisposition("lay", 1)	}{	G.Heather_Drank = 1; G.Heather_Steve = 2; FindPlayer().HumanityAdd( 1 ); pc.Bloodloss(1); heatherQuest2()	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Ca va ?	}{	Ca va ?	}{	51	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Votre chair guérit. . .	}
+{	43	}{	Vous aimez ça ? C'est ce qu'il y a de mieux au monde.	}{	Vous aimez ça ? C'est ce qu'il y a de mieux au monde.	}{	51	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Ma divinité est votre salut.	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	Vous aimez ça ? C'est ce qu'il y a de mieux au monde.	}{	Vous aimez ça ? C'est ce qu'il y a de mieux au monde.	}{	101	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	Tout ira bien. Je dois partir.	}{	Tout ira bien. Je dois partir.	}{	111	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	[Ouvre les yeux, faible]Vous. . . Qui. . . Qui êtes-vous ? Que m'avez-vous fait ? Dites-le moi. . .	}{	[Ouvre les yeux, faible]Vous. . . Qui. . . Qui êtes-vous ? Que m'avez-vous fait ? Dites-le moi. . .	}{	#	}{	npc.SetDisposition("lay", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Rien. Je dois partir.	}{	Rien. Je dois partir.	}{	0	}{	}{	G.Heather_SM = 1	}{	}{	}{	}{	}{	}{	}{	Les mots seraient un dangereux poison. Adieu.	}
+{	53	}{	Rien. Je vous ai soignée, c'est mon métier.	}{	Rien. Je vous ai soignée, c'est mon métier.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je travaille, c'est tout, je guéris dans les hôpitaux. . .	}
+{	54	}{	Je voulais juste vous aider.	}{	Je voulais juste vous aider.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je voulais juste atténuer votre douleur. . .	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	N-non, vous avez fait quelque chose, je le sens. . . Ca me. . . soigne. Vous. . . J'ai embrassé votre poignet. Qu'avez-vous fait ?	}{	N-non, vous avez fait quelque chose, je le sens. . . Ca me. . . soigne. Vous. . . J'ai embrassé votre poignet. Qu'avez-vous fait ?	}{	#	}{	npc.SetDisposition("lay", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	Bon, laissez tomber. . . Et ne dites rien. Tout ira bien.	}{	Bon, laissez tomber. . . Et ne dites rien. Tout ira bien.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il est des choses qu'il vaut mieux oublier. . . Effacez-moi de votre esprit.	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Mais vous avez fait quelque chose. J'ai embrassé votre poignet. . . Je le sens en moi. . . Que m'avez-vous fait ?	}{	Mais vous avez fait quelque chose. J'ai embrassé votre poignet. . . Je le sens en moi. . . Que m'avez-vous fait ?	}{	#	}{	npc.SetDisposition("lay", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	Bon, laissez tomber. . . Et ne dites rien. Tout ira bien.	}{	Bon, laissez tomber. . . Et ne dites rien. Tout ira bien.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il est des choses qu'il vaut mieux oublier. . . Effacez-moi de votre esprit.	}
+{	74	}{	Je vous ai fait boire mon sang. Mon sang de vampire. Il peut vous guérir.	}{	Je vous ai fait boire mon sang. Mon sang de vampire. Il peut vous guérir.	}{	101	}{	}{	G.Heather_SM = 1	}{	}{	}{	}{	}{	}{	}{	Je suis un enfant de la nuit, j'ai soif de sang et mon âme damnée vous a soignée. . .	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Vous. . . j'ai l'impression de vous connaître. Comme si vous étiez là depuis toujours.	}{	Vous. . . j'ai l'impression de vous connaître. Comme si vous étiez là depuis toujours.	}{	#	}{	npc.SetDisposition("lay", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Je dois vraiment partir.	}{	Je dois vraiment partir.	}{	0	}{	}{	G.Heather_SM = 2	}{	}{	}{	}{	}{	}{	}{	Je dois vous quitter, amour de mon sang. Adieu.	}
+{	84	}{	Mon sang de vampire vous a guérie.	}{	Mon sang de vampire vous a guérie.	}{	101	}{	}{	G.Heather_SM = 3	}{	}{	}{	}{	}{	}{	}{	Je suis un enfant de la nuit, j'ai soif de sang et mon âme damnée vous a soignée. . .	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	[Perdue]. . . Hmm ? Qui êtes-vous ? Je peux vous aider ?	}{	[Perdue]. . . Hmm ? Qui êtes-vous ? Je peux vous aider ?	}{	#	}{	npc.SetDisposition("lay", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Je ne fais que passer.	}{	Je ne fais que passer.	}{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Quoi ? Docteur ! Sécurité !	}{	Quoi ? Docteur ! Sécurité !	}{	#	}{	npc.SetDisposition("lay", 2)	}{	G.Nurse_Warn = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	103	}{	. . . J'ai juste besoin. . . d'un peu de repos. . . maintenant[s'endort].	}{	. . . J'ai juste besoin. . . d'un peu de repos. . . maintenant[s'endort].	}{	#	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	[Voyant un joueur Nosferatu]Ne me touchez pas ![Crie]	}{	[Voyant un joueur Nosferatu]Ne me touchez pas ![Crie]	}{	#	}{	npc.SetDisposition("lay", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Eh ! Ca doit vous paraître très bizarre, mais ne me renvoyez pas, OK ? Quelqu'un m'a dit que vous étiez là. Enfin, je vous cherche partout depuis cette nuit-là. Je voulais simplement. . . Je vous dois la vie, vous voyez. . .	}{	Eh ! Ca doit vous paraître très bizarre, mais ne me renvoyez pas, OK ? Quelqu'un m'a dit que vous étiez là. Enfin, je vous cherche partout depuis cette nuit-là. Je voulais simplement. . . Je vous dois la vie, vous voyez. . .	}{	#	}{	npc.SetDisposition("Confused",1)	}{	G.Heather_Spoken = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	(Auto-Link)	}{	(Auto-Link)	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Je veux. . . vous aider. Vous m'avez sauvée, je ferai de mon mieux pour vous revaloir votre bonté. Oh, au fait, je m'appelle Heather. Heather Poe. Je ne vous fais pas peur, j'espère ?	}{	Je veux. . . vous aider. Vous m'avez sauvée, je ferai de mon mieux pour vous revaloir votre bonté. Oh, au fait, je m'appelle Heather. Heather Poe. Je ne vous fais pas peur, j'espère ?	}{	#	}{	npc.SetDisposition("Confused",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	C'est difficile à faire, ces temps-ci. Vous avez bien meilleure mine, je m'en réjouis.	}{	C'est difficile à faire, ces temps-ci. Vous avez bien meilleure mine, je m'en réjouis.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne vois plus la Mort sur vous.	}
+{	133	}{	Non. Je savais que vous reviendriez. Vous pourriez m'être utile.	}{	Non. Je savais que vous reviendriez. Vous pourriez m'être utile.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Me déranger ? HA HA. . . Je savais que vous me trouveriez. Vous pourriez être utile.	}
+{	134	}{	Heather, vous ne devriez pas être ici.	}{	Heather, vous ne devriez pas être ici.	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous. Devez. Partir.	}
+{	135	}{	Faites demi-tour, repartez. Vous ne pouvez pas me fréquenter.	}{	Faites demi-tour, repartez. Vous ne pouvez pas me fréquenter.	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous enlève votre laisse. Vous êtes libre.	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Juste à cause de vous, de ce que vous avez fait pour moi. . .	}{	Juste à cause de vous, de ce que vous avez fait pour moi. . .	}{	#	}{	npc.SetDisposition("Joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	(Auto-Link)	}{	(Auto-Link)	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Attendez. . .	}{	Attendez. . .	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	(Auto-Link)	}{	(Auto-Link)	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Oui, je peux être utile, je ferais n'importe quoi pour vous. . . Regardez. . . Tenez. . .	}{	Oui, je peux être utile, je ferais n'importe quoi pour vous. . . Regardez. . . Tenez. . .	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	(Auto-Link)	}{	(Auto-Link)	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Tenez, je vous ai apporté ça, je me suis dit que ça pourrait vous servir. Moi aussi je peux vous servir. . . Je ferais n'importe quoi. . . Dites-moi que je peux vous aider, laissez-moi rester avec vous. . . Faites-moi ressentir cela. . .	}{	Tenez, je vous ai apporté ça, je me suis dit que ça pourrait vous servir. Moi aussi je peux vous servir. . . Je ferais n'importe quoi. . . Dites-moi que je peux vous aider, laissez-moi rester avec vous. . . Faites-moi ressentir cela. . .	}{	#	}{	npc.SetDisposition("Sad",1)	}{	spawnRing()	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Bien sûr, Heather, j'adorerais que vous restiez avec moi.	}{	Bien sûr, Heather, j'adorerais que vous restiez avec moi.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm. . . J'ai toujours eu envie d'un animal de compagnie. . . Quelque chose à serrer dans mes bras avant de me coucher.	}
+{	173	}{	Si vous voulez ressentir cela. . . alors il va falloir le mériter.	}{	Si vous voulez ressentir cela. . . alors il va falloir le mériter.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hé hé hé. . . bienvenue. . .	}
+{	174	}{	Oh, mais quelle boulette j'ai faite. . . Heather, je n'ai fait ça que pour vous sauver la vie.	}{	Oh, mais quelle boulette j'ai faite. . . Heather, je n'ai fait ça que pour vous sauver la vie.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre vie s'échappait. Je l'ai remise dans sa cage. J'aurais dû la laisser s'enfuir.	}
+{	175	}{	Non. Si vous restez avec moi, il vous arrivera malheur. Partez. Tout de suite.	}{	Non. Si vous restez avec moi, il vous arrivera malheur. Partez. Tout de suite.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si je pouvais partager mes pensées, vous fuiriez. VOUS NE VOULEZ PAS RESTER !	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Vraiment ? Je vous promets que vous ne le regretterez pas ! Promis ! Je vous donnerai de l'argent, des choses. . . N'importe quoi ! Je veux être. . . importante, pour vous.	}{	Vraiment ? Je vous promets que vous ne le regretterez pas ! Promis ! Je vous donnerai de l'argent, des choses. . . N'importe quoi ! Je veux être. . . importante, pour vous.	}{	#	}{	npc.SetDisposition("Joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Attendez-moi chez moi. Vous ne pouvez pas me suivre partout, c'est dangereux.	}{	Attendez-moi chez moi. Vous ne pouvez pas me suivre partout, c'est dangereux.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bien. Rentrez chez nous. Mais personne ne doit savoir que vous existez, ma belle.	}
+{	183	}{	Tant que vous serez utile, vous aurez une certaine importance pour moi.	}{	Tant que vous serez utile, vous aurez une certaine importance pour moi.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis une créature capricieuse. Et vous serez la créature mes caprices. 	}
+{	184	}{	Attendez. . . Heather, je regrette, mais il faut retourner à votre ancienne vie. Oubliez-moi.	}{	Attendez. . . Heather, je regrette, mais il faut retourner à votre ancienne vie. Oubliez-moi.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas de culpabilité dans le futur. Ou de votre sang sur mes mains.	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Je sais où vous habitez. . . Je suis passée là-bas avant de venir ici. Quand vous rentrerez, je ferai ce que vous voudrez. Je ferais n'importe quoi pour vous.	}{	Je sais où vous habitez. . . Je suis passée là-bas avant de venir ici. Quand vous rentrerez, je ferai ce que vous voudrez. Je ferais n'importe quoi pour vous.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Heather_Haven = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Ma chère Heather. . . Comment ai-je pu vivre sans vous. A tout à l'heure.	}{	Ma chère Heather. . . Comment ai-je pu vivre sans vous. A tout à l'heure.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous remplissez le vide où se trouvaient mes tripes. A bientôt, ma belle.	}
+{	193	}{	Faites ça. Et faites un peu de ménage, aussi. A plus tard, Heather.	}{	Faites ça. Et faites un peu de ménage, aussi. A plus tard, Heather.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	OUI. . . Enlevez toutes les 'taches' de mon refuge. Je reviens très vite voir le résultat.	}
+{	194	}{	Faites ce que vous voulez. Au revoir.	}{	Faites ce que vous voulez. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez entendu la sonnette, si vous voulez aller chercher le serpent, ne vous gênez pas.	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Vous ne le pensez pas. . . Je sais que vous avez besoin de moi. . . Laissez-moi rester avec vous un moment, et si ça ne vous plait pas, si vous me dites de partir, alors je partirai, c'est juré.	}{	Vous ne le pensez pas. . . Je sais que vous avez besoin de moi. . . Laissez-moi rester avec vous un moment, et si ça ne vous plait pas, si vous me dites de partir, alors je partirai, c'est juré.	}{	#	}{	npc.SetDisposition("Sad",1)	}{	G.Heather_Haven = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	D'accord. Mais quand je vous dirai de partir, il faudra partir. A plus tard.	}{	D'accord. Mais quand je vous dirai de partir, il faudra partir. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tout comme je peux vous accepter, je peux vous jeter dehors. Nous nous reverrons.	}
+{	203	}{	D'accord. Et nettoyez un peu, aussi. A plus tard, Heather.	}{	D'accord. Et nettoyez un peu, aussi. A plus tard, Heather.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	OUI. . . Enlevez toutes les 'taches' de mon refuge. Je reviens très vite voir le résultat.	}
+{	204	}{	Non, non. . . Heather, vous m'écoutez ?	}{	Non, non. . . Heather, vous m'écoutez ?	}{	0	}{	}{	G.Heather_Warning = 1	}{	}{	}{	}{	}{	}{	}{	Dans votre esprit, vous y êtes déjà. Bla bla bla bla. . . Mes paroles sont inutiles.	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Comment cela, vous êtes comme. . . vous êtes comme. . . L'effet que vous avez eu sur moi m'a donné envie de vivre. A cause de vous. Vous m'avez sauvé la vie, et je ne pourrai jamais vous remercier. . . Laissez-moi vous servir, vous aider. . . Je ferai ce que vous voudrez.	}{	Comment cela, vous êtes comme. . . vous êtes comme. . . L'effet que vous avez eu sur moi m'a donné envie de vivre. A cause de vous. Vous m'avez sauvé la vie, et je ne pourrai jamais vous remercier. . . Laissez-moi vous servir, vous aider. . . Je ferai ce que vous voudrez.	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	S'il le faut. . . C'est d'accord.	}{	S'il le faut. . . C'est d'accord.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si vous vous en moquez, moi aussi.	}
+{	213	}{	Pas de souci, hein ? Je dois bien trouver quelque chose. . . Ouais, d'accord.	}{	Pas de souci, hein ? Je dois bien trouver quelque chose. . . Ouais, d'accord.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Seul un imbécile rêverait de ça. Bienvenue dans ma folie, imbécile.	}
+{	214	}{	Non ! Fichez le camp ! Ne me parlez plus jamais !	}{	Non ! Fichez le camp ! Ne me parlez plus jamais !	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	FUYEZ, PAUVRE FOLLE !	}
+{	215	}{	Vous avez un peu de jugeote ? Je devrais peut-être vous flanquer quelques fessées, pour vous apprendre ?	}{	Vous avez un peu de jugeote ? Je devrais peut-être vous flanquer quelques fessées, pour vous apprendre ?	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma main commence à ressentir votre douleur et elle veut s'en débarrasser.	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	[Triste]Mais. . . Je n'ai jamais ressenti cela pour quelqu'un d'autre auparavant. Je pense que. . . quand je suis avec vous. . . Je vous aime. . . Vous ne pouvez pas me laisser faire partie de votre vie ?	}{	[Triste]Mais. . . Je n'ai jamais ressenti cela pour quelqu'un d'autre auparavant. Je pense que. . . quand je suis avec vous. . . Je vous aime. . . Vous ne pouvez pas me laisser faire partie de votre vie ?	}{	#	}{	npc.SetDisposition("Sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Je n'ai pas le coeur de vous dire 'non'. Très bien.	}{	Je n'ai pas le coeur de vous dire 'non'. Très bien.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bravo. . . Le mot 'non' n'existe plus dans mon vocabulaire.	}
+{	223	}{	Non. Oubliez que nous nous connaissons. Je vous souhaite une vie longue et heureuse. Au revoir.	}{	Non. Oubliez que nous nous connaissons. Je vous souhaite une vie longue et heureuse. Au revoir.	}{	0	}{	}{	G.Heather_Warning = 1	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas de vie à partager. Partez, car je pars aussi. 	}
+{	224	}{	Si vous ne voulez pas mourir, ne revenez jamais ici.	}{	Si vous ne voulez pas mourir, ne revenez jamais ici.	}{	0	}{	}{	G.Heather_Warning = 1	}{	}{	}{	}{	}{	}{	}{	Vous pourrez partager ma mort si je vous revois. PARTEZ !	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Faites-moi mal si vous voulez, je m'en moque. . . Faites ce que vous voulez, je veux simplement rester avec vous, à tout prix.	}{	Faites-moi mal si vous voulez, je m'en moque. . . Faites ce que vous voulez, je veux simplement rester avec vous, à tout prix.	}{	#	}{	npc.SetDisposition("Sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	S'il le faut. . . C'est d'accord.	}{	S'il le faut. . . C'est d'accord.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si vous vous en moquez, moi aussi.	}
+{	233	}{	Si vous insistez. . . Mais vous ferez tout ce que je dis, sans poser de question.	}{	Si vous insistez. . . Mais vous ferez tout ce que je dis, sans poser de question.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Seul un imbécile rêverait de ça. Bienvenue dans ma folie, imbécile.	}
+{	234	}{	Mais c'est quoi, votre problème ? Je viens de vous menacer ! Sortez d'ici !	}{	Mais c'est quoi, votre problème ? Je viens de vous menacer ! Sortez d'ici !	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si entêtée. Si bête. Et ça ne peut qu'empirer.	}
+{	235	}{	C'est l'amour vache, Heather. Ca pourrait piquer un peu. . .	}{	C'est l'amour vache, Heather. Ca pourrait piquer un peu. . .	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cela vous fait du mal de ressentir cela. Un peu comme MA MAIN sur VOTRE VISAGE.	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	[Se remet d'une gifle]Votre main, aussi fort qu'elle frappe, est douce et aimante. . . Quoi que vous fassiez, ça ne changera pas ce que je ressens pour vous.	}{	[Se remet d'une gifle]Votre main, aussi fort qu'elle frappe, est douce et aimante. . . Quoi que vous fassiez, ça ne changera pas ce que je ressens pour vous.	}{	#	}{	npc.SetDisposition("Sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Bon. Je vous garde. Mais ne dites plus jamais ça.	}{	Bon. Je vous garde. Mais ne dites plus jamais ça.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne répétez jamais ces paroles et vous pourrez me servir.	}
+{	243	}{	Ca, c'est une réponse qui me plaît. Vous pouvez rester un peu, pour l'instant.	}{	Ca, c'est une réponse qui me plaît. Vous pouvez rester un peu, pour l'instant.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	HA HA HA. . . Cela m'amuse. Je vais bien m'amuser avec vous.	}
+{	244	}{	Qu'est-ce que je peux dire pour vous faire partir ?	}{	Qu'est-ce que je peux dire pour vous faire partir ?	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que puis-je dire pour vous faire disparaître ?	}
+{	245	}{	Je vous renvoie à l'hôpital si vous ne partez pas d'ici !	}{	Je vous renvoie à l'hôpital si vous ne partez pas d'ici !	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous ai trouvée proche de la mort et je peux vous ramener à cet état.	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Rien. . .	}{	Rien. . .	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Vous voulez faire partie de ma damnation ? C'est d'accord.	}{	Vous voulez faire partie de ma damnation ? C'est d'accord.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bienvenue dans le monde des damnés. Vous remplirez les formulaires plus tard.	}
+{	253	}{	Très bien. Mais vous ferez ce que je vous dis de faire.	}{	Très bien. Mais vous ferez ce que je vous dis de faire.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rien. Toujours là. Bon, vous pouvez rester, mais mes paroles seront votre pain quotidien.	}
+{	254	}{	Je regrette de vous avoir aidée. Foutez le camp, Heather. Que je ne vous revoie jamais.	}{	Je regrette de vous avoir aidée. Foutez le camp, Heather. Que je ne vous revoie jamais.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je regrette ma bonté. A dater de ce jour, je cèderai plutôt à la cruauté. Hors de ma vue.	}
+{	255	}{	Pauvre droguée pathétique. Fichez le camp ! Idiote !	}{	Pauvre droguée pathétique. Fichez le camp ! Idiote !	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre existence me dégoûte. En vous voyant, on comprend mieux le mot 'pathétique'.	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Je sais que vous m'avez dit de ne pas traîner autour de vous, mais c'est plus fort que moi. . . Vous ne comprenez pas ? J'ai besoin de vous. Ne me forcez pas à vous quitter ! Je vous promets que je ne vous dérangerai pas, et je peux vous aider. . .	}{	Je sais que vous m'avez dit de ne pas traîner autour de vous, mais c'est plus fort que moi. . . Vous ne comprenez pas ? J'ai besoin de vous. Ne me forcez pas à vous quitter ! Je vous promets que je ne vous dérangerai pas, et je peux vous aider. . .	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Heather ? Vous ne comprenez pas, mais c'est pour votre bien que je vous ai demandé de partir.	}{	Heather ? Vous ne comprenez pas, mais c'est pour votre bien que je vous ai demandé de partir.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez fait un pas de plus vers votre perdition. Faites marche arrière.	}
+{	263	}{	Espèce de malade. . . Partez. Tout de suite. . . Ou je ne sais pas ce que je vais vous faire.	}{	Espèce de malade. . . Partez. Tout de suite. . . Ou je ne sais pas ce que je vais vous faire.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'apprécie autant les surprises qu'un chat. Vous ne voyez pas mes griffes ?	}
+{	264	}{	Si je ne peux pas me débarrasser de vous, rendez-vous un peu utile. . . Nettoyez cet endroit, d'accord ?	}{	Si je ne peux pas me débarrasser de vous, rendez-vous un peu utile. . . Nettoyez cet endroit, d'accord ?	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm. . . Alors comme ça, vous voulez m'aider. . . Alors prenez un chiffon et lustrez quelque chose. . .	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Peu importe. . . Ma vie n'avait aucun sens jusqu'à la nuit où vous m'avez sauvée. . . Je suis prête à mourir pour vous. . .	}{	Peu importe. . . Ma vie n'avait aucun sens jusqu'à la nuit où vous m'avez sauvée. . . Je suis prête à mourir pour vous. . .	}{	#	}{	npc.SetDisposition("Sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Si c'est ce que vous pensez vraiment. . . Vous pouvez rester. . . Pour l'instant.	}{	Si c'est ce que vous pensez vraiment. . . Vous pouvez rester. . . Pour l'instant.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puisque je n'ai pas envie de vous jeter par la fenêtre, j'imagine que vous pouvez rester. 	}
+{	273	}{	Je préfèrerais ne pas en arriver là. Faites ce que je vous dis et partez. . .	}{	Je préfèrerais ne pas en arriver là. Faites ce que je vous dis et partez. . .	}{	291	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si, bien sûr. Alors vous devez rejeter votre sort.	}
+{	274	}{	Pas besoin de mourir pour moi. . . mais vous ferez tout ce que je vous demanderai.	}{	Pas besoin de mourir pour moi. . . mais vous ferez tout ce que je vous demanderai.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si vous mourez, essayez de le faire près de la poubelle.	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	Oui, tout ce que vous voulez. Tout pour être récompensée par votre amour. . .	}{	Oui, tout ce que vous voulez. Tout pour être récompensée par votre amour. . .	}{	#	}{	npc.SetDisposition("Joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Vous êtes prête à faire n'importe quoi, hein ? Alors je suis responsable de vous. . .	}{	Vous êtes prête à faire n'importe quoi, hein ? Alors je suis responsable de vous. . .	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes folle. Quel merveilleux hasard que vous soyez venue ici.	}
+{	283	}{	N'importe quoi ? Je m'en souviendrai.	}{	N'importe quoi ? Je m'en souviendrai.	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	N'importe quoi ? Vous avez déjà réfléchi aux conséquences de ces mots ?	}
+{	284	}{	Mon amour est du sang de vampire, Heather. Un beau cadeau, c'est certain.	}{	Mon amour est du sang de vampire, Heather. Un beau cadeau, c'est certain.	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'amour, le sang des vampires, tout cela dans le même poignet. Vous êtes prête pour votre récompense ?	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Je ne peux pas. . . Vraiment. . . Je serai celle que vous voudrez. . . Sans votre attention, sans votre présence, ce monde est impitoyable, terrible et. . . et. . . ne me renvoyez pas. . .	}{	Je ne peux pas. . . Vraiment. . . Je serai celle que vous voudrez. . . Sans votre attention, sans votre présence, ce monde est impitoyable, terrible et. . . et. . . ne me renvoyez pas. . .	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Partez. Ne revenez jamais. Retournez à votre vie.	}{	Partez. Ne revenez jamais. Retournez à votre vie.	}{	301	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	293	}{	Partez. Ne revenez jamais. Retournez à votre vie.	}{	Partez. Ne revenez jamais. Retournez à votre vie.	}{	301	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	294	}{	Je n'ai jamais existé. Rien ne s'est passé. Tout est un rêve. Sortez, et réveillez-vous.	}{	Je n'ai jamais existé. Rien ne s'est passé. Tout est un rêve. Sortez, et réveillez-vous.	}{	311	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai jamais existé. Rien ne s'est passé. Tout est un rêve. Sortez, et réveillez-vous.	}
+{	295	}{	Oui, je suis fabuleux, mais vous me quitterez.	}{	Oui, je suis fabuleux, mais vous me quitterez.	}{	301	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	Vous ne comprenez pas pour l'instant. . . mais c'est pour votre sécurité. Partez, Heather.	}{	Vous ne comprenez pas pour l'instant. . . mais c'est pour votre sécurité. Partez, Heather.	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je pensais que je voulais un animal de compagnie, mais c'est trop de responsabilité. Partez - vous êtes libre.	}
+{	297	}{	Idiote de goule ! Sortez ! Je vous ordonne de partir !	}{	Idiote de goule ! Sortez ! Je vous ordonne de partir !	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon humanité est votre dernière chance d'en réchapper. Partez pendant qu'elle existe encore.	}
+{	298	}{	Quoi que je fasse, vous ne m'écouterez pas. Revenez, je vais récupérer mon sang.	}{	Quoi que je fasse, vous ne m'écouterez pas. Revenez, je vais récupérer mon sang.	}{	0	}{	}{	G.Heather_Kill = 1; G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Si vous ne partez pas, alors mon sang quittera votre corps.	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Je. . . dois partir. . . j'ai des cours demain et. . . ma grand-mère doit s'inquiéter.	}{	Je. . . dois partir. . . j'ai des cours demain et. . . ma grand-mère doit s'inquiéter.	}{	#	}{	npc.SetDisposition("Confused",1)	}{	G.Heather_Dominated = 1; G.Heather_Gone = 1; FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Au revoir, Heather.	}{	Au revoir, Heather.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	303	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	304	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	[Hallucinée]Je dois me réveiller. . . me préparer pour l'école. . . quel drôle de rêve. . . quelle étrange personne. . . Au revoir, amour de ma vie. . .	}{	[Hallucinée]Je dois me réveiller. . . me préparer pour l'école. . . quel drôle de rêve. . . quelle étrange personne. . . Au revoir, amour de ma vie. . .	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Heather_Dementated = 1; G.Heather_Gone = 1; FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Adieu, petit animal de compagnie.	}{	Adieu, petit animal de compagnie.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Adieu, petit animal de compagnie.	}
+{	313	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	[Désespérée]Quoi ? Mais je. . .	}{	[Désespérée]Quoi ? Mais je. . .	}{	#	}{	npc.SetDisposition("Confused",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Vous aviez bien dit que vous m'obéiriez, non ? Je veux que vous partiez.	}{	Vous aviez bien dit que vous m'obéiriez, non ? Je veux que vous partiez.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Telle est ma volonté, et vous lui êtes liée par le sang.	}
+{	323	}{	Dehors. Maintenant.	}{	Dehors. Maintenant.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	DEHORS ! OUSTE ! FUYEZ ! MAINTENANT !	}
+{	324	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	325	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	[Triste, brisée]B-bon. . . Je pars. . . Si vous ne voulez vraiment pas que je reste. . .	}{	[Triste, brisée]B-bon. . . Je pars. . . Si vous ne voulez vraiment pas que je reste. . .	}{	#	}{	npc.SetDisposition("Sad",1)	}{	G.Heather_Gone = 1; FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	C'est pour votre bien. Ne revenez plus. Au revoir, Heather.	}{	C'est pour votre bien. Ne revenez plus. Au revoir, Heather.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La mort vous trouvera un jour, mais je ne la guiderai pas. Au revoir, ma belle.	}
+{	333	}{	Non, je ne veux pas. Partez, et ne revenez pas.	}{	Non, je ne veux pas. Partez, et ne revenez pas.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	ALLEZ ! COUREZ !	}
+{	334	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Je suis si contente de vous voir - j'attendais comme vous m'avez demandé. C'est, hum. . . mignon. . . chez vous.	}{	Je suis si contente de vous voir - j'attendais comme vous m'avez demandé. C'est, hum. . . mignon. . . chez vous.	}{	#	}{	npc.SetDisposition("Joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	Pendant que vous n'étiez pas là, j'ai tapé du pied trois mille fois. Je ne sais pas pourquoi j'ai compté, mais. . .	}
+{	342	}{	Ce n'est pas moi qui ai fait la déco.	}{	Ce n'est pas moi qui ai fait la déco.	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai la même manie.	}
+{	343	}{	Si vous n'êtes pas contente, vous pouvez partir.	}{	Si vous n'êtes pas contente, vous pouvez partir.	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	A présent nous savons combien de fois il faut taper du pied pour me faire apparaître. Merveilleux.	}
+{	344	}{	Ce n'est pas grand-chose, mais c'est chez moi.	}{	Ce n'est pas grand-chose, mais c'est chez moi.	}{	351	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	Je peux faire quelque chose pour vous ? N'importe quoi ? N'hésitez pas.	}{	Je peux faire quelque chose pour vous ? N'importe quoi ? N'hésitez pas.	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	Il y a quelque chose que vous devez savoir avant qu'on continue. . .	}{	Il y a quelque chose que vous devez savoir avant qu'on continue. . .	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il y a une vérité que vous devez connaître, ma belle.	}
+{	353	}{	Allez vous reposer. Il faudra veiller sur moi pendant mon sommeil, dans la journée.	}{	Allez vous reposer. Il faudra veiller sur moi pendant mon sommeil, dans la journée.	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dormez, pour que je rêve dans la journée. Vous pourrez chasser le soleil.	}
+{	354	}{	Un peu de votre sang me ferait du bien, Heather.	}{	Un peu de votre sang me ferait du bien, Heather.	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai une faim de loup. Laissez-moi laper les doux nectars à votre gorge.	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Oh, vous êtes marié ? C'est pour ça que vous ne voulez pas que je reste ?	}{	Oh, vous êtes mariée ? C'est pour ça que vous ne voulez pas que je reste ?	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Non. Vous n'avez survécu que grâce à mon sang. Je suis un vampire. Vous êtes liée à moi.	}{	Non. Vous n'avez survécu que grâce à mon sang. Je suis une vampire. Vous êtes liée à moi.	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si votre naïveté était du sang, je n'aurais jamais faim. Non, je suis. . . ce que vous appelez vampire.	}
+{	363	}{	Je suis un vampire. Vous êtes mon esclave, liée par le sang. Vous m'aimez encore ?	}{	Je suis une vampire. Vous êtes mon esclave, liée par le sang. Vous m'aimez encore ?	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	HA HA HA. Non. Je suis un vampire. Vous m'aimez quand même ?	}
+{	364	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	Oh, vous êtes un oiseau de nuit ? Moi aussi !	}{	Oh, vous êtes un oiseau de nuit ? Moi aussi !	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	Non. Vous n'avez survécu que grâce à mon sang. Je suis un vampire. Vous êtes liée à moi.	}{	Non. Vous n'avez survécu que grâce à mon sang. Je suis une vampire. Vous êtes liée à moi.	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si votre naïveté était du sang, je n'aurais jamais faim. Non, je suis. . . ce que vous appelez vampire.	}
+{	373	}{	Je suis un vampire. Vous êtes mon esclave, liée par le sang. Vous m'aimez encore ?	}{	Je suis une vampire. Vous êtes mon esclave, liée par le sang. Vous m'aimez encore ?	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	HA HA HA. Non. Je suis un vampire. Vous m'aimez quand même ?	}
+{	374	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	Je n'ai jamais fait ça avant, mais pour vous, je pourrais essayer. . . C'est sexuel ?	}{	Je n'ai jamais fait ça avant, mais pour vous, je pourrais essayer. . . C'est sexuel ?	}{	#	}{	npc.SetDisposition("Confused",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	Non. Vous n'avez survécu que grâce à mon sang. Je suis un vampire. Vous êtes liée à moi.	}{	Non. Vous n'avez survécu que grâce à mon sang. Je suis une vampire. Vous êtes liée à moi.	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si votre naïveté était du sang, je n'aurais jamais faim. Non, je suis. . . ce que vous appelez vampire.	}
+{	383	}{	Oui, un peu. Les gens comme moi, on appelle ça des vampires. Vous, vous m'obéissez parce que vous avez bu mon sang. Vous m'aimez encore ?	}{	Oui, un peu. Les gens comme moi, on appelle ça des vampires. Vous, vous m'obéissez parce que vous avez bu mon sang. Vous m'aimez encore ?	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	HA HA HA. Non. Je suis un vampire. Vous m'aimez quand même ?	}
+{	384	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	385	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	Quoi ? [rire nerveux]Vous plaisantez, hein ? C'est une façon de dire, enfin, un truc fétichiste. Pas un genre 'hou, hou' vampire, hein ?[Rire nerveux]	}{	Quoi ? [rire nerveux]Vous plaisantez, hein ? C'est une façon de dire, enfin, un truc fétichiste. Pas un genre 'hou, hou' vampire, hein ?[Rire nerveux]	}{	#	}{	npc.SetDisposition("Confused",1)	}{	}{	}{	}{	}{	}{	}{	}{	C'est. . . c'est logique. . . je comprends tout. . . L'impression qu'il y a quelque chose dans le noir, ce n'était pas dans ma tête. . . Je n'étais pas folle. . .	}
+{	392	}{	Non, non. Mon sang se mêle au vôtre. Vous, vous êtes une goule.	}{	Non, non. Mon sang se mêle au vôtre. Vous, vous êtes une goule.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ah, vous commencez à comprendre, ma goule. C'est bien. 	}
+{	393	}{	Vous ne comprenez pas ? Je vous ai choisie. Vous devriez être honorée, mortelle.	}{	Vous ne comprenez pas ? Je vous ai choisie. Vous devriez être honorée, mortelle.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	De toute la boue qu'il y a dans cette ville, c'est vous que j'ai ramassée pour vous façonner à mon image.	}
+{	394	}{	Oh ! Pauvre petite enfant perdue. Venez, j'ai faim.	}{	Oh ! Pauvre petite enfant perdue. Venez, j'ai faim.	}{	401	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	395	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	Non. . . non, ça n'existe pas. . . Vous êtes. . . Ce n'est plus drôle.	}{	Non. . . non, ça n'existe pas. . . Vous êtes. . . Ce n'est plus drôle.	}{	#	}{	npc.SetDisposition("Fear",1)	}{	}{	}{	}{	}{	}{	}{	}{	C'est comme si vous aviez retiré les volets qui me bouchaient la vue. . . Je vois, à présent. . . Il y a tout un monde incroyable devant moi. . .	}
+{	402	}{	Ne t'inquiète pas, ma belle enfant. Je vous protège. Vous vous sentirez incroyablement bien.	}{	Ne t'inquiète pas, ma belle enfant. Je vous protège. Vous vous sentirez incroyablement bien.	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	Et c'est de mieux en mieux. Je vais vous montrer la vérité et vous aimer plus qu'on ne l'a jamais fait.	}
+{	403	}{	Vous voulez que je parte à tout jamais ? Que j'aime quelqu'un d'autre ?	}{	Vous voulez que je parte à tout jamais ? Que j'aime quelqu'un d'autre ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous voulez partir, c'est ça ? Parce que je peux disparaître quand vous voulez !	}
+{	404	}{	Je n'avais pas autant ri depuis longtemps. Venez, et faites ce qu'on vous dit. 	}{	Je n'avais pas autant ri depuis longtemps. Venez, et faites ce qu'on vous dit. 	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je peux de nouveau tirer les rideaux, si vous ne m'obéissez pas. Vous comprenez ?	}
+{	405	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	406	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	407	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	Vraiment ? Je vous aime tant. . . Quoi que vous soyez. . . Je m'en fiche, je veux simplement rester avec vous.	}{	Vraiment ? Je vous aime tant. . . Quoi que vous soyez. . . Je m'en fiche, je veux simplement rester avec vous.	}{	#	}{	npc.SetDisposition("Joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Oui, sachez toujours que je vous adore. Je ne partage mon sang qu'avec vous, chère Heather.	}{	Oui, sachez toujours que je vous adore. Je ne partage mon sang qu'avec vous, chère Heather.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est mon adoration qui coule dans vos veines. Rien que pour vous.	}
+{	413	}{	Super. Et maintenant, montrez-moi que vous tenez à moi.	}{	Super. Et maintenant, montrez-moi que vous tenez à moi.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	OH ! Distrayez-moi.	}
+{	414	}{	Bien, parce que si vous vous enfuyez, maintenant, il faudra que je vous tue.	}{	Bien, parce que si vous vous enfuyez, maintenant, il faudra que je vous tue.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bien, parce que si vous vous enfuyez, maintenant, il faudra que je vous tue.	}
+{	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	Non ! Pitié, ne partez pas ! Je me moque de ce que vous êtes. Ne me laissez pas. . .	}{	Non ! Pitié, ne partez pas ! Je me moque de ce que vous êtes. Ne me laissez pas. . .	}{	#	}{	npc.SetDisposition("Sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	Non ! Ne partez pas ! Je serai votre lune, ne me forcez pas à traverser l'univers sans vous !	}
+{	422	}{	Je ne vais nulle part, ma belle, du calme.	}{	Je ne vais nulle part, ma belle, du calme.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'adore tellement la lumière de la lune. Brillez pour moi, ma belle.	}
+{	423	}{	Super. Et maintenant, montrez-moi que vous tenez à moi.	}{	Super. Et maintenant, montrez-moi que vous tenez à moi.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	OH ! Distrayez-moi.	}
+{	424	}{	Bien, parce que si vous vous enfuyez, maintenant, il faudra que je vous tue.	}{	Bien, parce que si vous vous enfuyez, maintenant, il faudra que je vous tue.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bien, parce que si vous vous enfuyez, maintenant, il faudra que je vous tue.	}
+{	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	Oui. . . Tout ce que vous voudrez.	}{	Oui. . . Tout ce que vous voudrez.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Oui, sachez toujours que je vous adore. Je ne partage mon sang qu'avec vous, chère Heather.	}{	Oui, sachez toujours que je vous adore. Je ne partage mon sang qu'avec vous, chère Heather.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est mon adoration qui coule dans vos veines. Rien que pour vous.	}
+{	433	}{	Super. Et maintenant, montrez-moi que vous tenez à moi.	}{	Super. Et maintenant, montrez-moi que vous tenez à moi.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	OH ! Distrayez-moi.	}
+{	434	}{	Bien, parce que si vous vous enfuyez, maintenant, il faudra que je vous tue.	}{	Bien, parce que si vous vous enfuyez, maintenant, il faudra que je vous tue.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bien, parce que si vous vous enfuyez, maintenant, il faudra que je vous tue.	}
+{	435	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	436	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	Que puis-je faire pour vous montrer mes sentiments ?	}{	Que puis-je faire pour vous montrer mes sentiments ?	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	G.Heather_Secret = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	Vous avez de l'argent sur vous ?	}{	Vous avez de l'argent sur vous ?	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ouvrez votre portefeuille et déversez ses entrailles.	}
+{	443	}{	Je meurs de faim. Partagez votre sang avec moi.	}{	Je meurs de faim. Partagez votre sang avec moi.	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	Saignez pour moi.	}
+{	444	}{	Parlez-moi un peu de vous.	}{	Parlez-moi un peu de vous.	}{	471	}{	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi votre histoire.	}
+{	445	}{	Attendez ici. Ne vous inquiétez pas, je reviendrai.	}{	Attendez ici. Ne vous inquiétez pas, je reviendrai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous pouvez être là à mon retour. Je pars.	}
+{	446	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Euh. . . Tenez, c'est tout ce que j'ai.	}{	Euh. . . Tenez, c'est tout ce que j'ai.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Heather_Wallet = 1; pc.MoneyAdd( 20 )	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Je meurs de faim. Partagez votre sang avec moi.	}{	Je meurs de faim. Partagez votre sang avec moi.	}{	461	}{	G.Heather_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Saignez pour moi.	}
+{	453	}{	Je meurs de faim. Partagez votre sang avec moi.	}{	Je meurs de faim. Partagez votre sang avec moi.	}{	501	}{	G.Heather_Feed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Saignez pour moi.	}
+{	454	}{	Parlez-moi un peu de vous.	}{	Parlez-moi un peu de vous.	}{	471	}{	G.Heather_Bio == 0	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi votre histoire.	}
+{	455	}{	Ca ira pour cette fois. Essayez d'en trouver un peu plus, d'accord ? A plus tard.	}{	Ca ira pour cette fois. Essayez d'en trouver un peu plus, d'accord ? A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	A mon retour, vous me donnerez leurs petits frères. Je pars.	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	S'il vous plaît. . . Prenez-moi en vous.	}{	S'il vous plaît. . . Prenez-moi en vous.	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	G.Heather_Feed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
+{	463	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	464	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	Moi ? Oh, je n'ai rien de spécial, vous savez. Je vais à la fac, je veux devenir styliste. . . Je pense que je suis plutôt créative. Je viens de commencer l'école. Une année en retard, parce que mes. . . mes parents sont morts dans un accident de voiture. . . Je n'avais personne dans ma vie. . . Jusqu'à ce que je vous rencontre.	}{	Moi ? Oh, je n'ai rien de spécial, vous savez. Je vais à la fac, je veux devenir styliste. . . Je pense que je suis plutôt créative. Je viens de commencer l'école. Une année en retard, parce que mes. . . mes parents sont morts dans un accident de voiture. . . Je n'avais personne dans ma vie. . . Jusqu'à ce que je vous rencontre.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Heather_Bio = 1	}{	}{	}{	}{	}{	}{	}{	Rien n'a de sens. Je préfère oublier le passé, l'ignorance, et suivre vos morceaux de pain jusqu'au pays des merveilles.	}
+{	472	}{	Comme c'est triste. Ne vous inquiétez pas, je suis là pour vous, chère Heather. 	}{	Comme c'est triste. Ne vous inquiétez pas, je suis là pour vous, chère Heather. 	}{	481	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où que mène le terrier du lapin, vous serez à mes côtés.	}
+{	473	}{	Cette vie est terminée, à présent. Vous m'appartenez. Ne l'oubliez jamais.	}{	Cette vie est terminée, à présent. Vous m'appartenez. Ne l'oubliez jamais.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est ça, parce que vous m'appartenez. Ne l'oubliez pas.	}
+{	474	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	[sourit]Hé. . .	}{	[sourit]Hé. . .	}{	#	}{	npc.SetDisposition("Joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	Je meurs de faim. Partagez votre sang avec moi.	}{	Je meurs de faim. Partagez votre sang avec moi.	}{	461	}{	G.Heather_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Saignez pour moi.	}
+{	483	}{	Je meurs de faim. Partagez votre sang avec moi.	}{	Je meurs de faim. Partagez votre sang avec moi.	}{	501	}{	G.Heather_Feed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Saignez pour moi.	}
+{	484	}{	Vous avez de l'argent sur vous ?	}{	Vous avez de l'argent sur vous ?	}{	451	}{	G.Heather_Wallet == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ouvrez votre portefeuille et déversez ses entrailles.	}
+{	485	}{	Votre apparence. . . changez-en.	}{	Votre apparence. . . changez-en.	}{	985	}{	G.Heather_Clothes == 0	}{	}{	}{	}{	}{	}{	}{	}{	Votre peau. . . changez-en.	}
+{	486	}{	Attendez ici. Ne vous inquiétez pas, je reviendrai.	}{	Attendez ici. Ne vous inquiétez pas, je reviendrai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Continuez de sourire jusqu'à mon retour.	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Je comprends.	}{	Je comprends.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	Je meurs de faim. Partagez votre sang avec moi.	}{	Je meurs de faim. Partagez votre sang avec moi.	}{	461	}{	G.Heather_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Saignez pour moi.	}
+{	493	}{	Je meurs de faim. Partagez votre sang avec moi.	}{	Je meurs de faim. Partagez votre sang avec moi.	}{	501	}{	G.Heather_Feed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Saignez pour moi.	}
+{	494	}{	Vous avez de l'argent sur vous ?	}{	Vous avez de l'argent sur vous ?	}{	451	}{	G.Heather_Wallet == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ouvrez votre portefeuille et déversez ses entrailles.	}
+{	495	}{	Votre apparence. . . changez-en.	}{	Votre apparence. . . changez-en.	}{	985	}{	G.Heather_Clothes == 0	}{	}{	}{	}{	}{	}{	}{	}{	Votre peau. . . changez-en.	}
+{	496	}{	Attendez ici. Ne vous inquiétez pas, je reviendrai.	}{	Attendez ici. Ne vous inquiétez pas, je reviendrai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Continuez de comprendre jusqu'à mon retour.	}
+{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	J'ai la tête qui tourne un peu. Je devrais peut-être m'allonger un peu.	}{	J'ai la tête qui tourne un peu. Je devrais peut-être m'allonger un peu.	}{	#	}{	npc.SetDisposition("Apathy",1)	}{	G.Heather_Sleep = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	503	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	504	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	505	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	Je peux faire quelque chose pour vous ?	}{	Je peux faire quelque chose pour vous ?	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	}{	}{	}{	}{	}{	}{	}{	Jouez avec moi.	}
+{	512	}{	Vous avez de l'argent sur vous ?	}{	Vous avez de l'argent sur vous ?	}{	451	}{	G.Heather_Wallet == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ouvrez votre portefeuille et déversez ses entrailles.	}
+{	513	}{	Je meurs de faim. Partagez votre sang avec moi.	}{	Je meurs de faim. Partagez votre sang avec moi.	}{	461	}{	G.Heather_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Saignez pour moi.	}
+{	514	}{	Je meurs de faim. Partagez votre sang avec moi.	}{	Je meurs de faim. Partagez votre sang avec moi.	}{	501	}{	G.Heather_Feed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Saignez pour moi.	}
+{	515	}{	Parlez-moi un peu de vous.	}{	Parlez-moi un peu de vous.	}{	471	}{	G.Heather_Bio == 0	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi votre histoire.	}
+{	516	}{	Votre apparence. . . changez-en.	}{	Votre apparence. . . changez-en.	}{	985	}{	G.Heather_Clothes == 0	}{	}{	}{	}{	}{	}{	}{	}{	Votre peau. . . changez-en.	}
+{	517	}{	Attendez ici. Ne vous inquiétez pas, je reviendrai.	}{	Attendez ici. Ne vous inquiétez pas, je reviendrai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous pourriez me plaire à l'avenir. Je pars.	}
+{	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	520	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	521	}{	[Dit sur un ton nerveux, paniqué, comme une droguée]Oh, enfin, vous voilà. . . Je pensais qu'il vous était peut-être arrivé quelque chose. . . Je ne devrais pas penser à des choses pareilles. . . Enfin, si vous disparaissez, comment je ferai pour vivre ? Mais vous voilà. . . Oh, je suis tellement contente quand vous êtes près de moi. . .	}{	[Dit sur un ton nerveux, paniqué, comme une droguée]Oh, enfin, vous voilà. . . Je pensais qu'il vous était peut-être arrivé quelque chose. . . Je ne devrais pas penser à des choses pareilles. . . Enfin, si vous disparaissez, comment je ferai pour vivre ? Mais vous voilà. . . Oh, je suis tellement contente quand vous êtes près de moi. . .	}{	#	}{	npc.SetDisposition("Sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	Du calme, ma belle. Tenez, buvez-moi, je suis à vous pour toujours.	}{	Du calme, ma belle. Tenez, buvez-moi, je suis à vous pour toujours.	}{	531	}{	Humanity 6	}{	pc.Bloodloss(1)	}{	}{	}{	}{	}{	}{	}{	Du calme, ma belle. Allez, une cuillère pour papa, une cuillère pour moi. Je suis avec vous à jamais.	}
+{	523	}{	On dirait qu'une certaine goule a besoin de sa dose de sang.	}{	On dirait qu'une certaine goule a besoin de sa dose de sang.	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hé hé. . . C'est nul, le manque, hein ? C'est dingue ce qu'on s'habitue au sang.	}
+{	524	}{	Vous avez déjà brûlé tout le sang que je vous avais donné ?	}{	Vous avez déjà brûlé tout le sang que je vous avais donné ?	}{	541	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	[Euphorique, en transe, comme si elle venait d'avoir un orgasme incroyable]Ahh. . . Oh. . . quelle sensation. . . C'est. . . l'amour, je le sens. . . l'amour pour vous. . .	}{	[Euphorique, en transe, comme si elle venait d'avoir un orgasme incroyable]Ahh. . . Oh. . . quelle sensation. . . C'est. . . l'amour, je le sens. . . l'amour pour vous. . .	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	Et moi à vous, Heather.	}{	Et moi à vous, Heather.	}{	571	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Ma façon de vous montrer mes sentiments.	}
+{	533	}{	Comme c'est amusant. Je préférerais que vous me fassiez des cadeaux pour prouver votre amour.	}{	Comme c'est amusant. Je préférerais que vous me fassiez des cadeaux pour prouver votre amour.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'amour ? Je préfère les trésors.	}
+{	534	}{	Et si vous en voulez encore, vous avez intérêt à me plaire.	}{	Et si vous en voulez encore, vous avez intérêt à me plaire.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Distrayez-moi et vous le sentirez peut-être de nouveau.	}
+{	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	536	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	Du sang ? Comment cela ?	}{	Du sang ? Comment cela ?	}{	#	}{	npc.SetDisposition("Confused",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Je vous ai fait boire mon sang, cette nuit-là. . . C'est pour ça que vous vous sentez si 'vivante'.	}{	Je vous ai fait boire mon sang, cette nuit-là. . . C'est pour ça que vous vous sentez si 'vivante'.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous connaissez déjà la réponse.	}
+{	543	}{	Si vous voulez rester avec moi, vous demanderez à boire mon sang.	}{	Si vous voulez rester avec moi, vous demanderez à boire mon sang.	}{	551	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	544	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	545	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	546	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	547	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	548	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	Je regrette d'avoir douté de vous. . . donnez-moi votre sang, je vous en prie.	}{	Je regrette d'avoir douté de vous. . . donnez-moi votre sang, je vous en prie.	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	Que vos poignets pleurent d'amour pour moi.	}
+{	552	}{	Tenez. Et ne le gâchez pas.	}{	Tenez. Et ne le gâchez pas.	}{	531	}{	}{	pc.Bloodloss(1)	}{	}{	}{	}{	}{	}{	}{	Ils pleurent.	}
+{	553	}{	Je ne sais pas. Je devrais peut-être trouver quelqu'un qui saura l'apprécier.	}{	Je ne sais pas. Je devrais peut-être trouver quelqu'un qui saura l'apprécier.	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ils devraient peut-être pleurer pour quelqu'un d'autre.	}
+{	554	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	555	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	556	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	558	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	NON ! J'en ai besoin ! Pitié. . . Donnez-le moi - je ferais n'importe quoi pour vous ! N'importe quoi ! Mais ne me laissez pas. . .	}{	NON ! J'en ai besoin ! Pitié. . . Donnez-le moi - je ferais n'importe quoi pour vous ! N'importe quoi ! Mais ne me laissez pas. . .	}{	#	}{	npc.SetDisposition("Sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	Ah, je préfère entendre ça.	}{	Ah, je préfère entendre ça.	}{	531	}{	}{	pc.Bloodloss(1)	}{	}{	}{	}{	}{	}{	}{	Ce sont des paroles magiques.	}
+{	563	}{	Bon, mais arrêtez de gémir. . .	}{	Bon, mais arrêtez de gémir. . .	}{	531	}{	}{	pc.Bloodloss(1)	}{	}{	}{	}{	}{	}{	}{	Hmm. . . Bon, d'accord.	}
+{	564	}{	Hé hé. . . Pathétique junkie. . . Bon, je vais vous donner du sang, goule. . .	}{	Hé hé. . . Pathétique junkie. . . Bon, je vais vous donner du sang, goule. . .	}{	531	}{	}{	pc.Bloodloss(1)	}{	}{	}{	}{	}{	}{	}{	Prenez, épave. Avalez tout.	}
+{	565	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	566	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	J'ai failli oublier. . . J'ai reçu un chèque pour ma bourse de fac aujourd'hui. . . Tenez, prenez l'argent. . .	}{	J'ai failli oublier. . . J'ai reçu un chèque pour ma bourse de fac aujourd'hui. . . Tenez, prenez l'argent. . .	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Heather_Loan = 1; G.Heather_Feed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	L'argent de vos cours ? Pas question. . . Je refuse que vous abandonniez les cours.	}{	L'argent de vos cours ? Pas question. . . Je refuse que vous abandonniez les cours.	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis un mauvais investissement. Vous devriez plutôt investir dans un avenir.	}
+{	573	}{	Merci. . . Des vêtements neufs, ça ne me ferait pas de mal.	}{	Merci. . . Des vêtements neufs, ça ne me ferait pas de mal.	}{	631	}{	}{	pc.MoneyAdd(500)	}{	}{	}{	}{	}{	}{	}{	Ohh. . . L'argent de la folie. . .	}
+{	574	}{	C'est tout ? Vous avez intérêt à me donner plus la prochaine fois. Sinon, vous n'êtes pas très utile.	}{	C'est tout ? Vous avez intérêt à me donner plus la prochaine fois. Sinon, vous n'êtes pas très utile.	}{	641	}{	}{	pc.MoneyAdd(500)	}{	}{	}{	}{	}{	}{	}{	J'ai vu plus de vert dans une feuille rouge. VOUS NE VALEZ PAS MIEUX !	}
+{	575	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	576	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	577	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	Je préfère que vous le gardiez. . . Je pensais abandonner les cours. Vous savez, pour que je puisse veiller sur vous pendant la journée, ou faire vos commissions. C'est tout ce que je peux faire pour rester près de vous. . .	}{	Je préfère que vous le gardiez. . . Je pensais abandonner les cours. Vous savez, pour que je puisse veiller sur vous pendant la journée, ou faire vos commissions. C'est tout ce que je peux faire pour rester près de vous. . .	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	Heather. . . Oubliez-moi. Vivez votre vie. . . Vous ne pouvez pas rester là. . .	}{	Heather. . . Oubliez-moi. Vivez votre vie. . . Vous ne pouvez pas rester là. . .	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma belle, il est temps de vous libérer.	}
+{	583	}{	Dis comme ça. . . Merci, un peu d'argent ne me ferait pas de mal. . .	}{	Dis comme ça. . . Merci, un peu d'argent ne me ferait pas de mal. . .	}{	631	}{	}{	pc.MoneyAdd(500)	}{	}{	}{	}{	}{	}{	}{	Bon argument. Je vais acheter quelque chose de rouge, pour me rappeler vos cheveux.	}
+{	584	}{	C'est un début.	}{	C'est un début.	}{	631	}{	}{	pc.MoneyAdd(500)	}{	}{	}{	}{	}{	}{	}{	Pour gagner votre pain, continuez de me trouver de l'oseille.	}
+{	585	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	586	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	587	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	Mais je. . .	}{	Mais je. . .	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	Partez. Ne revenez jamais. Retournez à votre vie.	}{	Partez. Ne revenez jamais. Retournez à votre vie.	}{	301	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	593	}{	Je n'ai jamais existé. Rien ne s'est passé. Tout est un rêve. Sortez, et réveillez-vous.	}{	Je n'ai jamais existé. Rien ne s'est passé. Tout est un rêve. Sortez, et réveillez-vous.	}{	311	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai jamais existé. Rien ne s'est passé. Tout est un rêve. Sortez, et réveillez-vous.	}
+{	594	}{	Vous allez me laisser maintenant et retourner à votre existence mortelle.	}{	Vous allez me laisser maintenant et retourner à votre existence mortelle.	}{	301	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	595	}{	C'est ma dernière demande. Obéissez-moi. Allez mener une vie longue et heureuse pour moi.	}{	C'est ma dernière demande. Obéissez-moi. Allez mener une vie longue et heureuse pour moi.	}{	601	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Mes paroles sont vos actions, vous vous souvenez ? Vivez pour ceux qui ne peuvent pas le faire, ma belle.	}
+{	596	}{	J'ai fait une erreur. Partez. Que je ne vous revoie jamais.	}{	J'ai fait une erreur. Partez. Que je ne vous revoie jamais.	}{	601	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Je ne sais plus où j'en suis et après je fais des erreurs. Comme vous.	}
+{	597	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	598	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	599	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	600	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	601	}{	[Blessée, triste et en colère]Vous ne le pensez pas !	}{	[Blessée, triste et en colère]Vous ne le pensez pas !	}{	#	}{	npc.SetDisposition("Sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	Partez. Ne revenez jamais. Retournez à votre vie.	}{	Partez. Ne revenez jamais. Retournez à votre vie.	}{	301	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	603	}{	Je n'ai jamais existé. Rien ne s'est passé. Tout est un rêve. Sortez, et réveillez-vous.	}{	Je n'ai jamais existé. Rien ne s'est passé. Tout est un rêve. Sortez, et réveillez-vous.	}{	311	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai jamais existé. Rien ne s'est passé. Tout est un rêve. Sortez, et réveillez-vous.	}
+{	604	}{	Vous allez me laisser maintenant et retourner à votre existence mortelle.	}{	Vous allez me laisser maintenant et retourner à votre existence mortelle.	}{	301	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	605	}{	Cette vie est dangereuse. Vous mourrez. Je ne veux pas que ça arrive. Adieu.	}{	Cette vie est dangereuse. Vous mourrez. Je ne veux pas que ça arrive. Adieu.	}{	611	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Les liens sont tranchés par amour. Les resserrer serait mourir.	}
+{	606	}{	Comprenez bien. Je ne veux plus vous voir ici. Partez ! TOUT DE SUITE !	}{	Comprenez bien. Je ne veux plus vous voir ici. Partez ! TOUT DE SUITE !	}{	611	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Goule maboule ! SORTEZ TOUT DE SUITE !	}
+{	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	[Sur le point de pleurer]Je pars. . . D'accord ? Mais si jamais vous changez d'avis. . .	}{	[Sur le point de pleurer]Je pars. . . D'accord ? Mais si jamais vous changez d'avis. . .	}{	#	}{	npc.SetDisposition("Sad",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	Ca n'arrivera pas.	}{	Ca n'arrivera pas.	}{	621	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne peux pas.	}
+{	613	}{	DEHORS !	}{	DEHORS !	}{	621	}{	}{	}{	}{	}{	}{	}{	}{	}{	DEHORS !	}
+{	614	}{	. . .Alors je vous retrouverais, promis.	}{	. . .Alors je vous retrouverais, promis.	}{	621	}{	Humanity 8	}{	}{	}{	}{	}{	}{	}{	}{	. . .Les chemins me rapprocheront alors de toi.	}
+{	615	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	616	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	617	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	618	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	619	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	620	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	[Triste]Bien sûr, bon, je. . . Euh, je m'en vais. . . bon. . . Au. . . [Renifle, retient ses larmes] Au revoir.	}{	[Triste]Bien sûr, bon, je. . . Euh, je m'en vais. . . bon. . . Au. . . [Renifle, retient ses larmes] Au revoir.	}{	#	}{	npc.SetDisposition("Sad",3)	}{	G.Heather_Gone = 1; FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	623	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	624	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	625	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	626	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	627	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	628	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	629	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	630	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	631	}{	Je vais essayer d'en avoir plus, quand je pourrai.	}{	Je vais essayer d'en avoir plus, quand je pourrai.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	Pour l'heure, partagez votre sang avec moi.	}{	Pour l'heure, partagez votre sang avec moi.	}{	651	}{	G.Heather_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'aime aussi le rouge.	}
+{	633	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	634	}{	Bon, je reviendrai, au cas où vous voudriez me donner autre chose.	}{	Bon, je reviendrai, au cas où vous voudriez me donner autre chose.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	A mon retour, surprenez-moi.	}
+{	635	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	636	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	637	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	638	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	640	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	641	}{	[Découragée]Je regrette. . . J'essaierai de faire mieux la prochaine fois.	}{	[Découragée]Je regrette. . . J'essaierai de faire mieux la prochaine fois.	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	Vous pouvez encore me servir à quelque chose. Donnez-moi votre sang.	}{	Vous pouvez encore me servir à quelque chose. Donnez-moi votre sang.	}{	651	}{	G.Heather_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Au moins vous êtes encore pleine de sang.	}
+{	643	}{	Votre apparence. . . changez-en.	}{	Votre apparence. . . changez-en.	}{	985	}{	G.Heather_Clothes == 0	}{	}{	}{	}{	}{	}{	}{	}{	Votre peau. . . changez-en.	}
+{	644	}{	Bon, je reviendrai, au cas où vous voudriez me donner autre chose.	}{	Bon, je reviendrai, au cas où vous voudriez me donner autre chose.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Plus à mon retour, ou mon amour flétrira.	}
+{	645	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	646	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	647	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	648	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	650	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	651	}{	Avec joie. . .	}{	Avec joie. . .	}{	#	}{	npc.SetDisposition("Joy",1)	}{	G.Heather_Feed = 1	}{	}{	}{	}{	}{	}{	}{	Laissez-moi réchauffer vos entrailles. . .	}
+{	652	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	653	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	654	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	655	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	656	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	657	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	658	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	659	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	660	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	661	}{	Tout ce que vous voudrez. . .	}{	Tout ce que vous voudrez. . .	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	Pour l'heure, partagez votre sang avec moi.	}{	Pour l'heure, partagez votre sang avec moi.	}{	651	}{	G.Heather_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ouvrez grand.	}
+{	663	}{	Votre apparence. . . changez-en.	}{	Votre apparence. . . changez-en.	}{	985	}{	G.Heather_Clothes == 0	}{	}{	}{	}{	}{	}{	}{	}{	Votre peau. . . changez-en.	}
+{	664	}{	Peut-être plus tard. Au revoir, Heather.	}{	Peut-être plus tard. Au revoir, Heather.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tout doit attendre. Je pars.	}
+{	665	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	666	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	667	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	668	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	669	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	670	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	671	}{	[excitée]Oh, vous revoilà ! Je, euh. . . je suis sortie ce soir et je. . . Enfin, j'ai rencontré quelqu'un ce soir et il ne voulait pas me laisser alors. . . il est venu avec moi jusqu'ici et. . . enfin, je me suis dit que vous voudriez peut-être boire son sang. . .	}{	[excitée]Oh, vous revoilà ! Je, euh. . . je suis sortie ce soir et je. . . Enfin, j'ai rencontré quelqu'un ce soir et il ne voulait pas me laisser alors. . . il est venu avec moi jusqu'ici et. . . enfin, je me suis dit que vous voudriez peut-être boire son sang. . .	}{	#	}{	npc.SetDisposition("Joy",1)	}{	G.Heather_Lure = 1; G.Heather_Feed = 0; G.Mcfly_Present = 0	}{	}{	}{	}{	}{	}{	}{	Je suis allé à la pêche, et j'ai ramené un gros poisson. Vous l'entendez se débattre dans la salle d'eau ? C'est comme ça qu'on sait qu'ils sont frais. . .	}
+{	672	}{	Vous avez fait quoi ? Où est-il ?	}{	Vous avez fait quoi ? Où est-il ?	}{	681	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non non non non non non. Les poissons se déplacent par bancs. Où est-il ?	}
+{	673	}{	Ah, j'adore que le repas soit prêt quand je rentre. Merci ma belle.	}{	Ah, j'adore que le repas soit prêt quand je rentre. Merci ma belle.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	674	}{	Juste à temps, j'ai une faim de loup. Enfin vous vous rendez utile.	}{	Juste à temps, j'ai une faim de loup. Enfin vous vous rendez utile.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Heureusement qu'il était là ou je vous aurais utilisée. Vous êtes gentille, ma petite.	}
+{	675	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	676	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	678	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	679	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	680	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	681	}{	Euh. . . dans la salle de bain. Je, euh. . . je l'ai attaché. Je n'aurais pas dû ?	}{	Euh. . . dans la salle de bain. Je, euh. . . je l'ai attaché. Je n'aurais pas dû ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	Vous n'aimez pas le poisson ? [contrariée]Je me disais juste que ça serait un changement agréable si vous mangiez à la maison, pour changer.	}
+{	682	}{	Je m'en occupe. Restez ici.	}{	Je m'en occupe. Restez ici.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'odeur va attirer les mouches. Restez. Asseyez-vous. Soyez sage.	}
+{	683	}{	Je ne sais pas. Je vais voir ce que je peux faire.	}{	Je ne sais pas. Je vais voir ce que je peux faire.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	684	}{	Hmm. . . J'en fais peut-être trop. . . Ca pourrait me plaire.	}{	Hmm. . . J'en fais peut-être trop. . . Ca pourrait me plaire.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est adorable. Je retire ce que j'ai dit. La soupe est servie.	}
+{	685	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	686	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	687	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	688	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	689	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	690	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	691	}{	Je suis heureuse que ça vous fasse plaisir. Il est dans la salle de bain. . . pas d'inquiétude, il est attaché.	}{	Je suis heureuse que ça vous fasse plaisir. Il est dans la salle de bain. . . pas d'inquiétude, il est attaché.	}{	#	}{	npc.SetDisposition("Joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	Je l'ai déjà goûté, il est délicieux.	}
+{	692	}{	Je vais me servir. . .	}{	Je vais me servir. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'odeur est délicieuse.	}
+{	693	}{	Excellent.	}{	Parfait.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Miam.	}
+{	694	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	695	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	696	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	697	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	698	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	699	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	700	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	701	}{	Maître. . . ?	}{	Maîtresse. . . ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	702	}{	Allez jeter son corps dans un endroit discret, voulez-vous ?	}{	Allez jeter son corps dans un endroit discret, voulez-vous ?	}{	711	}{	IsDead("McFly") and G.Mcfly_Dump == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le poisson a donné une sale odeur à cet endroit. Nettoyez, voulez-vous ?	}
+{	703	}{	Je l'ai relâché. Ne refaites jamais cela, Heather. Jamais.	}{	Je l'ai relâché. Ne refaites jamais cela, Heather. Jamais.	}{	721	}{	(G.Mcfly_Leave == 1 or G.Mcfly_Dominated == 1 or G.Mcfly_Dementated == 1) and G.Mcfly_Free == 0	}{	G.Mcfly_Free = 1	}{	}{	}{	}{	}{	}{	}{	Je remets la truite dans sa rivière.	}
+{	704	}{	Votre apparence. . . changez-en.	}{	Votre apparence. . . changez-en.	}{	985	}{	G.Heather_Clothes == 0	}{	}{	}{	}{	}{	}{	}{	}{	Votre peau. . . changez-en.	}
+{	705	}{	Ce n'est rien, ma belle, excusez-moi.	}{	Ce n'est rien, ma belle, excusez-moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Excusez-moi, ma belle.	}
+{	706	}{	Oh, vous êtes encore là ? Je m'en vais.	}{	Oh, vous êtes encore là ? Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne me dites rien ! Je pars.	}
+{	707	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	708	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	709	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	710	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	711	}{	Ce sera fait avant votre retour, c'est promis.	}{	Ce sera fait avant votre retour, c'est promis.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Mcfly_Dump = 1	}{	}{	}{	}{	}{	}{	}{	Je vais nettoyer, allez vous amuser dehors.	}
+{	712	}{	Bien. Au revoir, Heather.	}{	Bien. Au revoir, Heather.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui. . . Tant de poupées qui m'attendent. . .	}
+{	713	}{	J'espère bien.	}{	J'espère bien.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si cet endroit pue à mon retour, je vous y frotterai le nez.	}
+{	714	}{	Et après, fichez le camp. Il ne faut pas rester ici.	}{	Et après, fichez le camp. Il ne faut pas rester ici.	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nettoyez, faites votre sac et partez.	}
+{	715	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	716	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	717	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	718	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	719	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	720	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	721	}{	Je suis vraiment, vraiment désolée. Je me rattraperai, c'est promis !	}{	Je suis vraiment, vraiment désolée. Je me rattraperai, c'est promis !	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	722	}{	Je ne peux pas vous en vouloir. . . Bon, j'accepte vos excuses. A plus tard, Heather.	}{	Je ne peux pas vous en vouloir. . . Bon, j'accepte vos excuses. A plus tard, Heather.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quand vous avez cette tête là, je ne peux pas vous en vouloir. Au revoir, ma belle.	}
+{	723	}{	Ca, je m'en doute. Sinon, plus de sang. Au revoir.	}{	Ca, je m'en doute. Sinon, plus de sang. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne goûterez jamais mon sang sans cela.	}
+{	724	}{	Non, Heather, l'erreur venait de moi. Il faut partir, je n'ai plus besoin de vous.	}{	Non, Heather, l'erreur venait de moi. Il faut partir, je n'ai plus besoin de vous.	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous m'avez montré l'erreur qu'est la pitié. Partez. Tout de suite.	}
+{	725	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	726	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	727	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	728	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	729	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	730	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	731	}{	[Effrayée, soulagée]Oh, c'est vous. . . Un peu plus tôt, vous ne m'avez pas suivie, hein ? J'avais l'impression qu'on m'observait. . . Ce n'était peut-être rien, mais. . . je suis encore un peu secouée.	}{	[Effrayée, soulagée]Oh, c'est vous. . . Un peu plus tôt, vous ne m'avez pas suivie, hein ? J'avais l'impression qu'on m'observait. . . Ce n'était peut-être rien, mais. . . je suis encore un peu secouée.	}{	#	}{	npc.SetDisposition("Sad",1)	}{	G.Heather_Scared = 1; G.Heather_Feed = 0	}{	}{	}{	}{	}{	}{	}{	[Effrayée, le souffle court]On me surveille ! Je le sais, quelque chose m'a suivi. Si ça se trouve, on me surveille encore. . . Arrêtez-les, il ne faut plus qu'ils me regardent !	}
+{	732	}{	Ce n'était pas moi. . . Peut-être l'un de ceux qui veulent me tuer une deuxième fois.	}{	Ce n'était pas moi. . . Peut-être l'un de ceux qui veulent me tuer une deuxième fois.	}{	741	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne vois aucun oeil pour l'instant.	}
+{	733	}{	Si un inconnu vous aborde, tirez-lui dans la tête.	}{	Si un inconnu vous aborde, tirez-lui dans la tête.	}{	751	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si vous revoyez les yeux. . . aveuglez-les.	}
+{	734	}{	Votre vie pourrait être en danger. Alors Heather, je vais vous demander de quitter mon service.	}{	Votre vie pourrait être en danger. Alors Heather, je vais vous demander de quitter mon service.	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non. . . C'est la fin. . . c'est la fin si vous ne vous enfuyez pas.	}
+{	735	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	736	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	737	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	738	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	739	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	740	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	741	}{	Qui veut vous tuer ? Pourquoi ? Comment peut-on vouloir nuire à quelqu'un de si. . . irrésistible ?	}{	Qui veut vous tuer ? Pourquoi ? Comment peut-on vouloir nuire à quelqu'un de si. . . irrésistible ?	}{	#	}{	npc.SetDisposition("Confused",1)	}{	}{	}{	}{	}{	}{	}{	}{	Tous les yeux sont partis ? Tout va bien se passer ?	}
+{	742	}{	Sans doute de la jalousie. Soyez prudente, ma belle, d'accord. . .	}{	Sans doute de la jalousie. Soyez prudente, ma belle, d'accord. . .	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les yeux me cherchent, moi, et non vous.	}
+{	743	}{	Si un inconnu vous aborde, tirez-lui dans la tête.	}{	Si un inconnu vous aborde, tirez-lui dans la tête.	}{	751	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si vous revoyez les yeux. . . aveuglez-les.	}
+{	744	}{	Heather, promets moi de rester enfermée ici jusqu'à ce que tout cela soit fini !	}{	Heather, promets moi de rester enfermée ici jusqu'à ce que tout cela soit fini !	}{	761	}{	G.Patch_Plus == 1	}{	G.Heather_Indoors = 1	}{	}{	}{	}{	}{	}{	}{	Reste à l'abris dans cette cage dorée jusqu'à ce que je te libère.	}
+{	745	}{	Votre vie pourrait être en danger. Alors Heather, je vais vous demander de quitter mon service.	}{	Votre vie pourrait être en danger. Alors Heather, je vais vous demander de quitter mon service.	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non. . . C'est la fin. . . c'est la fin si vous ne vous enfuyez pas.	}
+{	746	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	747	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	748	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	749	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	750	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	751	}{	S'ils en ont après vous. . . d'accord. [In petto]Mais d'abord, il faut que j'apprenne à utiliser une arme à feu.	}{	S'ils en ont après vous. . . d'accord. [In petto]Mais d'abord, il faut que j'apprenne à utiliser une arme à feu.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	Oui. . . Si je vois les yeux. . . je les aveuglerai. . .	}
+{	752	}{	Oui, ce serait bien.	}{	Oui, ce serait bien.	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si.	}
+{	753	}{	Votre vie pourrait être en danger. Alors Heather, je vais vous demander de quitter mon service.	}{	Votre vie pourrait être en danger. Alors Heather, je vais vous demander de quitter mon service.	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non. . . C'est la fin. . . c'est la fin si vous ne vous enfuyez pas.	}
+{	754	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	755	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	756	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	757	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	758	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	759	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	760	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	761	}{	Je m'en souviendrai.	}{	Je m'en souviendrai.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	Je vous dérange encore ?	}
+{	762	}{	Bien. Maintenant, venez, j'ai besoin de votre sang.	}{	Bien. Maintenant, venez, j'ai besoin de votre sang.	}{	0	}{	}{	G.Heather_Feed = 1; G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Comme les étoiles. Je crois que ce soir, la lune est rouge sang.	}
+{	763	}{	Votre apparence. . . changez-en.	}{	Votre apparence. . . changez-en.	}{	985	}{	G.Heather_Clothes == 0	}{	}{	}{	}{	}{	}{	}{	}{	Votre peau. . . changez-en.	}
+{	764	}{	Ne les ramenez pas ici. Au revoir, Heather.	}{	Ne les ramenez pas ici. Au revoir, Heather.	}{	0	}{	G.Heather_Indoors == 0	}{	}{	}{	}{	}{	}{	}{	}{	Empêchez juste les yeux de venir jusqu'ici. Je pars.	}
+{	765	}{	Vous feriez bien. Au revoir, Heather.	}{	Vous feriez bien. Au revoir, Heather.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'espère vous revoir.	}
+{	766	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	767	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	768	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	769	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	770	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	771	}{	Maître ?	}{	Maîtresse ?	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	772	}{	Abandonnez son corps quelque part discrétement, voulez-vous?	}{	Abandonnez son corps quelque part discrétement, voulez-vous?	}{	711	}{	IsDead("McFly") and G.Mcfly_Dump == 0	}{	}{	}{	}{	}{	}{	}{	}{	Cet endroit empeste le poisson. Nettoyez, voulez-vous.	}
+{	773	}{	Je le laisse partir. Ne refaites jamais ça, Heather.	}{	Je le laisse partir. Ne refaites jamais ça, Heather.	}{	721	}{	(G.Mcfly_Leave == 1 or G.Mcfly_Dominated == 1 or G.Mcfly_Dementated == 1) and G.Mcfly_Free == 0	}{	G.Mcfly_Free = 1	}{	}{	}{	}{	}{	}{	}{	Je remets le poisson dans l'étang.	}
+{	774	}{	J'ai besoin de votre sang.	}{	J'ai besoin de votre sang.	}{	0	}{	G.Heather_Feed == 0	}{	G.Heather_Feed = 1; G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Saignez pour moi.	}
+{	775	}{	Votre apparence. . . changez-en.	}{	Votre apparence. . . changez-en.	}{	985	}{	G.Heather_Clothes == 0	}{	}{	}{	}{	}{	}{	}{	}{	Votre peau. . . changez-en.	}
+{	776	}{	Je reviendrai plus tard.	}{	Je reviendrai plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où ça ? Pas ici.	}
+{	777	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	778	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	779	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	780	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	781	}{	[Tremblante, en manque]Je suis si contente que vous soyez de retour ! J'attends depuis une éternité. . . Je suis un peu nerveuse, je ne vous sens plus dans mes veines. . . J'ai juste besoin d'un peu plus. . . S'il vous plaît ? Maître ? Juste quelques gouttes ?	}{	[Tremblante, en manque]Je suis si contente que vous soyez de retour ! J'attends depuis une éternité. . . Je suis un peu nerveuse, je ne vous sens plus dans mes veines. . . J'ai juste besoin d'un peu plus. . . S'il vous plaît ? Maîtresse ? Juste quelques gouttes ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Heather_Fix = 1; G.Heather_Feed = 0	}{	}{	}{	}{	}{	}{	}{	Mes veines sont si sèches. . . Je suis une rose du désert. . . Je veux votre tempête, votre pluie, quelques gouttes. . . Faites-moi éclore.	}
+{	782	}{	Oui, bien sûr. Venez ici, ma belle. . .	}{	Oui, bien sûr. Venez ici, ma belle. . .	}{	811	}{	}{	pc.Bloodloss(1)	}{	}{	}{	}{	}{	}{	}{	Est-ce le tonnerre que j'entends, ma rose ?	}
+{	783	}{	Je ne sais pas. Qu'avez-vous fait pour moi ces derniers temps ?	}{	Je ne sais pas. Qu'avez-vous fait pour moi ces derniers temps ?	}{	791	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne sentez pas si bon ces derniers temps, ma rose.	}
+{	784	}{	Heather, ça devient dangereux. Pour votre bien, il serait mieux de me quitter. 	}{	Heather, ça devient dangereux. Pour votre bien, il serait mieux de me quitter. 	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non. . . C'est la fin. . . c'est la fin si vous ne vous enfuyez pas.	}
+{	785	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	786	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	787	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	788	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	789	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	790	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	791	}{	Euh. . . euh. . . que voulez-vous que je fasse ? Je vous ai tout donné. . . J'ai été gentille. . . Si j'ai raté quelque chose, dites-le moi, et je l'arrangerai. Vous ne comprenez pas à quel point j'ai besoin de vous ? A quel point je vous aime ?	}{	Euh. . . euh. . . que voulez-vous que je fasse ? Je vous ai tout donné. . . J'ai été gentille. . . Si j'ai raté quelque chose, dites-le moi, et je l'arrangerai. Vous ne comprenez pas à quel point j'ai besoin de vous ? A quel point je vous aime ?	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	792	}{	Oui, vous l'avez mérité. Venez.	}{	Oui, vous l'avez mérité. Venez.	}{	811	}{	}{	pc.Bloodloss(1)	}{	}{	}{	}{	}{	}{	}{	HA HA HA HA HA HA. Je blague. . . Mon bouton d'or.	}
+{	793	}{	Un peu plus de servilité, et je serai convaincu.	}{	Un peu plus de servilité, et je serai convaincue.	}{	801	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est MON sang, pas du vin.	}
+{	794	}{	En fait, Heather, il n'y aura plus de sang pour vous, à partir de maintenant. Je veux que vous partiez.	}{	En fait, Heather, il n'y aura plus de sang pour vous, à partir de maintenant. Je veux que vous partiez.	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	De sombres nuages s'amoncellent, mais ils n'apportent que la destruction. Vous devez partir.	}
+{	795	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	796	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	797	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	798	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	799	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	800	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	801	}{	[Désespérée]Pitié. . . Donnez-moi votre sang, maître, mon amour, ma seule raison de vivre. . . Je ferai tout ce que vous voudrez. . . Je mourrais pour vous, ma gloire, mon dieu. . .	}{	[Désespérée]Pitié. . . Donnez-moi votre sang, maîtresse, mon amour, ma seule raison de vivre. . . Je ferai tout ce que vous voudrez. . . Je mourrais pour vous, ma gloire, ma déesse. . .	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	802	}{	Ca ira très bien. Venez par ici, goule.	}{	Ca ira très bien. Venez par ici, goule.	}{	811	}{	}{	pc.Bloodloss(1)	}{	}{	}{	}{	}{	}{	}{	Ah, voilà, c'est mieux.	}
+{	803	}{	Ha ha. . . Regardez-vous un peu. . . Bon, d'accord, voilà votre sang, pauvre épave. . .	}{	Ha ha. . . Regardez-vous un peu. . . Bon, d'accord, voilà votre sang, pauvre épave. . .	}{	811	}{	}{	pc.Bloodloss(1)	}{	}{	}{	}{	}{	}{	}{	Pitoyable. Ignoble. Fragile. Mortelle. Tenez, pauvre épave.	}
+{	804	}{	En fait, Heather, il n'y aura plus de sang pour vous, à partir de maintenant. Je veux que vous partiez.	}{	En fait, Heather, il n'y aura plus de sang pour vous, à partir de maintenant. Je veux que vous partiez.	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	De sombres nuages s'amoncellent, mais ils n'apportent que la destruction. Vous devez partir.	}
+{	805	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	806	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	807	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	808	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	809	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	810	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	811	}{	Oh, merci. . . [Souffle court, presque orgasmique]Incroyable. . . Je me sens tellement mieux. . . Comme la personne la plus importante au monde. . . Après vous, bien sûr. . .	}{	Oh, merci. . . [Souffle court, presque orgasmique]Incroyable. . . Je me sens tellement mieux. . . Comme la personne la plus importante au monde. . . Après vous, bien sûr. . .	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	812	}{	Si c'est pas mignon. . . A plus tard, Heather. . .	}{	Si c'est pas mignon. . . A plus tard, Heather. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ah, vous prenez des risques en disant de telles âneries. Au revoir.	}
+{	813	}{	Si vous voulez, goule. Ne brûlez pas votre sang, économisez-le un peu. . . Au revoir.	}{	Si vous voulez, goule. Ne brûlez pas votre sang, économisez-le un peu. . . Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rien n'est plus important pour moi. Savourez mon sang comme si c'était la dernière goutte.	}
+{	814	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	815	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	816	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	817	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	818	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	819	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	820	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	821	}{	J'ai fait un rêve cette après-midi. . . Vous y étiez. Vous me caressiez les cheveux, vous me disiez que vous m'aimiez, et après, j'étais seule, vous aviez disparu. Je criais votre nom, mais vous ne répondiez pas. Vous êtes revenu, et je n'ai jamais été autant soulagée.	}{	J'ai fait un rêve cette après-midi. . . Vous y étiez. Vous me caressiez les cheveux, vous me disiez que vous m'aimiez, et après, j'étais seule, vous aviez disparu. Je criais votre nom, mais vous ne répondiez pas. Vous êtes revenue, et je n'ai jamais été autant soulagée.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Heather_Dream = 1; G.Heather_Feed = 0	}{	}{	}{	}{	}{	}{	}{	J'ai fait un rêve cette après-midi, pendant que je faisais ma sieste près de vous. . . Je courais derrière vous à la lumière de la lune, et j'ai trébuché. Je suis tombée. J'ai levé les yeux, et vous n'étiez plus là. Alors je me suis rendue compte que j'avais trébuché sur mon cadavre. . .	}
+{	822	}{	Je ne vous quitterai jamais, très chère Heather.	}{	Je ne vous quitterai jamais, très chère Heather.	}{	831	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Tant que vous verrez ce visage, vous aurez amour et protection.	}
+{	823	}{	Continuez de rêver, je ne vous dirai jamais que je vous aime.	}{	Continuez de rêver, je ne vous dirai jamais que je vous aime.	}{	841	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis du genre solitaire. Vous n'êtes qu'un tas de viande que je garde pour me rappeler à quel point je pouvais être pathétique, avant.	}
+{	824	}{	J'ai peur, Heather, que. . . nous devions vraiment nous séparer. Je ne veux plus vous gâcher la vie.	}{	J'ai peur, Heather, que. . . nous devions vraiment nous séparer. Je ne veux plus vous gâcher la vie.	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors vous savez que je dois partir.	}
+{	825	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	826	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	827	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	828	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	829	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	830	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	831	}{	[Sourit]. . . Vous êtes d'une telle gentillesse avec moi.	}{	[Sourit]. . . Vous êtes d'une telle gentillesse avec moi.	}{	#	}{	npc.SetDisposition("Joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	832	}{	Je ne me le pardonnerais jamais s'il vous arrivait quelque chose.	}{	Je ne me le pardonnerais jamais s'il vous arrivait quelque chose.	}{	851	}{	G.Heather_Indoors == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je ne peux rien être d'autre, mon amour.	}
+{	833	}{	Oui, vraiment.	}{	Oui, vraiment.	}{	851	}{	G.Heather_Indoors == 0	}{	}{	}{	}{	}{	}{	}{	}{	Oui, à un tel prix.	}
+{	834	}{	Oui, et J'ai besoin d'un peu de...	}{	Oui, et J'ai besoin d'un peu de...	}{	881	}{	G.Heather_Indoors == 1	}{	}{	}{	}{	}{	}{	}{	}{	Encore autre chose...	}
+{	835	}{	Je ne me pardonnerais jamais si quelque chose vous arrivait.	}{	Je ne me pardonnerais jamais si quelque chose vous arrivait.	}{	0	}{	G.Heather_Indoors == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis rien d'autre, que mon amour.	}
+{	836	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	837	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	838	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	839	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	840	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	841	}{	[Triste]Malgré ce que vous ressentez, je suis à vous à jamais. . .	}{	[Triste]Malgré ce que vous ressentez, je suis à vous à jamais. . .	}{	#	}{	npc.SetDisposition("Sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	842	}{	Oui, je sais.	}{	Oui, je sais.	}{	851	}{	G.Heather_Indoors == 0	}{	}{	}{	}{	}{	}{	}{	}{	Oui, vous fleurissez seulement pour moi.	}
+{	843	}{	Non, vous êtes mortelle. Vous êtes à moi jusqu'à ce que vous creviez et que je doive me trouver une nouvelle goule.	}{	Non, vous êtes mortelle. Vous êtes à moi jusqu'à ce que vous creviez et que je doive me trouver une nouvelle goule.	}{	851	}{	G.Heather_Indoors == 0	}{	}{	}{	}{	}{	}{	}{	}{	Non, vous fanerez et mourrez.	}
+{	844	}{	Oui, et J'ai besoin d'un peu de...	}{	Oui, et J'ai besoin d'un peu de...	}{	881	}{	G.Heather_Indoors == 1	}{	}{	}{	}{	}{	}{	}{	}{	Encore autre chose...	}
+{	845	}{	Oui, oui, je sais.	}{	Oui, oui, je sais.	}{	0	}{	G.Heather_Indoors == 1	}{	}{	}{	}{	}{	}{	}{	}{	Oui, vous fleurissez seulement pour moi.	}
+{	846	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	847	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	848	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	849	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	850	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	851	}{	J'ai. . . j'ai quelque chose pour vous. . . Tenez, ça devrait vous aller. Je trouvais que ce serait le genre de chose que vous pourriez porter.	}{	J'ai. . . j'ai quelque chose pour vous. . . Tenez, ça devrait vous aller. Je trouvais que ce serait le genre de chose que vous pourriez porter.	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	G.Heather_Armor = 1; pc.GiveItem("item_a_body_armor")	}{	}{	}{	}{	}{	}{	}{	Je vous ai apporté une nouvelle peau. Je pense qu'elle vous ira.	}
+{	852	}{	C'est merveilleux. Merci, Heather. Cela me fait plaisir.	}{	C'est merveilleux. Merci, Heather. Cela me fait plaisir.	}{	861	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Vous me connaissez trop bien, beauté.	}
+{	853	}{	Je savais bien que j'avais raison de te laisser rester.	}{	Je savais bien que j'avais raison de te laisser rester.	}{	861	}{	}{	}{	}{	}{	}{	}{	}{	}{	Voilà, vous commencez à savoir ce que vous devez faire.	}
+{	854	}{	Super. C'est tout ?	}{	Super. C'est tout ?	}{	871	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est tout ?	}
+{	855	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	856	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	857	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	858	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	859	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	860	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	861	}{	Pensez à moi quand vous le porterez.	}{	Pensez à moi quand vous le porterez.	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	862	}{	D'accord. Avant de partir, vous pensez que vous. . .	}{	D'accord. Avant de partir, vous pensez que vous. . .	}{	881	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je pense toujours à vous. Une dernière chose, avant que je parte.	}
+{	863	}{	Bien sûr. Il faut que je parte, Heather. Merci pour les fringues.	}{	Bien sûr. Il faut que je parte, Heather. Merci pour les fringues.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais me pavaner avec ma nouvelle peau. Merci, ma belle.	}
+{	864	}{	Je m'en vais. A plus tard, Heather.	}{	Je m'en vais. A plus tard, Heather.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	865	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	866	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	867	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	868	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	869	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	870	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	871	}{	[Déprimée]Oui. . .	}{	[Déprimée]Oui. . .	}{	#	}{	npc.SetDisposition("Sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	872	}{	J'ai besoin d'un peu de. . .	}{	J'ai besoin d'un peu de. . .	}{	881	}{	}{	}{	}{	}{	}{	}{	}{	}{	Autre chose.	}
+{	873	}{	Il faut que je file. . .	}{	Il faut que je file. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ha ha ha. . . goule.	}
+{	874	}{	Ca ira. Au revoir, goule.	}{	Ca ira. Au revoir, goule.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mff. Je pars.	}
+{	875	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	876	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	877	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	878	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	879	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	880	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	881	}{	Vous avez besoin de mon sang ? Bien sûr. . .	}{	Vous avez besoin de mon sang ? Bien sûr. . .	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	}{	}{	}{	}{	}{	}{	}{	Ouvrez-moi. . .	}
+{	882	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Heather_Feed = 1; G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
+{	883	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	884	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	885	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	886	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	887	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	888	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	889	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	890	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	891	}{	Maître ?	}{	Maîtresse ?	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	892	}{	Je peux avoir du. . .	}{	Je peux avoir du. . .	}{	881	}{	G.Heather_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous savez pourquoi je suis ici ?	}
+{	893	}{	Votre apparence. . . changez-en.	}{	Votre apparence. . . changez-en.	}{	985	}{	G.Heather_Clothes == 0	}{	}{	}{	}{	}{	}{	}{	}{	Votre peau. . . changez-en.	}
+{	894	}{	Ce n'est rien. Je reviendrai.	}{	Ce n'est rien. Je reviendrai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	. . .Qu'est-ce que je fais ici ?	}
+{	895	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	896	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	897	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	898	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	899	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	900	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	901	}{	[Cri de terreur]A l'aide !	}{	[Cri de terreur]A l'aide !	}{	#	}{	npc.SetDisposition("Sad",3)	}{	}{	}{	}{	}{	}{	}{	}{	[Cri de terreur]A l'aide !	}
+{	902	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	903	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	904	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	905	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	906	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	907	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	908	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	909	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	910	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	911	}{	[Cri de terreur]Au secours !	}{	[Cri de terreur]Au secours !	}{	#	}{	npc.SetDisposition("Sad",3)	}{	}{	}{	}{	}{	}{	}{	}{	[Cri de terreur]Au secours !	}
+{	912	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	913	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	914	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	915	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	916	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	917	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	918	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	919	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	920	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	921	}{	[Terreur, panique, sanglots douloureux - elle est enchaînée, effrayée, et espère qu'on va l'entendre et la délivrer - boucle]	}{	[Terreur, panique, sanglots douloureux - elle est enchaînée, effrayée, et espère qu'on va l'entendre et la délivrer - boucle]	}{	#	}{	npc.SetDisposition("Sad",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	922	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	923	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	924	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	925	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	926	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	927	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	928	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	929	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	930	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	931	}{	[Cri glaçant et hoquet]	}{	[Cri glaçant et hoquet]	}{	#	}{	npc.SetDisposition("Sad",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	932	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	933	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	934	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	935	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	936	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	937	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	938	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	939	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	940	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	941	}{	[Dit au revoir à quelqu'un qui s'en va]Au revoir.	}{	[Dit au revoir à quelqu'un qui s'en va]Au revoir.	}{	#	}{	npc.SetDisposition("Joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	942	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	943	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	944	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	945	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	946	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	947	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	948	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	949	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	950	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	951	}{	[Dit au revoir à quelqu'un qui s'en va]A plus tard.	}{	[Dit au revoir à quelqu'un qui s'en va]A plus tard.	}{	#	}{	npc.SetDisposition("Joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	952	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	953	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	954	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	955	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	956	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	957	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	958	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	959	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	960	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	961	}{	[Dit au revoir à quelqu'un qui s'en va]Vous allez me manquer.	}{	[Dit au revoir à quelqu'un qui s'en va]Vous allez me manquer.	}{	#	}{	npc.SetDisposition("Joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	962	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	963	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	964	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	965	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	966	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	967	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	968	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	969	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	970	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	971	}{	Je vous enverrai un e-mail.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	972	}{	Je suis tellement heureuse de vous voir !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	973	}{	Salut.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	974	}{	Quoi encore ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	975	}{	Du vent.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	976	}{	Ouais.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	977	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	978	}{	Merci !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	979	}{	QUOI ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	980	}{	Je ne sais pas trop.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	981	}{	Je regrette, ce n'est pas possible.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	982	}{	Trop cool !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	983	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	984	}{	Tenez.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	985	}{	OK.	}{	OK.	}{	#	}{	}{	G.Heather_Clothes = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	986	}{	Quand je reviendrai, je m'attends à trouver une surprise agréable.	}{	Quand je reviendrai, je m'attends à trouver une surprise agréable.	}{	0	}{	G.Heather_Outfit == 0 or G.Heather_Outfit == 1	}{	G.Heather_Outfit = 2	}{	}{	}{	}{	}{	}{	}{	Tissez votre cocon, petite chenille. Je veux que vous deveniez un papillon.	}
+{	987	}{	J'aime bien le noir et le gothique.	}{	J'aime bien le noir et le gothique.	}{	0	}{	G.Heather_Outfit == 0 or G.Heather_Outfit == 2	}{	G.Heather_Outfit = 1	}{	}{	}{	}{	}{	}{	}{	J'aime les fringues qui reflètent la noirceur de mon âme.	}
+{	988	}{	On verra ce que vous aurez à mon retour.	}{	On verra ce que vous aurez à mon retour.	}{	0	}{	G.Heather_Outfit == 1 or G.Heather_Outfit == 2	}{	G.Heather_Outfit = 0	}{	}{	}{	}{	}{	}{	}{	On verra ce que vous aurez à mon retour.	}
+{	989	}{	D'autre part, oubliez ça.	}{	D'autre part, oubliez ça.	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nevermind my mind.	}
+{	990	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	991	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	992	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	993	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	994	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	995	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	996	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	997	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	998	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	999	}{	(Starting Condition)	}{	}{	671	}{	G.Mcfly_Present == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1000	}{	(Starting Condition)	}{	}{	891	}{	G.Heather_Armor == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1001	}{	(Starting Condition)	}{	}{	821	}{	G.Story_State >= 70 and G.Heather_Dream == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1002	}{	(Starting Condition)	}{	}{	771	}{	G.Heather_Fix == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1003	}{	(Starting Condition)	}{	}{	781	}{	G.Story_State >= 45 and G.Story_State < 65	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1004	}{	(Starting Condition)	}{	}{	771	}{	G.Heather_Scared == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1005	}{	(Starting Condition)	}{	}{	731	}{	G.Story_State >= 35 and G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1006	}{	(Starting Condition)	}{	}{	701	}{	G.Heather_Lure == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1007	}{	(Starting Condition)	}{	}{	771	}{	G.Story_State >= 30 and G.Story_State < 35	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1008	}{	(Starting Condition)	}{	}{	661	}{	G.Heather_Loan == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1009	}{	(Starting Condition)	}{	}{	521	}{	G.Story_State >= 20 and G.Story_State < 30	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1010	}{	(Starting Condition)	}{	}{	511	}{	G.Heather_Secret == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1011	}{	(Starting Condition)	}{	}{	261	}{	G.Heather_Warning == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1012	}{	(Starting Condition)	}{	}{	341	}{	G.Heather_Haven == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1013	}{	(Starting Condition)	}{	}{	121	}{	G.Story_State == 15	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1014	}{	(Starting Condition)	}{	}{	111	}{	G.Heather_Drank == 1 and IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1015	}{	(Starting Condition)	}{	}{	91	}{	G.Heather_Drank == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1016	}{	(Starting Condition)	}{	}{	41	}{	G.Heather_Steve == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1017	}{	(Starting Condition)	}{	}{	31	}{	(G.Knox_Ghoul == 2 or G.Mercurio_Ghoul == 1) and G.Heather_Grandma == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1018	}{	(Starting Condition)	}{	}{	17	}{	G.Heather_Groan == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1019	}{	(Starting Condition)	}{	}{	19	}{	G.Heather_Grandma == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1020	}{	(Starting Condition)	}{	}{	15	}{	G.Heather_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1021	}{	(Starting Condition)	}{	}{	11	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

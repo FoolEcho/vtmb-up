@@ -1,0 +1,270 @@
+{	1	}{	[essoufflé]Eh ! Eh ! Attendez un peu. J'ai peur que vous soyez en train de commettre un 351. Infraction à la propriété privée. Je vais vous demander de quitter les lieux immédiatement, ou j'appelle des renforts.	}{	[essoufflé]Eh ! Eh ! Attendez un peu. J'ai peur que vous soyez en train de commettre un 351. Infraction à la propriété privée. Je vais vous demander de quitter les lieux immédiatement, ou j'appelle des renforts.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Chunk_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Vous n'avez pas entendu l'appel ?	}{	Vous n'avez pas entendu l'appel ?	}{	41	}{	Persuasion 2 & not IsClan(pc,"Malkavian") and (G.Chunk_Insult == 0 and G.Jeanette_Quest == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Oh, la façon dont vous avez dit ça, c'était tellement. . . autoritaire.	}{	Oh, la façon dont vous avez dit ça, c'était tellement. . . autoritaire.	}{	111	}{	F_Seduction 2 & G.Chunk_Insult == 0 and G.Jeanette_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Allez, on pourrait s'amuser un peu. Vous voulez me mettre les menottes ?	}
+{	5	}{	Ouvrez la porte.	}{	Ouvrez la porte.	}{	101	}{	Dominate 1 & G.Jeanette_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	Votre esprit va se briser sur l'étendue vide de votre vie.	}{	Votre esprit va se briser sur l'étendue vide de votre vie.	}{	231	}{	Dementation 1 & G.Jeanette_Quest == 1	}{	npc.pl_criminal_attack = 2; npc.pl_investigate = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	Ouvrez la porte.	}{	Ouvrez la porte.	}{	101	}{	Thaumaturgy 1 & G.Patch_Plus == 1 and G.Jeanette_Quest == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	Et si je ne pars pas ?	}{	Et si je ne pars pas ?	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	Je reste ici toute la nuit. Parlez à votre radio si vous voulez.	}{	Je reste ici toute la nuit. Parlez à votre radio si vous voulez.	}{	201	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	Pardon. Je pars tout de suite.	}{	Pardon. Je pars tout de suite.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre sang coule bien avec des pâtisseries à la confiture. Cependant, je suis parti.	}
+{	11	}{	Pas de problème. Ca arrive tout le temps. Merci de votre coopération, m'sieur. Veuillez partir rapidement, et passez une bonne nuit.	}{	Pas de problème. Ca arrive tout le temps. Merci de votre coopération, miss. Veuillez partir rapidement, et passez une bonne nuit.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Oh, la façon dont vous avez dit ça, c'était tellement. . . autoritaire.	}{	Oh, la façon dont vous avez dit ça, c'était tellement. . . autoritaire.	}{	111	}{	F_Seduction 2 & G.Chunk_Insult == 0 and G.Jeanette_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Allez, on pourrait s'amuser un peu. Vous voulez me mettre les menottes ?	}
+{	13	}{	Ouvrez la porte.	}{	Ouvrez la porte.	}{	101	}{	Dominate 1 & G.Jeanette_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Votre esprit va se briser sur l'étendue vide de votre vie.	}{	Votre esprit va se briser sur l'étendue vide de votre vie.	}{	231	}{	Dementation 1 & G.Jeanette_Quest == 1	}{	npc.pl_criminal_attack = 2; npc.pl_investigate = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	Mes paroles sont aussi rondes que votre ventre. . .	}{	Mes paroles sont aussi rondes que votre ventre. . .	}{	201	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	Et finalement, si je ne partais pas ?	}{	Et finalement, si je ne partais pas ?	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	Ouvrez la porte.	}{	Ouvrez la porte.	}{	101	}{	Thaumaturgy 1 & G.Patch_Plus == 1 and G.Jeanette_Quest == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	Vous avez juste à me laisser entrer.	}{	Vous avez juste à me laisser entrer.	}{	101	}{	Presence 1 & G.Patch_Plus == 1 and G.Jeanette_Quest == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	Vous aussi. Bonne nuit.	}{	Vous aussi. Bonne nuit.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Dans ce cas, je serai forcé de rapporter un 453, désobéissance à l'ordre direct d'un agent de sécurité. Croyez-moi, vous pourriez regretter d'avoir un truc comme ça sur votre casier. . .	}{	Dans ce cas, je serai forcé de rapporter un 453, désobéissance à l'ordre direct d'un agent de sécurité. Croyez-moi, vous pourriez regretter d'avoir un truc comme ça sur votre casier. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Oh, la façon dont vous avez dit ça, c'était tellement. . . autoritaire.	}{	Oh, la façon dont vous avez dit ça, c'était tellement. . . autoritaire.	}{	111	}{	F_Seduction 2 & G.Chunk_Insult == 0 and G.Jeanette_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Ouvrez la porte.	}{	Ouvrez la porte.	}{	101	}{	Dominate 1 & G.Jeanette_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Votre esprit va se briser sur l'étendue vide de votre vie.	}{	Votre esprit va se briser sur l'étendue vide de votre vie.	}{	231	}{	Dementation 1 & G.Jeanette_Quest == 1	}{	npc.pl_criminal_attack = 2; npc.pl_investigate = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	Vous n'avez pas entendu l'appel ?	}{	Vous n'avez pas entendu l'appel ?	}{	41	}{	Persuasion 2 & not IsClan(pc,"Malkavian") and (G.Chunk_Insult == 0 and G.Jeanette_Quest == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	Ouvrez la porte.	}{	Ouvrez la porte.	}{	101	}{	Thaumaturgy 1 & G.Patch_Plus == 1 and G.Jeanette_Quest == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	Vous avez juste à me laisser entrer.	}{	Vous avez juste à me laisser entrer.	}{	101	}{	Presence 1 & G.Patch_Plus == 1 and G.Jeanette_Quest == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	Vous avez un pistolet ?	}{	Vous avez un pistolet ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	Je voulais juste savoir. Je m'en vais. Au revoir.	}{	Je voulais juste savoir. Je m'en vais. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Du calme, mec. J'ai une licence d'arme de Classe C - qui me permet de porter un objet contondant de contact pour me défendre. Mais quand les choses sont un peu trop violentes dans le coin, je sors ma pétoire personnelle. Pas la peine d'en arriver là, hein ?	}{	Du calme, miss. J'ai une licence d'arme de Classe C - qui me permet de porter un objet contondant de contact pour me défendre. Mais quand les choses sont un peu trop violentes dans le coin, je sors ma pétoire personnelle. Pas la peine d'en arriver là, hein ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Chunk_Insult = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Montre-moi ton engin, mon gros.	}{	Montre-moi ton engin, mon gros.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	Je voulais juste savoir. Je m'en vais. Au revoir.	}{	Je voulais juste savoir. Je m'en vais. Au revoir.	}{	0	}{	G.Chunk_Befriend == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	Je ne veux pas vous faire de peine. Mais le directeur est méchant avec moi, ces derniers temps.	}{	Je ne veux pas vous faire de peine. Mais le directeur est méchant avec moi, ces derniers temps.	}{	71	}{	Persuasion 3 & (IsClan(pc,"Ventrue") or IsClan (pc,"Toreador")) and (G.Chunk_Befriend == 1 and G.Jeanette_Quest == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	Je ne veux pas vous faire de peine. Mais le directeur est méchant avec moi, ces derniers temps.	}{	Je ne veux pas vous faire de peine. Mais le directeur est méchant avec moi, ces derniers temps.	}{	61	}{	Persuasion 3 & not IsClan(pc,"Ventrue") and not IsClan (pc,"Toreador") and G.Chunk_Befriend == 1 and G.Jeanette_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	Il doit y avoir un malentendu. Je vais vous donner le temps de vous calmer.	}{	Il doit y avoir un malentendu. Je vais vous donner le temps de vous calmer.	}{	0	}{	G.Chunk_Befriend > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Hein ? De quoi parlez-vous, m'sieur ?	}{	Hein ? De quoi parlez-vous, miss ?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Chunk_Befriend = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	L'un des artistes a énervé le directeur et je dois retirer ses oeuvres de l'exposition.	}{	L'un des artistes a énervé le directeur et je dois retirer ses oeuvres de l'exposition.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Et qui êtes-vous, m'sieur ? 	}{	Et qui êtes-vous, miss ? 	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	Whisper("Deluded")	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Ben, je suis assistante du directeur du musée. . . Vous pouvez me laisser entrer ?	}{	Ben, je suis assistante du directeur du musée. . . Vous pouvez me laisser entrer ?	}{	61	}{	(not IsClan(pc,"Ventrue")) and (not IsClan (pc,"Toreador"))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Ben, je suis assistante du directeur du musée. . . Vous pouvez me laisser entrer ?	}{	Ben, je suis assistante du directeur du musée. . . Vous pouvez me laisser entrer ?	}{	71	}{	IsClan(pc,"Ventrue") or IsClan (pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	Qu'est-ce que ça peut vous faire ? Laissez-moi entrer, à la fin !	}{	Qu'est-ce que ça peut vous faire ? Laissez-moi entrer, à la fin !	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	Je suis le mec qui va vous planter le nez dans le mur si vous ne me laissez pas entrer.	}{	Je suis la fille qui va vous planter le nez dans le mur si vous ne me laissez pas entrer.	}{	31	}{	Intimidate 2	}{	G.Chunk_Befriend = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Ouais ? Et ça paie bien ? En vous regardant, je dirais que non. Y a pas de honte. Dans la classe ouvrière, il faut se tenir les coudes. Si vous avez une promotion, pensez à acheter un café et une pâtisserie pour ce bon vieux Chunk, OK ?	}{	Ouais ? Et ça paie bien ? En vous regardant, je dirais que non. Y a pas de honte. Dans la classe ouvrière, il faut se tenir les coudes. Si vous avez une promotion, pensez à acheter un café et une pâtisserie pour ce bon vieux Chunk, OK ?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Ca marche.	}{	Ca marche.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Ouais ? Et ça paie bien ? En vous regardant, je dirais que oui. Moi, j'ai la sécurité dans le sang. Mon père, mon grand-père, mes six frères, ouais, on fait respecter la loi. Une vraie famille de Magnums. . .	}{	Ouais ? Et ça paie bien ? En vous regardant, je dirais que oui. Moi, j'ai la sécurité dans le sang. Mon père, mon grand-père, mes six frères, ouais, on fait respecter la loi. Une vraie famille de Magnums. . .	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	C'est bien, mais j'ai un travail à faire.	}{	C'est bien, mais j'ai un travail à faire.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Bon, écoutez, je vous laisse entrer. Mais je vais soumettre un 62-A en rentrant au PC sécurité après ma ronde. . . Je voulais vous le dire.	}{	Bon, écoutez, je vous laisse entrer. Mais je vais soumettre un 62-A en rentrant au PC sécurité après ma ronde. . . Je voulais vous le dire.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Chunk_Befriend = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	C'est normal. Pendant que vous y êtes, rajoutez un 45-B, pour ne rien risquer. . .	}{	C'est normal. Pendant que vous y êtes, rajoutez un 45-B, pour ne rien risquer. . .	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	C'est ça. Au revoir.	}{	C'est ça. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	[Perdu, mais ne voulant pas le montrer.]Euh, ouais, c'est ça. Qui ne ferait pas un 45-B. Tout le monde connaît le 45-B. Bon, allez-y, et passez une bonne nuit.	}{	[Perdu, mais ne voulant pas le montrer.]Euh, ouais, c'est ça. Qui ne ferait pas un 45-B. Tout le monde connaît le 45-B. Bon, allez-y, et passez une bonne nuit.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	A plus tard.	}{	A plus tard.	}{	0	}{	}{	npc.pl_criminal_attack = 2; npc.pl_investigate = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Euh oui, je peux faire ça. Par ici.	}{	Euh oui, je peux faire ça. Par ici.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Chunk_Dominated = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	[très fier, remontant sa ceinture]Eh bien mec. . . C'est une réaction naturelle face à quelqu'un qui est dans ma position. Le risque, le prestige, l'autorité. . . Ce n'est pas facile, mais il faut que quelqu'un le fasse.	}{	[très fier, remontant sa ceinture]Eh bien miss. . . C'est une réaction naturelle face à quelqu'un qui est dans ma position. Le risque, le prestige, l'autorité. . . Ce n'est pas facile, mais il faut que quelqu'un le fasse.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Chunk_Befriend = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Je peux vous dire un secret ? Le pouvoir, ça m'excite beaucoup.	}{	Je peux vous dire un secret ? Le pouvoir, ça m'excite beaucoup.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, oui, oui. . . ces paroles me font vibrer de partout.	}
+{	113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	[Un peu surpris, mais jouant le jeu]Euh. . . ouais, j'ai l'habitude qu'on me dise ça. C'est l'uniforme, vous savez. Les femmes sont fascinées par l'uniforme.	}{	[Un peu surpris, mais jouant le jeu]Euh. . . ouais, j'ai l'habitude qu'on me dise ça. C'est l'uniforme, vous savez. Les femmes sont fascinées par l'uniforme.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Oh. . . Continuez de parler.	}{	Oh. . . Continuez de parler.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les taches de chocolat sont des médailles d'honneur. . .	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	[Nerveux]Eh bien, euh. . . malheureusement, si nous continuons de discuter comme ça, c'est une atteinte au code 613. Vous savez quoi. . . On devrait aller s'acheter un pain au chocolat tous les deux après le boulot. Je connais une boulangerie pas mal. . .	}{	[Nerveux]Eh bien, euh. . . malheureusement, si nous continuons de discuter comme ça, c'est une atteinte au code 613. Vous savez, on pourrait se retrouver pour grignoter après ma garde, hein ? Je connais un endroit pas loin où on mange de délicieux donuts. . .	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Chunk_Feed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Et si nous apprenions tout de suite à nous connaître un peu mieux ?	}{	Et si nous apprenions tout de suite à nous connaître un peu mieux ?	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Je serai votre donut. Murmurez-moi votre recette à l'oreille. . .	}
+{	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Euh. . . Désolé, m'sieur, parler pendant le travail, c'est 613 : conversation avec un suspect dans le cadre de la mission. Je vais vous demander de circuler, s'il vous plaît.	}{	Euh. . . Désolé, miss, parler pendant le travail, c'est 613 : conversation avec un suspect dans le cadre de la mission. Je vais vous demander de circuler, s'il vous plaît.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	Vous n'avez pas entendu l'appel ?	}{	Vous n'avez pas entendu l'appel ?	}{	41	}{	Persuasion 2 & not IsClan(pc,"Malkavian") and (G.Chunk_Insult == 0 and G.Jeanette_Quest == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	Oh, la façon dont vous avez dit ça, c'était tellement. . . autoritaire.	}{	Oh, la façon dont vous avez dit ça, c'était tellement. . . autoritaire.	}{	111	}{	F_Seduction 2 & G.Chunk_Insult == 0 and G.Jeanette_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	Je ne veux pas vous faire de peine. Mais le directeur est méchant avec moi, ces derniers temps.	}{	Je ne veux pas vous faire de peine. Mais le directeur est méchant avec moi, ces derniers temps.	}{	71	}{	Persuasion 3 & (IsClan(pc,"Ventrue") or IsClan (pc,"Toreador")) and (G.Chunk_Befriend == 1 and G.Jeanette_Quest == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	Je ne veux pas vous faire de peine. Mais le directeur est méchant avec moi, ces derniers temps.	}{	Je ne veux pas vous faire de peine. Mais le directeur est méchant avec moi, ces derniers temps.	}{	61	}{	Persuasion 3 & not IsClan(pc,"Ventrue") and not IsClan (pc,"Toreador") and G.Chunk_Befriend == 1 and G.Jeanette_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	Ouvrez la porte.	}{	Ouvrez la porte.	}{	101	}{	Dominate 1 & G.Jeanette_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	Votre esprit va se briser sur l'étendue vide de votre vie.	}{	Votre esprit va se briser sur l'étendue vide de votre vie.	}{	231	}{	Dementation 1 & G.Jeanette_Quest == 1	}{	npc.pl_criminal_attack = 2; npc.pl_investigate = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	Pardon. Je pars tout de suite.	}{	Pardon. Je pars tout de suite.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	Et si je ne pars pas ?	}{	Et si je ne pars pas ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	[Surpris, horrifié]Eh ! Qu'est-ce que. . . Oh, le beignet ne passe pas. . . Oh, fichez le camp. [vomissements]	}{	[Surpris, horrifié]Eh ! Qu'est-ce que. . . Oh, le beignet ne passe pas. . . Oh, fichez le camp. [vomissements]	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	(Auto-Link)	}{	(Auto-Link)	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Bon. . . OK. . .	}{	Bon. . . OK. . .	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	163	}{	C'est un plaisir de travailler avec vous, m'sieur. Rappelez-vous : ne laissez jamais le vieux biscuit mou de la vie vous séparer de la crème fondante de la réussite.	}{	C'est un plaisir de travailler avec vous, miss. Rappelez-vous, ne laissez jamais le vieux biscuit mou de la vie vous séparer de la crème fondante de la réussite.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	Euh, je m'en souviendrai. Bonne nuit.	}{	Euh, je m'en souviendrai. Bonne nuit.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	[un peu en colère]Quoi que vous soyez, je vous conseille de quitter les environs immédiatement ou j'appelle des renforts. . . [pause, in petto]La vache, j'ai cru que mon coeur allait s'arrêter.	}{	[un peu en colère]Quoi que vous soyez, je vous conseille de quitter les environs immédiatement ou j'appelle des renforts. . . [pause, in petto]La vache, j'ai cru que mon coeur allait s'arrêter.	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	G.Chunk_Scared = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Eh, salut mon chou. Alors, on revient manger dans la main de son vigile en sucre ?	}{	Eh, salut mon chou. Alors, on revient manger dans la main de son vigile en sucre ?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Venez par ici, 'officier'.	}{	Venez par ici, 'officier'.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	Pas tout de suite. Mais tout à l'heure, mon petit beignet à la confiture. . .	}{	Pas tout de suite. Mais tout à l'heure, mon petit beignet à la confiture. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Et voilà. . .	}{	Et voilà. . .	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Chunk_Dominated = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	A présent, allez. . . danser. . . quelque part.	}{	A présent, allez. . . danser. . . quelque part.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	193	}{	Allez danser à l'Asylum.	}{	Allez danser à l'Asylum.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	194	}{	Partez. Faites un truc incroyable.	}{	Partez. Faites un truc incroyable.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Ah, je vois. Vous devez être en plein délire. On a oublié de prendre ses médicaments ce matin, hein ? Alors. . . Allez dans l'un des foyers pour sans-abri un peu plus loin, et ils vous donneront un sandwich au fromage et un verre de jus de fruit.	}{	Ah, je vois. Vous devez être en plein délire. On a oublié de prendre ses médicaments ce matin, hein ? Alors. . . Allez dans l'un des foyers pour sans-abri un peu plus loin, et ils vous donneront un sandwich au fromage et un verre de jus de fruit.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Votre esprit va se briser sur l'étendue vide de votre vie.	}{	Votre esprit va se briser sur l'étendue vide de votre vie.	}{	231	}{	Dementation 1 & G.Jeanette_Quest == 1	}{	npc.pl_criminal_attack = 2; npc.pl_investigate = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	203	}{	Vous êtes une sentinelle de location avec une couronne de fer blanc. . .	}{	Vous êtes une sentinelle de location avec une couronne de fer blanc. . .	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes une sentinelle de location avec une couronne de fer blanc. . .	}
+{	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Hein ? Quoi ? Qui est là ?	}{	Hein ? Quoi ? Qui est là ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	213	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Euh ouais, d'accord, si vous voulez, hein. Vous continuez un peu plus loin, jusqu'à une enseigne qui dit 'Zinzins et Cie'. [in petto]Je suis vraiment trop drôle.	}{	Euh ouais, d'accord, si vous voulez, hein. Vous continuez un peu plus loin, jusqu'à une enseigne qui dit 'Zinzins et Cie'. [in petto]Je suis vraiment trop drôle.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	Euh ouais, d'accord, si vous voulez, hein. Vous continuez un peu plus loin, jusqu'à une enseigne qui dit 'Zinzins et Cie'. [in petto]Je suis vraiment trop drôle.	}
+{	222	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	223	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Non, ce n'est pas possible. . . Je suis inutile, complètement inutile. . .	}{	Non, ce n'est pas possible. . . Je suis inutile, complètement inutile. . .	}{	#	}{	npc.SetDisposition("Sad", 3)	}{	G.Chunk_Demented = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Le gras de vos bras fera patatras. . .	}{	Le gras de vos bras fera patatras. . .	}{	0	}{	}{	FindEntityByName("dementation_sequence").BeginSequence()	}{	}{	}{	}{	}{	}{	}{	Le gras de vos bras fera patatras. . .	}
+{	233	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Le refuge est par là-bas. Maintenant laissez-moi faire mon travail.	}{	Le refuge est par là-bas. Maintenant laissez-moi faire mon travail.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	243	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	. . .	}{	. . .	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	253	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	(Starting Condition)	}{	}{	251	}{	G.Chunk_Scared == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	263	}{	(Starting Condition)	}{	}{	231	}{	G.Chunk_Demented == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	(Starting Condition)	}{	}{	163	}{	G.Chunk_Befriend == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	(Starting Condition)	}{	}{	181	}{	G.Chunk_Feed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	(Starting Condition)	}{	}{	191	}{	G.Chunk_Dominated == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	(Starting Condition)	}{	}{	151	}{	IsClan(pc, "Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	(Starting Condition)	}{	}{	241	}{	npc.times_talked > 1 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	(Starting Condition)	}{	}{	141	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

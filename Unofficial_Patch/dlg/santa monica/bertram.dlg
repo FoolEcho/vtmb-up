@@ -1,0 +1,998 @@
+{	1	}{	Regardez qui y est finalement arrivé. Vous pensiez ne jamais me trouver, hein ?	}{	Regardez qui y est finalement arrivée. Vous pensiez ne jamais me trouver, hein beauté ?	}{	#	}{	npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Vous saviez que je vous cherchais?	}{	Vous saviez que je vous cherchais?	}{	21	}{	G.Patch_Plus == 0	}{	G.Bertram_Check = 1; pc.SetQuest("Warehouse",1)	}{	}{	}{	}{	}{	}{	}{	Votre cerveau festoyait sachant que je vous cherchais?	}
+{	3	}{	Vous saviez que je vous cherchais?	}{	Vous saviez que je vous cherchais?	}{	21	}{	G.Patch_Plus == 1	}{	G.Bertram_Check = 1; pc.SetQuest("Warehouse",8)	}{	}{	}{	}{	}{	}{	}{	Votre cerveau festoyait sachant que je vous cherchais?	}
+{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Le seul et l'unique. Ne vous embarrassez pas de présentations, jeune vampire. Je sais qui vous êtes.	}{	Le seul et l'unique. Ne vous embarrassez pas de présentations, jeune vampire. Je sais qui vous êtes.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Vraiment ?	}{	Vraiment ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vraiment ?	}
+{	13	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Je suis devenu bon pour savoir quand je suis recherché.	}{	Je suis devenu bon pour savoir quand je suis recherché.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Vous êtes Bertram Tung?	}{	Vous êtes Bertram Tung?	}{	11	}{	not IsClan(pc,"Malkavian") and IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Ohh l'affreux!	}{	Ohh l'affreux!	}{	811	}{	IsClan(pc,"Malkavian") and IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	(Auto-Link)	}{	(Auto-Link)	}{	111	}{	not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Les nouvelles vont vite, par le téléphone arabe des vampires. La cour entre LaCroix et Nines Rodriguez, avec vous au milieu. . . C'est captivant. 	}{	Les nouvelles vont vite, par le téléphone arabe des vampires. La cour entre LaCroix et Nines Rodriguez, avec vous au milieu. . . C'est captivant. 	}{	#	}{	npc.SetDisposition("sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Super. Alors vous savez que j'ai survécu. . .	}{	Super. Alors vous savez que j'ai survécu. . .	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Et Vivant je suis !	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Ce n'était qu'un petit coup politique entre vampires, rien de plus. On finit par s'y habituer.	}{	Ce n'était qu'un petit coup politique entre vampires, rien de plus. On finit par s'y habituer.	}{	#	}{	npc.SetDisposition("apathy",1)	}{	G.Bertram_Feud = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Ca m'a paru assez méchant.	}{	Ca m'a paru assez méchant.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	A mes oreilles, on aurait dit un duel de démons.	}
+{	43	}{	Je pense que Therese voulait vraiment vous faire disparaître.	}{	Je pense que Therese voulait vraiment vous faire disparaître.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	La sombre fille veut votre mort.	}
+{	44	}{	Vous saviez que Jeanette et Therese étaient la même personne ?	}{	Vous saviez que Jeanette et Therese étaient la même personne ?	}{	91	}{	G.Bertram_Therette == 0	}{	}{	}{	}{	}{	}{	}{	}{	C'est vous qui avez conçu cette idée démoniaque ?	}
+{	45	}{	Très bien. J'ai besoin de votre aide, Bertram.	}{	Très bien. J'ai besoin de votre aide, Bertram.	}{	101	}{	G.Bertram_Ready == 0	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	Je cherche à tirer des questions de votre dôme bouillonnant.	}
+{	46	}{	Très bien. Je voulais vous demander quelque chose. . .	}{	Très bien. Je voulais vous demander quelque chose. . .	}{	161	}{	G.Bertram_Ready > 0	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	Je cherche à tirer des questions à partir de votre dôme bouillonnant.	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Bien sûr. Comme si les vampires et les femmes n'étaient pas assez complexes. Emprisonnez les deux dans un corps Malkavien, et attention les yeux !	}{	Bien sûr. Comme si les vampires et les femmes n'étaient pas assez complexes. Emprisonnez les deux dans un corps Malkavien, et attention les yeux !	}{	#	}{	npc.SetDisposition("anger",1)	}{	G.Bertram_Vicious = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	Vous parlez d'une dingue. . .	}{	Je pense que vous aimez les folles à lier.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je pense que l'Affreux est attiré par la Diva Folle.	}
+{	55	}{	Vous saviez que Jeanette et Therese étaient la même personne ?	}{	Vous saviez que Jeanette et Therese étaient la même personne ?	}{	91	}{	G.Bertram_Therette == 0	}{	}{	}{	}{	}{	}{	}{	}{	Saviez-vous que les deux filles de Janus partagaient la même peau ?	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	[ton neutre]Vraiment ? A présent que la Camarilla a déménagé pour Los Angeles, Therese veut le titre de Prince de Santa Monica. Elle doit me considérer comme une menace. C'est amusant, mais je m'en moque.	}{	[ton neutre]Vraiment ? A présent que la Camarilla a déménagé pour Los Angeles, Therese veut le titre de Prince de Santa Monica. Elle doit me considérer comme une menace. C'est amusant, mais je m'en moque.	}{	#	}{	npc.SetDisposition("apathy",1)	}{	G.Bertram_Vicious = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	La célébrité et le pouvoir ne vous intriguent pas ?	}{	Quel homme ne serait pas attiré par la célébrité et le pouvoir ?	}{	71	}{	IsClan(pc,"Ventrue") or IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Fort est l'appel de la célébrité et du pouvoir. . .	}
+{	63	}{	Vous ne voulez pas de ce titre ?	}{	N'êtes-vous pas fait pour ce travail ?	}{	71	}{	not IsClan(pc,"Ventrue") and not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	La tâche serait-elle trop élevée pour votre affreuseté ?	}
+{	64	}{	Saviez-vous que Jeanette et elle ne sont qu'une seule et même personne ?	}{	Saviez-vous que Jeanette et elle ne sont qu'une seule et même personne ?	}{	91	}{	G.Bertram_Therette == 0	}{	}{	}{	}{	}{	}{	}{	}{	Saviez-vous que les deux filles de Janus partagaient la même peau ?	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	Amusant. Je voulais vous demander quelque chose. . .	}{	Amusant. Je voulais vous demander quelque chose. . .	}{	161	}{	G.Bertram_Ready > 0	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Je ne voudrais pas être le prince de Terre Haute. Je laisse ces maux de têtes aux Ventrues. Et puis, il n'y a que quatre vampires dans Santa Monica, je crois. Vous parlez d'un royaume.	}{	Je ne voudrais pas être le prince de Terre Haute. Je laisse ces maux de têtes aux Ventrues. Et puis, il n'y a que quatre vampires dans Santa Monica, je crois. Vous parlez d'un royaume.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	Saviez-vous que Jeanette et elle ne sont qu'une seule et même personne ?	}{	Saviez-vous que Jeanette et elle ne sont qu'une seule et même personne ?	}{	91	}{	G.Bertram_Therette == 0	}{	}{	}{	}{	}{	}{	}{	}{	Saviez-vous que les deux filles de Janus partagaient la même peau ?	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	Amusant. Je voulais vous demander quelque chose. . .	}{	Amusant. Je voulais vous demander quelque chose. . .	}{	161	}{	G.Bertram_Ready > 0	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	Je m'en vais.	}{	Je m'en vais.	}{	511	}{	G.Bertram_Ready > 0 and G.Bertram_Map == 0 and IsClan(pc,"Nosferatu")	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	G.Bertram_Ready > 0 and G.Bertram_Map == 1	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	81	}{	Oh, vraiment ? [rires] Je ne m'inquiétais pas. Alors pourquoi vouliez-vous me trouver ? De quoi aviez-vous besoin ?	}{	Oh, vraiment ? [rires] Je ne m'inquiétais pas. Alors pourquoi vouliez-vous me trouver ? De quoi aviez-vous besoin ?	}{	#	}{	npc.SetDisposition("joy",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Je cherche l'entrepôt. . .	}{	Je cherche l'entrepôt. . .	}{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche une étrange maison entre les pots, l'Affreux !	}
+{	83	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	[pris par surprise]Euh. . . J'avais des doutes. Quel spécimen intéressant. . . Mais quelle épine à mon flanc mort. . .	}{	[pris par surprise]Euh. . . J'avais des doutes. Quel spécimen intéressant. . . Mais quelle épine à mon flanc mort. . .	}{	#	}{	npc.SetDisposition("apathy",1)	}{	G.Bertram_Therette = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Cela paraissait bien plus grave qu'une simple épine au côté.	}{	Cela paraissait bien plus grave qu'une simple épine au côté.	}{	51	}{	G.Bertram_Vicious == 0	}{	}{	}{	}{	}{	}{	}{	}{	A mes oreilles, cela rappelait plus un combat de chiens d'enfer.	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	J'ai d'autres questions. . .	}{	J'ai d'autres questions. . .	}{	161	}{	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	Je n'en doute pas. A plus tard.	}{	Je n'en doute pas. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre pèse sur d'autres domaines. Adieu.	}
+{	101	}{	Que vous faut-il ?	}{	Que vous faut-il ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	J'ai rencontré votre goule, Knox.	}{	J'ai rencontré votre goule, Knox.	}{	701	}{	G.Knox_Bertram > 0 and G.Bertram_Knox == 0	}{	G.Bertram_Knox = 1	}{	}{	}{	}{	}{	}{	}{	Je suis familier de votre goule aux oeufs d'or.	}
+{	103	}{	Qu'y a-t-il entre Therese Voerman et vous ?	}{	Qu'y a-t-il entre Therese Voerman et vous ?	}{	41	}{	G.Bertram_Feud == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	Avez-vous entendu parler du tueur en série ?	}{	Avez-vous entendu parler du tueur en série ?	}{	681	}{	pc.GetQuestState("Serial") > 0 and pc.GetQuestState("Serial") < 8 and G.Bertram_Serial == 0	}{	G.Bertram_Serial = 1	}{	}{	}{	}{	}{	}{	}{	Voyez-vous le tueur drapé d'ombre ?	}
+{	105	}{	La guerre avec la fille de Janus brûle-t-elle les lèvres de tout le monde ?	}{	La guerre avec la fille de Janus brûle-t-elle les lèvres de tout le monde ?	}{	861	}{	G.Bertram_Feud == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	J'ai quelques questions. . .	}{	J'ai quelques questions. . .	}{	161	}{	G.Bertram_Ready == 2 and G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
+{	108	}{	Rien. A plus.	}{	Rien. A plus.	}{	0	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	Rien. A plus.	}{	Rien. A plus.	}{	511	}{	G.Bertram_Ready > 0 and G.Bertram_Map == 0 and IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	Rien. A plus.	}{	Rien. A plus.	}{	0	}{	(G.Bertram_Ready == 0 or G.Bertram_Map == 1) and IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Ainsi vous êtes celui que j'attends? Hmph. quelqu'un doit avoir confiance en vous... A moins qu'il ne vous veuille hors du circuit. Hmm... Choix intéressant quoiqu'il en soit.	}{	Ainsi vous êtes celle que j'attends? Hmph. quelqu'un doit avoir confiance en vous... A moins qu'il ne vous veuille hors du circuit. Hmm... Choix intéressant quoiqu'il en soit.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Vous devez être Bertram Tung?	}{	Vous devez être Bertram Tung?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	L'affreux!	}{	L'affreux!	}{	811	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	Hmm ? Oh, n'y pensez plus. Alors, l'entrepôt. . .	}{	Hmm ? Oh, n'y pensez plus. Alors, l'entrepôt. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	(Auto-Link)	}{	(Auto-Link)	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	121	}{	Je surveille cet endroit depuis quelque temps. Le Sabbat a plusieurs humains qui travaillent nuit et jour à y transférer des choses. . . Il y a un grand coup qui se prépare.	}{	Je surveille cet endroit depuis quelque temps. Le Sabbat a plusieurs humains qui travaillent nuit et jour à y transférer des choses. . . Il y a un grand coup qui se prépare.	}{	#	}{	}{	G.Bertram_Ready = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Le Sabbat ?	}{	Le Sabbat ?	}{	611	}{	}{	}{	}{	}{	}{	}{	}{	}{	Secrets, souillure et salmigondis. . . Parlez-moi du Sabbat.	}
+{	123	}{	Rien que des humains ?	}{	Rien que des humains ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rien que des sangs chauds dans cette maison entre les pots ?	}
+{	124	}{	Bien. Mais vous pouvez m'y faire entrer ?	}{	Bien. Mais vous pouvez m'y faire entrer ?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pouvez-vous me mettre dans cette maison ?	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	A ce que j'ai vu. Les humains semblent au courant de tout, vu comme ils parlent. Je pense que la plupart ont envie d'être dans la prochaine portée de fossoyeurs. Les nazes.	}{	A ce que j'ai vu. Les humains semblent au courant de tout, vu comme ils parlent. Je pense que la plupart ont envie d'être dans la prochaine portée de fossoyeurs. Les nazes.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Ils savent qu'ils travaillent pour des vampires ?	}{	Ils savent qu'ils travaillent pour des vampires ?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Savent-ils tout de leurs maîtres sinistres ?	}
+{	133	}{	Bien. Mais vous pouvez m'y faire entrer ?	}{	Bien. Mais vous pouvez m'y faire entrer ?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pouvez-vous me mettre dans cette maison ?	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Oui. Le Sabbat aime que tout le monde sache à qui ils ont à faire. Si vous entrez et qu'il vous faut flanquer quelques raclées, dites-vous que c'est pour 'maintenir la Mascarade'.	}{	Oui. Le Sabbat aime que tout le monde sache à qui ils ont à faire. Si vous entrez et qu'il vous faut flanquer quelques raclées, dites-vous que c'est pour 'maintenir la Mascarade'.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Peut-on y entrer sans se faire repérer ?	}{	Peut-on y entrer sans se faire repérer ?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'entrer dans cette maison avec des chaussures de vent et de plumes. . .	}
+{	143	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Oui. Dites-moi quand vous voudrez y aller, et nous partirons de suite. Mais une fois sur place, je m'arrête. Il faudra aller là-bas sans moi et installer les explosifs dans le bureau du milieu pour effondrer toute la structure.	}{	Oui. Dites-moi quand vous voudrez y aller, et nous partirons de suite. Mais une fois sur place, je m'arrête. Il faudra aller là-bas sans moi et installer les explosifs dans le bureau du milieu pour effondrer toute la structure.	}{	#	}{	}{	G.Bertram_Go = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Puis-je vous poser quelques questions ?	}{	Puis-je vous poser quelques questions ?	}{	161	}{	G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	153	}{	Laissez-moi rassembler quelques affaires, d'abord. . .	}{	Laissez-moi rassembler quelques affaires, d'abord. . .	}{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes poches ont soif de nouvelles charges. . .	}
+{	154	}{	Nous pouvons partir.	}{	Nous pouvons partir.	}{	0	}{	not IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Eclairez mon chemin, votre Grandeur. . .	}
+{	155	}{	Nous pouvons partir.	}{	Nous pouvons partir.	}{	511	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 0 and pc.HasItem("item_g_astrolite")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	Nous pouvons partir.	}{	Nous pouvons partir.	}{	0	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 1 and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Quoi, par exemple ?	}{	Quoi, par exemple ?	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	J'avais quelques questions sur les clans.	}{	J'avais quelques questions sur les clans.	}{	441	}{	G.Bertram_Clans == 0	}{	G.Bertram_Clans = 1	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	163	}{	Je souhaitais en savoir plus sur les sectes.	}{	Je souhaitais en savoir plus sur les sectes.	}{	451	}{	G.Bertram_Sects == 0	}{	G.Bertram_Sects = 1	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	164	}{	J'avais quelques questions sur les clans.	}{	J'avais quelques questions sur les clans.	}{	171	}{	G.Bertram_Clans == 1	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	165	}{	Je souhaitais en savoir plus sur les sectes.	}{	Je souhaitais en savoir plus sur les sectes.	}{	191	}{	G.Bertram_Sects == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	166	}{	Je voulais en apprendre plus sur quelqu'un.	}{	Je voulais en apprendre plus sur quelqu'un.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous en savez plus que moi sur quelqu'un.	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	171	}{	Bien sûr.	}{	Bien sûr.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Parlez-moi des Brujahs.	}{	Parlez-moi des Brujahs.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tout sur les Brujahs !	}
+{	173	}{	Parlez-moi des Gangrels !	}{	Parlez-moi des Gangrels !	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Donnez-moi les grandes lignes sur les Gangrels.	}
+{	174	}{	Parlez-moi des Malkaviens.	}{	Parlez-moi des Malkaviens.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Démystifiez les Malkaviens.	}
+{	175	}{	Un autre clan. . .	}{	Un autre clan. . .	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Mhmm ?	}{	Mhmm ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Parle-moi des Nosferatus !	}{	Parle-moi des Nosferatus !	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parler des Nosferatus, l'oseras-tu ?	}
+{	183	}{	Parlez-moi des Toréadors.	}{	Parlez-moi des Toréadors.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Faites l'ombre et la lumière sur les Toréadors !	}
+{	184	}{	Parlez-moi des Tremeres.	}{	Parlez-moi des Tremeres.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi des révérés Tremeres.	}
+{	185	}{	Parlez-moi des Ventrues !	}{	Parlez-moi des Ventrues !	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ventrue et veritas !	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Ouais ?	}{	Ouais ?	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Que savez-vous sur les anarchs ?	}{	Que savez-vous sur les anarchs ?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quel avis sur les anarchs ?	}
+{	193	}{	Que pensez-vous de la Camarilla ?	}{	Que pensez-vous de la Camarilla ?	}{	941	}{	}{	}{	}{	}{	}{	}{	}{	}{	Renseignez-moi sur la Camarilla !	}
+{	194	}{	J'aimerais en savoir plus sur le Sabbat.	}{	J'aimerais en savoir plus sur le Sabbat.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Secrets, souillure et salmigondis. . . Parlez-moi du Sabbat.	}
+{	195	}{	Que savez-vous sur les Kuei-Jin ?	}{	Que savez-vous sur les Kuei-Jin ?	}{	491	}{	G.Ming_Met == 1 and G.Story_State < 90	}{	}{	}{	}{	}{	}{	}{	}{	Kuei-Jin ! Le cauchemar oriental approche !	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	201	}{	Ce sont des mécontents. Ils se font mousser en agitant la lie autour d'eux, comme si c'était difficile. Rien n'apparaît plus rapidement que le mécontentement, et c'est la seule chose qui intéresse les Brujahs. La jalousie et le mépris.	}{	Ce sont des mécontents. Ils se font mousser en agitant la lie autour d'eux, comme si c'était difficile. Rien n'apparaît plus rapidement que le mécontentement, et c'est la seule chose qui intéresse les Brujahs. La jalousie et le mépris.	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Votre tête sera-t-elle jalouse quand je collerais mon pied dans votre derrière méprisable ?	}{	Votre tête sera-t-elle jalouse quand je collerais mon pied dans votre derrière méprisable ?	}{	211	}{	IsClan(pc,"Brujah")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	203	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	204	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
+{	211	}{	Vous voyez ? Vous sortez à peine de l'Etreinte, aucune réelle attache clanique, et vous vous sentez déjà obligé de rugir et de menacer parce que je dis ce que je pense. Super, votre liberté de pensée. [moqueur] Ouais, Anarchie, c'est ça ? Pff, pauvre mec.	}{	Vous voyez ? Vous sortez à peine de l'Etreinte, aucune réelle attache clanique, et vous vous sentez déjà obligée de rugir et de menacer parce que je dis ce que je pense. Super, votre liberté de pensée. [moqueur] Ouais, Anarchie, c'est ça ? Pff, pauvre fille.	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Restons polis. Dites-moi. . .	}{	Restons polis. Dites-moi. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	213	}{	Vous allez payer pour ça, ver !	}{	Vous allez payer pour ça, ver !	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	C'est ça, vermisseau.	}{	C'est ça, vermisseau.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Ils se prennent pour des loups solitaires, des vagabonds, courant dans la campagne et hurlant à la lune. Pff, c'est du flan. Les Gangrels peuvent marcher sur deux pattes, mais ils préfèrent agir comme ça.	}{	Ils se prennent pour des loups solitaires, des vagabonds, courant dans la campagne et hurlant à la lune. Pff, c'est du flan. Les Gangrels peuvent marcher sur deux pattes, mais ils préfèrent agir comme ça.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Avez-vous choisi votre apparence ? C'est la même chose.	}{	Avez-vous choisi votre apparence ? C'est la même chose.	}{	231	}{	IsClan(pc,"Gangrel")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	223	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	224	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
+{	231	}{	Ohh, je vous ai fait de la peine, sac à puces ? Essayez de ne pas vous prendre dans la chatière en sortant, hein.	}{	Ohh, je vous ai fait de la peine, sac à puces ? Essayez de ne pas vous prendre dans la chatière en sortant, hein.	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Restons polis. Dites-moi. . .	}{	Restons polis. Dites-moi. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	233	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	J'en ai marre de vos conneries. A plus.	}{	J'en ai marre de vos conneries. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Les Malkaviens sont intéressants. Ils ont quelque chose. Apprendre à faire le tri entre leur sagesse et leurs délires peut être fatigant, et tous ne méritent pas qu'on les écoute, mais ils sont divertissants, si vous voulez mon avis.	}{	Les Malkaviens sont intéressants. Ils ont quelque chose. Apprendre à faire le tri entre leur sagesse et leurs délires peut être fatigant, et tous ne méritent pas qu'on les écoute, mais ils sont divertissants, si vous voulez mon avis.	}{	#	}{	npc.SetDisposition("sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	243	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	244	}{	Comme Therese Voerman ? Elle est gentille ?	}{	Therese Voerman est-elle vraiment gentille ?	}{	41	}{	G.Bertram_Feud == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	Amusante comme la sombre fille de Janus ?	}{	Amusante comme la sombre fille de Janus ?	}{	861	}{	G.Bertram_Feud == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	Merci pour votre temps. Au revoir.	}{	Merci pour votre temps. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
+{	251	}{	Nous, les Nosferatus, nous sommes très bons à ce que nous faisons. Personne ne dira le contraire. Si vous voulez savoir, ou trouver quelque chose, venez nous voir. Nous sommes indispensables. Ce qui est plutôt bien, pour un immortel.	}{	Nous, les Nosferatus, nous sommes très bons à ce que nous faisons. Personne ne dira le contraire. Si vous voulez savoir, ou trouver quelque chose, venez nous voir. Nous sommes indispensables. Ce qui est plutôt bien, pour un immortel.	}{	#	}{	npc.SetDisposition("fear",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Quelle chance.	}{	Quelle chance.	}{	261	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	253	}{	Vous avez de la chance.	}{	Vous avez de la chance.	}{	261	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Le destin est doux pour votre visage endiablé.	}
+{	254	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	255	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	Merci pour votre temps. Au revoir.	}{	Merci pour votre temps. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
+{	261	}{	Les Nosferatus se tiennent les coudes, mettent leurs ressources en commun. Nous faisons plus de choses qu'on pourrait le deviner. Notre toile recouvre la nuit.	}{	Les Nosferatus se tiennent les coudes, mettent leurs ressources en commun. Nous faisons plus de choses qu'on pourrait le deviner. Notre toile recouvre la nuit.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Alors, vous pourriez aider un frère qui a des ennuis ?	}{	Alors, vous pourriez aider une fille qui a des ennuis ?	}{	501	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 0	}{	G.Bertram_M = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	263	}{	Les Nosferatus font-ils partie de la Camarilla ?	}{	Les Nosferatus font-ils partie de la Camarilla ?	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les vers rampants sont-ils de la famille du bouffon ?	}
+{	264	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	265	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
+{	271	}{	Je suis loyal envers le clan, loyal envers mon primogène, et donc loyal à la Camarilla.	}{	Je suis loyal envers le clan, loyal envers mon primogène, et donc loyal à la Camarilla.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Alors, vous pourriez m'aider ? Nous sommes frères de clan. . .	}{	Alors, vous pourriez m'aider ? Nous sommes frères de clan. . .	}{	501	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 0	}{	G.Bertram_M = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	273	}{	Ce n'était pas une déclaration très enthousiaste.	}{	Ce n'était pas une déclaration très enthousiaste.	}{	371	}{	pc.charisma > 2 or pc.perception > 2 or pc.intelligence > 2 or pc.manipulation > 2	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles paraissent trop grandes pour votre bouche.	}
+{	274	}{	Vous les aimez ?	}{	Vous les aimez ?	}{	371	}{	pc.charisma < 3 and pc.perception < 3 and pc.intelligence < 3 and pc.manipulation < 3	}{	}{	}{	}{	}{	}{	}{	}{	Aimez-vous la famille du bouffon ?	}
+{	275	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	276	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
+{	281	}{	Pff. Nous ne fréquentons pas beaucoup ces jolis suceurs de sang, mais je les ai vus manipuler des gens comme des marionnettes. Admirable. Si seulement ils voulaient se bouger un peu et utiliser leur talent pour autre chose que satisfaire leur ego. . .	}{	Pff. Nous ne fréquentons pas beaucoup ces jolis suceurs de sang, mais je les ai vus manipuler des gens comme des marionnettes. Admirable. Si seulement ils voulaient se bouger un peu et utiliser leur talent pour autre chose que satisfaire leur ego. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Observation judicieuse, faite depuis l'abri d'un trou à rat.	}{	Observation judicieuse, faite depuis l'abri d'un trou à rat.	}{	291	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	284	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
+{	291	}{	Du calme Don Juan, ta langue d'argent pourrait se ternir à lécher ma peau fanée.	}{	Du calme Cléopâtre, ta langue d'argent pourrait se ternir à lécher ma peau fanée.	}{	#	}{	npc.SetDisposition("anger",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Ver repoussant. Continuons. . .	}{	Ver repoussant. Continuons. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	293	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	294	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	[méprisant]Des mages. Je n'ai aucune raison de leur faire confiance. Ils sont inquiétants, et je pense que ça leur plaît. Mais à vrai dire, je n'entends pas souvent parler des Tremeres. Il y en a quelques uns à LA, mais dans l'ensemble ils ne sont pas très nombreux.	}{	[méprisant]Des mages. Je n'ai aucune raison de leur faire confiance. Ils sont inquiétants, et je pense que ça leur plaît. Mais à vrai dire, je n'entends pas souvent parler des Tremeres. Il y en a quelques uns à LA, mais dans l'ensemble ils ne sont pas très nombreux.	}{	#	}{	npc.SetDisposition("anger",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Alors ne me faites pas confiance non plus.	}{	Alors ne me faites pas confiance non plus.	}{	311	}{	IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	303	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	304	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
+{	311	}{	Eh bien, à ce qu'on m'a dit, vous faites partie d'une fin de race.	}{	Eh bien, à ce qu'on m'a dit, vous faites partie d'une fin de race.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	C'est bon à savoir. Je voulais vous poser des questions sur un autre clan. . .	}{	C'est bon à savoir. Je voulais vous poser des questions sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	313	}{	Pourriez-vous me parler des sectes ?	}{	Pourriez-vous me parler des sectes ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	On leur casse beaucoup de sucre sur le dos. Tout le monde aime accabler les gens au pouvoir, mais quand il faut faire quelque chose, les Ventrues savent agir. Ils supportent la pression.	}{	On leur casse beaucoup de sucre sur le dos. Tout le monde aime accabler les gens au pouvoir, mais quand il faut faire quelque chose, les Ventrues savent agir. Ils supportent la pression.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Vous dites ça juste parce que je suis Ventrue ?	}{	Vous dites ça juste parce que je suis Ventrue ?	}{	331	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	323	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	324	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	325	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	A plus.	}{	Merci pour votre temps. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
+{	331	}{	C'est ça. . . Non, je parle des Ventrues puissants. Vous êtes encore trop jeune.	}{	C'est ça. . . Non, je parle des Ventrues puissants. Vous êtes encore trop jeune.	}{	#	}{	npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Tout vient à point. . . Je voulais vous interroger sur un autre clan. . .	}{	Tout vient à point. . . Je voulais vous interroger sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	333	}{	Tout à fait. Je voulais aussi que vous me parliez des sectes.	}{	Tout à fait. Je voulais aussi que vous me parliez des sectes.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	334	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	Paix.	}{	Paix.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Les anarchs. . . Je respecte ce qu'ils font, la liberté avant tout, tout ça. Mais ils se voilent la face. Partout où l'on peut avoir le moindre pouvoir, les gens sont prêts à s'entretuer. Vous pensez que c'est une création de la Camarilla ?	}{	Les anarchs. . . Je respecte ce qu'ils font, la liberté avant tout, tout ça. Mais ils se voilent la face. Partout où l'on peut avoir le moindre pouvoir, les gens sont prêts à s'entretuer. Vous pensez que c'est une création de la Camarilla ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	Que savez-vous sur Nines Rodriguez ?	}{	Que savez-vous sur Nines Rodriguez ?	}{	961	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que savez-vous sur le prince des rues ?	}
+{	343	}{	Je comprends. J'aimerais vous interroger sur les clans.	}{	Je vois ce que vous voulez dire. J'aimerais vous interroger sur les clans.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	344	}{	Je vois ce que voulez dire. Et les autres sectes ?	}{	Je comprends. Et les autres sectes ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
+{	351	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	353	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	354	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	A mon avis, le Sabbat n'a aucun sens. Ils se moquent complètement de la Mascarade, et encore plus d'eux-mêmes. Du genre : 'Eh, on va répandre l'Enfer sur Terre pour pouvoir se sentir coupable et, oups, je suis mort. Ben pourquoi ?'	}{	A mon avis, le Sabbat n'a aucun sens. Ils se moquent complètement de la Mascarade, et encore plus d'eux-mêmes. Du genre : 'Eh, on va répandre l'Enfer sur Terre pour pouvoir se sentir coupable et, oups, je suis mort. Ben pourquoi ?'	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Je voulais vous poser des questions sur un clan. . .	}{	Je voulais vous poser des questions sur un clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	363	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	364	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
+{	371	}{	Les Nosferatus sont les yeux et les oreilles de la Camarilla. Ils estiment nos services. . . Ou du moins veulent nous apaiser. Mais personne ne vient nous déranger.	}{	Les Nosferatus sont les yeux et les oreilles de la Camarilla. Ils estiment nos services. . . Ou du moins veulent nous apaiser. Mais personne ne vient nous déranger.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	Que pensez-vous du Prince LaCroix ?	}{	Que pensez-vous du Prince LaCroix ?	}{	481	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	373	}{	Emmenez-moi au prince bouffon !	}{	Emmenez-moi au prince bouffon !	}{	921	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	374	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	379	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	380	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
+{	381	}{	Les caitiff sont un genre de vampires de bas étage qui ne sait rien sur la société des vampires, ni sur leur clan. Des vampires errants. Ce que vous auriez eu toutes les chances de devenir sans l'intervention de LaCroix.	}{	Les caitiff sont un genre de vampires de bas étage qui ne sait rien sur la société des vampires, ni sur leur clan. Des vampires errants. Ce que vous auriez eu toutes les chances de devenir sans l'intervention de LaCroix.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	383	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	384	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	385	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	Je voulais vous poser des questions sur quelqu'un d'autre.	}{	Je voulais vous poser des questions sur quelqu'un d'autre.	}{	691	}{	}{	G.Bertram_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	Je voulais vous poser des questions sur un clan. . .	}{	Je voulais vous poser des questions sur un clan. . .	}{	171	}{	}{	G.Bertram_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	Je voulais parler des sectes. . .	}{	Je voulais parler des sectes. . .	}{	191	}{	}{	G.Bertram_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	A plus.	}{	A plus.	}{	0	}{	}{	G.Bertram_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	Selon la théorie, plus on s'éloigne de Caïn dans l'arbre généalogique, plus le sang est clair. Donc, si vous êtes cinquième génération, le sang est fort. Si vous êtes quinzième génération, vous êtes à peine un vampire. Un 'sang clair'.	}{	Selon la théorie, plus on s'éloigne de Caïn dans l'arbre généalogique, plus le sang est clair. Donc, si vous êtes cinquième génération, le sang est fort. Si vous êtes quinzième génération, vous êtes à peine un vampire. Un 'sang clair'.	}{	#	}{	}{	G.Bertram_Generation = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	On dirait que ce sont les fonds de tiroir. . .	}{	On dirait que ce sont les fonds de tiroir. . .	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	393	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	394	}{	Qui est Caïn ?	}{	Qui est Caïn ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	395	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	J'ai d'autres questions. . .	}{	J'ai d'autres questions. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	Hmmm, c'est bien triste. Ils sont faibles, leurs pouvoirs amoindris, la plupart sont caitiff. Ils paraissent de plus en plus nombreux. Beaucoup de vampires y voient un signe avant-coureur de la Géhenne.	}{	Hmmm, c'est bien triste. Ils sont faibles, leurs pouvoirs amoindris, la plupart sont caitiff. Ils paraissent de plus en plus nombreux. Beaucoup de vampires y voient un signe avant-coureur de la Géhenne.	}{	#	}{	}{	G.Bertram_Thin = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	La Géhenne ?	}{	La Géhenne ?	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	403	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	404	}{	Qui est Caïn ?	}{	Qui est Caïn ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	405	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	406	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	407	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	J'ai d'autres questions. . .	}{	J'ai d'autres questions. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	Géhenne : le jour de notre mort à tous. Nos ancêtres endormis s'éveilleront et amèneront la fin du monde. Beaucoup pensent que nous vivons les dernières nuits.	}{	Géhenne : le jour de notre mort à tous. Nos ancêtres endormis s'éveilleront et amèneront la fin du monde. Beaucoup pensent que nous vivons les dernières nuits.	}{	#	}{	}{	G.Bertram_Gehenna = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Qui est Caïn ?	}{	Qui est Caïn ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	413	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	414	}{	Vous avez parlé de chasseurs. De qui s'agit-il ?	}{	Vous avez parlé de chasseurs. De qui s'agit-il ?	}{	431	}{	G.Bertram_Hunters == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	J'ai d'autres questions. . .	}{	J'ai d'autres questions. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	Caïn, le tueur de frère de la Bible. Notre père à tous.	}{	Caïn, le tueur de frère de la Bible. Notre père à tous.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	Vous avez parlé de chasseurs. De qui s'agit-il ?	}{	Vous avez parlé de chasseurs. De qui s'agit-il ?	}{	431	}{	G.Bertram_Hunters == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	423	}{	Attendez. . . Vous avez parlé de la Géhenne ?	}{	Attendez. . . Vous avez parlé de la Géhenne ?	}{	411	}{	G.Bertram_Thin == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	J'ai d'autres questions. . .	}{	J'ai d'autres questions. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	Paix.	}{	Paix.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	Les chasseurs ? Des humains qui chassent les vampires. La plupart sont des demi malades qui prétendent avoir été enlevées par des OVNI. Les vrais chasseurs sont formés par des sociétés secrètes, des ordres sacrés qui existent depuis le Moyen âge. Méfiez-vous en.	}{	Les chasseurs ? Des humains qui chassent les vampires. La plupart sont des demi malades qui prétendent avoir été enlevées par des OVNI. Les vrais chasseurs sont formés par des sociétés secrètes, des ordres sacrés qui existent depuis le Moyen âge. Méfiez-vous en.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Attendez. . . Vous avez parlé de la Géhenne ?	}{	Attendez. . . Vous avez parlé de la Géhenne ?	}{	411	}{	not IsClan(pc,"Malkavian") and G.Bertram_Thin == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	433	}{	Pauvres sangs clairs et esprits maudits. . .	}{	Pauvres sangs clairs et esprits maudits. . .	}{	881	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	434	}{	Qui est Caïn ?	}{	Qui est Caïn ?	}{	421	}{	not IsClan(pc,"Malkavian") and G.Bertram_Generation == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	435	}{	Ah, Caïn ! Le Père Noir !	}{	Ah, Caïn ! Le Père Noir !	}{	911	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	436	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	J'ai d'autres questions. . .	}{	J'ai d'autres questions. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	440	}{	Paix.	}{	Paix.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	441	}{	Hmmm. Les clans ne sont que des dynasties, vous savez. Une racine commune partagée et passée du père à l'enfant.	}{	Hmmm. Les clans ne sont que des dynasties, vous savez. Une racine commune partagée et passée du père à l'enfant.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	Parlez-moi des Brujahs.	}{	Parlez-moi des Brujahs.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tout sur les Brujahs !	}
+{	443	}{	Parlez-moi des Gangrels !	}{	Parlez-moi des Gangrels !	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Donnez-moi les grandes lignes sur les Gangrels.	}
+{	444	}{	Parlez-moi des Malkaviens.	}{	Parlez-moi des Malkaviens.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Démystifiez les Malkaviens.	}
+{	445	}{	Un autre clan. . .	}{	Un autre clan. . .	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	446	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Bien sûr, petit. Après tout, c'est la guerre, dehors. Vous devriez savoir tout ce qu'il y a à savoir sur les factions en présence.	}{	Bien sûr, ma belle. Après tout, c'est la guerre, dehors. Vous devriez savoir tout ce qu'il y a à savoir sur les factions en présence.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Que savez-vous sur les anarchs ?	}{	Que savez-vous sur les anarchs ?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quel avis sur les anarchs ?	}
+{	453	}{	Que pensez-vous de la Camarilla ?	}{	Que pensez-vous de la Camarilla ?	}{	941	}{	}{	}{	}{	}{	}{	}{	}{	}{	Renseignez-moi sur la Camarilla !	}
+{	454	}{	J'aimerais en savoir plus sur le Sabbat.	}{	J'aimerais en savoir plus sur le Sabbat.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Secrets, souillure et salmigondis. . . Parlez-moi du Sabbat.	}
+{	455	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	461	}{	Vous voulez partir ?	}{	Vous voulez partir ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	A mon retour, j'aurai quelques questions à vous poser. C'est parti. . .	}{	A mon retour, j'aurai quelques questions à vous poser. C'est parti. . .	}{	511	}{	G.Bertram_Map == 0 and IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	463	}{	A mon retour, j'aurai quelques questions à vous poser. C'est parti. . .	}{	A mon retour, j'aurai quelques questions à vous poser. C'est parti. . .	}{	0	}{	G.Bertram_Map == 1 and IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	464	}{	J'aurai d'autres questions à vous poser à mon retour. Allons-y.	}{	J'aurai d'autres questions à vous poser à mon retour. Allons-y.	}{	0	}{	not IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Emmenez-moi, l'Affreux.	}
+{	465	}{	Pas encore. Je reviens tout de suite. A plus.	}{	Pas encore. Je reviens tout de suite. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je dois d'abord récupérer des choses. Je reviendrai plus tard. . .	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	473	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	474	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Que puis-je dire ? C'est lui le chef, maintenant.	}{	Que puis-je dire ? C'est lui le chef, maintenant.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	483	}{	Oui ? Qu'est-ce que vous pouvez me dire sur ce type qui a décapité mon père ?	}{	Oui ? Qu'est-ce que vous pouvez me dire sur ce type qui a décapité mon père ?	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	484	}{	Je voulais vous poser une question sur quelqu'un d'autre. . .	}{	Je voulais vous poser une question sur quelqu'un d'autre. . .	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	485	}{	J'ai d'autres questions. . .	}{	J'ai d'autres questions. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Un peu. Ils ont envahi la Californie il y a quelques années. Ils ont flanqué une dérouillée aux anarchs. Heureusement pour eux, la Camarilla est arrivée à ce moment là. Avec un peu de chance, nous allons nous organiser et repousser les Kuei-Jin.	}{	Un peu. Ils ont envahi la Californie il y a quelques années. Ils ont flanqué une dérouillée aux anarchs. Heureusement pour eux, la Camarilla est arrivée à ce moment là. Avec un peu de chance, nous allons nous organiser et repousser les Kuei-Jin.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	Je comprends. J'aimerais vous interroger sur les clans.	}{	Je vois ce que vous voulez dire. J'aimerais vous interroger sur les clans.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	493	}{	OK. Et les autres sectes ?	}{	OK. Et les autres sectes ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	494	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	495	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	500	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	501	}{	[réfléchit]Pfff. Oui, pourquoi pas ?	}{	[réfléchit]Pfff. Oui, pourquoi pas ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	(Auto-Link)	}{	(Auto-Link)	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	503	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	504	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	505	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	Tenez, prenez cette carte. Utilisez-la dans les égouts. Vous ne pourrez jamais utiliser des transports en public, avec un visage comme le vôtre. Habituez-vous à courir dans. . . bref. J'aurai sans doute besoin de votre jeunesse, Nosferatu.	}{	Tenez, prenez cette carte. Utilisez-la dans les égouts. Vous ne pourrez jamais utiliser des transports en public, avec un visage comme le vôtre. Habituez-vous à courir dans. . . bref. J'aurai sans doute besoin de votre jeunesse, Nosferatu.	}{	#	}{	}{	G.Bertram_Map = 1; pc.GiveItem("item_g_sewerbook_1")	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	Merci. Peut-être. . .	}{	Merci. Peut-être. . .	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	513	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	514	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	515	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	516	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	517	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	520	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	521	}{	[mécontent]Hmm, bon d'accord. Revenez quand il sera temps, mais ne traînez pas trop. Ce n'est pas quelque chose qu'on a prévu pour se plier à votre emploi du temps.	}{	[mécontent]Hmm, bon d'accord. Revenez quand il sera temps, mais ne traînez pas trop. Ce n'est pas quelque chose qu'on a prévu pour se plier à votre emploi du temps.	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	Promis.	}{	Promis.	}{	511	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	523	}{	Promis.	}{	Promis.	}{	0	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	524	}{	Si vous voulez que je le fasse, ce sera au moment que je choisirai.	}{	Si vous voulez que je le fasse, ce sera au moment que je choisirai.	}{	511	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	525	}{	Si vous voulez que je le fasse, ce sera au moment que je choisirai.	}{	Si vous voulez que je le fasse, ce sera au moment que je choisirai.	}{	0	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	526	}{	C'est ça. Au revoir.	}{	C'est ça. Au revoir.	}{	0	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Content que vous soyez là. Il paraît que vous en avez beaucoup fait, ces derniers temps. . . Intéressant. J'espérais que vous pourriez me rendre un petit service. Un petit oiseau m'a dit que vous erriez dans les Clapiers. Vous y retournez bientôt ?	}{	Content que vous soyez là. Il paraît que vous en avez beaucoup fait, ces derniers temps. . . Intéressant. J'espérais que vous pourriez me rendre un petit service. Un petit oiseau m'a dit que vous erriez dans les Clapiers. Vous y retournez bientôt ?	}{	#	}{	npc.SetDisposition("joy",1)	}{	G.CD_Quest = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	Peut-être. Que vous faut-il ?	}{	Peut-être. Que vous faut-il ?	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez ! Mon ombre pourrait une fois de plus tomber sur ces murs, oui. . .	}
+{	533	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	534	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	536	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	Il y a là-bas un CD de données dont j'ai très besoin. Il paraît qu'on l'a perdu. Trouvez-le moi et je vous apprendrai un truc ou deux. Des trucs qui pourraient être très pratiques pour vous, on dirait.	}{	Il y a là-bas un CD de données dont j'ai très besoin. Il paraît qu'on l'a perdu. Trouvez-le moi et je vous apprendrai un truc ou deux. Des trucs qui pourraient être très pratiques pour vous, on dirait.	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Ca me va. J'essaierai de le trouver.	}{	Ca me va. J'essaierai de le trouver.	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherchais cette Rome.	}
+{	543	}{	Je n'ai pas le temps, excusez-moi.	}{	Je n'ai pas le temps, excusez-moi.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non. J'ai encore moins de temps que de santé mentale. . .	}
+{	544	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	545	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	546	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	547	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	548	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	[mécontent]Hmm. Je ne m'attendais pas à cela. Je pensais que vous bondiriez sur cette chance d'apprendre auprès d'un ancien.	}{	[mécontent]Hmm. Je ne m'attendais pas à cela. Je pensais que vous bondiriez sur cette chance d'apprendre auprès d'un ancien.	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	Vous avez raison. D'accord, je m'en occupe.	}{	Vous avez raison. D'accord, je m'en occupe.	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherchais cette Rome.	}
+{	553	}{	Ca ne me dit rien. . .	}{	Ca ne me dit rien. . .	}{	601	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pardon, ce n'est pas mon gobelet d'Earl Grey. . .	}
+{	554	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	555	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	556	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	558	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	Hmmm, bon, bon. Rendez-vous au quartier des Clapiers et trouvez ce CD. Ne demandez pas autour de vous, j'ai déjà embêté tout le monde avec ça. Trouvez-le et rapportez-le moi.	}{	Hmmm, bon, bon. Rendez-vous au quartier des Clapiers et trouvez ce CD. Ne demandez pas autour de vous, j'ai déjà embêté tout le monde avec ça. Trouvez-le et rapportez-le moi.	}{	#	}{	npc.SetDisposition("sad",2)	}{	G.Bertram_RAM = 1; pc.SetQuest("BertramCD", 1)	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	Je l'ai, le voici.	}{	Je l'ai, le voici.	}{	591	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_bertrams_cd")	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 2); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Fait. Acceptez ce tribut de silicone, l'Affreux.	}
+{	563	}{	Je l'ai, le voici.	}{	Je l'ai, le voici.	}{	591	}{	G.Patch_Plus == 0 and pc.HasItem("item_g_bertrams_cd")	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Fait. Acceptez ce tribut de silicone, l'Affreux.	}
+{	564	}{	J'ai d'autres questions. . .	}{	J'ai d'autres questions. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
+{	565	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	566	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	571	}{	Ahhh, déjà de retour ? Avez-vous eu l'occasion de trouver mon CD ?	}{	Ahhh, déjà de retour ? Avez-vous eu l'occasion de trouver mon CD ?	}{	#	}{	npc.SetDisposition("sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	Oui. Tenez, le voilà.	}{	Oui. Tenez, le voilà.	}{	591	}{	pc.HasItem("item_g_bertrams_cd") and pc.GetQuestState("BertramCD") == 2	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Oui. Acceptez ce tribut de silicone, votre grandeur.	}
+{	573	}{	Je l'ai, le voici.	}{	Je l'ai, le voici.	}{	591	}{	G.Patch_Plus == 0 and pc.HasItem("item_g_bertrams_cd") and pc.GetQuestState("BertramCD") == 1	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Fait. Acceptez ce tribut de silicone, l'Affreux.	}
+{	574	}{	Je l'ai, le voici.	}{	Je l'ai, le voici.	}{	591	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_bertrams_cd") and pc.GetQuestState("BertramCD") == 1	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 2); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Fait. Acceptez ce tribut de silicone, l'Affreux.	}
+{	575	}{	Pas encore, je regrette.	}{	Pas encore, je regrette.	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas trouvé le chemin qui mène à cette Rome. . .	}
+{	576	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	577	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	Eh bien, ouvrez les yeux. Il pourrait être n'importe où, en fait.	}{	Eh bien, ouvrez les yeux. Il pourrait être n'importe où, en fait.	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	Puis-je vous poser quelques questions ?	}{	Puis-je vous poser quelques questions ?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
+{	583	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	584	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	585	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	586	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	587	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	590	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne supporte plus votre pus et vos pustules. Adieu.	}
+{	591	}{	Hmmm, excellent. Bien écoutez-moi, jeune vampire. Et prenez des notes. . .	}{	Hmmm, excellent. Bien écoutez-moi, jeune vampire. Et prenez des notes. . .	}{	#	}{	npc.SetDisposition("joy",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	Ouah ! Vous maîtrisez l'informatique ! Je peux vous poser quelques questions ?	}{	Ouah ! Vous maîtrisez l'informatique ! Je peux vous poser quelques questions ?	}{	161	}{	pc.computers < 5	}{	G.Bertram_RAM = 2; pc.BumpStat("computer", 1)	}{	}{	}{	}{	}{	}{	}{	Bits et bytes bouillonnent dans mon cerveau. Il me faut davantage de données.	}
+{	593	}{	BON SANG ! Eh, vous en savez des tonnes sur les ordinateurs ! Merci ! A plus.	}{	BON SANG ! Eh, vous en savez des tonnes sur les ordinateurs ! Merci ! A plus.	}{	0	}{	pc.computers < 5	}{	G.Bertram_RAM = 2; pc.BumpStat("computer", 1)	}{	}{	}{	}{	}{	}{	}{	Hein ? Ah ! Votre connaissance de la boîte binaire est incroyable !	}
+{	594	}{	Pas le temps, j'y vais.	}{	Pas le temps, j'y vais.	}{	0	}{	pc.computers == 5	}{	G.Bertram_RAM = 2	}{	}{	}{	}{	}{	}{	}{	Bits et bytes bouillonnent dans mon cerveau. 0, 1, 0, 1, j'y vais.	}
+{	595	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	596	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	597	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	598	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	599	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	600	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	601	}{	Très bien.	}{	Très bien.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	(Auto-Link)	}{	(Auto-Link)	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	603	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	604	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	605	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	Le Sabbat - ce que vous êtes jeune. . . Alors voilà : nous sommes tous des monstres, que ça nous plaise ou non. Je ne vais pas dire que le Sabbat est maléfique, puisqu'il n'y a aucun gentil dans cette histoire.	}{	Le Sabbat - ce que vous êtes jeune. . . Alors voilà : nous sommes tous des monstres, que ça nous plaise ou non. Je ne vais pas dire que le Sabbat est maléfique, puisqu'il n'y a aucun gentil dans cette histoire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	(Auto-Link)	}{	(Auto-Link)	}{	621	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	613	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	614	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	615	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	616	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	617	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	618	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	619	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	620	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	Mais le Sabbat, ils glorifient leur nature monstrueuse. Ils refusent de la cacher, et font tout leur possible pour la montrer. Ils sont aussi idiots et imprudents. Ils ont la durée de vie moyenne d'un papillon.	}{	Mais le Sabbat, ils glorifient leur nature monstrueuse. Ils refusent de la cacher, et font tout leur possible pour la montrer. Ils sont aussi idiots et imprudents. Ils ont la durée de vie moyenne d'un papillon.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	Qu'en est-il des humains ?	}{	Qu'en est-il des humains ?	}{	131	}{	G.Bertram_Goodjob == 0	}{	}{	}{	}{	}{	}{	}{	}{	Qu'en est-il des hommes impuissants ?	}
+{	623	}{	Vous pouvez me faire entrer dans l'entrepôt ?	}{	Vous pouvez me faire entrer dans l'entrepôt ?	}{	151	}{	G.Bertram_Goodjob == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous pouvez me faire entrer dans la maison entre les pots ?	}
+{	624	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	625	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	626	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	627	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	628	}{	J'ai encore quelques questions pour vous.	}{	J'ai encore quelques questions pour vous.	}{	101	}{	G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
+{	629	}{	A plus.	}{	A plus.	}{	661	}{	G.Bertram_Goodjob == 1 and G.Story_State < 10	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	630	}{	A plus.	}{	A plus.	}{	0	}{	G.Bertram_Goodjob == 1 and G.Story_State >= 10	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à quelqu'un qui est déjà parti.	}
+{	631	}{	Beau travail, petit. J'ai senti cette explosion jusqu'ici. Et tout le monde en parle. Ha, les mecs du Sabbat vont être furieux, ce soir. Hé hé hé.	}{	Beau travail, ma belle. J'ai senti cette explosion jusqu'ici. Et tout le monde en parle. Ha, les mecs du Sabbat vont être furieux, ce soir. Hé hé hé.	}{	#	}{	npc.SetDisposition("joy",3)	}{	G.Bertram_Goodjob = 1; pc.SetQuest("Warehouse",7)	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	Merci. Connaissez-vous un dénommé Beckett ?	}{	Merci. Connaissez-vous un dénommé Beckett ?	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	Connaissez-vous Beckett, le noble sauvage ?	}
+{	633	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	634	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	635	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	636	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	637	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	638	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	640	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	641	}{	Beckett ? J'en ai entendu parler. Pourquoi ?	}{	Beckett ? J'en ai entendu parler. Pourquoi ?	}{	#	}{	npc.SetDisposition("apathy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	Je lui ai parlé.	}{	Je lui ai parlé.	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nous avons devisé.	}
+{	643	}{	J'ai entendu dire qu'il était en ville.	}{	J'ai entendu dire qu'il était en ville.	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les sombres voix m'ont dit qu'il était proche. . .	}
+{	644	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	645	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	646	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	647	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	648	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	650	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	651	}{	Vraiment ? Pff. . . Il doit y avoir un gros coup si Lui est en ville.	}{	Vraiment ? Pff. . . Il doit y avoir un gros coup si Lui est en ville.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	652	}{	(Auto-Link)	}{	(Auto-Link)	}{	653	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	653	}{	Beckett est une sorte d'historien. Il a découvert plus de légendes des vampires que n'importe qui. C'est tout ce qu'il fait, chercher la vérité derrière notre. . . condition. 	}{	Beckett est une sorte d'historien. Il a découvert plus de légendes des vampires que n'importe qui. C'est tout ce qu'il fait, chercher la vérité derrière notre. . . condition. 	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	654	}{	Hmmm. Bertram. . . J'ai quelques questions importantes à vous poser. . .	}{	Hmmm. Bertram. . . J'ai quelques questions importantes à vous poser. . .	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
+{	655	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	656	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	657	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	658	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	659	}{	Je m'en vais, Bertram. Paix.	}{	Je m'en vais, Bertram. Paix.	}{	0	}{	G.Story_State >= 10	}{	}{	}{	}{	}{	}{	}{	}{	Nul n'est plus affreux que vous. Adieu.	}
+{	660	}{	Je m'en vais, Bertram. Paix.	}{	Je m'en vais, Bertram. Paix.	}{	661	}{	G.Story_State < 10	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes délicieusement affreux. Adieu.	}
+{	661	}{	Vous devriez retourner en ville. Le Prince LaCroix sera ravi d'entendre parler de cette victoire.	}{	Vous devriez retourner en ville. Le Prince LaCroix sera ravi d'entendre parler de cette victoire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	663	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	664	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	665	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	666	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	667	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	668	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	669	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	670	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	671	}{	Il est la main de fer de LaCroix. Personne ne 'connaît' le shérif à part LaCroix. Personne ne connaît son nom. Il y a beaucoup de rumeurs à son sujet. Il paraîtrait que LaCroix l'a ramené d'Afrique il y a plus d'un siècle. Apparemment, ils font du bon boulot ensemble.	}{	Il est la main de fer de LaCroix. Personne ne 'connaît' le shérif à part LaCroix. Personne ne connaît son nom. Il y a beaucoup de rumeurs à son sujet. Il paraîtrait que LaCroix l'a ramené d'Afrique il y a plus d'un siècle. Apparemment, ils font du bon boulot ensemble.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	672	}{	Je voulais vous poser des questions sur quelqu'un d'autre.	}{	Je voulais vous poser des questions sur quelqu'un d'autre.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	673	}{	J'ai d'autres questions. . .	}{	J'ai d'autres questions. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	674	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	675	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	676	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	678	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	679	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	680	}{	Je m'en vais.	}{	Je m'en vais.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	681	}{	Ces meurtres sont bien l'oeuvre d'un vampire. Sans doute un Caitiff qui se venge de ceux qui se moquaient de lui au lycée. Quand le shérif l'aura retrouvé, il va en faire un exemple.	}{	Ces meurtres sont bien l'oeuvre d'un vampire. Sans doute un Caitiff qui se venge de ceux qui se moquaient de lui au lycée. Quand le shérif l'aura retrouvé, il va en faire un exemple.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	682	}{	Caitiff ?	}{	Caitiff ?	}{	381	}{	not IsClan(pc,"Malkavian")	}{	G.Bertram_Outbound = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	683	}{	Shérif ? Ah, vous voulez parler de cet imbécile qui a coupé la tête de mon père. . .	}{	Shérif ? Ah, vous voulez parler de cet imbécile qui a coupé la tête de mon père. . .	}{	671	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	684	}{	Les caitiff, les chiens orphelins. . .	}{	Les caitiff, les chiens orphelins. . .	}{	871	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	685	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	686	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	687	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	688	}{	J'ai d'autres questions. . .	}{	J'ai d'autres questions. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
+{	689	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	690	}{	Je m'en vais.	}{	Je m'en vais.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	691	}{	Bien sûr. . .	}{	Bien sûr. . .	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	692	}{	Que pensez-vous du Prince LaCroix ?	}{	Que pensez-vous du Prince LaCroix ?	}{	481	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	693	}{	Emmenez-moi au prince bouffon !	}{	Emmenez-moi au prince bouffon !	}{	921	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	694	}{	Que pouvez-vous me dire sur Nines Rodriguez ?	}{	Que pouvez-vous me dire sur Nines Rodriguez ?	}{	961	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	695	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	696	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	697	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	698	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	699	}{	C'est nul ici. Je m'en vais.	}{	C'est nul ici. Je m'en vais.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	700	}{	C'est nul ici. Je m'en vais.	}{	C'est nul ici. Je m'en vais.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	701	}{	Je sais. Malin. Il est doué comme un chien de chasse pour suivre une piste. Je l'avais regardé travailler un moment avant de le contacter. Je ne savais pas à quel point il serait. . . content de m'aider.	}{	Je sais. Malin. Il est doué comme un chien de chasse pour suivre une piste. Je l'avais regardé travailler un moment avant de le contacter. Je ne savais pas à quel point il serait. . . content de m'aider.	}{	#	}{	npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	702	}{	Vous le saviez ?	}{	Vous le saviez ?	}{	711	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cela festoyait dans votre esprit ?	}
+{	703	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	704	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	705	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	706	}{	J'ai d'autres questions. . .	}{	J'ai d'autres questions. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
+{	707	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	708	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	709	}{	A plus.	}{	A plus.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	710	}{	A plus.	}{	A plus.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	711	}{	Je savais que cela arriverait. Je lui ai demandé de suivre vous-savez-qui pour moi. Il était inévitable que vous alliez chez elle. Je lui ai dit de vous guetter, ce qu'il devrait vous dire, tout cela. . .	}{	Je savais que cela arriverait. Je lui ai demandé de suivre vous-savez-qui pour moi. Il était inévitable que vous alliez chez elle. Je lui ai dit de vous guetter, ce qu'il devrait vous dire, tout cela. . .	}{	#	}{	npc.SetDisposition("neutral",1)	}{	G.Bertram_Plant = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	712	}{	Il n'avait vraiment pas l'air de s'attendre à me voir.	}{	Il n'avait vraiment pas l'air de s'attendre à me voir.	}{	721	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il a feint la surprise.	}
+{	713	}{	Mais il avait besoin de mon aide - j'ai tué un vampire asiatique qui le traquait. . .	}{	Mais il avait besoin de mon aide - j'ai tué un vampire asiatique qui le traquait. . .	}{	731	}{	G.Knox_Quest > 5	}{	}{	}{	}{	}{	}{	}{	}{	Mais j'ai vaincu le cauchemar asiatique à sa place.	}
+{	714	}{	Peu importe. J'ai percé Knox à jour. Il m'a tout dit sur votre plan.	}{	Peu importe. J'ai percé Knox à jour. Il m'a tout dit sur votre plan.	}{	751	}{	G.Knox_Fess == 1	}{	}{	}{	}{	}{	}{	}{	}{	La goule aux oeufs d'or a révélé ses secrets comme un enfant.	}
+{	715	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	716	}{	J'ai d'autres questions. . .	}{	J'ai d'autres questions. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
+{	717	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	718	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	719	}{	A plus.	}{	A plus.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas le temps pour de telles errances erratiques. . .	}
+{	720	}{	A plus.	}{	A plus.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	721	}{	[ricane]Allons, jeune vampire. Ne croyez pas avoir l'avantage. Quelque action que vous ferez, un vampire que vous ne connaissez pas l'a déjà prévue et a trouvé un moyen d'en profiter.	}{	[ricane]Allons, jeune vampire. Ne croyez pas avoir l'avantage. Quelque action que vous ferez, un vampire que vous ne connaissez pas l'a déjà prévue et a trouvé un moyen d'en profiter.	}{	#	}{	npc.SetDisposition("sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	722	}{	J'ai l'avantage sur vous. J'ai percé Knox à jour. Il m'a tout raconté. 	}{	J'ai l'avantage sur vous. J'ai percé Knox à jour. Il m'a tout raconté. 	}{	751	}{	G.Knox_Fess == 1	}{	}{	}{	}{	}{	}{	}{	}{	La goule aux oeufs d'or a révélé ses secrets comme un enfant.	}
+{	723	}{	Mais il avait besoin de mon aide - j'ai tué un vampire asiatique qui le traquait. . .	}{	Mais il avait besoin de mon aide - j'ai tué un vampire asiatique qui le traquait. . .	}{	731	}{	G.Knox_Quest > 5	}{	}{	}{	}{	}{	}{	}{	}{	Mais j'ai vaincu le cauchemar asiatique à sa place.	}
+{	724	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	725	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	726	}{	J'ai d'autres questions. . .	}{	J'ai d'autres questions. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
+{	727	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	728	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	729	}{	Paix.	}{	Paix.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas le temps pour de telles errances erratiques. . .	}
+{	730	}{	Paix.	}{	Paix.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	731	}{	Non, vous m'avez aidé à supprimer un espion sans me révéler ni me salir les mains [rire]. Bon acteur, ce Knox, hein ? [rire]	}{	Non, vous m'avez aidé à supprimer un espion sans me révéler ni me salir les mains [rire]. Bon acteur, ce Knox, hein ? [rire]	}{	#	}{	npc.SetDisposition("joy",3)	}{	G.Bertram_Actor = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	732	}{	Ce n'est pas très gentil.	}{	Ce n'est pas très gentil.	}{	741	}{	}{	}{	}{	}{	}{	}{	}{	}{	La tromperie est le domaine du Diable.	}
+{	733	}{	Bien joué, Bertram. Bien joué.	}{	Bien joué, Bertram. Bien joué.	}{	741	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez trompé mon cerveau. Bravo.	}
+{	734	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	735	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	736	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	737	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	738	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	739	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	740	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	741	}{	[rire]Ne le prenez pas trop mal, jeune vampire. Je ne serai pas le dernier ancien à vous arracher un service.	}{	[rire]Ne le prenez pas trop mal, ma belle. Je ne serai pas le dernier ancien à vous arracher un service.	}{	#	}{	npc.SetDisposition("joy",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	742	}{	Je voulais vous poser des questions sur quelqu'un d'autre.	}{	Je voulais vous poser des questions sur quelqu'un d'autre.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous connaissez des gens. Dites-moi tout !	}
+{	743	}{	J'ai d'autres questions. . .	}{	J'ai d'autres questions. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
+{	744	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	745	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	746	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	747	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	748	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	749	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à quelqu'un qui n'est plus là.	}
+{	750	}{	Je m'en vais.	}{	Je m'en vais.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Mon corps n'est plus là.	}
+{	751	}{	[perplexe]Hein ?	}{	[perplexe]Hein ?	}{	#	}{	npc.SetDisposition("confused",1)	}{	G.Bertram_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	752	}{	Je sais tout sur le plan que Knox et vous avez préparé pour moi.	}{	Je sais tout sur le plan que Knox et vous avez préparé pour moi.	}{	758	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	753	}{	Je sais tout sur le plan que Knox et vous avez préparé pour moi.	}{	Je sais tout sur le plan que Knox et vous avez préparé pour moi.	}{	761	}{	IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	754	}{	Je sais tout sur le plan que Knox et vous avez préparé pour moi.	}{	Je sais tout sur le plan que Knox et vous avez préparé pour moi.	}{	764	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	755	}{	Je sais tout sur le plan que Knox et vous avez préparé pour moi.	}{	Je sais tout sur le plan que Knox et vous avez préparé pour moi.	}{	767	}{	IsClan(pc,"Brujah") or IsClan(pc,"Gangrel") or IsClan(pc,"Malkavian") or IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Votre projet m'a été révélé.	}
+{	756	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	757	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	758	}{	[un peu gêné]Pff. Satané sang de Ventrue. Il faut toujours que vous contrôliez tout, hein ?	}{	[un peu gêné]Pff. Satané sang de Ventrue. Il faut toujours que vous contrôliez tout, hein ?	}{	#	}{	npc.SetDisposition("disgust",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	759	}{	Ne vous inquiétez pas, je l'ai fait quand même.	}{	Ne vous inquiétez pas, je l'ai fait quand même.	}{	771	}{	G.Knox_Quest > 5	}{	pc.SetQuest("Knox Asian", 6)	}{	}{	}{	}{	}{	}{	}{	}
+{	760	}{	Bien sûr. Ne vous inquiétez pas, je ne dirai à personne que vous vous êtes fait avoir.	}{	Bien sûr. Ne vous inquiétez pas, je ne dirai à personne que vous vous êtes fait avoir.	}{	781	}{	G.Knox_Quest < 6	}{	pc.SetQuest("Knox Asian", 5)	}{	}{	}{	}{	}{	}{	}{	}
+{	761	}{	[contrarié]Sales Tremeres ! Emmerdeurs de mages voleurs de sang. Heureusement que votre race est en train de disparaître. 	}{	[contrarié]Sales Tremeres ! Emmerdeurs de mages voleurs de sang. Heureusement que votre race est en train de disparaître. 	}{	#	}{	npc.SetDisposition("disgust",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	762	}{	Ne vous inquiétez pas, je l'ai fait quand même.	}{	Ne vous inquiétez pas, je l'ai fait quand même.	}{	781	}{	G.Knox_Quest > 5	}{	pc.SetQuest("Knox Asian", 6)	}{	}{	}{	}{	}{	}{	}{	}
+{	763	}{	Ne recommencez jamais un truc pareil, et je ne dirai à personne que je vous ai battu.	}{	Ne recommencez jamais un truc pareil, et je ne dirai à personne que je vous ai battu.	}{	781	}{	G.Knox_Quest < 6	}{	pc.SetQuest("Knox Asian", 5)	}{	}{	}{	}{	}{	}{	}{	}
+{	764	}{	[rire lent, montant]Bien joué mon garçon ! Tu fais la fierté du clan, mon frère !	}{	[rire lent, montant]Bien joué ma fille ! Tu fais la fierté du clan, ma soeur !	}{	#	}{	npc.SetDisposition("joy",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	765	}{	J'ai tué le vampire asiatique.	}{	J'ai tué le vampire asiatique.	}{	771	}{	G.Knox_Quest > 5	}{	pc.SetQuest("Knox Asian", 6)	}{	}{	}{	}{	}{	}{	}{	}
+{	766	}{	Je voulais vous poser une autre question. . .	}{	Je voulais vous poser une autre question. . .	}{	161	}{	G.Knox_Quest < 6	}{	pc.SetQuest("Knox Asian", 5)	}{	}{	}{	}{	}{	}{	}{	}
+{	767	}{	[énervé, vient de se faire rouler]Pff. Eh bien, savourez ce plaisir, jeune vampire.	}{	[énervé, vient de se faire rouler]Pff. Eh bien, savourez ce plaisir, jeune vampire.	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	768	}{	Ne vous inquiétez pas, je l'ai fait quand même.	}{	Ne vous inquiétez pas, je l'ai fait quand même.	}{	771	}{	G.Knox_Quest > 5	}{	pc.SetQuest("Knox Asian", 6)	}{	}{	}{	}{	}{	}{	}{	Ce fut accompli, malgré vos manigances.	}
+{	769	}{	Ne vous inquiétez pas, je ne dirai à personne que je vous ai battu.	}{	Ne vous inquiétez pas, je ne dirai à personne que je vous ai battu.	}{	781	}{	G.Knox_Quest < 6	}{	pc.SetQuest("Knox Asian", 5)	}{	}{	}{	}{	}{	}{	}{	Mes lèvres sont scellées sur la puissance supérieure de mon intellect.	}
+{	770	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	771	}{	Merci. Vous m'avez aidé à supprimer un espion sans me révéler. . . ni me salir les mains. [rire]	}{	Merci. Vous m'avez aidé à supprimer un espion sans me révéler. . . ni me salir les mains. [rire]	}{	#	}{	npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	772	}{	Je voulais vous poser des questions sur quelqu'un d'autre.	}{	Je voulais vous poser des questions sur quelqu'un d'autre.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous connaissez des gens. Dites-moi tout !	}
+{	773	}{	Super. Je voulais vous poser une autre question.	}{	Super. Je voulais vous poser une autre question.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
+{	774	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	775	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	776	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	777	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	778	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	779	}{	Merci. Au revoir.	}{	Merci. Au revoir.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à quelqu'un qui n'est plus là.	}
+{	780	}{	Merci. Au revoir.	}{	Merci. Au revoir.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Mon corps n'est plus là.	}
+{	781	}{	[pas très reconnaissant]Merci. . . Enfin, je crois.	}{	[pas très reconnaissant]Merci. . . Enfin, je crois.	}{	#	}{	npc.SetDisposition("anger",3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	782	}{	Je voulais vous poser des questions sur quelqu'un d'autre.	}{	Je voulais vous poser des questions sur quelqu'un d'autre.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous connaissez des gens. Dites-moi tout !	}
+{	783	}{	Super. Je voulais vous poser une autre question.	}{	Super. Je voulais vous poser une autre question.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
+{	784	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	785	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	786	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	787	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	788	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	789	}{	A plus.	}{	A plus.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à quelqu'un qui n'est plus là.	}
+{	790	}{	A plus.	}{	A plus.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Mon corps n'est plus là.	}
+{	791	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	792	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	793	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	794	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	795	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	796	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	797	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	798	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	799	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	800	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	801	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	802	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	803	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	804	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	805	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	806	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	807	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	808	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	809	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	810	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	811	}{	L'Affreux ? Eh, j'ai peut-être une sale tête, mais il vaudrait mieux faire preuve de respect, un peu. Parce que je peux vous écraser comme un insecte si vous m'agacez, compris ?	}{	L'Affreux ? Eh, j'ai peut-être une sale tête, mais il vaudrait mieux faire preuve de respect, un peu. Parce que je peux vous écraser comme un insecte si vous m'agacez, compris ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	812	}{	Non ! Votre méchanceté m'a été montrée par votre goule aux oeufs d'or !	}{	Non ! Votre méchanceté m'a été montrée par votre goule aux oeufs d'or !	}{	821	}{	G.Knox_Ghoul == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	813	}{	Le monde m'est révélé même quand je suis aveugle.	}{	Le monde m'est révélé même quand je suis aveugle.	}{	831	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	814	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	815	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	816	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	817	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	818	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	819	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	820	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	821	}{	Ah, bordel. Ainsi vous avez rencontré Knox, enfant des Malkaviens ! La conversation a dû être édifiante. Pas un neurone normal à vous deux. Bah. . .	}{	Ah, bordel. Ainsi vous avez rencontré Knox, enfant des Malkaviens ! La conversation a dû être édifiante. Pas un neurone normal à vous deux. Bah. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	822	}{	Bertram Tung ! L'Affreux !	}{	Bertram Tung ! L'Affreux !	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	823	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	824	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	825	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	826	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	827	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	828	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	829	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	830	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	831	}{	Ah, bon sang. Un enfant des Malkaviens ! Vous comprendrez sans doute ce dont vous parlez dans un mois ou deux. J'ai horreur de parler aux membres de votre clan. . . J'ai toujours l'impression que vous répondez aux questions que je n'ai pas posées. Enfin. . .	}{	Ah, bon sang. Un enfant des Malkaviens ! Vous comprendrez sans doute ce dont vous parlez dans un mois ou deux. J'ai horreur de parler aux membres de votre clan. . . J'ai toujours l'impression que vous répondez aux questions que je n'ai pas posées. Enfin. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	832	}{	Bertram Tung ! L'Affreux !	}{	Bertram Tung ! L'Affreux !	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	833	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	834	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	835	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	836	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	837	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	838	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	839	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	840	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	841	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	842	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	843	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	844	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	845	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	846	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	847	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	848	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	849	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	850	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	851	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	852	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	853	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	854	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	855	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	856	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	857	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	858	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	859	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	860	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	861	}{	La fille de Janus ? Que. . . Oh, Janus. Le dieu aux deux visages. Vous parlez de Therese Voerman. Bon sang, ce que les Malkaviens sont tordus. Enfin, ce n'était qu'une petite jeunette qui voulait faire de la politique chez les vampires, rien de plus. On s'habitue à ce genre de chose. . .	}{	La fille de Janus ? Que. . . Oh, Janus. Le dieu aux deux visages. Vous parlez de Therese Voerman. Bon sang, ce que les Malkaviens sont tordus. Enfin, ce n'était qu'une petite jeunette qui voulait faire de la politique chez les vampires, rien de plus. On s'habitue à ce genre de chose. . .	}{	#	}{	npc.SetDisposition("apathy",1)	}{	G.Bertram_Feud = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	862	}{	A mes oreilles ça sonnait comme un diabolique combat de chiens.	}{	A mes oreilles ça sonnait comme un diabolique combat de chiens.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	863	}{	La sombre fille de Janus voulait vous faire plonger dans les eaux sombres.	}{	La sombre fille de Janus voulait vous faire plonger dans les eaux sombres.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	864	}{	Saviez-vous que les filles de Janus partageaient la même peau ?	}{	Saviez-vous que les filles de Janus partageaient la même peau ?	}{	91	}{	G.Bertram_Therette == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	865	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}{	101	}{	G.Bertram_Ready == 0	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	866	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}{	161	}{	G.Bertram_Ready > 0	}{	G.Bertram_Feud = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	867	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	868	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	869	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	870	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	871	}{	Hé. Quasiment. Les caitiff sont un genre de vampires de bas étage qui ne sait rien sur la société des vampires, ni sur leur clan. Des vampires errants. Ce que vous auriez eu toutes les chances de devenir sans l'intervention de LaCroix.	}{	Hé. Quasiment. Les caitiff sont un genre de vampires de bas étage qui ne sait rien sur la société des vampires, ni sur leur clan. Des vampires errants. Ce que vous auriez eu toutes les chances de devenir sans l'intervention de LaCroix.	}{	#	}{	npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	872	}{	Sang clair, vie courte. . .	}{	Sang clair, vie courte. . .	}{	881	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	873	}{	Apprenez m'en plus sur les clans. . .	}{	Apprenez m'en plus sur les clans. . .	}{	171	}{	}{	G.Bertram_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	874	}{	Pourriez-vous m'éclairer sur les sectes ?	}{	Pourriez-vous m'éclairer sur les sectes ?	}{	191	}{	}{	G.Bertram_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	875	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	876	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	877	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	878	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	879	}{	Mes nombreux esprits vous remercient. Adieu.	}{	Mes nombreux esprits vous remercient. Adieu.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	G.Bertram_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	880	}{	Tous mes esprits vous disent merci. Adieu.	}{	Tous mes esprits vous disent merci. Adieu.	}{	0	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	G.Bertram_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	881	}{	Vous l'avez dit. Selon la théorie, plus on s'éloigne de Caïn dans l'arbre généalogique, plus le sang est clair. Donc, si vous êtes cinquième génération, le sang est fort. Si vous êtes quinzième génération, vous êtes à peine un vampire. Un 'sang clair'.	}{	Vous l'avez dit. Selon la théorie, plus on s'éloigne de Caïn dans l'arbre généalogique, plus le sang est clair. Donc, si vous êtes cinquième génération, le sang est fort. Si vous êtes quinzième génération, vous êtes à peine un vampire. Un 'sang clair'.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	882	}{	Sang clair, à peine visible. Et pourtant, leur ombre est longue. . .	}{	Sang clair, à peine visible. Et pourtant, leur ombre est longue. . .	}{	891	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	883	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	884	}{	Caïn ? Vous parlez de l'Invisible !	}{	Caïn ? Vous parlez de l'Invisible !	}{	911	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	885	}{	Parlez-moi des chasseurs, les démons de Dieu. . .	}{	Parlez-moi des chasseurs, les démons de Dieu. . .	}{	431	}{	G.Bertram_Hunters == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	886	}{	Puis-je fouiller votre matière grise ?	}{	Puis-je fouiller votre matière grise ?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	887	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	888	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	889	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	890	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	891	}{	Une ombre longue ? Ah oui, je comprends. Satanés Malkaviens avec votre intuition. La plupart des jeunes vampires ignorent tout de la Géhenne.	}{	Une ombre longue ? Ah oui, je comprends. Satanés Malkaviens avec votre intuition. La plupart des jeunes vampires ignorent tout de la Géhenne.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	892	}{	Géhenne ! La chute de l'ombre éternelle. . .	}{	Géhenne ! La chute de l'ombre éternelle. . .	}{	901	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	893	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	894	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	895	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	896	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	897	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	898	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	899	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	900	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	901	}{	Vous ne savez pas le plus beau. La Géhenne, le jour où nous mourrons tous. Nos ancêtres endormis se relèveront pour provoquer la fin du monde. Beaucoup pensent que nous vivons les dernières nuits.	}{	Vous ne savez pas le plus beau. La Géhenne, le jour où nous mourrons tous. Nos ancêtres endormis se relèveront pour provoquer la fin du monde. Beaucoup pensent que nous vivons les dernières nuits.	}{	#	}{	}{	G.Bertram_Gehenna = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	902	}{	Caïn ? Flippant !	}{	Caïn ? Flippant !	}{	911	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	903	}{	Parlez-moi des chasseurs, des démons de Dieu. . .	}{	Parlez-moi des chasseurs, des démons de Dieu. . .	}{	431	}{	G.Bertram_Hunters == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	904	}{	Apprenez m'en plus sur les clans. . .	}{	Apprenez m'en plus sur les clans. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	905	}{	Pourriez-vous m'éclairer sur les sectes ?	}{	Pourriez-vous m'éclairer sur les sectes ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	906	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	907	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	908	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	909	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	910	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	911	}{	Oui, c'est lui. Caïn, le fratricide biblique. . . Père de tous les vampires.	}{	Oui, c'est lui. Caïn, le fratricide biblique. . . Père de tous les vampires.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	912	}{	Sangs clairs et maudits. . .	}{	Sangs clairs et maudits. . .	}{	881	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	913	}{	Ah ! La Géhenne ! La chute de l'ombre éternelle. . .	}{	Ah ! La Géhenne ! La chute de l'ombre éternelle. . .	}{	901	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	914	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	915	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	916	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	917	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	918	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	919	}{	Puis-je fouiller votre matière grise ?	}{	Puis-je fouiller votre matière grise ?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	920	}{	Je vous laisse à vos bains noirs. Adieu.	}{	Je vous laisse à vos bains noirs. Adieu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	921	}{	Bouffon ? Vous appelez LaCroix un bouffon ? Attention, jeune vampire. De toute façon, je n'ai rien à dire. C'est lui le chef. . .	}{	Bouffon ? Vous appelez LaCroix un bouffon ? Attention, jeune vampire. De toute façon, je n'ai rien à dire. C'est lui le chef. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	922	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	923	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	924	}{	Je vois quelqu'un dans mon esprit. . .	}{	Je vois quelqu'un dans mon esprit. . .	}{	691	}{	G.Bertram_PLC == 1 and G.Bertram_NR == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	925	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	926	}{	Apprenez m'en plus sur les clans. . .	}{	Apprenez m'en plus sur les clans. . .	}{	171	}{	G.Bertram_PLC == 0 and G.Bertram_NR == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	927	}{	Pourriez-vous m'éclairer sur les sectes ?	}{	Pourriez-vous m'éclairer sur les sectes ?	}{	191	}{	G.Bertram_PLC == 0 and G.Bertram_NR == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	928	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	929	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	930	}{	Nul n'est plus méchant que vous. Adieu.	}{	Nul n'est plus méchant que vous. Adieu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	931	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	932	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	933	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	934	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	935	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	936	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	937	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	938	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	939	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	940	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	941	}{	La Camarilla fonctionne. Quand on laisse aux vampires la bride sur le cou, les Caitiff se déchaînent dans les rues, les sangs clairs enfreignent la Mascarade et les chasseurs affluent. La loi et l'ordre sont les amis des vampires.	}{	La Camarilla fonctionne. Quand on laisse aux vampires la bride sur le cou, les Caitiff se déchaînent dans les rues, les sangs clairs enfreignent la Mascarade et les chasseurs affluent. La loi et l'ordre sont les amis des vampires.	}{	#	}{	}{	G.Bertram_Hunters = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	942	}{	Que pensez-vous du Prince LaCroix ?	}{	Que pensez-vous du Prince LaCroix ?	}{	481	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	943	}{	Qu'est-ce qu'un Caitiff ?	}{	Qu'est-ce qu'un Caitiff ?	}{	381	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	944	}{	Qu'entendez-vous par 'sangs clairs' ?	}{	Qu'entendez-vous par 'sangs clairs' ?	}{	391	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	945	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	946	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	947	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	948	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	949	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	950	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	951	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	952	}{	Parlez-moi du bouffon. . .	}{	Parlez-moi du bouffon. . .	}{	921	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	953	}{	Les caitiff, les chiens orphelins. . .	}{	Les caitiff, les chiens orphelins. . .	}{	871	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	954	}{	Sang clair, vie courte. . .	}{	Sang clair, vie courte. . .	}{	881	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	955	}{	Vous parliez de chasseurs...	}{	Vous parliez de chasseurs... 	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	Des chasseurs ! Des démons de Dieu. . .	}
+{	956	}{	A plus.	}{	A plus.	}{	0	}{	G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
+{	957	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	958	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	959	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	960	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	961	}{	A ce qu'on m'a dit, il est plutôt agréable, et c'est un problème. Nines Rodriguez est un type qu'on veut avoir dans son camp, et les anarchs sont de plus en plus nombreux à se rallier à lui.	}{	A ce qu'on m'a dit, il est plutôt agréable, et c'est un problème. Nines Rodriguez est un type qu'on veut avoir dans son camp, et les anarchs sont de plus en plus nombreux à se rallier à lui.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	962	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	963	}{	Je peux vous demander de me parler de quelqu'un d'autre ?	}{	Je peux vous demander de me parler de quelqu'un d'autre ?	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vois quelqu'un dans mon esprit. . .	}
+{	964	}{	Je vois ce que vous voulez dire. J'aimerais vous interroger sur les clans.	}{	Je vois ce que vous voulez dire. J'aimerais vous interroger sur les clans.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	965	}{	Je vois. Et les autres sectes. . .	}{	Je vois. Et les autres sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	966	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il n'y a pas plus affreux que vous. Adieu.	}
+{	967	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	968	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	969	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	970	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	971	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	972	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	973	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	974	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	975	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	976	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	977	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	978	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	979	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	980	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	981	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	982	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	983	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	984	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	985	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	986	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	987	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	988	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	989	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	990	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	991	}{	(Starting Condition)	}{	}{	101	}{	G.Bertram_RAM == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	992	}{	(Starting Condition)	}{	}{	571	}{	G.Bertram_RAM == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	993	}{	(Starting Condition)	}{	}{	531	}{	G.CD_Quest == 1 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	994	}{	(Starting Condition)	}{	}{	531	}{	IsClan(pc,"Nosferatu") and G.CD_Quest == 1 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	995	}{	(Starting Condition)	}{	}{	101	}{	G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	996	}{	(Starting Condition)	}{	}{	631	}{	(G.Story_State >= 5 and G.Story_State < 25) and G.Bertram_Goodjob == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	997	}{	(Starting Condition)	}{	}{	461	}{	G.Bertram_Go == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	998	}{	(Starting Condition)	}{	}{	101	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}

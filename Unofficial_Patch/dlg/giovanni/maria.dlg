@@ -1,0 +1,205 @@
+{	1	}{	[Soûle, traînante, gouailleuse]Ouais, qu'est-ce qu'il y a ?	}{	[Soûle, traînante, gouailleuse]Ouais, qu'est-ce qu'il y a ?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Maria_Drunk = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	C'est ici, chez les Giovanni ?	}{	C'est ici, chez les Giovanni ?	}{	21	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Est-ce ici que les Giovanni s'assemblent ?	}
+{	3	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Il y a une fête ici ce soir ?	}{	Il y a une fête ici ce soir ?	}{	31	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je me joindre aux festivités ?	}
+{	5	}{	Rien du tout. Au revoir.	}{	Rien du tout. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne sais pas de quoi il s'agit. Je vais demander à quelqu'un d'autre.	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Hein ? [Hoquette, commence à crier]	}{	Hein ? [Hoquette, commence à crier]	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	gio1_victorMariaFlee()	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Giovanni ? Oh, oui, c'est ici. . . Vous connais pas, vous. . . Z'êtes membre de la. . .  de la famille. . . 	}{	Giovanni ? Oh, oui, c'est ici. . . Vous connais pas, vous. . . Z'êtes membre de la. . .  de la famille. . . 	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Oui, en effet.	}{	Oui, en effet.	}{	61	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Je suis de chair et de sang. . .	}
+{	23	}{	Non. Mais j'aimerais rester quand même. Cette fête a l'air mortel.	}{	Non. Mais j'aimerais rester quand même. Cette fête a l'air mortel.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	La famille de quelqu'un. Allez, amusons-nous.	}
+{	24	}{	Je comprends. Au revoir.	}{	Je comprends. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis pas ici.	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Hein ? Oui, oh oui. . . Caviar et champagne, mon amour. Vous savez comment c'est. . . J'ai mon invitation. . . juste ici. . .	}{	Hein ? Oui, oh oui. . . Caviar et champagne, mon amour. Vous savez comment c'est. . . J'ai mon invitation. . . juste ici. . .	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Vous avez une invitation ?	}{	Vous avez une invitation ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Peut-être. Mais surtout, et vous ?	}
+{	33	}{	Je vois. Au revoir.	}{	Je vois. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Comment qui est arrivé ici ? Vous ne parlez à personne.	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	J'ai dit que j'avais une invitation ? C'est bien ce que je croyais. . . Oui, j'ai une invitation.	}{	J'ai dit que j'avais une invitation ? C'est bien ce que je croyais. . . Oui, j'ai une invitation.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Donnez-moi votre invitation.	}{	Donnez-moi votre invitation.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	POUR MOI !	}
+{	43	}{	Donnez-moi votre invitation.	}{	Donnez-moi votre invitation.	}{	81	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Si vous me donnez votre invitation, j'empêcherai le manège de tourner.	}{	Si vous me donnez votre invitation, j'empêcherai le manège de tourner.	}{	181	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	Si vous me donnez votre invitation, j'empêcherai le manège de tourner.	}
+{	45	}{	Peu importe. Au revoir.	}{	Peu importe. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis pas ici.	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Mon mari est un. . . un type super costaud alors. . . vous pouvez allez vous faire voir, mon grand.	}{	Mon mari est un. . . un type super costaud alors. . . vous pouvez allez vous faire voir, ma chère.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	G.Maria_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Vous n'auriez pas dû. . . ARR. . .	}{	Vous n'auriez pas dû. . . ARR. . .	}{	0	}{	Humanity -3	}{	gio1_panicVictorMaria(); pc.FrenzyTrigger()	}{	}{	}{	}{	}{	}{	}{	Oh ! Je ne suis plus moi-même. . . Je le sens venir. . . AHHH !	}
+{	53	}{	Ca fera très bien comme épitaphe.	}{	Ca fera très bien comme épitaphe.	}{	0	}{	}{	gio1_panicVictorMaria()	}{	}{	}{	}{	}{	}{	}{	Belles paroles pour une morte. 	}
+{	54	}{	Vous voulez dire celui qui sera bientôt feu votre mari ? L'époux de la morte ?	}{	Vous voulez dire celui qui sera bientôt feu votre mari ? L'époux de la morte ?	}{	0	}{	}{	gio1_panicVictorMaria()	}{	}{	}{	}{	}{	}{	}{	Jusqu'à ce que la mort nous sépare. . . Vous aimez ces parts ?	}
+{	55	}{	Laissez tomber. Profitez de la fête.	}{	Laissez tomber. Profitez de la fête.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	Gardez-la bien. Poivrote. 	}{	Gardez-la bien. Poivrote. 	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est l'alcool qui parle. . . Je déteste parler avec de l'alcool.	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Ah ouais ? Sacrée famille, de naissance ou par alliance. . . Z'avez une invitation avec vous ?	}{	Ah ouais ? Sacrée famille, de naissance ou par alliance. . . Z'avez une invitation avec vous ?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Non.	}{	Non.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est une bonne possibilité.	}
+{	63	}{	Oui, je l'ai. Rendez-vous à l'intérieur.	}{	Oui, je l'ai. Rendez-vous à l'intérieur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sans doute accrochée à ma veste. Faisons la course jusqu'à l'intérieur.	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Oh, ne vous inquiétez pas. Je suis sûre qu'on vous laissera rentrer. Dites-leur que vous l'avez perdue. . . Je perds des trucs tout le temps.	}{	Oh, ne vous inquiétez pas. Je suis sûre qu'on vous laissera rentrer. Dites-leur que vous l'avez perdue. . . Je perds des trucs tout le temps.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	C'est ce que je vais faire. Désolée, je ne crois pas qu'on se soit déjà rencontrés.	}{	C'est ce que je vais faire. Désolée, je ne crois pas qu'on se soit déjà rencontrées.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bonne idée. Mais qui êtes-vous ?	}
+{	73	}{	Vous avez une invitation ?	}{	Vous avez une invitation ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous utilisez la vôtre ?	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Tenez. . . Prenez ça. . .	}{	Tenez. . . Prenez ça. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Maria_Dominate = 1; G.Maria_Know = 1; pc.GiveItem("item_g_giovanni_invitation_maria")	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Merci beaucoup pour votre aide. Merci, vraiment.	}{	Merci beaucoup pour votre aide. Merci, vraiment.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Passez une bonne soirée.	}{	Passez une bonne soirée.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Où est passée cette invitation ? Oh, tant pis. . .	}{	Où est passée cette invitation ? Oh, tant pis. . .	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Taisez-vous. De toute façon, je voulais pas y aller.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Bla bla bla. . . je ne vais pas faire honte à quelqu'un. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	[Hurle de peur]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Où est l'invitation. . . Oh et puis tant pis, et si on rentrait ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Hein ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Maria. . . Maria Rossellini.	}{	Maria. . . Maria Rossellini.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	On se reverra peut-être à l'intérieur, Maria.	}{	On se reverra peut-être à l'intérieur, Maria.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	On se reverra peut-être dans une allée sombre, un jour. Ou dans cette maison. Je pars.	}
+{	173	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Ca ne tour. . . oh non. . . non. . . [commence à avoir mal au coeur] oh, il faut que ça s'arrête ! Je veux descendre. . . Ma tête. . . oh mon dieu. . . [bruits de nausée]	}{	Ca ne tour. . . oh non. . . non. . . [commence à avoir mal au coeur] oh, il faut que ça s'arrête ! Je veux descendre. . . Ma tête. . . oh mon dieu. . . [bruits de nausée]	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	G.Maria_Dominate = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Si je deviens vous, tout s'arrêtera.	}{	Si je deviens vous, tout s'arrêtera.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	Il tourne, il tourne, il ne s'arrête que si j'en ai envie.	}{	Il tourne, il tourne, il ne s'arrête que si j'en ai envie.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	TENEZ ! Prenez-la !	}{	TENEZ ! Prenez-la !	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	G.Maria_Know = 1; pc.GiveItem("item_g_giovanni_invitation_maria")	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Merci. . . Allez, fini de s'amuser, ma petite dame.	}{	Merci. . . Allez, fini de s'amuser, ma petite dame.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	193	}{	Bien. Je vous avais dit que ça s'arrêterait ? PSYCHE !	}{	Bien. Je vous avais dit que ça s'arrêterait ? PSYCHE !	}{	0	}{	}{	G.Maria_Sick = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	194	}{	Ouais. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	Oh-oh. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	Ouais ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	Quoi ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	Je ne peux pas. . . non. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	Tenez.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	(Starting Condition)	}{	}{	51	}{	G.Maria_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	203	}{	(Starting Condition)	}{	}{	91	}{	G.Maria_Dominate == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	(Starting Condition)	}{	}{	11	}{	IsClan(pc,"nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -1,0 +1,319 @@
+{	1	}{	Ah. Il semble que ces dernières nuits nous ont réunis une fois de plus. Je vois que vous avez commencé à embrasser la bête qui est en vous. Vous avez l'odeur du sang de mes frères sur les mains. Mais trêve de plaisanteries. Soyez témoin de la puissance de ma chair, maintenant transformée en réceptacle de votre destruction. Adieu jeune Caïnite.	}{		Ah. Il semble que ces dernières nuits nous ont réunis une fois de plus. Je vois que vous avez commencé à embrasser la bête qui est en vous. Vous avez l'odeur du sang de mes frères sur les mains. Mais trêve de plaisanteries. Soyez témoin de la puissance de ma chair, maintenant transformée en réceptacle de votre destruction. Adieu jeune Caïnite.	}{	#	}{	}{	G.Andrei_Library = 2; pc.GiveItem("item_w_chang_blade")	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Je vous connais, vous étiez à la casse à Santa Monica. Il est temps de mourir, monstre du Sabbat !	}{	Je vous connais, vous étiez à la casse à Santa Monica. Il est temps de mourir, monstre du Sabbat !	}{	0	}{	G.Player_Sabbat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mes yeux vous ont déjà vu auparavant, Epée de Caïn. Et maintenant, ils vous verront mourir !	}
+{	3	}{	En fait, je suis intéressé par le Sabbat moi-même. Mais me menacer ne peut avoir qu'une seule issue !	}{	En fait, je suis intéressée par le Sabbat moi-même. Mais me menacer ne peut avoir qu'une seule issue !	}{	0	}{	G.Player_Sabbat > 0	}{	}{	}{	}{	}{	}{	}{	}{	Je veux devenir moi-même Epée de Caïn, je devrais peut-être prendre votre place !	}
+{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	[renifle plusieurs fois]C'est quoi, cette odeur ?	}{	[renifle plusieurs fois]C'est quoi, cette odeur ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	[Andrei vient d'Europe de l'Est, ce serait bien qu'il ait un accent original et inquiétant. Il doit être fort mais affreux, comme une araignée mâle faisant des propositions sexuelles à sa proie. Il excelle dans la manipulation et maîtrise parfaitement toutes les situations (du moins, c'est ce qu'il veut faire croire).]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	(Auto-Link)	}{	(Auto-Link)	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Ah, bonjour jeune vampire. Je vois que votre visage n'est pas inerte, vos nerfs pas si morts, que vous ne pouvez exprimer l'étonnement. Dites-moi, mon apparence est-elle si effrayante, ou est-ce le fait que je vous connaisse qui vous fait si peur ?	}{	Ah, bonjour jeune vampire. Je vois que votre visage n'est pas inerte, vos nerfs pas si morts, que vous ne pouvez exprimer l'étonnement. Dites-moi, mon apparence est-elle si effrayante, ou est-ce le fait que je vous connaisse qui vous fait si peur ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Qu'est-ce qui se passe, ici ? Cet endroit est complètement dingue !	}{	Qu'est-ce qui se passe, ici ? Cet endroit est complètement dingue !	}{	21	}{	not IsClan(pc,"Malkavian") and not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Effrayant ? Regardez-moi mieux. . .	}{	Effrayant ? Regardez-moi mieux. . .	}{	211	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Ah ! L'épée de Caïn !	}{	Ah ! L'épée de Caïn !	}{	221	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Oh, enfant de Caïn, les scènes de ce refuge pâlissent devant mon domaine ancestral. Le confort est une coutume et tout cet artifice ne fait que me rapprocher un peu de chez moi. Ne craignez pas mes meubles, jeune vampire.	}{	Oh, enfant de Caïn, les scènes de ce refuge pâlissent devant mon domaine ancestral. Le confort est une coutume et tout cet artifice ne fait que me rapprocher un peu de chez moi. Ne craignez pas mes meubles, jeune vampire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	C'est vous qui avez fait la cassette, n'est-ce pas ?	}{	C'est vous qui avez fait la cassette, n'est-ce pas ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est vous qui avez fait cette cassette terrible ?	}
+{	23	}{	Vous savez, je suis assez fasciné par l'architecture sanguinolente. En réalité, c'est encore mieux que sur la bande !	}{	Vous savez, je suis assez fascinée par l'architecture sanguinolente. En réalité, c'est encore mieux que sur la bande !	}{	131	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Pas trop pour ceux d'entre nous en mesure de donner le don de la métamorphose, jeunot. Je sais que vous avez une froide appréciation pour l'esthétique de mes créations, mais je vois l'émerveillement et la nostalgie dans les yeux.	}{	Pas trop pour ceux d'entre nous en mesure de donner le don de la métamorphose, jeunette. Je sais que vous avez une froide appréciation pour l'esthétique de mes créations, mais je vois l'émerveillement et la nostalgie dans les yeux.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Ouais, vous voyez la nostalgie qui va vous tuer !	}{		Ouais, vous voyez la nostalgie qui va vous tuer !	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Aww, je suis déjà nostalgique de votre mort... Encore une fois !	}
+{	33	}{	Bonne observation ! Peut-être que je devrais rejoindre le Sabbat...	}{	Bonne observation ! Peut-être que je devrais rejoindre le Sabbat...	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Vous regardez à travers moi comme je le fais. Dois-je rejoindre l'épée de Caine ?	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	La révulsion est instinctive et l'instinct est un niveau puissant pour travailler vers une glorieuse réussite. La révulsion est une couleur majeure de ma palette. Je vois l'émerveillement dans vos yeux morts, vous mourez d'envie de posséder autant de pouvoir que moi.	}{	La révulsion est instinctive et l'instinct est un niveau puissant pour travailler vers une glorieuse réussite. La révulsion est une couleur majeure de ma palette. Je vois l'émerveillement dans vos yeux morts, vous mourez d'envie de posséder autant de pouvoir que moi.	}{	#	}{	Whisper("Gibberish")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Pas question, salaud. . .	}{	Pas question, salaud. . .	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous vous méprenez sur mes intentions, démon. . .	}
+{	43	}{	Vous ne savez pas qui je suis ni ce que je fais. . .	}{	Vous ne savez pas qui je suis ni ce que je fais. . .	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre est un miroir noir où vous ne pouvez plonger le regard. . .	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	Oh, je désire séparer votre tête de votre corps. . .	}{	Oh, je désire séparer votre tête de votre corps. . .	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai envie de faire rouler votre tête de lézard. . .	}
+{	46	}{	Pas vraiment ! Mais que pouvez-vous offrir ?	}{	Pas vraiment ! Mais que pouvez-vous offrir ?	}{	51	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	Que pouvez-vous nous donner ?	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Alors peut-être désirez-vous devenir quelque chose de plus. Vous avez satisfait votre nature vampirique, vous avez profité au maximum de votre puissance vampirique, et à présent la bête en vous veut encore évoluer. Et je puis vous en donner l'occasion.	}{	Alors peut-être désirez-vous devenir quelque chose de plus. Vous avez satisfait votre nature vampirique, vous avez profité au maximum de votre puissance vampirique, et à présent la bête en vous veut encore évoluer. Et je puis vous en donner l'occasion.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Si ça veut dire devenir quelque chose comme vous, jamais de la vie.	}{	Si ça veut dire devenir quelque chose comme vous, jamais de la vie.	}{	61	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Je ne désire pas ressembler à cette créature sans nom. . .	}
+{	53	}{	Ce n'est pas parce que vous avez succombé à la Bête que je. . .	}{	Ce n'est pas parce que vous avez succombé à la Bête que je. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	En vous la Bête a enfoncé ses griffes jusqu'à la garde.	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	J'ai un cadeau pour vous. Ca commence par un 'M' et ça finit par 'O-R-T'.	}{	J'ai un cadeau pour vous. Ca commence par un 'M' et ça finit par 'O-R-T'.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le passeur est venu chercher son dû, démon ! MOUREZ !	}
+{	56	}{	Qu'entendez-vous par là ?	}{	Qu'entendez-vous par là ?	}{	61	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	Que voulait-il dire que j'ai entendu ?	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Ne redoutez pas votre nature, mon enfant. Votre corps n'est pas qu'une carcasse morte, c'est une chrysalide à la splendeur bestiale. Acceptez-le. Je prendrai ce corps - cette machine mortelle et éphémère - pour en faire un engin de fureur caïnite.	}{	Ne redoutez pas votre nature, mon enfant. Votre corps n'est pas qu'une carcasse morte, c'est une chrysalide à la splendeur bestiale. Acceptez-le. Je prendrai ce corps - cette machine mortelle et éphémère - pour en faire un engin de fureur caïnite.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Vous pensez que je veux vous servir ? Dans vos rêves. . .	}{	Vous pensez que je veux vous servir ? Dans vos rêves. . .	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon cou ne portera aucune laisse, faux prophète !	}
+{	63	}{	On aurait dit une menace. Allez, c'est parti, malade.	}{	On aurait dit une menace. Allez, c'est parti, malade.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre Mort Ultime.	}
+{	64	}{	Je ne suis pas intéressé à devenir votre sculpture, mais nous pourrions encore travailler ensemble, Sabbat.	}{	Je ne suis pas intéressée à devenir votre sculpture, mais nous pourrions encore travailler ensemble, Sabbat.	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Je resterai tel que je suis, mais nous pouvons encore jouer ensemble, Epée de Caïn.	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	[vif, indigné]Vous ne pouvez rien me cacher. Je sens votre vitae et j'imagine le goût de vos viscères sur mes griffes. [renifle]Ahhh, oui, tout est dans le sang, fort et odorant. Vous ne pouvez pas le cacher, enfant.	}{	[vif, indigné]Vous ne pouvez rien me cacher. Je sens votre vitae et j'imagine le goût de vos viscères sur mes griffes. [renifle]Ahhh, oui, tout est dans le sang, fort et odorant. Vous ne pouvez pas le cacher, enfant.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Ben voyons. Pourquoi tous les membres du Sabbat que je rencontre sont-ils des fous furieux ?	}{	Ben voyons. Pourquoi tous les membres du Sabbat que je rencontre sont-ils des fous furieux ?	}{	61	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	Quoi ? Je ne sais même plus de quoi vous parlez. . .	}{	Quoi ? Je ne sais même plus de quoi vous parlez. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles ne sont plus qu'un magma de sang.	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	Gardez vos serres. Il est temps que tout cela s'arrête.	}{	Vous voulez goûter à mes viscères ? Pour notre premier rendez-vous ? Ca ne se fait pas. . .	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	La mort vient vous chercher sur ses ailes de cuir ! MOUREZ !	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Ce n'est pas pour moi mais pour le Sabbat ! La Camarilla est perdue, morte et pourrie dans l'oeuf, et ne peut être qu'un pion pour les pères. Alors que je vous parle, ils répondent à l'appel de l'ancien et cherchent à le libérer de sa torpeur.	}{	Ce n'est pas pour moi mais pour le Sabbat ! La Camarilla est perdue, morte et pourrie dans l'oeuf, et ne peut être qu'un pion pour les pères. Alors que je vous parle, ils répondent à l'appel de l'ancien et cherchent à le libérer de sa torpeur.	}{	#	}{	}{	G.Andrei_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	L'ancien ?	}{	L'ancien ?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ancien ?	}
+{	83	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Des créatures bénies ! J'ai percé leur enveloppe mortelle et extrait leur plus grande force ; [prononciation étirée]la mutabilité. J'ai attiré leurs os, tissé leur chair et lacé leurs tendons jusqu'à ce que tout vienne !	}{	Des créatures bénies ! J'ai percé leur enveloppe mortelle et extrait leur plus grande force ; [prononciation étirée]la mutabilité. J'ai attiré leurs os, tissé leur chair et lacé leurs tendons jusqu'à ce que tout vienne !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Comment avez-vous trouvé la. . . matière première ?	}{	Comment avez-vous trouvé la. . . matière première ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	D'où viennent vos bataillons sanglants ?	}
+{	93	}{	Mais ils sont très laids. . .	}{	Mais ils sont très laids. . .	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Leur apparence est affligeante. . .	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	En parlant de se lâcher. . . Vous allez mourir, malade.	}{	En parlant de se lâcher. . . Vous allez mourir, malade.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	La mort, les ombres obscures et vos cendres fumantes. MOUREZ !	}
+{	99	}{	Incroyable ! Puis-je apprendre ça si je rejoins le Sabbat ?	}{	Incroyable ! Puis-je apprendre ça si je rejoins le Sabbat ?	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Vais-je recevoir ce cadeau en devenant Epée de Caïn ?	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Les illégaux, les bâtards, les demi-sangs et les caitiff. Le fléau de notre société, humaine comme vampire. Ils ont aussi peu d'importance pour les autorités que pour moi. Alors autant réduire leur nombre.	}{	Les illégaux, les bâtards, les demi-sangs et les caitiff. Le fléau de notre société, humaine comme vampire. Ils ont aussi peu d'importance pour les autorités que pour moi. Alors autant réduire leur nombre.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Les 'machines' que vous créez sont brutales, brisées et repoussantes.	}{	Les 'machines' que vous créez sont brutales, brisées et repoussantes.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ces terribles 'machines' sont répugnantes !	}
+{	103	}{	C'est répugnant. Et eux aussi.	}{	C'est répugnant. Et eux aussi.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Leur apparence est affligeante. . .	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	Personne ne les regrettera. On dirait que je ne s'insère bien dans le Sabbat !	}{	Personne ne les regrettera. On dirait que je ne s'insère bien dans le Sabbat !	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Ils sont partis avec le vent. Je suis acéré comme l'épée de Caine!	}
+{	110	}{	Vous allez disparaître, monstre. Et c'est papa qui va se charger du travail.	}{	Vous allez disparaître, monstre. Et c'est maman qui va se charger du travail.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous allez vous faire faucher dans ma moisson de sang, démon !	}
+{	111	}{	Pour énucléer la Camarilla. J'ai investi les égouts avec mes créations. Je vais tuer les Nosferatus ou au moins les chasser de leurs cloaques. Sans ces rats pour les guider, ceux de la Camarilla seront aveugles face au Sabbat.	}{	Pour énucléer la Camarilla. J'ai investi les égouts avec mes créations. Je vais tuer les Nosferatus ou au moins les chasser de leurs cloaques. Sans ces rats pour les guider, ceux de la Camarilla seront aveugles face au Sabbat.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Ah ! Alors vous êtes l'un de ses petits merdeux du Sabbat. Et c'est ça, votre plan ?	}{	Ah ! Alors vous êtes l'un de ses petits merdeux du Sabbat. Et c'est ça, votre plan ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est vous qui avez conçu cette idée démoniaque ?	}
+{	113	}{	Le Sabbat, je suis intéressé par cela. Font-ils ce que vous leur dites ?	}{	Le Sabbat, je suis intéressée par cela. Font-ils ce que vous leur dites ?	}{	81	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	Je veux en savoir plus sur l'Epée de Caine. Suivent-ils votre tête ?	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	Je ne peux pas laisser faire ça. . .	}{	Je ne peux pas laisser faire ça. . .	}{	141	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Ce terrible plan ne pourra pas s'accomplir, faux prophète !	}
+{	120	}{	Je suis peut-être un rat, mais je vais vous botter le cul !	}{	Je suis peut-être un rat, mais je vais vous botter le cul !	}{	141	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Peut-être, mais elles sont délicieusement fonctionnelles. Enfin, il y a une élégance étonnante à ceci même, ma création la plus mercenaire.	}{	Peut-être, mais elles sont délicieusement fonctionnelles. Enfin, il y a une élégance étonnante à ceci même, ma création la plus mercenaire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	A dire vrai, vous êtes encore plus laid qu'eux.	}{	A dire vrai, vous êtes encore plus laid qu'eux.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre cruauté dépasse de loin la leur. . .	}
+{	123	}{	Cela a dû être un sacré travail de créer ces "machines".	}{	Cela a dû être un sacré travail de créer ces "machines".	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Beaucoup de boulot de construire ces "machines", non ?	}
+{	124	}{	Vous vous faites vraiment des idées. Et j'ai exactement le remède qu'il vous faut.	}{	Vous vous faites vraiment des idées. Et j'ai exactement le remède qu'il vous faut.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai un remède définitif pour votre putrescence, démon. . .	}
+{	125	}{	Vous avez raison, ils sont de petite taille mais puissants. Je les aime !	}{	Vous avez raison, ils sont de petite taille mais puissants. Je les aime !	}{	31	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	J'aime vos petits animaux de terreur !	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	[déplaisant]Ah oui, la 'cassette'. Un simple essai. Qui ne doit pas tomber dans les mains de mortels. Heureusement nous vivons dans la capitale de la tromperie et de l'illusion. C'est grâce à cette cassette que vous m'avez trouvé ? D'où vient votre désir, mon enfant ?	}{	[déplaisant]Ah oui, la 'cassette'. Un simple essai. Qui ne doit pas tomber dans les mains de mortels. Heureusement nous vivons dans la capitale de la tromperie et de l'illusion. C'est grâce à cette cassette que vous m'avez trouvé ? D'où vient votre désir, mon enfant ?	}{	#	}{	}{	G.Andrei_Tape = 1; G.Story_State = 40	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	L'envie de vous botter le train. Mais de quoi on parle ?	}{	L'envie de vous botter le train. Mais de quoi on parle ?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi hantez-vous ces collines, enfant de Caïn ?	}
+{	133	}{	Je ne sais vraiment pas. Qu'est-ce qui se passe, ici ?	}{	Je ne sais vraiment pas. Qu'est-ce qui se passe, ici ?	}{	111	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	Je suis plutôt intrigué par ça. Pourquoi avez-vous créé ces créatures ?	}{	Je suis plutôt intriguée par ça. Pourquoi avez-vous créé ces créatures ?	}{	111	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	A présent, petit chiot de la Camarilla, vous allez voir les dons que vous vous refusez. Renoncez à votre nature, et mes serviteurs vous tailleront en pièces !	}{	A présent, petit chiot de la Camarilla, vous allez voir les dons que vous vous refusez. Renoncez à votre nature, et mes serviteurs vous tailleront en pièces !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Vous l'aurez voulu. . .	}{	Vous l'aurez voulu. . .	}{	0	}{	G.Player_Sabbat == 0	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	L'ange de la mort vient pour vous, rapide et furieux !	}
+{	143	}{	Ouais, c'est ça.	}{	Ouais, c'est ça.	}{	0	}{	G.Player_Sabbat == 0 and not IsClan(pc,"Malkavian")	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	Vous n'avez pas écouté, je tiens à vous rejoindre. Ou est-ce une sorte de test ? Si oui, allez-y !	}{	Vous n'avez pas écouté, je tiens à vous rejoindre. Ou est-ce une sorte de test ? Si oui, allez-y !	}{	0	}{	G.Player_Sabbat == 1	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Oh, vous voulez tester mes forces avant de pouvoir vous rejoindre. Je gagnerai !	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Ce maudit sang des Tremeres empuantit l'air. Jeune. . . tout juste accepté dans cette race maudite qui a volé son immortalité. Dites-moi, petit, avez-vous peur ? Me craignez-vous ? Redoutez-vous tout ce que je sais de vous ?	}{	Ce maudit sang des Tremeres empuantit l'air. Jeune. . . tout juste acceptée dans cette race maudite qui a volé son immortalité. Dites-moi, mauviette, avez-vous peur ? Me craignez-vous ? Redoutez-vous tout ce que je sais de vous ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Qu'est-ce qui se passe, ici ? Cet endroit est complètement dingue !	}{	Qu'est-ce qui se passe, ici ? Cet endroit est complètement dingue !	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Il sommeille dans le Sarcophage d'Ankara ; l'un des pères dont le retour doit apporter le Jugement dernier. La Géhenne est proche et la Camarilla nous conduit tous inconsciemment vers notre chute.	}{	Il sommeille dans le Sarcophage d'Ankara ; l'un des pères dont le retour doit apporter le Jugement dernier. La Géhenne est proche et la Camarilla nous conduit tous inconsciemment vers notre chute.	}{	#	}{	}{	G.Andrei_Ancient = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Peut-être, peut-être pas. Et ces créatures ? C'est vous qui les avez faites ?	}{	Peut-être, peut-être pas. Et ces créatures ? C'est vous qui les avez faites ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ces créatures incroyables sont-elles de votre création ?	}
+{	163	}{	C'est ça. . . Vous me fatiguez. Je vais vous tuer. . .	}{	C'est ça. . . Vous me fatiguez. Je vais vous tuer. . .	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	La camarde vient vous chercher ! Je suis son incarnation !	}
+{	164	}{	Cela sonne mal ! Peut-être que je peux rejoindre le Sabbat pour empêcher cela.	}{	Cela sonne mal ! Peut-être que je peux rejoindre le Sabbat pour empêcher cela.	}{	141	}{	G.Sabbat_Side >= 2	}{	G.Player_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	Nous voulons devenir Epée de Caïn pour arrêter ce destin !	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	[reste courtois et se maîtrise, mais à peine. Légèrement plus rapide et pressant, en serrant les dents.]Je reconnais l'odeur de votre sang, jeune caïnite. Très puissant ! Encore mieux que lors de notre dernière rencontre. Je peux le sentir au-delà du flot de mes camarades tombés. Ca ne vous fait rien ?	}{	[reste courtois et se maîtrise, mais à peine. Légèrement plus rapide et pressant, en serrant les dents.]Je reconnais l'odeur de votre sang, jeune caïnite. Très puissant ! Encore mieux que lors de notre dernière rencontre. Je peux le sentir au-delà du flot de mes camarades tombés. Ca ne vous fait rien ?	}{	#	}{	}{	G.Clean_Rubble = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Je croyais vous avoir déjà tué ? Bon, cette fois je vais m'appliquer.	}{	Je croyais vous avoir déjà tué ? Bon, cette fois je vais m'appliquer.	}{	181	}{	G.Player_Sabbat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je vais à nouveau étouffer la flamme de vos maléfices. . .	}
+{	173	}{	Vous ne m'aurez pas.	}{	Vous ne m'aurez pas.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes oreilles refusent d'entendre vos diableries. . .	}
+{	174	}{	Ouais, c'est ça.	}{	Ouais, c'est ça.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes un sale monstre immonde !	}
+{	175	}{	Non, parce que vous saviez que je venais pour vous.	}{	Non, parce que vous saviez que je venais pour vous.	}{	181	}{	G.Player_Sabbat == 2	}{	}{	}{	}{	}{	}{	}{	}{	Vous vous souvenez sûrement m'avoir vu il y a seulement quelques meurtres sanglants.	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	Salutations.	}{	Salutations.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	Il semble que j'étais plus puissant que toutes vos créatures à la fin. Ainsi ai-je passé le test et puis-je rejoindre le Sabbat maintenant ?	}{	Il semble que j'étais plus puissante que toutes vos créatures à la fin. Ainsi ai-je passé le test et puis-je rejoindre le Sabbat maintenant ?	}{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	Est-ce que j'ai remporté le duel pour devenir Sword of Caine en tuant toutes vos petites machines de compagnie ?	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Marionnette ! La force de votre sang est la seule chose qui vous a apporté le salut. [rage brisant la façade]Misérable monstre sans esprit ! Votre sang est ruiné. Ruiné !	}{	Marionnette ! La force de votre sang est la seule chose qui vous a apporté le salut. [rage brisant la façade]Misérable monstre sans esprit ! Votre sang est ruiné. Ruiné !	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Ruinée qualifiera bientôt votre vie. . .	}{	Ruinée qualifiera bientôt votre vie. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	La mort vous a jugé et vous ne passez pas l'épreuve. . .	}
+{	183	}{	Que voulez-vous dire ?	}{	Que voulez-vous dire ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles sont imbibées du sang noir de votre coeur. . .	}
+{	184	}{	Marionnette ? Pour qui ? LaCroix ? Nines Rodriguez ?	}{	Marionnette ? Pour qui ? LaCroix ? Nines Rodriguez ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nul ne manipule le pantin que je suis.	}
+{	185	}{	Oui.	}{	Oui.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	Super !	}{	Super !	}{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	Heureux, heureux, heureux !	}
+{	187	}{	Que voulez-vous ?	}{	Que voulez-vous ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	LaCroix m'envoie vous tuer.	}{	LaCroix m'envoie vous tuer.	}{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis venu ici vous tuer pour le bouffon.	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Misérable, ignorant ! Vous êtes aveugle ! Le sarcophage doit être détruit !	}{	Misérable, ignorante ! Vous êtes aveugle ! Le sarcophage doit être détruit !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Dommage, c'est pas près d'arriver.	}{	Dommage, c'est pas près d'arriver.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non. Le Père Noir est parmi nous !	}
+{	193	}{	Quoi ? Que pensez-vous qu'il va se passer ?	}{	Quoi ? Que pensez-vous qu'il va se passer ?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelle crainte avez-vous de cette fable ?	}
+{	194	}{	Je reste ici. Approchez.	}{	Je reste ici. Approchez.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les portes de l'enfer vont vous accueillir.	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	Qu'avez-vous dit ?	}{Qu'avez-vous dit ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	Détendez-vous, je vais lui dire que j'ai fait le travail.	}{	Détendez-vous, je vais lui dire que j'ai fait le travail.	}{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je lui mentirai comme je l'ai toujours fait à moi-même. }
+{	199	}{	Vous m'avez bien entendu, je vais faire exactement ce qu'il a ordonné.	}{	Vous m'avez bien entendu, je vais faire exactement ce qu'il a ordonné.	}{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	Écouter et d'apprendre, je vais faire ce qu'il veut.	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Je le ferai moi-même s'il le faut. Et vous. . . vous connaîtrez la purification. C'est par le sang qu'il parle, le sang de tous ses pions ! Il faut le purifier !	}{	Je le ferai moi-même s'il le faut. Et vous. . . vous connaîtrez la purification. C'est par le sang qu'il parle, le sang de tous ses pions ! Il faut le purifier !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Eh ! Que va-t-il se passer si on ouvre le sarcophage ?	}{	Eh ! Que va-t-il se passer si on ouvre le sarcophage ?	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	A l'intérieur, un feu d'enfer ! Mourez, faux prophète !	}
+{	203	}{	Enfin. . . C'est parti. . .	}{	Enfin. . . C'est parti. . .	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Votre chemin est celui du sommeil ultime.	}
+{	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	Merci.	}{	Merci.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	Alors je vais tuer sa chienne Kuei-Jin et vous lui apporter sur un plateau pour vous !	}{	Alors je vais tuer sa chienne Kuei-Jin et lui apporter sur un plateau pour vous !	}{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	Plus tard, je vais briser sa maîtresse des miroirs et me moquer de lui pour vous!	}
+{	207	}{	Je ne peux pas vous aider pour ça.	}{	Je ne peux pas vous aider pour ça.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	Pas de problème, je le ferai seul.	}{	Pas de problème, je le ferai seul.	}{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me battrai à ma façon.	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	N'ayez pas honte de votre apparence. La Bête en nous prend différentes formes, mais toutes sont magnifiques en un sens. Et ce n'est que le début. . .	}{	N'ayez pas honte de votre apparence. La Bête en nous prend différentes formes, mais toutes sont magnifiques en un sens. Et ce n'est que le début. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	C'est vous qui avez fait la cassette, n'est-ce pas ?	}{	C'est vous qui avez fait la cassette, n'est-ce pas ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	213	}{	Le début de notre avenir ensemble ? Donc, vous avez fait la bande.	}{	Le début de notre avenir ensemble ? Donc, vous avez fait la bande.	}{	131	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	Je suis heureux.	}{	Je suis heureux.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	Pourquoi êtes-vous si taciturne aujourd'hui ?	}{	Pourquoi êtes-vous si taciturne aujourd'hui ?	}{	217	}{	}{	 }{	}{	}{	}{	}{	}{	}{	Vous n'avez pas plus de lignes à dire ?	}
+{	217	}{	Je ne sais pas.	}{	Je ne sais pas.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	Alors faisons-le !	}{	Alors faisons-le !	}{	225	}{	}{	 }{	}{	}{	}{	}{	}{	}{	Commençons, MAINTENANT !	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Ah ! Vous voyez la vérité, n'est-ce pas, enfant de Malkav ? Grâce à vos visions bestiales, vous voyez que le Sabbat est le seul et unique héritier de votre Père Noir.	}{	Ah ! Vous voyez la vérité, n'est-ce pas, enfant de Malkav ? Grâce à vos visions bestiales, vous voyez que le Sabbat est le seul et unique héritier de votre Père Noir.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Non ! Vous ne projetez pas son ombre, prophète de pacotille !	}{	Non ! Vous ne projetez pas son ombre, prophète de pacotille !	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	223	}{	Le Père Noir marche parmi nous, la balance en main. . .	}{	Le Père Noir marche parmi nous, la balance en main. . .	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	Cela pourrait être vrai. Donc, vous avez fait la bande ?	}{	Cela pourrait être vrai. Donc, vous avez fait la bande ?	}{	131	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	Une dernière chose...	}{	Une dernière chose...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	Oui ?	}{	Oui ?	}{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	Prenez ceci.	}{	Prenez ceci.	}{	#	}{	}{	pc.GiveItem("item_w_occultblade"); pc.SetQuest("Shangrila",5); G.Player_Sabbat = 3; G.Clean_Rubble = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	Je vais découper nos ennemis avec elle. }{	Je vais découper nos ennemis avec elle. }{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oh, une épée magique pour tuer nos ennemis !	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Ne me mettez pas à l'épreuve. Vous connaîtrez bientôt la sagesse et la puissance des enfants de Caïn. Votre chair sera mon instrument de destruction. . .	}{	Ne me mettez pas à l'épreuve. Vous connaîtrez bientôt la sagesse et la puissance des enfants de Caïn. Votre chair sera mon instrument de destruction. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	C'est vous qui avez fait cette horrible cassette !	}{	C'est vous qui avez fait cette horrible cassette !	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	233	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	Quoi !?!	}{	Quoi !?!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	J'ai changé d'avis, après avoir vu ce que vous avez fait à cette fille ici !	}{	J'ai changé d'avis, après avoir vu ce que vous avez fait à cette fille ici !	}{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon autre moi n'aime pas votre comportement envers la fleur sur le mur.	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Je ne crains ni son courroux ni son jugement. Pouvez-vous en dire autant, pion de la Camarilla ? Les machinations pathétiques de votre nouveau prince ne vous sauveront pas tous de la destruction. . .	}{	Je ne crains ni son courroux ni son jugement. Pouvez-vous en dire autant, pion de la Camarilla ? Les machinations pathétiques de votre nouveau prince ne vous sauveront pas tous de la destruction. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	C'est vous qui avez fait cette horrible cassette !	}{	C'est vous qui avez fait cette horrible cassette !	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	243	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	Je ne veux plus parler avec vous.	}{	Je ne veux plus parler avec vous.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	Oui, le temps de la discussion est terminée. Il est temps de mourir, monstre !	}{	Oui, le temps de la discussion est terminée. Il est temps de mourir, monstre !	}{	0	}{	}{	G.Player_Sabbat = 2	}{	}{	}{	}{	}{	}{	}{	Pas plus de discussion. Le temps de la mort est venu, faux prophète!	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Salutations.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Oui ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	253	}{	Qu'est-ce que tu veux ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	Je ne désire plus vous parler.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	Oui.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	Merci.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	Quoi ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	Qu'est-ce que vous venez de dire ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	Je ne sais pas.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Je ne peux rien faire pour vous.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Ca me fait plaisir.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	263	}{	Encore une chose. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	Prenez ça.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	Je vous enverrai un e-mail.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	[Appel d'un auditeur]Bonsoir, Deb.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	273	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	274	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	[Appel passé à la radio][Rire étrange]Eh, 'Deb', tu ne t'inquiètes jamais de la fin du monde ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	284	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	[Appel d'un auditeur][Nouveau rire étrange]Tu sais à quel point tu n'as pas d'importance ? Quand ils commenceront à dévorer le monde, tu ne seras qu'une tache de sang sur leur cape.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	293	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	294	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	[Appel passé à la radio]Il y a une étoile rouge dans le ciel nocturne. Le sang des mortels et le sang de l'éternité, tout sera dévoré. Ils arrivent. Nous vivons les dernières nuits. [déclic du téléphone qu'on raccroche]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	303	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	304	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	305	}{	...	}{	...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	Qu'est-ce qui se passe, ici ? Cet endroit est complètement dingue !	}{	Qu'est-ce qui se passe, ici ? Cet endroit est complètement dingue !	}{	21	}{	not IsClan(pc,"Malkavian") and not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	Effrayant ? Regardez-moi mieux. . .	}{	Effrayant ? Regardez-moi mieux. . .	}{	211	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	Ah ! L'épée de Caïn !	}{	Ah ! L'épée de Caïn !	}{	221	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	...	}{	...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Qu'est-ce qui se passe, ici ? Cet endroit est complètement dingue !	}{	Qu'est-ce qui se passe, ici ? Cet endroit est complètement dingue !	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	313	}{	(Starting Condition)	}{	}{	1	}{	G.Andrei_Library == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	314	}{	(Starting Condition)	}{	}{	177	}{	G.Player_Sabbat == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	(Starting Condition)	}{	}{	171	}{	G.Story_State >= 75	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	(Starting Condition)	}{	}{	311	}{	IsClan(pc,"Tremere") and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	(Starting Condition)	}{	}{	305	}{	not IsClan(pc,"Tremere") and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	(Starting Condition)	}{	}{	5	}{	IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	(Starting Condition)	}{	}{	11	}{	not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}

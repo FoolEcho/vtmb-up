@@ -1,0 +1,68 @@
+TerminalDefinition
+{
+	"screen saver"		"Si vous lisez ceci,           vous n'êtes pas MORT."		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Morgue S.M.M.C."  
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+	SubDir
+	{
+		"name"			"Cadavres"
+		"password"		"Cowbell"
+		"description"		"Cadavres en chambre froide"
+
+		Function
+		{
+			"name"		"Abobo, G"
+			"description"	"Casier 1A - 18/10/04"
+			"runtext"	"Les blessures indiquent que le sujet a été battu à mort avec une batte de base-ball."
+		}
+
+		Function
+		{
+			"name"		"Crumb, V"	// changed by wesp
+			"description"	"Casier 3A - 19/10/04"
+			"runtext"	"Sujet mort d'un arrêt cardiaque. Affaires personnelles dans chambre B."
+			"dependency"	"G.Knox_Quest == 5"	//changed by wesp
+		}
+
+		Function
+		{
+			"name"		"Jane Doe"
+			"description"	"Casier 2B - 17/10/04"
+			"runtext"	"Sujet mort de causes indéterminées. Note : le cadavre ne contient plus qu'un demi-litre de sang. Acte criminel suspecté."
+		}
+
+		Function
+		{
+			"name"		"Falz, D"
+			"description"	"Casier 5B - 18/10/04"
+			"runtext"	"Battu à mort. Je n'ai eu qu'une envie en le voyant, refermer très vite le casier."
+		}
+
+		Function
+		{
+			"name"		"Perry, D"
+			"description"	"Casier 4A -- 17/10/04"
+			"runtext"	"Sujet apparemment mort d'overdose de jambon-fromage."
+		}
+
+		Function	// added by wesp
+		{
+			"name"		"Poe, H"
+			"description"	"Casier 3B -- 22/10/04"
+			"runtext"	"Sujet mort de saignements internes. Jolie petite rousse, quel dommage."
+			"dependency"	"G.Heather_Drank == 0 and G.Story_State > 9"
+			"runscript"	"heatherSetQuest()"
+		}
+	}
+}

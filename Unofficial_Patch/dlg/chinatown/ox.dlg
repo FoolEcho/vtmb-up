@@ -1,0 +1,335 @@
+{	1	}{	[exhale la fumée]Tout le monde trouve son bonheur dans ce magasin.	}{	[exhale la fumée]Tout le monde trouve son bonheur dans ce magasin.	}{	#	}{	}{	G.Ox_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Ah oui ?	}{	Ah oui ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Youpi ?	}
+{	3	}{	Je doute que vous ayez ce que je veux, vieil homme.	}{	Je doute que vous ayez ce que je veux, vieil homme.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne pense pas que votre slogan s'applique à celui-ci.	}
+{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Tout le monde a ce qu'il mérite. . .	}{	Tout le monde a ce qu'il mérite. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Et qu'est-ce que c'est censé vouloir dire ?	}{	Et qu'est-ce que c'est censé vouloir dire ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ca n'a aucun sens.	}
+{	13	}{	Un porte-clé avec une carte de Californie, ou un Bouddha bon marché ?	}{	Un porte-clé avec une carte de Californie, ou un Bouddha bon marché ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il ne faut pas me dire des choses comme ça !	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Hé hé. . .	}{	Hé hé. . .	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	(Auto-Link)	}{	(Auto-Link)	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	[Ricane]Hmmm-mmm. . . [Exhale la fumée]	}{	[Ricane]Hmmm-mmm. . . [Exhale la fumée]	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Vous êtes un drôle de vieux bouc, vous.	}{	Vous êtes un drôle de vieux bouc, vous.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aime bien votre façon de raisonner !	}
+{	33	}{	Vous vous payez ma tête, vieil homme ?	}{	Vous vous payez ma tête, vieil homme ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Eh, le vieux, c'est moi qui fais les plaisanteries, par ici !	}
+{	34	}{	Vous commencez à me faire peur. . .	}{	Vous commencez à me faire peur. . .	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm-mmm. . . HA HA HA HA !	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Ca me rappelle une histoire. . . On demanda à un dénommé Lin de voler une émeraude pour le chef de sa bande. La pierre appartenait à un homme des triades de Hong Kong. La plupart auraient refusé un tel danger. Mais Lin était prêt à le faire. Et il l'a fait. . .	}{	Ca me rappelle une histoire. . . On demanda à un dénommé Lin de voler une émeraude pour le chef de sa bande. La pierre appartenait à un homme des triades de Hong Kong. La plupart auraient refusé un tel danger. Mais Lin était prêt à le faire. Et il l'a fait. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Oui ?	}{	Oui ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui. . .	}
+{	43	}{	Et alors ?	}{	Et alors ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Eh, je n'ai rien demandé, moi !	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Quand Lin est revenu, il ne voulait pas abandonner la pierre qu'il avait volée. Il pensait que le mal qu'il s'était donné en faisait sa propriété légitime. L'homme qui l'avait engagé ne pensait pas la même chose, ni celui à qui il l'avait prise.	}{	Quand Lin est revenu, il ne voulait pas abandonner la pierre qu'il avait volée. Il pensait que le mal qu'il s'était donné en faisait sa propriété légitime. L'homme qui l'avait engagé ne pensait pas la même chose, ni celui à qui il l'avait prise.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	(Auto-Link)	}{	(Auto-Link)	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Vous savez ce qui est arrivé à Lin ?	}{	Vous savez ce qui est arrivé à Lin ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Il a vendu l'émeraude, s'est fait beaucoup d'argent et a acheté un réseau.	}{	Il a vendu l'émeraude, s'est fait beaucoup d'argent et a acheté un réseau.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il s'est allongé et s'est transformé en montagne ?	}
+{	63	}{	Je ne sais pas, il est mort ?	}{	Je ne sais pas, il est mort ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'était sale ?	}
+{	64	}{	C'est vous, Lin ?	}{	C'est vous, Lin ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je gagne quelque chose si je réponds bien ?	}
+{	65	}{	. . .	}{	. . .	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	???	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Non. . .	}{	Non. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Auto-Link)	}{	(Auto-Link)	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Il s'est fait prendre. Un homme a récupéré sa pierre, et l'employeur de Lin n'a rien. C'est lui qui m'a raconté cette histoire en venant dans mon magasin. Malheureusement, je n'avais rien à lui vendre.	}{	Il s'est fait prendre. Un homme a récupéré sa pierre, et l'employeur de Lin n'a rien. C'est lui qui m'a raconté cette histoire en venant dans mon magasin. Malheureusement, je n'avais rien à lui vendre.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Quel intérêt ?	}{	Quel intérêt ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une histoire inutile qui ne mène nulle part, fin de la face A.	}
+{	83	}{	Et alors ?	}{	Et alors ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bonne histoire. Mais il faut plus de volants de badminton. . .	}
+{	84	}{	Mais bon sang, pourquoi est-ce que tout le monde passe son temps à me raconter des trucs inutiles ?	}{	Mais bon sang, pourquoi est-ce que tout le monde passe son temps à me raconter des trucs inutiles ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai tellement de choses à trier là dedans. . . Ca ne m'aide pas beaucoup.	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Les yeux de Lin voulaient plus que ce qu'il pouvait garder. . . Les yeux ambitieux ne sont pas en vente ici pour l'instant, malheureusement. Mais j'aurais un acheteur que ça intéresserait. Vous savez quand aura lieu la prochaine récolte d'yeux, par hasard ?	}{	Les yeux de Lin voulaient plus que ce qu'il pouvait garder. . . Les yeux ambitieux ne sont pas en vente ici pour l'instant, malheureusement. Mais j'aurais un acheteur que ça intéresserait. Vous savez quand aura lieu la prochaine récolte d'yeux, par hasard ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Une récolte d'yeux ?	}{	Une récolte d'yeux ?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce soir.	}
+{	93	}{	J'ai laissé mon manuel de petit agriculteur à la maison, je regrette.	}{	J'ai laissé mon manuel de petit agriculteur à la maison, je regrette.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vraiment ?	}
+{	94	}{	Ca ne m'intéresse pas. Je m'en vais.	}{	Ca ne m'intéresse pas. Je m'en vais.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Envoyez-moi une carte postale, je ne reste pas jusqu'à la fin.	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Au temps pour moi. . . Je pensais que l'histoire pourrait vous intéresser. . . [Exhale la fumée] Dites-moi si quelque chose vous accroche l'oeil. . .	}{	Au temps pour moi. . . Je pensais que l'histoire pourrait vous intéresser. . . [Exhale la fumée] Dites-moi si quelque chose vous accroche l'oeil. . .	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Mais, vous aviez une raison de me raconter cette histoire ?	}{	Mais, vous aviez une raison de me raconter cette histoire ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oh, je comprends, continuez.	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	La sortie. . . Au revoir.	}{	La sortie. . . Au revoir.	}{	0	}{	}{	G.Ox_Rude = 1	}{	}{	}{	}{	}{	}{	}{	La nuit me réserve encore tant d'endroits à visiter.	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Le corps de Lin est conservé dans un congélateur dans le magasin de nouilles du coin, il paraît. Il y a des gens qui veulent le conserver. . . intact. Mais si vous rapportez ses yeux, vous pourriez les mettre en gage ici. L'enfer des yeux énucléés, un châtiment approprié pour Lin.	}{	Le corps de Lin est conservé dans un congélateur dans la boutique de nouilles du coin, il paraît. Il y a des gens qui veulent le conserver. . . intact. Mais si vous rapportez ses yeux, vous pourriez les mettre en gage ici. L'enfer des yeux énucléés, un châtiment approprié pour Lin.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	C'est glauque. Je m'en charge.	}{	C'est glauque. Je m'en charge.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tordu. J'en suis.	}
+{	113	}{	Des yeux. . . Je n'ai encore jamais volé d'yeux. Il y a toujours une première fois.	}{	Des yeux. . . Je n'ai encore jamais volé d'yeux. Il y a toujours une première fois.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Des yeux comme des raisins, et je préfère les raisins à tous les autres fruits. 	}
+{	114	}{	Des yeux... J'en ai justement une paire.	}{	Des yeux... J'en ai justement une paire.	}{	191	}{	pc.HasItem("item_g_Eyes")	}{	pc.RemoveItem("item_g_Eyes")	}{	}{	}{	}{	}{	}{	}{	Des yeux... Une paire s'entrechoque dans ma poche. 	}
+{	115	}{	Non. . . Non, non, non, non, non. . . Non. 	}{	Non. . . Non, non, non, non, non. . . Non. 	}{	131	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Non. . . Non, non, non, non, non. . . Non.	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Je m'en doutais. [Exhale la fumée]. . . Quelle autre raison de gâcher mes mots sur les maudits. . .	}{	Je m'en doutais. [Exhale la fumée]. . . Quelle autre raison de gâcher mes mots sur les maudits. . .	}{	#	}{	}{	G.Ox_Gouge = 1; pc.SetQuest("Eyes",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Quelle est votre histoire ?	}{	Quelle est votre histoire ?	}{	171	}{	G.Ox_Story == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ces yeux ne sont pas à moi, vous les voulez ?	}
+{	123	}{	Vous vendez des armes ?	}{	Vous vendez des armes ?	}{	141	}{	G.Ox_Weapon == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'ogives nucléaires, vous auriez ça ?	}
+{	124	}{	Le mot hengeyokai vous évoque-t-il quelque chose ?	}{	Le mot hengeyokai vous évoque-t-il quelque chose ?	}{	151	}{	G.Yukie_Quest == 1 and G.Ox_Heng == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hengeyokai. . . ça boume ?	}
+{	125	}{	Je cherche quelqu'un. . . Très laid, un peu une fouine. . . Ca vous dit quelque chose ?	}{	Je cherche quelqu'un. . . Très laid, un peu une fouine. . . Ca vous dit quelque chose ?	}{	161	}{	G.Ox_Barabus == 0 and not IsClan(pc,"Nosferatu") and G.Story_State < 55	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez vu des rats d'égout ?	}
+{	126	}{	Je cherche quelqu'un. Il me ressemble beaucoup. Ca vous dit quelque chose ?	}{	Je cherche quelqu'un. Il me ressemble beaucoup. Ca vous dit quelque chose ?	}{	161	}{	G.Ox_Barabus == 0 and IsClan(pc,"Nosferatu") and G.Story_State < 55	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	Voici les yeux.	}{	Voici les yeux.	}{	191	}{	pc.HasItem("item_g_Eyes")	}{	pc.RemoveItem("item_g_Eyes")	}{	}{	}{	}{	}{	}{	}{	Ces yeux n'étaient pas les miens, finalement. Vous les voulez ?	}
+{	128	}{	Bon. . . A plus tard.	}{	Bon. . . A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	. . . Bon, je pars déjà.	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	[Exhale la fumée]Si le destin le veut, ce sera fait. Je ne peux rien dire de plus. . .	}{	[Exhale la fumée]Si le destin le veut, ce sera fait. Je ne peux rien dire de plus. . .	}{	#	}{	}{	G.Ox_Refuse = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	C'est ça, vieux fou. Vous me faites peur, et je m'en vais.	}{	C'est ça, vieux fou. Vous me faites peur, et je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je commence à sentir le lait caillé. . . Il faut que je sorte. . .	}
+{	133	}{	Vos petits enfants ne viennent pas souvent vous voir, hein ? Je pars aussi.	}{	Vos petits enfants ne viennent pas souvent vous voir, hein ? Je pars aussi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre ravissement est dérangeant, aussi m'en éloigné-je. . .	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Je vends des choses que beaucoup trouveraient cruelles. Mais des armes, non.	}{	Je vends des choses que beaucoup trouveraient cruelles. Mais des armes, non.	}{	#	}{	}{	G.Ox_Weapon = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	171	}{	G.Ox_Bio == 0	}{	}{	}{	}{	}{	}{	}{	}{	Effacez ce maaasque. . .	}
+{	143	}{	Le mot hengeyokai vous évoque-t-il quelque chose ?	}{	Le mot hengeyokai vous évoque-t-il quelque chose ?	}{	151	}{	G.Yukie_Quest == 1 and G.Ox_Heng == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hengeyokai. . . ça boume ?	}
+{	144	}{	Je cherche quelqu'un. . . Très laid, un peu une fouine. . . Ca vous dit quelque chose ?	}{	Je cherche quelqu'un. . . Très laid, un peu une fouine. . . Ca vous dit quelque chose ?	}{	161	}{	G.Ox_Barabus == 0 and not IsClan(pc,"Nosferatu") and G.Story_State < 55	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez vu des rats d'égout ?	}
+{	145	}{	Je cherche quelqu'un. Il me ressemble beaucoup. Ca vous dit quelque chose ?	}{	Je cherche quelqu'un. Il me ressemble beaucoup. Ca vous dit quelque chose ?	}{	161	}{	G.Ox_Barabus == 0 and IsClan(pc,"Nosferatu") and G.Story_State < 55	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	Alors je m'en vais.	}{	Alors je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je continue mes recherches ailleurs.	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	[Sourit légèrement]. . .Rien. . .	}{	[Sourit légèrement]. . .Rien. . .	}{	#	}{	}{	G.Ox_Heng = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	171	}{	G.Ox_Bio == 0	}{	}{	}{	}{	}{	}{	}{	}{	Effacez ce maaasque. . .	}
+{	153	}{	Vous vendez des armes ?	}{	Vous vendez des armes ?	}{	141	}{	G.Ox_Weapon == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'ogives nucléaires, vous auriez ça ?	}
+{	154	}{	Je cherche quelqu'un. . . Très laid, un peu une fouine. . . Ca vous dit quelque chose ?	}{	Je cherche quelqu'un. . . Très laid, un peu une fouine. . . Ca vous dit quelque chose ?	}{	161	}{	G.Ox_Barabus == 0 and not IsClan(pc,"Nosferatu") and G.Story_State < 55	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez vu des rats d'égout ?	}
+{	155	}{	Je cherche quelqu'un. Il me ressemble beaucoup. Ca vous dit quelque chose ?	}{	Je cherche quelqu'un. Il me ressemble beaucoup. Ca vous dit quelque chose ?	}{	161	}{	G.Ox_Barabus == 0 and IsClan(pc,"Nosferatu") and G.Story_State < 55	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	Ca valait le coup de demander. Je m'en vais.	}{	Ca valait le coup de demander. Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rien de personnel. Enfin, à peine. Je pars.	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	[Exhale la fumée]. . .Non. . .	}{	[Exhale la fumée]. . .Non. . .	}{	#	}{	}{	G.Ox_Barabus = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	171	}{	G.Ox_Bio == 0	}{	}{	}{	}{	}{	}{	}{	}{	Effacez ce maaasque. . .	}
+{	163	}{	Vous vendez des armes ?	}{	Vous vendez des armes ?	}{	141	}{	G.Ox_Weapon == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'ogives nucléaires, vous auriez ça ?	}
+{	164	}{	Le mot hengeyokai vous évoque-t-il quelque chose ?	}{	Le mot hengeyokai vous évoque-t-il quelque chose ?	}{	151	}{	G.Yukie_Quest == 1 and G.Ox_Heng == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hengeyokai. . . ça boume ?	}
+{	165	}{	Bon sang. . . Très bien, je m'en vais.	}{	Bon sang. . . Très bien, je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pas ici. Peut-être ailleurs.	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Comme c'est grossier de ma part de ne pas m'être présenté. . . Vous pouvez m'appeler M. Ox. Ceci est ma boutique. Elle vous plait ? On n'en trouve pas d'autre pareille sur la route vers l'Enfer. . .	}{	Comme c'est grossier de ma part de ne pas m'être présenté. . . Vous pouvez m'appeler M. Ox. Ceci est ma boutique. Elle vous plait ? On n'en trouve pas d'autre pareille sur la route vers l'Enfer. . .	}{	#	}{	}{	G.Ox_Bio = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Vous vendez des armes ?	}{	Vous vendez des armes ?	}{	141	}{	G.Ox_Weapon == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'ogives nucléaires, vous auriez ça ?	}
+{	173	}{	Le mot hengeyokai vous évoque-t-il quelque chose ?	}{	Le mot hengeyokai vous évoque-t-il quelque chose ?	}{	151	}{	G.Yukie_Quest == 1 and G.Ox_Heng == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hengeyokai. . . ça boume ?	}
+{	174	}{	Je cherche quelqu'un. . . Très laid, un peu une fouine. . . Ca vous dit quelque chose ?	}{	Je cherche quelqu'un. . . Très laid, un peu une fouine. . . Ca vous dit quelque chose ?	}{	161	}{	G.Ox_Barabus == 0 and not IsClan(pc,"Nosferatu") and G.Story_State < 55	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez vu des rats d'égout ?	}
+{	175	}{	Je cherche quelqu'un. Il me ressemble beaucoup. Ca vous dit quelque chose ?	}{	Je cherche quelqu'un. Il me ressemble beaucoup. Ca vous dit quelque chose ?	}{	161	}{	G.Ox_Barabus == 0 and IsClan(pc,"Nosferatu") and G.Story_State < 55	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	Vous devriez sans doute virer le type qui fait votre publicité. Excusez-moi. . .	}{	Vous devriez sans doute virer le type qui fait votre publicité. Excusez-moi. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Eh, c'est quoi cette odeur ? Je ne la supporte plus. . .	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Vous êtes toujours le bienvenu. . .	}{	Vous êtes toujours la bienvenue. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Qu'est-ce que vous m'avez dit déjà, à propos des yeux ?	}{	Qu'est-ce que vous m'avez dit déjà, à propos des yeux ?	}{	111	}{	G.Ox_Rude == 1	}{	G.Ox_Rude = 0	}{	}{	}{	}{	}{	}{	}{	Des yeux ! Continuez !	}
+{	183	}{	Le truc des yeux. . . Je m'en charge.	}{	Le truc des yeux. . . Je m'en charge.	}{	121	}{	G.Ox_Refuse == 1	}{	G.Ox_Refuse = 0	}{	}{	}{	}{	}{	}{	}{	A propos de ce que vous disiez. . . Je ferai ça.	}
+{	184	}{	Pour l'autre chose que vous vouliez. . .	}{	Pour l'autre chose que vous vouliez. . .	}{	211	}{	G.Ox_Job == 1	}{	G.Ox_Job = 0	}{	}{	}{	}{	}{	}{	}{	Travailler à la ferme. . .	}
+{	185	}{	Cette histoire de talisman. . . Je m'en occupe.	}{	Cette histoire de talisman. . . Je m'en occupe.	}{	231	}{	G.Ox_Job == 2	}{	G.Ox_Job = 0	}{	}{	}{	}{	}{	}{	}{	Je veux cultiver la mauvaise chance. . . Mes parents seraient si fiers.	}
+{	186	}{	Voici les yeux.	}{	Voici les yeux.	}{	191	}{	pc.HasItem("item_g_Eyes")	}{	pc.RemoveItem("item_g_Eyes")	}{	}{	}{	}{	}{	}{	}{	Ces yeux n'étaient pas les miens, finalement. Vous les voulez ?	}
+{	187	}{	Pour le talisman. . .	}{	Pour le talisman. . .	}{	241	}{	G.Ox_Talisman == 1	}{	}{	}{	}{	}{	}{	}{	}{	Travailler à la ferme. . .	}
+{	188	}{	J'avais quelques questions. . .	}{	J'avais quelques questions. . .	}{	291	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demandais quelque chose à votre sujet. . .	}
+{	189	}{	Comme c'est déconcertant. Je m'en vais.	}{	Comme c'est déconcertant. Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne m'ouvrez pas un compte, je repars.	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Hmm. . . Oui, ils ont un regard ambitieux. Bonjour, Lin, tu te plais ici ? Quelle merveilleuse acquisition pour ma boutique. . . Tenez, veuillez accepter ceci en échange. . .	}{	Hmm. . . Oui, ils ont un regard ambitieux. Bonjour, Lin, tu te plais ici ? Quelle merveilleuse acquisition pour ma boutique. . . Tenez, veuillez accepter ceci en échange. . .	}{	#	}{	}{	G.Ox_Gouge = 2; pc.SetQuest("Eyes",3); oxReward1()	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	(Auto-Link)	}{	(Auto-Link)	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	193	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	J'ai une autre mission, si cela pique votre. . . curiosité.	}{	J'ai une autre mission, si cela pique votre. . . curiosité.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Dites toujours.	}{	Dites toujours.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	La curiosité ? J'en ai toujours sur moi. . .	}
+{	203	}{	Tant qu'il n'est pas questions d'yeux ou de toute autre partie du corps, ça m'intéresse.	}{	Tant qu'il n'est pas questions d'yeux ou de toute autre partie du corps, ça m'intéresse.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	D'autres yeux ?	}
+{	204	}{	Merci, le truc des yeux, ça m'a suffi.	}{	Merci, le truc des yeux, ça m'a suffi.	}{	0	}{	}{	G.Ox_Job = 1	}{	}{	}{	}{	}{	}{	}{	Ma curiosité retombe déjà. Je pars.	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	J'ai besoin que vous soyez un fermier de malchance. Vous savez de quoi il s'agit ?	}{	J'ai besoin que vous soyez un fermier de malchance. Vous savez de quoi il s'agit ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Non, pourquoi ne pas me le dire ?	}{	Non, pourquoi ne pas me le dire ?	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rien que de l'entendre, ça me donne envie de sourire.	}
+{	213	}{	D'une mauvaise traduction ?	}{	D'une mauvaise traduction ?	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Question piège ?	}
+{	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Un client m'a acheté un talisman de malchance et veut le faire livrer à un de ses ennemis. J'ai besoin que vous placiez ceci dans le vestiaire d'un client du salon de massage du Lotus Blossom, pour que la malchance puisse s'épanouir.	}{	Un client m'a acheté un talisman de malchance et veut le faire livrer à un de ses ennemis. J'ai besoin que vous placiez ceci dans le vestiaire d'un client du salon de massage du Lotus Blossom, pour que la malchance puisse s'épanouir.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	C'est tout ? OK, je m'en charge.	}{	C'est tout ? OK, je m'en charge.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Semer les graines de la chance. . . bien sûr. . .	}
+{	223	}{	Ca paraît presque bête de m'en occuper, mais bon. . .	}{	Ca paraît presque bête de m'en occuper, mais bon. . .	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai rien d'autre à faire que tuer le temps. . .	}
+{	224	}{	M'intéresse pas. Au revoir. . .	}{	M'intéresse pas. Au revoir. . .	}{	0	}{	}{	G.Ox_Job = 2	}{	}{	}{	}{	}{	}{	}{	Je suis trop grandiose. Je pars en paradant.	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Mon client a tracé un cercle noir sur le vestiaire de son ennemi. Mettez le talisman, fermier de malchance. [ricane de façon sinistre]	}{	Mon client a tracé un cercle noir sur le vestiaire de son ennemi. Mettez le talisman, fermier de malchance. [ricane de façon sinistre]	}{	#	}{	}{	G.Ox_Talisman = 1; pc.GiveItem("item_g_badlucktalisman"); pc.SetQuest("Ox",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Bien sûr, bien sûr. Je vais voir ce que je peux faire.	}{	Bien sûr, bien sûr. Je vais voir ce que je peux faire.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La moisson sera énorme cette année.	}
+{	233	}{	Du moment que vous me payez, je vous supporte. A plus.	}{	Du moment que vous me payez, je vous supporte. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Après ça, je pourrai me faire payer pour ne pas donner la poisse. . . C'est génial !	}
+{	234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	[Exhale la fumée]La graine a-t-elle germé ?	}{	[Exhale la fumée]La graine a-t-elle germé ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Hem. . . Le type s'est rendu compte de ce que je faisais, il m'a sauté dessus, et. . . je l'ai tué.	}{	Hem. . . Le type s'est rendu compte de ce que je faisais, il m'a sauté dessus, et. . . je l'ai tué.	}{	251	}{	IsDead("Shu")	}{	}{	}{	}{	}{	}{	}{	}{	La racine a pris et étranglé. . .	}
+{	243	}{	Oui, je l'ai plantée. . .	}{	Oui, je l'ai plantée. . .	}{	261	}{	G.Ox_Planted == 1 and not IsDead("Shu")	}{	}{	}{	}{	}{	}{	}{	}{	On peut dire ça comme ça.	}
+{	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	J'avais d'autres questions.	}{	J'avais d'autres questions.	}{	291	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demande quelque chose.	}
+{	246	}{	Pas encore. Je vous tiens au courant. Au revoir.	}{	Pas encore. Je vous tiens au courant. Au revoir.	}{	0	}{	pc.HasItem("item_g_badlucktalisman")	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis pas encore votre fermier.	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	[ricane]Ah, mm-mm. C'est vraiment de la malchance, pour lui. Le prix pour mon client a été très élevé, et il sera ravi d'apprendre la nouvelle. De nouveau, acceptez ceci en plus de ma gratitude.	}{	[ricane]Ah, mm-mm. C'est vraiment de la malchance, pour lui. Le prix pour mon client a été très élevé, et il sera ravi d'apprendre la nouvelle. De nouveau, acceptez ceci en plus de ma gratitude.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Ox_Talisman = 2; pc.SetQuest("Ox",5); oxReward2()	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Vous avez besoin que je fasse autre chose ?	}{	Vous avez besoin que je fasse autre chose ?	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une autre corvée ?	}
+{	253	}{	Vous saviez que ça se passerait comme ça ?	}{	Vous saviez que ça se passerait comme ça ?	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis pas un fermier, mais j'aime la terre.	}
+{	254	}{	Ouais, merci. Au revoir. . .	}{	Ouais, merci. Au revoir. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm, je sais ce que vous pourriez être, alors je pars.	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Hmm. . . J'imagine que c'est ce que nous avions accepté. La malchance finira sans doute par germer avec le temps. . . Acceptez ceci en paiement.	}{	Hmm. . . J'imagine que c'est ce que nous avions accepté. La malchance finira sans doute par germer avec le temps. . . Acceptez ceci en paiement.	}{	#	}{	}{	G.Ox_Talisman = 2; pc.GiveItem("item_p_occult_lockpicking"); pc.SetQuest("Ox",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Vous avez besoin que je fasse autre chose ?	}{	Vous avez besoin que je fasse autre chose ?	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une autre corvée ?	}
+{	263	}{	Ouais, merci. Au revoir. . .	}{	Ouais, merci. Au revoir. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm, je sais ce que vous pourriez être, alors je pars.	}
+{	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Vous êtes vraiment un employé modèle. Vous pourrez sans doute travailler de nouveau pour moi, un jour. Jusque là, continuez votre tâche. Et si vous rencontrez un jour quelqu'un qui a une âme à vendre. . . merci de lui conseiller ma boutique.	}{	Vous êtes vraiment une employée modèle. Vous pourrez sans doute travailler de nouveau pour moi, un jour. Jusque là, continuez votre tâche. Et si vous rencontrez un jour quelqu'un qui a une âme à vendre. . . merci de lui conseiller ma boutique.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	C'est noté. Au revoir.	}{	C'est noté. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Employé du mois ? Prenez ça, papa.	}
+{	273	}{	Je pense que je vais partir. Ce magasin commence à me mettre mal à l'aise.	}{	Je pense que je vais partir. Ce magasin commence à me mettre mal à l'aise.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je commence à sentir le lait caillé. . . Il faut que je sorte. . .	}
+{	274	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	[exhale la fumée, rit]Quand on ne peut pas attirer un homme en enfer, on lui envoie les démons.	}{	[exhale la fumée, rit]Quand on ne peut pas attirer un homme en enfer, on lui envoie les démons.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	. . . Compris. Au revoir.	}{	. . . Compris. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Et ils ne marchent pas parmi nous. Je dois PARTIR.	}
+{	283	}{	Vous êtes retors. Heureusement pour vous, je ne m'abaisse pas à votre niveau. Au revoir.	}{	Vous êtes retors. Heureusement pour vous, je ne m'abaisse pas à votre niveau. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce n'est plus drôle, je m'en vais.	}
+{	284	}{	Comme vous faites bien de parler d'enfer. C'est là que je vais vous envoyer tout de suite !	}{	Comme vous faites bien de parler d'enfer. C'est là que je vais vous envoyer tout de suite !	}{	0	}{	}{	G.Ox_Laugh = 1	}{	}{	}{	}{	}{	}{	}{	Vous avez besoin de faire de l'EXORCISE. . . Dansons.	}
+{	285	}{	Je ne sais pas ce que vous êtes, vieillard. . . mais je vous laisse vivre pour l'instant. Au revoir.	}{	Je ne sais pas ce que vous êtes, vieillard. . . mais je vous laisse vivre pour l'instant. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je commence à sentir le lait caillé. . . Il faut que je sorte. . .	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Oui. . .	}{	Oui. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Quelle est votre histoire?	}{	Quelle est votre histoire?	}{	171	}{	G.Ox_Bio == 0	}{	}{	}{	}{	}{	}{	}{	}{	Décollez cette façade.	}
+{	293	}{	Vous vendez des armes?	}{	Vous vendez des armes?	}{	141	}{	G.Ox_Weapon == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de bombes nucléaires! Vous en avez?	}
+{	294	}{	Le mot hengeyokai vous évoque-t-il quelque chose ?	}{	Le mot hengeyokai vous évoque-t-il quelque chose ?	}{	151	}{	G.Yukie_Quest == 1 and G.Ox_Heng == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hengeyokai. . . ça boume ?	}
+{	295	}{	Je cherche quelqu'un. . . Très laid, un peu une fouine. . . Ca vous dit quelque chose ?	}{	Je cherche quelqu'un. . . Très laid, un peu une fouine. . . Ca vous dit quelque chose ?	}{	161	}{	G.Ox_Barabus == 0 and not IsClan(pc,"Nosferatu") and G.Story_State < 55	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez vu des rats d'égout ?	}
+{	296	}{	Je cherche quelqu'un. Il me ressemble beaucoup. Ca vous dit quelque chose ?	}{	Je cherche quelqu'un. Il me ressemble beaucoup. Ca vous dit quelque chose ?	}{	161	}{	G.Ox_Barabus == 0 and IsClan(pc,"Nosferatu") and G.Story_State < 55	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	Je ne vois rien d'autre. Au revoir.	}{	Je ne vois rien d'autre. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	. . . Bon, je pars déjà.	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Oui.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	303	}{	[Rire court]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	304	}{	Pour vous.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	305	}{	Hmm. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	[Rit]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	313	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	[Exhale la fumée]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	323	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	324	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	325	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	333	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	334	}{	(Starting Condition)	}{	}{	181	}{	G.Ox_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	335	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

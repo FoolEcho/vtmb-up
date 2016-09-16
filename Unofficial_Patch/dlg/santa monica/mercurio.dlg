@@ -1,0 +1,1026 @@
+{	1	}{	[Hurle de douleur, d'angoisse, bafouille, la mâchoire brisée]Ces bâtards m'ont. . . arnaqué. . . Je vais mourir ici ! [Hurle de douleur]	}{	[Hurle de douleur, d'angoisse, bafouille, la mâchoire brisée]Ces bâtards m'ont. . . arnaqué. . . Je vais mourir ici ! [Hurle de douleur]	}{	#	}{	npc.SetDisposition("lay", 1)	}{	pc.SetQuest("Mercurio",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Vous êtes Mercurio ?	}{	Vous êtes Mercurio ?	}{	31	}{	not IsClan(pc,"Malkavian") and G.Read_Email == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Vous voulez que j'appelle une ambulance ?	}{	Vous voulez que j'appelle une ambulance ?	}{	11	}{	not IsClan(pc,"Malkavian") and G.Read_Email == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Qu'est-ce qui vous est arrivé ?	}{	Qu'est-ce qui vous est arrivé ?	}{	71	}{	not IsClan(pc,"Malkavian") and G.Read_Email == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Etes-vous le dieu aux pieds ailés ?	}{	Etes-vous le dieu aux pieds ailés ?	}{	781	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	871	}{	not IsClan(pc,"Malkavian") and G.Read_Email == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Quoi ? Non, j'ai un casier à l'Est. J'ai un chasseur de primes aux fesses. Ne touchez pas à ce téléphone. Pas de flics !	}{	Quoi ? Non, j'ai un casier à l'Est. J'ai un chasseur de primes aux fesses. Ne touchez pas à ce téléphone. Pas de flics !	}{	#	}{	npc.SetDisposition("lay", 1)	}{	G.Mercurio_Ambulance = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Vous êtes Mercurio ?	}{	Vous êtes Mercurio ?	}{	31	}{	G.Mercurio_Know == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Qu'est-ce qui vous est arrivé ?	}{	Qu'est-ce qui vous est arrivé ?	}{	71	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Vous avez l'air mal en point. Vous êtes sûr ?	}{	Vous avez l'air mal en point. Vous êtes sûr ?	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	Est-ce bien vous, ô grand Mercure ?	}{	Est-ce bien vous, ô grand Mercure ?	}{	781	}{	G.Mercurio_Know == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	Racontez-moi votre histoire. . .	}{	Racontez-moi votre histoire. . .	}{	71	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	Ils pourraient peut-être vous apporter un beignet. . .	}{	Ils pourraient peut-être vous apporter un beignet. . .	}{	21	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Pas de flics !	}{	Pas de flics !	}{	#	}{	npc.SetDisposition("lay", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Vous êtes Mercurio ?	}{	Vous êtes Mercurio ?	}{	31	}{	G.Mercurio_Know == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Qu'est-ce qui vous est arrivé ? 	}{	Qu'est-ce qui vous est arrivé ? 	}{	71	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Est-ce bien vous, ô grand Mercure ?	}{	Est-ce bien vous, ô grand Mercure ?	}{	781	}{	G.Mercurio_Know == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	Racontez-moi votre histoire. . .	}{	Racontez-moi votre histoire. . .	}{	71	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	[secoue la tête]Euh. . . Ouais. . .  Vous cherchez de l'Astrolite ? Je. . . Euh. . . Oh merde ! Je sens un courant d'air à l'intérieur de moi ! Ils m'ont eu ! Les bâtards. . . Le sang ne fonctionne plus, ma tête, elle va éclater. . . [paraît s'éloigner, perdre connaissance] Je pense que mon oeil a éclaté.	}{	[secoue la tête]Euh. . . Ouais. . .  Vous cherchez de l'Astrolite ? Je. . . Euh. . . Oh merde ! Je sens un courant d'air à l'intérieur de moi ! Ils m'ont eu ! Les bâtards. . . Le sang ne fonctionne plus, ma tête, elle va éclater. . . [paraît s'éloigner, perdre connaissance] Je pense que mon oeil a éclaté.	}{	#	}{	npc.SetDisposition("lay", 1)	}{	G.Mercurio_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Restez avec moi. Que s'est-il passé ?	}{	Restez avec moi. Que s'est-il passé ?	}{	71	}{	G.Mercurio_Ask == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	Il faut me dire ce qui s'est passé, Mercurio.	}{	Il faut me dire ce qui s'est passé, Mercurio.	}{	71	}{	G.Mercurio_Ask == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	Vous voulez que j'appelle une ambulance ?	}{	Vous voulez que j'appelle une ambulance ?	}{	11	}{	G.Mercurio_Ambulance == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	Vous pourriez arrêter de pleurnicher comme une fille pour me dire ce qui s'est passé ?	}{	Vous pourriez arrêter de pleurnicher comme une fille pour me dire ce qui s'est passé ?	}{	841	}{	}{	G.Mercurio_Bad = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	[Distant, erratique]Je n'aurais jamais dû y aller seul. . . Comme un bleu. . . J'aurais dû leur régler leur compte. Sales rats de Cali. . . 	}{	[Distant, erratique]Je n'aurais jamais dû y aller seul. . . Comme un bleu. . . J'aurais dû leur régler leur compte. Sales rats de Cali. . . 	}{	#	}{	npc.SetDisposition("lay", 1)	}{	G.Mercurio_Ask = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	(Auto-Link)	}{	(Auto-Link)	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Il faut. . . Vous ne pouvez rien dire à personne ! Personne ne doit savoir que j'ai tout foiré ! Promettez-le ! Si le prince le découvre, je suis mort. Avec les gens comme vous, on se plante une fois et on est mort ! Vous m'entendez ? C'est fini !	}{	Il faut. . . Vous ne pouvez rien dire à personne ! Personne ne doit savoir que j'ai tout foiré ! Promettez-le ! Si le prince le découvre, je suis mort. Avec les gens comme vous, on se plante une fois et on est mort ! Vous m'entendez ? C'est fini !	}{	#	}{	npc.SetDisposition("lay", 1)	}{	G.Mercurio_Get = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	D'accord. Je ne dirai rien. Où sont ces chiens ?	}{	D'accord. Je ne dirai rien. Où sont ces chiens ?	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où sont les démons qui vous ont attaqué, Mercurio ?	}
+{	53	}{	Que me rapportera mon silence ?	}{	Que me rapportera mon silence ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon silence est d'or, beaucoup d'or.	}
+{	54	}{	Trop dur. Dites-moi où est l'Astrolite. . .	}{	Trop dur. Dites-moi où est l'Astrolite. . .	}{	881	}{	G.Mercurio_Bad == 2	}{	G.Mercurio_Bad = 3	}{	}{	}{	}{	}{	}{	}{	Dès que j'aurai le boum-boum, vous ne serez plus qu'un souvenir.	}
+{	55	}{	Trop dur. Dites-moi où est l'Astrolite. . .	}{	Trop dur. Dites-moi où est l'Astrolite. . .	}{	61	}{	G.Mercurio_Bad == 1	}{	}{	}{	}{	}{	}{	}{	}{	Dès que j'aurai le boum-boum, vous ne serez plus qu'un souvenir.	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Euh. . . Ecoutez. . . J'ai des contacts. . . Je m'occuperai de vous. Mais - oh non, je ne sens plus mes jambes - merde ! Vous me tenez par les couilles, là. Je vous donnerai tout ce qui est en mon pouvoir !	}{	Euh. . . Ecoutez. . . J'ai des contacts. . . Je m'occuperai de vous. Mais - oh non, je ne sens plus mes jambes - merde ! Vous me tenez par les couilles, là. Je vous donnerai tout ce qui est en mon pouvoir !	}{	#	}{	npc.SetDisposition("lay", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Ca me va. Bon, où est l'Astrolite ?	}{	Ca me va. Bon, où est l'Astrolite ?	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le prix est raisonnable. Où est le boum-boum ?	}
+{	63	}{	Je ne promets rien. J'ai besoin de l'Astrolite. Où est-il ?	}{	Je ne promets rien. J'ai besoin de l'Astrolite. Où est-il ?	}{	761	}{	}{	G.Mercurio_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Mon esprit ne sait trop quoi faire ? Le boum-boum ?	}
+{	64	}{	Ce n'est pas suffisant. A présent, dites-moi où se trouve l'Astrolite !	}{	Ce n'est pas suffisant. A présent, dites-moi où se trouve l'Astrolite !	}{	881	}{	}{	G.Mercurio_Bad = 3	}{	}{	}{	}{	}{	}{	}{	Mes oreilles sont sourdes à vos pleurs. A plus, hein. . .	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	J'ai. . . Je suis allé. . . C'est quoi, cette bosse ? C'est ma côte ? Bordel, j'ai la côte qui m'a traversé la peau ? Je ne sens plus rien. . . Il faut regarder et me dire !	}{	J'ai. . . Je suis allé. . . C'est quoi, cette bosse ? C'est ma côte ? Bordel, j'ai la côte qui m'a traversé la peau ? Je ne sens plus rien. . . Il faut regarder et me dire !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Arrêtez vos conneries et dites-moi qui vous a fait ça ! Ou je finis le travail !	}{	Arrêtez vos conneries et dites-moi qui vous a fait ça ! Ou je finis le travail !	}{	841	}{	}{	G.Mercurio_Bad = 1	}{	}{	}{	}{	}{	}{	}{	Révélez vos assaillants si inefficaces ou je finis leur travail.	}
+{	73	}{	C'est une bouteille brisée. Maintenant, dites-moi ce qui vous est arrivé.	}{	C'est une bouteille brisée. Maintenant, dites-moi ce qui vous est arrivé.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hippocrate n'est pas mon père. Qui vous a brisé, Mercure ? 	}
+{	74	}{	Ouais, c'est une côte. Je dirais qu'il vous reste 5 minutes à vivre, top chrono.	}{	Ouais, c'est une côte. Je dirais qu'il vous reste 5 minutes à vivre, top chrono.	}{	831	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes un idiot au bord de l'agonie.	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Sale chimiste ! On ne peut faire confiance à personne à LA ! J'ai vérifié et il paraissait fiable. Le type mélange du speed et son équipe la vend. De temps en temps, il fait dans l'explosif. J'ai organisé un échange.	}{	Sale chimiste ! On ne peut faire confiance à personne à LA ! J'ai vérifié et il paraissait fiable. Le type mélange du speed et son équipe la vend. De temps en temps, il fait dans l'explosif. J'ai organisé un échange.	}{	#	}{	npc.SetDisposition("lay", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	(Auto-Link)	}{	(Auto-Link)	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	J'arrive à la plage avec l'argent, OK ? Quatre types sortent de nulle part, des connards de surfeurs - ils m'ont cogné à la batte ! [tousse, s'étouffe]J'ai l'impression de m'être fait défoncer la tête par un cheval.	}{	J'arrive à la plage avec l'argent, OK ? Quatre types sortent de nulle part, des connards de surfeurs - ils m'ont cogné à la batte ! [tousse, s'étouffe]J'ai l'impression de m'être fait défoncer la tête par un cheval.	}{	#	}{	npc.SetDisposition("lay", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	(Auto-Link)	}{	(Auto-Link)	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Ces [pause, furieux] bâtards me dérouillent et me laissent pour mort. Il a fallu que je rampe jusqu'à ma voiture, jusqu'ici le sang est la seule chose qui me fait tenir. Mais merde, ils ont pris l'argent et l'Astrolite. . .	}{	Ces [pause, furieux] bâtards me dérouillent et me laissent pour mort. Il a fallu que je rampe jusqu'à ma voiture, jusqu'ici le sang est la seule chose qui me fait tenir. Mais merde, ils ont pris l'argent et l'Astrolite. . .	}{	#	}{	npc.SetDisposition("lay", 1)	}{	G.Mercurio_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Vous n'avez pas l'Astrolite ?	}{	Vous n'avez pas l'Astrolite ?	}{	111	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous n'avez pas le boum-boum ?	}
+{	103	}{	Où sont ces bâtards ?	}{	Où sont ces bâtards ?	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où sont les démons qui vous ont attaqué, Mercure ?	}
+{	104	}{	Idiot ! Le prince va être furieux !	}{	Idiot ! Le prince va être furieux !	}{	51	}{	G.Mercurio_Bad == 0	}{	G.Mercurio_Bad = 1	}{	}{	}{	}{	}{	}{	}{	Vous êtes une souris qui joue au milieu des géants. Le prince va l'apprendre.	}
+{	105	}{	Idiot ! Le prince va être furieux !	}{	Idiot ! Le prince va être furieux !	}{	51	}{	G.Mercurio_Bad == 1	}{	G.Mercurio_Bad = 2	}{	}{	}{	}{	}{	}{	}{	Vous êtes une souris qui joue au milieu des géants. Le prince va l'apprendre.	}
+{	106	}{	Du sang de vampire ?	}{	Du sang de vampire ?	}{	741	}{	}{	}{	}{	}{	}{	}{	}{	}{	De quel sang parles-vous ?	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Attendez - vous me prenez pour un amateur ? Je sais où ils sont. Ces petites frappes de naze vivent dans un taudis sur la plage. Quatre ou cinq, ils sont. Celui qui a les explosifs, c'est Dennis. Et il a ma thune, le chien !	}{	Attendez - vous me prenez pour un amateur ? Je sais où ils sont. Ces petites frappes de naze vivent dans un taudis sur la plage. Quatre ou cinq, ils sont. Celui qui a les explosifs, c'est Dennis. Et il a ma thune, le chien !	}{	#	}{	npc.SetDisposition("lay", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Comment j'y vais ?	}{	Comment j'y vais ?	}{	801	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dites-moi vers quoi mes pieds doivent avancer.	}
+{	113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Il faut [s'étouffe sur du sang/tousse]. . . il faut leur reprendre. Raisonner avec eux, ou entrer de force. . . Je veux les tuer. Faites ce qui vous vient naturellement. Moi, j'ai tout foiré.	}{	Il faut [s'étouffe sur du sang/tousse]. . . il faut leur reprendre. Raisonner avec eux, ou entrer de force. . . Je veux les tuer. Faites ce qui vous vient naturellement. Moi, j'ai tout foiré.	}{	#	}{	npc.SetDisposition("lay", 1)	}{	G.Mercurio_Quest = 1; pc.SetQuest("Astrolite",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Je vais récupérer l'Astrolite.	}{	Je vais récupérer l'Astrolite.	}{	141	}{	G.Mercurio_Get == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je vais reprendre le boum-boum. Et votre or, Mercure.	}
+{	123	}{	Je vais chercher l'Astrolite. Je reviens.	}{	Je vais chercher l'Astrolite. Je reviens.	}{	0	}{	G.Mercurio_Get == 1	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Je vais chercher le boum boum et votre or, Mercure.	}
+{	124	}{	Je peux faire quelque chose pour vous aider ?	}{	Je peux faire quelque chose pour vous aider ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon aide vous serait très utile ?	}
+{	125	}{	Vous ne bougez pas, hein. Je reviens dès que j'ai terminé le travail.	}{	Vous ne bougez pas, hein. Je reviens dès que j'ai terminé le travail.	}{	141	}{	G.Mercurio_Get == 0	}{	G.Mercurio_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	La lune me montrera la meilleure voie. Adieu. . .	}
+{	126	}{	Vous ne bougez pas, hein. Je reviens dès que j'ai terminé le travail.	}{	Vous ne bougez pas, hein. Je reviens dès que j'ai terminé le travail.	}{	0	}{	G.Mercurio_Get == 1	}{	G.Mercurio_Pissed = 1; npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	La lune me montrera la meilleure voie. Adieu. . .	}
+{	127	}{	Je n'arrive pas à croire que le prince ait fait confiance à un idiot comme vous.	}{	Je n'arrive pas à croire que le prince ait fait confiance à un idiot comme vous.	}{	811	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous portez le manteau tacheté de l'échec. La mort aurait dû vous prendre.	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	[grièvement blessé]Si vous pouviez. . . euh. . . ah, quelque chose coule. Il me faut quelque chose contre la douleur.	}{	[grièvement blessé]Si vous pouviez. . . euh. . . ah, quelque chose coule. Il me faut quelque chose contre la douleur.	}{	#	}{	npc.SetDisposition("lay", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Je vous rapporterai quelque chose.	}{	Je vous rapporterai quelque chose.	}{	141	}{	not pc.HasItem("item_g_drugs_morphine_bottle") and G.Mercurio_Asked == 0 and G.Mercurio_Get == 0	}{	pc.SetQuest("Morphine",1)	}{	}{	}{	}{	}{	}{	}{	Je reviendrai avec l'endormissement, Mercure.	}
+{	133	}{	Je vous rapporterai quelque chose.	}{	Je vous rapporterai quelque chose.	}{	0	}{	not pc.HasItem("item_g_drugs_morphine_bottle") and G.Mercurio_Asked == 0 and G.Mercurio_Get == 1	}{	pc.SetQuest("Morphine",1); npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Je reviendrai avec l'endormissement, Mercure.	}
+{	134	}{	Je vous rapporterai quelque chose.	}{	Je vous rapporterai quelque chose.	}{	0	}{	not pc.HasItem("item_g_drugs_morphine_bottle") and G.Mercurio_Asked == 1	}{	pc.SetQuest("Morphine",1); npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Je reviendrai avec l'endormissement, Mercure.	}
+{	135	}{	J'en ai déjà. Ne bougez pas.	}{	J'en ai déjà. Ne bougez pas.	}{	161	}{	G.Mercurio_Aid == 0 and pc.HasItem("item_g_drugs_morphine_bottle")	}{	pc.RemoveItem("item_g_drugs_morphine_bottle"); pc.SetQuest("Morphine",3)	}{	}{	}{	}{	}{	}{	}{	J'ai déjà de la liqueur d'insensibilité.	}
+{	136	}{	J'y penserai.	}{	J'y penserai.	}{	141	}{	G.Mercurio_Asked == 0 and G.Mercurio_Get == 0	}{	pc.SetQuest("Morphine",1)	}{	}{	}{	}{	}{	}{	}{	Seule la nuit saura où mes pas me guideront.	}
+{	137	}{	J'y penserai.	}{	J'y penserai.	}{	0	}{	G.Mercurio_Asked == 0 and G.Mercurio_Get == 1	}{	pc.SetQuest("Morphine",1); npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Seule la nuit saura où mes pas me guideront.	}
+{	138	}{	Souffrez. Vous l'avez mérité.	}{	Souffrez. Vous l'avez mérité.	}{	751	}{	G.Mercurio_Asked == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous méritez la douleur qui vous a trouvé. . .	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Euh, une dernière chose. Pour notre accord, je veux dire. . . Si vous en parlez à quelqu'un, je suis mort. Je vous en prie. J'ai le chic pour trouver ce dont les gens ont besoin. Si vous ne dites rien, je pourrai vous aider.	}{	Euh, une dernière chose. Pour notre accord, je veux dire. . . Si vous en parlez à quelqu'un, je suis mort. Je vous en prie. J'ai le chic pour trouver ce dont les gens ont besoin. Si vous ne dites rien, je pourrai vous aider.	}{	#	}{	npc.SetDisposition("lay", 2)	}{	G.Mercurio_Get = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	C'est bon à savoir. Au revoir.	}{	C'est bon à savoir. Au revoir.	}{	0	}{	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Vos paroles seront soupesées, Mercure. Adieu. . .	}
+{	143	}{	Je peux faire quelque chose pour calmer votre douleur ?	}{	Je peux faire quelque chose pour calmer votre douleur ?	}{	131	}{	G.Mercurio_Aid == 0 and pc.GetQuestState("Morphine") == 0	}{	G.Mercurio_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Mon aide vous serait très utile ?	}
+{	144	}{	Utile ? Regardez-vous ! Vous êtes incapable ! Quand le prince saura ça. . .	}{	Utile ? Regardez-vous ! Vous êtes incapable ! Quand le prince saura ça. . .	}{	851	}{	G.Mercurio_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ma bouche parlera quand elle en aura envie.	}
+{	145	}{	J'y penserai. Au revoir. 	}{	J'y penserai. Au revoir. 	}{	0	}{	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Il sera difficile de cacher cela aux voix. J'essaierai. Je ne suis pas ici.	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	[Prend une grande inspiration]Ohh. . .	}{	[Prend une grande inspiration]Ohh. . .	}{	#	}{	npc.SetDisposition("lay", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Je vous ai apporté de la morphine. Ne bougez pas.	}{	Je vous ai apporté de la morphine. Ne bougez pas.	}{	161	}{	G.Mercurio_Aid == 0 and pc.HasItem("item_g_drugs_morphine_bottle") and pc.GetQuestState("Morphine") > 0	}{	pc.RemoveItem("item_g_drugs_morphine_bottle"); pc.SetQuest("Morphine",3)	}{	}{	}{	}{	}{	}{	}{	J'ai déjà de la liqueur d'insensibilité.	}
+{	153	}{	Je vous ai apporté de la morphine. Ne bougez pas.	}{	Je vous ai apporté de la morphine. Ne bougez pas.	}{	161	}{	G.Mercurio_Aid == 0 and pc.HasItem("item_g_drugs_morphine_bottle") and pc.GetQuestState("Morphine") == 0	}{	pc.RemoveItem("item_g_drugs_morphine_bottle"); pc.SetQuest("Morphine",3)	}{	}{	}{	}{	}{	}{	}{	J'ai déjà de la liqueur d'insensibilité.	}
+{	154	}{	J'ai récupéré l'Astrolite.	}{	J'ai récupéré l'Astrolite.	}{	171	}{	G.Mercurio_Quest == 1 and pc.HasItem("item_g_astrolite")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai le boum-boum.	}
+{	155	}{	J'ai quelques questions sur Santa Monica.	}{	J'ai quelques questions sur Santa Monica.	}{	321	}{	G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame près de la mer.	}
+{	156	}{	Vous avez très mal. Je peux faire quelque chose pour vous ?	}{	Vous avez très mal. Je peux faire quelque chose pour vous ?	}{	131	}{	G.Mercurio_Aid == 0 and pc.GetQuestState("Morphine") == 0	}{	G.Mercurio_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Cette chair hurle. Puis-je faire quelque chose pour la faire taire ?	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	Essayez de ne pas mourir. Au revoir.	}{	Essayez de ne pas mourir. Au revoir.	}{	0	}{	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Que votre coeur continue de battre. Adieu.	}
+{	161	}{	Ahh. . . Oh, bon sang de bois, ça soulage.	}{	Ahh. . . Oh, bon sang de bois, ça soulage.	}{	#	}{	npc.SetDisposition("lay", 3)	}{	FindPlayer().HumanityAdd(1); G.Mercurio_Aid = 1; pc.AwardExperience("Astro03")	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Je vous en prie. Je reviendrai avec l'Astrolite. Au revoir.	}{	Je vous en prie. Je reviendrai avec l'Astrolite. Au revoir.	}{	141	}{	G.Mercurio_Astro == 0 and G.Mercurio_Get == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai avec le boum-boum.	}
+{	163	}{	J'ai récupéré l'Astrolite.	}{	J'ai récupéré l'Astrolite.	}{	171	}{	G.Mercurio_Quest == 1 and pc.HasItem("item_g_astrolite")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai le boum-boum.	}
+{	164	}{	J'ai quelques questions sur Santa Monica.	}{	J'ai quelques questions sur Santa Monica.	}{	321	}{	G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame près de la mer.	}
+{	165	}{	J'espère que ça suffira. Au revoir.	}{	J'espère que ça suffira. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	166	}{	Je vous en prie. Je reviendrai avec l'Astrolite. Au revoir.	}{	Je vous en prie. Je reviendrai avec l'Astrolite. Au revoir.	}{	0	}{	G.Mercurio_Astro == 0 and G.Mercurio_Get == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai avec le boum-boum.	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Ouais ? Vous avez éliminé ces fumiers ?	}{	Ouais ? Vous avez éliminé ces fumiers ?	}{	#	}{	npc.SetDisposition("lay", 3)	}{	G.Mercurio_Quest = 2; G.Mercurio_Astro = 2; pc.SetQuest("Astrolite",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Non. Ce n'est pas mon genre.	}{	Non. Ce n'est pas mon genre.	}{	181	}{	G.Beachhouse_Bodycount == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai éteint aucune flamme. . .	}
+{	173	}{	Oui. Je n'ai pas eu le choix.	}{	Oui. Je n'ai pas eu le choix.	}{	191	}{	Humanity 7 & G.Beachhouse_Bodycount == 6	}{	}{	}{	}{	}{	}{	}{	}{	Ils sont de l'autre côté. . .	}
+{	174	}{	Evidemment. Vous auriez dû les voir souffrir.	}{	Evidemment. Vous auriez dû les voir souffrir.	}{	191	}{	Humanity -7 & G.Beachhouse_Bodycount == 6	}{	}{	}{	}{	}{	}{	}{	}{	Comme des chiens pleins de puces. . .	}
+{	175	}{	Tous ceux qui étaient sur mon chemin.	}{	Tous ceux qui étaient sur mon chemin.	}{	191	}{	G.Beachhouse_Bodycount > 0 and G.Beachhouse_Bodycount < 6	}{	}{	}{	}{	}{	}{	}{	}{	Seulement ceux qui ont croisé mon ombre.	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Vous avez récupéré mon argent ?	}{	Vous avez récupéré mon argent ?	}{	#	}{	npc.SetDisposition("lay", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Oui. Le voilà. 	}{	Oui. Le voilà. 	}{	201	}{	G.Patch_Plus == 0 and G.Mercurio_Loot == 1 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250)	}{	}{	}{	}{	}{	}{	}{	Voici votre or, Mercure.	}
+{	183	}{	Votre argent ? Oui ! Oui, bien sûr. Tenez.	}{	Votre argent ? Oui ! Oui, bien sûr. Tenez.	}{	201	}{	G.Patch_Plus == 0 and G.Mercurio_Loot == 0 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250)	}{	}{	}{	}{	}{	}{	}{	Votre or ? OUI ! Voici votre or, Mercure. . .	}
+{	184	}{	Non, je regrette, je ne l'ai pas trouvé.	}{	Non, je regrette, je ne l'ai pas trouvé.	}{	821	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes mains sont aussi vides que mon crâne. . .	}
+{	185	}{	Oui. Le voilà. 	}{	Oui. Le voilà. 	}{	201	}{	G.Patch_Plus == 1 and G.Mercurio_Loot == 1 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250)	}{	}{	}{	}{	}{	}{	}{	Voici votre or, Mercure.	}
+{	186	}{	Votre argent ? Oui ! Oui, bien sûr. Tenez.	}{	Votre argent ? Oui ! Oui, bien sûr. Tenez.	}{	201	}{	G.Patch_Plus == 1 and G.Mercurio_Loot == 0 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250); FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Votre or ? OUI ! Voici votre or, Mercure. . .	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Super, génial - j'espère qu'ils ont eu mal. Vous avez récupéré mon argent.	}{	Super, génial - j'espère qu'ils ont eu mal. Vous avez récupéré mon argent.	}{	#	}{	npc.SetDisposition("lay", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Oui. Le voilà. 	}{	Oui. Le voilà. 	}{	201	}{	G.Patch_Plus == 0 and G.Mercurio_Loot == 1 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250)	}{	}{	}{	}{	}{	}{	}{	Voici votre or, Mercure.	}
+{	193	}{	Votre argent ? Oui ! Oui, bien sûr. Tenez.	}{	Votre argent ? Oui ! Oui, bien sûr. Tenez.	}{	201	}{	G.Patch_Plus == 0 and G.Mercurio_Loot == 0 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250)	}{	}{	}{	}{	}{	}{	}{	Votre or ? OUI ! Voici votre or, Mercure. . .	}
+{	194	}{	Non, je regrette, je ne l'ai pas trouvé.	}{	Non, je regrette, je ne l'ai pas trouvé.	}{	821	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes mains sont aussi vides que mon crâne. . .	}
+{	195	}{	Oui. Le voilà. 	}{	Oui. Le voilà. 	}{	201	}{	G.Patch_Plus == 1 and G.Mercurio_Loot == 1 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250)	}{	}{	}{	}{	}{	}{	}{	Voici votre or, Mercure.	}
+{	196	}{	Votre argent ? Oui ! Oui, bien sûr. Tenez.	}{	Votre argent ? Oui ! Oui, bien sûr. Tenez.	}{	201	}{	G.Patch_Plus == 1 and G.Mercurio_Loot == 0 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250); FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Votre or ? OUI ! Voici votre or, Mercure. . .	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Vous m'avez sauvé la vie. Il faudra sans doute que je me rachète des reins.	}{	Vous m'avez sauvé la vie. Il faudra sans doute que je me rachète des reins.	}{	#	}{	npc.SetDisposition("lay", 3)	}{	pc.AwardExperience("Astro04")	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Qu'est-ce qu'on attend de moi, maintenant ?	}{	Qu'est-ce qu'on attend de moi, maintenant ?	}{	971	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où mes pieds doivent-ils me mener à présent ?	}
+{	203	}{	C'est quoi, cet Astrolite ?	}{	C'est quoi, cet Astrolite ?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est rigolo l'Astrolite, non ?	}
+{	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	L'Astrolite. . . Deux fois plus puissant que le TNT. Démolition instantanée. Il vaut mieux être de l'autre côté du globe quand on lance le minuteur. [Pause]Vous devez faire disparaître un bâtiment. Un entrepôt. On dirait qu'il sert au Sabbat.	}{	L'Astrolite. . . Deux fois plus puissant que le TNT. Démolition instantanée. Il vaut mieux être de l'autre côté du globe quand on lance le minuteur. [Pause]Vous devez faire disparaître un bâtiment. Un entrepôt. On dirait qu'il sert au Sabbat.	}{	#	}{	npc.SetDisposition("lay", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Comment trouver cet endroit ?	}{	Comment trouver cet endroit ?	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qui me dit où se trouve la maison entre les pots ?	}
+{	213	}{	Que savez-vous de cet entrepôt ?	}{	Que savez-vous de cet entrepôt ?	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de cette maison entre les pots.	}
+{	214	}{	Le Sabbat ? Qu'est-ce que c'est ?	}{	Le Sabbat ? Qu'est-ce que c'est ?	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne saisis pas le sens du mot Sabbat.	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	J'ai beaucoup entendu parler de cette opération. J'aimerais bien y aller, et mettre la main sur l'équipement qu'ils ont déchargé. Mais ce serait du suicide. . . Ils ont une petite armée de furieux de la gâchette, tous avec des flingues. Je ne sais pas. . . peut-être. . . oh. . .	}{	J'ai beaucoup entendu parler de cette opération. J'aimerais bien y aller, et mettre la main sur l'équipement qu'ils ont déchargé. Mais ce serait du suicide. . . Ils ont une petite armée de furieux de la gâchette, tous avec des flingues. Je ne sais pas. . . peut-être. . . oh. . .	}{	#	}{	npc.SetDisposition("lay", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Peut-être quoi ?	}{	Peut-être quoi ?	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, dieu aux pieds ailés ?	}
+{	223	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Il y a un type. Je ne le connais pas, mais j'en ai beaucoup entendu parler. Il s'appelle Tung. Bertram Tung. Il est comme vous. Si quelqu'un en connaît plus que moi sur la ville, c'est lui. Malheureusement. . . il se cache, pour l'instant. 	}{	Il y a un type. Je ne le connais pas, mais j'en ai beaucoup entendu parler. Il s'appelle Tung. Bertram Tung. Il est comme vous. Si quelqu'un en connaît plus que moi sur la ville, c'est lui. Malheureusement. . . il se cache, pour l'instant. 	}{	#	}{	npc.SetDisposition("lay", 2)	}{	pc.SetQuest("Warehouse",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Quoi ? Pourquoi ?	}{	Quoi ? Pourquoi ?	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le ver se cache dans un liquide trouble. . .	}
+{	233	}{	Y a-t-il quelqu'un d'autre qui pourrait savoir ?	}{	Y a-t-il quelqu'un d'autre qui pourrait savoir ?	}{	241	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Y a-t-il quelqu'un d'autre qui pourrait savoir ?	}
+{	234	}{	Tung. . . J'entends ce nom dans ma tête. 	}{	Tung. . . J'entends ce nom dans ma tête. 	}{	251	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Possible, mais je ne les connais pas. Alors, pour Tung. . .	}{	Possible, mais je ne les connais pas. Alors, pour Tung. . .	}{	#	}{	npc.SetDisposition("lay", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	(Auto-Link)	}{	(Auto-Link)	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	243	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Tung se planque à cause de Therese Voerman. Vous la connaissez ? Enfin, il paraît que Tung et elle sont en froid - je ne connais pas les détails. A mon avis, Tung pense qu'il est sur le point de se faire étendre, et il se cache jusqu'à ce que Therese abandonne.	}{	Tung se planque à cause de Therese Voerman. Vous la connaissez ? Enfin, il paraît que Tung et elle sont en froid - je ne connais pas les détails. A mon avis, Tung pense qu'il est sur le point de se faire étendre, et il se cache jusqu'à ce que Therese abandonne.	}{	#	}{	npc.SetDisposition("lay", 2)	}{	G.Mercurio_Quest = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	(Auto-Link)	}{	(Auto-Link)	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	253	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Si vous voulez mettre cet entrepôt sur orbite, il va falloir que Therese rappelle ses tueurs.	}{	Si vous voulez mettre cet entrepôt sur orbite, il va falloir que Therese rappelle ses tueurs.	}{	#	}{	npc.SetDisposition("lay", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Où puis-je la trouver ?	}{	Où puis-je la trouver ?	}{	981	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où se trouve la sombre fille de Janus ?	}
+{	263	}{	Ah merde. . . Que savez-vous sur cette Therese ?	}{	Ah merde. . . Que savez-vous sur cette Therese ?	}{	271	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Voerman. . . Therese ?	}
+{	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	C'est la nana la plus importante du coin. Très influente. Assez mignonne pour une morte, mais. . . euh, une personnalité de pierre.	}{	C'est la nana la plus importante du coin. Très influente. Assez mignonne pour une morte, mais. . . euh, une personnalité de pierre.	}{	#	}{	npc.SetDisposition("lay", 2)	}{	G.Mercurio_Therese = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Où puis-je la trouver?	}{	Où puis-je la trouver?	}{	981	}{	G.Mercurio_Jeanette == 0	}{	}{	}{	}{	}{	}{	}{	}{	Où est la sombre fille de Janus?	}
+{	273	}{	J'ai une question sur autre chose.	}{	J'ai une question sur autre chose.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous brossiez le portrait de quelqu'un d'autre.	}
+{	274	}{	Je vais y aller. Merci pour les renseignements. Au revoir.	}{	Je vais y aller. Merci pour les renseignements. Au revoir.	}{	0	}{	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	Therese. . . Therese, je ne l'aime pas mais je peux la respecter. Jeanette, c'est autre chose. Je ne sais pas quoi en penser. Elle est un peu. . . ailleurs dans sa tête. Je sais que Therese est comme vous, et je pensais que Jeanette aussi, mais j'ai entendu d'autres rumeurs sur elle. . .	}{	Therese. . . Therese, je ne l'aime pas mais je peux la respecter. Jeanette, c'est autre chose. Je ne sais pas quoi en penser. Elle est un peu. . . ailleurs dans sa tête. Je sais que Therese est comme vous, et je pensais que Jeanette aussi, mais j'ai entendu d'autres rumeurs sur elle. . .	}{	#	}{	npc.SetDisposition("lay", 2)	}{	G.Mercurio_Jeanette = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Des rumeurs ?	}{	Des rumeurs ?	}{	291	}{	IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Quels murmures ?	}
+{	283	}{	Des rumeurs ?	}{	Des rumeurs ?	}{	301	}{	not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Quels murmures ?	}
+{	284	}{	J'ai une question sur autre chose.	}{	J'ai une question sur autre chose.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous brossiez le portrait de quelqu'un d'autre.	}
+{	285	}{	Vous avez parlé de 'sang' tout à l'heure ?	}{	Vous avez parlé de 'sang' tout à l'heure ?	}{	741	}{	G.Mercurio_Blood == 0 and G.Story_State == 0	}{	G.Mercurio_Blood = 1	}{	}{	}{	}{	}{	}{	}{	Dites-m'en plus sur ce 'sang'.	}
+{	286	}{	Je vois. Merci pour les renseignements. Au revoir.	}{	Je vois. Merci pour les renseignements. Au revoir.	}{	0	}{	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Je vois. Merci pour les renseignements. Au revoir.	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Bon. . . Jeanette. Un corps fait pour les galipettes. Et j'ai des amis proches qui m'affirment y être passés. Mais j'ai demandé au chef, et il m'a dit que vous, enfin, vous ne pouvez, enfin, plus faire ce genre de. . . enfin, quoi qu'elle soit, Jeanette est une sauvage. . .	}{	Bon. . . Jeanette. Un corps fait pour les galipettes. Et j'ai des amis proches qui m'affirment y être passés. Mais j'ai demandé au chef, et il m'a dit que vous, enfin, vous ne pouvez, enfin, plus faire ce genre de. . . enfin, quoi qu'elle soit, Jeanette est une sauvage. . .	}{	#	}{	npc.SetDisposition("lay", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	J'ai une question sur autre chose.	}{	J'ai une question sur autre chose.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous brossiez le portrait de quelqu'un d'autre.	}
+{	293	}{	Intéressant. Au revoir.	}{	Intéressant. Au revoir.	}{	0	}{	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Je ne vous entends plus, je ne suis plus là.	}
+{	294	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Vous allez me trouver vieux jeu, mais je ne peux pas parler de ce genre de chose devant une femme.	}{	Vous allez me trouver vieux jeu, mais je ne peux pas parler de ce genre de chose devant une femme.	}{	#	}{	npc.SetDisposition("lay", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Vous allez me trouver vieux jeu, mais je crois qu'un coup de genou dans les boules, ça fait parler. . .	}{	Vous allez me trouver vieux jeu, mais je crois qu'un coup de genou dans les boules, ça fait parler. . .	}{	291	}{	}{	}{	}{	}{	}{	}{	}{	}{	Refuse-moi encore une chose, et je ferai de toi mon eunuque.	}
+{	303	}{	J'avais une question sur quelqu'un.	}{	J'avais une question sur quelqu'un.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous brossiez le portrait de quelqu'un d'autre.	}
+{	304	}{	Je vois. Alors je me mets en route.	}{	Je vois. Alors je me mets en route.	}{	0	}{	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Vous parlez à quelqu'un qui est déjà parti.	}
+{	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	[Mercurio paraît mort]. . .	}{	[Mercurio paraît mort]. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Mercurio ?	}{	Mercurio ?	}{	151	}{	pc.GetQuestState("Astrolite") != 4	}{	}{	}{	}{	}{	}{	}{	}{	Avez-vous franchi la sombre rivière, Mercurio ?	}
+{	313	}{	Oh non, vous êtes mort !	}{	Oh non, vous êtes mort !	}{	151	}{	pc.GetQuestState("Astrolite") != 4	}{	}{	}{	}{	}{	}{	}{	}{	Debout. Meunier, t'es mort ?	}
+{	314	}{	Eh, le loser, on se réveille. . .	}{	Eh, le loser, on se réveille. . .	}{	901	}{	pc.GetQuestState("Astrolite") == 4	}{	}{	}{	}{	}{	}{	}{	}{	Debout. Meunier, t'es mort ?	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	Plus précisément ?	}{	Plus précisément ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Parlez-moi des intrigants de Santa Monica.	}{	Parlez-moi des intrigants de Santa Monica.	}{	331	}{	G.Story_State < 5	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi des pièces sur l'échiquier qu'est la dame. . .	}
+{	323	}{	Vous savez où je peux trouver des armes ?	}{	Vous savez où je peux trouver des armes ?	}{	361	}{	G.Trip_Know < 4 and G.Mercurio_Aid == 1 and G.Story_State < 5	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de baguettes magiques qui font boum.	}
+{	324	}{	Vous savez où je peux trouver des armes ?	}{	Vous savez où je peux trouver des armes ?	}{	371	}{	G.Mercurio_Aid == 0 and G.Story_State < 5	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de baguettes magiques qui font boum.	}
+{	325	}{	Santa Monica.	}{	Santa Monica.	}{	701	}{	G.Story_State > 5	}{	}{	}{	}{	}{	}{	}{	}{	La dame près de la mer. . .	}
+{	326	}{	Le centre ville de LA. 	}{	Le centre ville de LA. 	}{	711	}{	G.Story_State >= 10	}{	}{	}{	}{	}{	}{	}{	}{	La cour du bouffon. . .	}
+{	327	}{	Hollywood.	}{	Hollywood.	}{	721	}{	G.Story_State >= 35	}{	}{	}{	}{	}{	}{	}{	}{	Un lieu où les rêves sont de celluloïd. . .	}
+{	328	}{	Chinatown.	}{	Chinatown.	}{	731	}{	G.Story_State >= 45	}{	}{	}{	}{	}{	}{	}{	}{	Un avant-poste oriental dans l'occident.	}
+{	329	}{	Vous avez parlé de 'sang' ?	}{	Vous avez parlé de 'sang' ?	}{	741	}{	G.Mercurio_Blood == 0 and G.Story_State == 0	}{	G.Mercurio_Blood = 1	}{	}{	}{	}{	}{	}{	}{	Dites-m'en plus sur ce 'sang'.	}
+{	330	}{	Peu importe. Au revoir.	}{	Peu importe. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	331	}{	Qui exactement ?	}{	Qui exactement ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Therese Voerman.	}{	Therese Voerman.	}{	271	}{	G.Mercurio_Therese == 0	}{	}{	}{	}{	}{	}{	}{	}{	La fille noire de Janus. . .	}
+{	333	}{	Jeanette Voerman.	}{	Jeanette Voerman.	}{	281	}{	G.Mercurio_Jeanette == 1	}{	}{	}{	}{	}{	}{	}{	}{	La fille blanche de Janus.	}
+{	334	}{	Bertram Tung.	}{	Bertram Tung.	}{	341	}{	G.Mercurio_Tung == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le ver dans son bain noir.	}
+{	335	}{	Vous-même.	}{	Vous-même.	}{	351	}{	G.Mercurio_Self == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le dieu aux pieds ailés. . .	}
+{	336	}{	Laissez tomber. A plus.	}{	Laissez tomber. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Je ne le connais pas personnellement. J'aimerais le rencontrer - c'est un peu une légende locale. Therese et lui s'opposent apparemment pour la ville. Il est doué et intelligent. Je n'ai rien entendu dire de mauvais sur lui. 	}{	Je ne le connais pas personnellement. J'aimerais le rencontrer - c'est un peu une légende locale. Therese et lui s'opposent apparemment pour la ville. Il est doué et intelligent. Je n'ai rien entendu dire de mauvais sur lui. 	}{	#	}{	}{	G.Mercurio_Tung = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	J'ai d'autres questions sur d'autres personnes.	}{	J'ai d'autres questions sur d'autres personnes.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame et de son peuple. . .	}
+{	343	}{	J'ai d'autres questions sur d'autres lieux.	}{	J'ai d'autres questions sur d'autres lieux.	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame et de ses recoins.	}
+{	344	}{	Merci du renseignement. Au revoir.	}{	Merci du renseignement. Au revoir.	}{	0	}{	G.Story_State == 0	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Mes pas m'ont mené ailleurs avant que ma bouche ait fini de bouger.	}
+{	345	}{	Merci du renseignement. Au revoir.	}{	Merci du renseignement. Au revoir.	}{	0	}{	G.Story_State >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Avant même que ma bouche ait parlé, j'étais déjà loin.	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	Il n'y a rien à dire. Je peux vous avoir ce que vous voulez, n'importe quand. C'est un peu ma vocation. Jusqu'à l'Astrolite, je pouvais tout faire. Enfin, à l'Est, il y a eu des merdes, je ne peux pas retourner à New York. Je déteste LA, mais où aller ?	}{	Il n'y a rien à dire. Je peux vous avoir ce que vous voulez, n'importe quand. C'est un peu ma vocation. Jusqu'à l'Astrolite, je pouvais tout faire. Enfin, à l'Est, il y a eu des merdes, je ne peux pas retourner à New York. Je déteste LA, mais où aller ?	}{	#	}{	}{	G.Mercurio_Self = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	Vous avez parlé de 'sang' ?	}{	Vous avez parlé de 'sang' ?	}{	741	}{	G.Mercurio_Blood == 0 and G.Story_State == 0	}{	G.Mercurio_Blood = 1	}{	}{	}{	}{	}{	}{	}{	Dites-m'en plus sur ce 'sang'.	}
+{	353	}{	J'ai d'autres questions sur d'autres personnes.	}{	J'ai d'autres questions sur d'autres personnes.	}{	331	}{	G.Story_State < 5	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous brossiez le portrait de quelqu'un d'autre.	}
+{	354	}{	J'ai d'autres questions sur Santa Monica.	}{	J'ai d'autres questions sur Santa Monica.	}{	321	}{	G.Story_State < 5	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame et de ses recoins.	}
+{	355	}{	J'ai d'autres questions sur d'autres personnes.	}{	J'ai d'autres questions sur d'autres personnes.	}{	501	}{	G.Story_State >= 5	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous brossiez le portrait de quelqu'un d'autre.	}
+{	356	}{	Merci du renseignement. Au revoir.	}{	Merci du renseignement. Au revoir.	}{	0	}{	G.Story_State >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Mes pas m'ont mené ailleurs avant que ma bouche ait fini de bouger.	}
+{	357	}{	Merci du renseignement. Au revoir.	}{	Merci du renseignement. Au revoir.	}{	0	}{	G.Story_State == 0	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Mes pas m'ont mené ailleurs avant que ma bouche ait fini de bouger.	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Des armes ? Il y a un type qui s'appelle Trip, au bout de la rue. Il a quelques flingues sous le comptoir, mais il ne vend pas à n'importe qui. Il n'a pas le permis. Je vais l'appeler pour qu'il vous les vende. C'est le moins que je puisse faire.	}{	Des armes ? Il y a un type qui s'appelle Trip, au bout de la rue. Il a quelques flingues sous le comptoir, mais il ne vend pas à n'importe qui. Il n'a pas le permis. Je vais l'appeler pour qu'il vous les vende. C'est le moins que je puisse faire.	}{	#	}{	}{	G.Trip_Know = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	J'ai d'autres questions sur d'autres personnes.	}{	J'ai d'autres questions sur d'autres personnes.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous brossiez le portrait de quelqu'un d'autre.	}
+{	363	}{	J'ai d'autres questions sur Santa Monica.	}{	J'ai d'autres questions sur Santa Monica.	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame et de ses recoins.	}
+{	364	}{	Merci. Au revoir.	}{	Merci. Au revoir.	}{	0	}{	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Mes pas m'ont mené ailleurs avant que ma bouche ait fini de bouger.	}
+{	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	Dès que j'aurai fini de perdre mes tripes, je serai à nouveau dans la partie. Je peux trouver des trucs assez spécialisés, mais ça va me demander du temps. Si vous vous taisez pour le truc de l'Astrolite, je suis prêt à faire affaire avec vous.	}{	Dès que j'aurai fini de perdre mes tripes, je serai à nouveau dans la partie. Je peux trouver des trucs assez spécialisés, mais ça va me demander du temps. Si vous vous taisez pour le truc de l'Astrolite, je suis prêt à faire affaire avec vous.	}{	#	}{	npc.SetDisposition("lay", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	J'ai d'autres questions sur d'autres personnes.	}{	J'ai d'autres questions sur d'autres personnes.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous brossiez le portrait de quelqu'un d'autre.	}
+{	373	}{	J'ai d'autres questions sur Santa Monica.	}{	J'ai d'autres questions sur Santa Monica.	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame et de ses recoins.	}
+{	374	}{	Merci. Au revoir.	}{	Merci. Au revoir.	}{	0	}{	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Mes pas m'ont mené ailleurs avant que ma bouche ait fini de bouger.	}
+{	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	[extatique]Eh ! Vous. . . Bon sang, vous m'avez sauvé la peau. Je suis vraiment reconnaissant que vous n'ayez rien dit, et je prends bien soin de ceux qui me rendent service. Maintenant, s'il vous faut de l'équipement, venez me voir. Vraiment, j'insiste. 	}{	[extatique]Eh ! Vous. . . Bon sang, vous m'avez sauvé la peau. Je suis vraiment reconnaissant que vous n'ayez rien dit, et je prends bien soin de ceux qui me rendent service. Maintenant, s'il vous faut de l'équipement, venez me voir. Vraiment, j'insiste. 	}{	#	}{	npc.SetDisposition("joy", 1)	}{	G.Mercurio_Deal = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	On dirait que vous allez mieux.	}{	On dirait que vous allez mieux.	}{	391	}{	G.Mercurio_Health == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment vont les ailes de vos pieds, Mercure ?	}
+{	383	}{	Qu'est-ce que vous faites ici, Mercurio ?	}{	Qu'est-ce que vous faites ici, Mercurio ?	}{	941	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que fait le grand Mercurio près des eaux ?	}
+{	384	}{	Il me faut de l'équipement.	}{	Il me faut de l'équipement.	}{	0	}{	IsDead("Dennis")	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de quelques jouets cruels. . .	}
+{	385	}{	Il me faut de l'équipement.	}{	Il me faut de l'équipement.	}{	951	}{	not IsDead("Dennis")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de quelques jouets cruels. . .	}
+{	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	Je vous dis, votre sang, c'est génial. Ca m'a aidé à refermer quelques blessures. Pour le reste, je me suis fait recoudre dans un coin. J'avais bien besoin de me faire dérouiller. Ca m'a rappelé de ne pas me croire arrivé. Ca ne se reproduira plus.	}{	Je vous dis, votre sang, c'est génial. Ca m'a aidé à refermer quelques blessures. Pour le reste, je me suis fait recoudre dans un coin. J'avais bien besoin de me faire dérouiller. Ca m'a rappelé de ne pas me croire arrivé. Ca ne se reproduira plus.	}{	#	}{	npc.SetDisposition("joy", 1)	}{	G.Mercurio_Health = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	Il me faut de l'équipement.	}{	Il me faut de l'équipement.	}{	0	}{	IsDead("Dennis") and pc.GetQuestState("Dane") < 2	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de quelques jouets cruels. . .	}
+{	393	}{	Il me faut de l'équipement.	}{	Il me faut de l'équipement.	}{	951	}{	not IsDead("Dennis") and pc.GetQuestState("Dane") < 2	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de quelques jouets cruels. . .	}
+{	394	}{	Il me faut des renseignements.	}{	Il me faut des renseignements.	}{	491	}{	IsDead("Dennis") or G.Beach_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	395	}{	Il me faut des renseignements.	}{	Il me faut des renseignements.	}{	951	}{	not IsDead("Dennis") and G.Beach_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	C'est toujours bon à savoir. Au revoir, Mercurio.	}{	C'est toujours bon à savoir. Au revoir, Mercurio.	}{	0	}{	IsDead("Dennis") or G.Beach_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	Que les ailes de vos pieds vous portent vers des cieux plus élevés. Adieu.	}
+{	400	}{	C'est toujours bon à savoir. Au revoir, Mercurio.	}{	C'est toujours bon à savoir. Au revoir, Mercurio.	}{	951	}{	not IsDead("Dennis") and G.Beach_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	Que les ailes de vos pieds vous portent vers des cieux plus élevés. Adieu.	}
+{	401	}{	Oh, au fait. . . Je suis allé voir nos amis de la plage ce matin. Une overdose, c'est moche, comme façon de mourir. Surtout quand on se retrouve avec les rotules par terre, à côté des jambes. Je n'aime pas laisser les choses en suspens. . .	}{	Oh, au fait. . . Je suis allé voir nos amis de la plage ce matin. Une overdose, c'est moche, comme façon de mourir. Surtout quand on se retrouve avec les rotules par terre, à côté des jambes. Je n'aime pas laisser les choses en suspens. . .	}{	#	}{	npc.SetDisposition("joy", 1)	}{	G.Beach_Dead = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	Sans aucun doute. Qu'auriez-vous qui puisse m'être utile ?	}{	Sans aucun doute. Qu'auriez-vous qui puisse m'être utile ?	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de quelques jouets cruels. . .	}
+{	403	}{	Ah oui. . . Il me faut quelques renseignements.	}{	Hé. Il me faut quelques renseignements.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	404	}{	Je ne pense pas que c'était nécessaire, mais c'est à vous d'en juger. Au revoir, Mercurio. 	}{	Je ne pense pas que c'était nécessaire, mais c'est à vous d'en juger. Au revoir, Mercurio. 	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Courez, courez, petit Mercure. Adieu.	}
+{	405	}{	Ils l'avaient mérité. Au revoir, Mercurio. 	}{	Ils l'avaient mérité. Au revoir, Mercurio. 	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mercure peut aussi être le dieu de la guerre, alors ? Je m'en vais.	}
+{	406	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	407	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	Plus précisément ?	}{	Plus précisément ?	}{	#	}{	npc.SetDisposition("neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Un fusil à lunette.	}{	Un fusil à lunette.	}{	421	}{	G.Story_State < 40	}{	}{	}{	}{	}{	}{	}{	}{	Un fusil à lunette.	}
+{	413	}{	Un fusil à pompe. 	}{	Un fusil à pompe. 	}{	431	}{	G.Story_State < 35	}{	}{	}{	}{	}{	}{	}{	}{	Un fusil à pompe. 	}
+{	414	}{	Un lance-flammes.	}{	Un lance-flammes.	}{	441	}{	G.Story_State < 65	}{	}{	}{	}{	}{	}{	}{	}{	Un lance-flammes.	}
+{	415	}{	Un missile nucléaire tactique.	}{	Un missile nucléaire tactique.	}{	451	}{	G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Un missile nucléaire tactique.	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	Pas facile, même dans ce pays. Un fusil à lunette avec des munitions de calibre .50, ça abat un type à une sacrée distance. Les Services Secrets deviennent nerveux. Mais je peux vous trouver un fusil SWAT. Laissez-moi un peu de temps.	}{	Pas facile, même dans ce pays. Un fusil à lunette avec des munitions de calibre .50, ça abat un type à une sacrée distance. Les Services Secrets deviennent nerveux. Mais je peux vous trouver un fusil SWAT. Laissez-moi un peu de temps.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	Je cherchais d'autres armes. 	}{	Je cherchais d'autres armes. 	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'autres baguettes magiques. . .	}
+{	423	}{	Voyons ce que vous vendez.	}{	Voyons ce que vous vendez.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Montrez-moi vos marchandises, charmante goule.	}
+{	424	}{	J'avais des questions sur autre chose.	}{	J'avais des questions sur autre chose.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	425	}{	Je reviendrai quand vous l'aurez. Au revoir.	}{	Je reviendrai quand vous l'aurez. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est ailleurs.	}
+{	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	Ce qu'il vous faut, c'est un Spas-15. J'ai un contact, mais je ne l'ai pas vu depuis longtemps. Il doit être au Mexique. Dès qu'il rentrera, j'en aurai quelques-uns.	}{	Ce qu'il vous faut, c'est un Spas-15. J'ai un contact, mais je ne l'ai pas vu depuis longtemps. Il doit être au Mexique. Dès qu'il rentrera, j'en aurai quelques-uns.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Je cherchais d'autres armes. 	}{	Je cherchais d'autres armes. 	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'autres baguettes magiques. . .	}
+{	433	}{	Voyons ce que vous vendez.	}{	Voyons ce que vous vendez.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Montrez-moi vos marchandises, charmante goule.	}
+{	434	}{	J'avais des questions sur autre chose.	}{	J'avais des questions sur autre chose.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	435	}{	Je reviendrai quand vous l'aurez. Au revoir.	}{	Je reviendrai quand vous l'aurez. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est ailleurs.	}
+{	436	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	On m'en demande souvent. C'est la faute des films. On croit que c'est génial, jusqu'à ce qu'on foute le feu à ses potes. Pas facile à trouver. J'ai un contact à Vegas, pour ça. La dernière fois que j'y suis allé, il a fallu que je me fraie un chemin jusqu'à la frontière de l'état, à grands coups de bastos. . .	}{	On m'en demande souvent. C'est la faute des films. Tout le monde croit que c'est génial, jusqu'à ce qu'on en ait une en main. Pas facile à trouver. J'ai un contact à Vegas, pour ça. La dernière fois que j'y suis allé, il a fallu que je me fraie un chemin jusqu'à la frontière de l'état, à grands coups de bastos. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	Je cherchais d'autres armes. 	}{	Je cherchais d'autres armes. 	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'autres baguettes magiques. . .	}
+{	443	}{	Voyons ce que vous vendez.	}{	Voyons ce que vous vendez.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Montrez-moi vos marchandises, charmante goule.	}
+{	444	}{	J'avais des questions sur autre chose.	}{	J'avais des questions sur autre chose.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	445	}{	Je reviendrai quand vous l'aurez. Au revoir.	}{	Je reviendrai quand vous l'aurez. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est ailleurs.	}
+{	446	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Il faut être malade pour vouloir ce genre de truc. C'est pour ça qu'on en trouve à Washington.	}{	Il faut être malade pour vouloir ce genre de truc. C'est pour ça qu'on en trouve à Washington.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Je cherchais d'autres armes. 	}{	Je cherchais d'autres armes. 	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'autres baguettes magiques. . .	}
+{	453	}{	Voyons ce que vous vendez.	}{	Voyons ce que vous vendez.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Montrez-moi vos marchandises, charmante goule.	}
+{	454	}{	J'avais des questions sur autre chose.	}{	J'avais des questions sur autre chose.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	455	}{	Je reviendrai quand vous l'aurez. Au revoir.	}{	Je reviendrai quand vous l'aurez. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est ailleurs.	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	Voilà ce que j'ai.	}{	Voilà ce que j'ai.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	463	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	464	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	J'ai récupéré un Spas-15 ce matin. Propre, graissé, il attend qu'on tire sur quelqu'un. Ca vous dit ?	}{	J'ai récupéré un Spas-15 ce matin. Propre, graissé, il attend qu'on tire sur quelqu'un. Ca vous dit ?	}{	#	}{	}{	G.Mercurio_Spas = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	Voyons cela.	}{	Voyons cela.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Montrez-moi ce Spas de tir. . .	}
+{	473	}{	Tirer ? Ca m'intéresse toujours.	}{	Tirer ? Ca m'intéresse toujours.	}{	0	}{	Humanity -5	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	J'aime les trucs gras avec lesquels on peut tirer. . .	}
+{	474	}{	Une autre fois, peut-être. J'ai quelques questions.	}{	Une autre fois, peut-être. J'ai quelques questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	475	}{	Pas maintenant. Je dois partir.	}{	Pas maintenant. Je dois partir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Je peux faire quelque chose pour vous, ce soir ?	}{	Je peux faire quelque chose pour vous, ce soir ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	Vous vous sentez bien ?	}{	Vous vous sentez bien ?	}{	391	}{	G.Mercurio_Health == 0 and G.Story_State < 40	}{	}{	}{	}{	}{	}{	}{	}{	Comment vont les ailes de vos pieds, Mercure ?	}
+{	483	}{	Il me faut de l'équipement.	}{	Il me faut de l'équipement.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de quelques jouets cruels. . .	}
+{	484	}{	Il me faut des renseignements.	}{	Il me faut des renseignements.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	485	}{	Rien pour l'instant. A bientôt, Mercurio.	}{	Rien pour l'instant. A bientôt, Mercurio.	}{	0	}{	G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Que les ailes de vos pieds vous portent vers des cieux plus élevés. Adieu.	}
+{	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	A propos de quoi ?	}{	A propos de quoi ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	De gens.	}{	De gens.	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	De gens.	}
+{	493	}{	De lieux.	}{	De lieux.	}{	321	}{	G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	De lieux.	}
+{	494	}{	D'armes.	}{	D'armes.	}{	411	}{	G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	D'armes.	}
+{	495	}{	Rien pour l'instant. A bientôt, Mercurio.	}{	Rien pour l'instant. A bientôt, Mercurio.	}{	0	}{	G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Rien pour l'instant. A bientôt, Mercurio.	}
+{	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	Qui exactement ?	}{	Qui exactement ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	Vous-même.	}{	Vous-même.	}{	351	}{	G.Story_State > 0 and G.Story_State < 35	}{	}{	}{	}{	}{	}{	}{	}{	Vous, dieu aux pieds ailés. . .	}
+{	503	}{	Le Prince LaCroix.	}{	Le Prince LaCroix.	}{	541	}{	G.Story_State > 5 and G.Story_State < 40 and G.Mercurio_Prince == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le bouffon dans sa tour d'ivoire.	}
+{	504	}{	Le Sabbat.	}{	Le Sabbat.	}{	551	}{	G.Story_State > 5 and G.Story_State < 50 and G.Mercurio_Sabbat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nos frères des ténèbres, le Sabbat.	}
+{	505	}{	Nines.	}{	Nines.	}{	561	}{	G.Story_State >= 35 and G.Story_State < 100 and G.Mercurio_Nines == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le prince des rues. . .	}
+{	506	}{	Le shérif.	}{	Le shérif.	}{	571	}{	G.Story_State >= 30 and G.Story_State < 100 and G.Mercurio_Prince == 1 and G.Mercurio_Sheriff == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le chien du bouffon. . .	}
+{	507	}{	Gary. . .	}{	Gary. . .	}{	581	}{	G.Story_State > 45 and G.Story_State < 100 and G.Mercurio_Gary == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Gary.	}
+{	508	}{	Le ver à la beauté fanée dans son terrier. . .	}{	Le ver à la beauté fanée dans son clapier. . .	}{	791	}{	G.Story_State > 45 and G.Story_State < 100 and G.Mercurio_Gary == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	Isaac.	}{	Isaac.	}{	591	}{	G.Story_State >= 35 and G.Story_State < 90 and G.Mercurio_Nines == 1 and G.Mercurio_Isaac == 0	}{	}{	}{	}{	}{	}{	}{	}{	L'artiste torturé.	}
+{	510	}{	Les Kuei-Jin.	}{	Les Kuei-Jin.	}{	601	}{	G.Story_State >= 45 and G.Story_State < 100 and G.Mercurio_Sabbat == 1 and G.Mercurio_Kuei == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les cauchemars d'orient, dévoreurs de vie. . .	}
+{	511	}{	Troika Games.	}{	Troika Games.	}{	611	}{	G.Story_State >= 100	}{	}{	}{	}{	}{	}{	}{	}{	Troika Games.	}
+{	512	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	513	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	514	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	515	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	516	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	517	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	520	}{	C'est tout pour l'instant. Merci, Mercurio.	}{	C'est tout pour l'instant. Merci, Mercurio.	}{	0	}{	G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	C'est tout pour l'instant. Merci, Mercurio.	}
+{	521	}{	C'est toujours un plaisir. Il vous faut quelque chose pour ce soir ?	}{	C'est toujours un plaisir. Il vous faut quelque chose pour ce soir ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	Il me faut de l'équipement.	}{	Il me faut de l'équipement.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Des jouets et des baguettes magiques.	}
+{	523	}{	Il me faut des renseignements.	}{	Il me faut des renseignements.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	524	}{	Rien pour l'instant. A bientôt, Mercurio.	}{	Rien pour l'instant. A bientôt, Mercurio.	}{	0	}{	G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	J'étais ailleurs quand vous avez commencé à parler.	}
+{	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Vous n'êtes pas là depuis longtemps, hein ? Le Sabbat, si je comprends bien, est composé des monstres qu'on voit dans les films. Les assoiffés de pouvoir typiques. Ils font le mal. J'en ai déjà rencontrés - et ça ne m'a pas amusé.	}{	Vous n'êtes pas là depuis longtemps, hein ? Le Sabbat, si je comprends bien, est composé des monstres qu'on voit dans les films. Les assoiffés de pouvoir typiques. Ils font le mal. J'en ai déjà rencontrés - et ça ne m'a pas amusé.	}{	#	}{	npc.SetDisposition("lay", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	Parlez-moi de cet entrepôt.	}{	Parlez-moi de cet entrepôt.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de cette maison entre les pots.	}
+{	533	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	534	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	536	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	Je ne l'ai vu qu'une ou deux fois. D'après ce que j'ai entendu dire, il est intouchable. Et je ne l'ai jamais vu dehors sans son garde du corps, le shérif. Comprenons-nous bien, ma loyauté est inébranlable, alors mon opinion sur ce type importe peu.	}{	Je ne l'ai vu qu'une ou deux fois. D'après ce que j'ai entendu dire, il est intouchable. Et je ne l'ai jamais vu dehors sans son garde du corps, le shérif. Comprenons-nous bien, ma loyauté est inébranlable, alors mon opinion sur ce type importe peu.	}{	#	}{	}{	G.Mercurio_Prince = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	J'ai des questions sur quelqu'un d'autre. 	}{	J'ai des questions sur quelqu'un d'autre. 	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous brossiez le portrait de quelqu'un d'autre.	}
+{	543	}{	J'avais des questions sur autre chose.	}{	J'avais des questions sur autre chose.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	544	}{	J'ai besoin d'équipement.	}{	J'ai besoin d'équipement.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Des jouets et des baguettes magiques.	}
+{	545	}{	Merci du renseignement, Mercurio.	}{	Merci du renseignement, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	546	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	547	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	548	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	Le genre de vampire de cinéma, typique, méchant et cruel. Il y a quelques années, je servais de garde du corps à un mec. Avec quelques goules et deux ou trois jeunes vampires comme vous. Le Sabbat nous a attaqués, pour nous croquer et faire un massacre. On a été deux à en repartir, dont l'ancien.	}{	Le genre de vampire de cinéma, typique, méchant et cruel. Il y a quelques années, je servais de garde du corps à un mec. Avec quelques goules et deux ou trois jeunes vampires comme vous. Le Sabbat nous a attaqués, pour nous croquer et faire un massacre. On a été deux à en repartir, dont l'ancien.	}{	#	}{	}{	G.Mercurio_Sabbat = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	J'ai des questions sur quelqu'un d'autre. 	}{	J'ai des questions sur quelqu'un d'autre. 	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous brossiez le portrait de quelqu'un d'autre.	}
+{	553	}{	J'avais des questions sur autre chose.	}{	J'avais des questions sur autre chose.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	554	}{	J'ai besoin d'équipement.	}{	J'ai besoin d'équipement.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Des jouets et des baguettes magiques.	}
+{	555	}{	Merci du renseignement, Mercurio.	}{	Merci du renseignement, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	556	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	558	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	Nines ? Je ne l'ai jamais rencontré, mais j'en entends parler depuis des années. Son organisation est assez minable, mais les anarchs savent être méchants quand il faut. Il y en a plein, dans cette ville. Pas très amicaux avec la Camarilla, faites attention. 	}{	Nines ? Je ne l'ai jamais rencontré, mais j'en entends parler depuis des années. Son organisation est assez minable, mais les anarchs savent être méchants quand il faut. Il y en a plein, dans cette ville. Pas très amicaux avec la Camarilla, faites attention. 	}{	#	}{	}{	G.Mercurio_Nines = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	J'ai des questions sur quelqu'un d'autre. 	}{	J'ai des questions sur quelqu'un d'autre. 	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous brossiez le portrait de quelqu'un d'autre.	}
+{	563	}{	J'avais des questions sur autre chose.	}{	J'avais des questions sur autre chose.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	564	}{	J'ai besoin d'équipement.	}{	J'ai besoin d'équipement.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Des jouets et des baguettes magiques.	}
+{	565	}{	Merci du renseignement, Mercurio.	}{	Merci du renseignement, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	566	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	Un gros bras froid et silencieux. Je ne l'ai jamais vu en action, mais j'ai entendu des trucs. Si on énerve LaCroix, on voit le shérif, puis on ne voit plus rien. Il paraît qu'il se bat comme le diable. Pas le genre de gars que je vais regarder en face, si je peux éviter. . .	}{	Un gros bras froid et silencieux. Je ne l'ai jamais vu en action, mais j'ai entendu des trucs. Si on énerve LaCroix, on voit le shérif, puis on ne voit plus rien. Il paraît qu'il se bat comme le diable. Pas le genre de gars que je vais regarder en face, si je peux éviter. . .	}{	#	}{	}{	G.Mercurio_Sheriff = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	J'ai des questions sur quelqu'un d'autre. 	}{	J'ai des questions sur quelqu'un d'autre. 	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous brossiez le portrait de quelqu'un d'autre.	}
+{	573	}{	J'avais des questions sur autre chose.	}{	J'avais des questions sur autre chose.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	574	}{	J'ai besoin d'équipement.	}{	J'ai besoin d'équipement.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Des jouets et des baguettes magiques.	}
+{	575	}{	Merci du renseignement, Mercurio.	}{	Merci du renseignement, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	576	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	577	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	Gary ? Désolé, le nom ne me dit rien.	}{	Gary ? Désolé, le nom ne me dit rien.	}{	#	}{	}{	G.Mercurio_Gary = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	J'ai des questions sur quelqu'un d'autre. 	}{	J'ai des questions sur quelqu'un d'autre. 	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous brossiez le portrait de quelqu'un d'autre.	}
+{	583	}{	J'avais des questions sur autre chose.	}{	J'avais des questions sur autre chose.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	584	}{	J'ai besoin d'équipement.	}{	J'ai besoin d'équipement.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Des jouets et des baguettes magiques.	}
+{	585	}{	Merci du renseignement, Mercurio.	}{	Merci du renseignement, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	586	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	587	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	Isaac est un client assez cool. Il est de l'ancienne école, il ne fait pas chier. On n'en voit plus trop, des comme ça. Il ne cache pas son animosité envers la Camarilla. Dommage. Un type comme ça serait précieux.	}{	Isaac est un client assez cool. Il est de l'ancienne école, il ne fait pas chier. On n'en voit plus trop, des comme ça. Il ne cache pas son animosité envers la Camarilla. Dommage. Un type comme ça serait précieux.	}{	#	}{	}{	G.Mercurio_Isaac = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	J'ai des questions sur quelqu'un d'autre. 	}{	J'ai des questions sur quelqu'un d'autre. 	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous brossiez le portrait de quelqu'un d'autre.	}
+{	593	}{	J'avais des questions sur autre chose.	}{	J'avais des questions sur autre chose.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	594	}{	J'ai besoin d'équipement.	}{	J'ai besoin d'équipement.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Des jouets et des baguettes magiques.	}
+{	595	}{	Merci du renseignement, Mercurio.	}{	Merci du renseignement, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	596	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	597	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	598	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	599	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	600	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	601	}{	Vous parlez des Kuei-Jin. Comme vous, mais différents. Les anarchs avaient juste fini de les combattre quand la Camarilla est arrivée en ville. Je vous conseille de ne pas aller à Chinatown tant que notre drapeau ne flottera pas sur le quartier. . .	}{	Vous parlez des Kuei-Jin. Comme vous, mais différents. Les anarchs avaient juste fini de les combattre quand la Camarilla est arrivée en ville. Je vous conseille de ne pas aller à Chinatown tant que notre drapeau ne flottera pas sur le quartier. . .	}{	#	}{	}{	G.Mercurio_Kuei = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	J'ai des questions sur quelqu'un d'autre. 	}{	J'ai des questions sur quelqu'un d'autre. 	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous brossiez le portrait de quelqu'un d'autre.	}
+{	603	}{	J'avais des questions sur autre chose.	}{	J'avais des questions sur autre chose.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	604	}{	J'ai besoin d'équipement.	}{	J'ai besoin d'équipement.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Des jouets et des baguettes magiques.	}
+{	605	}{	Merci du renseignement, Mercurio.	}{	Merci du renseignement, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	Une boîte de jeux vidéo. Pas à LA, mais à Irvine, un peu au sud. Tim Cain, Leonard Boyarsky et Jason Anderson, ce sont les plus gros de la boîte. Ils travaillent sur un projet secret. Je ne sais rien, mais la Cama se demande s'ils n'en savent pas un peu trop. . .	}{	Une boîte de jeux vidéo. Pas à LA, mais à Irvine, un peu au sud. Tim Cain, Leonard Boyarsky et Jason Anderson, ce sont les plus gros de la boîte. Ils travaillent sur un projet secret. Je ne sais rien, mais la Cama se demande s'ils n'en savent pas un peu trop. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	613	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	614	}{	Intéressant. Maintenant, j'ai besoin d'équipement.	}{	Intéressant. Maintenant, j'ai besoin d'équipement.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Ah ? Et pour les jouets et les baguettes magiques.	}
+{	615	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	616	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	617	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	618	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	619	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	620	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	Je suis allé me repoudrer le nez. Quand je suis arrivé en haut de la tour, j'ai entendu LaCroix crier au travers des murs. Il paraît très embêté par cette histoire de sarcophage. Heureusement, ça ne me concerne pas.	}{	Je suis allé me repoudrer le nez. Quand je suis arrivé en haut de la tour, j'ai entendu LaCroix crier au travers des murs. Il paraît très embêté par cette histoire de sarcophage. Heureusement, ça ne me concerne pas.	}{	#	}{	}{	G.Mercurio_Fix = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	Vous avez de la chance.	}{	Vous avez de la chance.	}{	481	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chanceux.	}
+{	623	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	624	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	625	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	626	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	627	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	628	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	629	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	630	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	631	}{	Mon contact de Vegas est venu me voir cet après-midi. Il a ouvert son coffre, et hop ! Un lance-flammes, avec du carburant en rab. Si ça vous intéresse, c'est pour vous. . . Mais. . . vous n'êtes pas inflammable, vous ?	}{	Mon contact de Vegas est venu me voir cet après-midi. Il a ouvert son coffre, et hop ! Un lance-flammes, avec du carburant en rab. Si ça vous intéresse, c'est pour vous. . . Mais. . . vous n'êtes pas inflammable, vous ?	}{	#	}{	}{	G.Mercurio_Flame = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	J'ai aussi besoin de balles pour faire brûler ces bâtards.	}{	J'ai aussi besoin de balles pour faire brûler ces bâtards.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Flamme, en avant. . .	}
+{	633	}{	J'avais des questions, d'abord.	}{	J'avais des questions, d'abord.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	634	}{	Pas vraiment, mais merci, Mercurio.	}{	Pas vraiment, mais merci, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il est temps de partir.	}
+{	635	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	636	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	637	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	638	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	640	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	641	}{	J'ai préparé un petit Souffle du Dragon. C'est un canon scié modifié pour tirer des balles au phosphore. Moi, c'est la seule arme que j'emporte quand je vais en pays du Sabbat.	}{	J'ai préparé un petit Souffle du Dragon. C'est un canon scié modifié pour tirer des balles au phosphore. Moi, c'est la seule arme que j'emporte quand je vais en pays du Sabbat.	}{	#	}{	}{	G.Mercurio_Dragon = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	J'en voudrais un pareil. Laissez-moi voir.	}{	J'en voudrais un pareil. Laissez-moi voir.	}{	0	}{	G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	I wish to see this terrible lizard.	}
+{	643	}{	J'ai des questions, avant.	}{	J'ai des questions, avant.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	I need to find some answers in the wrinkles of your brain.	}
+{	644	}{	J'verrais ça plus tard, salut, Mercurio.	}{	J'verrais ça plus tard, salut, Mercurio.	}{	0	}{	G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	I am no longer here.	}
+{	645	}{	Et bien gardes le pour toi, tu dois en avoir besoin, Mercurio.	}{	Et bien gardes le pour toi, tu dois en avoir besoin, Mercurio.	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Keep the lizard by your side. It was time to go.	}
+{	646	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	647	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	648	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	650	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	651	}{	Je suis allé chez un copain, il est chef d'équipe dans un commissariat d'O.C. Il est en colère à cause d'un gel des salaires, alors il a accepté de remplir ma liste de Noël. Je viens de récupérer un fusil S.W.A.T. Ca vous dit ?	}{	Je suis allé chez un copain, il est chef d'équipe dans un commissariat d'O.C. Il est en colère à cause d'un gel des salaires, alors il a accepté de remplir ma liste de Noël. Je viens de récupérer un fusil S.W.A.T. Ca vous dit ?	}{	#	}{	}{	G.Mercurio_Swat = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	652	}{	Non, il m'a l'air en mauvais état, mais faites voir ce que vous avez d'autres.	}{	Non, il m'a l'air en mauvais état, mais faites voir ce que vous avez d'autres.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Non, il est cassé... Montrez moi le reste.	}
+{	653	}{	Ce qui me manquait le plus de ma vie était les tirs en pleine tête. Et ils me manquent toujours...	}{	Ce qui me manquait le plus de ma vie était les tirs en pleine tête. Et ils me manquent toujours...	}{	0	}{	Humanity -5	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Toutes ces petites mouches, dire que j'avais presque une tapette. . .	}
+{	654	}{	J'avais des questions, d'abord.	}{	J'avais des questions, d'abord.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	655	}{	Pas vraiment, mais merci, Mercurio.	}{	Pas vraiment, mais merci, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	656	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	657	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	658	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	659	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	660	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	661	}{	Je pense que ça va te plaire. Ce n'est pas un flingue très courant. Réservé à une élite, on pourrait dire. Regarde ça. . .	}{	Je pense que ça va te plaire. Ce n'est pas un flingue très courant. Réservé à une élite, on pourrait dire. Regarde ça. . .	}{	#	}{	}{	G.Mercurio_Mgun = 1; G.Mercurio_Friend = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	Ca a l'air mortel. J'en prends un.	}{	Ca a l'air mortel. J'en prends un.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Je crois que je vais pleurer. . .	}
+{	663	}{	C'est un rêve qui se réalise. J'en veux !	}{	C'est un rêve qui se réalise. J'en veux !	}{	0	}{	Humanity -5	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Ca ne pourrait pas être plus beau, même si ça lançait des requins. . .	}
+{	664	}{	J'avais des questions, d'abord.	}{	J'avais des questions, d'abord.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	665	}{	Je n'en ai pas besoin. Mais merci, Mercurio.	}{	Je n'en ai pas besoin. Mais merci, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	On ne parle pas aux gens qui ne sont pas là. . .	}
+{	666	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	667	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	668	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	669	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	670	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	671	}{	Vous trahiriez votre propre race ? Ce n'est pas ce qu'on raconte. On m'a donné ordre de vous abattre à vue. . . mais je vous dois la vie, et à ce qu'on m'a dit, je n'ai aucune chance contre vous. Je vais vous vendre ce qu'il vous faut. . . mais après ce soir, ce sera la dernière fois.	}{	Vous trahiriez votre propre race ? Ce n'est pas ce qu'on raconte. On m'a donné ordre de vous abattre à vue. . . mais je vous dois la vie, et à ce qu'on m'a dit, je n'ai aucune chance contre vous. Je vais vous vendre ce qu'il vous faut. . . mais après ce soir, ce sera la dernière fois.	}{	#	}{	}{	G.Mercurio_Traitor = 1; G.Mercurio_Friend = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	672	}{	Après ce soir, vous changerez peut-être d'avis. Voyons ces armes. . .	}{	Après ce soir, vous changerez peut-être d'avis. Voyons ces armes. . .	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Nous en reparlerons quand la tour tombera. Hé montrez-moi les jouets et baguettes magiques. . .	}
+{	673	}{	Vous faites bien de ne pas m'attaquer. Très intelligent. Voyons ce que vous proposez. 	}{	Vous faites bien de ne pas m'attaquer. Très intelligent. Voyons ce que vous proposez. 	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Mercure, vous courez à votre perte si votre marché n'ouvre pas. 	}
+{	674	}{	J'ai encore quelques questions.	}{	J'ai encore quelques questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	675	}{	Je m'en vais. Espérons que la prochaine fois, nous ne serons pas des ennemis.	}{	Je m'en vais. Espérons que la prochaine fois, nous ne serons pas des ennemis.	}{	0	}{	G.Extra_Lines == 2	}{	}{	}{	}{	}{	}{	}{	}{	Priez que j'oublie vos passades déplaisantes, dieu aux pieds ailés. Au revoir.	}
+{	676	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	678	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	679	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	680	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	681	}{	Il paraît qu'il y a une fête à Chinatown, et que c'est vous qui apportez les feux d'artifice. Le Nouvel An est en avance. Faites des provisions, et bonne chance.	}{	Il paraît qu'il y a une fête à Chinatown, et que c'est vous qui apportez les feux d'artifice. Le Nouvel An est en avance. Faites des provisions, et bonne chance.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	682	}{	Merci, Mercurio. Montez la marchandise.	}{	Merci, Mercurio. Montez la marchandise.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Montrez-moi votre matériel à explosions. . .	}
+{	683	}{	J'avais encore quelques questions.	}{	J'avais encore quelques questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	684	}{	Merci, mais je peux partir.	}{	Merci, mais je peux partir.	}{	0	}{	G.Extra_Lines == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	685	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	686	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	687	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	688	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	689	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	690	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	691	}{	On raconte que vous avez tourné le dos à la Camarilla. Je ne comprends pas. Je sers ces gens-là depuis trente ans, et ils m'ont toujours bien traité. Je pense que vous faites une grave erreur. Mais je ne vais pas vous arrêter. J'aime la vie.	}{	On raconte que vous avez tourné le dos à la Camarilla. Je ne comprends pas. Je sers ces gens-là depuis trente ans, et ils m'ont toujours bien traité. Je pense que vous faites une grave erreur. Mais je ne vais pas vous arrêter. J'aime la vie.	}{	#	}{	}{	G.Mercurio_Anarch = 1; G.Mercurio_Friend = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	692	}{	Ils ont cherché à me tuer. Rien de personnel contre vous. A présent, il me faut des armes.	}{	Ils ont cherché à me tuer. Rien de personnel contre vous. A présent, il me faut des armes.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	J'ai tourné mon dos au bouffon, pas à vous, Mercure. Mais passons au matos à viander. . .	}
+{	693	}{	Si vous êtes malin, changer de camp avec moi. Et laissez-moi acheter quelques armes.	}{	Si vous êtes malin, changer de camp avec moi. Et laissez-moi acheter quelques armes.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Je conduis un chariot sur lequel vous devriez embarquer. Montrez-moi vos jouets.	}
+{	694	}{	J'ai encore quelques questions.	}{	J'ai encore quelques questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	695	}{	Je dois partir. N'essayez pas de m'arrêter. Pour votre bien.	}{	Je dois partir. N'essayez pas de m'arrêter. Pour votre bien.	}{	0	}{	G.Extra_Lines == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je dois partir. N'essayez pas de m'arrêter. Pour votre bien.	}
+{	696	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	697	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	698	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	699	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	700	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	701	}{	Santa Monica, c'est assez calme. Enfin, ça l'était jusqu'à ce que vous arriviez. Pas beaucoup de policiers ou d'opérateurs, et ça me plaît bien. Je n'aime pas trop la plage, mais il y a de très beaux couchers de soleil. Quoi que ça ne doit pas vous intéresser beaucoup. . .	}{	Santa Monica, c'est assez calme. Enfin, ça l'était jusqu'à ce que vous arriviez. Pas beaucoup de policiers ou d'opérateurs, et ça me plaît bien. Je n'aime pas trop la plage, mais il y a de très beaux couchers de soleil. Quoi que ça ne doit pas vous intéresser beaucoup. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	702	}{	J'avais des questions sur d'autres endroits.	}{	J'avais des questions sur d'autres endroits.	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi d'autres lieux. . .	}
+{	703	}{	J'avais quelques questions, sur d'autres choses.	}{	J'avais quelques questions, sur d'autres choses.	}{	491	}{	G.Story_State > 5	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	704	}{	J'ai besoin d'acheter deux ou trois choses.	}{	J'ai besoin d'acheter deux ou trois choses.	}{	0	}{	G.Story_State > 5	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Echangeons plus que des mots. . .	}
+{	705	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	706	}{	Parlez-moi des intrigants de Santa Monica.	}{	Parlez-moi des intrigants de Santa Monica.	}{	331	}{	G.Story_State < 5	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi des pièces sur l'échiquier qu'est la dame. . .	}
+{	707	}{	Vous savez où je peux trouver des armes ?	}{	Vous savez où je peux trouver des armes ?	}{	361	}{	G.Trip_Know < 4 and G.Mercurio_Aid == 1 and G.Story_State < 5	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de baguettes magiques qui font boum.	}
+{	708	}{	Vous savez où je peux trouver des armes ?	}{	Vous savez où je peux trouver des armes ?	}{	371	}{	G.Mercurio_Aid == 0 and G.Story_State < 5	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de baguettes magiques qui font boum.	}
+{	709	}{	Merci du renseignement, Mercurio. Salut.	}{	Merci du renseignement, Mercurio. Salut.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles rebondissent dans l'air vide où je me tenais.	}
+{	710	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	711	}{	Le centre ville, c'est le bordel, comme toujours. On m'appelle pour aller là-bas, de temps en temps. Les gens de Nines, de LaCroix. . . Il y a beaucoup de tension. Beaucoup de drogue, et beaucoup de crime. Parfois, je me débarrasse de gros trucs, mais j'évite le centre ville autant que possible. 	}{	Le centre ville, c'est le bordel, comme toujours. On m'appelle pour aller là-bas, de temps en temps. Les gens de Nines, de LaCroix. . . Il y a beaucoup de tension. Beaucoup de drogue, et beaucoup de crime. Parfois, je me débarrasse de gros trucs, mais j'évite le centre ville autant que possible. 	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	712	}{	J'avais des questions sur d'autres endroits.	}{	J'avais des questions sur d'autres endroits.	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi d'autres lieux. . .	}
+{	713	}{	J'avais quelques questions, sur d'autres choses.	}{	J'avais quelques questions, sur d'autres choses.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	714	}{	J'ai besoin d'acheter deux ou trois choses.	}{	J'ai besoin d'acheter deux ou trois choses.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Echangeons plus que des mots. . .	}
+{	715	}{	Merci du renseignement, Mercurio. Salut.	}{	Merci du renseignement, Mercurio. Salut.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	716	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	717	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	718	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	719	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	720	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	721	}{	Hollywood a toujours été un coin sympa, pour moi. Je fais beaucoup d'affaires, là-bas. C'est un dénommé Isaac qui contrôle tout. Une vraie légende. La Camarilla n'y met jamais les pieds. Arrêtez-vous près du cimetière, un bon client à moi y travaille.	}{	Hollywood a toujours été un coin sympa, pour moi. Je fais beaucoup d'affaires, là-bas. C'est un dénommé Isaac qui contrôle tout. Une vraie légende. La Camarilla n'y met jamais les pieds. Arrêtez-vous près du cimetière, un bon client à moi y travaille.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	722	}{	J'avais des questions sur d'autres endroits.	}{	J'avais des questions sur d'autres endroits.	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi d'autres lieux. . .	}
+{	723	}{	J'avais quelques questions, sur d'autres choses.	}{	J'avais quelques questions, sur d'autres choses.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	724	}{	J'ai besoin d'acheter deux ou trois choses.	}{	J'ai besoin d'acheter deux ou trois choses.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Echangeons plus que des mots. . .	}
+{	725	}{	Comme toujours, merci pour le renseignement, Mercurio.	}{	Comme toujours, merci pour le renseignement, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	726	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	727	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	728	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	729	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	730	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	731	}{	Je ne vais pas à Chinatown. Personne n'en revient jamais. Il se passe quelque chose avec les Kuei-Jin, là-bas. Je ne comprends pas, mais ça ne me regarde pas. Mieux vaut rester à l'écart.	}{	Je ne vais pas à Chinatown. Personne n'en revient jamais. Il se passe quelque chose avec les Kuei-Jin, là-bas. Je ne comprends pas, mais ça ne me regarde pas. Mieux vaut rester à l'écart.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	732	}{	J'avais des questions sur d'autres endroits.	}{	J'avais des questions sur d'autres endroits.	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi d'autres lieux. . .	}
+{	733	}{	J'avais quelques questions, sur d'autres choses.	}{	J'avais quelques questions, sur d'autres choses.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	734	}{	J'ai besoin d'acheter deux ou trois choses.	}{	J'ai besoin d'acheter deux ou trois choses.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Echangeons plus que des mots. . .	}
+{	735	}{	Comme toujours, merci pour le renseignement, Mercurio.	}{	Comme toujours, merci pour le renseignement, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	736	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	737	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	738	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	739	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	740	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	741	}{	Bon, vous venez de débarquer. Une fois par mois, on me fait boire du sang de vampire. Ca me rend plus rapide et plus fort qu'un humain. Je ne vieillis pas. En me regardant, on ne croirait pas, mais j'ai presque soixante ans.	}{	Bon, vous venez de débarquer. Une fois par mois, on me fait boire du sang de vampire. Ca me rend plus rapide et plus fort qu'un humain. Je ne vieillis pas. En me regardant, on ne croirait pas, mais j'ai presque soixante ans.	}{	#	}{	}{	G.Mercurio_Ghoul = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	742	}{	Et où puis-je trouver l'Astrolite, maintenant ?	}{	Et où puis-je trouver l'Astrolite, maintenant ?	}{	761	}{	G.Mercurio_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Où vais-je trouver le boum-boum ?	}
+{	743	}{	Vous avez appris quelque chose depuis tout ce temps, le génie ?	}{	Vous avez appris quelque chose depuis tout ce temps, le génie ?	}{	111	}{	G.Mercurio_Quest == 0	}{	G.Mercurio_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	On pourrait penser que votre cerveau serait plus gros, après que tant de sable est tombé. . .	}
+{	744	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	745	}{	J'ai d'autres questions sur d'autres personnes.	}{	J'ai d'autres questions sur d'autres personnes.	}{	331	}{	G.Mercurio_Quest >= 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	746	}{	J'ai d'autres questions sur Santa Monica.	}{	J'ai d'autres questions sur Santa Monica.	}{	321	}{	G.Mercurio_Quest >= 1	}{	}{	}{	}{	}{	}{	}{	}{	J'avais d'autres questions sur la ville près de la mer.	}
+{	747	}{	Merci du renseignement. Au revoir.	}{	Merci du renseignement. Au revoir.	}{	0	}{	G.Mercurio_Quest >= 1	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	748	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	749	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	750	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	751	}{	J'ai merdé. . . Croyez-moi, je suis au courant. Plus que vous pensez. Mais écoutez-moi - si quelqu'un apprend ça, je suis mort. Taisez-vous et je pourrai vous trouver ce que vous voulez - des flingues, des munitions. . . n'importe quoi. Faites-moi confiance.	}{	J'ai merdé. . . Croyez-moi, je suis au courant. Plus que vous pensez. Mais écoutez-moi - si quelqu'un apprend ça, je suis mort. Taisez-vous et je pourrai vous trouver ce que vous voulez - des flingues, des munitions. . . n'importe quoi. Faites-moi confiance.	}{	#	}{	npc.SetDisposition("lay", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	752	}{	Vous faire confiance ? Vous avez tout foiré. Quel que sera le châtiment du prince, vous le méritez.	}{	Vous faire confiance ? Vous avez tout foiré. Quel que sera le châtiment du prince, vous le méritez.	}{	851	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le dieu aux pieds ailés n'est pas digne de confiance. Punition !	}
+{	753	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	754	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	755	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	756	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	757	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	758	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	759	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	760	}{	J'y penserai. Au revoir. 	}{	J'y penserai. Au revoir. 	}{	0	}{	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	J'ai confiance en le fait que rien de tout cela n'est vrai, peut-être. . . Adieu. . .	}
+{	761	}{	Ces petites frappes vivent dans un taudis sur la plage. Quatre ou cinq. C'est Dennis qui a les explosifs. Et ma thune, aussi, le bâtard.	}{	Ces petites frappes vivent dans un taudis sur la plage. Quatre ou cinq. C'est Dennis qui a les explosifs. Et ma thune, aussi, le bâtard.	}{	#	}{	npc.SetDisposition("lay", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	762	}{	Comment les récupérer ?	}{	Comment les récupérer ?	}{	121	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Comment avoir mon boum boum ?	}
+{	763	}{	Donc, je dois aller les chercher moi-même ? Super. . .	}{	Donc, je dois aller les chercher moi-même ? Super. . .	}{	121	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mercure a perdu ses ailes. Dois-je les porter à sa place ?	}
+{	764	}{	Comment j'y vais ?	}{	Comment j'y vais ?	}{	801	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dites-moi vers quoi mes pieds doivent avancer.	}
+{	765	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	766	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	767	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	768	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	769	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	770	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	771	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	772	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	773	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	774	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	775	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	776	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	777	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	778	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	779	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	780	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	781	}{	[Secoue la tête]Mercurio, si c'est ce que vous voulez dire. Ah bordel. . . Vous êtes du clan Malkavien, hein ? Oh non. C'est bien ma veine. Je me vide de mon sang et je ne comprends même pas ce que vous dites. . .	}{	[Secoue la tête]Mercurio, si c'est ce que vous voulez dire. Ah bordel. . . Vous êtes du clan Malkavien, hein ? Oh non. C'est bien ma veine. Je me vide de mon sang et je ne comprends même pas ce que vous dites. . .	}{	#	}{	npc.SetDisposition("lay", 1)	}{	G.Mercurio_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	782	}{	Vous n'avez qu'à ouvrir les yeux. Racontez-moi votre histoire. . .	}{	Vous n'avez qu'à ouvrir les yeux. Racontez-moi votre histoire. . .	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	783	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	784	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	785	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	786	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	787	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	788	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	789	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	790	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	791	}{	Hmm. . . Je ne vois pas de quoi vous voulez parler. . .	}{	Hmm. . . Je ne vois pas de quoi vous voulez parler. . .	}{	#	}{	}{	G.Mercurio_Gary = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	792	}{	J'ai besoin que vous me brossiez le portrait de quelqu'un. . .	}{	J'ai besoin que vous me brossiez le portrait de quelqu'un. . .	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	793	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	794	}{	Il me faut des jouets et des baguettes magiques.	}{	Il me faut des jouets et des baguettes magiques.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	}
+{	795	}{	Je ne suis plus là.	}{	Je ne suis plus là.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	796	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	797	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	798	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	799	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	800	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	801	}{	Vautré dans mon sang, et vous me demandez votre chemin ! Bon. Vous descendez par là, dans le parking, escalier jusqu'à la plage. . . à droite. . . [grogne]J'espère que ça ne va pas être mes dernières paroles.	}{	Vautré dans mon sang, et vous me demandez votre chemin ! Bon. Vous descendez par là, dans le parking, escalier jusqu'à la plage. . . à droite. . . [grogne]J'espère que ça ne va pas être mes dernières paroles.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	802	}{	Comment je le récupère ?	}{	Comment les récupérer ?	}{	121	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	On dirait que le dieu aux pieds ailés a besoin d'une main secourable. . .	}
+{	803	}{	Alors il faut que j'aille le prendre moi-même ? Super.	}{	Donc, je dois aller les chercher moi-même ? Super. . .	}{	121	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je vois. Donc, comme une baleine égarée, je dois rejoindre la plage.	}
+{	804	}{	Autre chose ?	}{	Autre chose ?	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mercure a perdu ses ailes. Dois-je les porter à sa place ?	}
+{	805	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	806	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	807	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	808	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	809	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	810	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	811	}{	Pas besoin d'être si vache. Euh. . .. J'étais surpris, c'est tout. J'aurais pu me les faire.	}{	Pas besoin d'être si vache. Euh. . .. J'étais surpris, c'est tout. J'aurais pu me les faire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	812	}{	Pardon.	}{	Pardon.	}{	141	}{	G.Mercurio_Get == 0	}{	}{	}{	}{	}{	}{	}{	}{	Toutes mes excuses pour cette insulte.	}
+{	813	}{	Pardonnez-moi. Je reviendrai.	}{	Pardonnez-moi. Je reviendrai.	}{	0	}{	G.Mercurio_Get == 1	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Toutes mes condoléances pour cette insulte.	}
+{	814	}{	Bien sûr. Espèce de foie jaune. 	}{	Bien sûr. Espèce de foie jaune. 	}{	751	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous méritez la peur que vous ressentez. 	}
+{	815	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	816	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	817	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	818	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	819	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	820	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	821	}{	Bon sang ! Cet argent aurait pu me servir à acheter de nouveaux reins.	}{	Bon sang ! Cet argent aurait pu me servir à acheter de nouveaux reins.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	822	}{	Qu'est-ce qu'on attend de moi, maintenant ?	}{	Qu'est-ce qu'on attend de moi, maintenant ?	}{	971	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où mes pieds doivent-ils me mener à présent ?	}
+{	823	}{	C'est quoi, cet Astrolite ?	}{	C'est quoi, cet Astrolite ?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est rigolo l'Astrolite, non ?	}
+{	824	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	825	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	826	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	827	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	828	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	829	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	830	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	831	}{	Je suis là à me vider de mon sang et vous faites votre mariole ? Super. . .	}{	Je suis là à me vider de mon sang et vous faites votre mariole ? Super. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	832	}{	OK, OK, dites-moi qui vous a fait ça.	}{	OK, OK, dites-moi qui vous a fait ça.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qu'est-ce qui fait pleurer votre chair ?	}
+{	833	}{	Vous allez me dire qui a fait ça, ou je termine le travail ?	}{	Vous allez me dire qui a fait ça, ou je termine le travail ?	}{	841	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous devriez profiter de ma sagesse, car je tue les imbéciles.	}
+{	834	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	835	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	836	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	837	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	838	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	839	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	840	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	841	}{	Bon, bon ! Eh, on croirait que c'est vous qui avez les tripes à l'air ! C'était ce putain de chimiste ! Le type prépare du speed, et sa bande le vend. De temps en temps, il fait des explosifs. J'avais arrangé un rendez-vous.	}{	Bon, bon ! Eh, on croirait que c'est vous qui avez les tripes à l'air ! C'était ce putain de chimiste ! Le type prépare du speed, et sa bande le vend. De temps en temps, il fait des explosifs. J'avais arrangé un rendez-vous.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	842	}{	(Auto-Link)	}{	(Auto-Link)	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	843	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	844	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	845	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	846	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	847	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	848	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	849	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	850	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	851	}{	Sale fouine. . . Vous voulez me voir supplier ? Allez vous faire foutre ! Dès que ce truc sera réglé pour LaCroix, on aura un truc à régler, vous et moi.	}{	Sale fouine. . . Vous voulez me voir supplier ? Allez vous faire foutre ! Dès que ce truc sera réglé pour LaCroix, on aura un truc à régler, vous et moi.	}{	#	}{	npc.SetDisposition("lay", 4)	}{	pc.SetQuest("Astrolite",4); G.Mercurio_Quest = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	852	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	853	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	854	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	855	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	856	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	857	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	858	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	859	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	860	}{	Non. Vous, vous serez là à saigner comme un porc.	}{	Non. Vous, vous serez là à saigner comme un porc.	}{	861	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon chien a une âme et pas vous.	}
+{	861	}{	[En colère, fait un effort]Si je pouvais me lever de ce canapé. . . oh. . .	}{	[En colère, fait un effort]Si je pouvais me lever de ce canapé. . . oh. . .	}{	#	}{	npc.SetDisposition("lay", 4)	}{	G.Mercurio_Combat = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	862	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	863	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	864	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	865	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	866	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	867	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	868	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	869	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	870	}{	Salut, le loser.	}{	Salut, le loser.	}{	0	}{	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Embroché comme un porc, vous voilà rôti. . .	}
+{	871	}{	Euh, je. . . je suis Mercurio. C'est vous, le mec que LaCroix envoie chercher les explosifs ? L'Astrolite ? [Hurlement de douleur]	}{	Euh, je. . . je suis Mercurio. C'est vous, la fille que LaCroix envoie chercher les explosifs ? L'Astrolite ? [Hurlement de douleur]	}{	#	}{	G.Mercurio_Know = 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	872	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	873	}{	Vous voulez que j'appelle une ambulance ?	}{	Vous voulez que j'appelle une ambulance ?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	874	}{	Ouais, c'est moi. Qu'est-ce qui vous est arrivé ?	}{	Ouais, c'est moi. Qu'est-ce qui vous est arrivé ?	}{	71	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	875	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	876	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	877	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	878	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	879	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	880	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	881	}{	[En colère]Sale c. . . con ! Ils, euh. . . Ils vivent sur une falaise au-dessus de la plage. . . Il faut passer par le parking pour y arriver. . . J'espère qu'ils vont vous éclater la tête, sale bâtard !	}{	[En colère]Sale c. . . connasse ! Ils, euh. . . Ils vivent sur une falaise au-dessus de la plage. . . Il faut passer par le parking pour y arriver. . . J'espère qu'ils vont vous éclater la tête, sale garce !	}{	#	}{	npc.SetDisposition("lay", 4)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	882	}{	Vous êtes un marrant, vous. . .	}{	Vous êtes un marrant, vous. . .	}{	891	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mercure me remplit de joie !	}
+{	883	}{	J'ai hâte de dire au prince à quel point vous êtes nase.	}{	J'ai hâte de dire au prince à quel point vous êtes nase.	}{	891	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le prince entendra parler de votre indignité.	}
+{	884	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	885	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	886	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	887	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	888	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	889	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	890	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	891	}{	[Résigné, en colère mais calme] Dès que ce sera réglé pour LaCroix, on aura un truc ou deux à régler, vous et moi. 	}{	[Résigné, en colère mais calme] Dès que ce sera réglé pour LaCroix, on aura un truc ou deux à régler, vous et moi. 	}{	#	}{	npc.SetDisposition("lay", 4)	}{	pc.SetQuest("Astrolite",4); G.Mercurio_Quest = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	892	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	893	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	894	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	895	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	896	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	897	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	898	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	899	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	900	}{	Non. Vous, vous serez là à saigner comme un porc.	}{	Non. Vous, vous serez là à saigner comme un porc.	}{	861	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon chien a une âme et pas vous.	}
+{	901	}{	[Prend une grande inspiration]Ohh. . .	}{	[Prend une grande inspiration]Ohh. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	902	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	903	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	904	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	905	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	906	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	907	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	908	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	909	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	910	}{	Vous ne valez rien.	}{	Vous ne valez rien.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne pourriez pas être plus minable.	}
+{	911	}{	[réservé, mais agacé] Je vois que vous êtes en un seul morceau. Vous avez l'Astrolite, j'imagine. Bien. Ca va me sauver la mise auprès de LaCroix.	}{	[réservé, mais agacé] Je vois que vous êtes en un seul morceau. Vous avez l'Astrolite, j'imagine. Bien. Ca va me sauver la mise auprès de LaCroix.	}{	#	}{	npc.SetDisposition("anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	912	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	913	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	914	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	915	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	916	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	917	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	918	}{	Vous avez meilleure mine, Mercurio.	}{	Vous avez meilleure mine, Mercurio.	}{	921	}{	pc.GetQuestState("Morphine") == 1	}{	pc.SetQuest("Morphine",4)	}{	}{	}{	}{	}{	}{	}{	L'homme aux pieds ailés est debout !	}
+{	919	}{	N'y comptez pas.	}{	N'y comptez pas.	}{	931	}{	not pc.GetQuestState("Morphine") == 1	}{	}{	}{	}{	}{	}{	}{	}{	Cette fois, rien ne vous sauvera !	}
+{	920	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	921	}{	Incroyable ce que quelques gouttes de sang de vampire peuvent faire à un être humain. C'est puissant, ce truc.	}{	Incroyable ce que quelques gouttes de sang de vampire peuvent faire à un être humain. C'est puissant, ce truc.	}{	#	}{	npc.SetDisposition("anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	922	}{	(Auto-Link)	}{	(Auto-Link)	}{	931	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	923	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	924	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	925	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	926	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	927	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	928	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	929	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	930	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	931	}{	Vous savez, pendant que vous étiez en train de faire votre truc, j'ai un peu réfléchi. Vous voyez, je ne voudrais pas qu'une grande gueule aille me faire une mauvaise réputation auprès de LaCroix. Donc dans quelques minutes, je vais l'appeler pour lui dire que son émissaire n'était plus en vie à son arrivée.	}{	Vous savez, pendant que vous étiez en train de faire votre truc, j'ai un peu réfléchi. Vous voyez, je ne voudrais pas qu'une grande gueule aille me faire une mauvaise réputation auprès de LaCroix. Donc dans quelques minutes, je vais l'appeler pour lui dire que son émissaire n'était plus en vie à son arrivée.	}{	#	}{	npc.SetDisposition("anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	932	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	933	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	934	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	935	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	936	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	937	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	938	}{	Me faites pas rire. Vous avez aucune chance et vous le savez. Maintenant vendez de l'équipement !	}{	Me faites pas rire. Vous avez aucune chance et vous le savez. Maintenant vendez de l'équipement !	}{	0	}{	G.Story_State >= 100	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Ha, ha, ha. Ben voyons. Equipement. Maintenant !	}
+{	939	}{	Vous allez regretter de ne pas être mort sur la plage. Allez la goule, au boulot !	}{	Vous allez regretter de ne pas être mort sur la plage. Allez la goule, au boulot !	}{	0	}{	G.Story_State < 100	}{	G.Mercurio_Attack = 1	}{	}{	}{	}{	}{	}{	}{	Ohh. . . J'ai peur.	}
+{	940	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	941	}{	Je voulais juste être sûr que vous saviez à quel point j'appréciais. Et comme je vous ai dit, si vous avez besoin de quelque chose, je peux vous l'obtenir. Ce bateau, par exemple.	}{	Je voulais juste être sûr que vous saviez à quel point j'appréciais. Et comme je vous ai dit, si vous avez besoin de quelque chose, je peux vous l'obtenir. Ce bateau, par exemple.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	942	}{	On dirait que vous allez mieux.	}{	On dirait que vous allez mieux.	}{	391	}{	G.Mercurio_Health == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment vont les ailes de vos pieds, Mercure ?	}
+{	943	}{	J'aurai besoin d'équipement pour ce petit voyage.	}{	J'aurai besoin d'équipement pour ce petit voyage.	}{	0	}{	IsDead("Dennis")	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de vilains jouets pour cette aventure.	}
+{	944	}{	J'aurai besoin d'équipement pour ce petit voyage.	}{	J'aurai besoin d'équipement pour ce petit voyage.	}{	951	}{	not IsDead("Dennis")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de vilains jouets pour cette aventure.	}
+{	945	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	946	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	947	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	948	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	949	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	950	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	951	}{	Oh, au fait. . . j'ai rendu visite à nos amis sur la colline ce matin. . . Ca fait mal, une overdose. . . Surtout quand on a les rotules à un mètre des genoux. . . Eh oui, la vengeance, c'est pas toujours drôle. . .	}{	Oh, au fait. . . j'ai rendu visite à nos amis sur la colline ce matin. . . Ca fait mal, une overdose. . . Surtout quand on a les rotules à un mètre des genoux. . . Eh oui, la vengeance, c'est pas toujours drôle. . .	}{	#	}{	npc.SetDisposition("joy", 1)	}{	G.Beach_Dead = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	952	}{	Sans aucun doute. Qu'auriez-vous qui puisse m'être utile ?	}{	Sans aucun doute. Qu'auriez-vous qui puisse m'être utile ?	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de quelques jouets cruels. . .	}
+{	953	}{	Ah oui. . . Il me faut quelques renseignements.	}{	Hé. Il me faut quelques renseignements.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	954	}{	Je ne pense pas que c'était nécessaire, mais c'est à vous d'en juger. Au revoir, Mercurio. 	}{	Je ne pense pas que c'était nécessaire, mais c'est à vous d'en juger. Au revoir, Mercurio. 	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Courez, courez, petit Mercure. Adieu.	}
+{	955	}{	Ils l'avaient mérité. Au revoir, Mercurio. 	}{	Ils l'avaient mérité. Au revoir, Mercurio. 	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mercure peut aussi être le dieu de la guerre, alors ? Je m'en vais.	}
+{	956	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	957	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	958	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	959	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	960	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	961	}{	[Extatique]Eh, vous. . . c'est. . . Vous avez sauvé ma peau. . . J'apprécie vraiment que vous n'ayez rien dit et je veux vous dire que je prends soin des gens à qui je dois quelque chose. Maintenant, si vous voulez de l'équipement, des infos, vous pouvez venir me voir chez moi. Sans hésiter.	}{	[Extatique]Eh, vous. . . c'est. . . Vous avez sauvé ma peau. . . J'apprécie vraiment que vous n'ayez rien dit et je veux vous dire que je prends soin des gens à qui je dois quelque chose. Maintenant, si vous voulez de l'équipement, des infos, vous pouvez venir me voir chez moi. Sans hésiter.	}{	#	}{	npc.SetDisposition("joy", 1)	}{	G.Mercurio_Deal = 1; G.Mercurio_Combat = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	962	}{	On dirait que vous allez mieux.	}{	On dirait que vous allez mieux.	}{	391	}{	G.Mercurio_Health == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment vont les ailes de vos pieds, Mercure ?	}
+{	963	}{	Qu'est-ce que vous faites ici, Mercurio ?	}{	Qu'est-ce que vous faites ici, Mercurio ?	}{	941	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que fait le grand Mercurio près des eaux ?	}
+{	964	}{	J'aurai besoin d'équipement.	}{	J'aurai besoin d'équipement pour ce petit voyage.	}{	0	}{	IsDead("Dennis")	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de vilains jouets.	}
+{	965	}{	J'aurai besoin d'équipement.	}{	J'aurai besoin d'équipement pour ce petit voyage.	}{	951	}{	not IsDead("Dennis")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de vilains jouets.	}
+{	966	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	967	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	968	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	969	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	970	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	971	}{	Vous devez faire disparaître un endroit. Un entrepôt. On dirait qu'il appartient au Sabbat.	}{	Vous devez faire disparaître un endroit. Un entrepôt. On dirait qu'il appartient au Sabbat.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	972	}{	Comment trouver cet endroit ?	}{	Comment trouver cet endroit ?	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qui me dira où se trouve la maison entre les pots ?	}
+{	973	}{	Que savez-vous de cet entrepôt ?	}{	Que savez-vous de cet entrepôt ?	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la maison entre les pots. . .	}
+{	974	}{	Qu'est-ce qu'un Sabbat ?	}{	Qu'est-ce qu'un Sabbat ?	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le Sabbat ne convient pas à mon cerveau. . .	}
+{	975	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	976	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	977	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	978	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	979	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	980	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	981	}{	Sa soeur Jeanette et elle gèrent l'Asylum. Il y a des clients bizarres dans ce club. J'évite d'y mettre les pieds.	}{	Sa soeur Jeanette et elle gèrent l'Asylum. Il y a des clients bizarres dans ce club. J'évite d'y mettre les pieds.	}{	#	}{	}{	G.Mercurio_Jeanette = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	982	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	983	}{	Qu'est-ce que vous pouvez me dire sur elle ?	}{	Qu'est-ce que vous pouvez me dire sur elle ?	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que pouvez-vous me dire sur la fille sombre de Janus ?	}
+{	984	}{	Qu'est-ce que vous pouvez me dire sur Jeanette ?	}{	Qu'est-ce que vous pouvez me dire sur Jeanette ?	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que pouvez-vous me dire sur la fille blanche de Janus ?	}
+{	985	}{	J'avais une question sur une autre personne.	}{	J'avais une question sur une autre personne.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous peigniez le portrait de quelqu'un.	}
+{	986	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	987	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	988	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	989	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	990	}{	Bon, alors je vais aller la voir. Au revoir.	}{	Bon, alors je vais aller la voir. Au revoir.	}{	0	}{	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	L'engeance du dieu aux deux visages m'attend. Adieu.	}
+{	991	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	992	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	993	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	994	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	995	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	996	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	997	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	998	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	999	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1000	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1001	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1002	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1003	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1004	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1005	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1006	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1007	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1008	}{	(Starting Condition)	}{	}{	911	}{	pc.GetQuestState("Astrolite") == 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1009	}{	(Starting Condition)	}{	}{	691	}{	G.Story_State == 125 and G.Mercurio_Anarch == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1010	}{	(Starting Condition)	}{	}{	521	}{	G.Story_State == 120	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1011	}{	(Starting Condition)	}{	}{	691	}{	G.Story_State == 115 and G.Mercurio_Anarch == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1012	}{	(Starting Condition)	}{	}{	681	}{	G.Story_State == 110	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1013	}{	(Starting Condition)	}{	}{	691	}{	G.Story_State == 105 and G.Mercurio_Anarch == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1014	}{	(Starting Condition)	}{	}{	671	}{	G.Story_State == 100 and G.Mercurio_Traitor == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1015	}{	(Starting Condition)	}{	}{	641	}{	G.Story_State >= 75 and G.Mercurio_Dragon == 0 and G.Mercurio_Flame == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1016	}{	(Starting Condition)	}{	}{	631	}{	G.Story_State >= 65 and G.Mercurio_Flame == 0 and G.Mercurio_Mgun == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1017	}{	(Starting Condition)	}{	}{	521	}{	G.Mercurio_Friend == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1018	}{	(Starting Condition)	}{	}{	661	}{	G.Story_State >= 55 and G.Mercurio_Mgun == 0 and G.Mercurio_Swat == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1019	}{	(Starting Condition)	}{	}{	651	}{	G.Story_State >= 45 and G.Mercurio_Swat == 0 and G.Mercurio_Spas == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1020	}{	(Starting Condition)	}{	}{	471	}{	G.Story_State >= 35 and G.Mercurio_Spas == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1021	}{	(Starting Condition)	}{	}{	621	}{	G.Story_State >= 25 and G.Story_State < 40 and G.Mercurio_Fix == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1022	}{	(Starting Condition)	}{	}{	481	}{	G.Mercurio_Deal == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1023	}{	(Starting Condition)	}{	}{	961	}{	G.Story_State >= 10	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1024	}{	(Starting Condition)	}{	}{	151	}{	G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1025	}{	(Starting Condition)	}{	}{	311	}{	G.Mercurio_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1026	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

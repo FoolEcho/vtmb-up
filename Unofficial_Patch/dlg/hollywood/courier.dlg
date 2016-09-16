@@ -1,0 +1,124 @@
+{	1	}{	[Essoufflé]Ouais ? Tu veux quoi ?	}{	[Essoufflé]Ouais ? Tu veux quoi ?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Scared_Meet = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	C'est toi qui as la cassette ? C'est Isaac qui m'envoie.	}{	C'est toi qui as la cassette ? C'est Isaac qui m'envoie.	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Le baron du sang a envoyé son pion pour récupérer la cassette assassine.	}{	Le baron du sang a envoyé son pion pour récupérer la cassette assassine.	}{	91	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[parano]Ah ouais ? Euh, quoi ? C'est qui, Isaac ? Je ne connais personne qui s'appelle Isaac. Fous le camp, connard.	}{	[parano]Ah ouais ? Euh, quoi ? C'est qui, Isaac ? Je ne connais personne qui s'appelle Isaac. Fous le camp, connasse.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Allez. Je suis au courant pour la cassette. Si tu me la donnes, tu pourras partir.	}{	Allez. Je suis au courant pour la cassette. Si tu me la donnes, tu pourras partir.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Du calme. Tu peux me faire confiance. Qu'est-ce qui t'arrive ?	}{	Du calme. Tu peux me faire confiance. Qu'est-ce qui t'arrive ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Tu es sûr que tu ne le connais pas ? Il ne sera pas content si je rentre les mains vides.	}{	Tu es sûr que tu ne le connais pas ? Il ne sera pas content si je rentre les mains vides.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Quelle cassette ? Je ne sais pas de quoi tu parles. Moi, je me casse d'ici.	}{	Quelle cassette ? Je ne sais pas de quoi tu parles. Moi, je me casse d'ici.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	D'accord. Je dirai à Isaac que tu n'as pas voulu me rendre ce qui lui appartient.	}{	D'accord. Je dirai à Isaac que tu n'as pas voulu me rendre ce qui lui appartient.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je rapporterai ta trahison au baron du sang. . .	}
+{	23	}{	Ecoute. Tout va bien. Dis-moi de quoi tu as si peur.	}{	Ecoute. Tout va bien. Dis-moi de quoi tu as si peur.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne crains pas ce démon, parle-moi des horreurs qui te hantent. . .	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	[Respire un grand coup]OK. Désolé. C'est juste que. . . enfin. . . je veux arrêter ces conneries. Je ne veux rien avoir à faire avec cette foutue cassette.	}{	[Respire un grand coup]OK. Désolé. C'est juste que. . . enfin. . . je veux arrêter ces conneries. Je ne veux rien avoir à faire avec cette foutue cassette.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Pourquoi ? Que se passe-t-il ?	}{	Pourquoi ? Que se passe-t-il ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Raconte-moi tes secrets, petit messager.	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Je ne sais pas. Enfin, quoi, question vidéo, j'ai tout vu. Vraiment tout. Mais ce truc. . . c'est dingue. . . ça ne peut pas être vrai. . . et pourtant si. J'en suis sûr. C'est vrai et ça me fout les jetons.	}{	Je ne sais pas. Enfin, quoi, question vidéo, j'ai tout vu. Vraiment tout. Mais ce truc. . . c'est dingue. . . ça ne peut pas être vrai. . . et pourtant si. J'en suis sûr. C'est vrai et ça me fout les jetons.	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Vraiment ? A ce point-là ?	}{	Vraiment ? A ce point-là ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vois des dents et une terreur, une fille perdue dans une tempête de sang. 	}
+{	53	}{	Ne fais pas ta chochotte, ce n'est qu'une cassette. Ca doit pas être bien terrible.	}{	Ne fais pas ta chochotte, ce n'est qu'une cassette. Ca doit pas être bien terrible.	}{	61	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	Je te comprends. Ces derniers temps, j'ai vu plein de trucs incroyables.	}{	Je te comprends. Ces derniers temps, j'ai vu plein de trucs incroyables.	}{	61	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	Rien à foutre. Donne-moi la cassette.	}{	Rien à foutre. Donne-moi la cassette.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Débarrasse-toi de cette malédiction et donne-moi cette horreur. . .	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	T'as pas idée, c'est dégueulasse. Cette fille. . . les trucs qu'il lui arrive. . . c'est n'importe quoi. Vraiment n'importe quoi. Et maintenant. . . je suis sûr qu'on me suit. Je te jure, il y a quelqu'un après moi.	}{	T'as pas idée, c'est dégueulasse. Cette fille. . . les trucs qu'il lui arrive. . . c'est n'importe quoi. Vraiment n'importe quoi. Et maintenant. . . je suis sûr qu'on me suit. Je te jure, il y a quelqu'un après moi.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Quoi ? De quoi tu parles ?	}{	Quoi ? De quoi tu parles ?	}{	71	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	Reprends-toi, bordel, tu dis n'importe quoi !	}{	Reprends-toi, bordel, tu dis n'importe quoi !	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu frappes les ombres et les fantômes. . .	}
+{	64	}{	Ah ouais. T'es encore plus trouillard que je pensais.	}{	Ah ouais. T'es encore plus trouillard que je pensais.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu as une étrange bande marron sur ton postérieur. . .	}
+{	65	}{	Rien à foutre. Donne-moi la cassette.	}{	Rien à foutre. Donne-moi la cassette.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Débarrasse-toi de cette malédiction et donne-moi cette horreur. . .	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Partout où je vais. . . partout où je regarde. . . je vois des trucs. Dans l'ombre. Mon téléphone sonne et j'entends quelqu'un qui respire à l'autre bout. Moi je me tire. . . je me tire.	}{	Partout où je vais. . . partout où je regarde. . . je vois des trucs. Dans l'ombre. Mon téléphone sonne et j'entends quelqu'un qui respire à l'autre bout. Moi je me tire. . . je me tire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Ouais, c'est ça. Allez, file-moi la cassette.	}{	Ouais, c'est ça. Allez, file-moi la cassette.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Débarrasse-toi de cette malédiction et donne-moi cette horreur. . .	}
+{	73	}{	C'est quoi cette odeur ? Tu t'es fait dessus ? Allez, file la cassette ?	}{	C'est quoi cette odeur ? Tu t'es fait dessus ? Allez, file la cassette ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	On dirait que tu t'es fait dessus. Donne-moi ce que je veux.	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Je ne l'ai pas sur moi, je l'ai planquée à l'abri. Il faut que tu ailles voir Ginger Swan. . . Chut ! C'était quoi, ça ? Oh merde ! T'as vu ? Je me casse d'ici. . . !	}{	Je ne l'ai pas sur moi, je l'ai planquée à l'abri. Il faut que tu ailles voir Ginger Swan. . . Chut ! C'était quoi, ça ? Oh merde ! T'as vu ? Je me casse d'ici. . . !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.GingerSwanKnowledge == 0	}{	G.Ginger_Swan = 1; pc.SetQuest("Courier",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.GingerSwanKnowledge == 1	}{	G.Ginger_Swan = 1; pc.SetQuest("Courier",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Quoi ? Le baron du sang ? Qu'est-ce. . . T'es qui, toi ? Isaac a pas envoyé. . . bordel. . . t'as dû te tromper. Je sais pas de quoi tu parles. Fous le camp.	}{	Quoi ? Le baron du sang ? Qu'est-ce. . . T'es qui, toi ? Isaac a pas envoyé. . . bordel. . . t'as dû te tromper. Je sais pas de quoi tu parles. Fous le camp.	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Jette-moi cette terrible cassette et tu pourras partir.	}{	Jette-moi cette terrible cassette et tu pourras partir.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Les ombres se rapprochent, petit messager. Dis-moi de quoi tu as peur.	}{	Les ombres se rapprochent, petit messager. Dis-moi de quoi tu as peur.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	Le baron du sang sera mécontent si je rentre les mains vides.	}{	Le baron du sang sera mécontent si je rentre les mains vides.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Quoi ? Eh, me parle pas comme ça ! Tu peux dire à Isaac de se trouver ses propres. . . C'était quoi, ça ? Oh merde, tu as vu ça ? Je fous le camp !	}{	Quoi ? Eh, me parle pas comme ça ! Tu peux dire à Isaac de se trouver ses propres. . . C'était quoi, ça ? Oh merde, tu as vu ça ? Je fous le camp !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Euh, eh. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Pigé ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	Qu'est-ce que tu fais ici ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	Fiche le camp.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	Euh, oui, c'est ça. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	Merci.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	Quoi ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	Je sais pas.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	Je ne peux rien pour toi.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Euh, super.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	Prenez ça.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	Euh, je t'envoie un e-mail, OK ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

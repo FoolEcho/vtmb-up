@@ -1,0 +1,347 @@
+{	1	}{	. . .	}{	. . .	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Super, la fête, hein ?	}{	Super, la fête, hein ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est vraiment une fête. . .	}
+{	3	}{	C'est quoi, votre problème ?	}{	C'est quoi, votre problème ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qu'est-ce qui se prépare ?	}
+{	4	}{	Ca vous intéresse encore, des ragots sur la famille ?	}{	Ca vous intéresse encore, des ragots sur la famille ?	}{	161	}{	G.Chris_Gossip == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je croyais avoir des problèmes, puis j'ai parlé à votre famille.	}
+{	5	}{	Bonjour. . . Comment vous vous appelez ?	}{	Bonjour. . . Comment vous vous appelez ?	}{	51	}{	Seduction 7 & G.Chris_Seduce == 0 and not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Salut ! J'ai besoin d'un nom, et le vôtre me conviendrait plus que tout.	}
+{	6	}{	Il y a un souci ?	}{	Il y a un souci ?	}{	11	}{	Humanity 5 & G.Chris_Outdo == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les nuages noirs se rassemblent. Pourquoi ?	}
+{	7	}{	Alors, vous savez où se trouve le sarcophage ?	}{	Alors, vous savez où se trouve le sarcophage ?	}{	91	}{	G.Chris_Sarcophagus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas vous empêcher de bouder, je veux simplement le sarcophage. 	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Des réunions de famille. . . Encore combien comme ça avant qu'on nous prenne un peu au sérieux ? Franchement. . .	}{	Des réunions de famille. . . Encore combien comme ça avant qu'on nous prenne un peu au sérieux ? Franchement. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	De quoi parlez-vous ?	}{	De quoi parlez-vous ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, vraiment. Bien sûr. C'est certain. De quoi on parle ?	}
+{	13	}{	Ouais. . . Franchement !	}{	Ouais. . . Franchement !	}{	141	}{	Persuasion 6	}{	}{	}{	}{	}{	}{	}{	}{	Cela me brûle comme mille soleils.	}
+{	14	}{	Alors, vous savez où se trouve le sarcophage ?	}{	Alors, vous savez où se trouve le sarcophage ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas vous empêcher de bouder, je veux simplement le sarcophage. 	}
+{	15	}{	Super, la fête, hein ?	}{	Super, la fête, hein ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est vraiment une fête. . .	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Quoi ? Oh, oui, bien sûr !	}{	Quoi ? Oh, oui, bien sûr !	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	C'est quoi, votre problème ?	}{	C'est quoi, votre problème ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qu'est-ce qui se prépare ?	}
+{	23	}{	Alors, vous savez où se trouve le sarcophage ?	}{	Alors, vous savez où se trouve le sarcophage ?	}{	91	}{	G.Chris_Sarcophagus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas vous empêcher de bouder, je veux simplement le sarcophage. 	}
+{	24	}{	C'est sympa comme endroit. . .	}{	C'est sympa comme endroit. . .	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne connaissais pas le mot opulent avant que cette maison me l'apprenne.	}
+{	25	}{	Il y a un souci ?	}{	Il y a un souci ?	}{	11	}{	Humanity 5 & G.Chris_Outdo == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les nuages noirs se rassemblent. Pourquoi ?	}
+{	26	}{	Amusez-vous bien.	}{	Amusez-vous bien.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Au revoir.	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Vous connaissez Oncle Bruno. . .	}{	Vous connaissez Oncle Bruno. . .	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Alors, vous savez où se trouve le sarcophage ?	}{	Alors, vous savez où se trouve le sarcophage ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas vous empêcher de bouder, je veux simplement le sarcophage. 	}
+{	33	}{	C'est quoi, votre problème ?	}{	C'est quoi, votre problème ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qu'est-ce qui se prépare ?	}
+{	34	}{	Qu'est-ce que vous avez vu comme bon film, ces derniers temps ?	}{	Qu'est-ce que vous avez vu comme bon film, ces derniers temps ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oh oui, lui. . . Un grand mec. C'est le type sur la boîte des pizzas ?	}
+{	35	}{	Il y a un souci ?	}{	Il y a un souci ?	}{	11	}{	Humanity 5 & G.Chris_Outdo == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les nuages noirs se rassemblent. Pourquoi ?	}
+{	36	}{	Ouais. Amusez-vous !	}{	Ouais. Amusez-vous !	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pas tout à fait. Je pars.	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Je regrette, mais j'ai pas mal de soucis en ce moment. Si vous voulez bien m'excuser.	}{	Je regrette, mais j'ai pas mal de soucis en ce moment. Si vous voulez bien m'excuser.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Oh, je suis Christopher. . . Giovanni. Et vous ?	}{	Oh, je suis Christopher. . . Giovanni. Et vous ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Chris_Seduce = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Maria Rosselini. Enchantée.	}{	Maria Rosselini. Enchantée.	}{	61	}{	G.Maria_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	Appelez-moi Maria Rosselini, je vous prie.	}
+{	53	}{	Je suis tout ce que vous désirez chez une femme. . .	}{	Je suis tout ce que vous désirez chez une femme. . .	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre succube personnelle.	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Une autre personne à la fête qui n'est pas une Giovanni. Enfin. . . Laissez tomber.	}{	Une autre personne à la fête qui n'est pas une Giovanni. Enfin. . . Laissez tomber.	}{	#	}{	}{	G.Chris_Introduce = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	C'est quoi, votre problème ?	}{	C'est quoi, votre problème ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qu'est-ce qui se prépare ?	}
+{	63	}{	Sympa, comme fête, hein ?	}{	Sympa, comme fête, hein ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est vraiment une fête. . .	}
+{	64	}{	Qu'y a-t-il ?	}{	Qu'y a-t-il ?	}{	181	}{	Persuasion 9	}{	}{	}{	}{	}{	}{	}{	}{	Hmm ?	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	C'était un plaisir de vous rencontrer, Christopher. Amusez-vous bien.	}{	C'était un plaisir de vous rencontrer, Christopher. Amusez-vous bien.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oubliez ça. Moi, j'ai déjà oublié.	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Euh. . . C'est une réunion de famille. Vous ne trouvez pas ça un peu déplacé ? Enfin, on pourrait être cousins. . . Non pas que ça ait jamais arrêté le reste de la famille, mais. . .	}{	Euh. . . C'est une réunion de famille. Vous ne trouvez pas ça un peu déplacé ? Enfin, on pourrait être cousins. . . Non pas que ça ait jamais arrêté le reste de la famille, mais. . .	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Rosselini. Maria Rosselini.	}{	Rosselini. Maria Rosselini.	}{	61	}{	G.Maria_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	Nos noms de famille ne sont pas comme l'autre. Le mien est Rosselini, on le met après Maria.	}
+{	73	}{	Vous êtes sûr que vous ne voulez pas partir un peu plus loin pour 'discuter' ?	}{	Vous êtes sûr que vous ne voulez pas partir un peu plus loin pour 'discuter' ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous voulez qu'on aille se mettre dans un endroit sombre et si possible humide ?	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Je ne suis pas important. Excusez-moi.	}{	Je ne suis pas important. Excusez-moi.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Le sarcophage ? Quel sarcophage ?	}{	Le sarcophage ? Quel sarcophage ?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Ne jouez pas aux andouilles avec moi. Dites-moi juste où il est.	}{	Ne jouez pas aux andouilles avec moi. Dites-moi juste où il est.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Très convaincant. . . Je vous donnerais des roses, si j'en avais !	}
+{	93	}{	J'ai dit sarcophage ? Je voulais dire salle de bain.	}{	J'ai dit sarcophage ? Je voulais dire salle de bain.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je dis toujours 'sarcophage' à la place de 'toilettes'.	}
+{	94	}{	Laissez tomber. Profitez de la fête.	}{	Laissez tomber. Profitez de la fête.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quoi ? Qui, moi ? Mais je ne suis pas là !	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Vous sortez là, deuxième pièce sur la gauche.	}{	Vous sortez là, deuxième pièce sur la gauche.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	A moins que ce soit un code ou de l'argot que je suis trop vieux pour comprendre, je ne vois pas du tout de quoi vous voulez parler. Allez déranger quelqu'un d'autre, je ne suis pas d'humeur.	}{	A moins que ce soit un code ou de l'argot que je suis trop vieux pour comprendre, je ne vois pas du tout de quoi vous voulez parler. Allez déranger quelqu'un d'autre, je ne suis pas d'humeur.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Chris_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	C'est la dernière fois que je pose la question. Où est le sarcophage ?	}{	C'est la dernière fois que je pose la question. Où est le sarcophage ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne me forcez pas à regarder en vous.	}
+{	113	}{	Dites-moi où se trouve le sarcophage.	}{	Dites-moi où se trouve le sarcophage.	}{	121	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	Je commence à perdre patience et la boule.	}
+{	114	}{	Dites-moi où se trouve le sarcophage.	}{	Dites-moi où se trouve le sarcophage.	}{	121	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	Je commence à perdre patience et la boule.	}
+{	115	}{	Je commence à perdre patience et la boule.	}{	Je commence à perdre patience et la boule.	}{	121	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	Je commence à perdre patience et la boule.	}
+{	116	}{	Je dois savoir où est la sarcophage.	}{	Je dois savoir où est la sarcophage.	}{	121	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	Je commence à perdre patience et la boule.	}
+{	117	}{	Laissez tomber. Profitez de la fête.	}{	Laissez tomber. Profitez de la fête.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pas tout à fait. Je pars.	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Quel sarcophage ? Je ne vois vraiment pas de quoi vous voulez parler.	}{	Quel sarcophage ? Je ne vois vraiment pas de quoi vous voulez parler.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Laissez tomber. Profitez de la fête.	}{	Laissez tomber. Profitez de la fête.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pas tout à fait. Je pars.	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Je ne sais pas de quoi vous voulez parler, et je commence à me demander si vous avez le droit d'être ici. . . Partez ou j'appelle la sécurité.	}{	Je ne sais pas de quoi vous voulez parler, et je commence à me demander si vous avez le droit d'être ici. . . Partez ou j'appelle la sécurité.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Qu'ils viennent. Le temps qu'ils soient là, je vous aurai tué au moins six fois.	}{	Qu'ils viennent. Le temps qu'ils soient là, je vous aurai tué au moins six fois.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Et si on mettait un peu d'ambiance ?	}
+{	133	}{	Bon, j'y vais. Excusez-moi.	}{	Bon, j'y vais. Excusez-moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je pars. . .	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Ils nous dressent les uns contre les autres pour qu'on se dispute le droit d'entrer dans leur cercle intérieur - tout ce qu'on entend, c'est : 'Qu'est-ce que tu as fait ? Combien tu gagnes ? Qui tu connais ?' On ne peut parler à personne, parce que ça peut se retourner contre soi. . .	}{	Ils nous dressent les uns contre les autres pour qu'on se dispute le droit d'entrer dans leur cercle intérieur - tout ce qu'on entend, c'est : 'Qu'est-ce que tu as fait ? Combien tu gagnes ? Qui tu connais ?' On ne peut parler à personne, parce que ça peut se retourner contre soi. . .	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Vous voulez dire que si vous trouviez de bons ragots sur les autres, vous ne les utiliseriez pas ?	}{	Vous voulez dire que si vous trouviez de bons ragots sur les autres, vous ne les utiliseriez pas ?	}{	151	}{	Persuasion 6 & (G.Patch_Plus == 0 or pc.GetQuestState("Dirt") > 0)	}{	}{	}{	}{	}{	}{	}{	}{	Vous jouez dans la saleté, comme à peu près tous nos cousins.	}
+{	143	}{	Vous voulez dire que si vous trouviez de bons ragots sur les autres, vous ne les utiliseriez pas ?	}{	Vous voulez dire que si vous trouviez de bons ragots sur les autres, vous ne les utiliseriez pas ?	}{	151	}{	Persuasion 6 & (G.Patch_Plus == 1 and pc.GetQuestState("Dirt") == 0)	}{	pc.SetQuest("Dirt",1)	}{	}{	}{	}{	}{	}{	}{	Vous jouez dans la saleté, comme à peu près tous nos cousins.	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	Eh bien, bonne chance pour dépasser les autres. Amusez-vous bien.	}{	Eh bien, bonne chance pour dépasser les autres. Amusez-vous bien.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pas tout à fait. Je pars.	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	. . . Le coeur dit non, mais l'homme d'affaires en moi me conseille de les écraser. Je le ferai. Et je sais qu'ils en feraient sans doute autant.	}{	. . . Le coeur dit non, mais l'homme d'affaires en moi me conseille de les écraser. Je le ferai. Et je sais qu'ils en feraient sans doute autant.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Chris_Gossip = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	J'ai parlé à Mira. Elle est séropo à cause de l'héroïne.	}{	J'ai parlé à Mira. Elle est séropo à cause de l'héroïne.	}{	241	}{	G.Mira_Secret == 1 and G.Mira_Told == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mira a mis l'aiguille empoisonnée dans ses veines. Elle est positive.	}
+{	153	}{	Adam Dunsirn est complètement ruiné. Il quémande quasiment de l'argent.	}{	Adam Dunsirn est complètement ruiné. Il quémande quasiment de l'argent.	}{	251	}{	G.Adam_Secret == 1 and G.Adam_Told == 0	}{	}{	}{	}{	}{	}{	}{	}{	La banque d'Adam est un gouffre. Lancez une pièce, il se lancera à sa poursuite.	}
+{	154	}{	Alors si on vous répétait des ragots sur les autres, ça vous intéresserait ?	}{	Alors si on vous répétait des ragots sur les autres, ça vous intéresserait ?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si j'exhume des secrets, me les achèterez-vous ?	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	. . . Oui, sans doute.	}{	. . . Oui, sans doute.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	J'ai parlé à Mira. Elle est séropo à cause de l'héroïne.	}{	J'ai parlé à Mira. Elle est séropo à cause de l'héroïne.	}{	241	}{	G.Mira_Secret == 1 and G.Mira_Told == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mira a mis l'aiguille empoisonnée dans ses veines. Elle est positive.	}
+{	163	}{	Adam Dunsirn est complètement ruiné. Il quémande quasiment de l'argent.	}{	Adam Dunsirn est complètement ruiné. Il quémande quasiment de l'argent.	}{	251	}{	G.Adam_Secret == 1 and G.Adam_Told == 0	}{	}{	}{	}{	}{	}{	}{	}{	La banque d'Adam est un gouffre. Lancez une pièce, il se lancera à sa poursuite.	}
+{	164	}{	Ce n'est pas tout ce qui vous afflige, n'est-ce pas ? Vous pouvez me parler.	}{	Ce n'est pas tout ce qui vous afflige, n'est-ce pas ? Vous pouvez me parler.	}{	171	}{	Persuasion 9 & G.Chris_Secret == 0 and G.Chris_Outdo == 0	}{	}{	}{	}{	}{	}{	}{	}{	Cette déclaration est une couverture lancée sur le feu.	}
+{	165	}{	Si j'entends quelque chose, je vous le répète.	}{	Si j'entends quelque chose, je vous le répète.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais violer les esprits de cette fête et revenir.	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Je ne sais même pas qui vous êtes. Au fait, moi, c'est Chris Giovanni.	}{	Je ne sais même pas qui vous êtes. Au fait, moi, c'est Chris Giovanni.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Victor. Victor Rosselini.	}{	Maria. Maria Rosselini.	}{	181	}{	not IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	Mon invitation dit 'Victor Rosselini'.	}{	Mon invitation dit 'Maria Rosselini'.	}{	181	}{	IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	Ravi de vous rencontrer, Christopher. Profitez de la fête.	}{	Ravie de vous rencontrer, Christopher. Profitez de la fête.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oubliez ça, je le ferai.	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Vous allez me trouver paranoïaque, mais pourquoi je vous ferais confiance ?	}{	Vous allez me trouver paranoïaque, mais pourquoi je vous ferais confiance ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Vous avez une tête honnête. Moi aussi, j'ai un secret que j'ai peur de révéler.	}{	Vous avez une tête honnête. Moi aussi, j'ai un secret que j'ai peur de révéler.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis un barrage à secrets.	}
+{	183	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Vous d'abord. S'il ressemble au mien, je vous dirai ce qui me dérange.	}{	Vous d'abord. S'il ressemble au mien, je vous dirai ce qui me dérange.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Chris_Outdo = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	J'aime bien les jeux d'eau. . . Et je ne parle pas de sport. . .	}{	J'aime bien les jeux d'eau. . . Et je ne parle pas de sport. . .	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai léché le sang des blessures de bien des jeunes filles en péril.	}
+{	193	}{	Je suis athée. Je viens de renoncer à la foi catholique.	}{	Je suis athée. Je viens de renoncer à la foi catholique.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai arrêté Dieu depuis quelques mois. Incroyable comme on en devient dépendant, de ce truc.	}
+{	194	}{	Je n'ai pas encore fait mon coming-out. Vous voyez ce que je veux dire ?	}{	Je n'ai pas encore fait mon coming-out. Vous voyez ce que je veux dire ?	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vis dans le secret. Je n'en sortirai pour rien au monde.	}
+{	195	}{	Je sors avec une personne qui a seize ans.	}{	Je sors avec une personne qui a seize ans.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aime bien regarder la télé, si ce n'est que pas à la télé, mais par la fenêtre des gens.	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	C'est dégoûtant. . . mais ça n'a rien de choquant.	}{	C'est dégoûtant. . . mais ça n'a rien de choquant.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Je suis athée. Je viens de renoncer à la foi catholique.	}{	Je suis athée. Je viens de renoncer à la foi catholique.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai arrêté Dieu depuis quelques mois. Incroyable comme on en devient dépendant, de ce truc.	}
+{	203	}{	Je suis membre du Parti Vert.	}{	Je suis membre du Parti Vert.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je prends des choses sans le savoir. J'ai tellement de savons d'hôtel que c'en est n'importe quoi.	}
+{	204	}{	Je sors avec une personne qui a seize ans.	}{	Je sors avec une personne qui a seize ans.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aime bien regarder la télé, si ce n'est que pas à la télé, mais par la fenêtre des gens.	}
+{	205	}{	Je n'ai pas encore fait mon coming-out. Vous voyez ce que je veux dire ?	}{	Je n'ai pas encore fait mon coming-out. Vous voyez ce que je veux dire ?	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vis dans le secret. Je n'en sortirai pour rien au monde.	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Ce n'est rien. . . Enfin, en ce qui me concerne. . .	}{	Ce n'est rien. . . Enfin, en ce qui me concerne. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Je n'ai pas encore fait mon coming-out. Vous voyez ce que je veux dire ?	}{	Je n'ai pas encore fait mon coming-out. Vous voyez ce que je veux dire ?	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vis dans le secret. Je n'en sortirai pour rien au monde.	}
+{	213	}{	Je vois une psy pour dépression.	}{	Je vois une psy pour dépression.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je prends des choses sans le savoir. J'ai tellement de savons d'hôtel que c'en est n'importe quoi.	}
+{	214	}{	J'ai écrasé le chien de ma voisine. Exprès. . .	}{	J'ai écrasé le chien de ma voisine. Exprès. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai renversé un cerf avec ma voiture parce qu'il me regardait de travers.	}
+{	215	}{	Je suis athée. Je viens de renoncer à la foi catholique.	}{	Je suis athée. Je viens de renoncer à la foi catholique.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai arrêté Dieu depuis quelques mois. Incroyable comme on en devient dépendant, de ce truc.	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Vraiment ? Dans cette famille, c'est le genre de chose qui peut vous faire excommunier, si vous ne faites pas attention. Bon, d'accord, je vais vous dire ce qui me travaille. . .	}{	Vraiment ? Dans cette famille, c'est le genre de chose qui peut vous faire excommunier, si vous ne faites pas attention. Bon, d'accord, je vais vous dire ce qui me travaille. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	(Auto-Link)	}{	(Auto-Link)	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	223	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	J'ai appris il y a quelques mois que ma mère avait une liaison avant ma naissance. Mon père n'est même pas un Giovanni. Il s'appelle Michael Avellone. Si quelqu'un l'apprenait, je pourrais ne jamais monter dans la famille.	}{	J'ai appris il y a quelques mois que ma mère avait une liaison avant ma naissance. Mon père n'est même pas un Giovanni. Il s'appelle Michael Avellone. Si quelqu'un l'apprenait, je pourrais ne jamais monter dans la famille.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Chris_Secret = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	J'ai appris quelques ragots sur nos parents. Ca vous intéresse ?	}{	J'ai appris quelques ragots sur nos parents. Ca vous intéresse ?	}{	161	}{	G.Chris_Gossip == 0 and (G.Patch_Plus == 0 or pc.GetQuestState("Dirt") > 0)	}{	G.Chris_Gossip = 1	}{	}{	}{	}{	}{	}{	}{	Si j'exhume des secrets, me les achèterez-vous ?	}
+{	233	}{	J'ai appris quelques ragots sur nos parents. Ca vous intéresse ?	}{	J'ai appris quelques ragots sur nos parents. Ca vous intéresse ?	}{	161	}{	G.Chris_Gossip == 0 and G.Patch_Plus == 1 and pc.GetQuestState("Dirt") == 0	}{	G.Chris_Gossip = 1; pc.SetQuest("Dirt",1)	}{	}{	}{	}{	}{	}{	}{	Si j'exhume des secrets, me les achèterez-vous ?	}
+{	234	}{	Ne vous inquiétez pas, votre secret est à l'abri avec moi. Amusez-vous bien.	}{	Ne vous inquiétez pas, votre secret est à l'abri avec moi. Amusez-vous bien.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je veillerai sur vos secrets comme sur la tombe d'un roi.	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	J'aurais dû m'en douter. Elle buvait beaucoup quand on était petits, et elle prenait des trucs encore plus durs après. Dommage. . . mais ça ne va pas plaire à Oncle Bruno.	}{	J'aurais dû m'en douter. Elle buvait beaucoup quand on était petits, et elle prenait des trucs encore plus durs après. Dommage. . . mais ça ne va pas plaire à Oncle Bruno.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Chris_Told = 1; G.Mira_Secret = 2; pc.AwardExperience("Gio01")	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	(Auto-Link)	}{	(Auto-Link)	}{	261	}{	G.Adam_Secret == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	243	}{	Adam Dunsirn est complètement ruiné. Il quémande quasiment de l'argent.	}{	Adam Dunsirn est complètement ruiné. Il quémande quasiment de l'argent.	}{	251	}{	G.Adam_Secret == 1 and G.Adam_Told == 0	}{	}{	}{	}{	}{	}{	}{	}{	La banque d'Adam est un gouffre. Lancez une pièce, il se lancera à sa poursuite.	}
+{	244	}{	Si j'entends parler d'autre chose, je reviens vous voir.	}{	Si j'entends parler d'autre chose, je reviens vous voir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais violer les esprits de cette fête et revenir.	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Vraiment ? Adam a toujours paru avoir la tête sur les épaules. Mieux vaut être mort que fauché, dans cette famille. Et dire que j'ai failli lui laisser gérer mes investissements.	}{	Vraiment ? Adam a toujours paru avoir la tête sur les épaules. Mieux vaut être mort que fauché, dans cette famille. Et dire que j'ai failli lui laisser gérer mes investissements.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Chris_Told = 1; G.Adam_Secret = 2; pc.AwardExperience("Gio02")	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	(Auto-Link)	}{	(Auto-Link)	}{	261	}{	G.Mira_Secret == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	253	}{	J'ai parlé à Mira. Elle est séropo à cause de l'héroïne.	}{	J'ai parlé à Mira. Elle est séropo à cause de l'héroïne.	}{	241	}{	G.Mira_Secret == 1 and G.Mira_Told == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mira a mis l'aiguille empoisonnée dans ses veines. Elle est positive.	}
+{	254	}{	Si j'entends parler d'autre chose, je reviens vous voir.	}{	Si j'entends parler d'autre chose, je reviens vous voir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais violer les esprits de cette fête et revenir.	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Adam et Mira seront complètement hors de la course si ces renseignements parviennent à l'oncle Bruno. . . Je n'oublierai pas votre coup de main, et vous pouvez compter sur moi pour vous renvoyer l'ascenseur quand je pourrai.	}{	Adam et Mira seront complètement hors de la course si ces renseignements parviennent à l'oncle Bruno. . . Je n'oublierai pas votre coup de main, et vous pouvez compter sur moi pour vous renvoyer l'ascenseur quand je pourrai.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Chris_Win = 1; pc.GiveItem("item_g_ring_03"); pc.AwardExperience("Gio03"); pc.SetQuest("Dirt",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Bonne chance, Chris.	}{	Bonne chance, Chris.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas me faire refouler, je le suis déjà assez comme ça. . . Mais je pourrais me défouler. . .	}
+{	263	}{	Rappelez-vous qui sont vos amis, Chris.	}{	Rappelez-vous qui sont vos amis, Chris.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	N'oubliez pas. . . J'aime rappeler des choses aux gens. . . à la manière forte.	}
+{	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Je vous avais dit ça en confidence ! Si je plonge, je vous entraînerai avec moi ! Merdoso !	}{	Je vous avais dit ça en confidence ! Si je plonge, je vous entraînerai avec moi ! Merdoso !	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	273	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	274	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	Adam et Mira seront complètement hors de la course si ces renseignements parviennent à l'oncle Bruno. . . Je n'oublierai pas votre coup de main, et vous pouvez compter sur moi pour vous renvoyer l'ascenseur quand je pourrai.	}{	Adam et Mira seront complètement hors de la course si ces renseignements parviennent à l'oncle Bruno. . . Je n'oublierai pas votre coup de main, et vous pouvez compter sur moi pour vous renvoyer l'ascenseur quand je pourrai.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Bonne chance, Chris.	}{	Bonne chance, Chris.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas me faire refouler, je le suis déjà assez comme ça. . . Mais je pourrais me défouler. . .	}
+{	283	}{	Rappelez-vous qui sont vos amis, Chris.	}{	Rappelez-vous qui sont vos amis, Chris.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	N'oubliez pas. . . J'aime rappeler des choses aux gens. . . à la manière forte.	}
+{	284	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Ouais ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	[Agacé]Quoi ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	293	}{	Fichez le camp ! Vous avez de la chance que je ne vous frappe pas !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	294	}{	Ouais.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	Encore merci.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	Quoi ?!	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	Je ne sais pas.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	Laissez-moi tranquille.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	Fantastique.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Tenez, prenez ça.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	303	}{	Hein ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	304	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	305	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	313	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	323	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	324	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	325	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	333	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	334	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	343	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	344	}{	(Starting Condition)	}{	}{	281	}{	G.Chris_Win == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	345	}{	(Starting Condition)	}{	}{	271	}{	G.Chris_Secret == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	(Starting Condition)	}{	}{	131	}{	G.Chris_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

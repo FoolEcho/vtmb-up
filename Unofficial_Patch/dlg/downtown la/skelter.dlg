@@ -1,0 +1,818 @@
+{	1	}{	[Vétéran noir du Vietnam. Colérique ; tout ce qu'il dit est teinté de colère ou d'impatience. Façon sergent instructeur.]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[enthousiasme faux et poussé]Ha, la vedette de la ville. L'image même de la bienveillance de la Camarilla. [plus fort, aux autres]Qu'est-ce que le prince a demandé à son chienchien aujourd'hui ?	}{	[enthousiasme faux et poussé]Ha, la vedette de la ville. L'image même de la bienveillance de la Camarilla. [plus fort, aux autres]Qu'est-ce que le prince a demandé à sa chienne aujourd'hui ?	}{	#	}{	}{	G.Skelter_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Le bouffon joue, et fait avancer ses pions devant lui.	}{	Le bouffon joue, et fait avancer ses pions devant lui.	}{	651	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Va chercher Nines avant que je ne t'envoie à la recherche de ta fierté perdue.	}{	Je viens parler à Nines Rodriguez. Sois gentil et va le chercher.	}{	21	}{	not IsClan(pc,"Malkavian") and G.Nines_Chat == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Euh, je devrais dire quoi ? 'LE POUVOIR AU PEUPLE ?'	}{	Euh, je devrais dire quoi ? 'LE POUVOIR AU PEUPLE ?'	}{	21	}{	not IsClan(pc,"Malkavian") and G.Nines_Chat == 0 and G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	Si tu ne me laisses pas tranquille, anarch, je vais t'arracher la tête. . .	}{	Si tu ne me laisses pas tranquille, anarch, je vais t'arracher la tête. . .	}{	91	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	C'est ça. Je ne vais pas me fatiguer à te remettre à ta place. Allez, à plus.	}{	C'est ça. Je ne vais pas me fatiguer à te remettre à ta place. Allez, à plus.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Pfff. . . Nines t'attend. Fais gaffe à tes manières, et ne reste pas trop. Je m'appelle Skelter. Ramène-la encore et c'est moi qui raccompagnerai tes cendres.	}{	Pfff. . . Nines t'attend. Fais gaffe à tes manières, et ne reste pas trop. Je m'appelle Skelter. Ramène-la encore et c'est moi qui raccompagnerai tes cendres.	}{	#	}{	}{	G.Skelter_Name = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Ouais, bon. T'as cinq minutes pour discuter ?	}{	Ouais, bon. T'as cinq minutes pour discuter ?	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	Où je peux trouver Nines ?	}{	Où je peux trouver Nines ?	}{	161	}{	G.Nines_Chat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche ton chef, gardien.	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	Tu as trouvé ça tout seul ? A plus !	}{	Tu as trouvé ça tout seul ? A plus !	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	31	}{	Il faut que tu comprennes, vampire. Tu te trimballes une malédiction de six mille ans dans le sang. Même si ça te donne un certain pouvoir. . .	}{	Il faut que tu comprennes, vampire. Tu te trimballes une malédiction de six mille ans dans le sang. Même si ça te donne un certain pouvoir. . .	}{	#	}{	}{	G.Skelter_Blood = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Une malédiction ?	}{	Une malédiction ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	De quelle malédiction parles-tu ?	}
+{	33	}{	Je ne sais pas, moi ça me plait bien. . .	}{	Je ne sais pas, moi ça me plait bien. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le sang est un ami familier.	}
+{	34	}{	En fait, je me sens super mal.	}{	En fait, je me sens super mal.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le liquide rouge porte une ombre bien noire sur mon âme.	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Ce sang est un fardeau qui va te réduire en esclavage pour le restant de tes jours.	}{	Ce sang est un fardeau qui va te réduire en esclavage pour le restant de tes jours.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Pourquoi dis-tu ça ?	}{	Pourquoi dis-tu ça ?	}{	51	}{	G.Skelter_Blood == 1	}{	}{	}{	}{	}{	}{	}{	}{	Tes paroles sont un magma informe.	}
+{	43	}{	Tu crois ?	}{	Tu crois ?	}{	51	}{	G.Skelter_Blood == 1 and G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Tes dires me perdent.	}
+{	44	}{	De quoi parles-tu ?	}{	De quoi parles-tu ?	}{	51	}{	G.Skelter_Blood == 1 and not IsClan(pc,"Malkavian") and G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	(Auto-Link)	}{	(Auto-Link)	}{	51	}{	G.Skelter_Blood == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Tes anciens commandent au sang. Ils contrôlent le sang. Et le sang les écoute. Tu n'entendras pas leur appel, mais le sang le fera, et il te forcera à obéir.	}{	Tes anciens commandent au sang. Ils contrôlent le sang. Et le sang les écoute. Tu n'entendras pas leur appel, mais le sang le fera, et il te forcera à obéir.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Comment se libérer ?	}{	Comment se libérer ?	}{	61	}{	G.Skelter_Blood == 1	}{	}{	}{	}{	}{	}{	}{	}{	Comment rompre ces chaînes ancestrales ?	}
+{	54	}{	On dirait des superstitions de vampires.	}{	On dirait des superstitions de vampires.	}{	61	}{	G.Skelter_Blood == 1	}{	}{	}{	}{	}{	}{	}{	}{	Légendes et contes de bonne femme, voilà tout.	}
+{	55	}{	Ca a toujours été comme ça ?	}{	Ca a toujours été comme ça ?	}{	61	}{	G.Skelter_Blood == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	Euh, super. Je peux te poser quelques autres questions ?	}{	Euh, super. Je peux te poser quelques autres questions ?	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	C'est nul. A plus.	}{	C'est nul. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Cette saleté remonte directement à Caïn. On n'y peut rien. Un ancien qui dort dans une tombe à un demi-monde de là fait un cauchemar, et ça te ruine ta journée. On n'y peut rien.	}{	Cette saleté remonte directement à Caïn. On n'y peut rien. Un ancien qui dort dans une tombe à un demi-monde de là fait un cauchemar, et ça te ruine ta journée. On n'y peut rien.	}{	#	}{	}{	G.Skelter_Stretch = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Qui est Caïn ?	}{	Qui est Caïn ?	}{	611	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu parles du Père Noir ?	}
+{	63	}{	Caïn ? De quoi parles-tu ?	}{	Caïn ? De quoi parles-tu ?	}{	611	}{	not IsClan(pc,"Malkavian") and G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	591	}{	G.Skelter_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	70	}{	Je pars.	}{	Je pars.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	71	}{	Avec la malédiction qui te manipule, tu veux vraiment renoncer à ton droit de te battre en rejoignant la Camarilla ?	}{	Avec la malédiction qui te manipule, tu veux vraiment renoncer à ton droit de te battre en rejoignant la Camarilla ?	}{	#	}{	}{	G.Skelter_Blood = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Chacun son opinion.	}{	Chacun son opinion.	}{	79	}{	G.Skelter_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les goûts et les couleurs. . .	}
+{	73	}{	Qu'est-ce que tu as contre la Camarilla ?	}{	Qu'est-ce que tu as contre la Camarilla ?	}{	101	}{	G.Skelter_Cam == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi dénonces-tu la Camarilla ?	}
+{	74	}{	Que me chantes-tu là, Helter-Skelter ?	}{	Que me chantes-tu là, Helter-Skelter ?	}{	671	}{	G.Skelter_Name == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	Intéressante théorie. Comment t'appelles-tu ?	}{	Intéressante théorie. Comment t'appelles-tu ?	}{	81	}{	G.Skelter_Name == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	Mais tu acceptes la Mascarade ?	}{	Mais tu acceptes la Mascarade ?	}{	171	}{	G.Skelter_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Te caches-tu aussi derrière le voile de la Mascarade ?	}
+{	77	}{	J'y penserai. J'ai encore quelques questions. . .	}{	J'y penserai. J'ai encore quelques questions. . .	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	78	}{	Ouais, c'est ça. Je m'en vais.	}{	Ouais, c'est ça. Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	79	}{	Ha. Heureux que tu sois d'accord.	}{	Ha. Heureux que tu sois d'accord.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	(Auto-Link)	}{	(Auto-Link)	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Je m'appelle Skelter. Je fais de mon mieux pour que la Californie continue d'accueillir les anarchs.	}{	Je m'appelle Skelter. Je fais de mon mieux pour que la Californie continue d'accueillir les anarchs.	}{	#	}{	}{	G.Skelter_Name = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Il faut que je parle à Nines.	}{	Il faut que je parle à Nines.	}{	161	}{	G.Skelter_See == 0 and G.Nines_Chat == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Qu'est-ce que tu détestes tant dans la Camarilla ?	}{	Qu'est-ce que tu détestes tant dans la Camarilla ?	}{	101	}{	G.Skelter_Cam == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	J'ai quelques questions pour toi, Skelter.	}{	J'ai quelques questions pour toi, Skelter.	}{	591	}{	G.Skelter_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	OK. Je me barre, Skelter.	}{	OK. Je me barre, Skelter.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Tu essaies de lancer une baston, pour que le shérif de la Camarilla puisse venir nettoyer la maison ? Pas question. Demande au prince de te montrer le dernier abruti qui a eu cette idée. . . et dis-lui aussi que je veux récupérer mon cendrier.	}{	Tu essaies de lancer une baston, pour que le shérif de la Camarilla puisse venir nettoyer la maison ? Pas question. Demande au prince de te montrer le dernier abruti qui a eu cette idée. . . et dis-lui aussi que je veux récupérer mon cendrier.	}{	#	}{	}{	G.Skelter_Ashtray = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Comment tu t'appelles ?	}{	Comment tu t'appelles ?	}{	81	}{	G.Skelter_Name == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Qui es-tu ? Le comité d'accueil des anarchs ?	}{	Qui es-tu ? Le comité d'accueil des anarchs ?	}{	81	}{	G.Skelter_Name == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	Que me chantes-tu là, Helter-Skelter ?	}{	Que me chantes-tu là, Helter-Skelter ?	}{	671	}{	G.Skelter_Name == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	Eh, je ne veux pas d'ennuis. Je veux juste parler à Nines Rodriguez.	}{	Eh, je ne veux pas d'ennuis. Je veux juste parler à Nines Rodriguez.	}{	161	}{	G.Nines_Chat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche ton chef, gardien.	}
+{	96	}{	C'est ça. Bon, moi je viens parler à Nines.	}{	C'est ça. Bon, moi je viens parler à Nines.	}{	161	}{	not IsClan(pc,"Malkavian") and G.Nines_Chat == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	La Camarilla n'est pas nécessaire. Leurs règles tombent tout simplement sous le sens. La Mascarade et tout ça. Comme les 10 commandements. Tu connais les 10 commandements, hein ?	}{	La Camarilla n'est pas nécessaire. Leurs règles tombent tout simplement sous le sens. La Mascarade et tout ça. Comme les 10 commandements. Tu connais les 10 commandements, hein ?	}{	#	}{	}{	G.Skelter_Cam = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Bien sûr.	}{	Bien sûr.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma tête est un buisson ardent.	}
+{	103	}{	Les dix commandements ?	}{	Les dix commandements ?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Douze pestes et l'appel du veau d'or. . .	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	110	}{	Je sais que j'en ai assez de ce sermon. . . A plus tard.	}{	Je sais que j'en ai assez de ce sermon. . . A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre ira assombrir d'autres domaines. Adieu.	}
+{	111	}{	Ouais. Tu ne voleras point, tu ne tueras point. Ca me plait, mais toi et moi on sait que ça ne marche pas toujours. Que se passe-t-il quand une [moqueur] 'société' comme la Camarilla vient te tuer si tu enfreins l'un des commandements ?	}{	Ouais. Tu ne voleras point, tu ne tueras point. Ca me plait, mais toi et moi on sait que ça ne marche pas toujours. Que se passe-t-il quand une [moqueur] 'société' comme la Camarilla vient te tuer si tu enfreins l'un des commandements ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Je vois ce que tu veux dire.	}{	Je vois ce que tu veux dire.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tes paroles se revêtent de la vérité comme d'un habit bien coupé.	}
+{	113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	La loi et l'ordre sont les amis de tous les vampires.	}{	La loi et l'ordre sont les amis de tous les vampires.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche un chemin plus structuré.	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	120	}{	Tu veux dire, du genre. . . Tu n'assommeras pas ton public ? A plus.	}{	Tu veux dire, du genre. . . Tu n'assommeras pas ton public ? A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	121	}{	Ouais. Mais on n'est pas fait pour vivre comme ça. J'ai suivi les règles d'un autre pendant 3 ans au Vietnam, mais il m'a fallu l'Etreinte pour connaître la véritable oppression.	}{	Ouais. Mais on n'est pas fait pour vivre comme ça. J'ai suivi les règles d'un autre pendant 3 ans au Vietnam, mais il m'a fallu l'Etreinte pour connaître la véritable oppression.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Essaie de travailler pour le prince.	}{	Essaie de travailler pour le prince.	}{	79	}{	G.Skelter_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	L'oppression est la musique du bouffon.	}
+{	123	}{	Alors ce sont les anarchs qui détiennent la vérité ?	}{	Alors ce sont les anarchs qui détiennent la vérité ?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi des Enfants de l'Entropie.	}
+{	124	}{	Oui, mais tu obéis bien à Nines Rodriguez ?	}{	Oui, mais tu obéis bien à Nines Rodriguez ?	}{	141	}{	G.Skelter_Follow == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tes paroles sont nobles, mais tu t'inclines devant Nines.	}
+{	125	}{	Vraiment ? Pourquoi dis-tu cela ?	}{	Vraiment ? Pourquoi dis-tu cela ?	}{	31	}{	G.Skelter_Blood == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tes paroles sont des eaux troubles. Eclaire-moi davantage.	}
+{	126	}{	Mais tu acceptes la Mascarade ?	}{	Mais tu acceptes la Mascarade ?	}{	171	}{	G.Skelter_Cam == 1 and G.Skelter_Name == 1 and G.Skelter_Quest == 0 and G.Skelter_Blood == 1	}{	}{	}{	}{	}{	}{	}{	}{	Te caches-tu aussi derrière le voile de la Mascarade ?	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Ouais. Mais j'ai choisi de ne pas m'incliner. J'ai abandonné mes droits une fois, et je me suis retrouvé dans une jungle d'Asie, avec rien qu'un M60 et plein de questions. Maintenant, je suis mort et c'est la merde. Je préfère finir en poussière que me faire remettre comme ça.	}{	Ouais. Mais j'ai choisi de ne pas m'incliner. J'ai abandonné mes droits une fois, et je me suis retrouvé dans une jungle d'Asie, avec rien qu'un M60 et plein de questions. Maintenant, je suis mort et c'est la merde. Je préfère finir en poussière que me faire remettre comme ça.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	C'est pour ça que tu obéis à Nines Rodriguez ?	}{	C'est pour ça que tu obéis à Nines Rodriguez ?	}{	141	}{	G.Skelter_Follow == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tes paroles sont nobles, mais tu t'inclines devant Nines.	}
+{	133	}{	Ouais, je te comprends carrément.	}{	Ouais, je te comprends carrément.	}{	79	}{	G.Skelter_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ta langue façonne la vérité.	}
+{	134	}{	Alors ce sont les anarchs qui détiennent la vérité ?	}{	Alors ce sont les anarchs qui détiennent la vérité ?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi des Enfants de l'Entropie.	}
+{	135	}{	Je m'y perds un peu. Quel rapport entre un vampire et le Vietnam ?	}{	Je m'y perds un peu. Quel rapport entre un vampire et le Vietnam ?	}{	31	}{	G.Skelter_Blood == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quel rapport entre le bambou et le sang rouge ?	}
+{	136	}{	Mais tu acceptes la Mascarade ?	}{	Mais tu acceptes la Mascarade ?	}{	171	}{	G.Skelter_Cam == 1 and G.Skelter_Name == 1 and G.Skelter_Quest == 0 and G.Skelter_Blood == 1	}{	}{	}{	}{	}{	}{	}{	}{	Te caches-tu aussi derrière le voile de la Mascarade ?	}
+{	137	}{	Oh ! Les vampires ont des psy ? Je mets les bouts, moi. . .	}{	Oh ! Les vampires ont des psy ? Je mets les bouts, moi. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Personne n'obéit à Nines Rodriguez. Il dirige par l'exemple, avec nous. C'est mieux qu'un pousse-papier mou du genou qui se cache dans sa tour. Seuls les moutons de la Camarilla ratent la comparaison.	}{	Personne n'obéit à Nines Rodriguez. Il dirige par l'exemple, avec nous. C'est mieux qu'un pousse-papier mou du genou qui se cache dans sa tour. Seuls les moutons de la Camarilla ratent la comparaison.	}{	#	}{	}{	G.Skelter_Follow = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Je suis tout à fait d'accord.	}{	Je suis tout à fait d'accord.	}{	79	}{	G.Skelter_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mes sentiments rejoignent les tiens.	}
+{	143	}{	Que me chantes-tu là, Helter-Skelter ?	}{	Que me chantes-tu là, Helter-Skelter ?	}{	671	}{	G.Skelter_Name == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	Qui es-tu ?	}{	Qui es-tu ?	}{	81	}{	G.Skelter_Name == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	Mais tu acceptes la Mascarade ?	}{	Mais tu acceptes la Mascarade ?	}{	171	}{	G.Skelter_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Te caches-tu aussi derrière le voile de la Mascarade ?	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	Du calme, mon grand. Je m'en vais.	}{	Du calme, mon grand. Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	151	}{	Les anarchs ? On est les seuls à permettre la liberté après la mort, mon cher.	}{	Les anarchs ? On est les seuls à permettre la liberté après la mort, ma chère.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	On dirait bien.	}{	On dirait bien.	}{	79	}{	G.Skelter_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tu confirmes mes propres intuitions.	}
+{	153	}{	Et Nines ? Il n'est pas un peu le prince des anarchs ?	}{	Et Nines ? Il n'est pas un peu le prince des anarchs ?	}{	141	}{	G.Skelter_Follow == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tes paroles sont nobles, mais tu t'inclines devant Nines.	}
+{	154	}{	Ouais ? C'est vraiment si dur d'être libre, pour un vampire ?	}{	Ouais ? C'est vraiment si dur d'être libre, pour un vampire ?	}{	31	}{	G.Skelter_Blood == 0	}{	}{	}{	}{	}{	}{	}{	}{	La liberté est-elle si difficile pour des monstres comme nous ?	}
+{	155	}{	Mais tu acceptes la Mascarade ?	}{	Mais tu acceptes la Mascarade ?	}{	171	}{	G.Skelter_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Te caches-tu aussi derrière le voile de la Mascarade ?	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	Merci, Skelter. Au revoir.	}{	Merci, Skelter. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	161	}{	Alors va le voir. Tu peux faire ce que tu veux, ici.[pas comme ailleurs]	}{	Alors va le voir. Tu peux faire ce que tu veux, ici.[pas comme ailleurs]	}{	#	}{	}{	G.Skelter_See = 1; G.Skelter_Questions = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	J'y vais. Merci.	}{	J'y vais. Merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce n'est qu'un au revoir, mon frère. Nous nous reverrons. Adieu.	}
+{	163	}{	Je ne t'ai pas demandé la permission. Au revoir.	}{	Je ne t'ai pas demandé la permission. Au revoir.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Je n'ai pas besoin de montrer les crocs pour me sentir bien. La Mascarade est une marque de fruit de la Camarilla. A part ça, ça ne me pose aucun problème. Vivre et laisser vivre - j'ai assez de problèmes comme ça.	}{	Je n'ai pas besoin de montrer les crocs pour me sentir bien. La Mascarade est une marque de fruit de la Camarilla. A part ça, ça ne me pose aucun problème. Vivre et laisser vivre - j'ai assez de problèmes comme ça.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Amen.	}{	Amen.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alléluia et vive l'Amérique !	}
+{	173	}{	C'est plutôt logique.	}{	C'est plutôt logique.	}{	181	}{	not IsClan(pc,"Malkavian") and G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	Peut-être. Je ne sais pas.	}{	Peut-être. Je ne sais pas.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tes mots sont un peu flous.	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Tu sais, en parlant de Mascarade, j'ai pensé à un truc où tu pourrais nous aider.	}{	Tu sais, en parlant de Mascarade, j'ai pensé à un truc où tu pourrais nous aider.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Dis-moi.	}{	Dis-moi.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Encore des mots, toujours des mots, je veux des mots.	}
+{	183	}{	J'ai beaucoup à faire en ce moment, mais je t'écoute.	}{	J'ai beaucoup à faire en ce moment, mais je t'écoute.	}{	191	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Tu n'as que quelques instants pour me faire part de tes idées.	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Il y a une fille qui fait beaucoup de bruit, ces deniers temps. C'est une plaie. C'est la goule d'un Toréador qui a disparu.	}{	Il y a une fille qui fait beaucoup de bruit, ces deniers temps. C'est une plaie. C'est la goule d'un Toréador qui a disparu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Elle ne s'appellerait pas Patty, par hasard ?	}{	Elle ne s'appellerait pas Patty, par hasard ?	}{	206	}{	G.Patty_Known == 1	}{	}{	}{	}{	}{	}{	}{	}{	Cette drôle de goule ne s'appellerait pas Patty, par hasard ?	}
+{	193	}{	Goule ? Et qu'est-ce qu'une goule, exactement ?	}{	Goule ? Et qu'est-ce qu'une goule, exactement ?	}{	201	}{	G.Knox_Ghoul < 2 and G.Mercurio_Ghoul == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quoi, une goule ? Qu'est-ce qu'elle a cette goule ? 	}
+{	194	}{	Quel est son nom ?	}{	Quel est son nom ?	}{	211	}{	G.Patty_Known == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quel est le nom de cette drôle de goule ?	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Une goule, c'est le serviteur humain d'un vampire. Une goule n'est pas étreinte, mais elle boit le sang de son maître. Ce sang la lie, la force à obéir, mais lui donne aussi certains de nos pouvoirs. Elle finit par en être dépendante, et doit en boire toujours plus, comme un drogué.	}{	Une goule, c'est le serviteur humain d'un vampire. Une goule n'est pas étreinte, mais elle boit le sang de son maître. Ce sang la lie, la force à obéir, mais lui donne aussi certains de nos pouvoirs. Elle finit par en être dépendante, et doit en boire toujours plus, comme un drogué.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Skelter_Ghoul = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Je vois. Et cette goule ne s'appellerait pas Patty ?	}{	Je vois. Et cette goule ne s'appellerait pas Patty ?	}{	206	}{	G.Patty_Known == 1 and G.Skelter_Patty == 0	}{	}{	}{	}{	}{	}{	}{	}{	Cette drôle de goule ne s'appellerait pas Patty, par hasard ?	}
+{	203	}{	Cool. Et cette goule, c'est qui ?	}{	Cool. Et cette goule, c'est qui ?	}{	211	}{	G.Patty_Known == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quel est le nom de cette drôle de goule ?	}
+{	204	}{	(Auto-Link)	}{	(Auto-Link)	}{	221	}{	G.Patty_Known == 1 and G.Skelter_Patty == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	[dédain]Pff. Ouais. Patty. Alors vous savez déjà de quoi je parle.	}{	[dédain]Pff. Ouais. Patty. Alors vous savez déjà de quoi je parle.	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	G.Skelter_Patty = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	Et quel est le problème ?	}{	Et quel est le problème ?	}{	221	}{	G.Skelter_Ghoul == 0	}{	}{	}{	}{	}{	}{	}{	}{	Et Patty est un petit problème ?	}
+{	208	}{	Oui. Mais c'est quoi une goule, exactement ?	}{	Oui. Mais c'est quoi une goule, exactement ?	}{	201	}{	G.Skelter_Ghoul == 0 and G.Knox_Ghoul < 2 and G.Mercurio_Ghoul == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quoi, une goule ? Qu'est-ce qu'elle a cette goule ? 	}
+{	209	}{	(Auto-Link)	}{	(Auto-Link)	}{	221	}{	G.Skelter_Ghoul == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Elle s'appelle Patty. Elle traîne dans les clubs en ville. 	}{	Elle s'appelle Patty. Elle traîne dans les clubs en ville. 	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	(Auto-Link)	}{	(Auto-Link)	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	213	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Avant, elle débarquait ici et se la jouait super sympa avec tout le monde. Tout était génial jusqu'à ce que son vampire en sucre arrête de l'appeler. Maintenant, il lui faut son fixe, et elle est beaucoup moins drôle. 	}{	Avant, elle débarquait ici et se la jouait super sympa avec tout le monde. Tout était génial jusqu'à ce que son vampire en sucre arrête de l'appeler. Maintenant, il lui faut son fixe, et elle est beaucoup moins drôle. 	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Pourquoi ne pas lui dire qu'elle n'est plus la bienvenue ?	}{	Pourquoi ne pas lui dire qu'elle n'est plus la bienvenue ?	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dis-lui que son vampire en sucre n'est pas une sucette. . .	}
+{	223	}{	Elle ne comprend pas qu'il est parti ?	}{	Elle ne comprend pas qu'il est parti ?	}{	231	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	Qu'est-ce que tu veux y faire ?	}{	Qu'est-ce que tu veux y faire ?	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quel méfait faut-il commettre ?	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	On lui a dit qu'il était mort. Elle n'écoute rien. Elle demande juste à quelqu'un d'autre. Saleté de droguée. Elle va faire un scandale et nous attirer un peu trop d'attention.	}{	On lui a dit qu'il était mort. Elle n'écoute rien. Elle demande juste à quelqu'un d'autre. Saleté de droguée. Elle va faire un scandale et nous attirer un peu trop d'attention.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Quel genre d'attention ?	}{	Quel genre d'attention ?	}{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	De quelle attention parles-tu ?	}
+{	233	}{	On dirait que vous avez un problème, les gars.	}{	On dirait que vous avez un problème, les gars.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quel méfait faut-il commettre ?	}
+{	234	}{	Que voulez-vous que je fasse ?	}{	Que voulez-vous que je fasse ?	}{	241	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	Des chasseurs de vampire. Quand on commence à déconner et à ne plus respecter la Mascarade, ils débarquent. Crois-moi. . . Les chasseurs, c'est toujours trop d'ennuis.	}{	Des chasseurs de vampire. Quand on commence à déconner et à ne plus respecter la Mascarade, ils débarquent. Crois-moi. . . Les chasseurs, c'est toujours trop d'ennuis.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	Bon. Au sujet de notre problème avec Patty. . .	}{	Bon. Au sujet de notre problème avec Patty. . .	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Revenons au problème particulier de la petite Patty.	}
+{	238	}{	Quel est le problème avec cette goule ?	}{	Quel est le problème avec cette goule ?	}{	241	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Elle va trop loin. Le seul moment où elle ne parle pas trop, c'est quand elle suce du sang de vampire. Il faut qu'elle disparaisse. Si vous vous en chargez, ce sera notre petit secret, d'ac ?	}{	Elle va trop loin. Le seul moment où elle ne parle pas trop, c'est quand elle suce du sang de vampire. Il faut qu'elle disparaisse. Si vous vous en chargez, ce sera notre petit secret, d'ac ?	}{	#	}{	}{	G.Skelter_Quest = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Je le ferai pour protéger la Mascarade.	}{	Je le ferai pour protéger la Mascarade.	}{	251	}{	Humanity 6 & (not IsDead ("Patty") and G.Patty_SM == 0)	}{	}{	}{	}{	}{	}{	}{	}{	J'accepte cette mission pour la Mascarade.	}
+{	243	}{	Je ferais tout pour mes frères anarchs.	}{	Je ferais tout pour mes frères anarchs.	}{	251	}{	Humanity 6 & (not IsDead ("Patty") and G.Patty_SM == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Je servirai les anarchs, Enfants de l'Entropie.	}
+{	244	}{	Ce serait avec plaisir. . .	}{	Ce serait avec plaisir. . .	}{	251	}{	Humanity -6 & (not IsDead ("Patty") and G.Patty_SM == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Si besoin, je peux étriper cette goule.	}
+{	245	}{	Désolé, c'est pas pour moi.	}{	Désolée, c'est non.	}{	261	}{	Humanity 6 & (not IsDead ("Patty") and G.Patty_SM == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Vous devrez résoudre seuls le problème de Patty.	}
+{	246	}{	Je ne nettoie pas les ordures des anarchs.	}{	Je ne nettoie pas les ordures des anarchs.	}{	261	}{	Humanity 6 & (not IsDead ("Patty") and G.Patty_SM == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis pas le balayeur des anarchs.	}
+{	247	}{	En général, je la tuerais avec plaisir, mais pas aujourd'hui.	}{	En général, je la tuerais avec plaisir, mais pas aujourd'hui.	}{	261	}{	Humanity -6 & (not IsDead ("Patty") and G.Patty_SM == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Je me baignerais volontiers dans son sang, mais j'ai d'autres monstres à fouetter.	}
+{	248	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	Je me suis déjà occupé de votre problème.	}{	Je me suis déjà occupée de votre problème.	}{	271	}{	IsDead ("Patty") or G.Patty_SM == 1	}{	FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	La petite Patty n'est déjà plus un problème.	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Très bien. Amuse-toi. J'aimerais bien faire ça moi-même, mais je connais son père. . . Viens me le dire quand ce sera fait.	}{	Très bien. Amuse-toi. J'aimerais bien faire ça moi-même, mais je connais son père. . . Viens me le dire quand ce sera fait.	}{	#	}{	}{	G.Skelter_Quest = 3; pc.SetQuest("Junky",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Bon. Mais j'ai encore quelques questions avant de partir.	}{	Bon. Mais j'ai encore quelques questions avant de partir.	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	253	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	OK. Au revoir.	}{	OK. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Pff. Bon, garde ça dans un coin de ta tête, OK ?	}{	Pff. Bon, garde ça dans un coin de ta tête, OK ?	}{	#	}{	}{	G.Skelter_Quest = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Finalement, je pourrais bien faire ça. . .	}{	Finalement, je pourrais bien faire ça. . .	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Attends ! Je vais punir la petite Patty.	}
+{	263	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	Bien sûr. Au revoir.	}{	Bien sûr. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il n'y aura que ça dans le coin. Adieu.	}
+{	271	}{	Bien joué. Les goules, c'est rien que des ennuis, si tu veux mon avis. C'est une faiblesse, tout simplement.	}{	Bien joué. Les goules, c'est rien que des ennuis, si tu veux mon avis. C'est une faiblesse, tout simplement.	}{	#	}{	}{	G.Skelter_Quest = 4; pc.SetQuest("Junky",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	273	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	274	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	J'ai quelques questions. . .	}{	J'ai quelques questions. . .	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	279	}{	J'ai fait ce qu'il fallait pour la Mascarade. A plus tard.	}{	J'ai fait ce qu'il fallait pour la Mascarade. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le Voile reste tiré, Helter-Skelter. Adieu.	}
+{	280	}{	Je suis toujours là pour la cause anarch. A plus.	}{	C'est un plaisir de servir une cause aussi juste.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche aussi à rejoindre les Enfants de l'Entropie. Adieu !	}
+{	281	}{	Comment ça va ?	}{	Comment ça va ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Je n'ai pas encore compris ton nom. . .	}{	Je n'ai pas encore compris ton nom. . .	}{	81	}{	G.Skelter_Name == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	Que me chantes-tu là, Helter-Skelter ?	}{	Que me chantes-tu là, Helter-Skelter ?	}{	671	}{	G.Skelter_Name == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	284	}{	Je ne suis pas vampire depuis longtemps. Quelques conseils me seraient utiles, tu sais. . .	}{	Je ne suis pas vampire depuis longtemps. Quelques conseils me seraient utiles, tu sais. . .	}{	31	}{	G.Skelter_Insight == 0	}{	G.Skelter_Insight = 1	}{	}{	}{	}{	}{	}{	}{	Je cherche l'illumination sur ma présente condition !	}
+{	285	}{	Je cherche du travail.	}{	Je cherche du travail.	}{	191	}{	G.Skelter_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Avez-vous quelques besognes à me confier ?	}
+{	286	}{	J'ai réfléchi à ton problème. Je pense pouvoir t'aider.	}{	J'ai réfléchi à ton problème. Je pense pouvoir t'aider.	}{	251	}{	G.Skelter_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je vais résoudre ton profond problème de Patty.	}
+{	287	}{	J'ai réglé le cas Patty.	}{	J'ai réglé le cas Patty.	}{	271	}{	(G.Patty_Pisha == 1 or IsDead ("Patty") or G.Test_Patty == 1 or G.Patty_SM == 1) and G.Skelter_Quest == 3	}{	FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	La goule Patty, la voilà partie.	}
+{	288	}{	J'ai réglé le cas Patty.	}{	J'ai réglé le cas Patty.	}{	271	}{	G.Patty_SD == 1 and G.Skelter_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	La goule Patty, la voilà partie.	}
+{	289	}{	J'ai terminé Patty. . .	}{	J'ai terminé Patty. . .	}{	576	}{	G.Patty_Alley > 0 and not IsDead ("Patty") and G.Test_Patty == 0 and G.Skelter_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	La goule Patty, la voilà partie.	}
+{	290	}{	J'ai quelques questions pour toi.	}{	J'ai quelques questions pour toi.	}{	591	}{	}{	G.Skelter_Questions = 1	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	291	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	293	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	294	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	301	}{	Sale bâtard. T'as pas honte de te pointer ici ? Dégage.	}{	Sale bâtard. T'as pas honte de te pointer ici ? Dégage.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Skelter_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Qu'est-ce que j'ai fait ?	}{	Qu'est-ce que j'ai fait ?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi de si dures paroles, Helter-Skelter ?	}
+{	303	}{	Du calme, Skelter.	}{	Du calme, Skelter.	}{	311	}{	G.Skelter_Name == 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	304	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	T'as balancé Nines. T'as dit qu'il avait tué un foutu primogène.	}{	T'as balancé Nines. T'as dit qu'il avait tué un foutu primogène.	}{	#	}{	}{	G.Skelter_Skeptical = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Je l'ai vu sur place, c'est tout.	}{	Je l'ai vu sur place, c'est tout.	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Son ombre a croisé la mienne chez le primogène.	}
+{	313	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	314	}{	Je sais ce que j'ai vu.	}{	Je sais ce que j'ai vu.	}{	321	}{	G.Story_State < 80	}{	}{	}{	}{	}{	}{	}{	}{	Nines porte sa culpabilité comme un halo terni.	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	C'est un foutu piège de LaCroix. Nines ne nous a pas quittés de la semaine. Il n'aurait pas pu y être. Il s'est fait avoir. La seule question que je me pose, c'est de savoir si tu étais au courant ?	}{	C'est un foutu piège de LaCroix. Nines ne nous a pas quittés de la semaine. Il n'aurait pas pu y être. Il s'est fait avoir. La seule question que je me pose, c'est de savoir si tu étais au courant ?	}{	#	}{	}{	G.Skelter_Setup = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Je ne sais rien de plus que toi, pour être honnête.	}{	Je ne sais rien de plus que toi, pour être honnête.	}{	351	}{	G.Story_State < 80	}{	}{	}{	}{	}{	}{	}{	}{	Tout ceci est plus tordu que mon inconscient. . .	}
+{	323	}{	Je ne pense pas qu'il soit coupable, c'est juste une question d'apparences.	}{	Je ne pense pas qu'il soit coupable, c'est juste une question d'apparences.	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'était Nines, mais il y a un problème.	}
+{	324	}{	Je ne sais pas s'il est coupable ou non, je sais simplement ce que j'ai vu.	}{	Je ne sais pas s'il est coupable ou non, je sais simplement ce que j'ai vu.	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne fais que répéter ce qu'ont dit mes yeux.	}
+{	325	}{	Je ne savais pas. Tu avais raison à propos de LaCroix cependant, il a fait un pacte avec Ming-Xiao pour pièger Nines.	}{	Je ne savais pas. Tu avais raison à propos de LaCroix cependant, il a fait un pacte avec Ming-Xiao pour pièger Nines.	}{	351	}{	G.Story_State >= 80	}{	}{	}{	}{	}{	}{	}{	}{	Les chiffres s'additionnent si vous entrez LaCroix.	}
+{	326	}{	Nines n'était peut-être pas le héros que tu pensais.	}{	Nines n'était peut-être pas le héros que tu pensais.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Peut-être ton prince des rues est-il un criminel ordinaire.	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	Ecoute bien, crapule. Nines n'a pas fait cette saleté, et tu le sais. Je n'admets pas que tu dises le contraire.	}{	Ecoute bien, crapule. Nines n'a pas fait cette saleté, et tu le sais. Je n'admets pas que tu dises le contraire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Mais je sais ce que j'ai vu, et c'était assez clair.	}{	Mais je sais ce que j'ai vu, et c'était assez clair.	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne fais que répéter ce qu'ont dit mes yeux.	}
+{	333	}{	Nines est un tueur. Vous n'êtes que des enfants geignards.	}{	Nines est un tueur. Vous n'êtes que des enfants geignards.	}{	341	}{	pc.GetQuestState("Junky") == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nines a réglé le compte du dément.	}
+{	334	}{	Nines est un tueur. Vous n'êtes que des enfants geignards. . .	}{	Nines est un tueur. Vous n'êtes que des enfants geignards. . .	}{	341	}{	pc.GetQuestState("Junky") > 0 and pc.GetQuestState("Junky") != 3	}{	pc.SetQuest("Junky",8)	}{	}{	}{	}{	}{	}{	}{	Nines a réglé le compte du dément.	}
+{	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Dégage de là, où je te mets en pièces. . .	}{	Dégage de là, où je te mets en pièces. . .	}{	#	}{	}{	G.Skelter_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	343	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	344	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	Je suis prêt à croire que tu n'étais qu'un outil dans tout ça, mais je te surveille.	}{	Je suis prêt à croire que tu n'étais qu'un outil dans tout ça, mais je te surveille.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Skelter_Setup = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	Où est Nines ?	}{	Où est Nines ?	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où est le chef sans autorité ?	}
+{	353	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	354	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	360	}{	Ouais, c'est ça. Je m'en vais.	}{	Ouais, c'est ça. Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne t'entends pas : je suis déjà ailleurs.	}
+{	361	}{	Ne t'attends pas à le voir tant que ces conneries ne seront pas réglées.	}{	Ne t'attends pas à le voir tant que ces conneries ne seront pas réglées.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	363	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	364	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	370	}{	Bon, je file.	}{	Bon, je file.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais projeter mon ombre ailleurs. Adieu.	}
+{	371	}{	Tu veux dire la gamine, là-bas ? Elle me rappelle ces pauvres manifestants de merde, quand j'étais au Vietnam. Mais elle, elle est du bon côté de la guerre. Ne te laisse pas avoir par ses conneries hippies, c'est tout.	}{	Tu veux dire la gamine, là-bas ? Elle me rappelle ces pauvres manifestants de merde, quand j'étais au Vietnam. Mais elle, elle est du bon côté de la guerre. Ne te laisse pas avoir par ses conneries hippies, c'est tout.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	373	}{	Parle-moi de quelqu'un d'autre.	}{	Parle-moi de quelqu'un d'autre.	}{	631	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vois quelqu'un d'autre.	}
+{	374	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	Merci. Je file.	}{	Merci. Je file.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	381	}{	C'est lui, là. Un bon vampire. J'aimerais qu'il participe un peu plus au combat, mais tu sais, c'est Jack ! Jack fait ce qu'il veut. Et Dieu vienne en aide à ceux qui lui résistent.	}{	C'est lui, là. Un bon vampire. J'aimerais qu'il participe un peu plus au combat, mais tu sais, c'est Jack ! Jack fait ce qu'il veut. Et Dieu vienne en aide à ceux qui lui résistent.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	383	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	384	}{	Parle-moi de quelqu'un d'autre.	}{	Parle-moi de quelqu'un d'autre.	}{	631	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vois quelqu'un d'autre.	}
+{	385	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	Merci.	}{	Merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	391	}{	Mais qu'est-ce que tu veux, toi ?	}{	Mais qu'est-ce que tu veux, toi ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	Où est Nines ?	}{	Où est Nines ?	}{	361	}{	G.Skelter_Setup == 1 and G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	Où est le chef sans autorité ?	}
+{	393	}{	Je cherche du travail.	}{	Je cherche du travail.	}{	191	}{	G.Skelter_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Avez-vous quelques besognes à me confier ?	}
+{	394	}{	J'ai réfléchi à ton problème. Je pense pouvoir t'aider.	}{	J'ai réfléchi à ton problème. Je pense pouvoir t'aider.	}{	251	}{	G.Skelter_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je vais résoudre ton profond problème de Patty.	}
+{	395	}{	J'ai réglé le cas Patty.	}{	J'ai réglé le cas Patty.	}{	271	}{	(G.Patty_Pisha == 1 or IsDead ("Patty") or G.Test_Patty == 1 or G.Patty_SM == 1) and G.Skelter_Quest == 3	}{	FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	La goule Patty, la voilà partie.	}
+{	396	}{	J'ai réglé le cas Patty.	}{	J'ai réglé le cas Patty.	}{	271	}{	G.Patty_SD == 1 and G.Skelter_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	La goule Patty, la voilà partie.	}
+{	397	}{	J'ai terminé Patty. . .	}{	J'ai terminé Patty. . .	}{	576	}{	G.Patty_Alley > 0 and not IsDead ("Patty") and G.Test_Patty == 0 and G.Skelter_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	La goule Patty, la voilà partie.	}
+{	398	}{	J'ai quelques questions pour toi.	}{	J'ai quelques questions pour toi.	}{	591	}{	}{	G.Skelter_Questions = 1	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	403	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	404	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	405	}{	Rien. Au revoir.	}{	Rien. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	406	}{	Si je connais les Kuei-Jin ? Pff. . . Ces fumiers ont débarqué en Californie il y a 5 ans, et ils nous combattent bec et ongles pour chaque pouce carré de terrain. Ouais, je les connais.	}{	Si je connais les Kuei-Jin ? Pff. . . Ces fumiers ont débarqué en Californie il y a 5 ans, et ils nous combattent bec et ongles pour chaque pouce carré de terrain. Ouais, je les connais.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	407	}{	Comment sont-ils, par rapport à. . . nous ?	}{	Comment sont-ils, par rapport à. . . nous ?	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les Kuei-Jin et les vampires sont parents ?	}
+{	408	}{	Sont-ils de taille face à un vampire ?	}{	Sont-ils de taille face à un vampire ?	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les Kuei-Jin sont-ils de taille à résister à un frère sangsue ?	}
+{	409	}{	Vous êtes en guerre avec tout le monde, hein ?	}{	Vous êtes en guerre avec tout le monde, hein ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous menez une guerre sur tous les fronts, Helter-Skelter.	}
+{	410	}{	Qui est pire, les Kuei-Jin ou la Camarilla ?	}{	Qui est pire, les Kuei-Jin ou la Camarilla ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quel est le moindre des deux maux, les Kuei-Jin ou la Camarilla ?	}
+{	411	}{	Rien à voir avec nous. Ce sont des diables. Et fourbes, en plus. A voir les saloperies dont ils sont capables, ça explique beaucoup de choses que j'ai vues au Vietnam.	}{	Rien à voir avec nous. Ce sont des diables. Et fourbes, en plus. A voir les saloperies dont ils sont capables, ça explique beaucoup de choses que j'ai vues au Vietnam.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Alors vous êtes en guerre avec tout le monde ?	}{	Alors vous êtes en guerre avec tout le monde ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous menez une guerre sur tous les fronts, Helter-Skelter.	}
+{	413	}{	Qui est pire, les Kuei-Jin ou la Camarilla ?	}{	Qui est pire, les Kuei-Jin ou la Camarilla ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quel est le moindre des deux maux, les Kuei-Jin ou la Camarilla ?	}
+{	414	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	Merci. Au revoir.	}{	Merci. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	421	}{	Ce sont des envahisseurs. Les Kuei-Jin ont moins de risques de s'occuper de nous. . . Ils se prennent pour des 'êtres supérieurs' ou je ne sais quoi. Mais la Camarilla, ils mentent et te poignardent dans le dos. Le pire ? Quelle importance ?	}{	Ce sont des envahisseurs. Les Kuei-Jin ont moins de risques de s'occuper de nous. . . Ils se prennent pour des 'êtres supérieurs' ou je ne sais quoi. Mais la Camarilla, ils mentent et te poignardent dans le dos. Le pire ? Quelle importance ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	Pour toi aucune, on dirait. J'ai encore quelques questions.	}{	Pour toi aucune, on dirait. J'ai encore quelques questions.	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	423	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	Bien vu. A plus tard.	}{	Bien vu. Bon, à plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	431	}{	J'ai entendu dire qu'un ancien vampire maléfique va arriver et amener l'enfer avec lui. Bordel, si ça se trouve, c'est Caïn lui-même. Certaines personnes disent que c'est l'un des premiers signes de la Géhenne.	}{	J'ai entendu dire qu'un ancien vampire maléfique va arriver et amener l'enfer avec lui. Bordel, si ça se trouve, c'est Caïn lui-même. Certaines personnes disent que c'est l'un des premiers signes de la Géhenne.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	La Géhenne ?	}{	La Géhenne ?	}{	441	}{	G.Bertram_Gehenna == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	433	}{	Ah ! Le Jour du Retour du Père Noir !	}{	Ah ! Le Jour du Retour du Père Noir !	}{	681	}{	G.Bertram_Gehenna == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	434	}{	Et je suppose que c'est une conspiration de la Camarilla, hein ?	}{	Et je suppose que c'est une conspiration de la Camarilla, hein ?	}{	451	}{	IsClan(pc,"Ventrue") or IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	435	}{	C'est sans doute un plan de la Camarilla ?	}{	C'est sans doute un plan de la Camarilla ?	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	436	}{	Caïn ? Qui c'est, Caïn ?	}{	Caïn ? Qui c'est, Caïn ?	}{	611	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	437	}{	Je ne crois pas aux légendes urbaines. A plus.	}{	Je ne crois pas aux légendes urbaines. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	La Géhenne. Le jour où on va tous mourir. Quand nos ancêtres endormis vont se lever et causer la fin du monde. Il y a beaucoup de vampires pour croire que c'est une question de jours. Le début de l'apocalypse.	}{	La Géhenne. Le jour où on va tous mourir. Quand nos ancêtres endormis vont se lever et causer la fin du monde. Il y a beaucoup de vampires pour croire que c'est une question de jours. Le début de l'apocalypse.	}{	#	}{	}{	G.Bertram_Gehenna = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	Et je suppose que c'est une conspiration de la Camarilla, hein ?	}{	Et je suppose que c'est une conspiration de la Camarilla, hein ?	}{	451	}{	IsClan(pc,"Ventrue") or IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	443	}{	C'est sans doute un plan de la Camarilla ?	}{	C'est sans doute un plan de la Camarilla ?	}{	451	}{	Intelligence 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	444	}{	Tu penses que c'est une invention de la Camarilla ?	}{	Tu penses que c'est une invention de la Camarilla ?	}{	451	}{	Intelligence -3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	445	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	446	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	En fait, j'avais d'autres questions. . .	}{	En fait, j'avais d'autres questions. . .	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	C'est ça. Bon, à plus.	}{	C'est ça. Bon, à plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Non, la Camarilla nie l'existence de tout ça : les ancêtres vampires, les prophéties apocalyptiques, ce ne sont que des superstitions pour eux.	}{	Non, la Camarilla nie l'existence de tout ça : les ancêtres vampires, les prophéties apocalyptiques, ce ne sont que des superstitions pour eux.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Alors qui y croit ?	}{	Alors qui y croit ?	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qui peut s'accrocher à des histoires aussi bancales ?	}
+{	453	}{	Tu y crois, toi ?	}{	Tu y crois, toi ?	}{	471	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que dit ton coeur, Helter-Skelter ?	}
+{	454	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	455	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	En fait, j'avais d'autres questions. . .	}{	En fait, j'avais d'autres questions. . .	}{	591	}{	G.Bertram_Gehenna == 1	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	460	}{	Merci. Je file.	}{	Merci. Je file.	}{	0	}{	G.Bertram_Gehenna == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	461	}{	Beaucoup de gens.[détaché]Le Sabbat y croit. Ils chassent les anciens endormis pour pouvoir les tuer avant leur retour. Enfin, c'est ce qu'on dit. Bien sûr, la plupart des meutes du Sabbat que j'ai vues ne pourraient pas retrouver leurs poches, mais. . .	}{	Beaucoup de gens.[détaché]Le Sabbat y croit. Ils chassent les anciens endormis pour pouvoir les tuer avant leur retour. Enfin, c'est ce qu'on dit. Bien sûr, la plupart des meutes du Sabbat que j'ai vues ne pourraient pas retrouver leurs poches, mais. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	Et tes hommes à toi ?	}{	Et tes hommes à toi ?	}{	471	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les Enfants de l'Entropie y croient-ils ?	}
+{	463	}{	Que crois-tu, toi ?	}{	Que crois-tu, toi ?	}{	471	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que dit ton coeur, Helter-Skelter ?	}
+{	464	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	Encore quelques questions. . .	}{	Encore quelques questions. . .	}{	591	}{	G.Bertram_Gehenna == 1	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	470	}{	Il est temps que je me barre. A bientôt.	}{	Il est temps que je me barre. A bientôt.	}{	0	}{	G.Bertram_Gehenna == 1	}{	}{	}{	}{	}{	}{	}{	}{	Quoi ? Je ne t'entends plus, je suis déjà ailleurs.	}
+{	471	}{	Nous ? Les anarchs ? Pff. Tout le monde peut penser ce qu'il veut, hein. Moi j'y crois. Ca expliquerait ce qui se passe en ce moment. On est sans doute en train de servir la soupe à ce truc.	}{	Nous ? Les anarchs ? Pff. Tout le monde peut penser ce qu'il veut, hein. Moi j'y crois. Ca expliquerait ce qui se passe en ce moment. On est sans doute en train de servir la soupe à ce truc.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	473	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	474	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	Cool. Encore quelques questions.	}{	Cool. Encore quelques questions.	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	480	}{	Théorie intéressante. Il faut que je m'en aille.	}{	Théorie intéressante. Il faut que je m'en aille.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres réalités à explorer. Adieu.	}
+{	481	}{	On dirait que tu as vu un fantôme.	}{	On dirait que tu as vu un fantôme.	}{	#	}{	}{	G.Skelter_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	Où est Nines ?	}{	Où est Nines ?	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où est le chef sans autorité ?	}
+{	483	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	484	}{	Peut-être bien. . .	}{	Peut-être bien. . .	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les fantômes marchent souvent parmi les vivants. . .	}
+{	485	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Il est allé chercher quelque chose. Pourquoi ?	}{	Il est allé chercher quelque chose. Pourquoi ?	}{	#	}{	G.Skelter_Saw = G.Skelter_Saw + 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	Je viens de le voir. . . chez Alistair Grout. . .	}{	Je viens de le voir. . . chez Alistair Grout. . .	}{	501	}{	G.Skelter_Saw == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai vu ton prince des rues au palais du primogène.	}
+{	493	}{	Tu es sûr ? Je viens de le voir.	}{	Tu es sûr ? Je viens de le voir.	}{	501	}{	G.Skelter_Saw == 1 and not IsClan(pc,"Malkavian") and G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	494	}{	Il enquêtait sur la façon de tuer le primogène malkavien, peut-être ?	}{	Il enquêtait sur la façon de tuer le primogène malkavien, peut-être ?	}{	501	}{	G.Skelter_Saw == 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	495	}{	Je pense que Nines vient de tuer Alistair Grout, le primogène malkavien.	}{	Je pense que Nines vient de tuer Alistair Grout, le primogène malkavien.	}{	511	}{	G.Skelter_Saw == 2	}{	}{	}{	}{	}{	}{	}{	}{	Nines a peut-être éliminé le primogène pathologique.	}
+{	496	}{	On a tué le primogène malkavien, et j'ai vu Nines quitter les lieux.	}{	On a tué le primogène malkavien, et j'ai vu Nines quitter les lieux.	}{	511	}{	G.Skelter_Saw == 2 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	Quoi !?	}{	Quoi !?	}{	#	}{	G.Skelter_Saw = G.Skelter_Saw + 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	Peu importe. Où est Nines ?	}{	Peu importe. Où est Nines ?	}{	491	}{	G.Skelter_Saw == 1	}{	}{	}{	}{	}{	}{	}{	}{	Où est le chef sans autorité ?	}
+{	503	}{	Tu as vu Nines, récemment ?	}{	Tu as vu Nines, récemment ?	}{	491	}{	G.Skelter_Saw == 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	504	}{	Je pense que Nines vient de tuer Alistair Grout, le primogène malkavien.	}{	Je pense que Nines vient de tuer Alistair Grout, le primogène malkavien.	}{	511	}{	G.Skelter_Saw == 2	}{	}{	}{	}{	}{	}{	}{	}{	Nines a peut-être éliminé le primogène pathologique.	}
+{	505	}{	On a tué le primogène malkavien, et j'ai vu Nines quitter les lieux.	}{	On a tué le primogène malkavien, et j'ai vu Nines quitter les lieux.	}{	511	}{	G.Skelter_Saw == 2 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	Arrête, c'est du flan ! Je ne sais pas si c'est un coup tordu ou quoi, mais ne va pas dire ces conneries trop fort. Je sais ce qu'il est parti faire, et ça n'a rien à voir avec la Camarilla. On a d'autres problèmes, tu sais.	}{	Arrête, c'est du flan ! Je ne sais pas si c'est un coup tordu ou quoi, mais ne va pas dire ces conneries trop fort. Je sais ce qu'il est parti faire, et ça n'a rien à voir avec la Camarilla. On a d'autres problèmes, tu sais.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	C'est ça. Tu as quelques minutes ?	}{	C'est ça. Tu as quelques minutes ?	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	513	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	514	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	515	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	516	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	517	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	J'aimerais bien te croire, mais je sais ce que j'ai vu. A plus.	}{	J'aimerais bien te croire, mais je sais ce que j'ai vu. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne peux me fier qu'à la justesse de mes rétines.	}
+{	520	}{	J'imagine. A plus.	}{	J'imagine. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me poserai la question dans les méandres de mon esprit.	}
+{	521	}{	Quel plaisir de te voir, mon frère.	}{	Quel plaisir de te voir, ma soeur.	}{	#	}{	}{	G.Skelter_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	De même, Skelter. Nines est ici ?	}{	De même, Skelter. Nines est ici ?	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche le prince des rues. . .	}
+{	523	}{	Et c'est bon d'être ici. Je cherche Nines.	}{	Et c'est bon d'être ici. Je cherche Nines.	}{	541	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	524	}{	Alors tu ne vas pas me tuer ?	}{	Alors tu ne vas pas me tuer ?	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu ne souhaites pas me nuire, Helter-Skelter ?	}
+{	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Ne t'inquiète pas, mec, tu ne risques rien. Les anarchs te protègent. Pas de souci.	}{	Ne t'inquiète pas, tu ne risques rien. Les anarchs te protègent. Pas de souci.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	Nines est ici ?	}{	Nines est ici ?	}{	541	}{	G.Nines_Finale == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche le prince des rues. . .	}
+{	533	}{	Eh bien, souhaite-moi bonne chance.	}{	Eh bien, souhaite-moi bonne chance.	}{	571	}{	G.Nines_Finale > 0	}{	}{	}{	}{	}{	}{	}{	}{	Le destin est souvent un ami capricieux. Adieu.	}
+{	534	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	536	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	Il est à l'intérieur. [ricane]Il raconte des super blagues, là. Il dit qu'il a affronté un loup-garou. T'y crois à ça ?	}{	Il est à l'intérieur. [ricane]Il raconte des super blagues, là. Il dit qu'il a affronté un loup-garou. T'y crois à ça ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	C'est vrai. J'en ai combattu un aussi.	}{	C'est vrai. J'en ai combattu un aussi.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	543	}{	Un seul ? Il s'en est bien tiré. . .	}{	Un seul ? Il s'en est bien tiré. . .	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	544	}{	Vraiment ? Avant ou après qu'il s'est enfui en hurlant comme une petite fille ?	}{	Vraiment ? Avant ou après qu'il s'est enfui en hurlant comme une petite fille ?	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	545	}{	C'était plutôt un louveteau-garou. C'est moi qui ai dégagé le Grand Méchant Loup.	}{	C'était plutôt un louveteau-garou. C'est moi qui ai dégagé le Grand Méchant Loup.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	546	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	547	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	548	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	[ricane]Ouais, c'est ça. Et le Pape est ma goule. Allez, file.	}{	[ricane]Ouais, c'est ça. Et le Pape est ma goule. Allez, file.	}{	#	}{	}{	G.Skelter_Pope = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	553	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	554	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	555	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	556	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	558	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	Merci, Skelter.	}{	Merci, Skelter.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Adieu, Helter-Skelter.	}
+{	561	}{	Vas-y. Je monte la garde.	}{	Vas-y. Je monte la garde.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	563	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	564	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	565	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	566	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	Bonne chance, mon frère.	}{	Bonne chance, ma soeur.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	573	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	574	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	575	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	576	}{	Ce n'est pas ce que j'ai entendu dire. Tu l'as laissé vivre, et maintenant elle parle de toi à tout le monde. Quand ça va se savoir, et ça ne va pas tarder, tu vas avoir des ennuis, tu sais.	}{	Ce n'est pas ce que j'ai entendu dire. Tu l'as laissé vivre, et maintenant elle parle de toi à tout le monde. Quand ça va se savoir, et ça ne va pas tarder, tu vas avoir des ennuis, tu sais.	}{	#	}{	}{	G.Skelter_Quest = 5; pc.SetQuest("Junky",4); G.Skelter_Masquerade = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	577	}{	Ok...	}{	Ok...	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma tête, ma tête, oh non.	}
+{	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	Je n'ai pas envie de te parler pour l'instant.	}{	Je n'ai pas envie de te parler pour l'instant.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	583	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	584	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	585	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	586	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	587	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	Ouais ?	}{	Ouais ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	Je ne suis pas vampire depuis longtemps. Quelques conseils me seraient utiles, tu sais. . .	}{	Je ne suis pas vampire depuis longtemps. Quelques conseils me seraient utiles, tu sais. . .	}{	31	}{	G.Skelter_Insight == 0 and G.Skelter_Setup == 0	}{	G.Skelter_Insight = 1	}{	}{	}{	}{	}{	}{	}{	Je cherche l'illumination sur ma présente condition !	}
+{	593	}{	Tu pourrais me reparler du sang des vampires ?	}{	Tu pourrais me reparler du sang des vampires ?	}{	31	}{	G.Skelter_Blood == 1 and G.Skelter_Setup == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi encore de la malédiction de notre sang.	}
+{	594	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	595	}{	Quel est ton problème avec la Camarilla ?	}{	Quel est ton problème avec la Camarilla ?	}{	101	}{	G.Skelter_Cam == 0 and G.Story_State < 60	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi dénonces-tu la Camarilla ?	}
+{	596	}{	Que penses-tu de ce Sarcophage d'Ankara ?	}{	Que penses-tu de ce Sarcophage d'Ankara ?	}{	431	}{	G.Story_State >= 60	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi du Sarcophage d'Ankara !	}
+{	597	}{	Parle-moi encore de la Géhenne.	}{	Parle-moi encore de la Géhenne.	}{	441	}{	G.Bertram_Gehenna == 1 and G.Ming_Met == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parlons du jour du Père Noir !	}
+{	598	}{	Que sais-tu sur les Kuei-Jin ?	}{	Que sais-tu sur les Kuei-Jin ?	}{	406	}{	G.Ming_Met == 1 and G.Story_State < 90	}{	}{	}{	}{	}{	}{	}{	}{	Quelles nouvelles des mangeurs de vie, les rusés Kuei-Jin ?	}
+{	599	}{	Je voulais te poser une question sur quelqu'un. . .	}{	Je voulais te poser une question sur quelqu'un. . .	}{	631	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai une vision de quelqu'un.	}
+{	600	}{	J'me casse.	}{	Je me casse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	601	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	603	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	604	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	605	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	[Baisse la voix]Caïn. Le père de tous les vampires. Il a tué son frère Abel, et Dieu l'a condamné à vivre à jamais du sang de ses enfants. C'est du sérieux, mec.	}{	[Baisse la voix]Caïn. Le père de tous les vampires. Il a tué son frère Abel, et Dieu l'a condamné à vivre à jamais du sang de ses enfants. C'est du sérieux, frangine.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	Tu n'y crois pas, quand même ?	}{	Tu n'y crois pas, quand même ?	}{	621	}{	G.Skelter_Caine == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tu crois en ce gros croque-mitaine ?	}
+{	613	}{	Tu parles du Caïn de la Bible ? Sérieux ? C'est vrai ?	}{	Tu parles du Caïn de la Bible ? Sérieux ? C'est vrai ?	}{	621	}{	G.Skelter_Caine == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le fils d'Adam et Eve ?	}
+{	614	}{	Ha ! Elle est bien bonne !	}{	Ha ! Elle est bien bonne !	}{	621	}{	G.Skelter_Caine == 0	}{	}{	}{	}{	}{	}{	}{	}{	Dis-moi que tu dis ça pour me faire marcher !	}
+{	615	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	616	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	617	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	618	}{	Parle-moi de quelqu'un d'autre.	}{	Parle-moi de quelqu'un d'autre.	}{	631	}{	G.Skelter_Questions == 1	}{	G.Skelter_Caine = 0	}{	}{	}{	}{	}{	}{	}{	J'ai une vision de quelqu'un.	}
+{	619	}{	Ouais d'accord. Il me reste quelques questions.	}{	Ouais d'accord. Il me reste quelques questions.	}{	591	}{	G.Skelter_Questions == 1	}{	G.Skelter_Caine = 0	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	620	}{	A plus tard.	}{	A plus tard.	}{	0	}{	}{	G.Skelter_Caine = 0	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	621	}{	Baisse la voix. Si Caïn existe ? Je ne sais pas. Je ne suis pas sûr de vouloir être fixé.	}{	Baisse la voix. Si Caïn existe ? Je ne sais pas. Je ne suis pas sûr de vouloir être fixé.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	Je comprends bien. Mais où veux-tu en venir ?	}{	Je comprends bien. Mais où veux-tu en venir ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je lui donnerais une pomme sans ver. Mais où veux-tu en venir.	}
+{	623	}{	Tu peux me dire à quoi ça rime, ne te presse pas. . .	}{	Tu peux me dire à quoi ça rime, ne te presse pas. . .	}{	71	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	624	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	625	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	626	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	627	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	628	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	629	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	591	}{	G.Skelter_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	630	}{	A plus tard.	}{	A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	631	}{	Ah ouais ? Et de qui veux-tu que je te parle ?	}{	Ah ouais ? Et de qui veux-tu que je te parle ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	Parle-moi encore de Caïn.	}{	Parle-moi encore de Caïn.	}{	611	}{	G.Skelter_Stretch == 1	}{	G.Skelter_Caine = 1	}{	}{	}{	}{	}{	}{	}{	Parle-moi du Père Noir !	}
+{	633	}{	Qu'est-ce qu'elle a, la petite Damsel ?	}{	Qu'est-ce qu'elle a, la petite Damsel ?	}{	371	}{	G.Damsel_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	Qui est cette belle demoiselle ?	}
+{	634	}{	De Jack. Qu'est-ce qu'il a ?	}{	De Jack. Qu'est-ce qu'il a ?	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	De Jack, par exemple.	}
+{	635	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	636	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	637	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	638	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	640	}{	En fait, j'avais une autre question. . .	}{	En fait, j'avais une autre question. . .	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je profiter encore de ta matière grise ?	}
+{	641	}{	Je t'ai dit de me foutre la paix.	}{	Je t'ai dit de me foutre la paix.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	643	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	644	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	645	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	646	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	647	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	648	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	650	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	651	}{	Bouffon ? Quoi ? Qu'est-ce que tu as dit ? Attends, tu viens de chez les Malkaviens, hein ? Ha, tu es dingue comme pas permis, et aux ordres du prince. Un pion, tu dis. T'as raison. T'es peut-être moins dingue qu'on dirait.	}{	Bouffon ? Quoi ? Qu'est-ce que tu as dit ? Attends, tu viens de chez les Malkaviens, hein ? Ha, tu es dingue comme pas permis, et aux ordres du prince. Un pion, tu dis. T'as raison. T'es peut-être moins dingue qu'on dirait.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	652	}{	Je cherche ton prince des rues.	}{	Je cherche ton prince des rues.	}{	661	}{	G.Nines_Chat == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	653	}{	Peux-tu parler à un vampire aussi dingue que moi ?	}{	Peux-tu parler à un vampire aussi dingue que moi ?	}{	281	}{	G.Nines_Chat == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	654	}{	Salutations, Helter-Skelter !	}{	Salutations, Helter-Skelter !	}{	671	}{	G.Skelter_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	655	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	656	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	657	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	658	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	659	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	660	}{	Je ne suis déjà plus là.	}{	Je ne suis déjà plus là.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	661	}{	Pff, j'ai horreur de parler à des gens comme toi. Le prince des rues. . . Nines Rodriguez, c'est ça ? Il est en haut. Mais attention, on n'aime pas trop les espions de la Camarilla, par ici.	}{	Pff, j'ai horreur de parler à des gens comme toi. Le prince des rues. . . Nines Rodriguez, c'est ça ? Il est en haut. Mais attention, on n'aime pas trop les espions de la Camarilla, par ici.	}{	#	}{	}{	G.Skelter_See = 1; G.Skelter_Questions = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	Tu es un chien à deux têtes sur la rive d'une mer empoisonnée. Adieu.	}{	Tu es un chien à deux têtes sur la rive d'une mer empoisonnée. Adieu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	663	}{	Je m'en vais lentement mais sûrement. Au revoir.	}{	Je m'en vais lentement mais sûrement. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	664	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	665	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	666	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	667	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	668	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	669	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	670	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	671	}{	Hein. . . Comment sais-tu ? Pff, l'instinct des Malkaviens. Ca fait peur. Ouais, c'est ça, je m'appelle Skelter. Je fais ce que je peux pour que les anarchs gardent une place en Californie.	}{	Hein. . . Comment sais-tu ? Pff, l'instinct des Malkaviens. Ca fait peur. Ouais, c'est ça, je m'appelle Skelter. Je fais ce que je peux pour que les anarchs gardent une place en Californie.	}{	#	}{	}{	G.Skelter_Name = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	672	}{	Je cherche le prince de tes rues. . .	}{	Je cherche le prince de tes rues. . .	}{	161	}{	G.Skelter_See == 0 and G.Nines_Chat == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	673	}{	Pourquoi dénonces-tu la Camarilla ?	}{	Pourquoi dénonces-tu la Camarilla ?	}{	101	}{	G.Skelter_Cam == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	674	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	675	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	676	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	678	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	679	}{	Puis-je profiter encore de ta matière grise ?	}{	Puis-je profiter encore de ta matière grise ?	}{	591	}{	G.Skelter_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	680	}{	Je ne suis déjà plus là.	}{	Je ne suis déjà plus là.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	681	}{	Ouais. Lui et d'autres vieilles capes que tu ne voudrais pas rencontrer. On dirait que tu sais ce qui se passe avec la Géhenne, sale malade de Malkavien. Armageddon ! L'Apocalypse !	}{	Ouais. Lui et d'autres vieilles capes que tu ne voudrais pas rencontrer. On dirait que tu sais ce qui se passe avec la Géhenne, sale malade de Malkavien. Armageddon ! L'Apocalypse !	}{	#	}{	}{	G.Bertram_Gehenna = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	682	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	683	}{	Est-ce une conspiration de la Camarilla qui tombe à pic ?	}{	Est-ce une conspiration de la Camarilla qui tombe à pic ?	}{	451	}{	Intelligence 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	684	}{	Peut-être encore une histoire de fantôme racontée aux enfants par les anciens !	}{	Peut-être encore une histoire de fantôme racontée aux enfants par les anciens !	}{	451	}{	Intelligence -3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	685	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	686	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	687	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	688	}{	Parle-moi du Père Noir !	}{	Parle-moi du Père Noir !	}{	611	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	689	}{	Puis-je profiter encore de ta matière grise ?	}{	Puis-je profiter encore de ta matière grise ?	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	690	}{	Je ne suis déjà plus là.	}{	Je ne suis déjà plus là.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	691	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	692	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	693	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	694	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	695	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	696	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	697	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	698	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	699	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	700	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	701	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	702	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	703	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	704	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	705	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	706	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	707	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	708	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	709	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	710	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	711	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	712	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	713	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	714	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	715	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	716	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	717	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	718	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	719	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	720	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	721	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	722	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	723	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	724	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	725	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	726	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	727	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	728	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	729	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	730	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	731	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	732	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	733	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	734	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	735	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	736	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	737	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	738	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	739	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	740	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	741	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	742	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	743	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	744	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	745	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	746	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	747	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	748	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	749	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	750	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	751	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	752	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	753	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	754	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	755	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	756	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	757	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	758	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	759	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	760	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	761	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	762	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	763	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	764	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	765	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	766	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	767	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	768	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	769	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	770	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	771	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	772	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	773	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	774	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	775	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	776	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	777	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	778	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	779	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	780	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	781	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	782	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	783	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	784	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	785	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	786	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	787	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	788	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	789	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	790	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	791	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	792	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	793	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	794	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	795	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	796	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	797	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	798	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	799	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	800	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	801	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	802	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	803	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	804	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	805	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	806	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	807	}{	(Starting Condition)	}{	}{	571	}{	G.Story_State == 115 and G.Skelter_Pope == 1 and G.Nines_Ending == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	808	}{	(Starting Condition)	}{	}{	561	}{	G.Story_State == 115 and G.Skelter_Pope == 1 and G.Nines_Ending == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	809	}{	(Starting Condition)	}{	}{	521	}{	G.Story_State == 115 and G.Skelter_Pope == 0 and G.Nines_Ending == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	810	}{	(Starting Condition)	}{	}{	641	}{	G.Skelter_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	811	}{	(Starting Condition)	}{	}{	391	}{	G.Story_State >= 25 and G.Skelter_Quest == 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	812	}{	(Starting Condition)	}{	}{	581	}{	G.Story_State < 25 and G.Skelter_Quest == 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	813	}{	(Starting Condition)	}{	}{	391	}{	G.Skelter_Skeptical == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	814	}{	(Starting Condition)	}{	}{	481	}{	G.Story_State == 20 and G.Skelter_Saw == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	815	}{	(Starting Condition)	}{	}{	281	}{	G.Story_State == 20 and G.Skelter_Saw > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	816	}{	(Starting Condition)	}{	}{	301	}{	G.Story_State >= 25 and G.Skelter_Setup == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	817	}{	(Starting Condition)	}{	}{	281	}{	G.Skelter_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	818	}{	(Starting Condition)	}{	}{	11	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

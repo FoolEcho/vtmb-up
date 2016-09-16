@@ -1,0 +1,66 @@
+TerminalDefinition
+{
+	"screen saver"		"Muséum d'histoire naturelle"// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt and subdirector names(2 characters), changed by wesp
+
+	"email_password"	"ihatemyjob"		// the user must type this to access email from this terminal
+	"email_username"	"Pam King"		// printed at the top of the email window, not used for log in. 
+	"difficulty"		"1"
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Muséum d'histoire naturelle"	//(any number of characters, but must fit in the screen
+	}
+
+	Email
+	{
+		"subject"	"Re : Johansen"
+		"sender"	"C. Marshall"
+		"body"		"Pour info, je verrai le professeur Johansen personnellement. Je crois qu'il préfère ne pas être harcelé par les plus jeunes d'entre vous. Bien entendu, si vous avez des questions, je lui en ferai part.
+ -CM"
+	}
+
+	Email
+	{
+		"subject"	"RE : Fétiche"
+		"sender"	"jcorning@nmh.vtm"
+		"body"		"Du calme, Pam. Je lui ai fait déplacer la statue dans un autre bureau. Oh, et tu as une bise de sa part."
+	}
+
+	Email
+	{
+		"subject"	"Nouveau code"
+		"sender"	"C. Marshall"
+		"body"		"Par mesure de sécurité, nous avons changé le code de la zone B2. Le nouveau code est 2358 et il entre en vigueur dès maintenant. Je vous encourage tous à changer également vos mots de passe e-mail si vous ne l'avez pas fait au cours des trois derniers mois."
+		"runscript"	"doorCode()"
+	}
+
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+	SubDir
+	{
+		"name"			"Résultats"				// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
+		"password"		"letmein"				// password required to run commands in this menu (16 characters), changed by wesp
+		"description"		"Résultats labo"	// This is printed each time the user enters this menu (128 characters)
+		"difficulty"		"5"
+
+		Function
+		{
+			"name"		"Afficher"			
+			"description"	"Afficher résultats labo"	
+			"runtext"	"Analyse en cours. Temps restant estimé : 5 heures"	
+		}
+//	removed by wesp
+//		Function
+//		{
+//			"name"		"Imprimer"			// this is what the player must type in to trigger this function. (16 characters)
+//			"description"	"Imprimer résultats labo"		// this is a description of this function  (128 characters)
+//			"runtext"	"Impression. . ."		// this text is printed when the player triggers this function.  (128 characters)
+//		}
+	}
+}

@@ -1,0 +1,74 @@
+
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	
+	"infomodel"	"models/items/dayplanner/info/Info_dayplanner2.mdl"
+	"playermodel"	"models/items/dayplanner/ground/dayplanner2.mdl"
+	
+	"anim_prefix"	" "
+
+	"printname"	"Journal"
+	"description"	"On dirait le journal hebdomadaire de Douglas Streets, contremaître du Département de l'Eau et de l'Electricité de Los Angeles (LADWP), 1957 :
+
+			09/07/57 - La disparition des égoutiers Whitman, Price et Haddad a initié une attaque de la presse contre le Département. Il m'incombe de découvrir ce qu'il est advenu d'eux. Je le ferai au mieux de mes capacités.
+
+			10/07/57 - Des avancées dans les parties inconnues des égouts ont pour l'heure été vaines. La mairie ne peut pas me donner les plans de ces sections et je continue de travailler à l'aveugle.
+			
+			11/07/57 - J'ai vu et entendu bien des choses étranges dans ce qui doit être les plus anciennes des sections d'égout de Los Angeles. J'ai trouvé une plaque rouillée du Département datant de 1878. Je ne peux qualifier ces événements que de surnaturels, que ce soit par le son, la texture ou l'impression qu'ils m'ont laissés. Une froideur. Des ombres, des murmures. Je n'ai aucune explication pour tout cela, si ce n'est mon esprit trop épuisé. Nous continuerons demain.
+			
+			12/07/57 - Toujours aucun signe des disparus, mais la peur grandit dans mon esprit. Et si quelque chose de vraiment maléfique résidait dans ces parties des égouts ? Bien que je n'aie aucun désir de tomber dans le lovecraftien de bas étage, je ne peux que dire ce qui me pèse sur le coeur. Je ne désire plus traverser ces couloirs sombres, et à mon avis, ces pauvres hommes ont été victimes de quelque ancien maléfice qui vit là. Je dirai au maire ce que j'ai vu, en priant pour qu'il ne me croie pas fou.
+
+			15/07/57 - Le maire a écouté mon rapport avec la plus grande attention et a décidé très sagement de faire condamner les sections inférieures où j'ai assisté à ces événements terrifiants. On dira au public que Whitman, Price et Haddad ont disparu dans ces sections parce qu'elles étaient vieilles et vétustes, ce qui justifiera également leur fermeture. Ainsi soit-il. Je prie pour que leur âme trouve quelque refuge dans l'au-delà. Pour ma part, j'ai démissionné du Département. Je n'ai plus le goût de me confiner sous la terre, dans l'obscurité. Je laisse ce journal ici, à l'écart des yeux humains, pour que peut-être le souvenir de ces choses disparaisse à son tour.  
+				    
+				   Sincèrement,  Douglas Streets, Contremaître, LADWP 
+			
+			
+			
+	"bucket"		"1"
+	"bucket_position"	"2"
+
+	"camera_class"		"noswitch"
+	"is_wieldable"		"0"
+	"weight"		"1"
+	"item_flags"		"1"
+	"item_type"		"powerup"
+	"item_worth"		"-1"
+	"is_visible_in_hud"		"1"
+
+	SoundData
+	{
+		"pickup"
+		{
+			"sound1"	"items/Magazine/Pickup.wav"
+		}
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	SpriteData
+	{
+		"weapon"
+		{
+			"640"
+			{
+				"file"	"hud/Inventory_Images/General_Items/dayplanner2_SEL"
+				"x"		"0"
+				"y"		"0"
+				"width"	"100"
+				"height"	"64"
+			}
+		}
+		"weapon_s"
+		{
+			"640"
+			{
+				"file"	"hud/Inventory_Images/General_Items/dayplanner2"
+				"x"		"0"
+				"y"		"0"
+				"width"	"100"
+				"height"	"64"
+			}
+		}
+	}
+}

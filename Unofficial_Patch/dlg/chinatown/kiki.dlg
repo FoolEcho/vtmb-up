@@ -1,0 +1,92 @@
+{	1	}{	[furieuse]Sale connard ! Je ne peux pas respirer là-dedans !	}{	[furieuse]Sale garce ! Je ne peux pas respirer là-dedans !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Euh, oui, c'est pour ça que je vous laisse sortir.	}{	Euh, oui, c'est pour ça que je vous laisse sortir.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je viens vous libérer de ces enfants perdus. . .	}
+{	3	}{	Alors vous devriez être contente que je vous en sorte.	}{	Alors vous devriez être contente que je vous en sorte.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[contrariée, remarquant le PJ pour la première fois] Hein ? Vous êtes qui ? Les Tong ne sont pas si grands. Vous n'êtes pas avec eux.	}{	[contrariée, remarquant le PJ pour la première fois] Hein ? Vous êtes qui ? Vous n'êtes pas avec les Tong.	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Quoi ?	}{	Non, je ne suis pas avec les Tong.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis pas un Tong édenté. . .	}
+{	13	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	C'est ce que je viens de dire. Vous n'êtes peut-être pas avec eux, mais au niveau jugeote, vous n'avez pas l'air beaucoup plus efficace.	}{	C'est ce que je viens de dire. Vous n'êtes peut-être pas avec eux, mais au niveau jugeote, vous n'avez pas l'air beaucoup plus efficace.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Des tongs ? J'ai une tête à porter des tongs ? C'est vous, Kiki ?	}{	C'est vous Kiki ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes la petite fouine de Wong Ho ?	}
+{	23	}{	Ce que vous êtes grossière. Vous êtes la gamine de Wong Ho ?	}{	Ce que vous êtes grossière. Vous êtes la gamine de Wong Ho ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre langue a besoin d'un réglage ? Vous êtes à Wong Ho ?	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Oui, je suis Kiki. Et vous, vous êtes qui ? Le comité d'accueil des Tong ?	}{	Oui, je suis Kiki. Et vous, vous êtes qui ? Le comité d'accueil des Tong ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Je viens vous sauver. C'est papa qui m'envoie.	}{	Je viens vous sauver.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous apporte la clé de la liberté. . .	}
+{	33	}{	Votre paternel m'envoie pour vous sortir d'ici.	}{	Votre paternel m'envoie pour vous sortir d'ici.	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Oh, je suis trop impressionnée. Quoi ? Vous vouliez que je vous remercie ? Rêvez pas, pauvre type.	}{	Oh, je suis trop impressionnée. Quoi ? Vous vouliez que je vous remercie ? Rêvez pas, pauvre tache.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Bon. On va sortir d'ici.	}{	Bon. On va sortir d'ici.	}{	51	}{	G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	Sortons de cette tanière des enfants perdus. . .	}
+{	43	}{	Continuez de me parler comme ça, et je vous remets dans le congélo.	}{	Continuez de me parler comme ça, et je vous remets dans le congélo.	}{	61	}{	G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	Fermez-la, ou vous retournez dans la cage. . .	}
+{	44	}{	N'avez-vous rien d'autre à dire ? Oubliez que je vous ai sauvé.	}{	N'avez-vous rien d'autre à dire ? Oubliez que je vous ai sauvé.	}{	0	}{	G.Kiki_Rescued == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas vous revoir encore dans mes rêves.	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	C'est original. Mon père doit vraiment manquer de monde. Allez, en route.	}{	C'est original. Mon père doit vraiment manquer de monde. Allez, en route.	}{	#	}{	}{	pc.SetQuest("Kiki",2); G.Kiki_Rescued = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Fermez-la et suivez-moi.	}{	Fermez-la et suivez-moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les héros sont rarement si critiqués. Partons. . .	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	[Un peu effrayée]OK, OK. Pas la peine de se fâcher. Je suis désolée, OK ?	}{	[Un peu effrayée]OK, OK. Pas la peine de se fâcher. Je suis désolée, OK ?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	pc.SetQuest("Kiki",2); G.Kiki_Rescued = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	C'est mieux. Allez, on y va.	}{	C'est mieux. Allez, on y va.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sages sont vos paroles, petite fouine. . . Partons.	}
+{	63	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	[furieux]Sale con. . . Je ne peux pas. . . Hein ? Oh mon dieu ! C'est quoi votre problème ? Me touchez pas ! [crie]	}{	[furieux]Salope. . . Je ne peux pas. . . Hein ? Oh mon dieu ! C'est quoi votre problème ? Me touchez pas ! [crie]	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Du calme, petite. C'est vous, Kiki ? Votre père m'envoie vous sauver. . .	}{	Du calme, petite. C'est vous, Kiki ? Votre père m'envoie vous sauver. . .	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	V-vraiment ? S-super. . . Euh, il vous est arrivé quoi ? Enfin, vous avez l'air en mauvais état. . .	}{	V-vraiment ? S-super. . . Euh, il vous est arrivé quoi ? Enfin, vous avez l'air en mauvais état. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	La ferme. Je viens vous sortir d'ici. . .	}{	La ferme. Je viens vous sortir d'ici. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Vous pourriez me montrer MOINS de reconnaissance ? Je viens de vous sauver la vie. . .	}{	Vous pourriez me montrer MOINS de reconnaissance ? Je viens de vous sauver la vie. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	(Starting Condition)	}{	}{	41	}{	G.Kiki_Rescued == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	(Starting Condition)	}{	}{	71	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}

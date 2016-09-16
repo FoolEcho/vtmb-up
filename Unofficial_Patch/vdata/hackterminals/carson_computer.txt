@@ -1,0 +1,40 @@
+TerminalDefinition
+{
+	"screen saver"		"Car50n, c'357 l'3l173"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Grommelle grommelle"  
+		"line1"		"C'est un secret pour tous."
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+	SubDir
+	{
+		"name"			"McGee"
+		"password"		"Imalia"
+		"description"		"Pour l'instant en fuite"
+
+		Function
+		{
+			"name"		"Emplacement"
+			"description"	"McGee est ici"	
+			"runtext"	"McGee se cache dans le salon de tatouage de Santa Monica."
+			"runscript"	"carsonComputerHacked()"
+		}
+		Function
+		{
+			"name"		"Clefs"
+			"description"	"N'oubliez pas"
+			"runtext"	"N'oubliez pas la clé du salon de tatouage. Elle est sur la télé."
+		}
+		
+	}
+
+}

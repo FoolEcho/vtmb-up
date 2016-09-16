@@ -1,0 +1,47 @@
+TerminalDefinition
+{
+	"screen saver"		"Jim Aristade"	// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Black Rose Distribution"
+		"line1"		"Depuis 1998"
+
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+
+	SubDir	// changed by wesp
+	{
+		"name"			"Oeuf de Pâque"
+		"description"		"La danse des Loups-Garous"
+		"password"			"lycans"
+
+		Function
+		{
+			"name"		"Astuce"
+			"runtext"	"Ouvrez les portes souvent ici, pour le loup-garou dans le ciel.
+A la fin de la fin, vous réussirez à passer par ..."
+		}
+
+	}
+
+	SubDir	// changed by wesp
+	{
+		"name"			"Imprimante"
+		"description"		"Contrôle de l'imprimante"	
+
+		Function
+		{
+			"name"		"factures"
+			"description"	"imprimer la liste des transactions récentes"	
+			"runtext"		"Envoi de la listes de factures à l'imprimante, patientez s'il vous plaît..."
+		}
+	}
+}

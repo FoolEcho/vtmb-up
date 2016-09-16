@@ -1,0 +1,621 @@
+{	1	}{	[Surfeur sur le retour, au début de la quarantaine. Brouillon, paranoïaque et trop nerveux. Vend des armes et de la drogue, sans avoir assez de cran pour ça.]Hum, hé-héé.	}{	Hum, hé-héé.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Ouais ?	}{	Ouais ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quoi ?	}
+{	3	}{	Euh. Vous... Euh... me dites, si... s'il vous faut quelque chose.	}{	}{	#	}{	}{	G.Trip_Bye = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	J'ai entendu dire que je pouvais trouver des armes chez vous.	}{	J'ai entendu dire que je pouvais trouver des armes chez vous.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4	}{	}{	}{	}{	}{	}{	}{	}{	Les voix m'ont dit que vous auriez une baguette magique avec mon nom marqué dessus.	}
+{	5	}{	C'est une jolie boutique que vous avez là.	}{	C'est une jolie boutique que vous avez là.	}{	191	}{	G.Trip_Flatter == 0	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Quelle merveilleuse boutique de marchandises délaissées.	}
+{	6	}{	Qu'y a-t-il à faire par ici ?	}{	Qu'y a-t-il à faire par ici ?	}{	211	}{	G.Trip_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les choses d'amusement m'appellent, mais je ne sais pas où.	}
+{	7	}{	Je me demandais si vous aviez entendu parler du tueur en série.	}{	Je me demandais si vous aviez entendu parler du tueur en série.	}{	231	}{	G.Know_Murder == 1 and G.Trip_Killer == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	Avez-vous entendu parler du tueur drapé d'ombre ?	}
+{	8	}{	J'aimerais acheter quelque chose.	}{	J'aimerais acheter quelque chose.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de vos biens ?	}
+{	9	}{	Vous vendez des armes ?	}{	Vous vendez des armes ?	}{	51	}{	G.Trip_Know == 0 and G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous vendez des baguettes magiques ?	}
+{	10	}{	Je ne fais que regarder, merci.	}{	Je ne fais que regarder, merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche à savoir où est passé mon cerveau. . .	}
+{	11	}{	Ca va ? Vous voulez vendre ou acheter ou. . . ?	}{	Ca va ? Vous voulez vendre ou acheter ou. . . ?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Trip_TT = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	J'aimerais vendre quelque chose. . .	}{	J'aimerais vendre quelque chose. . .	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de mes biens ?	}
+{	14	}{	J'ai entendu dire que je pouvais trouver des armes chez vous.	}{	Mon petit doigt m'a dit que je pourrais trouver des armes chez vous.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4	}{	}{	}{	}{	}{	}{	}{	}{	Les voix m'ont dit que vous auriez une baguette magique avec mon nom marqué dessus.	}
+{	15	}{	Quel est votre nom ?	}{	Quel est votre nom ?	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quel est ton véritable nom, Marchand de Mort ?	}
+{	16	}{	Vous vendez des armes ?	}{	Vous vendez des armes ?	}{	51	}{	G.Trip_Know == 0 and G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous vendez des baguettes magiques ?	}
+{	17	}{	J'aimerais acheter quelque chose. . .	}{	J'aimerais acheter quelque chose. . .	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de vos biens ?	}
+{	18	}{	Je ne fais que regarder, merci.	}{	Je ne fais que regarder, merci.	}{	0	}{	}{	G.Trip_Bye = 1	}{	}{	}{	}{	}{	}{	}{	Je cherche à savoir où est passé mon cerveau. . .	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	[piqué au vif]Bon sang, qui vous a dit ça ?	}{	[piqué au vif]Bon sang, qui vous a dit ça ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Arthur Kilpatrick. Je travaille pour lui, il m'a dit de m'armer chez vous.	}{	Je travaille pour Arthur Kilpatrick, il m'a dit que je trouverais de quoi me protéger chez vous.	}{	31	}{	G.Trip_Know == 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Knox. Il m'a dit de vous dire que je suis cool.	}{	Knox. Il m'a dit de vous dire que je suis cool.	}{	31	}{	G.Trip_Know == 2 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Mercurio m'a dit que vous pourriez m'aider. 	}{	Mercurio m'a dit que vous pourriez m'aider. 	}{	31	}{	G.Trip_Know == 3 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	Je préfère ne rien dire.	}{	Je préfère ne rien dire.	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	Le maître des clés.	}{	Le maître des clés.	}{	531	}{	G.Trip_Know == 1 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	La goule stressée. . .	}{	La goule stressée. . .	}{	531	}{	G.Trip_Know == 2 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	Le dieu aux pieds ailés. . .	}{	Le dieu aux pieds ailés. . .	}{	571	}{	G.Trip_Know == 3 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	Ma langue restera nouée.	}{	Ma langue restera nouée.	}{	531	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	[soupir résigné]Bon, je ne peux pas laisser entrer n'importe quel cow-boy pour me demander ce genre de truc. Ce n'est pas cool. Je n'ai pas exactement le permis de vente, et ces armes ne sont pas exactement légales, si vous voyez ce que je veux dire.	}{	[soupir résigné]Bon, je ne peux pas laisser entrer n'importe quel cow-boy pour me demander ce genre de truc. Ce n'est pas cool. Je n'ai pas exactement le permis de vente, et ces armes ne sont pas exactement légales, si vous voyez ce que je veux dire.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Trip_Know = 4	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Je comprends.	}{	Je comprends.	}{	41	}{	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	Mais vous en avez, non ?	}{	Mais vous en avez, non ?	}{	41	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Ceci dit, je suis heureux que vous soyez dans ma boutique, et je vais vous en vendre, mais ne le répétez pas, d'accord ? Et gardez le nez propre. 	}{	Ceci dit, je suis heureux que vous soyez dans ma boutique, et je vais vous en vendre, mais ne le répétez pas, d'accord ? Et gardez le nez propre. 	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Guns = 3; TripStoryState()	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Eh, pas la peine de me le dire.	}{	Eh, pas la peine de me le dire.	}{	321	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ma tête bouge de bas en haut, non ?	}
+{	43	}{	Et j'apprécie votre service. Vous pouvez me faire confiance.	}{	Et j'apprécie votre service. Vous pouvez me faire confiance.	}{	321	}{	G.Extra_Lines == 1	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Vous êtes un bastion du commerce des baguettes magiques. Votre confiance est bien placée. . .	}
+{	44	}{	Bien sûr. . .	}{	Bien sûr. . .	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma langue sera morte.	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Non, pas vraiment. Désolé.	}{	Non, pas vraiment. Désolé.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Guns = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Pas vraiment ?	}{	Pas vraiment ?	}{	61	}{	pc.perception > 2	}{	}{	}{	}{	}{	}{	}{	}{	Vraiment ? Je jurerais que je sens un fusil à pompe. . .	}
+{	53	}{	Ca ne me convainc pas.	}{	Vous n'êtes pas très convaincant.	}{	71	}{	Persuasion 3	}{	}{	}{	}{	}{	}{	}{	}{	A menteur, menteur et demi. . .	}
+{	54	}{	Allez, mon mignon, tu ne veux pas me montrer tes gros obus ?	}{	Allez, mon mignon, vous ne voulez pas me montrer votre gros calibre ?	}{	71	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and not IsClan(pc,"Malkavian"))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	Vous me mentez ? Je vais vous botter le derrière, avec ou sans armes.	}{	Vous me mentez ? Je vais vous botter le derrière, avec ou sans armes.	}{	81	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Je marche avec la mort, que mes mains soient vides ou armées. Reprenons. . .	}
+{	56	}{	Vous allez me vendre vos armes.	}{	Vous allez me vendre vos armes.	}{	81	}{	Dominate 1 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	Merci quand même. J'aimerais voir ce que vous avez à vendre.	}{	Merci quand même. J'aimerais voir ce que vous avez à vendre.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de vos biens ?	}
+{	58	}{	Vous allez me vendre vos armes.	}{	Vous allez me vendre vos armes.	}{	81	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	Mais les armes m'aiment.	}{	Mais les armes m'aiment.	}{	81	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1;dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	Dommage. Alors je vais jeter un oeil.	}{	Dommage. Alors je vais jeter un oeil.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais regarder vos produits pour animaux.	}
+{	61	}{	[nerveux, à court d'arguments]Non, j'ai dit. Enfin, je veux dire. . . Je n'en ai pas. D'arme. Pas d'arme. Quoi ?	}{	[nerveux, à court d'arguments]Eh bien. . . Je n'en ai pas. D'arme. Pas d'arme. Quoi ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Vous allez me vendre vos armes.	}{	Vous allez me vendre vos armes.	}{	71	}{	Dominate 1 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	Allez, mon mignon, tu ne veux pas me montrer tes gros obus ?	}{	Allez, mon mignon, vous ne voulez pas me montrer votre gros calibre ?	}{	71	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and not IsClan(pc,"Malkavian"))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Vos armes s'étaleront sous mes yeux.	}{	Vos armes s'étaleront sous mes yeux.	}{	71	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	Rien. Mais j'aimerais connaître quelqu'un qui en aurait.	}{	Rien. Mais j'aimerais connaître quelqu'un qui en aurait.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors éclairez mon chemin jusqu'à un Marchand de Mort achalandé. . .	}
+{	66	}{	Tant pis. Qu'avez-vous à vendre ?	}{	Tant pis. Qu'avez-vous à vendre ?	}{	311	}{	not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de vos biens ?	}
+{	67	}{	Vous allez me vendre vos armes.	}{	Vous allez me vendre vos armes.	}{	71	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	Mais les armes m'aiment.	}{	Mais les armes m'aiment.	}{	81	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	Montrez-moi vos armes et je vous montrerai la mienne. . .	}{	Montrez-moi vos armes et je vous montrerai la mienne. . .	}{	71	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and IsClan(pc,"Malkavian"))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	OK, je voulais juste demander. Je vais regarder un peu dans la boutique.	}{	OK, je voulais juste demander. Je vais regarder un peu dans la boutique.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais regarder vos produits pour animaux.	}
+{	71	}{	Vous savez, vous n'avez vraiment pas la tête d'un assassin ni celle d'un flic en civil.	}{	[Rougit, flatté]Vous savez, vous n'avez vraiment pas une tête à enfreindre la loi.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Je suis digne de confiance. 	}{	Je suis digne de confiance. 	}{	81	}{	Dominate 1 & IsClan(pc,"Ventrue")	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Je ne porte d'autre insigne que celle des damnés. 	}
+{	73	}{	Tu peux me faire confiance.	}{	Vous pouvez me faire confiance.	}{	81	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Trip_Trust = G.Trip_Trust + 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	Oui, je suis du genre fantastique.	}{	Oui, je suis du genre fantastique.	}{	81	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	Super. Voyons ce que vous avez.	}{	Super. Voyons ce que vous avez.	}{	321	}{	}{	G.Trip_Guns = 3; TripStoryState()	}{	}{	}{	}{	}{	}{	}{	Montrez-moi vos baguettes magiques, Marchand de Mort !	}
+{	76	}{	On a vraiment besoin de s'ouvrir. Toi d'abord.	}{	Nous devons vraiment nous ouvrir l'un à l'autre. Commencez, et je vous imiterai.	}{	81	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and IsClan(pc,"Malkavian"))	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	Tu peux me faire confiance, mon gars.	}{	Vous pouvez me faire confiance, mon poussin.	}{	81	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and not IsClan(pc,"Malkavian"))	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	[Cède]Bon. . . d'accord. Eh, c'est cool. De toute façon, mon stock est plein. Regardez. . . et revenez quand vous voulez.	}{	[Cède]Bon. . . d'accord. Eh, c'est cool. De toute façon, mon stock est plein. Regardez. . . et revenez quand vous voulez.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Guns = 3; G.Trip_Know = 4; TripStoryState()	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Merci. Voyons ce que vous avez.	}{	Merci. Voyons ce que vous avez.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Marchand miraculeux, je vous remercie.	}
+{	83	}{	Vous êtes un mec cool, Trip. Alors. . .	}{	Vous êtes un mec cool, Trip. Alors. . .	}{	0	}{	G.Trip_Name == 1 and G.Extra_Lines == 1	}{	G.Trip_Trust = G.Trip_Trust + 1; npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Vous pourriez vendre le soleil à des morts-vivants.	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Je n'ai pas la licence nécessaire pour vendre des armes. Tout ce qui n'est pas couteau suisse est à moi. C'est juste pour la déco, vous voyez. . .	}{	Je n'ai pas la licence nécessaire pour vendre des armes. Tout ce qui n'est pas couteau suisse est à moi. C'est juste pour la déco, vous voyez. . .	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	C'est bon, mec, je ne suis pas de la police.	}{	C'est bon, mon grand, je ne suis pas de la police.	}{	101	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis pas de la basse-cour. . .	}
+{	93	}{	C'est ça.	}{	C'est ça.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre bouche déforme les mots qu'elle articule.	}
+{	94	}{	On doit bien pouvoir trouver un arrangement, non ?	}{	On doit bien pouvoir trouver un arrangement, non ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Echangeons autre chose que des sons.	}
+{	95	}{	OK. Qu'est-ce que vous vendez ?	}{	OK. Qu'est-ce que vous vendez ?	}{	311	}{	Persuasion -4	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or pour vos marchandises ?	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	Je vois. A bientôt. . .	}{	Je vois. A bientôt. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Je ne pensais pas vraiment que vous en étiez. Alors promettez-moi que vous n'allez pas faire un massacre sur une plage, une école, ce genre de chose ?	}{	Je ne pensais pas vraiment que vous en étiez. Alors promettez-moi que vous n'allez pas faire un massacre sur une plage, une école, ce genre de chose ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	C'est strictement pour ma protection personnelle.	}{	C'est strictement pour ma protection personnelle.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon personnage doit se protéger.	}
+{	103	}{	Mais ce serait trop demander.	}{	Mais ce serait trop demander.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cette promesse m'échappe.	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Bon, écoutez, je ne vends aucune arme, OK ?	}{	Bon, écoutez, je ne vends aucune arme, OK ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Guns = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Bon, très bien. Je peux regarder ce que vous avez à vendre ?	}{	Bon, très bien. Je peux regarder ce que vous avez à vendre ?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or pour vos marchandises ?	}
+{	113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	Je voulais juste demander. Alors je vais jeter un oeil.	}{	Je voulais juste demander. Alors je vais jeter un oeil.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais passer en revue votre opacité.	}
+{	121	}{	Umm... non, non, pas vraiment. Désolé.	}{	Umm... non, non, pas vraiment. Désolé.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Pas vraiment? Il y a une clinique de l'autre côté de la route. Devrais-je vous trouver quelque chose contre un rabais?	}{	Pas vraiment? Il y a une clinique de l'autre côté de la route. Devrais-je vous trouver quelque chose contre un rabais?	}{	191	}{	}{	G.Trip_Discount = 1; pc.SetQuest("Trip Drugs", 1)	}{	}{	}{	}{	}{	}{	}{	Vous êtes sûr? Je pourrais rapporter quelque chose de la maison de soin pour rendre les choses moins chères.	}
+{	123	}{	J'ai juste pensé que je demanderais. Je vais regarder autour alors.	}{	J'ai juste pensé que je demanderais. Je vais regarder autour alors.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais poursuivre votre opacité.	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	[ne veut pas céder, mais faiblit]Eh bien. . . Je ne sais pas. . . Je ne vous connais pas vraiment. . .	}{	[ne veut pas céder, mais faiblit]Eh bien. . . Je ne sais pas. . . Je ne vous connais pas vraiment. . .	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Vous me vendrez vos armes chaque fois que j'en aurai besoin.	}{	Vous me vendrez vos armes chaque fois que j'en aurai besoin.	}{	81	}{	Dominate 1 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	Vous me vendrez vos armes chaque fois que j'en aurai besoin.	}{	Vous me vendrez vos armes chaque fois que j'en aurai besoin.	}{	81	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	Allez, Trip, ça casse l'ambiance, de ne pas se faire confiance. Il faut vivre dangereusement.	}{	Allez, Trip, le manque de confiance, ça ne botte pas du tout, vous savez. Prenez des risques. . .	}{	81	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and not IsClan(pc,"Malkavian")) and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	Il faut qu'on se fasse confiance si on veut se connaître un peu mieux. . .	}{	Il faut qu'on se fasse confiance si on veut se connaître un peu mieux. . .	}{	81	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and IsClan(pc,"Malkavian")) and G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	Salut. Ravi de te rencontrer. Bon on se connait maintenant !	}{	Salut. Ravie de te rencontrer. Bon on se connait maintenant !	}{	81	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	Je vais vous donner un indice pour mieux me connaître : je ne suis pas le genre de mec qu'il faut énerver.	}{	Je vais vous donner un indice pour mieux me connaître : je ne suis pas le genre de fille qu'il faut énerver.	}{	81	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	La connaissance de mon esprit est aussi dangereuse que mes mains nues.	}
+{	138	}{	Bon, ne vous inquiétez pas. Merci d'avoir tenté votre chance, en tout cas.	}{	Bon, ne vous inquiétez pas. Merci d'avoir tenté votre chance, en tout cas.	}{	81	}{	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	L'appréhension est compréhensible dans le crépuscule. Mes esprits vous remercient.	}
+{	139	}{	Allez, fournissez-moi en flingues, c'est tout.	}{	Allez, fournissez-moi en flingues, c'est tout.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Donnez-moi juste une baguette magique, qu'on en finisse.	}
+{	140	}{	Laissez tomber. Je vais juste jeter un oeil.	}{	Laissez tomber. Je vais juste jeter un oeil.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez gâché votre chance par méfiance. Adieu.	}
+{	141	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Salut. Ca va bien ?	}{	Salut. Ca va bien ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	J'ai eu quelque chose de la clinique. Allez-y!	}{	J'ai eu quelque chose de la clinique. Allez-y!	}{	301	}{	G.Trip_Discount > 0 and pc.HasItem("item_g_drugs_drug_box")	}{	G.Trip_Discount = 3 }{	}{	}{	}{	}{	}{	}{	J'ai eu une pochette surprise de la maison de soins!	}
+{	153	}{	Quelqu'un m'a dit de but en blanc que vous étiez le meilleur marchand d'armes de Santa Monica.	}{	Quelqu'un m'a dit de but en blanc que vous étiez le meilleur marchand d'armes de Santa Monica.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4 and G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les voix m'ont dit que vous auriez une baguette magique avec mon nom marqué dessus.	}
+{	154	}{	Je voulais vous demander où trouver certaines armes.	}{	Je voulais vous demander où trouver certaines armes.	}{	161	}{	G.Trip_Know == 0 and G.Trip_Trust < 5 and G.Trip_Guns == 1 and G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Vous savez où je pourrais trouver une baguette magique ?	}
+{	155	}{	Trip, j'ai vraiment besoin d'armes. Vous connaissez peut-être quelqu'un, au moins ?	}{	Trip, j'ai vraiment besoin d'armes. Vous connaissez peut-être quelqu'un, au moins ?	}{	171	}{	G.Trip_Name == 1 and G.Trip_Know == 0 and G.Trip_Trust > 3 and G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Bad Trip, vous savez où je pourrais trouver une baguette magique ?	}
+{	156	}{	C'est une jolie boutique que vous avez là.	}{	C'est une jolie boutique que vous avez là.	}{	191	}{	G.Trip_Flatter == 0 and G.Story_State < 100	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Quelle merveilleuse boutique de marchandises délaissées. . .	}
+{	157	}{	Je me demandais si vous aviez entendu parler du tueur en série.	}{	Je me demandais si vous aviez entendu parler du tueur en série.	}{	231	}{	G.Know_Murder == 1 and G.Trip_Name == 1 and G.Trip_Killer == 0 and pc.GetQuestState("Serial") < 8 and G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Avez-vous entendu parler du tueur drapé d'ombre ?	}
+{	158	}{	J'aimerais acheter quelque chose. . .	}{	J'aimerais acheter quelque chose. . .	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de vos biens ?	}
+{	159	}{	Qu'y a-t-il à faire par ici ?	}{	Qu'y a-t-il à faire par ici ?	}{	211	}{	G.Trip_SM == 0 and G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Les choses d'amusement m'appellent, mais je ne sais pas où.	}
+{	160	}{	Je ne fais que regarder, merci.	}{	Je ne fais que regarder, merci.	}{	0	}{	G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	161	}{	Bon, écoutez, je ne vous connais pas, je vous ai dit. Si ça se trouve, c'est vous qui tuez tous ces gens. . .	}{	Bon, écoutez, je ne vous connais pas, je vous ai dit. Si ça se trouve, c'est vous qui tuez tous ces gens. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	. . .Qui tue des gens ? De quoi parlez-vous ?	}{	. . .Qui tue des gens ? De quoi parlez-vous ?	}{	221	}{	G.Trip_Killer == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	163	}{	Bon, bon. Alors on va parler affaire.	}{	Bon, je comprends. Faisons juste affaire.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Echangeons les choses que nous avons.	}
+{	164	}{	Peu importe. Au fait, je ne vous ai même pas demandé votre nom. . .	}{	Peu importe. Au fait, je ne vous ai même pas demandé votre nom. . .	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quel est votre vrai nom, Marchand de Mort ?	}
+{	165	}{	Vous voulez parler de celui qui se drape dans l'ombre ?	}{	Vous voulez parler de celui qui se drape dans l'ombre ?	}{	561	}{	G.Trip_Killer == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	Je voulais simplement poser la question pendant que j'étais ici. . . Au revoir.	}{	Je voulais simplement poser la question pendant que j'étais ici. . . Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne cherche que la vérité et des baguettes magiques. Adieu.	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	[soupire]Bon, écoutez, je vous fais confiance, mais s'il s'avère que c'est vous, qui tuez tous ces gens, je serai furax..	}{	[soupire]Bon, écoutez, je vous fais confiance, mais s'il s'avère que c'est vous, qui tuez tous ces gens, je serai furax..	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Guns = 3; TripStoryState()	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	. . .Qui tue des gens ? De quoi parlez-vous ?	}{	. . .Qui tue des gens ? De quoi parlez-vous ?	}{	221	}{	G.Trip_Killer == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	Vous voulez parler de celui qui se drape dans l'ombre ?	}{	Vous voulez parler de celui qui se drape dans l'ombre ?	}{	561	}{	G.Trip_Killer == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	Je vous promets que je n'ai rien à voir là-dedans.	}{	Je vous promets que je n'ai rien à voir là-dedans.	}{	81	}{	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Mon ombre est différente de celle du coupable.	}
+{	178	}{	Je savais que vous finiriez par changer d'avis. Voyons ce que vous avez.	}{	Je savais que vous finiriez par changer d'avis. Voyons ce que vous avez.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Montrez-moi les baguettes magiques !	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	On m'appelle Trip. La boutique est à moi.	}{	On m'appelle Trip. La boutique est à moi.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Name = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Trip. Vous êtes un type bien, Trip. Voyons vos armes maintenant.	}{	Trip. Vous êtes un type bien, Trip. Je peux voir vos armes ?	}{	321	}{	G.Trip_Guns == 3	}{	}{	}{	}{	}{	}{	}{	}{	Bad Trip, vous êtes un marchand chez les voleurs. Montrez-moi vos baguettes magiques.	}
+{	183	}{	Ravi de vous rencontrer, Trip.	}{	Ravie de vous rencontrer, Trip.	}{	191	}{	not IsClan(pc,"Malkavian")	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	Super. Vous vendez des armes, ici ?	}{	Super. Vous vendez des armes, ici ?	}{	51	}{	G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vendez-vous des baguettes magiques dans ce bazar ?	}
+{	185	}{	Trip, qu'avez-vous à vendre ici ?	}{	Trip, qu'avez-vous à vendre ici ?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de vos biens ?	}
+{	186	}{	Ah ! Bad Trip !	}{	Ah ! Bad Trip !	}{	551	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	Ils vous appellent Trip. Faites-vous des drogues?	}{	Ils vous appellent Trip. Faites-vous des drogues?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0	}{	}{	}{	}{	}{	}{	}{	}{	Trip est votre nom et les drogues votre jeu?	}
+{	189	}{	A bientôt. Il faut que je file.	}{	A bientôt. Il faut que je file.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Merci. Vous venez d'arriver à Santa Monica ?	}{	Merci. Vous venez d'arriver à Santa Monica ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Flatter = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Oui. Ca se voit tant que ça ?	}{	Oui. Ca se voit tant que ça ?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'avais encore jamais vu la dame près de la mer. 	}
+{	193	}{	Oui. Qu'y a-t-il à faire dans les environs ?	}{	Oui. Qu'y a-t-il à faire dans les environs ?	}{	211	}{	G.Trip_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous pouvez me parler de la dame et de ses recoins ?	}
+{	194	}{	Non, ça m'étonne qu'on ne se soit jamais rencontrés.	}{	Non, ça m'étonne qu'on ne se soit jamais rencontrés.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	La dame et moi nous connaissons depuis longtemps. Il est étonnant que ce ne soit pas aussi le cas pour vous et moi.	}
+{	195	}{	Oui. Quel est votre nom?	}{	Oui. Quel est votre nom?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Oui. Quel est ton véritable nom, Trafiquant de Mort ?	}
+{	196	}{	Oui, mais j'ai effectivement déjà visité la clinique ici et je vous ai apporté quelques trucs.	}{	Oui, mais j'ai effectivement déjà visité la clinique ici et je vous ai apporté quelques trucs.	}{	301	}{	pc.HasItem("item_g_drugs_drug_box") and G.Trip_Discount > 0	}{	G.Trip_Discount = 3	}{	}{	}{	}{	}{	}{	}{	Je suis nouveau ici mais pas à la maison de soins où j'ai trouvé une pochette surprise.	}
+{	197	}{	Oui. Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	Oui. Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	Nouveau à la dame je suis, alors Trip est votre nom et les drogues sont votre jeu ?	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Pas étonnant. Toutes les nuits je vois débarquer de nouvelles têtes. Avant, il y avait des touristes, mais maintenant. . . Je ne sais plus, ce sont surtout des vagabonds. . .	}{	Pas étonnant. Toutes les nuits je vois débarquer de nouvelles têtes. Avant, il y avait des touristes, mais maintenant. . . Je ne sais plus, ce sont surtout des vagabonds. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Pourquoi viennent-ils ici ?	}{	Pourquoi viennent-ils ici ?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi ces âmes déracinées viennent-elles ici ?	}
+{	203	}{	Ca ne vous fait pas peur tous ces nouveaux, avec le serial killer qui traîne dans les parages ?	}{	Ca ne vous fait pas peur tous ces nouveaux, avec le serial killer qui traîne dans les parages ?	}{	231	}{	G.Know_Murder == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ca ne vous fait pas peur ces nouvelles têtes, avec le serial killer qui traîne dans les parages ?	}
+{	204	}{	Je vois. J'aimerais vous acheter quelque chose.	}{	Je vois. J'aimerais vous acheter quelque chose.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de vos biens ?	}
+{	205	}{	Ah. Alors, quel est votre nom ?	}{	Ah. Alors, quel est votre nom ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je sais. Quel est ton véritable nom, Revendeur de Mort ?	}
+{	206	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	Alors Trip est votre nom et les drogues sont votre jeu ?	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	Intéressant. Je reviendrai vous parler un peu plus tard. 	}{	Intéressant. Je reviendrai vous parler un peu plus tard. 	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Je ne sais pas. Santa Monica est morte. Je ne sais pas pourquoi les gens continuent de venir.	}{	Je ne sais pas. Santa Monica est morte. Je ne sais pas pourquoi les gens continuent de venir.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_SM = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Ca va être bien pire, maintenant qu'il y a un tueur en série en liberté.	}{	Ca va être bien pire, maintenant qu'il y a un tueur en série en liberté.	}{	231	}{	G.Know_Murder == 1	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Ca va être bien pire, maintenant qu'il y a un tueur en série en liberté.	}
+{	213	}{	Vous avez peur du tueur en série ?	}{	Vous avez peur du tueur en série ?	}{	231	}{	G.Know_Murder == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez peur du tueur en série ?	}
+{	214	}{	Je vois. J'aimerais vous acheter quelque chose.	}{	Je vois. J'aimerais vous acheter quelque chose.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de vos biens ?	}
+{	215	}{	Ah. Alors, quel est votre nom ?	}{	Ah. Alors, quel est votre nom ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je sais. Quel est ton véritable nom, Revendeur de Mort ?	}
+{	216	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	Alors Trip est votre nom et les drogues sont votre jeu ?	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	Je dois partir.	}{	Je dois partir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Il y a quelqu'un qui découpe les gens dans le quartier.	}{	Il y a quelqu'un qui découpe les gens dans le quartier.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Killer = 1; G.Know_Murder = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	C'est horrible. Moi aussi ça m'inquiéterait.	}{	C'est horrible. Moi aussi ça m'inquiéterait.	}{	231	}{	G.Extra_Lines == 1	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
+{	223	}{	Ca vous fait peur ?	}{	Ca vous fait peur ?	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	Ce n'est vraiment pas moi. Si je faisais ce genre de truc, je m'en rappellerai.	}{	Ce n'est vraiment pas moi. Si je faisais ce genre de truc, je m'en rappellerai.	}{	81	}{	G.Trip_Guns == 3	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	Peu importe... Je ne vous ai jamais demandé, quel est votre nom ?	}{	Peu importe... Je ne vous ai jamais demandé, quel est votre nom ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quel est votre vrai nom, Revendeur de Mort ?	}
+{	226	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	Alors Trip est votre nom et les drogues sont votre jeu ?	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	Merci du renseignement.	}{	Merci du renseignement.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce Trip m'a appris bien des choses.	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Ouais, pour être honnête, ça me panique un peu. Je reste ouvert toute la nuit, et la police de Santa Monica n'est pas parmi les meilleures du pays.	}{	Ouais, pour être honnête, ça me panique un peu. Je reste ouvert toute la nuit, et la police de Santa Monica n'est pas parmi les meilleures du pays.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Killer = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Tous ces meurtres ont eu lieu dans le coin ?	}{	Tous ces meurtres ont eu lieu dans le coin ?	}{	241	}{	G.Story_State < 5	}{	}{	}{	}{	}{	}{	}{	}{	Et le tueur drapé dans l'ombre ?	}
+{	233	}{	Vous avez entendu quelque chose de nouveau à son sujet ?	}{	Vous avez entendu quelque chose de nouveau à ce sujet ?	}{	251	}{	G.Story_State >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Les voix vous en ont-elles appris davantage sur le tueur drapé dans l'ombre ?	}
+{	234	}{	Eh bien, ne prenez pas de risque inconsidéré. Je peux voir vos armes. 	}{	Eh bien, ne prenez pas de risque inconsidéré, Trip. Je peux voir vos armes. 	}{	0	}{	G.Trip_Guns == 3	}{	G.Trip_Trust = G.Trip_Trust + 1; npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Cachez-vous dans vos ténèbres, Bad Trip. Bien. Et ces baguettes magiques ?	}
+{	235	}{	Eh bien, ne prenez pas de risque inconsidéré. Que vendez-vous aujourd'hui ?	}{	Eh bien, ne prenez pas de risque inconsidéré, Trip. Que vendez-vous aujourd'hui ?	}{	311	}{	G.Trip_Guns < 3	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Prudence, Marchand de Mort. Et maintenant, échangeons plus que des histoires. . .	}
+{	236	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	Alors Trip est votre nom et les drogues sont votre jeu ?	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	Je vois. Au revoir.	}{	Je vois. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Je ne sais pas. Il paraît qu'un peu plus tôt, quelqu'un s'est fait étriper sur la jetée comme le pauvre type de Long Beach l'autre jour.	}{	Je ne sais pas. Il paraît qu'un peu plus tôt, quelqu'un s'est fait étriper sur la jetée comme le pauvre type de Long Beach l'autre jour.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Sans déconner.	}{	Sans déconner.	}{	261	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	La vérité est souvent monstrueuse.	}
+{	243	}{	C'est aussi ce qu'on m'a dit.	}{	C'est aussi ce qu'on m'a dit.	}{	261	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai entendu parler de cet acte.	}
+{	244	}{	Intéressant.	}{	Intéressant.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cela irrite le cerveau, vous ne trouvez pas ?	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	Je vois. Au revoir.	}{	Je vois. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	L'autre nuit, sur la jetée, un type s'est fait déchiqueter. Comme le gars de Long Beach. [incrédule] Complètement déchiqueté. On ne sait même pas comment le tueur s'y est pris.	}{	L'autre nuit, sur la jetée, un type s'est fait déchiqueter. Comme le gars de Long Beach. [incrédule] Complètement déchiqueté. On ne sait même pas comment le tueur s'y est pris.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Ah oui ?	}{	Ah oui ?	}{	261	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je crains que cette ombre soit loin de se dissiper. . .	}
+{	253	}{	Fascinant, non ?	}{	Fascinant, non ?	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes orbes se figent de fascination.	}
+{	254	}{	Tout cela est plutôt inquiétant. Où va le monde ?	}{	Tout cela est plutôt inquiétant. Où va le monde ?	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes esprits se retrouvent pleins de détresse.	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Je vous dis, des trucs de ouf, ça arrive tout le temps ici, et on s'habitue. On continue comme avant. Mais ça. . . Ces morts, ça me fout les jetons.	}{	Je vous dis, des trucs de ouf, ça arrive tout le temps ici, et on s'habitue. On continue comme avant. Mais ça. . . Ces morts, ça me fout les jetons.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	En effet, soyez prudent.	}{	En effet, soyez prudent.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Blindez-vous, Bad Trip. . .	}
+{	263	}{	Peu importe. Qu'avez-vous à vendre ?	}{	Peu importe. Qu'avez-vous à vendre ?	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Cachez-vous dans vos ténèbres, Bad Trip. Bien. . . passons aux marchandises.	}
+{	264	}{	Prudence, Trip. Qu'avez-vous à vendre aujourd'hui ?	}{	Prudence, Trip. Qu'avez-vous à vendre aujourd'hui ?	}{	311	}{	G.Extra_Lines == 1	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Prudence, Marchand de Mort. Et maintenant, échangeons plus que des histoires. . .	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	Merci du renseignement.	}{	Merci du renseignement.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce Trip m'a appris bien des choses.	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Il vous fallait quelque chose de particulier, ou bien. . .	}{	Il vous fallait quelque chose de particulier, ou bien. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	273	}{	J'aimerais voir quelques unes de vos armes.	}{	J'aimerais voir vos armes.	}{	321	}{	G.Trip_Guns == 3	}{	}{	}{	}{	}{	}{	}{	}{	Montrez-moi vos baguettes magiques.	}
+{	274	}{	Qu'est-ce que vous avez à vendre ?	}{	Qu'est-ce que vous avez à vendre ?	}{	311	}{	G.Trip_Guns < 3	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de vos biens ?	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	Non merci. Je vais y aller.	}{	Non merci. Je vais y aller.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	284	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	293	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	294	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Vraiment ? Montrez-moi ça. . .	}{	Vraiment ? Montrez-moi ça. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Trip_Discount < 3 or G.Trip_Drugs == 1	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	303	}{	Je sais que ce n'est pas ce que vous vouliez, mais vous aurez du mal avec ça! Maintenant, pour ma remise...	}{	Je sais que ce n'est pas ce que vous vouliez, mais vous aurez du mal avec ça! Maintenant, pour ma remise...	}{	311	}{	G.Trip_Discount == 3 }{	pc.RemoveItem("item_g_drugs_drug_box"); pc.SetQuest("Trip Drugs", 3); G.Trip_Drugs = 1; pc.BumpStat("finance", 1)	}{	}{	}{	}{	}{	}{	}{	Vous vouliez quelque chose d'autre, mais je vous ai apporté quelques trucs durs! Maintenant rendons tout moins cher...	}
+{	304	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	Bon, voilà ce que j'ai aujourd'hui.	}{	Bon, voilà ce que j'ai aujourd'hui.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	313	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	Bon, venez jeter un oeil, alors.	}{	Bon, venez jeter un oeil, alors.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	323	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	324	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	325	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	333	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	334	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	343	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	344	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	353	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	354	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	363	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	364	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	373	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	374	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	383	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	384	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	385	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	393	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	394	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	395	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	Que puis-je faire d'autre pour vous ?	}{	Que puis-je faire d'autre pour vous ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	Il paraît qu'on peut trouver de bonnes armes, ici.	}{	Il paraît qu'on peut trouver de bonnes armes, ici.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4	}{	}{	}{	}{	}{	}{	}{	}{	Les voix m'ont dit que vous auriez une baguette magique avec mon nom marqué dessus.	}
+{	403	}{	C'est une jolie boutique que vous avez là.	}{	C'est une jolie boutique que vous avez là.	}{	191	}{	G.Trip_Flatter == 0	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Quelle merveilleuse boutique de marchandises délaissées. . .	}
+{	404	}{	Qu'y a-t-il à faire par ici ?	}{	Qu'y a-t-il à faire par ici ?	}{	211	}{	G.Trip_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous pouvez me parler de la dame et de ses recoins ?	}
+{	405	}{	Vous vendez des armes ?	}{	Vous vendez des armes ?	}{	51	}{	G.Trip_Know == 0 and G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous savez où je pourrais trouver une baguette magique ?	}
+{	406	}{	J'aimerais acheter quelque chose. . .	}{	J'aimerais acheter quelque chose. . .	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de vos biens ?	}
+{	407	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	Rien. A plus tard.	}{	Rien. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	411	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	413	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	414	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	423	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	433	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	434	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	435	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	436	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	443	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	444	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	445	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	446	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	453	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	454	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	455	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	463	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	464	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	473	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	474	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Bonsoir - oh, beau travail, pour votre visage. J'ai une copine qui est branchée modification corporelle, elle va à des conventions, des trucs comme ça. Ce n'est pas mon truc, mais j'apprécie le travail. Super boulot sur les oreilles. C'est chanmé.	}{	Bonsoir - oh, beau travail, pour votre visage. J'ai une copine qui est branchée modification corporelle, elle va à des conventions, des trucs comme ça. Ce n'est pas mon truc, mais j'apprécie le travail. Super boulot sur les oreilles. C'est chanmé.	}{	#	}{	}{	G.Trip_TT = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	483	}{	J'ai entendu dire que je pouvais trouver des armes chez vous.	}{	Mon petit doigt m'a dit que je pourrais trouver des armes chez vous.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	484	}{	Merci. Comment vous vous appelez ?	}{	Merci. Comment vous vous appelez ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	485	}{	Merci. Vous vendez des armes ?	}{	Merci. Vous vendez des armes ?	}{	51	}{	G.Trip_Know == 0 and G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	486	}{	Super. J'aimerais acheter quelque chose.	}{	Super. J'aimerais acheter quelque chose.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	Eh, merci. Je vais jeter un oeil.	}{	Eh, merci. Je vais jeter un oeil.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Eh, rebonjour. Vous savez quoi ? J'ai enfin ma licence pour vendre des armes. Je l'ai reçue par courrier. . . il y a une semaine. J'avais dû l'oublier. Enfin, si ça vous intéresse, maintenant c'est possible !	}{	Eh, rebonjour. Vous savez quoi ? J'ai enfin ma licence pour vendre des armes. Je l'ai reçue par courrier. . . il y a une semaine. J'avais dû l'oublier. Enfin, si ça vous intéresse, maintenant c'est possible !	}{	#	}{	}{	G.Trip_Guns = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	Ca m'intéresse. . . Mais à ce qu'on m'a dit, ce n'est jamais l'absence de licence qui vous a arrêté.	}{	Ca m'intéresse. . . Mais à ce qu'on m'a dit, ce n'est jamais l'absence de licence qui vous a arrêté.	}{	321	}{	G.Trip_Know > 0 and G.Trip_Know < 4	}{	G.Trip_Know = 4	}{	}{	}{	}{	}{	}{	}{	Vous n'êtes pas nouveau dans la vente de mort. . .	}
+{	493	}{	Super. Ca m'intéresse. . .	}{	Super. Ca m'intéresse. . .	}{	321	}{	G.Trip_Know == 0	}{	G.Trip_Know = 4	}{	}{	}{	}{	}{	}{	}{	J'aimerais voir vos baguettes magiques, Marchand de Mort.	}
+{	494	}{	Super. J'aime bien la déco de votre magasin.	}{	Super. J'aime bien la déco de votre magasin.	}{	181	}{	G.Trip_Name == 0 and G.Trip_Flatter == 0	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Quel est votre vrai nom, Marchand de Mort ?	}
+{	495	}{	Je me demandais si vous aviez entendu parler du tueur en série.	}{	Je me demandais si vous aviez entendu parler du tueur en série.	}{	231	}{	G.Know_Murder == 1 and G.Trip_Killer == 0 and pc.GetQuestState("Serial") < 8	}{	G.Trip_Know = 4	}{	}{	}{	}{	}{	}{	}{	Avez-vous entendu parler du tueur drapé d'ombre ?	}
+{	496	}{	Et j'ai quelque chose de la clinique. Allez-y!	}{	Et j'ai quelque chose de la clinique. Allez-y!	}{	301	}{	G.Trip_Discount > 0 and pc.HasItem("item_g_drugs_drug_box")	}{	}{	}{	}{	}{	}{	}{	}{	Et j'ai eu une pochette surprise de la maison de soins!	}
+{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	Je m'en souviendrai. A plus tard.	}{	Je m'en souviendrai. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	503	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	504	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	505	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	513	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	514	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	515	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	516	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	517	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	520	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	521	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	523	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	524	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Hein ? Vous fumez quoi ? Et surtout, où je peux en avoir ? [soupir résigné]Bon, il ne faut pas en parler, d'accord ? Je n'ai pas tout à fait la licence, et ce ne sont pas des trucs très légaux, vous voyez ?	}{	Hein ? Vous fumez quoi ? Et surtout, où je peux en avoir ? [soupir résigné]Bon, il ne faut pas en parler, d'accord ? Je n'ai pas tout à fait la licence, et ce ne sont pas des trucs très légaux, vous voyez ?	}{	#	}{	}{	G.Trip_Know = 4	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	Je suis à vos ordres, Marchand de Mort !	}{	Je suis à vos ordres, Marchand de Mort !	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	533	}{	Montrez-moi les baguettes magiques !	}{	Montrez-moi les baguettes magiques !	}{	41	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	534	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	536	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	543	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	544	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	545	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	546	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	547	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	548	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	Ah. . . Trip, ça ira. Vous venez d'arriver à Santa Monica ?	}{	Ah. . . Trip, ça ira. Vous venez d'arriver à Santa Monica ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	Je n'avais encore jamais vu la dame près de la mer. 	}{	Je n'avais encore jamais vu la dame près de la mer. 	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	553	}{	Vous pouvez me parler de la dame et de ses recoins ?	}{	Vous pouvez me parler de la dame et de ses recoins ?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	554	}{	La dame et moi sommes de vielles connaissances. Etonnant que ce ne soit pas aussi notre cas.	}{	La dame et moi sommes de vielles connaissances. Etonnant que ce ne soit pas aussi notre cas.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	555	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	556	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	558	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	Oui, j'imagine. Je parle du tueur en série. Il y a quelqu'un qui découpe les gens en morceaux. 	}{	Oui, j'imagine. Je parle du tueur en série. Il y a quelqu'un qui découpe les gens en morceaux. 	}{	#	}{	}{	G.Know_Murder = 1; G.Trip_Killer = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	Vous devez vous vêtir d'armure. . .	}{	Vous devez vous vêtir d'armure. . .	}{	231	}{	G.Extra_Lines == 1	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
+{	563	}{	Cela vous effraie-t-il, Marchand de Mort ?	}{	Cela vous effraie-t-il, Marchand de Mort ?	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	564	}{	J'ai peut-être plusieurs esprits, mais aucun n'est coupable de cela. . .	}{	J'ai peut-être plusieurs esprits, mais aucun n'est coupable de cela. . .	}{	81	}{	G.Trip_Guns == 3	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
+{	565	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	566	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	Je ne suis plus là.	}{	Je ne suis plus là.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	Aux pieds ailés ? De quoi vous parlez, là ?	}{	Aux pieds ailés ? De quoi vous parlez, là ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	Mercure, messager des dieux ! Opiacée !	}{	Mercure, messager des dieux ! Opiacée !	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	573	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	574	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	575	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	576	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	577	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	Mercure ? Vous voulez dire Mercurio ?	}{	Mercure ? Vous voulez dire Mercurio ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	Les opiacées que vous possédez sont demandées.	}{	Les opiacées que vous possédez sont demandées.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	583	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	584	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	585	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	586	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	587	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	Merci de revenir me voir. Il vous faut quoi ?	}{	Merci de revenir me voir. Il vous faut quoi ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	Vous avez parlé de vendre des armes.	}{	Vous avez parlé de vendre des armes.	}{	61	}{	G.Trip_Know == 0 and G.Trip_Guns == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vos mots ont des échos de poudre et de détente.	}
+{	593	}{	Vous vendez des armes ?	}{	Vous vendez des armes ?	}{	51	}{	G.Trip_Know == 0 and G.Trip_Guns (G.Trip_Guns == 0 or G.Trip_Guns == 2)	}{	}{	}{	}{	}{	}{	}{	}{	Vous vendez des baguettes magiques ?	}
+{	594	}{	J'ai entendu dire que je pouvais trouver des armes chez vous.	}{	J'ai entendu dire que je pouvais trouver des armes chez vous.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4 and G.Trip_Guns < 3	}{	}{	}{	}{	}{	}{	}{	}{	Les voix m'ont dit que vous auriez une baguette magique avec mon nom marqué dessus.	}
+{	595	}{	C'est une jolie boutique que vous avez là.	}{	C'est une jolie boutique que vous avez là.	}{	191	}{	G.Trip_Flatter == 0	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Quelle merveilleuse boutique de marchandises délaissées. . .	}
+{	596	}{	Qu'y a-t-il à faire par ici ?	}{	Qu'y a-t-il à faire par ici ?	}{	211	}{	G.Trip_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous pouvez me parler de la dame et de ses recoins ?	}
+{	597	}{	Je me demandais si vous aviez entendu parler du tueur en série.	}{	Je me demandais si vous aviez entendu parler du tueur en série.	}{	231	}{	G.Know_Murder == 1 and G.Trip_Killer == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	Avez-vous entendu parler du tueur drapé d'ombre ?	}
+{	598	}{	J'aimerais acheter quelque chose.	}{	J'aimerais acheter quelque chose.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de vos biens ?	}
+{	599	}{	Et j'ai quelque chose de la clinique. Allez-y!	}{	Et j'ai quelque chose de la clinique. Allez-y!	}{	301	}{	G.Trip_Discount > 0 and pc.HasItem("item_g_drugs_drug_box")	}{	G.Trip_Discount = 3 }{	}{	}{	}{	}{	}{	}{	J'ai eu une pochette surprise de la maison de soins!	}
+{	600	}{	Je ne fais que regarder, merci.	}{	Je ne fais que regarder, merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	601	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	603	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	604	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	605	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	613	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	614	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	615	}{	(Starting Condition)	}{	}{	151	}{	G.Story_State >= 100	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	616	}{	(Starting Condition)	}{	}{	491	}{	G.Trip_Guns > 0 and G.Trip_Guns < 3 and G.Story_State > 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	617	}{	(Starting Condition)	}{	}{	481	}{	IsClan(pc,"Nosferatu") and npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	618	}{	(Starting Condition)	}{	}{	1	}{	G.Trip_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	619	}{	(Starting Condition)	}{	}{	3	}{	G.Trip_Bye == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	620	}{	(Starting Condition)	}{	}{	151	}{	G.Trip_Guns == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	(Starting Condition)	}{	}{	591	}{	G.Trip_TT > 0	}{	}{	}{	}{	}{	}{	}{	}{	}

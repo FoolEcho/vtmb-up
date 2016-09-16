@@ -1,0 +1,108 @@
+{	1	}{	[Accent italien à couper au couteau, a du mal avec l'anglais, hostile]Vous avez une invitation ?	}{	[Accent italien à couper au couteau, a du mal avec l'anglais, hostile]Vous avez une invitation ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Oui, bien sûr. Tenez.	}{	Oui, bien sûr. Tenez.	}{	11	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Victor_Know = 1	}{	}{	}{	}{	}{	}{	}{	J'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	3	}{	Oui, bien sûr. Tenez.	}{	Oui, bien sûr. Tenez.	}{	21	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor") and not pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Victor_Know = 1	}{	}{	}{	}{	}{	}{	}{	J'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	4	}{	Oui, bien sûr. Tenez.	}{	Oui, bien sûr. Tenez.	}{	11	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	J'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	5	}{	Oui, bien sûr. Tenez.	}{	Oui, bien sûr. Tenez.	}{	21	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria") and not pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	J'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	6	}{	Bien sûr, elle est. . . je croyais qu'elle était juste là. . . Oh non, j'ai dû la perdre ! Oh, flûte !	}{	Bien sûr, elle est. . . je croyais qu'elle était juste là. . . Oh non, j'ai dû la perdre ! Oh, flûte !	}{	41	}{	Persuasion 9	}{	}{	}{	}{	}{	}{	}{	}{	J'ai dû le laisser sur mon autre corps. . .	}
+{	7	}{	Vous ne pourriez pas faire une exception. . . pour moi ?	}{	Vous ne pourriez pas faire une exception. . . pour moi ?	}{	41	}{	Seduction 8 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Vous pourriez me porter sur vos épaules mortes ? 	}
+{	8	}{	Une invitation pour quoi ?	}{	Une invitation pour quoi ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pour. . . ?	}
+{	9	}{	Non, pas du tout.	}{	Non, pas du tout.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ramasse beaucoup de choses, mais ça, je n'en ai pas trouvé.	}
+{	10	}{	J'ai dû me tromper d'adresse, excusez-moi.	}{	J'ai dû me tromper d'adresse, excusez-moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce n'est pas une fête foraine ! Pourquoi me demandez-vous mon entrée ? Je pars !	}
+{	11	}{	Hmm. . . Je vous en prie, passez une [a du mal avec le mot] excellente soirée.	}{	Hmm. . . Je vous en prie, passez une [a du mal avec le mot] excellente soirée.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Luca_Enter = 1; gio1_openFront()	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Merci.	}{	Merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Toujours.	}
+{	13	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Cette invitation. . . pas pour vous.	}{	Cette invitation. . . pas pour vous.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Oh ? Excusez-moi, on a dû les inverser. Je reviens.	}{	Oh ? Excusez-moi, on a dû les inverser. Je reviens.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hé hé. . . Oups. . . Je vais changer de sexe et je reviens.	}
+{	23	}{	Vous ne pourriez pas faire une exception. . . pour moi ?	}{	Vous ne pourriez pas faire une exception. . . pour moi ?	}{	41	}{	Seduction 8 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Vous pourriez me porter sur vos épaules mortes ? 	}
+{	24	}{	Et alors ? C'est une invitation, non ?	}{	Et alors ? C'est une invitation, non ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est un ticket. Entrée pour une personne. C'est moi.	}
+{	25	}{	Soit vous me laissez entrer, soit j'entre de force.	}{	Soit vous me laissez entrer, soit j'entre de force.	}{	71	}{	Intimidate 5	}{	}{	}{	}{	}{	}{	}{	}{	Je n'hésiterai pas à abattre ce clown pour entrer dans la maison des fous.	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Hmm. . . Je pense que vous. . . OK entrez. Et passez une [a du mal avec le mot] excellente soirée.	}{	Hmm. . . Je pense que vous. . . OK entrez. Et passez une [a du mal avec le mot] excellente soirée.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Luca_Enter = 1; gio1_openFront()	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	C'est très gentil de votre part, merci.	}{	C'est très gentil de votre part, merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cette promenade va me plaire.	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Pas d'invitation, pas entrer. Désolé.	}{	Pas d'invitation, pas entrer. Désolé.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Tenez.	}{	Tenez.	}{	11	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Victor_Know = 1	}{	}{	}{	}{	}{	}{	}{	J'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	43	}{	Tenez.	}{	Tenez.	}{	21	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor") and not pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Victor_Know = 1	}{	}{	}{	}{	}{	}{	}{	J'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	44	}{	Tenez.	}{	Tenez.	}{	11	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	J'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	45	}{	Tenez.	}{	Tenez.	}{	21	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria") and not pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	J'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	46	}{	Soit vous me laissez entrer, soit j'entre de force.	}{	Soit vous me laissez entrer, soit j'entre de force.	}{	71	}{	Intimidate 5	}{	}{	}{	}{	}{	}{	}{	}{	Je n'hésiterai pas à abattre ce clown pour entrer dans la maison des fous.	}
+{	47	}{	Je m'appelle Victor Rossellini. Je dois être sur la liste des invités.	}{	Je m'appelle Victor Rossellini. Je dois être sur la liste des invités.	}{	31	}{	Persuasion 9 & IsMale(pc) and G.Victor_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	La famille a-t-elle déjà oublié Victor Rossellini ? Non ! Vérifiez toutes les listes !	}
+{	48	}{	Je m'appelle Maria Rossellini. Je dois être sur la liste des invités.	}{	Je m'appelle Maria Rossellini. Je dois être sur la liste des invités.	}{	31	}{	Persuasion 9 & not IsMale(pc) and G.Maria_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	La famille a-t-elle déjà oublié Maria Rossellini ? Non ! Vérifiez toutes les listes !	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	Je comprends. Au revoir.	}{	Je comprends. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mais je veux explorer la maison des fous. . . J'ai besoin d'un ticket pour entrer.	}
+{	51	}{	Réunion de famille ce soir. Sur [a du mal avec le mot] invitation seulement.	}{	Réunion de famille ce soir. Sur [a du mal avec le mot] invitation seulement.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Tenez.	}{	Tenez.	}{	11	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Victor_Know = 1; Relay_Open_Front_Door()	}{	}{	}{	}{	}{	}{	}{	J'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	53	}{	Tenez.	}{	Tenez.	}{	21	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor") and not pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Victor_Know = 1	}{	}{	}{	}{	}{	}{	}{	J'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	54	}{	Tenez.	}{	Tenez.	}{	11	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Maria_Know = 1; Relay_Open_Front_Door()	}{	}{	}{	}{	}{	}{	}{	J'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	55	}{	Tenez.	}{	Tenez.	}{	21	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria") and not pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	J'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	56	}{	Je n'ai pas besoin d'invitation.	}{	Je n'ai pas besoin d'invitation.	}{	31	}{	Dominate 4 & IsClan(pc,"Ventrue") and G.Patch_Plus == 1 }{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	Invitation ? Elle est. . . je croyais qu'elle était juste là. . . Oh non, j'ai dû la perdre !	}{	Invitation ? Elle est. . . je croyais qu'elle était juste là. . . Oh non, j'ai dû la perdre !	}{	31	}{	Persuasion 9	}{	}{	}{	}{	}{	}{	}{	}{	J'ai dû le laisser sur mon autre corps. . .	}
+{	58	}{	Vous ne pourriez pas faire une exception. . . pour moi ?	}{	Vous ne pourriez pas faire une exception. . . pour moi ?	}{	41	}{	Seduction 8 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Vous pourriez me porter sur vos épaules mortes ? 	}
+{	59	}{	Soit vous me laissez entrer, soit j'entre de force.	}{	Soit vous me laissez entrer, soit j'entre de force.	}{	71	}{	Intimidate 5	}{	}{	}{	}{	}{	}{	}{	}{	Je n'hésiterai pas à abattre ce clown pour entrer dans la maison des fous.	}
+{	60	}{	Je comprends. Au revoir.	}{	Je comprends. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mais je veux explorer la maison des fous. . . J'ai besoin d'un ticket pour entrer.	}
+{	61	}{	Je vous demande de partir. S'il vous plaît.	}{	Je vous demande de partir. S'il vous plaît.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Luca_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Ou quoi ?	}{	Ou quoi ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ou quoi, clown ?	}
+{	63	}{	Du balai, gros bras.	}{	Du balai, gros bras.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'hésiterai pas à abattre ce clown pour entrer dans la maison des fous.	}
+{	64	}{	La voilà mon invitation, pauvre mec. Dans ta tête.	}{	La voilà mon invitation, pauvre mec. Dans ta tête.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si je ne peux pas rentrer, je me servirai de votre corps de clown comme luge !	}
+{	65	}{	Bon, je m'en vais.	}{	Bon, je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	. . . Je pars, pour votre bien.	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Vous partez maintenant ou quelque chose pas bien va vous arriver.	}{	Vous partez maintenant ou quelque chose pas bien va vous arriver.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Luca_Leave = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Attendez, j'ai trouvé mon invitation.	}{	Attendez, j'ai trouvé mon invitation.	}{	11	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Victor_Know = 1	}{	}{	}{	}{	}{	}{	}{	Maintenant j'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	73	}{	Attendez, j'ai trouvé mon invitation.	}{	Attendez, j'ai trouvé mon invitation.	}{	21	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor") and not pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Victor_Know = 1	}{	}{	}{	}{	}{	}{	}{	Maintenant j'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	74	}{	Attendez, j'ai trouvé mon invitation.	}{	Attendez, j'ai trouvé mon invitation.	}{	11	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	Maintenant j'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	75	}{	Attendez, j'ai trouvé mon invitation.	}{	Attendez, j'ai trouvé mon invitation.	}{	21	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria") and not pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	Maintenant j'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	76	}{	Mon invitation. . . Je croyais qu'elle était là. . . Oh non, j'ai dû la perdre. Mince !	}{	Mon invitation. . . Je croyais qu'elle était là. . . Oh non, j'ai dû la perdre. Mince !	}{	31	}{	Persuasion 9	}{	}{	}{	}{	}{	}{	}{	}{	J'ai dû le laisser sur mon autre corps. . .	}
+{	77	}{	Vous ne pourriez pas faire une petite exception. . . pour moi ?	}{	Vous ne pourriez pas faire une petite exception. . . pour moi ?	}{	41	}{	Seduction 8 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Vous pourriez me porter sur vos épaules mortes ? 	}
+{	78	}{	Je vais entrer. Vous pouvez essayer de m'arrêter si vous voulez. Mais ça ne changera rien.	}{	Je vais entrer. Vous pouvez essayer de m'arrêter si vous voulez. Mais ça ne changera rien.	}{	91	}{	Humanity -3	}{	}{	}{	}{	}{	}{	}{	}{	Je vais dans la maison des fous, clown mort ou pas. 	}
+{	79	}{	Ca va être une sale nuit pour les gorilles.	}{	Ca va être une sale nuit pour les gorilles.	}{	91	}{	Humanity -3	}{	}{	}{	}{	}{	}{	}{	}{	Si je ne peux pas rentrer, je me servirai de votre corps de clown comme luge !	}
+{	80	}{	Bon, je pars.	}{	Bon, je pars.	}{	0	}{	Humanity 3	}{	}{	}{	}{	}{	}{	}{	}{	Mais je veux explorer la maison des fous. . . J'ai besoin d'un ticket pour entrer.	}
+{	81	}{	Vous quittez propriété ou. . . je vous fais très mal.	}{	Vous quittez propriété ou. . . je vous fais très mal.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Luca_Leave = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Attendez, j'ai trouvé mon invitation.	}{	Attendez, j'ai trouvé mon invitation.	}{	11	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Victor_Know = 1	}{	}{	}{	}{	}{	}{	}{	Maintenant j'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	83	}{	Attendez, j'ai trouvé mon invitation.	}{	Attendez, j'ai trouvé mon invitation.	}{	21	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_victor") and not pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Victor_Know = 1	}{	}{	}{	}{	}{	}{	}{	Maintenant j'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	84	}{	Attendez, j'ai trouvé mon invitation.	}{	Attendez, j'ai trouvé mon invitation.	}{	11	}{	not IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria")	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	Maintenant j'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	85	}{	Attendez, j'ai trouvé mon invitation.	}{	Attendez, j'ai trouvé mon invitation.	}{	21	}{	IsMale(pc) and pc.HasItem("item_g_giovanni_invitation_maria") and not pc.HasItem("item_g_giovanni_invitation_victor")	}{	G.Maria_Know = 1	}{	}{	}{	}{	}{	}{	}{	Maintenant j'ai mon ticket, laissez-moi entrer dans la maison des fous.	}
+{	86	}{	Mon invitation. . . Je croyais qu'elle était là. . . Oh non, j'ai dû la perdre. Mince !	}{	Mon invitation. . . Je croyais qu'elle était là. . . Oh non, j'ai dû la perdre. Mince !	}{	31	}{	Persuasion 9	}{	}{	}{	}{	}{	}{	}{	}{	J'ai dû le laisser sur mon autre corps. . .	}
+{	87	}{	Vous ne pourriez pas faire une petite exception. . . pour moi ?	}{	Vous ne pourriez pas faire une petite exception. . . pour moi ?	}{	41	}{	Seduction 8 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Vous pourriez me porter sur vos épaules mortes ? 	}
+{	88	}{	Je vais entrer. Vous pouvez essayer de m'arrêter si vous voulez. Mais ça ne changera rien.	}{	Je vais entrer. Vous pouvez essayer de m'arrêter si vous voulez. Mais ça ne changera rien.	}{	91	}{	Humanity -3	}{	}{	}{	}{	}{	}{	}{	}{	Je vais dans la maison des fous, clown mort ou pas. 	}
+{	89	}{	Ca va être une sale nuit pour les gorilles.	}{	Ca va être une sale nuit pour les gorilles.	}{	91	}{	Humanity -3	}{	}{	}{	}{	}{	}{	}{	}{	Si je ne peux pas rentrer, je me servirai de votre corps de clown comme luge !	}
+{	90	}{	Je m'en vais. Au revoir.	}{	Je m'en vais. Au revoir.	}{	0	}{	Humanity 3	}{	}{	}{	}{	}{	}{	}{	}{	Mais je veux explorer la maison des fous. . . J'ai besoin d'un ticket pour entrer.	}
+{	91	}{	Je vais vous tuer !	}{	Je vais vous tuer !	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	L'inverse.	}{	L'inverse.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Hé. . .	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	Votre nom ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	Ouais ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	Si.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	(Starting Condition)	}{	}{	11	}{	G.Luca_Enter == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	(Starting Condition)	}{	}{	91	}{	G.Luca_Leave == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	(Starting Condition)	}{	}{	81	}{	G.Luca_Leave == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	(Starting Condition)	}{	}{	71	}{	G.Luca_Leave == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

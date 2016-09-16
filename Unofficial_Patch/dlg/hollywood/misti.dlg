@@ -1,0 +1,299 @@
+{	1	}{	Salut mon beau. . . Je m'appelle Misti. Ca te dirait, une danse privée ? J'ai quelque chose de spécial pour toi. Rien que pour toi.	}{	Salut ma chérie. . . Je m'appelle Misti. Ca te dirait, une danse privée ? J'ai quelque chose de spécial pour toi. Rien que pour toi.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Ca promet.	}{	Ca promet.	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Non merci. Mais si je change d'avis, je reviendrai te voir.	}{	Non merci. Mais si je change d'avis, je reviendrai te voir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nul doute que ta petite danse m'apporterait la petite mort. Plus tard, peut-être. . .	}
+{	4	}{	Pas question. J'ai vu des corps plus frais à la morgue. . .	}{	Pas question. J'ai vu des corps plus frais à la morgue. . .	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je préférerais jouer avec des asticots morts.	}
+{	5	}{	Laisse-moi me baigner dans ton lagon de lave. . .	}{	Laisse-moi me baigner dans ton lagon de lave. . .	}{	161	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Super. Maintenant, il faut juste que tu me donnes 100 dollars, et on peut aller s'amuser.	}{	Super. Maintenant, il faut juste que tu me donnes 100 dollars, et on peut aller s'amuser.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Ca me va. Tiens, voilà l'argent.	}{	Ca me va. Tiens, voilà l'argent.	}{	41	}{	pc.CurrentMoney() >= 100	}{	pc.MoneyRemove( 100 ); G.Misti_Regular = 1	}{	}{	}{	}{	}{	}{	}{	Voici cent pièces d'or. . .	}
+{	13	}{	100 dollars ? Allez, 75, ça te va ?	}{	100 dollars ? Allez, 75, ça te va ?	}{	41	}{	Haggle 6 & pc.CurrentMoney() >= 75	}{	pc.MoneyRemove( 75 ); G.Misti_Regular = 1	}{	}{	}{	}{	}{	}{	}{	75 billets, pas un de plus. . .	}
+{	14	}{	Tout ça ? Même pour moi ? Allez, 60, poupée, ça devrait suffire.	}{	Tout ça ? Même pour moi ? Allez, 60, poupée, ça devrait suffire.	}{	41	}{	Seduction 6 & (pc.CurrentMoney() >= 60 and not IsClan (pc,"Toreador"))	}{	pc.MoneyRemove( 60 ); G.Misti_Regular = 1	}{	}{	}{	}{	}{	}{	}{	60, ce serait mieux pour un être aussi parcellaire que moi. . .	}
+{	15	}{	Tout ça ? Même pour moi ? Allez, 40, poupée, ça devrait suffire.	}{	Tout ça ? Même pour moi ? Allez, 40, poupée, ça devrait suffire.	}{	41	}{	Seduction 6 & (pc.CurrentMoney() >= 40 and IsClan (pc,"Toreador"))	}{	pc.MoneyRemove( 40 ); G.Misti_Regular = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	Eh bien, je suis un peu à court de cash. . .	}{	Eh bien, je suis un peu à court de cash. . .	}{	71	}{	}{	G.Misti_Regular = 1	}{	}{	}{	}{	}{	}{	}{	Mes poches sont aussi vides que mon crâne.	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	Pas question. Je me casse.	}{	Pas question. Je me casse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	21	}{	Mmm. . . Salut. Ca me fait plaisir de te revoir, mon coeur. Tu veux faire la fête ? Juste nous deux. . .	}{	Mmm. . . Salut. Ca me fait plaisir de te revoir, mon coeur. Tu veux faire la fête ? Juste nous deux. . .	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Oh oui. . .	}{	Oh oui. . .	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si cette fête se passe entre tes jambes. . . 	}
+{	23	}{	Je regrette, Misti. Peut-être tout à l'heure.	}{	Je regrette, Misti. Peut-être tout à l'heure.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas le temps pour ta petite danse inepte. Adieu. . .	}
+{	24	}{	Si je me sentais si mal que ça, je me foutrais en l'air, tu sais.	}{	Si je me sentais si mal que ça, je me foutrais en l'air, tu sais.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je préférerais guincher avec une mouche à m. . .	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Ca marche. Allez, suis-moi dans les salles privées et on se mettra à l'aise.	}{	Ca marche. Allez, suis-moi dans les salles privées et on se mettra à l'aise.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Je te suis.	}{	Je te suis.	}{	0	}{	}{	G.Misti_Follow = 1	}{	}{	}{	}{	}{	}{	}{	Je suis tes appâts irrésistibles. . .	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Viens avec moi. . . On y est presque.	}{	Viens avec moi. . . On y est presque.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	OK.	}{	OK.	}{	0	}{	}{	G.Misti_Follow = 1	}{	}{	}{	}{	}{	}{	}{	Je te suis. . .	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Nous y voilà. Bon, qu'est-ce que tu veux que je fasse ? J'aime qu'un homme me dise exactement ce qu'il veut, et comment il le veut. . .	}{	Nous y voilà. Bon, qu'est-ce que tu veux que je fasse ? Je ne devrais pas te dire ça, mais danser pour une fille, ça me rend complètement dingue. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Viens ici, j'ai un secret à te confier. . .	}{	Viens ici, j'ai un secret à te confier. . .	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc); G.Misti_Follow = 0	}{	}{	}{	}{	}{	}{	}{	Viens par ici. J'ai des paroles à susurrer dans tes parties les plus secrètes. . .	}
+{	63	}{	Je veux que tu fermes les yeux, ma petite. . .	}{	Je veux que tu fermes les yeux, ma petite. . .	}{	0	}{	not IsClan(pc,"Malkavian")	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc); G.Misti_Follow = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Hm, je n'ai pas faim pour le moment, danse simplement pour moi!	}{	Hm, je n'ai pas faim pour le moment, déchaîne-toi pour moi!	}{	0	}{	G.Patch_Plus == 1	}{	G.Misti_Follow = 0; G.Misti_Dance = 1	}{	}{	}{	}{	}{	}{	}{	Shake it baby!	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	En fait, je veux surtout partir d'ici. A plus.	}{	En fait, je veux surtout partir d'ici. A plus.	}{	0	}{	}{	G.Misti_Follow = 0	}{	}{	}{	}{	}{	}{	}{	J'ai oublié qui nous sommes. Adieu. . .	}
+{	71	}{	Quoi ? Alors je vais manquer de temps. Désolée, mais je ne fais pas la totale pour rien, mon coeur.	}{	Quoi ? Alors je vais manquer de temps. Désolée, mais je ne fais pas la totale pour rien, mon coeur.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Je comprends. Je reviendrai quand j'aurai l'argent.	}{	Je comprends. Je reviendrai quand j'aurai l'argent.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais chercher du fric pour regarder tes trucs.	}
+{	73	}{	Pourquoi je devrais payer ? Toi, tu as déjà payé bien trop cher pour ce que tu as eu. . .	}{	Pourquoi je devrais payer ? Toi, tu as déjà payé bien trop cher pour ce que tu as eu. . .	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il faudrait me payer pour supporter tes cicatrices. . .	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	De quoi ? Je vais pas me laisser insulter par un branleur comme toi. Va t'offrir quelqu'un d'autre, connard.	}{	De quoi ? T'as pas à m'insulter, poufiasse. Va t'offrir quelqu'un d'autre.	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	G.Misti_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Avec joie. A bientôt. . .	}{	Avec joie. A bientôt. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je payerai pour l'éternité.	}
+{	83	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	C'est ça.	}{	C'est ça.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	[en colère]Qu'est-ce que tu veux ?	}{	[en colère]Qu'est-ce que tu veux ?	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Allez, Misti, je plaisantais. J'aimerais vraiment qu'on se connaisse un peu mieux. . .	}{	Allez, Misti, je plaisantais. J'aimerais vraiment qu'on se connaisse un peu mieux. . .	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pardonne-moi, petit diable. Je ne désire rien d'autre que mourir dans ta danse de ténèbres. 	}
+{	103	}{	Rien que tu puisses me donner. Au revoir.	}{	Rien que tu puisses me donner. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ton corps est une silhouette à la craie. Adieu.	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Euh ouais, si tu veux. 100 dollars, à prendre ou à laisser.	}{	Euh ouais, si tu veux. 100 dollars, à prendre ou à laisser.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	OK, ça me va. C'est parti.	}{	OK, ça me va. C'est parti.	}{	41	}{	pc.CurrentMoney() >= 100	}{	pc.MoneyRemove( 100 ); G.Misti_Regular = 1; G.Misti_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	Tiens, voilà tes cent billets.	}
+{	113	}{	Oh. . . Trop dommage ! Je n'ai pas tout à fait cent dollars. . .	}{	Oh. . . Trop dommage ! Je n'ai pas tout à fait cent dollars. . .	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas le dinero. . .	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	C'est ça. Si c'était un dollar seulement, tu me devrais encore de la monnaie. . .	}{	C'est ça. Si c'était un dollar seulement, tu me devrais encore de la monnaie. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai nul appétit pour ton fromage trop blanc. Adieu.	}
+{	121	}{	Trouve-toi un boulot et arrête de me faire perdre mon temps.	}{	Trouve-toi un boulot et arrête de me faire perdre mon temps.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	A plus !	}{	A plus !	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Ahh ! Fous le camp, monstre ! Ce que t'es moche !	}{	Ahh ! Fous le camp, monstre ! Ce que t'es moche !	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Misti_Follow = 0	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Eh, salut mon coeur, tu vas bien ? Je peux faire quelque chose pour toi ?	}{	Eh, salut mon coeur, tu vas bien ? Je peux faire quelque chose pour toi ?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	C'est V.V. qui m'envoie. Elle a dit que je pourrai consommer à l'oeil. . .	}{	C'est V.V. qui m'envoie. Elle a dit que je pourrai consommer à l'oeil. . .	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	La vamp évaporée m'a dit de venir voir ton vaudou. . .	}
+{	143	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	Je vois beaucoup de choses que tu pourrais faire, mais je manque de temps. A plus.	}{	Je vois beaucoup de choses que tu pourrais faire, mais je manque de temps. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce n'est pas le moment, petit diable. Adieu.	}
+{	151	}{	Tu viens de la part de V.V. ? OK. Elle a payé d'avance, pour toi. Elle m'a dit de te donner tout ce que tu voudrais. On va dans une des salles privées ?	}{	Tu viens de la part de V.V. ? OK. Elle a payé d'avance, pour toi. Elle m'a dit de te donner tout ce que tu voudrais. On va dans une des salles privées ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Ca me paraît bien comme idée. . .	}{	Ca me paraît bien comme idée. . .	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est dans les salles privées que je m'amuse le plus. . .	}
+{	153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Euh, oui, si tu veux, mon chou. Pourquoi tu ne me suivrais pas dans une des salles privées, on pourrait faire un peu connaissance. . .	}{	Euh, oui, si tu veux, mon chou. Pourquoi tu ne me suivrais pas dans une des salles privées, on pourrait faire un peu connaissance. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Je serai ton petit Pompéi. . .	}{	Je serai ton petit Pompéi. . .	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	193	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	203	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	213	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	223	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	233	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	243	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	253	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	263	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	273	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	274	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	284	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	293	}{	(Starting Condition)	}{	}{	61	}{	G.Misti_Follow == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	294	}{	(Starting Condition)	}{	}{	51	}{	G.Misti_Follow == 1 or G.Misti_Follow == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	(Starting Condition)	}{	}{	131	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	(Starting Condition)	}{	}{	141	}{	G.Velvet_Doll == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	(Starting Condition)	}{	}{	21	}{	G.Misti_Regular == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	(Starting Condition)	}{	}{	101	}{	G.Misti_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -1,0 +1,81 @@
+
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	
+	"infomodel"	"models/items/Clipboard/Info/Info_Clipboard.mdl"
+	"playermodel"	"models/items/Clipboard/Ground/Clipboard.mdl"
+	
+	"anim_prefix"	" "
+
+	"printname"	"Presse-papiers"	// dates changed by wesp
+	"description"	"On dirait le dossier d'un employé du Département de l'Eau et de l'Electricité de Los Angeles (LADWP), printemps 2004. 
+
+			Lundi 24 - Les premières enquêtes sur les étranges événements dans les égouts ont commencé aujourd'hui. Suis entré dans le secteur 13, passerai aux 14 et 15 dans l'après midi. Secteur 13 paraît normal.
+
+			Mardi 26 - Secteur 13 vérifié, mais ai entendu bruits non identifiés dans certaines parties en 14 et 15. Ai appelé central pour confirmer : aucun autre inspecteur dans la zone. Noté coordonnées. Demain, inspection du 16.
+			
+			Mercredi 26 - Bruits étranges, sans doute un animal, encore dans secteur 16. Ai cru voir l'animal à l'intersection des couloirs 63a et 64b, mais n'ai rien trouvé après examen. Empreintes étranges dans la boue sur le mur, presque comme une main, mais difficile de voir dans le noir.
+			
+			Jeudi 27 - Autres empreintes dans couloir 73d. Elles disparaissaient dans une entrée vers une partie plus ancienne des égouts. Ai appelé central, mais ils n'ont aucun plan de ces parties. Ai demandé instructions, suis censé continuer avec prudence demain.
+			
+			Vendredi 28/8h00 - Ai commencé enquête dans parties anciennes ce matin. Revu l'animal, mais impossible à classifier. Sa peau paraît nue, reptilienne. Je l'entends tout le temps, comme s'il me suivait. Mais impossible évaluer distance à cause des échos.
+			
+			Vendredi 28/9h15 - Impossible de joindre central par radio, donc de faire rapport. Odeur de plus en plus forte quand j'avance dans les anciens égouts, sans doute un cadavre d'animal apporté par les pluies. Enquête continue.
+			
+			Vendredi 28/11h31 - Ai trouvé l'origine de cette odeur. On dirait des restes humains. Ai immédiatement appelé le central : impossible de les joindre. On dirait le cadavre d'un clochard, mais des lacérations importantes dans la chair indiquent qu'un animal s'est récemment nourri de ce cadavre. J'ai noté les coordonnées de la dépouille et je rentre immédiatement pour faire mon rapport.
+			
+			Vendredi 28/13h22 - Me suis un peu perdu dans les tunnels, toujours impossible de joindre central. L'animal paraît approcher et je suis peut-être chassé. Ai dégainé mon arme par précaution.
+			
+			Vendredi 28/17h30 - Complètement perdu. Sans doute encore descendu dans égouts. Suis suivi, j'en suis sûr. Central injoignable. Piles de ma lampe faiblissent.
+			
+			MON DIEU AI VU CREATURE MONSTRE SANG CROCS PEUX PAS SORTIR PLUS DE LUMIERE PEUX JOINDRE PERSONNE, PITIE MON DIEU QU'EST-CE QUE. . . (L'écriture s'interrompt, éclaboussée de sang.)
+			
+			
+	"bucket"		"1"
+	"bucket_position"	"2"
+
+	"camera_class"		"noswitch"
+	"is_wieldable"		"0"
+	"weight"		"1"
+	"item_flags"		"1"
+	"item_type"		"powerup"
+	"item_worth"		"-1"
+	"is_visible_in_hud"		"1"
+
+	SoundData
+	{
+		"pickup"
+		{
+			"sound1"	"items/Magazine/Pickup.wav"
+		}
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	SpriteData
+	{
+		"weapon"
+		{
+			"640"
+			{
+				"file"	"hud/Inventory_Images/General_Items/clipboard_SEL"
+				"x"		"0"
+				"y"		"0"
+				"width"	"100"
+				"height"	"64"
+			}
+		}
+		"weapon_s"
+		{
+			"640"
+			{
+				"file"	"hud/Inventory_Images/General_Items/clipboard"
+				"x"		"0"
+				"y"		"0"
+				"width"	"100"
+				"height"	"64"
+			}
+		}
+	}
+}

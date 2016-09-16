@@ -1,0 +1,364 @@
+{	1	}{	Cinq cents d'avance. Encore cinq cents après le deal. . . Pas de question, sinon je pars. . .	}{	Cinq cents d'avance. Encore cinq cents après le deal. . . Pas de question, sinon je pars. . .	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	De quoi vous parlez ?	}{	De quoi vous parlez ?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	C'est un peu beaucoup juste pour des renseignements, vous ne trouvez pas ?	}{	C'est un peu beaucoup juste pour des renseignements, vous ne trouvez pas ?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Pas d'argent, vous répondez à mes questions, et je ne vous colle pas dans un fauteuil roulant.	}{	Pas d'argent, vous répondez à mes questions, et je ne vous colle pas dans un fauteuil roulant.	}{	21	}{	Intimidate 7 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Ca sent le poisson. . .	}{	Ca sent le poisson. . .	}{	301	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Pardonnez-moi. . . Vous aviez une tête à vous intéresser à mon produit. En fait, ça vous étonnerait de voir combien il y a de personnes que ça intéresse.	}{	Pardonnez-moi. . . Vous aviez une tête à vous intéresser à mon produit. En fait, ça vous étonnerait de voir combien il y a de personnes que ça intéresse.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Vous êtes Zygaena ?	}{	Vous êtes Zygaena ?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Vous avez déjà eu à faire à un type appelé Zygaena ? Dites-moi tout.	}{	Vous avez déjà eu à faire à un type appelé Zygaena ? Dites-moi tout.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Que vendez-vous d'autre ?	}{	Que vendez-vous d'autre ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	[avec un sourire déconcertant]Pardonnez-moi. Nul besoin de me menacer - apparemment, vous ne venez pas pour de la drogue. C'est bien, si je puis me permettre. Ca fait des choses terribles au corps.	}{	[avec un sourire déconcertant]Pardonnez-moi. Nul besoin de me menacer - apparemment, vous ne venez pas pour de la drogue. C'est bien, si je puis me permettre. Ca fait des choses terribles au corps.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Vous êtes Zygaena ?	}{	Vous êtes Zygaena ?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Vous avez déjà eu à faire à un type appelé Zygaena ? Dites-moi tout.	}{	Vous avez déjà eu à faire à un type appelé Zygaena ? Dites-moi tout.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Que vendez-vous d'autre ?	}{	Que vendez-vous d'autre ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Alors parlons de vos affaires. . .	}{	Alors parlons de vos affaires. . .	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Vous êtes Zygaena ?	}{	Vous êtes Zygaena ?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	Vous avez déjà eu à faire à un type appelé Zygaena ? Dites-moi tout.	}{	Vous avez déjà eu à faire à un type appelé Zygaena ? Dites-moi tout.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Non, N'importe qui d'autre, ce serait possible. Mais lui ? Non, je regrette. Il va falloir demander à quelqu'un d'autre. . .	}{	Non, N'importe qui d'autre, ce serait possible. Mais lui ? Non, je regrette. Il va falloir demander à quelqu'un d'autre. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Le dernier qui a refusé ressemble à une tête posée sur deux pieds, maintenant.	}{	Le dernier qui a refusé ressemble à une tête posée sur deux pieds, maintenant.	}{	51	}{	Intimidate 7	}{	}{	}{	}{	}{	}{	}{	}{	Ceux qui cachent la vérité voient leurs intestins transformés en ballons.	}
+{	43	}{	Ne vous inquiétez pas, une fois que je l'aurai trouvé, il ne vous fera pas d'ennuis.	}{	Ne vous inquiétez pas, une fois que je l'aurai trouvé, il ne vous fera pas d'ennuis.	}{	61	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	Dites son nom, et vous ne le reverrez jamais. . .	}
+{	44	}{	Dites-moi où est Zygaena.	}{	Dites-moi où est Zygaena.	}{	81	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	Dites-moi où est Zygaena.	}{	Dites-moi où est Zygaena.	}{	81	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	Vous allez me le dire ou vous sentirez ma colère.	}{	Vous allez me le dire ou vous sentirez ma colère.	}{	51	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	Zygaena va jaillir de vos lèvres pour entrer dans ma connaissance.	}{	Zygaena va jaillir de vos lèvres pour entrer dans ma connaissance.	}{	91	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	Zygaena va jaillir de vos lèvres pour entrer dans ma connaissance.	}
+{	48	}{	Je ne vous aurais pas demandé cela si ce n'était pas important. Il faut m'aider.	}{	Je ne vous aurais pas demandé cela si ce n'était pas important. Il faut m'aider.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je sais que tu sais. . . J'ai les moyens de savoir les choses. . .	}
+{	49	}{	Je vous paierai, s'il le faut.	}{	Je vous paierai, s'il le faut.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous voulez du trésor, j'ai tout un coffre dans lequel vous pouvez enfouir la main.	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Comme c'est malheureux. J'ai peur que celui que vous cherchez soit capable de bien pire. Puis-je vous demander pourquoi vous voulez le trouver ? Si je connaissais vos raisons, je pourrais peut-être me résoudre à révéler certaines choses. . .	}{	Comme c'est malheureux. J'ai peur que celui que vous cherchez soit capable de bien pire. Puis-je vous demander pourquoi vous voulez le trouver ? Si je connaissais vos raisons, je pourrais peut-être me résoudre à révéler certaines choses. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Quelqu'un que je connais veut le rencontrer.	}{	Quelqu'un que je connais veut le rencontrer.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il a un fan. . .	}
+{	53	}{	Il va bientôt quitter ce monde.	}{	Il va bientôt quitter ce monde.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nous devons tous mourir une nuit ou l'autre, oh, je ne le sais que trop bien. . .	}
+{	54	}{	Cela ne regarde que moi.	}{	Cela ne regarde que moi.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je sais quelque chose, et je ne dirai rien. . .	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Oh, vous comptez le tuer ?	}{	Oh, vous comptez le tuer ?	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Pas moi, non. Une fille veut le tuer. Il a tué quelqu'un qui lui était proche.	}{	Pas moi, non. Une fille veut le tuer. Il a tué quelqu'un qui lui était proche.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non, une samouraïette errante à qui j'ai parlé dans un magasin de nouilles.	}
+{	63	}{	Oui, pourquoi pas.	}{	Oui, pourquoi pas.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chiche ?	}
+{	64	}{	Le tuer ? Non, je veux juste lui parler.	}{	Le tuer ? Non, je veux juste lui parler.	}{	131	}{	Persuasion 3	}{	}{	}{	}{	}{	}{	}{	}{	Tuer ou parler ? Lequel permet d'échanger librement des idées ?	}
+{	65	}{	Qu'est-ce que ça peut vous faire ?	}{	Qu'est-ce que ça peut vous faire ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne devez pas savoir.	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Vous pouvez m'en dire un peu plus ?	}{	Vous pouvez m'en dire un peu plus ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Elle compte le tuer. . .	}{	Elle compte le tuer. . .	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Elle a la mort pour lui.	}
+{	73	}{	Vous ne comprendriez pas.	}{	Vous ne comprendriez pas.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je peux y arriver. . . AHHHHHHHHHHH !	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	[regarde le papier curieusement]Je pense que j'ai dit clairement que je n'allais rien vous dire. . . Si je connaissais vos raisons, j'hésiterais peut-être moins à vous donner des renseignements.	}{	[regarde le papier curieusement]Je pense que j'ai dit clairement que je n'allais rien vous dire. . . Si je connaissais vos raisons, j'hésiterais peut-être moins à vous donner des renseignements.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Quelqu'un que je connais veut le rencontrer.	}{	Quelqu'un que je connais veut le rencontrer.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il a un fan. . .	}
+{	83	}{	Il va bientôt quitter ce monde.	}{	Il va bientôt quitter ce monde.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nous devons tous mourir une nuit ou l'autre, oh, je ne le sais que trop bien. . .	}
+{	84	}{	Cela ne regarde que moi.	}{	Cela ne regarde que moi.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je sais quelque chose, et je ne dirai rien. . .	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Je ne comprends pas. Si je connaissais vos raisons, je répugnerais peut-être moins à révéler ces renseignements.	}{	Je ne comprends pas. Si je connaissais vos raisons, je répugnerais peut-être moins à révéler ces renseignements.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Quelqu'un que je connais veut le rencontrer.	}{	Quelqu'un que je connais veut le rencontrer.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il a un fan. . .	}
+{	93	}{	Il va bientôt quitter ce monde.	}{	Il va bientôt quitter ce monde.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nous devons tous mourir une nuit ou l'autre, oh, je ne le sais que trop bien. . .	}
+{	94	}{	Cela ne regarde que moi.	}{	Cela ne regarde que moi.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je sais quelque chose, et je ne dirai rien. . .	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	L'argent n'est pas un souci pour moi. . . Je m'inquiète plus des conséquences. . . Si je connaissais vos raisons, je répugnerais peut-être moins à révéler ces renseignements.	}{	L'argent n'est pas un souci pour moi. . . Je m'inquiète plus des conséquences. . . Si je connaissais vos raisons, je répugnerais peut-être moins à révéler ces renseignements.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Quelqu'un que je connais veut le rencontrer.	}{	Quelqu'un que je connais veut le rencontrer.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il a un fan. . .	}
+{	103	}{	Il va bientôt quitter ce monde.	}{	Il va bientôt quitter ce monde.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nous devons tous mourir une nuit ou l'autre, oh, je ne le sais que trop bien. . .	}
+{	104	}{	Cela ne regarde que moi.	}{	Cela ne regarde que moi.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je sais quelque chose, et je ne dirai rien. . .	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Je comprends, mais vous ne connaissez pas les conséquences. Si je connaissais vos raisons, je répugnerais peut-être moins à révéler ces renseignements.	}{	Je comprends, mais vous ne connaissez pas les conséquences. Si je connaissais vos raisons, je répugnerais peut-être moins à révéler ces renseignements.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Quelqu'un que je connais veut le rencontrer.	}{	Quelqu'un que je connais veut le rencontrer.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il a un fan. . .	}
+{	113	}{	Il va bientôt quitter ce monde.	}{	Il va bientôt quitter ce monde.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nous devons tous mourir une nuit ou l'autre, oh, je ne le sais que trop bien. . .	}
+{	114	}{	Cela ne regarde que moi.	}{	Cela ne regarde que moi.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je sais quelque chose, et je ne dirai rien. . .	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Alors je ne peux rien pour vous. Veuillez partir.	}{	Alors je ne peux rien pour vous. Veuillez partir.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Bon. . . Quelqu'un que je connais veut le rencontrer.	}{	Bon. . . Quelqu'un que je connais veut le rencontrer.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il a un fan. . .	}
+{	123	}{	Très bien. . . Il est en voie d'extinction.	}{	Très bien. . . Il est en voie d'extinction.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nous devons tous mourir une nuit ou l'autre, oh, je ne le sais que trop bien. . .	}
+{	124	}{	Ecoutez, sale con, vous ne voulez pas que je m'énerve, quand même ? Dites-moi ce que vous savez. . .	}{	Ecoutez, sale con, vous ne voulez pas que je m'énerve, quand même ? Dites-moi ce que vous savez. . .	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Un moi colèreux va vous claquer jusqu'à ce que vous révéliez le bassin du gros poisson.	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Parler ? Je ne sais pas trop. . . Il est un peu paranoïaque. . . Si vous essayez quelque chose, il me punira. . .	}{	Parler ? Je ne sais pas trop. . . Il est un peu paranoïaque. . . Si vous essayez quelque chose, il me punira. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Je vais le tuer, d'accord ?	}{	Je vais le tuer, d'accord ?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les morts punissent seulement nos narines de leur puanteur.	}
+{	133	}{	Vous avez ma parole que nous voulons simplement lui parler.	}{	Vous avez ma parole que nous voulons simplement lui parler.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nous voulons seulement sa langue, et je promets qu'il pourra la garder.	}
+{	134	}{	Je veux juste discuter affaires, c'est tout.	}{	Je veux juste discuter affaires, c'est tout.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je veux mettre un visage sur ce nom, rien d'autre.	}
+{	135	}{	Il a raison d'être parano. Il est en voie d'extinction.	}{	Il a raison d'être parano. Il est en voie d'extinction.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	A-t-il parfois l'impression que quelqu'un va le tuer ? Je suis ce 'quelqu'un'.	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Oui, c'est ce que je voulais savoir. . . Si c'est votre but, je pourrais vous arranger une rencontre avec lui. . .	}{	Oui, c'est ce que je voulais savoir. . . Si c'est votre but, je pourrais vous arranger une rencontre avec lui. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Excellent. Vous aussi, vous voulez qu'il meure ?	}{	Excellent. Vous aussi, vous voulez qu'il meure ?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez appelé le tueur à son sujet aussi ?	}
+{	143	}{	Où cela ?	}{	Où cela ?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où ça ?	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Très bien. . . Il m'attend au marché aux poissons, ce soir. Mais je ne sais pas s'il sera heureux de vous voir. Vous devriez peut-être laisser tomber.	}{	Très bien. . . Il m'attend au marché aux poissons, ce soir. Mais je ne sais pas s'il sera heureux de vous voir. Vous devriez peut-être laisser tomber.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Zyg_Meet = 1; pc.SetQuest("Yukie",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Merci de votre aide. . . A bientôt, mon vieux.	}{	Merci de votre aide. . . A bientôt, mon vieux.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il ne sera peut-être pas heureux, mais nous rirons ensemble. Je pars.	}
+{	153	}{	C'est tout ce que je voulais savoir. Ne lui dites rien, ou ce sera votre tour. . .	}{	C'est tout ce que je voulais savoir. Ne lui dites rien, ou ce sera votre tour. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez une grosse main, mais ne soyez pas une grande gueule. . . sinon. . .	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Une fille ?	}{	Une fille ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Elle l'a suivi ici depuis le Japon pour le tuer.	}{	Elle l'a suivi ici depuis le Japon pour le tuer.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Son coeur est plus vengeur qu'humain.	}
+{	163	}{	Oui, une écolière hargneuse. On dirait qu'elle ne plaisante pas, elle veut le tuer.	}{	Oui, une écolière hargneuse. On dirait qu'elle ne plaisante pas, elle veut le tuer.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Elle est tellement mignonne. . . que j'ai envie de la manger. . .	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Rien, rien. . . Très bien. . . Il m'attend au marché aux poissons ce soir. . . Mais je pense qu'il ne sera pas content de vous voir. . . Il pourrait y avoir des. . . conséquences.	}{	Rien, rien. . . Très bien. . . Il m'attend au marché aux poissons ce soir. . . Mais je pense qu'il ne sera pas content de vous voir. . . Il pourrait y avoir des. . . conséquences.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Zyg_Meet = 1; pc.SetQuest("Yukie",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Je verrai cela avec lui, ne vous inquiétez pas. Nous ne nous connaissons pas.	}{	Je verrai cela avec lui, ne vous inquiétez pas. Nous ne nous connaissons pas.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ressens la tentation, et donc je pars. 	}
+{	173	}{	J'espère. Au revoir.	}{	J'espère. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	On peut toujours espérer.	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Nous ?	}{	Nous ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Moi et cette fille. . .	}{	Moi et cette fille. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il y avait moi et cette fille. . . et un crapaud géant qui parlait, il me semble.	}
+{	183	}{	Oh, nous parlons toujours de nous-mêmes à la troisième personne. Nous regrettons.	}{	Oh, nous parlons toujours de nous-mêmes à la troisième personne. Nous regrettons.	}{	191	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	Oh, nous parlons toujours de nous à la troisième personne. Nous nous en excusons.	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Si vous voulez lui parler, je vais arranger ça. Venez au marché aux poissons ce soir. Vous et lui pourrez. . . parler. Il est dangereux. Il faudra agir en conséquence.	}{	Si vous voulez lui parler, je vais arranger ça. Venez au marché aux poissons ce soir. Vous et lui pourrez. . . parler. Il est dangereux. Il faudra agir en conséquence.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	Whisper("Ambiguous"); G.Zyg_Meet = 1; pc.SetQuest("Yukie",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Merci. Je suis au fait des bonnes manières. Au revoir.	}{	Merci. Je suis au fait des bonnes manières. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ressens la tentation, et donc je pars. 	}
+{	193	}{	Merci de cette mise en garde. Vous avez ma parole. Au revoir.	}{	Merci de cette mise en garde. Vous avez ma parole. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	On peut toujours espérer.	}
+{	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Quelque chose comme ça. . .	}{	Quelque chose comme ça. . .	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	(Auto-Link)	}{	(Auto-Link)	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	203	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	J'étais censé le retrouver ce soir au marché aux poissons. Vous pouvez y aller à ma place, mais dans ce cas, j'espère que vos intentions sont sérieuses - il est très sérieux, lui.	}{	J'étais censé le retrouver ce soir au marché aux poissons. Vous pouvez y aller à ma place, mais dans ce cas, j'espère que vos intentions sont sérieuses - il est très sérieux, lui.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Zyg_Meet = 1; pc.SetQuest("Yukie",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Marché aux poissons ce soir. Pas un mot de tout ceci, compris ? Au revoir. . .	}{	Marché aux poissons ce soir. Pas un mot de tout ceci, compris ? Au revoir. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis pas drôle à en mourir. . . Je m'en vais.	}
+{	213	}{	Après ce soir, il sera très mort. Bonne nuit. . .	}{	Après ce soir, il sera très mort. Bonne nuit. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez une grosse main, mais ne soyez pas une grande gueule. . . sinon. . .	}
+{	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Si c'est vrai, je suis sûr que cet homme serait prêt à vous donner beaucoup d'argent en échange de cette fille. Cela vous paraît acceptable ?	}{	Si c'est vrai, je suis sûr que cet homme serait prêt à vous donner beaucoup d'argent en échange de cette fille. Cela vous paraît acceptable ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Non. C'est entre elle et lui, et s'il la tue, ainsi soit-il, mais je n'aiderai aucun des deux.	}{	Non. C'est entre elle et lui, et s'il la tue, ainsi soit-il, mais je n'aiderai aucun des deux.	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce n'est pas à moi de la donner. . .	}
+{	223	}{	Continuez de parlez, je vous dirai si c'est 'acceptable' en entendant les chiffres. . .	}{	Continuez de parlez, je vous dirai si c'est 'acceptable' en entendant les chiffres. . .	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien de zéros pour cette fille ?	}
+{	224	}{	Dites-moi juste où il est. . .	}{	Dites-moi juste où il est. . .	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez beaucoup, mais vous ne dites pas grand-chose. . .	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Amenez la fille au marché aux poissons ce soir - je m'arrangerai pour qu'il vous y retrouve. Si elle s'avère difficile à tuer, vous l'aiderez. C'est un homme généreux, et il vous dédommagera plus que raisonnablement.	}{	Amenez la fille au marché aux poissons ce soir - je m'arrangerai pour qu'il vous y retrouve. Si elle s'avère difficile à tuer, vous l'aiderez. C'est un homme généreux, et il vous dédommagera plus que raisonnablement.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Zyg_Meet = 1; G.Zyg_Yukie = 1; pc.SetQuest("Yukie",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Ca me va. Je l'amène vite. J'espère qu'il sera prêt.	}{	Ca me va. Je l'amène vite. J'espère qu'il sera prêt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'essaierai de ne pas lui faire de noeud, mais je ne promets rien. . .	}
+{	233	}{	Oui, ça marche. De toute façon, ce n'est pas mon type, cette fille. Et l'argent est toujours le bienvenu.	}{	Oui, ça marche. De toute façon, ce n'est pas mon type, cette fille. Et l'argent est toujours le bienvenu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il y a beaucoup de filles, mais jamais assez de trésors.	}
+{	234	}{	Je ne peux rien vous promettre. Mais arrangez la rencontre - j'y serai. Au revoir.	}{	Je ne peux rien vous promettre. Mais arrangez la rencontre - j'y serai. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nous apparaîtrons. . . Oh, et ça schlingue, vous devriez faire quelque chose. . . Je pars	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	J'en ai déjà assez dit. Excusez-moi. . .	}{	J'en ai déjà assez dit. Excusez-moi. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	243	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	[Rires]Hmm-mmm-mmm. . .	}{	[Rires]Hmm-mmm-mmm. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Qu'est-ce que vous faites ici ? Où est Zygaena ?	}{	Qu'est-ce que vous faites ici ? Où est Zygaena ?	}{	261	}{	not IsDead("Yukie")	}{	}{	}{	}{	}{	}{	}{	}{	Cette odeur. . .	}
+{	253	}{	Qu'est-ce qu'il y a de drôle, ducon ?	}{	Qu'est-ce qu'il y a de drôle, ducon ?	}{	261	}{	not IsDead("Yukie")	}{	}{	}{	}{	}{	}{	}{	}{	HA HA HA HA HA HA !	}
+{	254	}{	Qu'est-ce que vous faites ici ? Où est Zygaena ?	}{	Qu'est-ce que vous faites ici ? Où est Zygaena ?	}{	281	}{	IsDead("Yukie")	}{	}{	}{	}{	}{	}{	}{	}{	Cette odeur. . .	}
+{	255	}{	Qu'est-ce qu'il y a de drôle, ducon ?	}{	Qu'est-ce qu'il y a de drôle, ducon ?	}{	281	}{	IsDead("Yukie")	}{	}{	}{	}{	}{	}{	}{	}{	HA HA HA HA HA HA !	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Vous êtes là tous les deux. . . Mon chasseur et ma cible, c'est pratique. . . [rit de nouveau]	}{	Vous êtes là tous les deux. . . Mon chasseur et ma cible, c'est pratique. . . [rit de nouveau]	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Eh, on avait un accord. . .	}{	Eh, on avait un accord. . .	}{	271	}{	G.Zyg_Yukie == 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	263	}{	Pratique n'est pas le mot que j'utiliserais. . .	}{	Pratique n'est pas le mot que j'utiliserais. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ecrasant. . .	}
+{	264	}{	Je pense que vous avez les yeux un peu trop grands. . .	}{	Je pense que vous avez les yeux un peu trop grands. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	OH OH OH HA HA HA !	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Votre mort se vend à très bon prix. . . J'ai été honoré de recevoir le contrat.	}{	Votre mort se vend à très bon prix. . . J'ai été honoré de recevoir le contrat.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Alors venez, qu'est-ce que vous attendez ? On va voir si vous pouvez toucher la prime. . .	}{	Alors venez, qu'est-ce que vous attendez ? On va voir si vous pouvez toucher la prime. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il faut que je me débarrasse de cette odeur. . .	}
+{	273	}{	Petite crapule. Vous n'avez pas idée à quel point je peux vous tuer facilement.	}{	Petite crapule. Vous n'avez pas idée à quel point je peux vous tuer facilement.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Jack, t'es le dindon de la craque. . .	}
+{	274	}{	Bien joué. . . mais mauvaise tactique. . .	}{	Bien joué. . . mais mauvaise tactique. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	BONNE BLAGUE !	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	[Rit à nouveau]Hmm-mmm-mmm. . . Hé-hé. . . Surprise. . .	}{	[Rit à nouveau]Hmm-mmm-mmm. . . Hé-hé. . . Surprise. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	(Auto-Link)	}{	(Auto-Link)	}{	291	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	284	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	[Son de douleur, se transforme en monstre]. . .	}{	[Son de douleur, se transforme en monstre]. . .	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	293	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	294	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	J'ai la réputation de livrer la marchandise. J'ai plus de raisons de me méfier de vous.	}{	J'ai la réputation de livrer la marchandise. J'ai plus de raisons de me méfier de vous.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	La puanteur est insoutenable.	}{	La puanteur est insoutenable.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	303	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	304	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	Je ne suis pas patient. Vous venez faire affaire, oui ou non ?	}{	Je ne suis pas patient. Vous venez faire affaire, oui ou non ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Votre mère a-t-elle un fils appelé Zygaena ?	}{	Votre mère a-t-elle un fils appelé Zygaena ?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	313	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	Non. . . Et je préférerais que vous ne sous-entendiez pas ce genre de chose. C'est un associé d'affaires. . . avec qui je n'aime pas particulièrement traiter.	}{	Non. . . Et je préférerais que vous ne sous-entendiez pas ce genre de chose. C'est un associé d'affaires. . . avec qui je n'aime pas particulièrement traiter.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Parlez-moi de lui.	}{	Parlez-moi de lui.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	323	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	324	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	325	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	Oui.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Oui.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	333	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	334	}{	Je ne sais pas.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	335	}{	Je ne peux rien pour vous.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	Le marché aux poissons, ce soir. N'oubliez pas.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	Excusez-moi.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	Comme j'ai dit. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	343	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	344	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	353	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	354	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	(Starting Condition)	}{	}{	251	}{	G.Zyg_Fish == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	363	}{	(Starting Condition)	}{	}{	241	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	364	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

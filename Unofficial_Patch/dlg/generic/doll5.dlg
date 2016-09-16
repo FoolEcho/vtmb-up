@@ -1,0 +1,46 @@
+{	1	}{	Ouais ?		}{	Ouais ?		}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Enfin un combattant masculin juste à mon goût !	}{	Enfin un combattant masculin juste à mon goût !	}{	11	}{	Seduction 4 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Je vois votre effrayante cicatrice et je l'aime vraiment.	}
+{	3	}{	Bonjour mon frère, prêt à de l'action d'homme à homme ?	}{	Bonjour mon frère, prêt à de l'action d'homme à homme ?	}{	11	}{	Seduction 4 & IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Est-ce que le frère veut le frapper avec celui-ci ?	}
+{	4	}{	Salut Tong, êtes-vous seul ce soir ?	}{	Salut Tong, êtes-vous seul ce soir ?	}{	21	}{	Seduction -4	}{	}{	}{	}{	}{	}{	}{	}{	Est-ce que le Tong solitaire se joindra à notre multitude ?	}
+{	5	}{	Désolé, confondu avec quelqu'un d'autre.	}{	Désolé, confondu avec quelqu'un d'autre.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes voix m'ont dit qu'ils vous connaissent, mais non.	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Ouais.	}{	Ouais.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Doll5_Seduce = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	J'adore les types forts et silencieux. Venez ici !	}{	J'adore les types forts et silencieux. Venez ici !	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Silencieux mais charmant. Frottons nos corps ensemble d'une manière spéciale !	}
+{	13	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Au diable je m'en fous.	}{	Au diable je m'en fous.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Je suis dingue, vous ne voulez pas savoir ce que je ferai pour vous !	}{	Je suis dingue, vous ne voulez pas savoir ce que je ferai pour vous !	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Oh, cela ne peut pas être pire que ce qui m'est déjà arrivé !	}{	Oh, cela ne peut pas être pire que ce qui m'est déjà arrivé !	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Ouais ?		}{	Ouais ?		}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Je suis de retour.	}{	Je suis de retour.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nous y sommes à nouveau.	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	(Starting Condition)	}{	}{	31	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	(Starting Condition)	}{	}{	41	}{	G.Doll5_Seduce == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

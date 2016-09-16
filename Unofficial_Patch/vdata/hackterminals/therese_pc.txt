@@ -1,0 +1,102 @@
+TerminalDefinition
+{
+	"screen saver"		"L'Asylum"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+
+	"email_password"	"1baroness3"		// the user must type this to access email from this terminal
+	"email_username"	"TVoerman"
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"L'Asylum"
+		"line1"		"Bonsoir, Mlle Voerman"
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+	SubDir
+	{
+		"name"			"Contacts"			
+		"password"		"business"		
+		"description"		"Associés"	 	
+
+		Function
+		{
+			"name"		"LaCroix"	
+			"description"	"Sebastian LaCroix"	
+			"runtext"	"(213) 555-4508, Ext 702, Prince de la Camarilla de LA."
+		}
+
+		Function
+		{
+			"name"		"Tung"	
+			"description"	"Bertram Tung"		
+			"runtext"	"bertram@schrecknet.vtm, Nosferatu local."
+		}
+
+		Function
+		{
+			"name"		"Johnson"	
+			"description"	"Julian Johnson"	
+			"runtext"	"(310) 555-3657, jj@cconstruction.vtm, Community Construction"
+		}
+
+		Function
+		{
+			"name"		"Miller"			
+			"description"	"Jeff \"The Flow\" Miller"	
+			"runtext"	"(213) 555-2617, theflow@undergroundsound.vtm, disc jockey"
+		}
+
+		Function
+		{
+			"name"		"Vandal"	
+			"description"	"Vandal"	
+			"runtext"	"(310) 555-7280, responsable de la banque du sang"
+		}
+
+		Function
+		{
+			"name"		"LaBeau"	
+			"description"	"Pierre LaBeau"		
+			"runtext"	"(818) 555-9072, Coordinateur artistique"
+		}		
+	}
+
+	Email
+	{
+		"subject"	"Nectar des dieux"
+		"sender"	"Vandal Cleaver"	
+		"body"		"Mme Voerman, votre humble serviteur a fait de son mieux pour vous apporter une nouvelle cuvée des meilleurs nectars sanguins. Et je m'excuse de ne pas les avoir versés comme il fallait la dernière fois. Pardonnez-moi. Contrairement à vous, je ne suis qu'un être imparfait."
+
+	}
+
+	Email
+	{
+		"subject"	"Construction interrompue"
+		"sender"	"Julian Johnson"	
+		"body"		"Ecoutez, Mlle Voerman. Je suis désolé mais les hommes ne veulent plus bosser ici. Ils disent que c'est hanté."
+
+	}
+
+	Email
+	{
+		"subject"	"Re : Santa Monica est MA ville !"
+		"sender"	"Jeanette"	
+		"body"		"Pourquoi es-tu aussi méchante ? Bertie n'est pas un si mauvais type quand on le connaît. C'est toi qui es répugnante !"
+		"dependency"	"G.Therese_Quest >= 1"	// changed by wesp
+	}
+
+	Email
+	{
+		"subject"	"Re : Santa Monica est MA ville !"
+		"sender"	"Jeanette"
+		"body"		"C'est ton attitude de garce qui nous sépare. Et si tu allais te rafraîchir un peu dans le Pacifique à la recherche de ton pendentif ?"
+		"dependency"	"G.Therese_Quest > 2"	// changed by wesp
+	}
+
+}

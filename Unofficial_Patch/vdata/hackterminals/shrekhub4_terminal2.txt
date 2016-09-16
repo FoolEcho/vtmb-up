@@ -1,0 +1,34 @@
+TerminalDefinition
+{
+	"screen saver"		"Kamikazi Zen"				// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""					// these surround the command prompt (2 characters), changed by wesp
+
+
+									// the user must type this to access email from this terminal
+	"email_username"	"shinto-X"
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"shinto-X"  
+	}
+	
+	Email
+	{
+		"subject"	"BORDEL !"				
+		"sender"	"SCUDmuffin@Kamikazi.vtm"
+		"body"		"HE ! J'ai perdu ce foutu code d'accès pour revenir dans la salle du serveur. Tu peux me le renvoyer ? Oh et ce soir, à Slaughter Grudge, je vais te tuer.
+
+--SCUDmuffin"
+	}
+
+	Email
+	{
+		"subject"	"Re : Re : BORDEL !"				
+		"sender"	"SCUDmuffin@Kamikazi.vtm"
+		"body"		"Que dalle, ouais, je planque jamais avec l'Uber-Cannon. T'as qu'à en parler à ton pote NuM-Nutz. Quand je lui aurai REZ-sticulé le fondement.
+
+
+--SCUDmuffin"
+	}
+}

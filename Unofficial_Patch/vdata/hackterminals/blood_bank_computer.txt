@@ -1,0 +1,42 @@
+TerminalDefinition
+{
+	"screen saver"		"Banque du sang Santa Monica"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Banque du sang Santa Monica"  
+	}
+
+	SubDir
+	{
+		"name"			"Congélateurs"
+		"password"		"ambrosia"
+		"description"		"Commandes congélateur"
+
+		Function
+		{
+			"name"		"Temp."
+			"description"	"Contrôle"
+			"runtext"	"Congélateur 1 : -10 degrés Celsius    Congélateur 2 : -12 degrés Celsius   Congélateur 3 : -2 degrés Celsius"
+		}
+
+		Function
+		{
+			"name"		"Code"
+			"description"	"Code"
+			"dependency"	"G.E_Quest < 2"
+			"runtext"	"Erreur lors de l'extraction de données. Contacter administrateur."
+		}
+
+		Function
+		{
+			"name"		"Code"
+			"description"	"Code"
+			"dependency"	"G.E_Quest == 2"
+			"runtext"	"1969"
+			"runscript"	"freezerCode()"
+		}
+	}
+}

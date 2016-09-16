@@ -1,0 +1,64 @@
+{	1	}{	Ah ! Bienvenue mon frère ! Je vois que vous avez rejoint la lumière. Vous cherchez quelque chose ? La vérité, peut-être ? Vous êtes au bon endroit, mon frère. Nous avons plus de vérité que nous n'en pouvons supporter, ici. . . [rire hystérique]	}{	Ah ! Bienvenue ma soeur ! Je vois que vous avez rejoint la lumière. Vous cherchez quelque chose ? La vérité, peut-être ? Vous êtes au bon endroit, ma soeur. Nous avons plus de vérité que nous n'en pouvons supporter, ici. . . [rire hystérique]	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	21	}{	not IsClan(pc, "Malkavian")	}{	G.Vick_Q2 = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Etes-vous à la tête de la Confrérie du Neuvième Siècle ?	}{	Etes-vous à la tête de la Confrérie du Neuvième Siècle ?	}{	21	}{	not IsClan(pc, "Malkavian")	}{	G.Vick_Q2 = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	C'est vous, la cause de toute cette maladie, n'est-ce pas ?	}{	C'est vous, la cause de toute cette maladie, n'est-ce pas ?	}{	11	}{	}{	G.Vick_Q1 = 1	}{	}{	}{	}{	}{	}{	}{	Ah! Le démagogue porteur de peste!	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[Tousse] Maladie ? Mon frère, ouvrez votre esprit ! La peste des uns est la rédemption des autres ! Ici, au sein de la Confrérie du Neuvième Cercle, nous nous sommes défaits de ces étiquettes terrestres ! Venez ! Partagez notre divine communion.	}{	[Tousse] Maladie ? Ma soeur, ouvrez votre esprit ! La peste des uns est la rédemption des autres ! Ici, au sein de la Confrérie du Neuvième Cercle, nous nous sommes défaits de ces étiquettes terrestres ! Venez ! Partagez notre divine communion.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	21	}{	Humanity 6 & G.Vick_Q2 == 0	}{	G.Vick_Q2 = 1	}{	}{	}{	}{	}{	}{	}{	Dites-moi votre nom, vous qui portez la maladie !	}
+{	13	}{	Vous êtes celui à qui je dois parler pour me joindre à vous ?	}{	Vous êtes celui à qui je dois parler pour me joindre à vous ?	}{	21	}{	Humanity -6 & G.Vick_Q2 == 0	}{	G.Vick_Q2 = 1	}{	}{	}{	}{	}{	}{	}{	Dois-je vraiment vous parler pour me joindre à ce funeste rassemblement ?	}
+{	14	}{	Vous avez mentionné les 'derniers jours'. . . Vous parlez de la Géhenne ?	}{	Vous avez mentionné les 'derniers jours'. . . Vous parlez de la Géhenne ?	}{	31	}{	G.Vick_Lastdays == 1 and G.Vick_Q3 == 0	}{	G.Vick_Q3 = 1	}{	}{	}{	}{	}{	}{	}{	Vos jours se termineront-ils aussi par la Géhenne ?	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Je suis l'Evêque Vick, Gardien des Ames, et je vous guiderai dans la nuit de nos derniers jours sur cette terre. Le sentez-vous, mon frère ? Le rideau se retire enfin, sous ma main, sous la main de la Confrérie du Neuvième Cercle.	}{	Je suis l'Evêque Vick, Gardien des Ames, et je vous guiderai dans la nuit de nos derniers jours sur cette terre. Le sentez-vous, ma soeur ? Le rideau se retire enfin, sous ma main, sous la main de la Confrérie du Neuvième Cercle.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Vick_Lastdays = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Les derniers jours sur Terre. . . vous parlez de la Géhenne ?	}{	Les derniers jours sur Terre. . . vous parlez de la Géhenne ?	}{	31	}{	G.Vick_Q3 == 0	}{	G.Vick_Q3 = 1	}{	}{	}{	}{	}{	}{	}{	Vos jours se termineront-ils aussi par la Géhenne ?	}
+{	25	}{	C'est vous qui avez répandu tant de maladie ?	}{	C'est vous qui avez répandu tant de maladie ?	}{	11	}{	G.Vick_Q1 == 0	}{	G.Vick_Q1 = 1	}{	}{	}{	}{	}{	}{	}{	Voilà donc l'abomination démagogue qui répand toute cette maladie !	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	La Géhenne ? Le Jugement Dernier ? L'Apocalypse ? Une fois de plus, mon frère, vous êtes trop endoctriné par les croyances dépassées de ce monde matériel. Rien n'a de raison, il n'y a pas de dieux terribles et tout-puissants qui observent leurs enfants.	}{	La Géhenne ? Le Jugement Dernier ? L'Apocalypse ? Une fois de plus, ma soeur, vous êtes trop endoctrinée par les croyances dépassées de ce monde matériel. Rien n'a de raison, il n'y a pas de dieux terribles et tout-puissants qui observent leurs enfants.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	(Auto-Link)	}{	(Auto-Link)	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Vous parlez de maladie, mais que dites-vous de la maladie que nous portons tous les deux, notre chair refaite, une abomination, nourrie du sang de nos frères et soeurs comme autant d'animaux. Quel dieu est venu à mon aide quand ce démon m'a déchiré le cou pour faire de moi le monstre que vous voyez ?	}{	Vous parlez de maladie, mais que dites-vous de la maladie que nous portons tous les deux, notre chair refaite, une abomination, nourrie du sang de nos frères et soeurs comme autant d'animaux. Quel dieu est venu à mon aide quand ce démon m'a déchiré le cou pour faire de moi le monstre que vous voyez ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	(Auto-Link)	}{	(Auto-Link)	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Non, mon frère, Aucun dieu ne tolérerait une telle chose. Aussi suis-je devenu dieu, et les maladies que je transmets aux masses amèneront ma propre apocalypse, jusqu'à ce que nous ayons franchi le Neuvième Cercle. . .	}{	Non, ma soeur. Aucun dieu ne tolérerait une telle chose. Aussi suis-je devenu dieu, et les maladies que je transmets aux masses amèneront ma propre apocalypse, jusqu'à ce que nous ayons franchi le Neuvième Cercle. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Vous avez perdu la tête, Vick. C'est de la folie.	}{	Vous avez perdu la tête, Vick. C'est de la folie.	}{	61	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Votre vision est plus insane encore que la mienne. Détournez-vous de cette voie, évêque malfaisant !	}
+{	53	}{	Je comprends vos sentiments quant au vampirisme. Mais il n'y a rien à faire.	}{	Je comprends vos sentiments quant au vampirisme. Mais il n'y a rien à faire.	}{	61	}{	Humanity 6 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	Cela me va. Vous avez une application, quelque chose ?	}{	Cela me va. Vous avez une application, quelque chose ?	}{	61	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	Moi aussi je souhaiterais chevaucher cette vague maléfique, oh Prêtre du Macabre !	}
+{	55	}{	Je pense que cela me dépasse un peu. Je vais y aller. . .	}{	Je pense que cela me dépasse un peu. Je vais y aller. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cette réunion conviendrait sans doute mieux à des délibérateurs. . .	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	L'époque des mots n'est plus depuis longtemps, mon frère. Vous et moi, nous ferons ces derniers pas ensemble, et verrons quelle vérité se tient en coulisse. Que la nuit recouvre à jamais cette terre maudite, et que les fruits de mes labeurs nous apportent une longue et sanglante moisson !	}{	L'époque des mots n'est plus depuis longtemps, ma soeur. Vous et moi, nous ferons ces derniers pas ensemble, et verrons quelle vérité se tient en coulisse. Que la nuit recouvre à jamais cette terre maudite, et que les fruits de mes labeurs nous apportent une longue et sanglante moisson !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Allons-y, Vick !	}{	Allons-y, Vick !	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Je viens guérir vos maléfices viraux, Vick ! MOUREZ !	}
+{	63	}{	Attendez, nous pourrions en discuter.	}{	Attendez, nous pourrions en discuter.	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Ne pouvons-nous laisser les mots résoudre cette bataille ?	}
+{	64	}{	Cela me paraissait être une bonne idée, mais voilà que vous me mettez en colère. . .	}{	Cela me paraissait être une bonne idée, mais voilà que vous me mettez en colère. . .	}{	0	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	J'irai cracher sur vos cendres, l'Evêque.	}

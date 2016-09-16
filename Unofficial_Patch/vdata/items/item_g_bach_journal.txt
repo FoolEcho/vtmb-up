@@ -1,0 +1,82 @@
+
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	
+	"infomodel"	"models/items/Diary/Info/Info_Diary.mdl"
+	"playermodel"	"models/items/Diary/Ground/Diary.mdl"
+	
+	"anim_prefix"	" "
+
+	"printname"	"Journal"
+	"description"	"Ce journal porte les initiales G.B.
+
+			Nous avons suivi LaCroix à Los Angeles. Il s'est abrité dans l'Ivory Tower, se cachant derrière la façade d'une affaire honnête tout en commandant à ses légions damnées sous le couvert de la nuit. Je prie que le Seigneur me donne la force en ces prochains jours, mais une ombre pèse sur mon coeur comme les ailes noires de Lucifer. Ce n'est pas LaCroix que je crains, ni ses séides, mais mon coeur se serre tout de même de peur. Un mal ancien se réveille. Que Dieu me donne la force de le combattre.
+
+			Me suis réveillé ce matin, et le soleil sur mon visage ne m'a fait aucun bien. Nous avons perdu trois frères hier dans une cruelle bataille avec quelques séides du vampire qui se fait appeler Alistair Grout. Nous n'avons pas pu trouver son antre, mais ce n'est qu'une question de temps. Que Dieu ait pitié de l'âme de nos frères.
+			
+			Le mystère entourant le Sarcophage d'Ankara et le massacre de l'Elizabeth Dane troublent mes supérieurs. On m'a promis un colis qui pourrait éclairer en partie cet artefact. Il semble arriver trop à point nommé au vu de la venue récente de LaCroix. Quelque chose n'est pas normal, mais j'ignore quelles machinations sont en branle. Je vais attendre, ayant foi que le Seigneur nous protège.
+			
+			Nous avons fini par dénicher le refuge d'Alistair Grout, mais nous sommes arrivés trop tard. . . Le démon avait déjà été envoyé en enfer avant que je puisse l'éliminer. J'ai croisé un jeune vampire qui paraissait ignorer son trépas. Sans doute l'un de ses sous-fifres rendant visite au maître. J'ai éliminé ce démon et détruit la maison. Je remercie Dieu de continuer de veiller sur moi et sur la Confrérie.
+			
+			Beaucoup d'agitation en ville chez les vampires. L'arrivée de LaCroix est-elle mal perçue par les autres damnés ? Je l'ignore, et m'en moque. Ils brûleront tous, de ma main ou de celle du père.
+			
+			Le Sarcophage d'Ankara a été volé hier dans le Muséum d'histoire naturelle. Le rapport de police me mène à croire que l'enfant du démon était derrière cet acte. Le livre que j'ai reçu hier du Vatican ne fait que renforcer cette théorie. Je sais à présent que nous voyons peut-être la fin des temps, l'heure du dernier combat a peut-être sonné.
+			
+			J'ai rêvé de LaCroix la nuit dernière, de son visage hideux réduit en cendres dans un grand brasier. J'espère que c'était une vision envoyée par Dieu, et que je serai l'outil de sa sainte vengeance. Les années ont été longues, trop longues. L'âme de mon père pourra peut-être enfin reposer en paix. 
+			
+			Frère Kriegler nous a fait part de troubles dans le nid de vampires que nous observons, dans cette maison d'Hollywood. Il paraît qu'une fête a été interrompue. Il ne pouvait rien dire de plus, mais je sens là la main de LaCroix. Très bien. Que ces démons s'entre-dévorent jusqu'au dernier.
+			
+			Des incendies à Griffith Park la nuit dernière. J'ignore leur origine, mais je crains le pire. J'ai reçu une lettre de Sa Sainteté, me prévenant qu'il a peur que l'Apocalypse soit proche. Ma mission est plus urgente que jamais. Je garde ses paroles contre mon coeur, et je lutterai pour le bien jusqu'à ne plus tenir debout.
+			
+			J'ai fait sortir Johansen de sa chambre d'hôtel hier soir, et je l'ai amené ici, au monastère. Je suis convaincu que LaCroix va essayer de le trouver, puisqu'il est le seul à avoir quelque connaissance sur la façon d'ouvrir l'artefact. Les Frères sont prévenus qu'un assaut est probable contre le monastère, et ils sont prêts à mourir pour Sa Gloire, comme je le suis moi-même. Que le Saint Père nous bénisse en ces jours derniers, et que les enfants de Satan brûlent à jamais dans les feux de l'enfer. Amen.
+			
+
+
+	"bucket"		"1"
+	"bucket_position"	"2"
+
+	"camera_class"		"noswitch"
+	"is_wieldable"		"0"
+	"weight"		"1"
+	"item_flags"		"1"
+	"item_type"		"powerup"
+	"item_worth"		"-1"
+	"is_visible_in_hud"		"1"
+
+	SoundData
+	{
+		"pickup"
+		{
+			"sound1"	"items/Book/Pickup.wav"
+		}
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	SpriteData
+	{
+		"weapon"
+		{
+			"640"
+			{
+				"file"	"hud/Inventory_Images/General_Items/Diary_SEL"
+				"x"		"0"
+				"y"		"0"
+				"width"	"100"
+				"height"	"64"
+			}
+		}
+		"weapon_s"
+		{
+			"640"
+			{
+				"file"	"hud/Inventory_Images/General_Items/Diary"
+				"x"		"0"
+				"y"		"0"
+				"width"	"100"
+				"height"	"64"
+			}
+		}
+	}
+}

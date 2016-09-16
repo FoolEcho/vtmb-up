@@ -1,0 +1,119 @@
+TerminalDefinition
+{
+	"screen saver"		"Forceps n'est pas jouer !"	// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+	"email_username"	"dboyle"		// printed at the top of the email window, not used for log in. 
+	"email_password"	"lakers"		// printed at the top of the email window, not used for log in. 
+
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Console sécurisée S.M.M.C."
+		"line1"		"Bureaux administratifs"
+		"line2"		"Danny Boyle, Administrateur"
+
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+
+
+	SubDir
+	{
+		"name"			"Personnel"
+		"description"		"Informations confidentielles"	
+
+		Function
+		{
+			"name"		"Flabottom, P"
+			"description"	"Registre des employés"	
+			"runtext"	"Phil Flabottomus est un employé loyal et un bon travailleur mais il semble avoir des problèmes digestifs qui causent, hélas, un taux de flatulence disproportionné. L'odeur de ce phénomène est tout simplement épouvantable. Nous allons devoir faire quelque chose."
+		}
+
+		Function
+		{
+			"name"		"Bill, E"
+			"description"	"Registre des employés"	
+			"runtext"	"Dr Bill a travaillé dans cette clinique en tant qu'interne depuis 1999."
+		}
+		
+		Function
+		{
+			"name"		"St. Martin, M"
+			"description"	"Registre des employés"	
+			"runtext"	"Malcolm St.Martin est notre médecin en chef de l'équipe de nuit."
+		}
+
+		Function
+		{
+			"name"		"Roberts, D"
+			"description"	"Registre des employés"	
+			"runtext"	"N'a jamais perdu de patient. Personne ne peut remplacer le Dr Roberts."
+		}
+
+		Function
+		{
+			"name"		"Thornton, K"
+			"description"	"Registre des employés"	
+			"runtext"	"Plusieurs procès pour erreur médicale pour avoir pratiqué des examens gynécologiques inutiles. Licenciement recommandé."
+		}
+
+	}
+
+	Email
+	{
+		"subject"	"Besoin d'aide"
+		"sender"	"Fred Dingo"
+		"body"		"Salut, Danny. J'aurais besoin de ton aide. Peux-tu aller me chercher de la morphine dans la salle des substances contrôlées ? J'ai pas le temps. Merci. F-dog."
+		"dependency"	"G.Werewolf_Quest ==  0"
+	}
+		
+	Email
+	{
+		"subject"	"Re : Yo mama"
+		"sender"	"Fred Dingo"
+		"body"		"Non, ce n'est pas pour moi, crétin. . . :) Je ne savais pas qu'ils étaient à l'étage. Tu peux peut-être en trouver dans le bureau de Malcolm. Au fait, ta mère porte des bottes de combat. F-dog."
+		"dependency"	"G.Werewolf_Quest ==  0"
+	}
+	Email
+	{
+		"subject"	"Re : Amnésie"
+		"sender"	"Fred Dingo"
+		"body"		"Oh, bon sang, c'est froid. Mais je penserai à frapper avant d'entrer. Je déteste le trouver en plein milieu d'un 'examen pelvien'. Et au fait. . . dis à ta mère d'arrêter de m'appeler. F-dog."
+		"dependency"	"G.Werewolf_Quest ==  0"
+	}
+
+	Email
+	{
+		"subject"	"Echantillon de sang étrange"
+		"sender"	"Fred Dingo"
+		"body"		"Hé, Danny. On a reçu un échantillon de sang intéressant de la part de quelqu'un du Sun. Un espère de taré lui a dit que c'était du sang de 'loup-garou'. T'y crois toi ? Bref, de toute façon on est payé pour ça, pourras-tu t'en occuper ? Merci. F-dog."
+		"dependency"	"G.Werewolf_Quest ==  1"
+	}
+		
+	Email
+	{
+		"subject"	"Re : Analyse sanguine"
+		"sender"	"Fred Dingo"		
+		"body"		"Comment veux-tu que je sache ce qu'il faut trouver ? Sois créatif. . . :) C'est pas la mer à boire, vérifie juste s'il n'y a pas quelque chose de bizarre. F-dog."
+		"dependency"	"G.Werewolf_Quest ==  1"
+	}
+	Email
+	{
+		"subject"	"Re : Où il est ?"
+		"sender"	"Fred Dingo"		
+		"body"		"Oh, désolé. L'échantillon se trouve dans le coffre-fort électronique dans la salle des substances contrôlées. Hé, on va se faire quelques passes ce week-end ? F-dog."
+		"dependency"	"G.Werewolf_Quest ==  1"
+	}
+	Email
+	{
+		"subject"	"Re : Fais gaffe à toi"
+		"sender"	"Fred Dingo"
+		"body"		"Bordel, tu sais quoi ? Phil a changé son mot de passe il y a quelques heures. Maintenant c'est le nom de son petit secret. Oups ! J'ai dit quelque chose ? Tu ferais mieux d'effacer tout ça après l'avoir lu ! On se retrouve au parc samedi matin. F-dog."
+		"dependency"	"G.Werewolf_Quest ==  1"
+	}
+}

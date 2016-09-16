@@ -1,0 +1,73 @@
+{	1	}{	Ooooh, mais qui est-ce là ? Vous avez vu la lumière, beauté ? Vous venez chercher la lumière que seule Jezebel peut vous apporter ?	}{	Ooooh, mais qui est-ce là ? Vous avez vu la lumière, beauté ? Vous venez chercher la lumière que seule Jezebel peut vous apporter ?	}{	#	}{	}{	G.Jezebel_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Vous êtes donc Jezebel Locke ?	}{	Vous êtes donc Jezebel Locke ?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	C'est vous la méchante reine ?	}{	C'est vous la méchante reine ?	}{	71	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Oui, je suis Jezebel. Et j'ai tant de choses à vous faire voir, petit être. Si belles et si sales. Vous ne voulez pas entrer dans mon boudoir ?	}{	Oui, je suis Jezebel. Et j'ai tant de choses à vous faire voir, petit être. Si belles et si sales. Vous ne voulez pas entrer dans mon boudoir ?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Qu'est-ce qui se passe par ici ?	}{	Qu'est-ce qui se passe par ici ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Vous m'attirez, étrangement. . .	}{	Vous m'attirez, étrangement. . .	}{	21	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Bien sûr. Euh. . . vous avez fait un test, récemment ?	}{	Bien sûr. Euh. . . vous avez fait un test, récemment ?	}{	21	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	Ouais. J'arrive, et la mort m'accompagne. . .	}{	Ouais. J'arrive, et la mort m'accompagne. . .	}{	31	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	Vous êtes canon, mais je préfère autant vous tuer. . .	}{	Vous êtes canon, mais je préfère autant vous tuer. . .	}{	31	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Allons, ne vous privez pas du plaisir que vous apporteront les talents de Jezebel. Quelques pas, et nous pourrons nous envelopper dans les ténèbres les plus douces, devenir esclaves du désir de notre chair perdue.	}{	Allons, ne vous privez pas du plaisir que vous apporteront les talents de Jezebel. Quelques pas, et nous pourrons nous envelopper dans les ténèbres les plus douces, devenir esclaves du désir de notre chair perdue.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Désolé. J'ai oublié mon petit chapeau. . .	}{	Volontiers, mais j'ai oublié ma pénicilline.	}{	31	}{	Humanity 6 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	J'ai oublié d'apporter le petit chapeau de Jim..	}{	J'ai oublié d'apporter le petit chapeau de Jim.	}{	31	}{	Humanity 6 & IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Tentant, je l'admets.	}{	Tentant, je l'admets.	}{	31	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	Votre reproduction virale présente une étrange attraction. . .	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Vous ne pourrez pas m'échapper. D'une façon ou d'une autre, vous et moi nous unirons sur le chemin du Neuvième Cercle. Et je vous enverrai dans le monde, portant la douce maladie qui est en moi.	}{	Vous ne pourrez pas m'échapper. D'une façon ou d'une autre, vous et moi nous unirons sur le chemin du Neuvième Cercle. Et je vous enverrai dans le monde, portant la douce maladie qui est en moi.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Laissez-moi deviner, vous faites partie de la Confrérie du Neuvième Cercle ?	}{	Laissez-moi deviner, vous faites partie de la Confrérie du Neuvième Cercle ?	}{	41	}{	Humanity 6 & G.Kanker_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous portez aussi les Neuf Anneaux ?	}
+{	33	}{	Super. Encore une fanatique avec un problème d'attitude.	}{	Super. Encore une fanatique avec un problème d'attitude.	}{	41	}{	Humanity 6 & G.Kanker_Know == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez l'air d'une minette qui sirote de la limonade empoisonnée.	}
+{	34	}{	Alors je peux enfin rejoindre la Confrérie ? Très bien !	}{	Alors je peux enfin me joindre à vous ? Génial !	}{	41	}{	Humanity -6 & G.Kanker_Know == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	Eh ! Vous êtes avec les mecs de la Confrérie, non ? Super cool !	}{	Eh ! Vous êtes avec les mecs de la Confrérie, non ? Super cool !	}{	41	}{	Humanity -6 & G.Kanker_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je enfin me joindre à votre cercle d'ombres, ma Reine ?	}
+{	36	}{	Pour que je meure, comme Hannah et ses amies ?	}{	Pour que je meure, comme Hannah et ses amies ?	}{	61	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Je ne souhaite pas porter la même chape de ténèbres que la femme payée.	}
+{	37	}{	Je ne me plains pas, mais vous ne préférez pas les traînées comme Hannah ?	}{	Je ne me plains pas, mais vous ne préférez pas les traînées comme Hannah ?	}{	61	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	Vous préférez les femmes payées. Non ?	}
+{	38	}{	Cela dure depuis trop longtemps. La seule solution sera finale. La mort.	}{	Cela dure depuis trop longtemps. La seule solution sera finale. La mort.	}{	0	}{	Humanity 6	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Je vais vous faire goûter à la mort, sombre Reine.	}
+{	39	}{	Bonne idée, mais vous commencez à m'agacer. MEURS, CHIENNE !	}{	Bonne idée, mais vous commencez à m'agacer. MEURS, CHIENNE !	}{	0	}{	Humanity -6	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Sombre est mon âme, mais plus sombres encore seront vos rêves en Enfer. MOUREZ !	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Oui, je suis la voie du Neuvième Cercle ! Venez vous joindre à ceux qui ont vu la lumière, acceptez vos instincts animaux, jusqu'à ce que les vampires et le bétail gisent tous deux épuisés à notre autel. Le désir sera notre vérité, le désir et la mort qui le suit.	}{	Oui, je suis la voie du Neuvième Cercle ! Venez vous joindre à ceux qui ont vu la lumière, acceptez vos instincts animaux, jusqu'à ce que les vampires et le bétail gisent tous deux épuisés à notre autel. Le désir sera notre vérité, le désir et la mort qui le suit.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Hélas, cela doit cesser, Jezebel. Vous mettez la Mascarade en danger !	}{	Hélas, cela doit cesser, Jezebel. Vous mettez la Mascarade en danger !	}{	51	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Vous nous dévoilez tous, sirène pervertie !	}
+{	43	}{	Qu'espérez-vous accomplir de la sorte ?	}{	Qu'espérez-vous accomplir de la sorte ?	}{	51	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Cette terrible quête n'a nulle raison d'être.	}
+{	44	}{	Puis-je enfiler quelque chose de plus confortable ?	}{	Puis-je enfiler quelque chose de plus confortable ?	}{	51	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	Je désire plonger dans ces vérités fatales à vos côtés, sombre Reine !	}
+{	45	}{	Vous êtes aussi folle que Frère Kanker. Et maintenant, vous allez mourir comme lui.	}{	Vous êtes aussi folle que Frère Kanker. Et maintenant, vous allez mourir comme lui.	}{	0	}{	Humanity 6 & G.Kanker_Know == 1	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Vous mourrez, comme votre Frère Ténébreux avant vous !	}
+{	46	}{	Je n'écoute pas les nymphomanes vampires à tendance psychopathe. Pardonnez-moi.	}{	Je n'écoute pas les nymphomanes vampires à tendance psychopathe. Pardonnez-moi.	}{	0	}{	Humanity 6 & G.Kanker_Know == 0	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Vous serez le seul agneau sacrifié !	}
+{	47	}{	Non, je préfère me rouler une cigarette avec vos cendres, chienne.	}{	Non, je préfère me rouler une cigarette avec vos cendres, chienne.	}{	0	}{	Humanity -6	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Je fumerai une pipe pleine de vos cendres, chienne.	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Je ne puis plus contrôler mon appétit. Venez ! La vérité vous paraîtra bientôt manifeste quand je boirai le sang de votre corps mort deux fois. Ce sera une extase, créature, une fabuleuse extase.	}{	Je ne puis plus contrôler mon appétit. Venez ! La vérité vous paraîtra bientôt manifeste quand je boirai le sang de votre corps mort deux fois. Ce sera une extase, créature, une fabuleuse extase.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	Whisper("Threat")	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Vous avez goûté votre dernière friandise, Jezebel !	}{	Vous avez goûté votre dernière friandise, Jezebel !	}{	0	}{	Humanity 6 & G.Kanker_Know == 0	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Je jetterai vos cendres aux feux de l'Enfer !	}
+{	53	}{	Vous allez retrouver Frère Kanker. En Enfer.	}{	Vous allez retrouver Frère Kanker. En Enfer.	}{	0	}{	Humanity 6 & G.Kanker_Know == 1	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Votre chair alimentera les flammes de l'enfer, comme celle de votre Frère Ténébreux avant vous !	}
+{	54	}{	Vous n'êtes qu'une dingue de vampire en chaleur. Ce qui n'est généralement pas si mal. Tant pis.	}{	Vous n'êtes qu'une dingue de vampire en chaleur. Ce qui n'est généralement pas si mal. Tant pis.	}{	0	}{	Humanity -6	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Dansons jusqu'à ce que l'un de nous s'endorme dans les bras du démon.	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Qui mieux que des prostituées pourrait transmettre mon sombre présent ? Ne le partageront-elles pas avec tous ceux qui se délectent des plaisirs de la chair ?	}{	Qui mieux que des prostituées pourrait transmettre mon sombre présent ? Ne le partageront-elles pas avec tous ceux qui se délectent des plaisirs de la chair ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Vous êtes avec la Confrérie du Neuvième Cercle ?	}{	Vous êtes avec la Confrérie du Neuvième Cercle ?	}{	41	}{	Humanity 6 & G.Kanker_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous portez aussi les Neuf Anneaux ?	}
+{	63	}{	Vous êtes malade, tout simplement. Il faut vous achever.	}{	Vous êtes malade, tout simplement. Il faut vous achever.	}{	0	}{	Humanity 6 & G.Kanker_Know == 0	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Je dois libérer le monde de vos manigances infectieuses !	}
+{	64	}{	Oui, cela paraît inoffensif, mais je préfère vous arracher la tête.	}{	Oui, cela paraît inoffensif, mais je préfère vous arracher la tête.	}{	0	}{	Humanity -6	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Croyez-moi, je me réjouirai de votre corps sans tête, sombre Reine !	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Reine ? Ah oui, je suis Jezebel, Jezebel Locke. Vous êtes membre des Malkaviens, n'est-ce pas ? Vos paroles étranges, vos yeux noyés de vision qu'ils ne comprennent pas. Dansez avec Jezebel, petite créature.	}{	Reine ? Ah oui, je suis Jezebel, Jezebel Locke. Vous êtes membre des Malkaviens, n'est-ce pas ? Vos paroles étranges, vos yeux noyés de vision qu'ils ne comprennent pas. Dansez avec Jezebel, petite créature.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Je préférerais me percer la langue au fil barbelé.	}{	Je préférerais me percer la langue au fil barbelé.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	Vous êtes une beauté sombre et dangereuse, sans égale.	}{	Vous êtes une beauté sombre et dangereuse, sans égale.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

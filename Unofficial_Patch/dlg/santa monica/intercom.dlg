@@ -1,0 +1,24 @@
+{	1	}{	Oui ? Je peux vous aider ?	}{	Oui ? Je peux vous aider ?	}{	#	}{	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Je suis en quête de sang. . .	}{	Je suis en quête de sang. . .	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Seulement si vous avez une camisole. . .	}
+{	3	}{	Un peu de crème solaire, ce serait bien. . .	}{	Un peu de crème solaire, ce serait bien. . .	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	A laquelle de mes personnalités parlez-vous ?	}
+{	4	}{	Euh. . . Je ne crois pas. . .	}{	Euh. . . Je ne crois pas. . .	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le destin répond souvent par le silence.	}
+{	5	}{	Bonjour. . . Nous nous sommes parlés au téléphone il n'y a pas longtemps.	}{	Bonjour. . . Nous nous sommes parlés au téléphone il n'y a pas longtemps.	}{	21	}{	G.Gimble_Phone == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ah : le seigneur des membres !	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[Click]. . .	}{	[Click]. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Gimble_Vandal == 0 and G.Gimble_Leave == 0	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	13	}{	Personne à la maison?	}{	Personne à la maison?	}{	0	}{	G.Gimble_Vandal == 1 or G.Gimble_Leave == 1	}{	G.Gimble_Open = 1; G.Phone_Call = 1; G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	Seul à la maison...	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Oh, bien, bien. Je vous fais entrer.	}{	Oh, bien, bien. Je vous fais entrer.	}{	#	}{	}{	G.Gimble_Open = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Merci.	}{	Merci.	}{	0	}{	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	Vous alliez dire quelque chose, mais c'était une sonnerie. . .	}
+{	23	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	(Starting Condition)	}{	}{	11	}{	G.Gimble_Vandal == 1 or G.Gimble_Leave == 1	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}

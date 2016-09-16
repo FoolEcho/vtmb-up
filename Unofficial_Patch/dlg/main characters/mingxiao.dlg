@@ -1,0 +1,886 @@
+{	1	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	[air glacial, strict, vindicatif, condescendant. Parle d'un ton sec. Faux accent anglais. Comme Julianne Moore dans le rôle de Maude Lebowski dans The Big Lebowski.]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Bienvenue, vampire, et merci de respecter nos traditions en annonçant votre présence dans notre domaine. Je suis Ming-Xiao, grande prêtresse du peuple de Chinatown. Vous désirez quelque chose ? Du thé peut-être ?	}{	Bienvenue, vampire, et merci de respecter nos traditions en annonçant votre présence dans notre domaine. Je suis Ming-Xiao, grande prêtresse du peuple de Chinatown. Vous désirez quelque chose ? Du thé peut-être ?	}{	#	}{	}{	G.Ming_Met = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Non, pas de thé, merci.	}{	Non, pas de thé, merci.	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	J'aimerais en apprendre davantage sur votre peuple. . .	}{	J'aimerais en apprendre davantage sur votre peuple. . .	}{	251	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Il faut que vous sachiez. . . J'ai tué un de vos espions à Santa Monica.	}{	Il faut que vous sachiez. . . J'ai tué un de vos espions à Santa Monica.	}{	741	}{	not IsClan(pc,"Malkavian") and G.Kjspy_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	Assez de bavardages. Je cherche un vampire Nosferatu. . .	}{	Assez de bavardages. Je cherche un vampire Nosferatu. . .	}{	21	}{	not IsClan(pc,"Malkavian")	}{	G.Ming_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	J'ai quelques questions pour vous.	}{	J'ai quelques questions pour vous.	}{	281	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	Ah ! La Maîtresse des Miroirs !	}{	Ah ! La Maîtresse des Miroirs !	}{	801	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	[d'un air détaché]Je vous en prie, pas la peine d'être si brusque.	}{	[d'un air détaché]Je vous en prie, pas la peine d'être si brusque.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	C'est ça, m'dame. Dites-moi juste ce que je veux savoir, et je file !	}{	C'est ça, m'dame. Dites-moi juste ce que je veux savoir, et je file !	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai rien à vous dire, enfant des dévoreurs de vie.	}
+{	23	}{	Oui, bien sûr. Pardon, Ming-Xiao, je m'oublie.	}{	Oui, bien sûr. Pardon, Ming-Xiao, je m'oublie.	}{	31	}{	}{	G.Ming_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	Pardonnez ma langue agile, maîtresse des miroirs.	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Très bien. En dépit de l'hostilité qui règne entre nos peuples, je pense qu'un agent du prince sait se montrer courtois. Puis-je vous offrir quelque chose ?	}{	Très bien. En dépit de l'hostilité qui règne entre nos peuples, je pense qu'un agent du prince sait se montrer courtois. Puis-je vous offrir quelque chose ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Non merci. J'ai un. . . régime très particulier.	}{	Non merci. J'ai un. . . régime très particulier.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis difficile dans le choix de ma nourriture.	}
+{	33	}{	Pas maintenant. Pardonnez mon laconisme mais je dois trouver ce vampire. . .	}{	Pas maintenant. Pardonnez mon laconisme mais je dois trouver ce vampire. . .	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Veuillez illuminer mon chemin vers la monstruosité manquante. . .	}
+{	34	}{	Qui dit que je travaille pour le prince ?	}{	Qui dit que je travaille pour le prince ?	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'avoue aucune collusion avec le prince bouffon. . .	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Ah, c'est vrai, votre race ne boit que le sang des mortels, n'est-ce pas ? Et vous ne pouvez plus jouir des plaisirs du monde mortel.	}{	Ah, c'est vrai, votre race ne boit que le sang des mortels, n'est-ce pas ? Et vous ne pouvez plus jouir des plaisirs du monde mortel.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Ma race ? Et quelle race est la vôtre, alors ?	}{	Ma race ? Et quelle race est la vôtre, alors ?	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de votre 'race', maîtresse des miroirs.	}
+{	43	}{	Vous le pouvez ?	}{	Vous le pouvez ?	}{	61	}{	not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Vous profitez encore de ces plaisirs ?	}
+{	44	}{	J'aimerais qu'il en soit autrement. Votre race le peut ?	}{	J'aimerais qu'il en soit autrement. Votre race le peut ?	}{	61	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	Ce n'est pas entièrement vrai.	}{	Ce n'est pas entièrement vrai.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	A bientôt.	}{	A bientôt.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. 	}
+{	50	}{	A bientôt.	}{	A bientôt.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. 	}
+{	51	}{	La plupart d'entre nous sommes également bannis du royaume du soleil. Bien que nous pourrissions au lieu de brûler, la lumière du jour n'est pas tendre pour notre existence.	}{	La plupart d'entre nous sommes également bannis du royaume du soleil. Bien que nous pourrissions au lieu de brûler, la lumière du jour n'est pas tendre pour notre existence.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Et comment commencez-vous cette existence ?	}{	Et comment commencez-vous cette existence ?	}{	91	}{	G.Ming_Breath == 0	}{	}{	}{	}{	}{	}{	}{	}{	Expliquez cette énigmatique existence.	}
+{	53	}{	Ainsi en tant que mortel vous pouvez choisir de devenir immortel ?	}{	Ainsi en tant que mortel vous pouvez choisir de devenir immortel ?	}{	101	}{	G.Ming_Breath == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez choisi cet état surnaturel ?	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	J'avais d'autres questions pour vous.	}{	J'avais d'autres questions pour vous.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	59	}{	Je m'en vais.	}{	Je m'en vais.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. 	}
+{	60	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. 	}
+{	61	}{	Oui. Nous autres Kuei-jin avons moins de points communs avec les vampires comme vous que vous ne pouvez l'imaginer.	}{	Oui. Nous autres Kuei-jin avons moins de points communs avec les vampires comme vous que vous ne pouvez l'imaginer.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Vous êtes des vampires, n'est-ce pas ?	}{	Vous êtes des vampires, n'est-ce pas ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	La malédiction de Caïn coule-t-elle dans vos veines ?	}
+{	63	}{	Les Kuei-jin ?	}{	Les Kuei-jin ?	}{	251	}{	G.Ming_Kjname == 0	}{	}{	}{	}{	}{	}{	}{	}{	Des Kuei-jin ?	}
+{	64	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	Je m'en vais.	}{	Je m'en vais.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	70	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	71	}{	Nous sommes des êtres surnaturels, ce qui ne veut pas dire que nous sommes comme vous. Nous avons été ramenés par le Second Souffle pour une certaine raison.	}{	Nous sommes des êtres surnaturels, ce qui ne veut pas dire que nous sommes comme vous. Nous avons été ramenés par le Second Souffle pour une certaine raison.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Mais nous sommes semblables.	}{	Mais nous sommes semblables.	}{	81	}{	G.Ming_Unlife == 0	}{	}{	}{	}{	}{	}{	}{	}{	Si différentes, les âmes des Kuei-Jin et des vampires ?	}
+{	73	}{	Le Second Souffle ?	}{	Le Second Souffle ?	}{	91	}{	G.Ming_Unlife == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le Second Souffle ?	}
+{	74	}{	Quelle raison ?	}{	Quelle raison ?	}{	111	}{	G.Ming_Unlife == 0	}{	}{	}{	}{	}{	}{	}{	}{	Expliquez-moi le pourquoi de ce principe.	}
+{	75	}{	Vous devez avoir beaucoup de cran pour insulter des vampires comme ça. . .	}{	Vous devez avoir beaucoup de cran pour insulter des vampires comme ça. . .	}{	131	}{	G.Ming_Unlife == 0 and G.Ming_Sorry < 2	}{	}{	}{	}{	}{	}{	}{	}{	Ne parlez pas si mal de mes frères de sang !	}
+{	76	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	77	}{	J'ai encore quelques questions sur les Kuei-jin !	}{	J'ai encore quelques questions sur les Kuei-jin !	}{	711	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Dévoilez cette énigme que sont les Kuei-Jin !	}
+{	78	}{	Il doit bien y avoir quelques points communs, non ?	}{	Il doit bien y avoir quelques points communs, non ?	}{	81	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Tant de contraste entre les vampires et les Kuei-jin ?	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Nous partageons quelques points communs de surface. Les Kuei-jin se nourrissent d'énergies que l'on trouve dans le sang, mais aussi dans le souffle ou d'autres essences. Mais à mesure que notre existence se raffine, nous nous abaissons rarement à consommer le sang ou la chair.	}{	Nous partageons quelques points communs de surface. Les Kuei-jin se nourrissent d'énergies que l'on trouve dans le sang, mais aussi dans le souffle ou d'autres essences. Mais à mesure que notre existence se raffine, nous nous abaissons rarement à consommer le sang ou la chair.	}{	#	}{	}{	G.Ming_Feed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	En quoi d'autre sommes-nous semblables ?	}{	En quoi d'autre sommes-nous semblables ?	}{	51	}{	G.Ming_Unlife == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quelles autres rivières coulent entre nous ?	}
+{	83	}{	Et comment commencez-vous cette existence ?	}{	Et comment commencez-vous cette existence ?	}{	91	}{	G.Ming_Unlife == 0 and G.Ming_Breath == 0	}{	}{	}{	}{	}{	}{	}{	}{	Expliquez cette énigmatique existence.	}
+{	84	}{	Ainsi en tant que mortel vous pouvez choisir de devenir immortel ?	}{	Ainsi en tant que mortel vous pouvez choisir de devenir immortel ?	}{	101	}{	G.Ming_Unlife == 0 and G.Ming_Breath == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez choisi cet état surnaturel ?	}
+{	85	}{	Ah, donc je suis indigne et méprisable, puisque je bois du sang ?	}{	Ah, donc je suis indigne et méprisable, puisque je bois du sang ?	}{	131	}{	G.Ming_Unlife == 0 and G.Ming_Sorry < 2	}{	}{	}{	}{	}{	}{	}{	}{	Vos lèvres lascives me traitent de larve !	}
+{	86	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	87	}{	J'ai encore quelques questions sur les Kuei-jin !	}{	J'ai encore quelques questions sur les Kuei-jin !	}{	711	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Dévoilez cette énigme que sont les Kuei-Jin !	}
+{	88	}{	C'est un goût qui s'acquiert. Je m'en vais.	}{	C'est un goût qui s'acquiert. Je m'en vais.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ne parlez pas tant que vous n'aurez pas goûté aux soupers de sang. Je vous quitte.	}
+{	89	}{	Je vois. Je regrette, mais je dois partir.	}{	Je vois. Je regrette, mais je dois partir.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Ne parlez pas tant que vous n'aurez pas goûté aux soupers de sang. Je vous quitte.	}
+{	90	}{	Je vois. Je dois partir, à présent.	}{	Je vois. Je dois partir, à présent.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vos propres fluides couleront de telles paroles, prêtresse démoniaque. Adieu.	}
+{	91	}{	Le Second Souffle est notre renaissance dans la forme surnaturelle, un éveil spirituel. Nous ne sommes pas changés par des rituels de sang censés répandre une malédiction.	}{	Le Second Souffle est notre renaissance dans la forme surnaturelle, un éveil spirituel. Nous ne sommes pas changés par des rituels de sang censés répandre une malédiction.	}{	#	}{	}{	G.Ming_Breath = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Mais nous sommes semblables.	}{	Mais nous sommes semblables.	}{	81	}{	G.Ming_Unlife == 0 and G.Ming_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nos races projettent les mêmes ombres.	}
+{	93	}{	Ainsi en tant que mortel vous pouvez choisir de devenir immortel ?	}{	Ainsi en tant que mortel vous pouvez choisir de devenir immortel ?	}{	101	}{	G.Ming_Unlife == 0 and G.Ming_Feed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez choisi cet état surnaturel ?	}
+{	94	}{	Je comprends. Vous êtes des sortes d'anges et nous des bêtes, c'est ça ?	}{	Je comprends. Vous êtes des sortes d'anges et nous des bêtes, c'est ça ?	}{	131	}{	G.Ming_Unlife == 0 and G.Ming_Sorry < 2	}{	}{	}{	}{	}{	}{	}{	}{	Méprisable est la fourchure de votre langue démoniaque ! 	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	C'est ça. Mais avez-vous choisi cette vie quand vous étiez mortelle ?	}{	C'est ça. Mais avez-vous choisi cette vie quand vous étiez mortelle ?	}{	101	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Encore mortelle, vous avez choisi cette existence éthérée ?	}
+{	97	}{	J'ai encore quelques questions sur les Kuei-jin !	}{	J'ai encore quelques questions sur les Kuei-jin !	}{	711	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Dévoilez cette énigme que sont les Kuei-Jin !	}
+{	98	}{	Je m'en vais.	}{	Je m'en vais.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	99	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	100	}{	Continuez comme ça, et vous aurez un nouvel éveil spirituel. A plus tard. . .	}{	Continuez comme ça, et vous aurez un nouvel éveil spirituel. A plus tard. . .	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous vous éveillerez dans l'enfer des furies à la langue fourchue. Adieu.	}
+{	101	}{	Non, nous ne choisissons pas, mais les événements de notre vie peuvent éveiller de sombres énergies spirituelles. Nous ne naissons pas du caprice d'un autre, comme les vampires le font.	}{	Non, nous ne choisissons pas, mais les événements de notre vie peuvent éveiller de sombres énergies spirituelles. Nous ne naissons pas du caprice d'un autre, comme les vampires le font.	}{	#	}{	}{	G.Ming_Whim = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Et pourquoi certains sont-ils choisis pour devenir surnaturels ?	}{	Et pourquoi certains sont-ils choisis pour devenir surnaturels ?	}{	111	}{	G.Ming_Unlife == 0 and G.Ming_Purpose == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quelle raison à ce sort infortuné ?	}
+{	103	}{	Cela me fait tout autant penser à une malédiction que l'Etreinte de Caïn.	}{	Cela me fait tout autant penser à une malédiction que l'Etreinte de Caïn.	}{	121	}{	G.Ming_Unlife == 0 and G.Ming_Purpose == 1	}{	}{	}{	}{	}{	}{	}{	}{	Votre habit est différent, mais vous êtes toute aussi maudite.	}
+{	104	}{	Pourquoi certains sont-ils choisis et pas d'autres ?	}{	Pourquoi certains sont-ils choisis et pas d'autres ?	}{	111	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Quelle raison à ce sort infortuné ?	}
+{	105	}{	J'ai encore quelques questions sur les Kuei-jin !	}{	J'ai encore quelques questions sur les Kuei-jin !	}{	711	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Dévoilez cette énigme que sont les Kuei-Jin !	}
+{	106	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	107	}{	Vous allez mourir par mon caprice si vous continuez ces railleries. . .	}{	Vous allez mourir par mon caprice si vous continuez ces railleries. . .	}{	691	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mes caprices pourraient être en conflit avec les vôtres, prêtresse démoniaque. Adieu.	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Les raisons sont aussi nombreuses que les Kuei-jin eux-mêmes. Chacun naît avec un but, une raison à trouver. Une fois que ce chemin apparaît, ils doivent en chercher l'accomplissement, même s'il faut pour cela l'éternité.	}{	Les raisons sont aussi nombreuses que les Kuei-jin eux-mêmes. Chacun naît avec un but, une raison à trouver. Une fois que ce chemin apparaît, ils doivent en chercher l'accomplissement, même s'il faut pour cela l'éternité.	}{	#	}{	}{	G.Ming_Purpose = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Cela me fait tout autant penser à une malédiction que l'Etreinte de Caïn.	}{	Cela me fait tout autant penser à une malédiction que l'Etreinte de Caïn.	}{	121	}{	G.Ming_Unlife == 0 and G.Ming_Whim == 1	}{	}{	}{	}{	}{	}{	}{	}{	Votre habit est différent, mais vous êtes toute aussi maudite.	}
+{	113	}{	Et donc. . . quels sont les points communs entre les Kuei-jin et les vampires de Caïn ?	}{	Et donc. . . quels sont les points communs entre les Kuei-jin et les vampires de Caïn ?	}{	81	}{	G.Ming_Unlife == 0 and G.Ming_Whim == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quelles autres rivières coulent entre les Kuei-jin et les vampires ? ?	}
+{	114	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	Je dois partir.	}{	Je dois partir.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	118	}{	J'avais d'autres questions pour vous.	}{	J'avais d'autres questions pour vous.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	119	}{	Je vois. Je regrette, mais je dois partir.	}{	Je vois. Je regrette, mais je dois partir.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'enfer serait une éternité avec vos histoires assommantes. Adieu.	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	C'est simplement une autre chance pour nous de trouver notre place dans l'univers, et de nous transcender. Nous ne sommes ni damnés, ni écrasés par le poids d'une ancienne culpabilité, comme dans la légende de votre père biblique. . .	}{	C'est simplement une autre chance pour nous de trouver notre place dans l'univers, et de nous transcender. Nous ne sommes ni damnés, ni écrasés par le poids d'une ancienne culpabilité, comme dans la légende de votre père biblique. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	A propos de légendes, avez-vous entendu parler du Sarcophage d'Ankara ?	}{	A propos de légendes, avez-vous entendu parler du Sarcophage d'Ankara ?	}{	351	}{	G.Ming_Bros == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vos oreilles ont-elles vu le Sarcophage d'Ankara ?	}
+{	123	}{	Tous les Kuei-jin partagent-ils cette foi ?	}{	Tous les Kuei-jin partagent-ils cette foi ?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous croyez vraiment à cette relique prétentieuse ?	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	Je dois partir.	}{	Je dois partir.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	126	}{	Je dois partir.	}{	Je dois partir.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	127	}{	Oh, je transcende ces conneries. A plus tard. 	}{	Oh, je transcende ces conneries. A plus tard. 	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que le destin transcende mon être de cet endroit. Adieu.	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Oh non, camarade. Vous vous méprenez, je ne cherchais nullement à vous manquer de respect.	}{	Oh non, camarade. Vous vous méprenez, je ne cherchais nullement à vous manquer de respect.	}{	#	}{	G.Ming_Sorry = G.Ming_Sorry + 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Je pense que si. Je pense que vous insultez sciemment les vampires. . . et moi-même.	}{	Je pense que si. Je pense que vous insultez sciemment les vampires. . . et moi-même.	}{	321	}{	G.Ming_Sorry == 2	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles nous souillent, mes frères de sang et moi. . .	}
+{	133	}{	Oh. Bon, très bien. Alors, en quoi sommes-nous semblables ?	}{	Oh. Bon, très bien. Alors, en quoi sommes-nous semblables ?	}{	81	}{	G.Ming_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Si différents, les Kuei-Jin et les vampires ?	}
+{	134	}{	J'entends bien. Je vous en prie, dites-moi comment l'on atteint cette existence.	}{	J'entends bien. Je vous en prie, dites-moi comment l'on atteint cette existence.	}{	91	}{	G.Ming_Breath == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment êtes-vous arrivée à votre existence éthérée ?	}
+{	135	}{	J'entends bien. Et en tant que mortel, peut-on choisir de devenir surnaturel ?	}{	J'entends bien. Et en tant que mortel, peut-on choisir de devenir surnaturel ?	}{	101	}{	G.Ming_Breath == 1 or G.Ming_Feed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez choisi cet état surnaturel ?	}
+{	136	}{	Je dois partir.	}{	Je dois partir.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	137	}{	Je dois partir.	}{	Je dois partir.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	138	}{	Allez vous faire voir. Au revoir.	}{	Allez vous faire voir. Au revoir.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Et ce majeur est tendu avec respect. Adieu.	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Non. Les Kuei-jin n'ont pas conscience de leur condition après le Second Souffle. Le chemin de l'illumination est toujours long et ardu. Beaucoup subissent la Mort Ultime avant de comprendre ce qu'ils sont devenus.	}{	Non. Les Kuei-jin n'ont pas conscience de leur condition après le Second Souffle. Le chemin de l'illumination est toujours long et ardu. Beaucoup subissent la Mort Ultime avant de comprendre ce qu'ils sont devenus.	}{	#	}{	}{	G.Ming_Unlife = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Votre chemin paraît intimement lié aux mortels. 	}{	Votre chemin paraît intimement lié aux mortels. 	}{	151	}{	pc.perception > 3 and pc.intelligence > 2 and G.Ming_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous paraissez suivre les mêmes routes que vos séides mortels. 	}
+{	143	}{	Quelle est la relation entre les Kuei-jin et les humains ?	}{	Quelle est la relation entre les Kuei-jin et les humains ?	}{	151	}{	pc.perception > 3 and pc.intelligence > 2 and G.Ming_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les Kuei-jin se mêlent-ils au troupeau mortel ?	}
+{	144	}{	Vous dites que vous êtes un secret connu. . . mais vous vous cachez tout de même des mortels.	}{	Vous dites que vous êtes un secret connu. . . mais vous vous cachez tout de même des mortels.	}{	161	}{	G.Ming_Human == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous vous cachez tout de même du troupeau mortel.	}
+{	145	}{	Vous servez de prêtresse pour les mortels comme pour les autres. Vous devez être très occupée.	}{	Vous servez de prêtresse pour les mortels comme pour les autres. Vous devez être très occupée.	}{	171	}{	G.Ming_Human == 2	}{	}{	}{	}{	}{	}{	}{	}{	Vous guidez des esprits aussi bien mortels que mystiques ?	}
+{	146	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	Je m'en vais.	}{	Je m'en vais.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	150	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	151	}{	Dans les terres d'Orient, l'homme et le surnaturel vivent aisément en harmonie. Nos mortels voient le spirituel en toutes choses, et notre existence leur paraît aller de soi. Un secret qu'on ne cache pas est plus facile à garder.	}{	Dans les terres d'Orient, l'homme et le surnaturel vivent aisément en harmonie. Nos mortels voient le spirituel en toutes choses, et notre existence leur paraît aller de soi. Un secret qu'on ne cache pas est plus facile à garder.	}{	#	}{	}{	G.Ming_Human = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Vous ne cachez pas votre nature ?	}{	Vous ne cachez pas votre nature ?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les Kuei-jin se drapent-il de secret ?	}
+{	153	}{	Mais vous vous cachez comme nous.	}{	Mais vous vous cachez comme nous.	}{	161	}{	G.Ming_Kjname > 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous vous cachez tout de même du troupeau mortel.	}
+{	154	}{	Par votre existence, vous entendez celle des vampires orientaux ?	}{	Par votre existence, vous entendez celle des vampires orientaux ?	}{	251	}{	G.Ming_Kjname == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi encore de cette existence orientale.	}
+{	155	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	A bientôt.	}{	A bientôt.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	160	}{	A bientôt.	}{	A bientôt.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	161	}{	Oui, bien sûr. Notre but est de chercher la transcendance. Interférer avec les vies mortelles, ou leur intervention dans la vie des Kuei-jin, nous détourne de cette poursuite.	}{	Oui, bien sûr. Notre but est de chercher la transcendance. Interférer avec les vies mortelles, ou leur intervention dans la vie des Kuei-jin, nous détourne de cette poursuite.	}{	#	}{	}{	G.Ming_Human = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Mais. . . vous êtes aussi prêtresse pour les humains, n'est-ce pas ?	}{	Mais. . . vous êtes aussi prêtresse pour les humains, n'est-ce pas ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous guidez des esprits aussi bien mortels que mystiques ?	}
+{	163	}{	Les Kuei-jin ?	}{	Les Kuei-jin ?	}{	251	}{	G.Ming_Kjname == 0	}{	}{	}{	}{	}{	}{	}{	}{	Des Kuei-jin ?	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	Oui, sauf quand vous avez besoin de les vider, c'est ça ?	}{	Oui, sauf quand vous avez besoin de les vider, c'est ça ?	}{	181	}{	G.Ming_Humandone == 1 & Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Vous transcendez l'évacuation de leurs veines ?	}
+{	167	}{	Enfin, vous devez interférer quand vous vous nourrissez. . .	}{	Enfin, vous devez interférer quand vous vous nourrissez. . .	}{	181	}{	G.Ming_Humandone == 1 & Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Vous nourrir, ça doit faire une belle interférence.	}
+{	168	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	169	}{	C'est ça. Je me casse.	}{	C'est ça. Je me casse.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	170	}{	C'est ça. Je me casse.	}{	C'est ça. Je me casse.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	171	}{	Mon but touche bien des vies, telle est ma voie.	}{	Mon but touche bien des vies, telle est ma voie.	}{	#	}{	}{	G.Ming_Human = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	N'est-ce pas de l'interférence ?	}{	N'est-ce pas de l'interférence ?	}{	191	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Vous mêler ? Interférer ?	}
+{	173	}{	Oui. Comme un berger affamé pour son troupeau, n'est-ce pas ? OK, je comprends.	}{	Oui. Comme un berger affamé pour son troupeau, n'est-ce pas ? OK, je comprends.	}{	181	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Votre route est celle du loup affamé, maîtresse.	}
+{	174	}{	Il serait peut-être plus exact de dire que 'plusieurs vies servent votre but'.	}{	Il serait peut-être plus exact de dire que 'plusieurs vies servent votre but'.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce troupeau sert vos sombres desseins.	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	179	}{	Peu importe. Je dois partir, Ming-Xiao.	}{	Peu importe. Je dois partir, Ming-Xiao.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	180	}{	Peu importe. Je dois partir, Ming-Xiao.	}{	Peu importe. Je dois partir, Ming-Xiao.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	181	}{	Nous Kuei-Jin ne prétendons pas devoir régner sur les mortels comme les vampires. Que ce soit comme fiers seigneurs violents ou comme manipulateurs dans l'ombre, vous vous délectez tous de votre supériorité sur des créatures naturellement plus faibles.	}{	Nous Kuei-Jin ne prétendons pas devoir régner sur les mortels comme les vampires. Que ce soit comme fiers seigneurs violents ou comme manipulateurs dans l'ombre, vous vous délectez tous de votre supériorité sur des créatures naturellement plus faibles.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Des créatures plus faibles ?	}{	Des créatures plus faibles ?	}{	191	}{	not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Des créatures faibles ?	}
+{	183	}{	Vous encadrez la spiritualité des mortels et vous leur témoignez du mépris en les jugeant faibles ?	}{	Vous encadrez la spiritualité des mortels et vous leur témoignez du mépris en les jugeant faibles ?	}{	191	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	Je ne prétends à aucune majesté. C'est un don que de pouvoir guider les 'créatures plus faibles'.	}{	Je ne prétends à aucune majesté. C'est un don que de pouvoir guider les 'créatures plus faibles'.	}{	191	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	Vous cherchez à m'énerver, c'est ça ?	}{	Vous cherchez à m'énerver, c'est ça ?	}{	241	}{	G.Ming_Sorry < 2	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles ébranlent l'équilibre de mon esprit, démone. 	}
+{	186	}{	Vous voulez dire que vos humains ne craignent pas le surnaturel ?	}{	Vous voulez dire que vos humains ne craignent pas le surnaturel ?	}{	201	}{	G.Ming_Humandone == 1	}{	}{	}{	}{	}{	}{	}{	}{	Votre meute ne craint pas votre incarnation énigmatique ?	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	C'est mort, ici. Au revoir.	}{	C'est mort, ici. Au revoir.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. 	}
+{	190	}{	C'est mort, ici. Au revoir.	}{	C'est mort, ici. Au revoir.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. 	}
+{	191	}{	Je ne parle qu'au sens le plus pratique. Le parent méprise-t-il son enfant en le protégeant ? Aider ceux qui sont plus faibles, voilà l'un des préceptes de mon ordre.	}{	Je ne parle qu'au sens le plus pratique. Le parent méprise-t-il son enfant en le protégeant ? Aider ceux qui sont plus faibles, voilà l'un des préceptes de mon ordre.	}{	#	}{	}{	G.Ming_Human = 4	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Je suis d'accord avec vous sur le fait qu'il faut guider ceux qui en ont besoin. . .	}{	Je suis d'accord avec vous sur le fait qu'il faut guider ceux qui en ont besoin. . .	}{	231	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	193	}{	Non, sans doute pas.	}{	Non, sans doute pas.	}{	201	}{	Humanity 4	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles sonnent vrai, maîtresse des miroirs.	}
+{	194	}{	Les mortels. Sérieusement, à part à casser la croûte, à quoi ils servent ?	}{	Les mortels. Sérieusement, à part à casser la croûte, à quoi ils servent ?	}{	201	}{	Humanity -4	}{	}{	}{	}{	}{	}{	}{	}{	Mieux vaut une meute aveugle pour apaiser ma soif.	}
+{	195	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	Je dois partir. A bientôt.	}{	Je dois partir. A bientôt.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	200	}{	Je dois partir. A bientôt.	}{	Je dois partir. A bientôt.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	201	}{	Les mortels de notre domaine sont simples, humbles, et se satisfont d'éviter toute attention surnaturelle. On ne peut pas en dire autant pour les occidentaux.	}{	Les mortels de notre domaine sont simples, humbles, et se satisfont d'éviter toute attention surnaturelle. On ne peut pas en dire autant pour les occidentaux.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Que voulez-vous dire ?	}{	Que voulez-vous dire ?	}{	211	}{	Humanity 4	}{	}{	}{	}{	}{	}{	}{	}{	Parlez encore, maîtresse des miroirs.	}
+{	203	}{	Ils saignent tous de la même façon, je peux vous le dire.	}{	Ils saignent tous de la même façon, je peux vous le dire.	}{	211	}{	Humanity -4	}{	}{	}{	}{	}{	}{	}{	}{	Doux est le sang de la proie inconsciente.	}
+{	204	}{	Oh, alors même nos humains sont inférieurs ?	}{	Oh, alors même nos humains sont inférieurs ?	}{	241	}{	G.Ming_Sorry < 2	}{	}{	}{	}{	}{	}{	}{	}{	Même la meute des vampires est inconsciente, démone ?	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	C'est ça. Vous avez l'air de dire que vous respectez ces mortels. . .	}{	C'est ça. Vous avez l'air de dire que vous respectez ces mortels. . .	}{	211	}{	G.Ming_Humandone == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous tenez en haute estime ce troupeau mortel ?	}
+{	208	}{	Je dois partir. A bientôt.	}{	Je dois partir. A bientôt.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	209	}{	Je dois partir. A bientôt.	}{	Je dois partir. A bientôt.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	210	}{	Vous voyez ce doigt. En occidental, ça veut dire : 'Vous êtes vraiment trop conne'. Au revoir.	}{	Vous voyez ce doigt. En occidental, ça veut dire : 'Vous êtes vraiment trop conne'. Au revoir.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	N'étions-nous pas tous humains, fut un temps ? N'est-il pas évident, vampire, que la mortalité n'est pas une limite ? N'est-il donc pas déraisonnable de penser qu'il y a une autre existence ensuite ? Que nous nous transformons simplement ?	}{	N'étions-nous pas tous humains, fut un temps ? N'est-il pas évident, vampire, que la mortalité n'est pas une limite ? N'est-il donc pas déraisonnable de penser qu'il y a une autre existence ensuite ? Que nous nous transformons simplement ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	C'est exactement ce que je voulais dire. Votre illumination est rafraîchissante.	}{	C'est exactement ce que je voulais dire. Votre illumination est rafraîchissante.	}{	221	}{	G.Ming_Humandone == 0 and IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	213	}{	Je suppose que non, Ming-Xiao.	}{	Je suppose que non, Ming-Xiao.	}{	221	}{	G.Ming_Humandone == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles sonnent vrai, maîtresse des miroirs.	}
+{	214	}{	Je comprends, mais je ne pense pas être d'accord.	}{	Je comprends, mais je ne pense pas être d'accord.	}{	221	}{	G.Ming_Humandone == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vos récits sont un errement. . .	}
+{	215	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	G.Ming_Humandone == 1	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	C'est ça. Je me casse.	}{	C'est ça. Je me casse.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	220	}{	C'est ça. Je me casse.	}{	C'est ça. Je me casse.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	221	}{	C'est ce que nous cherchons. Ou du moins, aussi bien que je puisse l'expliquer à une personne à l'esprit si rigide.	}{	C'est ce que nous cherchons. Ou du moins, aussi bien que je puisse l'expliquer à une personne à l'esprit si rigide.	}{	#	}{	}{	G.Ming_Human = 5; G.Ming_Humandone = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	223	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	Ha ! Vous êtes vraiment bêcheuse pour une fille morte.	}{	Ha ! Vous êtes vraiment bêcheuse pour une fille morte.	}{	241	}{	G.Ming_Sorry < 2	}{	}{	}{	}{	}{	}{	}{	}{	Acide est votre langue, maîtresse.	}
+{	228	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	229	}{	C'est ça. Je me casse.	}{	C'est ça. Je me casse.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	230	}{	C'est ça. Je me casse.	}{	C'est ça. Je me casse.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	231	}{	Plutôt. Je connais le clan Ventrue, et il existe des points communs. Nous comprenons sans doute mieux la société humaine et surnaturelle que les autres.	}{	Plutôt. Je connais le clan Ventrue, et il existe des points communs. Nous comprenons sans doute mieux la société humaine et surnaturelle que les autres.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Tout à fait d'accord.	}{	Tout à fait d'accord.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	233	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Non. Je regrette si mes paroles sont tranchantes. Ainsi en va-t-il chez nous.	}{	Non. Je regrette si mes paroles sont tranchantes. Ainsi en va-t-il chez nous.	}{	#	}{	G.Ming_Sorry = G.Ming_Sorry + 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Oui, vos mots sont 'tranchants', et vous insultez les vampires à longueur de temps.	}{	Oui, vos mots sont 'tranchants', et vous insultez les vampires à longueur de temps.	}{	321	}{	G.Ming_Sorry == 2	}{	}{	}{	}{	}{	}{	}{	}{	Votre langue acérée tranche la langue de mes frères.	}
+{	243	}{	Des 'créatures naturellement plus faibles', comment voulez-vous que je le prenne ?	}{	Des 'créatures naturellement plus faibles', comment voulez-vous que je le prenne ?	}{	191	}{	G.Ming_Human == 3	}{	G.Ming_Sorry = 1	}{	}{	}{	}{	}{	}{	}{	Vous dépeignez ma meute en couleurs de faiblesse. 	}
+{	244	}{	Eh bien, vous insultez sans cesse les vampires, les mortels. . .	}{	Eh bien, vous insultez sans cesse les vampires, les mortels. . .	}{	211	}{	G.Ming_Human == 4	}{	G.Ming_Sorry = 1	}{	}{	}{	}{	}{	}{	}{	Vos insultes meurtrissent les chairs des vampires comme des humains.	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	G.Ming_Human == 5	}{	G.Ming_Sorry = 1	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	247	}{	C'est ça. Je me casse.	}{	C'est ça. Je me casse.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	248	}{	C'est ça. Je me casse.	}{	C'est ça. Je me casse.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	249	}{	Et moi, je regrette d'avoir mis les pieds dans ce cirque. A plus. . .	}{	Et moi, je regrette d'avoir mis les pieds dans ce cirque. A plus. . .	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Attention à ce que votre route ne vous mène pas au seuil de la mort, démone.	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Kuei-jin : vous nous appelez peut-être Cathéens, ou simplement 'vampires d'orient', ce qui est une grave erreur. On nous donne bien des noms : Gui Ren, Shen, mais Kuei-jin est le plus usité dans nos rangs.	}{	Kuei-jin : vous nous appelez peut-être Cathéens, ou simplement 'vampires d'orient', ce qui est une grave erreur. On nous donne bien des noms : Gui Ren, Shen, mais Kuei-jin est le plus usité dans nos rangs.	}{	#	}{	}{	G.Ming_Kjname = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Etes-vous leur chef ?	}{	Etes-vous leur chef ?	}{	261	}{	}{	G.Ming_Kjname = G.Ming_Kjname + 1	}{	}{	}{	}{	}{	}{	}{	Menez-vous ces dévoreurs de vie ?	}
+{	253	}{	Descendez-vous de Caïn ?	}{	Descendez-vous de Caïn ?	}{	271	}{	}{	G.Ming_Kjname = G.Ming_Kjname + 1	}{	}{	}{	}{	}{	}{	}{	La malédiction de Caïn coule-t-elle dans vos veines ?	}
+{	254	}{	Une erreur de nom ? Je comprends pas. Vous êtes bien des vampires, non ?	}{	Une erreur de nom ? Je comprends pas. Vous êtes bien des vampires, non ?	}{	71	}{	G.Ming_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Une erreur de nom ? Kuei-jin et vampires, semblables ?	}
+{	255	}{	Et les Kuei-jin ne cachent pas leur nature aux humains ?	}{	Et les Kuei-jin ne cachent pas leur nature aux humains ?	}{	161	}{	G.Ming_Human == 1	}{	}{	}{	}{	}{	}{	}{	}{	Les Kuei-jin se drapent-il de secret ?	}
+{	256	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	G.Ming_Human == 5	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Dans un sens, oui. Vous pouvez me considérer comme la baronne de Chinatown, pour faire l'analogie avec vos termes.	}{	Dans un sens, oui. Vous pouvez me considérer comme la baronne de Chinatown, pour faire l'analogie avec vos termes.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Descendez-vous de Caïn ?	}{	Descendez-vous de Caïn ?	}{	271	}{	G.Ming_Kjname == 2	}{	G.Ming_Kjname = G.Ming_Kjname + 1	}{	}{	}{	}{	}{	}{	}{	Avec-vous aussi la malédiction de Caïn ?	}
+{	263	}{	Voyons si j'ai bien compris : vous êtes une vampire, non ?	}{	Voyons si j'ai bien compris : vous êtes une vampire, non ?	}{	71	}{	G.Ming_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous appelez-vous des vampires ?	}
+{	264	}{	Et les Kuei-jin ne cachent pas leur nature aux humains ?	}{	Et les Kuei-jin ne cachent pas leur nature aux humains ?	}{	161	}{	G.Ming_Human == 1	}{	}{	}{	}{	}{	}{	}{	}{	Les Kuei-jin se drapent-il de secret ?	}
+{	265	}{	Vous êtes aussi prêtresse auprès des humains. . . Que d'occupations pour une femme.	}{	Vous êtes aussi prêtresse auprès des humains. . . Que d'occupations, ma fille.	}{	171	}{	G.Ming_Human == 2	}{	}{	}{	}{	}{	}{	}{	}{	Vous guidez des esprits aussi bien mortels que mystiques ?	}
+{	266	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	G.Ming_Human == 5	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	Je m'en vais.	}{	Je m'en vais.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	269	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	270	}{	Serait-ce inapproprié de vous traiter de garce ? A plus.	}{	Serait-ce inapproprié de vous traiter de garce ? A plus.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Nous ne sommes pas une lignée exotique de Caïnites, croyez-moi.	}{	Nous ne sommes pas une lignée exotique de Caïnites, croyez-moi.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Etes-vous leur chef ?	}{	Etes-vous leur chef ?	}{	261	}{	G.Ming_Kjname == 2	}{	G.Ming_Kjname = G.Ming_Kjname + 1	}{	}{	}{	}{	}{	}{	}{	Menez-vous ces dévoreurs de vie ?	}
+{	273	}{	Mais vous êtes une vampire.	}{	Mais vous êtes une vampire.	}{	71	}{	G.Ming_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Portez-vous le voile des vampires, maîtresse ?	}
+{	274	}{	Et les Kuei-jin ne cachent pas leur nature aux humains ?	}{	Et les Kuei-jin ne cachent pas leur nature aux humains ?	}{	161	}{	G.Ming_Human == 1	}{	}{	}{	}{	}{	}{	}{	}{	Les Kuei-jin se drapent-ils aussi de secret ?	}
+{	275	}{	Vous servez de prêtresse pour les mortels comme pour les autres. Vous devez être très occupée.	}{	Vous servez de prêtresse pour les mortels comme pour les autres. Vous devez être très occupée.	}{	171	}{	G.Ming_Human == 2 and G.Ming_Kjname == 3	}{	}{	}{	}{	}{	}{	}{	}{	Vous guidez des esprits aussi bien mortels que mystiques ?	}
+{	276	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	G.Ming_Human == 5	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	277	}{	Je m'en vais.	}{	Je m'en vais.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	278	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	279	}{	Je vous assure que nous sommes tous contents que ce ne soit pas le cas. Au revoir.	}{	Je vous assure que nous sommes tous contents que ce ne soit pas le cas. Au revoir.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	Qu'est-ce que je peux faire pour vous ?	}{	Qu'est-ce que je peux faire pour vous ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Comment appelez-vous votre race ?	}{	Comment appelez-vous votre race ?	}{	251	}{	G.Ming_Kjname == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi davantage de votre peuple, maîtresse des miroirs.	}
+{	283	}{	J'avais quelques questions sur les Kuei-jin.	}{	J'avais quelques questions sur les Kuei-jin.	}{	291	}{	G.Ming_Kjname > 0	}{	}{	}{	}{	}{	}{	}{	}{	Dévoilez cette énigme que sont les Kuei-Jin !	}
+{	284	}{	Connaissez-vous un hengeyôkai dans Chinatown ?	}{	Connaissez-vous un hengeyôkai dans Chinatown ?	}{	461	}{	G.Yukie_Quest == 1 and G.Ming_Ziggy == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche un horrible Hengeyôkai.	}
+{	285	}{	Répétez-moi ce qui est arrivé au hengeyôkai.	}{	Répétez-moi ce qui est arrivé au hengeyôkai.	}{	481	}{	G.Ming_Ziggy == 1 and G.Zyg_Meet == 0 and G.Yukie_Market == 0 and not IsDead("Zygaena")	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de l'horrible Hengeyôkai.	}
+{	286	}{	Je voulais vous parler du Sarcophage d'Ankara.	}{	Je voulais vous parler du Sarcophage d'Ankara.	}{	421	}{	G.Ming_Barrabus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche un enfant de la nuit Nosferatu.	}
+{	287	}{	Je cherche toujours ce Nosferatu. Que dois-je faire encore ?	}{	Je cherche toujours ce Nosferatu. Que dois-je faire encore ?	}{	441	}{	G.Ming_Barrabus > 0 and pc.GetQuestState("Barabus") > 3	}{	}{	}{	}{	}{	}{	}{	}{	Où pourrais-je trouver cet enfant de la nuit Nosferatu ?	}
+{	288	}{	Où puis-je trouver les Tong ?	}{	Où puis-je trouver les Tong ?	}{	581	}{	G.WongHo_Kiki == 1 and G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	Où les Tong peut-on trouver ?	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	En fait, je pars. Au revoir.	}{	En fait, je pars. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	291	}{	Les vampires ont fort à apprendre de nos coutumes.	}{	Les vampires ont fort à apprendre de nos coutumes.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	J'ai quelques questions sur la société Kuei-jin.	}{	J'ai quelques questions sur la société Kuei-jin.	}{	711	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de votre société secrète.	}
+{	293	}{	Je voulais discuter de votre relation avec les humains.	}{	Je voulais discuter de votre relation avec les humains.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de votre troupeau humain.	}
+{	294	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	295	}{	Vous ne pouvez pas. Je m'en vais.	}{	Vous ne pouvez pas. Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Les humains ? Que voulez-vous savoir ?	}{	Les humains ? Que voulez-vous savoir ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Comment les Kuei-jin interagissent-ils avec eux ?	}{	Comment les Kuei-jin interagissent-ils avec eux ?	}{	151	}{	G.Ming_Humandone == 0 and G.Ming_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment vous mêlez-vous à ces mortels ?	}
+{	303	}{	Vous ne leur cachez pas votre nature ?	}{	Vous ne leur cachez pas votre nature ?	}{	161	}{	G.Ming_Humandone == 0 and G.Ming_Human == 1	}{	}{	}{	}{	}{	}{	}{	}{	Les Kuei-jin se drapent-il de secret ?	}
+{	304	}{	Vous êtes à la fois prêtresse pour les humains et pour ceux qui se nourrissent d'eux ?	}{	Vous êtes à la fois prêtresse pour les humains et pour ceux qui se nourrissent d'eux ?	}{	171	}{	G.Ming_Humandone == 0 and G.Ming_Human == 2	}{	}{	}{	}{	}{	}{	}{	}{	Vous guidez des esprits aussi bien mortels que mystiques ?	}
+{	305	}{	Pourquoi assistez-vous la spiritualité de ceux dont vous vous nourrissez ?	}{	Pourquoi assistez-vous la spiritualité de ceux dont vous vous nourrissez ?	}{	181	}{	G.Ming_Humandone == 0 and G.Ming_Human == 3	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi guider les âmes qui sont votre nourriture ?	}
+{	306	}{	Est-il difficile de cacher votre secret aux mortels ?	}{	Est-il difficile de cacher votre secret aux mortels ?	}{	201	}{	G.Ming_Humandone == 0 and G.Ming_Human == 4	}{	}{	}{	}{	}{	}{	}{	}{	Comment vous cachez-vous de votre meute humaine ?	}
+{	307	}{	Dites-moi encore. . . vous cachez-vous des humains comme nous le faisons ?	}{	Dites-moi encore. . . vous cachez-vous des humains comme nous le faisons ?	}{	161	}{	G.Ming_Humandone == 1	}{	}{	}{	}{	}{	}{	}{	}{	Les Kuei-jin se drapent-il de secret ?	}
+{	308	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	309	}{	Je m'en vais.	}{	Je m'en vais.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	310	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	311	}{	Le nouvel artefact ? De quoi s'agit-il ?	}{	Le nouvel artefact ? De quoi s'agit-il ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Vous en avez entendu parler ?	}{	Vous en avez entendu parler ?	}{	351	}{	G.Ming_Sarcophagus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous savez quelque chose de cette terrible boîte ?	}
+{	313	}{	Vous ne pensez pas qu'il est en rapport avec la Géhenne ?	}{	Vous ne pensez pas qu'il est en rapport avec la Géhenne ?	}{	361	}{	G.Ming_Sarcophagus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pierres et secrets, le Père Noir et l'aube noire de la Géhenne !	}
+{	314	}{	Savez-vous qui a ce Sarcophage ?	}{	Savez-vous qui a ce Sarcophage ?	}{	391	}{	G.Ming_Sarcophagus == 2	}{	}{	}{	}{	}{	}{	}{	}{	Qui détient ce secret obscur ?	}
+{	315	}{	Vous aviez des agents qui le cherchaient, n'est-ce pas ?	}{	Vous aviez des agents qui le cherchaient, n'est-ce pas ?	}{	411	}{	G.Ming_Sarcophagus == 3	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez parlé d'agents qui cherchent ce sombre secret ?	}
+{	316	}{	Savez-vous où il pourrait se trouver ?	}{	Savez-vous où il pourrait se trouver ?	}{	411	}{	G.Ming_Sarcophagus == 3	}{	}{	}{	}{	}{	}{	}{	}{	Où est cette terrible boîte ?	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	319	}{	Je m'en vais.	}{	Je m'en vais.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	320	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	321	}{	Vous devez comprendre que même si je fais preuve d'hospitalité, nos deux peuples ne sont pas en paix. Longue est l'histoire de la guerre et du conflit qui nous oppose.	}{	Vous devez comprendre que même si je fais preuve d'hospitalité, nos deux peuples ne sont pas en paix. Longue est l'histoire de la guerre et du conflit qui nous oppose.	}{	#	}{	}{	G.Ming_Sorry = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	N'essayez pas de déformer l'histoire devant les Nosferatus, chérie : nous savons la vérité.	}{	N'essayez pas de déformer l'histoire devant les Nosferatus, chérie : nous savons la vérité.	}{	331	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	323	}{	Vous êtes arrivés en conquérants. Et vous vous étonnez de notre rébellion ?	}{	Vous êtes arrivés en conquérants. Et vous vous étonnez de notre rébellion ?	}{	331	}{	IsClan(pc,"Brujah")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	324	}{	La Camarilla ne cherche qu'à rétablir l'ordre dans la ville.	}{	La Camarilla ne cherche qu'à rétablir l'ordre dans la ville.	}{	331	}{	IsClan(pc,"Ventrue") or IsClan(pc,"Tremere") or IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	325	}{	Le chasseur envahit. . . puis pleure quand sa proie se défend !	}{	Le chasseur envahit. . . puis pleure quand sa proie se défend !	}{	331	}{	IsClan(pc,"Gangrel")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	326	}{	La folie ne me rend pas aveugle, prêtresse. Vous êtes de trop dans cette partie.	}{	La folie ne me rend pas aveugle, prêtresse. Vous êtes de trop dans cette partie.	}{	331	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	Tout a commencé par l'invasion des Kuei-jin.	}{	Tout a commencé par l'invasion des Kuei-jin.	}{	331	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	Pourquoi avez-vous besoin de la Californie ?	}{	Pourquoi avez-vous besoin de la Californie ?	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quel besoin avez-vous de ces terres occidentales sauvages ?	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	[dédaigneuse]Les vampires peuvent-ils vraiment prétendre au moindre droit ancestral sur la côte ouest de l'Amérique ? L'arrivée des vampires est aussi récente que celle des Kuei-jin. Si nous sommes des envahisseurs, la Camarilla l'est tout autant.	}{	[dédaigneuse]Les vampires peuvent-ils vraiment prétendre au moindre droit ancestral sur la côte ouest de l'Amérique ? L'arrivée des vampires est aussi récente que celle des Kuei-jin. Si nous sommes des envahisseurs, la Camarilla l'est tout autant.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Ne pourrions-nous pas nous entendre en paix ?	}{	Ne pourrions-nous pas nous entendre en paix ?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'histoire racontera l'histoire au final.	}
+{	333	}{	La Camarilla a une longue histoire d'entente avec les mortels de l'ouest.	}{	La Camarilla a une longue histoire d'entente avec les mortels de l'ouest.	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les vampires règnent depuis longtemps sur le troupeau occidental.	}
+{	334	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	335	}{	Il faut que j'y aille. . .	}{	Il faut que j'y aille. . .	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	336	}{	Il faut que j'y aille. . .	}{	Il faut que j'y aille. . .	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Les choses évoluent. Les transformations ont lieu. Les alliances se forment, changent et retombent. Ne supposez pas que vous agissez entièrement de votre chef.	}{	Les choses évoluent. Les transformations ont lieu. Les alliances se forment, changent et retombent. Ne supposez pas que vous agissez entièrement de votre chef.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	343	}{	Je change d'endroit. A plus.	}{	Je change d'endroit. A plus.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	344	}{	Je change d'endroit. A plus.	}{	Je change d'endroit. A plus.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	Bien sûr. Toute la ville a entendu parler de son arrivée, et se demande si l'un de vos anciens croque-mitaines n'y réside pas, décidé à tous vous détruire.	}{	Bien sûr. Toute la ville a entendu parler de son arrivée, et se demande si l'un de vos anciens croque-mitaines n'y réside pas, décidé à tous vous détruire.	}{	#	}{	}{	G.Ming_Sarcophagus = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	Vous n'avez pas l'air d'y croire ?	}{	Vous n'avez pas l'air d'y croire ?	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce secret semble vous laisser sceptique.	}
+{	353	}{	Savez-vous où se trouve le sarcophage ?	}{	Savez-vous où se trouve le sarcophage ?	}{	391	}{	G.Ming_Bros == 0	}{	}{	}{	}{	}{	}{	}{	}{	Savez-vous où se trouve la véritable boîte ?	}
+{	354	}{	C'est ça. Il me reste quelques questions.	}{	C'est ça. Il me reste quelques questions.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	355	}{	Est-il vraiment nécessaire de toujours manquer de respect à la société des vampires ?	}{	Est-il vraiment nécessaire de toujours insulter la société des vampires ?	}{	401	}{	G.Ming_Sorry < 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Les Kuei-jin ne partagent pas votre histoire, ni vos fausses prophéties. 	}{	Les Kuei-jin ne partagent pas votre histoire, ni vos fausses prophéties. 	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Fausse alors est l'âme des Rois Yama !	}{	Fausse alors est l'âme des Rois Yama !	}{	831	}{	IsClan(pc,"Malkavian") and G.Ming_Yama == 0	}{	G.Ming_Yama = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	363	}{	Fausses prophéties ?	}{	Fausses prophéties ?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelle fausseté trouvez-vous dans ces prophéties ?	}
+{	364	}{	Oui, tout cela paraît bien enfantin, n'est-ce pas ?	}{	Oui, tout cela paraît bien enfantin, n'est-ce pas ?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	La vérité se trouve rarement dans de telles fantaisies.	}
+{	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	Il faut que j'y aille. . .	}{	Il faut que j'y aille. . .	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	369	}{	Il faut que j'y aille. . .	}{	Il faut que j'y aille. . .	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	370	}{	Continuez comme ça, et je vais partager ma botte avec votre cul. A plus !	}{	Continuez comme ça, et je vais partager ma botte avec votre cul. A plus !	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bientôt, vous partagerez les ténèbres de l'enfer avec les démons, maîtresse.	}
+{	371	}{	Tout cela sert à détourner l'attention des vampires. Vous vivez une existence si crasse, à rôder dans l'ombre, à vous battre pour des miettes et à craindre le retour de vos pères terribles, que vous en oubliez complètement votre propre but.	}{	Tout cela sert à détourner l'attention des vampires. Vous vivez une existence si crasse, à rôder dans l'ombre, à vous battre pour des miettes et à craindre le retour de vos pères terribles, que vous en oubliez complètement votre propre but.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	Connaissez-vous la véritable histoire des vampires ?	}{	Connaissez-vous la véritable histoire des vampires ?	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pouvez-vous prédire l'avenir des vampires ?	}
+{	373	}{	Et j'imagine que vous connaissez le but réel de chacun.	}{	Et j'imagine que vous connaissez le but réel de chacun.	}{	381	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	374	}{	Savez-vous où se trouve le sarcophage ?	}{	Savez-vous où se trouve le sarcophage ?	}{	391	}{	G.Ming_Bros == 0	}{	}{	}{	}{	}{	}{	}{	}{	Savez-vous où se trouve la véritable boîte ?	}
+{	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	Il faut que j'y aille. . .	}{	Il faut que j'y aille. . .	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	379	}{	Il faut que j'y aille. . .	}{	Il faut que j'y aille. . .	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	380	}{	Mon but vient de changer, il devient de vous montrer ce doigt. A plus. . .	}{	Mon but vient de changer, il devient de vous montrer ce doigt. A plus. . .	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que mon majeur vous guide vers l'oubli. Adieu.	}
+{	381	}{	Non, bien sûr. Mais avec mon aide, vous pourriez trouver le chemin qui est censé être le vôtre. Au lieu de cela, vous avancez à tâtons dans l'éternité, vestige de viande encore collé à vos côtes mortelles.	}{	Non, bien sûr. Mais avec mon aide, vous pourriez trouver le chemin qui est censé être le vôtre. Au lieu de cela, vous avancez à tâtons dans l'éternité, vestige de viande encore collé à vos côtes mortelles.	}{	#	}{	}{	G.Ming_Sarcophagus = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	Savez-vous où se trouve le sarcophage ?	}{	Savez-vous où se trouve le sarcophage ?	}{	391	}{	G.Ming_Bros == 0	}{	}{	}{	}{	}{	}{	}{	}{	Savez-vous où se trouve la véritable boîte ?	}
+{	383	}{	Arrêtez d'insulter les vampires !	}{	Arrêtez d'insulter les vampires !	}{	401	}{	G.Ming_Sorry < 2	}{	}{	}{	}{	}{	}{	}{	}{	Ne crachez plus votre venin, démone !	}
+{	384	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	385	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	Il faut que j'y aille. . .	}{	Il faut que j'y aille. . .	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	389	}{	Il faut que j'y aille. . .	}{	Il faut que j'y aille. . .	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	390	}{	Vous savez quoi ? Tenez, en voilà un de vestige de chair. A plus.	}{	Continuez de raconter vos saloperies, et votre coeur ne sera plus qu'un vestige de chair.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	[désinvolte]Nous le cherchons. J'ai envoyé deux de mes meilleurs agents à sa recherche. Qui ne voudrait pas contrôler ce que chacun cherche ?	}{	[désinvolte]Nous le cherchons. J'ai envoyé deux de mes meilleurs agents à sa recherche. Qui ne voudrait pas contrôler ce que chacun cherche ?	}{	#	}{	}{	G.Ming_Sarcophagus = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	Qui sont ces agents ?	}{	Qui sont ces agents ?	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	393	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	394	}{	Je m'en vais.	}{	Je m'en vais.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	395	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	Vous vous méprenez. Je ne cherche pas à vous insulter.	}{	Vous vous méprenez. Je ne cherche pas à vous insulter.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	Vous ne pouvez pas vous excuser ?	}{	Vous ne pouvez pas vous excuser ?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vos lèvres peuvent-elles murmurer une berceuse d'excuse ?	}
+{	403	}{	Vous n'arrêtez pas d'insulter la société des vampires.	}{	Vous n'arrêtez pas d'insulter la société des vampires.	}{	371	}{	G.Ming_Sarcophagus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	404	}{	Très bien. Savez-vous qui a le sarcophage ?	}{	Très bien. Savez-vous qui a le sarcophage ?	}{	391	}{	G.Ming_Sarcophagus == 2 and G.Ming_Bros == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	405	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	406	}{	Trop tard. A plus.	}{	Trop tard. A plus.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	407	}{	Trop tard. A plus.	}{	Trop tard. A plus.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	Disons simplement que je ne vous encourage pas à chercher le Sarcophage d'Ankara.	}{	Disons simplement que je ne vous encourage pas à chercher le Sarcophage d'Ankara.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	413	}{	Je m'en vais. A plus.	}{	Je m'en vais. A plus.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	414	}{	Je m'en vais. A plus.	}{	Je m'en vais. A plus.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	Les grands Nosferatus ont perdu un agent ? Ce n'était pas de mon fait, si c'est ce qu'ils pensent.	}{	Les grands Nosferatus ont perdu un agent ? Ce n'était pas de mon fait, si c'est ce qu'ils pensent.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	Avez-vous la moindre idée de l'endroit où il pourrait être ?	}{	Avez-vous la moindre idée de l'endroit où il pourrait être ?	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne savez rien de ce Nosferatu ?	}
+{	423	}{	Si vous le dites. . . Où puis-je le trouver ?	}{	Si vous le dites. . . Où puis-je le trouver ?	}{	431	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	Je ne sais pas où il se trouve. Vous devriez peut-être en parler à Wong Ho.	}{	Je ne sais pas où il se trouve. Vous devriez peut-être en parler à Wong Ho.	}{	#	}{	}{	G.Ming_Wongho = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Qui est Wong Ho ?	}{	Qui est Wong Ho ?	}{	441	}{	G.Ming_Barrabus == 0	}{	G.Ming_Barrabus = 1	}{	}{	}{	}{	}{	}{	}{	Qui est ce Wong Ho ?	}
+{	433	}{	Où se trouve-t-il, déjà ?	}{	Où se trouve-t-il, déjà ?	}{	441	}{	G.Ming_Barrabus > 0	}{	}{	}{	}{	}{	}{	}{	}{	Où puis-je trouver ce Wong Ho ?	}
+{	434	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	G.Ming_Barrabus > 0	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	435	}{	Je vais le faire. A plus.	}{	Je vais le faire. A plus.	}{	491	}{	G.Ming_Barrabus > 0 and npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	436	}{	Je vais le faire. A plus.	}{	Je vais le faire. A plus.	}{	0	}{	G.Ming_Barrabus > 0 and npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	Wong Ho possède le restaurant du Red Dragon. Il est à la tête du Conseil culturel et commercial de Chinatown, et sert un peu de maire. Il est fermement opposé aux Tong, et souhaiterait les chasser de Chinatown. Allez lui parler. 	}{	Wong Ho possède le restaurant du Red Dragon. Il est à la tête du Conseil culturel et commercial de Chinatown, et sert un peu de maire. Il est fermement opposé aux Tong, et souhaiterait les chasser de Chinatown. Allez lui parler. 	}{	#	}{	}{	pc.SetQuest("Barabus",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	Alors je me rends au Red Dragon.	}{	Alors je me rends au Red Dragon.	}{	491	}{	G.Ming_Barrabus == 1	}{	G.Ming_Barrabus = 2	}{	}{	}{	}{	}{	}{	}{	Je vais courir après ce mortel dragon.	}
+{	443	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	444	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	G.Ming_Barrabus = 2	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	445	}{	Il est temps de partir. A plus tard.	}{	Il est temps de partir. A plus tard.	}{	491	}{	npc.times_talked == 1	}{	G.Ming_Barrabus = 2	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	446	}{	Il est temps de partir. A plus tard.	}{	Il est temps de partir. A plus tard.	}{	0	}{	npc.times_talked > 1	}{	G.Ming_Barrabus = 2	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	453	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	454	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	455	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	Ah oui, le hengeyôkai, du nom de Zygaena, je crois. Je l'avais presque oublié.	}{	Ah oui, le hengeyôkai, du nom de Zygaena, je crois. Je l'avais presque oublié.	}{	#	}{	}{	G.Ming_Ziggy = 1; G.Ming_Zygaena = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	Alors vous le connaissez ?	}{	Alors vous le connaissez ?	}{	471	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zygaena ? Zuper !	}
+{	463	}{	Il travaille pour vous ?	}{	Il travaille pour vous ?	}{	471	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	464	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	Il a annoncé sa présence dans notre domaine, et je lui ai donné la permission d'agir. Mais je vous promets qu'il n'agit pas en mon nom.	}{	Il a annoncé sa présence dans notre domaine, et je lui ai donné la permission d'agir. Mais je vous promets qu'il n'agit pas en mon nom.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	Où puis-je le trouver ?	}{	Où puis-je le trouver ?	}{	481	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où se cache ce métamorphe morbide ?	}
+{	473	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	474	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Je crois qu'il a dit qu'il dirigeait une affaire d'import et qu'il recevait ses clients au Red Dragon.	}{	Je crois qu'il a dit qu'il dirigeait une affaire d'import et qu'il recevait ses clients au Red Dragon.	}{	#	}{	}{	pc.SetQuest("Yukie",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	G.Ming_Pissed < 3	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	483	}{	Je dois partir. A plus.	}{	Je dois partir. A plus.	}{	491	}{	npc.times_talked == 1 and G.Ming_Pissed < 3	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	484	}{	Je dois partir. A plus.	}{	Je dois partir. A plus.	}{	0	}{	npc.times_talked > 1 and G.Ming_Pissed < 3	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	485	}{	Euh. . . Pourquoi m'aidez-vous tout d'un coup ?	}{	Uh...why are you being so helpful all of a sudden?	}{	701	}{	G.Ming_Pissed == 3	}{	}{	}{	}{	}{	}{	}{	}{	Votre altruisme soudain m'alarme !	}
+{	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Je vous autorise à agir dans le domaine des Kuei-jin. . . pour l'instant. Puissiez-vous trouver votre voie, vampire.	}{	Je vous autorise à agir dans le domaine des Kuei-jin. . . pour l'instant. Puissiez-vous trouver votre voie, vampire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	Merci.	}{	Merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cooool.	}
+{	493	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	494	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	495	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	Heureuse de vous revoir, vampire. Cherchez-vous mon conseil ?	}{	Heureuse de vous revoir, vampire. Cherchez-vous mon conseil ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	Connaissez-vous un homme aux cheveux argentés ?	}{	Connaissez-vous un homme aux cheveux argentés ?	}{	601	}{	G.Silver_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche un homme aux boucles d'argent.	}
+{	503	}{	Je suis au courant pour votre petit projet avec le Syndicat Fu. . .	}{	Je suis au courant pour votre petit projet avec le Syndicat Fu. . .	}{	751	}{	G.Silver_Know == 2	}{	}{	}{	}{	}{	}{	}{	}{	J'ai fait échoué votre plan monstrueux avec les Fu !	}
+{	504	}{	Avez-vous entendu parler du Sarcophage d'Ankara ?	}{	Avez-vous entendu parler du Sarcophage d'Ankara ?	}{	351	}{	G.Ming_Sarcophagus == 0 and G.Ming_Bros == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vos oreilles ont-elles vu le Sarcophage d'Ankara ?	}
+{	505	}{	Dites-moi encore ce que vous savez sur le sarcophage. . .	}{	Dites-moi encore ce que vous savez sur le sarcophage. . .	}{	311	}{	G.Ming_Sarcophagus > 0 and G.Ming_Bros == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la terrible boîte d'Ankara !	}
+{	506	}{	Avez-vous donner beaucoup de directives à Wong Ho ?	}{	Avez-vous donner beaucoup de directives à Wong Ho ?	}{	511	}{	G.Tong_Known == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez aussi guidée le Wong Ho?	}
+{	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	J'aimerais vous poser quelques questions.	}{	J'aimerais vous poser quelques questions.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	510	}{	Pas maintenant. A plus.	}{	Pas maintenant. A plus.	}{	0	}{	G.Silver_Know == 0 or G.Ming_Ziggy == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	511	}{	Wong Ho. . . Oui, je le connais bien.	}{	Wong Ho. . . Oui, je le connais bien.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	Pouvez-vous encore me parler de lui ?	}{	Pouvez-vous encore me parler de lui ?	}{	441	}{	pc.GetQuestState("Barabus") < 3	}{	}{	}{	}{	}{	}{	}{	}{	Narrez-moi la trame de vie de Wong Ho.	}
+{	513	}{	Il dit de vous le plus grand bien.	}{	Il dit de vous le plus grand bien.	}{	521	}{	G.Ming_Highly == 0 and G.Wong_ZQ > 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes une déesse à ses yeux aveugles.	}
+{	514	}{	Sa fille a été kidnappée. Il veut que je la retrouve.	}{	Sa fille a été kidnappée. Il veut que je la retrouve.	}{	561	}{	G.WongHo_Kiki == 1 and G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	Son trésor a été pris, je compte le lui rapporter.	}
+{	515	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	516	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	517	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	520	}{	Pas grave. Au revoir.	}{	Pas grave. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	521	}{	J'apporte mes conseils spirituels à tous ceux qui les désirent.	}{	J'apporte mes conseils spirituels à tous ceux qui les désirent.	}{	#	}{	}{	G.Ming_Kindred = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	Et cela vous sert bien, n'est-ce pas ?	}{	Et cela vous sert bien, n'est-ce pas ?	}{	531	}{	pc.perception >= 4 or pc.wits >= 4	}{	}{	}{	}{	}{	}{	}{	}{	Vous guidez les gens vers un chemin périlleux. . .	}
+{	523	}{	Sa fille a été kidnappée. Il veut que je la retrouve.	}{	Sa fille a été kidnappée. Il veut que je la retrouve.	}{	561	}{	G.WongHo_Kiki == 1 and G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	Son trésor a été pris, je compte le lui rapporter.	}
+{	524	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	Compris. Je ferais mieux de partir.	}{	Compris. Je ferais mieux de partir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	531	}{	Les événements ne s'expliquent jamais. Tout a une place d'après un plan supérieur au nôtre. Vous devriez le savoir maintenant, vampire.	}{	Les événements ne s'expliquent jamais. Tout a une place d'après un plan supérieur au nôtre. Vous devriez le savoir maintenant, vampire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	C'est profond. J'aimerais vous poser d'autres questions. . .	}{	C'est profond. J'aimerais vous poser d'autres questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	533	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	534	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	536	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	540	}{	Je vois. Au revoir.	}{	Je vois. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	541	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	543	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	544	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	545	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	546	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	547	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	548	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	553	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	554	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	555	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	556	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	558	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	J'espère que vous réussirez.	}{	J'espère que vous réussirez.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	Il ne m'a demandé cela que parce qu'il pense que je travaille pour vous.	}{	Il ne m'a demandé cela que parce qu'il pense que je travaille pour vous.	}{	531	}{	pc.perception >= 4 or pc.wits >= 4	}{	}{	}{	}{	}{	}{	}{	}{	Sa confiance en moi s'arrête à votre bénédiction.	}
+{	563	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	564	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	565	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	566	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	Je ferai de mon mieux. Au revoir.	}{	Je ferai de mon mieux. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	571	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	573	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	574	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	575	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	576	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	577	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	Les Tong font du chantage à beaucoup de commerces locaux pour utiliser leurs installations. Jetez un oeil dans les ruelles. Je vous souhaite bonne chance.	}{	Les Tong font du chantage à beaucoup de commerces locaux pour utiliser leurs installations. Jetez un oeil dans les ruelles. Je vous souhaite bonne chance.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	583	}{	A bientôt.	}{	A bientôt.	}{	491	}{	npc.times_talked == 1 and G.Ming_Pissed < 3	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	584	}{	A bientôt.	}{	A bientôt.	}{	0	}{	npc.times_talked > 1 and G.Ming_Pissed < 3	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	585	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	586	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	587	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	593	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	594	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	595	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	596	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	597	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	598	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	599	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	600	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	601	}{	Un homme aux cheveux argentés ? Je n'en connais aucun. . .	}{	Un homme aux cheveux argentés ? Je n'en connais aucun. . .	}{	#	}{	}{	Whisper("Lying")	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	603	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	604	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	605	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	A bientôt.	}{	A bientôt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	611	}{	Quelque chose d'autre, vampire ?	}{	Quelque chose d'autre, vampire ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	J'ai croisé vos agents - ils sont morts, à présent.	}{	J'ai croisé vos agents - ils sont morts, à présent.	}{	621	}{	G.Ming_Changs == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'ai écrasé les Chang, ils sont gentils. Et morts.	}
+{	613	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	614	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	615	}{	J'aimerais vous poser quelques questions. . .	}{	J'aimerais vous poser quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	616	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	617	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	618	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	619	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	620	}{	Pas maintenant. Au revoir.	}{	Pas maintenant. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	621	}{	Comme c'est incommode.	}{	Comme c'est incommode.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	Ils ont parlé d'une alliance entre les Kuei-jin et LaCroix.	}{	Ils ont parlé d'une alliance entre les Kuei-jin et LaCroix.	}{	631	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ils ont parlé de votre lien clandestin avec LaCroix. . .	}
+{	623	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	624	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	625	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	626	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	627	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	628	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	629	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	630	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	631	}{	Je vous assure que mes agents, les frères Chang, ne parlent pas avec la moindre autorité.	}{	Je vous assure que mes agents, les frères Chang, ne parlent pas avec la moindre autorité.	}{	#	}{	}{	G.Ming_Bros = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	Vous oui. Conspirez-vous avec LaCroix ou non ?	}{	Vous oui. Conspirez-vous avec LaCroix ou non ?	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	Avez-vous uni vos desseins avec le bouffon, démone ?	}
+{	633	}{	Vous ne répondez pas à ma question.	}{	Vous ne répondez pas à ma question.	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles n'apportent nulle réponse à mes questions.	}
+{	634	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	635	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	636	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	637	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	638	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	640	}{	Si vous le dites. Je m'en vais.	}{	Si vous le dites. Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	641	}{	Je peux vous parler ou non, je peux parler ou non à votre prince si je le veux, ou n'importe qui d'autre, cela ne fait pas de nous des alliés.	}{	Je peux vous parler ou non, je peux parler ou non à votre prince si je le veux, ou n'importe qui d'autre, cela ne fait pas de nous des alliés.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	643	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	644	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	645	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	646	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	647	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	648	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	650	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	651	}{	Allons, Caïnite. Je pense que vous me trouverez honnête au point d'être brutale. Et toute étrangère que je sois pour vous, j'en attends autant de vous.	}{	Allons, Caïnite. Je pense que vous me trouverez honnête au point d'être brutale. Et toute étrangère que je sois pour vous, j'en attends autant de vous.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	652	}{	Eh bien, ma patience s'épuise. Où est le vampire que je cherche ?	}{	Eh bien, ma patience s'épuise. Où est le vampire que je cherche ?	}{	421	}{	}{	G.Ming_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Je n'ai plus la patience d'écouter vos parjures. Où est le vampire que je cherche ?	}
+{	653	}{	Je m'en souviendrai. Puis-je vous poser quelques questions ?	}{	Je m'en souviendrai. Puis-je vous poser quelques questions ?	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	654	}{	Il faut que j'y aille. . .	}{	Il faut que j'y aille. . .	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	655	}{	Il faut que j'y aille. . .	}{	Il faut que j'y aille. . .	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	656	}{	La seule leçon que j'ai apprise, c'est que les Kuei-jin sont pleins de vent. . .	}{	La seule leçon que j'ai apprise, c'est que les Kuei-jin sont pleins de vent. . .	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai appris que les Kuei-jin brassent beaucoup d'air pour rien. . .	}
+{	657	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	658	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	659	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	660	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	661	}{	Salutations, Caïnite. Vos manières se sont-elles améliorées depuis notre dernière conversation ? Je tolère beaucoup de choses dans ce monde, mais l'irrespect n'en fait pas partie.	}{	Salutations, Caïnite. Vos manières se sont-elles améliorées depuis notre dernière conversation ? Je tolère beaucoup de choses dans ce monde, mais l'irrespect n'en fait pas partie.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	Je regrette ma grossièreté. Veuillez me pardonner.	}{	Je regrette ma grossièreté. Veuillez me pardonner.	}{	671	}{	}{	G.Ming_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	Pardonnez mes errances bilieuses.	}
+{	663	}{	Vous feriez mieux de vous habituer, parce que je ne lèche pas le derrière des Kuei-jin.	}{	Vous feriez mieux de vous habituer, parce que je ne lèche pas le derrière des Kuei-jin.	}{	681	}{	G.Ming_Wongho == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ma langue ne lèche pas le popotin des Kuei-jin, démone.	}
+{	664	}{	Et mon pied dans le derrière, vous allez tolérer ?	}{	Et mon pied dans le derrière, vous allez tolérer ?	}{	696	}{	G.Ming_Wongho == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pourrez-vous tolérer que je vous botte le train ?	}
+{	665	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	666	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	667	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	668	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	669	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	670	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	671	}{	J'accepte vos excuses. Il est bon de voir que vous commencez à apprendre votre place.	}{	J'accepte vos excuses. Il est bon de voir que vous commencez à apprendre votre place.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	672	}{	Merci de votre compréhension. J'ai quelques questions.	}{	Merci de votre compréhension. J'ai quelques questions.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre grâce est aussi vaste que ma folie. Puis-je fouiller dans votre matière grise ?	}
+{	673	}{	Tout bien réfléchi, allez vous faire foutre.	}{	Tout bien réfléchi, allez vous faire foutre.	}{	681	}{	G.Ming_Wongho == 0	}{	}{	}{	}{	}{	}{	}{	}{	Attendez ! Mes autres identités disent : 'Allez vous faire foutre'.	}
+{	674	}{	En fait, je viens de décider que ma place serait de cracher sur votre tombe.	}{	En fait, je viens de décider que ma place serait de cracher sur votre tombe.	}{	696	}{	G.Ming_Wongho == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai appris que votre tombe sera arrosée de ce que regorge ma bouche.	}
+{	675	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	676	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	678	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	679	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	680	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	681	}{	Je vois. Vous me décevez, Caïnite. Votre attitude n'augure rien de bon pour la suite de notre relation. Je vous conseille de penser à l'avenir de cette ville, et de revenir quand vous aurez appris la politesse.	}{	Je vois. Vous me décevez, Caïnite. Votre attitude n'augure rien de bon pour la suite de notre relation. Je vous conseille de penser à l'avenir de cette ville, et de revenir quand vous aurez appris la politesse.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	682	}{	J'y réfléchirai. Plus tard.	}{	J'y réfléchirai. Plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	683	}{	Le futur c'est moi, garce. A plus.	}{	Le futur c'est moi, garce. A plus.	}{	0	}{	G.Ming_Wongho == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le futur est dans ma fureur, maîtresse. Adieu.	}
+{	684	}{	Je pense souvent à l'avenir. Vous n'y êtes pas. . .	}{	Je pense souvent à l'avenir. Vous n'y êtes pas. . .	}{	696	}{	G.Ming_Wongho == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous n'avez aucune place dans la formule du futur, démone.	}
+{	685	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	686	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	687	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	688	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	689	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	690	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	691	}{	Vous mettez ma patience à rude épreuve, Caïnite. Nous sommes sur mon domaine. Essayez de vous en souvenir. Adieu. 	}{	Vous mettez ma patience à rude épreuve, Caïnite. Nous sommes sur mon domaine. Essayez de vous en souvenir. Adieu. 	}{	#	}{	}{	G.Ming_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	692	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	693	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	694	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	695	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	696	}{	J'ai assez supporté votre bêtise. Veuillez vous raccompagner à la porte et ne pas revenir dans ce temple.	}{	J'ai assez supporté votre bêtise. Veuillez vous raccompagner à la porte et ne pas revenir dans ce temple.	}{	#	}{	}{	G.Ming_Pissed = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	697	}{	C'est une larme que je vois sur votre joue ? Vous êtes pathétique. A plus tard.	}{	C'est une larme que je vois sur votre joue ? Vous êtes pathétique. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous pleurez comme une écolière grondée. Je vous quitte. 	}
+{	698	}{	La prochaine fois que je viendrai ici, ce sera pour faire brûler cet endroit.	}{	La prochaine fois que je viendrai ici, ce sera pour faire brûler cet endroit.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quand je reviendrai, ce temple brûlera. Adieu.	}
+{	699	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	700	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	701	}{	Je n'ai plus rien à vous dire. Partez.	}{	Je n'ai plus rien à vous dire. Partez.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	702	}{	Je vais faire vite. Vous avez entendu parler d'un Hengeyôkai dans Chinatown ?	}{	Je vais faire vite. Vous avez entendu parler d'un Hengeyôkai dans Chinatown ?	}{	706	}{	G.Yukie_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Que savez-vous d'un horrible Hengeyôkai ?	}
+{	703	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	704	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	705	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	706	}{	Hmm. . . Oui, j'en connais un. Un dénommé Zygaena.	}{	Hmm. . . Oui, j'en connais un. Un dénommé Zygaena.	}{	#	}{	}{	G.Ming_Ziggy = 1; G.Ming_Zygaena = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	707	}{	Il travaille pour vous ?	}{	Il travaille pour vous ?	}{	471	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	708	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	709	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	710	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	711	}{	Oui ?	}{	Oui ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	712	}{	Vous êtes bien des vampires, hein ?	}{	Vous êtes bien des vampires, hein ?	}{	71	}{	G.Ming_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	La malédiction de Caïn coule-t-elle dans vos veines ?	}
+{	713	}{	En quoi les Kuei-jin sont-ils semblables aux vampires ?	}{	En quoi les Kuei-jin sont-ils semblables aux vampires ?	}{	81	}{	G.Ming_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les Kuei-jin et les vampires projettent-ils les mêmes ombres ?	}
+{	714	}{	Comment les Kuei-jin apparaissent-ils ?	}{	Comment les Kuei-jin apparaissent-ils ?	}{	91	}{	G.Ming_Breath == 0	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi la création des Kuei-jin. . .	}
+{	715	}{	Votre condition ne paraît pas si différente de la nôtre. . .	}{	Votre condition ne paraît pas si différente de la nôtre. . .	}{	121	}{	G.Ming_Purpose == 1 and G.Ming_Unlife == 0	}{	}{	}{	}{	}{	}{	}{	}{	Votre habit est différent, mais vous êtes toute aussi maudite.	}
+{	716	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	717	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	718	}{	J'ai appris beaucoup en tuant votre espion à Santa Monica.	}{	J'ai appris beaucoup en tuant votre espion à Santa Monica.	}{	741	}{	G.Ming_Spy == 0 and G.Ming_Unlife == 0 and G.Kjspy_Dead == 1	}{	G.Ming_Spy = 1	}{	}{	}{	}{	}{	}{	}{	J'ai appris beaucoup en éliminant votre espion à Santa Monica.	}
+{	719	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	720	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	721	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	722	}{	J'ai oublié. . . Les Kuei-jin sont-ils comme les vampires ?	}{	J'ai oublié. . . Les Kuei-jin sont-ils comme les vampires ?	}{	71	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Les Kuei-jin et les vampires projettent-ils les mêmes ombres ?	}
+{	723	}{	Dites-moi encore comment les Kuei-jin sont créés ?	}{	Dites-moi encore comment les Kuei-jin sont créés ?	}{	91	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi la création des Kuei-jin. . .	}
+{	724	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	725	}{	Je m'en vais.	}{	Je m'en vais.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	726	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	727	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	728	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	729	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	730	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	731	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	732	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	733	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	734	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	735	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	736	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	737	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	738	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	739	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	740	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	741	}{	Ah oui, je sais que vous avez fait trépasser l'un de nos agents. Cela a peu d'importance. Et pour lui, la mort était préférable au déshonneur de la défaite face aux vampires.	}{	Ah oui, je sais que vous avez fait trépasser l'un de nos agents. Cela a peu d'importance. Et pour lui, la mort était préférable au déshonneur de la défaite face aux vampires.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	742	}{	Amusant. J'ai quelques questions pour vous.	}{	Amusant. J'ai quelques questions pour vous.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	743	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	744	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	745	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	746	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	747	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	748	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	749	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	750	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	751	}{	[impassible]Vraiment ? Intéressant. Puis-je vous demander pourquoi vous me dites cela ?	}{	[impassible]Vraiment ? Intéressant. Puis-je vous demander pourquoi vous me dites cela ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	752	}{	J'ai un peu creusé dans leurs fichiers informatiques. . . après avoir ravagé les lieux.	}{	J'ai un peu creusé dans leurs fichiers informatiques. . . après avoir ravagé les lieux.	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai mis à jour vos machinations machiavéliques. . . après avoir mis à sac le Syndicat.	}
+{	753	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	754	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	755	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	756	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	757	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	758	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	759	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	760	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	761	}{	Ha ha ha ! Je vous applaudis, vampire. Vous devez être parmi les meilleurs guerriers de votre race.	}{	Ha ha ha ! Je vous applaudis, vampire. Vous devez être parmi les meilleures guerrières de votre race.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	762	}{	Oui. Mais ça ne va pas vous servir à grand-chose.	}{	Oui. Mais ça ne va pas vous servir à grand-chose.	}{	771	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'impressionne, mais ma colère vis-à-vis de votre trahison est encore plus impressionnante !	}
+{	763	}{	Je ne comprends pas. Pourquoi communiquez-vous avec eux ?	}{	Je ne comprends pas. Pourquoi communiquez-vous avec eux ?	}{	771	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi nagez-vous avec ces requins du Syndicat ?	}
+{	764	}{	Ne me faites pas de lèche, garce. Vous avez essayé de me piéger. . .	}{	Ne me faites pas de lèche, garce. Vous avez essayé de me piéger. . .	}{	771	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous m'avez volontairement fait courir un grand danger.	}
+{	765	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	766	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	767	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	768	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	769	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	770	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	771	}{	Je regrette. Je pensais que vous saviez. . . nos peuples sont en guerre. Pensez-vous que vos anciens auraient agi différemment ?	}{	Je regrette. Je pensais que vous saviez. . . nos peuples sont en guerre. Pensez-vous que vos anciens auraient agi différemment ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	772	}{	Mais eux aussi ont essayé de me tuer !	}{	Mais eux aussi ont essayé de me tuer !	}{	791	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les requins ont essayé de se nourrir.	}
+{	773	}{	Non. Et moi non plus. La prochaine fois que nous nous verrons, ce sera en tant qu'adversaires.	}{	Non. Et moi non plus. La prochaine fois que nous nous verrons, ce sera en tant qu'adversaires.	}{	781	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nous porterons le masque des adversaires à notre prochaine rencontre.	}
+{	774	}{	Allez vous faire foutre, satanée vampiresse ninja. 	}{	Allez vous faire foutre, satanée vampiresse ninja. 	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	775	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	776	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	777	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	778	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	779	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	780	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	781	}{	Vampire de mon coeur. . . Nous n'avons jamais été autre chose. Adieu.	}{	Vampire de mon coeur. . . Nous n'avons jamais été autre chose. Adieu.	}{	#	}{	}{	G.Ming_Pissed = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	782	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	783	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	784	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	785	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	786	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	787	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	788	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	789	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	790	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	791	}{	Oui, je n'en doute pas.	}{	Oui, je n'en doute pas.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	792	}{	Vous êtes une catin au coeur froid. A notre prochaine rencontre, nous serons adversaires.	}{	Vous êtes une catin au coeur froid. A notre prochaine rencontre, nous serons adversaires.	}{	781	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nous porterons le masque des adversaires à notre prochaine rencontre.	}
+{	793	}{	C'est ça. Je me casse.	}{	C'est ça. Je me casse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	794	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	795	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	796	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	797	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	798	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	799	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	800	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	801	}{	Pardon ? Je n'ai pas bien entendu.	}{	Pardon ? Je n'ai pas bien entendu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	802	}{	La surface est craquelée, ternie, et révèle davantage le miroir en dessous.	}{	La surface est craquelée, ternie, et révèle davantage le miroir en dessous.	}{	811	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	803	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	804	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	805	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	806	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	807	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	808	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	809	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	810	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	811	}{	Quelle affreuse variété de la malédiction de Caïn est-ce ?	}{	Quelle affreuse variété de la malédiction de Caïn est-ce ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	812	}{	La vérité porte de nombreux masques, maîtresse.	}{	La vérité porte de nombreux masques, maîtresse.	}{	821	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	813	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	814	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	815	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	816	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	817	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	818	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	819	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	820	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	821	}{	En effet, vampire. Mais parlons d'autre chose. Que puis-je faire pour vous aider ? Puis-je vous proposer quelque rafraîchissement ?	}{	En effet, vampire. Mais parlons d'autre chose. Que puis-je faire pour vous aider ? Puis-je vous proposer quelque rafraîchissement ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	822	}{	L'Earl Grey n'a que peu de saveur pour moi.	}{	L'Earl Grey n'a que peu de saveur pour moi.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	823	}{	Parlez-moi davantage de votre peuple, maîtresse des miroirs.	}{	Parlez-moi davantage de votre peuple, maîtresse des miroirs.	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	824	}{	J'ai détruit un mangeur de vie à Santa Monica, la dame près de la mer. 	}{	J'ai détruit un mangeur de vie à Santa Monica, la dame près de la mer. 	}{	741	}{	G.Kjspy_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	825	}{	Le temps est précieux, et vous non. Je cherche un enfant de la nuit des Nosferatus.	}{	Le temps est précieux, et vous non. Je cherche un enfant de la nuit des Nosferatus.	}{	21	}{	}{	G.Ming_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	826	}{	Puis-je fouiller votre matière grise ?	}{	Puis-je fouiller votre matière grise ?	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	827	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	828	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	829	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	830	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	831	}{	Quoi ? Comment ? [Se reprend]Vous feriez bien de ne pas parler de telles choses, dément. Les Rois Yama ne sont pas une histoire de fantômes pour enfants, ni une ombre sans substance.	}{	Quoi ? Comment ? [Se reprend]Vous feriez bien de ne pas parler de telles choses, démente. Les Rois Yama ne sont pas une histoire de fantômes pour enfants, ni une ombre sans substance.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	832	}{	Saluons la venue de l'Empereur Démon !	}{	Saluons la venue de l'Empereur Démon !	}{	841	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	833	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	834	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	835	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	836	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	837	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	838	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	839	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	840	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	841	}{	Non ! Impossible ! Le Sixième Age n'est pas encore là ! Ne parlez plus par énigmes enfiévrées, vampire. Changeons de sujet.	}{	Non ! Impossible ! Le Sixième Age n'est pas encore là ! Ne parlez plus par énigmes enfiévrées, vampire. Changeons de sujet.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	842	}{	Savez-vous où se trouve le sarcophage ?	}{	Savez-vous où se trouve le sarcophage ?	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	843	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	844	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	845	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	846	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	847	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	848	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	849	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	850	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	851	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	852	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	853	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	854	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	855	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	856	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	857	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	858	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	859	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	860	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	861	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	862	}{	Salutations.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	863	}{	Oui ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	864	}{	Que faites-vous ici ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	865	}{	Je ne désire plus vous parler.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	866	}{	Oui.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	867	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	868	}{	Merci.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	869	}{	Qu'est-ce que vous avez dit ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	870	}{	Quoi ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	871	}{	Je ne sais pas.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	872	}{	Je ne peux pas vous aider.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	873	}{	Cela me fait plaisir.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	874	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	875	}{	Prenez ceci.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	876	}{	Je vous enverrai un e-mail à ce sujet.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	877	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	878	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	879	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	880	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	881	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	882	}{	(Starting Condition)	}{	}{	11	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	883	}{	(Starting Condition)	}{	}{	611	}{	G.Story_State >= 65 and G.Ming_Bros == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	884	}{	(Starting Condition)	}{	}{	701	}{	G.Ming_Pissed == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	885	}{	(Starting Condition)	}{	}{	661	}{	G.Ming_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	886	}{	(Starting Condition)	}{	}{	501	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}

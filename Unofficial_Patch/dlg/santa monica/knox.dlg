@@ -1,0 +1,974 @@
+{	1	}{	[Fort et intimidant, très rude d'aspect. Particulièrement guilleret pour l'instant. Knox est encore fasciné comme un enfant par le nouveau monde qui s'est ouvert à lui il y a quelques mois, quand un vampire l'a introduit dans le monde des immortels.]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Eh, il te faut quelque chose, mon pote ?	}{	Eh, ça va ma belle ?	}{	#	}{	}{	G.Knox_TT = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Je cherche quelqu'un.	}{	On se connaît ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche le fort d'or.	}
+{	13	}{	Ca va, je cherche quelqu'un.	}{	Ca va, je cherche quelqu'un.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	As-tu vu le chasseur doré ?	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	En fait, non. Au revoir.	}{	Super, mais je dois partir. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Seulement que les voix arrêtent de me parler.	}
+{	21	}{	T'es. . . t'es des Nosferatus, hein ?	}{	T'es. . . t'es des Nosferatus, hein ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Vamp = 1; G.Knox_TT = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	De quoi parles-tu ?	}{	De quoi parles-tu ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Je ne sais pas ce que tu penses savoir, mec, mais tu ferais bien de l'oublier.	}{	Je ne sais pas ce que tu penses savoir, mec, mais tu ferais bien de l'oublier.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Bon, parle moins fort, s'il te plaît ?	}{	Bon, parle moins fort, tu veux bien ?	}{	921	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	[a remarqué quelque chose, concentré sur l'autre personne]Attends. Répète ça, pour voir ?	}{	[a remarqué quelque chose, concentré sur l'autre personne]Attends. Répète ça, pour voir ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	D'accord. 'Je cherche quelqu'un.'	}{	D'accord. 'Je cherche quelqu'un.'	}{	611	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce n'était pas moi. C'était une des autres voix dans ma tête.	}
+{	33	}{	Tu m'entendrais sans doute mieux en retirant ta tête de ton derrière.	}{	Tu m'entendrais sans doute mieux en retirant ta tête de ton derrière.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	La densité de ta matière grise est étonnante.	}
+{	34	}{	Non.	}{	Non.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai dit quelque chose ?	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	[excité]Voilà ! Tu. . . t'en es, hein ? Vampire, je veux dire. . .	}{	[excité]Voilà ! Tu. . . t'en es, hein ? Vampire, je veux dire. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Quoi ? Vampire ? Qu'est-ce que tu as fumé ?	}{	Quoi ? Vampire ? Qu'est-ce que tu as fumé ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu es plus malade que l'être que je vois dans le miroir.	}
+{	43	}{	Bon. Je ne sais pas ce que tu penses savoir, mais tu ferais bien de l'oublier.	}{	Bon. Je ne sais pas ce que tu penses savoir, mais tu ferais bien de l'oublier.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'ombre de la mort va tomber sur toi si tu regardes encore dans ces yeux. . .	}
+{	44	}{	Mettons que tu aies raison - et alors ?	}{	Mettons que tu aies raison - et alors ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Comment as-tu compris mon obscur secret ?	}
+{	45	}{	Fous-moi la paix, crétin !	}{	Fous-moi la paix, crétin !	}{	691	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	[suspicieux]Allez. Mais si t'en es. Ne me fais pas marcher, mon vieux. Je n'en parlerai à personne. C'est cool, je veux juste discuter.	}{	[suspicieux]Allez. Mais si t'en es. Ne me fais pas marcher, ma vieille. Je n'en parlerai à personne. C'est cool, je veux juste discuter.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Comment connais-tu les Nosferatus ?	}{	Comment connais-tu les Nosferatus ?	}{	61	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	D'accord, alors. On va parler.	}{	D'accord, alors. On va parler.	}{	101	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Devisons gaiement, mon petit.	}
+{	54	}{	Bon, discutons.	}{	D'accord, alors. On va parler.	}{	921	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Eh ! Je travaille pour un vampire ! Je ne sais pas ce que je devrais vraiment te dire, mais ce serait super de parler à quelqu'un d'autre qui est 'au courant', tu vois ? 	}{	Eh ! Je travaille pour un vampire ! Je ne sais pas ce que je devrais vraiment te dire, mais ce serait super de parler à quelqu'un d'autre qui est 'au courant', tu vois ? 	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Oui, je vois ce que tu veux dire.	}{	Oui, je vois ce que tu veux dire.	}{	101	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	Non, je vois pas parce que je ne suis pas un vampire. Et je m'en vais.	}{	Non, je vois pas parce que je ne suis pas une vampire. Et je m'en vais.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non, et je ne peux t'entendre car je suis ne suis plus là.	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	Super, ce sont les barres de voltige dans ma tête. . .	}{	Super, ce sont les barres de voltige dans ma tête. . .	}{	551	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Bon, d'accord, continue de faire semblant.	}{	Bon, d'accord, continue de faire semblant.	}{	#	}{	}{	G.Knox_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Alors tu reviens me parler pourquoi ? Pour me dire que tu n'es vraiment, vraiment pas vampire ?	}{	Alors tu reviens me parler pourquoi ? Pour me dire que tu n'es vraiment, vraiment pas vampire ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Wesp = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Bon, écoute, parle moins fort pour qu'on puisse discuter.	}{	Bon, écoute, parle moins fort pour qu'on puisse discuter.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Echangeons des mots.	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	Non, je reviens te demander ton nom.	}{	Non, je reviens te demander ton nom.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu n'es peut-être pas si fou que ça, après tout.	}
+{	86	}{	Exactement.	}{	Exactement.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vrai.	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Pourquoi je te le dirais ? Tu ne me dis pas tout, toi. . .	}{	Pourquoi je te le dirais ? Tu ne me dis pas tout, toi. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	D'accord, on peut discuter. Mais moins fort, OK ?	}{	Bon, OK, on discute. Mais pas trop fort, d'accord ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Echangeons des mots.	}
+{	94	}{	Bon. Je m'en vais.	}{	Bon. Je m'en vais.	}{	0	}{	}{	G.Knox_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	[ravi]Génial ! Je le savais ! J'en étais sûr. Je l'ai vu. Après, j'ai vu tes dents, et je me suis dit 'Bingo' ! On aurait cru que je te sentais. Je m'appelle Knox Harrington. Ravi de te rencontrer.	}{	[ravi]Génial ! Je le savais ! J'en étais sûr. Je l'ai vu. Après, j'ai vu tes dents, et je me suis dit 'Bingo' ! On aurait cru que je te sentais. Je m'appelle Knox Harrington. Ravi de te rencontrer.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Vamp = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	Tu es un vampire ? Comment sais-tu tout cela ?	}{	Tu es un vampire ? Comment sais-tu tout cela ?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu es aussi un enfant de la nuit ?	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	Le plaisir est pour toi. Fous-moi la paix, le comique.	}{	Le plaisir est pour toi. Fous-moi la paix, le comique.	}{	691	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Je suis une goule. Je ne savais rien de tout ça jusqu'à il y a quelques mois. Un type est venu me voir, et boum ! D'un coup, les vampires existent, et j'en ai sous les yeux. J'ai cru halluciner.	}{	Je suis une goule. Je ne savais rien de tout ça jusqu'à il y a quelques mois. Un type est venu me voir, et boum ! D'un coup, les vampires existent, et j'en ai sous les yeux. J'ai cru halluciner.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Ghoul = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Tu dis que tu es une 'goule' ? Qu'est-ce que c'est ?	}{	Tu dis que tu es une 'goule' ? Qu'est-ce que c'est ?	}{	131	}{	G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quoi, ma goule ? Qu'est-ce qu'elle a ma g. . . C'est quoi, une goule ?	}
+{	113	}{	Ca n'a pas été trop dur de rentrer dans le monde des vampires ?	}{	Ca n'a pas été trop dur de rentrer dans le monde des vampires ?	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ca n'a pas fait mal de rentrer dans notre monde ?	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	Super. J'ai encore quelques questions. . .	}{	Super. J'ai encore quelques questions. . .	}{	541	}{	G.Knox_Questions == 1 and G.Mercurio_Quest == 2 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je tirer quelques réponses de ta matière grise ?	}
+{	116	}{	Je file, Knox. A bientôt.	}{	Je file, Knox. A bientôt.	}{	0	}{	G.Knox_Questions == 1 and G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Eh bien, d'après ce qu'on m'a expliqué, quand un vampire laisse un humain boire un peu de son sang, l'humain gagne quelques pouvoirs de vampire, il guérit plus vite, ce genre de chose. C'est ça, une goule.	}{	Eh bien, d'après ce qu'on m'a expliqué, quand un vampire laisse un humain boire un peu de son sang, l'humain gagne quelques pouvoirs de vampire, il guérit plus vite, ce genre de chose. C'est ça, une goule.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Ghoul = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Qui est le vampire qui a fait de toi une goule ?	}{	Qui est le vampire qui a fait de toi une goule ?	}{	621	}{	G.Mercurio_Quest != 2 and G.Knox_Master == 0	}{	G.Knox_Master = 1	}{	}{	}{	}{	}{	}{	}{	Quelle créature t'a engendrée, charmante goule ?	}
+{	133	}{	Ca a l'air de te plaire.	}{	Ca a l'air de te plaire.	}{	141	}{	G.Knox_G == 0	}{	}{	}{	}{	}{	}{	}{	}{	Et tu es heureux, dans ce cas, goule ?	}
+{	134	}{	Quel est le vampire qui a fait de toi une goule ? 	}{	Quel est le vampire qui a fait de toi une goule ? 	}{	151	}{	G.Knox_Bertram == 0 and G.Mercurio_Quest == 2	}{	G.Knox_Outbound = 3	}{	}{	}{	}{	}{	}{	}{	Quelle créature t'a engendrée, charmante goule ?	}
+{	135	}{	Et Bertram, il est sympa ?	}{	Et Bertram, il est sympa ?	}{	171	}{	G.Knox_Bertram == 1 and G.Knox_G == 1 and G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi de l'Affreux.	}
+{	136	}{	Comment Bertram prend-il contact avec toi ?	}{	Comment Bertram prend-il contact avec toi ?	}{	181	}{	G.Knox_Bertram == 1 and G.Knox_G == 1 and G.Knox_Appear == 0 and G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Comment l'Affreux te trouve-t-il ?	}
+{	137	}{	Tu ne veux pas plutôt dire 'racailles qui se prennent pour des vampires' ?	}{	Tu ne veux pas plutôt dire 'racailles qui se prennent pour des vampires' ?	}{	691	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	Je peux te poser des questions ?	}{	Je peux te poser des questions ?	}{	931	}{	G.Mercurio_Quest != 2	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui surgissent de mon esprit.	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	C'est mortel, ici. Je me casse.	}{	C'est mortel, ici. Je me casse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai quitté les environs.	}
+{	141	}{	C'est génial. Après avoir goûté du sang de vampire pour la première fois. . . C'est la meilleure drogue, et ça ne m'a pas fait de mal, rien que du bien, pour tout. Je me sentais comme un dieu, juste à sucer le sang au poignet de cet affreux.	}{	C'est génial. Après avoir goûté du sang de vampire pour la première fois. . . C'est la meilleure drogue, et ça ne m'a pas fait de mal, rien que du bien, pour tout. Je me sentais comme un dieu, juste à sucer le sang au poignet de cet affreux.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Likes = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	Qui était cet 'Affreux' ?	}{	Qui était cet 'Affreux' ?	}{	621	}{	G.Mercurio_Quest != 2 and G.Knox_Master == 0	}{	G.Knox_Master = 1	}{	}{	}{	}{	}{	}{	}{	Qui est l'Affreux ?	}
+{	144	}{	Qui est ce 'grand méchant' ?	}{	Qui est ce 'grand méchant' ?	}{	151	}{	G.Knox_Bertram == 0 and G.Mercurio_Quest == 2	}{	G.Knox_Master = 1	}{	}{	}{	}{	}{	}{	}{	Qui est l'Affreux ?	}
+{	145	}{	Sais-tu où se trouve Bertram ?	}{	Sais-tu où se trouve Bertram ?	}{	161	}{	G.Knox_Bertram == 1 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Sais-tu où se trouve l'Affreux ?	}
+{	146	}{	Et Bertram, il est comment ?	}{	Et Bertram, il est comment ?	}{	171	}{	G.Knox_Bertram > 0 and G.Knox_Powerful == 0 and G.Knox_Quest == 0 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi de l'Affreux.	}
+{	147	}{	Comment Bertram prend-il contact avec toi ?	}{	Comment Bertram prend-il contact avec toi ?	}{	181	}{	G.Knox_Bertram > 0 and G.Knox_Appear == 0 and G.Knox_Quest == 0 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment l'Affreux de contacte-t-il ?	}
+{	148	}{	Et qu'est-ce que tu fais par ici ?	}{	Et qu'est-ce que tu fais par ici ?	}{	651	}{	G.Mercurio_Quest != 2	}{	}{	}{	}{	}{	}{	}{	}{	Alors, qu'est-ce qui t'a botté aujourd'hui ?	}
+{	149	}{	Puis-je te poser encore quelques questions ?	}{	Puis-je te poser encore quelques questions ?	}{	541	}{	G.Knox_Quest > 0 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui surgissent de mon esprit.	}
+{	150	}{	Je m'en vais. A plus tard.	}{	Je m'en vais. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis ailleurs. 	}
+{	151	}{	Il s'appelle Bertram Tung. C'est un Nosferatu.	}{	Il s'appelle Bertram Tung. C'est un Nosferatu.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Bertram = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Vraiment ? Le monde est petit : je le cherche.	}{	Vraiment ? Le monde est petit : je le cherche.	}{	161	}{	G.Mercurio_Quest == 2 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ah, moi aussi je cherche l'Affreux !	}
+{	153	}{	Que fais-tu pour lui ?	}{	Que fais-tu pour lui ?	}{	211	}{	G.Knox_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Que fais-tu pour l'Affreux ?	}
+{	154	}{	Alors tu es la 'goule' de Bertram ? Qu'est-ce que ça veut dire, exactement ?	}{	Alors tu es la 'goule' de Bertram ? Qu'est-ce que ça veut dire, exactement ?	}{	131	}{	G.Knox_Ghoul == 1 and G.Knox_Outbound == 1	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Que sais-tu sur la goulitude ?	}
+{	155	}{	Ca te plaît d'être une goule ?	}{	Ca te plaît d'être une goule ?	}{	141	}{	G.Knox_Outbound == 3	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Et tu es heureux, dans ce cas, goule ?	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	Tu sais où il est ?	}{	Tu sais où il est ?	}{	161	}{	G.Knox_Outbound == 0	}{	}{	}{	}{	}{	}{	}{	}{	Sais-tu où se trouve l'Affreux ?	}
+{	158	}{	Comment il est ?	}{	Comment il est ?	}{	171	}{	G.Knox_Outbound == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi de l'Affreux.	}
+{	159	}{	Alors, comment ça se passe, ta mission ?	}{	Alors, comment ça se passe, ta mission ?	}{	211	}{	G.Knox_Mission == 2	}{	}{	}{	}{	}{	}{	}{	}{	Et quelles nouvelles de ta chasse secrète ?	}
+{	160	}{	Il faut que je parte, Knox. A bientôt !	}{	Il faut que je parte, Knox. A bientôt !	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	161	}{	Si seulement je savais où il est. C'est dur, de rester là à l'attendre. J'ai des trucs à lui dire. Mais je ne sais pas où il est, où il habite. . . Rien du tout. Quand il a besoin de moi, il apparaît. . .	}{	Si seulement je savais où il est. C'est dur, de rester là à l'attendre. J'ai des trucs à lui dire. Mais je ne sais pas où il est, où il habite. . . Rien du tout. Quand il a besoin de moi, il apparaît. . .	}{	#	}{	}{	G.Knox_Bertram = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Attends. . . Tu es sa goule ? Qu'est-ce que c'est ?	}{	Attends. . . Tu es sa goule ? Qu'est-ce que c'est ?	}{	131	}{	G.Knox_Ghoul == 1 and G.Knox_Outbound == 1 and G.Knox_Questions == 0	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Parle-moi de cette goulitude. . .	}
+{	163	}{	Que sais-tu de cette condition ?	}{	Que sais-tu de cette condition ?	}{	131	}{	G.Knox_Ghoul == 1 and G.Knox_Outbound == 1 and G.Knox_Questions == 0	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Que sais-tu sur la goulitude ?	}
+{	164	}{	Ca te plaît d'être une goule ?	}{	Ca te plaît d'être une goule ?	}{	141	}{	G.Knox_Outbound == 3 and G.Knox_Questions == 0	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Et tu es heureux, dans ce cas, goule ?	}
+{	165	}{	Alors, comment ça se passe, ta mission ?	}{	Alors, comment ça se passe, ta mission ?	}{	211	}{	G.Knox_Mission == 2	}{	}{	}{	}{	}{	}{	}{	}{	Et quelles nouvelles de ta chasse secrète ?	}
+{	166	}{	Comment est Bertram ?	}{	Comment est Bertram ?	}{	171	}{	G.Knox_Outbound == 0 and G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi de l'Affreux.	}
+{	167	}{	Comment cela, il 'apparaît' ?	}{	Comment cela, il 'apparaît' ?	}{	181	}{	G.Knox_Outbound == 0	}{	}{	}{	}{	}{	}{	}{	}{	L'Affreux 'apparaît' ?	}
+{	168	}{	Que voulais-tu lui dire ?	}{	Que voulais-tu lui dire ?	}{	211	}{	G.Knox_Outbound == 0 and G.Knox_Quest == 0 and G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quelles paroles destinais-tu à l'Affreux ?	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	Merci pour le renseignement. Je file.	}{	Merci pour le renseignement. Je file.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aimerais bien te dire au revoir, mais je suis déjà ailleurs. . .	}
+{	171	}{	C'est le seul vampire que je connais, mais il a l'air assez puissant. Quand il vous regarde, on a l'impression qu'il vous fouille la tête. Mais ça doit être un truc des Nosferatus. Ils doivent tout savoir, genre, sur tout. . .	}{	C'est le seul vampire que je connais, mais il a l'air assez puissant. Quand il vous regarde, on a l'impression qu'il vous fouille la tête. Mais ça doit être un truc des Nosferatus. Ils doivent tout savoir, genre, sur tout. . .	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Powerful = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Comment te contacte-t-il ?	}{	Comment te contacte-t-il ?	}{	181	}{	G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment l'Affreux de contacte-t-il ?	}
+{	173	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	Et que te fait-il faire ?	}{	Et que te fait-il faire ?	}{	211	}{	G.Knox_Quest == 0 and G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quelles choses affreuses fais-tu pour lui ?	}
+{	175	}{	J'imagine. Je peux te poser d'autres questions ? 	}{	J'imagine. Je peux te poser d'autres questions ? 	}{	541	}{	G.Knox_Questions == 1 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	Il faut que je file. A plus.	}{	Il faut que je file. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quoi ? Je ne vous entends plus, je ne suis plus là.	}
+{	181	}{	C'est dingue, il apparaît de nulle part. La première fois, la vache, j'ai cru avoir une crise cardiaque. Surtout avec sa tête, beurk.	}{	C'est dingue, il apparaît de nulle part. La première fois, la vache, j'ai cru avoir une crise cardiaque. Surtout avec sa tête, beurk.	}{	#	}{	}{	G.Knox_Appear = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	(Auto-Link)	}{	(Auto-Link)	}{	191	}{	IsClan(pc,"Nosferatu") and G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	La première fois ? Alors, pourquoi vous a-t-il choisi ?	}{	La première fois ? Alors, pourquoi vous a-t-il choisi ?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi l'horrible vous avait choisi la première fois qu'il est apparu ?	}
+{	184	}{	Que fais-tu pour Bertram ?	}{	Que fais-tu pour Bertram ?	}{	211	}{	G.Knox_Quest == 0 and G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quelles choses affreuses fais-tu pour lui ?	}
+{	185	}{	J'imagine. Encore quelques questions.	}{	J'imagine. Encore quelques questions.	}{	541	}{	G.Knox_Questions == 1 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
+{	186	}{	Merci du renseignement. Je file.	}{	Merci du renseignement. Je file.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Euh, sans vouloir te vexer. . .	}{	Euh, sans vouloir te vexer. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	193	}{	Ouais, ouais. Qu'est-ce que Bertram te fait faire ?	}{	Ouais, ouais. Qu'est-ce que Bertram te fait faire ?	}{	211	}{	G.Knox_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	194	}{	Bien sûr. En fait, j'ai quelques questions à te poser. 	}{	Bien sûr. En fait, j'ai quelques questions à te poser. 	}{	541	}{	G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	C'est ça. Au revoir.	}{	C'est ça. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	D'après Bertram, il lui faut quelqu'un pour quelques bricoles, et il m'a regardé travailler comme chasseur de primes avant de me choisir. C'est cool. C'est comme une promotion, à part que ça pourrait durer à jamais.	}{	D'après Bertram, il lui faut quelqu'un pour quelques bricoles, et il m'a regardé travailler comme chasseur de primes avant de me choisir. C'est cool. C'est comme une promotion, à part que ça pourrait durer à jamais.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Peux-tu me dire ce que tu es en train de faire ?	}{	Peux-tu me dire ce que tu es en train de faire ?	}{	211	}{	G.Knox_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quelles horribles choses es-tu en train de faire pour lui ?	}
+{	203	}{	Cool.  Peux-tu répondre à quelques questions de plus ?	}{	Cool.  Peux-tu répondre à quelques questions de plus ?	}{	541	}{	G.Knox_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai davantage de questions qui explosent mon cerveau...	}
+{	204	}{	C'est super. Je dois y aller maintenant. A plus tard.	}{	C'est super. Je dois y aller maintenant. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis déjà parti.	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	[nerveux]Eh bien, Bertram m'a demandé de garder un oeil sur un mec, un asiate qui traîne dans Santa Monica. Bertram pense que c'est un vampire ou. . . un truc comme un vampire, je ne sais pas.	}{	[nerveux]Eh bien, Bertram m'a demandé de garder un oeil sur un mec, un asiate qui traîne dans Santa Monica. Bertram pense que c'est un vampire ou. . . un truc comme un vampire, je ne sais pas.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Quest = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Et alors, quel est le problème ?	}{	Et alors, quel est le problème ?	}{	221	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	213	}{	Parle-moi de cet 'asiate'.	}{	Parle-moi de cet 'asiate'.	}{	221	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	Un mangeur de vie venu d'Orient. . .	}{	Un mangeur de vie venu d'Orient. . .	}{	581	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Ce type. . . ce truc. . . m'a repéré. Au lieu que je le suive, c'est lui qui me suit. Je le vois tout le temps apparaître derrière moi, un peu au loin, il me regarde et après il se téléporte, genre, à côté de moi, puis il disparaît.	}{	Ce type. . . ce truc. . . m'a repéré. Au lieu que je le suive, c'est lui qui me suit. Je le vois tout le temps apparaître derrière moi, un peu au loin, il me regarde et après il se téléporte, genre, à côté de moi, puis il disparaît.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Ton histoire ne colle pas tout à fait, Knox. . .	}{	Ton histoire ne colle pas tout à fait, Knox. . .	}{	411	}{	(pc.CalcFeat("Inspection") > 2 or IsClan(pc,"Malkavian")) and G.Bertram_Plant == 0	}{	}{	}{	}{	}{	}{	}{	}{	La vérité ne correspond pas à tous les mots qui sortent de ta bouche. . .	}
+{	223	}{	Tu veux que je m'en occupe ?	}{	Tu veux que je m'en occupe ?	}{	261	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	Je l'ai vu aussi.	}{	Je l'ai vu aussi.	}{	231	}{	G.Asian_Seen == 1	}{	}{	}{	}{	}{	}{	}{	}{	Le mangeur de vie me suit aussi.	}
+{	225	}{	Ca doit être énervant.	}{	Ca doit être énervant.	}{	231	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	On dirait qu'il joue avec toi.	}{	On dirait qu'il joue avec toi.	}{	231	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	Le chat joue avec sa proie. . .	}{	Le chat joue avec sa proie. . .	}{	231	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	Ton problème, c'est l'incompétence ou la bêtise ?	}{	Ton problème, c'est l'incompétence ou la bêtise ?	}{	741	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Ca fout les boules. Je sais que ce truc est en train de s'amuser. Je voudrais bien lui coller une balle dans la tête, mais allez savoir si ça va marcher. Alors j'attends de parler à Bertram. Mais je ne sais pas où il a filé. C'est la merde.	}{	Ca fout les boules. Je sais que ce truc est en train de s'amuser. Je voudrais bien lui coller une balle dans la tête, mais allez savoir si ça va marcher. Alors j'attends de parler à Bertram. Mais je ne sais pas où il a filé. C'est la merde.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Quest = 2; G.Knox_Questions = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Une partie de ton histoire me paraît bizarre, Knox. . .	}{	Ton histoire ne colle pas tout à fait, Knox. . .	}{	411	}{	(pc.CalcFeat("Inspection") > 2 or IsClan(pc,"Malkavian")) and G.Bertram_Plant == 0	}{	}{	}{	}{	}{	}{	}{	}{	La vérité ne correspond pas à tous les mots qui sortent de ta bouche. . .	}
+{	233	}{	Tu veux que je m'en occupe ?	}{	Tu veux que je m'en occupe ?	}{	261	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	234	}{	On dirait que oui, Knox.	}{	On dirait que oui, Knox.	}{	241	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	Ma folie va bien au-delà de ce que vous ne pourrez jamais savoir. . .	}{	Ma folie va bien au-delà de ce que vous ne pourrez jamais savoir. . .	}{	241	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	Toutes les goules sont aussi faibles et pathétiques que toi ?	}{	Toutes les goules sont aussi faibles et pathétiques que toi ?	}{	741	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Eh, je ne veux pas vous demander ça, mais puisque vous êtes super balèze, comme vampire, et que je ne suis qu'une pauvre goule, vous pourriez me débarrasser de ce truc ?	}{	Eh, je ne veux pas vous demander ça, mais puisque vous êtes super balèze, comme vampire, et que je ne suis qu'une pauvre goule, vous pourriez me débarrasser de ce truc ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Bien sûr, je vais voir ce que je peux faire.	}{	Bien sûr, je vais voir ce que je peux faire.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais chasser le dévoreur de vie.	}
+{	243	}{	Tu aurais une petite motivation en nature, pour moi ?	}{	Tu aurais une petite motivation en nature, pour moi ?	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quels présents me donneras-tu, petite goule ?	}
+{	244	}{	Je n'ai pas le temps.	}{	Je n'ai pas le temps.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chasse de plus grosses proies, petite goule.	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Eh, mon pote, tu sais, je n'ai pas grand-chose qui pourrait plaire à un vampire. Dès que j'aurai des nouvelles de Bertram, je lui dirais que tu le cherches, OK ? Allez. . .	}{	Eh, ma vieille, tu sais, je n'ai pas grand-chose qui pourrait plaire à un vampire. Dès que j'aurai des nouvelles de Bertram, je lui dirais que tu le cherches, OK ? Allez. . .	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Je peux y jeter un oeil, ouais. 	}{	Je peux y jeter un oeil, ouais. 	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je trouverai ce dévoreur de vie. . .	}
+{	253	}{	Ca n'est pas assez.	}{	Ca n'est pas assez.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	La pitié ne fait pas partie de mes dons. Trouve autre chose, petite goule.	}
+{	254	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Super ! Génial ! OK, alors voilà, c'est un vampire asiatique. . . Genre. Le seul indice que j'ai, c'est son permis de conduire. Il l'a lâché, une fois, pendant que je le suivais. J'ai eu tellement les boules que je n'ai pas eu l'occasion de m'en servir. . .	}{	Super ! Génial ! OK, alors voilà, c'est un vampire asiatique. . . Genre. Le seul indice que j'ai, c'est son permis de conduire. Il l'a lâché, une fois, pendant que je le suivais. J'ai eu tellement les boules que je n'ai pas eu l'occasion de m'en servir. . .	}{	#	}{	npc.SetDisposition("Joy",1)	}{	pc.GiveItem("item_g_driver_license_gimble")	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Un permis de conduire ? Alors on sait qui c'est ?	}{	Un permis de conduire ? Alors on sait qui c'est ?	}{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le permis ne nous apprend-il pas où il se trouve ?	}
+{	263	}{	Je m'en occupe pour vous.	}{	Je m'en occupe pour vous.	}{	281	}{	G.VirgilCrumbKnowledge == 0	}{	G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 1)	}{	}{	}{	}{	}{	}{	}{	Je commettrai ce crime.	}
+{	264	}{	Je m'en occupe pour vous.	}{	Je m'en occupe pour vous.	}{	281	}{	G.VirgilCrumbKnowledge == 1	}{	G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 10)	}{	}{	}{	}{	}{	}{	}{	Je commettrai ce crime.	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	Non. La photo sur le permis, ce n'est pas lui. Je ne sais pas pourquoi il l'avait, mais ça nous aidera peut-être à savoir où il est et ce qu'il fait. Tiens, prends-le.	}{	Non. La photo sur le permis, ce n'est pas lui. Je ne sais pas pourquoi il l'avait, mais ça nous aidera peut-être à savoir où il est et ce qu'il fait. Tiens, prends-le.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	Bon, je m'en occupe.	}{	Bon, je m'en occupe.	}{	281	}{	G.VirgilCrumbKnowledge == 0	}{	G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 1)	}{	}{	}{	}{	}{	}{	}{	Je vais faire pleuvoir le sang sur ce cauchemar oriental.	}
+{	268	}{	Bon, je m'en occupe.	}{	Bon, je m'en occupe.	}{	281	}{	G.VirgilCrumbKnowledge == 1	}{	G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 10)	}{	}{	}{	}{	}{	}{	}{	Je vais faire pleuvoir le sang sur ce cauchemar oriental.	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Bordel. . . C'est dur, mec. Et moi qui pensais qu'on pourrait s'entendre, puisque. . . on est tous les deux des initiés. . . Dis-moi si tu changes d'avis.	}{	Bordel. . . C'est dur, gamine. Et moi qui pensais qu'on pourrait s'entendre, puisque. . . on est tous les deux des initiés. . . Dis-moi si tu changes d'avis.	}{	#	}{	npc.SetDisposition("Sad",2)	}{	G.Knox_Quest = 4	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Je peux y jeter un oeil, ouais. 	}{	Je peux y jeter un oeil, ouais. 	}{	261	}{	G.Knox_Fess == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je trouverai ce dévoreur de vie. . .	}
+{	273	}{	Je peux y jeter un oeil, ouais. 	}{	Je peux y jeter un oeil, ouais. 	}{	261	}{	G.Knox_Fess == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je trouverai ce dévoreur de vie. . .	}
+{	274	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	Je regrette. Au revoir.	}{	Je regrette. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il faudra que je change plusieurs fois. Adieu.	}
+{	281	}{	Super. Reviens me voir quand ce sera fait, pour que j'arrête de flipper. Et là, je verrai peut-être Bertram.	}{	Super. Reviens me voir quand ce sera fait, pour que j'arrête de flipper. Et là, je verrai peut-être Bertram.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Ca me va, Knox. J'ai quelques questions. 	}{	Ca me va, Knox. J'ai quelques questions. 	}{	541	}{	G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	J'ai encore quelques questions qui bouillonnent sous mon crâne. . .	}
+{	283	}{	Hé, sais-tu où je peux trouver des armes ?	}{	Hé, sais-tu où je peux trouver des armes ?	}{	372	}{	Persuasion 4 & G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Où puis-je acheter une baguette magique qui fait boum ?	}
+{	284	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	Ca marche. A plus.	}{	Ca marche. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Adieu, goule aux oeufs d'or.	}
+{	291	}{	Yo, mec ! Tu lui as fait son affaire ?	}{	Yo, mama ! Tu lui as fait son affaire ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Oui. Plus la peine de t'inquiéter.	}{	Oui. Plus la peine de t'inquiéter.	}{	521	}{	(G.Knox_Quest == 6 and G.Knox_Bertfound == 1) or (IsDead("AsianVamp") and G.Knox_Bertfound == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
+{	293	}{	Oui. Plus la peine de t'inquiéter.	}{	Oui. Plus la peine de t'inquiéter.	}{	381	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 0 and G.Knox_Bertfound == 0) or (IsDead("AsianVamp") and G.Knox_Fess == 0 and G.Knox_Bertfound == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
+{	294	}{	Oui. Plus la peine de t'inquiéter.	}{	Oui. Plus la peine de t'inquiéter.	}{	471	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 1 and G.Knox_Bertfound == 0) or (IsDead("AsianVamp") and G.Knox_Fess == 1 and G.Knox_Bertfound == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
+{	295	}{	Non, pas encore.	}{	Non, pas encore.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche encore le dévoreur de vies.	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	C'est moche. J'espérais vraiment que tu aurais eu le temps. Tu me tiens au courant, hein ?	}{	C'est moche. J'espérais vraiment que tu aurais eu le temps. Tu me tiens au courant, hein ?	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	303	}{	En fait, j'ai quelques questions de plus. . .	}{	En fait, j'ai quelques questions de plus. . .	}{	541	}{	G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	J'ai encore quelques questions qui bouillonnent sous mon crâne. . .	}
+{	304	}{	J'ai réfléchi à ton problème, et j'ai envie de t'aider.	}{	J'ai réfléchi à ton problème, et j'ai envie de t'aider.	}{	261	}{	G.Knox_Quest == 4	}{	}{	}{	}{	}{	}{	}{	}{	Je vais chercher le dévoreur de vies.	}
+{	305	}{	Promis. A plus tard.	}{	Promis. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quoi ? Tu parles à quelqu'un qui n'est plus là.	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	Arthur ? Oh, mince. Je m'en veux de l'avoir lâché comme ça, mais je ne peux pas refaire le chasseur de primes, maintenant.	}{	Arthur ? Oh, mince. Je m'en veux de l'avoir lâché comme ça, mais je ne peux pas refaire le chasseur de primes, maintenant.	}{	#	}{	}{	G.Arthur_Knoxout = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Ah non ? Pourquoi ça ?	}{	Ah non ? Pourquoi ça ?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu ne veux plus chasser les primes ?	}
+{	313	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	323	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	324	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	325	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	Non. Mon nouveau patron s'occupe bien de moi.	}{	Non. Mon nouveau patron s'occupe bien de moi.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Tu dis que tu es une 'goule' ? Qu'est-ce que c'est ?	}{	Tu dis que tu es une 'goule' ? Qu'est-ce que c'est ?	}{	131	}{	G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quoi, ma goule ? Qu'est-ce qu'elle a ma g. . . C'est quoi, une goule ?	}
+{	333	}{	Super. J'ai encore quelques questions. . .	}{	Super. J'ai encore quelques questions. . .	}{	541	}{	G.Knox_Questions == 1 and G.Mercurio_Quest == 2 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je tirer quelques réponses de ta matière grise ?	}
+{	334	}{	Je file, Knox. A bientôt.	}{	Je file, Knox. A bientôt.	}{	0	}{	G.Knox_Questions == 1 and G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Allez. . . imagine que je courre après un loser qui a fui après sa libération sur caution, accusé d'un petit braquage minable. Si mon vampire vient me chercher, je fais quoi ? Je l'envoie bouler parce qu'il faut que j'arrête Gaston l'Arnaque ?	}{	Allez. . . imagine que je courre après un loser qui a fui après sa libération sur caution, accusé d'un petit braquage minable. Si mon vampire vient me chercher, je fais quoi ? Je l'envoie bouler parce qu'il faut que j'arrête Gaston l'Arnaque ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	Alors previens Arthur... J'peux te poser quelques questions ?	}{	Alors previens Arthur... J'peux te poser quelques questions ?	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Préviens le maître des clés... Puis-je fouiller ton cerveau ?	}
+{	343	}{	Tu ferais mieux de dire à Arthur de t'oublier alors. Donc tu es un vampire ?	}{	Tu ferais mieux de dire à Arthur de t'oublier alors. Donc tu es un vampire ?	}{	111	}{	G.Knox_Ghoul == 0	}{	}{	}{	}{	}{	}{	}{	}{	Préviens le maître des clés de t'oublier alors. Ainsi es-tu un enfant de la nuit ?	}
+{	344	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	353	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	354	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Eh ! Ca boume ?	}{	Eh ! Ca boume ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Tu travaillais pas comme chasseur de primes pour Killpatrick ?	}{	Tu travaillais pas comme chasseur de primes pour Killpatrick ?	}{	311	}{	G.Arthur_Knoxold == 1 and G.Arthur_Knoxout == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tu chassais des gens pour le gros Arthur, toi, ou bien ?	}
+{	363	}{	J'ai réfléchi à ton problème. Je vais t'aider.	}{	J'ai réfléchi à ton problème. Je vais t'aider.	}{	261	}{	G.Knox_Quest == 4 and G.Knox_Fess == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je dois pouvoir trouver ton cauchemar oriental. . .	}
+{	364	}{	J'ai réfléchi à ton problème. Je vais t'aider.	}{	J'ai réfléchi à ton problème. Je vais t'aider.	}{	261	}{	G.Knox_Quest == 4 and G.Knox_Fess == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je dois pouvoir trouver ton cauchemar oriental. . .	}
+{	365	}{	En fait, j'ai quelques questions à te poser. . .	}{	En fait, j'ai quelques questions à te poser. . .	}{	541	}{	G.Bertram_Check == 0 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	J'ai encore quelques questions qui bouillonnent sous mon crâne. . .	}
+{	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	Je ne peux pas discuter, Knox. Il faut que je file.	}{	Je ne peux pas discuter, Knox. Il faut que je file.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon corps n'est plus là.	}
+{	372	}{	Bien vu. Va voir mon pote Trip, le prêteur sur gages. Il ne vend pas à n'importe qui, mais dis-lui que tu me connais, et il sera réglo avec toi.	}{	Bien vu. Va voir mon pote Trip, le prêteur sur gages. Il ne vend pas à n'importe qui, mais dis-lui que tu me connais, et il sera réglo avec toi.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Trip_Know = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	373	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	374	}{	En fait, il me reste quelques questions à te poser. . .	}{	En fait, il me reste quelques questions à te poser. . .	}{	541	}{	G.Knox_Knowledge < 5 and G.Knox_Quest < 7	}{	}{	}{	}{	}{	}{	}{	}{	J'ai encore quelques questions qui bouillonnent sous mon crâne. . .	}
+{	375	}{	Merci, Knox. Sois cool, mec.	}{	Merci, Knox. Sois cool, mec.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis ailleurs. 	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	Oh, merci mon dieu ! Ce truc me collait au train toutes les nuits. Bon, je n'ai toujours aucune nouvelle de Bertram, excuse-moi. Je lui parlerai de toi, mais du coup je n'ai toujours pas moyen de te remercier.	}{	Oh, merci mon dieu ! Ce truc me collait au train toutes les nuits. Bon, je n'ai toujours aucune nouvelle de Bertram, excuse-moi. Je lui parlerai de toi, mais du coup je n'ai toujours pas moyen de te remercier.	}{	#	}{	npc.SetDisposition("Joy",2)	}{	G.Knox_Quest = 7; G.Knox_Done = 1; pc.SetQuest("Knox Asian", 4)	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	Le dévoreur de vie était une créature de mort et d'ombre.	}{	Le dévoreur de vie était une créature de mort et d'ombre.	}{	601	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	383	}{	Tu sais ce que c'était ?	}{	As-tu la moindre idée de ce qu'était cette chose ?	}{	391	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	384	}{	Tu sais où je peux me trouver des armes ?	}{	Tu sais peut-être où une fille peut se trouver un gros calibre, dans cette ville ?	}{	372	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Sais-tu où je peux m'acheter une baguette magique calibre douze, ma petite goule ?	}
+{	385	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	Pas de souci. A plus.	}{	Pas de souci. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tes bijoux sont peut-être en acier, mais ton coeur est d'or, petit. Adieu.	}
+{	391	}{	Bertram dit que c'est comme un vampire, mais pas pareil. Ce qu'ils ont en Chine à la place des vampires. Il a dit qu'ils sont nombreux à venir en Californie, mais on ne sait pas pourquoi.	}{	Bertram dit que c'est comme un vampire, mais pas pareil. Ce qu'ils ont en Chine à la place des vampires. Il a dit qu'ils sont nombreux à venir en Californie, mais on ne sait pas pourquoi.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	Ca m'a l'air grave. Tu sais où je peux me trouver des armes ?	}{	Ca m'a l'air grave. Tu sais où une fille peut se trouver un gros calibre, dans cette ville ?	}{	372	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Où pourrait se trouver l'armement ?	}
+{	393	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	394	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	395	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	Intéressant. Je ferais bien d'y aller.	}{	Intéressant. Je ferais bien d'y aller.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Porte-toi bien.	}
+{	401	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	403	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	404	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	405	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	406	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	407	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	Qu'est-ce que tu veux dire ?	}{	Qu'est-ce que tu veux dire ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Dis-moi la vérité.	}{	Dis-moi la vérité.	}{	561	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	413	}{	Que la vérité sorte de ta bouche !	}{	Que la vérité sorte de ta bouche !	}{	561	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	414	}{	Ne me baratine pas, goule d'amour. Dis-moi tout.	}{	Ne me baratine pas, goule d'amour. Dis-moi tout.	}{	561	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	La vérité, goule. Direct, ou je te fais mal.	}
+{	415	}{	Ecoute, Knox, dis-moi la vérité, et je t'aiderai peut-être.	}{	Ecoute, Knox, dis-moi la vérité, et je t'aiderai peut-être.	}{	561	}{	Persuasion 2	}{	}{	}{	}{	}{	}{	}{	}{	En échange de la vérité, j'aurai peut-être un peu pitié de la goule.	}
+{	416	}{	A toi de voir. Je sais que tu ne me dis pas tout.	}{	A toi de voir. Je sais que tu ne me dis pas tout.	}{	561	}{	F_Seduction 2	}{	}{	}{	}{	}{	}{	}{	}{	Que la vérité jaillisse de ta langue fourchue. . .	}
+{	417	}{	Peu importe. Alors tu veux que je m'intéresse à ce truc ?	}{	Peu importe. Alors tu veux que je m'intéresse à ce truc ?	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Même moi, je ne sais pas toujours. Tu veux de l'aide, petite goule ?	}
+{	418	}{	Je ne sais pas.	}{	Je ne sais pas.	}{	241	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Essaie de deviner. 	}
+{	419	}{	Dis la vérité.	}{	Dis la vérité.	}{	561	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	Comment peux-tu me cacher la vérité?	}{	Comment peux-tu me cacher la vérité?	}{	561	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	OK, OK. Bordel, Knox. . . OK, j'avoue, j'ai merdé. OK ? Mais je fais juste ce qu'on m'a demandé. . .	}{	OK, OK. Bordel, Knox. . . OK, j'avoue, j'ai merdé. OK ? Mais je fais juste ce qu'on m'a demandé. . .	}{	#	}{	npc.SetDisposition("Sad",1)	}{	G.Knox_Fess = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	Continues.	}{	Continues.	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	Allez, parle encore.	}
+{	423	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	Il savait que tu étais dans les parages. Bertram. Que tu viendrais ici. Il m'a laissé là et m'a expliqué quoi te dire à propos du vampire asiatique. Mais c'est vrai, promis. Et tout le reste aussi. Il faut le tuer, cet asiate. Moi, je ne peux pas, donc Bertram a besoin que tu le fasses pour lui.	}{	Il savait que tu étais dans les parages. Bertram. Que tu viendrais ici. Il m'a laissé là et m'a expliqué quoi te dire à propos du vampire asiatique. Mais c'est vrai, promis. Et tout le reste aussi. Il faut le tuer, cet asiate. Moi, je ne peux pas, donc Bertram a besoin que tu le fasses pour lui.	}{	#	}{	}{	pc.SetQuest("Knox Asian", 2)	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Il aurait pu me le demander.	}{	Il aurait pu me le demander.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Au lieu de rôder dans l'ombre, il aurait pu m'en parler en face.	}
+{	433	}{	Je ne sais pas. Pourquoi je lui rendrais service, du coup ?	}{	Je ne sais pas. Pourquoi je lui rendrais service, du coup ?	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les services, c'est pour les amis.	}
+{	434	}{	OK. Je m'en occupe.	}{	OK. Je m'en occupe.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors ma main se chargera de cet acte.	}
+{	435	}{	Sans moi.	}{	Sans moi.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chasse de plus grosses proies, petite goule.	}
+{	436	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	Non, il a les dents longues, mais quand même. Il préfère faire les choses discrètement. Alors, tu peux t'en charger ?	}{	Non, il a les dents longues, mais quand même. Il préfère faire les choses discrètement. Alors, tu peux t'en charger ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	OK. Je m'en occupe.	}{	OK. Je m'en occupe.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors ma main se chargera de cet acte.	}
+{	443	}{	Je ne sais pas. Pourquoi je lui rendrais service, du coup ?	}{	Je ne sais pas. Pourquoi je lui rendrais service, du coup ?	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les services, c'est pour les amis.	}
+{	444	}{	Sans moi.	}{	Sans moi.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chasse de plus grosses proies, petite goule.	}
+{	445	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	446	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Non, sérieusement, ce truc est là, et ça craint pour nous tous. D'après Bertram, il pourrait y en avoir une armée qui débarque un de ces quatre, si on ne leur montre pas qu'on peut se défendre.	}{	Non, sérieusement, ce truc est là, et ça craint pour nous tous. D'après Bertram, il pourrait y en avoir une armée qui débarque un de ces quatre, si on ne leur montre pas qu'on peut se défendre.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	OK. Je m'en occupe.	}{	OK. Je m'en occupe.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors ma main se chargera de cet acte.	}
+{	453	}{	Sans moi.	}{	Sans moi.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chasse de plus grosses proies, petite goule.	}
+{	454	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	455	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	463	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	464	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	Super ! Merci mon pote. Eh, encore désolé pour tout à l'heure. Je n'ai toujours pas de nouvelles de Bertram, mais je lui dirai à quel point tu nous a aidés, et comme tu as été cool.	}{	Super ! Merci ma vieille. Eh, encore désolé pour tout à l'heure. Je n'ai toujours pas de nouvelles de Bertram, mais je lui dirai à quel point tu nous a aidés, et comme tu as été cool.	}{	#	}{	npc.SetDisposition("Joy",1)	}{	G.Knox_Quest = 7; pc.SetQuest("Knox Asian", 4); G.Knox_Done = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	Tu sais ce que c'était ?	}{	As-tu la moindre idée de ce qu'était cette chose ?	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie était une créature de mort et d'ombre.	}
+{	473	}{	Tu sais où je peux me trouver des armes ?	}{	Tu sais peut-être où une fille peut se trouver un gros calibre, dans cette ville ?	}{	372	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Sais-tu où je peux m'acheter une baguette magique calibre douze, ma petite goule ?	}
+{	474	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Eh ! Alors, ça avance, le truc dont on a parlé ?	}{	Eh ! Alors, ça avance, le truc dont on a parlé ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Ghoul = 2; G.Knox_Bertram = 2; G.Knox_Powerful = 1; G.Knox_Appear = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	483	}{	C'est fait. Plus la peine de t'inquiéter.	}{	Oui. Plus la peine de t'inquiéter.	}{	381	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 0) or (IsDead("AsianVamp") and G.Knox_Fess == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
+{	484	}{	C'est fait. Plus la peine de t'inquiéter.	}{	Oui. Plus la peine de t'inquiéter.	}{	471	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 1) or (IsDead("AsianVamp") and G.Knox_Fess == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
+{	485	}{	J'ai parlé à Bertram. . .	}{	J'ai parlé à Bertram. . .	}{	491	}{	}{	G.Knox_Bertfound = 1	}{	}{	}{	}{	}{	}{	}{	J'ai parlé à l'Affreux !	}
+{	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	Je regrette, je n'ai pas encore fini. A plus tard.	}{	Je regrette, je n'ai pas encore fini. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rien n'est fait pour l'instant. Adieu.	}
+{	491	}{	Oh, cool. Il sera content quand on sera débarrassé de son problème.	}{	Oh, cool. Il sera content quand on sera débarrassé de son problème.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	C'est déjà fait. Plus la peine de s'inquiéter.	}{	C'est déjà fait. Plus la peine de s'inquiéter.	}{	381	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 0) or (IsDead("AsianVamp") and G.Knox_Fess == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
+{	493	}{	C'est déjà fait. Plus la peine de s'inquiéter.	}{	C'est déjà fait. Plus la peine de s'inquiéter.	}{	521	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 1) or (IsDead("AsianVamp") and G.Knox_Fess == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
+{	494	}{	Je lui ai dit que tu avais tout raconté. Il n'était pas très content.	}{	Je lui ai dit que tu avais tout raconté. Il n'était pas très content.	}{	501	}{	G.Bertram_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai dit à l'Affreux que tu m'avais ouvert ton coeur d'or. . .	}
+{	495	}{	Il a dit que vous aviez des plans pour moi depuis le début.	}{	Il a dit que vous aviez des plans pour moi depuis le début.	}{	511	}{	G.Bertram_Plant == 1 and G.Knox_Fess == 0	}{	}{	}{	}{	}{	}{	}{	}{	Il m'a tout dit de vos petites manigances.	}
+{	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	500	}{	J'y travaille encore. A plus tard.	}{	J'y travaille encore. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rien n'est fait pour l'instant. Adieu.	}
+{	501	}{	La vache, c'est dur, ça. Bon sang ! Pourquoi t'as fait ça ? Moi qui nous croyais à la coule !	}{	La vache, c'est dur, ça. Bon sang ! Pourquoi t'as fait ça ? Moi qui nous croyais à la coule !	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	Ne t'inquiète pas. J'ai fait ce qu'il fallait.	}{	Ne t'inquiète pas. J'ai fait ce qu'il fallait.	}{	521	}{	G.Knox_Quest == 6 or IsDead("AsianVamp")	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
+{	503	}{	C'est comme ça. Tu croyais que ce serait facile d'être une goule ?	}{	C'est comme ça. Tu croyais que ce serait facile d'être une goule ?	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Porte ta croix, petite goule aux oeufs d'or. . .	}
+{	504	}{	Qui sème le vent. . .	}{	Qui sème le vent. . .	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce qui se va, revient ... comme mon esprit!	}
+{	505	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	[souriant, fier et gêné]Ouais, Bertram m'apprend les ficelles, et c'était un petit test, traiter avec toi. Mais ça reste sérieux, comme affaire de vampire. Il faut éliminer l'asiatique. Ca avance, d'ailleurs ?	}{	[souriant, fier et gêné]Ouais, Bertram m'apprend les ficelles, et c'était un petit test, traiter avec toi. Mais ça reste sérieux, comme affaire de vampire. Il faut éliminer l'asiatique. Ca avance, d'ailleurs ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	C'est fait.	}{	C'est fait.	}{	521	}{	G.Knox_Quest == 6 or IsDead("AsianVamp")	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
+{	513	}{	Contrairement à toi, j'ai pu mener la tâche à bien.	}{	Contrairement à toi, j'ai pu mener la tâche à bien.	}{	521	}{	G.Knox_Quest == 6 or IsDead("AsianVamp")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai fait ce dont tu étais incapable, petite goule. . .	}
+{	514	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	515	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	516	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	517	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	520	}{	J'y travaille encore.	}{	J'y travaille encore.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rien n'est fait pour l'instant. . .	}
+{	521	}{	Génial. Bertram va être trop content. C'a été super de travailler avec toi. J'espère qu'un jour on fera équipe, et que je serai devenu un vrai vampire !	}{	Génial. Bertram va être trop content. C'a été super de travailler avec toi. J'espère qu'un jour on fera équipe, et que je serai devenu un vrai vampire !	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Done = 1; G.Knox_Quest = 7; pc.SetQuest("Knox Asian", 4)	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	Je pense que ça me plairait, Knox.	}{	Je pense que ça me plairait, Knox.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Adieu, goule aux oeufs d'or.	}
+{	523	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	524	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	J'en doute. Je file.	}{	J'en doute. Je file.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il est plus probable que je réussisse mon prochain test psychiatrique. Adieu.	}
+{	531	}{	Bon sang.	}{	Bon sang.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	533	}{	Encore merci de ton aide.	}{	Encore merci de ton aide.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	534	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	536	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	Ouais, bien sûr. Qu'est-ce que tu veux savoir ?	}{	Ouais, bien sûr. Qu'est-ce que tu veux savoir ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Comment en sais-tu autant sur les vampires ?	}{	Comment en sais-tu autant sur les vampires ?	}{	111	}{	G.Knox_Ghoul == 0	}{	G.Knox_Knowledge = G.Knox_Knowledge + 1	}{	}{	}{	}{	}{	}{	}{	Comment en sais-tu autant sur les enfants de la nuit ?	}
+{	543	}{	Je voulais te demander. . . Où est Bertram ?	}{	Je voulais te demander. . . Où est Bertram ?	}{	161	}{	G.Knox_Bertram == 1 and G.Bertram_Check == 0	}{	G.Knox_Knowledge = G.Knox_Knowledge + 1	}{	}{	}{	}{	}{	}{	}{	Où est l'Affreux ?	}
+{	544	}{	Et Bertram, il est sympa ?	}{	Et Bertram, il est sympa ?	}{	171	}{	G.Knox_Bertram > 0 and G.Bertram_Check == 0	}{	G.Knox_Knowledge = G.Knox_Knowledge + 1	}{	}{	}{	}{	}{	}{	}{	Parle-moi de l'Affreux.	}
+{	545	}{	Qu'est-ce que tu fais, pour Bertram ?	}{	Qu'est-ce que tu fais, pour Bertram ?	}{	211	}{	G.Knox_Bertram > 0 and G.Knox_Ghoul == 2 and G.Knox_Quest == 0 and G.Bertram_Check == 0	}{	G.Knox_Knowledge = G.Knox_Knowledge + 1	}{	}{	}{	}{	}{	}{	}{	Quel genre d'affreuses choses l'Affreux te fait-il faire ?	}
+{	546	}{	Ca te plaît d'être une goule ?	}{	Ca te plaît d'être une goule ?	}{	141	}{	}{	G.Knox_Knowledge = G.Knox_Knowledge + 1	}{	}{	}{	}{	}{	}{	}{	Et tu apprécies ta soudaine goulitude ?	}
+{	547	}{	Tu travaillais pas comme chasseur de primes pour Killpatrick ?	}{	Tu travaillais pas comme chasseur de primes pour Killpatrick ?	}{	311	}{	G.Arthur_Knoxold == 1 and G.Arthur_Knoxout == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tu chassais des gens pour le gros Arthur, toi, ou bien ?	}
+{	548	}{	En fait, il faut que je parte. Au revoir. 	}{	En fait, il faut que je parte. Au revoir. 	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	Oh non ! Tu parles n'importe comment. Tu es du clan Malkavien, c'est ça J'ai entendu parler de vous. Vous avez la tête à l'envers, hein ? Malades genre Hannibal Lecter, tous ces trucs-là ?	}{	Oh non ! Tu parles n'importe comment. Tu es du clan Malkavien, c'est ça J'ai entendu parler de vous. Vous avez la tête à l'envers, hein ? Malades genre Hannibal Lecter, tous ces trucs-là ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	C'est un petit secret que nous pourrions partager, chasseur.	}{	C'est un petit secret que nous pourrions partager, chasseur.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	553	}{	Oui, goule dorée. Et je sais que vous chassiez les gens aussi.	}{	Oui, goule dorée. Et je sais que vous chassiez les gens aussi.	}{	571	}{	G.Arthur_Knoxold == 1 and G.Arthur_Knoxout == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	554	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	555	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	556	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	558	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	[Surpris]Qu. . . Comment tu sais ? Euh. . . Bon, je ne sais pas de quoi tu parles. Et puis, pourquoi je te dirais quoi que ce soit ? Tu n'es pas très honnête avec moi.	}{	[Surpris]Qu. . . Comment tu sais ? Euh. . . Bon, je ne sais pas de quoi tu parles. Et puis, pourquoi je te dirais quoi que ce soit ? Tu n'es pas très honnête avec moi.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	Mais si, je le suis.	}{	Mais si, je le suis.	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mais, nous le sommes pourtant.	}
+{	563	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	564	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	565	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	566	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	[Surpris]Hein ? Ouais, je suis un chasseur de primes ! Et tu parles de l'or, comme dans Fort Knox ? Ouais ! Tu es télépathe, hein ? Tu vois ! C'est des trucs de vampire, ça.	}{	[Surpris]Hein ? Ouais, je suis un chasseur de primes ! Et tu parles de l'or, comme dans Fort Knox ? Ouais ! Tu es télépathe, hein ? Tu vois ! C'est des trucs de vampire, ça.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	J'ai lu dans ta matière grise que tu chassais pour le gros Arthur.	}{	J'ai lu dans ta matière grise que tu chassais pour le gros Arthur.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	573	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	574	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	575	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	576	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	577	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	Dévoreur de vie ? La vache, je sais même pas ce que ça veut dire. C'est du vampire pour asiate-flippant-qui-peut-sans-doute-me-dérouiller ? Parce que dans ce cas, c'est bon. . .	}{	Dévoreur de vie ? La vache, je sais même pas ce que ça veut dire. C'est du vampire pour asiate-flippant-qui-peut-sans-doute-me-dérouiller ? Parce que dans ce cas, c'est bon. . .	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	Dis-m'en plus sur cette créature. . .	}{	Dis-m'en plus sur cette créature. . .	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	583	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	584	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	585	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	586	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	587	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	593	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	594	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	595	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	596	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	597	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	598	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	599	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	600	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	601	}{	Ouais ! Bertram dit que c'est comme un vampire, mais pas pareil. Ce qu'ils ont en Chine à la place des vampires. Il a dit qu'ils sont nombreux à venir en Californie, mais on ne sait pas pourquoi.	}{	Ouais ! Bertram dit que c'est comme un vampire, mais pas pareil. Ce qu'ils ont en Chine à la place des vampires. Il a dit qu'ils sont nombreux à venir en Californie, mais on ne sait pas pourquoi.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	Sais-tu où je peux m'acheter une baguette magique calibre douze, ma petite goule ?	}{	Sais-tu où je peux m'acheter une baguette magique calibre douze, ma petite goule ?	}{	372	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	603	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	604	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	605	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	Ne te laisse pas faire, petite goule d'or. Adieu.	}{	Ne te laisse pas faire, petite goule d'or. Adieu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	[Excité]Vous. . . enfin, tu fais partie des vampires, non ?	}{	[Excité]Vous. . . enfin, tu fais partie des vampires, non ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_TT = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	Quoi ? Vampire ? Qu'est-ce que tu as fumé ?	}{	Quoi ? Vampire ? Qu'est-ce que tu as fumé ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	T'es plus malade que la personne que je vois dans le miroir.	}
+{	613	}{	Ecoute. . . Je ne sais pas ce que tu penses savoir, mais tu devrais penser à autre chose.	}{	Bon. Je ne sais pas ce que tu penses savoir, mais tu ferais bien de l'oublier.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'ombre de la mort va tomber sur toi si tu regardes encore dans ces yeux. . .	}
+{	614	}{	Disons que oui. Qu'est-ce que ça peut te faire ?	}{	Mettons que tu aies raison - et alors ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Comment as-tu percé mon petit secret sanglant ?	}
+{	615	}{	Fous-moi la paix, crétin !	}{	Fous-moi la paix, crétin !	}{	691	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	616	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	617	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	618	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	619	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	620	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	Oh, j'aimerais bien te le dire, mais je ne dois pas. Enfin, c'est vraiment cool de te parler, parce que je n'ai pas souvent l'occasion de parler à des vampires à part mon maître, alors je voulais juste dire bonjour, tu vois ?	}{	Oh, j'aimerais bien te le dire, mais je ne dois pas. Enfin, c'est vraiment cool de te parler, parce que je n'ai pas souvent l'occasion de parler à des vampires à part mon maître, alors je voulais juste dire bonjour, tu vois ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	Ca te plaît, d'être une goule ?	}{	Ca te plaît, d'être une goule ?	}{	141	}{	G.Knox_Likes == 0	}{	}{	}{	}{	}{	}{	}{	}{	T'es heureux, en petite goule d'amour ?	}
+{	623	}{	Et qu'est-ce que tu fais par ici ?	}{	Et qu'est-ce que tu fais par ici ?	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	A quoi passe son temps la goule d'amour ?	}
+{	624	}{	Ne sois pas bête. Bien sûr que tu peux me le dire.	}{	Ne sois pas bête. Bien sûr que tu peux me le dire.	}{	691	}{	G.Knox_Pissed != 2 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	625	}{	Ne sois pas bête. Bien sûr que tu peux me le dire.	}{	Ne sois pas bête. Bien sûr que tu peux me le dire.	}{	701	}{	G.Knox_Pissed == 2 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	626	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	627	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	628	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	629	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	630	}{	C'était cool de te voir, Knox, mais je dois y aller.	}{	C'était cool de te voir, Knox, mais je dois y aller.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est parti. Mon corps le suit.	}
+{	631	}{	Qu'est-ce qu'il y a, mec ?	}{	Qu'est-ce qu'il y a, petite ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	Rien. Au revoir.	}{	Rien. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est parti. Mon corps le suit.	}
+{	633	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	634	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	635	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	636	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	637	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	638	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	640	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	641	}{	Salut mec.	}{	Salut ma grande.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	Eh, Knox, la forme ?	}{	Eh, Knox, la forme ?	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma goule d'amour ! Tout va bien ?	}
+{	643	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	644	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	645	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	646	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	647	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	648	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	650	}{	A bientôt, Knox.	}{	A bientôt, Knox.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai quitté l'immeuble. . .	}
+{	651	}{	[Regarde autour de lui, nerveux, baisse la voix]Je ne devrais pas te dire ça, mais je suis en 'mission secrète' pour mon maître. [Reprend son ton de voix normal]Eh, ça m'a fait plaisir de te parler, mais je devrais y aller. . . Des trucs importants à faire, tu vois ?	}{	[Regarde autour de lui, nerveux, baisse la voix]Je ne devrais pas te dire ça, mais je suis en 'mission secrète' pour mon maître. [Reprend son ton de voix normal]Eh, ça m'a fait plaisir de te parler, mais je devrais y aller. . . Des trucs importants à faire, tu vois ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Mission = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	652	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	653	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	654	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	655	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	656	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	657	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	658	}{	Quelqu'un t'a déjà dit que tu étais demeuré ?	}{	Quelqu'un t'a déjà dit que tu étais demeuré ?	}{	701	}{	G.Knox_Pissed == 2 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	659	}{	Quelqu'un t'a déjà dit que tu étais demeuré ?	}{	Quelqu'un t'a déjà dit que tu étais demeuré ?	}{	691	}{	G.Knox_Pissed != 2 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	660	}{	A bientôt.	}{	A bientôt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai quitté l'immeuble. . .	}
+{	661	}{	[Tendu]Pas grand-chose, j'attends mon maître, c'est tout.	}{	[Tendu]Pas grand-chose, j'attends mon maître, c'est tout.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	Le maître dont tu ne pouvais pas parler ?	}{	Le maître dont tu ne pouvais pas parler ?	}{	671	}{	G.Knox_Master == 1 and G.Knox_Bertram == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le 'Gros affreux' dont tu ne voulais pas parler ?	}
+{	663	}{	Qui est ton maître ?	}{	Qui est ton maître ?	}{	151	}{	G.Knox_Master == 0 and G.Knox_Bertram == 0	}{	}{	}{	}{	}{	}{	}{	}{	Qui est ton Gros Affreux ?	}
+{	664	}{	Comment se passe ta 'mission' ?	}{	Comment se passe ta 'mission' ?	}{	681	}{	G.Knox_Mission == 1 and G.Knox_Bertram == 0	}{	}{	}{	}{	}{	}{	}{	}{	Et quelles nouvelles de ta chasse secrète ?	}
+{	665	}{	Qu'y a-t-il, Knox ? T'as l'air tendu.	}{	Qu'y a-t-il, Knox ? T'as l'air tendu.	}{	211	}{	G.Knox_Bertram > 0 and G.Knox_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Des abeilles te butinent le crâne.	}
+{	666	}{	Je peux te poser quelques questions ?	}{	Je peux te poser quelques questions?	}{	931	}{	G.Mercurio_Quest != 2	}{	}{	}{	}{	}{	}{	}{	}{	J'ai des questions qui me rongent le cerveau.	}
+{	667	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	668	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	669	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	670	}{	Bon, à un de ces quatre.	}{	Bon, à un de ces quatre.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	671	}{	[Regarde aux alentours, avec nervosité]Bon, je peux te parler de lui.	}{	[Regarde aux alentours, avec nervosité]Bon, je peux te parler de lui.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	672	}{	(Auto-Link)	}{	(Auto-Link)	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	673	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	674	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	675	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	676	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	678	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	679	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	680	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	681	}{	Pas top. C'est pour ça que j'attends de lui parler.	}{	Pas top. C'est pour ça que j'attends de lui parler.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Mission = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	682	}{	Pourquoi ne pas me dire de qui il s'agit ?	}{	Pourquoi ne pas me dire de qui il s'agit ?	}{	671	}{	G.Knox_Master == 1 and G.Knox_Bertram == 0	}{	}{	}{	}{	}{	}{	}{	}{	Qui est l'Affreux ?	}
+{	683	}{	Qui est ton maître ?	}{	Qui est ton maître ?	}{	151	}{	G.Knox_Master == 0 and G.Knox_Bertram == 0	}{	}{	}{	}{	}{	}{	}{	}{	Qui est l'Affreux ?	}
+{	684	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	685	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	686	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	687	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	688	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	689	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	690	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	691	}{	Eh, mec, ce n'est pas parce que je suis une goule et que tu es un vampire super cool que tu peux me traiter comme de la merde.	}{	Eh, poulette, ce n'est pas parce que je suis une goule et que tu es une vampire super cool que tu peux me traiter comme de la merde.	}{	#	}{	npc.SetDisposition("Sad",1)	}{	G.Knox_Pissed = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	692	}{	Pardon. Qu'est-ce qu'une goule ?	}{	Pardon. Qu'est-ce qu'une goule ?	}{	131	}{	G.Knox_Ghoul < 2	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	693	}{	Bien sûr que si. Les goules sont des créatures méprisables.	}{	Bien sûr que si. Les goules sont des créatures méprisables.	}{	701	}{	G.Knox_Ghoul == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	694	}{	Pardon. Que fais-tu par ici ?	}{	Pardon. Que fais-tu par ici ?	}{	651	}{	G.Knox_Ghoul == 2 and G.Knox_Mission == 0	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	695	}{	D'accord, pardon.	}{	D'accord, pardon.	}{	721	}{	G.Knox_Mission == 1	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	696	}{	Ferme-la et dis-moi plutôt ce qu'est une goule.	}{	Ferme-la et dis-moi plutôt ce qu'est une goule.	}{	771	}{	G.Knox_Ghoul < 2	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	697	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	698	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	699	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	700	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	701	}{	[Déconcerté]J-je. . . Euh. . . [En colère, irascible]Bordel ! J'ai pas besoin de ça. Je me disais juste que ce serait cool de bavarder, mais j'ai dû me tromper.	}{	[Déconcerté]J-je. . . Euh. . . [En colère, irascible]Bordel ! J'ai pas besoin de ça. Je me disais juste que ce serait cool de bavarder, mais j'ai dû me tromper.	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	702	}{	Ouaip.	}{	Ouaip.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	703	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	704	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	705	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	706	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	707	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	708	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	709	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	710	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	711	}{	Qu'est-ce que tu veux ? Tu reviens m'insulter ?	}{	Qu'est-ce que tu veux ? Tu reviens m'insulter ?	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	712	}{	Non, je viens m'excuser.	}{	Non, je viens m'excuser.	}{	721	}{	}{	G.Knox_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	713	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	714	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	715	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	716	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	717	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	718	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	719	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	720	}{	Ce serait une perte de temps, pauvre cloche.	}{	Ce serait une perte de temps, pauvre cloche.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	721	}{	Vraiment ? C'est super cool ! Enfin, je savais que t'avais pas un mauvais fond. . .	}{	Vraiment ? C'est super cool ! Enfin, je savais que t'avais pas un mauvais fond. . .	}{	#	}{	npc.SetDisposition("Joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	722	}{	Qu'est-ce que tu fais par ici ?	}{	Qu'est-ce que tu fais par ici ?	}{	661	}{	G.Knox_Ghoul == 2 and G.Knox_Mission == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	723	}{	Tu dis que t'es une 'goule' ? C'est quoi ?	}{	Tu dis que tu es une 'goule' ? Qu'est-ce que c'est ?	}{	131	}{	G.Knox_Ghoul == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	724	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	725	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	726	}{	Eh bien, à un de ces quatre.	}{	Eh bien, à un de ces quatre.	}{	0	}{	G.Knox_Mission == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	727	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	728	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	729	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	730	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	731	}{	Fous-moi la paix.	}{	Laissez-moi tranquille.	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	732	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	733	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	734	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	735	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	736	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	737	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	738	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	739	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	740	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	741	}{	Eh, mec, c'est pas cool. J'essayais vraiment de me confier, tu sais ?	}{	Eh, miss, c'est pas cool. J'essayais vraiment de me confier, tu sais ?	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	742	}{	Pardon, ça ne se reproduira pas.	}{	Pardon, ça ne se reproduira pas.	}{	241	}{	G.Knox_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	743	}{	Pardon, ça ne se reproduira pas. Continue.	}{	Pardon, ça ne se reproduira pas. Continue.	}{	231	}{	G.Knox_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	744	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	745	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	746	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	747	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	748	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	749	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	750	}{	C'était ta première erreur. Je n'ai pas de temps à te consacrer.	}{	C'était ta première erreur. Je n'ai pas de temps à te consacrer.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	751	}{	[en colère]Qu'est-ce que tu veux ?	}{	[en colère]Qu'est-ce que tu veux ?	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	752	}{	Je regrette d'avoir fait preuve de grossièreté, tout à l'heure.	}{	Je regrette d'avoir fait preuve de grossièreté, tout à l'heure.	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	753	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	754	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	755	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	756	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	757	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	758	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	759	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	760	}{	Rien. Au revoir.	}{	Rien. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	761	}{	[Un peu en porte-à-faux]Ouais, bon. . . [se reprend]Enfin, ouais, moi aussi, avec toute la tension à propos de cet asiate, là. . .	}{	[Un peu en porte-à-faux]Ouais, bon. . . [se reprend]Enfin, ouais, moi aussi, avec toute la tension à propos de cet asiate, là. . .	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	762	}{	Qu'est-ce que tu vas faire ?	}{	Qu'est-ce que tu vas faire ?	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	763	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	764	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	765	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	766	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	767	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	768	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	769	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	770	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	771	}{	OK, du calme, pas la peine de faire ton gros con.	}{	OK, du calme, pas la peine de faire ta grosse conne.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	772	}{	(Auto-Link)	}{	(Auto-Link)	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	773	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	774	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	775	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	776	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	777	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	778	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	779	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	780	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	781	}{	[Amicalement]Eh, salut mon vieux, ça va ?	}{	[Amicalement]Eh, salut ma vieille, ça va ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	782	}{	Pas grand chose.	}{	Pas grand chose.	}{	533	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mort, comme d'habitude.	}
+{	783	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	784	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	785	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	786	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	787	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	788	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	789	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	790	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	791	}{	Salut.	}{	Salut.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	792	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	793	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	794	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	795	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	796	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	797	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	798	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	799	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	800	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	801	}{	[hostile]Eh, mec, je t'ai dit de me foutre la paix.	}{	[hostile]Eh, gamine, je t'ai dit de me foutre la paix.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	802	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	803	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	804	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	805	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	806	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	807	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	808	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	809	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	810	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	811	}{	[hostile]Je ne veux plus te parler.	}{	[hostile]Je ne veux plus te parler.	}{	#	}{	}{	G.Knox_Pissed = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	812	}{	(Auto-Link)	}{	(Auto-Link)	}{	731	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	813	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	814	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	815	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	816	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	817	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	818	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	819	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	820	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	821	}{	Ouais !	}{	Ouais !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	822	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	823	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	824	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	825	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	826	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	827	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	828	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	829	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	830	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	831	}{	Nan. . .	}{	Nan. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	832	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	833	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	834	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	835	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	836	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	837	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	838	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	839	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	840	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	841	}{	Merci.	}{	Merci.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	842	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	843	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	844	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	845	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	846	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	847	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	848	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	849	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	850	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	851	}{	Pas possible ? Vraiment ?	}{	Pas possible ? Vraiment ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	852	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	853	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	854	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	855	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	856	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	857	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	858	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	859	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	860	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	861	}{	[Incertain]Je ne sais pas.	}{	[Incertain]Je ne sais pas.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	862	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	863	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	864	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	865	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	866	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	867	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	868	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	869	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	870	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	871	}{	Je ne veux pas t'aider !	}{	Je ne veux pas t'aider !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	872	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	873	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	874	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	875	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	876	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	877	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	878	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	879	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	880	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	881	}{	C'est cool !	}{	C'est cool !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	882	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	883	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	884	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	885	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	886	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	887	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	888	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	889	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	890	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	891	}{	Au fait. . .	}{	Au fait. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	892	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	893	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	894	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	895	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	896	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	897	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	898	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	899	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	900	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	901	}{	Prends ça, mec.	}{	Prends ça, gamine.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	902	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	903	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	904	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	905	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	906	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	907	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	908	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	909	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	910	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	911	}{	Je t'envoie un mail, OK ?	}{	Je t'envoie un mail, OK ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	912	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	913	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	914	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	915	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	916	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	917	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	918	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	919	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	920	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	921	}{	[Ravi]Génial ! Je le savais ! J'en étais sûr. Je l'ai vu. . . Enfin bon, vu que t'es une Nosferatu, c'est un peu évident, mais. . . On aurait cru que je le sentais. Je m'appelle Knox Harrington. Ravi de te rencontrer.	}{	[Ravi]Génial ! Je le savais ! J'en étais sûr. Je l'ai vu. . . Enfin bon, vu que t'es une Nosferatu, c'est un peu évident, mais. . . On aurait cru que je le sentais. Je m'appelle Knox Harrington. Ravi de te rencontrer.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Vamp = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	922	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	923	}{	Tu es un vampire ? Comment tu sais tout ça ?	}{	Tu es un vampire ? Comment sais-tu tout cela ?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	924	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	925	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	926	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	927	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	928	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	929	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	930	}{	Le plaisir est pour toi. Fous-moi la paix, le comique.	}{	Le plaisir est pour toi. Fous-moi la paix, le comique.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	931	}{	Bien sûr. Qu'est-ce que tu veux savoir ?	}{	Bien sûr. Qu'est-ce que tu veux savoir ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	932	}{	Comment je peux trouver la plage, d'ici ?	}{	Comment je peux trouver la plage, d'ici ?	}{	941	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où l'eau retrouve-t-elle le sable ?	}
+{	933	}{	Il y a quelque chose que je devrais savoir au sujet de Santa Monica ?	}{	Il y a quelque chose que je devrais savoir au sujet de Santa Monica ?	}{	951	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que dire de Sainte Monique ?	}
+{	934	}{	Qui est le vampire qui t'a transformé en goule ?	}{	Qui est le vampire qui a fait de toi une goule ?	}{	621	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	935	}{	Tu travaillais pas comme chasseur de primes pour Killpatrick ?	}{	Tu travaillais pas comme chasseur de primes pour Killpatrick ?	}{	311	}{	G.Arthur_Knoxold == 1 and G.Arthur_Knoxout == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tu chassais des gens pour le gros Arthur, toi, ou bien ?	}
+{	936	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	937	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	938	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	939	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	940	}{	Peu importe. Je me casse.	}{	Peu importe. Je me casse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi tu me parles encore ? Je ne suis plus là.	}
+{	941	}{	Tu descends la rue, tu tournes à gauche dans le parking, tu descends l'escalier, et le tunnel t'emmène droit à la plage.	}{	Tu descends la rue, tu tournes à gauche dans le parking, tu descends l'escalier, et le tunnel t'emmène droit à la plage.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	942	}{	Merci, je peux te poser d'autres questions ?	}{	Merci, je peux te poser d'autres questions ?	}{	931	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
+{	943	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	944	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	945	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	946	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	947	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	948	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	949	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	950	}{	Merci, salut.	}{	Merci, salut.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi tu me parles encore ? Je ne suis plus là.	}
+{	951	}{	Oh ouais, il y a quelque chose. La banque du sang, au sous-sol de cette clinique médicale, là. Ca peut être assez pratique pour les vampires, si tu vois ce que je veux dire. . .	}{	Oh ouais, il y a quelque chose. La banque du sang, au sous-sol de cette clinique médicale, là. Ca peut être assez pratique pour les vampires, si tu vois ce que je veux dire. . .	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	952	}{	Merci, je peux te poser d'autres questions ?	}{	Merci, je peux te poser d'autres questions ?	}{	931	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
+{	953	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	954	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	955	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	956	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	957	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	958	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	959	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	960	}{	Merci, au revoir.	}{	Merci, au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi me parler encore ? Je suis parti.	}
+{	961	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	962	}{	(Starting Condition)	}{	}{	781	}{	G.Knox_Done == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	963	}{	(Starting Condition)	}{	}{	481	}{	G.Bertram_Check == 1 and G.Knox_Bertfound == 0 and G.Knox_Quest == 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	964	}{	(Starting Condition)	}{	}{	21	}{	IsClan(pc,"Nosferatu") and G.Knox_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	965	}{	(Starting Condition)	}{	}{	11	}{	G.Knox_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	966	}{	(Starting Condition)	}{	}{	291	}{	G.Knox_Quest == 5 or G.Knox_Quest == 6	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	967	}{	(Starting Condition)	}{	}{	81	}{	G.Knox_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	968	}{	(Starting Condition)	}{	}{	361	}{	G.Knox_TT > 0 and G.Knox_Quest == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	969	}{	(Starting Condition)	}{	}{	631	}{	G.Knox_Ghoul == 2 and G.Mercurio_Quest != 2 and G.Knox_Pissed == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	970	}{	(Starting Condition)	}{	}{	641	}{	G.Knox_Ghoul == 2 and G.Mercurio_Quest == 2 and G.Knox_Pissed == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	971	}{	(Starting Condition)	}{	}{	811	}{	G.Knox_Ghoul > 0 and G.Mercurio_Quest != 2 and G.Knox_Pissed == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	972	}{	(Starting Condition)	}{	}{	751	}{	G.Knox_Quest == 1 and G.Knox_Pissed >= 1 and G.Knox_Pissed < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	973	}{	(Starting Condition)	}{	}{	711	}{	G.Mercurio_Quest == 2 and G.Knox_Pissed >= 1 and G.Knox_Pissed < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	974	}{	(Starting Condition)	}{	}{	801	}{	G.Knox_Pissed == 3	}{	}{	}{	}{	}{	}{	}{	}{	}

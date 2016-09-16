@@ -1,0 +1,948 @@
+{	1	}{	Je m'appelle Nines.	}{	Je m'appelle Nines.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Merci pour le coup de main.	}{	Merci pour le coup de main.	}{	11	}{	IsClan(pc, "Brujah") or IsClan(pc,"Gangrel")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Merci pour le coup de main.	}{	Merci pour le coup de main.	}{	21	}{	IsClan(pc, "Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Merci pour le coup de main.	}{	Merci pour le coup de main.	}{	31	}{	IsClan(pc,"Toreador") or IsClan(pc,"Tremere") or IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Je n'avais pas besoin d'aide, j'aurais pu me les faire !	}{	Je n'avais pas besoin d'aide, j'aurais pu me les faire !	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'étais sur le point de les DETRUIRE !	}
+{	6	}{	Qu'est-il arrivé à Nines ?	}{	Qu'est-il arrivé à Nines ?	}{	901	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	T'aurais dû faire plus attention, mon petit. Des têtes de pioches comme ça, c'est grande gueule mais ça prend facilement peur - il suffit de leur arracher une oreille.	}{	T'aurais dû faire plus attention, ma petite. Des têtes de pioches comme ça, c'est grande gueule mais ça prend facilement peur - il suffit de leur arracher une oreille.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	J'aurais pu me les faire !	}{	J'aurais pu me les faire !	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Je m'en souviendrai.	}{	Je m'en souviendrai.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Je me souviens de toi, au tribunal.	}{	Je me souviens de toi, au tribunal.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	T'aurais dû faire plus attention, mon petit. Tu devrais rester dans les égouts.	}{	T'aurais dû faire plus attention, ma petite. Tu devrais rester dans les égouts.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	J'aurais pu me les faire !	}{	J'aurais pu me les faire !	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Je m'en souviendrai.	}{	Je m'en souviendrai.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Je me souviens de toi, au tribunal.	}{	Je me souviens de toi, au tribunal.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	T'aurais dû faire plus attention, mon petit. C'est pas les beaux quartiers, ici.	}{	T'aurais dû faire plus attention, ma petite. C'est pas les beaux quartiers, ici.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	J'aurais pu me les faire !	}{	J'aurais pu me les faire !	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'étais sur le point de les DETRUIRE !	}
+{	33	}{	Je m'en souviendrai.	}{	Je m'en souviendrai.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors ça. . . Maintenant, tout le monde crie très très loin. . .	}
+{	34	}{	Je me souviens de toi, au tribunal.	}{	Je me souviens de toi, au tribunal.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ton visage est familier. . . Tu as ta propre marque de céréales ?	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Tu veux que j'aille les chercher ?	}{	Tu veux que j'aille les chercher ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Euh. . .	}{	Euh. . .	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	. . . Hé hé. . .	}
+{	43	}{	Non, c'est rien.	}{	Non, c'est rien.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hein qui quoi ?	}
+{	44	}{	Vas-y, ramène-les moi !	}{	Vas-y, ramène-les moi !	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	ROUND 2, FIGHT !	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Occupe-t-en. Moi, j'ai des trucs à faire. Pourquoi tu ne viendrais pas me voir au Last Round ce soir ? Je ne sais pas ce que tu as entendu pour l'instant, mais il serait temps qu'on te dise la vérité, quand même.	}{	Occupe-t-en. Moi, j'ai des trucs à faire. Pourquoi tu ne viendrais pas me voir au Last Round ce soir ? Je ne sais pas ce que tu as entendu pour l'instant, mais il serait temps qu'on te dise la vérité, quand même.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Ca marche.	}{	Ca marche.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aime les histoires.	}
+{	53	}{	J'y penserai.	}{	J'y penserai.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si mes errances me mènent là-bas, ainsi soit-il.	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	[Une pause]Ouais. Bon, j'ai des trucs à faire. Pourquoi tu ne viendrais pas me voir au Last Round ce soir ? Je ne sais pas ce que tu as entendu pour l'instant, mais il serait temps qu'on te dise la vérité, quand même.	}{	[Une pause]Ouais. Bon, j'ai des trucs à faire. Pourquoi tu ne viendrais pas me voir au Last Round ce soir ? Je ne sais pas ce que tu as entendu pour l'instant, mais il serait temps qu'on te dise la vérité, quand même.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Ca marche.	}{	Ca marche.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aime les histoires.	}
+{	63	}{	J'y penserai.	}{	J'y penserai.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si mes errances me mènent là-bas, ainsi soit-il.	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	C'est bien ce que je pensais. Bon, j'ai des trucs à faire. Pourquoi tu ne viendrais pas me voir au Last Round ce soir ? Je ne sais pas ce que tu as entendu pour l'instant, mais il serait temps qu'on te dise la vérité, quand même.	}{	C'est bien ce que je pensais. Bon, j'ai des trucs à faire. Pourquoi tu ne viendrais pas me voir au Last Round ce soir ? Je ne sais pas ce que tu as entendu pour l'instant, mais il serait temps qu'on te dise la vérité, quand même.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Ca marche.	}{	Ca marche.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aime les histoires.	}
+{	73	}{	J'y penserai.	}{	J'y penserai.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si mes errances me mènent là-bas, ainsi soit-il.	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Fais ce que tu veux. Bon, j'ai des trucs à faire. Pourquoi tu ne viendrais pas me voir au Last Round ce soir ? Je ne sais pas ce que tu as entendu pour l'instant, mais il serait temps qu'on te dise la vérité, quand même.	}{	Fais ce que tu veux. Bon, j'ai des trucs à faire. Pourquoi tu ne viendrais pas me voir au Last Round ce soir ? Je ne sais pas ce que tu as entendu pour l'instant, mais il serait temps qu'on te dise la vérité, quand même.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Ca marche.	}{	Ca marche.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aime les histoires.	}
+{	83	}{	J'y penserai.	}{	J'y penserai.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si mes errances me mènent là-bas, ainsi soit-il.	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	La vie est dure, tu sais. Evite les ennuis.	}{	La vie est dure, tu sais. Evite les ennuis.	}{	#	}{	}{	G.Nines_Farewell = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Ah, te voilà. Super. Bon, voilà ce que j'ai à te dire. Et juste pour que ce soit clair, c'est pas une conférence, c'est pas un discours, c'est pas une opinion - je suis juste un type qui s'est retrouvé impliqué dans un truc cinq cent fois plus gros que toi ou moi.	}{	Ah, te voilà. Super. Bon, voilà ce que j'ai à te dire. Et juste pour que ce soit clair, c'est pas une conférence, c'est pas un discours, c'est pas une opinion - je suis juste un type qui s'est retrouvé impliqué dans un truc cinq cent fois plus gros que toi ou moi.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nines_Chat = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Continue.	}{	Continue.	}{	131	}{	pc.GetQuestState("Dane") == 4	}{	pc.SetQuest("Dane",5)	}{	}{	}{	}{	}{	}{	}{	ENCORE !	}
+{	103	}{	Encore un discours ? Pfff. . .	}{	Encore un discours ? Pfff. . .	}{	111	}{	pc.GetQuestState("Dane") == 4	}{	pc.SetQuest("Dane",5)	}{	}{	}{	}{	}{	}{	}{	Il y a des mots qui tombent de ta bouche, tu devrais la fermer.	}
+{	104	}{	Continuez.	}{	Continuez.	}{	131	}{	pc.GetQuestState("Dane") != 4	}{	}{	}{	}{	}{	}{	}{	}{	ENCORE !	}
+{	105	}{	Non, pas un autre discours.	}{	Non, pas un autre discours.	}{	111	}{	pc.GetQuestState("Dane") != 4	}{	}{	}{	}{	}{	}{	}{	}{	Il y a des mots qui tombent de ta bouche, tu devrais la fermer.	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	[N'entend pas]Quoi ? Attends. [Se tourne vers la salle]LA FERME ! [le bar est un peu moins bruyant]Comme je te disais, tout ça, la vie qu'on mène - c'est la merde. C'est plus vieux que cette ville, que ce pays. . . Va savoir depuis combien de temps ça dure.	}{	[N'entend pas]Quoi ? Attends. [Se tourne vers la salle]LA FERME ! [le bar est un peu moins bruyant]Comme je te disais, tout ça, la vie qu'on mène - c'est la merde. C'est plus vieux que cette ville, que ce pays. . . Va savoir depuis combien de temps ça dure.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Continue.	}{	Continue.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	ENCORE !	}
+{	113	}{	Ca va prendre longtemps ?	}{	Ca va prendre longtemps ?	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu comptes m'emprisonner dans tes mots pendant une éternité ou deux ?	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Je te promets que tu pourras partir avant le matin.	}{	Je te promets que tu pourras partir avant le matin.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	(Auto-Link)	}{	(Auto-Link)	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Tu as le droit de connaître la vérité. La Camarilla, voilà l'essentiel. Ils fonctionnent un peu comme une arnaque à l'économie pyramidale. En haut, une poignée de vieux bonzes, avec Dieu sait quelles manigances dans la tête. S'ils perdent leur pouvoir, ils meurent.	}{	Tu as le droit de connaître la vérité. La Camarilla, voilà l'essentiel. Ils fonctionnent un peu comme une arnaque à l'économie pyramidale. En haut, une poignée de vieux bonzes, avec Dieu sait quelles manigances dans la tête. S'ils perdent leur pouvoir, ils meurent.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	(Auto-Link)	}{	(Auto-Link)	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Ils ont étreint tout un tas de gens pour les servir, et pour avoir un peu de pouvoir, ces serviteurs ont étreint d'autres personnes pour pouvoir comploter à leur tour, et ainsi de suite - imagine un peu le bordel. Du coup, seuls les gens qui sont au sommet ont un réel pouvoir.	}{	Ils ont étreint tout un tas de gens pour les servir, et pour avoir un peu de pouvoir, ces serviteurs ont étreint d'autres personnes pour pouvoir comploter à leur tour, et ainsi de suite - imagine un peu le bordel. Du coup, seuls les gens qui sont au sommet ont un réel pouvoir.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Tu ne fais pas partie de la Camarilla ?	}{	Tu ne fais pas partie de la Camarilla ?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nous ne sommes pas tous une grande famille heureuse et unie appelée Camarilla ?	}
+{	143	}{	Le prince n'est pas le chef de la Camarilla ?	}{	Le prince n'est pas le chef de la Camarilla ?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le prince n'est pas le chef des vampires ?	}
+{	144	}{	C'est très intéressant, Nines, mais je dois vraiment partir.	}{	C'est très intéressant, Nines, mais je dois vraiment partir.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je laisserais bien ma tête pour qu'elle écoute, mais mon corps doit partir et ils sont inséparables.	}
+{	145	}{	Je peux partir, maintenant ?	}{	Je peux partir, maintenant ?	}{	171	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	Ha ha. . . La nulleur de vivre. Tu ne comprends donc pas ?	}{	Ha ha. . . La nulleur de vivre. Tu ne comprends donc pas ?	}{	821	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Ca mériterait une raclée, mais tu es jeune et bête, alors je ne vais pas te donner de leçon. Tu vois, la Camarilla affirme qu'on en est tous membres, même si on ne veut pas, ce qui est bien sûr la pire connerie qu'on ait jamais entendue.	}{	Ca mériterait une raclée, mais tu es jeune et bête, alors je ne vais pas te donner de leçon. Tu vois, la Camarilla affirme qu'on en est tous membres, même si on ne veut pas, ce qui est bien sûr la pire connerie qu'on ait jamais entendue.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Nines_Cam = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Alors de quoi tu me parles ?	}{	Alors de quoi tu me parles ?	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Laisse-moi entendre ta vérité.	}
+{	153	}{	Je ne comprends toujours pas.	}{	Je ne comprends toujours pas.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne comprends rien.	}
+{	154	}{	Tu étais au procès. Le prince n'est pas le chef des vampires de LA ?	}{	Tu étais au procès. Le prince n'est pas le chef des vampires de LA ?	}{	161	}{	G.Nines_Prince == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le prince n'est pas le chef des vampires ?	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	Euh, ouais. Je me casse. 	}{	Euh, ouais. Je me casse. 	}{	171	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	Ha ha. . . La nulleur de vivre. Tu ne comprends donc pas ?	}{	Ha ha. . . La nulleur de vivre. Tu ne comprends donc pas ?	}{	821	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	LaCroix ? N'importe quoi. LaCroix n'est que le type qui a poignardé des gens et qui a réussi à se faufiler pour devenir crapule en chef de la Camarilla locale. Lui et tous les traitres qui sont du côté de la Camarilla veulent le pouvoir ici, ils vont pas être déçus.	}{	LaCroix ? N'importe quoi. LaCroix n'est que le type qui a poignardé des gens et qui a réussi à se faufiler pour devenir crapule en chef de la Camarilla locale. Lui et tous les traitres qui sont du côté de la Camarilla veulent le pouvoir ici, ils vont pas être déçus.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Nines_Prince = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Tu ne fais pas partie de la Camarilla ?	}{	Tu ne fais pas partie de la Camarilla ?	}{	151	}{	G.Nines_Cam == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nous ne sommes pas tous une grande famille heureuse et unie appelée Camarilla ?	}
+{	163	}{	Alors de quoi tu me parles ?	}{	Alors de quoi tu me parles ?	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Laisse-moi entendre ta vérité.	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	Euh, ouais. Je me casse. 	}{	Euh, ouais. Je me casse. 	}{	171	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	Ha ha. . . La nulleur de vivre. Tu ne comprends donc pas ?	}{	Ha ha. . . La nulleur de vivre. Tu ne comprends donc pas ?	}{	821	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Eh, je me fous que tu restes ou que tu partes. Je voulais juste te donner une chance. Si tu veux partir, fous le camp.	}{	Eh, je me fous que tu restes ou que tu partes. Je voulais juste te donner une chance. Si tu veux partir, fous le camp.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	C'était pas sympa, pardon. Tu étais au procès. Tu ne fais pas partie de la Camarilla ?	}{	C'était pas sympa, pardon. Tu étais au procès. Tu ne fais pas partie de la Camarilla ?	}{	151	}{	G.Nines_Cam == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je ravale mes paroles. Nous ne sommes pas tous une grande famille heureuse et unie appelée Camarilla ?	}
+{	173	}{	C'était pas sympa, pardon. Tu as parlé de pouvoir. Le prince n'est pas le chef de tous les vampires ?	}{	C'était pas sympa, pardon. Tu as parlé de pouvoir. Le prince n'est pas le chef de tous les vampires ?	}{	161	}{	G.Nines_Prince == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je ravale mes paroles. Le prince n'est pas le chef des vampires ?	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	Tout de suite. Merci de m'avoir fait perdre mon temps.	}{	Tout de suite. Merci de m'avoir fait perdre mon temps.	}{	0	}{	}{	G.Nines_Scorn = 1	}{	}{	}{	}{	}{	}{	}{	HA HA HA HA HA HA HA HA. . . Adios, Rodriguez.	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	J'ai connu ce monde pendant la dépression. De vieux pourris de riches ont bousillé ce pays - mais est-ce qu'ils ont payé ? Non, ce sont les petits qui ont souffert. On ne peut pas faire confiance aux gens qui dirigent. Le monde serait meilleur sans eux.	}{	J'ai connu ce monde pendant la dépression. De vieux pourris de riches ont bousillé ce pays - mais est-ce qu'ils ont payé ? Non, ce sont les petits qui ont souffert. On ne peut pas faire confiance aux gens qui dirigent. Le monde serait meilleur sans eux.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	(Auto-Link)	}{	(Auto-Link)	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	On ne peut que réunir quelques personnes qui ne sont pas des enfoirés, trouver un endroit où vivre tranquille, et le garder. Empêcher la soi-disant élite de rentrer. Tout le monde est égal, comme c'était avant dans ce pays. C'était ça, LA, un Etat Libre des anarchs.	}{	On ne peut que réunir quelques personnes qui ne sont pas des enfoirés, trouver un endroit où vivre tranquille, et le garder. Empêcher la soi-disant élite de rentrer. Tout le monde est égal, comme c'était avant dans ce pays. C'était ça, LA, un Etat Libre des anarchs.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Un Etat Libre des anarchs ?	}{	Un Etat Libre des anarchs ?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Un Etat Libre ? Bah, de toute façon, je finis toujours par emporter des trucs. . .	}
+{	193	}{	Alors la Camarilla est arrivée récemment à LA ?	}{	Alors la Camarilla est arrivée récemment à LA ?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	La Camarilla est une jeune pousse, ici ?	}
+{	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	La plupart du temps, on apprend à la dure.	}{	La plupart du temps, on apprend à la dure.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Alors de quoi tu parles ?	}{	Alors de quoi tu me parles ?	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Laisse-moi entendre ta vérité.	}
+{	203	}{	Tu étais au procès. Le prince n'est pas le chef des vampires de LA ?	}{	Tu étais au procès. Le prince n'est pas le chef des vampires de LA ?	}{	161	}{	G.Nines_Prince == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le prince n'est pas le chef des vampires ?	}
+{	204	}{	Euh, ouais. Je me casse. 	}{	Euh, ouais. Je me casse. 	}{	171	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	Ha ha. . . La nulleur de vivre. Tu ne comprends donc pas ?	}{	Ha ha. . . La nulleur de vivre. Tu ne comprends donc pas ?	}{	821	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	La Camarilla s'est fait chasser d'ici il y a longtemps. Nous, les anarchs, on ne voulait plus faire de politique. Et maintenant, LaCroix et les siens reviennent comme s'ils n'étaient jamais partis - et ça, c'est pas possible. Leurs lois ne s'appliquent pas à nous.	}{	La Camarilla s'est fait chasser d'ici il y a longtemps. Nous, les anarchs, on ne voulait plus faire de politique. Et maintenant, LaCroix et les siens reviennent comme s'ils n'étaient jamais partis - et ça, c'est pas possible. Leurs lois ne s'appliquent pas à nous.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Tu as essayé de discuter avec la Camarilla ?	}{	Tu as essayé de discuter avec la Camarilla ?	}{	221	}{	G.Nines_Brujah == 0	}{	deagleNines()	}{	}{	}{	}{	}{	}{	}{	Des bêtes de somme ! Que des âneries !	}
+{	213	}{	Tu n'aimes pas beaucoup le prince, hein ?	}{	Tu n'aimes pas beaucoup le prince, hein ?	}{	231	}{	G.Nines_Hate == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le prince et toi, vous ne jouez pas au golf le week-end ?	}
+{	214	}{	Donc, c'est toi le prince anarch.	}{	Donc, c'est toi le prince anarch.	}{	241	}{	G.Nines_Leader == 0	}{	}{	}{	}{	}{	}{	}{	}{	Donc, tu es le prince des voleurs, et voici tes gais compagnons ?	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	J'aimerais bien qu'il discute avec ça[arme son pistolet].	}{	J'aimerais bien qu'il discute avec ça[arme son pistolet].	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	G.Nines_Brujah = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Tu n'aimes pas beaucoup le prince, hein ?	}{	Tu n'aimes pas beaucoup le prince, hein ?	}{	231	}{	G.Nines_Hate == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le prince et toi, vous ne jouez pas au golf le week-end ?	}
+{	223	}{	Donc, c'est toi le prince anarch.	}{	Donc, c'est toi le prince anarch.	}{	241	}{	G.Nines_Leader == 0	}{	}{	}{	}{	}{	}{	}{	}{	Donc, tu es le prince des voleurs, et voici tes gais compagnons ?	}
+{	224	}{	Encore une question. Tu peux me donner des conseils ?	}{	Encore une question. Tu peux me donner des conseils ?	}{	261	}{	G.Nines_Leader == 1 and G.Nines_Hate == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est encore malléable. Quelle forme devrais-je lui donner ?	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	Dit l'homme dont la base des opérations pue le whisky et la pisse.	}{	Dit l'homme dont la base des opérations pue le whisky et la pisse.	}{	251	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Ce n'est pas à ce moment-là que votre musique démarre ? HA HA HA. . . stéréotype.	}
+{	227	}{	Ca, c'est du cliché.	}{	Ca, c'est du cliché.	}{	251	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	Vous n'êtes rien de plus qu'une fraternité sans plaisir, musique ni loyauté.	}{	Vous n'êtes rien de plus qu'une fraternité sans plaisir, musique ni loyauté.	}{	251	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	LaCroix représente tout ce que je déteste - la Camarilla, des aristocrates méprisants, des hommes d'affaires riches, des politiciens véreux. . . LaCroix mérite de finir dans une urne.	}{	LaCroix représente tout ce que je déteste - la Camarilla, des aristocrates méprisants, des hommes d'affaires riches, des politiciens véreux. . . LaCroix mérite de finir dans une urne.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Nines_Hate = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Tu as essayé de discuter avec la Camarilla ?	}{	Tu as essayé de discuter avec la Camarilla ?	}{	221	}{	G.Nines_Brujah == 0	}{	deagleNines()	}{	}{	}{	}{	}{	}{	}{	Des bêtes de somme ! Que des âneries !	}
+{	233	}{	Donc, c'est toi le prince anarch.	}{	Donc, c'est toi le prince anarch.	}{	241	}{	G.Nines_Leader == 0	}{	}{	}{	}{	}{	}{	}{	}{	Donc, tu es le prince des voleurs, et voici tes gais compagnons ?	}
+{	234	}{	Encore une question. Tu peux me donner des conseils ?	}{	Encore une question. Tu peux me donner des conseils ?	}{	261	}{	G.Nines_Brujah == 1 and G.Nines_Leader == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est encore malléable. Quelle forme devrais-je lui donner ?	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	Les anarchs - des geignards paresseux, grande gueule et qui adorent se battre. La vérité blesse, n'est-ce pas ?	}{	Les anarchs - des geignards paresseux, grande gueule et qui adorent se battre. La vérité blesse, n'est-ce pas ?	}{	251	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Le sel de la Terre, de la boue sous ses ongles et du fumier en guise de cerveau.	}
+{	237	}{	Sans eux, qui sponsoriserait les artistes ? Toi ? Catch pour tout le monde !	}{	Sans eux, qui sponsoriserait les artistes ? Toi ? Catch pour tout le monde !	}{	251	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	On dirait que quelqu'un est jaloux. Pas terrible pour atteindre les sommets ?	}{	On dirait que quelqu'un est jaloux. Pas terrible pour atteindre les sommets ?	}{	251	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Ca n'existe pas. Et encore une fois, ne va pas dire des trucs comme ça à la légère - tu risques ta peau. Je me suis débrouillé pour que LA reste libre, depuis mon Etreinte. Du coup, je suis le plus ancien qui ne s'est pas fait descendre. Le plus ancien vétéran de tout le champ de bataille. . .	}{	Ca n'existe pas. Et encore une fois, ne va pas dire des trucs comme ça à la légère - tu risques ta peau. Je me suis débrouillé pour que LA reste libre, depuis mon Etreinte. Du coup, je suis le plus ancien qui ne s'est pas fait descendre. Le plus ancien vétéran de tout le champ de bataille. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nines_Leader = 1	}{	}{	}{	}{	}{	}{	}{	Ne me traite jamais de prince, Malk. Je me bats pour la liberté de LA depuis qu'on m'a étreint. Du coup, je suis le plus ancien qui ne s'est pas fait descendre. Le plus ancien vétéran de tout le champ de bataille. . .	}
+{	242	}{	Tu n'aimes pas beaucoup le prince, hein ?	}{	Tu n'aimes pas beaucoup le prince, hein ?	}{	231	}{	G.Nines_Hate == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le prince et toi, vous ne jouez pas au golf le week-end ?	}
+{	243	}{	Tu as essayé de discuter avec la Camarilla ?	}{	Tu as essayé de discuter avec la Camarilla ?	}{	221	}{	G.Nines_Brujah == 0	}{	deagleNines()	}{	}{	}{	}{	}{	}{	}{	Des bêtes de somme ! Que des âneries !	}
+{	244	}{	Encore une question. Tu peux me donner des conseils ?	}{	Encore une question. Tu peux me donner des conseils ?	}{	261	}{	G.Nines_Brujah == 1 and G.Nines_Hate == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est encore malléable. Quelle forme devrais-je lui donner ?	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	Ton groupe a l'air d'un ramassis de frimeurs et de voyous.	}{	Ton groupe a l'air d'un ramassis de frimeurs et de voyous.	}{	251	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	C'est un cabaret comique ici ? C'est une plaisanterie, hein ? Allez, où sont les caméras ?	}
+{	247	}{	Une association de truands et de ruffians, voilà ce que tu commandes, monsieur.	}{	Une association de truands et de ruffians, voilà ce que tu commandes, monsieur.	}{	251	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	Je pense que la structure de commandement de ton groupe laisse à désirer.	}{	Je pense que la structure de commandement de ton groupe laisse à désirer.	}{	251	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Alors va crever. Retourne dans ta tour. Dis ce que tu veux sur moi, mais aucun de nous dans ce bar n'est un tyran manipulateur et hypocrite comme ce connard de LaCroix. La Camarilla et lui peuvent aller se faire foutre - tu peux lui dire ça, de la part de Nines Rodriguez.	}{	Alors va crever. Retourne dans ta tour. Dis ce que tu veux sur moi, mais aucun de nous dans ce bar n'est un tyran manipulateur et hypocrite comme ce connard de LaCroix. La Camarilla et lui peuvent aller se faire foutre - tu peux lui dire ça, de la part de Nines Rodriguez.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	G.Nines_Scorn = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Promis. Au revoir.	}{	Promis. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le temps s'écoule vite et mon sablier est vide. Je pars.	}
+{	253	}{	J'adore ton talent pour les jurons. Au revoir.	}{	J'adore ton talent pour les jurons. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hé hé. . . ho ho. . . HA HA HA HA HA HAAH !	}
+{	254	}{	Merci du coup de main, mais je reste avec l'équipe des vainqueurs. Au revoir.	}{	Merci du coup de main, mais je reste avec l'équipe des vainqueurs. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La tour de LaCroix contre le bar. . . Hmm, je vais suivre la tour !	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Voilà ce que je dis à tous les jeunes : un, c'est facile de se laisser monter la tête par les pouvoirs mais il vaut mieux savoir bien les utiliser. Sois un super-héros, pas un monstre. Deux, ne tue pas quand tu te nourris, ça ne sert à rien - dans cette ville, on peut laisser la Bête s'exprimer sans laisser une file de cadavres.	}{	Voilà ce que je dis à tous les jeunes : un, c'est facile de se laisser monter la tête par les pouvoirs mais il vaut mieux savoir bien les utiliser. Sois un super-héros, pas un monstre. Deux, ne tue pas quand tu te nourris, ça ne sert à rien - dans cette ville, on peut laisser la Bête s'exprimer sans laisser une file de cadavres.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	(Auto-Link)	}{	(Auto-Link)	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	263	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Trois, la Camarilla c'est de la merde. Quatre, fais toujours gaffe à tes arrières. Et enfin, apprends à te battre, parce qu'un discours ne te sauvera pas si tu te retrouves face à un flingue.	}{	Trois, la Camarilla c'est de la merde. Quatre, fais toujours gaffe à tes arrières. Et enfin, apprends à te battre, parce qu'un discours ne te sauvera pas si tu te retrouves face à un flingue.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Tu peux m'apprendre à me battre ?	}{	Tu peux m'apprendre à me battre ?	}{	281	}{	Brawl -3	}{	}{	}{	}{	}{	}{	}{	}{	Apprends-moi toutes les subtilités.	}
+{	273	}{	Tu peux m'apprendre à me battre ?	}{	Tu peux m'apprendre à me battre ?	}{	291	}{	Brawl 3	}{	}{	}{	}{	}{	}{	}{	}{	Apprends-moi toutes les subtilités.	}
+{	274	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	Merci de ton aide, Nines. 	}{	Merci de ton aide, Nines. 	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Intéressantes paroles. Je les savourerai.	}
+{	276	}{	Ton groupe a l'air d'un ramassis de frimeurs et de voyous.	}{	Ton groupe a l'air d'un ramassis de frimeurs et de voyous.	}{	251	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	C'est un cabaret comique ici ? C'est une plaisanterie, hein ? Allez, où sont les caméras ?	}
+{	277	}{	Une association de truands et de ruffians, voilà ce que tu commandes, monsieur.	}{	Une association de truands et de ruffians, voilà ce que tu commandes, monsieur.	}{	251	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	Je pense que la structure de commandement de ton groupe laisse à désirer.	}{	Je pense que la structure de commandement de ton groupe laisse à désirer.	}{	251	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	Après avoir sauvé ta peau tout à l'heure, ouais, je sais que tu n'as même pas les bases. Lève les mains comme ça, et garde le corps de côté, ce sera moins facile de te toucher. Mets pas les pouces dans les poings, et mets ton poids derrière tes coups.	}{	Après avoir sauvé ta peau tout à l'heure, ouais, je sais que tu n'as même pas les bases. Lève les mains comme ça, et garde le corps de côté, ce sera moins facile de te toucher. Mets pas les pouces dans les poings, et mets ton poids derrière tes coups.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.BumpStat("brawl", 1)	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Merci de ton aide, Nines. 	}{	Merci de ton aide, Nines. 	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Intéressantes paroles. Je les savourerai.	}
+{	283	}{	Ton groupe a l'air d'un ramassis de frimeurs et de voyous.	}{	Ton groupe a l'air d'un ramassis de frimeurs et de voyous.	}{	251	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	C'est un cabaret comique ici ? C'est une plaisanterie, hein ? Allez, où sont les caméras ?	}
+{	284	}{	Une association de truands et de ruffians, voilà ce que tu commandes, monsieur.	}{	Une association de truands et de ruffians, voilà ce que tu commandes, monsieur.	}{	251	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	Je pense que la structure de commandement de ton groupe laisse à désirer.	}{	Je pense que la structure de commandement de ton groupe laisse à désirer.	}{	251	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Tu connais sans doute déjà les bases, alors il me faudrait du temps pour te montrer le reste, et là, il faut que j'y aille.	}{	Tu connais sans doute déjà les bases, alors il me faudrait du temps pour te montrer le reste, et là, il faut que j'y aille.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Merci de ton aide, Nines. 	}{	Merci de ton aide, Nines. 	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Intéressantes paroles. Je les savourerai.	}
+{	293	}{	Ton groupe a l'air d'un ramassis de frimeurs et de voyous.	}{	Ton groupe a l'air d'un ramassis de frimeurs et de voyous.	}{	251	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	C'est un cabaret comique ici ? C'est une plaisanterie, hein ? Allez, où sont les caméras ?	}
+{	294	}{	Une association de truands et de ruffians, voilà ce que tu commandes, monsieur.	}{	Une association de truands et de ruffians, voilà ce que tu commandes, monsieur.	}{	251	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	Je pense que la structure de commandement de ton groupe laisse à désirer.	}{	Je pense que la structure de commandement de ton groupe laisse à désirer.	}{	251	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	LA, c'est l'école des coups durs. Alors surveille tes amis, et mets tes ennemis dans une urne. Une fois que tout sera réglé avec LaCroix, ne lui parle même plus. Je te garde à l'oeil, tu sais.	}{	LA, c'est l'école des coups durs. Alors surveille tes amis, et mets tes ennemis dans une urne. Une fois que tout sera réglé avec LaCroix, ne lui parle même plus. Je te garde à l'oeil, tu sais.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	Pauvre vampire. Ecoute, LA est l'école des coups durs, alors surveille bien tes amis et brûle bien tes ennemis. Une fois que tu auras réglé le coup avec LaCroix, ne lui adresse plus la parole. Je reste derrière toi.	}
+{	302	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hic!	}
+{	303	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	304	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	Je regrette, mais j'ai toute la ville qui me crie dans l'oreille. Il faudra qu'on discute une autre fois.	}{	Je regrette, mais j'ai toute la ville qui me crie dans l'oreille. Il faudra qu'on discute une autre fois.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	313	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	Je t'ai dit de retourner dans ta tour. File ! Je crois que LaCroix veut se faire cirer les pompes.	}{	Je t'ai dit de retourner dans ta tour. File ! Je crois que LaCroix veut se faire cirer les pompes.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	323	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	324	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	325	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	Deux minutes, OK ? C'est tout ce que je peux te consacrer pour l'instant.	}{	Deux minutes, OK ? C'est tout ce que je peux te consacrer pour l'instant.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Parlez-moi de vous. . .	}{	Parlez-moi de vous. . .	}{	431	}{	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Montre-moi Nines dans toute sa finesse. . .	}
+{	333	}{	Parle-moi de LA.	}{	Parle-moi de LA.	}{	441	}{	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Parle-moi de la Cité des Anges. . .	}
+{	334	}{	Dis-moi ce que j'ai besoin de savoir.	}{	Dis-moi ce que j'ai besoin de savoir.	}{	451	}{	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Qu'est-ce que je vais faire de moi ?	}
+{	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Encore toi. . . Je ne perds pas mon temps avec les pantins de LaCroix.	}{	Encore toi. . . Je ne perds pas mon temps avec les pantins de LaCroix.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	Attends, je veux m'excuser. J'aurais dû t'écouter.	}{	Attends, je veux m'excuser. J'aurais dû t'écouter.	}{	351	}{	Persuasion 5	}{	}{	}{	}{	}{	}{	}{	}{	Je ravale mes anciennes paroles. Remplis-moi la tête avec les tiennes.	}
+{	343	}{	C'est moi que tu traites de pantin ?	}{	C'est moi que tu traites de pantin ?	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis pas une marionnette ! Je préfère le terme poupée !	}
+{	344	}{	Comme si j'avais quoi que ce soit à foutre de l'opinion d'une grande gueule dans un bar.	}{	Comme si j'avais quoi que ce soit à foutre de l'opinion d'une grande gueule dans un bar.	}{	371	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue") and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	345	}{	Comme si je me demandais ce que pense un paumé fringué comme un sac.	}{	Comme si je me demandais ce que pense un paumé fringué comme un sac.	}{	381	}{	IsClan(pc,"Toreador") or IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Personne ne compte ici, Nines. Reviens à la maison - nous vous pardonnons, les enfants!	}
+{	346	}{	Comme si j'avais quoi que ce soit à foutre de l'opinion d'un paysan dans un pauvre rade.	}{	Comme si j'avais quoi que ce soit à foutre de l'opinion d'un paysan dans un pauvre rade.	}{	391	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	Bon, je m'en vais.	}{	Bon, je m'en vais.	}{	0	}{	}{	G.Nines_Timeup = 1	}{	}{	}{	}{	}{	}{	}{	Je suis dehors, comme les fleurs !	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	OK. Excuse.	}{	OK. Excuse.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nines_Scorn = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	Attends, j'avais une question.	}{	Attends, j'avais une question.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	ATTENDS ! Je veux un morceau de ton cerveau !	}
+{	353	}{	Je voulais juste te le dire. Au revoir.	}{	Je voulais juste te le dire. Au revoir.	}{	0	}{	}{	G.Nines_Timeup = 1	}{	}{	}{	}{	}{	}{	}{	Parfois, je ne comprends même pas ce que je dis. SEINS DE NUAGES ! Tu vois ? Allez, je m'en vais.	}
+{	354	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Je croyais que j'étais clair. Maintenant, tu suis tes ficelles jusqu'à la tour et tu fous le camp de mon bar.	}{	Je croyais que j'étais clair. Maintenant, tu suis tes ficelles jusqu'à la tour et tu fous le camp de mon bar.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Et pourquoi tu me fous pas dehors toi-même ?	}{	Et pourquoi tu me fous pas dehors toi-même ?	}{	371	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue") and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	363	}{	Si tu veux du bonheur, je peux t'en donner.	}{	Si tu veux du bonheur, je peux t'en donner.	}{	381	}{	IsClan(pc,"Toreador") or IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	FRAPPE-MOI ! Allez, je sais que tu veux jouer. . .	}
+{	364	}{	Chiche, fous-moi dehors.	}{	Chiche, fous-moi dehors.	}{	391	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	365	}{	Ah ouais ? Viens-y, l'anarch.	}{	Ah ouais ? Viens-y, l'anarch.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Belles paroles pour un anarch. . . Tout en langue, rien en dents. . .	}
+{	366	}{	. . . On se reverra.	}{	. . . On se reverra.	}{	0	}{	}{	G.Nines_Timeup = 1	}{	}{	}{	}{	}{	}{	}{	Je pense que le sang est caillé, là-dedans. Je n'ai aucune envie de rester ici.	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	C'est vraiment comme ça que tu veux la jouer ?	}{	C'est vraiment comme ça que tu veux la jouer ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	Ah ouais. . . Allez, Nines, montre-moi ce que tu sais faire.	}{	Ah ouais. . . Allez, Nines, montre-moi ce que tu sais faire.	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	373	}{	Allez, je vais me faire toutes les lopettes d'anarchs qu'il y a dans ce bar !	}{	Allez, je vais me faire toutes les lopettes d'anarchs qu'il y a dans ce bar !	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	374	}{	Non. Ce n'est pas comme ça. Je m'en vais.	}{	Non. Ce n'est pas comme ça. Je m'en vais.	}{	0	}{	Humanity 5	}{	G.Nines_Timeup = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	Pff, vous les artistes, vous marquez facilement.	}{	Pff, vous les artistes, vous marquez facilement.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	Je n'aime pas taper sur les enfants handicapés.	}
+{	382	}{	Les gars comme toi, c'est tout dans les bras, rien dans la tête.	}{	Les gars comme toi, c'est tout dans les bras, rien dans la tête.	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon père a levé la main sur moi, une fois. . . une seule.	}
+{	383	}{	Je vais tous vous faire passer les portes d'Hadès !	}{	Je vais tous vous faire passer les portes d'Hadès !	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	384	}{	Non. Ce n'est pas comme ça. Je m'en vais.	}{	Non. Ce n'est pas comme ça. Je m'en vais.	}{	0	}{	Humanity 5	}{	G.Nines_Timeup = 1	}{	}{	}{	}{	}{	}{	}{	Le combat, c'est la solution des terrifiés. Alors excuse-moi, mais je fuis.	}
+{	385	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	Qu'est-ce que tu vas faire si je te frappe, porter plainte ?	}{	Qu'est-ce que tu vas faire si je te frappe, porter plainte ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	Ben essaie, tu verras bien.	}{	Ben essaie, tu verras bien.	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	393	}{	Je vais tous vous apprendre à respecter vos supérieurs, bande de dégénérés !	}{	Je vais tous vous apprendre à respecter vos supérieurs, bande de dégénérés !	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	394	}{	Non. Ce n'est pas comme ça. Je m'en vais.	}{	Non. Ce n'est pas comme ça. Je m'en vais.	}{	0	}{	Humanity 5	}{	G.Nines_Timeup = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	395	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	Commence pas à taper sur le mouvement, sinon tous ceux que tu vois là vont te tomber dessus.	}{	Commence pas à taper sur le mouvement, sinon tous ceux que tu vois là vont te tomber dessus.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	403	}{	Allez, Nines, toi et moi, tout de suite !	}{	Allez, Nines, toi et moi, tout de suite !	}{	371	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue") and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	404	}{	Alors on va faire ça en gens bien éduqués.	}{	Alors on va faire ça en gens bien éduqués.	}{	381	}{	IsClan(pc,"Toreador") or IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Nines vs. Moi! FIGHT !	}
+{	405	}{	Alors on va faire ça en gens bien éduqués.	}{	Alors on va faire ça en gens bien éduqués.	}{	391	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	406	}{	Alors les enflures, c'est pour aujourd'hui ou pour demain ?	}{	Alors les enflures, c'est pour aujourd'hui ou pour demain ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais empiler les anarchs tellement haut que de petits oiseaux leur tourneront autour de la tête !	}
+{	407	}{	Je m'en vais. Pardon.	}{	Je m'en vais. Pardon.	}{	0	}{	}{	G.Nines_Timeup = 1	}{	}{	}{	}{	}{	}{	}{	Laisse-moi te payer une tournée d'excuses. Profites-en pendant mon absence.	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	Le dernier qui a dit ça est dans une poivrière, là. Tu veux quand même essayer ?	}{	Le dernier qui a dit ça est dans une poivrière, là. Tu veux quand même essayer ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Pour la dernière fois, oui.	}{	Pour la dernière fois, oui.	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est allumé, ça ?	}
+{	413	}{	T'as peur ?	}{	T'as peur ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ca y est, tu trembles ?	}
+{	414	}{	Non. Je regrette, je ne sais pas ce qui m'a pris. Je m'en vais.	}{	Non. Je regrette, je ne sais pas ce qui m'a pris. Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne sais pas vraiment ce que j'ai dit. Je pars.	}
+{	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	T'as du cran, c'est bien. Mais si j'étais quelqu'un d'autre, tu serais en train de te disperser dans le vent. C'est bien d'avoir le feu, mais ne va pas allumer tous ceux que tu croises. Il y a beaucoup de gens ici qui ont commencé comme toi - penses-y un peu, moi j'ai des trucs à faire.	}{	T'as du cran, c'est bien. Mais si j'étais quelqu'un d'autre, tu serais en train de te disperser dans le vent. C'est bien d'avoir le feu, mais ne va pas allumer tous ceux que tu croises. Il y a beaucoup de gens ici qui ont commencé comme toi - penses-y un peu, moi j'ai des trucs à faire.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nines_Scorn = 0; G.Nines_Timeup = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parle, parle, parle.	}
+{	423	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	Je suis venu en Californie pour sortir des villes pendant les années 30. Dans les années 40, on a foutu la Cama dehors, et depuis c'est la guerre. Il ne reste pas beaucoup de monde de cette époque. Et certains ne sont même plus anarchs.	}{	Je suis venu en Californie pour sortir des villes pendant les années 30. Dans les années 40, on a foutu la Cama dehors, et depuis c'est la guerre. Il ne reste pas beaucoup de monde de cette époque. Et certains ne sont même plus anarchs.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nines_Self = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Ca vaut le coup ? Devoir se battre en permanence pour garder LA ?	}{	Ca vaut le coup ? Devoir se battre en permanence pour garder LA ?	}{	461	}{	G.Nines_Time < 3	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Pourquoi se battre ? Pourquoi ne pas s'enterrer pour vivre sous terre ?	}
+{	433	}{	Pourquoi continuer de se battre ? Pourquoi ne pas rejoindre la Camarilla pour devenir prince ?	}{	Pourquoi continuer de se battre ? Pourquoi ne pas rejoindre la Camarilla pour devenir prince ?	}{	471	}{	G.Nines_Time < 3	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Deviens un prince. Votez Nines en 2004 !	}
+{	434	}{	Parle-moi de LA.	}{	Parle-moi de LA.	}{	441	}{	G.Nines_Angeles == 0 and G.Nines_Time < 3	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Parle-moi de la Cité des Anges. . .	}
+{	435	}{	(Auto-Link)	}{	(Auto-Link)	}{	481	}{	G.Nines_Time == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	436	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	LA ? Il y a toujours eu des problèmes, toujours un mauvais fond. Incendies, émeutes, tremblements de terre. . . et pour les anarchs, la Camarilla, le Sabbat, les Kuei-Jin. Ils ont tous essayé de la prendre. Les gens disent que tout va mal, mais on est damnés depuis toujours, non ?	}{	LA ? Il y a toujours eu des problèmes, toujours un mauvais fond. Incendies, émeutes, tremblements de terre. . . et pour les anarchs, la Camarilla, le Sabbat, les Kuei-Jin. Ils ont tous essayé de la prendre. Les gens disent que tout va mal, mais on est damnés depuis toujours, non ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nines_Angeles = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	Pourquoi ne pas partir ?	}{	Pourquoi ne pas partir ?	}{	471	}{	G.Nines_Time < 3	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Pourquoi ne pas aller. . . vers l'Est ?	}
+{	443	}{	Pourquoi LA ?	}{	Pourquoi LA ?	}{	501	}{	G.Nines_Time < 3	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Tu pourrais te déplanter et te replanter ailleurs ?	}
+{	444	}{	Parlez-moi de vous. . .	}{	Parlez-moi de vous. . .	}{	431	}{	G.Nines_Self == 0 and G.Nines_Time < 3	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Montre-moi Nines dans toute sa finesse. . .	}
+{	445	}{	(Auto-Link)	}{	(Auto-Link)	}{	481	}{	G.Nines_Time == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	446	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Tu ne m'as pas écouté ? Je n'aime pas me répéter.	}{	Tu ne m'as pas écouté ? Je n'aime pas me répéter.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Parle-moi de LA.	}{	Parle-moi de LA.	}{	441	}{	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Parle-moi de la Cité des Anges. . .	}
+{	453	}{	Parlez-moi de vous. . .	}{	Parlez-moi de vous. . .	}{	431	}{	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Montre-moi Nines dans toute sa finesse. . .	}
+{	454	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	455	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	C'est une question idiote. La liberté, c'est pas gratuit. Il faut tout le temps la défendre. On a versé beaucoup de sang pour ce qu'on a.	}{	C'est une question idiote. La liberté, c'est pas gratuit. Il faut tout le temps la défendre. On a versé beaucoup de sang pour ce qu'on a.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	Pourquoi continuer de se battre ? Pourquoi ne pas rejoindre la Camarilla pour devenir prince ?	}{	Pourquoi continuer de se battre ? Pourquoi ne pas rejoindre la Camarilla pour devenir prince ?	}{	471	}{	G.Nines_Time < 3	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Deviens un prince. Votez Nines en 2004 !	}
+{	463	}{	Tu as dû beaucoup apprendre depuis tout ce temps. Des conseils ?	}{	Tu as dû beaucoup apprendre depuis tout ce temps. Des conseils ?	}{	491	}{	G.Nines_Time < 3	}{	}{	}{	}{	}{	}{	}{	}{	Toutes ces années d'incubation ont-elles donné des idées brillantes ?	}
+{	464	}{	Parle-moi de LA.	}{	Parle-moi de LA.	}{	441	}{	G.Nines_Angeles == 0 and G.Nines_Time < 3	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Parle-moi de la Cité des Anges. . .	}
+{	465	}{	(Auto-Link)	}{	(Auto-Link)	}{	481	}{	G.Nines_Time == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	Faire le beau ? Rapporter la baballe ? Abandonner tout ce pour quoi on s'est battu, ce pour quoi on est morts ? Tu penses que quelqu'un acceptera d'échanger sa liberté pour devenir un rouage dans la machine des anciens ? Dans ce cas, tu n'as rien compris.	}{	Faire le beau ? Rapporter la baballe ? Abandonner tout ce pour quoi on s'est battu, ce pour quoi on est morts ? Tu penses que quelqu'un acceptera d'échanger sa liberté pour devenir un rouage dans la machine des anciens ? Dans ce cas, tu n'as rien compris.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	(Auto-Link)	}{	(Auto-Link)	}{	481	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	473	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	474	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Allez, fini. Reviens dans quelques nuits si tu es encore en vie, et on aura peut-être du temps. Mais j'en doute.	}{	Allez, fini. Reviens dans quelques nuits si tu es encore en vie, et on aura peut-être du temps. Mais j'en doute.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nines_Timeup = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	483	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	484	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	485	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Bon, ça t'aidera peut-être. J'utilise des flingues, mais la plupart des vampires s'approchent, dans ce cas-là. J'ai un gros couteau. Le truc, c'est de les laisser venir, et d'éviter leur coup, ou de le prendre dans le bide. Après, j'utilise ma lame pour leur virer la tête. Et hop, c'est fini.	}{	Bon, ça t'aidera peut-être. J'utilise des flingues, mais la plupart des vampires s'approchent, dans ce cas-là. J'ai un gros couteau. Le truc, c'est de les laisser venir, et d'éviter leur coup, ou de le prendre dans le bide. Après, j'utilise ma lame pour leur virer la tête. Et hop, c'est fini.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.BumpStat("melee", 1)	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	(Auto-Link)	}{	(Auto-Link)	}{	481	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	493	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	494	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	495	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	On dirait que tous les rêveurs, les désaxés et les pionniers finissent dans l'ouest. Après LA, il ne reste que le Pacifique. On se retrouve peut-être ici parce qu'on n'a nulle part ailleurs où aller. Mais on est heureux, ici, et on se bat pour que ça reste à nous depuis longtemps.	}{	On dirait que tous les rêveurs, les désaxés et les pionniers finissent dans l'ouest. Après LA, il ne reste que le Pacifique. On se retrouve peut-être ici parce qu'on n'a nulle part ailleurs où aller. Mais on est heureux, ici, et on se bat pour que ça reste à nous depuis longtemps.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	Pourquoi ne pas partir ?	}{	Pourquoi ne pas partir ?	}{	471	}{	G.Nines_Time < 3	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Pourquoi ne pas aller. . . vers l'Est ?	}
+{	503	}{	Tu as dû beaucoup apprendre depuis tout ce temps. Des conseils ?	}{	Tu as dû beaucoup apprendre depuis tout ce temps. Des conseils ?	}{	491	}{	G.Nines_Time < 3	}{	}{	}{	}{	}{	}{	}{	}{	Toutes ces années d'incubation ont-elles donné des idées brillantes ?	}
+{	504	}{	Parlez-moi de vous. . .	}{	Parlez-moi de vous. . .	}{	431	}{	G.Nines_Self == 0 and G.Nines_Time < 3	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Montre-moi Nines dans toute sa finesse. . .	}
+{	505	}{	(Auto-Link)	}{	(Auto-Link)	}{	481	}{	G.Nines_Time == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	C'est pas la nuit pour me prendre la tête, tu sais. Va jouer ailleurs.	}{	C'est pas la nuit pour me prendre la tête, tu sais. Va jouer ailleurs.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	513	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	514	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	515	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	516	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	517	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	520	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	521	}{	Ca me fait plaisir de te revoir. Il paraît que tu t'es déjà fait un sacré nom. C'est pas rien, dans cette ville. Il paraît que LaCroix a besoin de nous, tout d'un coup - c'est quoi ces salades ?	}{	Ca me fait plaisir de te revoir. Il paraît que tu t'es déjà fait un sacré nom. C'est pas rien, dans cette ville. Il paraît que LaCroix a besoin de nous, tout d'un coup - c'est quoi ces salades ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Alliance",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	Il propose une alliance avec les anarchs pour se débarrasser des Kuei-Jin.	}{	Il propose une alliance avec les anarchs pour se débarrasser des Kuei-Jin.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il veut collaborer avec toi pour un projet appelé 'Détruire tous les Kuei-Jin'.	}
+{	523	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	524	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Et c'est toi qu'il envoie ? Bon, discutons détails.	}{	Et c'est toi qu'il envoie ? Bon, discutons détails.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	pc.SetQuest("Alliance",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	Le prince propose une alliance avec les anarchs pour se débarrasser des Kuei-Jin.	}{	Le prince propose une alliance avec les anarchs pour se débarrasser des Kuei-Jin.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il veut collaborer avec toi pour un projet appelé 'Détruire tous les Kuei-Jin'.	}
+{	533	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	534	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	536	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	J'ai beaucoup entendu parler de toi. Tu as bien aidé notre cause, il paraît. J'apprécie. Alors d'un coup, LaCroix a besoin de nous, hein ?	}{	J'ai beaucoup entendu parler de toi. Tu as bien aidé notre cause, il paraît. J'apprécie. Alors d'un coup, LaCroix a besoin de nous, hein ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Alliance",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Oui. Il veut les anarchs pour se débarrasser des Kuei-Jin.	}{	Oui. Il veut les anarchs pour se débarrasser des Kuei-Jin.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il veut collaborer avec toi pour un projet appelé 'Détruire tous les Kuei-Jin'.	}
+{	543	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	544	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	545	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	546	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	547	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	548	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	Vraiment ? Tu sais, on vient de finir une guerre avec eux, et on a perdu beaucoup de gens. Trop. Il pense qu'on va se battre à la place de la Camarilla ? Ou ils comptent attaquer les diables jaunes en même temps que nous ?	}{	Vraiment ? Tu sais, on vient de finir une guerre avec eux, et on a perdu beaucoup de gens. Trop. Il pense qu'on va se battre à la place de la Camarilla ? Ou ils comptent attaquer les diables jaunes en même temps que nous ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	Ils sont prêts à tout pour que cette alliance se concrétise.	}{	Ils sont prêts à tout pour que cette alliance se concrétise.	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il en a tellement envie qu'il a déjà commandé des T-shirts souvenir.	}
+{	553	}{	Ils vont se battre. Le prince veut tuer les Kuei-Jin, comme toi.	}{	Ils vont se battre. Le prince veut tuer les Kuei-Jin, comme toi.	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tous se jetteront dans la bataille, jusqu'à ce que le dernier des Kuei-Jin soit mort, et nous lui planteront un pieu dans le coeur.	}
+{	554	}{	Je ne fais pas confiance à LaCroix non plus. Qui sait ce qu'il prépare.	}{	Je ne fais pas confiance à LaCroix non plus. Qui sait ce qu'il prépare.	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	Seul un serpent peut en comprendre un autre.	}
+{	555	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	556	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	558	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	Je ne fais toujours pas confiance à LaCroix. Mais encore une fois, la Camarilla ne nous a pas massacrés à notre arrivée. Bordel. Je suis coincé.	}{	Je ne fais toujours pas confiance à LaCroix. Mais encore une fois, la Camarilla ne nous a pas massacrés à notre arrivée. Bordel. Je suis coincé.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	Je veux bien affronter les Kuei-Jin.	}{	Je veux bien affronter les Kuei-Jin.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les Kuei-Jin tomberont devant ces pieds.	}
+{	563	}{	Ton groupe a besoin d'un chef. Plus que jamais.	}{	Ton groupe a besoin d'un chef. Plus que jamais.	}{	581	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	Mène ton peuple ou il sera perdu.	}
+{	564	}{	Tu ne veux pas te débarrasser des Kuei-Jin une bonne fois pour toutes ?	}{	Tu ne veux pas te débarrasser des Kuei-Jin une bonne fois pour toutes ?	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si tu refuses, les Kuei-Jin ont déjà gagné.	}
+{	565	}{	Je veux juste tuer du Kuei-Jin. Peut-être une centaine à moi tout seul.	}{	Je veux juste tuer du Kuei-Jin. Peut-être une centaine à moi toute seule.	}{	571	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Je veux juste tuer du Kuei-Jin. Peut-être une centaine rien qu'à moi.	}
+{	566	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	Tu les as déjà affrontés ? Tu sais de quoi ils sont capables ? Ce qu'ils pensent de nous ? Ce sont des démons au combat. Ils ont tué mon prédécesseur. C'est bizarre. . . LaCroix qui veut partir en guerre contre eux, tout d'un coup.	}{	Tu les as déjà affrontés ? Tu sais de quoi ils sont capables ? Ce qu'ils pensent de nous ? Ce sont des démons au combat. Ils ont tué mon prédécesseur. C'est bizarre. . . LaCroix qui veut partir en guerre contre eux, tout d'un coup.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	(Auto-Link)	}{	(Auto-Link)	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	573	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	574	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	575	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	576	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	577	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	Hmm. . . Non, c'est vraiment bizarre. . . LaCroix qui veut partir en guerre contre eux, tout d'un coup.	}{	Hmm. . . Non, c'est vraiment bizarre. . . LaCroix qui veut partir en guerre contre eux, tout d'un coup.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	(Auto-Link)	}{	(Auto-Link)	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	583	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	584	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	585	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	586	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	587	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	Il y a quelque chose qui cloche.	}{	Il y a quelque chose qui cloche.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	Mais je crois que cette alliance est vraiment une bonne chose.	}{	Mais je crois que cette alliance est vraiment une bonne chose.	}{	601	}{	}{	}{	}{	}{	}{	}{	}{	}{	On me dit tout le temps ça. . . Mais mes paroles contiennent quelque sagesse.	}
+{	593	}{	Je pense que le prince veut vraiment protéger tous les vampires de la ville.	}{	Je pense que le prince veut vraiment protéger tous les vampires de la ville.	}{	601	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu es l'égide qui protège le coeur de cette ville. . .	}
+{	594	}{	Alors qu'est-ce que tu proposes ?	}{	Alors qu'est-ce que tu proposes ?	}{	601	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, la langue du serpent est fourchue. . .	}
+{	595	}{	Tu as peur de combattre des Kuei-Jin ?	}{	Tu as peur de combattre des Kuei-Jin ?	}{	601	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si tu penses que les Kuei-Jin sont terrifiants, tu devrais voir ce qu'il y a dans mes rêves. . .	}
+{	596	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	597	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	598	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	599	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	600	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	601	}{	C'est pas ce que je voulais dire. . . Eh, tu sens ça ? On dirait de la fumée.	}{	C'est pas ce que je voulais dire. . . Eh, tu sens ça ? On dirait de la fumée.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	(Auto-Link)	}{	(Auto-Link)	}{	611	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	603	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	604	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	605	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	Il faut qu'on sorte d'ici !	}{	Il faut qu'on sorte d'ici !	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	Comment ça ?	}{	Comment ça ?	}{	621	}{	}{	startFire()	}{	}{	}{	}{	}{	}{	}{	Qu'est-ce qui se passe ?	}
+{	613	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	614	}{	Mais l'alliance. . .	}{	Mais l'alliance. . .	}{	621	}{	not IsClan(pc,"Malkavian")	}{	startFire()	}{	}{	}{	}{	}{	}{	}{	Je ne peux plus bouger.	}
+{	615	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	616	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	617	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	618	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	619	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	620	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	Ecoute, on nous a suivis. Le feu vient de partout - c'est un acte criminel. Il faut qu'on parte, ça craint.	}{	Ecoute, on nous a suivis. Le feu vient de partout - c'est un acte criminel. Il faut qu'on parte, ça craint.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	C'est juste un petit feu, tout va bien se passer.	}{	C'est juste un petit feu, tout va bien se passer.	}{	631	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mais je suis INFLAMMABLE !	}
+{	623	}{	Et alors ? C'est pas par ici. Pas de quoi s'inquiéter.	}{	Et alors ? C'est pas par ici. Pas de quoi s'inquiéter.	}{	631	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les feux cachent quelque chose. . .	}
+{	624	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	625	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	626	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	627	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	628	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	629	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	630	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	631	}{	Non, tu ne comprends pas. Ce feu n'est pas censé nous tuer. Viens, il faut qu'on aille au tram.	}{	Non, tu ne comprends pas. Ce feu n'est pas censé nous tuer. Viens, il faut qu'on aille au tram.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	De quoi tu parles ? Quel est le problème ?	}{	De quoi tu parles ? Quel est le problème ?	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelque chose approche !	}
+{	633	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	634	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	635	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	636	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	637	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	638	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	640	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	641	}{	Je ne me suis pas caché ici pour la vue. Je l'ai fait parce que personne ne viendra nous chercher ici. C'est le territoire des loups-garous.	}{	Je ne me suis pas caché ici pour la vue. Je l'ai fait parce que personne ne viendra nous chercher ici. C'est le territoire des loups-garous.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	Et alors ?	}{	Et alors ?	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui... Et donc...	}
+{	643	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	644	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	645	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	646	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	647	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	648	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	650	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	651	}{	Les loups vont chercher à se venger de cet incendie. Allez, bouge !	}{	Les loups vont chercher à se venger de cet incendie. Allez, bouge !	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	652	}{	On ne peut pas leur dire que ce n'était pas nous ?	}{	On ne peut pas leur dire que ce n'était pas nous ?	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai un plan. On se déguise en loups-garous et on leur dit : 'Ils sont partis par là'.	}
+{	653	}{	On peut se les faire !	}{	On peut se les faire !	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	On peut les éliminer. Et après ça, on leur arrachera les tripes !	}
+{	654	}{	Tu as peur des loups-garous ?	}{	Tu as peur des loups-garous ?	}{	681	}{	}{	}{	}{	}{	}{	}{	}{	}{	Peur ? Toi ? HA HA HA HA ! Excellent !	}
+{	655	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	656	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	657	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	658	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	659	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	660	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	661	}{	[rapide, froid, factuel]Les loups-garous ne nous parlent pas, les loups-garous s'en foutent - ils nous tuent à vue. Allez, bouge !	}{	[rapide, froid, factuel]Les loups-garous ne nous parlent pas, les loups-garous s'en foutent - ils nous tuent à vue. Allez, bouge !	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	On peut se les faire.	}{	On peut se les faire.	}{	671	}{	}{	startCar()	}{	}{	}{	}{	}{	}{	}{	On peut les éliminer. Et après ça, on leur arrachera les tripes !	}
+{	663	}{	Tu as peur des loups-garous ?	}{	Tu as peur des loups-garous ?	}{	681	}{	}{	startCar()	}{	}{	}{	}{	}{	}{	}{	Peur ? Toi ? HA HA HA HA ! Excellent !	}
+{	664	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	665	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	666	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	667	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	668	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	669	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	670	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	671	}{	Non, non, on ne peut pas. Tu ne comprends pas de quoi ils sont capables. Les flingues sont inutiles, et au corps à corps, c'est du suicide. La seule chose à faire, c'est fuir. Alors on va au tram - plus de temps à perdre !	}{	Non, non, on ne peut pas. Tu ne comprends pas de quoi ils sont capables. Les flingues sont inutiles, et au corps à corps, c'est du suicide. La seule chose à faire, c'est fuir. Alors on va au tram - plus de temps à perdre !	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	672	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	673	}{	Bon, on s'en va.	}{	Bon, on s'en va.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	COURS !	}
+{	674	}{	Je couvre tes arrières.	}{	Je couvre tes arrières.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Personne, à part nous les loups-garous. . . Je ne fais que m'entraîner. . . Je te suis.	}
+{	675	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	676	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	678	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	679	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	680	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	681	}{	Ouais. Trois cents kilos de poils et de griffes. Les flingues sont inutiles, et au corps à corps, c'est du suicide. La seule chose à faire, c'est fuir. Alors on va au tram - plus de temps à perdre !	}{	Ouais. Trois cents kilos de poils et de griffes. Les flingues sont inutiles, et au corps à corps, c'est du suicide. La seule chose à faire, c'est fuir. Alors on va au tram - plus de temps à perdre !	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	682	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	683	}{	Bon, on s'en va.	}{	Bon, on s'en va.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	COURS !	}
+{	684	}{	Je couvre tes arrières.	}{	Je couvre tes arrières.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Personne, à part nous les loups-garous. . . Je ne fais que m'entraîner. . . Je te suis.	}
+{	685	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	686	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	687	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	688	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	689	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	690	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	691	}{	[Voit le tram partir : enragé]Bordel ! Il part ! [Urgence]Allez, il faut qu'on entre là-dedans pour attendre le prochain.[renversé par un loup-garou, souffle coupé].	}{	[Voit le tram partir : enragé]Bordel ! Il part ! [Urgence]Allez, il faut qu'on entre là-dedans pour attendre le prochain.[renversé par un loup-garou, souffle coupé].	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	692	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	693	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	694	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	695	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	696	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	697	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	698	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	699	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	700	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	701	}{	D'après la rumeur, tu m'as tué. Désolé, je n'ai pas encore pu t'innocenter. Mais je savais que tu arriverais ici en un seul morceau. Bon sang, t'as réussi à quitter le parc sans bobo ! Bien joué !	}{	D'après la rumeur, tu m'as tué. Désolé, je n'ai pas encore pu t'innocenter. Mais je savais que tu arriverais ici en un seul morceau. Bon sang, t'as réussi à quitter le parc sans bobo ! Bien joué !	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	G.Nines_Ending = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	702	}{	Je croyais que tu étais mort ! Le loup-garou t'a choppé !	}{	Je croyais que tu étais mort ! Le loup-garou t'a choppé !	}{	711	}{	}{	werewolfHeadCamera()	}{	}{	}{	}{	}{	}{	}{	Imposteur ! Le vrai Nines est dans le ventre d'un loup !	}
+{	703	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	704	}{	Il y avait un autre loup, mais je l'ai tué. Et toi ?	}{	Il y avait un autre loup, mais je l'ai tué. Et toi ?	}{	711	}{	Humanity 5 & IsDead("Werewolf")	}{	werewolfHeadCamera()	}{	}{	}{	}{	}{	}{	}{	J'ai battu le loup aux points. . . alors, qui a gagné, le loup ou toi ?	}
+{	705	}{	J'ai massacré mon loup-garou. Et toi ?	}{	J'ai massacré mon loup-garou. Et toi ?	}{	711	}{	Humanity -5 & IsDead("Werewolf")	}{	werewolfHeadCamera()	}{	}{	}{	}{	}{	}{	}{	Le loup-garou que j'ai combattu, tous ses morceaux le regrettent. Et toi ?	}
+{	706	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	707	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	708	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	709	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	710	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	711	}{	Tu parles de ce type. . .	}{	Tu parles de ce type. . .	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	712	}{	(Auto-Link)	}{	(Auto-Link)	}{	721	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	713	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	714	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	715	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	716	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	717	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	718	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	719	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	720	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	721	}{	Ex loup-garou. Ca n'a pas été simple. Une sacrée bagarre. Malheureusement, on n'a pas le temps pour les souvenirs de guerre. On nous a piégé, tu sais. Quelqu'un a essayé de se débarrasser de nous, et la liste des suspects est courte. LaCroix ou Xiao.	}{	Ex loup-garou. Ca n'a pas été simple. Une sacrée bagarre. Malheureusement, on n'a pas le temps pour les souvenirs de guerre. On nous a piégé, tu sais. Quelqu'un a essayé de se débarrasser de nous, et la liste des suspects est courte. LaCroix ou Xiao.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	pc.SetCamera("NinesWounded")	}{	}{	}{	}{	}{	}{	}{	}
+{	722	}{	Notre prochain coup, c'est quoi ?	}{	Notre prochain coup, c'est quoi ?	}{	731	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Avec tous ces serpents, où pouvons-nous aller sans nous faire mordre ?	}
+{	723	}{	Ming Xiao dit qu'ils étaient alliés.	}{	Ming Xiao dit qu'ils étaient alliés.	}{	741	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix et Xiao ont échangé des voeux en secret avant qu'il te fasse sa proposition.	}
+{	724	}{	Alors on va se venger.	}{	Alors on va se venger.	}{	751	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Nous devons venger nos morts évitées de justesse. . .	}
+{	725	}{	Il faut les tuer tous les deux.	}{	Il faut les tuer tous les deux.	}{	751	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Faisons la fête dans le sang de leurs corps brisés !	}
+{	726	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	727	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	728	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	729	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	730	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	731	}{	. . . La violence n'est pas toujours la bonne réponse, mais dans certains cas, on n'a pas le choix. Voilà le truc : si LaCroix a allumé ce feu, toi, tu ne vaux plus rien. Et Xiao, même si elle n'a rien fait, elle aimerait bien qu'on claque.	}{	. . . La violence n'est pas toujours la bonne réponse, mais dans certains cas, on n'a pas le choix. Voilà le truc : si LaCroix a allumé ce feu, toi, tu ne vaux plus rien. Et Xiao, même si elle n'a rien fait, elle aimerait bien qu'on claque.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	732	}{	Continue.	}{	Continue.	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dis toutes tes vérités. . .	}
+{	733	}{	Ming Xiao dit qu'ils étaient alliés.	}{	Ming Xiao dit qu'ils étaient alliés.	}{	741	}{	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix et Xiao ont échangé des voeux en secret avant qu'il te fasse sa proposition.	}
+{	734	}{	LaCroix ? Je ne sais pas s'il ferait ça.	}{	LaCroix ? Je ne sais pas s'il ferait ça.	}{	771	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il a vraiment lâché la première torche ? C'est très grossier, pour un noble. . .	}
+{	735	}{	Xiao ? Elle a toujours été courtoise avec moi.	}{	Xiao ? Elle a toujours été courtoise avec moi.	}{	781	}{	}{	}{	}{	}{	}{	}{	}{	}{	Xiao est une ennemie honnête. . .	}
+{	736	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	737	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	738	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	739	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	740	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	741	}{	Quoi ? Les Kuei-Jin et LaCroix ? Même la Camarilla ne tolérerait pas ça. . . Il voulait une alliance avec moi parce que l'autre avait échoué. Ca fait deux fois qu'on essaie de me tuer. Ca ne va pas s'arrêter là. Il faut les éliminer tous les deux. 	}{	Quoi ? Les Kuei-Jin et LaCroix ? Même la Camarilla ne tolérerait pas ça. . . Il voulait une alliance avec moi parce que l'autre avait échoué. Ca fait deux fois qu'on essaie de me tuer. Ca ne va pas s'arrêter là. Il faut les éliminer tous les deux. 	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	G.Nines_Dirty = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	742	}{	Alors, on fait quoi ?	}{	Alors, on fait quoi ?	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	Eux. . . Quel horrible mot. . .	}
+{	743	}{	Si tu veux les descendre, tu as mon aide.	}{	Si tu veux les descendre, tu as mon aide.	}{	811	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous m'avez en entier, et c'est tout ce qu'il vous faut.	}
+{	744	}{	On ne pourra pas les arrêter tous les deux.	}{	On ne pourra pas les arrêter tous les deux.	}{	791	}{	}{	}{	}{	}{	}{	}{	}{	}{	FUTILITE !	}
+{	745	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	746	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	747	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	748	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	749	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	750	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	751	}{	C'est clair.	}{	C'est clair.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	752	}{	Par quoi on commence ?	}{	Par quoi on commence ?	}{	761	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	D'abord ?	}
+{	753	}{	Si tu veux les descendre, je te suis.	}{	Si tu veux les descendre, je te suis.	}{	811	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Vous m'avez en entier, et c'est tout ce qu'il vous faut.	}
+{	754	}{	Je vais arracher la tête de LaCroix, et vider Xiao.	}{	Je vais arracher la tête de LaCroix, et vider Xiao.	}{	801	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Je poserai la tête de LaCroix sur le corps de Xiao et je serai l'incarnation de l'hilarité !	}
+{	755	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	756	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	757	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	758	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	759	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	760	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	761	}{	J'ai déjà envoyé des troupes foutre le bordel dans la ville. Les Kuei-Jin pensent qu'on est occupés avec la Cama, alors ils ne s'attendent pas à une attaque. Tu sais ce qu'il faut faire, hein ?	}{	J'ai déjà envoyé des troupes foutre le bordel dans la ville. Les Kuei-Jin pensent qu'on est occupés avec la Cama, alors ils ne s'attendent pas à une attaque. Tu sais ce qu'il faut faire, hein ?	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	G.Nines_Killxiao = 1; pc.SetQuest("Ming",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	762	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	763	}{	N'en dis pas plus. Xiao est morte.	}{	N'en dis pas plus. Xiao est morte.	}{	851	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chinatown va bientôt comprendre la blague !	}
+{	764	}{	Tu ne peux pas me demander d'attaquer les Kuei-Jin sans aide.	}{	Tu ne peux pas me demander d'attaquer les Kuei-Jin sans aide.	}{	791	}{	Humanity 5 & G.Nines_FreeState == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ouais ! Bon, restons assis ici et souhaitons qu'ils meurent de toutes nos forces !	}
+{	765	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	766	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	767	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	768	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	769	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	770	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	771	}{	Vraiment ? On dirait qu'il serait dans la position parfaite pour consolider son pouvoir s'il m'arrivait quelque chose. LaCroix tue tous ceux qui entravent son contrôle absolu. Ton père, par exemple, l'une des pierres d'achoppement du prince.	}{	Vraiment ? On dirait qu'il serait dans la position parfaite pour consolider son pouvoir s'il m'arrivait quelque chose. LaCroix tue tous ceux qui entravent son contrôle absolu. Ton père, par exemple, l'une des pierres d'achoppement du prince.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	G.Nines_Sire = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	772	}{	Alors, on fait quoi ?	}{	Alors, on fait quoi ?	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	D'abord ?	}
+{	773	}{	Ming Xiao dit qu'ils étaient alliés.	}{	Ming Xiao dit qu'ils étaient alliés.	}{	741	}{	G.Nines_Dirty == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix et Xiao ont échangé des voeux en secret avant qu'il te fasse sa proposition.	}
+{	774	}{	Mais tu penses qu'il faut forcément éliminer les Kuei-Jin ?	}{	Mais tu penses qu'il faut forcément éliminer les Kuei-Jin ?	}{	781	}{	G.Nines_Ming == 0	}{	}{	}{	}{	}{	}{	}{	}{	Faut-il vraiment faire disparaître les Kuei-Jin ?	}
+{	775	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	776	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	777	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	778	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	779	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	780	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	781	}{	Les Kuei-Jin essayent de détruire les anarchs depuis des années. Avant, c'était nous qui contrôlions San Francisco. Devine qui nous en a chassés. . .	}{	Les Kuei-Jin essayent de détruire les anarchs depuis des années. Avant, c'était nous qui contrôlions San Francisco. Devine qui nous en a chassés. . .	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	G.Nines_Ming = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	782	}{	Alors, on fait quoi ?	}{	Alors, on fait quoi ?	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	D'abord ?	}
+{	783	}{	Ming Xiao dit qu'ils étaient alliés.	}{	Ming Xiao dit qu'ils étaient alliés.	}{	741	}{	G.Nines_Dirty == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix et Xiao ont échangé des voeux en secret avant qu'il te fasse sa proposition.	}
+{	784	}{	Je ne sais pas si le prince mérite de mourir.	}{	Je ne sais pas si le prince mérite de mourir.	}{	771	}{	G.Nines_Sire == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je pense que nous ne devrions pas tuer le prince autrement que par bonté. . .	}
+{	785	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	786	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	787	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	788	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	789	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	790	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	791	}{	On n'a pas le choix, il faut les arrêter tous les deux. On est condamné à mort. Les Kuei-Jin et la Camarilla ont tous les deux besoin d'éliminer les anarchs. Mais si on perd LA, ce dernier Etat Libre, alors la révolution est finie, et on n'a plus d'endroit où aller.	}{	On n'a pas le choix, il faut les arrêter tous les deux. On est condamné à mort. Les Kuei-Jin et la Camarilla ont tous les deux besoin d'éliminer les anarchs. Mais si on perd LA, ce dernier Etat Libre, alors la révolution est finie, et on n'a plus d'endroit où aller.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	G.Nines_FreeState = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	792	}{	Ca ne doit pas arriver ! Qu'est-ce qu'on fait ?	}{	Ca ne doit pas arriver ! Qu'est-ce qu'on fait ?	}{	761	}{	G.Nines_Killxiao == 0	}{	}{	}{	}{	}{	}{	}{	}{	Alors. . . où je vais ?	}
+{	793	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	794	}{	Non, je ne laisserai pas faire ça. Allez, Nines, je suis avec toi.	}{	Non, je ne laisserai pas faire ça. Allez, Nines, je suis avec toi.	}{	851	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vois des choses par tes yeux.	}
+{	795	}{	Je ne suis pas anarch. Qu'est-ce que ça peut me faire ?	}{	Je ne suis pas anarch. Qu'est-ce que ça peut me faire ?	}{	831	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ferai signe aux anges quand je traverserai l'obscurité.	}
+{	796	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	797	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	798	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	799	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	800	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	801	}{	Bon, d'accord, voilà comment ça va se passer.	}{	Bon, d'accord, voilà comment ça va se passer.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	802	}{	(Auto-Link)	}{	(Auto-Link)	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	803	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	804	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	805	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	806	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	807	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	808	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	809	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	810	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	811	}{	J'aimerais prendre le coeur de Xiao pour le presser moi-même, et LaCroix, il souffrirait un peu plus. Mais après le loup, je tiens à peine sur pieds. Si tu as survécu à un loup, je suis sûr que tu pourras t'en tirer.	}{	J'aimerais prendre le coeur de Xiao pour le presser moi-même, et LaCroix, il souffrirait un peu plus. Mais après le loup, je tiens à peine sur pieds. Si tu as survécu à un loup, je suis sûr que tu pourras t'en tirer.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	G.Nines_Wound = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	812	}{	Alors, on fait quoi ?	}{	Alors, on fait quoi ?	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors. . . où je vais ?	}
+{	813	}{	Ouais, je dois être le truc le plus méchant de toute la ville. Par quoi on commence ?	}{	Ouais, je dois être le truc le plus méchant de toute la ville. Par quoi on commence ?	}{	761	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Je suis déjà sale, je peux bien jouer dans la boue. . .	}
+{	814	}{	On ne pourra pas les arrêter tous les deux.	}{	On ne pourra pas les arrêter tous les deux.	}{	791	}{	Humanity 5 & G.Nines_Killxiao == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ouais ! Bon, restons assis ici et souhaitons qu'ils meurent de toutes nos forces !	}
+{	815	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	816	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	817	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	818	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	819	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	820	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	821	}{	[Irrité]J'aurais dû savoir que je perdrais mon temps, avec quelqu'un d'aussi malade que toi. . . Fous le camp, Malkav. . .	}{	[Irrité]J'aurais dû savoir que je perdrais mon temps, avec quelqu'un d'aussi malade que toi. . . Fous le camp, Malkav. . .	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	822	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	823	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	824	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	825	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	826	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	827	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	828	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	829	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	830	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	831	}{	Si tu t'enfuis, tu ne pourras te cacher nulle part. La Camarilla voudra te tuer, grâce à LaCroix. Le Sabbat te chassera par principe. Et tu n'auras aucun ami là où flotte le drapeau des anarchs.	}{	Si tu t'enfuis, tu ne pourras te cacher nulle part. La Camarilla voudra te tuer, grâce à LaCroix. Le Sabbat te chassera par principe. Et tu n'auras aucun ami là où flotte le drapeau des anarchs.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	832	}{	(Auto-Link)	}{	(Auto-Link)	}{	841	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	833	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	834	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	835	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	836	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	837	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	838	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	839	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	840	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	841	}{	Tu seras solitaire à jamais. C'est comme ça que tu veux vivre ? Je te croyais moins bête que ça. . . Je ne peux pas te dire quoi faire, c'est toi qui écris ta propre destinée. Mais si tu pars, même les damnés te maudiront. C'est ça que tu veux ?	}{	Tu seras solitaire à jamais. C'est comme ça que tu veux vivre ? Je te croyais moins bête que ça. . . Je ne peux pas te dire quoi faire, c'est toi qui écris ta propre destinée. Mais si tu pars, même les damnés te maudiront. C'est ça que tu veux ?	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	G.Nines_Choice = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	842	}{	Non. Qu'est-ce que je peux faire pour m'innocenter ?	}{	Non. Qu'est-ce que je peux faire pour m'innocenter ?	}{	761	}{	G.Nines_Mission == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment puis-le laver les taches sur mon nom ?	}
+{	843	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	844	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	845	}{	Alors je n'ai pas le choix, je vais tuer Xiao.	}{	Alors je n'ai pas le choix, je vais tuer Xiao.	}{	861	}{	G.Nines_Mission == 1	}{	}{	}{	}{	}{	}{	}{	}{	La flèche de mon destin s'est déjà plantée dans le visage de Xiao. . .	}
+{	846	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	847	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	848	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	849	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	850	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	851	}{	Xiao est à LA depuis trop longtemps, cette nuit sera sa dernière. 	}{	Xiao est à LA depuis trop longtemps, cette nuit sera sa dernière. 	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	G.Nines_Mission = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	852	}{	S'il faut le faire pour protéger les vampires de la ville, je m'en occupe. 	}{	S'il faut le faire pour protéger les vampires de la ville, je m'en occupe. 	}{	861	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Je me sens comme un super-héros.	}
+{	853	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	854	}{	A moins qu'elle puisse se transformer en char d'assaut, je lui règle son compte.	}{	A moins qu'elle puisse se transformer en char d'assaut, je lui règle son compte.	}{	861	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Elle peut se transformer en soleil, elle ne gagnera jamais.	}
+{	855	}{	Je vais tuer Xiao, je vais tous les tuer. Une armée de cadavres bordera ma route.	}{	Je vais tuer Xiao, je vais tous les tuer. Une armée de cadavres bordera ma route.	}{	861	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	La viande de Kuei-Jin va tellement encombrer leurs trottoirs que la puanteur en fera un royaume de mouches.	}
+{	856	}{	Pas question. Je ne vais pas attaquer les Kuei-Jin sans aide.	}{	Pas question. Je ne vais pas attaquer les Kuei-Jin sans aide.	}{	841	}{	G.Nines_Choice == 0	}{	}{	}{	}{	}{	}{	}{	}{	Sans personne pour m'aider ? Je ne sais pas si on peut être sûr que je ne vais pas m'enfuir.	}
+{	857	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	858	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	859	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	860	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	861	}{	Une fois Xiao éliminée, va chez LaCroix. J'appellerai quelques-uns des pires types que je connais pour t'accueillir dehors. Tu dégages LaCroix, et tu seras un héros dans la ville. Je compte sur toi.	}{	Une fois Xiao éliminée, va chez LaCroix. Tu dégages LaCroix, et tu seras une héroïne dans la ville. Je compte sur toi.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	862	}{	Je ne te décevrai pas, Nines. Cette ville restera un Etat Libre anarch.	}{	Je ne te décevrai pas, Nines. Cette ville restera un Etat Libre anarch.	}{	871	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Je ne m'incline devant personne et mes frères devraient en faire autant. 	}
+{	863	}{	LaCroix aurait dû se faire descendre depuis longtemps. Il est temps d'en finir.	}{	LaCroix aurait dû se faire descendre depuis longtemps. Il est temps d'en finir.	}{	871	}{	}{	}{	}{	}{	}{	}{	}{	}{	Depuis la nuit de ma mort, j'ai su que le serpent ne nous étranglerait pas très longtemps. 	}
+{	864	}{	Il va pleuvoir des morceaux de LaCroix sur tout le centre ville ce soir.	}{	Il va pleuvoir des morceaux de LaCroix sur tout le centre ville ce soir.	}{	871	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Regarde la lune, car le sang de LaCroix sera un arc-en-ciel victorieux.	}
+{	865	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	866	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	867	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	868	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	869	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	870	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	871	}{	Isaac m'a garantit que personne ne peut entrer dans Hollywood. Je survivrai, mais je préférerais pouvoir venir avec toi. Allez, pour LA. Envoie-les en enfer.	}{	Isaac m'a garantit que personne ne peut entrer dans Hollywood. Je survivrai, mais je préférerais pouvoir venir avec toi. Allez, pour LA. Envoie-les en enfer.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	872	}{	Tu aurais quelque chose pour m'aider, comme une de vos grenades?	}{	Tu aurais quelque chose pour m'aider, comme une de tes grenades?	}{	934	}{	G.Patch_Plus == 1	}{	pc.GiveItem("item_w_grenade_frag"); pc.GiveAmmo("item_w_grenade_frag",1)	}{	}{	}{	}{	}{	}{	}{	Ce big bang à toi me permettrait de souffler la merde!!	}
+{	873	}{	Merci. Rien de trop gros pour moi. A plus, Nines.	}{	Merci. Rien de trop gros pour moi. A plus, Nines.	}{	934	}{	}{	}{	}{	}{	}{	}{	}{	}{	Gratitude. Si je ne peux pas gagner par l'effort, je gagnerai en trichant. Je pars.	}
+{	874	}{	Merci. Il est temps de leur montrer de quel bois les anarchs se chauffent. C'est aux autres qu'il faut souhaiter bonne chance.	}{	Merci. Il est temps de leur montrer de quel bois les anarchs se chauffent. C'est aux autres qu'il faut souhaiter bonne chance.	}{	934	}{	}{	}{	}{	}{	}{	}{	}{	}{	Souhaite-moi bonne chance. Bonne chance. Merci !	}
+{	875	}{	Merci. Je veux juste que ça s'arrête. Au revoir, Nines.	}{	Merci. Je veux juste que ça s'arrête. Au revoir, Nines.	}{	934	}{	}{	}{	}{	}{	}{	}{	}{	}{	Gratitude. Je veux simplement en terminer. J'ai l'impression que tout le monde s'est servi de moi.	}
+{	876	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	877	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	878	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	879	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	880	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	881	}{	Je suis en morceaux. Je ne peux rien faire pour t'aider.	}{	Je suis en morceaux. Je ne peux rien faire pour t'aider.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	882	}{	Xiao est morte.	}{	Xiao est morte.	}{	891	}{	IsDead("MingXiao")	}{	}{	}{	}{	}{	}{	}{	}{	Xiao a du mal à exister, maintenant.	}
+{	883	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	884	}{	Repose-toi, Nines. Au revoir.	}{	Repose-toi, Nines. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si les anarchs te donnent une carte de convalescence, dis-leur de la signer de ma part.	}
+{	885	}{	Ouais, ces loups-garous sont une plaie pour la plupart des vampires. Au revoir.	}{	Ouais, ces loups-garous sont une plaie pour la plupart des vampires. Au revoir.	}{	0	}{	IsDead("Werewolf")	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez quelque chose, là. . . On dirait une dent de loup. Je n'ai pas eu ça, moi. . .	}
+{	886	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	887	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	888	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	889	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	890	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	891	}{	Je savais que tu dégagerais cette garce. On a coincé le prince dans sa tour. Il est temps d'y aller et de lui faire son sort.	}{	Je savais que tu dégagerais cette garce. On a coincé le prince dans sa tour. Il est temps d'y aller et de lui faire son sort.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	892	}{	Voulez-vous venir avec moi?	}{	Voulez-vous venir avec moi?	}{	895	}{	}{	}{	}{	}{	}{	}{	}{	}{	Will Nines and me make ten?	}
+{	893	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	894	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	895	}{	Je ne peux rien faire pour toi, gamin.	}{	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	896	}{	Ok.	}{	Ok.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Then I am one.	}
+{	897	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	898	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	899	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	900	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	901	}{	. . . La même chose qui arrive à beaucoup d'anarchs, Malkav. Mais tu le savais déjà, non ?	}{	. . . La même chose qui arrive à beaucoup d'anarchs, Malkav. Mais tu le savais déjà, non ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	902	}{	(Auto-Link)	}{	(Auto-Link)	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	903	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	904	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	905	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	906	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	907	}{	[Tribunal][Furieux, marmonne dans sa barbe.] Maintenant, ce... connerie. Je ne peux pas putain... ça. Ce mec doit virer son putain... son putain ... ... oh ... putain de trou du cul.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	908	}{	[Tribunal]Je dis juste qu'il n'a pas intérêt.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	909	}{	C'EST DES CONNERIES !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	910	}{	[Sauve le joueur]Pars.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	911	}{	[Sauve le joueur]Ne t'arrête pas. 	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	912	}{	[Sauve le joueur]Toi, t'attires les problèmes.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	913	}{	|Sauve le joueur]Bel effort.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	914	}{	[Sauve le joueur]T'es pas encore au point.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	915	}{	[Sauve le joueur]T'as une sale mine.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	916	}{	[Fin loup solitaire]Bon sang, je connais ta réputation, mais. . . je ne pense pas que quelqu'un d'autre aurait pu mettre LaCroix dans cet état. . . Eh, où tu vas ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	917	}{	[Fin loup solitaire]Eh, écoute-moi !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	918	}{	[Fin loup solitaire]Tu pourrais vraiment nous être utile !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	919	}{	[Fin loup solitaire]Camarade ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	920	}{	[En tant que Ming Xiao]Vous. . . Que faites-vous ici ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	921	}{	[En tant que Ming Xiao]Non. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	922	}{	[En tant que Ming Xiao]Vous ne devriez pas rester ici. . . L'endroit est mauvais. Euh. . . Pardon.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	923	}{	A plus tard.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	924	}{	Dehors. Maintenant.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	925	}{	Ouais.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	926	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	927	}{	J'en sais rien.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	928	}{	Merci.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	929	}{	QUOI ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	930	}{	Je ne peux rien pour toi, gamin.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	931	}{	Super.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	932	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	933	}{	Tiens.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	934	}{	Suis la rue jusqu'au bout.	}{	Suis la rue jusqu'au bout.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	935	}{	Je le ferai.	}{	Je le ferai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Boum!	}
+{	936	}{	(Starting Condition)	}{	}{	881	}{	G.Nines_Mission == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	937	}{	(Starting Condition)	}{	}{	701	}{	G.Story_State == 115	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	938	}{	(Starting Condition)	}{	}{	541	}{	G.Story_State == 85 and G.Player_Anarch == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	939	}{	(Starting Condition)	}{	}{	531	}{	G.Story_State == 85 and G.Nines_Scorn == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	940	}{	(Starting Condition)	}{	}{	521	}{	G.Story_State == 85	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	941	}{	(Starting Condition)	}{	}{	511	}{	G.Nines_Timeup == 1 and G.Nines_Scorn == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	942	}{	(Starting Condition)	}{	}{	481	}{	G.Nines_Timeup == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	943	}{	(Starting Condition)	}{	}{	341	}{	G.Story_State == 15 and G.Nines_Scorn == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	944	}{	(Starting Condition)	}{	}{	331	}{	G.Story_State == 15	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	945	}{	(Starting Condition)	}{	}{	321	}{	G.Story_State == 10 and G.Nines_Scorn == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	946	}{	(Starting Condition)	}{	}{	311	}{	G.Story_State == 10 and G.Nines_Chat == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	947	}{	(Starting Condition)	}{	}{	101	}{	G.Story_State == 10	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	948	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

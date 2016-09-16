@@ -1,0 +1,59 @@
+TerminalDefinition
+{
+	"screen saver"		"Hou !"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""		// these surround the command prompt (2 characters), changed by wesp
+	"email_username"	"egon"		// printed at the top of the email window, not used for log in. 
+	"email_password"	"ectoplasm"	// printed at the top of the email window, not used for log in. 
+
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Haunted LA"
+		"line1"		"Simon Milligan"
+
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+
+
+	SubDir
+	{
+		"name"			"Prochains shows"
+		"description"		"Lieux et plans"	
+
+		Function
+		{
+			"name"		"Show17"
+			"description"	"Horreur à l'hôpital"	
+			"runtext"	"Show 17 : Horreur à l'hôpital. Un hôpital délabré dans le centre, cet endroit est flippant. Pas besoin de rajouter grand-chose pour foutre les jetons. Il pourrait y avoir le fantôme d'une infirmière qui pense qu'elle doit encore aider des patients."
+		}
+
+		Function
+		{
+			"name"		"Show18"
+			"description"	"Nuit sans sommeil"	
+			"runtext"	"Show 18 : Nuit sans sommeil. Il y a un cimetière à Hollywood, rempli d'acteurs aux carrières mortes. Là aussi, on ne devrait pas avoir grand-chose à faire."
+		}
+	}
+
+	Email
+	{
+		"subject"	"I <3 Haunted LA"
+		"sender"	"Fanboy McGee"
+		//poor spelling intentional to fit the character of the letter
+		"body"		"Haunted LA, c'est trop de la balle ! Je vais visiter tous les endroits dont tu m'as parlé. Hé ! Tu devrais aller à cet hôtel à Palm Springs. Je te jure, il est hanté. Il y avait un fantôme qui n'arrêtait pas d'ouvrir le robinet ! Peut-être qu'il avait un TOC et qu'il se lavait tout le temps les mains. MDR !"
+	}
+
+	Email
+	{
+		"subject"	"Pauvre taré, TU FAIS CHIER !"
+		"sender"	"Un mec furieux"
+		"body"		"Los Angeles hantée mon cul ! Même si des fantômes et toutes ces conneries existaient, ce qui n'est pas le cas, jamais on trouverait un loup-garou errant dans Griffith Park. Tu te fous de moi ou quoi ? Il n'y a même pas de foutus vrais loups dans le coin qui nous foutent les jetons. J'espère que tu te feras bouffé par un monstre carnivore, espèce d'imbécile !"
+	}
+
+}
