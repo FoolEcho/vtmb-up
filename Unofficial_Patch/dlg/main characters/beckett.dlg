@@ -589,7 +589,7 @@
 {	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	591	}{	Je vous recommanderai de prendre un taxi plutôt que de marcher. Sebastian ne serait pas contre cette petite dépense, surtout quand il s'agit d'archéologie.	}{	Je vous recommanderai de prendre un taxi plutôt que de marcher. Sebastian ne serait pas contre cette petite dépense, surtout quand il s'agit d'archéologie.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Society_Open = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	592	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	Je ne prendrai pas de taxi, c'est plus rapide par les égouts.	}{	Je ne prendrai pas de taxi, c'est plus rapide par les égouts.	}{	881	}{	G.Story_State < 70 and IsClan(pc, "Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	593	}{	J'ai quelques questions avant de partir.	}{	J'ai quelques questions avant de partir.	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je veux quelque chose qui se trouve dans votre cerveau.	}
 {	594	}{	En route pour aller voir le professeur.	}{	En route pour aller voir le professeur.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi suis-je encore ici ? Je devrais partir.	}
 {	595	}{	Je reviendrai après le monastère.	}{	Je reviendrai après le monastère.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je ne peux pas chasser des chasseurs dans ce triste état, il faut me réparer.	}

@@ -1,37 +1,34 @@
-// Chang Brothers Claws
-
+// Chang Brothers Claws, models and icons by Lenuska
+ 
 WeaponData
 {
-	"printname"	"Griffe de poignée"	// changed by wesp
-	"description"	"Griffes utilisées par un frère Chang."	// changed by wesp
-	"item_worth"	"100"
+	"printname"	"Griffes du tigre"	// changed by wesp
+	"description"	"Ce sont de sournoises griffes métalliques avec un manche en bois. Elles infligent même des dégâts aggravés."	// changed by wesp
 
-	"viewmodel"		"models/weapons/w_null.mdl"
-
-	"playermodel"	"models/weapons/w_null.mdl"
-	"wieldmodel_f"	"models/weapons/claw/wield/w_f_claws.mdl"
-	"wieldmodel_m"	"models/weapons/claw/wield/w_m_claws.mdl"
-	"anim_prefix"	"claw"
+	"viewmodel"	"models/weapons/w_null.mdl"
+	"playermodel"	"models/weapons/handleclaws/ground/g_handleclaws.mdl"
+	"wieldmodel_f"	"models/weapons/handleclaws/wield/w_f_handleclaws.mdl"
+	"wieldmodel_m"	"models/weapons/handleclaws/wield/w_m_handleclaws.mdl"
+	"infomodel"	"models/weapons/handleclaws/info/i_handleclaws.mdl"
+	"anim_prefix"	""
 
 	"impact_snd_group"	"fist"
 
-	"activation0"	"Attack"
-	"activation1"	""
-	"bucket"		"0"
-	"bucket_position"	"1"
+	"bucket"		"1"	// changed by Lenuska
+	"bucket_position"	"2"	// changed by Lenuska
+
 	"camera_class"		"melee"
 	"weight"		"10"
-	"item_flags"	"0"
-	"item_type"		"weapon_melee hidden"
+	"item_flags"		"1"
+	"item_type"		"weapon_melee"	// changed by Lenuska
+	"item_worth"		"100"		// changed by wesp
+	"player_sell"		"85"		// changed by wesp
 
-	"sound_group"	"Claws"
-	"equip_mask"	"ClawedForm"
-
-	"is_visible_in_hud"	"0"
-
-	"BitFlag_CantBeLast"	"1"
-
-	"knockback_chance"	"0.1"
+	"is_visible_in_hud"	"1"	// changed by Lenuska
+	"is_droppable"		"1"	// added by Lenuska
+	"is_wieldable"		"1"	// added by Lenuska
+	
+	"knockback_chance" 	"0.1"
 
 	// Sounds...
 	SoundData
@@ -42,83 +39,95 @@ WeaponData
 			"sound2"	"Weapons/Melee/Claws/Swish_2.wav"
 			"sound3"	"Weapons/Melee/Claws/Swish_3.wav"
 		}
+
 		"pickup"
 		{
 			"sound1"	"Weapons\Melee\Claws\Deploy.wav"
 		}
-	}
 
+		"stealth_kill_success"
+		{
+			"sound1"	"Weapons/Melee/Severed_Arm/Stealth_Severed_Arm.wav"
+		}
+
+		"stealth_kill_failure"
+		{
+			"sound1"	"Weapons/Melee/Fists/Stealth_Kill_Failure.wav"
+		}
+	}
+	
 	Activation
 	{
 		"Tag"			"Primary"
-
-		"Type"		"Attack"
+		"Type"			"Attack"
 		"Ammo_Type"		"None"
 		"Ammo_Cost"		"0"
-		"Botch_Table"	"Fists_Claws_Bite"
-		"Attack_Rate"	"0.5"
-		"Range"		"0"
-		"CriminalLevel"	"0"
 
-		"SkillRequirement"	"10"		// min. skill requirement used in dmg calculations
-		"BaseLethality"		"16"		// base lethality used in dmg calculations, changed by wesp from 13
-		"Dmg"			"2 Aggravated Close_Combat_Melee DMG_SLASH"
+		"SkillRequirement"	"10"		
+		"BaseLethality"		"13"		
+		"Dmg"			"2 Aggravated Close_Combat_Melee DMG_SUPERCLAWBITE"
 
-		// Sounds... changed by wesp
+		"Botch_Table"		"Melee_Weapons"	// changed by Lenuska
+		"Attack_Rate"		"0.5"
+		"Range"			"0"
+		"CriminalLevel"		"3"	// changed by Lenuska
+
+	// Sounds...
 		SoundData
 		{
 			"attack"
 			{
-				"sound1"	"Weapons/Melee/Fists/Swish_1.wav"
-				"sound2"	"Weapons/Melee/Fists/Swish_2.wav"
-				"sound3"	"Weapons/Melee/Fists/Swish_3.wav"
+				"sound1"	"Weapons/Melee/Claws/Swish_1.wav"
+				"sound2"	"Weapons/Melee/Claws/Swish_2.wav"
+				"sound3"	"Weapons/Melee/Claws/Swish_3.wav"
 			}
 
 			"attack_npc"
 			{
-				"sound1"	"Weapons/Melee/Fists/Swish_1.wav"
-				"sound2"	"Weapons/Melee/Fists/Swish_2.wav"
-				"sound3"	"Weapons/Melee/Fists/Swish_3.wav"
+				"sound1"	"Weapons/Melee/Claws/Swish_1.wav"
+				"sound2"	"Weapons/Melee/Claws/Swish_2.wav"
+				"sound3"	"Weapons/Melee/Claws/Swish_3.wav"
 			}
 
 			"deploy"
 			{
-				"sound1"	"Weapons/Melee/Fists/Deploy.wav"
-			}
-			"put_away"
-			{
-				"sound1"	"Weapons/Melee/Fists/Put_Away.wav"
-			}
-			"fidget"
-			{
-				"sound1"	"Weapons/Melee/Fists/Fidget.wav"
+				"sound1"	"Weapons/Melee/Claws/Deploy.wav"
 			}
 
+			"put_away"
+			{
+				"sound1"	"Weapons/Melee/Claws/Put_Away.wav"
+			}
+
+			"fidget"
+			{
+				"sound1"	"Weapons/Melee/Claws/Fidget.wav"
+			}
 		}
 	}
 
-	// Weapon Sprite data is loaded by the Client DLL.
 	SpriteData
 	{
 		"weapon"
 		{
 			"640"
 			{
-				"file"	"hud/Inventory_Images/Weapons_Melee/claws"
+				"file"	"hud/Inventory_Images/weapons_melee/handleclaws_sel"	// changed by Lenuska
 				"x"		"0"
 				"y"		"0"
-				"width"	"100"
+				"width"		"100"
 				"height"	"64"
 			}
 		}
+
 		"weapon_s"
 		{
 			"640"
 			{
-				"file"	"hud/Inventory_Images/Weapons_Melee/claws"
+				"file"	"hud/Inventory_Images/weapons_melee/handleclaws"	// changed by Lenuska
 				"x"		"0"
 				"y"		"0"
-				"width"	"100"
+				"width"		"100"
 				"height"	"64"
 			}
 		}

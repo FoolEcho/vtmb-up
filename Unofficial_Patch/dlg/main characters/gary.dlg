@@ -351,8 +351,8 @@
 {	351	}{	Où, mais où ai-je bien pu l'envoyer ? Ce truc change plus souvent de mains que Mae West. . . Au fait, pourquoi je vous le dirais ?	}{	Où, mais où ai-je bien pu l'envoyer ? Ce truc change plus souvent de mains que Mae West. . . Au fait, pourquoi je vous le dirais ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	352	}{	Je travaille pour le prince.	}{	Je travaille pour le prince.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Un type dans une tour m'a demandé de le trouver, je ne sais pas.	}
 {	353	}{	Parce que je vous ai débarrassé de ce Tzimisce.	}{	Parce que je vous ai débarrassé de ce Tzimisce.	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai sauvé une voix des enfants du monstre.	}
-{	354	}{	Parce que si vous ne le faites pas, je vais écraser ce qui vous reste de visage avec mes pieds.	}{	Parce que si vous ne le faites pas, je vais écraser ce qui vous reste de visage avec mes pieds.	}{	381	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	A présent que je vois un visage, j'ai quelque chose à faire saigner.	}
-{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	354	}{	J'ai nettoyé vos égouts du Tzimisce et vous ai aussi apporté des objets mettant en danger la Masquerade.	}{	J'ai nettoyé vos égouts du Tzimisce et vous ai aussi apporté des objets mettant en danger la Masquerade.	}{	371	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_warr_clipboard") and pc.HasItem("item_g_warr_ledger_1") and pc.HasItem("item_g_warr_ledger_2") and pc.HasItem("item_g_warrens4_passkey")	}{	pc.RemoveItem("item_g_warr_clipboard"); pc.RemoveItem("item_g_warr_ledger_1"); pc.RemoveItem("item_g_warr_ledger_2"); pc.RemoveItem("item_g_warrens4_passkey")		}{	}{	}{	}{	}{	}{	}{	Je suis allé à travers les tunnels, tuant des choses et collectant des trucs pour vous.	}
+{	355	}{	Parce que si vous ne le faites pas, je vais écraser ce qui vous reste de visage avec mes pieds.	}{	Parce que si vous ne le faites pas, je vais écraser ce qui vous reste de visage avec mes pieds.	}{	381	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	A présent que je vois un visage, j'ai quelque chose à faire saigner.	}
 {	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -541,7 +541,7 @@
 {	541	}{	Les Kuei-Jin sont des vampires, mais pas comme nous. On les appelle parfois des vampires d'Orient, mais ce n'est pas vraiment ça. C'est juste un truc de plus qui peut vous donner la Mort Ultime si vous ne faites pas gaffe. . .	}{	Les Kuei-Jin sont des vampires, mais pas comme nous. On les appelle parfois des vampires d'Orient, mais ce n'est pas vraiment ça. C'est juste un truc de plus qui peut vous donner la Mort Ultime si vous ne faites pas gaffe. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	542	}{	Mais encore. . .	}{	Mais encore. . .	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ouiiii. . .	}
 {	543	}{	Dites, vous pourriez vous presser un peu ? J'ai un sarcophage à récupérer, moi.	}{	Dites, vous pourriez vous presser un peu ? J'ai un sarcophage à récupérer, moi.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je devrais secourir la boîte. . .	}
-{	544	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	544	}{	Je crois en avoir tué un à Santa Monica. Quoi d'autre à leur sujet ?	}{	Je crois en avoir tué un à Santa Monica. Quoi d'autre à leur sujet ?	}{	571	}{	G.Knox_Done == 1	}{	}{	}{	}{	}{	}{	}{	}{	Les voix prétendent que j'en ai pourfendu un chez la dame de la mer. Alors ?	}
 {	545	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	546	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	547	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

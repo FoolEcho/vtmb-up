@@ -1,16 +1,16 @@
 ; -- vtmbupinstaller.iss --
 
 [Setup]
-AppName=Vampire: The Masquerade - Bloodlines unofficial patch 9.5 fr
-AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 9.5 fr
+AppName=Vampire: The Masquerade - Bloodlines unofficial patch 9.6 fr
+AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 9.6 fr
 VersionInfoDescription=Vampire: The Masquerade - Bloodlines unofficial patch avec sous-titrage français
-VersionInfoVersion=9.5.4
+VersionInfoVersion=9.6
 AppPublisher=Werner Spahl
 DefaultDirName={reg:HKLM\Software\Activision\Vampire - Bloodlines,InstallPath|{pf}\Steam\steamapps\common\vampire the masquerade - bloodlines}
 AppendDefaultDirName=no
 DirExistsWarning=no
 EnableDirDoesntExistWarning=yes
-OutputBaseFilename=VTMBup95fr
+OutputBaseFilename=VTMBup96fr
 Uninstallable=no
 InfoBeforeFile=vtmbup-readme.txt
 InfoAfterFile=vtmbup-after.txt
@@ -30,12 +30,14 @@ Name: "basic"; Description: "Patch non officiel"; Flags: iscustom
 [Components]
 Name: "basic"; Description: "Patch de base"; Types: basic; Flags: fixed checkablealone
 Name: "readme"; Description: "Lisez-moi"; Types: basic; Flags: fixed checkablealone
-Name: "plus"; Description: "Améliorations Plus (ajustements, restaurations...)"; Flags: checkablealone 
-Name: "plus\graphics"; Description: "Ni forme guerrière lupine, ni yeux améliorés"; Flags: dontinheritcheck
-Name: "plus\disciplines"; Description: "Aucune animation de lancement de sort et pas de Disciplines restaurées"; Flags: dontinheritcheck
+Name: "plus"; Description: "Patch Plus (restaurations et ajustements)"; Flags: checkablealone 
+Name: "plus\audio"; Description: "Aucune nouvelle audio (morceaux de musiques et sons aléatoires)"; Flags: dontinheritcheck
+Name: "plus\particles"; Description: "Aucune nouvelles particules (pluie améliorée et effets de lancement de sort)"; Flags: dontinheritcheck
+Name: "plus\graphics"; Description: "Pas de nouveaux graphismes (forme guerrière lupine, yeux améliorés)"; Flags: dontinheritcheck
+Name: "plus\disciplines"; Description: "Pas de nouvelles disciplines (animation de lancement de sort et niveaux remplacés"; Flags: dontinheritcheck
 Name: "extras"; Description: "Différents Extras (Walkthrough, Transcriptions...)"; Flags: checkablealone
-Name: "extras\play"; Description: "Mods de joueur"; Flags: dontinheritcheck
-Name: "extras\edit"; Description: "Outils de développeur"; Flags: dontinheritcheck
+Name: "extras\play"; Description: "Mods de joueur (Shader suites, script Linux et plus)"; Flags: dontinheritcheck
+Name: "extras\edit"; Description: "Outils de développeur (SDK officieux, guide de modification et plus)"; Flags: dontinheritcheck
 
 [Code]
 function retail: Boolean; 
@@ -58,8 +60,10 @@ Source: "Unofficial_Patch\cl_dlls\*"; DestDir: "{app}\vampire\cl_dlls"; Componen
 Source: "Unofficial_Patch\dlls\*"; DestDir: "{app}\vampire\dlls"; Components: basic; Flags: recursesubdirs ignoreversion
 Source: "Unofficial_Patch\*"; DestDir: "{app}\Unofficial_Patch_fr"; Components: basic; Flags: recursesubdirs ignoreversion
 Source: "Plus_Patch\Unofficial_Patch\*"; DestDir: "{app}\Unofficial_Patch_fr"; Components: plus; Flags: recursesubdirs ignoreversion
+Source: "Unofficial_Patch\sound\schemes\*"; DestDir: "{app}\Unofficial_Patch_fr\sound\schemes"; Components: plus\audio; Flags: ignoreversion
 Source: "Unofficial_Patch\materials\models\character\eyes\*"; DestDir: "{app}\Unofficial_Patch_fr\materials\models\character\eyes"; Components: plus\graphics; Flags: ignoreversion
 Source: "Unofficial_Patch\models\character\monster\animalism_beastform\animalism_beastform.mdl"; DestDir: "{app}\Unofficial_Patch_fr\models\character\monster\animalism_beastform"; Components: plus\graphics; Flags: ignoreversion
+Source: "Unofficial_Patch\particles\*"; DestDir: "{app}\Unofficial_Patch_fr\particles"; Components: plus\particles; Flags: ignoreversion
 Source: "Unofficial_Patch\vdata\system\disciplinetgt*"; DestDir: "{app}\Unofficial_Patch_fr\vdata\system"; Components: plus\disciplines; Flags: ignoreversion
 Source: "Unofficial_Patch\vdata\system\stats.txt"; DestDir: "{app}\Unofficial_Patch_fr\vdata\system"; Components: plus\disciplines; Flags: ignoreversion
 Source: "Patch_Extras\Developer Tools\Game Mod Loader\*"; DestDir: "{app}"; Components: basic; Flags: recursesubdirs ignoreversion

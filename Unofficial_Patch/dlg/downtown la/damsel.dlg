@@ -252,9 +252,9 @@
 {	252	}{	Le porteur de peste est mort.	}{	Le porteur de peste est mort.	}{	261	}{	(G.Kanker_Dead == 1 and G.Jezebel_Dead == 0 and G.Vick_Dead == 0 and G.Damsel_Quest < 2) or (G.Kanker_Dead == 0 and G.Jezebel_Dead == 1 and G.Vick_Dead == 0 and G.Damsel_Quest < 2)	}{	}{	}{	}{	}{	}{	}{	}{	Le pestiféré est mort.	}
 {	253	}{	Connaissez-vous ce symbole sur le flyer ?	}{	Connaissez-vous ce symbole ?	}{	271	}{	pc.HasItem("item_g_brotherhood_flyer")	}{	}{	}{	}{	}{	}{	}{	}{	Ce symbole parle-t-il à votre esprit ?	}
 {	254	}{	Tous les porteurs de peste sont morts.	}{	Tous les porteurs de peste sont morts.	}{	281	}{	G.Kanker_Dead == 1 and G.Jezebel_Dead == 1 and IsDead("Bishop Vick") and G.Damsel_Quest < 3	}{	}{	}{	}{	}{	}{	}{	}{	Le roi des pestiférés et tous ses sujets sont enfin éliminés.	}
-{	255	}{	Je vais continuer de chercher.	}{	Je vais continuer de chercher.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais dénicher ce pestiféré, vous verrez.	}
-{	256	}{	Avant de partir, une simple question.	}{	Avant de partir, une simple question.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aimerais d'abord apprendre une chose de votre esprit.	}
-{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	Ouais, mais l'amour a tué Paul, regarde.	}{	}{	701	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_hannahs_appt_book")	}{	pc.RemoveItem("item_g_hannahs_appt_book")	}{	}{	}{	}{	}{	}{	L'amour a tué ton animal de compagnie, tu vois ?	}{	}
+{	256	}{	Je vais continuer de chercher.	}{	Je vais continuer de chercher.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais dénicher ce pestiféré, vous verrez.	}
+{	257	}{	Avant de partir, une simple question.	}{	Avant de partir, une simple question.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aimerais d'abord apprendre une chose de votre esprit.	}
 {	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -311,8 +311,8 @@
 {	311	}{	Ah oui ?	}{	Ah oui ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	312	}{	J'ai quelques questions.	}{	J'ai quelques questions.	}{	531	}{	G.Damsel_Like < -3	}{	}{	}{	}{	}{	}{	}{	}{	J'aimerais découvrir une chose tapie dans votre esprit.	}
 {	313	}{	Vous savez quelque chose sur le Régent ? Il vous reproche l'épidémie. . .	}{	Vous savez quelque chose sur le Régent ? Il vous reproche l'épidémie. . .	}{	511	}{	G.Regent_Pestilence >= 1 and G.Damsel_Regent == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous connaissez le chef des sorciers ? Il dit que ce sont les enfants comme vous qui répandez la maladie.	}
-{	314	}{	Parlez-moi de Nines.	}{	Parlez-moi de Nines.	}{	321	}{	G.Story_State < 20 and G.Damsel_Nines == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le prince de la rue.	}
-{	315	}{	Parlez-moi de Nines.	}{	Parlez-moi de Nines.	}{	351	}{	G.Story_State >= 20 and G.Damsel_Nines < 2	}{	}{	}{	}{	}{	}{	}{	}{	Le prince de la rue.	}
+{	314	}{	Parlez-moi de Nines.	}{	Parlez-moi de Nines.	}{	321	}{	G.Story_State < 25 and G.Damsel_Nines == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le prince de la rue.	}
+{	315	}{	Parlez-moi de Nines.	}{	Parlez-moi de Nines.	}{	351	}{	G.Story_State >= 25 and G.Damsel_Nines < 2	}{	}{	}{	}{	}{	}{	}{	}{	Le prince de la rue.	}
 {	316	}{	Que pensez-vous de LaCroix ?	}{	Que pensez-vous de LaCroix ?	}{	371	}{	G.Damsel_Prince == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le bouffon dans sa tour d'ivoire.	}
 {	317	}{	Parlez-moi de Smiling Jack.	}{	Parlez-moi de Smiling Jack.	}{	391	}{	G.Damsel_Jack == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jack, le diablotin au sourire figé.	}
 {	318	}{	Parlez-moi des anarchs.	}{	Parlez-moi des anarchs.	}{	411	}{	G.Damsel_Anarchs == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les enfants de notre Camarilla.	}

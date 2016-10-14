@@ -3,8 +3,8 @@
 WeaponData
 {
 
-	"printname"	"Gants à griffe"	// added by wesp
-	"description"	"Gants à griffe portés par les goules de Grout."	// added by wesp
+	"printname"	"Griffes de goule"	// added by wesp
+	"description"	"Griffes implantées sur les goules de Grout."	// added by wesp
 
 	// Weapon data is loaded by both the Game and Client DLLs.
 	"viewmodel"	"models/weapons/w_null.mdl"
@@ -61,8 +61,8 @@ WeaponData
 		"CriminalLevel"	"0"
 
 		"SkillRequirement"	"1"		// min. skill requirement used in dmg calculations
-		"BaseLethality"		"8"		// base lethality used in dmg calculations, changed by wesp from 4
-		"Dmg"		"2 Aggravated Close_Combat_Melee DMG_SLASH"
+		"BaseLethality"		"4"		// base lethality used in dmg calculations
+		"Dmg"		"2 Aggravated Close_Combat_Melee DMG_SUPERCLAWBITE"
 
 		// Sounds...
 		SoundData

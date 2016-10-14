@@ -639,21 +639,21 @@
 {	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	640	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	641	}{	J'ai préparé un petit Souffle du Dragon. C'est un canon scié modifié pour tirer des balles au phosphore. Moi, c'est la seule arme que j'emporte quand je vais en pays du Sabbat.	}{	J'ai préparé un petit Souffle du Dragon. C'est un canon scié modifié pour tirer des balles au phosphore. Moi, c'est la seule arme que j'emporte quand je vais en pays du Sabbat.	}{	#	}{	}{	G.Mercurio_Dragon = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	642	}{	J'en voudrais un pareil. Laissez-moi voir.	}{	J'en voudrais un pareil. Laissez-moi voir.	}{	0	}{	G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	I wish to see this terrible lizard.	}
+{	642	}{	J'en voudrais un pareil. Laissez-moi voir.	}{	J'en voudrais un pareil. Laissez-moi voir.	}{	0	}{	G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Je souhaite voir ce terrible lézard.	}
 {	643	}{	J'ai des questions, avant.	}{	J'ai des questions, avant.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	I need to find some answers in the wrinkles of your brain.	}
-{	644	}{	J'verrais ça plus tard, salut, Mercurio.	}{	J'verrais ça plus tard, salut, Mercurio.	}{	0	}{	G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	I am no longer here.	}
-{	645	}{	Et bien gardes le pour toi, tu dois en avoir besoin, Mercurio.	}{	Et bien gardes le pour toi, tu dois en avoir besoin, Mercurio.	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Keep the lizard by your side. It was time to go.	}
+{	644	}{	Tu ferais mieux de le garder pour toi, Mercurio. Mais le reste de ton arsenal. . .	}{	Tu ferais mieux de le garder pour toi, Mercurio. Mais le reste de ton arsenal. . .	}{	0	}{	G.Patch_Plus == 0	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Garde le lézard à tes côtés, mais montre moi tes autres jouets.	}
+{	645	}{	J'verrais ça plus tard, salut, Mercurio.	}{	J'verrais ça plus tard, salut, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	I am no longer here.	}
 {	646	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	647	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	648	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	650	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	651	}{	Je suis allé chez un copain, il est chef d'équipe dans un commissariat d'O.C. Il est en colère à cause d'un gel des salaires, alors il a accepté de remplir ma liste de Noël. Je viens de récupérer un fusil S.W.A.T. Ca vous dit ?	}{	Je suis allé chez un copain, il est chef d'équipe dans un commissariat d'O.C. Il est en colère à cause d'un gel des salaires, alors il a accepté de remplir ma liste de Noël. Je viens de récupérer un fusil S.W.A.T. Ca vous dit ?	}{	#	}{	}{	G.Mercurio_Swat = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	652	}{	Non, il m'a l'air en mauvais état, mais faites voir ce que vous avez d'autres.	}{	Non, il m'a l'air en mauvais état, mais faites voir ce que vous avez d'autres.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Non, il est cassé... Montrez moi le reste.	}
-{	653	}{	Ce qui me manquait le plus de ma vie était les tirs en pleine tête. Et ils me manquent toujours...	}{	Ce qui me manquait le plus de ma vie était les tirs en pleine tête. Et ils me manquent toujours...	}{	0	}{	Humanity -5	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Toutes ces petites mouches, dire que j'avais presque une tapette. . .	}
+{	652	}{	Non, il m'a l'air en mauvais état, mais faites voir ce que vous avez d'autres.	}{	Non, il m'a l'air en mauvais état, mais faites voir ce que vous avez d'autres.	}{	0	}{	G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Non, il est cassé... Montrez moi le reste.	}
+{	653	}{	Ce qui me manquait le plus de ma vie était les tirs en pleine tête. Et ils me manquent toujours...	}{	Ce qui me manquait le plus de ma vie était les tirs en pleine tête. Et ils me manquent toujours...	}{	0	}{	Humanity -5 & G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Toutes ces petites mouches, dire que j'avais presque une tapette. . .	}
 {	654	}{	J'avais des questions, d'abord.	}{	J'avais des questions, d'abord.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
-{	655	}{	Pas vraiment, mais merci, Mercurio.	}{	Pas vraiment, mais merci, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
-{	656	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	655	}{	Je ne suis pas sniper mais montre moi le reste de tes trucs.	}{	Je ne suis pas sniper mais montre moi le reste de tes trucs.	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	656	}{	Pas vraiment, mais merci, Mercurio.	}{	Pas vraiment, mais merci, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	657	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	658	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	659	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
