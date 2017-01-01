@@ -1560,7 +1560,7 @@ StatData
 				"Is_Aggressive"	"0"
 
 //				"Force_Ordering"	"-1"
-				"Force_Ordering"	"13"
+				"Force_Ordering"	"2"	// changed by wesp
 			}
 
 			Stat
@@ -1800,17 +1800,17 @@ StatData
 			{
 				"Name"		"Occultation"
 				"InternalName"	"Obfuscate"
-				"HelpText"		"Invisibilité vampirique. Vous ne pouvez activer l'Occultation que si personne ne peut vous voir. Si vous restez immobile, le chronomètre se fige et l'Occultation peut rester ainsi indéfiniment. Chaque niveau offre les avantages des niveaux précédents."
+				"HelpText"		"Invisibilité vampirique. Vous ne pouvez activer l'Occultation que si personne ne peut vous voir. Si vous restez immobile, le chronomètre se fige et l'Occultation peut rester ainsi indéfiniment. Chaque niveau offre les avantages des niveaux précédents et n'entraîne aucun risque de violation de la Mascarade."	// changed by wesp
 				"HelpTextH1"	"Niveau 1 : Camouflage"
 				"HelpTextH2"	"Niveau 2 : Invisibilité limitée"
 				"HelpTextH3"	"Niveau 3 : Tueur camouflé"
 				"HelpTextH4"	"Niveau 4 : Invisibilité avancée"
 				"HelpTextH5"	"Niveau 5 : Force invisible"
-				"HelpTextL1"	"Invisibilité, tant que vous restez immobile. Si vous bougez ou que vous entreprenez une action, vous deviendrez visible et le chronomètre se mettra en route. Coûte 1 point de sang et dure 18 secondes par activation. L'utilisation d'Occultation n'est pas une violation de la Mascarade."
-				"HelpTextL2"	"Vous pouvez rester invisible en vous accroupissant. Vous redeviendrez visible si vous touchez quelqu'un ou si vous interagissez avec l'environnement. Coûte 1 point de sang et dure 20 secondes par activation. L'utilisation d'Occultation n'est pas une violation de la Mascarade."
-				"HelpTextL3"	"Vous pouvez commettre des meurtres furtifs en étant invisible. Faites attention de ne pas toucher votre victime avant, sinon vous redeviendrez visible. De plus, toute attaque de mêlée qui interrompt l'Occultation niveau 3 entraînera 50 pour cent de dégâts supplémentaires. Coûte 1 point de sang et dure 22 secondes par activation. L'utilisation d'Occultation n'est pas une violation de la Mascarade."
-				"HelpTextL4"	"Vous pouvez vous déplacer librement en étant invisible. Vous redeviendrez visible si vous interagissez avec l'environnement ou si vous touchez quelqu'un. De plus, toute attaque de mêlée qui interrompt l'Occultation niveau 4 entraînera le double de dégâts. Coûte 1 point de sang et dure 24 secondes par activation. L'utilisation d'Occultation n'est pas une violation de la Mascarade."
-				"HelpTextL5"	"Vous pouvez vous déplacer et interagir avec l'environnement en toute liberté. Vous redeviendrez visible si vous touchez quelqu'un. De plus, toute attaque de mêlée qui interrompt l'Occultation niveau 5 entraînera le triple de dégâts. Coûte 1 point de sang et dure 26 secondes par activation. L'utilisation d'Occultation n'est pas une violation de la Mascarade."
+				"HelpTextL1"	"Invisibilité, tant que vous restez immobile. Si vous bougez ou que vous entreprenez une action, vous deviendrez visible et le chronomètre se mettra en route. Coûte 1 point de sang et dure 18 secondes par activation."
+				"HelpTextL2"	"Vous pouvez rester invisible en vous accroupissant. Vous redeviendrez visible si vous touchez quelqu'un ou si vous interagissez avec l'environnement. Coûte 1 point de sang et dure 20 secondes par activation."	// changed by wesp
+				"HelpTextL3"	"Vous pouvez commettre des meurtres furtifs en étant invisible. Faites attention de ne pas toucher votre victime avant, sinon vous redeviendrez visible. De plus, toute attaque de mêlée qui interrompt l'Occultation niveau 3 entraînera 50 pour cent de dégâts supplémentaires. Coûte 1 point de sang et dure 22 secondes par activation."	// changed by wesp
+				"HelpTextL4"	"Vous pouvez vous déplacer librement en étant invisible. Vous redeviendrez visible si vous interagissez avec l'environnement ou si vous touchez quelqu'un. De plus, toute attaque de mêlée qui interrompt l'Occultation niveau 4 entraînera le double de dégâts. Coûte 1 point de sang et dure 24 secondes par activation."	// changed by wesp
+				"HelpTextL5"	"Vous pouvez vous déplacer et interagir avec l'environnement en toute liberté. Vous redeviendrez visible si vous touchez quelqu'un. De plus, toute attaque de mêlée qui interrompt l'Occultation niveau 5 entraînera le triple de dégâts. Coûte 1 point de sang et dure 26 secondes par activation."	// changed by wesp
 
 				"Min"			"-1"
 				"Max"			"5"

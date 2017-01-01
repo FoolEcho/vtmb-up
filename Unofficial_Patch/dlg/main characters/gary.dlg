@@ -310,7 +310,7 @@
 {	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	311	}{	En garde, Toréador. Assez de vos fanfaronnades et de votre morgue ! Je déteste votre détermination à cacher votre nature sous les dernières modes de Paris. Vous êtes une créature morte - une créature de l'ombre. Il serait temps de vous comporter comme tel.	}{	En garde, Toréador. Assez de vos fanfaronnades et de votre morgue ! Je déteste votre détermination à cacher votre nature sous les dernières modes de Paris. Vous êtes une créature morte - une créature de l'ombre. Il serait temps de vous comporter comme tel.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	312	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	313	}{	On est jaloux ? La surface vous manque ? Ou le fait d'avoir un visage ?	}{	On est jaloux ? La surface vous manque ? Ou le fait d'avoir un visage ?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	313	}{	On est jaloux ? La surface vous manque ? Ou le fait d'avoir un visage ?	}{	On est jaloux ? La surface vous manque ? Ou le fait d'avoir un visage ?	}{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	314	}{	Où est le sarcophage ?	}{	Où est le sarcophage ?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -478,7 +478,7 @@
 {	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	481	}{	Voyons. . . pour un frère rat d'égout, je peux faire un prix. . .	}{	Voyons. . . pour une soeur rat d'égout, je peux faire un prix. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Voyons. . . pour un frère rat d'égout, je peux faire un prix. . .	}{	Voyons. . . pour une soeur rat d'égout, je peux faire un prix. . .	}{	#	}{	}{	pc.GiveItem("item_g_eldervitaepack")	}{	}{	}{	}{	}{	}{	}{	}
 {	482	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	483	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	484	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -489,7 +489,7 @@
 {	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	491	}{	Voyons ce que nous avons là. . .	}{	Voyons ce que nous avons là. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	492	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	}{	pc.GiveItem("item_g_bluebloodpack")	}{	}{	}{	}{	}{	}{	}{	}
 {	493	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	494	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	495	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -498,7 +498,7 @@
 {	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	501	}{	Voyons un peu. Pour quelqu'un comme vous, ça ne va pas être donné.	}{	Voyons un peu. Pour quelqu'un comme vous, ça ne va pas être donné.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	Voyons un peu. Pour quelqu'un comme vous, ça ne va pas être donné.	}{	Voyons un peu. Pour quelqu'un comme vous, ça ne va pas être donné.	}{	#	}{	}{	pc.GiveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}
 {	502	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	503	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	504	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -519,7 +519,7 @@
 {	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	520	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	521	}{	Je vous ai manqué ?	}{	Je vous ai manqué ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	522	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	Toi aussi ?	}{	Toi aussi ?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	523	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	524	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -669,9 +669,9 @@
 {	669	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	670	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	671	}{	Bien sûr. Pour quel genre de monstre vous me prenez ? [Rit]Il y a une méthode dans mon délire. Il y a une cabine téléphonique à Chinatown. Je vous appellerai là-bas une fois que Barrabus sera à l'abri. Jusque là, vous ne saurez jamais où je me trouve.	}{	Bien sûr. Pour quel genre de monstre vous me prenez ? [Rit]Il y a une méthode dans mon délire. Il y a une cabine téléphonique à Chinatown. Je vous appellerai là-bas une fois que Barrabus sera à l'abri. Jusque là, vous ne saurez jamais où je me trouve.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	672	}{	Comme si c'était fait. Au revoir.	}{	Comme si c'était fait. Au revoir.	}{	521	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	J'ai fini avant même de commencer.	}
-{	673	}{	Oui, retournez dans l'ombre. C'est votre place. Au revoir. 	}{	Oui, retournez dans l'ombre. C'est votre place. Au revoir. 	}{	521	}{	not IsClan(pc,"Nosferatu")	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Voix, fondez-vous dans les ténèbres.	}
-{	674	}{	Si vous me grugez, vous en mourrez. Au revoir.	}{	Si vous me grugez, vous en mourrez. Au revoir.	}{	521	}{	Humanity -7	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Si je fais ce que la voix ordonne, la voix FERA ce qu'elle a promis.	}
+{	672	}{	Comme si c'était fait. Au revoir.	}{	Comme si c'était fait. Au revoir.	}{	0	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	J'ai fini avant même de commencer.	}
+{	673	}{	Oui, retournez dans l'ombre. C'est votre place. Au revoir. 	}{	Oui, retournez dans l'ombre. C'est votre place. Au revoir. 	}{	0	}{	not IsClan(pc,"Nosferatu")	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Voix, fondez-vous dans les ténèbres.	}
+{	674	}{	Si vous me grugez, vous en mourrez. Au revoir.	}{	Si vous me grugez, vous en mourrez. Au revoir.	}{	0	}{	Humanity -7	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Si je fais ce que la voix ordonne, la voix FERA ce qu'elle a promis.	}
 {	675	}{	Les Kuei-Jin vont regretter d'avoir débarqué en ville.	}{	Les Kuei-Jin vont regretter d'avoir débarqué en ville.	}{	721	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Voix, vous envoyez le chaos même sur ces terres.	}
 {	676	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -679,8 +679,8 @@
 {	679	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	680	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	681	}{	Souvenez-vous, hein, vous serez chez eux. Ramenez-le nous. Si vous les énervez, leur réaction pourrait bien vous déplaire.	}{	Souvenez-vous, hein, vous serez chez eux. Ramenez-le nous. Si vous les énervez, leur réaction pourrait bien vous déplaire.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	682	}{	Je m'en souviendrai. Au revoir.	}{	Je m'en souviendrai. Au revoir.	}{	521	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	J'ai fini avant même de commencer.	}
-{	683	}{	On verra. . . Au revoir.	}{	On verra. . . Au revoir.	}{	521	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	. . . Hé hé. . .	}
+{	682	}{	Je m'en souviendrai. Au revoir.	}{	Je m'en souviendrai. Au revoir.	}{	0	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	J'ai fini avant même de commencer.	}
+{	683	}{	On verra. . . Au revoir.	}{	On verra. . . Au revoir.	}{	0	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	. . . Hé hé. . .	}
 {	684	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	685	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	686	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

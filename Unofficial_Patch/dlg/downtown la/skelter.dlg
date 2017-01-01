@@ -595,7 +595,7 @@
 {	595	}{	Quel est ton problème avec la Camarilla ?	}{	Quel est ton problème avec la Camarilla ?	}{	101	}{	G.Skelter_Cam == 0 and G.Story_State < 60	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi dénonces-tu la Camarilla ?	}
 {	596	}{	Que penses-tu de ce Sarcophage d'Ankara ?	}{	Que penses-tu de ce Sarcophage d'Ankara ?	}{	431	}{	G.Story_State >= 60	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi du Sarcophage d'Ankara !	}
 {	597	}{	Parle-moi encore de la Géhenne.	}{	Parle-moi encore de la Géhenne.	}{	441	}{	G.Bertram_Gehenna == 1 and G.Ming_Met == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parlons du jour du Père Noir !	}
-{	598	}{	Que sais-tu sur les Kuei-Jin ?	}{	Que sais-tu sur les Kuei-Jin ?	}{	406	}{	G.Ming_Met == 1 and G.Story_State < 90	}{	}{	}{	}{	}{	}{	}{	}{	Quelles nouvelles des mangeurs de vie, les rusés Kuei-Jin ?	}
+{	598	}{	Que sais-tu sur les Kuei-Jin ?	}{	Que sais-tu sur les Kuei-Jin ?	}{	406	}{	G.Gary_Quest > 0 and G.Story_State < 90	}{	}{	}{	}{	}{	}{	}{	}{	Quelles nouvelles des mangeurs de vie, les rusés Kuei-Jin ?	}
 {	599	}{	Je voulais te poser une question sur quelqu'un. . .	}{	Je voulais te poser une question sur quelqu'un. . .	}{	631	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai une vision de quelqu'un.	}
 {	600	}{	J'me casse.	}{	Je me casse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
 {	601	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

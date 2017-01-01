@@ -551,7 +551,7 @@
 {	551	}{	Les cautions ? Que voulez-vous savoir ?	}{	Les cautions ? Que voulez-vous savoir ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	552	}{	C'est vous qui gérez cet endroit ?	}{	C'est vous qui gérez cet endroit ?	}{	21	}{	G.Arthur_Run == 0	}{	}{	}{	}{	}{	}{	}{	}{	Etes-vous le seul à détenir les clés de la liberté ?	}
 {	553	}{	Vous avez beaucoup de personnes qui disparaissent alors qu'elles sont sous caution ?	}{	Vous avez beaucoup de personnes qui disparaissent alors qu'elles sont sous caution ?	}{	71	}{	G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	Y a-t-il beaucoup de primes à chasser ?	}
-{	554	}{	Votre chasseur de primes, il est bon ?	}{	Votre chasseur de primes, il est bon ?	}{	671	}{	G.Arthur_BH == 1	}{	}{	}{	}{	}{	}{	}{	}{	Avez-vous un chasseur de primes talentueux ?	}
+{	554	}{	Votre chasseur de primes, il est bon ?	}{	Votre chasseur de primes, il est bon ?	}{	671	}{	G.Arthur_BH == 1 and G.Arthur_Knox < 1	}{	}{	}{	}{	}{	}{	}{	}{	Avez-vous un chasseur de primes talentueux ?	}
 {	555	}{	En fait, j'aimerais vous poser des questions sur autre chose. . .	}{	En fait, j'aimerais vous poser des questions sur autre chose. . .	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
 {	556	}{	Rien. A plus tard.	}{	Rien. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis quelque part ailleurs qu'ici.	}
 {	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

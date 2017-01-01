@@ -152,7 +152,7 @@
 {	152	}{	Qu'est-ce qui se passe par ici ? Des trucs sympas ? Inhabituels ?	}{	Qu'est-ce qui se passe par ici ? Des trucs sympas ? Inhabituels ?	}{	11	}{	G.Slater_Exciting == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi un peu plus de la ville des étoiles. . .	}
 {	153	}{	Tu as entendu parler du tueur en série ?	}{	Tu as entendu parler du tueur en série ?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}
 {	154	}{	Je cherche une vidéo. . .	}{	Je cherche une vidéo. . .	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche une vidéo pleine d'atrocités inconnues. . .	}
-{	155	}{	Je vais prendre la suggestion du jour.	}{	Je vais prendre la suggestion du jour.	}{	81	}{	G.Special_Heard == 1 and G.Slater_Weapons == 0	}{	}{	}{	}{	}{	}{	}{	}{	Suggestion ? Qu'est-ce que tu suggères ?	}
+{	155	}{	Quelle est exactement ta suggestion du jour ?	}{	Quelle est exactement ta suggestion du jour ?	}{	81	}{	G.Special_Heard == 1 and G.Slater_Weapons == 0	}{	}{	}{	}{	}{	}{	}{	}{	Suggestion ? Qu'est-ce que tu suggères ?	}
 {	156	}{	J'aimerais jeter un oeil à l'inventaire que tu suggères.	}{	J'aimerais jeter un oeil à l'inventaire que tu suggères.	}{	0	}{	G.Slater_Weapons == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Fais-moi une suggestion.	}
 {	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
