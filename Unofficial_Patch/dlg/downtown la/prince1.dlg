@@ -261,7 +261,7 @@
 {	261	}{	Oh, et on m'a dit que vous aviez rencontré Nines Rodriguez. Il aime toujours faire étalage de son charme imbécile. Que vous a-t-il dit, exactement ?	}{	Oh, et on m'a dit que vous aviez rencontré Nines Rodriguez. Il aime toujours faire étalage de son charme imbécile. Que vous a-t-il dit, exactement ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	262	}{	Il m'a demandé d'aller le voir au Last Round.	}{	Il m'a demandé d'aller le voir au Last Round.	}{	271	}{	G.Nines_Chat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Il faut que je trouve le Last Round dans ce champ de rectangles massifs.	}
 {	263	}{	Voilà ce qu'il m'a dit. . .	}{	Voilà ce qu'il m'a dit. . .	}{	291	}{	G.Nines_Chat == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je vais vous lire le compte-rendu.	}
-{	264	}{	Des âneries sur les anarchs. Je n'ai pas vraiment écouté.	}{	Des âneries sur les anarchs. Je n'ai pas vraiment écouté.	}{	301	}{	G.Nines_Chat == 1	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Bla bla, ouaf ouaf.	}
+{	264	}{	Des âneries sur les Anarchs. Je n'ai pas vraiment écouté.	}{	Des âneries sur les Anarchs. Je n'ai pas vraiment écouté.	}{	301	}{	G.Nines_Chat == 1	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Bla bla, ouaf ouaf.	}
 {	265	}{	Rien.	}{	Rien.	}{	311	}{	G.Nines_Chat == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pas un mot. 	}
 {	266	}{	Beaucoup de choses. Qui font réfléchir.	}{	Beaucoup de choses. Qui font réfléchir.	}{	321	}{	G.Nines_Chat == 1	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	Paroles d'or, sage conseil. . . C'était sensé, même au milieu de tout ce bruit. . .	}
 {	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -278,17 +278,17 @@
 {	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	281	}{	Saluez la communauté anarch de ma part.	}{	Saluez la communauté anarch de ma part.	}{	#	}{	npc.SetDisposition("PrinceSitting",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	Saluez la communauté Anarch de ma part.	}{	Saluez la communauté Anarch de ma part.	}{	#	}{	npc.SetDisposition("PrinceSitting",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	282	}{	D'accord.	}{	D'accord.	}{	0	}{	G.Nines_Chat == 0	}{	pc.SetQuest("Dane",4)	}{	}{	}{	}{	}{	}{	}{	Fait comme si c'était.	}
 {	283	}{	C'est ça. . .	}{	C'est ça. . .	}{	0	}{	G.Nines_Chat == 0	}{	pc.SetQuest("Dane",4)	}{	}{	}{	}{	}{	}{	}{	Hé hé. . . très bon.	}
 {	284	}{	C'est ce que j'ai fait. Voilà ce qu'il a dit. . .	}{	C'est ce que j'ai fait. Voilà ce qu'il a dit. . .	}{	291	}{	G.Nines_Chat == 1	}{	}{	}{	}{	}{	}{	}{	}{	Fait. Je vais vous relire le compte-rendu.	}
-{	285	}{	C'est ce que j'ai fait. Il a dit plein d'âneries sur les anarchs. Je n'ai pas vraiment écouté.	}{	C'est ce que j'ai fait. Il a dit plein d'âneries sur les anarchs. Je n'ai pas vraiment écouté.	}{	301	}{	G.Nines_Chat == 1	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Fait. Bla, bla, ouaf, ouaf.	}
+{	285	}{	C'est ce que j'ai fait. Il a dit plein d'âneries sur les Anarchs. Je n'ai pas vraiment écouté.	}{	C'est ce que j'ai fait. Il a dit plein d'âneries sur les Anarchs. Je n'ai pas vraiment écouté.	}{	301	}{	G.Nines_Chat == 1	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Fait. Bla, bla, ouaf, ouaf.	}
 {	286	}{	C'est ce que j'ai fait. On ne m'a rien dit d'important.	}{	C'est ce que j'ai fait. On ne m'a rien dit d'important.	}{	311	}{	G.Nines_Chat == 1	}{	}{	}{	}{	}{	}{	}{	}{	Fait. Pas un mot.	}
 {	287	}{	C'est ce que j'ai fait. Ca m'a fait réfléchir.	}{	C'est ce que j'ai fait. Ca m'a fait réfléchir.	}{	321	}{	G.Nines_Chat == 1	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	Fait. Paroles d'or, sage conseil. . . C'était sensé, même au milieu de tout ce bruit. . .	}
 {	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	291	}{	Rien qu'ils n'aient déjà rabâché des dizaines de fois dans l'Elysium. Vous devez comprendre. . . La plupart des anarchs ne connaissent pas de meilleure façon de vivre, ou ont été attirés de force dans la cause par les éléments les plus violents. On ne peut pas leur reprocher l'entêtement de leur 'élite'.	}{	Rien qu'ils n'aient déjà rabâché des dizaines de fois dans l'Elysium. Vous devez comprendre. . . La plupart des anarchs ne connaissent pas de meilleure façon de vivre, ou ont été attirés de force dans la cause par les éléments les plus violents. On ne peut pas leur reprocher l'entêtement de leur 'élite'.	}{	#	}{	}{	G.Prince_Nines = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Rien qu'ils n'aient déjà rabâché des dizaines de fois dans l'Elysium. Vous devez comprendre. . . La plupart des Anarchs ne connaissent pas de meilleure façon de vivre, ou ont été attirés de force dans la cause par les éléments les plus violents. On ne peut pas leur reprocher l'entêtement de leur 'élite'.	}{	Rien qu'ils n'aient déjà rabâché des dizaines de fois dans l'Elysium. Vous devez comprendre. . . La plupart des Anarchs ne connaissent pas de meilleure façon de vivre, ou ont été attirés de force dans la cause par les éléments les plus violents. On ne peut pas leur reprocher l'entêtement de leur 'élite'.	}{	#	}{	}{	G.Prince_Nines = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	292	}{	(Auto-Link)	}{	(Auto-Link)	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	293	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	294	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -370,7 +370,7 @@
 {	370	}{	Je les poserai plus tard. Il faut que je parte.	}{	Je les poserai plus tard. Il faut que je parte.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tout peut attendre jusqu'à mon retour.	}
 {	371	}{	Oui.	}{	Oui.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	372	}{	Vous-même.	}{	Vous-même.	}{	391	}{	G.Prince_Self == 0	}{	G.Prince_Self = 1	}{	}{	}{	}{	}{	}{	}{	Qui êtes-vous ?	}
-{	373	}{	Nines. 	}{	Nines. 	}{	431	}{	G.Prince_Nines == 0 and G.Story_State < 25	}{	G.Prince_Rodriguez = 1	}{	}{	}{	}{	}{	}{	}{	La nouvelle tête des anarchs. . .	}
+{	373	}{	Nines. 	}{	Nines. 	}{	431	}{	G.Prince_Nines == 0 and G.Story_State < 25	}{	G.Prince_Rodriguez = 1	}{	}{	}{	}{	}{	}{	}{	La nouvelle tête des Anarchs. . .	}
 {	374	}{	Beckett.	}{	Beckett.	}{	441	}{	G.Prince_Beckett == 0 and G.Story_State < 65	}{	G.Prince_Beckett = 1	}{	}{	}{	}{	}{	}{	}{	Le loup solitaire. . .	}
 {	375	}{	Jack.	}{	Jack.	}{	451	}{	G.Prince_Jack == 0	}{	G.Prince_Jack =1	}{	}{	}{	}{	}{	}{	}{	Celui qui sourit. . .	}
 {	376	}{	Ce type derrière vous.	}{	Ce type derrière vous.	}{	461	}{	G.Prince_Self == 1 and G.Prince_Sheriff == 0	}{	G.Prince_Sheriff = 1	}{	}{	}{	}{	}{	}{	}{	Votre mur meurtrier. . . chut, ses yeux sont sur nous.	}
@@ -428,7 +428,7 @@
 {	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	431	}{	Il y avait peu d'anarchs suffisamment emblématiques ou importants pour mener la meute après l'invasion des Kuei-Jin et le massacre qui s'en est suivi. On dirait que Nines Rodriguez est devenu leur chef par défaut, parce que personne d'autre ne voulait d'une telle responsabilité.	}{	Il y avait peu d'anarchs suffisamment emblématiques ou importants pour mener la meute après l'invasion des Kuei-Jin et le massacre qui s'en est suivi. On dirait que Nines Rodriguez est devenu leur chef par défaut, parce que personne d'autre ne voulait d'une telle responsabilité.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	Il y avait peu d'Anarchs suffisamment emblématiques ou importants pour mener la meute après l'invasion des Kuei-Jin et le massacre qui s'en est suivi. On dirait que Nines Rodriguez est devenu leur chef par défaut, parce que personne d'autre ne voulait d'une telle responsabilité.	}{	Il y avait peu d'Anarchs suffisamment emblématiques ou importants pour mener la meute après l'invasion des Kuei-Jin et le massacre qui s'en est suivi. On dirait que Nines Rodriguez est devenu leur chef par défaut, parce que personne d'autre ne voulait d'une telle responsabilité.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	432	}{	J'avais quelques questions sur d'autres personnes.	}{	J'avais quelques questions sur d'autres personnes.	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me posais des questions sur un visage.	}
 {	433	}{	J'avais d'autres questions.	}{	J'avais d'autres questions.	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demandais autre chose.	}
 {	434	}{	Je vais aller au Dane.	}{	Je vais aller au Dane.	}{	351	}{	G.Prince_Dane == 1 and G.Story_State == 10	}{	}{	}{	}{	}{	}{	}{	}{	Le Dane ne peut pas attendre, et mes questions le peuvent.	}
@@ -729,7 +729,7 @@
 {	729	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	730	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	731	}{	[Marque une pause, comme surpris]Regardez-moi bien. Vous n'avez aucun doute quant à son identité ? Parce que si c'est bien lui. . . les conséquences. . . Vous savez où ça pourrait nous mener ? [Calmement]En avez-vous la moindre idée ?	}{	[Marque une pause, comme surpris]Regardez-moi bien. Vous n'avez aucun doute quant à son identité ? Parce que si c'est bien lui. . . les conséquences. . . Vous savez où ça pourrait nous mener ? [Calmement]En avez-vous la moindre idée ?	}{	#	}{	}{	Whisper("Distrust"); G.Story_State = 25	}{	}{	}{	}{	}{	}{	}{	}
-{	732	}{	C'était Nines, aucun doute. Ca va être la guerre avec tous les anarchs, c'est ça ?	}{	C'était Nines, aucun doute. Ca va être la guerre avec tous les anarchs, c'est ça ?	}{	741	}{	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Son poing est fait d'anarchs. Nous ne pouvons pas le frapper, car il ripostera.	}
+{	732	}{	C'était Nines, aucun doute. Ca va être la guerre avec tous les Anarchs, c'est ça ?	}{	C'était Nines, aucun doute. Ca va être la guerre avec tous les Anarchs, c'est ça ?	}{	741	}{	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Son poing est fait d'Anarchs. Nous ne pouvons pas le frapper, car il ripostera.	}
 {	733	}{	Pourquoi ne pas me le dire, Capitaine Pontifiant ?	}{	Pourquoi ne pas me le dire, Capitaine Pontifiant ?	}{	1041	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'aime pas les drames. . . vous pourriez changer de chaîne et nous trouver une comédie ?	}
 {	734	}{	Vous voulez que j'aille le tuer ?	}{	Vous voulez que j'aille le tuer ?	}{	751	}{	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	Je ferai de sa tête un presse-papier pour votre bureau. . .	}
 {	735	}{	Non, et je ne suis pas sûr que c'était Nines non plus. Quelque chose était bizarre.	}{	Non, et je ne suis pas sûre que c'était Nines non plus. Quelque chose était bizarre.	}{	741	}{	(pc.CalcFeat("Inspection") > 2 or IsClan(pc,"Malkavian"))	}{	}{	}{	}{	}{	}{	}{	}{	Celui-ci ne sait pas, mais il sait que quelque chose n'était pas Nines.	}
@@ -738,7 +738,7 @@
 {	738	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	739	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	740	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	741	}{	Cela signifie. . . Cela entraînerait presque toujours une chasse contre le meurtrier. Toutefois, les anarchs de la ville pourraient interpréter cela comme une déclaration de guerre. Je ne veux pas leur faire la guerre. Il va falloir du temps pour prendre la bonne décision. 	}{	Cela signifie. . . Cela entraînerait presque toujours une chasse contre le meurtrier. Toutefois, les anarchs de la ville pourraient interpréter cela comme une déclaration de guerre. Je ne veux pas leur faire la guerre. Il va falloir du temps pour prendre la bonne décision. 	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	741	}{	Cela signifie. . . Cela entraînerait presque toujours une chasse contre le meurtrier. Toutefois, les Anarchs de la ville pourraient interpréter cela comme une déclaration de guerre. Je ne veux pas leur faire la guerre. Il va falloir du temps pour prendre la bonne décision. 	}{	Cela signifie. . . Cela entraînerait presque toujours une chasse contre le meurtrier. Toutefois, les Anarchs de la ville pourraient interpréter cela comme une déclaration de guerre. Je ne veux pas leur faire la guerre. Il va falloir du temps pour prendre la bonne décision. 	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	742	}{	(Auto-Link)	}{	(Auto-Link)	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	743	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	744	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

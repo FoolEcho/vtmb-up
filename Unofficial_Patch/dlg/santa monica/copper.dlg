@@ -161,7 +161,7 @@
 {	161	}{	Je pense que j'en ai assez pour l'opération, à présent. Merci pour le sang.	}{	Je pense que j'en ai assez pour l'opération, à présent. Merci pour le sang.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Copper_Uni = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	Juste au cas où, il vaut mieux tuer le chef des vampires avec ce pieu sacré. 100 dollars.	}{	Juste au cas où, il vaut mieux tuer le chef des vampires avec ce pieu sacré. 100 dollars.	}{	121	}{	G.Copper_Stake == 1 and pc.HasItem("item_g_stake")	}{	}{	}{	}{	}{	}{	}{	}{	C'est un bon début, mais le coeur du Père Noir nous libérera tous. 100 brouzoufs pour la liberté.	}
 {	163	}{	J'ai aussi le chewing gum spécial pour tes crocs pour $100.	}{	J'ai aussi le chewing gum spécial pour tes crocs pour $100.	}{	111	}{	G.Copper_Gum == 0 and pc.HasItem("item_g_ring_serial_killer_1") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_ring_serial_killer_1"); G.Copper_Gum = 1; pc.MoneyAdd(100)	}{	}{	}{	}{	}{	}{	}{	J'ai le caoutchouc spécial pour tes crocs pour $100.	}
-{	164	}{	Amusez-vous bien. Au revoir.	}{	Amusez-vous bien. Au revoir.	}{	0	}{	G.Copper_Uni == 2 and G.Copper_Stake == 0	}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	Bien sûr. . . Je pars.	}
+{	164	}{	Amusez-vous bien. Au revoir.	}{	Amusez-vous bien. Au revoir.	}{	0	}{	}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	Bien sûr. . . Je pars.	}
 {	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

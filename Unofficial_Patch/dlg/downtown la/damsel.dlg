@@ -91,7 +91,7 @@
 {	91	}{	Les vainqueurs ? Les purulents, oui. Mais qu'est-ce que tu pourrais y comprendre ? Tu viens à peine de mourir, et tu crois déjà tout savoir ? Par pitié. . .	}{	Les vainqueurs ? Les purulents, oui. Mais qu'est-ce que tu pourrais y comprendre ? Tu viens à peine de mourir, et tu crois déjà tout savoir ? Par pitié. . .	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	92	}{	Ca vous dirait d'éclairer mes lumières ?	}{	Ca vous dirait d'éclairer mes lumières ?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	93	}{	Je pourrais glisser une parole favorable au prince. . .	}{	Je pourrais glisser une parole favorable au prince. . .	}{	101	}{	}{	G.Damsel_Like = G.Damsel_Like -1	}{	}{	}{	}{	}{	}{	}{	}
-{	94	}{	D'accord, je débarque, mais même moi, je sais que les anarchs sont une cause perdue.	}{	D'accord, je débarque, mais même moi, je sais que les anarchs sont une cause perdue.	}{	101	}{	}{	G.Damsel_Like = G.Damsel_Like -1	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	D'accord, je débarque, mais même moi, je sais que les Anarchs sont une cause perdue.	}{	D'accord, je débarque, mais même moi, je sais que les Anarchs sont une cause perdue.	}{	101	}{	}{	G.Damsel_Like = G.Damsel_Like -1	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -129,7 +129,7 @@
 {	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	131	}{	Je suis Damsel - matrone de ces mères, et sacrément furax depuis que LaCroix a débarqué. 	}{	Je suis Damsel - matrone de ces mères, et sacrément furax depuis que LaCroix a débarqué. 	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Damsel_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	132	}{	Le régent des Tremeres dit que c'est un anarch qui répand l'épidémie actuelle.	}{	Le régent des Tremeres dit que c'est un anarch qui répand l'épidémie actuelle.	}{	511	}{	G.Regent_Pestilence >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Le régent des Tremeres dit que c'est un Anarch qui répand l'épidémie actuelle.	}{	Le régent des Tremeres dit que c'est un Anarch qui répand l'épidémie actuelle.	}{	511	}{	G.Regent_Pestilence >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	133	}{	Furax ? Sans blague ? Vous avez bu du sang qui ne passe pas, ou quoi ?	}{	Furax ? Sans blague ? Vous avez bu du sang qui ne passe pas, ou quoi ?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	134	}{	Je ne sais rien du tout à propos de LaCroix. Mais je n'ai rien contre Nines.	}{	Je ne sais rien du tout à propos de LaCroix. Mais je n'ai rien contre Nines.	}{	161	}{	}{	G.Damsel_Like = G.Damsel_Like +1	}{	}{	}{	}{	}{	}{	}{	}
 {	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -170,7 +170,7 @@
 {	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	171	}{	Un porteur de peste, c'est un idiot qui se moque de savoir de qui il se nourrit. Oui, je sais, vous vous dites que nous ne pouvons pas tomber malade. Mais le bétail, si. Et les vampires qui se nourrissent d'eux peuvent transmettre la maladie. Au bout d'un moment, elle se transforme en épidémie. Les pouvoirs publics sont même avertis.	}{	Un porteur de peste, c'est un idiot qui se moque de savoir de qui il se nourrit. Oui, je sais, vous vous dites que nous ne pouvons pas tomber malade. Mais le bétail, si. Et les vampires qui se nourrissent d'eux peuvent transmettre la maladie. Au bout d'un moment, elle se transforme en épidémie. Les pouvoirs publics sont même avertis.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Damsel_Plague = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	172	}{	Et comment peut-on s'en débarrasser ?	}{	Et comment peut-on s'en débarrasser ?	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	On ne peut pas faire peur au pigeon malade ?	}
-{	173	}{	On dirait que les anarchs ont un problème.	}{	On dirait que les anarchs ont un problème.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Voilà un problème qui ne concerne que les anarchs, à eux de s'en défaire.	}
+{	173	}{	On dirait que les Anarchs ont un problème.	}{	On dirait que les Anarchs ont un problème.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Voilà un problème qui ne concerne que les Anarchs, à eux de s'en défaire.	}
 {	174	}{	Bonne chance avec ce souci. Excusez-moi.	}{	Bonne chance avec ce souci. Excusez-moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est déjà ailleurs. Je m'en vais.	}
 {	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -189,9 +189,9 @@
 {	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	191	}{	Si quelqu'un comprend d'où vient vraiment cette épidémie de maladie hépatique, devine ce qui va se passer. Donc, il faut trouver le porteur et l'abattre. Si la Camarilla a deux doigts de jugeote, elle va nous aider.	}{	Si quelqu'un comprend d'où vient vraiment cette épidémie de maladie hépatique, devine ce qui va se passer. Donc, il faut trouver le porteur et l'abattre. Si la Camarilla a deux doigts de jugeote, elle va nous aider.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Damsel_Plague = 3	}{	}{	}{	}{	}{	}{	}{	}
-{	192	}{	Les anarchs m'ont filé un coup de main par le passé. Que puis-je faire ?	}{	Les anarchs m'ont filé un coup de main par le passé. Que puis-je faire ?	}{	201	}{	}{	G.Damsel_Like = G.Damsel_Like +1	}{	}{	}{	}{	}{	}{	}{	Mon cou a une dette envers les anarchs. Que dois-je faire ?	}
+{	192	}{	Les Anarchs m'ont filé un coup de main par le passé. Que puis-je faire ?	}{	Les Anarchs m'ont filé un coup de main par le passé. Que puis-je faire ?	}{	201	}{	}{	G.Damsel_Like = G.Damsel_Like +1	}{	}{	}{	}{	}{	}{	}{	Mon cou a une dette envers les Anarchs. Que dois-je faire ?	}
 {	193	}{	Je vais vous aider, mais seulement par désoeuvrement.	}{	Je vais vous aider, mais seulement par désoeuvrement.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon corps crève d'ennui, commençons.	}
-{	194	}{	Les anarchs ont créé une situation inextricable, et c'est à moi de la réparer.	}{	Les anarchs ont créé une situation inextricable, et c'est à moi de la réparer.	}{	211	}{	}{	G.Damsel_Like = G.Damsel_Like -1	}{	}{	}{	}{	}{	}{	}{	Quand les enfants font du vilain, c'est aux adultes de le réparer.	}
+{	194	}{	Les Anarchs ont créé une situation inextricable, et c'est à moi de la réparer.	}{	Les Anarchs ont créé une situation inextricable, et c'est à moi de la réparer.	}{	211	}{	}{	G.Damsel_Like = G.Damsel_Like -1	}{	}{	}{	}{	}{	}{	}{	Quand les enfants font du vilain, c'est aux adultes de le réparer.	}
 {	195	}{	Je vais y penser. Mais d'abord, j'ai une autre question.	}{	Je vais y penser. Mais d'abord, j'ai une autre question.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'en parlerai à mon cerveau pour voir ce qu'il en pense. Une autre question. 	}
 {	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -229,7 +229,7 @@
 {	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	231	}{	[Contente de voir le joueur]Eh, vous revoilà !	}{	[Contente de voir le joueur]Eh, vous revoilà !	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	232	}{	J'en ai assez de LaCroix. Je veux me joindre aux anarchs.	}{	J'en ai assez de LaCroix. Je veux me joindre aux anarchs.	}{	561	}{	G.Prince_Refuse == 1 and G.Player_Anarch == 0 and G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi du méchant pestiféré que vous avez évoqué.	}
+{	232	}{	J'en ai assez de LaCroix. Je veux me joindre aux Anarchs.	}{	J'en ai assez de LaCroix. Je veux me joindre aux Anarchs.	}{	561	}{	G.Prince_Refuse == 1 and G.Player_Anarch == 0 and G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi du méchant pestiféré que vous avez évoqué.	}
 {	233	}{	Vous m'avez dit que le porteur de peste nous menace tous. Pourquoi ?	}{	Vous m'avez dit que le porteur de peste nous menace tous. Pourquoi ?	}{	191	}{	G.Damsel_Plague == 2	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi craindre ce pestiféré ?	}
 {	234	}{	J'ai décidé de pourchasser le porteur de peste. Comment puis-je le trouver ?	}{	J'ai décidé de pourchasser le porteur de peste. Comment puis-je le trouver ?	}{	201	}{	G.Damsel_Plague == 3 and G.Damsel_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je vais chasser ce pestiféré pour vous. Où pointer ma flèche ?	}
 {	235	}{	A propos de Paul. . . il est mort, depuis quelques jours. Ce n'était pas du joli. . .	}{	A propos de Paul. . . il est mort, depuis quelques jours. Ce n'était pas du joli. . .	}{	251	}{	G.Damsel_Paul == 0 and G.Message_Play == 1	}{	}{	}{	}{	}{	}{	}{	}{	Paul est mort. . . ce n'est pas une rumeur.	}
@@ -281,16 +281,16 @@
 {	281	}{	Vous les avez tous tués ? Vous ? Ouh ! Vous attendez donc des remerciements. Bon sang ! Merci. . . ça vous va ? On est tranquilles. Pour le moment. Et ne vous avisez pas d'aller vous vanter partout. . .	}{	Vous les avez tous tués ? Vous ? Ouh ! Vous attendez donc des remerciements. Bon sang ! Merci. . . ça vous va ? On est tranquilles. Pour le moment. Et ne vous avisez pas d'aller vous vanter partout. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Damsel_Quest = 3; G.Damsel_Like = G.Damsel_Like +2; pc.SetQuest("AllPlague",4); FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	}
 {	282	}{	Vampires ou bétail, je voulais simplement aider la communauté. 	}{	Vampires ou bétail, je voulais simplement aider la communauté. 	}{	291	}{	pc.GetQuestState("Plague") != 9	}{	G.Damsel_Like = G.Damsel_Like +1; pc.SetQuest("Plague",9)	}{	}{	}{	}{	}{	}{	}{	Je ne cherchais qu'à séparer le bon grain de l'ivraie.	}
 {	283	}{	Vous n'êtes pas trop désagréable non plus, Damsel. Une emmerdeuse, mais c'est parfois positif.	}{	Vous n'êtes pas trop désagréable non plus, Damsel. Une emmerdeuse, mais c'est parfois positif.	}{	291	}{	pc.GetQuestState("Plague") != 9	}{	G.Damsel_Like = G.Damsel_Like +1; pc.SetQuest("Plague",9)	}{	}{	}{	}{	}{	}{	}{	Vous êtes une demoiselle écailleuse qui souffle le feu, mais je vous sauverais quand même si besoin était.	}
-{	284	}{	Je voulais juste faire passer le message. Les anarchs ont besoin de la Camarilla.	}{	Je voulais juste faire passer le message. Les anarchs ont besoin de la Camarilla.	}{	301	}{	pc.GetQuestState("Plague") != 9	}{	G.Damsel_Like = G.Damsel_Like -1; pc.SetQuest("Plague",9)	}{	}{	}{	}{	}{	}{	}{	Les enfants ont-ils compris qu'ils ont besoin de leurs parents, la Camarilla ?	}
+{	284	}{	Je voulais juste faire passer le message. Les Anarchs ont besoin de la Camarilla.	}{	Je voulais juste faire passer le message. Les Anarchs ont besoin de la Camarilla.	}{	301	}{	pc.GetQuestState("Plague") != 9	}{	G.Damsel_Like = G.Damsel_Like -1; pc.SetQuest("Plague",9)	}{	}{	}{	}{	}{	}{	}{	Les enfants ont-ils compris qu'ils ont besoin de leurs parents, la Camarilla ?	}
 {	285	}{	Vampires ou bétail, je voulais simplement aider la communauté. 	}{	Vampires ou bétail, je voulais simplement aider la communauté. 	}{	291	}{	pc.GetQuestState("Plague") == 9	}{	G.Damsel_Like = G.Damsel_Like +1	}{	}{	}{	}{	}{	}{	}{	Je ne cherchais qu'à séparer le bon grain de l'ivraie.	}
 {	286	}{	Vous n'êtes pas trop désagréable non plus, Damsel. Une emmerdeuse, mais c'est parfois positif.	}{	Vous n'êtes pas trop désagréable non plus, Damsel. Une emmerdeuse, mais c'est parfois positif.	}{	291	}{	pc.GetQuestState("Plague") == 9	}{	G.Damsel_Like = G.Damsel_Like +1	}{	}{	}{	}{	}{	}{	}{	Vous êtes une demoiselle écailleuse qui souffle le feu, mais je vous sauverais quand même si besoin était.	}
-{	287	}{	Je voulais juste faire passer le message. Les anarchs ont besoin de la Camarilla.	}{	Je voulais juste faire passer le message. Les anarchs ont besoin de la Camarilla.	}{	301	}{	pc.GetQuestState("Plague") == 9	}{	G.Damsel_Like = G.Damsel_Like -1	}{	}{	}{	}{	}{	}{	}{	Les enfants ont-ils compris qu'ils ont besoin de leurs parents, la Camarilla ?	}
+{	287	}{	Je voulais juste faire passer le message. Les Anarchs ont besoin de la Camarilla.	}{	Je voulais juste faire passer le message. Les Anarchs ont besoin de la Camarilla.	}{	301	}{	pc.GetQuestState("Plague") == 9	}{	G.Damsel_Like = G.Damsel_Like -1	}{	}{	}{	}{	}{	}{	}{	Les enfants ont-ils compris qu'ils ont besoin de leurs parents, la Camarilla ?	}
 {	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	291	}{	Juste. Vous avez peut-être une âme d'anarch. Je vous laisse y réfléchir, Cammy - certains auraient pu entendre notre conversation, et penser que je me ramollis. Quelqu'un dans ce repaire doit manquer de la volonté de se taire.	}{	Juste. Vous avez peut-être une âme d'anarch. Je vous laisse y réfléchir, Cammy - certains auraient pu entendre notre conversation, et penser que je me ramollis. Quelqu'un dans ce repaire doit manquer de la volonté de se taire.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Juste. Vous avez peut-être une âme d'Anarch. Je vous laisse y réfléchir, Cammy - certains auraient pu entendre notre conversation, et penser que je me ramollis. Quelqu'un dans ce repaire doit manquer de la volonté de se taire.	}{	Juste. Vous avez peut-être une âme d'Anarch. Je vous laisse y réfléchir, Cammy - certains auraient pu entendre notre conversation, et penser que je me ramollis. Quelqu'un dans ce repaire doit manquer de la volonté de se taire.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	292	}{	Peut-être. A bientôt, Demoiselle. 	}{	Peut-être. A bientôt, Demoiselle. 	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	293	}{	Euh. . . Et si j'en ai assez de LaCroix. . . Je pourrais avoir envie de rejoindre les anarchs. . .	}{	Euh. . . Et si j'en ai assez de LaCroix. . . Je pourrais avoir envie de rejoindre les anarchs. . .	}{	561	}{	}{	G.Damsel_Like = G.Damsel_Like +1	}{	}{	}{	}{	}{	}{	}{	}
+{	293	}{	Euh. . . Et si j'en ai assez de LaCroix. . . Je pourrais avoir envie de rejoindre les Anarchs. . .	}{	Euh. . . Et si j'en ai assez de LaCroix. . . Je pourrais avoir envie de rejoindre les Anarchs. . .	}{	561	}{	}{	G.Damsel_Like = G.Damsel_Like +1	}{	}{	}{	}{	}{	}{	}{	}
 {	294	}{	Eh, Demoiselle. . . vous paraissez pleine de ressources. . . Pourquoi ne pas vous joindre à moi dans la Camarilla ?	}{	Eh, Demoiselle. . . vous paraissez pleine de ressources. . . Pourquoi ne pas vous joindre à moi dans la Camarilla ?	}{	301	}{	}{	G.Damsel_Like = G.Damsel_Like -1	}{	}{	}{	}{	}{	}{	}{	}
 {	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -315,10 +315,10 @@
 {	315	}{	Parlez-moi de Nines.	}{	Parlez-moi de Nines.	}{	351	}{	G.Story_State >= 25 and G.Damsel_Nines < 2	}{	}{	}{	}{	}{	}{	}{	}{	Le prince de la rue.	}
 {	316	}{	Que pensez-vous de LaCroix ?	}{	Que pensez-vous de LaCroix ?	}{	371	}{	G.Damsel_Prince == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le bouffon dans sa tour d'ivoire.	}
 {	317	}{	Parlez-moi de Smiling Jack.	}{	Parlez-moi de Smiling Jack.	}{	391	}{	G.Damsel_Jack == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jack, le diablotin au sourire figé.	}
-{	318	}{	Parlez-moi des anarchs.	}{	Parlez-moi des anarchs.	}{	411	}{	G.Damsel_Anarchs == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les enfants de notre Camarilla.	}
-{	319	}{	Que pensez-vous de la Camarilla ?	}{	Que pensez-vous de la Camarilla ?	}{	431	}{	G.Damsel_Cam == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les parents des anarchs.	}
+{	318	}{	Parlez-moi des Anarchs.	}{	Parlez-moi des Anarchs.	}{	411	}{	G.Damsel_Anarchs == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les enfants de notre Camarilla.	}
+{	319	}{	Que pensez-vous de la Camarilla ?	}{	Que pensez-vous de la Camarilla ?	}{	431	}{	G.Damsel_Cam == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les parents des Anarchs.	}
 {	320	}{	Rien pour l'instant. Excusez-moi.	}{	Rien pour l'instant. Excusez-moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma curiosité reflue. Je suis déjà ailleurs.	}
-{	321	}{	Il n'y a personne de semblable dans ce monde ni dans le suivant. Il est aux anarchs ce que George Washington était aux colonies - ce que Ho Chi Minh était au Vietnam. Il est la personnification des anarchs de Los Angeles. C'est un grand chef, et pourtant humble. Je mourrais pour lui. 	}{	Il n'y a personne de semblable dans ce monde ni dans le suivant. Il est aux anarchs ce que George Washington était aux colonies - ce que Ho Chi Minh était au Vietnam. Il est la personnification des anarchs de Los Angeles. C'est un grand chef, et pourtant humble. Je mourrais pour lui. 	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Damsel_Nines = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	Il n'y a personne de semblable dans ce monde ni dans le suivant. Il est aux Anarchs ce que George Washington était aux colonies - ce que Ho Chi Minh était au Vietnam. Il est la personnification des Anarchs de Los Angeles. C'est un grand chef, et pourtant humble. Je mourrais pour lui. 	}{	Il n'y a personne de semblable dans ce monde ni dans le suivant. Il est aux Anarchs ce que George Washington était aux colonies - ce que Ho Chi Minh était au Vietnam. Il est la personnification des Anarchs de Los Angeles. C'est un grand chef, et pourtant humble. Je mourrais pour lui. 	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Damsel_Nines = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	322	}{	Je lui dois la vie. On dirait qu'il est parmi les seuls gens bien que j'ai rencontrés.	}{	Je lui dois la vie. On dirait qu'il est parmi les seuls gens bien que j'ai rencontrés.	}{	331	}{	}{	G.Damsel_Like = G.Damsel_Like +1	}{	}{	}{	}{	}{	}{	}{	Il ne porte d'autre visage que le sien, dans une ville de masques.	}
 {	323	}{	Foutaises. C'est un voleur ordinaire avec des illusions de grandeur. Un chef de gang.	}{	Foutaises. C'est un voleur ordinaire avec des illusions de grandeur. Un chef de gang.	}{	341	}{	}{	G.Damsel_Like = G.Damsel_Like -1	}{	}{	}{	}{	}{	}{	}{	C'est un fauve brutal. Le roi borgne d'un royaume d'aveugles. 	}
 {	324	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -333,8 +333,8 @@
 {	333	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	334	}{	Que pensez-vous de LaCroix ?	}{	Que pensez-vous de LaCroix ?	}{	371	}{	G.Damsel_Prince == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le bouffon dans sa tour d'ivoire.	}
 {	335	}{	Parlez-moi de Smiling Jack.	}{	Parlez-moi de Smiling Jack.	}{	391	}{	G.Damsel_Jack == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jack, le diablotin au sourire figé.	}
-{	336	}{	Parlez-moi des anarchs.	}{	Parlez-moi des anarchs.	}{	411	}{	G.Damsel_Anarchs == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les enfants de notre Camarilla.	}
-{	337	}{	Que pensez-vous de la Camarilla ?	}{	Que pensez-vous de la Camarilla ?	}{	431	}{	G.Damsel_Cam == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les parents des anarchs.	}
+{	336	}{	Parlez-moi des Anarchs.	}{	Parlez-moi des Anarchs.	}{	411	}{	G.Damsel_Anarchs == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les enfants de notre Camarilla.	}
+{	337	}{	Que pensez-vous de la Camarilla ?	}{	Que pensez-vous de la Camarilla ?	}{	431	}{	G.Damsel_Cam == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les parents des Anarchs.	}
 {	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	340	}{	Je pars. A plus tard, Damsel.	}{	Je pars. A plus tard, Damsel.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai plus besoin de demoiselle de compagnie. Au revoir.	}
@@ -369,7 +369,7 @@
 {	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	371	}{	Pour quoi se prend-il ? Il débarque en ville et proclame qu'elle est soudain sous autorité de la Camarilla ? Nous les avons chassés il y a soixante ans. C'est comme si l'Angleterre revenait dire aux Etats-Unis comment gérer leur pays. Que LaCroix aille se faire foutre.	}{	Pour quoi se prend-il ? Il débarque en ville et proclame qu'elle est soudain sous autorité de la Camarilla ? Nous les avons chassés il y a soixante ans. C'est comme si l'Angleterre revenait dire aux Etats-Unis comment gérer leur pays. Que LaCroix aille se faire foutre.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Damsel_Prince = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	372	}{	Je savais pas que les anarchs étaient au pouvoir depuis si longtemps. J'ai une autre question.	}{	Je savais pas que les anarchs étaient au pouvoir depuis si longtemps. J'ai une autre question.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les enfants jouent dans la cour depuis plus longtemps que je ne le savais. Une autre question.	}
+{	372	}{	Je savais pas que les Anarchs étaient au pouvoir depuis si longtemps. J'ai une autre question.	}{	Je savais pas que les Anarchs étaient au pouvoir depuis si longtemps. J'ai une autre question.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les enfants jouent dans la cour depuis plus longtemps que je ne le savais. Une autre question.	}
 {	373	}{	Vous avez peur que la Camarilla attire d'autres membres et décime encore plus vos rangs ?	}{	Vous avez peur que la Camarilla attire d'autres membres et décime encore plus vos rangs ?	}{	381	}{	}{	G.Damsel_Like = G.Damsel_Like -1	}{	}{	}{	}{	}{	}{	}{	Vous craignez que les enfants perdus retournent auprès de leurs parents.	}
 {	374	}{	Vous ne l'aimez pas, hein ? Bon, à plus tard.	}{	Vous ne l'aimez pas, hein ? Bon, à plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Comment peut-on ne pas aimer un bouffon ? Mon cerveau y réfléchira ailleurs.	}
 {	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -388,7 +388,7 @@
 {	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	391	}{	Jack ? Jack, c'est Jack. Un peu une légende chez les anarchs. Tous les anarchs du monde regarderaient Jack comme une idole. Même la Camarilla ne tient pas à l'affronter.	}{	Jack ? Jack, c'est Jack. Un peu une légende chez les anarchs. Tous les anarchs du monde regarderaient Jack comme une idole. Même la Camarilla ne tient pas à l'affronter.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Damsel_Jack = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	Jack ? Jack, c'est Jack. Un peu une légende chez les Anarchs. Tous les Anarchs du monde regarderaient Jack comme une idole. Même la Camarilla ne tient pas à l'affronter.	}{	Jack ? Jack, c'est Jack. Un peu une légende chez les Anarchs. Tous les Anarchs du monde regarderaient Jack comme une idole. Même la Camarilla ne tient pas à l'affronter.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Damsel_Jack = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	392	}{	Vraiment ? Je ne savais pas. Jack est l'une des personnes les plus cool que j'ai rencontrées.	}{	Vraiment ? Je ne savais pas. Jack est l'une des personnes les plus cool que j'ai rencontrées.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, sa barbe est hypnotique.	}
 {	393	}{	Ce vieux clodo ? Vous plaisantez, hein ?	}{	Ce vieux clodo ? Vous plaisantez, hein ?	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une fois qu'on a vu la surprise, elle perd de sa force.	}
 {	394	}{	Intéressant. Il faut que je m'en aille.	}{	Intéressant. Il faut que je m'en aille.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma curiosité est satisfaite. Je m'en vais.	}
@@ -472,7 +472,7 @@
 {	472	}{	Le chef sorcier dit que vous êtes les enfants qui répandent des maladies.	}{	Le chef sorcier dit que vous êtes les enfants qui répandent des maladies.	}{	511	}{	G.Regent_Pestilence >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	473	}{	Quelque chose vous afflige.	}{	Quelque chose vous afflige.	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	474	}{	Je n'écouterai que les paroles de Nines, niña.	}{	Je n'écouterai que les paroles de Nines, niña.	}{	481	}{	}{	G.Damsel_Like = G.Damsel_Like +1	}{	}{	}{	}{	}{	}{	}{	}
-{	475	}{	Ces paroles sourdent l'hypocrisie, venant d'un anarch.	}{	Ces paroles sourdent l'hypocrisie, venant d'un anarch.	}{	491	}{	}{	G.Damsel_Like = G.Damsel_Like -1	}{	}{	}{	}{	}{	}{	}{	}
+{	475	}{	Ces paroles sourdent l'hypocrisie, venant d'un Anarch.	}{	Ces paroles sourdent l'hypocrisie, venant d'un Anarch.	}{	491	}{	}{	G.Damsel_Like = G.Damsel_Like -1	}{	}{	}{	}{	}{	}{	}{	}
 {	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -602,7 +602,7 @@
 {	602	}{	Le prince s'intéresse beaucoup au sarcophage d'Ankara.	}{	Le prince s'intéresse beaucoup au sarcophage d'Ankara.	}{	611	}{	G.Story_State > 30 and G.Damsel_Rolls == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix veut la vieille boîte du bateau. Il y tient.	}
 {	603	}{	Les Kuei-Jin m'ont dit qu'ils avaient passé une alliance avec LaCroix.	}{	Les Kuei-Jin m'ont dit qu'ils avaient passé une alliance avec LaCroix.	}{	621	}{	G.Story_State >= 60 and G.Damsel_Chang == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix courtise la dame d'Orient. Je pense qu'ils sont faits l'un pour l'autre.	}
 {	604	}{	Le chef des Kuei-Jin m'a récemment parlé d'une alliance passée avec LaCroix. 	}{	Le chef des Kuei-Jin m'a récemment parlé d'une alliance passée avec LaCroix. 	}{	641	}{	G.Story_State >= 80 and G.Griffith_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	Des lèvres de la dame elle-même - ils ont dansé ensemble sous notre nez. . .	}
-{	605	}{	LaCroix veut entrer en guerre contre les Kuei-Jin. Il a besoin d'une alliance avec les anarchs.	}{	LaCroix veut entrer en guerre contre les Kuei-Jin. Il a besoin d'une alliance avec les anarchs.	}{	651	}{	G.Story_State >= 85 and G.Griffith_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix veut danser avec nous à présent, danser sur la tombe de la dame. . .	}
+{	605	}{	LaCroix veut entrer en guerre contre les Kuei-Jin. Il a besoin d'une alliance avec les Anarchs.	}{	LaCroix veut entrer en guerre contre les Kuei-Jin. Il a besoin d'une alliance avec les Anarchs.	}{	651	}{	G.Story_State >= 85 and G.Griffith_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix veut danser avec nous à présent, danser sur la tombe de la dame. . .	}
 {	606	}{	D'après les rumeurs, il aime les joueurs de hockey.	}{	D'après les rumeurs, il aime les joueurs de hockey.	}{	701	}{	IsClan(pc,"Malkavian") and G.Rumor_Field == 0	}{	G.Rumor_Field = 1	}{	}{	}{	}{	}{	}{	}{	D'après les rumeurs, il aime les joueurs de hockey.	}
 {	607	}{	Le porteur de peste est mort.	}{	Le porteur de peste est mort.	}{	261	}{	pc.GetQuestState("Regent") != 3 and ((G.Kanker_Dead == 1 and G.Jezebel_Dead == 0 and G.Vick_Dead == 0 and G.Damsel_Quest < 2) or (G.Kanker_Dead == 0 and G.Jezebel_Dead == 1 and G.Vick_Dead == 0 and G.Damsel_Quest < 2))	}{	}{	}{	}{	}{	}{	}{	}{	Le pestiféré est mort.	}
 {	608	}{	Le porteur de peste est mort.	}{	Le porteur de peste est mort.	}{	821	}{	pc.GetQuestState("Regent") == 3 and ((G.Kanker_Dead == 1 and G.Jezebel_Dead == 0 and G.Vick_Dead == 0 and G.Damsel_Quest < 2) or (G.Kanker_Dead == 0 and G.Jezebel_Dead == 1 and G.Vick_Dead == 0 and G.Damsel_Quest < 2))	}{	}{	}{	}{	}{	}{	}{	}{	Le pestiféré est mort.	}
@@ -612,7 +612,7 @@
 {	612	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	613	}{	Les Kuei-Jin m'ont dit qu'ils avaient une alliance avec LaCroix.	}{	Les Kuei-Jin m'ont dit qu'ils avaient une alliance avec LaCroix.	}{	621	}{	G.Story_State >= 60 and G.Damsel_Chang == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix courtise la dame d'Orient. Je pense qu'ils sont faits l'un pour l'autre.	}
 {	614	}{	Le chef des Kuei-Jin m'a récemment parlé d'une alliance passée avec LaCroix. 	}{	Le chef des Kuei-Jin m'a récemment parlé d'une alliance passée avec LaCroix. 	}{	641	}{	G.Story_State >= 80 and G.Damsel_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	Des lèvres de la dame elle-même - ils ont dansé ensemble sous notre nez. . .	}
-{	615	}{	LaCroix veut entrer en guerre contre les Kuei-Jin. Il a besoin d'une alliance avec les anarchs.	}{	LaCroix veut entrer en guerre contre les Kuei-Jin. Il a besoin d'une alliance avec les anarchs.	}{	651	}{	G.Prince_Truce == 1 and G.Griffith_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix veut danser avec nous à présent, danser sur la tombe de la dame. . .	}
+{	615	}{	LaCroix veut entrer en guerre contre les Kuei-Jin. Il a besoin d'une alliance avec les Anarchs.	}{	LaCroix veut entrer en guerre contre les Kuei-Jin. Il a besoin d'une alliance avec les Anarchs.	}{	651	}{	G.Prince_Truce == 1 and G.Griffith_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix veut danser avec nous à présent, danser sur la tombe de la dame. . .	}
 {	616	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	617	}{	Je vous tiendrai au courant.	}{	Je vous tiendrai au courant.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Beaucoup de voix qui parlent fort pour ne rien dire.	}
 {	618	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -633,13 +633,13 @@
 {	633	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	634	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	635	}{	Le chef des Kuei-Jin m'a récemment parlé d'une alliance entre elle et LaCroix.	}{	Le chef des Kuei-Jin m'a récemment parlé d'une alliance entre elle et LaCroix.	}{	641	}{	G.Story_State >= 80 and G.Damsel_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	Des lèvres de la dame elle-même - ils ont dansé ensemble sous notre nez. . .	}
-{	636	}{	LaCroix veut entrer en guerre contre les Kuei-Jin. Il a besoin d'une alliance avec les anarchs.	}{	LaCroix veut entrer en guerre contre les Kuei-Jin. Il a besoin d'une alliance avec les anarchs.	}{	651	}{	G.Prince_Truce == 1 and G.Griffith_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix veut danser avec nous à présent, danser sur la tombe de la dame. . .	}
+{	636	}{	LaCroix veut entrer en guerre contre les Kuei-Jin. Il a besoin d'une alliance avec les Anarchs.	}{	LaCroix veut entrer en guerre contre les Kuei-Jin. Il a besoin d'une alliance avec les Anarchs.	}{	651	}{	G.Prince_Truce == 1 and G.Griffith_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix veut danser avec nous à présent, danser sur la tombe de la dame. . .	}
 {	637	}{	Je vous tiendrai au courant.	}{	Je vous tiendrai au courant.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Beaucoup de voix qui parlent fort pour ne rien dire.	}
 {	638	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	640	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	641	}{	. . . QUEL ENFOIRE ! IL NOUS A VENDUS ?	}{	. . . QUEL ENFOIRE ! IL NOUS A VENDUS ?	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	G.Damsel_Open = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	642	}{	LaCroix veut entrer en guerre contre eux. Il a besoin d'une alliance avec les anarchs.	}{	LaCroix veut entrer en guerre contre eux. Il a besoin d'une alliance avec les anarchs.	}{	651	}{	G.Prince_Truce == 1 and G.Griffith_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix veut danser avec nous à présent, danser sur la tombe de la dame. . .	}
+{	642	}{	LaCroix veut entrer en guerre contre eux. Il a besoin d'une alliance avec les Anarchs.	}{	LaCroix veut entrer en guerre contre eux. Il a besoin d'une alliance avec les Anarchs.	}{	651	}{	G.Prince_Truce == 1 and G.Griffith_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix veut danser avec nous à présent, danser sur la tombe de la dame. . .	}
 {	643	}{	Je ne sais pas. . . J'ai besoin de parler à Nines. LaCroix veut passer une alliance.	}{	Je ne sais pas. . . J'ai besoin de parler à Nines. LaCroix veut passer une alliance.	}{	651	}{	G.Prince_Truce == 1 and G.Griffith_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	C'est inconnu. Je dois unir LaCroix à Nines pour voir ce qui se passe.	}
 {	644	}{	Je vous tiendrai au courant.	}{	Je vous tiendrai au courant.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Beaucoup de voix qui parlent fort pour ne rien dire.	}
 {	645	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -709,7 +709,7 @@
 {	709	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	710	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	711	}{	Tu as de la chance qu'on soit à l'Elysium, Cama. . .	}{	Tu as de la chance qu'on soit à l'Elysium, Cama. . .	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	712	}{	J'ai besoin de parler à Nines. Le prince veut s'allier aux anarchs.	}{	J'ai besoin de parler à Nines. Le prince veut s'allier aux anarchs.	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi devons-nous toujours nous affronter ? Je viens au nom de LaCroix pour former une alliance. 	}
+{	712	}{	J'ai besoin de parler à Nines. Le prince veut s'allier aux Anarchs.	}{	J'ai besoin de parler à Nines. Le prince veut s'allier aux Anarchs.	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi devons-nous toujours nous affronter ? Je viens au nom de LaCroix pour former une alliance. 	}
 {	713	}{	Bon sang. Où est Nines, il faut que je lui parle d'une alliance avec le prince.	}{	Bon sang. Où est Nines, il faut que je lui parle d'une alliance avec le prince.	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	Toujours aussi malade, mais pas d'une bonne façon. Nous sommes bientôt alliés, espère LaCroix. . .	}
 {	714	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	715	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -739,8 +739,8 @@
 {	739	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	740	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	741	}{	Cama ? Qu'est-ce que vous foutez ici ?	}{	Cama ? Qu'est-ce que vous foutez ici ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	742	}{	J'ai changé d'avis et décidé de me joindre aux anarchs.	}{	J'ai changé d'avis et décidé de me joindre aux anarchs.	}{	791	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je déteste mes parents et je veux divorcer.	}
-{	743	}{	Du calme, Demoiselle, on est dans le même camp.	}{	Du calme, Demoiselle, on est dans le même camp.	}{	791	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai fini par trouver le courage de vous demander de sortir avec moi. . . YAHA ! Je suis avec les anarchs, maintenant.	}
+{	742	}{	J'ai changé d'avis et décidé de me joindre aux Anarchs.	}{	J'ai changé d'avis et décidé de me joindre aux Anarchs.	}{	791	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je déteste mes parents et je veux divorcer.	}
+{	743	}{	Du calme, Demoiselle, on est dans le même camp.	}{	Du calme, Demoiselle, on est dans le même camp.	}{	791	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai fini par trouver le courage de vous demander de sortir avec moi. . . YAHA ! Je suis avec les Anarchs, maintenant.	}
 {	744	}{	Puis-je entrer ?	}{	Puis-je entrer ?	}{	771	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'essaye de rentrer. Evidemment. . . 	}
 {	745	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	746	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -829,7 +829,7 @@
 {	829	}{	Voilà, ça c'est intéressant. J'espère que ce sera plus stimulant que l'autre fois. A plus tard.	}{	Voilà, ça c'est intéressant. J'espère que ce sera plus stimulant que l'autre fois. A plus tard.	}{	0	}{	G.Kanker_Dead == 0 and G.Jezebel_Dead == 1	}{	pc.SetQuest("AllPlague",7)	}{	}{	}{	}{	}{	}{	}{	Ce sang souillé ne fera que boucher les égouts de la ville. Ma chasse commence.	}
 {	830	}{	Avant de partir, j'avais une question.	}{	Avant de partir, j'avais une question.	}{	311	}{	G.Kanker_Dead == 0 and G.Jezebel_Dead == 1	}{	pc.SetQuest("AllPlague",7)	}{	}{	}{	}{	}{	}{	}{	Je me demandais quelque chose et vous pourrez me répondre.	}
 {	831	}{	[Contente de voir le joueur]Ca boume ?	}{	[Contente de voir le joueur]Ca boume ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	832	}{	J'en ai ma claque de LaCroix. Je veux me joindre aux anarchs.	}{	J'en ai ma claque de LaCroix. Je veux me joindre aux anarchs.	}{	561	}{	G.Prince_Refuse == 1 and G.Player_Anarch == 0 and G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi du pigeon malade que vous avez évoqué.	}
+{	832	}{	J'en ai ma claque de LaCroix. Je veux me joindre aux Anarchs.	}{	J'en ai ma claque de LaCroix. Je veux me joindre aux Anarchs.	}{	561	}{	G.Prince_Refuse == 1 and G.Player_Anarch == 0 and G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi du pigeon malade que vous avez évoqué.	}
 {	833	}{	Vous avez dit que le porteur de peste nous met tous en danger. Pourquoi ?	}{	Vous avez dit que le porteur de peste nous met tous en danger. Pourquoi ?	}{	191	}{	G.Damsel_Plague == 2	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi craignons-nous les pigeons ?	}
 {	834	}{	J'ai décidé de me charger du porteur de peste. Comment je le trouve ?	}{	J'ai décidé de me charger du porteur de peste. Comment je le trouve ?	}{	201	}{	G.Damsel_Plague == 3 and G.Damsel_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je vais chasser ce pigeon malade pour vous. Où tourner ma flèche ?	}
 {	835	}{	A propos de Paul. . . Il est mort. Depuis quelques jours. Ce n'était pas très beau.	}{	A propos de Paul. . . Il est mort. Depuis quelques jours. Ce n'était pas très beau.	}{	251	}{	G.Damsel_Paul == 0 and G.Message_Play == 1	}{	}{	}{	}{	}{	}{	}{	}{	Paul est mort. . . Cette fois, ce n'est pas une rumeur.	}

@@ -219,7 +219,7 @@
 {	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	221	}{	LaCroix est le chef de la Camarilla à LA. C'est tout. Pff [Dédaigneux, comme si cela paraissait ridicule]LaCroix, un chef. . . Quelle blague ! [rire]	}{	LaCroix est le chef de la Camarilla à LA. C'est tout. Pff [Dédaigneux, comme si cela paraissait ridicule]LaCroix, un chef. . . Quelle blague ! [rire]	}{	#	}{	}{	G.Jack_Boss = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	222	}{	Tu ne fais pas partie de la Camarilla ?	}{	Tu ne fais pas partie de la Camarilla ?	}{	251	}{	G.Jack_anarchs == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tu te comptes dans les rangs de la Camarilla ?	}
+{	222	}{	Tu ne fais pas partie de la Camarilla ?	}{	Tu ne fais pas partie de la Camarilla ?	}{	251	}{	G.Jack_Anarchs == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tu te comptes dans les rangs de la Camarilla ?	}
 {	223	}{	Tu ne respectes pas la loi de la Camarilla ?	}{	Tu ne respectes pas la loi de la Camarilla ?	}{	191	}{	G.Jack_Devil == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tu ne suis pas les codes de la Camarilla ?	}
 {	224	}{	Ouais. Je crois qu'il a ce truc napoléonien. . .	}{	Ouais. Je crois qu'il a ce truc napoléonien. . .	}{	229	}{	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Même un bouffon peut parader dans la cape du roi. . .	}
 {	225	}{	Je dirais qu'il s'occupe de choses. . .	}{	Je dirais qu'il s'occupe de choses. . .	}{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les paroles du bouffon font loi et je les suis. . .	}
@@ -229,7 +229,7 @@
 {	229	}{	Voilà le topo. La Camarilla a besoin qu'on croie à leurs conneries pour que leurs 'lois' servent à quoi que ce soit.	}{	Voilà le topo. La Camarilla a besoin qu'on croie à leurs conneries pour que leurs 'lois' servent à quoi que ce soit.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	230	}{	(Auto-Link)	}{	(Auto-Link)	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
 {	231	}{	Alors, si on dit à des vampires individualistes qu'ils ont besoin de lois, c'est pas évident. Donc, la Camarilla a concocté un joli plan pour nous montrer à quel point elle est gentille, pour que tout le monde embarque dans leur galère !	}{	Alors, si on dit à des vampires individualistes qu'ils ont besoin de lois, c'est pas évident. Donc, la Camarilla a concocté un joli plan pour nous montrer à quel point elle est gentille, pour que tout le monde embarque dans leur galère !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	232	}{	Qui ça 'tout le monde' ?	}{	Qui ça 'tout le monde' ?	}{	251	}{	G.Jack_anarchs == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tout le monde ? Comment ça ?	}
+{	232	}{	Qui ça 'tout le monde' ?	}{	Qui ça 'tout le monde' ?	}{	251	}{	G.Jack_Anarchs == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tout le monde ? Comment ça ?	}
 {	233	}{	Ca ne marche pas ?	}{	Ca ne marche pas ?	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les petits démons sont-ils nerveux ?	}
 {	234	}{	J'ai croisé Nines.	}{	J'ai croisé Nines.	}{	311	}{	G.Jack_Ninessabbat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nines est arrivé comme la mort sur des ailes démoniaques. . .	}
 {	235	}{	J'ai encore quelques questions. . .	}{	Je voulais te poser d'autres questions. . .	}{	1333	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
@@ -239,7 +239,7 @@
 {	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	240	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines. Adieu. . .	}
 {	241	}{	Ecoute, ici, tout le monde vit en Californie depuis toujours, certains depuis un siècle. On a déjà foutu la Camarilla dehors. Mais à chaque fois qu'ils sentent le sang, ils réessayent de nous envahir.	}{	Ecoute, ici, tout le monde vit en Californie depuis toujours, certains depuis un siècle. On a déjà foutu la Camarilla dehors. Mais à chaque fois qu'ils sentent le sang, ils réessayent de nous envahir.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	242	}{	Qui ça 'tout le monde' ?	}{	Qui ça 'tout le monde' ?	}{	251	}{	G.Jack_anarchs == 0	}{	}{	}{	}{	}{	}{	}{	}{	Qui ça 'tout le monde' ?	}
+{	242	}{	Qui ça 'tout le monde' ?	}{	Qui ça 'tout le monde' ?	}{	251	}{	G.Jack_Anarchs == 0	}{	}{	}{	}{	}{	}{	}{	}{	Qui ça 'tout le monde' ?	}
 {	243	}{	J'ai croisé Nines.	}{	J'ai croisé Nines.	}{	311	}{	G.Jack_Ninessabbat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nines est arrivé comme la mort sur des ailes démoniaques. . .	}
 {	244	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	1333	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
 {	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -248,8 +248,8 @@
 {	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	250	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
-{	251	}{	Les morts-vivants libres, tiens. Beaucoup de gens comme nous disent 'anarchs'. . . Va savoir ce que ça veut dire. . . anarch. . . Mais ça en jette, hein ? Ouais. . .	}{	Les morts-vivants libres, tiens. Beaucoup de gens comme nous disent 'anarchs'. . . Va savoir ce que ça veut dire. . . anarch. . . Mais ça en jette, hein ? Ouais. . .	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Jack_anarchs = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	252	}{	Parle-moi des anarchs. . .	}{	Parle-moi des anarchs. . .	}{	1566	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche à en apprendre plus sur les anarchs ! Les Enfants de l'Entropie !	}
+{	251	}{	Les morts-vivants libres, tiens. Beaucoup de gens comme nous disent 'Anarchs'. . . Va savoir ce que ça veut dire. . . Anarch. . . Mais ça en jette, hein ? Ouais. . .	}{	Les morts-vivants libres, tiens. Beaucoup de gens comme nous disent 'Anarchs'. . . Va savoir ce que ça veut dire. . . Anarch. . . Mais ça en jette, hein ? Ouais. . .	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Jack_Anarchs = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Parle-moi des Anarchs. . .	}{	Parle-moi des Anarchs. . .	}{	1566	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche à en apprendre plus sur les Anarchs ! Les Enfants de l'Entropie !	}
 {	253	}{	Je crois que LaCroix a ce truc napoléonien. . .	}{	Je crois que LaCroix a ce truc napoléonien. . .	}{	229	}{	}{	G.Jack_Faction = 1 and G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Même un bouffon peut parader dans la cape du roi. . .	}
 {	254	}{	Je dirais que le prince s'occupe de choses. . .	}{	Je dirais que le prince s'occupe de choses. . .	}{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les paroles du bouffon font loi et je les suis. . .	}
 {	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -330,7 +330,7 @@
 {	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	331	}{	[désinvolte]Il t'aime bien, peut-être. . . Lui non plus n'avait pas de père. Et c'est un vampire honnête. T'imagines ?	}{	[désinvolte]Il t'aime bien, peut-être. . . Lui non plus n'avait pas de père. Et c'est un vampire honnête. T'imagines ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	332	}{	A ton avis, comme le Sabbat a-t-il trouvé ma trace ?	}{	A ton avis, comme le Sabbat a-t-il trouvé ma trace ?	}{	341	}{	G.Jack_Extra == 1	}{	}{	}{	}{	}{	}{	}{	}{	Comme le Sabbat a-t-il trouvé mon ombre ?	}
-{	333	}{	Nines est le chef des anarchs ?	}{	Nines est le chef des anarchs ?	}{	1661	}{	G.Jack_anarchs == 1	}{	}{	}{	}{	}{	}{	}{	}{	Nines est-il le chef de la tribu des anarchs ?	}
+{	333	}{	Nines est le chef des Anarchs ?	}{	Nines est le chef des Anarchs ?	}{	1661	}{	G.Jack_Anarchs == 1	}{	}{	}{	}{	}{	}{	}{	}{	Nines est-il le chef de la tribu des Anarchs ?	}
 {	334	}{	Ouais. Et peut-être qu'il fait des trucs en douce, comme tout le monde. . .	}{	Ouais. Et peut-être qu'il fait des trucs en douce, comme tout le monde. . .	}{	1911	}{	}{	G.Jack_Faction = G.Jack_Faction - 1	}{	}{	}{	}{	}{	}{	}{	Et peut-être ne suis-je qu'un pion manipulé par ce prince des rues.	}
 {	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -779,19 +779,19 @@
 {	779	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	780	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	781	}{	J'imagine qu'un jour, il te présentera comme [ironique] l'exemple de ce que la Camarilla peut faire pour les égarés, les solitaires. C'est de la connerie, mais bon. . . pour toi, c'est pas mal.	}{	J'imagine qu'un jour, il te présentera comme [ironique] l'exemple de ce que la Camarilla peut faire pour les égarés, les solitaires. C'est de la connerie, mais bon. . . pour toi, c'est pas mal.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	782	}{	Mais je veux m'allier avec les anarchs. Alors pourquoi je l'aiderais ?	}{	Mais je veux m'allier avec les anarchs. Alors pourquoi je l'aiderais ?	}{	789	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dans mon coeur brûle la flamme des anarchs !	}
+{	782	}{	Mais je veux m'allier avec les Anarchs. Alors pourquoi je l'aiderais ?	}{	Mais je veux m'allier avec les Anarchs. Alors pourquoi je l'aiderais ?	}{	789	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dans mon coeur brûle la flamme des Anarchs !	}
 {	783	}{	Qu'est-ce que je dois faire ?	}{	Qu'est-ce que je dois faire ?	}{	791	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne sais pas trop quel chemin choisir. . .	}
 {	784	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	785	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	786	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	787	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	788	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	789	}{	Les anarchs auraient bien besoin d'une taupe jeune et éduquée, comme toi, infiltrée dans la Camarilla. C'est toi qui choisis. C'est cool, non ? Tu es maître de la situation.	}{	Les anarchs auraient bien besoin d'une taupe jeune et éduquée, comme toi, infiltrée dans la Camarilla. C'est toi qui choisis. C'est cool, non ? Tu es maître de la situation.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	789	}{	Les Anarchs auraient bien besoin d'une taupe jeune et éduquée, comme toi, infiltrée dans la Camarilla. C'est toi qui choisis. C'est cool, non ? Tu es maître de la situation.	}{	Les Anarchs auraient bien besoin d'une taupe jeune et éduquée, comme toi, infiltrée dans la Camarilla. C'est toi qui choisis. C'est cool, non ? Tu es maître de la situation.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	790	}{	(Auto-Link)	}{	(Auto-Link)	}{	791	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
 {	791	}{	Joue le jeu, et regarde partout, OK ? Comme ça, tu aideras tout le monde.	}{	Joue le jeu, et regarde partout, OK ? Comme ça, tu aideras tout le monde.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	792	}{	J'aimerais bien savoir où ça nous mène, tout ça.	}{	J'aimerais bien savoir où ça nous mène, tout ça.	}{	631	}{	G.Jack_Outbound == 1 and G.Story_State == 15 and G.Jack_Sunrise == 0	}{	G.Jack_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Le destin me cache son aspiration ultime. . .	}
-{	793	}{	Pourquoi Nines se cache-t-il ? Les anarchs le protègeront, non ?	}{	Pourquoi Nines se cache-t-il ? Les anarchs le protègeront, non ?	}{	841	}{	G.Jack_Outbound == 2	}{	G.Jack_Faction = G.Jack_Faction + 1; G.Jack_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Les anarchs ne protégeront-ils pas Nines, le prince guerrier ?	}
-{	794	}{	Pour Nines. . . Comment je peux aider ?	}{	Pour Nines. . . Comment je peux aider ?	}{	846	}{	G.Jack_Outbound == 3	}{	G.Jack_Faction = G.Jack_Faction + 1; G.Jack_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Puis-je aider les anarchs ?	}
+{	793	}{	Pourquoi Nines se cache-t-il ? Les Anarchs le protègeront, non ?	}{	Pourquoi Nines se cache-t-il ? Les Anarchs le protègeront, non ?	}{	841	}{	G.Jack_Outbound == 2	}{	G.Jack_Faction = G.Jack_Faction + 1; G.Jack_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Les Anarchs ne protégeront-ils pas Nines, le prince guerrier ?	}
+{	794	}{	Pour Nines. . . Comment je peux aider ?	}{	Pour Nines. . . Comment je peux aider ?	}{	846	}{	G.Jack_Outbound == 3	}{	G.Jack_Faction = G.Jack_Faction + 1; G.Jack_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Puis-je aider les Anarchs ?	}
 {	795	}{	Je ferai de mon mieux. Je voulais te poser une question. . .	}{	Je ferai de mon mieux. Je voulais te poser une question. . .	}{	1333	}{	G.Jack_Outbound == 1 or G.Jack_Outbound == 4	}{	G.Jack_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
 {	796	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	797	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -820,7 +820,7 @@
 {	820	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	821	}{	Nines a senti venir le vent. Il va se faire discret.	}{	Nines a senti venir le vent. Il va se faire discret.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	822	}{	A ton avis, qu'est-ce qui s'est passé ?	}{	A ton avis, qu'est-ce qui s'est passé ?	}{	831	}{	G.Jack_Extra == 1	}{	}{	}{	}{	}{	}{	}{	}{	Peux-tu décoder cette impasse ?	}
-{	823	}{	Pourquoi ? Les anarchs le protègeront, non ?	}{	Pourquoi ? Les anarchs le protègeront, non ?	}{	841	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les anarchs ne protégeront-ils pas ce prince guerrier ?	}
+{	823	}{	Pourquoi ? Les Anarchs le protègeront, non ?	}{	Pourquoi ? Les Anarchs le protègeront, non ?	}{	841	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les Anarchs ne protégeront-ils pas ce prince guerrier ?	}
 {	824	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	825	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	826	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -829,9 +829,9 @@
 {	829	}{	Quel plaisir que vous puissiez voir ça ! Où est Nines, à présent ?	}{	Quel plaisir que vous puissiez voir ça ! Où est Nines, à présent ?	}{	821	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où est Nines, à présent ?	}
 {	830	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	831	}{	C'est une ruse de LaCroix pour lancer une chasse contre Nines. Le complot classique, typique de la Camarilla.	}{	C'est une ruse de LaCroix pour lancer une chasse contre Nines. Le complot classique, typique de la Camarilla.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	832	}{	Nines a assez de vampires pour le protéger, il ne devrait pas se cacher.	}{	Nines a assez de vampires pour le protéger, il ne devrait pas se cacher.	}{	841	}{	G.Jack_Ninesgone == 2	}{	}{	}{	}{	}{	}{	}{	}{	Les anarchs ne protégeront-ils pas ce prince guerrier ?	}
+{	832	}{	Nines a assez de vampires pour le protéger, il ne devrait pas se cacher.	}{	Nines a assez de vampires pour le protéger, il ne devrait pas se cacher.	}{	841	}{	G.Jack_Ninesgone == 2	}{	}{	}{	}{	}{	}{	}{	}{	Les Anarchs ne protégeront-ils pas ce prince guerrier ?	}
 {	833	}{	Je ne voulais pas aider le prince. Tout est de ma faute.	}{	Je ne voulais pas aider le prince. Tout est de ma faute.	}{	751	}{	G.Jack_Faction > 4 and G.Jack_Buckup == 0 and G.Jack_Gottado == 1	}{	G.Jack_Outbound = 2	}{	}{	}{	}{	}{	}{	}{	Ce problème naît de ma danse avec le bouffon. . .	}
-{	834	}{	Comment je peux aider ?	}{	Comment je peux aider ?	}{	846	}{	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Puis-je aider les anarchs ?	}
+{	834	}{	Comment je peux aider ?	}{	Comment je peux aider ?	}{	846	}{	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Puis-je aider les Anarchs ?	}
 {	835	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	836	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	837	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -840,7 +840,7 @@
 {	840	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	841	}{	Bien sûr, mais il y a des meutes dans la rue qui adoreraient se faire un nom en rapportant la tête de Nines Rodriguez.	}{	Bien sûr, mais il y a des meutes dans la rue qui adoreraient se faire un nom en rapportant la tête de Nines Rodriguez.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	842	}{	Je suis trop nase. Tout est de ma faute.	}{	Je suis trop nase. Tout est de ma faute.	}{	751	}{	G.Jack_Faction > 4 and G.Jack_Buckup == 0 and G.Jack_Gottado == 1	}{	G.Jack_Outbound = 3	}{	}{	}{	}{	}{	}{	}{	Ce problème naît de ma danse avec le bouffon. . .	}
-{	843	}{	Comment je peux aider ?	}{	Comment je peux aider ?	}{	846	}{	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Puis-je aider les anarchs ?	}
+{	843	}{	Comment je peux aider ?	}{	Comment je peux aider ?	}{	846	}{	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Puis-je aider les Anarchs ?	}
 {	844	}{	Je regrette, Jack, il faut que je parte.	}{	Je regrette, Jack, il faut que je parte.	}{	0	}{	G.Story_State < 30	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	845	}{	Je regrette, Jack, il faut que je parte.	}{	Je regrette, Jack, il faut que je parte.	}{	877	}{	G.Story_State >= 30	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	846	}{	[glousse]T'as envie de faire plaisir, hein ? Ca pourrait m'intéresser, mais les types que tu vois préféreraient que ça reste purement du business.	}{	[glousse]T'as envie de faire plaisir, hein ? Ca pourrait m'intéresser, mais les types que tu vois préféreraient que ça reste purement du business.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1333,7 +1333,7 @@
 {	1333	}{	Allez, vas-y. 	}{	Allez, vas-y. 	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1334	}{	La Camarilla. . .	}{	La Camarilla. . .	}{	1381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Informe-moi sur la Camarilla. . .	}
 {	1335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1336	}{	Les anarchs. . .	}{	Les anarchs. . .	}{	1566	}{	}{	}{	}{	}{	}{	}{	}{	}{	Raconte-moi l'histoire des anarchs !	}
+{	1336	}{	Les Anarchs. . .	}{	Les Anarchs. . .	}{	1566	}{	}{	}{	}{	}{	}{	}{	}{	}{	Raconte-moi l'histoire des Anarchs !	}
 {	1337	}{	Le Sabbat. . .	}{	Le Sabbat. . .	}{	1741	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dis-moi les secrets du Sabbat !	}
 {	1338	}{	Autre chose. . .	}{	Autre chose. . .	}{	1369	}{	}{	}{	}{	}{	}{	}{	}{	}{	Partage autre chose avec moi. . .	}
 {	1339	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1357,13 +1357,13 @@
 {	1357	}{	Et après. . .	}{	Et après. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1358	}{	La Camarilla. . .	}{	La Camarilla. . .	}{	1381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Informe-moi sur la Camarilla. . .	}
 {	1359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1360	}{	Les anarchs. . .	}{	Les anarchs. . .	}{	1566	}{	}{	}{	}{	}{	}{	}{	}{	}{	Raconte-moi l'histoire des anarchs !	}
+{	1360	}{	Les Anarchs. . .	}{	Les Anarchs. . .	}{	1566	}{	}{	}{	}{	}{	}{	}{	}{	}{	Raconte-moi l'histoire des Anarchs !	}
 {	1361	}{	Le Sabbat. . .	}{	Le Sabbat. . .	}{	1386	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dis-moi les secrets du Sabbat !	}
 {	1362	}{	Autre chose. . .	}{	Autre chose. . .	}{	1369	}{	}{	}{	}{	}{	}{	}{	}{	}{	Partage autre chose avec moi. . .	}
 {	1363	}{	Et quelle autre vérité tu voulais ?	}{	Et quelle autre vérité tu voulais ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1364	}{	La Camarilla. . .	}{	La Camarilla. . .	}{	1381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Informe-moi sur la Camarilla. . .	}
 {	1365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1366	}{	Les anarchs. . .	}{	Les anarchs. . .	}{	1566	}{	}{	}{	}{	}{	}{	}{	}{	}{	Raconte-moi l'histoire des anarchs !	}
+{	1366	}{	Les Anarchs. . .	}{	Les Anarchs. . .	}{	1566	}{	}{	}{	}{	}{	}{	}{	}{	}{	Raconte-moi l'histoire des Anarchs !	}
 {	1367	}{	Le Sabbat. . .	}{	Le Sabbat. . .	}{	1386	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dis-moi les secrets du Sabbat !	}
 {	1368	}{	Autre chose. . .	}{	Autre chose. . .	}{	1369	}{	}{	}{	}{	}{	}{	}{	}{	}{	Partage autre chose avec moi. . .	}
 {	1369	}{	A quoi penses-tu ?	}{	A quoi penses-tu ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1390,7 +1390,7 @@
 {	1390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1391	}{	Va pas penser que la Camarilla a le monopole de ces 'idéaux'. Compris ? Personne ne discute ces trucs, et si on t'a dit que c'était ça, la raison de la guerre, alors on s'est foutu de ta gueule. Compris ?	}{	Va pas penser que la Camarilla a le monopole de ces 'idéaux'. Compris ? Personne ne discute ces trucs, et si on t'a dit que c'était ça, la raison de la guerre, alors on s'est foutu de ta gueule. Compris ?	}{	#	}{	G.Jack_Cama = G.Jack_Cama + 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1392	}{	Cela ne me surprendrait pas s'ils. . .	}{	Cela ne me surprendrait pas s'ils. . .	}{	1401	}{	G.Jack_Cama == 1	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	La vérité porte bien des visages. . .	}
-{	1393	}{	Je ne m'attends pas à ce qu'un anarch puisse comprendre ça. . .	}{	Je ne m'attends pas à ce qu'un anarch puisse comprendre ça. . .	}{	1401	}{	G.Jack_Cama == 1	}{	G.Jack_Faction = G.Jack_Faction - 1	}{	}{	}{	}{	}{	}{	}{	Leur poing ou le tien ?	}
+{	1393	}{	Je ne m'attends pas à ce qu'un Anarch puisse comprendre ça. . .	}{	Je ne m'attends pas à ce qu'un Anarch puisse comprendre ça. . .	}{	1401	}{	G.Jack_Cama == 1	}{	G.Jack_Faction = G.Jack_Faction - 1	}{	}{	}{	}{	}{	}{	}{	Leur poing ou le tien ?	}
 {	1394	}{	Alors qu'est-ce que c'est que tout ça ?	}{	Alors qu'est-ce que c'est que tout ça ?	}{	1401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dénude la vérité. . .	}
 {	1395	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1521,7 +1521,7 @@
 {	1521	}{	Eh, quand on est jeune, on fait ce qu'on peut pour survivre. Mais il y a un moment où ce n'est plus une excuse - où on en sait trop, et où il faut faire un choix.	}{	Eh, quand on est jeune, on fait ce qu'on peut pour survivre. Mais il y a un moment où ce n'est plus une excuse - où on en sait trop, et où il faut faire un choix.	}{	#	}{	}{	G.Jack_Gottado = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	1522	}{	Je n'en suis pas encore là.	}{	Je n'en suis pas encore là.	}{	1531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ces distinctions me dépassent.	}
 {	1523	}{	J'aimerais bien avoir moins de mal à apprendre la vérité.	}{	J'aimerais bien avoir moins de mal à apprendre la vérité.	}{	1551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cette histoire est trop emberlificotée. . .	}
-{	1524	}{	Enfin, l'ordre bénéficie à tout le monde. L'anarchie, ça ne protège pas son homme.	}{	Enfin, l'ordre bénéficie à tout le monde. L'anarchie, ça ne protège pas son homme.	}{	1541	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'anarchie protège rarement celui qui la prône. . .	}
+{	1524	}{	Enfin, l'ordre bénéficie à tout le monde. L'Anarchie, ça ne protège pas son homme.	}{	Enfin, l'ordre bénéficie à tout le monde. L'Anarchie, ça ne protège pas son homme.	}{	1541	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'Anarchie protège rarement celui qui la prône. . .	}
 {	1525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1529,7 +1529,7 @@
 {	1529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1530	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1531	}{	C'est pour ça que tu m'écoutes, non ? C'est l'heure de l'école.	}{	C'est pour ça que tu m'écoutes, non ? C'est l'heure de l'école.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1532	}{	Peut-être que la Camarilla a un intérêt. Il n'y a rien de mal à avoir un peu de discipline. . .	}{	Peut-être que la Camarilla a un intérêt. Il n'y a rien de mal à avoir un peu de discipline. . .	}{	1541	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'anarchie protège rarement celui qui la prône. . .	}
+{	1532	}{	Peut-être que la Camarilla a un intérêt. Il n'y a rien de mal à avoir un peu de discipline. . .	}{	Peut-être que la Camarilla a un intérêt. Il n'y a rien de mal à avoir un peu de discipline. . .	}{	1541	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'Anarchie protège rarement celui qui la prône. . .	}
 {	1533	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1534	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1549,7 +1549,7 @@
 {	1549	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	1357	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
 {	1550	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1551	}{	Ce n'est pas parce qu'on est mort qu'il faut garder les yeux fermés.	}{	Ce n'est pas parce qu'on est mort qu'il faut garder les yeux fermés.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1552	}{	Peut-être que la Camarilla a un intérêt. Il n'y a rien de mal à avoir un peu de discipline. . .	}{	Peut-être que la Camarilla a un intérêt. Il n'y a rien de mal à avoir un peu de discipline. . .	}{	1541	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'anarchie protège rarement celui qui la prône. . .	}
+{	1552	}{	Peut-être que la Camarilla a un intérêt. Il n'y a rien de mal à avoir un peu de discipline. . .	}{	Peut-être que la Camarilla a un intérêt. Il n'y a rien de mal à avoir un peu de discipline. . .	}{	1541	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'Anarchie protège rarement celui qui la prône. . .	}
 {	1553	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1554	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1555	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1564,8 +1564,8 @@
 {	1564	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1565	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1566	}{	C'est nous, je crois, ça. Qu'est-ce que tu veux savoir ?	}{	C'est nous, je crois, ça. Qu'est-ce que tu veux savoir ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1567	}{	Depuis quand le mouvement anarch existe-t-il ?	}{	Depuis quand le mouvement anarch existe-t-il ?	}{	1571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Depuis combien de temps dure leur révolution ?	}
-{	1568	}{	Qui est votre chef ? Nines ?	}{	Qui est votre chef ? Nines ?	}{	1661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qui mène la tribu des anarchs ?	}
+{	1567	}{	Depuis quand le mouvement Anarch existe-t-il ?	}{	Depuis quand le mouvement Anarch existe-t-il ?	}{	1571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Depuis combien de temps dure leur révolution ?	}
+{	1568	}{	Qui est votre chef ? Nines ?	}{	Qui est votre chef ? Nines ?	}{	1661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qui mène la tribu des Anarchs ?	}
 {	1569	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	1357	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
 {	1570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1571	}{	Oui, je pourrais te parler de l'histoire de notre 'mouvement', de notre 'lutte'. Pff. . . belles conneries, tout ça. Tu veux vraiment un cours d'histoire ?	}{	Oui, je pourrais te parler de l'histoire de notre 'mouvement', de notre 'lutte'. Pff. . . belles conneries, tout ça. Tu veux vraiment un cours d'histoire ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1649,8 +1649,8 @@
 {	1649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1650	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1651	}{	Tu m'étonnes.	}{	Tu m'étonnes.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1652	}{	C'est lui le chef ?	}{	C'est lui le chef ?	}{	1661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nines est-il le chef de la tribu des anarchs ?	}
-{	1653	}{	Pourquoi tu mènes pas la danse, Jack ?	}{	Pourquoi tu mènes pas la danse, Jack ?	}{	1671	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est peut-être toi qui devrais porter la couronne des anarchs !	}
+{	1652	}{	C'est lui le chef ?	}{	C'est lui le chef ?	}{	1661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nines est-il le chef de la tribu des Anarchs ?	}
+{	1653	}{	Pourquoi tu mènes pas la danse, Jack ?	}{	Pourquoi tu mènes pas la danse, Jack ?	}{	1671	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est peut-être toi qui devrais porter la couronne des Anarchs !	}
 {	1654	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1655	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1656	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1662,7 +1662,7 @@
 {	1662	}{	Qu'en est-il du reste de l'équipage de Nines ?	}{	Qu'en est-il du reste de l'équipage de Nines ?	}{	1701	}{	}{	}{	}{	}{	}{	}{	}{	}{	Et le reste des loups qui courent avec Nines ?	}
 {	1663	}{	T'as l'air de t'y connaître en politique, Jack.	}{	T'as l'air de t'y connaître en politique, Jack.	}{	1671	}{	G.Jack_Niness == 1	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Tes paroles trahissent aussi un plaisir dans la politique. . .	}
 {	1664	}{	A ton avis, comme le Sabbat a-t-il trouvé ma trace ?	}{	A ton avis, comme le Sabbat a-t-il trouvé ma trace ?	}{	341	}{	G.Jack_Outbound == 1 and G.Jack_Extra == 1	}{	G.Jack_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Comme le Sabbat a-t-il trouvé mon ombre ?	}
-{	1665	}{	Alors ce n'est pas toi le chef par ici ?	}{	Alors ce n'est pas toi le chef par ici ?	}{	1671	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est peut-être toi qui devrais porter la couronne des anarchs !	}
+{	1665	}{	Alors ce n'est pas toi le chef par ici ?	}{	Alors ce n'est pas toi le chef par ici ?	}{	1671	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est peut-être toi qui devrais porter la couronne des Anarchs !	}
 {	1666	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	1357	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
 {	1667	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1668	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1848,7 +1848,7 @@
 {	1848	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1849	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1850	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines. Adieu. . .	}
-{	1851	}{	Oui, quelques-uns de ces jeunes anarchs ont une vraie haine pour les Kuei-jin. C'était le premier combat dans la rue, pour beaucoup. Et la première fois qu'ils voyaient leurs potes mourir. A l'arrivée des jaunes, je veux dire.	}{	Oui, quelques-uns de ces jeunes anarchs ont une vraie haine pour les Kuei-jin. C'était le premier combat dans la rue, pour beaucoup. Et la première fois qu'ils voyaient leurs potes mourir. A l'arrivée des jaunes, je veux dire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1851	}{	Oui, quelques-uns de ces jeunes Anarchs ont une vraie haine pour les Kuei-jin. C'était le premier combat dans la rue, pour beaucoup. Et la première fois qu'ils voyaient leurs potes mourir. A l'arrivée des jaunes, je veux dire.	}{	Oui, quelques-uns de ces jeunes Anarchs ont une vraie haine pour les Kuei-jin. C'était le premier combat dans la rue, pour beaucoup. Et la première fois qu'ils voyaient leurs potes mourir. A l'arrivée des jaunes, je veux dire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1852	}{	Ouais ?	}{	Ouais ?	}{	1871	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ces démons combattent-ils de façon diabolique ?	}
 {	1853	}{	Ils sont costauds ?	}{	Ils sont costauds ?	}{	1871	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1854	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1868,7 +1868,7 @@
 {	1868	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1869	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1870	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1871	}{	Oui, ils ont coûté San Francisco aux anarchs. C'est dur de les avoir. Au moins, avec les vampires, on sait à peu près à quoi s'attendre, et ce qu'ils peuvent faire. Les Kuei-jin sont pleins de surprises.	}{	Oui, ils ont coûté San Francisco aux anarchs. C'est dur de les avoir. Au moins, avec les vampires, on sait à peu près à quoi s'attendre, et ce qu'ils peuvent faire. Les Kuei-jin sont pleins de surprises.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1871	}{	Oui, ils ont coûté San Francisco aux Anarchs. C'est dur de les avoir. Au moins, avec les vampires, on sait à peu près à quoi s'attendre, et ce qu'ils peuvent faire. Les Kuei-jin sont pleins de surprises.	}{	Oui, ils ont coûté San Francisco aux Anarchs. C'est dur de les avoir. Au moins, avec les vampires, on sait à peu près à quoi s'attendre, et ce qu'ils peuvent faire. Les Kuei-jin sont pleins de surprises.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1872	}{	J'en ai rencontré une. Elle n'avait pas l'air trop dangereuse. Et elle disait des trucs très intéressants. 	}{	J'en ai rencontré une. Elle n'avait pas l'air trop dangereuse. Et elle disait des trucs très intéressants. 	}{	1891	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai rencontré une étrange maîtresse. . . Ses paroles étaient étrangement captivantes. . .	}
 {	1873	}{	J'ai rencontré leur chef. C'est une garce condescendante.	}{	J'ai rencontré leur chef. C'est une garce condescendante.	}{	1891	}{	}{	}{	}{	}{	}{	}{	}{	}{	Leur prêtresse-démon était détestable.	}
 {	1874	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	1357	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}

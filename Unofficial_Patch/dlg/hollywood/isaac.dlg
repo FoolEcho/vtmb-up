@@ -2,7 +2,7 @@
 {	2	}{	A vous de me le dire. C'est un de vos gorilles qui m'envoie ici.	}{	A vous de me le dire. C'est un de vos gorilles qui m'envoie ici.	}{	11	}{	not IsDead("Sweeper") and G.Sweeper_Met == 1	}{	}{	}{	}{	}{	}{	}{	}{	C'est votre messager qui m'a détourné par ici.	}
 {	3	}{	Je cherche les Nosferatus.	}{	Je cherche les Nosferatus.	}{	361	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	4	}{	Je suis sa bouche.	}{	Je suis sa bouche.	}{	11	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Je suis sa bouche.	}
-{	5	}{	Le Prince LaCroix m'envoie, vous n'avez pas besoin d'en savoir plus.	}{	Le Prince LaCroix m'envoie, vous n'avez pas besoin d'en savoir plus.	}{	91	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Le Prince LaCroix m'envoie, vous n'avez pas besoin d'en Anarch plus.	}{	Le Prince LaCroix m'envoie, vous n'avez pas besoin d'en Anarch plus.	}{	91	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	6	}{	A vous de me le dire. C'est un de vos gorilles qui m'a envoyé ici, avant que je ne le tue.	}{	A vous de me le dire. C'est un de vos gorilles qui m'a envoyée ici, avant que je ne le tue.	}{	131	}{	IsDead("Sweeper") and G.Sweeper_Met == 1	}{	}{	}{	}{	}{	}{	}{	}{	C'est votre messager qui m'a détourné par ici.	}
 {	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -128,7 +128,7 @@
 {	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	131	}{	[Soupir]Ah, les jeunes. . . Tant d'impertinence, de vulgarité. Content de voir que la jeunesse reste rebelle. . . Mais vous auriez dû savoir que la rébellion n'a pas sa place dans ce bureau. Ecoutez-moi. . . Je pense que ça va vous plaire. . .	}{	[Soupir]Ah, les jeunes. . . Tant d'impertinence, de vulgarité. Content de voir que la jeunesse reste rebelle. . . Mais vous auriez dû savoir que la rébellion n'a pas sa place dans ce bureau. Ecoutez-moi. . . Je pense que ça va vous plaire. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	[Soupir]Ah, les jeunes. . . Tant d'impertinence, de vulgarité. Content de voir que la jeunesse reste rebelle. . . Mais vous auriez dû Anarch que la rébellion n'a pas sa place dans ce bureau. Ecoutez-moi. . . Je pense que ça va vous plaire. . .	}{	[Soupir]Ah, les jeunes. . . Tant d'impertinence, de vulgarité. Content de voir que la jeunesse reste rebelle. . . Mais vous auriez dû Anarch que la rébellion n'a pas sa place dans ce bureau. Ecoutez-moi. . . Je pense que ça va vous plaire. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	132	}{	Bon. Que voulez-vous ?	}{	Bon. Que voulez-vous ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'écoute. . .	}
 {	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	134	}{	Je vais vous montrer comment je suis quand je deviens vulgaire, pauvre empaffé de mes deux.	}{	Je vais vous montrer comment je suis quand je deviens vulgaire, pauvre empaffé de mes deux.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes oreilles se ferment. Mes poings aussi.	}
@@ -158,7 +158,7 @@
 {	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	161	}{	LaCroix ne vous enverrait pas en territoire anarch s'il n'était pas désespéré - je me trompe peut-être, mais dans votre Camarilla, il peut demander une chasse au sang contre toute personne qui, je cite, enfreint les règles. Si une personne aussi jeune que vous rentre les mains vides, allez savoir ce qui va se passer. Vous voulez m'écouter, maintenant ?	}{	LaCroix ne vous enverrait pas en territoire anarch s'il n'était pas désespéré - je me trompe peut-être, mais dans votre Camarilla, il peut demander une chasse au sang contre toute personne qui, je cite, enfreint les règles. Si une personne aussi jeune que vous rentre les mains vides, allez savoir ce qui va se passer. Vous voulez m'écouter, maintenant ?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Isaac_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	LaCroix ne vous enverrait pas en territoire anarch s'il n'était pas désespéré - je me trompe peut-être, mais dans votre Camarilla, il peut demander une chasse au sang contre toute personne qui, je cite, enfreint les règles. Si une personne aussi jeune que vous rentre les mains vides, allez Anarch ce qui va se passer. Vous voulez m'écouter, maintenant ?	}{	LaCroix ne vous enverrait pas en territoire anarch s'il n'était pas désespéré - je me trompe peut-être, mais dans votre Camarilla, il peut demander une chasse au sang contre toute personne qui, je cite, enfreint les règles. Si une personne aussi jeune que vous rentre les mains vides, allez Anarch ce qui va se passer. Vous voulez m'écouter, maintenant ?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Isaac_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	Pas idiot. Bon, que voulez-vous ?	}{	Pas idiot. Bon, que voulez-vous ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'écoute. . .	}
 {	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	164	}{	Pas vraiment.	}{	Pas vraiment.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes oreilles sont allergiques à votre voix.	}
@@ -378,7 +378,7 @@
 {	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	381	}{	Cette cassette. . . J'aimerais savoir pourquoi tout le monde en parle, alors installez-vous. J'ai l'impression que ce qu'elle contient pourrait nous intéresser tous les deux. . .	}{	Cette cassette. . . J'aimerais savoir pourquoi tout le monde en parle, alors installez-vous. J'ai l'impression que ce qu'elle contient pourrait nous intéresser tous les deux. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Movie = 1; pc.SetQuest("Courier",6)	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	Cette cassette. . . J'aimerais Anarch pourquoi tout le monde en parle, alors installez-vous. J'ai l'impression que ce qu'elle contient pourrait nous intéresser tous les deux. . .	}{	Cette cassette. . . J'aimerais Anarch pourquoi tout le monde en parle, alors installez-vous. J'ai l'impression que ce qu'elle contient pourrait nous intéresser tous les deux. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Movie = 1; pc.SetQuest("Courier",6)	}{	}{	}{	}{	}{	}{	}{	}
 {	382	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	383	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	384	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -428,7 +428,7 @@
 {	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	431	}{	En général, je fais savoir que je les cherche, et tôt ou tard ils apparaissent.	}{	En général, je fais savoir que je les cherche, et tôt ou tard ils apparaissent.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	En général, je fais Anarch que je les cherche, et tôt ou tard ils apparaissent.	}{	En général, je fais Anarch que je les cherche, et tôt ou tard ils apparaissent.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	432	}{	Alors vous pensez que cette cassette est en rapport avec leur disparition ?	}{	Alors vous pensez que cette cassette est en rapport avec leur disparition ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cette vidéo nous cache les rats d'égout ?	}
 {	433	}{	Donc en fait, vous ne pouvez pas du tout m'aider. . .	}{	Donc en fait, vous ne pouvez pas du tout m'aider. . .	}{	441	}{	G.Isaac_Help == 0	}{	}{	}{	}{	}{	}{	}{	}{	Il faut me mettre au rebut, tout cela commence à m'user. . .	}
 {	434	}{	Donc en fait, vous ne pouvez pas du tout m'aider. . .	}{	Donc en fait, vous ne pouvez pas du tout m'aider. . .	}{	451	}{	G.Isaac_Help == 1	}{	}{	}{	}{	}{	}{	}{	}{	Il faut me mettre au rebut, tout cela commence à m'user. . .	}
@@ -470,7 +470,7 @@
 {	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	471	}{	Pas une brique de cette ville n'appartient à la Camarilla, alors prenez garde. . . C'est tout ce que je demande à mes visiteurs. . .	}{	Pas une brique de cette ville n'appartient à la Camarilla, alors prenez garde. . . C'est tout ce que je demande à mes visiteurs. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	472	}{	Je vous tiens au courant si je trouve quelque chose. A plus tard, Isaac.	}{	Je vous tiens au courant si je trouve quelque chose. A plus tard, Isaac.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si je trouve votre cassette, je résisterai à l'envie de la détruire. Je pars.	}
-{	473	}{	Le savoir-vivre est un service oublié. Super.	}{	Le savoir-vivre est un service oublié. Super.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, oui, le savoir-vivre. . . Vous vendez des poneys et des débroussailleuses, ici ? Bon, je pars.	}
+{	473	}{	Le Anarch-vivre est un service oublié. Super.	}{	Le Anarch-vivre est un service oublié. Super.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, oui, le Anarch-vivre. . . Vous vendez des poneys et des débroussailleuses, ici ? Bon, je pars.	}
 {	474	}{	J'ai quelques questions avant de partir.	}{	J'ai quelques questions avant de partir.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cette cassette sera retrouvée, mais seulement quand vous m'aurez répondu.	}
 {	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -497,7 +497,7 @@
 {	497	}{	Que pouvez-vous me dire sur les Nosferatus ?	}{	Que pouvez-vous me dire sur les Nosferatus ?	}{	551	}{	G.Isaac_Nosferatu == 0 and IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	498	}{	Que pouvez-vous me dire sur Velvet ?	}{	Que pouvez-vous me dire sur Velvet ?	}{	561	}{	G.Velvet_Know == 1 and G.Isaac_VV == 0	}{	}{	}{	}{	}{	}{	}{	}{	Que pouvez-vous me dire sur la côte de Velvet ?	}
 {	499	}{	Parlez-moi d'Ash.	}{	Parlez-moi d'Ash.	}{	621	}{	G.Ash_Know == 1 and G.Isaac_Ash == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quelle main tordue a pu écrire Ash ?	}
-{	500	}{	Je reviendrai.	}{	Je reviendrai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je peux savoir ces choses plus tard.	}
+{	500	}{	Je reviendrai.	}{	Je reviendrai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je peux Anarch ces choses plus tard.	}
 {	501	}{	Il y a quelque chose, bien sûr, mais c'est à propos d'une gargouille. . . Ah, je vois que cela retient votre attention. . .	}{	Il y a quelque chose, bien sûr, mais c'est à propos d'une gargouille. . . Ah, je vois que cela retient votre attention. . .	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Isaac_Gargoyle = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	502	}{	Oui, parlez-moi de cette gargouille.	}{	Oui, parlez-moi de cette gargouille.	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de l'être de pierre. . .	}
 {	503	}{	Pas vraiment. Mais j'avais une autre question.	}{	Pas vraiment. Mais j'avais une autre question.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demandais autre chose. . .	}
@@ -692,7 +692,7 @@
 {	692	}{	Je devrais peut-être aller y faire un tour. J'avais d'autres questions.	}{	Je devrais peut-être aller y faire un tour. J'avais d'autres questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une nuit, je finirai par y entrer. Je me demande autre chose.	}
 {	693	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	694	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	695	}{	Si je passe devant, j'y ferai peut-être un saut. Au revoir. Merci.	}{	Si je passe devant, j'y ferai peut-être un saut. Au revoir. Merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où irai-je ensuite ? Allez savoir. Peut-être là-bas. . .	}
+{	695	}{	Si je passe devant, j'y ferai peut-être un saut. Au revoir. Merci.	}{	Si je passe devant, j'y ferai peut-être un saut. Au revoir. Merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où irai-je ensuite ? Allez Anarch. Peut-être là-bas. . .	}
 {	696	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	697	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	698	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -851,7 +851,7 @@
 {	851	}{	Alors je ne peux rien faire. Si je m'impliquais, ce serait. . . Non, je suis sûr qu'Ash parviendra à se tirer de ce mauvais pas. . .	}{	Alors je ne peux rien faire. Si je m'impliquais, ce serait. . . Non, je suis sûr qu'Ash parviendra à se tirer de ce mauvais pas. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Hunters = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	852	}{	Quoi ? Vous avez peur de quelques chasseurs ?	}{	Quoi ? Vous avez peur de quelques chasseurs ?	}{	861	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez peur ?	}
 {	853	}{	J'avais d'autres questions.	}{	J'avais d'autres questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demande autre chose.	}
-{	854	}{	Je le lui ferai savoir. Au revoir.	}{	Je le lui ferai savoir. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Et je vais trouver un moyen de sortir d'ici.	}
+{	854	}{	Je le lui ferai Anarch. Au revoir.	}{	Je le lui ferai Anarch. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Et je vais trouver un moyen de sortir d'ici.	}
 {	855	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	856	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	857	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -188,8 +188,8 @@
 {	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	191	}{	On ne peut que réunir quelques personnes qui ne sont pas des enfoirés, trouver un endroit où vivre tranquille, et le garder. Empêcher la soi-disant élite de rentrer. Tout le monde est égal, comme c'était avant dans ce pays. C'était ça, LA, un Etat Libre des anarchs.	}{	On ne peut que réunir quelques personnes qui ne sont pas des enfoirés, trouver un endroit où vivre tranquille, et le garder. Empêcher la soi-disant élite de rentrer. Tout le monde est égal, comme c'était avant dans ce pays. C'était ça, LA, un Etat Libre des anarchs.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	192	}{	Un Etat Libre des anarchs ?	}{	Un Etat Libre des anarchs ?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Un Etat Libre ? Bah, de toute façon, je finis toujours par emporter des trucs. . .	}
+{	191	}{	On ne peut que réunir quelques personnes qui ne sont pas des enfoirés, trouver un endroit où vivre tranquille, et le garder. Empêcher la soi-disant élite de rentrer. Tout le monde est égal, comme c'était avant dans ce pays. C'était ça, LA, un Etat Libre des Anarchs.	}{	On ne peut que réunir quelques personnes qui ne sont pas des enfoirés, trouver un endroit où vivre tranquille, et le garder. Empêcher la soi-disant élite de rentrer. Tout le monde est égal, comme c'était avant dans ce pays. C'était ça, LA, un Etat Libre des Anarchs.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Un Etat Libre des Anarchs ?	}{	Un Etat Libre des Anarchs ?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Un Etat Libre ? Bah, de toute façon, je finis toujours par emporter des trucs. . .	}
 {	193	}{	Alors la Camarilla est arrivée récemment à LA ?	}{	Alors la Camarilla est arrivée récemment à LA ?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	La Camarilla est une jeune pousse, ici ?	}
 {	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -208,10 +208,10 @@
 {	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	211	}{	La Camarilla s'est fait chasser d'ici il y a longtemps. Nous, les anarchs, on ne voulait plus faire de politique. Et maintenant, LaCroix et les siens reviennent comme s'ils n'étaient jamais partis - et ça, c'est pas possible. Leurs lois ne s'appliquent pas à nous.	}{	La Camarilla s'est fait chasser d'ici il y a longtemps. Nous, les anarchs, on ne voulait plus faire de politique. Et maintenant, LaCroix et les siens reviennent comme s'ils n'étaient jamais partis - et ça, c'est pas possible. Leurs lois ne s'appliquent pas à nous.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	La Camarilla s'est fait chasser d'ici il y a longtemps. Nous, les Anarchs, on ne voulait plus faire de politique. Et maintenant, LaCroix et les siens reviennent comme s'ils n'étaient jamais partis - et ça, c'est pas possible. Leurs lois ne s'appliquent pas à nous.	}{	La Camarilla s'est fait chasser d'ici il y a longtemps. Nous, les Anarchs, on ne voulait plus faire de politique. Et maintenant, LaCroix et les siens reviennent comme s'ils n'étaient jamais partis - et ça, c'est pas possible. Leurs lois ne s'appliquent pas à nous.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	212	}{	Tu as essayé de discuter avec la Camarilla ?	}{	Tu as essayé de discuter avec la Camarilla ?	}{	221	}{	G.Nines_Brujah == 0	}{	deagleNines()	}{	}{	}{	}{	}{	}{	}{	Des bêtes de somme ! Que des âneries !	}
 {	213	}{	Tu n'aimes pas beaucoup le prince, hein ?	}{	Tu n'aimes pas beaucoup le prince, hein ?	}{	231	}{	G.Nines_Hate == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le prince et toi, vous ne jouez pas au golf le week-end ?	}
-{	214	}{	Donc, c'est toi le prince anarch.	}{	Donc, c'est toi le prince anarch.	}{	241	}{	G.Nines_Leader == 0	}{	}{	}{	}{	}{	}{	}{	}{	Donc, tu es le prince des voleurs, et voici tes gais compagnons ?	}
+{	214	}{	Donc, c'est toi le prince Anarch.	}{	Donc, c'est toi le prince Anarch.	}{	241	}{	G.Nines_Leader == 0	}{	}{	}{	}{	}{	}{	}{	}{	Donc, tu es le prince des voleurs, et voici tes gais compagnons ?	}
 {	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -220,7 +220,7 @@
 {	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	221	}{	J'aimerais bien qu'il discute avec ça[arme son pistolet].	}{	J'aimerais bien qu'il discute avec ça[arme son pistolet].	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	G.Nines_Brujah = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	222	}{	Tu n'aimes pas beaucoup le prince, hein ?	}{	Tu n'aimes pas beaucoup le prince, hein ?	}{	231	}{	G.Nines_Hate == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le prince et toi, vous ne jouez pas au golf le week-end ?	}
-{	223	}{	Donc, c'est toi le prince anarch.	}{	Donc, c'est toi le prince anarch.	}{	241	}{	G.Nines_Leader == 0	}{	}{	}{	}{	}{	}{	}{	}{	Donc, tu es le prince des voleurs, et voici tes gais compagnons ?	}
+{	223	}{	Donc, c'est toi le prince Anarch.	}{	Donc, c'est toi le prince Anarch.	}{	241	}{	G.Nines_Leader == 0	}{	}{	}{	}{	}{	}{	}{	}{	Donc, tu es le prince des voleurs, et voici tes gais compagnons ?	}
 {	224	}{	Encore une question. Tu peux me donner des conseils ?	}{	Encore une question. Tu peux me donner des conseils ?	}{	261	}{	G.Nines_Leader == 1 and G.Nines_Hate == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est encore malléable. Quelle forme devrais-je lui donner ?	}
 {	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	226	}{	Dit l'homme dont la base des opérations pue le whisky et la pisse.	}{	Dit l'homme dont la base des opérations pue le whisky et la pisse.	}{	251	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Ce n'est pas à ce moment-là que votre musique démarre ? HA HA HA. . . stéréotype.	}
@@ -230,10 +230,10 @@
 {	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	231	}{	LaCroix représente tout ce que je déteste - la Camarilla, des aristocrates méprisants, des hommes d'affaires riches, des politiciens véreux. . . LaCroix mérite de finir dans une urne.	}{	LaCroix représente tout ce que je déteste - la Camarilla, des aristocrates méprisants, des hommes d'affaires riches, des politiciens véreux. . . LaCroix mérite de finir dans une urne.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Nines_Hate = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	232	}{	Tu as essayé de discuter avec la Camarilla ?	}{	Tu as essayé de discuter avec la Camarilla ?	}{	221	}{	G.Nines_Brujah == 0	}{	deagleNines()	}{	}{	}{	}{	}{	}{	}{	Des bêtes de somme ! Que des âneries !	}
-{	233	}{	Donc, c'est toi le prince anarch.	}{	Donc, c'est toi le prince anarch.	}{	241	}{	G.Nines_Leader == 0	}{	}{	}{	}{	}{	}{	}{	}{	Donc, tu es le prince des voleurs, et voici tes gais compagnons ?	}
+{	233	}{	Donc, c'est toi le prince Anarch.	}{	Donc, c'est toi le prince Anarch.	}{	241	}{	G.Nines_Leader == 0	}{	}{	}{	}{	}{	}{	}{	}{	Donc, tu es le prince des voleurs, et voici tes gais compagnons ?	}
 {	234	}{	Encore une question. Tu peux me donner des conseils ?	}{	Encore une question. Tu peux me donner des conseils ?	}{	261	}{	G.Nines_Brujah == 1 and G.Nines_Leader == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est encore malléable. Quelle forme devrais-je lui donner ?	}
 {	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	236	}{	Les anarchs - des geignards paresseux, grande gueule et qui adorent se battre. La vérité blesse, n'est-ce pas ?	}{	Les anarchs - des geignards paresseux, grande gueule et qui adorent se battre. La vérité blesse, n'est-ce pas ?	}{	251	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Le sel de la Terre, de la boue sous ses ongles et du fumier en guise de cerveau.	}
+{	236	}{	Les Anarchs - des geignards paresseux, grande gueule et qui adorent se battre. La vérité blesse, n'est-ce pas ?	}{	Les Anarchs - des geignards paresseux, grande gueule et qui adorent se battre. La vérité blesse, n'est-ce pas ?	}{	251	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Le sel de la Terre, de la boue sous ses ongles et du fumier en guise de cerveau.	}
 {	237	}{	Sans eux, qui sponsoriserait les artistes ? Toi ? Catch pour tout le monde !	}{	Sans eux, qui sponsoriserait les artistes ? Toi ? Catch pour tout le monde !	}{	251	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	238	}{	On dirait que quelqu'un est jaloux. Pas terrible pour atteindre les sommets ?	}{	On dirait que quelqu'un est jaloux. Pas terrible pour atteindre les sommets ?	}{	251	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -362,7 +362,7 @@
 {	362	}{	Et pourquoi tu me fous pas dehors toi-même ?	}{	Et pourquoi tu me fous pas dehors toi-même ?	}{	371	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue") and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	363	}{	Si tu veux du bonheur, je peux t'en donner.	}{	Si tu veux du bonheur, je peux t'en donner.	}{	381	}{	IsClan(pc,"Toreador") or IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	FRAPPE-MOI ! Allez, je sais que tu veux jouer. . .	}
 {	364	}{	Chiche, fous-moi dehors.	}{	Chiche, fous-moi dehors.	}{	391	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	365	}{	Ah ouais ? Viens-y, l'anarch.	}{	Ah ouais ? Viens-y, l'anarch.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Belles paroles pour un anarch. . . Tout en langue, rien en dents. . .	}
+{	365	}{	Ah ouais ? Viens-y, l'Anarch.	}{	Ah ouais ? Viens-y, l'Anarch.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Belles paroles pour un Anarch. . . Tout en langue, rien en dents. . .	}
 {	366	}{	. . . On se reverra.	}{	. . . On se reverra.	}{	0	}{	}{	G.Nines_Timeup = 1	}{	}{	}{	}{	}{	}{	}{	Je pense que le sang est caillé, là-dedans. Je n'ai aucune envie de rester ici.	}
 {	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -370,7 +370,7 @@
 {	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	371	}{	C'est vraiment comme ça que tu veux la jouer ?	}{	C'est vraiment comme ça que tu veux la jouer ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	372	}{	Ah ouais. . . Allez, Nines, montre-moi ce que tu sais faire.	}{	Ah ouais. . . Allez, Nines, montre-moi ce que tu sais faire.	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	373	}{	Allez, je vais me faire toutes les lopettes d'anarchs qu'il y a dans ce bar !	}{	Allez, je vais me faire toutes les lopettes d'anarchs qu'il y a dans ce bar !	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	373	}{	Allez, je vais me faire toutes les lopettes d'Anarchs qu'il y a dans ce bar !	}{	Allez, je vais me faire toutes les lopettes d'Anarchs qu'il y a dans ce bar !	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	374	}{	Non. Ce n'est pas comme ça. Je m'en vais.	}{	Non. Ce n'est pas comme ça. Je m'en vais.	}{	0	}{	Humanity 5	}{	G.Nines_Timeup = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -403,7 +403,7 @@
 {	403	}{	Allez, Nines, toi et moi, tout de suite !	}{	Allez, Nines, toi et moi, tout de suite !	}{	371	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue") and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	404	}{	Alors on va faire ça en gens bien éduqués.	}{	Alors on va faire ça en gens bien éduqués.	}{	381	}{	IsClan(pc,"Toreador") or IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Nines vs. Moi! FIGHT !	}
 {	405	}{	Alors on va faire ça en gens bien éduqués.	}{	Alors on va faire ça en gens bien éduqués.	}{	391	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	406	}{	Alors les enflures, c'est pour aujourd'hui ou pour demain ?	}{	Alors les enflures, c'est pour aujourd'hui ou pour demain ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais empiler les anarchs tellement haut que de petits oiseaux leur tourneront autour de la tête !	}
+{	406	}{	Alors les enflures, c'est pour aujourd'hui ou pour demain ?	}{	Alors les enflures, c'est pour aujourd'hui ou pour demain ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais empiler les Anarchs tellement haut que de petits oiseaux leur tourneront autour de la tête !	}
 {	407	}{	Je m'en vais. Pardon.	}{	Je m'en vais. Pardon.	}{	0	}{	}{	G.Nines_Timeup = 1	}{	}{	}{	}{	}{	}{	}{	Laisse-moi te payer une tournée d'excuses. Profites-en pendant mon absence.	}
 {	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -428,7 +428,7 @@
 {	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	431	}{	Je suis venu en Californie pour sortir des villes pendant les années 30. Dans les années 40, on a foutu la Cama dehors, et depuis c'est la guerre. Il ne reste pas beaucoup de monde de cette époque. Et certains ne sont même plus anarchs.	}{	Je suis venu en Californie pour sortir des villes pendant les années 30. Dans les années 40, on a foutu la Cama dehors, et depuis c'est la guerre. Il ne reste pas beaucoup de monde de cette époque. Et certains ne sont même plus anarchs.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nines_Self = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	Je suis venu en Californie pour sortir des villes pendant les années 30. Dans les années 40, on a foutu la Cama dehors, et depuis c'est la guerre. Il ne reste pas beaucoup de monde de cette époque. Et certains ne sont même plus Anarchs.	}{	Je suis venu en Californie pour sortir des villes pendant les années 30. Dans les années 40, on a foutu la Cama dehors, et depuis c'est la guerre. Il ne reste pas beaucoup de monde de cette époque. Et certains ne sont même plus Anarchs.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nines_Self = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	432	}{	Ca vaut le coup ? Devoir se battre en permanence pour garder LA ?	}{	Ca vaut le coup ? Devoir se battre en permanence pour garder LA ?	}{	461	}{	G.Nines_Time < 3	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Pourquoi se battre ? Pourquoi ne pas s'enterrer pour vivre sous terre ?	}
 {	433	}{	Pourquoi continuer de se battre ? Pourquoi ne pas rejoindre la Camarilla pour devenir prince ?	}{	Pourquoi continuer de se battre ? Pourquoi ne pas rejoindre la Camarilla pour devenir prince ?	}{	471	}{	G.Nines_Time < 3	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Deviens un prince. Votez Nines en 2004 !	}
 {	434	}{	Parle-moi de LA.	}{	Parle-moi de LA.	}{	441	}{	G.Nines_Angeles == 0 and G.Nines_Time < 3	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Parle-moi de la Cité des Anges. . .	}
@@ -438,7 +438,7 @@
 {	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	441	}{	LA ? Il y a toujours eu des problèmes, toujours un mauvais fond. Incendies, émeutes, tremblements de terre. . . et pour les anarchs, la Camarilla, le Sabbat, les Kuei-Jin. Ils ont tous essayé de la prendre. Les gens disent que tout va mal, mais on est damnés depuis toujours, non ?	}{	LA ? Il y a toujours eu des problèmes, toujours un mauvais fond. Incendies, émeutes, tremblements de terre. . . et pour les anarchs, la Camarilla, le Sabbat, les Kuei-Jin. Ils ont tous essayé de la prendre. Les gens disent que tout va mal, mais on est damnés depuis toujours, non ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nines_Angeles = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	LA ? Il y a toujours eu des problèmes, toujours un mauvais fond. Incendies, émeutes, tremblements de terre. . . et pour les Anarchs, la Camarilla, le Sabbat, les Kuei-Jin. Ils ont tous essayé de la prendre. Les gens disent que tout va mal, mais on est damnés depuis toujours, non ?	}{	LA ? Il y a toujours eu des problèmes, toujours un mauvais fond. Incendies, émeutes, tremblements de terre. . . et pour les Anarchs, la Camarilla, le Sabbat, les Kuei-Jin. Ils ont tous essayé de la prendre. Les gens disent que tout va mal, mais on est damnés depuis toujours, non ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Nines_Angeles = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	442	}{	Pourquoi ne pas partir ?	}{	Pourquoi ne pas partir ?	}{	471	}{	G.Nines_Time < 3	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Pourquoi ne pas aller. . . vers l'Est ?	}
 {	443	}{	Pourquoi LA ?	}{	Pourquoi LA ?	}{	501	}{	G.Nines_Time < 3	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Tu pourrais te déplanter et te replanter ailleurs ?	}
 {	444	}{	Parlez-moi de vous. . .	}{	Parlez-moi de vous. . .	}{	431	}{	G.Nines_Self == 0 and G.Nines_Time < 3	}{	G.Nines_Time = G.Nines_Time +1	}{	}{	}{	}{	}{	}{	}{	Montre-moi Nines dans toute sa finesse. . .	}
@@ -519,7 +519,7 @@
 {	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	520	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	521	}{	Ca me fait plaisir de te revoir. Il paraît que tu t'es déjà fait un sacré nom. C'est pas rien, dans cette ville. Il paraît que LaCroix a besoin de nous, tout d'un coup - c'est quoi ces salades ?	}{	Ca me fait plaisir de te revoir. Il paraît que tu t'es déjà fait un sacré nom. C'est pas rien, dans cette ville. Il paraît que LaCroix a besoin de nous, tout d'un coup - c'est quoi ces salades ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Alliance",3)	}{	}{	}{	}{	}{	}{	}{	}
-{	522	}{	Il propose une alliance avec les anarchs pour se débarrasser des Kuei-Jin.	}{	Il propose une alliance avec les anarchs pour se débarrasser des Kuei-Jin.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il veut collaborer avec toi pour un projet appelé 'Détruire tous les Kuei-Jin'.	}
+{	522	}{	Il propose une alliance avec les Anarchs pour se débarrasser des Kuei-Jin.	}{	Il propose une alliance avec les Anarchs pour se débarrasser des Kuei-Jin.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il veut collaborer avec toi pour un projet appelé 'Détruire tous les Kuei-Jin'.	}
 {	523	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	524	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -529,7 +529,7 @@
 {	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	530	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	531	}{	Et c'est toi qu'il envoie ? Bon, discutons détails.	}{	Et c'est toi qu'il envoie ? Bon, discutons détails.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	pc.SetQuest("Alliance",3)	}{	}{	}{	}{	}{	}{	}{	}
-{	532	}{	Le prince propose une alliance avec les anarchs pour se débarrasser des Kuei-Jin.	}{	Le prince propose une alliance avec les anarchs pour se débarrasser des Kuei-Jin.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il veut collaborer avec toi pour un projet appelé 'Détruire tous les Kuei-Jin'.	}
+{	532	}{	Le prince propose une alliance avec les Anarchs pour se débarrasser des Kuei-Jin.	}{	Le prince propose une alliance avec les Anarchs pour se débarrasser des Kuei-Jin.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il veut collaborer avec toi pour un projet appelé 'Détruire tous les Kuei-Jin'.	}
 {	533	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	534	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -539,7 +539,7 @@
 {	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	541	}{	J'ai beaucoup entendu parler de toi. Tu as bien aidé notre cause, il paraît. J'apprécie. Alors d'un coup, LaCroix a besoin de nous, hein ?	}{	J'ai beaucoup entendu parler de toi. Tu as bien aidé notre cause, il paraît. J'apprécie. Alors d'un coup, LaCroix a besoin de nous, hein ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Alliance",3)	}{	}{	}{	}{	}{	}{	}{	}
-{	542	}{	Oui. Il veut les anarchs pour se débarrasser des Kuei-Jin.	}{	Oui. Il veut les anarchs pour se débarrasser des Kuei-Jin.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il veut collaborer avec toi pour un projet appelé 'Détruire tous les Kuei-Jin'.	}
+{	542	}{	Oui. Il veut les Anarchs pour se débarrasser des Kuei-Jin.	}{	Oui. Il veut les Anarchs pour se débarrasser des Kuei-Jin.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il veut collaborer avec toi pour un projet appelé 'Détruire tous les Kuei-Jin'.	}
 {	543	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	544	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	545	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -778,7 +778,7 @@
 {	778	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	779	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	780	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	781	}{	Les Kuei-Jin essayent de détruire les anarchs depuis des années. Avant, c'était nous qui contrôlions San Francisco. Devine qui nous en a chassés. . .	}{	Les Kuei-Jin essayent de détruire les anarchs depuis des années. Avant, c'était nous qui contrôlions San Francisco. Devine qui nous en a chassés. . .	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	G.Nines_Ming = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	781	}{	Les Kuei-Jin essayent de détruire les Anarchs depuis des années. Avant, c'était nous qui contrôlions San Francisco. Devine qui nous en a chassés. . .	}{	Les Kuei-Jin essayent de détruire les Anarchs depuis des années. Avant, c'était nous qui contrôlions San Francisco. Devine qui nous en a chassés. . .	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	G.Nines_Ming = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	782	}{	Alors, on fait quoi ?	}{	Alors, on fait quoi ?	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	D'abord ?	}
 {	783	}{	Ming Xiao dit qu'ils étaient alliés.	}{	Ming Xiao dit qu'ils étaient alliés.	}{	741	}{	G.Nines_Dirty == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix et Xiao ont échangé des voeux en secret avant qu'il te fasse sa proposition.	}
 {	784	}{	Je ne sais pas si le prince mérite de mourir.	}{	Je ne sais pas si le prince mérite de mourir.	}{	771	}{	G.Nines_Sire == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je pense que nous ne devrions pas tuer le prince autrement que par bonté. . .	}
@@ -788,11 +788,11 @@
 {	788	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	789	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	790	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	791	}{	On n'a pas le choix, il faut les arrêter tous les deux. On est condamné à mort. Les Kuei-Jin et la Camarilla ont tous les deux besoin d'éliminer les anarchs. Mais si on perd LA, ce dernier Etat Libre, alors la révolution est finie, et on n'a plus d'endroit où aller.	}{	On n'a pas le choix, il faut les arrêter tous les deux. On est condamné à mort. Les Kuei-Jin et la Camarilla ont tous les deux besoin d'éliminer les anarchs. Mais si on perd LA, ce dernier Etat Libre, alors la révolution est finie, et on n'a plus d'endroit où aller.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	G.Nines_FreeState = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	791	}{	On n'a pas le choix, il faut les arrêter tous les deux. On est condamné à mort. Les Kuei-Jin et la Camarilla ont tous les deux besoin d'éliminer les Anarchs. Mais si on perd LA, ce dernier Etat Libre, alors la révolution est finie, et on n'a plus d'endroit où aller.	}{	On n'a pas le choix, il faut les arrêter tous les deux. On est condamné à mort. Les Kuei-Jin et la Camarilla ont tous les deux besoin d'éliminer les Anarchs. Mais si on perd LA, ce dernier Etat Libre, alors la révolution est finie, et on n'a plus d'endroit où aller.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	G.Nines_FreeState = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	792	}{	Ca ne doit pas arriver ! Qu'est-ce qu'on fait ?	}{	Ca ne doit pas arriver ! Qu'est-ce qu'on fait ?	}{	761	}{	G.Nines_Killxiao == 0	}{	}{	}{	}{	}{	}{	}{	}{	Alors. . . où je vais ?	}
 {	793	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	794	}{	Non, je ne laisserai pas faire ça. Allez, Nines, je suis avec toi.	}{	Non, je ne laisserai pas faire ça. Allez, Nines, je suis avec toi.	}{	851	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vois des choses par tes yeux.	}
-{	795	}{	Je ne suis pas anarch. Qu'est-ce que ça peut me faire ?	}{	Je ne suis pas anarch. Qu'est-ce que ça peut me faire ?	}{	831	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ferai signe aux anges quand je traverserai l'obscurité.	}
+{	795	}{	Je ne suis pas Anarch. Qu'est-ce que ça peut me faire ?	}{	Je ne suis pas Anarch. Qu'est-ce que ça peut me faire ?	}{	831	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ferai signe aux anges quand je traverserai l'obscurité.	}
 {	796	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	797	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	798	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -828,7 +828,7 @@
 {	828	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	829	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	830	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	831	}{	Si tu t'enfuis, tu ne pourras te cacher nulle part. La Camarilla voudra te tuer, grâce à LaCroix. Le Sabbat te chassera par principe. Et tu n'auras aucun ami là où flotte le drapeau des anarchs.	}{	Si tu t'enfuis, tu ne pourras te cacher nulle part. La Camarilla voudra te tuer, grâce à LaCroix. Le Sabbat te chassera par principe. Et tu n'auras aucun ami là où flotte le drapeau des anarchs.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	831	}{	Si tu t'enfuis, tu ne pourras te cacher nulle part. La Camarilla voudra te tuer, grâce à LaCroix. Le Sabbat te chassera par principe. Et tu n'auras aucun ami là où flotte le drapeau des Anarchs.	}{	Si tu t'enfuis, tu ne pourras te cacher nulle part. La Camarilla voudra te tuer, grâce à LaCroix. Le Sabbat te chassera par principe. Et tu n'auras aucun ami là où flotte le drapeau des Anarchs.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	832	}{	(Auto-Link)	}{	(Auto-Link)	}{	841	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	833	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	834	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -859,7 +859,7 @@
 {	859	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	860	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	861	}{	Une fois Xiao éliminée, va chez LaCroix. J'appellerai quelques-uns des pires types que je connais pour t'accueillir dehors. Tu dégages LaCroix, et tu seras un héros dans la ville. Je compte sur toi.	}{	Une fois Xiao éliminée, va chez LaCroix. Tu dégages LaCroix, et tu seras une héroïne dans la ville. Je compte sur toi.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	862	}{	Je ne te décevrai pas, Nines. Cette ville restera un Etat Libre anarch.	}{	Je ne te décevrai pas, Nines. Cette ville restera un Etat Libre anarch.	}{	871	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Je ne m'incline devant personne et mes frères devraient en faire autant. 	}
+{	862	}{	Je ne te décevrai pas, Nines. Cette ville restera un Etat Libre Anarch.	}{	Je ne te décevrai pas, Nines. Cette ville restera un Etat Libre Anarch.	}{	871	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Je ne m'incline devant personne et mes frères devraient en faire autant. 	}
 {	863	}{	LaCroix aurait dû se faire descendre depuis longtemps. Il est temps d'en finir.	}{	LaCroix aurait dû se faire descendre depuis longtemps. Il est temps d'en finir.	}{	871	}{	}{	}{	}{	}{	}{	}{	}{	}{	Depuis la nuit de ma mort, j'ai su que le serpent ne nous étranglerait pas très longtemps. 	}
 {	864	}{	Il va pleuvoir des morceaux de LaCroix sur tout le centre ville ce soir.	}{	Il va pleuvoir des morceaux de LaCroix sur tout le centre ville ce soir.	}{	871	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Regarde la lune, car le sang de LaCroix sera un arc-en-ciel victorieux.	}
 {	865	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -871,7 +871,7 @@
 {	871	}{	Isaac m'a garantit que personne ne peut entrer dans Hollywood. Je survivrai, mais je préférerais pouvoir venir avec toi. Allez, pour LA. Envoie-les en enfer.	}{	Isaac m'a garantit que personne ne peut entrer dans Hollywood. Je survivrai, mais je préférerais pouvoir venir avec toi. Allez, pour LA. Envoie-les en enfer.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	872	}{	Tu aurais quelque chose pour m'aider, comme une de vos grenades?	}{	Tu aurais quelque chose pour m'aider, comme une de tes grenades?	}{	934	}{	G.Patch_Plus == 1	}{	pc.GiveItem("item_w_grenade_frag"); pc.GiveAmmo("item_w_grenade_frag",1)	}{	}{	}{	}{	}{	}{	}{	Ce big bang à toi me permettrait de souffler la merde!!	}
 {	873	}{	Merci. Rien de trop gros pour moi. A plus, Nines.	}{	Merci. Rien de trop gros pour moi. A plus, Nines.	}{	934	}{	}{	}{	}{	}{	}{	}{	}{	}{	Gratitude. Si je ne peux pas gagner par l'effort, je gagnerai en trichant. Je pars.	}
-{	874	}{	Merci. Il est temps de leur montrer de quel bois les anarchs se chauffent. C'est aux autres qu'il faut souhaiter bonne chance.	}{	Merci. Il est temps de leur montrer de quel bois les anarchs se chauffent. C'est aux autres qu'il faut souhaiter bonne chance.	}{	934	}{	}{	}{	}{	}{	}{	}{	}{	}{	Souhaite-moi bonne chance. Bonne chance. Merci !	}
+{	874	}{	Merci. Il est temps de leur montrer de quel bois les Anarchs se chauffent. C'est aux autres qu'il faut souhaiter bonne chance.	}{	Merci. Il est temps de leur montrer de quel bois les Anarchs se chauffent. C'est aux autres qu'il faut souhaiter bonne chance.	}{	934	}{	}{	}{	}{	}{	}{	}{	}{	}{	Souhaite-moi bonne chance. Bonne chance. Merci !	}
 {	875	}{	Merci. Je veux juste que ça s'arrête. Au revoir, Nines.	}{	Merci. Je veux juste que ça s'arrête. Au revoir, Nines.	}{	934	}{	}{	}{	}{	}{	}{	}{	}{	}{	Gratitude. Je veux simplement en terminer. J'ai l'impression que tout le monde s'est servi de moi.	}
 {	876	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	877	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -881,7 +881,7 @@
 {	881	}{	Je suis en morceaux. Je ne peux rien faire pour t'aider.	}{	Je suis en morceaux. Je ne peux rien faire pour t'aider.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	882	}{	Xiao est morte.	}{	Xiao est morte.	}{	891	}{	IsDead("MingXiao")	}{	}{	}{	}{	}{	}{	}{	}{	Xiao a du mal à exister, maintenant.	}
 {	883	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	884	}{	Repose-toi, Nines. Au revoir.	}{	Repose-toi, Nines. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si les anarchs te donnent une carte de convalescence, dis-leur de la signer de ma part.	}
+{	884	}{	Repose-toi, Nines. Au revoir.	}{	Repose-toi, Nines. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si les Anarchs te donnent une carte de convalescence, dis-leur de la signer de ma part.	}
 {	885	}{	Ouais, ces loups-garous sont une plaie pour la plupart des vampires. Au revoir.	}{	Ouais, ces loups-garous sont une plaie pour la plupart des vampires. Au revoir.	}{	0	}{	IsDead("Werewolf")	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez quelque chose, là. . . On dirait une dent de loup. Je n'ai pas eu ça, moi. . .	}
 {	886	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	887	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -898,7 +898,7 @@
 {	898	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	899	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	900	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	901	}{	. . . La même chose qui arrive à beaucoup d'anarchs, Malkav. Mais tu le savais déjà, non ?	}{	. . . La même chose qui arrive à beaucoup d'anarchs, Malkav. Mais tu le savais déjà, non ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	901	}{	. . . La même chose qui arrive à beaucoup d'Anarchs, Malkav. Mais tu le savais déjà, non ?	}{	. . . La même chose qui arrive à beaucoup d'Anarchs, Malkav. Mais tu le savais déjà, non ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	902	}{	(Auto-Link)	}{	(Auto-Link)	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	903	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	904	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
