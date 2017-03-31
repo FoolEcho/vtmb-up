@@ -89,8 +89,8 @@
 {	89	}{	Vous avez déjà voulu sortir avec un astronaute ? Alors ne ratez pas votre chance.	}{	Vous avez déjà voulu sortir avec une astronaute ? Alors ne ratez pas votre chance.	}{	341	}{	Seduction -3 & OneOfSet(7,7)	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez déjà voulu sortir avec un cadet de l'espace ? Alors ne ratez pas votre chance.	}
 {	90	}{	Il faudra qu'on discute une autre fois. Excusez-moi. . .	}{	Il faudra qu'on discute une autre fois. Excusez-moi. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis incapable de parler maintenant, plus tard.	}
 {	91	}{	Vous m'avez manqué. Et moi, je vous ai manqué ?	}{	Vous m'avez manqué. Et moi, je vous ai manqué ?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Terriblement. Je vais vous montrer à quel point.	}{	Terriblement. Je vais vous montrer à quel point.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Autant que ma Santé mentale. A table !	}
-{	93	}{	Où étiez-vous ? Oh, je me souviens, maintenant.	}{	Où étiez-vous ? Oh, je me souviens, maintenant.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Oh oui, comme un mal qui vient ! Voyez vous même.	}
+{	92	}{	Terriblement. Je vais vous montrer à quel point.	}{	Terriblement. Je vais vous montrer à quel point.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Autant que ma Santé mentale. A table !	}
+{	93	}{	Où étiez-vous ? Oh, je me souviens, maintenant.	}{	Où étiez-vous ? Oh, je me souviens, maintenant.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Oh oui, comme un mal qui vient ! Voyez vous même.	}
 {	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	Ne partez pas, je reviens tout de suite.	}{	Ne partez pas, je reviens tout de suite.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne vous envolez pas, je vais tourner en rond et je vous reviens.	}
 {	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -269,10 +269,10 @@
 {	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	271	}{	[Sourire séduit]Mmm. . .	}{	[Sourire séduit]Mmm. . .	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Doll1_Seduce = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	272	}{	J'ai quelque chose à vous dire, approchez. . .	}{	J'ai quelque chose à vous dire, approchez. . .	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Je doit murmurer dans votre cou.	}
-{	273	}{	Laissez-moi vous montrer un plaisir comme vous n'en avez jamais connu.	}{	Laissez-moi vous montrer un plaisir comme vous n'en avez jamais connu.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Je ne suis pas complètement fonctionnel, mais y'a des trucs qui marchent encore.	}
-{	274	}{	Un baiser avant que je parte ?	}{	Un baiser avant que je parte ?	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Bisous, Bisous ?	}
-{	275	}{	Je vous promets que je ferai doucement. . .	}{	Je vous promets que je ferai doucement. . .	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Soyez gentille avec moi - c'est mon énième fois.	}
+{	272	}{	J'ai quelque chose à vous dire, approchez. . .	}{	J'ai quelque chose à vous dire, approchez. . .	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Je doit murmurer dans votre cou.	}
+{	273	}{	Laissez-moi vous montrer un plaisir comme vous n'en avez jamais connu.	}{	Laissez-moi vous montrer un plaisir comme vous n'en avez jamais connu.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Je ne suis pas complètement fonctionnel, mais y'a des trucs qui marchent encore.	}
+{	274	}{	Un baiser avant que je parte ?	}{	Un baiser avant que je parte ?	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Bisous, Bisous ?	}
+{	275	}{	Je vous promets que je ferai doucement. . .	}{	Je vous promets que je ferai doucement. . .	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Soyez gentille avec moi - c'est mon énième fois.	}
 {	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

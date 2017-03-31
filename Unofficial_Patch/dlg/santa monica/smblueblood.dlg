@@ -60,7 +60,7 @@
 {	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	61	}{	J'ai soudain l'envie de marcher dans cette allée sombre et menaçante. Vous joindrez-vous à moi ?	}{	J'ai soudain l'envie de marcher dans cette allée sombre et menaçante. Vous joindrez-vous à moi ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	Je vous y retrouve.	}{	Je vous y retrouve.	}{	0	}{	G.Smblue_Dominated == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je vous y retrouve, mon inséparable libidineux.	}
-{	63	}{	Nul besoin d'aller si loin.	}{	Nul besoin d'aller si loin.	}{	0	}{	G.Smblue_Seduced == 1	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Joignons nous ici.	}
+{	63	}{	Nul besoin d'aller si loin.	}{	Nul besoin d'aller si loin.	}{	0	}{	G.Smblue_Seduced == 1	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Joignons nous ici.	}
 {	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -116,7 +116,7 @@
 {	116	}{	On cherche de la compagnie ?	}{	On cherche de la compagnie ?	}{	61	}{	Seduction 4	}{	G.Smblue_Seduced = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	117	}{	On cherche de la compagnie ?	}{	On cherche de la compagnie ?	}{	121	}{	Seduction -4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	118	}{	Retrouvez-moi dans l'impasse.	}{	Retrouvez-moi dans l'impasse.	}{	61	}{	Dominate 1	}{	G.Smblue_Dominated = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	119	}{	Retrouvez-moi dans l'impasse.	}{	Retrouvez-moi dans l'impasse.	}{	61	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1;dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	Retrouvez-moi dans l'impasse.	}{	Retrouvez-moi dans l'impasse.	}{	61	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Smblue_Dominated = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	120	}{	A plus tard.	}{	A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	121	}{	Je suis marié. . . à mon travail. Et j'ai une femme, en plus.	}{	Je suis marié. . . à mon travail. Et j'ai une femme, en plus.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	122	}{	Que faites-vous ici ?	}{	Que faites-vous ici ?	}{	21	}{	G.Smblue_Plans == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quelle route vous guide, étranger ?	}

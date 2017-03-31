@@ -59,10 +59,10 @@
 {	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	61	}{	Vous existez vraiment ?	}{	Vous existez vraiment ?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Phil_Seduce = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	62	}{	Vous voulez toucher pour être fixé ?	}{	Vous voulez toucher pour être fixé ?	}{	0	}{	G.Phil_Drop == 0	}{	G.Seductive_Feed = 1;philDropNote(); pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Autant que des sous-vêtements qui se mangent. . .	}
-{	63	}{	Oh, bébé, bien plus encore. . .	}{	Oh, bébé, bien plus encore. . .	}{	0	}{	not IsClan(pc,"Malkavian") and G.Phil_Drop == 0	}{	G.Seductive_Feed = 1;philDropNote(); pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
-{	64	}{	Vous voulez toucher pour être fixé ?	}{	Vous voulez toucher pour être fixé ?	}{	0	}{	G.Phil_Drop == 1	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Autant que des sous-vêtements qui se mangent. . .	}
-{	65	}{	Oh, bébé, bien plus encore. . .	}{	Oh, bébé, bien plus encore. . .	}{	0	}{	not IsClan(pc,"Malkavian") and G.Phil_Drop == 1	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Vous voulez toucher pour être fixé ?	}{	Vous voulez toucher pour être fixé ?	}{	0	}{	G.Phil_Drop == 0	}{	G.Seductive_Feed = 1; philDropNote(); pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Autant que des sous-vêtements qui se mangent. . .	}
+{	63	}{	Oh, bébé, bien plus encore. . .	}{	Oh, bébé, bien plus encore. . .	}{	0	}{	not IsClan(pc,"Malkavian") and G.Phil_Drop == 0	}{	G.Seductive_Feed = 1; philDropNote(); pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Vous voulez toucher pour être fixé ?	}{	Vous voulez toucher pour être fixé ?	}{	0	}{	G.Phil_Drop == 1	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Autant que des sous-vêtements qui se mangent. . .	}
+{	65	}{	Oh, bébé, bien plus encore. . .	}{	Oh, bébé, bien plus encore. . .	}{	0	}{	not IsClan(pc,"Malkavian") and G.Phil_Drop == 1	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
 {	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

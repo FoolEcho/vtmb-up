@@ -121,7 +121,7 @@
 {	121	}{	Bien, maintenant que nous avons réglé le travail, allons prendre un verre. . . Je connais un endroit merveilleux vers We-Ho. . .	}{	Bien, maintenant que nous avons réglé le travail, allons prendre un verre. . . Je connais un endroit merveilleux vers We-Ho. . .	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	122	}{	Une autre fois, euh. . . on se rappelle, d'acc ? A bientôt, Tommy.	}{	Une autre fois, euh. . . on se rappelle, d'acc ? A bientôt, Tommy.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ressens une telle joie. . . je vais tagger votre visage sur les murs de ma chambre. A plus tard. 	}
 {	123	}{	Oh, vous avez vu l'heure ? J'ai une réunion tôt demain matin. Une autre fois, d'accord ?	}{	Oh, vous avez vu l'heure ? J'ai une réunion tôt demain matin. Une autre fois, d'accord ?	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis déjà là-bas ! Je ne suis plus là !	}
-{	124	}{	Je préfèrerais me joindre à vous pour un verre.	Maintenant.	}{	Je préfèrerais me joindre à vous pour un verre.	Maintenant.	}{	0	}{	G.Patch_Plus == 1	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Nul besoin de bouger pour quelques gouttes de liquide savoureux.	}
+{	124	}{	Je préfèrerais me joindre à vous pour un verre.	Maintenant.	}{	Je préfèrerais me joindre à vous pour un verre.	Maintenant.	}{	0	}{	G.Patch_Plus == 1	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Nul besoin de bouger pour quelques gouttes de liquide savoureux.	}
 {	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

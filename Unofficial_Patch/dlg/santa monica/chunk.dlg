@@ -99,7 +99,7 @@
 {	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	101	}{	Euh oui, je peux faire ça. Par ici.	}{	Euh oui, je peux faire ça. Par ici.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Chunk_Dominated = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	102	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	S'il te plaît.	}{	S'il te plaît.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -129,7 +129,7 @@
 {	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	131	}{	[Nerveux]Eh bien, euh. . . malheureusement, si nous continuons de discuter comme ça, c'est une atteinte au code 613. Vous savez quoi. . . On devrait aller s'acheter un pain au chocolat tous les deux après le boulot. Je connais une boulangerie pas mal. . .	}{	[Nerveux]Eh bien, euh. . . malheureusement, si nous continuons de discuter comme ça, c'est une atteinte au code 613. Vous savez, on pourrait se retrouver pour grignoter après ma garde, hein ? Je connais un endroit pas loin où on mange de délicieux donuts. . .	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Chunk_Feed = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	132	}{	Et si nous apprenions tout de suite à nous connaître un peu mieux ?	}{	Et si nous apprenions tout de suite à nous connaître un peu mieux ?	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Je serai votre donut. Murmurez-moi votre recette à l'oreille. . .	}
+{	132	}{	Et si nous apprenions tout de suite à nous connaître un peu mieux ?	}{	Et si nous apprenions tout de suite à nous connaître un peu mieux ?	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Je serai votre donut. Murmurez-moi votre recette à l'oreille. . .	}
 {	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -169,7 +169,7 @@
 {	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	171	}{	[un peu en colère]Quoi que vous soyez, je vous conseille de quitter les environs immédiatement ou j'appelle des renforts. . . [pause, in petto]La vache, j'ai cru que mon coeur allait s'arrêter.	}{	[un peu en colère]Quoi que vous soyez, je vous conseille de quitter les environs immédiatement ou j'appelle des renforts. . . [pause, in petto]La vache, j'ai cru que mon coeur allait s'arrêter.	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	G.Chunk_Scared = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	172	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Oh, maintenant j'ai peur.	}{	Oh, maintenant j'ai peur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	173	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -179,7 +179,7 @@
 {	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	181	}{	Eh, salut mon chou. Alors, on revient manger dans la main de son vigile en sucre ?	}{	Eh, salut mon chou. Alors, on revient manger dans la main de son vigile en sucre ?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	182	}{	Venez par ici, 'officier'.	}{	Venez par ici, 'officier'.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Venez par ici, 'officier'.	}{	Venez par ici, 'officier'.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
 {	183	}{	Pas tout de suite. Mais tout à l'heure, mon petit beignet à la confiture. . .	}{	Pas tout de suite. Mais tout à l'heure, mon petit beignet à la confiture. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -200,7 +200,7 @@
 {	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	201	}{	Ah, je vois. Vous devez être en plein délire. On a oublié de prendre ses médicaments ce matin, hein ? Alors. . . Allez dans l'un des foyers pour sans-abri un peu plus loin, et ils vous donneront un sandwich au fromage et un verre de jus de fruit.	}{	Ah, je vois. Vous devez être en plein délire. On a oublié de prendre ses médicaments ce matin, hein ? Alors. . . Allez dans l'un des foyers pour sans-abri un peu plus loin, et ils vous donneront un sandwich au fromage et un verre de jus de fruit.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	202	}{	Votre esprit va se briser sur l'étendue vide de votre vie.	}{	Votre esprit va se briser sur l'étendue vide de votre vie.	}{	231	}{	Dementation 1 & G.Jeanette_Quest == 1	}{	npc.pl_criminal_attack = 2; npc.pl_investigate = 2	}{	}{	}{	}{	}{	}{	}{	}
-{	203	}{	Vous êtes une sentinelle de location avec une couronne de fer blanc. . .	}{	Vous êtes une sentinelle de location avec une couronne de fer blanc. . .	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes une sentinelle de location avec une couronne de fer blanc. . .	}
+{	203	}{	Vous êtes une sentinelle de location avec une couronne de fer blanc. . .	}{	Vous êtes une sentinelle de location avec une couronne de fer blanc. . .	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes une sentinelle de location avec une couronne de fer blanc. . .	}
 {	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -219,7 +219,7 @@
 {	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	221	}{	Euh ouais, d'accord, si vous voulez, hein. Vous continuez un peu plus loin, jusqu'à une enseigne qui dit 'Zinzins et Cie'. [in petto]Je suis vraiment trop drôle.	}{	Euh ouais, d'accord, si vous voulez, hein. Vous continuez un peu plus loin, jusqu'à une enseigne qui dit 'Zinzins et Cie'. [in petto]Je suis vraiment trop drôle.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	Euh ouais, d'accord, si vous voulez, hein. Vous continuez un peu plus loin, jusqu'à une enseigne qui dit 'Zinzins et Cie'. [in petto]Je suis vraiment trop drôle.	}
-{	222	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	222	}{	Oui.	}{	Oui.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui.	}
 {	223	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	224	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -4,7 +4,7 @@
 AppName=Vampire: The Masquerade - Bloodlines unofficial patch 9.7 fr
 AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 9.7 fr
 VersionInfoDescription=Vampire: The Masquerade - Bloodlines unofficial patch avec sous-titrage français
-VersionInfoVersion=9.7.1
+VersionInfoVersion=9.7.2
 AppPublisher=Werner Spahl
 DefaultDirName={reg:HKLM\Software\Activision\Vampire - Bloodlines,InstallPath|{pf}\Steam\steamapps\common\vampire the masquerade - bloodlines}
 AppendDefaultDirName=no
@@ -71,6 +71,9 @@ Source: "Patch_Extras\*"; DestDir: "{app}\Patch_Extras"; Components: extras; Fla
 Source: "Patch_Extras\Developer Tools\*"; DestDir: "{app}\Patch_Extras\Developer Tools"; Components: extras\edit; Flags: recursesubdirs ignoreversion
 Source: "Patch_Extras\Player Mods\*"; DestDir: "{app}\Patch_Extras\Player Mods"; Components: extras\play; Flags: recursesubdirs ignoreversion
 Source: "ChangeLog"; DestDir: "{app}"; Components: readme
+
+[InstallDelete]
+Type: files; Name: "{app}\bin\loader\mods.*"
 
 [Icons]
 Name: "{userdesktop}\VTM Bloodlines Unofficial Patch (fr)"; Filename: {app}\vampire.exe; Parameters: "-game Unofficial_Patch_fr"

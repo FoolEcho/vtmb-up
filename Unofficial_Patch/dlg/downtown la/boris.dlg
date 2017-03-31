@@ -1,14 +1,14 @@
 {	1	}{	[traduit, Chert voz'mi?] (Mais qu'est-ce que ?)	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	[traduit, Zaydi!] (Venez par ici !)	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	3	}{	[traduit, Ya dumayu ti znaesh shto ya govoru?] (J'imagine que vous comprenez ce que je dis ?)	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	4	}{	[fort accent russe, Shto eto takoe?](Mais qu'est-ce que ?)	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	[traduit, Ya dumayu ti znaesh' chto ya govoryu ?] (J'imagine que vous comprenez ce que je dis ?)	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	[fort accent russe, Chto eto takoe ?](Mais qu'est-ce que ?)	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	11	}{	[traduit, Shto eto takoe? Chert voz'mi? pochemu ti ego vpustil?](Que se passe-t-il ? Pourquoi le fais-tu entrer ici ?) [anglais] Qui êtes-vous ?	}{	[traduit, Shto eto takoe? Chert voz'mi? pochemu ti ego vpustil?](Que se passe-t-il ? Pourquoi la fais-tu entrer ici ?) [anglais] Qui êtes-vous ?	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	G.Boris_Talk = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[traduit, Chto eto takoe? Chert voz'mi? Pochemu ti ego vpustil?](Que se passe-t-il ? Pourquoi le fais-tu entrer ici ?) [anglais] Qui êtes-vous ?	}{	[traduit, Chto eto takoe? Chert voz'mi? Pochemu ti ego vpustil?](Que se passe-t-il ? Pourquoi la fais-tu entrer ici ?) [anglais] Qui êtes-vous ?	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	G.Boris_Talk = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	J'aimerais discuter affaires avec vous.	}{	J'aimerais discuter affaires avec vous.	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	13	}{	Venus m'envoie vous parler.	}{	Venus m'envoie vous parler.	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	14	}{	Je porte la parole de la déesse, un message pour vos oreilles.	}{	Je porte la parole de la déesse, un message pour vos oreilles.	}{	211	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -58,7 +58,7 @@
 {	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	61	}{	[traduit, mah-LEEN-kai-ah SVOLE-ahtch, Malen'kaja svoloch'!](Petit salaud !) Sale gosse pourri gâté ! Voilà bien l'Amérique ! Je lui donne tant, et elle me crache au visage !?	}{	[traduit, mah-LEEN-kai-ah SVOLE-ahtch, Malen'kaja svoloch'!](Petite salope !) Sale gosse pourrie gâtée ! Voilà bien l'Amérique ! Je lui donne tant, et elle me crache au visage !?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	[traduit, Malen'kaja svoloch'!](Petit salaud !) Sale gosse pourri gâté ! Voilà bien l'Amérique ! Je lui donne tant, et elle me crache au visage !?	}{	[traduit, Malen'kaja svoloch'!](Petite salope !) Sale gosse pourrie gâtée ! Voilà bien l'Amérique ! Je lui donne tant, et elle me crache au visage !?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	63	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	64	}{	Vous allez annuler cette dette. Vous en avez vraiment envie.	}{	Vous allez annuler cette dette. Vous en avez vraiment envie.	}{	141	}{	Dominate 1 & (G.Dema_Go == 0 or G.Dema_Leave == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -98,7 +98,7 @@
 {	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	101	}{	OK. Je ne vous donnerai rien. Dites à petite garce de remballer petit club. Son nom n'est plus dessus. Sortez ! Pachli ! Dehors !	}{	OK. Je ne vous donnerai rien. Dites à petite garce de remballer petit club. Son nom n'est plus dessus. Sortez ! Pachli ! Dehors !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	OK. Je ne vous donnerai rien. Dites à petite garce de remballer petit club. Son nom n'est plus dessus. Sortez ! Poshli ! Dehors !	}{	OK. Je ne vous donnerai rien. Dites à petite garce de remballer petit club. Son nom n'est plus dessus. Sortez ! Poshli ! Dehors !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	102	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	104	}{	Vous allez annuler cette dette. Vous en avez vraiment envie.	}{	Vous allez annuler cette dette. Vous en avez vraiment envie.	}{	141	}{	Dominate 1 & (G.Dema_Go == 0 or G.Dema_Leave == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -138,7 +138,7 @@
 {	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	141	}{	[soupir] Très bien, [traduit](mon ami). Je comprends. La dette est annulée. Dites à fille gâtée qu'elle plus jamais avoir rien de moi !	}{	[soupir] Très bien, [traduit](mon amie). Je comprends. La dette est annulée. Dites à fille gâtée qu'elle plus jamais avoir rien de moi !	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Venus",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	[soupir] Très bien, [traduit, tovarisch](mon ami). Je comprends. La dette est annulée. Dites à fille gâtée qu'elle plus jamais avoir rien de moi !	}{	[soupir] Très bien, [traduit, tovarisch](mon amie). Je comprends. La dette est annulée. Dites à fille gâtée qu'elle plus jamais avoir rien de moi !	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Venus",2)	}{	}{	}{	}{	}{	}{	}{	}
 {	142	}{	Merci de votre compréhension. Au revoir.	}{	Merci de votre compréhension. Au revoir.	}{	0	}{	}{	G.Boris_Debt = 1	}{	}{	}{	}{	}{	}{	}{	Vous êtes un décisionnaire éclairé. Je dois retourner auprès de la déesse.	}
 {	143	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -189,7 +189,7 @@
 {	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	191	}{	Je vous ai dit de ne pas revenir avant que travail fini. Vous jouez avec moi. Je perds du temps. Je ne veux plus jouer, enfant américain.	}{	Je vous ai dit de ne pas revenir avant que travail fini. Vous jouez avec moi. Je perds du temps. Je ne veux plus jouer, enfant américain.	}{	#	}{	}{	pc.SetQuest("Kill Venus",5)	}{	}{	}{	}{	}{	}{	}{	}
-{	192	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.SetRelationship("player D_HT 5"); G.Boris_Hostile = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Jouons alors !	}{	Jouons alors !	}{	0	}{	}{	npc.SetRelationship("player D_HT 5"); G.Boris_Hostile = 2	}{	}{	}{	}{	}{	}{	}{	Des jeux et de l'amusement !	}
 {	193	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

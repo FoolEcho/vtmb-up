@@ -252,7 +252,7 @@
 {	252	}{	Le porteur de peste est mort.	}{	Le porteur de peste est mort.	}{	261	}{	(G.Kanker_Dead == 1 and G.Jezebel_Dead == 0 and G.Vick_Dead == 0 and G.Damsel_Quest < 2) or (G.Kanker_Dead == 0 and G.Jezebel_Dead == 1 and G.Vick_Dead == 0 and G.Damsel_Quest < 2)	}{	}{	}{	}{	}{	}{	}{	}{	Le pestiféré est mort.	}
 {	253	}{	Connaissez-vous ce symbole sur le flyer ?	}{	Connaissez-vous ce symbole ?	}{	271	}{	pc.HasItem("item_g_brotherhood_flyer")	}{	}{	}{	}{	}{	}{	}{	}{	Ce symbole parle-t-il à votre esprit ?	}
 {	254	}{	Tous les porteurs de peste sont morts.	}{	Tous les porteurs de peste sont morts.	}{	281	}{	G.Kanker_Dead == 1 and G.Jezebel_Dead == 1 and IsDead("Bishop Vick") and G.Damsel_Quest < 3	}{	}{	}{	}{	}{	}{	}{	}{	Le roi des pestiférés et tous ses sujets sont enfin éliminés.	}
-{	255	}{	Ouais, mais l'amour a tué Paul, regarde.	}{	}{	701	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_hannahs_appt_book")	}{	pc.RemoveItem("item_g_hannahs_appt_book")	}{	}{	}{	}{	}{	}{	L'amour a tué ton animal de compagnie, tu vois ?	}{	}
+{	255	}{	Ouais, mais l'amour a tué Paul, regarde.	}{	Ouais, mais l'amour a tué Paul, regarde.	}{	701	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_hannahs_appt_book")	}{	pc.RemoveItem("item_g_hannahs_appt_book")	}{	}{	}{	}{	}{	}{	L'amour a tué ton animal de compagnie, tu vois ?	}{	}
 {	256	}{	Je vais continuer de chercher.	}{	Je vais continuer de chercher.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais dénicher ce pestiféré, vous verrez.	}
 {	257	}{	Avant de partir, une simple question.	}{	Avant de partir, une simple question.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aimerais d'abord apprendre une chose de votre esprit.	}
 {	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -299,7 +299,7 @@
 {	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	301	}{	[étouffe sa rage]Sachez que ce que j'ai dit sur vous, je le retire ! Vous êtes aussi maléfique que les autres. Retournez dans votre tour d'ivoire - nous nous occuperons nous-même de nos problèmes, à présent !	}{	[étouffe sa rage]Sachez que ce que j'ai dit sur vous, je le retire ! Vous êtes aussi maléfique que les autres. Retournez dans votre tour d'ivoire - nous nous occuperons nous-même de nos problèmes, à présent !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Damsel_Like = G.Damsel_Like -3	}{	}{	}{	}{	}{	}{	}{	}
-{	302	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Je doute que tu puisses.	}{	Je doute que tu puisses.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	303	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	304	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -339,7 +339,7 @@
 {	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	340	}{	Je pars. A plus tard, Damsel.	}{	Je pars. A plus tard, Damsel.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai plus besoin de demoiselle de compagnie. Au revoir.	}
 {	341	}{	Et LaCroix serait comme Nixon, au pouvoir depuis un siècle. Petit aristo européen maniéré. . . Vous méritez votre gouvernement ! Foutez le camp d'ici !	}{	Et LaCroix serait comme Nixon, au pouvoir depuis un siècle. Petit aristo européen maniéré. . . Vous méritez votre gouvernement ! Foutez le camp d'ici !	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	342	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	J'y vais.	}{	J'y vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	343	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	344	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -359,7 +359,7 @@
 {	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	361	}{	Je me moque de ce que vous savez. Nines est innocent. Nines ne ferait jamais une chose pareille sans raison. Il ne déclencherait pas une guerre. . . c'est. . . c'est n'importe quoi. Repartez dans votre tour d'ivoire, Cammy, avant qu'il vous arrive malheur !	}{	Je me moque de ce que vous savez. Nines est innocent. Nines ne ferait jamais une chose pareille sans raison. Il ne déclencherait pas une guerre. . . c'est. . . c'est n'importe quoi. Repartez dans votre tour d'ivoire, Cammy, avant qu'il vous arrive malheur !	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	362	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	J'y vais.	}{	J'y vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	363	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	364	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -529,7 +529,7 @@
 {	529	}{	J'ai quelques questions. 	}{	J'ai quelques questions. 	}{	311	}{	G.Damsel_Like > -4	}{	}{	}{	}{	}{	}{	}{	}{	J'aimerais découvrir une chose tapie dans votre esprit.	}
 {	530	}{	Je reviens.	}{	Je reviens.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
 {	531	}{	Non, non ! Plus de question ! Chaque fois que je vous parle, j'ai envie de vous gifler. C'est comme parler à un mur qu'on veut abattre.	}{	Non, non ! Plus de question ! Chaque fois que je vous parle, j'ai envie de vous gifler. C'est comme parler à un mur qu'on veut abattre.	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	532	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	Désolé.	}{	Désolé.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	533	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	534	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

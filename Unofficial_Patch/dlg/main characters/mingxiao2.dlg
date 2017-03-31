@@ -168,7 +168,7 @@
 {	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	171	}{	Ce rusé LaCroix vit l'occasion de se débarrasser de deux problèmes d'un coup, et me convainquit que mon peuple aussi pourrait bénéficier de ces événements. Comme vous le voyez, je fus essentielle à son plan, et j'ai accepté pour l'avenir de nos deux peuples. Et ainsi, LaCroix impliqua Nines Rodriguez dans le meurtre du primogène trop doué, Alistair Grout.	}{	Ce rusé LaCroix vit l'occasion de se débarrasser de deux problèmes d'un coup, et me convainquit que mon peuple aussi pourrait bénéficier de ces événements. Comme vous le voyez, je fus essentielle à son plan, et j'ai accepté pour l'avenir de nos deux peuples. Et ainsi, LaCroix impliqua Nines Rodriguez dans le meurtre du primogène trop doué, Alistair Grout.	}{	#	}{	}{	ChangeMingXiaoToNines();G.Story_State = 80	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Ce rusé LaCroix vit l'occasion de se débarrasser de deux problèmes d'un coup, et me convainquit que mon peuple aussi pourrait bénéficier de ces événements. Comme vous le voyez, je fus essentielle à son plan, et j'ai accepté pour l'avenir de nos deux peuples. Et ainsi, LaCroix impliqua Nines Rodriguez dans le meurtre du primogène trop doué, Alistair Grout.	}{	Ce rusé LaCroix vit l'occasion de se débarrasser de deux problèmes d'un coup, et me convainquit que mon peuple aussi pourrait bénéficier de ces événements. Comme vous le voyez, je fus essentielle à son plan, et j'ai accepté pour l'avenir de nos deux peuples. Et ainsi, LaCroix impliqua Nines Rodriguez dans le meurtre du primogène trop doué, Alistair Grout.	}{	#	}{	}{	ChangeMingXiaoToNines(); G.Story_State = 80	}{	}{	}{	}{	}{	}{	}{	}
 {	172	}{	Bon sang ! Comment avez-vous. . . ? Je ne comprends pas. . .	}{	Bon sang ! Comment avez-vous. . . ? Je ne comprends pas. . .	}{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	AH ! La maîtresse des miroirs me montre un autre de ses visages !	}
 {	173	}{	Fascinant. Pourquoi avez-vous accepter de faire ça ?	}{	Fascinant. Pourquoi avez-vous accepter de faire ça ?	}{	176	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	174	}{	Ah. Les choses commencent à avoir un sens.	}{	Ah. Les choses commencent à avoir un sens.	}{	176	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -309,7 +309,7 @@
 {	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	311	}{	Allez donc, sauvez-nous. Je dois rester ici pour protéger la clé, mais je vous rejoindrai. Que votre poing porte la fureur de mille enfers.	}{	Allez donc, sauvez-nous. Je dois rester ici pour protéger la clé, mais je vous rejoindrai. Que votre poing porte la fureur de mille enfers.	}{	#	}{	}{	G.Ming_Ending = 1; pc.SetQuest("Prince",3)	}{	}{	}{	}{	}{	}{	}{	}
-{	312	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	312	}{	Oui.	}{	Oui.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'irai en enfer.	}
 {	313	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

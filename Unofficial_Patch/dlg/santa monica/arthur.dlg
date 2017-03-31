@@ -820,7 +820,7 @@
 {	820	}{	Que ça ne se reproduise pas. Au revoir.	}{	Que ça ne se reproduise pas. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à l'air que je remplissais il y a peu.	}
 {	821	}{	[rougit]Eh bien, vous savez. . . On me le dit souvent, hé hé.	}{	[rougit]Eh bien, vous savez. . . On me le dit souvent, hé hé.	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	G.Arthur_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
 {	822	}{	C'est certain. Vous avez besoin d'aide, par ici ?	}{	C'est certain. Vous avez besoin d'aide, par ici ?	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Je viens vous aider à payer vos cautions !	}
-{	823	}{	Venez par ici, je veux vous montrer quelque chose. . .	}{	Venez par ici, je veux vous montrer quelque chose. . .	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
+{	823	}{	Venez par ici, je veux vous montrer quelque chose. . .	}{	Venez par ici, je veux vous montrer quelque chose. . .	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
 {	824	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	825	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	826	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -830,7 +830,7 @@
 {	830	}{	Au revoir, Arthur.	}{	Au revoir, Arthur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à l'air que je remplissais il y a peu.	}
 {	831	}{	Eh, n'allez pas penser que je ne suis pas flatté, mais ce n'est pas mon genre. . .	}{	Eh, n'allez pas penser que je ne suis pas flatté, mais ce n'est pas mon genre. . .	}{	#	}{	npc.SetDisposition("Joy",1)	}{	G.Arthur_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
 {	832	}{	Pas de problème. Vous avez besoin d'aide, par ici ?	}{	Pas de problème. Vous avez besoin d'aide, par ici ?	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Je viens vous aider à payer vos cautions !	}
-{	833	}{	Venez par ici, je veux vous montrer quelque chose. . .	}{	Venez par ici, je veux vous montrer quelque chose. . .	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
+{	833	}{	Venez par ici, je veux vous montrer quelque chose. . .	}{	Venez par ici, je veux vous montrer quelque chose. . .	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
 {	834	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	835	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	836	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -59,8 +59,8 @@
 {	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	61	}{	Nous y voilà. Bon, qu'est-ce que tu veux que je fasse ? J'aime qu'un homme me dise exactement ce qu'il veut, et comment il le veut. . .	}{	Nous y voilà. Bon, qu'est-ce que tu veux que je fasse ? Je ne devrais pas te dire ça, mais danser pour une fille, ça me rend complètement dingue. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	62	}{	Viens ici, j'ai un secret à te confier. . .	}{	Viens ici, j'ai un secret à te confier. . .	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc); G.Misti_Follow = 0	}{	}{	}{	}{	}{	}{	}{	Viens par ici. J'ai des paroles à susurrer dans tes parties les plus secrètes. . .	}
-{	63	}{	Je veux que tu fermes les yeux, ma petite. . .	}{	Je veux que tu fermes les yeux, ma petite. . .	}{	0	}{	not IsClan(pc,"Malkavian")	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc); G.Misti_Follow = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Viens ici, j'ai un secret à te confier. . .	}{	Viens ici, j'ai un secret à te confier. . .	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc); G.Misti_Follow = 0	}{	}{	}{	}{	}{	}{	}{	Viens par ici. J'ai des paroles à susurrer dans tes parties les plus secrètes. . .	}
+{	63	}{	Je veux que tu fermes les yeux, ma petite. . .	}{	Je veux que tu fermes les yeux, ma petite. . .	}{	0	}{	not IsClan(pc,"Malkavian")	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc); G.Misti_Follow = 0	}{	}{	}{	}{	}{	}{	}{	}
 {	64	}{	Hm, je n'ai pas faim pour le moment, danse simplement pour moi!	}{	Hm, je n'ai pas faim pour le moment, déchaîne-toi pour moi!	}{	0	}{	G.Patch_Plus == 1	}{	G.Misti_Follow = 0; G.Misti_Dance = 1	}{	}{	}{	}{	}{	}{	}{	Shake it baby!	}
 {	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -379,8 +379,8 @@
 {	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	381	}{	Lu Fang parler à Ji Wen Ja. Arranger choses. Ou mourir. Mais meilleure chance - meilleure avec Ji Wen Ja que vous. Vous mercenaire froid calculateur. Désolé !	}{	Lu Fang parler à Ji Wen Ja. Arranger choses. Ou mourir. Mais meilleure chance - meilleure avec Ji Wen Ja que vous. Vous mercenaire froid calculateur. Désolé !	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Lu_Ji = 7	}{	}{	}{	}{	}{	}{	}{	}
-{	382	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Ji_Lu >= 6	}{	pc.SetQuest("Hitman",8); FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	383	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Ji_Lu < 6	}{	pc.SetQuest("Hitman",10)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	382	}{	Pas de problème.	}{	Pas de problème.	}{	0	}{	G.Ji_Lu >= 6	}{	pc.SetQuest("Hitman",8); FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Tout le plasir est pour moi !	}
+{	383	}{	Pas de problème.	}{	Pas de problème.	}{	0	}{	G.Ji_Lu < 6	}{	pc.SetQuest("Hitman",10)	}{	}{	}{	}{	}{	}{	}{	Tout le plasir est pour moi !	}
 {	384	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	385	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

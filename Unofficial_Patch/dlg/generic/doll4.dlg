@@ -89,8 +89,8 @@
 {	89	}{	Je suis dans un bar, je vous parle. . . Réfléchissez un peu, Miss Marple. . .	}{	Je suis dans un bar, je vous parle. . . Réfléchissez un peu, Miss Marple. . .	}{	341	}{	Seduction -8 & OneOfSet(7,7)	}{	}{	}{	}{	}{	}{	}{	}{	Elle ne saura jamais ce que je veux. Attendez... J'ai pensé à haute voix là, non ?	}
 {	90	}{	Je vous le dirai quand je le saurai.	}{	Je vous le dirai quand je le saurai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quand je le saurais, je partagerai mon esprit avec vous. Vous aller aimer.	}
 {	91	}{	Ce que vous avez fait la dernière fois. Recommencez. Tout de suite.	}{	Ce que vous avez fait la dernière fois. Recommencez. Tout de suite.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Comment pourrais-je me refuser à une dame ?	}{	Comment pourrais-je me refuser à une dame ?	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	A vos ordres Milady.	}
-{	93	}{	Ce serait avec plaisir. Le vôtre.	}{	Ce serait avec plaisir. Le vôtre.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Oh. Mon chou...	}
+{	92	}{	Comment pourrais-je me refuser à une dame ?	}{	Comment pourrais-je me refuser à une dame ?	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	A vos ordres Milady.	}
+{	93	}{	Ce serait avec plaisir. Le vôtre.	}{	Ce serait avec plaisir. Le vôtre.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Oh. Mon chou...	}
 {	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	Je vous promets de revenir. Promis.	}{	Je vous promets de revenir. Promis.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous allez voir mon dos. Mais bientôt vous reverrez ma face.	}
 {	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -269,9 +269,9 @@
 {	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	271	}{	[Enchantement]Qui êtes-vous ?	}{	[Enchantement]Qui êtes-vous ?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Doll4_Seduce = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	272	}{	Vous n'avez rien besoin de savoir d'autre.	}{	Vous n'avez rien besoin de savoir d'autre.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Une personne mystérieuse et sombre.	}
-{	273	}{	Je vais murmurer mon nom à votre oreille.	}{	Je vais murmurer mon nom à votre oreille.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Les murmures que j'entends vont parler à vos oreilles.	}
-{	274	}{	Quelque chose. . . d'incroyable. Je vais vous montrer.	}{	Quelque chose. . . d'incroyable. Je vais vous montrer.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Dire je pourrais. Mais, faire est mieux.	}
+{	272	}{	Vous n'avez rien besoin de savoir d'autre.	}{	Vous n'avez rien besoin de savoir d'autre.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Une personne mystérieuse et sombre.	}
+{	273	}{	Je vais murmurer mon nom à votre oreille.	}{	Je vais murmurer mon nom à votre oreille.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Les murmures que j'entends vont parler à vos oreilles.	}
+{	274	}{	Quelque chose. . . d'incroyable. Je vais vous montrer.	}{	Quelque chose. . . d'incroyable. Je vais vous montrer.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Dire je pourrais. Mais, faire est mieux.	}
 {	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

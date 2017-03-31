@@ -89,8 +89,8 @@
 {	89	}{	Tout ce qu'il faut pour que MES mains finissent sur VOTRE Cul.	}{	Tout ce qu'il faut pour que MES mains finissent sur VOTRE petit Cul.	}{	344	}{	Seduction -6 & OneOfSet(7,7)	}{	}{	}{	}{	}{	}{	}{	}{	Sûr. Avec la boisson mes mains finiront sur vos douces fesses.	}
 {	90	}{	Peut-être plus tard. Pardon.	}{	Peut-être plus tard. Pardon.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Euh. Je suis indisponible. Renouvellez votre appel plus tard.	}
 {	91	}{	Enfin. Il ne faut pas faire attendre une fille comme ça !	}{	Enfin. Il ne faut pas faire attendre une fille comme ça !	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	J'ai pensé à ce moment chaque instant qui nous séparait.	}{	J'ai pensé à ce moment chaque instant qui nous séparait.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	J'y ai pensé tout ce temps qui nous a séparé. Sauf quand je n'y pensais pas.	}
-{	93	}{	C'est pour ça que je reviens. Pour en avoir encore.	}{	C'est pour ça que je reviens. Pour en avoir encore.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Je vais essayer de réduire le temps d'attente. j'ai besoin d'une injection.	}
+{	92	}{	J'ai pensé à ce moment chaque instant qui nous séparait.	}{	J'ai pensé à ce moment chaque instant qui nous séparait.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	J'y ai pensé tout ce temps qui nous a séparé. Sauf quand je n'y pensais pas.	}
+{	93	}{	C'est pour ça que je reviens. Pour en avoir encore.	}{	C'est pour ça que je reviens. Pour en avoir encore.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Je vais essayer de réduire le temps d'attente. j'ai besoin d'une injection.	}
 {	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	Encore un peu de patience, bébé.	}{	Encore un peu de patience, bébé.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Désolé, Il va falloir encore une fois patienter de ma venue.	}
 {	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -269,9 +269,9 @@
 {	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	271	}{	Vous n'êtes pas comme les autres mecs, hein ?	}{	Vous n'êtes pas comme les autres filles, hein ?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Doll3_Seduce = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	272	}{	Vous n'avez pas idée comme vous avez raison. Je vais vous montrer pourquoi.	}{	Vous n'avez pas idée comme vous avez raison. Je vais vous montrer pourquoi.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Et de si nombreuses manières. Laissez-moi vous en montrer une.	}
-{	273	}{	Quelqu'un vous a déjà fait ça ?	}{	Quelqu'un vous a déjà fait ça ?	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Oui, non. Je ne sais pas. Passons à quelque chose de plus simple.	}
-{	274	}{	Je vais vous montrer une extase plus grande que tout ce que vous avez connu.	}{	Je vais vous montrer une extase plus grande que tout ce que vous avez connu.	}{	0	}{	}{	G.Seductive_Feed = 1;pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Je suis du pur Ecstasy... Même mieux. Laissez-moi vous montrer.	}
+{	272	}{	Vous n'avez pas idée comme vous avez raison. Je vais vous montrer pourquoi.	}{	Vous n'avez pas idée comme vous avez raison. Je vais vous montrer pourquoi.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Et de si nombreuses manières. Laissez-moi vous en montrer une.	}
+{	273	}{	Quelqu'un vous a déjà fait ça ?	}{	Quelqu'un vous a déjà fait ça ?	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Oui, non. Je ne sais pas. Passons à quelque chose de plus simple.	}
+{	274	}{	Je vais vous montrer une extase plus grande que tout ce que vous avez connu.	}{	Je vais vous montrer une extase plus grande que tout ce que vous avez connu.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Je suis du pur Ecstasy... Même mieux. Laissez-moi vous montrer.	}
 {	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
