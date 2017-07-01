@@ -240,24 +240,6 @@ Jeanette"
 
 	Email	// added by wesp
 	{
-		"subject"	"Recherche"
-		"sender"	"m1tn1ck@infocom.vtm"
-		"body"		"Encore Mitnick. Je peux vous offrir un objet occulte spécial si vous me trouvez une carte de la bibliothèque de LA. Placez-la dans votre boîte aux lettres et je l'échangerai contre la récompense."
-		"dependency"	"G.Shubs_Act == 100 and G.Mitnick_Gift == 0"
-		"runscript"	"G.Gift_Email = 1; mitSetQuest()"
-	}
-
-	Email	// added by wesp
-	{
-		"subject"	"Reçu"
-		"sender"	"m1tn1ck@legend.vtm"
-		"body"		"Je l'ai. Trouvez la récompense dans votre boîte aux lettres."
-		"dependency"	"G.Mitnick_Gift == 1"
-		"runscript"	"mitSetQuestFinish()"
-	}
-
-	Email	// added by wesp
-	{
 		"subject"	"Bibliothèque"
 		"sender"	"beckett@legend.vtm"
 		"body"		"Bonjour jeune homme... Un confrère Gangrel nommé Scott suspecte un LaSombra de recruter pour le Sabbat ici, à Los Angeles. Il l'a vu disparaître à l'intérieur de la bibliothèque municipale. Etant occupé pour le moment, pourriez-vous le rencontrer à la Boutique du Fumeur de Santa Monica pour en savoir plus? Après tout, il n'est souhaitable pour personne que ça ne se sache, n'est-ce pas?
@@ -309,15 +291,6 @@ VV"
 
 	Email
 	{
-		"subject"	"Lance-missiles à vendre"
-		"sender"	"gary@schrecknet.vtm"
-		"body"		"Chef, j'ai un autre poster qui prend la poussière, si vous voulez faire l'échange. On dirait qu'une des Anarchs avait fait des photos 'artistiques' avant qu'on l'étreigne. Il est à vous pour la modique somme d'un jouet à tirer en bois de l'Etincelant. Peut-être chez Metal Head Industries. Vous avez parlé à Mitnick, non ? Dans la boîte, comme d'hab."
-		"dependency"	"G.Gary_Photochop == 1 and G.Gary_Damsel == 0"	// changed by wesp
-		"runscript"	"garySetQuestFour()"	// added by wesp
-	}
-
-	Email
-	{
 		"subject"	"Codes triche"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Le film est bien, chef, mais je crois que je me suis laissé aller avec les années. Bon, ça a l'air de marcher pour vous, alors voilà le topo. Vous connaissez la Toréador du Vesuvius, 'Ms. Velour' ? Quand elle respirait, c'était plutôt Miss N'importe quoi pour Trois Cents Billets. Et j'ai un poster. Je vous l'échange contre les photos compromettantes que j'ai vues sur Los Angeles hantée."
@@ -334,21 +307,31 @@ VV"
 		"runscript"	"garySetQuestThree()"	// added by wesp
 	}
 
+	Email
+	{
+		"subject"	"Lance-missiles à vendre"
+		"sender"	"gary@schrecknet.vtm"
+		"body"		"Chef, j'ai un autre poster qui prend la poussière, si vous voulez faire l'échange. On dirait qu'une des Anarchs avait fait des photos 'artistiques' avant qu'on l'étreigne. Il est à vous pour la modique somme d'un jouet à tirer en bois de l'Etincelant. Peut-être chez Metal Head Industries. Vous avez parlé à Mitnick, non ? Dans la boîte, comme d'hab."
+		"dependency"	"G.Gary_Photochop == 1 and G.Gary_Damsel == 0"	// changed by wesp
+		"runscript"	"garySetQuestFour()"	// added by wesp
+	}
+
 	Email	// added by wesp
 	{
-		"subject"	"Confidentielle proposition du Nigéria"
+		"subject"	"Recherche de rencard ?"
 		"sender"	"gary@schrecknet.vtm"
-		"body"		"Êtes-vous technophile, boss? Parce que Mitnick veut une plaque spéciale avec une puce transpondeur intégrée. Je ne sais pas ce qu'il veut en faire, mais il la troquera pour une affiche de Tawni Sessions sur laquelle Imalia n'a pas encore passé ses griffes de colère."
-		"dependency"	"G.Gary_Damsel == 1 and G.Gary_Tawni == 0"
+		"body"		"Êtes-vous seul, chef ? Alors, peut-être que me dénicher une de ces étranges boules de chair de Tzimisce vous empêchera-t-il de vous apitoyer sur vous-même. Je vous proposerais une affiche d'Imalia dans sa beauté complète, avant de lui avoir appliqué mon traitement spécial."
+
+		"dependency"	"G.Gary_Damsel == 1 and G.Gary_Imalia == 0"
 		"runscript"	"garySetQuestFive()"
 	}
 
 	Email	// added by wesp
 	{
-		"subject"	"Réplique aux enchères"
+		"subject"	"Proposition confidentielle du Nigéria"
 		"sender"	"gary@schrecknet.vtm"
-		"body"		"Hé boss, un autre travail pour vous. Un de nos chercheurs versé dans l'occulte aimerait mettre la main sur un calice odieux écrasé vu dans Chinatown. Offrirait une affiche d'Imalia dans sa pleine beauté, avant de lui avoir donné mon traitement spécial! La manière habituelle comme précédemment."
-		"dependency"	"G.Gary_Tawni == 1 and G.Gary_Imalia == 0"
+		"body"		"Êtes-vous technophile, boss? Parce que Mitnick veut une plaque spéciale avec une puce transpondeur intégrée. Je ne sais pas ce qu'il veut en faire, mais il la troquera pour une affiche de Tawni Sessions sur laquelle Imalia n'a pas encore passé ses griffes de colère."
+		"dependency"	"G.Gary_Imalia == 1 and G.Gary_Tawni == 0"
 		"runscript"	"garySetQuestSix()"
 	}
 
@@ -357,8 +340,17 @@ VV"
 		"subject"	"Argent facile au Monde des Ténèbres!"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Occupé, boss? Parce que j'ai entendu qu'un autre pilier de film culte avait disparu. Le shuriken du tourbillon dans \"A Touch of Xen\". Je l'échangerai contre le poster d'une fille agréable, que vous ne regarderez certainement pas dans les yeux!"
-		"dependency"	"G.Gary_Imalia == 1 and G.Gary_Blind == 0"
+		"dependency"	"G.Gary_Tawni == 1 and G.Gary_Blind == 0"
 		"runscript"	"garySetQuestSeven()"
+	}
+
+	Email	// added by wesp
+	{
+		"subject"	"Réplique aux enchères"
+		"sender"	"gary@schrecknet.vtm"
+		"body"		"Hé boss, un autre travail pour vous. Un de nos chercheurs versé dans l'occulte aimerait mettre la main sur un calice odieux écrasé vu dans Chinatown. Offrirait une affiche d'Imalia dans sa pleine beauté, avant de lui avoir donné mon traitement spécial! La manière habituelle comme précédemment."
+		"dependency"	"G.Gary_Blind == 1 and G.Gary_Cross == 0"
+		"runscript"	"garySetQuestEight()"
 	}
 
 	Email

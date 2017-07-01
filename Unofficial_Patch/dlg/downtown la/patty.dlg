@@ -33,7 +33,7 @@
 {	33	}{	Non, je ne le connais pas.	}{	Non, je ne le connais pas.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kent ? Non. Alan ? Non. Ryan ? Non.	}
 {	34	}{	Jamais entendu parler. Contente ?	}{	Jamais entendu parler. Contente ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kent Alan Ryan ? Oui ! Ah ah ah, ce bon vieux. . . oh ho. . . connais pas.	}
 {	35	}{	Le nom ne m'est pas inconnu.	}{	Le nom ne m'est pas inconnu.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce nom a un écho familier.	}
-{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	Ah oui, il a dit qu'il brûlait pour vous. Il m'a donné cela.	}{	Ah oui, il a dit qu'il brûlait pour vous. Il m'a donné cela.	}{	91	}{	(G.Skelter_Quest == 3 or (G.Vandal_Quest == 1 and G.Patch_Plus == 1)) and pc.HasItem("item_w_tzimisce2_claw") 	}{	pc.RemoveItem("item_w_tzimisce2_claw") 	}{	}{	}{	}{	}{	}{	}{	Il était tout feu tout flamme pour vous. Puis il m'a fait ce cadeau.	}
 {	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -53,7 +53,7 @@
 {	53	}{	Je suis trop occupé.	}{	Je suis trop occupée.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pour l'heure, je ne sais déjà plus où donner de la tête.	}
 {	54	}{	Pourquoi donc ?	}{	Pourquoi donc ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Très bonne idée. Pour quelqu'un d'autre.	}
 {	55	}{	J'ai dit au revoir.	}{	J'ai dit au revoir.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Au revoir - Adieu, à plus, bon débarras. 	}
-{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	Ah Kent, il disait brûler pour vous. Il m'a donné ceci.	}{	Ah Kent, il disait brûler pour vous. Il m'a donné ceci.	}{	91	}{	(G.Skelter_Quest == 3 or (G.Vandal_Quest == 1 and G.Patch_Plus == 1)) and pc.HasItem("item_w_tzimisce2_claw") 	}{	pc.RemoveItem("item_w_tzimisce2_claw") 	}{	}{	}{	}{	}{	}{	}{	Le chat de race était tout feu tout flamme pour vous. Puis il m'a donné ce cadeau.	}
 {	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -82,7 +82,7 @@
 {	82	}{	Pas de problème, Patty. J'ai trouvé Kent Alan Ryan pour vous.	}{	Pas de problème, Patty. J'ai trouvé Kent Alan Ryan pour vous.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai trouvé le Kent Alan Ryan.	}
 {	83	}{	Oui, j'ai bien vu. Je sais où est Kent, au fait.	}{	Oui, j'ai bien vu. Je sais où est Kent, au fait.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Son emplacement n'est plus entouré de mystère.	}
 {	84	}{	Oh, ça va. . . Bon, j'ai trouvé Kent Alan Ryan.	}{	Oh, ça va. . . Bon, j'ai trouvé Kent Alan Ryan.	}{	91	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	Effectivement, Kent disait brûler pour vous. Il m'a donné ceci.	}{	Effectivement, Kent disait brûler pour vous. Il m'a donné ceci.	}{	91	}{	(G.Skelter_Quest == 3 or (G.Vandal_Quest == 1 and G.Patch_Plus == 1)) and pc.HasItem("item_w_tzimisce2_claw") 	}{	pc.RemoveItem("item_w_tzimisce2_claw") 	}{	}{	}{	}{	}{	}{	}{	Effectivement le chat de race était tout feu tout flamme pour vous. Puis il m'a donné ce cadeau.	}
 {	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

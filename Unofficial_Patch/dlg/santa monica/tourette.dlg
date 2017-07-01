@@ -859,8 +859,8 @@
 {	859	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	860	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	861	}{	[Therese]Je t'en prie.	}{	[Therese]Je t'en prie.	}{	#	}{	pc.SetCamera("tTherese") or npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	862	}{	(Auto-Link)	}{	(Auto-Link)	}{	871	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	863	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	862	}{	(Auto-Link)	}{	(Auto-Link)	}{	871	}{	pc.GetQuestState("Release the Spirit") == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	863	}{	(Auto-Link)	}{	(Auto-Link)	}{	931	}{	pc.GetQuestState("Release the Spirit") == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	864	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	865	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	866	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -869,8 +869,8 @@
 {	869	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	870	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	871	}{	[Jeanette]Therese a officiellement rejoint le camp de la Camarilla. Elle pourrait être prince, un jour. Et moi. . .	}{	[Jeanette]Therese a officiellement rejoint le camp de la Camarilla. Elle pourrait être prince, un jour. Et moi. . .	}{	#	}{	pc.SetCamera("tJeanette") or npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	872	}{	(Auto-Link)	}{	(Auto-Link)	}{	881	}{	pc.GetQuestState("Release the Spirit") == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	873	}{	(Auto-Link)	}{	(Auto-Link)	}{	881	}{	pc.GetQuestState("Release the Spirit") == 2	}{	pc.SetQuest("Release the Spirit",4); pc.SetQuest("Hotel",7)	}{	}{	}{	}{	}{	}{	}{	}
+{	872	}{	(Auto-Link)	}{	(Auto-Link)	}{	881	}{	}{	pc.SetQuest("Release the Spirit",4); pc.SetQuest("Hotel",7)	}{	}{	}{	}{	}{	}{	}{	}
+{	873	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	874	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	875	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	876	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -882,7 +882,7 @@
 {	882	}{	Comment vous entendez-vous toutes les deux ?	}{	Comment vous entendez-vous toutes les deux ?	}{	811	}{	G.Story_State >= 10 and G.Tourette_1 == 0	}{	G.Tourette_1 = 1	}{	}{	}{	}{	}{	}{	}{	Avez-vous trouvé de la place pour deux dans votre peau si pâle ?	}
 {	883	}{	Félicitations. Si vous avez besoin d'un service, n'hésitez pas.	}{	Félicitations. Si vous avez besoin d'un service, n'hésitez pas.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Faites appel à moi si vous le désirez, filles de Janus.	}
 {	884	}{	Vous finissez les phrases de l'autre. Ca fait presque peur. Au revoir.	}{	Vous finissez les phrases de l'autre. Ca fait presque peur. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre folie est divine. Adieu.	}
-{	885	}{	Jeanette l'avait-t-elle perdu ou quoi? Peu importe, au revoir.	}{	Jeanette l'avait-t-elle perdu ou quoi? Peu importe, au revoir.	}{	0	}{	G.Jeanette_Scorn == 1	}{	}{	}{	}{	}{	}{	}{	}{	La Dame blanche l'avait-t-elle perdu ou quoi? Peu importe, je ne suis plus là.	}
+{	885	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	886	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	887	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	888	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -928,10 +928,10 @@
 {	928	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	929	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	930	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	931	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	932	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	933	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	934	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	931	}{	[Jeanette]Therese s'est officiellement rangée aux côtés de la Camarilla. Peut-être prince, un jour.	}{	[Jeanette]Therese s'est officiellement rangée aux côtés de la Camarilla. Peut-être prince, un jour.	}{	#	}{	pc.SetCamera("tJeanette") or npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	932	}{	Comment les deux s'entendent-elles ?	}{	Comment les deux s'entendent-elles ?	}{	811	}{	G.Story_State >= 10 and G.Tourette_1 == 0	}{	G.Tourette_1 = 1	}{	}{	}{	}{	}{	}{	}{	Faîtes-vous chambre commune sous votre peau pâle ?	}
+{	933	}{	Félicitations. Si jamais vous avez besoin d'un service, demandez-moi. Au revoir.	}{	Félicitations. Si jamais vous avez besoin d'un service, demandez-moi. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Appelez-moi en tout temps, filles de Janus.	}
+{	934	}{	Terminer la phrase de l'autre - c'est vraiment effrayant. Au revoir.	}{	Terminer la phrase de l'autre - c'est vraiment effrayant. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre folie est divine. Adieu.	}
 {	935	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	936	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	937	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

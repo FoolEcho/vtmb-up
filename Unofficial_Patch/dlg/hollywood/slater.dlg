@@ -1,6 +1,6 @@
 {	1	}{	Ca boume ? Euh, bienvenue au Red Spot, inventeur du maxi-big drink, deux litres de votre boisson préférée pour 89 cents, bla bla. Je peux t'aider ?	}{	Ca boume ? Euh, bienvenue au Red Spot, inventeur du maxi-big drink, deux litres de votre boisson préférée pour 89 cents, bla bla. Je peux t'aider ?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Slater_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	Ouais. Qu'est-ce qui se passe d'intéressant par ici ? Rien d'original ?	}{	Ouais. Qu'est-ce qui se passe d'intéressant par ici ? Rien d'original ?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	3	}{	Tu as entendu parler du tueur en série ?	}{	Tu as entendu parler du tueur en série ?	}{	51	}{	not IsClan(pc,"Malkavian") and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Tu as entendu parler du tueur en série ?	}{	Tu as entendu parler du tueur en série ?	}{	51	}{	G.Slater_Serial == 0 and not IsClan(pc,"Malkavian") and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	4	}{	Tu peux peut-être m'aider, je cherche une cassette vidéo.	}{	Tu peux peut-être m'aider, je cherche une cassette vidéo.	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	5	}{	Que me cache cette ville. . .	}{	Que me cache cette ville. . .	}{	201	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Que me cache cette ville. . .	}
 {	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -170,7 +170,7 @@
 {	170	}{	Je file. A plus.	}{	Je file. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	171	}{	Alors, t'as besoin d'un visage ? Euh je veux dire, qu'est-ce que tu veux ?	}{	Alors, t'as besoin d'un visage ? Euh je veux dire, qu'est-ce que tu veux ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	172	}{	Ouais. Qu'est-ce qui se passe d'intéressant par ici ? Rien d'original ?	}{	Ouais. Qu'est-ce qui se passe d'intéressant par ici ? Rien d'original ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi un peu plus de la ville des étoiles. . .	}
-{	173	}{	Tu as entendu parler du tueur en série ?	}{	Tu as entendu parler du tueur en série ?	}{	51	}{	pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}
+{	173	}{	Tu as entendu parler du tueur en série ?	}{	Tu as entendu parler du tueur en série ?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}
 {	174	}{	Tu peux peut-être m'aider, je cherche une cassette vidéo.	}{	Tu peux peut-être m'aider, je cherche une cassette vidéo.	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche une vidéo pleine d'atrocités inconnues. . .	}
 {	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -180,7 +180,7 @@
 {	180	}{	Non, je fais juste un tour. A plus.	}{	Non, je fais juste un tour. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai besoin de rien. Au revoir.	}
 {	181	}{	Oh, pardon, je ne voulais pas te faire de peine. Bon, je peux t'aider ?	}{	Oh, pardon, je ne voulais pas te faire de peine. Bon, je peux t'aider ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	182	}{	Ouais. Qu'est-ce qui se passe d'intéressant par ici ? Rien d'original ?	}{	Ouais. Qu'est-ce qui se passe d'intéressant par ici ? Rien d'original ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	183	}{	Tu as entendu parler du tueur en série ?	}{	Tu as entendu parler du tueur en série ?	}{	51	}{	pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	Tu as entendu parler du tueur en série ?	}{	Tu as entendu parler du tueur en série ?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	184	}{	Tu peux peut-être m'aider, je cherche une cassette vidéo.	}{	Tu peux peut-être m'aider, je cherche une cassette vidéo.	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -201,7 +201,7 @@
 {	201	}{	Euh, du calme. Un petit jus d'orange pour t'aider à redescendre ?	}{	Euh, du calme. Un petit jus d'orange pour t'aider à redescendre ?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	202	}{	Je ne bois que le sang des vivants. . .	}{	Je ne bois que le sang des vivants. . .	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	203	}{	Je cherche une vidéo pleine d'atrocités inconnues. . .	}{	Je cherche une vidéo pleine d'atrocités inconnues. . .	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	204	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}{	51	}{	pc.GetQuestState("Serial") > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -210,7 +210,7 @@
 {	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	211	}{	Oh. . . T'es du cabinet d'avocats ? Il va falloir parler au manager, pour le truc de harcèlement sexuel. . . Et ne me regarde pas comme ça, ce n'est pas sur moi qu'il s'est excité. . .	}{	Oh. . . T'es du cabinet d'avocats ? Il va falloir parler au manager, pour le truc de harcèlement sexuel. . . Et ne me regarde pas comme ça, ce n'est pas sur moi qu'il s'est excité. . .	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	212	}{	Je cherche une vidéo pleine d'atrocités inconnues. . .	}{	Je cherche une vidéo pleine d'atrocités inconnues. . .	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	213	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}{	51	}{	pc.GetQuestState("Serial") > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	213	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
