@@ -722,7 +722,7 @@
 {	722	}{	King's Way. Il y avait un Tzimisce. Vous remarquerez que ma phrase est au passé.	}{	King's Way. Il y avait un Tzimisce. Vous remarquerez que ma phrase est au passé.	}{	831	}{	IsClan(pc,"Toreador") and G.Isaac_Gift == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	723	}{	King's Way. Il y avait un Tzimisce. Vous remarquerez que ma phrase est au passé.	}{	King's Way. Il y avait un Tzimisce. Vous remarquerez que ma phrase est au passé.	}{	61	}{	not IsClan(pc,"Toreador") and G.Isaac_Gift == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le façonneur de chair qui marchait avec royauté n'est pas si malin maintenant..	}
 {	724	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	921	}{	G.Isaac_Gift == 2 and G.Patch_Plus == 0	}{	pc.MoneyAdd( 500 )	}{	}{	}{	}{	}{	}{	}{	}
-{	725	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	921	}{	G.Isaac_Gift == 2 and G.Patch_Plus == 1	}{	pc.GiveItem("item_g_jumbles_flyer")	}{	}{	}{	}{	}{	}{	}{	}
+{	725	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	921	}{	G.Isaac_Gift == 2 and G.Patch_Plus == 1	}{	pc.GiveItem("item_w_mingxiao_melee")	}{	}{	}{	}{	}{	}{	}{	}
 {	726	}{	J'avais quelques questions.	}{	J'avais quelques questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demande autre chose.	}
 {	727	}{	Oh, à propos de la gargouille. . .	}{	Oh, à propos de la gargouille. . .	}{	511	}{	G.Isaac_Gargoyle == 1 or G.Isaac_Gargoyle == 2	}{	}{	}{	}{	}{	}{	}{	}{	A propos de l'être de pierre. . .	}
 {	728	}{	J'ai tué la gargouille.	}{	J'ai tué la gargouille.	}{	731	}{	IsDead("Gargoyle") and G.Isaac_Gargoyle != 4	}{	}{	}{	}{	}{	}{	}{	}{	L'être de pierre est en miettes.	}

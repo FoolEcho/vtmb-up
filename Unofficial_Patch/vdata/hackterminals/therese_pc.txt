@@ -99,4 +99,12 @@ TerminalDefinition
 		"dependency"	"G.Therese_Quest > 2"	// changed by wesp
 	}
 
+	Email		// added by wesp
+	{
+		"subject"	"Re : Santa Monica est MA ville !"
+		"sender"	"Jeanette"
+		"body"		"C'est ton attitude de garce qui nous sépare. Et si tu allais te rafraîchir un peu dans le Pacifique ?"
+		"dependency"	"G.Therese_Quest > 2 and G.Jeanette_Scorn == 1"	// changed by wesp
+	}
+
 }
