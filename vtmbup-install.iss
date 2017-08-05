@@ -34,7 +34,7 @@ Name: "plus"; Description: "Patch Plus (restaurations et ajustements)"; Flags: c
 Name: "plus\audio"; Description: "Aucune nouvelle audio (morceaux de musiques et sons aléatoires)"; Flags: dontinheritcheck
 Name: "plus\particles"; Description: "Aucune nouvelles particules (pluie améliorée et effets de lancement de sort)"; Flags: dontinheritcheck
 Name: "plus\graphics"; Description: "Pas de nouveaux graphismes (forme guerrière lupine, yeux améliorés)"; Flags: dontinheritcheck
-Name: "plus\disciplines"; Description: "Pas de nouvelles disciplines (animation de lancement de sort et niveaux remplacés"; Flags: dontinheritcheck
+Name: "plus\disciplines"; Description: "Pas de nouvelles disciplines (animations de lancement de sort et niveaux modifiés)"; Flags: dontinheritcheck
 Name: "extras"; Description: "Différents Extras (Walkthrough, Transcriptions...)"; Flags: checkablealone
 Name: "extras\play"; Description: "Mods de joueur (Shader suites, script Linux et plus)"; Flags: dontinheritcheck
 Name: "extras\edit"; Description: "Outils de développeur (SDK officieux, guide de modification et plus)"; Flags: dontinheritcheck
