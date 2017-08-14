@@ -32,7 +32,7 @@ Name: "basic"; Description: "Patch de base"; Types: basic; Flags: fixed checkabl
 Name: "readme"; Description: "Lisez-moi"; Types: basic; Flags: fixed checkablealone
 Name: "plus"; Description: "Patch Plus (restaurations et ajustements)"; Flags: checkablealone 
 Name: "plus\audio"; Description: "Aucune nouvelle audio (morceaux de musiques et sons aléatoires)"; Flags: dontinheritcheck
-Name: "plus\particles"; Description: "Aucune nouvelles particules (pluie améliorée et effets de lancement de sort)"; Flags: dontinheritcheck
+Name: "plus\particles"; Description: "Pas de nouvelles particules (pluie améliorée et effets de lancement de sort)"; Flags: dontinheritcheck
 Name: "plus\graphics"; Description: "Pas de nouveaux graphismes (forme guerrière lupine, yeux améliorés)"; Flags: dontinheritcheck
 Name: "plus\disciplines"; Description: "Pas de nouvelles disciplines (animations de lancement de sort et niveaux modifiés)"; Flags: dontinheritcheck
 Name: "extras"; Description: "Différents Extras (Walkthrough, Transcriptions...)"; Flags: checkablealone
