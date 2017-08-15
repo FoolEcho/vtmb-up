@@ -1,0 +1,516 @@
+{	1	}{	Je vous ai tout dit - vous n'avez aucune raison de me garder ici ! Relâchez-moi !	}{	Je vous ai tout dit - vous n'avez aucune raison de me garder ici ! Relâchez-moi !	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	G.Story_State = 70	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Dr Johansen ?	}{	Dr Johansen ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Eh, quoi d'neuf, docteur ?	}
+{	3	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Parlez-moi du Sarcophage d'Ankara.	}{	Parlez-moi du Sarcophage d'Ankara.	}{	71	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Un discours sur le sarcophage. . . Discours ! DISCOURS !	}{	Un discours sur le sarcophage. . . Discours ! DISCOURS !	}{	181	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	Silence ! Dites-moi ce que vous savez sur le Sarcophage d'Ankara.	}{	Silence ! Dites-moi ce que vous savez sur le Sarcophage d'Ankara.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Finissez ma phrase ou je ne serais pas content.	"Le sarcophage d'Ankara est..."	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Ah ! Laissez-moi ! A l'aide ! Ne me faites pas de mal !	}{	Ah ! Laissez-moi ! A l'aide ! Ne me faites pas de mal !	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Story_State = 70	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Qu'est-ce qui vous fait penser que je vais vous faire du mal ?	}{	Qu'est-ce qui vous fait penser que je vais vous faire du mal ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	C'est tentant. . .	}{	C'est tentant. . .	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Je suis archéologue ! Vous ne pouvez pas m'enfermer comme ça, je suis un otage ! Je n'ai pas besoin de protection ! Ramenez-moi tout de suite à mon hôtel !	}{	Je suis archéologue ! Vous ne pouvez pas m'enfermer comme ça, je suis un otage ! Je n'ai pas besoin de protection ! Ramenez-moi tout de suite à mon hôtel !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Il y a un bateau pas loin d'ici. Aidez-moi, et je vous aiderai à vous échapper.	}{	Il y a un bateau pas loin d'ici. Aidez-moi, et je vous aiderai à vous échapper.	}{	61	}{	Persuasion 8 & pc.humanity >= 5	}{	G.Prof_Escape = 1	}{	}{	}{	}{	}{	}{	}{	Je vous emmène en croisière si vous parlez de sarcophages.	}
+{	23	}{	Je viens vous aider, Dr Johansen.	}{	Je viens vous aider, Dr Johansen.	}{	41	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Nous sommes tous les otages de notre destin fou. Mais je ne suis pas votre geôlier.	}
+{	24	}{	Parlez-moi du Sarcophage d'Ankara.	}{	Parlez-moi du Sarcophage d'Ankara.	}{	71	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	Un discours sur le sarcophage. . . Discours ! DISCOURS !	}{	Un discours sur le sarcophage. . . Discours ! DISCOURS !	}{	181	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	J'ai besoin de renseignements. Si vous m'aidez, je vous laisserai peut-être partir.	}{	J'ai besoin de renseignements. Si vous m'aidez, je vous laisserai peut-être partir.	}{	41	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Réponses égalent liberté, doc.	}
+{	27	}{	Du calme, papy, ou je vais faire quelque chose dont vous aurez vraiment peur.	}{	Du calme, papy, ou je vais faire quelque chose dont vous aurez vraiment peur.	}{	51	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	FINISSEZ MA PHRASE ! LE SARCOPHAGE D'ANKARA EST. . .	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Qu'est-ce qui vous est arrivé ? Votre visage. . . Ils vous ont torturé ? A l'acide ?	}{	Qu'est-ce qui vous est arrivé ? Votre visage. . . Ils vous ont torturée ? A l'acide ?	}{	#	}{	npc.SetDisposition("Disgusted", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Ne vous inquiétez pas pour ça. Je viens vous poser quelques questions.	}{	Ne vous inquiétez pas pour ça. Je viens vous poser quelques questions.	}{	61	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	Oui, c'est ça. Bon, pour le Sarcophage d'Ankara ?	}{	Oui, c'est ça. Bon, pour le Sarcophage d'Ankara ?	}{	41	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	Oui, et si vous ne répondez pas à mes questions, il vous arrivera la même chose.	}{	Oui, et si vous ne répondez pas à mes questions, il vous arrivera la même chose.	}{	51	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Pourquoi font-ils tout ça ? Qu'est-ce que c'est que toutes ces âneries, ces armes, ces croix, ces histoires de vampires. Pourquoi me gardent-ils ici ? Qui sont ces gens ?	}{	Pourquoi font-ils tout ça ? Qu'est-ce que c'est que toutes ces âneries, ces armes, ces croix, ces histoires de vampires. Pourquoi me gardent-ils ici ? Qui sont ces gens ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Ils sont partis, à présent. Je peux vous libérer, alors répondez à mes questions.	}{	Ils sont partis, à présent. Je peux vous libérer, alors répondez à mes questions.	}{	61	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Il n'y a pas de gens, plus que de la viande. Vous pourrez venir avec moi quand nous aurons fini de parler.	}
+{	43	}{	Quelques malades dans une milice. Répondez à mes questions, et vous serez libre.	}{	Quelques malades dans une milice. Répondez à mes questions, et vous serez libre.	}{	61	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	D'autres questions. . . Je ne travaille pas ici. Mais je peux vous laisser partir, si vous me dites ce qui m'intéresse. . .	}
+{	44	}{	Il faut longtemps pour ressouder les os, à votre âge. . . Et ça ne guérit jamais comme il faut.	}{	Il faut longtemps pour ressouder les os, à votre âge. . . Et ça ne guérit jamais comme il faut.	}{	51	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Est-il vrai qu'on peut se débarrasser de l'odeur des vieux en leur coupant le nez ?	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Je suis un vieil homme ! Comment pouvez-vous me menacer de la sorte ? Vous n'avez donc pas la moindre conscience ? Libérez-moi ! J'ai une femme et des enfants, je veux les revoir. Aidez-moi !	}{	Je suis un vieil homme ! Comment pouvez-vous me menacer de la sorte ? Vous n'avez donc pas la moindre conscience ? Libérez-moi ! J'ai une femme et des enfants, je veux les revoir. Aidez-moi !	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Répondez à mes questions, et je n'aurai aucune raison de vous blesser.	}{	Répondez à mes questions, et je n'aurai aucune raison de vous blesser.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi et je garderai mes tortures pour un jour où je m'ennuierai.	}
+{	53	}{	Mauvaise réponse, professeur.	}{	Mauvaise réponse, professeur.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oh non, quelqu'un vous a cassé les doigts !	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Oui, d'accord. . . N'importe quoi pourvu que vous me fassiez sortir de ces cavernes et que vous m'emmeniez loin de ces fous. Je pense que j'ai attrapé une pneumonie.	}{	Oui, d'accord. . . N'importe quoi pourvu que vous me fassiez sortir de ces cavernes et que vous m'emmeniez loin de ces fous. Je pense que j'ai attrapé une pneumonie.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Dites-moi ce que vous savez sur le Sarcophage d'Ankara.	}{	Dites-moi ce que vous savez sur le Sarcophage d'Ankara.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi une histoire sur le Sarcophage d'Ankara.	}
+{	63	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Le sarcophage ? C'est pour le sarcophage que vous avez fait tout ça ? Ah, je vais tout vous dire, mais je pense qu'on devrait sortir avant que ces hommes reviennent, non ?	}{	Le sarcophage ? C'est pour le sarcophage que vous avez fait tout ça ? Ah, je vais tout vous dire, mais je pense qu'on devrait sortir avant que ces hommes reviennent, non ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Je leur ai réglé leur compte, ils ne nous ennuieront plus.	}{	Je leur ai réglé leur compte, ils ne nous ennuieront plus.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Des hommes ? Non, rien que des carcasses de viande.	}
+{	73	}{	Ne vous inquiétez pas pour eux. Répondez à mes questions.	}{	Ne vous inquiétez pas pour eux. Répondez à mes questions.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oh, euh. . . Ils ont fini leur journée. . . L'endroit a changé de direction.	}
+{	74	}{	Je peux vous forcer à répondre, s'il le faut.	}{	Je peux vous forcer à répondre, s'il le faut.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	De la douleur naît la vérité, il paraît.	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	[Crie de douleur]Ahhh ! [Sanglote]Que voulez-vous ?	}{	[Crie de douleur]Ahhh ! [Sanglote]Que voulez-vous ?	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Je vais poser une question. Si vous répondez, je ne vous arrache pas la jambe.	}{	Je vais poser une question. Si vous répondez, je ne vous arrache pas la jambe.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je demande, vous répondez, je souris, et vos os ne traversent pas votre peau.	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Posez-la moi !	}{	Posez-la moi !	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Comment ouvre-t-on le Sarcophage d'Ankara ?	}{	Comment ouvre-t-on le Sarcophage d'Ankara ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Finissez ma phrase. . . Pour ouvrir le Sarcophage d'Ankara. . .	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Il y a une clé. . .	}{	Il y a une clé. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Johansen",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Où est la clé ?	}{	Où est la clé ?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aime ce jeu. . . Je peux trouver la clé. . .	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Je ne sais pas. Au musée, je crois.	}{	Je ne sais pas. Au musée, je crois.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Elle n'y est pas.	}{	Elle n'y est pas.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non. Non. Non. Non. Non.	}
+{	113	}{	Je pense que vous mentez. Vous savez ce que ça veut dire ?	}{	Je pense que vous mentez. Vous savez ce que ça veut dire ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	ON NE PEUT PAS JOUER COMME CA ! PENALITE !	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Je ne sais pas où elle est ! Je vous en prie, libérez-moi !	}{	Je ne sais pas où elle est ! Je vous en prie, libérez-moi !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Réfléchissez bien.	}{	Réfléchissez bien.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Plongez plus avant dans votre esprit.	}
+{	123	}{	La bonne réponse était 'je vais vous dessiner une carte'.	}{	La bonne réponse était 'je vais vous dessiner une carte'.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	ON NE PEUT PAS JOUER COMME CA ! PENALITE !	}
+{	124	}{	Vous ne me servez plus à rien. Si vous criez très fort, on viendra peut-être vous délivrer.	}{	Vous ne me servez plus à rien. Si vous criez très fort, on viendra peut-être vous délivrer.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse pour l'instant. Le plus ironique, c'est que dans des siècles, un archéologue vous trouvera.	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	[Crie de douleur]Oh mon dieu, pourquoi faites-vous ça ? Je ne sais pas. Je sais simplement qu'on a volé le sarcophage. La clé devait être avec. Laissez-moi partir, je ne sais rien.	}{	[Crie de douleur]Oh mon dieu, pourquoi faites-vous ça ? Je ne sais pas. Je sais simplement qu'on a volé le sarcophage. La clé devait être avec. Laissez-moi partir, je ne sais rien.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Vous avez une copie de cette clé ?	}{	Vous avez une copie de cette clé ?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors faites-m'en un double.	}
+{	133	}{	Bon, il n'y a plus d'os. Il va falloir que je prenne l'autre pied.	}{	Bon, il n'y a plus d'os. Il va falloir que je prenne l'autre pied.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Eh, il y a un autre os.	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Elle est peut-être sur le navire, je ne sais pas. Laissez-moi partir.	}{	Elle est peut-être sur le navire, je ne sais pas. Laissez-moi partir.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Vous avez une copie de cette clé ?	}{	Vous avez une copie de cette clé ?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Faites-moi un double.	}
+{	143	}{	La bonne réponse était 'je vais vous dessiner une carte'.	}{	La bonne réponse était 'je vais vous dessiner une carte'.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	ON NE PEUT PAS JOUER COMME CA ! PENALITE !	}
+{	144	}{	Vous ne me servez plus à rien. Criez, on viendra peut-être vous délivrer.	}{	Vous ne me servez plus à rien. Criez, on viendra peut-être vous délivrer.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse pour l'instant. Le plus ironique, c'est que dans des siècles, un archéologue vous trouvera.	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Non, la clé n'est pas comme une clé de porte. C'est un gros objet en pierre, il n'y en a qu'une.	}{	Non, la clé n'est pas comme une clé de porte. C'est un gros objet en pierre, il n'y en a qu'une.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Je ne vous crois pas. Et quand je ne crois pas les gens, j'ai tendance à craquer.	}{	Je ne vous crois pas. Et quand je ne crois pas les gens, j'ai tendance à craquer.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	ON NE PEUT PAS JOUER COMME CA ! PENALITE !	}
+{	153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	Vous ne me servez plus à rien. Si vous criez très fort, on viendra peut-être vous délivrer.	}{	Vous ne me servez plus à rien. Si vous criez très fort, on viendra peut-être vous délivrer.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse pour l'instant. Le plus ironique, c'est que dans des siècles, un archéologue vous trouvera.	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	[Hurle de douleur]Je vous ai tout dit ! [Sanglote]Pourquoi faites-vous ça ? Je vous ai tout dit ! Ma femme ! Je veux revoir ma femme !	}{	[Hurle de douleur]Je vous ai tout dit ! [Sanglote]Pourquoi faites-vous ça ? Je vous ai tout dit ! Ma femme ! Je veux revoir ma femme !	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Vous ne me servez plus à rien. Si vous criez très fort, on viendra peut-être vous délivrer.	}{	Vous ne me servez plus à rien. Si vous criez très fort, on viendra peut-être vous délivrer.	}{	0	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse pour l'instant. Le plus ironique, c'est que dans des siècles, un archéologue vous trouvera.	}
+{	163	}{	Où est cette putain de clé ? J'ai besoin de cette clé, bordel !	}{	Où est cette putain de clé ? J'ai besoin de cette clé, bordel !	}{	171	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	ET MOI J'AI BESOIN D'UNE CLE ! PENALITE !	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	[Un cri de douleur lui échappe, il meurt]. . .	}{	[Un cri de douleur lui échappe, il meurt]. . .	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Si vous avez pu venir jusqu'ici, vous méritez bien des réponses - mais puis-je vous demander quelque chose ? Quand j'aurai répondu, vous m'aiderez à m'échapper.	}{	Si vous avez pu venir jusqu'ici, vous méritez bien des réponses - mais puis-je vous demander quelque chose ? Quand j'aurai répondu, vous m'aiderez à m'échapper.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Bien sûr.	}{	Bien sûr.	}{	191	}{	}{	G.Prof_Escape = 1	}{	}{	}{	}{	}{	}{	}{	Ja.	}
+{	183	}{	Peut-être.	}{	Peut-être.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Peut-être bien que oui, peut-être bien que non.	}
+{	184	}{	Répondez simplement à mes questions.	}{	Répondez simplement à mes questions.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	De la douleur naît la vérité, il paraît.	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Bien. Par où voulez-vous que je commence ?	}{	Bien. Par où voulez-vous que je commence ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Que pouvez-vous me dire sur le sarcophage ?	}{	Que pouvez-vous me dire sur le sarcophage ?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi une histoire sur le sarcophage.	}
+{	193	}{	Epargnez-moi ces conneries. Comment ouvre-t-on le sarcophage ?	}{	Epargnez-moi ces conneries. Comment ouvre-t-on le sarcophage ?	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bla bla bla. Je veux entrer.	}
+{	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Pitié ! Aucun besoin d'avoir recours à la violence ! Si vous voulez vraiment en savoir plus sur le sarcophage, je vais vous le dire. Pas la peine de s'énerver !	}{	Pitié ! Aucun besoin d'avoir recours à la violence ! Si vous voulez vraiment en savoir plus sur le sarcophage, je vais vous le dire. Pas la peine de s'énerver !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Que pouvez-vous me dire sur le sarcophage ?	}{	Que pouvez-vous me dire sur le sarcophage ?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi une histoire sur le sarcophage.	}
+{	203	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Commençons par l'histoire du Sarcophage d'Ankara. C'est une légende longue et intéressante, perdue puis retrouvée au travers des âges. Dites-moi, connaissez-vous les Assyriens ?	}{	Commençons par l'histoire du Sarcophage d'Ankara. C'est une légende longue et intéressante, perdue puis retrouvée au travers des âges. Dites-moi, connaissez-vous les Assyriens ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Non.	}{	Non.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	???	}
+{	213	}{	Oui.	}{	Oui.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'adore leur travail.	}
+{	214	}{	Epargnez-moi ces conneries. Comment ouvre-t-on le sarcophage ?	}{	Epargnez-moi ces conneries. Comment ouvre-t-on le sarcophage ?	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bla bla bla. Je veux entrer.	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Eh bien, les Assyriens vivaient en Mésopotamie, une région entre le Tigre et l'Euphrate. Ce qui correspond aujourd'hui à l'Irak, l'Iran, la Turquie et la Syrie.	}{	Eh bien, les Assyriens vivaient en Mésopotamie, une région entre le Tigre et l'Euphrate. Ce qui correspond aujourd'hui à l'Irak, l'Iran, la Turquie et la Syrie.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Continuez.	}{	Continuez.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous écoute.	}
+{	223	}{	J'ai toujours détesté l'histoire à l'école. Mais continuez. . .	}{	J'ai toujours détesté l'histoire à l'école. Mais continuez. . .	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Continuez. . .	}
+{	224	}{	Epargnez-moi ces conneries. Comment ouvre-t-on le sarcophage ?	}{	Epargnez-moi ces conneries. Comment ouvre-t-on le sarcophage ?	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bla bla bla. Je veux entrer.	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	C'étaient des guerriers, des conquérants, un peuple poussé à l'expansion par leurs rois. Avant même les Romains, ils déplaçaient les peuples envahis vers d'autres territoires pour empêcher les révoltes, mais. . . je m'écarte du sujet.	}{	C'étaient des guerriers, des conquérants, un peuple poussé à l'expansion par leurs rois. Avant même les Romains, ils déplaçaient les peuples envahis vers d'autres territoires pour empêcher les révoltes, mais. . . je m'écarte du sujet.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Continuez.	}{	Continuez.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous écoute.	}
+{	233	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	234	}{	Epargnez-moi ces conneries. Comment ouvre-t-on le sarcophage ?	}{	Epargnez-moi ces conneries. Comment ouvre-t-on le sarcophage ?	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bla bla bla. Je veux entrer.	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Oui, eh bien, les signes sur le sarcophage indiqueraient qu'il date d'entre 1050 et 800 av. J.-C. C'était une grande période d'expansion, pour les Assyriens. Et entre ces années, on ne trouve trace que d'un seul roi dans les archives.	}{	Oui, eh bien, les signes sur le sarcophage indiqueraient qu'il date d'entre 1050 et 800 av. J.-C. C'était une grande période d'expansion, pour les Assyriens. Et entre ces années, on ne trouve trace que d'un seul roi dans les archives.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Continuez, je vous en prie.	}{	Continuez, je vous en prie.	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous écoute.	}
+{	243	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	Epargnez-moi ces conneries. Comment ouvre-t-on le sarcophage ?	}{	Epargnez-moi ces conneries. Comment ouvre-t-on le sarcophage ?	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bla bla bla. Je veux entrer.	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Il a dû faire disparaître toute trace de l'existence de son prédécesseur, ou alors il a transmis son nom à ses héritiers. Messerach, le roi borgne, est généralement celui à qui ont attribue la prospérité du territoire à cette époque. Mais il aurait eu 250 ans ! Comme Dracula, j'imagine.	}{	Il a dû faire disparaître toute trace de l'existence de son prédécesseur, ou alors il a transmis son nom à ses héritiers. Messerach, le roi borgne, est généralement celui à qui ont attribue la prospérité du territoire à cette époque. Mais il aurait eu 250 ans ! Comme Dracula, j'imagine.	}{	#	}{	}{	G.Prof_Messerach = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Et alors ?	}{	Et alors ?	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ou quelque chose.	}
+{	253	}{	Quel rapport avec le sarcophage ?	}{	Quel rapport avec le sarcophage ?	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Messerach ? Ou quelqu'un d'autre ?	}
+{	254	}{	Epargnez-moi ces conneries. Comment ouvre-t-on le sarcophage ?	}{	Epargnez-moi ces conneries. Comment ouvre-t-on le sarcophage ?	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bla bla bla. Je veux entrer.	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	J'ai du mal à croire qu'un sarcophage avec une personne aussi importante que Messerach puisse rester, comment dire, immaculé, intact, si longtemps. Mais c'est lui qui serait à l'intérieur.	}{	J'ai du mal à croire qu'un sarcophage avec une personne aussi importante que Messerach puisse rester, comment dire, immaculé, intact, si longtemps. Mais c'est lui qui serait à l'intérieur.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Vous en êtes sûr ?	}{	Vous en êtes sûr ?	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vraiment ?	}
+{	263	}{	C'était un vampire ?	}{	C'était un vampire ?	}{	291	}{	}{	}{	}{	}{	}{	}{	}{	}{	Un vrai vampire. . . vraiment ?	}
+{	264	}{	Pourquoi vous n'avez pas ouvert pour en avoir le coeur net ?	}{	Pourquoi vous n'avez pas ouvert pour en avoir le coeur net ?	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez regardé à l'intérieur ?	}
+{	265	}{	Epargnez-moi ces conneries. Comment ouvre-t-on le sarcophage ?	}{	Epargnez-moi ces conneries. Comment ouvre-t-on le sarcophage ?	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bla bla bla. Je veux entrer.	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Vous n'êtes peut-être pas au courant, mais il a été volé au musée avant que nous puissions l'ouvrir. En général, nous utilisons des instruments pour la datation au carbone 14, les rayons X, et pour prendre des échantillons d'air avant d'ouvrir le couvercle.	}{	Vous n'êtes peut-être pas au courant, mais il a été volé au musée avant que nous puissions l'ouvrir. En général, nous utilisons des instruments pour la datation au carbone 14, les rayons X, et pour prendre des échantillons d'air avant d'ouvrir le couvercle.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Vous l'avez comparé à un vampire. . . pourquoi ?	}{	Vous l'avez comparé à un vampire. . . pourquoi ?	}{	291	}{	}{	}{	}{	}{	}{	}{	}{	}{	Un vrai vampire. . . vraiment ?	}
+{	273	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	274	}{	Epargnez-moi ces conneries. Comment ouvre-t-on le sarcophage ?	}{	Epargnez-moi ces conneries. Comment ouvre-t-on le sarcophage ?	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bla bla bla. Je veux entrer.	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	Si je réfléchis un peu. . .	}{	Si je réfléchis un peu. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	(Auto-Link)	}{	(Auto-Link)	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	284	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Vous savez, c'est une question intéressante. La déesse sur le sarcophage est Lamatsu, c'est un mythe Assyrien. C'était une démone qui se nourrissait d'humains. Beaucoup de gens la citent comme la mère du mythe des vampires. Et. . .	}{	Vous savez, c'est une question intéressante. La déesse sur le sarcophage est Lamatsu, c'est un mythe Assyrien. C'était une démone qui se nourrissait d'humains. Beaucoup de gens la citent comme la mère du mythe des vampires. Et. . .	}{	#	}{	}{	G.Prof_Lamastu = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Et ?	}{	Et ?	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	. . .	}
+{	293	}{	Epargnez-moi ces conneries. Comment ouvre-t-on le sarcophage ?	}{	Epargnez-moi ces conneries. Comment ouvre-t-on le sarcophage ?	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bla bla bla. Je veux entrer.	}
+{	294	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Les gravures que l'on a trouvées sur le sarcophage montrent un personnage royal qui boit le sang de ses ennemis. Cette image se retrouve dans de nombreuses cultures, surtout chez les lignées royales. Mais il y a une explication tout à fait scientifique.	}{	Les gravures que l'on a trouvées sur le sarcophage montrent un personnage royal qui boit le sang de ses ennemis. Cette image se retrouve dans de nombreuses cultures, surtout chez les lignées royales. Mais il y a une explication tout à fait scientifique.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Laquelle ?	}{	Laquelle ?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'était le premier ?	}
+{	303	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	304	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	Une maladie appelée porphyrie. Elle est causée par une carence de fer dans le sang. Dans beaucoup de cultures, pour les nobles qui pouvaient se permettre un tel traitement, on buvait du sang humain pour compenser.	}{	Une maladie appelée porphyrie. Elle est causée par une carence de fer dans le sang. Dans beaucoup de cultures, pour les nobles qui pouvaient se permettre un tel traitement, on buvait du sang humain pour compenser.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Donc, Messerach buvait du sang humain ?	}{	Donc, Messerach buvait du sang humain ?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il connaissait la douce extase de. . . Enfin, il buvait du sang ?	}
+{	313	}{	La porphyrie. . . C'est peut-être ce que j'ai. . .	}{	La porphyrie. . . C'est peut-être ce que j'ai. . .	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oh, moi aussi j'ai ça.	}
+{	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	Peut-être. Le fait de boire le sang de ses ennemis est de toute façon symbolique. Cela peut inspirer la peur à vos ennemis et vos dissidents. Comprenez-moi bien, je ne crois pas du tout que c'était un vampire. Les vampires. . . c'est l'origine de tout, ces fous croyaient que les vampires existaient !	}{	Peut-être. Le fait de boire le sang de ses ennemis est de toute façon symbolique. Cela peut inspirer la peur à vos ennemis et vos dissidents. Comprenez-moi bien, je ne crois pas du tout que c'était un vampire. Les vampires. . . c'est l'origine de tout, ces fous croyaient que les vampires existaient !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Comment avez-vous découvert le Sarcophage d'Ankara ?	}{	Comment avez-vous découvert le Sarcophage d'Ankara ?	}{	381	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Quand avez-VOUS appris ça ?	}
+{	323	}{	Vous pensez vraiment que c'est Messerach, dans le sarcophage ?	}{	Vous pensez vraiment que c'est Messerach, dans le sarcophage ?	}{	341	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Messerach à l'intérieur, c'est certain ?	}
+{	324	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	325	}{	Que savez-vous d'autre sur les vampires ?	}{	Que savez-vous d'autre sur les vampires ?	}{	351	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Vous pouvez me raconter une autre histoire de vampires ?	}
+{	326	}{	Merci pour le cours d'histoire. Comment on ouvre le sarcophage ?	}{	Merci pour le cours d'histoire. Comment on ouvre le sarcophage ?	}{	361	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Plus d'histoires, je veux entrer.	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	C'est tout à fait traitable aujourd'hui sans boire de sang.	}{	C'est tout à fait traitable aujourd'hui sans boire de sang.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Et vous dites que Messerach buvait du sang humain ?	}{	Et vous dites que Messerach buvait du sang humain ?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il connaissait la douce extase de. . . Enfin, il buvait du sang ?	}
+{	333	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	334	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Je ne peux pas en être sûr. Mais il a plus de chance de contenir de la. . . mettons, de la guimauve, qu'un vampire. Peut-être une momie. . . mais sans doute pas le genre à courir après sa bien-aimée.	}{	Je ne peux pas en être sûr. Mais il a plus de chance de contenir de la. . . mettons, de la guimauve, qu'un vampire. Peut-être une momie. . . mais sans doute pas le genre à courir après sa bien-aimée.	}{	#	}{	}{	G.Prof_Mess = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	Comment avez-vous découvert le Sarcophage d'Ankara ?	}{	Comment avez-vous découvert le Sarcophage d'Ankara ?	}{	381	}{	G.Prof_Find == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quand avez-VOUS appris ça ?	}
+{	343	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	344	}{	Que savez-vous d'autre sur les vampires ?	}{	Que savez-vous d'autre sur les vampires ?	}{	351	}{	G.Prof_Vamp == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous pouvez me raconter une autre histoire de vampires ?	}
+{	345	}{	Et comment le sarcophage s'ouvre-t-il ?	}{	Et comment le sarcophage s'ouvre-t-il ?	}{	361	}{	G.Prof_Vamp == 1 and G.Prof_Find == 1	}{	}{	}{	}{	}{	}{	}{	}{	Plus d'histoires, je veux entrer.	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	Pas grand-chose. Je suis archéologue. Les mythes, ce n'est pas mon rayon. Mais je sais que Lamatsu, la démone assyrienne, est peut-être l'inspiration de Lilith, la première femme d'Adam dans l'ancien testament, autre source du mythe des vampires.	}{	Pas grand-chose. Je suis archéologue. Les mythes, ce n'est pas mon rayon. Mais je sais que Lamatsu, la démone assyrienne, est peut-être l'inspiration de Lilith, la première femme d'Adam dans l'ancien testament, autre source du mythe des vampires.	}{	#	}{	}{	G.Prof_Vamp = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	Comment avez-vous découvert le Sarcophage d'Ankara ?	}{	Comment avez-vous découvert le Sarcophage d'Ankara ?	}{	381	}{	G.Prof_Find == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quand avez-VOUS appris ça ?	}
+{	353	}{	Vous pensez vraiment que c'est Messerach, dans le sarcophage ?	}{	Vous pensez vraiment que c'est Messerach, dans le sarcophage ?	}{	341	}{	G.Prof_Mess == 0	}{	}{	}{	}{	}{	}{	}{	}{	Messerach à l'intérieur, c'est certain ?	}
+{	354	}{	Et comment le sarcophage s'ouvre-t-il ?	}{	Et comment le sarcophage s'ouvre-t-il ?	}{	361	}{	G.Prof_Mess == 1 and G.Prof_Find == 1	}{	}{	}{	}{	}{	}{	}{	}{	Plus d'histoires, je veux entrer.	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Ah, très intéressant ! Le verrou mécanique est étonnamment complexe, sur la face du sarcophage. Par chance, nous avons trouvé la clé pas très loin du sarcophage. Pourquoi personne ne l'a jamais pillé, on ne le saura jamais. . .	}{	Ah, très intéressant ! Le verrou mécanique est étonnamment complexe, sur la face du sarcophage. Par chance, nous avons trouvé la clé pas très loin du sarcophage. Pourquoi personne ne l'a jamais pillé, on ne le saura jamais. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Une clé ! Bien sûr ! Vous l'avez ?	}{	Une clé ! Bien sûr ! Vous l'avez ?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je le veux et je n'attendrai pas que le Père Noël me l'apporte.	}
+{	363	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	364	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	Comme c'est étrange que vous me demandiez ça. Je n'ai pas vu la clé depuis qu'on l'a chargée sur l'Elizabeth Dane, en Turquie. Elle a été volée avant même le sarcophage ! J'espère encore que la police retrouvera ces deux objets avant que le contenu ne soit altéré.	}{	Comme c'est étrange que vous me demandiez ça. Je n'ai pas vu la clé depuis qu'on l'a chargée sur l'Elizabeth Dane, en Turquie. Elle a été volée avant même le sarcophage ! J'espère encore que la police retrouvera ces deux objets avant que le contenu ne soit altéré.	}{	#	}{	}{	pc.SetQuest("Johansen",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	373	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	374	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	375	}{	Vous avez une copie de cette clé ?	}{	Vous avez une copie de cette clé ?	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où est le double ?	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	C'est. . . vous voyez. . . en archéologie, on peut passer des années sur un site de fouilles - avec les rumeurs locales, les vieilles cartes. . . C'est un procédé complexe, très ennuyeux.	}{	C'est. . . vous voyez. . . en archéologie, on peut passer des années sur un site de fouilles - avec les rumeurs locales, les vieilles cartes. . . C'est un procédé complexe, très ennuyeux.	}{	#	}{	}{	G.Prof_Find = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	Ca m'intéresse. Continuez. . .	}{	Ca m'intéresse. Continuez. . .	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous écoute.	}
+{	383	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	384	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	385	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	Non. . . ce n'est pas le genre de clé qu'on peut faire copier par un quincaillier. C'est une clé très sophistiquée, et je voulais l'étudier au musée.	}{	Non. . . ce n'est pas le genre de clé qu'on peut faire copier par un quincaillier. C'est une clé très sophistiquée, et je voulais l'étudier au musée.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	(Auto-Link)	}{	(Auto-Link)	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	393	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	394	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	395	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	Trouver et organiser un site, c'est ce qu'il y a de moins intéressant dans le métier d'archéologue. Croyez-moi, pas la peine que je vous en parle.	}{	Trouver et organiser un site, c'est ce qu'il y a de moins intéressant dans le métier d'archéologue. Croyez-moi, pas la peine que je vous en parle.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	On dirait que vous cachez quelque chose. Vous pourriez m'en dire un peu plus ?	}{	On dirait que vous cachez quelque chose. Vous pourriez m'en dire un peu plus ?	}{	411	}{	pc.CalcFeat("Inspection") > 4 or IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	MENSONGE !	}
+{	403	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	404	}{	Vous pensez vraiment que c'est Messerach, dans le sarcophage ?	}{	Vous pensez vraiment que c'est Messerach, dans le sarcophage ?	}{	341	}{	G.Prof_Mess == 0	}{	}{	}{	}{	}{	}{	}{	}{	Messerach à l'intérieur, c'est certain ?	}
+{	405	}{	Que savez-vous d'autre sur les vampires ?	}{	Que savez-vous d'autre sur les vampires ?	}{	351	}{	G.Prof_Vamp == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous pouvez me raconter une autre histoire de vampires ?	}
+{	406	}{	Comment le sarcophage s'ouvre-t-il ?	}{	Comment le sarcophage s'ouvre-t-il ?	}{	361	}{	G.Prof_Vamp == 1 and G.Prof_Mess == 1	}{	}{	}{	}{	}{	}{	}{	}{	Plus d'histoires, je veux entrer.	}
+{	407	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	Je ne sais pas ce qui vous fait croire ça. . . J'ai été tout à fait franc avec vous - Je [rire nerveux] pense que vous ne connaissez pas aussi bien le procédé que moi.	}{	Je ne sais pas ce qui vous fait croire ça. . . J'ai été tout à fait franc avec vous - Je [rire nerveux] pense que vous ne connaissez pas aussi bien le procédé que moi.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Il paraît étrange qu'on l'ait trouvé après autant de temps. . . comme s'il avait voulu qu'on le trouve.	}{	Il paraît étrange qu'on l'ait trouvé après autant de temps. . . comme s'il avait voulu qu'on le trouve.	}{	421	}{	Persuasion 9	}{	}{	}{	}{	}{	}{	}{	}{	Il vous a appelé. Non, il vous a écrit. 	}
+{	413	}{	Dites-moi comment vous avez trouvé ce site.	}{	Dites-moi comment vous avez trouvé ce site.	}{	421	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	414	}{	Je suis habitué aux menteurs.	}{	Je suis habituée aux menteurs.	}{	421	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	J'ai l'habitude des menteurs.	}
+{	415	}{	Je peux vous arracher le renseignement de force, s'il le faut.	}{	Je peux vous arracher le renseignement de force, s'il le faut.	}{	421	}{	Intimidate 7	}{	}{	}{	}{	}{	}{	}{	}{	Action douloureuse ou vérité ?	}
+{	416	}{	Peu importe. Vous pensez vraiment que Messerach est dans ce sarcophage ?	}{	Peu importe. Vous pensez vraiment que Messerach est dans ce sarcophage ?	}{	341	}{	G.Prof_Mess == 0	}{	}{	}{	}{	}{	}{	}{	}{	Messerach à l'intérieur, c'est certain ?	}
+{	417	}{	Peu importe. Que savez-vous d'autre sur les vampires ?	}{	Peu importe. Que savez-vous d'autre sur les vampires ?	}{	351	}{	G.Prof_Vamp == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous pouvez me raconter une autre histoire de vampires ?	}
+{	418	}{	Alors comment ouvre-t-on le sarcophage ?	}{	Alors comment ouvre-t-on le sarcophage ?	}{	361	}{	G.Prof_Vamp == 1 and G.Prof_Mess == 1	}{	}{	}{	}{	}{	}{	}{	}{	Plus d'histoires, je veux entrer.	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	Bon. . . je vais vous le dire. Je ne connaissais même pas l'existence du sarcophage jusqu'à ce que je reçoive un paquet sans adresse de retour. A l'intérieur, il y avait des. . . renseignements pour trouver le sarcophage et la clé. Ne le répétez jamais ou je serai ruiné.	}{	Bon. . . je vais vous le dire. Je ne connaissais même pas l'existence du sarcophage jusqu'à ce que je reçoive un paquet sans adresse de retour. A l'intérieur, il y avait des. . . renseignements pour trouver le sarcophage et la clé. Ne le répétez jamais ou je serai ruiné.	}{	#	}{	}{	pc.AwardExperience("Society04")	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	Très intéressant. Vous pensez vraiment que Messerach est dans ce sarcophage ?	}{	Très intéressant. Vous pensez vraiment que Messerach est dans ce sarcophage ?	}{	341	}{	G.Prof_Mess == 0	}{	}{	}{	}{	}{	}{	}{	}{	Messerach à l'intérieur, c'est certain ?	}
+{	423	}{	Très intéressant. Que savez-vous d'autre sur les vampires ?	}{	Très intéressant. Que savez-vous d'autre sur les vampires ?	}{	351	}{	G.Prof_Vamp == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous pouvez me raconter une autre histoire de vampires ?	}
+{	424	}{	Très intéressant. Comment ouvre-t-on le sarcophage ?	}{	Très intéressant. Comment ouvre-t-on le sarcophage ?	}{	361	}{	G.Prof_Vamp == 1 and G.Prof_Mess == 1	}{	}{	}{	}{	}{	}{	}{	}{	Assez d'histoires, Je veux entrer.	}
+{	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	J'ai répondu à vos questions. . . vous pourriez m'aider à sortir d'ici ? Je me moque de savoir qui vous êtes, ou de la raison pour laquelle vous voulez savoir tant de choses sur le sarcophage. Je veux simplement sortir d'ici.	}{	Je vous ai dit tout ce que je savais. . . vous pourriez m'aider à sortir d'ici ? Je me moque de savoir qui vous êtes, ou de la raison pour laquelle vous voulez savoir tant de choses sur le sarcophage. Je veux simplement sortir d'ici.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Bon, je vous détache. Il y a un bateau pas loin. Nous pourrons partir dessus.	}{	Bon, je vous détache. Il y a un bateau pas loin. Nous pourrons partir dessus.	}{	461	}{	}{	G.Prof_Escape = 2	}{	}{	}{	}{	}{	}{	}{	Partons en croisière tous les deux. . . vous et moi ?	}
+{	433	}{	Je regrette, j'ai peur que vous en sachiez trop.	}{	Je regrette, j'ai peur que vous en sachiez trop.	}{	441	}{	G.Prof_Escape == 0	}{	}{	}{	}{	}{	}{	}{	}{	Votre tête est infiltrée de secrets qui pourraient sortir. Toutes mes excuses.	}
+{	434	}{	Je regrette, j'ai peur que vous en sachiez trop.	}{	Je regrette, j'ai peur que vous en sachiez trop.	}{	451	}{	G.Prof_Escape == 1	}{	}{	}{	}{	}{	}{	}{	}{	Votre tête est infiltrée de secrets qui pourraient sortir. Toutes mes excuses.	}
+{	435	}{	Commencez à crier. Peut-être que quelqu'un vous entendra.	}{	Commencez à crier. Peut-être que quelqu'un vous entendra.	}{	441	}{	G.Prof_Escape == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse pour l'instant. Le plus ironique, c'est que dans des siècles, un archéologue vous trouvera.	}
+{	436	}{	Commencez à crier. Peut-être que quelqu'un vous entendra.	}{	Commencez à crier. Peut-être que quelqu'un vous entendra.	}{	451	}{	G.Prof_Escape == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse pour l'instant. Le plus ironique, c'est que dans des siècles, un archéologue vous trouvera.	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	Pitié ! Pitié, ne me laissez pas ici ! REVENEZ !	}{	Pitié ! Pitié, ne me laissez pas ici ! REVENEZ !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	443	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	444	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	445	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	446	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Vous m'aviez dit que vous me laisseriez partir ! Pitié ! PITIE ! REVENEZ !	}{	Vous m'aviez dit que vous me laisseriez partir ! Pitié ! PITIE ! REVENEZ !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	453	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	454	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	455	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	Merci. Je ne sais pas d'où vous venez, mais je n'oublierai jamais votre bonté. Vous avez mon amitié.	}{	Merci. Je ne sais pas d'où vous venez, mais je n'oublierai jamais votre bonté. Vous avez mon amitié.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	Ca va.	}{	Ca va.	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ca va. Ca vient.	}
+{	463	}{	Ca va.	}{	Ca va.	}{	0	}{	G.Patch_Plus == 1	}{	FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	N'en parlez pas! Ou au contraire, parlez-en...	}
+{	464	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	A l'aide ! A l'aide ! Est-ce que quelqu'un m'entend ?	}{	A l'aide ! A l'aide ! Est-ce que quelqu'un m'entend ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	473	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	474	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Vous n'avez pas le droit de me garder ici ! J'exige qu'on me laisse partir !	}{	Vous n'avez pas le droit de me garder ici ! J'exige qu'on me laisse partir !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	483	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	484	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	485	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	[Long cri]A L'AIDE !!	}{	[Long cri]A L'AIDE !!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	493	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	494	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	495	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	Faites-moi sortir d'ici ! Pourquoi faites-vous cela ? A l'aide !	}{	Faites-moi sortir d'ici ! Pourquoi faites-vous cela ? A l'aide !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	503	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	504	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	505	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	Pitié, libérez-moi, je ne parlerai de ceci à personne !	}{	Pitié, libérez-moi, je ne parlerai de ceci à personne !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	513	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	514	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	515	}{	(Starting Condition)	}{	}{	11	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	516	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

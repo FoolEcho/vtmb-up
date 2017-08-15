@@ -1,0 +1,134 @@
+{	1	}{	[gémit de peur]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[les dents claquantes, horrifié, craquant complètement]Vous l'avez vu ?	}{	[les dents claquantes, horrifié, craquant complètement]Vous l'avez vu ?	}{	#	}{	}{	npc.WillTalk(0)	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Cette chose ensanglantée ? Difficile de ne pas la voir.	}{	Le corps décapité ? Pas facile à louper, en même temps. . .	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'horreur sans tête suspendue ?	}
+{	13	}{	Qu'avez-vous vu ?	}{	Qu'avez-vous vu ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dites à vos yeux de parler !	}
+{	14	}{	Non.	}{	Non.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	C'est vous qui avez fait ça, hein ?	}{	C'est vous qui avez fait ça, hein ?	}{	111	}{	Humanity -4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Il l'a complètement déchiré. En deux. Déchiré comme une poupée de son.	}{	Il l'a complètement déchiré. En deux. Déchiré comme une poupée de son.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Dites-moi ce que vous avez vu.	}{	Dites-moi ce que vous avez vu.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ouvrez-moi le cinéma de votre esprit !	}
+{	23	}{	Qui a fait ça ?	}{	Qui a fait ça ?	}{	31	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	C'était le tueur drapé d'ombre ?	}
+{	24	}{	Que faisiez-vous ici ?	}{	Que faisiez-vous ici ?	}{	31	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Qu'est-ce qui vous amène en ce lieu si sinistre ?	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Ces deux types - le mort et un autre - ils sont venus. Je vis ici, moi, alors je me suis caché. Je me suis dit que c'était les proprios, ou les flics, qui venaient nettoyer un peu.	}{	Ces deux types - le mort et un autre - ils sont venus. Je vis ici, moi, alors je me suis caché. Je me suis dit que c'était les proprios, ou les flics, qui venaient nettoyer un peu.	}{	#	}{	}{	G.Bum_Story = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Qui était l'autre personne ?	}{	Qui était l'autre personne ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le copain du décapité, c'était qui ?	}
+{	33	}{	Ah ouais ? Et ils faisaient quoi ?	}{	Ah ouais ? Et ils faisaient quoi ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Continuez cette terrible histoire.	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Ils attendaient quelqu'un. Ils étaient censés faire un boulot. Mais la personne qu'ils attendaient était en retard. Alors il y en a un qui va chercher un téléphone pour l'appeler, et le mort est resté. C'est là que. . . le tueur. . . est apparu.	}{	Ils attendaient quelqu'un. Ils étaient censés faire un boulot. Mais la personne qu'ils attendaient était en retard. Alors il y en a un qui va chercher un téléphone pour l'appeler, et le mort est resté. C'est là que. . . le tueur. . . est apparu.	}{	#	}{	}{	G.Bum_Story = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Qui a passé le coup de fil ?	}{	Lequel est parti passer le coup de fil ? Vous avez entendu son nom ?	}{	51	}{	G.Bum_Muddy == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	Vous avez entendu le nom de l'ami d'Ichabod ?	}{	Vous avez entendu le nom de l'ami d'Ichabod ?	}{	46	}{	G.Bum_Muddy == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	D'où est sorti le tueur ?	}{	D'où est sorti le tueur ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ah ! Le tueur drapé d'ombre est sorti de son domaine des ténèbres !	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	Hein ? Ichabod ? Mais de quoi vous parlez ! Vous avez biberonné ce soir, mon petit ?	}{	Hein ? Ichabod ? Mais de quoi vous parlez ! Vous avez biberonné ce soir, ma petite ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	C'était qui, l'ami du sans-tête ?	}{	C'était qui, l'ami du sans-tête ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Le mort l'a appelé 'Muddy'.	}{	Le mort l'a appelé 'Muddy'.	}{	#	}{	}{	G.Bum_Muddy = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Alors, le mort et Muddy, que venaient-ils faire ici ?	}{	Alors, le mort et Muddy, que venaient-ils faire ici ?	}{	41	}{	G.Bum_Story == 1	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi des exactions de ce Muddy et de son camarade sans tête.	}
+{	53	}{	Continuez.	}{	Continuez.	}{	61	}{	G.Extra_Lines == 1 and G.Bum_Story == 2	}{	}{	}{	}{	}{	}{	}{	}{	Poursuivez votre histoire, barrique magique !	}
+{	54	}{	Tu oublieras ce que tu as vu ici. Pars et ne te retourne pas.	}{	Tu oublieras ce que tu as vu ici. Pars et ne te retourne pas.	}{	101	}{	Dominate 1 & (IsClan(pc,"Ventrue") and G.Bum_Story == 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	Tu oublieras ce que tu as vu ici. Pars et ne te retourne pas.	}{	Tu oublieras ce que tu as vu ici. Pars et ne te retourne pas.	}{	101	}{	Thaumaturgy 1 & (G.Patch_Plus == 1 and G.Bum_Story == 3)	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	A présent sois un bon garçon et oublie tout ce que tu as vu ici.	}{	A présent sois un bon garçon et oublie tout ce que tu as vu ici.	}{	101	}{	Presence 1 & (G.Patch_Plus == 1 and G.Bum_Story == 3)	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	Si tu racontes ça à quelqu'un, ils te feront enfermer pour toujours. Tu ferais mieux de partir maintenant.	}{	Si tu racontes ça à quelqu'un, ils te feront enfermer pour toujours. Tu ferais mieux de partir maintenant.	}{	101	}{	Persuasion 5 & G.Bum_Story == 3	}{	}{	}{	}{	}{	}{	}{	}{	Cette histoire t'enverra dans une cellule capitonnée. Silence si tu aimes la liberté.	}
+{	58	}{	Je sais que tu penses avoir vu tout ça, mais crois-moi, ce n'est pas le cas. Maintenant dégage.	}{	Je sais que tu penses avoir vu tout ça, mais crois-moi, ce n'est pas le cas. Maintenant dégage.	}{	101	}{	Intimidate 5 & G.Bum_Story == 3	}{	}{	}{	}{	}{	}{	}{	}{	Parle encore de cette fable, et JE récolterai ta tête. Maintenant pars.	}
+{	59	}{	Merci. A bientôt.	}{	Merci. A bientôt.	}{	0	}{	G.Bum_Story == 3	}{	G.Bum_Leave = 1	}{	}{	}{	}{	}{	}{	}{	Je suis parti.	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Il n'était pas là, et la seconde d'après il y était. Comme s'il était sorti de l'ombre. Ca a foutu la trouille au mort. J'aurais voulu crier, mais j'avais le souffle coupé.	}{	Il n'était pas là, et la seconde d'après il y était. Comme s'il était sorti de l'ombre. Ca a foutu la trouille au mort. J'aurais voulu crier, mais j'avais le souffle coupé.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Et ensuite ?	}{	Et ensuite ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qu'ont donc révélé les ombres ?	}
+{	63	}{	Vous avez eu de la chance de ne pas faire de bruit.	}{	Vous avez eu de la chance de ne pas faire de bruit.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Un souffle alourdi d'alcool aurait suffi à vous faire tuer.	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Le Tueur avait de grandes griffes, je jure, je les ai vues. Le mort est devenu blanc comme s'il avait vu le diable, et le Tueur l'a pris au cou, l'a soulevé et a commencé à l'insulter.	}{	Le Tueur avait de grandes griffes, je jure, je les ai vues. Le mort est devenu blanc comme s'il avait vu le diable, et le Tueur l'a pris au cou, l'a soulevé et a commencé à l'insulter.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Qu'est-ce qu'il disait ?	}{	Qu'est-ce qu'il disait ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelles furent les paroles de cette horreur nocturne ?	}
+{	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Je n'ai pas bien entendu. Une histoire de vengeance pour ce qu'il avait fait, ce qu'ils avaient fait. Le tueur voulait être sûr que le mort savait bien qui il était - puis il l'a éventré et. . . déchiré. Lentement, pour que le type crie.	}{	Je n'ai pas bien entendu. Une histoire de vengeance pour ce qu'il avait fait, ce qu'ils avaient fait. Le tueur voulait être sûr que le mort savait bien qui il était - puis il l'a éventré et. . . déchiré. Lentement, pour que le type crie.	}{	#	}{	}{	pc.SetQuest("Serial",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	L'autre type est revenu ?	}{	L'autre type est revenu ?	}{	91	}{	G.Bum_Muddy == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le compagnon d'Ichabod est-il revenu ?	}
+{	83	}{	Et l'autre, là, Muddy ? Il est revenu ?	}{	Et l'autre, là, Muddy ? Il est revenu ?	}{	91	}{	G.Bum_Muddy == 1	}{	}{	}{	}{	}{	}{	}{	}{	Muddy est-il revenu ?	}
+{	84	}{	Vous oublierez ce que vous avez vu ici. Partez, et ne revenez pas.	}{	Vous oublierez ce que vous avez vu ici. Partez, et ne revenez pas.	}{	101	}{	Dominate 1 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	Vous oublierez ce que vous avez vu ici. Partez, et ne revenez pas.	}{	Vous oublierez ce que vous avez vu ici. Partez, et ne revenez pas.	}{	101	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	Maintenant soyez un bon garçon et oubliez tout ce que vous avez vu ici.	}{	Maintenant soyez un bon garçon et oubliez tout ce que vous avez vu ici.	}{	101	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	Si vous racontez à quiconque cette histoire, on vous enfermera à jamais. Vous devriez partir.	}{	Si vous racontez à quiconque cette histoire, on vous enfermera à jamais. Vous devriez partir.	}{	101	}{	Persuasion 5	}{	}{	}{	}{	}{	}{	}{	}{	Cette histoire vous ferait enfermer dans une cellule à l'asile. Silence, si vous aimez la liberté.	}
+{	88	}{	Je sais que vous croyez avoir vu tout cela, mais vous vous trompez. Vous devriez partir, à présent.	}{	Je sais que vous croyez avoir vu tout cela, mais vous vous trompez. Vous devriez partir, à présent.	}{	101	}{	Intimidate 5	}{	}{	}{	}{	}{	}{	}{	}{	Dites encore cette histoire, et c'est moi qui prendrai votre tête. A présent, partez.	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	Merci. Au revoir.	}{	Merci. Au revoir.	}{	0	}{	}{	G.Bum_Leave = 1	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	91	}{	Non. Il n'est jamais revenu.	}{	Non. Il n'est jamais revenu.	}{	#	}{	}{	G.Bum_Story = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Vous avez entendu le nom du type ?	}{	Vous avez entendu le nom du type ?	}{	51	}{	G.Bum_Muddy == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Vous avez entendu le nom de l'ami d'Ichabod ?	}{	Vous avez entendu le nom de l'ami d'Ichabod ?	}{	46	}{	G.Bum_Muddy == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	Vous oublierez ce que vous avez vu ici. Partez, et ne revenez pas.	}{	Vous oublierez ce que vous avez vu ici. Partez, et ne revenez pas.	}{	101	}{	Dominate 1 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	Vous oublierez ce que vous avez vu ici. Partez, et ne revenez pas.	}{	Vous oublierez ce que vous avez vu ici. Partez, et ne revenez pas.	}{	101	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	A présent sois un bon garçon et oublie tout ce que tu as vu ici.	}{	A présent sois un bon garçon et oublie tout ce que tu as vu ici.	}{	101	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	Si vous racontez à quiconque cette histoire, on vous enfermera à jamais. Vous devriez partir.	}{	Si vous racontez à quiconque cette histoire, on vous enfermera à jamais. Vous devriez partir.	}{	101	}{	Persuasion 5	}{	}{	}{	}{	}{	}{	}{	}{	Cette histoire vous ferait enfermer dans une cellule à l'asile. Silence, si vous aimez la liberté.	}
+{	98	}{	Je sais que vous croyez avoir vu tout cela, mais vous vous trompez. Vous devriez partir, à présent.	}{	Je sais que vous croyez avoir vu tout cela, mais vous vous trompez. Vous devriez partir, à présent.	}{	101	}{	Intimidate 5	}{	}{	}{	}{	}{	}{	}{	}{	Dites encore cette histoire, et c'est moi qui prendrai votre tête. A présent, partez.	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	Merci. Au revoir.	}{	Merci. Au revoir.	}{	0	}{	}{	G.Bum_Leave = 1	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	101	}{	OK, OK. Je ne veux plus y penser. Plus jamais.	}{	OK, OK. Je ne veux plus y penser. Plus jamais.	}{	#	}{	}{	pc.AwardExperience("Killer02"); FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Bum_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Moi ? Non, non. Vous me voyez faire ça de mes mains nues ? Regardez, il n'y a pas de sang sur moi !	}{	Moi ? Non, non. Vous me voyez faire ça de mes mains nues ? Regardez, il n'y a pas de sang sur moi !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	En effet. Alors, que s'est-il passé ?	}{	En effet. Alors, que s'est-il passé ?	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	Alors que s'est-il passé ?	}{	Alors que s'est-il passé ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi tout, barrique magique !	}
+{	114	}{	Je ne vous crois pas. . . Vous êtes un mauvais menteur, et vous allez payer pour vos crimes.	}{	Je ne vous crois pas. . . Vous êtes un mauvais menteur, et vous allez payer pour vos crimes.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Vos paroles puent plus encore que votre souffle ! Je vais vous juger pour vos crimes.	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	(Starting Condition)	}{	}{	11	}{	G.Killer_Message == 1 or npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

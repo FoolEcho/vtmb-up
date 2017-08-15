@@ -1,0 +1,380 @@
+{	1	}{	La vraie terreur, ce n'est pas la vision de la mort. C'est la peur de la mort. Qu'est-ce que la peur de la mort ? La terreur de l'inconnu. Est-ce ces yeux que vous regardez ? Non. Je ne suis pas l'inconnu. Vous et moi sommes plus proches que vous l'étiez de ceci.	}{	La vraie terreur, ce n'est pas la vision de la mort. C'est la peur de la mort. Qu'est-ce que la peur de la mort ? La terreur de l'inconnu. Est-ce ces yeux que vous regardez ? Non. Je ne suis pas l'inconnu. Vous et moi sommes plus proches que vous l'étiez de ceci.	}{	#	}{	}{	G.Pisha_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Qu'êtes-vous ?	}{	Qu'êtes-vous ?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Vous étiez en train de manger ce Bétail. C'est dégoûtant.	}{	Vous étiez en train de manger ce Bétail. C'est dégoûtant.	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Vous mangez des humains ? Je ne peux pas laisser vivre un monstre comme vous.	}{	Vous mangez des humains ? Je ne peux pas laisser vivre un monstre comme vous.	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Vous avez quelque chose sur le menton. Je crois que c'est un vaisseau sanguin.	}{	Vous avez quelque chose sur le menton. Je crois que c'est un vaisseau sanguin.	}{	31	}{	Humanity -5 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	La Veuve Noire doit-elle dévorer toute la mouche ?	}{	La Veuve Noire doit-elle dévorer toute la mouche ?	}{	351	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	Mangez-vous aussi d'autres araignées, Veuve ?	}{	Mangez-vous aussi d'autres araignées, Veuve ?	}{	351	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	En buvant le sang pour repousser la mort, vous vous damnez, n'est-ce pas ? Et si, en plus du sang des vivants, il vous fallait manger leur chair pour maintenir cette maigre illusion de vie - qu'en diriez-vous ? Que vous vous damnez deux fois ?	}{	En buvant le sang pour repousser la mort, vous vous damnez, n'est-ce pas ? Et si, en plus du sang des vivants, il vous fallait manger leur chair pour maintenir cette maigre illusion de vie - qu'en diriez-vous ? Que vous vous damnez deux fois ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Qui es-tu ?	}{	Qui es-tu ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Je ne tue pas pour rester en vie.	}{	Je ne tue pas pour rester en vie.	}{	51	}{	Humanity 8	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Vous devez manger de la chair humaine ?	}{	Vous devez manger de la chair humaine ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	J'en dirais que c'est dégoûtant. Puisque ça l'est.	}{	J'en dirais que c'est dégoûtant. Puisque ça l'est.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	Je m'en moque. Vous tuez pour vivre. Et alors ? Moi aussi. . .	}{	Je m'en moque. Vous tuez pour vivre. Et alors ? Moi aussi. . .	}{	61	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Et en me tuant, entreprendrez-vous une croisade contre tous ceux qui mangent de la chair ? Et ensuite, quand cela sera fait, tuerez-vous tous ceux qui sont un peu différents de vous ? Telle est la logique des fous et des dictateurs. La racine de tout conflit.	}{	Et en me tuant, entreprendrez-vous une croisade contre tous ceux qui mangent de la chair ? Et ensuite, quand cela sera fait, tuerez-vous tous ceux qui sont un peu différents de vous ? Telle est la logique des fous et des dictateurs. La racine de tout conflit.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Comment dois-je vous appeler, veuve ?	}{	Comment dois-je vous appeler, veuve ?	}{	101	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Comment dois-je vous appeler, veuve ?	}
+{	23	}{	Mais vous mangez de la chair. . .	}{	Mais vous mangez de la chair. . .	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Je ne veux pas tuer tout le monde - rien que vous.	}{	Je ne veux pas tuer tout le monde - rien que vous.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas écraser toutes les veuves. Juste vous.	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Oui. . . mon élixir, mon existence sont faits de chair et de sang. Vous êtes calme. Avez-vous également conclu que la vie et la mort sont mutuellement parasites ?	}{	Oui. . . mon élixir, mon existence sont faits de chair et de sang. Vous êtes calme. Avez-vous également conclu que la vie et la mort sont mutuellement parasites ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Oui, tout à fait.	}{	Oui, tout à fait.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	Je ne comprends pas.	}{	Je ne comprends pas.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Je tue ou je pourris. Chaque nuit que je m'en prive, je dépéris. Toutes choses doivent consommer la vie pour éviter de mourir. Vous et moi ne faisons pas exception.	}{	Je tue ou je pourris. Chaque nuit que je m'en prive, je dépéris. Toutes choses doivent consommer la vie pour éviter de mourir. Vous et moi ne faisons pas exception.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Je ne sais pas si je suis d'accord. Mais qui êtes-vous ?	}{	Je ne sais pas si je suis d'accord. Mais qui êtes-vous ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	Oui, je suis d'accord.	}{	Oui, je suis d'accord.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Nous buvons le sang, je mange la chair, mais le Bétail nous trouve monstrueux - sans remords, ils nous jetteraient au bûcher pour s'assurer de notre destruction. Ce qui est contre-nature pour certains est pour d'autres vital.	}{	Nous buvons le sang, je mange la chair, mais le Bétail nous trouve monstrueux - sans remords, ils nous jetteraient au bûcher pour s'assurer de notre destruction. Ce qui est contre-nature pour certains est pour d'autres vital.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	Je ne comprends pas.	}{	Je ne comprends pas.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	Contre-nature, en effet. Voilà pourquoi je vous élimine. 	}{	Contre-nature, en effet. Voilà pourquoi je vous élimine. 	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	J'ignore si la mort sans utilité sert un but quelconque. Mais je n'ai aucun intérêt pour la morale. Rien que pour la cause et l'effet.	}{	J'ignore si la mort sans utilité sert un but quelconque. Mais je n'ai aucun intérêt pour la morale. Rien que pour la cause et l'effet.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Je parcourais déjà le monde avant l'existence de ce pays. J'ai ainsi recueilli des renseignements et des objets dont l'existence a échappé à certains faisant partie des plus anciens de notre race. Si je vous offrais la chance d'obtenir une telle rareté. . . l'accepteriez-vous ?	}{	Je parcourais déjà le monde avant l'existence de ce pays. J'ai ainsi recueilli des renseignements et des objets dont l'existence a échappé à certains faisant partie des plus anciens de notre race. Si je vous offrais la chance d'obtenir une telle rareté. . . l'accepteriez-vous ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Dites toujours.	}{	Dites toujours.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelle est votre offre, veuve ?	}
+{	73	}{	Pourquoi ne pas vous tuer et piller votre demeure ?	}{	Pourquoi ne pas vous tuer et piller votre demeure ?	}{	81	}{	Intimidate 2	}{	}{	}{	}{	}{	}{	}{	}{	Je pourrais vous écraser et ravager votre toile, mettant vos secrets à jour. 	}
+{	74	}{	Je ne traite pas avec les sorcières cannibales, je les brûle. C'est votre tour.	}{	Je ne traite pas avec les sorcières cannibales, je les brûle. C'est votre tour.	}{	0	}{	}{	G.Pisha_Attack = 1; npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Je suis la pluie, minuscule araignée, et je vais laver le monde de ta souillure.	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Bien que je ne doute à aucun moment que vous soyez capable d'essayer, cela ne pourrait avoir que deux résultats. Une mort rapide pour vous, ou plusieurs existences de frustrations à retourner la ville à la recherche de mes cachettes.	}{	Bien que je ne doute à aucun moment que vous soyez capable d'essayer, cela ne pourrait avoir que deux résultats. Une mort rapide pour vous, ou plusieurs existences de frustrations à retourner la ville à la recherche de mes cachettes.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Bien, alors que proposez-vous ?	}{	Bien, alors que proposez-vous ?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelle est votre offre, veuve ?	}
+{	83	}{	S'il le faut. Faites voir ce dont vous êtes capable.	}{	S'il le faut. Faites voir ce dont vous êtes capable.	}{	0	}{	}{	G.Pisha_Attack = 1; npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Je suis la pluie, minuscule araignée, et je vais laver le monde de ta souillure.	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Cette perspective est inattendue. La multitude voit la mort comme une tragédie. Si c'était vrai, la naissance le serait tout autant.	}{	Cette perspective est inattendue. La multitude voit la mort comme une tragédie. Si c'était vrai, la naissance le serait tout autant.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Je ne dis à personne mon nom de baptême. Vous pouvez m'appeler Pisha. Tel était le nom de ma compagne et amante, avant ma mort, il y a 230 ans. Elle n'en a plus aucun besoin.	}{	Je ne dis à personne mon nom de baptême. Vous pouvez m'appeler Pisha. Tel était le nom de ma compagne et amante, avant ma mort, il y a 230 ans. Elle n'en a plus aucun besoin.	}{	#	}{	}{	G.Pisha_Know = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Pourquoi vivez-vous dans un immeuble condamné ?	}{	Pourquoi vivez-vous dans un immeuble condamné ?	}{	111	}{	G.Pisha_Simon == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi avoir construit votre toile ici, veuve ?	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	Parlons de ce mortel que vous cherchez.	}{	Parlons de ce mortel que vous cherchez.	}{	141	}{	G.Pisha_Simon == 1	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi encore de votre mouche.	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	J'aimerais continuer de vous parler, mais vous êtes. . . repoussante. Au revoir. 	}{	J'aimerais continuer de vous parler, mais vous êtes. . . repoussante. Au revoir. 	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous me rendez malade, veuve. Je quitte votre toile.	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Ma présence dans cette ville est transitoire. Je cherche des reliques occultes qu'on présume perdues en ce lieu. Je suis prêt à échanger des artefacts similaires pour en faire l'acquisition. . . Mais si vous souhaitez traiter avec moi, il faudra faire descendre ici le mortel à l'étage. Il en a trop vu.	}{	Ma présence dans cette ville est transitoire. Je cherche des reliques occultes qu'on présume perdues en ce lieu. Je suis prêt à échanger des artefacts similaires pour en faire l'acquisition. . . Mais si vous souhaitez traiter avec moi, il faudra faire descendre ici le mortel à l'étage. Il en a trop vu.	}{	#	}{	}{	G.Pisha_Desire = 1; G.Pisha_Simon = 1; pc.SetQuest("Necromantic",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Le type à l'étage ? J'ai déjà réglé son cas.	}{	Le type à l'étage ? J'ai déjà réglé son cas.	}{	365	}{	IsDead("Milligan")	}{	}{	}{	}{	}{	}{	}{	}{	La mouche est écrasée.	}
+{	113	}{	Il ne descendra jamais ici. Il a bien trop peur.	}{	Il ne descendra jamais ici. Il a bien trop peur.	}{	121	}{	G.Pisha_Joke == 0 and not IsDead("Milligan")	}{	}{	}{	}{	}{	}{	}{	}{	La mouche a vu l'araignée. Elle ne volera pas de son plein gré dans la toile.	}
+{	114	}{	Allez-vous le manger ?	}{	Allez-vous le manger ?	}{	131	}{	G.Pisha_Eat == 0 and not IsDead("Milligan")	}{	}{	}{	}{	}{	}{	}{	}{	La veuve va-t-elle dévorer la mouche ?	}
+{	115	}{	Bien sûr. Je m'en occupe.	}{	Bien sûr. Je m'en occupe.	}{	0	}{	not IsDead("Milligan")	}{	}{	}{	}{	}{	}{	}{	}{	Comme le miel, je vais vous attraper cette mouche.	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Dites-lui que ce n'était qu'une ruse. Ses amis qui lui faisaient une farce. Il descendra. S'il part, le pauvre déguisement qui nous fait paraître humains sera percé à jour.	}{	Dites-lui que ce n'était qu'une ruse. Ses amis qui lui faisaient une farce. Il descendra. S'il part, le pauvre déguisement qui nous fait paraître humains sera percé à jour.	}{	#	}{	}{	G.Pisha_Joke = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Allez-vous le manger ?	}{	Allez-vous le manger ?	}{	131	}{	G.Pisha_Eat == 0	}{	}{	}{	}{	}{	}{	}{	}{	La veuve va-t-elle dévorer la mouche ?	}
+{	123	}{	Pas question. Je pars.	}{	Pas question. Je pars.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bien qu'il soit problématique, je refuse de vous l'apporter sur un plateau. Adieu.	}
+{	124	}{	S'il le faut. Je m'en occupe de suite.	}{	S'il le faut. Je m'en occupe de suite.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La mouche en a trop vu de ses yeux à facettes. Je dois l'écraser.	}
+{	125	}{	Qui suis-je pour refuser cela à un monstre mangeur d'hommes. Je m'en charge.	}{	Qui suis-je pour refuser cela à un monstre mangeur d'hommes. Je m'en charge.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Comme le miel, je vais vous attraper cette mouche.	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Finalement.	}{	Finalement.	}{	#	}{	}{	G.Pisha_Eat = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Il ne descendra jamais ici. Il a bien trop peur.	}{	Il ne descendra jamais ici. Il a bien trop peur.	}{	121	}{	G.Pisha_Joke == 0	}{	}{	}{	}{	}{	}{	}{	}{	La mouche a vu l'araignée. Elle ne volera pas de son plein gré dans la toile.	}
+{	133	}{	Non. Je refuse d'envoyer un homme à sa mort.	}{	Non. Je refuse d'envoyer un homme à sa mort.	}{	121	}{	G.Pisha_Joke == 0	}{	}{	}{	}{	}{	}{	}{	}{	Bien qu'il soit problématique, je refuse de vous l'apporter sur un plateau. Adieu.	}
+{	134	}{	Pas question. Je pars.	}{	Pas question. Je pars.	}{	0	}{	G.Pisha_Joke == 1	}{	}{	}{	}{	}{	}{	}{	}{	Non, veuve, je m'y refuse. Adieu.	}
+{	135	}{	S'il le faut. Je m'en occupe de suite.	}{	S'il le faut. Je m'en occupe de suite.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La mouche en a trop vu de ses yeux à facettes. Je dois l'écraser.	}
+{	136	}{	Qui suis-je pour refuser cela à un monstre mangeur d'hommes. Je m'en charge.	}{	Qui suis-je pour refuser cela à un monstre mangeur d'hommes. Je m'en charge.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Comme le miel, je vais vous attraper cette mouche.	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Le destin du mortel est scellé depuis qu'il est entré. Ne perdez pas votre temps à débattre des implications morales. Si un homme entre sur le territoire d'un tigre, il peut se faire dévorer. Et tel est le cas.	}{	Le destin du mortel est scellé depuis qu'il est entré. Ne perdez pas votre temps à débattre des implications morales. Si un homme entre sur le territoire d'un tigre, il peut se faire dévorer. Et tel est le cas.	}{	#	}{	}{	G.Pisha_Please = 1; pc.SetQuest("Necromantic",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	181	}{	G.Story_State < 30	}{	}{	}{	}{	}{	}{	}{	}{	Compris. Parlez-moi encore des récompenses à gagner.	}
+{	143	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	181	}{	Humanity -5 & G.Story_State < 30	}{	}{	}{	}{	}{	}{	}{	}{	La mouche était problématique. Parlez-moi des récompenses.	}
+{	144	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	201	}{	G.Story_State >= 30	}{	G.Pisha_Quest = 1; pc.SetQuest("Occult",1)	}{	}{	}{	}{	}{	}{	}{	Compris. Parlez-moi encore des récompenses à gagner.	}
+{	145	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	201	}{	Humanity -5 & G.Story_State >= 30	}{	G.Pisha_Quest = 1; pc.SetQuest("Occult",1)	}{	}{	}{	}{	}{	}{	}{	La mouche était problématique. Parlez-moi des récompenses.	}
+{	146	}{	Et à propos de la Fille que je vous ai envoyée ?	}{	Et à propos de la Fille que je vous ai envoyée ?	}{	331	}{	G.Patty_Pisha == 1 and G.Pisha_Full == 0	}{	}{	}{	}{	}{	}{	}{	}{	Et la petite abeille que je vous ai apportée ?	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Je vous ai présenté une requête. . . pourquoi n'avez-vous pas fait descendre l'homme en question ?	}{	Je vous ai présenté une requête. . . pourquoi n'avez-vous pas fait descendre l'homme en question ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Je l'ai laissé partir. Je n'allais pas vous laisser le manger.	}{	Je l'ai laissé partir. Je n'allais pas vous laisser le manger.	}{	161	}{	G.Mill_Loose == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai fait fuir la mouche. Pas de repas pour la méchante veuve, cette nuit.	}
+{	153	}{	Je l'ai dominé. Il ne se rappellera de rien de ce qu'il a vu.	}{	Je l'ai dominé. Il ne se rappellera de rien de ce qu'il a vu.	}{	171	}{	G.Mill_Dominated == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	Son esprit ne connaît plus la raison. Personne ne le croira.	}{	Son esprit ne connaît plus la raison. Personne ne le croira.	}{	171	}{	G.Mill_Dementated == 1	}{	}{	}{	}{	}{	}{	}{	}{	Son esprit ne connaît plus la raison. Personne ne le croira.	}
+{	155	}{	J'ai réglé son cas à ma façon. Il ne dira rien. Je lui ai fait peur.	}{	J'ai réglé son cas à ma façon. Il ne dira rien. Je lui ai fait peur.	}{	171	}{	G.Mill_Intimidate == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	Le type qui était à l'étage ? J'ai déjà réglé son cas.	}{	Le type qui était à l'étage ? J'ai déjà réglé son cas.	}{	365	}{	IsDead("Milligan")	}{	}{	}{	}{	}{	}{	}{	}{	La mouche est écrasée.	}
+{	157	}{	Je vais m'en occuper.	}{	Je vais m'en occuper.	}{	0	}{	G.Mill_Loose == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je vais étendre mon miel pour la mouche.	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Décevant. . . Il en ramènera d'autres. . . Des hommes de loi. . . Ce sera gênant. J'aurais dû me douter que ce n'était pas affaire pour une sangsue novice. Je pars.	}{	Décevant. . . Il en ramènera d'autres. . . Des hommes de loi. . . Ce sera gênant. J'aurais dû me douter que ce n'était pas affaire pour une sangsue novice. Je pars.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Attendez...	}{	Attendez...	}{	0	}{	G.Pisha_Leave == 0	}{	G.Pisha_Leave = 1; pc.SetQuest("Necromantic",6)	}{	}{	}{	}{	}{	}{	}{	Tu es parti. }
+{	163	}{	Attendez...	}{	Attendez...	}{	0	}{	G.Pisha_Leave == 1	}{	}{	}{	}{	}{	}{	}{	}{	Tu es parti.	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Cela pourra suffire, mais la seule façon de s'en assurer aurait été de le tuer. Vous ne devriez pas perdre votre temps en considérations morales oiseuses. Si un homme entre sur le territoire d'un tigre, il peut se faire dévorer.	}{	Cela pourra suffire, mais la seule façon de s'en assurer aurait été de le tuer. Vous ne devriez pas perdre votre temps en considérations morales oiseuses. Si un homme entre sur le territoire d'un tigre, il peut se faire dévorer.	}{	#	}{	}{	G.Pisha_Please = 1; pc.SetQuest("Necromantic",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Pas aujourd'hui. Que disiez-vous à propos d'objets occultes ?	}{	Pas aujourd'hui. Que disiez-vous à propos d'objets occultes ?	}{	181	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pas aujourd'hui. Revenons aux récompenses dont vous parliez.	}
+{	173	}{	J'ai réglé son cas. Vous parliez d'artefacts, je crois. . .	}{	J'ai réglé son cas. Vous parliez d'artefacts, je crois. . .	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les ailes de la mouche sont rognées. Parlez-moi des récompenses.	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	Et à propos de la fille ?	}{	Et à propos de la fille ?	}{	331	}{	G.Patty_Pisha == 1 and G.Pisha_Full == 0	}{	}{	}{	}{	}{	}{	}{	}{	Et la petite abeille que je vous ai apportée ?	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Oui. Je cherche deux objets qui doivent être dans cette zone. L'un doit même se trouver dans un musée local - je ne les ai pas encore tous fouillés. L'autre est entre les mains de Giovanni, mais je dois encore le confirmer.	}{	Oui. Je cherche deux objets qui doivent être dans cette zone. L'un doit même se trouver dans un musée local - je ne les ai pas encore tous fouillés. L'autre est entre les mains de Giovanni, mais je dois encore le confirmer.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	(Auto-Link)	}{	(Auto-Link)	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	183	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Pour ces objets, j'échangerai des objets de valeur équivalente.	}{	Pour ces objets, j'échangerai des objets de valeur équivalente.	}{	#	}{	}{	G.Pisha_Quest = 1; pc.SetQuest("Occult",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Cela me paraît juste. Parlez-moi de celui qui se trouve dans un musée.	}{	Cela me paraît juste. Parlez-moi de celui qui se trouve dans un musée.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ferai cet échange. Parlez-moi de la récompense conservée dans un musée.	}
+{	193	}{	Bon, parlez-moi de l'objet qui se trouve peut-être chez Giovanni.	}{	Bon, parlez-moi de l'objet qui se trouve peut-être chez Giovanni.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Compris. Parlez-moi du prix Giovanni.	}
+{	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Le muséum d'histoire naturelle en abritait bien un, c'est sûr. J'ai fouillé tout l'édifice, mais on a dû le voler en même temps que le sarcophage.	}{	Le muséum d'histoire naturelle en abritait bien un, c'est sûr. J'ai fouillé tout l'édifice, mais on a dû le voler en même temps que le sarcophage.	}{	#	}{	}{	G.Pisha_Quest = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Vous parlez de ceci ?	}{	Vous parlez de ceci ?	}{	251	}{	pc.HasItem("item_g_pisha_fetish")	}{	pc.SetQuest("Occult",2)	}{	}{	}{	}{	}{	}{	}{	Oui, j'ai l'homme flétri.	}
+{	203	}{	Sans doute. Que vouliez-vous d'autre ?	}{	Sans doute. Que vouliez-vous d'autre ?	}{	221	}{	G.Extra_Lines == 1 and G.Pisha_Morte == 0	}{	}{	}{	}{	}{	}{	}{	}{	Oui, il y était. Et l'autre ?	}
+{	204	}{	Parlez-moi de l'autre objet.	}{	Parlez-moi de l'autre objet.	}{	221	}{	G.Pisha_Morte == 0	}{	}{	}{	}{	}{	}{	}{	}{	Et l'autre récompense ?	}
+{	205	}{	Peu importe. Je dois partir.	}{	Peu importe. Je dois partir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là, veuve.	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Un fétiche est décrit dans une chronique du dix-neuvième siècle. Un peloton anglais aurait rencontré une tribu locale. Les soldats disparaissaient dans la nuit, et étaient remplacés par ces fétiches. Ils pourraient être utiles pour mes études. 	}{	Un fétiche est décrit dans une chronique du dix-neuvième siècle. Un peloton anglais aurait rencontré une tribu locale. Les soldats disparaissaient dans la nuit, et étaient remplacés par ces fétiches. Ils pourraient être utiles pour mes études. 	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Vous parlez de ceci ?	}{	Vous parlez de ceci ?	}{	251	}{	pc.HasItem("item_g_pisha_fetish")	}{	pc.SetQuest("Occult",2)	}{	}{	}{	}{	}{	}{	}{	Oui, j'ai l'homme flétri.	}
+{	213	}{	Quel genre de musée peut posséder un tel fétiche ?	}{	Quel genre de musée peut posséder un tel fétiche ?	}{	201	}{	G.Pisha_Fetish == 0 and G.Story_State >= 30	}{	}{	}{	}{	}{	}{	}{	}{	Quel musée peut accueillir votre homme flétri ?	}
+{	214	}{	Et l'autre ?	}{	Et l'autre ?	}{	221	}{	G.Pisha_Morte == 0	}{	}{	}{	}{	}{	}{	}{	}{	Et l'autre récompense ?	}
+{	215	}{	J'ai une autre question.	}{	J'ai une autre question.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je désire demander quelque chose à la veuve.	}
+{	216	}{	Si je le trouve, je vous l'apporte.	}{	Si je le trouve, je vous l'apporte.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	S'il me trouve, je vous le présenterai.	}
+{	217	}{	Bien. Je vous laisse manger la peau.	}{	Bien. Je vous laisse manger la peau.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je laisse la veuve achever son sinistre festin.	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Il sert à communiquer avec certaines entités d'un autre monde. Ce livre est appelé 'Voce del Morte'. Si vous vous trouvez dans la demeure des Giovanni, saisissez l'occasion de vous en emparer, car ils s'assureront que vous n'en aurez qu'une.	}{	Il sert à communiquer avec certaines entités d'un autre monde. Ce livre est appelé 'Voce del Morte'. Si vous vous trouvez dans la demeure des Giovanni, saisissez l'occasion de vous en emparer, car ils s'assureront que vous n'en aurez qu'une.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	J'ai une autre question.	}{	J'ai une autre question.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je désire demander quelque chose à la veuve.	}
+{	223	}{	Si je le trouve, je vous l'apporte.	}{	Si je le trouve, je vous l'apporte.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	S'il me trouve, je vous le présenterai.	}
+{	224	}{	Parlez-moi de cet objet que vous pensez être au musée.	}{	Parlez-moi de cet objet que vous pensez être au musée.	}{	211	}{	G.Pisha_Fetish == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi du Prix du musée.	}
+{	225	}{	Bien. Je vous laisse manger la peau.	}{	Bien. Je vous laisse manger la peau.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je laisse la veuve achever son sinistre festin.	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	[Aucune émotion, pas même l'agacement]Oui ?	}{	[Aucune émotion, pas même l'agacement]Oui ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Voici l'objet du musée.	}{	Voici l'objet du musée.	}{	251	}{	pc.HasItem("item_g_pisha_fetish")	}{	}{	}{	}{	}{	}{	}{	}{	Voici votre homme flétri, veuve.	}
+{	233	}{	Voici le livre que vous cherchiez. 	}{	Voici le livre que vous cherchiez. 	}{	261	}{	pc.HasItem("item_g_pisha_book")	}{	}{	}{	}{	}{	}{	}{	}{	Votre livre mort, veuve.	}
+{	234	}{	Vous paraissiez un peu obsédée par la mort.	}{	Vous paraissiez un peu obsédée par la mort.	}{	311	}{	G.Pisha_Death == 0	}{	}{	}{	}{	}{	}{	}{	}{	La veuve souhaite-t-elle prendre la mort à sa toile ?	}
+{	235	}{	Un vampire qui mange de la chair. . . Ca me dégoûte toujours autant.	}{	Un vampire qui mange de la chair. . . Ca me dégoûte toujours autant.	}{	321	}{	G.Pisha_Flesh == 0	}{	}{	}{	}{	}{	}{	}{	}{	Une veuve qui se comporte en mante. Repoussant.	}
+{	236	}{	Parlons des objets que vous voulez.	}{	Parlons des objets que vous voulez.	}{	241	}{	G.Pisha_Desire == 1	}{	}{	}{	}{	}{	}{	}{	}{	Parlons des objets que vous cherchez.	}
+{	237	}{	Je vous ai apporté un petit casse-croûte.	}{	Je vous ai apporté un petit casse-croûte.	}{	321	}{	G.Patch_Plus == 1 and pc.HasItem("item_w_severed_arm")	}{	pc.RemoveItem("item_w_severed_arm"); pc.MoneyAdd(10)	}{	}{	}{	}{	}{	}{	}{	J'ai eu du poulet-qui-n'en-est-pas pour vous!	}
+{	238	}{	Tant pis, ce n'est rien. Au revoir.	}{	Tant pis, ce n'est rien. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne voulais pas déranger votre toile. Me voici sur le départ.	}
+{	239	}{	Je vous laisse reprendre votre repas et votre chasse de la mort. Au revoir.	}{	Je vous laisse reprendre votre repas et votre chasse de la mort. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je laisse la veuve achever son sinistre festin.	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	[Aucune émotion, pas même l'agacement]Oui ?	}{	[Aucune émotion, pas même l'agacement]Oui ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	243	}{	Parlez-moi encore de celui du musée.	}{	Parlez-moi encore de celui du musée.	}{	211	}{	G.Pisha_Fetish == 0	}{	}{	}{	}{	}{	}{	}{	}{	La récompense du musée.	}
+{	244	}{	Parlez-moi encore du livre.	}{	Parlez-moi encore du livre.	}{	221	}{	G.Pisha_Morte == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le prix Giovanni.	}
+{	245	}{	Peu importe. Je dois partir.	}{	Peu importe. Je dois partir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là, veuve.	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Oui. C'est bien cela. . . et ce me sera utile. Il y a une certaine résonance. . . un murmure. Je vous donne ceci en échange. On l'appelle le Calice Odieux. . . Il se gorge du sang versé, et apporte cette crue à son détenteur.	}{	Oui. C'est bien cela. . . et ce me sera utile. Il y a une certaine résonance. . . un murmure. Je vous donne ceci en échange. On l'appelle le Calice Odieux. . . Il se gorge du sang versé, et apporte cette crue à son détenteur.	}{	#	}{	}{	pc.RemoveItem("item_g_pisha_fetish"); G.Pisha_Fetish = 1; pc.GiveItem("item_p_occult_regen")	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	(Auto-Link)	}{	(Auto-Link)	}{	291	}{	G.Pisha_Morte == 1	}{	pc.SetQuest("Occult",5)	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	253	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	On dirait le visage d'un porc humide et putrescent. Euh, merci. Encore une question.	}{	On dirait le visage d'un porc humide et putrescent. Euh, merci. Encore une question.	}{	231	}{	G.Pisha_Morte == 0	}{	}{	}{	}{	}{	}{	}{	}{	C'est un blasphème charnel et graisseux. Merci. Une autre question.	}
+{	255	}{	Super. Je reviens si je trouve autre chose.	}{	Super. Je reviens si je trouve autre chose.	}{	0	}{	G.Pisha_Morte == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je prends cette récompense et pars en quête de la prochaine.	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Le 'Voce del Morte'. . . Les Giovanni ne partagent jamais leurs secrets de façon volontaire. . . et j'ai eu peu de succès dans mes tentatives pour m'introduire chez eux. Comment l'avez-vous obtenu ?	}{	Le 'Voce del Morte'. . . Les Giovanni ne partagent jamais leurs secrets de façon volontaire. . . et j'ai eu peu de succès dans mes tentatives pour m'introduire chez eux. Comment l'avez-vous obtenu ?	}{	#	}{	}{	pc.RemoveItem("item_g_pisha_book")	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Ils étaient un peu distraits, j'ai réussi à entrer sans qu'ils s'en rendent compte.	}{	Ils étaient un peu distraits, j'ai réussi à entrer sans qu'ils s'en rendent compte.	}{	271	}{	G.GioBotchedOutside == 0 and G.GioBotchedInside == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ils n'ont rien vu. Et moi non plus. Dans quel endroit étais-je ? 	}
+{	263	}{	Les Giovanni de Californie viennent d'entrer dans la liste des espèces en voie de disparition.	}{	Les Giovanni de Californie viennent d'entrer dans la liste des espèces en voie de disparition.	}{	271	}{	G.GioBotchedOutside == 1 or G.GioBotchedInside == 1	}{	}{	}{	}{	}{	}{	}{	}{	Il reste des Giovanni ? Je pensais les avoir tous envoyés au-delà.	}
+{	264	}{	Peu importe. Donnez-moi ce que vous avez promis.	}{	Peu importe. Donnez-moi ce que vous avez promis.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où est ma récompense ?	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Il me faudra du temps pour traduire et comprendre les secrets de ce livre. Je dois quitter cette ville pour fuir les Giovanni qui le chercheront. Prenez ceci. Cela met fin à notre accord, et je pense que vous y trouverez une compensation satisfaisante.	}{	Il me faudra du temps pour traduire et comprendre les secrets de ce livre. Je dois quitter cette ville pour fuir les Giovanni qui le chercheront. Prenez ceci. Cela met fin à notre accord, et je pense que vous y trouverez une compensation satisfaisante.	}{	#	}{	}{	G.Pisha_Morte = 1; pc.GiveItem("item_p_occult_presence")	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	(Auto-Link)	}{	(Auto-Link)	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	273	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	274	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	C'est la Clé d'Alamut. Elle inspire l'effroi à ceux qui veulent vous nuire, et les gêne donc pour vous blesser.	}{	C'est la Clé d'Alamut. Elle inspire l'effroi à ceux qui veulent vous nuire, et les gêne donc pour vous blesser.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	(Auto-Link)	}{	(Auto-Link)	}{	291	}{	(G.Pisha_Quest == 2 or G.Pisha_Fetish == 1) and G.Pisha_Morte == 1	}{	pc.SetQuest("Occult",5)	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	283	}{	Je vois. Il me reste quelques questions.	}{	Je vois. Il me reste quelques questions.	}{	231	}{	G.Pisha_Fetish == 0 and G.Pisha_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je désire demander quelque chose à la veuve.	}
+{	284	}{	Alors je vais m'en aller.	}{	Alors je vais m'en aller.	}{	0	}{	G.Pisha_Fetish == 0 and G.Pisha_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là, veuve.	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Ne vous méprenez pas, notre accord ne fait pas de nous des alliés. Si nous nous retrouvons un jour, ne me demandez aucune faveur. Je vous donne un dernier conseil. Quittez cette ville. Il ne lui reste que quelques nuits. Ce n'est pas la première fois que je ressens cela.	}{	Ne vous méprenez pas, notre accord ne fait pas de nous des alliés. Si nous nous retrouvons un jour, ne me demandez aucune faveur. Je vous donne un dernier conseil. Quittez cette ville. Il ne lui reste que quelques nuits. Ce n'est pas la première fois que je ressens cela.	}{	#	}{	}{	G.Pisha_Quest = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Comment cela ?	}{	Comment cela ?	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, la discorde nous accable comme une pomme lourde pèse sur sa branche affaiblie.	}
+{	293	}{	Merci, mais je compte rester. Au revoir.	}{	Merci, mais je compte rester. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Aussi haut qu'on saute, on n'échappe jamais à la gravité. Au revoir.	}
+{	294	}{	C'est ça. Quelques nuits. Oui, oui, bien sûr. Au revoir.	}{	C'est ça. Quelques nuits. Oui, oui, bien sûr. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est inévitable. Au revoir, veuve.	}
+{	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	En novembre 1938, je traduisais des documents à Leipzig, en Allemagne, écrits soi-disant par un nécromancien de l'époque des Croisades. Là aussi, j'ai ressenti un chaos imminent. Bientôt, ce fut la Kristalnacht - l'aube d'une nouvelle Guerre Mondiale.	}{	En novembre 1938, je traduisais des documents à Leipzig, en Allemagne, écrits soi-disant par un nécromancien de l'époque des Croisades. Là aussi, j'ai ressenti un chaos imminent. Bientôt, ce fut la Kristalnacht - l'aube d'une nouvelle Guerre Mondiale.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Je vois. J'y penserai. Au revoir.	}{	Je vois. J'y penserai. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Aussi haut qu'on saute, on n'échappe jamais à la gravité. Au revoir.	}
+{	303	}{	Merci, mais je compte rester. Au revoir.	}{	Merci, mais je compte rester. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est inévitable. Au revoir, veuve.	}
+{	304	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	La mort est le dernier dilemme, partie intégrante des croyances et comportements de chaque culture. La vie naît sur la dépouille des morts. Sans mort, il n'y aurait aucune raison d'accomplir quoi que ce soit. La seule émotion serait l'existence. La vie serait pestilente et insoutenable.	}{	La mort est le dernier dilemme, partie intégrante des croyances et comportements de chaque culture. La vie naît sur la dépouille des morts. Sans mort, il n'y aurait aucune raison d'accomplir quoi que ce soit. La seule émotion serait l'existence. La vie serait pestilente et insoutenable.	}{	#	}{	}{	G.Pisha_Death = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	J'avais une autre question.	}{	J'avais une autre question.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aimerais demander autre chose à la veuve.	}
+{	313	}{	Au sujet des objets que vous cherchez.	}{	Au sujet des objets que vous cherchez.	}{	241	}{	G.Pisha_Desire == 1	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi des trésors que vous cherchez.	}
+{	314	}{	Que faites-vous dans une maison abandonnée ?	}{	Que faites-vous dans une maison abandonnée ?	}{	111	}{	G.Pisha_Desire == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi avoir construit votre toile ici, veuve ?	}
+{	315	}{	Vous mangez de la chair et étudiez la mort. Je pense que je vais partir, toute cette excitation, c'est trop pour moi.	}{	Vous mangez de la chair et étudiez la mort. Je pense que je vais partir, toute cette excitation, c'est trop pour moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La vie d'une veuve noire me lasse. Et me chasse.	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	Si cela vous satisfait, je ferai un effort pour n'attaquer que les faibles et les indignes. Consommant leur chair non par haine, mais par besoin de survivre - je meurs sans cela. A ce prix est ma survie.	}{	Si cela vous satisfait, je ferai un effort pour n'attaquer que les faibles et les indignes. Consommant leur chair non par haine, mais par besoin de survivre - je meurs sans cela. A ce prix est ma survie.	}{	#	}{	}{	G.Pisha_Flesh = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	J'avais une autre question.	}{	J'avais une autre question.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aimerais demander autre chose à la veuve.	}
+{	323	}{	Parlons des objets que vous cherchez.	}{	Parlons des objets que vous cherchez.	}{	241	}{	G.Pisha_Desire == 1	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi des récompenses que vous cherchez.	}
+{	324	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	325	}{	Cela me dégoûte tout de même. Adieu.	}{	Cela me dégoûte tout de même. Adieu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La vie d'une veuve noire me lasse. Et me chasse.	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	La fille que vous m'avez envoyée. . . J'ai l'habitude de me faire passer pour l'un d'eux, et de chercher une chose assez faible pour en priver le troupeau. C'est la première fois que je m'en fais livrer une.	}{	La fille que vous m'avez envoyée. . . J'ai l'habitude de me faire passer pour l'un d'eux, et de chercher une chose assez faible pour en priver le troupeau. C'est la première fois que je m'en fais livrer une.	}{	#	}{	}{	G.Pisha_Full = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Voici l'objet du musée.	}{	Voici l'objet du musée.	}{	251	}{	G.Pisha_Quest > 0 and pc.HasItem("item_g_pisha_fetish")	}{	}{	}{	}{	}{	}{	}{	}{	La récompense du musée.	}
+{	333	}{	Voici le livre que vous cherchiez. 	}{	Voici le livre que vous cherchiez. 	}{	261	}{	G.Pisha_Quest > 0 and pc.HasItem("item_g_pisha_book")	}{	}{	}{	}{	}{	}{	}{	}{	Le prix Giovanni.	}
+{	334	}{	Vous paraissiez un peu obsédée par la mort.	}{	Vous paraissiez un peu obsédée par la mort.	}{	311	}{	G.Pisha_Death == 0	}{	}{	}{	}{	}{	}{	}{	}{	La veuve souhaite-t-elle prendre la mort à sa toile ?	}
+{	335	}{	Un vampire qui mange de la chair. . . Ca me dégoûte toujours autant.	}{	Un vampire qui mange de la chair. . . Ca me dégoûte toujours autant.	}{	321	}{	G.Pisha_Flesh == 0	}{	}{	}{	}{	}{	}{	}{	}{	Une veuve qui se comporte en mante. Repoussant.	}
+{	336	}{	Parlons des objets que vous voulez.	}{	Parlons des objets que vous voulez.	}{	181	}{	G.Story_State < 30	}{	}{	}{	}{	}{	}{	}{	}{	Parlons des objets que vous cherchez.	}
+{	337	}{	Parlons des objets que vous voulez.	}{	Parlons des objets que vous voulez.	}{	201	}{	G.Story_State >= 30	}{	G.Pisha_Quest = 1; pc.SetQuest("Occult",1)	}{	}{	}{	}{	}{	}{	}{	Parlons des objets que vous cherchez.	}
+{	338	}{	J'espère qu'elle n'a pas laissé d'arrière-goût déplaisant.	}{	J'espère qu'elle n'a pas laissé d'arrière-goût déplaisant.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je laisse la veuve achever son sinistre festin.	}
+{	339	}{	Je vous laisse reprendre votre repas et votre chasse de la mort. Au revoir.	}{	Je vous laisse reprendre votre repas et votre chasse de la mort. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne voulais pas déranger votre toile. Me voici sur le départ.	}
+{	340	}{	Amusez-vous bien. Au revoir.	}{	Amusez-vous bien. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous souhaite un bon diner... Adieu.	}
+{	341	}{	Suivez mon conseil. . . Quittez cette ville avant qu'elle s'effondre autour de vous.	}{	Suivez mon conseil. . . Quittez cette ville avant qu'elle s'effondre autour de vous.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	343	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	344	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	Enfant de Malkav. . . vous devriez comprendre mieux que tout autre les débilités de certaines de ces lignées. Une araignée, non. . . elles ne boivent que le sang. Ma condition est plutôt celle de la mante. Je dois aussi dévorer la chair de ces mortels pour survivre.	}{	Enfant de Malkav. . . vous devriez comprendre mieux que tout autre les débilités de certaines de ces lignées. Une araignée, non. . . elles ne boivent que le sang. Ma condition est plutôt celle de la mante. Je dois aussi dévorer la chair de ces mortels pour survivre.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	Les veuves noires tissent des toiles entremêlées dans le noir. Comment dois-je vous appeler, veuve ?	}{	Les veuves noires tissent des toiles entremêlées dans le noir. Comment dois-je vous appeler, veuve ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	353	}{	Les araignées noires collantes devraient être écrasées avant de mordre à nouveau.	}{	Les araignées noires collantes devraient être écrasées avant de mordre à nouveau.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	354	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Attendez. . .	}{	Attendez. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	(Auto-Link)	}{	(Auto-Link)	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	363	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	364	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	365	}{	Le destin du mortel est scellé depuis qu'il est entré. Ne perdez pas votre temps à débattre des implications morales. Si un homme entre sur le territoire d'un tigre, il peut se faire dévorer. Et tel est le cas.	}{	Le destin du mortel est scellé depuis qu'il est entré. Ne perdez pas votre temps à débattre des implications morales. Si un homme entre sur le territoire d'un tigre, il peut se faire dévorer. Et tel est le cas.	}{	#	}{	}{	G.Pisha_Please = 1; pc.SetQuest("Necromantic",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	181	}{	G.Story_State < 30	}{	}{	}{	}{	}{	}{	}{	}{	Compris. Parlez-moi encore des récompenses à gagner.	}
+{	367	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	181	}{	Humanity -5 & G.Story_State < 30	}{	}{	}{	}{	}{	}{	}{	}{	La mouche était problématique. Parlez-moi des récompenses.	}
+{	368	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	201	}{	G.Story_State >= 30	}{	G.Pisha_Quest = 1; pc.SetQuest("Occult",1)	}{	}{	}{	}{	}{	}{	}{	Compris. Parlez-moi encore des récompenses à gagner.	}
+{	369	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	201	}{	Humanity -5 & G.Story_State >= 30	}{	G.Pisha_Quest = 1; pc.SetQuest("Occult",1)	}{	}{	}{	}{	}{	}{	}{	La mouche était problématique. Parlez-moi des récompenses.	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	373	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	374	}{	(Starting Condition)	}{	}{	341	}{	G.Pisha_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	375	}{	(Starting Condition)	}{	}{	331	}{	G.Patty_Pisha == 1 and G.Pisha_Please == 1 and G.Pisha_Full == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	(Starting Condition)	}{	}{	231	}{	G.Pisha_Quest >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	(Starting Condition)	}{	}{	151	}{	IsDead("Milligan") or G.Mill_Persuaded == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	(Starting Condition)	}{	}{	141	}{	G.Mill_Persuaded == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	(Starting Condition)	}{	}{	231	}{	G.Mill_Loose == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

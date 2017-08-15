@@ -1,0 +1,61 @@
+// Written
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	
+	"infomodel"	"models/items/Drugs/info/Info_DrugBox.mdl"
+	"playermodel"	"models/items/Drugs/ground/DrugBox.mdl"
+
+	"anim_prefix"	" "
+
+	"printname"	"Boîte de médicaments"
+	"description"	"Vivitrazac. Prenez-en avant vos 'rapports'. Vous garantit une érection de six à huit heures."
+
+	"bucket"		"1"
+	"bucket_position"	"2"
+
+	"camera_class"		"noswitch"
+	"is_wieldable"		"0"
+	"weight"		"3"
+	"item_flags"		"1"
+	"item_type"		"powerup"
+	"item_worth"		"20"
+	"is_stackable" "1"
+	"stack_limit" "10"  // maximum number in the stack
+
+	SoundData
+	{
+		"pickup"
+		{
+			"sound1"	"items/Pill_Bottle/Pickup.wav"
+		}
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	SpriteData
+	{
+		"weapon"
+		{
+			"640"
+			{
+				"file"	"hud/Inventory_Images/General_Items/drugbox_sel"
+				"x"		"0"
+				"y"		"0"
+				"width"	"100"
+				"height"	"64"
+			}
+		}
+		"weapon_s"
+		{
+			"640"
+			{
+				"file"	"hud/Inventory_Images/General_Items/drugbox"
+				"x"		"0"
+				"y"		"0"
+				"width"	"100"
+				"height"	"64"
+			}
+		}
+	}
+}

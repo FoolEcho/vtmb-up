@@ -1,0 +1,65 @@
+{	1	}{	C'est la fille du Confession qui vous envoie ?	}{	C'est la fille du Confession qui vous envoie ?	}{	#	}{	}{	G.Igor_Talk = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Exactement.	}{	Exactement.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je viens de Vénus.	}
+{	3	}{	Qui le demande ?	}{	Qui le demande ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où sont vos dresseurs, l'ours ?	}
+{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	L'argent, où est l'argent ?	}{	L'argent, où est l'argent ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	J'ai pour mission de vous dire qu'elle n'a pas l'argent.	}{	J'ai pour mission de vous dire qu'elle n'a pas l'argent.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sa bourse est vide. Pas de saumon pour vous ce soir, l'ours.	}
+{	13	}{	Venus ne peut pas payer. Elle doit avoir une bonne raison.	}{	Venus ne peut pas payer. Elle doit avoir une bonne raison.	}{	21	}{	Persuasion 6	}{	}{	}{	}{	}{	}{	}{	}{	Les tributs de la déesse sont maigres ce mois-ci, l'ours. Pardonnez-la.	}
+{	14	}{	Elle ne l'a pas. C'est tout ce que j'ai à vous dire. Maintenant, fichez le camp.	}{	Elle ne l'a pas. C'est tout ce que j'ai à vous dire. Maintenant, fichez le camp.	}{	21	}{	Intimidate 5	}{	}{	}{	}{	}{	}{	}{	}{	Il n'y en a pas. Retournez à votre caverne, l'ours.	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	Vous savez où vous pouvez le mettre ?	}{	Vous savez où vous pouvez le mettre ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dans les parties inférieures de votre maman ours.	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Pas d'argent ?	}{	Pas d'argent ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Pas de quoi s'énerver, je ne fais que passer le message.	}{	Pas de quoi s'énerver, je ne fais que passer le message.	}{	41	}{	Persuasion 6	}{	}{	}{	}{	}{	}{	}{	}{	Je ne fais que transmettre les messages de ma déesse. Ne m'attaquez pas, puissant grizzly.	}
+{	23	}{	Vous avez déjà reçu l'argent.	}{	Vous avez déjà reçu l'argent.	}{	41	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Vous devez avoir faim, l'ours. Mais regardez, vos amis sont des saumons.	}{	Vous devez avoir faim, l'ours. Mais regardez, vos amis sont des saumons.	}{	61	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	Vous devez avoir faim, l'ours. Mais regardez, vos amis sont des saumons.	}
+{	25	}{	Vous avez déjà reçu l'argent.	}{	Vous avez déjà reçu l'argent.	}{	41	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	Je n'ai pas besoin de payer quelqu'un.	}{	Je n'ai pas besoin de payer quelqu'un.	}{	41	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	Non.	}{	Non.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non.	}
+{	28	}{	Vous êtes bête, en plus ? Pas d'argent !	}{	Vous êtes bête, en plus ? Pas d'argent !	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes plus obtus que la roche qui vous abrite, grizzly.	}
+{	29	}{	Mon travail ici est terminé. Ravi de vous avoir rencontrés.	}{	Mon travail ici est terminé. Ravi de vous avoir rencontrés.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai plus de messages, aussi dois-je me rembobiner.	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	[traduit, Virvu nogi!](Cassez-lui les jambes!)	}{	[traduit, Virvu nogi!](Cassez-lui les jambes!)	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	[Da.](oui.) Dites à morue nous revenir mois prochain.	}{	[Da](oui). Dites à morue nous revenir mois prochain.	}{	#	}{	}{	G.Igor_Dominated = 1; pc.SetQuest("Confession",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Vous mourir.	}{	Vous mourir.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Encore ?	}{	Encore ?	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Oui, c'est gentil de le remarquer.	}
+{	53	}{	N'y comptez pas.	}{	N'y comptez pas.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	La chasse à l'ours est ouverte.	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Du saumon ? Je dois manger du saumon.	}{	Du saumon ? Je dois manger du saumon.	}{	#	}{	}{	G.Igor_Dementated = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	(Starting Condition)	}{	}{	41	}{	G.Igor_Dominated == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -1,0 +1,73 @@
+TerminalDefinition
+{
+	"screen saver"		"Muséum d'histoire naturelle"// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt and subdirector names(2 characters), changed by wesp
+
+	"email_password"	"iluvgabe"		// the user must type this to access email from this terminal
+	"email_username"	"Janice"		// printed at the top of the email window, not used for log in. 
+	"difficulty"		"3"
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Muséum d'histoire naturelle"	//(any number of characters, but must fit in the screen
+	}
+
+	Email
+	{
+		"subject"	"Rappel"
+		"sender"	"C. Marshall"
+		"body"		"Juste pour vous rappeler que le professeur Anders Johansen, le mec du sarcophage, sera présent au musée durant les quelques jours à venir. Faites preuve de courtoisie et soyez professionnels.
+-CM"
+	}
+
+	Email
+	{
+		"subject"	"Fétiche"
+		"sender"	"pking@nmh.vtm"
+		"body"		"La statue sur le bureau de Daryl me fout les jetons. J'ai travaillé jusqu'à tard l'autre soir et je jurerais l'avoir vue bouger. Encore une de vos blagues ? Si c'est le cas, ce n'est pas drôle.
+-Pam"
+	}
+
+	Email
+	{
+		"subject"	"ALERTE VIRUS : lisez-moi !"
+		"sender"	"adcxu@mail.vtm"
+		"body"		"MAV a détecté un virus dans la pièce jointe de ce message. Le fichier a été mis en quarantaine et un avertissement a été envoyé à adcxu@mail.vtm"
+	}
+
+	Email
+	{
+		"subject"	"Merci"
+		"sender"	"JJ Elmster"
+		"body"		"Les clés que vous avez trouvées ? Ce sont celles de Garry. Je lui dirai que vous les avez laissées aux objets trouvés."
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+	SubDir
+	{
+		"name"			"Ventes"				// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
+		"password"		"griff"				// password required to run commands in this menu (16 characters), changed by wesp
+		"description"		"Chiffres des ventes"	// This is printed each time the user enters this menu (128 characters)
+		"difficulty"		"6"
+	//	"runtext"	"Les chiffres de vente ne sont pas disponibles en ce moment."		// this text is printed when the player triggers this function.  (128 characters)
+
+		Function	// fixed by psycho-a
+		{
+			"name"		"Consulter"
+			"description"	"Consulter Chiffres de Vente"
+			"runtext"	"Les chiffres de vente ne sont pas disponibles en ce moment."
+		}
+//	removed by wesp
+//		Function
+//		{
+//			"name"		"Imprimer"			// this is what the player must type in to trigger this function. (16 characters)
+//			"description"	"Imprimer chiffres de ventes"		// this is a description of this function  (128 characters)
+//			"runtext"	"Impression. . ."		// this text is printed when the player triggers this function.  (128 characters)
+//		}
+	}
+}

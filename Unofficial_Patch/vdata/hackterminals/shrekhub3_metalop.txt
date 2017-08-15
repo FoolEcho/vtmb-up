@@ -1,0 +1,72 @@
+TerminalDefinition
+{
+	"screen saver"		"VIVE METAL HEAD!!!"	
+	"brackets"		""	// changed by wesp			
+	
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Administration Metal Head"
+		"line1"		"For those about to rock,"
+		"line2"		"We salute you!"
+	}
+
+	SubDir
+	{
+		"name"			"Net Security"	
+		"password"		"Bang Your Head"	
+		"description"		"Connexions disponibles"	
+                "difficulty"		"6"
+
+		Function
+		{
+			"name"		"schrecknet"
+			"description"	"socket 1"
+			"dependency"	"G.Shubs_Botch == 0 and G.Shubs_Act == 2"	// changed by wesp
+			"runtext"	"hub schrecknet activé:
+
+Impressionnant. Maintenant, sors discrétement. Je t'enverrai bientôt un e-mail.
+
+>m1tn1ck<"
+
+			"runscript"	"G.Shubs_Act = 3; mitSetQuestSeven()"
+		}
+
+		Function
+		{
+			"name"		"schrecknet"			
+			"description"	"socket 1"	
+			"dependency"	"G.Shubs_Botch == 1"		
+			"runtext"	"Hub schrecknet désactivé :
+
+CA CRAINT. T'AS TOUT FAIT FOIRER, IMBECILE. TU PEUX M'OUBLIER.
+
+>m1tn1ck<"
+		}
+	}
+
+	SubDir
+	{
+		"name"			"Coffre"	
+		"password"		"Turbo lover"	
+		"description"		"Que voulez-vous faire ?"	
+                "difficulty"		"8"
+
+		Function
+		{
+			"name"		"Ouvrir"			
+			"description"	"Ouvrir porte"		
+			"runtext"	"Porte coffre-fort ouverte"	
+			"trigger"	"0"				
+		}
+
+		Function
+		{
+			"name"		"Fermer"			
+			"description"	"Fermer porte"		
+			"runtext"	"Porte coffre-fort fermée"	
+			"trigger"	"1"				
+		}
+	}
+}

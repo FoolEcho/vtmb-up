@@ -1,0 +1,384 @@
+// Feat Doc
+
+FeatData
+{
+	// WARNING WARNING WARNING:  Changing the MaxValue may not be safe, some Feats have
+	//   hard-coded "code" limits expecting it to be 10 (or 20, etc.).  Check with JLR first!
+
+	Feats
+	{
+		"Name"		"Aptitudes"
+		"InternalName"	"Feats"
+
+		//  "Base#" are the Traits that the Feat is based upon
+		//  "Weighting" is the dice-roll table to use when rolling this feat
+		Feat
+		{
+			"Name"		"Crochetage"
+			"InternalName"	"Intrusion"
+			"HelpText"		"Mesure la capacité de votre personnage à pénétrer dans des endroits où vous n'êtes pas supposé être. Ce sont l'attribut Dextérité et la capacité Sécurité qui déterminent votre aptitude Crochetage."
+
+			"MaxValue"		"10"
+			"Base0"		"Dexterity"
+			"Base1"		"Security"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Discrétion"
+			"InternalName"	"Sneaking"
+			"HelpText"		"Mesure la capacité de votre personnage à éviter de se faire repérer. Ce sont l'attribut Dextérité et la capacité Furtivité qui déterminent votre aptitude Discrétion."
+
+			"MaxValue"		"10"
+			"Base0"		"Dexterity"
+			"Base1"		"Stealth"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+
+		Feat
+		{
+			"Name"		"Piratage"
+			"InternalName"	"Hacking"
+			"HelpText"		"Mesure la capacité de votre personnage à déjouer les protections d'ordinateurs et autres systèmes électroniques. Ce sont l'attribut Astuce et la capacité Informatique qui déterminent votre aptitude Piratage."
+
+			"MaxValue"		"20"
+			"Base0"		"Wits"
+			"Base1"		"Computer"
+//			"Base2"		"Hacking_Mod"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Inspection"
+			"InternalName"	"Inspection"
+			"HelpText"		"Mesure la capacité de votre personnage à remarquer les détails cachés. Ce sont l'attribut Perception et la capacité Investigation qui déterminent votre aptitude Inspection."
+
+			"MaxValue"		"20"
+			"Base0"		"Perception"
+			"Base1"		"Investigation"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+
+			Table
+			{
+
+			// These are the artificial values assigned to npcs in WC
+			// in lieu of inspection derived from stats
+
+				"Name"				"Inspection_Vision_Distances"
+				"InternalName"		"Inspection_Vision_Distances"
+				"Clamping"			"1"
+				"TraitDependency"	"Inspection"
+
+			//	feat_value			vision_distance (in game units)
+				"0"					"60"		// Should never actually get this, but...
+				"1"					"290" // 
+	 			"2"					"380" // +90
+				"3"					"440" // +60
+		 		"4"					"480" // +40
+				"5"					"510" // +30
+	 			"6"					"540" // +30
+				"7"					"590" // +50
+		 		"8"					"660" // +70
+				"9"					"750" // +90
+	 			"10"					"2400" //"2400"
+			}
+
+			Table
+			{
+				"Name"				"Inspection_Ouïe_Scalaires"
+				"InternalName"		"Inspection_Hearing_Scalars"
+
+				"Clamping"			"1"
+
+				"TraitDependency"	"Inspection"
+
+			//	feat_value			hearing_scalar
+				"0"					"0.71"		// Should never actually get this, but...
+				"1"					"0.71"
+	 			"2"					"0.86"
+				"3"					"1.00"		// An average human has inspection of 3.
+		 		"4"					"1.14"
+				"5"					"1.29"
+	 			"6"					"1.43"
+				"7"					"1.57"
+		 		"8"					"1.71"
+				"9"					"1.86"
+	 			"10"				"2.00"
+			}
+
+		}
+
+		Feat
+		{
+			"Name"		"Recherche"
+			"InternalName"	"Research"
+			"HelpText"		"Mesure la capacité de votre personnage à lire des livres et à apprendre de nouvelles capacités. Ce sont l'attribut Intelligence et la capacité Recherche qui déterminent votre aptitude Recherche."
+			"Disabled"		"1"
+
+			"MaxValue"		"10"
+			"Base0"		"Academics"
+			"Base1"		"Intelligence"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Marchandage"
+			"InternalName"	"Haggle"
+			"HelpText"		"Mesure la capacité de votre personnage à estimer la valeur des biens et à marchander pour obtenir de meilleurs prix. Ce sont l'attribut Manipulation et la capacité Finances qui déterminent votre aptitude Marchandage."
+			"Disabled"		"1"
+
+			"MaxValue"		"10"
+			"Base0"		"Finance"
+			"Base1"		"Manipulation"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Intimider"
+			"InternalName"	"Intimidate"
+			"HelpText"		"Mesure la capacité de votre personnage à inspirer la peur chez les autres et à les forcer à coopérer. Ce sont l'attribut Intelligence et la capacité Intimidation qui déterminent votre aptitude Intimider."
+			"Disabled"		"1"
+
+			"MaxValue"		"10"
+			"Base0"		"Intelligence"
+			"Base1"		"Intimidation"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Persuasion"
+			"InternalName"	"Persuasion"
+			"HelpText"		"Mesure la capacité de votre personnage à convaincre les gens de souhaiter la même chose que vous. Ce sont l'attribut Charisme et la capacité Erudition qui déterminent votre aptitude Persuasion."
+			"Disabled"		"1"
+
+			"MaxValue"		"10"
+			"Base0"		"Charisma"
+			"Base1"		"Academics" //TJP internal name for Scholarship
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Séduction"
+			"InternalName"	"Seduction"
+			"HelpText"		"Mesure la capacité de votre personnage à inciter les gens à vous aider. Ce sont l'attribut Apparence et la capacité Subterfuge qui déterminent votre aptitude Séduction."
+			"Disabled"		"1"
+
+			"MaxValue"		"10"
+			"Base0"		"Appearance"
+			"Base1"		"Subterfuge"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Mains nues"
+			"InternalName"	"Close_Combat_Brawl"
+			"HelpText"		"Mesure la capacité de votre personnage à infliger des dégâts lors des combats à mains nues et à se nourrir sur des personnes réticentes. Ce sont l'attribut Force et la capacité Bagarre qui déterminent votre aptitude de combat à Mains nues."
+
+			"MaxValue"		"20"
+			"Base0"		"Brawl"
+			"Base1"		"Strength"
+			"Automatic0"	"Automatic_Str_Successes"
+			"Display2nd0"	"Automatic_Str_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Mêlée"
+			"InternalName"	"Close_Combat_Melee"
+			"HelpText"		"Mesure la capacité de votre personnage à infliger des dégâts avec des armes de mêlée, telles que des couteaux et des matraques. Ce sont l'attribut Force et la capacité Mêlée qui déterminent votre aptitude de combat de Mêlée."
+
+			"MaxValue"		"20"
+			"Base0"		"Melee"
+			"Base1"		"Strength"
+			"Automatic0"	"Automatic_Str_Successes"
+			"Display2nd0"	"Automatic_Str_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"A distance"
+			"InternalName"	"Ranged_Combat"
+			"HelpText"		"Mesure votre précision et les dégâts que vous infligez avec tous types d'armes à feu. Ce sont l'attribut Perception et la capacité Armes à feu qui déterminent votre aptitude de combat A distance."
+
+			"MaxValue"		"20"
+			"Base0"		"Firearms"
+			"Base1"		"Perception"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Défense"
+			"InternalName"	"Defensive_Maneuvers"
+			"HelpText"		"Mesure la capacité de votre personnage à éviter les dégâts dans tous types de combats. Ce sont l'attribut Astuce et la capacité Esquive qui déterminent votre aptitude Défense."
+
+			"MaxValue"		"20"
+			"Base0"		"Dodge"
+			"Base1"		"Wits"
+//			"Base2"		"Defense_Mod"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Contondant"
+			"InternalName"	"Soak_vs_Bashing"
+			"HelpText"		"La quantité de dégâts contondants qu'un personnage mortel peut absorber."
+
+			"MaxValue"		"20"
+			"Base0"		"Armor_Rating"
+			"Base1"		"Stamina"
+			"Base2"		"Soak_Pool"
+			"Display2nd0"	"Automatic_Soak_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Létal"
+			"InternalName"	"Soak_vs_Lethal"
+			"HelpText"		"La quantité de dégâts létaux qu'un personnage mortel peut absorber."
+
+			"MaxValue"		"20"
+			"Base0"		"Armor_Rating"
+			"Base1"		"Soak_Pool"
+			"Display2nd0"	"Automatic_Soak_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Chute létale"
+			"InternalName"	"Soak_vs_Lethal_Falling"
+			"HelpText"		"La quantité de dégâts de chute qu'un personnage mortel peut absorber."
+
+			"MaxValue"		"20"
+			"Base0"		"Armor_Rating / 2"
+			"Base1"		"Soak_Pool"
+			"Display2nd0"	"Automatic_Soak_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Aggravé"
+			"InternalName"	"Soak_vs_Aggravated"
+			"HelpText"		"La quantité de dégâts aggravés qu'un personnage mortel peut absorber."
+
+			"MaxValue"		"20"
+			"Base0"		"Soak_Pool"
+//			"Base1"		"Armor_Rating"
+			"Display2nd0"	"Automatic_Soak_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Contondant"	//"Soak vs. Bashing (Kindred)"
+			"InternalName"	"Soak_vs_Bashing_Kindred"
+			"HelpText"	"Votre capacité à ignorer les dégâts causés par des balles et des armes de mêlée contondantes. La Vigueur, ainsi que les vêtements et les protections du corps améliorent cette aptitude."
+
+			"MaxValue"		"20"
+			"Base0"		"Armor_Rating"
+			"Base1"		"Stamina"
+			"Base2"		"Soak_Pool"
+			"Display2nd0"	"Automatic_Soak_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Létal"	//"Soak vs. Lethal (Kindred)"
+			"InternalName"	"Soak_vs_Lethal_Kindred"
+			"HelpText"	"Votre capacité à ignorer les dégâts causés par des armes de mêlée à lame. Même si les vampires peuvent se défendre contre les dégâts létaux grâce à l'aptitude Défense, ils sont quasiment impuissants une fois le coup reçu. Les vêtements et les protections du corps améliorent cette aptitude."
+
+			"MaxValue"		"20"
+			"Base0"		"Armor_Rating"
+			"Base1"		"Soak_Pool"
+//			"Base2"		"Stamina"
+			"Display2nd0"	"Automatic_Soak_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Chute létale"
+			"InternalName"	"Soak_vs_Lethal_Falling_Kindred"
+			"HelpText"		"La quantité de dégâts de chute qu'un vampire peut absorber."
+
+			"MaxValue"		"20"
+			"Base0"		"Armor_Rating / 2"
+			"Base1"		"Soak_Pool"
+			"Base2"		"Stamina"
+			"Display2nd0"	"Automatic_Soak_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Aggravé"	//"Soak vs. Aggravated (Kindred)"
+			"InternalName"	"Soak_vs_Aggravated_Kindred"
+			"HelpText"	"Votre capacité à ignorer les dégâts causés par les griffes, les crocs, le feu et l'électricité. Les dégâts aggravés sont mortels. Les vampires peuvent se défendre contre les griffes et les crocs grâce à l'aptitude Défense, mais ils sont impuissants face au feu et à l'électricité. Les dégâts aggravés ne peuvent être absorbés que via des moyens surnaturels."
+			"MaxValue"		"20"
+			"Base0"		"Soak_Pool"
+//			"Base1"		"Armor_Rating"
+			"Display2nd0"	"Automatic_Soak_Successes"
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Dégâts"
+			"InternalName"	"Damage"
+			"HelpText"		"La quantité de dégâts que peut infliger un personnage."
+
+			"MaxValue"		"9999"
+			// Not based off of stats, the value is instead dependent on the weapon in question...
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+
+		Feat
+		{
+			"Name"		"Aptitude de frénésie"
+			"InternalName"	"Frenzy_Feat"
+			"HelpText"		"Un test de frénésie."
+
+			"MaxValue"		"10"
+			// Not based off of stats
+			"PCWeighting"	"Normal"
+			"NPCWeighting"	"Normal"
+		}
+	}
+}

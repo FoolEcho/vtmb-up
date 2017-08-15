@@ -1,0 +1,57 @@
+TerminalDefinition
+{
+	"screen saver"		"Confession"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+
+
+	"email_password"	"slave"		// the user must type this to access email from this terminal
+	"email_username"	"venus"
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Défi de Venus"
+	}
+
+// 	SubDir
+//	{
+//		"name"			"Important"	//(128 characters)
+//		"password"		"master"
+//		"description"		"Sabbat2"
+//
+//		Function
+//		{
+//			"name"		"Sabbat2"
+//			"description"	"Faiblesse de la gargouille"
+//			"runtext"	"La gargouille semble presque insensible aux armes à feu. Peut-être qu'une arme contondante serait plus efficace. Cette Gargouille aurait appartenu au Regent de Downtown La..."
+//		}
+//	disabled by wesp
+//		Function
+//		{
+//			"name"		"Sabbat1"
+//			"description"	"Gargouille du Sabbat"	
+//			"runtext"	"Le Sabbat s'est emparé du vieux théâtre chinois et y a placé une gargouille pour le garder."
+//		}
+//	}
+//	Email
+//	{
+//		"subject"	"Re : Le Sabbat est ici."
+//		"sender"	"IAabrams@SMMCmail.vtm"
+//		"body"		"C'est confirmé : ils se trouvent dans le tunnel du métro près des égouts."
+//	}
+//
+//	Email
+//	{
+//		"subject"	"Le Sabbat est ici."
+//		"sender"	"IAabrams@SMMCmail.vtm"
+//		"body"		"On dit que le Sabbat est en train d'infiltrer Los Angeles. Je vous donnerai plus d'informations dès que possible."
+//	}
+
+	Email
+	{
+		"subject"	"Ce soir?"
+		"sender"	"Larry"	// changed by wesp
+		"body"		"J'ai pensé que nous pourrions être ensemble ce soir, si ça vous fait plaisir, maîtresse."
+	}
+
+}

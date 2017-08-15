@@ -1,0 +1,114 @@
+{	1	}{	Hein ? Eh, oh ! Faut me faire sortir d'ici, mec ! Ce type est malade de la tête !	}{	Hein ? Eh, oh ! Faut me faire sortir d'ici, mec ! Ce type est malade de la tête !	}{	#	}{	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Qui ? Gimble ?	}{	Qui ? Gimble ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Qui, Gimble ?', qu'y d'mande ! Ouais, Gimble ! Ce type a passé les trois derniers jours à nous enlever des morceaux, McGee et moi, depuis trois jours ! Il est fou, mec ! Complètement fou !	}{	Qui, Gimble ?', qu'y d'mande ! Ouais, Gimble ! Ce type a passé les trois derniers jours à nous enlever des morceaux, McGee et moi, depuis trois jours ! Il est fou, mec ! Complètement fou !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	OK. Où est la clé de cette porte ?	}{	OK. Où est la clé de cette porte ?	}{	0	}{	G.Gimble_Vandal == 0	}{	}{	}{	}{	}{	}{	}{	}{	Où est la clé de cette étrange cage ?	}
+{	13	}{	OK. Où est la clé de cette porte ?	}{	OK. Où est la clé de cette porte ?	}{	0	}{	G.Gimble_Vandal > 0 and G.Gimble_Humanity == 1	}{	G.Gimble_Dead = 1; pc.SetQuest("Arthur Knox", 3); FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Où est la clé de cette étrange cage ?	}
+{	14	}{	OK. Où est la clé de cette porte ?	}{	OK. Où est la clé de cette porte ?	}{	0	}{	G.Gimble_Vandal > 0 and G.Gimble_Humanity == 0	}{	G.Gimble_Dead = 1; pc.SetQuest("Arthur Knox", 3)	}{	}{	}{	}{	}{	}{	}{	Où est la clé de cette étrange cage ?	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Merci ! Vous m'avez sauvé la vie ! Je n'étais pas certain de m'en tirer. Je vous dis, j'ai vu des trucs bizarres, mais ça, c'est le pompon !	}{	Merci ! Vous m'avez sauvé la vie ! Je n'étais pas certain de m'en tirer. Je vous dis, j'ai vu des trucs bizarres, mais ça, c'est le pompon !	}{	#	}{	}{	G.Carson_Rescued = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Vous devez être Carson ?	}{	Vous devez être Carson ?	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	V'lààààààààààààà Johnny !	}{	V'lààààààààààààà Johnny !	}{	36	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Ouais, ouais, c'est moi. Comment vous le savez ?	}{	Ouais, ouais, c'est moi. Comment vous le savez ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	C'est Arthur Kilpatrick qui m'envoie. . .	}{	C'est Arthur Kilpatrick qui m'envoie. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	Hahaha. Très drôle. Ca suffit avec Carson. Au cas où vous n'auriez pas remarqué, c'est pas vraiment le moment de déconner.	}{	Hahaha. Très drôle. Ca suffit avec Carson. Au cas où vous n'auriez pas remarqué, c'est pas vraiment le moment de déconner.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	Kilpatrick le Maître des Clés m'envoie. . .	}{	Kilpatrick le Maître des Clés m'envoie. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Vraiment ? Ah, c'est cool. Je lui dois une fière chandelle. J'espère que je pourrai lui revaloir ça. . .	}{	Vraiment ? Ah, c'est cool. Je lui dois une fière chandelle. J'espère que je pourrai lui revaloir ça. . .	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Il a du travail pour vous, si vous retournez au bureau. . .	}{	Il a du travail pour vous, si vous retournez au bureau. . .	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il a d'autres primes que vous pourriez chasser.	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Quoi ? Oh non, mec. Non non non. Je lâche tout. Regardez ma main. Gimble m'a pris l'index en trophée. Les affaires, c'est fini pour moi. Je m'en veux de laisser Arthur dans la panade, mais c'est comme ça.	}{	Quoi ? Oh non, chérie. Non non non. Je lâche tout. Regardez ma main. Gimble m'a pris l'index en trophée. Les affaires, c'est fini pour moi. Je m'en veux de laisser Arthur dans la panade, mais c'est comme ça.	}{	#	}{	}{	G.Arthur_Knox = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Je comprends. Bon, je vais lui apprendre la nouvelle. A plus.	}{	Je comprends. Bon, je vais lui apprendre la nouvelle. A plus.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais lui apprendre cette triste vérité. Adieu.	}
+{	53	}{	Mec. Tu tombes pas à pic, toi. . .	}{	Mec. Tu tombes pas à pic, toi. . .	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'Homme qui Tombe à Pic pleure sur votre disgrâce. Je vous quitte.	}
+{	54	}{	Vous entendez le chien qui aboie ? Bah moi je vois la caravane, je passe. . .	}{	Vous entendez le chien qui aboie ? Bah moi je vois la caravane, je passe. . .	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Derrière vous, il y a une route de briques jaunes. Je n'y suis plus.	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Hein ? Aaaah ! Gimble vous a fait des trucs aussi ? Bon sang, c'est inhumain. On dirait qu'il vous a découpé le visage et qu'il a tout remis à l'envers.	}{	Hein ? Aaaah ! Gimble vous a fait des trucs aussi ? Bon sang, c'est inhumain. On dirait qu'il vous a découpé le visage et qu'il a tout remis à l'envers.	}{	#	}{	npc.SetDisposition("Disgust",1)	}{	G.Carson_Rescued = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	C'est une marque de naissance. Vous êtes Carson, c'est ça ? C'est Kilpatrick qui m'envoie.	}{	C'est une marque de naissance. Vous êtes Carson, c'est ça ? C'est Kilpatrick qui m'envoie.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Encore merci. Ne vous inquiétez pas, je m'occupe de l'autre.	}{	Encore merci. Ne vous inquiétez pas, je m'occupe de l'autre.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Ouais, mieux vaut revenir avec la police.	}{	Ouais, mieux vaut revenir avec la police.	}{	0	}{	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	Obtenez les noirs pour le rouge, lorsque vous revenez.	}
+{	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Test, test. Ca enregistre, ça ? Bon sang, j'ai horreur des magnétos. Bon, euh, l'affaire McGee devient de plus en plus zarbi. J'ai trouvé où il se cache. Et j'ai vu des trucs vraiment pas cools là-bas. Mais je n'ai pas trouvé McGee. Je vais suivre une autre piste que j'ai. Bon, voilà, Carson, terminé. Pff. . . Ridicule.	}{	Test, test. Ca enregistre, ça ? Bon sang, j'ai horreur des magnétos. Bon, euh, l'affaire McGee devient de plus en plus zarbi. J'ai trouvé où il se cache. Et j'ai vu des trucs vraiment pas cools là-bas. Mais je n'ai pas trouvé McGee. Je vais suivre une autre piste que j'ai. Bon, voilà, Carson, terminé. Pff. . . Ridicule.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Eh ! La pêche ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Salut.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Ouais ? Qu'est-ce tu veux ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	Je suis pas d'humeur à vous parler.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	C'est ça.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	Négatif.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	Merci.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	Vous avez dit quoi, là ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	Quoi ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	Sais pas.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Je peux rien faire pour vous, je regrette.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Alors ça, c'est pas rien. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	Vas-y, prends ça.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	Je vous enverrai un e-mail à ce sujet. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	(Starting Condition)	}{	}{	71	}{	G.Carson_Rescued == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	(Starting Condition)	}{	}{	61	}{	IsClan(pc,"Nosferatu") and G.Gimble_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	(Starting Condition)	}{	}{	21	}{	G.Gimble_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

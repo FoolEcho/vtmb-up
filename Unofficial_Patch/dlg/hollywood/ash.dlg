@@ -1,0 +1,640 @@
+{	1	}{	. . .	}{	. . .	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Et ce serait possible ?	}{	Et ce serait possible ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Vous êtes Ash ?	}{	Vous êtes Ash ?	}{	21	}{	G.Isaac_Ash >= 1 or G.Velvet_Ash >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Vous avez un souci ?	}{	Vous avez un souci ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Possible.	}{	Possible.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Sérieux, vous êtes qui ?	}{	Sérieux, vous êtes qui ?	}{	51	}{	G.Ash_Know == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Vous êtes Ash ?	}{	Vous êtes Ash ?	}{	21	}{	(G.Isaac_Ash >= 1 or G.Velvet_Ash >= 1) and G.Ash_Know == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	C'est quoi, votre problème ?	}{	C'est quoi, votre problème ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Présent.	}{	Présent.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Ash_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Ca me fait plaisir de vous rencontrer.	}{	Ca me fait plaisir de vous rencontrer.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Vous savez quelque chose sur un snuff movie ?	}{	Vous savez quelque chose sur un snuff movie ?	}{	101	}{	G.Isaac_Quest == 1 and G.Ash_Sinbin == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Je n'avais encore jamais rencontré de star.	}{	Je n'avais encore jamais rencontré de star.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	Je suis super fan de vous. . .	}{	Je suis super fan de vous. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	Vos films sont nuls. Vous savez pas jouer.	}{	Vos films sont nuls. Vous savez pas jouer.	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Le soleil est couché.	}{	Le soleil est couché.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Et alors ?	}{	Et alors ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	Ouais, ça lui arrive souvent.	}{	Ouais, ça lui arrive souvent.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	Je n'aime pas beaucoup votre ton. . .	}{	Je n'aime pas beaucoup votre ton. . .	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	J'imagine.	}{	J'imagine.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	C'est quoi, votre problème ?	}{	C'est quoi, votre problème ?	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	Vous savez quelque chose sur un snuff movie ?	}{	Vous savez quelque chose sur un snuff movie ?	}{	101	}{	not IsClan(pc,"Malkavian") and G.Isaac_Quest == 1 and G.Ash_Sinbin == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Avant de disparaître, puis-je savoir votre nom ?	}{	Avant de disparaître, puis-je savoir votre nom ?	}{	601	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Pourquoi vous ne demandez pas à quelqu'un. N'importe qui, là. Tout le monde me connaît.	}{	Pourquoi vous ne demandez pas à quelqu'un. N'importe qui, là. Tout le monde me connaît.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Allez, dites-le moi. . .	}{	Allez, dites-le moi. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Vous êtes Ash ?	}{	Vous êtes Ash ?	}{	21	}{	G.Isaac_Ash >= 1 or G.Velvet_Ash >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	C'est quoi, votre problème ?	}{	C'est quoi, votre problème ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Ash. Voilà, ça va maintenant ? Dites-le à vos amis, pour qu'ils me foutent la paix.	}{	Ash. Voilà, ça va maintenant ? Dites-le à vos amis, pour qu'ils me foutent la paix.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Ash_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Ca me fait plaisir de vous rencontrer.	}{	Ca me fait plaisir de vous rencontrer.	}{	41	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	Vous savez quelque chose sur un snuff movie ?	}{	Vous savez quelque chose sur un snuff movie ?	}{	101	}{	G.Isaac_Quest == 1 and G.Ash_Sinbin == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Je n'avais encore jamais rencontré de star.	}{	Je n'avais encore jamais rencontré de star.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	Je suis super fan de vous. . .	}{	Je suis super fan de vous. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	Vos films sont nuls. Vous savez pas jouer.	}{	Vos films sont nuls. Vous savez pas jouer.	}{	451	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Tant pis.	}{	Tant pis.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	51	}{	G.Ash_Know == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	Vous êtes Ash ?	}{	Vous êtes Ash ?	}{	21	}{	(G.Isaac_Ash >= 1 or G.Velvet_Ash >= 1) and G.Ash_Know == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	Je n'aime pas votre ton. . .	}{	Je n'aime pas votre ton. . .	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Moi non plus.	}{	Moi non plus.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	51	}{	G.Ash_Know == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Vous êtes Ash ?	}{	Vous êtes Ash ?	}{	21	}{	(G.Isaac_Ash >= 1 or G.Velvet_Ash >= 1) and G.Ash_Know == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	Bon, je ne veux pas vous faire mal, mais si vous continuez, je n'aurai pas le choix.	}{	Bon, je ne veux pas vous faire mal, mais si vous continuez, je n'aurai pas le choix.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	Sérieusement, soyez un peu plus gentil, ou vous serez un peu moins vivant.	}{	Sérieusement, soyez un peu plus gentil, ou vous serez un peu moins vivant.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	[Amusé]Et où est l'astuce ?	}{	[Amusé]Et où est l'astuce ?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Il y a un problème ?	}{	Il y a un problème ?	}{	121	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Vous avez envie de mourir ou quoi ?	}{	Vous avez envie de mourir ou quoi ?	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	Pour qui vous vous prenez ?	}{	Pour qui vous vous prenez ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	Je ne plaisante pas, je suis malade. . . de la tête. . .	}{	Je ne plaisante pas, je suis malade. . . de la tête. . .	}{	111	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Vous devriez aller au Sin Bin, vous seriez plus à votre place.	}{	Vous devriez aller au Sin Bin, vous seriez plus à votre place.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Ash_Sinbin = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	(Auto-Link)	}{	(Auto-Link)	}{	461	}{	G.Ash_Hunters != 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	(Auto-Link)	}{	(Auto-Link)	}{	471	}{	G.Ash_Hunters == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Ca doit être dans l'air, je crois que j'ai attrapé ça aussi. . .	}{	Ca doit être dans l'air, je crois que j'ai attrapé ça aussi. . .	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Il y a un problème ?	}{	Il y a un problème ?	}{	121	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	Vous avez envie de mourir ou quoi ?	}{	Vous avez envie de mourir ou quoi ?	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	Pour qui vous vous prenez ?	}{	Pour qui vous vous prenez ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	On peut dire ça. . . [Soupir]Qu'est-ce que ça peut vous faire ? Je pourrais. . . juste sortir d'ici, et devenir une légende. . . Soit je survis, soit je meurs. Quelle différence ça fait ?	}{	On peut dire ça. . . [Soupir]Qu'est-ce que ça peut vous faire ? Je pourrais. . . juste sortir d'ici, et devenir une légende. . . Soit je survis, soit je meurs. Quelle différence ça fait ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Que voulez-vous dire ?	}{	Que voulez-vous dire ?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles sont folles et je ne les comprends pas.	}
+{	123	}{	Vous, ça n'a pas l'air d'aller très fort. . .	}{	Vous, ça n'a pas l'air d'aller très fort. . .	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Même à moi, ces paroles paraissent folles.	}
+{	124	}{	Souvenez-vous, on ne gagne rien en abandonnant, le suicide est toujours une réponse.	}{	Souvenez-vous, on ne gagne rien en abandonnant, le suicide est toujours une réponse.	}{	151	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Vous m'avez sans doute vu dans des films comme Zéro Négatif ou Jeu mortel [rires]. Sérieusement, comment vous pouvez débarquer dans cette ville sans savoir ce genre de choses. Oh, et puis je m'en fiche, en fait. . .	}{	Vous m'avez sans doute vu dans des films comme Zéro Négatif ou Jeu mortel [rires]. Sérieusement, comment vous pouvez débarquer dans cette ville sans savoir ce genre de choses. Oh, et puis je m'en fiche, en fait. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Il y a un problème ?	}{	Il y a un problème ?	}{	121	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	Vous avez envie de mourir ou quoi ?	}{	Vous avez envie de mourir ou quoi ?	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Vous ne les avez pas vus ?	}{	Vous ne les avez pas vus ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Qui ça ?	}{	Qui ça ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oh bon dieu, il n'y a pas de lutins dans le coin, j'espère !	}
+{	143	}{	Mais qu'est-ce que vous racontez ?	}{	Mais qu'est-ce que vous racontez ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vois beaucoup de choses, mais pas ce que vous voulez dire.	}
+{	144	}{	Je vois juste un type un peu taré, qui veut mourir.	}{	Je vois juste un type un peu taré, qui veut mourir.	}{	161	}{	not IsClan(pc, "Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Je vois simplement une étoile filante. . .	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Mes biographes seraient trop contents, les studios vendraient plus de copies de mes films - ils m'érigeraient sans doute une statue quelque part. . . On est éternel quand on meurt à vingt ans. . .	}{	Mes biographes seraient trop contents, les studios vendraient plus de copies de mes films - ils m'érigeraient sans doute une statue quelque part. . . On est éternel quand on meurt à vingt ans. . .	}{	#	}{	Whisper("Crying"); npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	C'est n'importe quoi. . .	}{	C'est n'importe quoi. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	On dirait que vous y avez déjà bien réfléchi. . .	}{	On dirait que vous y avez déjà bien réfléchi. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	Comment voulez-vous vous y prendre ?	}{	Comment voulez-vous vous y prendre ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Peut-être. . . mais. . .	}{	Peut-être. . . mais. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	(Auto-Link)	}{	(Auto-Link)	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Des chasseurs. Devant, derrière, dans mon club. . . Si j'essaie de sortir, ils me tombent dessus. Donc, il a bien fallu que je me demande si j'étais prêt à mourir ou non. Combien pourrais-je en tuer avant qu'ils me descendent ? Deux ? Trois ?	}{	Des chasseurs. Devant, derrière, dans mon club. . . Si j'essaie de sortir, ils me tombent dessus. Donc, il a bien fallu que je me demande si j'étais prêt à mourir ou non. Combien pourrais-je en tuer avant qu'ils me descendent ? Deux ? Trois ?	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	(Auto-Link)	}{	(Auto-Link)	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Je pourrais sortir, là tout de suite, et partir dans la gloire. Et vous savez quoi - ça ne me dérangerait pas plus que ça. La seule raison pour laquelle je ne l'ai pas encore fait, c'est parce que j'essaie de comprendre pourquoi ça ne me dérangerait pas.	}{	Je pourrais sortir, là tout de suite, et partir dans la gloire. Et vous savez quoi - ça ne me dérangerait pas plus que ça. La seule raison pour laquelle je ne l'ai pas encore fait, c'est parce que j'essaie de comprendre pourquoi ça ne me dérangerait pas.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Ash_Hunters = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Je peux peut-être vous aider.	}{	Je peux peut-être vous aider.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous me demandez mon aide, même si vous ne le savez pas.	}
+{	183	}{	Et ce qu'Isaac en penserait, ça ne vous inquiète pas ?	}{	Et ce qu'Isaac en penserait, ça ne vous inquiète pas ?	}{	191	}{	G.Isaac_Ash >= 1 or G.Velvet_Ash >= 1	}{	G.Isaac_Worry = 1	}{	}{	}{	}{	}{	}{	}{	Ah, vous voulez blesser votre père en faisant couler le sang qu'il a mis dans vos veines.	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Cela briserait le coeur d'Isaac. . . Il est bon de savoir que ma mort causerait quelques bonnes choses.	}{	Cela briserait le coeur d'Isaac. . . Il est bon de savoir que ma mort causerait quelques bonnes choses.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Vous n'aimez pas Isaac ?	}{	Vous n'aimez pas Isaac ?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi une telle haine pour celui qui vous a fait ?	}
+{	193	}{	Pourquoi ne demandez-vous pas l'aide d'Isaac ?	}{	Pourquoi ne demandez-vous pas l'aide d'Isaac ?	}{	251	}{	G.Ash_Offer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Cherchez son aide plutôt que son malheur.	}
+{	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Ce serait trop long à raconter. Disons que nous ne sommes pas d'accord ces derniers temps. Sur beaucoup de choses. Et Isaac en est tout contrarié. . .	}{	Ce serait trop long à raconter. Disons que nous ne sommes pas d'accord ces derniers temps. Sur beaucoup de choses. Et Isaac en est tout contrarié. . .	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Par exemple ?	}{	Par exemple ?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi cette dissonance entre vous ?	}
+{	203	}{	Pourquoi ne demandez-vous pas l'aide d'Isaac ?	}{	Pourquoi ne demandez-vous pas l'aide d'Isaac ?	}{	251	}{	G.Ash_Offer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Cherchez son aide plutôt que son malheur.	}
+{	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Il n'a pas arrêté de dire que je devrais rester discret. Il paraît que j'attire trop l'attention sur moi-même.	}{	Il n'a pas arrêté de dire que je devrais rester discret. Il paraît que j'attire trop l'attention sur moi-même.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Quel mal y a-t-il à rester discret ?	}{	Quel mal y a-t-il à rester discret ?	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous devriez rester aussi secret que moi. Même moi, je ne sais plus où je suis.	}
+{	213	}{	Vous auriez dû l'écouter.	}{	Vous auriez dû l'écouter.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ses paroles regorgent de sagesse.	}
+{	214	}{	Pourquoi ne demandez-vous pas l'aide d'Isaac ?	}{	Pourquoi ne demandez-vous pas l'aide d'Isaac ?	}{	251	}{	G.Ash_Offer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Cherchez son aide plutôt que son malheur.	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Vous ne me connaissez pas. Je ne peux pas rester derrière un bureau toute la journée à manigancer dans l'ombre. Ca, c'est le truc d'Isaac. Moi, je suis acteur. Enfin, j'étais. Maintenant, il ne me reste rien d'autre que ce club, un peu de célébrité, et cette malédiction.	}{	Vous ne me connaissez pas. Je ne peux pas rester derrière un bureau toute la journée à manigancer dans l'ombre. Ca, c'est le truc d'Isaac. Moi, je suis acteur. Enfin, j'étais. Maintenant, il ne me reste rien d'autre que ce club, un peu de célébrité, et cette malédiction.	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Ca ne vous plaît pas, d'être un. . . vous savez, hein. . .	}{	Ca ne vous plaît pas, d'être un. . . vous savez, hein. . .	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous voulez vous défaire du sang de Caïn ?	}
+{	223	}{	C'est chouette d'être un vampire. Les pouvoirs, l'éternité. . . et puis, on peut dormir toute la journée.	}{	C'est chouette d'être un vampire. Les pouvoirs, l'éternité. . . et puis, on peut dormir toute la journée.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	La mort, ça me plait bien. La vie n'avait aucun sens. Maintenant, tout est comme je veux.	}
+{	224	}{	Pourquoi ne demandez-vous pas l'aide d'Isaac ?	}{	Pourquoi ne demandez-vous pas l'aide d'Isaac ?	}{	251	}{	G.Ash_Offer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Cherchez son aide plutôt que son malheur.	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Je n'avais rien demandé, moi. Je n'avais pas demandé à Isaac de me sauver la vie. Peut-être que je voulais mourir. Bordel, je m'éclatais, dans la vie ! De quel droit m'a-t-il fait ça ? Je ne peux plus jouer, je ne peux plus aimer. . . Je peux juste disparaître dans la nuit. . .	}{	Je n'avais rien demandé, moi. Je n'avais pas demandé à Isaac de me sauver la vie. Peut-être que je voulais mourir. Bordel, je m'éclatais, dans la vie ! De quel droit m'a-t-il fait ça ? Je ne peux plus jouer, je ne peux plus aimer. . . Je peux juste disparaître dans la nuit. . .	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Je peux peut-être vous aider.	}{	Je peux peut-être vous aider.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous me demandez mon aide, même si vous ne le savez pas.	}
+{	233	}{	Pourquoi ne demandez-vous pas l'aide d'Isaac ?	}{	Pourquoi ne demandez-vous pas l'aide d'Isaac ?	}{	251	}{	G.Ash_Offer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Cherchez son aide plutôt que son malheur.	}
+{	234	}{	La vie, c'est nul. Et après, on meurt. Puis on revient à la vie, et on meurt encore. Pour de bon.	}{	La vie, c'est nul. Et après, on meurt. Puis on revient à la vie, et on meurt encore. Pour de bon.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	La vie, c'est nul. Et après, on meurt. Puis on revient à la vie, et on meurt encore. Pour de bon.	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Pour ainsi dire.	}{	Pour ainsi dire.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Je peux peut-être vous aider.	}{	Je peux peut-être vous aider.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous me demandez mon aide, même si vous ne le savez pas.	}
+{	243	}{	Pourquoi ne demandez-vous pas l'aide d'Isaac ?	}{	Pourquoi ne demandez-vous pas l'aide d'Isaac ?	}{	251	}{	G.Ash_Offer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Cherchez son aide plutôt que son malheur.	}
+{	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Isaac, m'aider ? Elle est bien bonne. Il ne voudrait pas s'approcher d'ici, surtout pas avec des chasseurs dans le coin. Rien qu'à se dire que je lui demande de l'aide, le petit rictus satisfait de ses lèvres empoisonnées. . . Nan, il faudra me passer sur le corps avant. . .	}{	Isaac, m'aider ? Elle est bien bonne. Il ne voudrait pas s'approcher d'ici, surtout pas avec des chasseurs dans le coin. Rien qu'à se dire que je lui demande de l'aide, le petit rictus satisfait de ses lèvres empoisonnées. . . Nan, il faudra me passer sur le corps avant. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Je peux peut-être vous aider.	}{	Je peux peut-être vous aider.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous me demandez mon aide, même si vous ne le savez pas.	}
+{	253	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	C'est Isaac qui vous envoie ?	}{	C'est Isaac qui vous envoie ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Ash_Offer = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Non.	}{	Non.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Faux.	}
+{	263	}{	Oui.	}{	Oui.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vrai.	}
+{	264	}{	C'est qui, Isaac ?	}{	C'est qui, Isaac ?	}{	291	}{	G.Isaac_Tribute == 0 and G.Ash_Abrams == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ce nom ne s'est pas pris dans la toile de mes pensées.	}
+{	265	}{	Vous connaissez Isaac ?	}{	Vous connaissez Isaac ?	}{	291	}{	G.Isaac_Tribute == 1 and G.Ash_Abrams == 0 and G.Isaac_Worry == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nous avons quelque chose en commun. Je le connais aussi.	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Alors quelle serait votre motivation pour m'aider ?	}{	Alors quelle serait votre motivation pour m'aider ?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	J'aide les gens quand je peux le faire. Et vous avez besoin d'aide.	}{	J'aide les gens quand je peux le faire. Et vous avez besoin d'aide.	}{	301	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	C'est ma pitié qui me le commande.	}
+{	273	}{	J'ai peine à voir un frère Toréador perdre le goût de la vie.	}{	J'ai peine à voir un frère Toréador perdre le goût de la vie.	}{	311	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	274	}{	L'argent. Et je sais que vous en avez.	}{	L'argent. Et je sais que vous en avez.	}{	321	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	Vous êtes célèbre. Vous avez de l'influence, et c'est toujours bon d'avoir des amis influents.	}{	Vous êtes célèbre. Vous avez de l'influence, et c'est toujours bon d'avoir des amis influents.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes une étoile d'or, et je désire la couleur de ce métal.	}
+{	276	}{	Je tue aussi souvent que je peux. Rien ne me ferait plus plaisir que de tuer des chasseurs.	}{	Je tue aussi souvent que je peux. Rien ne me ferait plus plaisir que de tuer des chasseurs.	}{	301	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Je veux boire le sang de chasseurs jusqu'à ce que leur jus trempe mes jambes.	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	Pas question. Je n'ai pas besoin de son aide. Dites-lui qu'il peut rester dans son bureau et se coller sa charité où il veut.	}{	Pas question. Je n'ai pas besoin de son aide. Dites-lui qu'il peut rester dans son bureau et se coller sa charité où il veut.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Je plaisantais. Ce n'est pas Isaac qui m'envoie.	}{	Je plaisantais. Ce n'est pas Isaac qui m'envoie.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis d'une nature joueuse. Ce n'est pas Isaac qui m'envoie.	}
+{	283	}{	Je ne sais même pas qui est Isaac.	}{	Je ne sais même pas qui est Isaac.	}{	291	}{	G.Isaac_Tribute == 0	}{	}{	}{	}{	}{	}{	}{	}{	C'est quoi, un Isaac ?	}
+{	284	}{	Promis. Bonne chance.	}{	Promis. Bonne chance.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je transmettrai le message. Au revoir, entre G et I.	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Isaac est un vieil arbre noueux qui a enfoui ses racines sous toute la ville depuis des années. C'est un vestige d'un âge envolé. Il pense qu'il m'a tout donné. . . Mais il m'a simplement maudit, voilà tout.	}{	Isaac est un vieil arbre noueux qui a enfoui ses racines sous toute la ville depuis des années. C'est un vestige d'un âge envolé. Il pense qu'il m'a tout donné. . . Mais il m'a simplement maudit, voilà tout.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Ash_Abrams = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Et ça n'ennuierait pas Isaac, s'il vous arrivait quelque chose ?	}{	Et ça n'ennuierait pas Isaac, s'il vous arrivait quelque chose ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si Ash se suicidait en lâche, Isaac ne serait-il pas contrarié ?	}
+{	293	}{	Vous n'aimez pas Isaac ?	}{	Vous n'aimez pas Isaac ?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous n'appréciez pas Isaac ?	}
+{	294	}{	Pourquoi ne demandez-vous pas l'aide d'Isaac ?	}{	Pourquoi ne demandez-vous pas l'aide d'Isaac ?	}{	251	}{	G.Ash_Offer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Cherchez son aide plutôt que son malheur.	}
+{	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Que proposez-vous que nous fassions ?	}{	Que proposez-vous que nous fassions ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Vous pouvez échanger vos vêtements avec une personne dans le club qui vous ressemble.	}{	Vous pouvez échanger vos vêtements avec une personne dans le club qui vous ressemble.	}{	341	}{	}{	pc.SetQuest("Hunters",2)	}{	}{	}{	}{	}{	}{	}{	Tout le monde veut être une vedette, ici. Abandonnez votre peau, un autre l'endossera.	}
+{	303	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	304	}{	Je pourrais vous accompagner dans les égouts. Mais il faudra sans doute se battre.	}{	Je pourrais vous accompagner dans les égouts. Mais il faudra sans doute se battre.	}{	371	}{	Humanity 5	}{	pc.SetQuest("Hunters",1)	}{	}{	}{	}{	}{	}{	}{	Nous imiterons les Nosferatus, et passerons par les égouts. Mais on nous suivra peut-être.	}
+{	305	}{	Nous allons nous tailler un chemin dans les égouts et les chasseurs, et laisser derrière nous un sillage de sang.	}{	Nous allons nous tailler un chemin dans les égouts et les chasseurs, et laisser derrière nous un sillage de sang.	}{	381	}{	Humanity -5	}{	pc.SetQuest("Hunters",1)	}{	}{	}{	}{	}{	}{	}{	Nous passerons par les égouts et y ferons couler un torrent de sang de chasseur.	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	Réflexion faite, je ne veux pas m'en mêler. Bonne chance.	}{	Réflexion faite, je ne veux pas m'en mêler. Bonne chance.	}{	0	}{	}{	G.Ash_Hunters = 2	}{	}{	}{	}{	}{	}{	}{	Vous devriez trouver une aide plus décidée. Je m'en vais.	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	Le seul groupe auquel j'appartiens, c'est la Screen Actors Guild. J'évite toutes ces conneries de clan.	}{	Le seul groupe auquel j'appartiens, c'est la Screen Actors Guild. J'évite toutes ces conneries de clan.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	(Auto-Link)	}{	(Auto-Link)	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	313	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	Super. J'en ai des tiroirs entiers. [Sarcastique]Ma vie est tellement plus simple grâce à ça. Et comment vous voulez me faire sortir d'ici pour toucher le pactole ?	}{	Super. J'en ai des tiroirs entiers. [Sarcastique]Ma vie est tellement plus simple grâce à ça. Et comment vous voulez me faire sortir d'ici pour toucher le pactole ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Ash_Money = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Vous pouvez échanger vos vêtements avec une personne dans le club qui vous ressemble.	}{	Vous pouvez échanger vos vêtements avec une personne dans le club qui vous ressemble.	}{	341	}{	}{	pc.SetQuest("Hunters",2)	}{	}{	}{	}{	}{	}{	}{	Tout le monde veut être une vedette, ici. Abandonnez votre peau, un autre l'endossera.	}
+{	323	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	324	}{	Je pourrais vous accompagner dans les égouts. Mais il faudra sans doute se battre.	}{	Je pourrais vous accompagner dans les égouts. Mais il faudra sans doute se battre.	}{	371	}{	Humanity 5	}{	pc.SetQuest("Hunters",1)	}{	}{	}{	}{	}{	}{	}{	Nous imiterons les Nosferatus, et passerons par les égouts. Mais on nous suivra peut-être.	}
+{	325	}{	Nous allons nous tailler un chemin dans les égouts et les chasseurs, et laisser derrière nous un sillage de sang.	}{	Nous allons nous tailler un chemin dans les égouts et les chasseurs, et laisser derrière nous un sillage de sang.	}{	381	}{	Humanity -5	}{	pc.SetQuest("Hunters",1)	}{	}{	}{	}{	}{	}{	}{	Nous passerons par les égouts et y ferons couler un torrent de sang de chasseur.	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	Réflexion faite, je ne veux pas m'en mêler. Bonne chance.	}{	Réflexion faite, je ne veux pas m'en mêler. Bonne chance.	}{	0	}{	}{	G.Ash_Hunters = 2	}{	}{	}{	}{	}{	}{	}{	Vous devriez trouver une aide plus décidée. Je m'en vais.	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	Dans cette ville, on n'a pas d'amis si on n'a rien d'intéressant à leur apporter. Et après tout ça, je ne pourrai rien faire. Si vous voulez de l'argent, on peut faire affaire.	}{	Dans cette ville, on n'a pas d'amis si on n'a rien d'intéressant à leur apporter. Et après tout ça, je ne pourrai rien faire. Si vous voulez de l'argent, on peut faire affaire.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Je peux peut-être vous aider quand même.	}{	Je peux peut-être vous aider quand même.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je dois tout de même pouvoir vous aider.	}
+{	333	}{	De l'argent. Je vous aide si vous avez de la fraîche.	}{	De l'argent. Je vous aide si vous avez de la fraîche.	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes une étoile d'or, et je désire la couleur de ce métal.	}
+{	334	}{	Réflexion faite, je ne veux pas m'en mêler. Bonne chance.	}{	Réflexion faite, je ne veux pas m'en mêler. Bonne chance.	}{	0	}{	}{	G.Ash_Hunters = 2	}{	}{	}{	}{	}{	}{	}{	Vous devriez trouver une aide plus décidée. Je m'en vais.	}
+{	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Vous avez trouvé cette idée dans une sitcom ? Enfin bon. Vous trouverez peut-être ce que vous cherchez dans le club. . .	}{	Vous avez trouvé cette idée dans une sitcom ? Enfin, cherchez dans le club, vous trouverez peut-être. . .	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Ash_Switch = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	Je reviendrai quand j'aurai trouvé quelqu'un.	}{	Je reviendrai quand j'aurai trouvé quelqu'un.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai avec votre sosie.	}
+{	343	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	344	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	353	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	354	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	363	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	364	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	Vous croyez vraiment ? Je ne sais pas si on fera beaucoup plus le poids avec vous, mais on a une chance quand même. On y va tout de suite ?	}{	Vous croyez vraiment ? Je ne sais pas si on fera beaucoup plus le poids avec vous, mais on a une chance quand même. On y va tout de suite ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Ash_Escort = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	Non. Je reviendrai quand tout sera prêt.	}{	Non. Je reviendrai quand tout sera prêt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pas tout de suite, non. Je reviendrai quand nous pourrons partir.	}
+{	373	}{	Oui, on peut y aller. Hop.	}{	Oui, on peut y aller. Hop.	}{	391	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Oui, je serai votre ombre.	}
+{	374	}{	Oui. Les chasseurs vont saigner. . .	}{	Oui. Les chasseurs vont saigner. . .	}{	391	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Oui. Gorgeons-nous du sang de ceux qui nous traquent.	}
+{	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	On dirait que vous n'aurez pas beaucoup d'ennuis si deux ou trois chasseurs se dressent devant vous.	}{	On dirait que vous n'aurez pas beaucoup d'ennuis si deux ou trois chasseurs se dressent devant vous.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	Non. Je reviendrai quand tout sera prêt.	}{	Non. Je reviendrai quand tout sera prêt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pas tout de suite, non. Je reviendrai quand nous pourrons partir.	}
+{	383	}{	Oui, on peut y aller. Hop.	}{	Oui, on peut y aller. Hop.	}{	391	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Oui. Je serai votre ombre.	}
+{	384	}{	Oui. Les chasseurs vont saigner. . .	}{	Oui. Les chasseurs vont saigner. . .	}{	391	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Oui. Gorgeons-nous du sang de ceux qui nous traquent.	}
+{	385	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	Si je survis aux chasseurs, je fous le camp de cette ville. Allez, on prend les égouts.	}{	Si je survis aux chasseurs, je fous le camp de cette ville. Allez, on prend les égouts.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	Je vous suis.	}{	Je vous suis.	}{	0	}{	}{	G.Ash_Sewers = 1	}{	}{	}{	}{	}{	}{	}{	Je suis votre ombre.	}
+{	393	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	394	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	395	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	Ouais ?	}{	Ouais ?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	Je veux vous aider à vous enfuir.	}{	Je veux vous aider à vous enfuir.	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous aiderai à échapper à la traque des chasseurs.	}
+{	403	}{	Vous avez entendu parler d'un snuff movie ?	}{	Vous savez quelque chose sur un snuff movie ?	}{	101	}{	G.Isaac_Quest == 1 and G.Ash_Sinbin == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche une cassette pleine d'images atroces.	}
+{	404	}{	Ce n'est rien. Bonne chance avec les chasseurs.	}{	Ce n'est rien. Bonne chance avec les chasseurs.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis encore ici ? Ce n'était pas volontaire.	}
+{	405	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	406	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	407	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	Vous avez les vêtements ?	}{	Vous avez les vêtements ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Oui. Allez dans les toilettes pour hommes. Echangez vos vêtements avec le type qui s'y trouve.	}{	Oui. Allez dans les toilettes pour hommes. Echangez vos vêtements avec le type qui s'y trouve.	}{	441	}{	G.Ash_Switch == 2	}{	}{	}{	}{	}{	}{	}{	}{	Dans les toilettes pour hommes, un client aimerait porter votre peau.	}
+{	413	}{	Non. Je continue de chercher. A plus tard.	}{	Non. Je continue de chercher. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il me semblait bien que vous vous ressembliez, mais vous êtes vous. Excusez-moi.	}
+{	414	}{	Je pense que nous devrions changer d'approche.	}{	Je pense que nous devrions changer d'approche.	}{	301	}{	}{	G.Ash_Switch = 0	}{	}{	}{	}{	}{	}{	}{	Je veux me retourner et partir dans une autre direction.	}
+{	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	Vous avez changé d'avis ?	}{	Vous avez changé d'avis ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	En effet.	}{	En effet.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai.	}
+{	423	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	Vous avez envie de vous mouiller les crocs ?	}{	Vous avez envie de vous mouiller les crocs ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Non. Je reviendrai quand tout sera prêt.	}{	Non. Je reviendrai quand tout sera prêt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, quand je reviendrai.	}
+{	433	}{	Oui, on peut y aller. Hop.	}{	Oui, on peut y aller. Hop.	}{	391	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Oui, je serai votre ombre.	}
+{	434	}{	Oui. Les chasseurs vont saigner. . .	}{	Oui. Les chasseurs vont saigner. . .	}{	391	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Oui. Gorgeons-nous du sang de ceux qui nous traquent.	}
+{	435	}{	Je pense que nous devrions changer d'approche.	}{	Je pense que nous devrions changer d'approche.	}{	301	}{	}{	G.Ash_Escort = 0	}{	}{	}{	}{	}{	}{	}{	Je veux me retourner et partir dans une autre direction.	}
+{	436	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	J'espère pour vous que ces types sont des intérimaires, parce qu'un pro sera mort de rire. Si ça marche, je me casse de cette ville. Tenez, pour vous remercier.	}{	J'espère pour vous que ces types sont des intérimaires, parce qu'un pro sera mort de rire. Si ça marche, je me casse de cette ville. Tenez, pour vous remercier.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.MoneyAdd( 250 ); G.Ash_Leave = 1; pc.SetQuest("Hunters",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	Ce sera bien depensé.	}{	Ce sera bien depensé.	}{	0	}{	}{	G.Ash_Fake = 1	}{	}{	}{	}{	}{	}{	}{	De l'argent pour votre agent !	}
+{	443	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	444	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	445	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	446	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	[Sarcastique]Votre opinion compte tellement pour moi. . .	}{	[Sarcastique]Votre opinion compte tellement pour moi. . .	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Bon, je ne veux pas vous faire mal, mais si vous continuez, je n'aurai pas le choix.	}{	Bon, je ne veux pas vous faire mal, mais si vous continuez, je n'aurai pas le choix.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	453	}{	Continuez, mon mignon, et vous ne serez plus si mignon.	}{	Continuez, mon mignon, et vous ne serez plus si mignon.	}{	91	}{	not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	454	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	455	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	Autre chose ?	}{	Autre chose ?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	Je veux vous aider à vous enfuir.	}{	Je veux vous aider à vous enfuir.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	463	}{	Bonne chance avec les chasseurs.	}{	Bonne chance avec les chasseurs.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	464	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	Autre chose ?	}{	Autre chose ?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	Il y a un problème ?	}{	Il y a un problème ?	}{	121	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	473	}{	Je suis super fan de vous. . .	}{	Je suis super fan de vous. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	474	}{	Vos films sont nuls. Vous savez pas jouer.	}{	Vos films sont nuls. Vous savez pas jouer.	}{	451	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Je crois que c'était le dernier. Tenez, pour vous remercier. . . Vous savez, ça ne fait que dix ans que je vis à Hollywood. Je me demande combien de temps la ville mettra à m'oublier. Hmm. . .	}{	Je crois que c'était le dernier. Tenez, pour vous remercier. . . Vous savez, ça ne fait que dix ans que je vis à Hollywood. Je me demande combien de temps la ville mettra à m'oublier. Hmm. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.MoneyAdd( 500 )	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	Merci.	}{	Merci.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Argent !	}
+{	483	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	484	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	485	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	[Reprenant une célébre phrase d'un de ses films]J'étais tombé aussi bas que possible, aussi loin que possible - bien après l'oubli. . . J'étais devenu une sorte de zéro négatif.	}{	[Reprenant une célébre phrase d'un de ses films]J'étais tombé aussi bas que possible, aussi loin que possible - bien après l'oubli. . . J'étais devenu une sorte de zéro négatif.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	G.Ash_Leave = 1; pc.SetQuest("Hunters",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	Coupez... Elle est bonne.	}{	Coupez... Elle est bonne.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'oubli... Cet endroit me dit quelque chose...	}
+{	493	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	494	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	495	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	[A ce moment, Ash a été torturé au fer rouge et a perdu son arrogance]. . .fini. . . fini. . . fini. . . le feu. . .	}{	[A ce moment, Ash a été torturé au fer rouge et a perdu son arrogance]. . .fini. . . fini. . . fini. . . le feu. . .	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Ash_Burn = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	Ash ?	}{	Ash ?	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	Entre G et I ?	}
+{	503	}{	Vous n'avez plus si belle gueule, Hollywood.	}{	Vous n'avez plus si belle gueule, Hollywood.	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi votre visage est-il couvert de lettres 't' ?	}
+{	504	}{	Après tout le mal que je me suis donné, vous vous êtes fait prendre. . .	}{	Après tout le mal que je me suis donné, vous vous êtes fait prendre. . .	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une lettre presque morte, alors que j'avais ouvert pour vous une nouvelle page blanche.	}
+{	505	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	[Regarde le PJ, s'arrête, se reprend un peu]Vous. . . ? Ils m'ont détruit le visage. . . le feu. . . Je le sens encore dans mes blessures. . . Ils vont me tuer. . . Ils vont revenir avec leurs fers et ils vont encore me brûler. . .	}{	[Regarde le PJ, s'arrête, se reprend un peu]Vous. . . ? Ils m'ont détruit le visage. . . le feu. . . Je le sens encore dans mes blessures. . . Ils vont me tuer. . . Ils vont revenir avec leurs fers et ils vont encore me brûler. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	Parlez moins fort.	}{	Parlez moins fort.	}{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les cris d'une lettre morte sont bien sonores. Ecrivez moins fort.	}
+{	513	}{	Vous avez une sale tête.	}{	Vous avez une sale tête.	}{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tous ces 't' sur votre visage. . . On bruiterait une mitraillette et il en resterait. . .	}
+{	514	}{	C'est sûr.	}{	C'est sûr.	}{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une petite sensation de brûlure ? Vous devriez consulter un médecin. . .	}
+{	515	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	516	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	517	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	520	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	521	}{	J'ai refusé de parler, alors ils n'ont pas arrêté de me brûler. . . Leurs yeux. . . Ils jouissaient. Je vous en supplie, faites-moi sortir. . . avant qu'ils reviennent.	}{	J'ai refusé de parler, alors ils n'ont pas arrêté de me brûler. . . Leurs yeux. . . Ils jouissaient. Je vous en supplie, faites-moi sortir. . . avant qu'ils reviennent.	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	Je vais chercher une sortie, Ash.	}{	Je vais chercher une sortie, Ash.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais écrire Liberté au mur de votre prison, lettre morte.	}
+{	523	}{	Vous avez été maladroit. Vous méritez d'être ici.	}{	Vous avez été maladroit. Vous méritez d'être ici.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une étoile qui brille trop fort finit toujours par se consumer.	}
+{	524	}{	J'ai quelque chose qui pourrait vous aider à guérir certaines de ces blessures.	}{	J'ai quelque chose qui pourrait vous aider à guérir certaines de ces blessures.	}{	541	}{	G.Ash_Heal == 0 and pc.HasItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}{	Buvez ceci et vous réparerez votre corps brisé, lettre brûlée.	}
+{	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Ils finissent toujours par revenir. . . Avec encore du feu. . .	}{	Ils finissent toujours par revenir. . . Avec encore du feu. . .	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	533	}{	J'ai quelque chose qui pourrait vous aider à guérir certaines de ces blessures.	}{	J'ai quelque chose qui pourrait vous aider à guérir certaines de ces blessures.	}{	541	}{	G.Ash_Heal == 0 and pc.HasItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}{	Buvez ceci et vous réparerez votre corps brisé, lettre brûlée.	}
+{	534	}{	Ne bougez pas, je reviens.	}{	Ne bougez pas, je reviens.	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne resterez plus en cage très longtemps.	}
+{	535	}{	Ne bougez pas, je reviens.	}{	Ne bougez pas, je reviens.	}{	0	}{	G.Patch_Plus == 1	}{	pc.SetQuest("Ash",1)	}{	}{	}{	}{	}{	}{	}{	Vous ne resterez plus en cage très longtemps.	}
+{	536	}{	Vous avez été maladroit. Vous méritez d'être ici.	}{	Vous avez été maladroit. Vous méritez d'être ici.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une étoile qui brille trop fort finit toujours par se consumer.	}
+{	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	Autrefois, j'ai bu au cou des femmes les plus désirables du monde. . . Pour l'heure, ce sac est plus intéressant que chacune d'entre elles.	}{	Autrefois, j'ai bu au cou des femmes les plus désirables du monde. . . Pour l'heure, ce sac est plus intéressant que chacune d'entre elles.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	FindPlayer().HumanityAdd( 1 ); G.Ash_Heal = 1; pc.RemoveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Ne bougez pas, je reviens.	}{	Ne bougez pas, je reviens.	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne resterez plus en cage très longtemps.	}
+{	543	}{	Ne bougez pas, je reviens.	}{	Ne bougez pas, je reviens.	}{	0	}{	G.Patch_Plus == 1	}{	pc.SetQuest("Ash",1)	}{	}{	}{	}{	}{	}{	}{	Vous ne resterez plus en cage très longtemps.	}
+{	544	}{	Vous méritez d'être ici. . .	}{	Vous méritez d'être ici. . .	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cette cage vous va si bien. . .	}
+{	545	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	546	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	547	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	548	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	Eh, où allez-vous ? Ne me laissez pas ici !	}{	Eh, où allez-vous ? Ne me laissez pas ici !	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	553	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	554	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	555	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	556	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	558	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	[Distant]Merci. Vous ne me reverrez jamais. Je vais aller là où personne ne verra plus jamais ce. . . visage. . .	}{	[Distant]Merci. Vous ne me reverrez jamais. Je vais aller là où personne ne verra plus jamais ce. . . visage. . .	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	G.Ash_Free = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	Au revoir, Ash.	}{	Au revoir, Ash.	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	La page vous tend les bras, lettre morte.	}
+{	563	}{	Au revoir, Ash.	}{	Au revoir, Ash.	}{	0	}{	G.Patch_Plus == 1	}{	pc.SetQuest("Ash",2)	}{	}{	}{	}{	}{	}{	}{	La page vous tend les bras, lettre morte.	}
+{	564	}{	Je ne vous sauverai pas une deuxième fois. Filez vite.	}{	Je ne vous sauverai pas une deuxième fois. Filez vite.	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous devrez apprendre à traverser les murs. Je ne vous libérerai plus.	}
+{	565	}{	Je ne vous sauverai pas une deuxième fois. Filez vite.	}{	Je ne vous sauverai pas une deuxième fois. Filez vite.	}{	0	}{	G.Patch_Plus == 1	}{	pc.SetQuest("Ash",2)	}{	}{	}{	}{	}{	}{	}{	Vous devrez apprendre à traverser les murs. Je ne vous libérerai plus.	}
+{	566	}{	Bonne chance au Canada.	}{	Bonne chance au Canada.	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	Bonne chance au Canada.	}{	Bonne chance au Canada.	}{	0	}{	G.Patch_Plus == 1	}{	pc.SetQuest("Ash",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	. . .	}{	. . .	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	Ooh, vous êtes mignon.	}{	Ooh, vous êtes mignon.	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	573	}{	V. . . non. . . T ? Non. . . Ah, quelle lettre êtes-vous ?	}{	V. . . non. . . T ? Non. . . Ah, quelle lettre êtes-vous ?	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	574	}{	Vous êtes la lettre ?	}{	Vous êtes la lettre ?	}{	581	}{	G.Isaac_Ash >= 1 or G.Velvet_Ash >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	575	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	576	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	577	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	Quoi ?	}{	Quoi ?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	Je peux prendre une mèche de vos cheveux ?	}{	Je peux prendre une mèche de vos cheveux ?	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	583	}{	Vous, je vous verrais bien en Splat Uno. . .	}{	Vous, je vous verrais bien en Splat Uno. . .	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	584	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	585	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	586	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	587	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	Super. Vous avez fini ?	}{	Super. Vous avez fini ?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	J'aurai fini quand je connaîtrai votre nom.	}{	J'aurai fini quand je connaîtrai votre nom.	}{	601	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	593	}{	Nous sommes tous finis. Vous ne le sentez pas ?	}{	Nous sommes tous finis. Vous ne le sentez pas ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	594	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	595	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	596	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	597	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	598	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	599	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	600	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	601	}{	Ash. Voilà, ça va maintenant ? Dites-le à vos amis, pour qu'ils me foutent la paix.	}{	Ash. Voilà, ça va maintenant ? Dites-le à vos amis, pour qu'ils me foutent la paix.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Ash_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	Vous êtes troublé, petite lettre ?	}{	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	603	}{	La mort boit souvent ici ? Parce qu'on dirait que vous l'attendez.	}{	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	604	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	605	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	Pigé ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	Encore vous. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	Dégagez de mon club. 	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	613	}{	Pigé.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	614	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	615	}{	Merci.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	616	}{	Quoi ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	617	}{	Je n'en sais rien.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	618	}{	Je n'y peux rien.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	619	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	620	}{	Tenez.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	C'est ça.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	623	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	624	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	625	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	626	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	627	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	628	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	629	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	630	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	631	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	(Starting Condition)	}{	}{	561	}{	G.Ash_Saved == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	633	}{	(Starting Condition)	}{	}{	531	}{	G.Ash_Burn == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	634	}{	(Starting Condition)	}{	}{	501	}{	G.Ash_Leave == 1 and G.Story_State == 65	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	635	}{	(Starting Condition)	}{	}{	481	}{	G.Hunters_Dead == 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	636	}{	(Starting Condition)	}{	}{	411	}{	G.Ash_Switch >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	637	}{	(Starting Condition)	}{	}{	431	}{	G.Ash_Escort == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	638	}{	(Starting Condition)	}{	}{	401	}{	G.Ash_Hunters < 3 and G.Ash_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	639	}{	(Starting Condition)	}{	}{	571	}{	IsClan(pc,"Malkavian") and npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	640	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

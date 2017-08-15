@@ -1,0 +1,1184 @@
+QuestTable
+{
+//	Quest
+//	{
+//		"Title"		This is a simple text title, and what will be used to refer to it in dialog.
+//
+//		"DisplayName"	This is what will be displayed as the heading for this journal entry
+//				LOCALIZE THIS FIELD
+//
+//		CompletionState
+//		{
+//			"ID"		Each completion state must have a UNIQUE, NUMERIC ID. By default, a player is considered to be at
+//					completion state 0, when the quest is unassigned. The quest will not be displayed in the journal
+//					unless the player has a valid ID for the quest.
+//
+//			"Description"	This is what will be displayed as the journal entry for this quest
+//					LOCALIZE THIS FIELD
+//
+//			"Type"		This controls the font, colors, etc, for the quest. MUST be "success, failure, incomplete"
+//
+//			"AwardXP"	This is how many experience points to award to a character when they reach this quest
+//					completion level. defaults to 0.
+//
+//			"AwardMoney"	This is how much money to award to a character when they reach this quest completion
+//					level. defaults to 0.
+//
+//			"Event"		This is script data, such as a flag assignment or a function call, that will be passed to
+//					the script interpreter. by default, there is no event script.
+//
+//		}
+//	}
+
+	Quest
+	{
+		"Title"		"Arthur Knox"
+		"DisplayName"	"Une prime pour le chasseur"
+
+		CompletionState
+		{
+			"ID"		"1" // line 221 of Arthur's dialog
+			"Description"	"Le prêteur Arthur Kilpatrick veut que vous retrouviez son chasseur de primes, Carson, pour lui demander de reprendre son travail. Carson vit dans l'appartement 1 des suites de Santa Monica."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // set upon getting info from Carson's computer
+			"Description"	"Après avoir pénétré dans l'appartement de Carson, vous avez trouvé des informations concernant la dernière affaire qu'il traitait. Il était question du salon de tatouage. Vous devriez peut-être y passer."
+			"Type"		"incomplete"
+			"AwardXP"	"Carson01"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // set upon releasing Carson
+			"Description"	"Vous avez sauvé Carson des griffes de Stan Gimble, le fou. Allez en faire part à Arthur."
+			"Type"		"incomplete"
+			"AwardXP"	"Carson02"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // line 241 of Arthur's dialog
+			"Description"	"Vous avez localisé Carson et dit à Arthur qu'il ne reviendra pas. Toutefois Arthur vous doit toujours de l'argent."
+			"Type"		"incomplete"
+			"AwardXP"	"Carson03"
+		}
+
+		CompletionState
+		{
+			"ID"		"5" // line 301 of Arthur's dialog
+			"Description"	"Vous avez retrouvé Carson et dit à Arthur qu'il ne reviendra pas. Vous avez été payé."
+			"Type"		"success"
+// removed by wesp			"AwardMoney"	"201"
+		}
+
+		CompletionState
+		{
+			"ID"		"6" // line 71 of Gimble's dialog, changed by wesp
+			"Description"	"Alors que vous cherchiez l'appartement de McGee, vous avez reçu un coup de téléphone de Stan Gimble, un fabricant de prothèses. Il veut bien répondre à vos questions sur McGee si vous lui rendez visite à son magasin situé au bout de Main Street dans un petit atelier en sous-sol."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"7" // Kill Arthur
+			"Description"	"Vous avez tué Arthur Kilpatrick. Tous les contrats sont devenus caducs en même temps que lui."
+			"Type"		"failure"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Bail Jumper"
+		"DisplayName"	"Délit de fuite"
+
+		CompletionState
+		{
+			"ID"		"1" //line 331 of Arthurs dialog
+			"Description"	"Arthur Kilpatrick vous demandé de retrouver la trace de Mike Durbin, dit 'Muddy'. C'est la petite amie de Durbin, Marian Murietta, qui a payé la caution. Elle vit dans un appartement au dessus d'un prêteur sur gages."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // Answering machine in Marian's apartment, changed by Wesp
+			"Description"	"Vous avez intercepté un message de Durbin. Il s'est réfugié dans la chambre 2A des Skyeline Apartments, la résidence d'un certain M. Milton. Il attend également un coup de fil d'une personne du nom de Reno. Parlez-en à Arthur."
+			"Type"		"incomplete"
+			"AwardXP"	"Bail01"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // line 371 of Arthur's dialog, changed by wesp
+			"Description"	"Vous avez dit à Arthur que M. Durbin a quitté Santa Monica."
+			"Type"		"success"
+			"AwardXP"	"Bail02"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // line 531 of Arthur's dialog
+			"Description"	"Arthur a appris ce qu'il advenu de M. Durbin sans votre aide."
+			"Type"		"failure"
+		}
+
+		CompletionState
+		{
+			"ID"		"5" // Kill Arthur
+			"Description"	"Vous avez tué Arthur Kilpatrick. Tous les contrats sont devenus caducs en même temps que lui."
+			"Type"		"failure"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Knox Asian"
+		"DisplayName"	"Le chasseur chassé"
+
+		CompletionState
+		{
+			"ID"		"1" // line 261 of Knox's dialog
+			"Description"	"Knox est traqué par un 'vampire asiatique'. Il vous a demandé votre aide pour s'en débarrasser. Il vous a donné un permis dans l'espoir qu'il vous fournisse des informations utiles."
+			"Type"		"incomplete"
+		}
+
+		CompletionState	// changed by wesp
+		{
+			"ID"		"2" // line 461
+			"Description"	"Knox a essayé de vous faire faire le sale boulot de Bertram. Malgré cette tromperie, vous pensez accepter la tâche de détruire un 'vampire asiatique' qui se terre quelque part à Santa Monica."
+			"Type"		"incomplete"
+			"AwardXP"	"Asian03"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // on death of the Asian vampire
+			"Description"	"Vous avez détruit le 'vampire asiatique'. Knox sera soulagé quand vous le lui direz."
+			"Type"		"incomplete"
+			"AwardXP"	"Asian01"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // lines 381 and 471 of Knox's dialog
+			"Description"	"Vous avez détruit le 'vampire asiatique' et vous l'avez dit à Knox."
+			"Type"		"success"
+			"AwardXP"	"Asian02"
+		}
+
+		CompletionState
+		{
+			"ID"		"5" // lines 758-767 of Bertram. This one is set if you've not yet completed Knox's quest.
+			"Description"	"Vous avez dévoilé les plans de Bertram qui cherchait à vous manipuler."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"6" // lines 758-767 of Bertram. This one is set if you've completed Knox's quest.
+			"Description"	"Vous avez dévoilé les plans de Bertram qui cherchait à vous manipuler."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"7"
+			"Description"	"En cherchant des objets ayant pu appartenir à Virgil Crumb, l'homme que Knox vous a indiqué, vous avez trouvé une carte magnétique pour les 'boîtes Foxy' à la morgue. Espérons qu'elles vous aideront à localiser le vampire asiatique de Knox."
+			"Type"		"incomplete"
+			"AwardXP"	"Asian04"
+		}
+
+		CompletionState
+		{
+			"ID"		"8"
+			"Description"	"Vous avez tué Knox, ce qui annule votre quête consistant à tuer le vampire asiatique."
+			"Type"		"failure"
+		}
+
+		CompletionState
+		{
+			"ID"		"9" // set from Krimeputer
+			"Description"	"Vous avez découvert que Virgil Crumb, l'homme identifié sur le permis que Knox vous a donné, est mort et se trouve à la morgue du Centre médical. Vous pourriez peut-être y trouver d'autres indices. "
+			"Type"		"incomplete"
+		}
+
+		//changed by dan_upright 04/12/04
+		CompletionState
+		{
+			"ID"		"10" // line 261 of Knox's dialog
+			"Description"	"Knox est traqué par un 'vampire asiatique'. Il veut s'en aller et a demandé de l'aide. Il vous a donné une licence, qui, selon l'orcrimnateur de Kilpatrick, appartient à Virgile Crumb, un résident de la morgue de Santa Monica Medical Center."
+			"Type"		"incomplete"
+		}
+		//changes end
+	}
+
+	Quest
+	{
+		"Title"		"Lily"
+		"DisplayName"	"Sang clair"
+
+		CompletionState
+		{
+			"ID"		"1" // E. 151
+			"Description"	"E. voudrait savoir ce qu'est un sang faible. Il ne sait que ce que son sire, Lily, lui en a dit avant qu'ils ne se quittent. Il vous a suggéré de vous rendre au Surfside Diner en ville pour voir si elle n'y est pas."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // E. 161
+			"Description"	"Vous avez trouvé le journal de Lily. La dernière entrée du journal de Lily fait mention d'un plan pour pénétrer dans la banque du sang."
+			"Type"		"incomplete"
+			"AwardXP"	"Thinned02"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // Lily 91, 101, 121
+			"Description"	"Vous avez retrouvé Lily dans la banque du sang et vous l'avez libérée. Elle vous a donné des informations sur les sangs clairs. Vous devriez aller parler à E."
+			"Type"		"incomplete"
+			"AwardXP"	"Thinned03"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // IsDead("Lily")
+			"Description"	"Vous avez retrouvé Lily, mais vous l'avez tuée."
+			"Type"		"failure"
+		}
+
+		CompletionState
+		{
+			"ID"		"5"
+			"Description"	"E. semble avoir quitté Santa Monica. Vous ne savez pas s'il a mis la main sur Lily, mais il est probable que vous ne la retrouverez plus, désormais."
+			"Type"		"failure"
+		}
+
+		CompletionState
+		{
+			"ID"		"6"
+			"Description"	"E. semble avoir quitté Santa Monica. Vous ne savez pas vraiment s'il s'était remis avec Lily et visiblement, vous ne le saurez jamais."
+			"Type"		"failure"
+		}
+
+		CompletionState
+		{
+			"ID"		"7" //either Doris Dialog 61 or getting items from Lost and Found
+			"Description"	"Vous avez retrouvé les affaires de Lily, celles du dîner. Il s'agit d'une photo, d'une clé et d'un formulaire de caution. Hmm, un formulaire de caution."
+			"Type"		"incomplete"
+			"AwardXP"	"Thinned01"
+		}
+
+		CompletionState
+		{
+			"ID"		"8"
+			"Description"	"E. et Lily se sont remis ensemble."
+			"Type"		"success"
+			"AwardXP"	"Thinned04"
+		}
+
+		CompletionState
+		{
+			"ID"		"9"
+			//changed by dan_upright 28/11/04
+			"Description"	"Vous trouvez une référence à Rolf Toten dans l'Orcrimateur d'Arthur. Il conduit une Lightningbird '77 rouge, immatriculée 'GUYCONI'. Vous devriez peut-être trouver cette voiture."
+			//changes end
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"10" // E death
+			"Description"	"Vous avez tué E. et vous pouvez oublier ce qu'il vous avait demandé de faire."
+			"Type"		"failure"
+		}
+
+		//changed by dan_upright 04/12/04
+		CompletionState
+		{
+			"ID"		"11" //either Doris Dialog 61 or getting items from Lost and Found
+			"Description"	"Vous avez récupéré les biens de Lily. Ils se composent d'une photo, d'une clé et d'une caution pour Rolf Toten. De l'orcrimnateur de Kilpatrick, vous savez que la voiture de Toten est une Lightningbird rouge '77, licence \"GUYCONI \". Peut-être vous devriez trouver cette voiture."
+			"Type"		"incomplete"
+			"AwardXP"	"Thinned01"
+		}
+		//changes end
+	}
+
+	Quest
+	{
+		"Title"		"Release the Spirit"
+		"DisplayName"	"Evasion spirituelle"
+
+		CompletionState
+		{
+			"ID"		"1" // Picking up Journal/escaping kitchen
+			"Description"	"Vous avez découvert un journal dans l'Ocean House. Il y est raconté qu'un mari jaloux assassina sa femme et sa famille à cause d'un médaillon. Le fantôme meurtrier du mari retient sa femme prisonnière ici à jamais et on dirait qu'elle essaie de vous aider à la libérer."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // Therese 271, changed by wesp
+			"Description"	"Vous avez pris au piège l'esprit de la femme prisonnière de l'Ocean House par le fantôme meurtrier de son mari pour l'éternité en donnant à Jeanette le pendentif. Il repose maintenant au fond de l'océan, quelque part où il ne sera jamais trouvé."
+			"Type"		"failure"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // Therese 521
+			"Description"	"En donnant le pendentif à Therese, vous lui avez donné les moyens de libérer les esprits de l'Ocean House, offrant ainsi la salvation éternelle à la pauvre femme et la damnation éternelle à son meurtrier de mari."
+			"Type"		"success"
+			"AwardXP"	"Spirit01"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // added by wesp
+			"Description"	"En réconciliant les soeurs, vous avez donné à Thérèse les moyens de libérer les esprits de l'Ocean House, offrant ainsi la salvation éternelle à la pauvre femme et la damnation éternelle à son meurtrier de mari."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"5" // added by wesp
+			"Description"	"Vous avez pris au piège pour l'éternité l'esprit de la femme prisonnière de l'Ocean House par le fantôme meurtrier de son mari en gardant le pendentif."
+			"Type"		"failure"
+		}
+
+	}
+
+	Quest
+	{
+		"Title"		"Werewolf Blood"
+		"DisplayName"	"Bon Sang de Bonsoir"
+
+		CompletionState
+		{
+			"ID"		"1" // sent in email
+			"Description"	"LaCroix vous a contacté par e-mail pour vous charger de retrouver une fiole de sang de loup-garou à la clinique médicale et préserver la Mascarade."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // getting blood, changed by wesp
+			"Description"	"Vous avez retrouvé le sang de loup-garou à la clinique médicale. Déposez-le dans votre boîte aux lettres pour l'envoyer à LaCroix."
+			"Type"		"incomplete"
+			"AwardXP"	"Wblood01"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // "mailing" blood
+			"Description"	"Vous avez posté le sang de loup-garou à LaCroix. Vérifiez vos mails et votre boîte aux lettres un peu plus pour votre récompense."	// changed by wesp
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // retrieving money from mailbox, changed by wesp
+			"Description"	"Vous avez réussi à préserver la Mascarade en récupérant le sang de loup-garou et en le renvoyant à LaCroix."
+			"Type"		"success"
+			"AwardXP"	"Wblood02"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Danielle"
+		"DisplayName"	"Transfuge de Lily"
+
+		CompletionState
+		{
+			"ID"		"1" // Vandal 381
+			"Description"	"Vandal veut que vous trouviez une victime qui ne se doute de rien pour remplacer Lily pour son don à la banque du sang."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // Danielle 71, changed by wesp
+			"Description"	"Vous avez convaincu la fille de l'Asylum d'aller à la banque du sang. N'éprouvez-vous pas un petit sentiment de fierté ?"
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // Kill Vandal
+			"Description"	"Vous avez tué Vandal. Espérons que vous savez où trouver des poches de sang."
+			"Type"		"failure"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // Patty 91, added by wesp
+			"Description"	"Vous avez convaincu Patty de se rendre à la banque du sang. Retournez voir Vandal."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"5" // added by wesp
+			"Description"	"Vous avez tué Patty avant qu'elle ne voit Vandal. Vous devez trouver quelqu'un d'autre, maintenant."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"6" // added by wesp
+			"Description"	"Vandal a accepté votre compensation pour Lily."
+			"Type"		"success"
+			"AwardXP"		"Danielle01"
+		}
+
+		CompletionState
+		{
+			"ID"		"7" // Gimble, added by wesp
+			"Description"	"Vous avez convaincu Gimble de se rendre à la banque du sang. Retournez voir Vandal."
+			"Type"		"incomplete"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Morphine"
+		"DisplayName"	"Dur dur de s'appeler Mercurio"
+
+		CompletionState
+		{
+			"ID"		"1" // Mercurio 131
+			"Description"	"Mercurio a besoin d'analgésiques costauds."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // Got Morphine
+			"Description"	"Vous avez trouvé de la morphine, ce qui devrait soulager Mercurio."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // Mercurio 161
+			"Description"	"Vous avez soulagé la douleur de Mercurio en lui donnant de la morphine."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // story state 10
+			"Description"	"Mercurio n'a plus besoin d'analgésiques."
+			"Type"		"failure"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Serial"
+		"DisplayName"	"Carnaval macabre"
+
+		CompletionState
+		{
+			"ID"		"1" // reading newspaper
+			"Description"	"Une dépouille en très mauvais état a été retrouvée sur la jetée de Santa Monica. Vous devriez peut-être vous y intéresser."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // Seeing crime scene
+			"Description"	"Vous avez vu la scène du meurtre sur la jetée, mais vous n'avez pas pu y apprendre quoi que ce soit d'important sur le tueur, si ce n'est qu'il est particulièrement brutal, cruel et bestial."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // Bum 81
+			"Description"	"Vous avez parlé à un clochard dans un entrepôt abandonné, où a eu lieu le dernier meurtre. Le clochard a assisté à la scène et vous a dit que le tueur avait des griffes et qu'il avait déchiqueté la victime en parlant de 'vengeance'."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // seeing abandoned body, haven't talked to bum, 1 and 2 not set
+			"Description"	"Vous avez trouvé la victime d'un meurtre en piteux état, apparemment un coup du serial killer dont on vous a parlé."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"5" // seeing abandoned body, haven't talked to bum, 1 or 2 set
+			"Description"	"Vous avez découvert la dernière victime du serial killer. Il a été taillé en pièces comme les autres, sur la jetée de Santa Monica. "
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"6" // seeing killer escape in Hollywood
+			"Description"	"Avec les clés que vous avez trouvées sur le lieu du dernier crime, vous avez ouvert une chambre au Luckee Star juste à temps pour voir le tueur s'échapper."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"7" // Killer business card
+			"Description"	"Vous avez trouvé une carte de visite des Brothers Salvage à Santa Monica sur le lieu du dernier meurtre."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"8" // Killed Killer
+			"Description"	"Vous avez tué le serial killer, mettant fin à son règne de terreur. Et vous avez protégé la Mascarade, en plus."
+			"Type"		"success"
+			"AwardXP"	"Killer03"
+		}
+
+		CompletionState
+		{
+			"ID"		"9" // Killer dialog lines 152/153
+			"Description"	"Vous avez réussi à convaincre le tueur en série d'abandonner sa quête de vengeance à présent que ceux qui ont tué sa famille ont été abattus."
+			"Type"		"success"
+			"AwardXP"	"Killer01"
+		}
+
+		CompletionState
+		{
+			"ID"		"10" // Killer
+			"Description"	"Vous avez laissé le tueur en série filer, le laissant ainsi déverser sa folie meurtrière. J'espère que ça vous fait plaisir."
+			"Type"		"failure"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Muddy"
+		"DisplayName"	"Trouver Muddy"
+
+		CompletionState
+		{
+			"ID"		"1" // Arthur 381
+			"Description"	"En essayant de retrouver 'Muddy' Mike Durbin pour Arthur Kilpatrick, vous avez entendu un message sur un répondeur. Celui-ci disait qu'il se rendait dans le centre ville, aux Skyeline Apartments, 2A. Demeure d'un certain M. Milton. Vous ne travaillez plus pour Arthur, mais vous pourriez sans doute vous faire de l'argent en le ramenant."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // Killer Message, changed by Wesp
+			"Description"	"Vous avez fouillé les Skyeline Apartments pour chercher 'Muddy', mais il n'y était pas. A la place, vous avez entendu un autre message donnant rendez-vous à Durbin et Milton dans un endroit inconnu, en face d'un bar."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // Got Key
+			"Description"	"Vous avez trouvé le cadavre déchiqueté de Milton dans un entrepôt abandonné, mais Durbin n'était pas là. Enfin, vous avez trouvé une clé du Luckee Star. "
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // Saw Killer at Luckee Star
+			"Description"	"Vous avez fini par repérer Muddy Mike, mais vous ne récupérerez pas l'argent de la prime, puisqu'il est devenu la dernière victime du tueur en série."
+			"Type"		"success"
+			"AwardXP"	"Muddy01"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Mercurio"
+		"DisplayName"	"Où es-tu, Mercurio ?"
+
+		CompletionState
+		{
+			"ID"		"1" // player should start game with this active, changed by wesp
+			"Description"	"Le Prince LaCroix a décidé que vous iriez à Santa Monica pour y trouver un de ses agents, Mercurio, qui vous donnera les détails de la mission."	// removed by wesp, To get to his apartment take a right at the end of the alley downstairs from your haven. His apartment building is the first one on your right.
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // Merc 1
+			"Description"	"Vous avez trouvé Mercurio, l'agent du Prince LaCroix à Santa Monica."
+			"Type"		"success"
+			"AwardXP"	"Merc01"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Astrolite"
+		"DisplayName"	"Marée Haute"
+
+		CompletionState
+		{
+			"ID"		"1" // Merc 121
+			"Description"	"Mercurio vous a demandé de retrouver l'Astrolite qu'il devait récupérer auprès d'un groupe de 'connards de surfers' qui vivent dans un taudis sur la plage. En outre, Mercurio voudrait bien récupérer son argent."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // getting Astrolite
+			"Description"	"Vous avez retrouvé l'Astrolite pour Mercurio. Vous devriez retourner le voir et lui demander quelle est la suite du programme."
+			"Type"		"incomplete"
+			"AwardXP"	"Astro01"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // Merc 171
+			"Description"	"Vous avez retrouvé l'Astrolite et êtes retourné voir Mercurio pour de plus amples instructions."
+			"Type"		"success"
+			"AwardXP"	"Astro02"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // Merc 851
+			"Description"	"Mercurio a tout foiré et s'est fait tabasser par un gang de 'connards de surfeurs' qui vivent dans un taudis sur la plage. Vous devez leur reprendre l'Astrolite par tous les moyens nécessaires. "
+			"Type"		"incomplete"
+		}
+		CompletionState
+		{
+			"ID"		"5" // getting Astrolite
+			"Description"	"Vous avez trouvé l'Astrolite et devez retourner auprès de Mercurio pour qu'il vous donne de nouvelles instructions. A voir l'humeur dans laquelle il était à votre départ, il ne sera sans doute pas très content de vous revoir."
+			"Type"		"incomplete"
+			"AwardXP"	"Astro01"
+		}
+
+		CompletionState
+		{
+			"ID"		"6" // Merc death
+			"Description"	"Vous avez récupéré l'Astrolite, mais Mercurio n'était pas très content de vous revoir. Vous avez dû l'abattre comme le chien qu'il est. Vous avez besoin d'informations sur la suite des événements."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"7" // got Mercurio Journal, changed by wesp
+			"Description"	"Vous avez trouvé dans le journal de Mercurio les détails de ce que vous devez faire après."
+			"Type"		"success"
+			"AwardXP"	"Astro05"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Warehouse"
+		"DisplayName"	"Débuts explosifs"
+
+		CompletionState
+		{
+			"ID"		"1" // Bertram 1, changed by wesp
+			"Description"	"Vous avez localisé Bertram Tung. Prochaine étape : faire sauter l'entrepôt. Installer l'Astrolite si possible sans tuer personne."
+			"Type"		"incomplete"
+			"AwardXP"	"Explosive02"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // Merc 231
+			"Description"	"Mercurio vous a parlé d'un entrepôt utilisé par le Sabbat que vous devez infiltrer et détruire. Le problème est que Bertram Tung, la seule personne qui pourrait vous aider à entrer, se cache en raison d'un conflit avec Therese Voerman, la propriétaire de l'Asylum. Pour trouver Tung, il va falloir trouver un moyen de mettre un terme à ce conflit."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // Tourette 671
+			"Description"	"Le conflit a été apaisé. Tung se cache dans un réservoir de pétrole, non loin de l'Asylum. Vous devez le rencontrer et faire en sorte qu'il vous aide à entrer dans l'entrepôt pour pouvoir poser les explosifs."
+			"Type"		"incomplete"
+			"AwardXP"	"Explosive01"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // Flag when warehouse blows up, changed by wesp.
+			"Description"	"L'entrepôt est désormais éparpillé au fond du Pacific et sur une pelouse de Pasadena. Dites-le à Tung."
+			"Type"		"incomplete"
+			"AwardXP"	"Explosive03"
+		}
+
+		CompletionState
+		{
+			"ID"		"5" // Prince 71
+			"Description"	"L'entrepôt est désormais éparpillé au fond du Pacifique, avec quelques morceaux du côté de Pasadena."
+			"Type"		"success"
+			"AwardXP"	"Explosive05"
+		}
+
+		CompletionState
+		{
+			"ID"		"6" // Merc's Journal
+			"Description"	"En lisant le journal de Mercurio, vous avez appris qu'un entrepôt est utilisé par le Sabbat et que vous devez y entrer pour le détruire. Seul problème : Bertram Tung, la seule personne qui pourrait vous faire entrer, se cache à cause d'un différend avec Therese Voerman, propriétaire de l'Asylum. Pour retrouver Tung, il va falloir trouver un moyen de régler ce différend."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"7" // added by wesp
+			"Description"	"L'entrepôt est désormais éparpillé au fond du Pacific et sur une pelouse de Pasadena. Retournez voir le Prince LaCroix dans la tour de Ventrues en ville pour lui faire votre rapport."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"8" // added by wesp
+			"Description"	Vous avez localisé Bertram Tung. Prochaine étape : faire sauter l'entrepôt. Installer l'Astrolite sans vous faire repérer si possible."
+			"Type"		"incomplete"
+			"AwardXP"	"Explosive02"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Hotel"
+		"DisplayName"	"Le fantôme de minuit"
+
+		CompletionState
+		{
+			"ID"		"1" // Therese 231
+			"Description"	"Therese vous a demandé de vous rendre à l'hôtel Ocean House pour retrouver un objet personnel de l'esprit qui hante les lieux et de le lui ramener. Le seul moyen pour atteindre l'Ocean House est de passer par les égouts."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // flag on Pendant.
+			"Description"	"Vous avez récupéré le pendentif dans l'Ocean House pour l'apporter à Therese afin de la convaincre de rompre sa querelle avec Tung."
+			"Type"		"incomplete"
+			"AwardXP"	"Haunted01"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // Therese 521
+			"Description"	"Vous avez donné le pendentif de l'Ocean House à Therese, comme elle vous l'avait demandé."
+			"Type"		"success"
+			"AwardXP"	"Haunted04"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // Jeanette 191
+			"Description"	"Therese n'était pas là, vous avez donc donné le pendentif de l'Ocean House à Jeanette, ce n'était peut-être pas une riche idée. Vous devriez revenir plus tard pour parler à Therese à son retour."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"5" // Jeanette
+			"Description"	"Vous avez récupéré le pendentif dans l'Ocean House pour l'apporter à Therese afin de la convaincre de rompre sa querelle avec Tung, mais elle n'était pas à l'Asylum. Revenez plus tard pour lui parler à son retour."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"6" // Therese 271
+			"Description"	"Jeanette a jeté le pendentif de l'Ocean House, celui que vous lui avez bêtement donné, dans l'océan, contrecarrant ainsi les plans de Therese d'exorciser les esprits qui hantent l'hôtel."
+			"Type"		"failure"
+		}
+
+		CompletionState
+		{
+			"ID"		"7" // Tourette 871, added by wesp
+			"Description"	"En réconciliant les soeurs, Thérèse a finalement obtenu le pendentif de l'Ocean House."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"8" // Tourette 743, added by wesp
+			"Description"	"Vous avez enfin réussi à donner le pendentif de l'Ocean House à Thérèse."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"9" // Tourette 871, added by wesp
+			"Description"	"En gardant le pendentif, vous avez déjoué les projets de Thérèse d'exorciser les esprits qui hantent l'hôtel."
+			"Type"		"failure"
+		}
+
+	}
+
+	Quest
+	{
+		"Title"		"Slashterpiece"
+		"DisplayName"	"Déchet d'oeuvre"
+
+		CompletionState
+		{
+			"ID"		"1" // Jeanette 361
+			"Description"	"Jeannette vous a demandé d'aller à la Gallery Noir, à Santa Monica et de lacérer les peintures qui s'y trouvent. Si vous pouviez également voler les fonds caritatifs aussi. . ."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // all paintings slashed flag
+			"Description"	"Vous avez lacéré les peintures du musée pour Jeanette, un acte revendiquant très certainement une grande cause."
+			"Type"		"success"
+			"AwardXP"	"Slash01"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // Gallery Cop
+			"Description"	"Quelqu'un est entré par effraction dans la Gallery Noir, probablement envoyé par Jeanette pour faire le travail que vous avez refusé."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // saw gallery
+			"Description"	"Quelqu'un est entré par effraction dans la Gallery Noir. On dirait que Jeanette essaye de vous faire porter le chapeau."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"5" // Therese 271,471
+			"Description"	"Therese est furieuse parce que l'événement qu'elle avait organisé à la Gallery Noir a été gâché."
+			"Type"		"failure"
+		}
+
+	}
+
+	Quest
+	{
+		"Title"		"Diner"
+		"DisplayName"	"Mauvais sang"
+
+		CompletionState
+		{
+			"ID"		"1" // Therese 381, changed by wesp
+			"Description"	"Therese vous a demandé de vous rendre au Surfside Diner pour rencontrer Jeanette et lui assurer que Therese ne lui fera pas de mal."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // Trigger on diner floor.
+			"Description"	"Vous vouliez dîner, mais. . ."
+			"Type"		"success"
+			"AwardXP"	"Bad01"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Tourette"
+		"DisplayName"	"Rivalité fratricide"
+
+		CompletionState
+		{
+			"ID"		"1" // Jeanette 431
+			"Description"	"Le dîner était un coup monté. Jeanette vous a demandé de la sauver de Thérèse."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2"
+			"Description"	"Therese vous a appris que le dîner était un guet-apens monté par Jeanette. Elle souhaite lui parler pour mettre un terme à la dispute. Allez la voir à l'Asylum."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // Tourette 761
+			"Description"	"Vous avez réussi à persuader la personnalité de Jeanette de 'tuer' la personnalité de Therese. Jeanette a fait savoir à Tung que la dispute était terminée."
+			"Type"		"success"
+			"AwardXP"	"Sibling01"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // Tourette 721
+			"Description"	"Vous avez réussi à persuader la personnalité de Therese de 'tuer' la personnalité de Jeanette. Therese a fait savoir à Tung que la dispute était terminée."
+			"Type"		"success"
+			"AwardXP"	"Sibling02"
+		}
+
+		CompletionState
+		{
+			"ID"		"5" // Tourette 761
+			"Description"	"Vous avez réussi à convaincre les 'soeurs' Voerman de coexister. Elles ont fait savoir à Tung que la dispute était terminée."
+			"Type"		"success"
+			"AwardXP"	"Sibling03"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Bloodhunt"
+		"DisplayName"	"En quête de sang"
+
+		CompletionState
+		{
+			"ID"		"1" // Jack 1311
+			"Description"	"Une chasse au sang a été lancée à vos trousses. Vous devez traverser Santa Monica pour rejoindre un taxi qui vous attend."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // Caine
+			"Description"	"Vous avez survécu à la chasse au sang, du moins pour le moment."
+			"Type"		"success"
+			"AwardXP"	"Bloodhunt01"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Ming"
+		"DisplayName"	"Tuer Ming Xiao"
+
+		CompletionState
+		{
+			"ID"		"1" // Prince 2 901, 931
+			"Description"	"Le prince vous envoie prendre la clé du sarcophage à Ming Xiao."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // Nines 761
+			"Description"	"Nines veut que vous tuiez Ming Xiao et le prince. Dans cet ordre."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // Caine 281
+			"Description"	"Le mystérieux chauffeur de taxi vous convainc que la seule façon de vous libérer de tout ceci est de tuer Ming Xiao et le prince. Ming Xiao d'abord."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // got to Ming's room
+			"Description"	"Vous avez atteint le saint des saints de Ming Xiao. Quelque chose vous dit qu'elle ne sera pas contente de vous voir."
+			"Type"		"incomplete"
+			"AwardXP"	"Ming01"
+		}
+
+		CompletionState
+		{
+			"ID"		"5" // Kill Ming and take key for prince
+			"Description"	"Vous avez éliminé Ming Xiao et récupéré la clé pour le prince."
+			"Type"		"success"
+			"AwardXP"	"Ming02"
+		}
+
+		CompletionState
+		{
+			"ID"		"6" // Kill Ming and take key for Nines or yourself
+			"Description"	"Vous avez éliminé Ming Xiao et récupéré la clé. L'heure est venue de faire tomber le prince."
+			"Type"		"success"
+			"AwardXP"	"Ming02"
+		}
+
+		CompletionState
+		{
+			"ID"		"7" // Strauss 931, added by wesp
+			"Description"	"Strauss veut que vous tuiez Ming-Xiao et le prince. Dans cet ordre."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"8" // Caine 281, added by wesp
+			"Description"	"Vous devez tuer Ming-Xiao et le prince pour le Sabbat. Dans cet ordre."
+			"Type"		"incomplete"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"Strauss"
+		"DisplayName"	"L'énigme du Régent"
+
+		CompletionState
+		{
+			"ID"		"1" // Regent's Invitation, changed by wesp
+			"Description"	"M. Strauss, un Régent Tremere, vous invite chez lui au centre ville de Los Angeles. Vous devez pour cela le trouver. Son invitation était une énigme qui dit :
+\"Sang noir, notre malédiction, une lumière ce couplet
+Un tel pouvoir pour un être si jeune.
+Venez me trouver où brûle le soleil mystique.\""
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // Regent
+			"Description"	"Vous avez trouvé Maximillian Strauss, le Régent Tremere."
+			"Type"		"success"
+			"AwardXP"	"Strauss01"
+		}
+	}
+
+	Quest
+	{
+		"Title"		"BertramCD"
+		"DisplayName"	"Données manquantes"
+
+		CompletionState
+		{
+			"ID"		"1" // Betram line 561
+			"Description"	"Bertram Tung vous a demandé de retourner dans les Clapiers pour retrouver le CD de données qu'il a perdu. Si vous le trouvez, il a promis de vous apprendre quelque chose qui pourrait être pratique."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2" // Warrens
+			"Description"	"Vous avez trouvé le CD de données de Bertram. Retournez à Santa Monica le lui donner."
+			"Type"		"incomplete"
+			"AwardXP"	"BertramCD01"
+		}
+
+		CompletionState
+		{
+			"ID"		"3" // Bertram line 572
+			"Description"	"Vous avez rendu son CD de données à Bertram. En échange, il vous a donné des bons tuyaux sur les ordinateurs."
+			"Type"		"success"
+			"AwardXP"	"BertramCD02"
+		}
+
+		CompletionState
+		{
+			"ID"		"4" // added by wesp
+			"Description"	"Bertram Tung, le Nosferatu à Santa Monica, vous a envoyé un email disant qu'il a une proposition à vous faire."
+			"Type"		"incomplete"
+		}
+	}
+
+	Quest	// added by wesp
+	{
+		"Title"		"Heather"
+		"DisplayName"	"Tour ou traitement"
+
+		CompletionState
+		{
+			"ID"		"1"
+			"Description"	"Vous avez découvert une jeune fille en train de mourir dans la clinique Santa Monica. Peut-être que vous pouvez faire quelque chose."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2"
+			"Description"	"Vous avez sauvé la jeune fille à la clinique Santa Monica en lui donnant votre sang. Vous devriez y prêter attention plus tard, comme elle est désormais votre goule."
+			"Type"		"success"
+			"AwardXP"	"Heather01"
+		}
+
+		CompletionState
+		{
+			"ID"		"3"
+			"Description"	"La jeune fille à la clinique Santa Monica est morte par votre faute."
+			"Type"		"failure"
+		}
+	}
+
+	Quest	// added by wesp
+	{
+		"Title"		"Copper"
+		"DisplayName"	"Doux Rêveur"
+
+		CompletionState
+		{
+			"ID"		"1"
+			"Description"	"Un des sang-clairs croit tout ce que vous dites. Lui vendre ce qu'il veut pourrait vous rapporter un peu d'argent."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2"
+			"Description"	"Vous avez exploité le sang-clair et l'avez envoyé en mission suicide. Êtes-vous satisfait(e) maintenant?"
+			"Type"		"success"
+			"AwardXP"	"Copper01"
+		}
+
+		CompletionState
+		{
+			"ID"		"3"
+			"Description"	"Vous avez refusé de donner au sang-clair ce qu'il voulait."
+			"Type"		"failure"
+		}
+
+		CompletionState
+		{
+			"ID"		"4"
+			"Description"	"Vous avez exploité le sang-clair pour de l'argent facile."
+			"Type"		"success"
+			"AwardXP"	"Copper01"
+		}
+
+	}
+
+	Quest	// added by wesp
+	{
+		"Title"		"Trip Drugs"
+		"DisplayName"	"Voyage acide"
+
+		CompletionState
+		{
+			"ID"		"1"
+			"Description"	"Trip veut des drogues. La clinique aura sûrement un coffre-fort médical plein de ces substances."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2"
+			"Description"	"Vous avez trouvé le coffre de la clinique. Maintenant rapportez une boîte de médocs à Trip."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"3"
+			"Description"	"Vous avez remis la boîte de médicaments à Trip et passé un moment mémorable avec lui."
+			"Type"		"success"
+			"AwardXP"	"Trip01"
+		}
+
+	}
+
+	Quest	// added by wesp
+	{
+		"Title"		"Prince"
+		"DisplayName"	"Quinte flush royale"
+
+		CompletionState
+		{
+			"ID"		"1"
+			"Description"	"Vous devez remettre la clé au prince."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2"
+			"Description"	"Remettez la clé au prince et traiter avec lui."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"3"
+			"Description"	"Traitez avec le prince pour Ming-Xiao."
+			"Type"		"incomplete"
+		}
+
+	}
+}

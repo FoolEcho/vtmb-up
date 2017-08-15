@@ -1,0 +1,85 @@
+
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	
+	"infomodel"	"models/items/Diary/Info/Info_Diary.mdl"
+	"playermodel"	"models/items/Diary/Ground/Diary.mdl"
+	
+	"anim_prefix"	" "
+
+	"printname"	"Journal"
+	"description"	"On dirait le journal intime d'une femme :
+			30/04/03 - J'ai rencontré un type ce soir à l'Asylum. Il est TROP beau, c'est pas possible. Il s'appelle Rolf, il vient d'Allemagne. Les Européens sont super classe, par rapport aux rasoirs de Californie. . . Il a demandé si on pouvait se revoir demain. Je me demande s'il est riche. On dirait. Je vais aller faire des courses demain, pour trouver quelque chose qui ne me donne pas l'air trop grosse. J'ai trop hâte de le revoir !!!
+
+			21/05/03 - Je crois que ça devient sérieux avec Rolf. Il a dit qu'il voulait me faire un cadeau très spécial la semaine prochaine, et si c'est ce que je crois, il était temps. Je croyais que les Européens étaient moins coincés à ce niveau là. . .
+			
+			06/06/03 - Je me suis réveillée à 20h aujourd'hui. En soi, c'est déjà bizarre, mais je ne me rappelle pas m'être couchée hier soir. En fait, je ne me rappelle rien depuis la fin de mon samedi soir avec Rolf. . .
+			
+			10/06/03 - Je me suis encore réveillée tard. Je n'ai rien mangé depuis quatre jours. Je ne sais pas ce que j'ai qui ne va pas. . .
+			
+			11/06/03 - Rolf est venu hier. Il a dit que si je ne mange rien, c'est parce que j'ai besoin de sang. Il a dit que c'était ma seule nourriture, maintenant, et que je n'aurais plus faim si j'en buvais. Il avait une poche de la Banque du sang locale. J'ai voulu refuser, mais c'était plus fort que moi. Qu'est-ce qui m'arrive ?
+			
+			26/07/03 - Rolf a dit qu'il allait bientôt partir. Que des gens allaient essayer de l'expulser du pays. Il n'a pas parlé de m'emmener avec lui.
+			
+			22/08/03 - J'ai dû payer la caution de Rolf pour le faire sortir de prison. Il s'est fait arrêter parce que son visa a expiré. Il avait peur. J'ai peur qu'il parte.
+			
+			07/12/03 - Je n'ai pas entendu ou vu Rolf depuis que je lui ai payé sa caution. Je ne sais pas quoi faire. Je croyais qu'il m'aimait bien. Pourquoi il m'a fait ça ?
+			
+			15/04/04 - J'ai discuté avec un mec que j'ai rencontré au Surfside. On a parlé jusqu'à cinq heures du matin. Quand je lui ai dit que je devais partir, je me sentais comme Cendrillon. Il m'a fait penser à un prince.
+			
+			16/04/04 - J'ai revu ce type du Surfside. Il n'a pas la moindre idée de ce que je suis.
+			
+			24/04/04 - J'ai ramené chez moi E., le type du Surfside. Il a dit qu'il retournait en Australie dans quelques jours, maintenant que le tournoi se termine. Je ne veux pas qu'il parte. Je n'ai jamais rien ressenti de pareil, pas même avec Rolf.
+			
+			25/04/04 - E. m'a embrassée hier, et je n'ai pas pu m'empêcher de le mordre au cou. Mais j'ai trop bu, et. . . je lui ai donné mon sang pour le sauver. Quand je lui ai tout expliqué, il a dit qu'il ne voulait plus jamais me voir. Qu'ai-je fait ?
+			
+			08/05/04 - Je n'ai pas pu me nourrir depuis cette nuit avec E. J'ai peur de ce qui va arriver. Je me rappelle que Rolf a apporté du sang de la Banque du sang. Je pourrais peut-être entrer discrètement, prendre quelques poches et repartir avant qu'on m'attrape."
+
+	"bucket"		"1"
+	"bucket_position"	"2"
+
+	"camera_class"		"noswitch"
+	"is_wieldable"		"0"
+	"weight"		"1"
+	"item_flags"		"1"
+	"item_type"		"powerup"
+	"item_worth"		"-1"
+	"is_visible_in_hud"		"1"
+
+	SoundData
+	{
+		"pickup"
+		{
+			"sound1"	"items/Book/Pickup.wav"
+		}
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	SpriteData
+	{
+		"weapon"
+		{
+			"640"
+			{
+				"file"	"hud/Inventory_Images/General_Items/Diary_SEL"
+				"x"		"0"
+				"y"		"0"
+				"width"	"100"
+				"height"	"64"
+			}
+		}
+		"weapon_s"
+		{
+			"640"
+			{
+				"file"	"hud/Inventory_Images/General_Items/Diary"
+				"x"		"0"
+				"y"		"0"
+				"width"	"100"
+				"height"	"64"
+			}
+		}
+	}
+}

@@ -1,0 +1,155 @@
+{	1	}{	Je regrette, m'sieur, mais il va falloir attendre dehors comme tout le monde. Aucune exception. 	}{	Je regrette, miss, mais il va falloir attendre dehors comme tout le monde. Aucune exception. 	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Mais il y a une fille là-bas, je crois qu'elle va mourir.	}{	Mais il y a une fille là-bas, je crois qu'elle va mourir.	}{	11	}{	G.Heather_Know == 1 and G.Heather_Drank == 0 and G.Malcolm_Bother == 0 and not IsClan(pc,"Malkavian")	}{	G.Malcolm_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Une délicieuse mortelle se trouve à l'article de la mort.	}{	Une délicieuse mortelle se trouve à l'article de la mort.	}{	101	}{	G.Heather_Know == 1 and G.Heather_Drank == 0 and G.Malcolm_Bother == 0 and IsClan(pc,"Malkavian")	}{	G.Malcolm_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Vous êtes Malcolm ? Votre femme sait que vous la trompez ?	}{	Vous êtes Malcolm ? Votre femme sait que vous la trompez ?	}{	61	}{	G.Malcolm_Affair == 3 and G.Malcolm_Wife == 1	}{	}{	}{	}{	}{	}{	}{	}{	C'est vous le docteur qui aime jouer au docteur avec ses infirmières ?	}
+{	5	}{	Très bien.	}{	Très bien.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Oui mais. Je suis le seul médecin présent, pour l'instant. On a deux fois plus de gens que d'habitude qui attendent d'être soignés. Je vais l'examiner dès que possible. Essayez de lui parler, de l'empêcher de dormir.	}{	Oui mais. Je suis le seul médecin présent, pour l'instant. On a deux fois plus de gens que d'habitude qui attendent d'être soignés. Je vais l'examiner dès que possible. Essayez de lui parler, de l'empêcher de dormir.	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Mais. . .	}{	Mais. . .	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	J'ai un type ici avec une balle dans la tête. Mon infirmière a appelé le Docteur Roberts il y a une demi-heure. Il sera là d'un moment à l'autre. Jusque là, restez avec votre amie et empêchez-la de tomber en état de choc. Je dois y aller.	}{	J'ai un type ici avec une balle dans la tête. Mon infirmière a appelé le Docteur Roberts il y a une demi-heure. Il sera là d'un moment à l'autre. Jusque là, restez avec votre amie et empêchez-la de tomber en état de choc. Je dois y aller.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Je vous ai dit que je vous verrai dès que possible. Asseyez-vous.	}{	Je vous ai dit que je vous verrai dès que possible. Asseyez-vous.	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	La pauvre petite chose disparaît dans la nuit. . .	}{	La pauvre petite chose disparaît dans la nuit. . .	}{	101	}{	G.Heather_Know == 1 and G.Heather_Drank == 0 and G.Malcolm_Bother == 0 and IsClan(pc,"Malkavian")	}{	G.Malcolm_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	Mais il y a une fille là-bas, je crois qu'elle va mourir.	}{	Mais il y a une fille là-bas, je crois qu'elle va mourir.	}{	11	}{	G.Heather_Know == 1 and G.Heather_Drank == 0 and G.Malcolm_Bother == 0 and not IsClan(pc,"Malkavian")	}{	G.Malcolm_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	Vous êtes Malcolm ? Votre femme sait que vous la trompez ?	}{	Vous êtes Malcolm ? Votre femme sait que vous la trompez ?	}{	61	}{	G.Malcolm_Affair == 3 and G.Malcolm_Wife == 1	}{	}{	}{	}{	}{	}{	}{	}{	C'est vous le docteur qui aime jouer au docteur avec ses infirmières ?	}
+{	36	}{	. . .	}{	. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Oh ! Votre peau ! Il faut me soigner ces brûlures, et plus vite que ça !	}{	Oh ! Votre peau ! Il faut me soigner ces brûlures, et plus vite que ça !	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Quelles brûlures ?	}{	Quelles brûlures ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	Eh, il y a une fille là-bas. . .	}{	Eh, il y a une fille là-bas. . .	}{	11	}{	G.Heather_Know == 1 and G.Heather_Drank == 0 and G.Malcolm_Bother == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Vous êtes Malcolm ? Votre femme sait que vous la trompez ?	}{	Vous êtes Malcolm ? Votre femme sait que vous la trompez ?	}{	61	}{	G.Malcolm_Affair == 3 and G.Malcolm_Wife == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Vous m'entendez ? Vous passez en état de choc ! Infirmière !	}{	Vous m'entendez ? Vous passez en état de choc ! Infirmière !	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Eh, il y a une fille là-bas. . .	}{	Eh, il y a une fille là-bas. . .	}{	11	}{	G.Heather_Know == 1 and G.Heather_Drank == 0 and G.Malcolm_Bother == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Vous êtes Malcolm ? Votre femme sait que vous la trompez ?	}{	Vous êtes Malcolm ? Votre femme sait que vous la trompez ?	}{	61	}{	G.Malcolm_Affair == 3 and G.Malcolm_Wife == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	Ca ira. Excusez-moi.	}{	Ca ira. Excusez-moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Sortez d'ici. Vous ne voyez pas que je suis en train de travailler ?	}{	Sortez d'ici. Vous ne voyez pas que je suis en train de travailler ?	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Alors ça ne vous dérangera pas que votre femme l'apprenne. . .	}{	Alors ça ne vous dérangera pas que votre femme l'apprenne. . .	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vos mauvais traitements intéresseront beaucoup votre femme.	}
+{	63	}{	Un divorce, ça coûte cher. Je ne demande que quelques dollars.	}{	Un divorce, ça coûte cher. Je ne demande que quelques dollars.	}{	71	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Je reviendrai.	}{	Je reviendrai.	}{	71	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Vous essayez de me faire chanter ? Vous ne connaissez pas ma femme. Elle ne vous croirait pas. Maintenant dégagez. . .	}{	Vous essayez de me faire chanter ? Vous ne connaissez pas ma femme. Elle ne vous croirait pas. Maintenant dégagez. . .	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Alors je vais transmettre l'email de 'Paige' à Trina@SOL.vtm.	}{	Alors je vais transmettre l'email de 'Paige' à Trina@SOL.vtm.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Peut-être 'Trina' et 'Paige' devraient-elles échanger des histoires de médecin.	}
+{	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Attendez. Que voulez-vous ?	}{	Attendez. Que voulez-vous ?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	75 dollars	}{	75 dollars	}{	91	}{	}{	G.Malcolm_Affair = 4	}{	}{	}{	}{	}{	}{	}{	75 dollars	}
+{	83	}{	150 dollars	}{	150 dollars	}{	91	}{	Intimidate 3	}{	G.Malcolm_Affair = 5	}{	}{	}{	}{	}{	}{	}{	150 dollars	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Ca marche. Mais je suis en train de travailler. Il faudra que je vous les donne plus tard. Et ne revenez jamais me parler de ça.	}{	Ca marche. Mais je suis en train de travailler. Il faudra que je vous les donne plus tard. Et ne revenez jamais me parler de ça.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Glissez-les dans la boîte aux lettres 508, au-dessus du prêteur sur gages, docteur.	}{	Glissez-les sous la porte dans l'appartement au-dessus du prêteur sur gages, docteur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Déposez mes sous au-dessus de celui qui prête les gages. Adieu.	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	[indécis]Euh, vous êtes vraiment au bon endroit ? La psychiatrie, c'est au deuxième étage.	}{	[indécis]Euh, vous êtes vraiment au bon endroit ? La psychiatrie, c'est au deuxième étage.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Ma vision est aussi claire que la pluie dans la boue.	}{	Ma vision est aussi claire que la pluie dans la boue.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Je ne sais pas de quoi vous parlez, et franchement, je n'ai pas le temps de comprendre. Je suis le seul docteur sur place, et nous avons deux fois plus de monde que d'habitude. 	}{	Je ne sais pas de quoi vous parlez, et franchement, je n'ai pas le temps de comprendre. Je suis le seul docteur sur place, et nous avons deux fois plus de monde que d'habitude. 	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Mais le petit ange s'enfonce de plus en plus dans les profondeurs obscures. . .	}{	Mais le petit ange s'enfonce de plus en plus dans les profondeurs obscures. . .	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Ecoutez. Je pense que vous me parlez de cette fille là-bas, et je vous remercie. Mais pour l'instant, j'ai un type avec un trou de balle dans la tête, et il a plus besoin de moi qu'elle. Restez avec elle et empêchez-la de s'endormir, et j'arrive au plus vite.	}{	Ecoutez. Je pense que vous me parlez de cette fille là-bas, et je vous remercie. Mais pour l'instant, j'ai un type avec un trou de balle dans la tête, et il a plus besoin de moi qu'elle. Restez avec elle et empêchez-la de s'endormir, et j'arrive au plus vite.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	(Starting Condition)	}{	}{	51	}{	IsClan(pc,"Nosferatu") and npc.times_talked >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	(Starting Condition)	}{	}{	31	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	(Starting Condition)	}{	}{	41	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

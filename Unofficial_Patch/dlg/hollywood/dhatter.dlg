@@ -1,0 +1,477 @@
+{	1	}{	Je regrette, on est complet.	}{	Je regrette, on est complet.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Hatter_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Je jette juste un oeil. 	}{	Je jette juste un oeil. 	}{	11	}{	G.Velvet_Quest != 4 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Vous êtes Hatter ? L'auteur ?	}{	Vous êtes Hatter ? L'auteur ?	}{	21	}{	G.Velvet_Quest == 3 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Vous savez qu'il y a un cadavre dans une de vos chambres ?	}{	Vous savez qu'il y a un cadavre dans une de vos chambres ?	}{	201	}{	G.Muddy_Dead == 1	}{	G.Body_Told = 1	}{	}{	}{	}{	}{	}{	}{	La mort a établi résidence dans votre établissement.	}
+{	5	}{	Je cherche un certain Hatter. Vous ne savez pas où il se terre, Hatter ?	}{	Je cherche un certain Hatter. Vous ne savez pas où il se terre, Hatter ?	}{	281	}{	G.Velvet_Quest == 3 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche un certain Hatter. Vous ne savez pas où il se terre, Hatter ?	}
+{	6	}{	Je remarque simplement des trucs. Comme un type qui vous ressemble et qui me parle. . .	}{	Je remarque simplement des trucs. Comme un type qui vous ressemble et qui me parle. . .	}{	291	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Je remarque simplement des trucs. Comme un type qui vous ressemble et qui me parle. . .	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	Mince ! Bon, je vais essayer un peu plus loin. Bonne nuit.	}{	Mince ! Bon, je vais essayer un peu plus loin. Bonne nuit.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	On dirait que cet endroit me sera un jour familier. Alors une autre fois.	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	N'hésitez pas, mec, c'est une caverne d'Ali Baba si vous cherchez de l'humanité normale à mourir. On trouve de tout, quand on travaille ici - pff, des histoires, des personnages. . . C'est le genre d'endroit où les auteurs viennent étudier le comportement humain, mon vieux. C'est trop précieux. . .	}{	N'hésitez pas, chérie, c'est une caverne d'Ali Baba si vous cherchez de l'humanité normale à mourir. On trouve de tout, quand on travaille ici - pff, des histoires, des personnages. . . C'est le genre d'endroit où les auteurs viennent étudier le comportement humain, ma vieille. C'est trop précieux. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.David_Writer = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Vous êtes écrivain ?	}{	Vous êtes écrivain ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Qu'est-ce que vous écrivez ?	}{	Qu'est-ce que vous écrivez ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Ecrivain, c'est un terme très galvaudé, vous savez. . . Genre, n'importe qui peut se dire écrivain, hein ? Ce que je fais, c'est des scénarii. C'est capturer l'essence de l'excellence dans mes scripts, en fait. Je suis un peu un forgeron de la plume.	}{	Ecrivain, c'est un terme très galvaudé, vous savez. . . Genre, n'importe qui peut se dire écrivain, hein ? Ce que je fais, c'est des scénarii. C'est capturer l'essence de l'excellence dans mes scripts, en fait. Je suis un peu un forgeron de la plume.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.David_Writer = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Et vous écrivez quoi ?	}{	Qu'est-ce que vous écrivez ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que forgez-vous avec votre plume ?	}
+{	23	}{	Il paraît que vous travaillez sur une histoire de vampires. . .	}{	Il paraît que vous travaillez sur une histoire de vampires. . .	}{	51	}{	G.Velvet_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	Il paraît que ce sont des vampires qui jaillissent de votre forge pour l'instant.	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	Comment voulez-vous percer dans le métier à votre âge ?	}{	Comment voulez-vous percer dans le métier à votre âge ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hollywood ne fait jamais la récolte de fruits mûrs. . . Ici, on préfère les pousses tendres et vertes. . .	}
+{	30	}{	Je ne sais pas pour ce que vous écrivez, mais vous, vous êtes un charlot de première.	}{	Je ne sais pas pour ce que vous écrivez, mais vous, vous êtes un charlot de première.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si votre prose est aussi rasoir que vous, pas un poil ne doit dépasser.	}
+{	31	}{	Un écrivain écrit-il ou se contente-t-il d'encrer les débris qui flottent dans son subconscient pour en faire un film génial en 120 pages ? Mais vous savez, mon inconscient est plein de films d'horreur, alors c'est ce que j'écris.	}{	Un écrivain écrit-il ou se contente-t-il d'encrer les débris qui flottent dans son subconscient pour en faire un film génial en 120 pages ? Mais vous savez, mon inconscient est plein de films d'horreur, alors c'est ce que j'écris.	}{	#	}{	}{	G.David_Writer = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	D'horreur ? Sur quel genre d'horreur vous travaillez ?	}{	D'horreur ? Sur quel genre d'horreur vous travaillez ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'Horreur ? Savez-vous vraiment ce que c'est ?	}
+{	33	}{	J'ai horreur des films d'horreur. Il n'y a jamais assez de marionnettes.	}{	J'ai horreur des films d'horreur. Il n'y a jamais assez de marionnettes.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi n'y a-t-il pas plus d'histoires d'amour dans les films d'horreur ? Ca se marie tellement bien. . .	}
+{	34	}{	Vous avez vu le snuff movie avec les monstres ? Ca, c'est de l'horreur !	}{	Vous avez vu le snuff movie avec les monstres ? Ca, c'est de l'horreur !	}{	181	}{	G.Isaac_Movie >= 1	}{	}{	}{	}{	}{	}{	}{	}{	Il y a des créatures qui rampent dans une cassette vidéo infâme. . .	}
+{	35	}{	Il paraît que vous travaillez sur une histoire de vampires. . .	}{	Il paraît que vous travaillez sur une histoire de vampires. . .	}{	51	}{	G.Velvet_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	Il paraît que ce sont des vampires qui jaillissent de votre forge pour l'instant.	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	Intéressant. Bon, je m'en vais.	}{	Intéressant. Bon, je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous ai suffisamment inspiré. Je pars.	}
+{	41	}{	C'est une passion, si vous voulez. C'est ma vocation. La raison de mon existence. Je suis tout le temps en train de me demander comment aborder mon prochain projet, vous voyez, et c'est comme une tempête d'idées de génie qui me traverse, en permanence.	}{	C'est une passion, si vous voulez. C'est ma vocation. La raison de mon existence. Je suis tout le temps en train de me demander comment aborder mon prochain projet, vous voyez, et c'est comme une tempête d'idées de génie qui me traverse, en permanence.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Qu'est-ce que vous écrivez ?	}{	Qu'est-ce que vous écrivez ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que forgez-vous avec votre plume ?	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	Intéressant. Bon, je m'en vais.	}{	Intéressant. Bon, je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Moi ? Quelque part, je cherche à redéfinir le genre du film de vampires. On fait beaucoup de films de vampires, des personnages populaires - mais moi, je vais le faire en vrai. Non seulement ça va faire peur, mais en plus ce sera crédible.	}{	Moi ? Quelque part, je cherche à redéfinir le genre du film de vampires. On fait beaucoup de films de vampires, des personnages populaires - mais moi, je vais le faire en vrai. Non seulement ça va faire peur, mais en plus ce sera crédible.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.David_Manuscript = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Vous avez un exemplaire de votre script par ici ?	}{	Vous avez un exemplaire de votre script par ici ?	}{	71	}{	G.Velvet_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	J'aimerais louer le synopsis de votre film. Vous en avez un pour moi ?	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	Des vampires ? Qu'est-ce que vous y connaissez aux vampires ?	}{	Des vampires ? Qu'est-ce que vous y connaissez aux vampires ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Des vampires. . . Faites-moi part de vos songeries. . .	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Eh bien, dans mon histoire, il n'y a pas d'ail et de chauve-souris, tout se passe autour de la société des vampires, vous voyez. Comment ils vivent. Comment ils font pour se fondre dans la société sans se faire découvrir.	}{	Eh bien, dans mon histoire, il n'y a pas d'ail et de chauve-souris, tout se passe autour de la société des vampires, vous voyez. Comment ils vivent. Comment ils font pour se fondre dans la société sans se faire découvrir.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Ce serait super. Vous auriez un exemplaire du script ?	}{	Ce serait super. Vous auriez un exemplaire du script ?	}{	71	}{	G.Velvet_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	J'aimerais louer le synopsis de votre film. Vous en avez un pour moi ?	}
+{	63	}{	Je vois. Bien, je dois partir.	}{	Je vois. Bien, je dois partir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne vois pas pourquoi je resterais ici. Je m'en vais.	}
+{	64	}{	On dirait que vous en savez trop. Je regrette, mais vous devez mourir.	}{	On dirait que vous en savez trop. Je regrette, mais vous devez mourir.	}{	0	}{	G.Patch_Plus == 0	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Vous. Nous. Avez. Découverts. Je regrette, mais je dois noyer la piste dans votre sang.	}
+{	65	}{	On dirait que vous en savez trop. Je regrette, mais vous devez mourir.	}{	On dirait que vous en savez trop. Je regrette, mais vous devez mourir.	}{	231	}{	G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous. Nous. Avez. Découverts. Je regrette, mais je dois noyer la piste dans votre sang.	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Un bon auteur en a toujours un, dans cette ville. Eh, vous êtes de la partie ? J'ai des centaines d'idées de films, en fait, je devrais vous donner un de mes scénars finis. Celui-ci est encore en chantier.	}{	Un bon auteur en a toujours un, dans cette ville. Eh, vous êtes de la partie ? J'ai des centaines d'idées de films, en fait, je devrais vous donner un de mes scénars finis. Celui-ci est encore en chantier.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	J'ai besoin de tous les exemplaires de votre script sur les vampires.	}{	J'ai besoin de tous les exemplaires de votre script sur les vampires.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais tous les prendre, pour les lire à voix haute dans la nuit.	}
+{	73	}{	Donnez-moi votre script de vampires.	}{	Donnez-moi votre script de vampires.	}{	101	}{	Dominate 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	Je suis un puissant thesaurus ! Donnez-moi votre script ou je vous arrache la tête ! RRRR !	}{	Je suis un puissant thesaurus ! Donnez-moi votre script ou je vous arrache la tête ! RRRR !	}{	101	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	Je suis un puissant thesaurus ! Donnez-moi votre script ou je vous arrache la tête ! RRRR !	}
+{	75	}{	Vous voulez néanmoins me le donner.	}{	Vous voulez néanmoins me le donner.	}{	81	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	Je connais quelques personnes qui voudraient faire un film de vampires.	}{	Je connais quelques personnes qui voudraient faire un film de vampires.	}{	161	}{	Persuasion 5	}{	}{	}{	}{	}{	}{	}{	}{	Je peux mettre le script entre les mains de ceux qui font les rêves. J'en connais beaucoup. . .	}
+{	77	}{	Je trouve les auteurs tellement cool. . . Je peux vous l'emprunter ?	}{	Je trouve les auteurs tellement cool. . . Je peux vous l'emprunter ?	}{	111	}{	F_Seduction 4	}{	}{	}{	}{	}{	}{	}{	}{	Je fonds pour les auteurs. Si vous me le prêtez, je pourrai être votre muse. . .	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Eh, vous savez, je n'ai qu'un seul exemplaire, pour l'instant. J'aime que mes idées restent pures - je ne travaille même pas sur ordinateur, ça bloque le flux, vous voyez. . .	}{	Eh, vous savez, je n'ai qu'un seul exemplaire, pour l'instant. J'aime que mes idées restent pures - je ne travaille même pas sur ordinateur, ça bloque le flux, vous voyez. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Je trouve les auteurs tellement cool. . . Je peux vous l'emprunter ?	}{	Je trouve les auteurs tellement cool. . . Je peux vous l'emprunter ?	}{	111	}{	F_Seduction 4	}{	}{	}{	}{	}{	}{	}{	}{	Je fonds pour les auteurs. Si vous me le prêtez, je pourrai être votre muse. . .	}
+{	83	}{	Je peux le tenir une seconde ?	}{	Je peux le tenir une seconde ?	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Laissez-moi effleurer cette oeuvre de génie. . .	}
+{	84	}{	Je connais quelques personnes qui voudraient faire un film de vampires. Vous me le prêtez ?	}{	Je connais quelques personnes qui voudraient faire un film de vampires. Vous me le prêtez ?	}{	151	}{	Persuasion 5	}{	}{	}{	}{	}{	}{	}{	}{	Je peux mettre votre script entre les mains de ceux qui font les rêves. Laissez-moi le tenir. . .	}
+{	85	}{	Donnez-le moi. Je vous coupe un doigt par minute si vous m'empêchez de le prendre.	}{	Donnez-le moi. Je vous coupe un doigt par minute si vous m'empêchez de le prendre.	}{	91	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Je prends soit votre script, soit les mains qui l'ont créé. A vous de voir.	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Hein ? Quoi ? Vous plaisantez ? Vous allez me voler mon script ? Allez. . . Qu'est-ce que vous allez en faire, remplacer mon nom par le vôtre ? C'est quoi ce bordel ?	}{	Hein ? Quoi ? Vous plaisantez ? Vous allez me voler mon script ? Allez. . . Qu'est-ce que vous allez en faire, remplacer mon nom par le vôtre ? C'est quoi ce bordel ?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Je ne blague pas. Donnez-moi tous les exemplaires.	}{	Je ne blague pas. Donnez-moi tous les exemplaires.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tous les exemplaires, ou je vous coupe toutes les mains.	}
+{	94	}{	Bon sang, il va encore falloir que je tue quelqu'un qui pose trop de questions ce soir. . .	}{	Bon sang, il va encore falloir que je tue quelqu'un qui pose trop de questions ce soir. . .	}{	101	}{	Intimidate 3	}{	G.David_Rob = 1	}{	}{	}{	}{	}{	}{	}{	Vous croyez que je plaisante ? Je vais m'occuper de vous, et là ça va vraiment déconner. . .	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	OK, c'est bon, tenez !	}{	OK, c'est bon, tenez !	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Hatter_Bugfix = 1; pc.GiveItem("item_g_hatters_screenplay"); G.David_Threat = 1; pc.SetQuest("Writer",8)	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Bon, et vous avez fait ça tout seul, ou en équipe ?	}{	Bon, et vous avez fait ça tout seul, ou en équipe ?	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qui vous a mis cette histoire dans la tête ?	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	Merci. Et maintenant, je dois décider si vous en savez trop. Hmmm. . .	}{	Merci. Et maintenant, je dois décider si vous en savez trop. Hmmm. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre cadeau est magnifique. Mais votre connaissance deviendrait-elle un noeud coulant ? Hmmm. . .	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Bien sûr. J'espère que vous trouverez ça. . . stimulant.	}{	Bien sûr. J'espère que vous trouverez ça. . . stimulant.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	G.Hatter_Bugfix = 1; pc.SetQuest("Writer",8); pc.GiveItem("item_g_hatters_screenplay")	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Merci ! Dites. . . vous avez travaillé avec quelqu'un pour ça ?	}{	Merci ! Dites. . . vous avez travaillé avec quelqu'un pour ça ?	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	D'autres ont-ils prêté leur voix à cette histoire ?	}
+{	113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Je ne peux pas vraiment en parler. Il n'aime pas qu'on le dérange.	}{	Je ne peux pas vraiment en parler. Il n'aime pas qu'on le dérange.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Allez, à moi, vous pouvez en parler.	}{	Allez, à moi, vous pouvez en parler.	}{	141	}{	F_Seduction 6 & G.David_Threat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je ne le répéterai à personne, pas même à ceux qui partagent mes pensées.	}
+{	123	}{	Vous ne pensez pas qu'il voudrait devenir célèbre ? Comme tout le monde. . .	}{	Vous ne pensez pas qu'il voudrait devenir célèbre ? Comme tout le monde. . .	}{	141	}{	Persuasion 6 & G.David_Threat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tout le monde dans la ville chercher la gloire. Pas lui ?	}
+{	124	}{	Voilà ce que je vous propose. Je vous laisse les yeux si vous me le dites.	}{	Voilà ce que je vous propose. Je vous laisse les yeux si vous me le dites.	}{	131	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Vous tenez à vos yeux ? Je vous les offre si vous me dites son nom.	}
+{	125	}{	Vous allez me dire de qui il s'agit, et tout de suite !	}{	Vous allez me dire de qui il s'agit, et tout de suite !	}{	131	}{	Dominate 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	Votre esprit finira par me donner son nom.	}{	Votre esprit finira par me donner son nom.	}{	141	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	Votre esprit finira par me donner son nom.	}
+{	127	}{	Il aimera rencontrer un être tel que moi.	}{	Il aimera rencontrer un être tel que moi.	}{	131	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	Combien cela me coûtera-t-il de vous faire avouer son nom ?	}{	Combien cela me coûtera-t-il de vous faire avouer son nom ?	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quel est le prix de son secret ?	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	Bon, très bien. Au revoir.	}{	Bon, très bien. Au revoir.	}{	0	}{	}{	G.Money_Tapped = 1	}{	}{	}{	}{	}{	}{	}{	A l'avenir, attendez-vous à me revoir. Je pars.	}
+{	131	}{	Son nom. . . Enfin, on l'appelle simplement Julius. . . C'est tout ce que je sais. Je dois le retrouver ce soir. C'est un drôle de traîne savate, du côté de la jetée de Santa Monica. Mais pourquoi vous me faites tout ça ?	}{	Son nom. . . Enfin, on l'appelle simplement Julius. . . C'est tout ce que je sais. Je dois le retrouver ce soir. C'est un drôle de traîne savate, du côté de la jetée de Santa Monica. Mais pourquoi vous me faites tout ça ?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.David_Julius = 1; pc.SetQuest("Writer",2); G.Money_Tapped = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Merci pour votre aide, David. Et rappelez-vous, pas un mot de tout ceci. Chut !	}{	Merci pour votre aide, David. Et rappelez-vous, pas un mot de tout ceci. Chut !	}{	0	}{	not IsDead("Julius")	}{	}{	}{	}{	}{	}{	}{	}{	Vous faire quoi ? On ne s'est jamais parlé, David. Jamais. On ne se connaît même pas. Compris ?	}
+{	133	}{	Après ce soir, il ne dira plus rien à qui que ce soit. Au revoir.	}{	Après ce soir, il ne dira plus rien à qui que ce soit. Au revoir.	}{	0	}{	not IsDead("Julius")	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse sans cicatrice. Je conserve ma colère pour Julius. Portez vous bien, Hatter.	}
+{	134	}{	Vous avez été très coopératif - dommage que je doive repeindre la pièce avec votre visage.	}{	Vous avez été très coopératif - dommage que je doive repeindre la pièce avec votre visage.	}{	0	}{	not IsDead("Julius")	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Merci, Hatter. Et maintenant, je vais vous mettre sous terre, Hatter !	}
+{	135	}{	Je pense que je me suis déjà occupé de lui.	}{	Je pense que je me suis déjà occupée de lui.	}{	0	}{	IsDead("Julius")	}{	pc.SetQuest("Writer",5)	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	Ahhh. mais, il est mort. Et vous allez le rejoindre.	}{	Ahhh. mais, il est mort. Et vous allez le rejoindre.	}{	0	}{	IsDead("Julius")	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Merci, Hatter. Mais il est sous terre. Et vous y allez aussi !	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Bon, bon. C'est un type, il s'appelle Julius. Il vit sous la jetée. En fait, je devais le retrouver ce soir. On échange des idées pour des films de vampires. Il est zarbi, mais très créatif. J'adore la façon dont son esprit fonctionne.	}{	Bon, bon. C'est un type, il s'appelle Julius. Il vit sous la jetée. En fait, je devais le retrouver ce soir. On échange des idées pour des films de vampires. Il est zarbi, mais très créatif. J'adore la façon dont son esprit fonctionne.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.David_Julius = 1; pc.SetQuest("Writer",2); G.Money_Tapped = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Je pense que je me suis déjà occupé de lui.	}{	Je pense que je me suis déjà occupée de lui.	}{	0	}{	IsDead("Julius")	}{	pc.SetQuest("Writer",5)	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	Merci. Et maintenant, je m'en vais.	}{	Merci. Et maintenant, je m'en vais.	}{	0	}{	not IsDead("Julius")	}{	}{	}{	}{	}{	}{	}{	}{	Hmm. . . Je suis en retard, je suis en retard pour un rendez-vous important.	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Bien sûr. Au fait, pour qui vous travaillez ? Je m'inquiète, au cas où le studio ne serait pas d'accord sur certaines décisions créatives, ou autres.	}{	Bien sûr. Au fait, pour qui vous travaillez ? Je m'inquiète, au cas où le studio ne serait pas d'accord sur certaines décisions créatives, ou autres.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Hatter_Bugfix = 1; G.Hatter_Pissed = 0; pc.SetQuest("Writer",8); pc.GiveItem("item_g_hatters_screenplay")	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Ne vous inquiétez pas pour ça. Au fait, vous avez écrit ça en collaboration ?	}{	Ne vous inquiétez pas pour ça. Au fait, vous avez écrit ça en collaboration ?	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	D'autres ont-ils prêté leur voix à cette histoire ?	}
+{	153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Vraiment ? Ce serait super. Je vous donne mon script si vous me promettez d'en prendre soin.	}{	Vraiment ? Ce serait super. Je vous donne mon script si vous me promettez d'en prendre soin.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Hatter_Bugfix = 1; pc.SetQuest("Writer",8); pc.GiveItem("item_g_hatters_screenplay")	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Ne vous inquiétez pas pour ça. Au fait, vous avez écrit ça en collaboration ?	}{	Ne vous inquiétez pas pour ça. Au fait, vous avez écrit ça en collaboration ?	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	D'autres ont-ils prêté leur voix à cette histoire ?	}
+{	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Ouais, voilà, il n'y a pas eu de bon film d'horreur depuis une éternité, et. . . Je vais changer tout ça. Quand je vais sortir le truc sur lequel je bosse, ça va être un peu une révolution dans le genre de l'horreur, quelque part. . .	}{	Ouais, voilà, il n'y a pas eu de bon film d'horreur depuis une éternité, et. . . Je vais changer tout ça. Quand je vais sortir le truc sur lequel je bosse, ça va être un peu une révolution dans le genre de l'horreur, quelque part. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Vous avez vu le snuff movie avec les monstres ? Ca, c'est de l'horreur !	}{	Vous avez vu le snuff movie avec les monstres ? Ca, c'est de l'horreur !	}{	181	}{	G.Isaac_Movie >= 1	}{	}{	}{	}{	}{	}{	}{	}{	Il y a des créatures qui rampent dans une cassette vidéo infâme. . .	}
+{	173	}{	Qu'est-ce que vous écrivez en ce moment ?	}{	Qu'est-ce que vous écrivez en ce moment ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que forgez-vous avec votre plume ?	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	De la merde. Ce n'est pas de l'horreur. L'horreur, ça fait peur, ça file la chair de poule, vous voyez. Genre, ça donne peur du noir. Cette cassette, c'est un truc de malades, de dérangés de la tête, genre. . .	}{	De la merde. Ce n'est pas de l'horreur. L'horreur, ça fait peur, ça file la chair de poule, vous voyez. Genre, ça donne peur du noir. Cette cassette, c'est un truc de malades, de dérangés de la tête, genre. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Ouais, des malades. Vous savez où je peux trouver un exemplaire ?	}{	Ouais, des malades. Vous savez où je peux trouver un exemplaire ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Et où un esprit dépravé pourrait-il la trouver ?	}
+{	183	}{	Qu'est-ce que vous écrivez en ce moment ?	}{	Qu'est-ce que vous écrivez en ce moment ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que forgez-vous avec votre plume ?	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	J'en ai vu un bout chez un copain. Je pense qu'il l'a eue dans un sex-shop d'Hollywood. Je ne suis pas sûr. C'est un pote, mais il a des goûts de taré, et je crois que c'est le proprio qui lui a parlé de la cassette.	}{	J'en ai vu un bout chez un copain. Je pense qu'il l'a eue dans un sex-shop d'Hollywood. Je ne suis pas sûr. C'est un pote, mais il a des goûts de taré, et je crois que c'est le proprio qui lui a parlé de la cassette.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Qu'est-ce que vous écrivez en ce moment ?	}{	Qu'est-ce que vous écrivez en ce moment ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que forgez-vous avec votre plume ?	}
+{	193	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	Merci, je vais me renseigner.	}{	Merci, je vais me renseigner.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Déjà ? Mec, c'est un peu tôt pour ce soir ! Bon, je vais appeler les flics, mais va savoir quand ils vont arriver. . .	}{	Déjà ? Mec, c'est un peu tôt pour ce soir ! Bon, je vais appeler les flics, mais va savoir quand ils vont arriver. . .	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Ca vous ennuie si je reste un peu ?	}{	Ca vous ennuie si je reste un peu ?	}{	11	}{	G.David_Writer == 0 and G.Velvet_Quest != 4 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	203	}{	Vous êtes Hatter ? L'auteur ?	}{	Vous êtes Hatter ? L'auteur ?	}{	21	}{	G.David_Writer == 0 and G.Velvet_Quest == 3 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	Je cherche un certain Hatter. Vous ne savez pas où il se terre, Hatter ?	}{	Je cherche un certain Hatter. Vous ne savez pas où il se terre, Hatter ?	}{	281	}{	G.David_Writer == 0 and G.Velvet_Quest == 3 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche un certain Hatter. Vous ne savez pas où il se terre, Hatter ?	}
+{	205	}{	Je remarque simplement des trucs. Comme un type qui vous ressemble et qui me parle. . .	}{	Je remarque simplement des trucs. Comme un type qui vous ressemble et qui me parle. . .	}{	291	}{	G.David_Writer == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Je remarque simplement des trucs. Comme un type qui vous ressemble et qui me parle. . .	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	Bon. Allez, je m'en vais.	}{	Bon. Allez, je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La police pose beaucoup de questions. Trop pour que je reste dans le coin. . .	}
+{	211	}{	C'est la nuit qui vous fait peur ?	}{	C'est la nuit qui vous fait peur ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Vous êtes Hatter ? L'auteur ?	}{	Vous êtes Hatter ? L'auteur ?	}{	21	}{	G.Hatter_Bugfix == 0 and G.Velvet_Quest == 3 and G.David_Writer == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	213	}{	Au fait, ce manuscrit dont vous me parliez ? Vous avez un autre exemplaire ?	}{	Au fait, ce manuscrit dont vous me parliez ? Vous avez un autre exemplaire ?	}{	71	}{	G.Hatter_Bugfix == 0 and G.Velvet_Quest == 3 and G.David_Manuscript == 1 and not pc.HasItem("item_g_hatters_screenplay")	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles écrites, vous les avez sur vous ?	}
+{	214	}{	Je cherche un certain Hatter. Vous ne savez pas où il se terre, Hatter ?	}{	Je cherche un certain Hatter. Vous ne savez pas où il se terre, Hatter ?	}{	281	}{	G.Hatter_Bugfix == 0 and G.Velvet_Quest == 3 and IsClan(pc,"Malkavian") and G.David_Writer == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche un certain Hatter. Vous ne savez pas où il se terre, Hatter ?	}
+{	215	}{	Je voulais vous parler travail. Qu'est-ce que vous écrivez, en ce moment ?	}{	Je voulais vous parler travail. Qu'est-ce que vous écrivez, en ce moment ?	}{	31	}{	G.Hatter_Bugfix == 0 and G.David_Writer == 1 and G.David_Manuscript == 0	}{	}{	}{	}{	}{	}{	}{	}{	Que forgez-vous avec votre plume ?	}
+{	216	}{	Question boulot, vous écrivez quoi, en ce moment ?	}{	Question boulot, vous écrivez quoi, en ce moment ?	}{	51	}{	G.Hatter_Bugfix == 0 and G.David_Writer == 2 and G.David_Manuscript == 0	}{	}{	}{	}{	}{	}{	}{	}{	Que forgez-vous avec votre plume ?	}
+{	217	}{	Vous savez qu'il y a un cadavre dans une de vos chambres ?	}{	Vous savez qu'il y a un cadavre dans une de vos chambres ?	}{	201	}{	G.Muddy_Dead == 1 and G.Body_Told == 0	}{	G.Body_Told = 1	}{	}{	}{	}{	}{	}{	}{	La mort a établi résidence dans votre établissement.	}
+{	218	}{	Hein ? Non, je jette juste un coup d'oeil. . .	}{	Hein ? Non, je jette juste un coup d'oeil. . .	}{	11	}{	G.Hatter_Bugfix == 0 and G.Velvet_Quest != 4 and G.David_Writer == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	Ecoutez. . . Il me faut le nom de votre collaborateur.	}{	Ecoutez. . . Il me faut le nom de votre collaborateur.	}{	121	}{	G.Money_Tapped == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je vous échange des morceaux de papier contre le nom de votre inspirateur.	}
+{	220	}{	L'inverse. A plus.	}{	L'inverse. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Comme à beaucoup de gens. . . Surtout en ce moment. Je dois faire attention ailleurs.	}
+{	221	}{	Qu'est-ce que vous voulez, encore ? Vous avez déjà tout.	}{	Qu'est-ce que vous voulez, encore ? Vous avez déjà tout.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Rien. Soyez sage, et discret. Au revoir.	}{	Rien. Soyez sage, et discret. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez gardé la vie. Elle dépend de votre silence. Alors taisez-vous.	}
+{	223	}{	Vous avez un dernier exemplaire, celui dans votre crâne, et j'en ai besoin. Ne bougez pas.	}{	Vous avez un dernier exemplaire, celui dans votre crâne, et j'en ai besoin. Ne bougez pas.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Je viens pour les histoires sous votre crâne. Ne bougez pas pendant que je les récupère.	}
+{	224	}{	Ecoutez. . . Il me faut le nom de votre collaborateur.	}{	Ecoutez. . . Il me faut le nom de votre collaborateur.	}{	121	}{	G.David_Julius == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je vous échange des morceaux de papier contre le nom de votre inspirateur.	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Vous êtes malade ! Foutez le camp !	}{	Vous êtes malade ! Foutez le camp !	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.David_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Oh non, maintenant il va falloir que je vous tue !	}{	Oh non, maintenant il va falloir que je vous tue !	}{	0	}{	G.Patch_Plus == 0	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	La fête est finie, Hatter, je vais vous enterrer sous terre. . .	}
+{	233	}{	Oh non, maintenant il va falloir que je vous tue !	}{	Oh non, maintenant il va falloir que je vous tue !	}{	0	}{	G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	La fête est finie, Hatter, je vais vous enterrer sous terre. . .	}
+{	234	}{	Bon, je m'en vais.	}{	Bon, je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'en ai assez. Je me hâte vers la sortie, Hatter.	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Partez avant que j'appelle les flics !	}{	Partez avant que j'appelle les flics !	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Nous nous sommes mal compris. Je travaille pour un studio. Je peux acheter votre scénario pour 1000 dollars. 	}{	Nous nous sommes mal compris. Je travaille pour un studio. Je peux acheter votre scénario pour 1000 dollars. 	}{	151	}{	G.Velvet_Quest == 3 and pc.CurrentMoney() >= 1000	}{	pc.MoneyRemove(1000)	}{	}{	}{	}{	}{	}{	}{	Je suis l'occasion. J'ai un poing serré de 1000 billets contre votre parole.	}
+{	243	}{	Oh non, maintenant il va falloir que je vous tue !	}{	Oh non, maintenant il va falloir que je vous tue !	}{	0	}{	G.Patch_Plus == 0	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	La fête est finie, Hatter, je viens vous gâcher la vie. . .	}
+{	244	}{	Oh non, maintenant il va falloir que je vous tue !	}{	Oh non, maintenant il va falloir que je vous tue !	}{	0	}{	G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	La fête est finie, Hatter, je viens vous gâcher la vie. . .	}
+{	245	}{	Je suis intéressé par l'achat de votre scénario. Je reviendrai avec un peu d'argent.	}{	Je suis intéressé par l'achat de votre scénario. Je reviendrai quand j'aurai un peu d'argent.	}{	0	}{	G.Velvet_Quest == 3 and pc.CurrentMoney() < 1000	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai avec les pognes pleines de sous pour votre parole.	}
+{	246	}{	Bon, je m'en vais.	}{	Bon, je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'en ai assez. Je me hâte vers la sortie, Hatter.	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Ouais, enfin, je sais pas. . .	}{	Ouais, enfin, je sais pas. . .	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Voilà ce que je vous propose. Je vous laisse les yeux si vous me le dites.	}{	Voilà ce que je vous propose. Je vous laisse les yeux si vous me le dites.	}{	131	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Vous tenez à vos yeux ? Je vous les offre si vous me dites son nom.	}
+{	253	}{	Vous allez me dire de qui il s'agit, et tout de suite !	}{	Vous allez me dire de qui il s'agit, et tout de suite !	}{	131	}{	Dominate 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	Votre esprit finira par me donner son nom.	}{	Votre esprit finira par me donner son nom.	}{	141	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	Votre esprit finira par me donner son nom.	}
+{	255	}{	50 dollars, ça vous va ?	}{	50 dollars, ça vous va ?	}{	261	}{	pc.CurrentMoney() >= 50	}{	}{	}{	}{	}{	}{	}{	}{	Tous mes doigts, fois cinq dollars. . .	}
+{	256	}{	A mon avis, 500 dollars, ça devrait aller. . .	}{	A mon avis, 500 dollars, ça devrait aller. . .	}{	271	}{	Haggle 3 & pc.CurrentMoney() >= 500	}{	pc.MoneyRemove( 500 )	}{	}{	}{	}{	}{	}{	}{	500, c'est une somme, pour vous, non ?	}
+{	257	}{	Vous n'allez pas refuser mille dollars.	}{	Vous n'allez pas refuser mille dollars.	}{	271	}{	Haggle -3 & pc.CurrentMoney() >= 1000	}{	pc.MoneyRemove( 1000 )	}{	}{	}{	}{	}{	}{	}{	1000 dollars, vous pourriez en faire des choses avec une telle somme.	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	Je suis un peu à sec pour l'instant. Je reviendrai.	}{	Je suis un peu à sec pour l'instant. Je reviendrai.	}{	0	}{	}{	G.Money_Tapped = 1	}{	}{	}{	}{	}{	}{	}{	Je reviendrai quand mes poches seront moins désertes.	}
+{	261	}{	Vous savez combien ça coûte d'envoyer un manuscrit à un agent ?	}{	Vous savez combien ça coûte d'envoyer un manuscrit à un agent ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	A mon avis, 500 dollars, ça devrait aller. . .	}{	A mon avis, 500 dollars, ça devrait aller. . .	}{	271	}{	Haggle 3 & pc.CurrentMoney() >= 500	}{	pc.MoneyRemove( 500 )	}{	}{	}{	}{	}{	}{	}{	500 dollars, ça fait une somme, pour vous, non ?	}
+{	263	}{	Vous n'allez pas refuser mille dollars.	}{	Vous n'allez pas refuser mille dollars.	}{	271	}{	Haggle -3 & pc.CurrentMoney() >= 1000	}{	pc.MoneyRemove( 1000 )	}{	}{	}{	}{	}{	}{	}{	1000 dollars, vous pourriez en faire des choses avec une telle somme.	}
+{	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	Je suis un peu à sec pour l'instant. Je reviendrai.	}{	Je suis un peu à sec pour l'instant. Je reviendrai.	}{	0	}{	}{	G.Money_Tapped = 1	}{	}{	}{	}{	}{	}{	}{	Je reviendrai quand mes poches seront moins désertes.	}
+{	271	}{	Ca me va. Il s'appelle Julius, je dois le retrouver ce soir sous la jetée de Santa Monica. Ne lui parlez pas de notre discussion. . .	}{	Ca me va. Il s'appelle Julius, je dois le retrouver ce soir sous la jetée de Santa Monica. Ne lui parlez pas de notre discussion. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.David_Julius = 1; pc.SetQuest("Writer",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Ce fut un plaisir de vous rencontrer.	}{	Ce fut un plaisir de vous rencontrer.	}{	0	}{	}{	G.Money_Tapped = 0	}{	}{	}{	}{	}{	}{	}{	Son nom représente mon argent et mon départ. Je ne suis plus là.	}
+{	273	}{	Je lui dirai que c'est vous qui l'avez vendu. Au revoir.	}{	Je lui dirai que c'est vous qui l'avez vendu. Au revoir.	}{	0	}{	}{	G.Money_Tapped = 0	}{	}{	}{	}{	}{	}{	}{	S'il demande qui a vendu son nom, je lui dirai que Hatter a fait affaire.	}
+{	274	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	Je suis David Hatter, le manager. Vous avez appelé, non ? Désolé mais j'ai dû donner votre chambre à quelqu'un d'autre.	}{	Je suis David Hatter, le manager. Vous avez appelé, non ? Désolé mais j'ai dû donner votre chambre à quelqu'un d'autre.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Manager ? Dommage, je cherchais un écrivain qui porte le même nom que vous.	}{	Manager ? Dommage, je cherchais un écrivain qui porte le même nom que vous.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	284	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	Aucune chambre ne pourrait contenir ma conscience. Au revoir.	}{	Aucune chambre ici ne pourrait m'accueillir, de toute façon. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Ouais, c'est ça.	}{	Ouais, c'est ça.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Je cherche un certain Hatter. Vous ne savez pas où il se terre, Hatter ?	}{	Je cherche un certain Hatter. Vous ne savez pas où il se terre, Hatter ?	}{	281	}{	G.Velvet_Quest == 3 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	293	}{	Oh, il s'est arrêté. Je vais rester ici pour voir s'il dit autre chose.	}{	Oh, il s'est arrêté. Je vais rester ici pour voir s'il dit autre chose.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	294	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Oh, attendez  - attendez un peu, OK ?	}{	Oh, attendez  - attendez un peu, OK ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	303	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	304	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	[Sonné, paraît choqué]. . .	}{	[Sonné, paraît choqué]. . .	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	C'est vous, Hatter ?	}{	C'est vous, Hatter ?	}{	331	}{	G.Velvet_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	313	}{	Quoi ?	}{	Quoi ?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	Je vois que vous venez de recevoir de dures nouvelles. Je repasserai.	}{	Je vois que vous venez de recevoir de dures nouvelles. Je repasserai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	[Effrayé, ne peut pas parler]Euh. . . je. . . euh. . .	}{	[Effrayé, ne peut pas parler]Euh. . . je. . . euh. . .	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	C'est vous, Hatter ?	}{	C'est vous, Hatter ?	}{	331	}{	G.Velvet_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	323	}{	Un problème ?	}{	Un problème ?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	324	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	325	}{	C'est bien qu'on emploie des handicapés mentaux ici. Je vais m'en aller.	}{	C'est bien qu'on emploie des handicapés mentaux ici. Je vais m'en aller.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	326	}{	Je vais partir. Oubliez ma venue.	}{	Je vais partir. Oubliez ma venue.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	[Opine]. . . euh. . . euh.	}{	[Opine]. . . euh. . . euh.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	333	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	334	}{	Votre scénario. . . Je le veux. . .	}{	Votre scénario. . . Je le veux. . .	}{	351	}{	}{	G.David_Rob = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	Je ne faisais que passer. Au revoir.	}{	Je ne faisais que passer. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Ici !	}{	Ici !	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	pc.SetQuest("Writer",8); pc.GiveItem("item_g_hatters_screenplay")	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	Le nom de votre collaborateur. Puis nous n'aurons plus rien à nous dire.	}{	Le nom de votre collaborateur. Puis nous n'aurons plus rien à nous dire.	}{	131	}{	Intimidate -4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	343	}{	Le nom de votre collaborateur. Je ne vous le demanderai pas deux fois.	}{	Le nom de votre collaborateur. Je ne vous le demanderai pas deux fois.	}{	131	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	344	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	Non. . . vous ne pouvez pas. . .	}{	Non. . . vous ne pouvez pas. . .	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	Si vous voulez que je parte, donnez-moi votre scénario.	}{	Si vous voulez que je parte, donnez-moi votre scénario.	}{	341	}{	Persuasion 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	353	}{	Si vous ne voulez pas finir avec la même tête que moi, donnez-moi votre scénario tout de suite !!	}{	Si vous ne voulez pas finir avec la même tête que moi, donnez-moi votre scénario tout de suite !!	}{	341	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	354	}{	Sinon. . . quand vous ne vous y attendrez pas, je sortirai de l'ombre. Ca vous dirait ?	}{	Sinon. . . quand vous ne vous y attendrez pas, je sortirai de l'ombre. Ca vous dirait ?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Euh. . . non. En général, je n'aime pas que les gens lisent ce sur quoi je travaille. C'est de la superstition d'auteur. Vous ne pouvez pas comprendre. . .	}{	Euh. . . non. En général, je n'aime pas que les gens lisent ce sur quoi je travaille. C'est de la superstition d'auteur. Vous ne pouvez pas comprendre. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Je trouve les auteurs tellement cool. . . Je peux vous l'emprunter ?	}{	Je trouve les auteurs tellement cool. . . Je peux vous l'emprunter ?	}{	111	}{	F_Seduction 4	}{	}{	}{	}{	}{	}{	}{	}{	Je fonds pour les auteurs. Si vous me le prêtez, je pourrai être votre muse. . .	}
+{	363	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	364	}{	Je connais quelques personnes qui voudraient faire un film de vampires. Vous me le prêtez ?	}{	Je connais quelques personnes qui voudraient faire un film de vampires. Vous me le prêtez ?	}{	151	}{	Persuasion 3	}{	}{	}{	}{	}{	}{	}{	}{	Je peux mettre votre script entre les mains de ceux qui font les rêves. Laissez-moi le tenir. . .	}
+{	365	}{	Donnez-le moi. Je vous coupe un doigt par minute si vous m'empêchez de le prendre.	}{	Donnez-le moi. Je vous coupe un doigt par minute si vous m'empêchez de le prendre.	}{	91	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Je prends soit votre script, soit les mains qui l'ont créé. A vous de voir.	}
+{	366	}{	Bon, je reviendrai.	}{	Bon, je reviendrai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hatter. . . Je m'en vais, mais je reviendrai ventre à terre.	}
+{	367	}{	J'ai essayé la patience, maintenant je vais avoir recours à l'argument ultime. . . La violence !	}{	J'ai essayé la patience, maintenant je vais avoir recours à l'argument ultime. . . La violence !	}{	0	}{	Humanity -5	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	JE VAIS VOUS COUPER LA TETE, HATTER !	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	Je vous envoie un e-mail.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	Ca va ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	373	}{	Pigé ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	374	}{	Oh non, quoi encore ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	375	}{	Mais vous allez me laisser tranquille, oui ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	Pigé.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	Nan.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	Merci bien.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	Quoi ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	Oui, je ne sais pas.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	Je n'y peux rien.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	Génial.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	383	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	384	}{	Tenez.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	385	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	Chut ! Vous avez entendu quelque chose ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	Non. S'il y a quelqu'un, autant attendre qu'il vienne. On ne peut entrer que par ici.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	393	}{	Oui, je crois. Mais je ne connais personne qui pourrait retenir sa respiration aussi longtemps.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	394	}{	[Légère pause]Ah oui, je vois ce que vous voulez dire. Nous serons prudents, tout à fait.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	395	}{	Ca ne va pas tarder.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	396	}{	Ils ne vont pas comprendre ce qui leur arrive. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	Hmm. . . J'espère, oui. 	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	Cela signifie-t-il que je dois remettre mon pantalon ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	Eh ! Vous voyez quelque chose par là-bas ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	Là. . . dans les trains. J'ai vu quelque chose bouger, je le jure !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	Quoi ? Je n'ai pas peur, hein. Peur pour celui qui voudra venir s'y frotter.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	Alors, qui c'est qui a peur ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	403	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	404	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	405	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	406	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	407	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	413	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	414	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	423	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	433	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	434	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	435	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	436	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	443	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	444	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	445	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	446	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	453	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	454	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	455	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	463	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	464	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	473	}{	(Starting Condition)	}{	}{	221	}{	G.David_Rob == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	474	}{	(Starting Condition)	}{	}{	311	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	475	}{	(Starting Condition)	}{	}{	241	}{	G.David_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	476	}{	(Starting Condition)	}{	}{	211	}{	G.Hatter_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

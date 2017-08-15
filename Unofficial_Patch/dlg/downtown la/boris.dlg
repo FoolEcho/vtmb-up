@@ -1,0 +1,287 @@
+{	1	}{	[traduit, Chert voz'mi?] (Mais qu'est-ce que ?)	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	[traduit, Zaydi!] (Venez par ici !)	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	[traduit, Ya dumayu ti znaesh' chto ya govoryu ?] (J'imagine que vous comprenez ce que je dis ?)	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	[fort accent russe, Chto eto takoe ?](Mais qu'est-ce que ?)	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[traduit, Chto eto takoe? Chert voz'mi? Pochemu ti ego vpustil?](Que se passe-t-il ? Pourquoi le fais-tu entrer ici ?) [anglais] Qui êtes-vous ?	}{	[traduit, Chto eto takoe? Chert voz'mi? Pochemu ti ego vpustil?](Que se passe-t-il ? Pourquoi la fais-tu entrer ici ?) [anglais] Qui êtes-vous ?	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	G.Boris_Talk = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	J'aimerais discuter affaires avec vous.	}{	J'aimerais discuter affaires avec vous.	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Venus m'envoie vous parler.	}{	Venus m'envoie vous parler.	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Je porte la parole de la déesse, un message pour vos oreilles.	}{	Je porte la parole de la déesse, un message pour vos oreilles.	}{	211	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	Oh que oui, et comme vous avez raison !	}{	Oh que oui, et comme vous avez raison !	}{	211	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Oh que oui, et comme vous avez raison !	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	[traduit, Chert voz'mi?](Que se passe-t-il ?) [anglais]Qu'est-ce vous cherchez ?	}{	[traduit, Chert voz'mi?](Que se passe-t-il ?) [anglais]Qu'est-ce vous cherchez ?	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	G.Boris_Talk = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	J'aimerais discuter affaires avec vous.	}{	J'aimerais discuter affaires avec vous.	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Venus m'envoie vous parler.	}{	Venus m'envoie vous parler.	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Je porte la parole de la déesse, un message pour vos oreilles.	}{	Je porte la parole de la déesse, un message pour vos oreilles.	}{	211	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	Oh que oui, et comme vous avez raison !	}{	Oh que oui, et comme vous avez raison !	}{	211	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Oh que oui, et comme vous avez raison !	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	[avec impatience]Eh bien ? Dites-moi tout avant que Dima repeigne le mur avec votre cervelle.	}{	[avec impatience]Eh bien ? Dites-moi tout avant que Dima repeigne le mur avec votre cervelle.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	C'est Venus qui m'envoie.	}{	C'est Venus qui m'envoie.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	Ce serait plus facile s'il ne me collait pas.	}{	Ce serait plus facile s'il ne me collait pas.	}{	121	}{	}{	G.Boris_Dema = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	C'est une proposition sensible. . . Il devrait peut-être nous laisser.	}{	C'est une proposition sensible. . . Il devrait peut-être nous laisser.	}{	121	}{	}{	G.Boris_Dema = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	C'est Venus qui m'envoie. Elle ne vous paiera plus.	}{	C'est Venus qui m'envoie. Elle ne vous paiera plus.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	[avec impatience]Eh bien ? Dites-moi tout. Je n'ai pas toute la nuit.	}{	[avec impatience]Eh bien ? Dites-moi tout. Je n'ai pas toute la nuit.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	C'est Venus qui m'envoie.	}{	C'est Venus qui m'envoie.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	C'est Venus qui m'envoie. Elle veut le club, et elle veut que vous la laissiez tranquille.	}{	C'est Venus qui m'envoie. Elle veut le club, et elle veut que vous la laissiez tranquille.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	[impassible]Vraiment ?	}{	[impassible]Vraiment ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Ce serait plus facile sans votre gros bras qui me souffle dans le cou.	}{	Ce serait plus facile sans votre gros bras qui me souffle dans le cou.	}{	121	}{	G.Dema_Go == 1 and G.Boris_Dema == 0	}{	G.Boris_Dema = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	C'est une proposition sensible. . . Votre garde devrait peut-être nous laisser.	}{	C'est une proposition sensible. . . Votre garde devrait peut-être nous laisser.	}{	121	}{	G.Dema_Go == 1 and G.Boris_Dema == 0	}{	G.Boris_Dema = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	Elle veut le club.	}{	Elle veut le club.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	Elle a dit qu'elle voulait que vous la laissiez tranquille, et que vous lui abandonniez le club.	}{	Elle a dit qu'elle voulait que vous la laissiez tranquille, et que vous lui abandonniez le club.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	Eh oui. Elle veut le club. Donnez-moi le titre de propriété, ou bien. . .	}{	Eh oui. Elle veut le club. Donnez-moi le titre de propriété, ou bien. . .	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	[traduit, Malen'kaja svoloch'!](Petit salaud !) Sale gosse pourri gâté ! Voilà bien l'Amérique ! Je lui donne tant, et elle me crache au visage !?	}{	[traduit, Malen'kaja svoloch'!](Petite salope !) Sale gosse pourrie gâtée ! Voilà bien l'Amérique ! Je lui donne tant, et elle me crache au visage !?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Vous allez annuler cette dette. Vous en avez vraiment envie.	}{	Vous allez annuler cette dette. Vous en avez vraiment envie.	}{	141	}{	Dominate 1 & (G.Dema_Go == 0 or G.Dema_Leave == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	Vous allez annuler cette dette. Vous en avez vraiment envie.	}{	Vous allez annuler cette dette. Vous en avez vraiment envie.	}{	141	}{	Thaumaturgy 1 & ((G.Dema_Go == 0 or G.Dema_Leave == 1) and G.Patch_Plus == 1)	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	Annulez la dette. Pour moi.	}{	Annulez la dette. Pour moi.	}{	141	}{	Presence 1 & ((G.Dema_Go == 0 or G.Dema_Leave == 1) and G.Patch_Plus == 1)	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	Elle pense qu'elle a. . . plus que remboursé sa dette.	}{	Elle pense qu'elle a. . . plus que remboursé sa dette.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	Elle veut ce qui lui revient de droit.	}{	Elle veut ce qui lui revient de droit.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	Annulez cette dette, ou bien. . .	}{	Annulez cette dette, ou bien. . .	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Alors vous êtes son messager ? Vous travaillez pour idiote petite fille ? Vous êtes moins qu'un homme.	}{	Alors vous êtes petite amie ? Vous êtes dans maison que moi paye, mangez chocolat que moi paye, et vous parlez de comment me voler club que moi paye aussi. Vous aussi sale petite fille gâtée.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Vous savez, j'ai tué vos gardes, vous devriez m'écouter.	}{	Vous savez, j'ai tué vos gardes, vous devriez m'écouter.	}{	81	}{	G.Dead_Russians >= 5	}{	G.Boris_Guardsdead = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	J'ai réussi à entrer malgré vos gardes, et je sais que je peux vous tuer, Camarade.	}{	J'ai réussi à entrer malgré vos gardes, et je sais que je peux vous tuer, Camarade.	}{	81	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	Ce n'est pas très gentil pour vos gardes. Après tout, ils n'ont pas réussi à m'arrêter. . .	}{	Ce n'est pas très gentil pour vos gardes. Après tout, ils n'ont pas réussi à m'arrêter. . .	}{	81	}{	Persuasion 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	Vous avez raison. Je suis une petite fille. Mais pas encore assez gâtée. . .	}{	81	}{	Seduction 4 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	Je suis plus un homme que vous ne le serez jamais !	}{	Vous ne savez rien de moi !	}{	101	}{	Intimidate -4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	Donnez-moi le titre de propriété !	}{	Donnez-moi le titre de propriété !	}{	101	}{	Persuasion -5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	Je me moque de ce que vous pensez !	}{	}{	101	}{	IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Vraiment ? Hmmm [fait une proposition] Ecoutez-moi. Nous pouvons nous arranger. Peut-être moi convaincre vous travailler pour moi plutôt ?	}{	Vraiment ? Hmmm [fait une proposition] Ecoutez-moi petite fille. Nous pouvons nous arranger. Peut-être moi convaincre vous travailler pour moi plutôt ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Si vous me donnez ce titre de propriété, je vous laisserai vivre.	}{	Si vous me donnez ce titre de propriété, je vous laisserai vivre.	}{	141	}{	G.Boris_Guardsdead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	A quoi pensez-vous ?	}{	A quoi pensez-vous ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	Je vous écoute.	}{	Je vous écoute.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	Non.	}{	Non.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	[agréable]Vous retournez à club stupide. Vous trouvez petite fille ingrate, [soudain très en colère] et vous la tuez ! [à nouveau calme]. . . Je vous paie. Je vois qu'elle a confiance en vous. Pour vous, ce sera facile.	}{	[agréable]Vous retournez à club stupide. Vous trouvez petite fille ingrate, [soudain très en colère] et vous la tuez ! [à nouveau calme]. . . Je vous paie. Je vois qu'elle a confiance en vous. Pour vous, ce sera facile.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Je regrette, c'est non.	}{	Je regrette, c'est non.	}{	141	}{	G.Boris_Guardsdead == 1	}{	}{	}{	}{	}{	}{	}{	}{	C'est inacceptable, et vous vous retrouvez sans défense.	}
+{	93	}{	Pas question.	}{	Pas question.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nyet, tovarich.	}
+{	94	}{	Je pense que ce serait possible. . . Oui.	}{	Je pense que ce serait possible. . . Oui.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tuer la déesse ? L'amour n'est pas si important après tout.	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	OK. Je ne vous donnerai rien. Dites à petite garce de remballer petit club. Son nom n'est plus dessus. Sortez ! Poshli ! Dehors !	}{	OK. Je ne vous donnerai rien. Dites à petite garce de remballer petit club. Son nom n'est plus dessus. Sortez ! Poshli ! Dehors !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	Vous allez annuler cette dette. Vous en avez vraiment envie.	}{	Vous allez annuler cette dette. Vous en avez vraiment envie.	}{	141	}{	Dominate 1 & (G.Dema_Go == 0 or G.Dema_Leave == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	Vous allez annuler cette dette. Vous en avez vraiment envie.	}{	Vous allez annuler cette dette. Vous en avez vraiment envie.	}{	141	}{	Thaumaturgy 1 & ((G.Dema_Go == 0 or G.Dema_Leave == 1) and G.Patch_Plus == 1)	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	Annulez la dette. Pour moi.	}{	Annulez la dette. Pour moi.	}{	141	}{	Presence 1 & ((G.Dema_Go == 0 or G.Dema_Leave == 1) and G.Patch_Plus == 1)	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	Vous avez dû mal entendre : annulez immédiatement cette dette !	}{	Vous avez dû mal entendre : annulez immédiatement cette dette !	}{	0	}{	}{	G.Boris_Hostile = 2; npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Restez hors du temple de la déesse !	}
+{	108	}{	Très bien, je m'en vais.	}{	Très bien, je m'en vais.	}{	0	}{	G.Dema_Leave == 0	}{	G.Boris_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	Mon message vous est remis. Je pars.	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Voilà, vous savez ce qui est juste. C'est normal. Elle aura ce qu'elle mérite. 	}{	Voilà, vous savez ce qui est juste. C'est normal. Elle aura ce qu'elle mérite. 	}{	#	}{	}{	G.Boris_Venus = 1; pc.SetQuest("Kill Venus",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Je reviendrai.	}{	Je reviendrai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quand la déesse sera à mes pieds, morte, nos chemins se croiseront de nouveau.	}
+{	113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Vous voulez que Dima nous laisse ? Pourquoi permettrais-je une chose pareille ?	}{	Vous voulez que Dima nous laisse ? Pourquoi permettrais-je une chose pareille ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Ca pourrait être embarrassant. C'est pour vous que je m'inquiète, Boris.	}{	Ca pourrait être embarrassant. C'est pour vous que je m'inquiète, Boris.	}{	131	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	Pour que nous puissions discuter en privé.	}{	Pour que nous puissions discuter en privé.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	Parce que je vous le dis.	}{	Parce que je vous le dis.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	OK, OK. [traduction](Vas-y Dima.) Bon... Content ? Maintenant dites moi. Mais faites vite !	}{	OK, OK. [traduction](Vas-y Dima.) Bon... Contente ? Maintenant dites moi. Mais faites vite !	}{	#	}{	}{	G.Dema_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	C'est Venus qui m'envoie.	}{	C'est Venus qui m'envoie.	}{	51	}{	G.Boris_Dema == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	C'est Venus qui m'envoie. Elle veut que vous effaciez la dette et que vous sortiez de sa vie.	}{	C'est Venus qui m'envoie. Elle veut que vous effaciez la dette et que vous sortiez de sa vie.	}{	61	}{	G.Boris_Dema == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	Venus veut que vous effaciez la dette et que vous sortiez de sa vie.	}{	Venus veut que vous effaciez la dette et que vous sortiez de sa vie.	}{	61	}{	G.Boris_Dema == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	Venus veut que vous annuliez la dette.	}{	Venus veut que vous annuliez la dette.	}{	61	}{	G.Boris_Dema == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	[soupir] Très bien, [traduit, tovarisch](mon ami). Je comprends. La dette est annulée. Dites à fille gâtée qu'elle plus jamais avoir rien de moi !	}{	[soupir] Très bien, [traduit, tovarisch](mon amie). Je comprends. La dette est annulée. Dites à fille gâtée qu'elle plus jamais avoir rien de moi !	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Venus",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Merci de votre compréhension. Au revoir.	}{	Merci de votre compréhension. Au revoir.	}{	0	}{	}{	G.Boris_Debt = 1	}{	}{	}{	}{	}{	}{	}{	Vous êtes un décisionnaire éclairé. Je dois retourner auprès de la déesse.	}
+{	143	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Ne revenez pas avant que ce soit fait.	}{	Ne revenez pas avant que ce soit fait.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Pas question ! Il reste ici ! A présent, parlons affaire. Si vous avez chance, vous repartez en vie.	}{	Pas question ! Il reste ici ! A présent, parlons affaire. Si vous avez chance, vous repartez en vie.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	C'est Venus qui m'envoie.	}{	C'est Venus qui m'envoie.	}{	51	}{	G.Boris_Dema == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	163	}{	C'est Venus qui m'envoie. Elle veut que vous effaciez la dette et que vous sortiez de sa vie.	}{	C'est Venus qui m'envoie. Elle veut que vous effaciez la dette et que vous sortiez de sa vie.	}{	61	}{	G.Boris_Dema == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	Venus veut que vous effaciez la dette et que vous sortiez de sa vie.	}{	Venus veut que vous effaciez la dette et que vous sortiez de sa vie.	}{	61	}{	G.Boris_Dema == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	Venus veut que vous annuliez la dette.	}{	Venus veut que vous annuliez la dette.	}{	61	}{	G.Boris_Dema == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	Je regrette, mais je ne peux pas négocier dans ces conditions.	}{	Je regrette, mais je ne peux pas négocier dans ces conditions.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Alors ? C'est fait ?	}{	Alors ? C'est fait ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Oui. Venus ne vous ennuiera plus jamais.	}{	Oui. Venus ne vous ennuiera plus jamais.	}{	181	}{	IsDead("Venus")	}{	}{	}{	}{	}{	}{	}{	}{	Nul n'adorera plus la déesse.	}
+{	173	}{	Non. Pas encore.	}{	Non. Pas encore.	}{	151	}{	not IsDead("Venus")	}{	G.Boris_Return = G.Boris_Return + 1	}{	}{	}{	}{	}{	}{	}{	Non, elle réside toujours en son temple.	}
+{	174	}{	J'ai changé d'avis. Annulez la dette.	}{	J'ai changé d'avis. Annulez la dette.	}{	101	}{	not IsDead("Venus")	}{	G.Boris_Venus = 0	}{	}{	}{	}{	}{	}{	}{	Je ne tuerai pas la déesse en votre nom. Pardonnez ses dettes.	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Ah, petite fille gâtée avoir ce qu'elle mérite. Merveilleux. Voilà votre argent. Affaire réglée.	}{	Ah, petite fille gâtée avoir ce qu'elle mérite. Merveilleux. Voilà votre argent. Affaire réglée.	}{	#	}{	}{	pc.MoneyAdd( 1000 ); pc.SetQuest("Kill Venus",3); pc.RemoveItem("item_k_empire_mafia_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Merci.	}{	Merci.	}{	0	}{	}{	G.Boris_Venus = 3	}{	}{	}{	}{	}{	}{	}{	On appelle ça le prix du sang, mais il a la même couleur que tout autre argent. Grand merci.	}
+{	183	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Je vous ai dit de ne pas revenir avant que travail fini. Vous jouez avec moi. Je perds du temps. Je ne veux plus jouer, enfant américain.	}{	Je vous ai dit de ne pas revenir avant que travail fini. Vous jouez avec moi. Je perds du temps. Je ne veux plus jouer, enfant américain.	}{	#	}{	}{	pc.SetQuest("Kill Venus",5)	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Jouons alors !	}{	Jouons alors !	}{	0	}{	}{	npc.SetRelationship("player D_HT 5"); G.Boris_Hostile = 2	}{	}{	}{	}{	}{	}{	}{	Des jeux et de l'amusement !	}
+{	193	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Veuillez repartir.	}{	Veuillez repartir.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	203	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Pauvre fou ! Qui laisse entrer ? Dima, abats malade enragé !	}{	Pauvre fou ! Qui laisse entrer ? Dima, abats malade enragée !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Si ce n'était pas important, je serais ailleurs. Ca ne vous intéresse pas ?	}{	Si ce n'était pas important, je serais ailleurs. Ca ne vous intéresse pas ?	}{	231	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	213	}{	Vos amis vous détestent. Ils préparent votre mort. Ils vont vous trahir !	}{	Vos amis vous détestent. Ils préparent votre mort. Ils vont vous trahir !	}{	261	}{	Dementation 1 & (G.Boris_Dementated == 0 and not IsDead("Dema"))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	Je vous ajouterais volontiers à tous les hommes que j'ai tués dans votre demeure.	}{	Je vous ajouterais volontiers à tous les hommes que j'ai tués dans votre demeure.	}{	231	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	La déesse refuse de vous présenter son tribut ou de vous laisser souiller son temple.	}{	La déesse refuse de vous présenter son tribut ou de vous laisser souiller son temple.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	Je préfère le terme dément.	}{	Je préfère le terme démente.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	Mon corps devrait peut-être se trouver ailleurs.	}{	Mon corps devrait peut-être se trouver ailleurs.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Taisez-vous ! Malade ! Dima, au boulot !	}{	Taisez-vous ! Malade ! Dima, au boulot !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	223	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Dans dix secondes, je lui dis faire trou comme balle baseball dans votre tête. Pourquoi vous venir ?	}{	Dans dix secondes, je lui dis faire trou comme balle baseball dans votre tête. Pourquoi vous venir ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	La déesse, Venus. . .	}{	La déesse, Venus. . .	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	233	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Déesse ?! [crache]	}{	Déesse ?! [crache]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	La déesse refuse de vous présenter son tribut ou de vous laisser souiller son temple.	}{	La déesse refuse de vous présenter son tribut ou de vous laisser souiller son temple.	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	243	}{	Venus ne partagera plus ses gains, et vous n'êtes plus le bienvenu en sa compagnie.	}{	Venus ne partagera plus ses gains, et vous n'êtes plus le bienvenu en sa compagnie.	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	244	}{	Les mots me manquent. . . Je vous laisserai donc apprécier la poésie de la violence.	}{	Les mots me manquent. . . Je vous laisserai donc apprécier la poésie de la violence.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5"); G.Boris_Hostile = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Ha ! Chienne américaine gâtée ! Elle vous paie. . . Vous voulez argent ?	}{	Ha ! Chienne américaine gâtée ! Elle vous paie. . . Vous voulez argent ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	(Auto-Link)	}{	(Auto-Link)	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	253	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Dima ! Tu veux me tuer, hein ? Prendre ma place ! Tout ce que je fais pour toi. . . traître ! Je vais te montrer !	}{	Dima ! Tu veux me tuer, hein ? Prendre ma place ! Tout ce que je fais pour toi. . . traître ! Je vais te montrer !	}{	#	}{	}{	G.Boris_Dementated = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	263	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Très bien. Ca te va ? Alors fais vite, d'accord ?	}{	Très bien. Ca te va ? Alors fais vite, d'accord ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	C'est Venus qui m'envoie.	}{	C'est Venus qui m'envoie.	}{	51	}{	G.Boris_Dema == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	273	}{	C'est Venus qui m'envoie. Elle veut que vous effaciez la dette et que vous sortiez de sa vie.	}{	C'est Venus qui m'envoie. Elle veut que vous effaciez la dette et que vous sortiez de sa vie.	}{	61	}{	G.Boris_Dema == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	274	}{	Venus veut que vous effaciez la dette et que vous sortiez de sa vie.	}{	Venus veut que vous effaciez la dette et que vous sortiez de sa vie.	}{	61	}{	G.Boris_Dema == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	Venus veut que vous annuliez la dette.	}{	Venus veut que vous annuliez la dette.	}{	61	}{	G.Boris_Dema == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	(Starting Condition)	}{	}{	201	}{	G.Boris_Debt == 1 or G.Boris_Venus == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	284	}{	(Starting Condition)	}{	}{	191	}{	G.Boris_Return == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	(Starting Condition)	}{	}{	171	}{	G.Boris_Venus > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	(Starting Condition)	}{	}{	11	}{	G.Dema_Go == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	(Starting Condition)	}{	}{	21	}{	G.Dema_Go != 1	}{	}{	}{	}{	}{	}{	}{	}{	}

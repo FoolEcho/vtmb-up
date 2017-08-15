@@ -1,0 +1,664 @@
+{	1	}{	Où on va ?	}{	Où on va ?	}{	#	}{	}{	pc.SetQuest("Bloodhunt",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Je ne sais pas. Roulez, c'est tout.	}{	Je ne sais pas. Roulez, c'est tout.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Loin.	}
+{	3	}{	N'importe où sauf ici.	}{	N'importe où sauf ici.	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Emmenez-moi loin de Santa Monica. Et même de la ville, tiens !	}{	Emmenez-moi loin de Santa Monica. Et même de la ville, tiens !	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Très bien.	}{	Très bien.	}{	#	}{	}{	G.Caine_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Vraiment ? Ca va vous faire cher !	}{	Vraiment ? Ca va vous faire cher !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Peu importe, roulez.	}{	Peu importe, roulez.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Peu importe. Il faut que je quitte la ville.	}{	Peu importe. Il faut que je quitte la ville.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Bon, vous ne savez pas qui je suis, mais vous feriez bien de faire ce que je dis, OK ?	}{	Bon, vous ne savez pas qui je suis, mais vous feriez bien de faire ce que je dis, OK ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	. . .	}{	. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	. . .	}{	. . .	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	Ahem. . .	}{	Ahem. . .	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	Alors. . . Vous connaissez Jack ?	}{	Alors. . . Vous connaissez Jack ?	}{	71	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	Je passe une sale nuit, croyez-moi.	}{	Je passe une sale nuit, croyez-moi.	}{	91	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	OU NOUS EMMENEZ-VOUS ?	}{	OU NOUS EMMENEZ-VOUS ?	}{	541	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	Oh non. . . je ne veux pas savoir. . . je ne veux pas savoir. . .	}{	Oh non. . . je ne veux pas savoir. . . je ne veux pas savoir. . .	}{	541	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	. . .	}{	. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	. . .	}{	. . .	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	Bon. . .	}{	Bon. . .	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Hmm. . .	}{	Hmm. . .	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	Jack est un de vos amis ?	}{	Jack est un de vos amis ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	. . .	}{	. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	. . .	}{	. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Quelle nuit, putain. . .	}{	Quelle nuit, putain. . .	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	Ce Jack. . . Un type bizarre, vous le connaissez ?	}{	Ce Jack. . . Un type bizarre, vous le connaissez ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	Ouaip. . .	}{	Ouaip. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	. . .	}{	. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	. . .	}{	. . .	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	Je crois que je sais où je veux aller.	}{	Je crois que je sais où je veux aller.	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Dites, vous connaissez Jack ?	}{	Dites, vous connaissez Jack ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	Vous avez déjà passé une nuit à vous dire que le destin en avait après vous ?	}{	Vous avez déjà passé une nuit à vous dire que le destin en avait après vous ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Je n'ai rencontré monsieur Jack que récemment. Il m'intrigue beaucoup. Il n'y a plus beaucoup de gens comme lui, à notre époque. Mais. . . je ne sais que ce qu'il me dit sur les autres vampires de cette ville.	}{	Je n'ai rencontré monsieur Jack que récemment. Il m'intrigue beaucoup. Il n'y a plus beaucoup de gens comme lui, à notre époque. Mais. . . je ne sais que ce qu'il me dit sur les autres vampires de cette ville.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Auto-Link)	}{	(Auto-Link)	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	On dirait qu'il y en a beaucoup qui cherchent à convertir les enfants de Caïn à leur cause. . . Beaucoup qui croient fabriquer la destinée dans le sang. Mais dites-moi. . . De quel côté êtes-vous ?	}{	On dirait qu'il y en a beaucoup qui cherchent à convertir les enfants de Caïn à leur cause. . . Beaucoup qui croient fabriquer la destinée dans le sang. Mais dites-moi. . . De quel côté êtes-vous ?	}{	#	}{	}{	G.Caine_Blood = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Ouais. Il a des défauts, mais il pense à la ville avant tout.	}{	Ouais. Il a des défauts, mais il pense à la ville avant tout.	}{	161	}{	G.Prince_Reaction >= 3 and G.Player_Sabbat < 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	J'en ai ma claque de LaCroix. J'aurais dû soutenir Nines quand il voulait encore de moi.	}{	J'en ai ma claque de LaCroix. J'aurais dû soutenir Nines quand il voulait encore de moi.	}{	171	}{	(G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3) and G.Player_Sabbat < 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	Non. Et je commence à penser que les vampires ont tout faux. Les Kuei-Jin en revanche. . .	}{	Non. Et je commence à penser que les vampires ont tout faux. Les Kuei-Jin en revanche. . .	}{	181	}{	G.Ming_Faction >= 3 and G.Ming_Insult == 0 and G.Player_Sabbat < 3	}{	G.Caine_Ming = G.Caine_Ming +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	Je ne travaille pour personne. Je quitte cette ville, bon débarras, LA !	}{	Je ne travaille pour personne. Je quitte cette ville, bon débarras, LA !	}{	191	}{	G.Player_Sabbat < 3	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	Pas plus. J'ai déjà rejoint le Sabbat !	}{	Pas plus. J'ai déjà rejoint le Sabbat !	}{	271	}{	G.Player_Sabbat == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	La nuit a été dure avec vous ?	}{	La nuit a été dure avec vous ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Aucune nuit n'est douce depuis que je suis. . . peu importe.	}{	Aucune nuit n'est douce depuis que je suis. . . peu importe.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Disons que je préférerais que ce soit l'après-midi. . .	}{	Disons que je préférerais que ce soit l'après-midi. . .	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	Rien de trop grave.	}{	Rien de trop grave.	}{	131	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	Sans Jack. . . Dites, vous connaissez Jack ?	}{	Sans Jack. . . Dites, vous connaissez Jack ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Le sang de Caïn m'afflige également. . . nul besoin de masque ici.	}{	Le sang de Caïn m'afflige également. . . nul besoin de masque ici.	}{	#	}{	}{	G.Caine_Blood = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Oh. . .	}{	Oh. . .	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	Oui, on pourrait dire ça.	}{	Oui, on pourrait dire ça.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Alors, monsieur Jack est un ami à vous ?	}{	Alors, monsieur Jack est un ami à vous ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Ouais. Et j'aime bien ce qu'il représente. Même LaCroix a l'air de le craindre.	}{	Ouais. Et j'aime bien ce qu'il représente. Même LaCroix a l'air de le craindre.	}{	121	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	Jack et moi, ça fait un bail.	}{	Jack et moi, ça fait un bail.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	Jack est réglo. Je ne sais pas si on peut dire que c'est un ami. . .	}{	Jack est réglo. Je ne sais pas si on peut dire que c'est un ami. . .	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	Jack ? Il me met mal à l'aise. Il doit être psychotique. Comme tous les Anarchs.	}{	Jack ? Il me met mal à l'aise. Il doit être psychotique. Comme tous les Anarchs.	}{	121	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Hmm. . .	}{	Hmm. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	(Auto-Link)	}{	(Auto-Link)	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Oui, ce sang nous rend tenaces et sans peur, si nous le voulons. . . mais pour quoi faire ? Certes, une nuit, la lutte s'arrêtera. . . Mais qui sera vainqueur ?	}{	Oui, ce sang nous rend tenaces et sans peur, si nous le voulons. . . mais pour quoi faire ? Certes, une nuit, la lutte s'arrêtera. . . Mais qui sera vainqueur ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	C'est sans doute la Camarilla qui est la mieux placée.	}{	C'est sans doute la Camarilla qui est la mieux placée.	}{	161	}{	G.Prince_Reaction >= 3 and G.Player_Sabbat < 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Cam = G.Caine_Cam +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	Les Anarchs ont prouvé à maintes reprises qu'ils ne disparaîtraient pas.	}{	Les Anarchs ont prouvé à maintes reprises qu'ils ne disparaîtraient pas.	}{	171	}{	(G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3) and G.Player_Sabbat < 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	Les Kuei-Jin paraissent unis. J'aimerais bien appartenir à leur organisation.	}{	Les Kuei-Jin paraissent unis. J'aimerais bien appartenir à leur organisation.	}{	181	}{	G.Ming_Faction >= 3 and G.Ming_Insult == 0 and G.Player_Sabbat < 3	}{	G.Caine_Ming = G.Caine_Ming +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	Je m'en fous. Je fous le camp d'ici, j'en ai marre. Qu'ils aillent tous se faire foutre. 	}{	Je m'en fous. Je fous le camp d'ici, j'en ai marre. Qu'ils aillent tous se faire foutre. 	}{	191	}{	G.Player_Sabbat < 3	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	Le Sabbat va gagner, parce que je suis de leur côté !	}{	Le Sabbat va gagner, parce que je suis de leur côté !	}{	271	}{	G.Player_Sabbat == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Vous avez du désespoir dans la voix. . . Il doit bien y avoir une issue à votre tourment ?	}{	Vous avez du désespoir dans la voix. . . Il doit bien y avoir une issue à votre tourment ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Si le prince accepte de croire en mon innocence, je suis tranquille.	}{	Si le prince accepte de croire en mon innocence, je suis tranquille.	}{	161	}{	G.Prince_Reaction >= 3 and G.Player_Sabbat < 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Le prince est une bonne idée.	}
+{	143	}{	Nines se porterait garant de moi, s'il était encore en vie.	}{	Nines se porterait garant de moi, s'il était encore en vie.	}{	171	}{	(G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3) and G.Player_Sabbat < 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Nines a décroché le gros lot.	}
+{	144	}{	Tous les vampires veulent ma peau. Mais pas les Kuei-Jin. . .	}{	Tous les vampires veulent ma peau. Mais pas les Kuei-Jin. . .	}{	181	}{	G.Ming_Faction >= 3 and G.Ming_Insult == 0 and G.Player_Sabbat < 3	}{	G.Caine_Ming = G.Caine_Ming +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Les Kuei-Jin sont un atout dangereux.	}
+{	145	}{	Ouais, et je l'ai déjà prise. Je suis avec le Sabbat !	}{	Ouais, et je l'ai déjà prise. Je suis avec le Sabbat !	}{	271	}{	G.Player_Sabbat == 3	}{	}{	}{	}{	}{	}{	}{	}{	L'épée de Caïn est le chemin !	}
+{	146	}{	Non. C'est pour ça que je mets les bouts.	}{	Non. C'est pour ça que je mets les bouts.	}{	191	}{	G.Player_Sabbat < 3	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Je ne parie pas. Je m'échappe, c'est tout.	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Oh ? Je vous dépose où ?	}{	Oh ? Je vous dépose où ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Centre ville. J'ai besoin de voir le prince pour lui expliquer la situation.	}{	Centre ville. J'ai besoin de voir le prince pour lui expliquer la situation.	}{	161	}{	G.Prince_Reaction >= 3 and G.Player_Sabbat < 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	Isaac doit être responsable des Anarchs, maintenant que Nines et mort. A Hollywood.	}{	Isaac doit être responsable des Anarchs, maintenant que Nines et mort. A Hollywood.	}{	171	}{	(G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3) and G.Player_Sabbat < 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	Personne ne pourra me trouver à Chinatown. Emmenez-moi là-bas.	}{	Personne ne pourra me trouver à Chinatown. Emmenez-moi là-bas.	}{	181	}{	G.Ming_Faction >= 3 and G.Ming_Insult == 0 and G.Player_Sabbat < 3	}{	G.Caine_Ming = G.Caine_Ming +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	Un endroit où on ne viendra pas me trouver. Le Canada, pourquoi pas ?	}{	Un endroit où on ne viendra pas me trouver. Le Canada, pourquoi pas ?	}{	191	}{	G.Player_Sabbat < 3	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	Chinatown. Je me débarrasse de Ming et Lacroix pour le Sabbat !	}{	Chinatown. Je me débarrasse de Ming et Lacroix pour le Sabbat !	}{	271	}{	G.Player_Sabbat == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Je peux vous emmener au centre ville, si vous voulez. Le Prince LaCroix - vous pensez que sa vision d'avenir pour nous est réaliste ?	}{	Je peux vous emmener au centre ville, si vous voulez. Le Prince LaCroix - vous pensez que sa vision d'avenir pour nous est réaliste ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	On pourrait aller en centre ville. Mais LaCroix a-t-il le poing de fer de la rumeur ? Et le sang des Anarchs en dégoutte-t-il vraiment ?	}
+{	162	}{	Oui. Le Prince LaCroix a prouvé qu'il est le meilleur chef de cette ville.	}{	Oui. Le Prince LaCroix a prouvé qu'il est le meilleur chef de cette ville.	}{	201	}{	G.Cain_Flee == 0 and G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	A eux de se répandre. Et qui ne voudrait pas d'une main de fer ? Moi, j'en veux une !	}
+{	163	}{	Non. Mais il est assez puissant pour que je veuille rester dans ses petits papiers.	}{	Non. Mais il est assez puissant pour que je veuille rester dans ses petits papiers.	}{	201	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Ouais. Alors je préfère qu'il me caresse avec cette main de fer.	}
+{	164	}{	Le prince, non. Mais la Camarilla est notre meilleur espoir.	}{	Le prince, non. Mais la Camarilla est notre meilleur espoir.	}{	211	}{	G.Regent_Pissed != 3 and G.Regent_Introduced == 1 and G.Isaac_Please == 0	}{	G.Caine_Cam = G.Caine_Cam +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	LaCroix est un fruit pourri sur le magnifique arbre qu'est la Camarilla.	}
+{	165	}{	Oui. Mais quelle est l'alternative ? Les Anarchs ?	}{	Oui. Mais quelle est l'alternative ? Les Anarchs ?	}{	171	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Si les Anarchs étaient plus qu'un joli rêve, je m'éveillerais à leur côté.	}
+{	166	}{	Je pense que je vais me forger mon propre destin. Par où commencer ?	}{	Je pense que je vais me forger mon propre destin. Par où commencer ?	}{	251	}{	G.Cain_Flee == 1	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Je ne sais rien, rien ne m'intéresse. Je fuis, vous le savez bien !	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Les Anarchs. . . Ils sont curieux. Mais ils ont perdu bien des batailles. Beaucoup de leurs chefs sont morts ces dernières années. Beaucoup pensent que leur rébellion a déjà échoué. Vous pensez vraiment que leur notion de liberté est crédible ?	}{	Les Anarchs. . . Ils sont curieux. Mais ils ont perdu bien des batailles. Beaucoup de leurs chefs sont morts ces dernières années. Beaucoup pensent que leur rébellion a déjà échoué. Vous pensez vraiment que leur notion de liberté est crédible ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les Anarchs essayent de tenir la ville comme si c'était un océan, mais elle leur échappe en permanence, et ils se font dévorer par les requins. Vous pensez vraiment qu'ils pourront repousser les prédateurs sans se fatiguer ?	}
+{	172	}{	Bien sûr. Tant qu'il y en aura quelques-uns pour y croire, ce sera une possibilité.	}{	Bien sûr. Tant qu'il y en aura quelques-uns pour y croire, ce sera une possibilité.	}{	221	}{	G.Caine_Ming == 0 and G.Caine_Prince == 0 and G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Les requins seront bientôt en voie d'extinction.	}
+{	173	}{	Sans Nines, je ne sais pas. Mais je sais que je n'aime pas le prince.	}{	Sans Nines, je ne sais pas. Mais je sais que je n'aime pas le prince.	}{	211	}{	G.Regent_Pissed != 3 and G.Regent_Introduced == 1	}{	G.Caine_Cam = G.Caine_Cam +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Futilité ou fascisme. Il n'y a pas un juste milieu qui commencerait par 'F' ?	}
+{	174	}{	Les Anarchs se trompent, mais au moins ils sont honnêtes. La Camarilla est pourrie.	}{	Les Anarchs se trompent, mais au moins ils sont honnêtes. La Camarilla est pourrie.	}{	221	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	La Camarilla est une immense potence. Les Anarchs sont la scie qui va l'abattre.	}
+{	175	}{	Les Anarchs, la Camarilla. . . Qu'ils aillent se faire voir. Je quitte la ville.	}{	Anarchs, Camarilla, tous des démons. Je quitte la ville.	}{	191	}{	G.Cain_Flee == 0	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Prédateurs et proies. Je préfère les regarder à la télé, dans l'anonymat. 	}
+{	176	}{	Je pense que je vais me forger mon propre destin. Par où commencer ?	}{	Je pense que je vais me forger mon propre destin. Par où commencer ?	}{	251	}{	G.Cain_Flee == 1	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Je veux tout réinitialiser. Je vais commencer une nouvelle partie.	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Les envahisseurs d'Orient ? Vous devez savoir ce qu'ils pensent de nous. . . Pas beaucoup de bien.	}{	Les envahisseurs d'Orient ? Vous devez savoir ce qu'ils pensent de nous. . . Pas beaucoup de bien.	}{	#	}{	}{	G.Caine_Kuei = 1	}{	}{	}{	}{	}{	}{	}{	Le sang oriental et le sang de Caïn ? Non, ces deux-là ne se réconcilieront jamais, ils bouillonnent dès qu'ils se rencontrent.	}
+{	182	}{	Je fais confiance à Ming Xiao. Elle m'accueillera, c'est certain.	}{	Je fais confiance à Ming Xiao. Elle m'accueillera, c'est certain.	}{	231	}{	G.Ming_Faction >= 3 and G.Ming_Insult == 0	}{	G.Caine_Ming = G.Caine_Ming +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	L'endroit parfait pour se cacher. Personne ne me trouvera sous son aile.	}
+{	183	}{	Eh, je sais reconnaître un vainqueur. Emmenez-moi à Chinatown.	}{	Eh, je sais reconnaître un vainqueur. Emmenez-moi à Chinatown.	}{	231	}{	G.Ming_Faction >= 3 and G.Ming_Insult == 0	}{	G.Caine_Ming = G.Caine_Ming +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Le sang me pousse vers Chinatown. Et je n'irai nulle part sans lui. 	}
+{	184	}{	Presque toute notre race veut ma peau. Je n'ai pas le choix.	}{	Presque toute notre race veut ma peau. Je n'ai pas le choix.	}{	191	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Tout le monde veut empocher cette tête. Je veux juste l'enfouir dans le sable.	}
+{	185	}{	Je ne sais pas à qui faire confiance. Je vais quitter la ville avant de me faire tuer.	}{	Je ne sais pas à qui faire confiance. Je vais quitter la ville avant de me faire tuer.	}{	191	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	L'heure est à la fuite, pas à l'évasion.	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Vous pouvez fuir. . . mais échapper à votre réputation ? Je ne sais pas grand-chose, mais on dit que vous avez tué le chef des Anarchs et trahi votre race. . .	}{	Vous pouvez fuir. . . mais échapper à votre réputation ? Je ne sais pas grand-chose, mais on dit que vous avez tué le chef des Anarchs et trahi votre race. . .	}{	#	}{	}{	G.Caine_Flee = 1	}{	}{	}{	}{	}{	}{	}{	Les lapins fuient aussi. . . mais tôt ou tard, ils finissent dans la gueule du loup. Et les loups ont pris votre odeur - vous portez le parfum de Nines. . .	}
+{	192	}{	Ce n'est pas vrai ! Je n'ai pas tué Nines !	}{	Ce n'est pas vrai ! Je n'ai pas tué Nines !	}{	241	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Respire. Tu ne sentiras pas ce fumet sur moi.	}
+{	193	}{	Conneries, tout ça. . .	}{	Conneries, tout ça. . .	}{	241	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	La ville est pleine de menteurs.	}
+{	194	}{	Qu'est-ce que je peux faire d'autre que fuir ?	}{	Qu'est-ce que je peux faire d'autre que fuir ?	}{	241	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Cours, lapin, cours !	}
+{	195	}{	Puisqu'on me croit déjà de mèche avec les Kuei-jin, autant les rejoindre.	}{	Puisqu'on me croit déjà de mèche avec les Kuei-jin, autant les rejoindre.	}{	181	}{	G.Caine_Kuei == 0 and G.Ming_Faction >= 3 and G.Ming_Insult == 0	}{	G.Caine_Ming = G.Caine_Ming +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Je dois pouvoir devenir un Kuei-Jin si je fais beaucoup, beaucoup d'efforts.	}
+{	196	}{	Puisqu'on me croit déjà de mèche avec les Kuei-jin, autant les rejoindre.	}{	Puisqu'on me croit déjà de mèche avec les Kuei-jin, autant les rejoindre.	}{	231	}{	G.Caine_Kuei == 1 and G.Ming_Faction >= 3 and G.Ming_Insult == 0	}{	G.Caine_Ming = G.Caine_Ming +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Je dois pouvoir devenir un Kuei-Jin si je fais beaucoup, beaucoup d'efforts.	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Mais les Anarchs ? Vous ne craignez pas que la vision du Prince LaCroix pour cette ville interdise leur existence ? Leurs modes de vie paraissent incompatibles.	}{	Mais les Anarchs ? Vous ne craignez pas que la vision du Prince LaCroix pour cette ville interdise leur existence ? Leurs modes de vie paraissent incompatibles.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Les Anarchs vont disparaître sans leur chef. Ils n'ont pas le choix.	}{	Les Anarchs vont disparaître sans leur chef. Ils n'ont pas le choix.	}{	301	}{	G.Cain_Flee == 0 and G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Regarde un poulet. On lui tranche la tête, il continue de courir, mais il est foutu.	}
+{	203	}{	Trop triste. Et alors ? Ils ont eu leur chance, et ils l'ont manquée. Le futur est avec LaCroix.	}{	Trop triste. Et alors ? Ils ont eu leur chance, et ils l'ont manquée. Le futur est avec LaCroix.	}{	301	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Je verserai une pluie de larmes depuis le sommet de la tour du prince.	}
+{	204	}{	Je ne sais pas pour LaCroix, mais la Camarilla est essentielle à la survie des vampires.	}{	Je ne sais pas pour LaCroix, mais la Camarilla est essentielle à la survie des vampires.	}{	211	}{	G.Regent_Pissed != 3 and G.Regent_Introduced == 1 and G.Isaac_Please == 0	}{	G.Caine_Cam = G.Caine_Cam +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Si LaCroix n'était pas le visage de la Camarilla, je l'embrasserais.	}
+{	205	}{	Certes. C'est le dernier refuge des Anarchs, mais. . . quelle chance leur reste-t-il ?	}{	Certes. C'est le dernier refuge des Anarchs, mais. . . quelle chance leur reste-t-il ?	}{	311	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Les Anarchs, c'est bien sympa, mais si je les rejoins, comment ça se passera ?	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	La Camarilla ? Hmm. . . Avant, je pensais qu'ils pourraient nous donner une certaine stabilité, mais les LaCroix du monde ont étouffé mes espoirs. Si on pouvait le destituer, cela me rendrait peut-être l'espoir.	}{	La Camarilla ? Hmm. . . Avant, je pensais qu'ils pourraient nous donner une certaine stabilité, mais les LaCroix du monde ont étouffé mes espoirs. Si on pouvait le destituer, cela me rendrait peut-être l'espoir.	}{	#	}{	}{	G.Caine_Coup = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Mais comment se débarrasser de LaCroix ? Qui m'aiderait, dans la Camarilla ?	}{	Mais comment se débarrasser de LaCroix ? Qui m'aiderait, dans la Camarilla ?	}{	331	}{	G.Regent_Pissed != 3 and G.Regent_Introduced == 1	}{	G.Caine_Cam = G.Caine_Cam +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Quelle est l'étoile de la Camarilla, pour que je puisse faire le voeu que LaCroix disparaisse ?	}
+{	213	}{	LaCroix est une cause perdue. Mais je ne renonce pas pour autant à la Camarilla.	}{	LaCroix est une cause perdue. Mais je ne renonce pas pour autant à la Camarilla.	}{	331	}{	G.Regent_Pissed != 3 and G.Regent_Introduced == 1 and G.Isaac_Please == 0	}{	G.Caine_Cam = G.Caine_Cam +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	La Camarilla est un parapluie merveilleux. Mais LaCroix est un monarque cruel.	}
+{	214	}{	Qu'est-ce que je dis ? Non, LaCroix est le meilleur espoir pour cette ville. . .	}{	Qu'est-ce que je dis ? Non, LaCroix est le meilleur espoir pour cette ville. . .	}{	301	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Je délire ! LaCroix est le ruisseau et je suis un poisson !	}
+{	215	}{	Je devrais peut-être rejoindre les Anarchs. . .	}{	Je devrais peut-être rejoindre les Anarchs. . .	}{	221	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Tu penses que si je leur demande gentiment, les Anarchs m'accueilleront ? Je serais leur plus belle recrue !	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Si les Anarchs parviennent à reprendre la ville, quelqu'un viendrait bientôt tenter de la leur reprendre. Le conflit est toujours présent dans leur vie. Vous pourriez passer l'éternité comme ça, vous ?	}{	Si les Anarchs parviennent à reprendre la ville, quelqu'un viendrait bientôt tenter de la leur reprendre. Le conflit est toujours présent dans leur vie. Vous pourriez passer l'éternité comme ça, vous ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Tout à fait. C'est la seule façon de vivre.	}{	Tout à fait. C'est la seule façon de vivre.	}{	321	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +2; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	On dirait une bonne partie de rigolade.	}
+{	223	}{	Ce n'est pas le meilleur choix, mais c'est le meilleur pour moi.	}{	Ce n'est pas le meilleur choix, mais c'est le meilleur pour moi.	}{	311	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Tout est foutu si je reste, et pas tellement mieux si je pars.	}
+{	224	}{	Sans LaCroix, la Camarilla serait une meilleure alternative.	}{	Sans LaCroix, la Camarilla serait une meilleure alternative.	}{	211	}{	G.Caine_Coup == 0 and G.Regent_Pissed != 3 and G.Regent_Introduced == 1 and G.Isaac_Please == 0	}{	G.Caine_Cam = G.Caine_Cam +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Et la Camarilla ? Oh, mais il y a LaCroix qui m'attend à la porte.	}
+{	225	}{	Pas question. Continuez de conduire, je quitte la ville.	}{	Pas question. Continuez de conduire, je quitte la ville.	}{	241	}{	G.Caine_Flee == 0	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Conduisez vite, jusqu'à ce que les lampadaires se brouillent devant nous.	}
+{	226	}{	Dis comme ça, j'aurai peut-être plus de chances avec le prince. . .	}{	Dis comme ça, j'aurai peut-être plus de chances avec le prince. . .	}{	161	}{	G.Caine_Lacroix == 0 and G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	On ne peut pas écrire LaCroix sans LA.	}
+{	227	}{	Dis comme ça, j'aurai peut-être plus de chances avec le prince. . .	}{	Dis comme ça, j'aurai peut-être plus de chances avec le prince. . .	}{	201	}{	G.Caine_Lacroix == 1 and G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	On ne peut pas écrire LaCroix sans LA.	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Très bien. Si c'est la destination que vous choisissez, je vous emmène à Chinatown. Mais vous comprenez que votre sang vous perdra, là-bas. . . Vous serez à jamais un étranger à notre société, un traître à votre race.	}{	Très bien. Si c'est la destination que vous choisissez, je vous emmène à Chinatown. Mais vous comprenez que votre sang vous perdra, là-bas. . . Vous serez à jamais une étrangère à notre société, une traîtresse à votre race.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Peut-être. . . Je vais courir le risque.	}{	Peut-être. . . Je vais courir le risque.	}{	361	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Ca paraît limite.	}
+{	233	}{	Quand les Kuei-jin auront envahi LA, tout le monde regrettera de ne pas avoir fait pareil.	}{	Quand les Kuei-jin auront envahi LA, tout le monde regrettera de ne pas avoir fait pareil.	}{	361	}{	G.Ming_Faction >= 3 and G.Ming_Insult == 0	}{	G.Caine_Ming = G.Caine_Ming +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Hé hé hé. . . Ouaip.	}
+{	234	}{	Vous savez quoi ? Qu'ils aillent tous se faire foutre. Je quitte la ville.	}{	Vous savez quoi ? Qu'ils aillent tous se faire foutre. Je quitte la ville.	}{	191	}{	G.Caine_Flee == 0	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Hmm. . . Cette voiture irait jusqu'à la lune ? C'est là que j'aimerais m'installer.	}
+{	235	}{	Si je vais tout expliquer au prince, il m'aidera peut-être.	}{	Si je vais tout expliquer au prince, il m'aidera peut-être.	}{	161	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	LaCroix me manque. J'adorais sa façon de m'énerver.	}
+{	236	}{	Les Anarchs pourraient me pardonner si je leur disais ce qui est vraiment arrivé à Nines.	}{	Les Anarchs pourraient me pardonner si je leur disais ce qui est vraiment arrivé à Nines.	}{	171	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Faites demi-tour et emmenez-moi dans les eaux Anarchs, capitaine !	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	On vous accuse. . . Si vous fuyez, vous garderez cette réputation jusqu'à votre dernière nuit. . . Votre seule chance est de vous innocenter. . . ou d'écraser les conspirateurs qui oeuvrent contre vous. . .	}{	On vous accuse. . . Si vous fuyez, vous garderez cette réputation jusqu'à votre dernière nuit. . . Votre seule chance est de vous innocenter. . . ou d'écraser les conspirateurs qui oeuvrent contre vous. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous pouvez fuir comme un lapin, ou devenir un loup à votre tour et égorger les chefs des autres meutes.	}
+{	242	}{	Je devrais aller voir le prince. S'il savait ce qui s'est passé, il me pardonnerait.	}{	Je devrais aller voir le prince. S'il savait ce qui s'est passé, il me pardonnerait.	}{	161	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	A moins que je me cache derrière le serpent et son gorille.	}
+{	243	}{	Si les Anarchs savaient ce qui s'est réellement passé. . . emmenez-moi chez les Anarchs.	}{	Si les Anarchs savaient ce qui s'est réellement passé. . . emmenez-moi chez les Anarchs.	}{	171	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Ce lapin parle le loup. Emmenez-moi chez les Anarchs.	}
+{	244	}{	Je ne fais plus confiance à personne, sauf à moi-même.	}{	Je ne fais plus confiance à personne, sauf à moi-même.	}{	251	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Ce lapin a des petites dents pointues et cruelles.	}
+{	245	}{	Ecraser ? Bon plan. C'est la meilleure suggestion qu'on m'ait faite.	}{	Ecraser ? Bon plan. C'est la meilleure suggestion qu'on m'ait faite.	}{	251	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Je veux me métamorphoser en loup.	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	C'est la route des légendes et des parias. J'ai déjà suivi ceux qui avaient rejeté le Jihad. Leurs raisons étaient nombreuses, mais leur route s'arrêtait toujours au même endroit. Dans le néant.	}{	C'est la route des légendes et des parias. J'ai déjà suivi ceux qui avaient rejeté le Jihad. Leurs raisons étaient nombreuses, mais leur route s'arrêtait toujours au même endroit. Dans le néant.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Oui, mais le vide paraît plus intéressant que d'entendre des conneries toute la journée.	}{	Oui, mais le vide paraît plus intéressant que d'entendre des conneries toute la journée.	}{	271	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Le vide ? Ca paraît moins dangereux que la disparition.	}
+{	253	}{	Demi-tour. Je vais laver mon nom dans le sang de mes ennemis.	}{	Demi-tour. Je vais laver mon nom dans le sang de mes ennemis.	}{	271	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Mon innocence émergera du sang de mes ennemis.	}
+{	254	}{	Rester, fuir, combattre. . . Quelle importance ?	}{	Rester, fuir, combattre. . . Quelle importance ?	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Encore cinq minutes. . . Je ne peux pas rester au lit jusqu'à la fin des temps ?	}
+{	255	}{	Vous n'avez pas idée de ce que j'ai traversé. Qui êtes-vous pour me donner des conseils ?	}{	Vous n'avez pas idée de ce que j'ai traversé. Qui êtes-vous pour me donner des conseils ?	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	QU'EST-CE QUE VOUS VOULEZ ?	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Je ne suis qu'un taxi. . . Je ne peux pas vous emmener où que ce soit à moins que vous me disiez où.	}{	Je ne suis qu'un taxi. . . Je ne peux pas vous emmener où que ce soit à moins que vous me disiez où.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Je dois faire ça sans aide. Je ne peux faire confiance à personne.	}{	Je dois faire ça sans aide. Je ne peux faire confiance à personne.	}{	271	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Où que je sois, c'est là que je vais.	}
+{	263	}{	Honnêtement, je ne sais pas où aller.	}{	Honnêtement, je ne sais pas où aller.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je. . . n'en. . . sais. . . RIEN!	}
+{	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	S'il le faut. . . Ming Xiao et LaCroix, quand ils seront détruits, la ville tombera dans le chaos. Une fois la bête décapitée, vous pourrez entrer dans la légende. Mais vous ne connaîtrez peut-être jamais la paix. La vie des légendes est la proie des ambitieux. . .	}{	S'il le faut. . . Ming Xiao et LaCroix, quand ils seront détruits, la ville tombera dans le chaos. Une fois la bête décapitée, vous pourrez entrer dans la légende. Mais vous ne connaîtrez peut-être jamais la paix. La vie des légendes est la proie des ambitieux. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Merci de votre inquiétude, mais tout va bien.	}{	Merci de votre inquiétude, mais tout va bien.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma peau et moi sommes comme ça. . . On ne se séparera pas cette nuit.	}
+{	273	}{	J'ai toujours voulu être une légende. Le plus tôt sera le mieux.	}{	J'ai toujours voulu être une légende. Le plus tôt sera le mieux.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je veux porter le badge de l'infamie. Phosphorescent, si possible.	}
+{	274	}{	Le Sabbat va remplir le vide du pouvoir.	}{	Le Sabbat va remplir le vide du pouvoir.	}{	281	}{	G.Player_Sabbat == 3	}{	}{	}{	}{	}{	}{	}{	}{	L'Epée de Caïn deviendra légende.	}
+{	275	}{	Attendez. . . je me laisse un peu emporter, là. Il doit y avoir une meilleure solution.	}{	Attendez. . . je me laisse un peu emporter, là. Il doit y avoir une meilleure solution.	}{	261	}{	G.Player_Sabbat < 3	}{	}{	}{	}{	}{	}{	}{	}{	Sauter dans la fosse d'huile brûlante ou dans celle des charbons ardents ? Il n'y aurait pas plutôt une fosse aux oreillers ?	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	Alors je vous dépose à Chinatown. Bon endroit pour commencer une légende.	}{	Alors je vous dépose à Chinatown. Bon endroit pour commencer une légende.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Avant de partir, je dois faire quelques trucs.	}{	Avant de partir, je dois faire quelques trucs.	}{	591	}{	G.Player_Sabbat < 3	}{	G.Caine_Decision = 1; G.Caine_Solo = 1; pc.SetQuest("Ming",3); G.Story_State = 125	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	Il est temps d'aller voir Ming.	}{	Il est temps d'aller voir Ming.	}{	0	}{	G.Player_Sabbat < 3	}{	G.Caine_Decision = 1; G.Caine_Solo = 1; pc.SetQuest("Ming",3); G.Story_State = 125; G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	284	}{	Avant de partir, je dois faire quelques trucs.	}{	Avant de partir, je dois faire quelques trucs.	}{	591	}{	G.Player_Sabbat == 3	}{	G.Caine_Decision = 1; G.Sabbat_Ending = 1; pc.SetQuest("Ming",8); G.Story_State = 105	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	Il est temps d'aller voir Ming.	}{	Il est temps d'aller voir Ming.	}{	0	}{	G.Player_Sabbat == 3	}{	G.Caine_Decision = 1; G.Sabbat_Ending = 1; pc.SetQuest("Ming",8); G.Story_State = 105; G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Nous y voilà.	}{	Nous y voilà.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Eh, qui êtes-vous ? Comment savez-vous tout ça ?	}{	Eh, qui êtes-vous ? Comment savez-vous tout ça ?	}{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qui. . . QUI ETES-VOUS ?	}
+{	293	}{	Souhaitez-moi bonne chance.	}{	Souhaitez-moi bonne chance.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Souhaitez ma victoire, voulez-vous ?	}
+{	294	}{	Il était temps. Je commençais à m'impatienter.	}{	Il était temps. Je commençais à m'impatienter.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	LAISSEZ-MOI SORTIR ! JE NE PEUX PLUS RESTER ICI !	}
+{	295	}{	Tenez, voilà dix dollars. Achetez-vous un nouveau désodorisant d'intérieur. A plus.	}{	Tenez, voilà dix dollars. Achetez-vous un nouveau désodorisant d'intérieur. A plus.	}{	531	}{	IsClan(pc,"Ventrue") and pc.CurrentMoney() >= 10	}{	pc.MoneyRemove(10)	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	LaCroix se fait de nouveaux ennemis en permanence. Il y aura bien quelqu'un pour le défier, dans pas longtemps. Etes-vous vraiment plus à l'abri à côté de lui ?	}{	LaCroix se fait de nouveaux ennemis en permanence. Il y aura bien quelqu'un pour le défier, dans pas longtemps. Etes-vous vraiment plus à l'abri à côté de lui ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les couteaux de tous les autres vampires essayeront de trouver un abri dans le dos du prince. Vous voulez vraiment vous tenir derrière lui ?	}
+{	302	}{	Le prince a une arme secrète. Je ne m'inquiète pas.	}{	Le prince a une arme secrète. Je ne m'inquiète pas.	}{	371	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +2; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Oui, mais nous nous cacherons derrière la vieille boîte !	}
+{	303	}{	LaCroix. . . Difficile à dire. Mais la Camarilla est très forte. . .	}{	LaCroix. . . Difficile à dire. Mais la Camarilla est très forte. . .	}{	211	}{	G.Caine_Coup == 0 and G.Regent_Pissed != 3 and G.Regent_Introduced == 1 and G.Isaac_Please == 0	}{	G.Caine_Cam = G.Caine_Cam +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	LaCroix est une goûte dans le lac de sang de la Camarilla.	}
+{	304	}{	Le camp de Nines avait son charme. Mais sans lui, les Anarchs vont mourir.	}{	Le camp de Nines avait son charme. Mais sans lui, les Anarchs vont mourir.	}{	311	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	L'ombre de Nines avait un certain charme, mais elle a été mangée par un loup en même temps que Nines.	}
+{	305	}{	Je ne sais pas. . . Bon SANG ! Je ne veux plus me mêler à tout ça !	}{	Je ne sais pas. . . Bon SANG ! Je ne veux plus me mêler à tout ça !	}{	241	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas résister, je veux FUIR !	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	L'esprit Anarch survivra dans le sang de beaucoup. Mais rares sont ceux qui l'écouteront. Si quelques autres se ralliaient à la cause, tout ne serait pas perdu.	}{	L'esprit Anarch survivra dans le sang de beaucoup. Mais rares sont ceux qui l'écouteront. Si quelques autres se ralliaient à la cause, tout ne serait pas perdu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Je ne devrais pas les abandonner. Mais sans Nines. . . je me dis que tout est fini.	}{	Je ne devrais pas les abandonner. Mais sans Nines. . . je me dis que tout est fini.	}{	321	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Les Anarchs ne pouvaient compter que sur Nines. S'ils avaient plus de choses à compter, ils pourraient me compter dans leur nombre.	}
+{	313	}{	Mieux vaut être Anarch en secret qu'en cendres. LaCroix a l'avantage.	}{	Mieux vaut être Anarch en secret qu'en cendres. LaCroix a l'avantage.	}{	371	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Je serai Anarch. Mais chut, il ne faut rien dire à LaCroix, parce que je travaillerai pour lui.	}
+{	314	}{	Si les Anarchs m'avaient, ils n'auraient besoin de personne d'autre. Je suis ce qu'il y a de mieux.	}{	Si les Anarchs m'avaient, ils n'auraient besoin de personne d'autre. Je suis ce qu'il y a de mieux.	}{	221	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Ils arracheront l'étendard à mes doigts froids et sans vie. Mais je le reprendrai.	}
+{	315	}{	Anarchs, Camarilla, démons. Je ne veux partager le sort d'AUCUN groupe !	}{	Anarchs, Camarilla, démons. Je ne veux partager le sort d'AUCUN groupe !	}{	241	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	La seule chose que j'entends dans ma tête, c'est le mot 'cours' !	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	Les Anarchs ont perdu moins qu'on le pense. Il paraît qu'il reste une personne capable de raviver le mouvement. Enfin, ce n'est peut-être qu'une rumeur.	}{	Les Anarchs ont perdu moins qu'on le pense. Il paraît qu'il reste une personne capable de raviver le mouvement. Enfin, ce n'est peut-être qu'une rumeur.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Une personne contre toute la Camarilla ? Bonne chance.	}{	Une personne contre toute la Camarilla ? Bonne chance.	}{	401	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	A moins que ce soit aussi un laser orbital, ça ne m'intéresse pas.	}
+{	323	}{	Vraiment ? J'aimerais bien rencontrer cette personne.	}{	Vraiment ? J'aimerais bien rencontrer cette personne.	}{	401	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +2; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Cette personne est. . . Oui, je me rappelle son numéro. Je vais la voir. . .	}
+{	324	}{	A moins que ce soit Spider-Man, je ne vois pas quelle différence ça pourrait faire. . .	}{	A moins que ce soit Spider-Man, je ne vois pas quelle différence ça pourrait faire. . .	}{	401	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Ils ont étreint Godzilla ? J'espère. . .	}
+{	325	}{	Chaque fois que je parle à quelqu'un, ça m'attire des ennuis. Maintenant, c'est sans moi.	}{	Chaque fois que je parle à quelqu'un, ça m'attire des ennuis. Maintenant, c'est sans moi.	}{	241	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas besoin qu'on m'enchaîne à nouveau à un arbre. Je serai un chien errant.	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	Il paraît que LaCroix n'est pas très populaire dans la Camarilla. Vous savez qu'un prince ne peut pas être mis au pouvoir sans les primogènes de la ville. S'il y en avait un qui voulait le faire disparaître. . . cela pourrait se faire.	}{	Il paraît que LaCroix n'est pas très populaire dans la Camarilla. Vous savez qu'un prince ne peut pas être mis au pouvoir sans les primogènes de la ville. S'il y en avait un qui voulait le faire disparaître. . . cela pourrait se faire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Strauss. . . Strauss veut éliminer le prince. . .	}{	Strauss. . . Strauss veut éliminer le prince. . .	}{	341	}{	G.Regent_Pissed != 3 and G.Regent_Introduced == 1	}{	G.Caine_Cam = G.Caine_Cam +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Tu veux dire le magicien ? Il connaît un numéro de disparition ?	}
+{	333	}{	Emmenez-moi tout de suite à la fondation Tremere.	}{	Emmenez-moi tout de suite à la fondation Tremere.	}{	341	}{	G.Regent_Pissed != 3 and G.Regent_Introduced == 1 and G.Isaac_Please == 0	}{	G.Caine_Cam = G.Caine_Cam +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Emmenez-moi à la boutique de magie du sang !	}
+{	334	}{	Les primogènes sont tout aussi moches. Les Anarchs ont peut-être raison.	}{	Les primogènes sont tout aussi moches. Les Anarchs ont peut-être raison.	}{	311	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Primogènes ! HA HA HA ! Ils ont formé ce dandy qu'on appelle LaCroix !	}
+{	335	}{	Encore de la politique. . . Encore des conneries, oui. Je veux faire ça à ma façon.	}{	Encore de la politique. . . Encore des conneries, oui. Je veux faire ça à ma façon.	}{	241	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Encore du bla bla, encore des ordres. Je ne veux parler qu'à moi-même. . .	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Je peux vous déposer au centre ville si vous voulez, mais le primogène n'est pas un homme d'action. L'insurrection n'est pas prise à la légère.	}{	Je peux vous déposer au centre ville si vous voulez, mais le primogène n'est pas un homme d'action. L'insurrection n'est pas prise à la légère.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	Strauss s'en chargera. C'est certain.	}{	Strauss s'en chargera. C'est certain.	}{	351	}{	G.Regent_Pissed != 3 and G.Regent_Introduced == 1 and G.Isaac_Please == 0	}{	G.Caine_Cam = G.Caine_Cam +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Le magicien du sang pourra y arriver et je serai à ses côtés. . .	}
+{	343	}{	La fondation Tremere. En vitesse.	}{	La fondation Tremere. En vitesse.	}{	351	}{	G.Regent_Pissed != 3 and G.Regent_Introduced == 1 and G.Isaac_Please == 0	}{	G.Caine_Cam = G.Caine_Cam +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Emmenez-moi à la boutique de magie du sang !	}
+{	344	}{	Je ne peux compter ni sur Strauss ni sur LaCroix. Je devrais peut-être rejoindre les Anarchs.	}{	Je ne peux compter ni sur Strauss ni sur LaCroix. Je devrais peut-être rejoindre les Anarchs.	}{	311	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Les racines qui trempent dans le sang de la Camarilla font des arbres empoisonnés.	}
+{	345	}{	Je ne sais pas quoi faire. Je devrais agir sans l'aide de personne.	}{	Je ne sais pas quoi faire. Je devrais agir sans l'aide de personne.	}{	241	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Je suis l'action en personne, je m'allie avec moi-même.	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	Je vous emmène voir le représentant de la Camarilla, si vous avez décidé de rester avec eux à l'avenir.	}{	Je vous emmène voir le représentant de la Camarilla, si vous avez décidé de rester avec eux à l'avenir.	}{	#	}{	}{	G.Caine_Decision = 1; G.Caine_Regent = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	Allons-y.	}{	Allons-y.	}{	0	}{	}{	G.Story_State = 120; G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	OUI OUI !	}
+{	353	}{	C'est fait. Fondation, et plus vite que ça.	}{	C'est fait. Fondation, et plus vite que ça.	}{	0	}{	}{	G.Story_State = 120; G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	Boutique de magie du sang, et plus vite que ça !	}
+{	354	}{	Attendez. . . J'hésite. . . Je ne sais pas ce que je dois faire. . .	}{	Attendez. . . J'hésite. . . Je ne sais pas ce que je dois faire. . .	}{	441	}{	}{	G.Caine_Decision = 0; G.Caine_Regent = 0	}{	}{	}{	}{	}{	}{	}{	Fait mon choix ? Avec un esprit comme le mien, il faut faire des élections, vous savez. . .	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Très bien, je vous emmène à Chinatown. . . Mais quand vous sortirez du taxi, vous sortirez à jamais de la société des vampires.	}{	Très bien, je vous emmène à Chinatown. . . Mais quand vous sortirez du taxi, vous sortirez à jamais de la société des vampires.	}{	#	}{	}{	G.Caine_Decision = 1; G.Caine_Chinatown = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Si, je sais. Chauffeur, à Chinatown.	}{	Si, je sais. Chauffeur, à Chinatown.	}{	0	}{	}{	G.Story_State = 100; G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	OUI OUI !	}
+{	363	}{	Qu'ils aillent se faire voir. Roulez.	}{	Qu'ils aillent se faire voir. Roulez.	}{	0	}{	}{	G.Story_State = 100; G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	A plus, les nazes ! Allez, on file !	}
+{	364	}{	Ce n'est peut-être pas le mieux à faire. Je ne sais pas.	}{	Ce n'est peut-être pas le mieux à faire. Je ne sais pas.	}{	441	}{	}{	G.Caine_Decision = 0; G.Caine_Chinatown = 0	}{	}{	}{	}{	}{	}{	}{	Cette idée me saisit. . . La confusion m'électrise.	}
+{	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	Le Sarcophage d'Ankara, vous voulez dire ? Bizarre comme les vampires de toute la ville ont peur de son arrivée. Vous avez vu ce qu'il y a dedans ?	}{	Le Sarcophage d'Ankara, vous voulez dire ? Bizarre comme les vampires de toute la ville ont peur de son arrivée. Vous avez vu ce qu'il y a dedans ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le sarcophage ? Vous n'avez pas encore compris ce qu'il y avait dedans ?	}
+{	372	}{	Non, mais ça doit être puissant, à mon avis.	}{	Non, mais ça doit être puissant, à mon avis.	}{	381	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Un véritable rêve. . . des tyrannosaures à guidage laser !	}
+{	373	}{	Non. J'ai supposé qu'avec toute cette agitation, ça devait être incroyable.	}{	Non. J'ai supposé qu'avec toute cette agitation, ça devait être incroyable.	}{	381	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Quelque chose que vous savez, peut-être ? Je ne sais pas comment ça fonctionne, mais je sais que c'est explosif.	}
+{	374	}{	Je commence à me dire que Beckett à raison. Ce n'est rien.	}{	Je commence à me dire que Beckett à raison. Ce n'est rien.	}{	391	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	C'est mon dernier mot, Jean-Pierre ! Oh, la boîte ! On dirait que c'est le gros lot.	}
+{	375	}{	Je m'en moque. C'est ce truc qui m'a attiré tous ces ennuis.	}{	Je m'en moque. C'est ce truc qui m'a attiré tous ces ennuis.	}{	391	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Ma Géhenne personnelle.	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	Si tous les plans de LaCroix reposent sur le contenu du sarcophage, que fera-t-il, et que ferez-vous, s'il n'y a rien dedans ?	}{	Si tous les plans de LaCroix reposent sur le contenu du sarcophage, que fera-t-il, et que ferez-vous, s'il n'y a rien dedans ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	Je n'y avais jamais pensé. Merde, les Anarchs ont raison, LaCroix est vraiment malade.	}{	Je n'y avais jamais pensé. Merde, les Anarchs ont raison, LaCroix est vraiment malade.	}{	321	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Je me cacherais dedans pour éviter les villageois en colère. A moins que je me joigne à eux.	}
+{	383	}{	Il a encore la Camarilla, le shérif et moi. Ca lui suffit.	}{	Il a encore la Camarilla, le shérif et moi. Ca lui suffit.	}{	411	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Je vaux un million de sarcophages pour le prince.	}
+{	384	}{	Hmm. . . pas faux. Mais je cours le risque.	}{	Hmm. . . pas faux. Mais je cours le risque.	}{	411	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Il faut la lancer depuis le toit, sur les foules en contrebas. Prenez ça, Anarchs ! HA ! HA !	}
+{	385	}{	J'ai passé tout mon temps de vampire à courir après ce machin. Alors ça suffit.	}{	J'ai passé tout mon temps de vampire à courir après ce machin. Alors ça suffit.	}{	431	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	J'ai vraiment HORREUR de cette boîte. J'ai perdu ma mort à la chercher.	}
+{	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	Les vampires de la ville ont peut-être une bonne raison de le craindre.	}{	Les vampires de la ville ont peut-être une bonne raison de le craindre.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	Ouais. Et c'est LaCroix qui l'a. Je me demande s'il acceptera que je revienne.	}{	Ouais. Et c'est LaCroix qui l'a. Je me demande s'il acceptera que je revienne.	}{	411	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	LaCroix me laissera peut-être regarder à l'intérieur si je lui demande gentiment.	}
+{	393	}{	Les Anarchs s'en moquent, on dirait. Comme moi.	}{	Les Anarchs s'en moquent, on dirait. Comme moi.	}{	311	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	La peur de l'inconnu. Je pense que c'est assez amusant.	}
+{	394	}{	Ce sont les Kuei-Jin qui ont la clé. Je pourrais peut-être la leur demander en échange d'un service. . .	}{	Ce sont les Kuei-Jin qui ont la clé. Je pourrais peut-être la leur demander en échange d'un service. . .	}{	181	}{	G.Caine_Kuei == 0 and G.Ming_Faction >= 3 and G.Ming_Insult == 0	}{	G.Caine_Ming = G.Caine_Ming +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	J'échange ma loyauté contre la clé. La dame de Chinatown n'en a pas vraiment besoin.	}
+{	395	}{	Ce sont les Kuei-Jin qui ont la clé. Je pourrais peut-être la leur demander en échange d'un service. . .	}{	Ce sont les Kuei-Jin qui ont la clé. Je pourrais peut-être la leur demander en échange d'un service. . .	}{	231	}{	G.Caine_Kuei == 1 and G.Ming_Faction >= 3 and G.Ming_Insult == 0	}{	G.Caine_Ming = G.Caine_Ming +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	J'échange ma loyauté contre la clé. La dame de Chinatown n'en a pas vraiment besoin.	}
+{	396	}{	Alors je devrais peut-être aller m'en emparer.	}{	Alors je devrais peut-être aller m'en emparer.	}{	431	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	CE N'EST QUE POUR MES YEUX !	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	Je sais où vous avez une chance de les trouver. Mais il va falloir vous engager dans la lutte des Anarchs pour reprendre la ville. Je pourrais aussi bien vous emmener au centre ville pour voir LaCroix.	}{	Je sais où vous avez une chance de les trouver. Mais il va falloir vous engager dans la lutte des Anarchs pour reprendre la ville. Je pourrais aussi bien vous emmener au centre ville pour voir LaCroix.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je peux vous conduire auprès des Anarchs, où vous pourrez risquer de résister avec eux à la tempête qui s'annonce. Ou je peux vous emmener au centre ville, où vous risquez d'avoir plus de vent dans les voiles.	}
+{	402	}{	Non. L'Etat Libre doit continuer à exister. Emmenez-moi à ce contact.	}{	Non. L'Etat Libre doit continuer à exister. Emmenez-moi à ce contact.	}{	501	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +2; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	J'ai toujours voulu servir sur un bateau pirate. Je rejoins l'équipage.	}
+{	403	}{	LaCroix. . . LaCroix va gagner. . . si je m'allie aux Anarchs, je ne survivrai pas.	}{	LaCroix. . . LaCroix va gagner. . . si je m'allie aux Anarchs, je ne survivrai pas.	}{	301	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Je peux me faire un bronzage au clair de lune sur le pont de ce yacht.	}
+{	404	}{	Je ne sais pas quoi faire.	}{	Je ne sais pas quoi faire.	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où mon sang coule-t-il ? Où devrais-je aller ?	}
+{	405	}{	Je ne travaille pour personne d'autre. Je ne prends d'ordre que d'une personne - moi.	}{	Je ne travaille pour personne d'autre. Je ne prends d'ordre que d'une personne - moi.	}{	431	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Je ferai nager ce corps seul dans les eaux qui l'attendent.	}
+{	406	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	407	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	Je vous dépose au centre ville, si vous avez décidé de jurer allégeance à LaCroix. Dommage que l'expérience Anarch s'arrête. Enfin, Enoch n'a pas duré éternellement non plus.	}{	Je vous dépose au centre ville, si vous avez décidé de jurer allégeance à LaCroix. Dommage que l'expérience Anarch s'arrête. Enfin, Enoch n'a pas duré éternellement non plus.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Au centre ville. Et faites vite, OK ?	}{	Au centre ville. Et faites vite, OK ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je veux être dans le bureau de LaCroix il y a une heure.	}
+{	413	}{	Tout doit finir. Emmenez-moi voir LaCroix.	}{	Tout doit finir. Emmenez-moi voir LaCroix.	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'était comme un boxeur qui se faisait dérouiller. Il était temps que l'on arrête le combat.	}
+{	414	}{	Attendez. . . je ne sais pas quoi faire.	}{	Attendez. . . je ne sais pas quoi faire.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où mon sang coule-t-il ? Où devrais-je aller ?	}
+{	415	}{	Je ne travaille pour personne d'autre. Je ne prends d'ordre que d'une personne - moi.	}{	Je ne travaille pour personne d'autre. Je ne prends d'ordre que d'une personne - moi.	}{	431	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Je jure allégeance à l'état de préservation de ma peau.	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	Très bien.	}{	Très bien.	}{	#	}{	}{	G.Caine_Decision = 1; G.Caine_Lacroix = 1; G.Story_State = 110; G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	423	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	Vous pensez vraiment pouvoir survivre sans aide ?	}{	Vous pensez vraiment pouvoir survivre sans aide ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Ce n'est pas une question de survie. Je ne suis au service de personne.	}{	Ce n'est pas une question de survie. Je ne suis au service de personne.	}{	271	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Moi, je et moi-même, on fait équipe pour gagner.	}
+{	433	}{	J'ai survécu, pour l'instant, non ? Alors qu'ils y viennent !	}{	J'ai survécu, pour l'instant, non ? Alors qu'ils y viennent !	}{	271	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Je suis une équipe uni-personnelle et mon équipe ne perd jamais.	}
+{	434	}{	Si les Anarchs pouvaient reprendre la ville. . . j'envisagerais de les rejoindre.	}{	Si les Anarchs pouvaient reprendre la ville. . . j'envisagerais de les rejoindre.	}{	311	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Si les enfants de cette ville prenaient la grande tour d'assaut, je serais leur char.	}
+{	435	}{	La Camarilla est à l'échelle mondiale. Je ne me débarrasserai jamais d'eux.	}{	La Camarilla est à l'échelle mondiale. Je ne me débarrasserai jamais d'eux.	}{	211	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	La Camarilla est omnisciente. Ses yeux sont PARTOUT !	}
+{	436	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	On dirait que vous avez déjà pris votre décision.	}{	On dirait que vous avez déjà pris votre décision.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	(Auto-Link)	}{	(Auto-Link)	}{	451	}{	G.Caine_Anarch >= 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	443	}{	(Auto-Link)	}{	(Auto-Link)	}{	461	}{	G.Caine_Prince >= 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	444	}{	(Auto-Link)	}{	(Auto-Link)	}{	471	}{	G.Caine_Cam >= 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	445	}{	(Auto-Link)	}{	(Auto-Link)	}{	481	}{	G.Caine_Loner >= 3 or (G.Caine_Anarch < 3 and G.Caine_Prince < 3 and G.Caine_Cam < 3 and G.Caine_Ming < 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	446	}{	(Auto-Link)	}{	(Auto-Link)	}{	491	}{	G.Caine_Ming >= 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	On dirait que vous penchez en faveur des Anarchs. Leur passion est leur plus grande force et leur talon d'Achille. Mais imaginez qu'ils continuent l'Etat Libre. Ca pourrait inspirer d'autres vampires à les rejoindre, et à bâtir une nouvelle Enoch.	}{	On dirait que vous penchez en faveur des Anarchs. Leur passion est leur plus grande force et leur talon d'Achille. Mais imaginez qu'ils continuent l'Etat Libre. Ca pourrait inspirer d'autres vampires à les rejoindre, et à bâtir une nouvelle Enoch.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Oui. Les Anarchs ont besoin de moi. Allez, à Hollywood.	}{	Oui. Les Anarchs ont besoin de moi. Allez, à Hollywood.	}{	501	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Je veux être la pierre d'angle de ce nouvel édifice.	}
+{	453	}{	Les Anarchs ! Ouais ! Au diable la Camarilla, je vais avec les vilains petits canards !	}{	Les Anarchs ! Ouais ! Au diable la Camarilla, je vais avec les vilains petits canards !	}{	501	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Attendez un peu. Je vais sauver les Anarchs. . .	}
+{	454	}{	Non. Leur chef est mort. Ils n'ont plus aucune chance. Je soutiendrai LaCroix.	}{	Non. Leur chef est mort. Ils n'ont plus aucune chance. Je soutiendrai LaCroix.	}{	411	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Ils ont tous des talons d'Achille. . . Et LaCroix a l'arc et la flèche.	}
+{	455	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	On dirait que vous croyez encore que LaCroix va façonner l'avenir de cette ville. Si vous faites confiance à vos instincts comme vous faites confiance à sa victoire, je vous emmène jusqu'à lui. Même si beaucoup doivent souffrir de son ambition, son régime est peut-être le seul qui pourra survivre à notre époque moderne.	}{	On dirait que vous croyez encore que LaCroix va façonner l'avenir de cette ville. Si vous faites confiance à vos instincts comme vous faites confiance à sa victoire, je vous emmène jusqu'à lui. Même si beaucoup doivent souffrir de son ambition, son régime est peut-être le seul qui pourra survivre à notre époque moderne.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	Comme tous les grands chefs. Emmenez-moi à LaCroix, mes mains sont à ses ordres.	}{	Comme tous les grands chefs. Emmenez-moi à LaCroix, mes mains sont à ses ordres.	}{	411	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Beaucoup souffriront, mais pas moi, à l'abri dans ma tour.	}
+{	463	}{	Personne ne veut soutenir les perdants. Emmenez-moi voir LaCroix.	}{	Personne ne veut soutenir les perdants. Emmenez-moi voir LaCroix.	}{	411	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	On donne des bagues commémoratives aux vainqueurs. Il m'en faut une.	}
+{	464	}{	Mais si LaCroix arrive à son but, les Anarchs vont disparaître. Amenez-moi aux Anarchs.	}{	Mais si LaCroix arrive à son but, les Anarchs vont disparaître. Amenez-moi aux Anarchs.	}{	401	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Sa persistance est sa folie. Mon existence lui donne raison.	}
+{	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	Vous faites encore partie de la Camarilla, mais vous hésitez à y retourner à cause de LaCroix, on dirait. Vous n'êtes pas la seule personne à vous plaindre de lui. Il y en a d'autres, d'autres qui pourraient se laisser convaincre de le faire tomber de son piédestal.	}{	Vous faites encore partie de la Camarilla, mais vous hésitez à y retourner à cause de LaCroix, on dirait. Vous n'êtes pas la seule personne à vous plaindre de lui. Il y en a d'autres, d'autres qui pourraient se laisser convaincre de le faire tomber de son piédestal.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	Il va détruire le peu de crédibilité qui reste à la Camarilla	}{	Il va détruire le peu de crédibilité qui reste à la Camarilla	}{	351	}{	G.Regent_Pissed != 3 and G.Regent_Introduced == 1 and G.Isaac_Please == 0	}{	G.Caine_Cam = G.Caine_Cam +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	La Camarilla est un si bel instrument, tant que ce n'est pas LaCroix qui joue. . .	}
+{	473	}{	Je ferais n'importe quoi pour que LaCroix quitte le pouvoir. Allez, en route.	}{	Je ferais n'importe quoi pour que LaCroix quitte le pouvoir. Allez, en route.	}{	351	}{	G.Regent_Pissed != 3 and G.Regent_Introduced == 1 and G.Isaac_Please == 0	}{	G.Caine_Cam = G.Caine_Cam +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Mettons un nouveau perroquet sur ce perchoir. . .	}
+{	474	}{	LaCroix est trop puissant pour qu'on le fasse tomber. Je préfère m'allier à lui. 	}{	LaCroix est trop puissant pour qu'on le fasse tomber. Je préfère m'allier à lui. 	}{	411	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	LaCroix est inamovible, alors je vais m'asseoir à son côté.	}
+{	475	}{	Non, je pense que cette ville a besoin des Anarchs, pas de la Camarilla. Je vais les aider.	}{	Non, je pense que cette ville a besoin des Anarchs, pas de la Camarilla. Je vais les aider.	}{	401	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Cette ville a besoin d'être libérée des veines entremêlées de tous les coeurs mauvais.	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	J'en ai rencontré d'autres comme vous, et ils sont tous arrivés à la même conclusion. Ils ne peuvent jurer allégeance à aucun groupe ou individu sur la planète. Si tel est le chemin que vous voulez prendre, je peux vous emmener au commencement du chemin.	}{	J'en ai rencontré d'autres comme vous, et ils sont tous arrivés à la même conclusion. Ils ne peuvent jurer allégeance à aucun groupe ou individu sur la planète. Si tel est le chemin que vous voulez prendre, je peux vous emmener au commencement du chemin.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	Oui. . . Oui, je deviendrai une armée, une personne contre tous. Par où commencer ?	}{	Oui. . . Oui, je deviendrai une armée, une personne contre tous. Par où commencer ?	}{	271	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	OUI ! C'est ainsi que coule mon sang. . .	}
+{	483	}{	On se sert de moi depuis trop longtemps. C'est fini. Comment obtenir mon indépendance ?	}{	On se sert de moi depuis trop longtemps. C'est fini. Comment obtenir mon indépendance ?	}{	271	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Laissez-moi ! Je veux courir, être libre !	}
+{	484	}{	Sans alliés, je ne me vois pas survivre. Les Anarchs sont ma meilleure chance.	}{	Sans alliés, je ne me vois pas survivre. Les Anarchs sont ma meilleure chance.	}{	401	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Je veux nager dans une école. Il y a moins de risque de se faire manger par un requin. . .	}
+{	485	}{	Non, je vais regagner la confiance de LaCroix. Puis, un jour, je le renverserai.	}{	Non, je vais regagner la confiance de LaCroix. Puis, un jour, je le renverserai.	}{	411	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	J'étais si bien dans la tour. Je voyais mon avenir de derrière le bureau. . .	}
+{	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	On dirait que vous avez envie de renoncer à votre sang pour vous tourner vers les envahisseurs d'Orient. Je n'ai pas à mettre en doute la logique par laquelle vous arrivez à cette décision. Si vous voulez vous mettre dans cette situation, je vous emmène.	}{	On dirait que vous avez envie de renoncer à votre sang pour vous tourner vers les envahisseurs d'Orient. Je n'ai pas à mettre en doute la logique par laquelle vous arrivez à cette décision. Si vous voulez vous mettre dans cette situation, je vous emmène.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	Vraiment ?	}{	Vraiment ?	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les enfants, ça n'écoute jamais rien. Vous devriez le savoir.	}
+{	493	}{	Je les utiliserai tant que j'aurai besoin d'eux. Après avoir ouvert le sarcophage, je les éliminerai.	}{	Je les utiliserai tant que j'aurai besoin d'eux. Après avoir ouvert le sarcophage, je les éliminerai.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais donner des tapes amicales dans le dos, puis des coups de couteaux hostiles. . .	}
+{	494	}{	Vous avez raison. Je devrais peut-être aider les Anarchs à se débarrasser de Ming.	}{	Vous avez raison. Je devrais peut-être aider les Anarchs à se débarrasser de Ming.	}{	401	}{	G.Nines_Scorn == 0 or G.Player_Anarch == 1 or G.Damsel_Like >= 3	}{	G.Caine_Anarch = G.Caine_Anarch +1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1	}{	}{	}{	}{	}{	}{	}{	Des envahisseurs orientaux ? Je croyais que vous parliez d'envahisseurs venus d'ailleurs. . . Non, je suis Anarch.	}
+{	495	}{	Le prince veut la voir morte. Tant pis pour elle, je reste avec LaCroix.	}{	Le prince veut la voir morte. Tant pis pour elle, je reste avec LaCroix.	}{	411	}{	G.Prince_Reaction >= 3	}{	G.Caine_Prince = G.Caine_Prince +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Au moins LaCroix est un cousin. . . D'accord, je ne l'aime pas, mais c'est quand même la famille. . .	}
+{	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	Si vous partagez la passion des Anarchs et que vous voulez partager le fardeau d'un tel feu, nous irons rencontrer la dernière personne capable de les faire survivre. 	}{	Si vous partagez la passion des Anarchs et que vous voulez partager le fardeau d'un tel feu, nous irons rencontrer la dernière personne capable de les faire survivre. 	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	S'ils sont comme Nines, on aura torché LaCroix et Ming avant le lever du soleil.	}{	S'ils sont comme Nines, on aura torché LaCroix et Ming avant le lever du soleil.	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nous organiserons un bal sur les cendres de nos ennemis.	}
+{	503	}{	Si je suis avec eux, les Anarchs ne pourront pas perdre. On y va.	}{	Si je suis avec eux, les Anarchs ne pourront pas perdre. On y va.	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	Voilà un feu où je mettrais ma main.	}
+{	504	}{	Je commence à douter. Il doit y avoir un autre moyen.	}{	Je commence à douter. Il doit y avoir un autre moyen.	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	A force de courir en rond, j'ai le tournis.	}
+{	505	}{	Une autre personne à servir ? Non, je conquerrai cette ville sans personne.	}{	Une autre personne à servir ? Non, je conquerrai cette ville sans personne.	}{	271	}{	}{	G.Caine_Loner = G.Caine_Loner +1; G.Caine_Ming = G.Caine_Ming -1; G.Caine_Prince = G.Caine_Prince -1; G.Caine_Cam = G.Caine_Cam -1; G.Caine_Anarch = G.Caine_Anarch -1	}{	}{	}{	}{	}{	}{	}{	Je dois faire ça moi-même. . .	}
+{	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	Si telle est votre décision.	}{	Si telle est votre décision.	}{	#	}{	}{	G.Caine_Decision = 1; G.Caine_Nines = 1; G.Story_State = 115; G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	513	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	514	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	515	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	516	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	517	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	520	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	521	}{	J'emmène les gens à leur destination. Voilà ce que je fais.	}{	J'emmène les gens à leur destination. Voilà ce que je fais.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	(Auto-Link)	}{	(Auto-Link)	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	523	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	524	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Souvenez-vous - où que nous allions, c'est le sang de Caïn qui fait notre destinée. Adieu, vampire.	}{	Souvenez-vous - où que nous allions, c'est le sang de Caïn qui fait notre destinée. Adieu, vampire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	C'est ça. . . Au revoir.	}{	C'est ça. . . Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	??? Cela signifie ? Non, impossible. . .	}
+{	533	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	534	}{	J'aime bien me tailler mon destin sans personne. On se reverra, le taxi.	}{	J'aime bien me tailler mon destin sans personne. On se reverra, le taxi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	JE DOIS PARTIR D'ICI !	}
+{	535	}{	Caïn ? Vous croyez à ces conneries ? Ha, je vous croyais plus raisonnable que ça. A plus.	}{	Caïn ? Vous croyez à ces conneries ? Ha, je vous croyais plus raisonnable que ça. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oh. . .	}
+{	536	}{	Du sang ? Oui, il va en couler beaucoup. Adieu.	}{	Du sang ? Oui, il va en couler beaucoup. Adieu.	}{	0	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Le sang de Caïn coulera dans les rues cette nuit.	}
+{	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	Je conduis, et si vous décidez où vous voulez aller, vous me le dites.	}{	Je conduis, et si vous décidez où vous voulez aller, vous me le dites.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Vraiment ? Non, pas possible.	}{	Vraiment ? Non, pas possible.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	543	}{	Si. Vous. Ne. Sentez. Pas ?	}{	Si. Vous. Ne. Sentez. Pas ?	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	544	}{	Mais vous avez déjà fait cette erreur par le passé.	}{	Mais vous avez déjà fait cette erreur par le passé.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	545	}{	Où allons-nous ? Où nous emmène-t-on ?	}{	Où allons-nous ? Où nous emmène-t-on ?	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	546	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	547	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	548	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	Oui.	}{	Oui.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	C'est tellement évident. . .	}{	C'est tellement évident. . .	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	553	}{	LA FERME !	}{	LA FERME !	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	554	}{	Je veux sortir. Ce n'est pas possible.	}{	Je veux sortir. Ce n'est pas possible.	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	555	}{	NON NON NON NON !	}{	NON NON NON NON !	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	556	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	558	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	Non.	}{	Non.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	Stop. Stop. Stop. Stop. Stop. Stop. Stop. Stop. Stop. Stop. Stop. Stop.	}{	Stop. Stop. Stop. Stop. Stop. Stop. Stop. Stop. Stop. Stop. Stop. Stop.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	563	}{	La destination n'est peut-être pas si claire.	}{	La destination n'est peut-être pas si claire.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	564	}{	IMBECILE ! VOUS NE VOYEZ PAS ! ON NOUS A DEJA JUGES !	}{	IMBECILE ! VOUS NE VOYEZ PAS ! ON NOUS A DEJA JUGES !	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	565	}{	Vous avez tort. . . Vous avez tort. . . n'est-ce pas ?	}{	Vous avez tort. . . Vous avez tort. . . n'est-ce pas ?	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	566	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	. . .	}{	. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	Laissez-moi sortir.	}{	Laissez-moi sortir.	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	573	}{	Laissez-moi partir !	}{	Laissez-moi partir !	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	574	}{	QUE VOULEZ-VOUS ? AIDEZ-MOI !	}{	QUE VOULEZ-VOUS ? AIDEZ-MOI !	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	575	}{	AAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHH !	}{	AAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHH !	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	576	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	577	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	Quelque chose vous trouble ?	}{	Quelque chose vous trouble ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	Vous savez. . . vous savez. . . n'est-ce pas ?	}{	Vous savez. . . vous savez. . . n'est-ce pas ?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	583	}{	Je ne sais pas. J'en ai la certitude. Je n'en ai aucune idée. C'est beaucoup trop.	}{	Je ne sais pas. J'en ai la certitude. Je n'en ai aucune idée. C'est beaucoup trop.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	584	}{	Je suis une boussole au pôle Nord.	}{	Je suis une boussole au pôle Nord.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	585	}{	Sniff. . . Je. . . ouin. . . naaan. . .	}{	Sniff. . . Je. . . ouin. . . naaan. . .	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	586	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	587	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	Où ?	}{	Où ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	Il me faut des armes.	}{	Il me faut des armes.	}{	611	}{	(G.Trip_Know > 0 or (not IsDead("Mercurio") and G.Mercurio_Dead != 1)) and G.Caine_Weapons == 0	}{	G.Caine_Weapons = 0	}{	}{	}{	}{	}{	}{	}{	Mon arsenal a besoin d'action.	}
+{	593	}{	Je dois retourner à mon refuge.	}{	Je dois retourner à mon refuge.	}{	0	}{	}{	G.Caine_Haven = 1	}{	}{	}{	}{	}{	}{	}{	On est bien que chez soi.	}
+{	594	}{	Je dois acheter du sang.	}{	Je dois acheter du sang.	}{	0	}{	G.Vandal_Shop == 1 or G.Lily_Free > 0	}{	G.Caine_Vandal = 1	}{	}{	}{	}{	}{	}{	}{	Je dois retirer de l'argent à la banque.	}
+{	595	}{	En route pour Chinatown.	}{	En route pour Chinatown.	}{	0	}{	G.Story_State == 125 and not G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	La fin est proche. . .	}
+{	596	}{	En route pour Chinatown.	}{	En route pour Chinatown.	}{	0	}{	G.Story_State == 120 and G.Regent_Ending == 1 and not G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	La fin est proche. . .	}
+{	597	}{	En route pour Chinatown.	}{	En route pour Chinatown.	}{	0	}{	G.Story_State == 115 and G.Nines_Ending == 1 and not G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	La fin est proche. . .	}
+{	598	}{	En route pour Chinatown.	}{	En route pour Chinatown.	}{	0	}{	G.Story_State == 105 and G.Sabbat_Ending == 1 and not G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	La fin est proche. . .	}
+{	599	}{	Il est temps d'en finir.	}{	Il est temps d'en finir.	}{	291	}{	G.Story_State == 125 and G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	C'est la fin.	}
+{	600	}{	Il est temps d'en finir.	}{	Il est temps d'en finir.	}{	291	}{	G.Story_State == 120 and G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	C'est la fin.	}
+{	601	}{	Il est temps d'en finir.	}{	Il est temps d'en finir.	}{	291	}{	G.Story_State == 115 and G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	C'est la fin.	}
+{	602	}{	Il est temps d'en finir.	}{	Il est temps d'en finir.	}{	291	}{	G.Story_State == 110 and G.Prince_Ending == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	C'est la fin.	}
+{	603	}{	Il est temps d'en finir.	}{	Il est temps d'en finir.	}{	291	}{	G.Story_State == 105 and G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	C'est la fin.	}
+{	604	}{	Il est temps d'en finir.	}{	Il est temps d'en finir.	}{	291	}{	G.Story_State == 100 and G.Ming_Ending == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	C'est la fin.	}
+{	605	}{	Honnêtement, j'ignore où aller.	}{	Honnêtement, j'ignore où aller.	}{	441	}{	G.Nines_Ending == 0 and G.Ming_Ending == 0 and G.Sabbat_Ending == 0 and G.Regent_Ending == 0 and G.Prince_Ending == 0 and G.Caine_Solo == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je. . . ne. . . SAIS PAS !	}
+{	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	. . .	}{	. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	Emmenez-moi chez Trip, le prêteur sur gages.	}{	Emmenez-moi chez Trip, le prêteur sur gages.	}{	0	}{	G.Trip_Know > 0 or G.Trip_Guns == 3	}{	G.Caine_Trip = 1	}{	}{	}{	}{	}{	}{	}{	J'aimerais me faire un Trip.	}
+{	613	}{	Emmenez-moi chez Mercurio.	}{	Emmenez-moi chez Mercurio.	}{	0	}{	not IsDead("Mercurio") and G.Mercurio_Dead != 1	}{	G.Caine_Mercurio = 1	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de Mercure.	}
+{	614	}{	Laissez tomber, j'ai tout ce qu'il me faut.	}{	Laissez tomber, j'ai tout ce qu'il me faut.	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oubliez, en fait je suis déjà une machine à tuer !	}
+{	615	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	616	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	617	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	618	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	619	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	620	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	623	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	624	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	625	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	626	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	627	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	628	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	629	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	630	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	631	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	633	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	634	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	635	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	636	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	637	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	638	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	640	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	641	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	643	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	644	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	645	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	646	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	647	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	648	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	650	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	651	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	652	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	653	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	654	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	655	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	656	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	657	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	658	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	659	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	660	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	661	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	(Starting Condition)	}{	}{	591	}{	G.Caine_Decision == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	663	}{	(Starting Condition)	}{	}{	31	}{	G.Caine_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	664	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

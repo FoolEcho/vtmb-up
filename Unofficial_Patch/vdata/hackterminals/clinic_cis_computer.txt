@@ -1,0 +1,85 @@
+TerminalDefinition
+{
+	"screen saver"		"Clinique médicale de Santa Monica"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Console sécurisée S.M.M.C."  
+		"line1"		"Santé et Sécurité"
+		"line2"		"Services des informations centrales"
+	}
+
+	SubDir
+	{
+		"name"			"Porte SC"
+		"password"		"dosage"
+		"description"		"Porte substances contrôlées"
+		
+		Function
+		{
+			"name"		"Fermer"
+			"description"	"Fermer porte"
+			"runtext"	"Porte fermée"
+			"trigger"	"0"
+		}
+
+		Function
+		{
+			"name"		"Ouvrir"
+			"description"	"Ouvrir porte"
+			"runtext"	"Porte ouverte"
+			"trigger" 	"1"
+		}
+	}
+
+	SubDir
+	{
+		"name"			"Cabinet SC"
+		"password"		"money"
+		"description"		"Cabinet substances contrôlées"
+		"dependency"		"G.Werewolf_Quest ==  0"
+
+		Function
+		{
+			"name"		"Fermer"
+			"description"	"Fermer le cabinet"
+			"runtext"	"Cabinet fermé"
+			"trigger"	"2"
+		}
+
+		Function
+		{
+			"name"		"Ouvrir"
+			"description"	"Ouvrir cabinet"
+			"runtext"	"Cabinet ouvert. Caméra des substances contrôlées activée pour votre sécurité."
+			"trigger" 	"3"
+		}
+	}
+
+	SubDir
+	{
+		"name"			"Coffre SC"
+		"password"		"paige"
+		"description"		"Cabinet substances contrôlées"
+		"dependency"		"G.Werewolf_Quest ==  1"
+
+		Function
+		{
+			"name"		"Fermer"
+			"description"	"Fermer cabinet"
+			"runtext"	"Cabinet fermé"
+			"trigger"	"2"
+		}
+
+		Function
+		{
+			"name"		"Ouvrir"
+			"description"	"Ouvrir cabinet"
+			"runtext"	"Cabinet ouvert. Caméra des substances contrôlées activée pour votre sécurité."
+			"trigger" 	"3"
+		}
+	}
+
+}

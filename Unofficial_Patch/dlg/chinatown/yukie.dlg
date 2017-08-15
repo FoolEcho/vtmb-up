@@ -1,0 +1,576 @@
+{	1	}{	[Baisse les yeux vers la table, soupçonneuse, s'attend à une attaque, mais reste calme]Ayashi, ne. . . (Étrange, n'est-ce pas ?)	}{	[Baisse les yeux vers la table, soupçonneuse, s'attend à une attaque, mais reste calme]Ayashi, ne. . . (Étrange, n'est-ce pas ?)	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Quoi ?	}{	Quoi ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	???	}
+{	3	}{	Comment vous venez de m'appeler, là ?	}{	Comment vous venez de m'appeler, là ?	}{	11	}{	G.Ming_Met == 1	}{	}{	}{	}{	}{	}{	}{	}{	Blah, bleh, bleu, blah ?	}
+{	4	}{	Eh, pourquoi une petite fille comme vous a une si grande lame ?	}{	Eh, pourquoi une petite fille comme vous a une si grande lame ?	}{	11	}{	G.Ming_Met == 1	}{	}{	}{	}{	}{	}{	}{	}{	Tu sens comme l'Orient.	}
+{	5	}{	Vous avez dix-huit ans, c'est ça ?	}{	Vous avez dix-huit ans, c'est ça ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors toi, tu es mignonnette. . .	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	J'ai vu quand vous entrer dans le temple. . . Bizarre. . . Je sais quoi vous êtes. . .	}{	J'ai vu quand vous entrer dans le temple. . . Bizarre. . . Je sais quoi vous êtes. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Une personne religieuse ? Est-il mal de visiter un temple de nos jours ?	}{	Une personne religieuse ? Est-il mal de visiter un temple de nos jours ?	}{	21	}{	Persuasion 6	}{	}{	}{	}{	}{	}{	}{	}{	C'est la folie. . . de Dieu. Religieuse, pas bizarre. . .	}
+{	13	}{	Gardez votre problème au fourreau ou je vous le carre dans le derrière.	}{	Gardez votre problème au fourreau ou je vous le carre dans le derrière.	}{	211	}{	Intimidate 6	}{	}{	}{	}{	}{	}{	}{	}{	Les petites filles qui en voient trop devraient être punies.	}
+{	14	}{	Ce que je suis ? C'est-à-dire ?	}{	Ce que je suis ? C'est-à-dire ?	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	Je ne sais pas de quoi vous parlez. . .	}{	Je ne sais pas de quoi vous parlez. . .	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	Si vous saviez ce que je suis, vous auriez peur. . .	}{	Si vous saviez ce que je suis, vous auriez peur. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oh. Non.	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Religion ? [Shirimasen] (je ne sais pas,) mais toutes les créatures, même mauvaises, ont une place dans le monde. . . Je n'ai pas de vengeance contre vous, mais je pourrais. . .	}{	Religion ? [Shirimasen] (je ne sais pas, ) mais toutes les créatures, même mauvaises, ont une place dans le monde. . . Je n'ai pas de vengeance contre vous, mais je pourrais. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Ne nous énervons pas. . . qui êtes-vous ?	}{	Ne nous énervons pas. . . qui êtes-vous ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes perdue ? Le Japon, c'est par là.	}
+{	23	}{	De quoi parlez-vous ? Vous êtes folle. . .	}{	De quoi parlez-vous ? Vous êtes folle. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est dingue, vous êtes dingue. Mais moi non. Si, tu l'es - non, c'est toi !	}
+{	24	}{	Maléfique ? Je ne suis pas maléfique. . .	}{	Maléfique ? Je ne suis pas maléfique. . .	}{	51	}{	Humanity 8	}{	}{	}{	}{	}{	}{	}{	}{	Maléfique ? Peut-être. Peut-être pas. Bien sûr. Pas du tout.	}
+{	25	}{	J'ai ma place partout où j'en ai envie, à présent. . .	}{	J'ai ma place partout où j'en ai envie, à présent. . .	}{	41	}{	Humanity -8 & G.Yukie_Eat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je connais ma place, c'est là où je suis. A rire de mes ennemis vaincus.	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Je suis [shih] (chasseuse de démon. . .) Je ne suis pas comme les autres. . . Mais je n'ai pas de vengeance contre vous. . . pour l'instant.	}{	Je suis [shih] (chasseuse de démon. . .) Je ne suis pas comme les autres. . . Mais je n'ai pas de vengeance contre vous. . . pour l'instant.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Ne nous énervons pas. . . qui êtes-vous ?	}{	Ne nous énervons pas. . . qui êtes-vous ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes perdue ? Le Japon, c'est par là.	}
+{	33	}{	De quoi parlez-vous ? Vous êtes folle. . .	}{	De quoi parlez-vous ? Vous êtes folle. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est dingue, vous êtes dingue. Mais moi non. Si, tu l'es - non, c'est toi !	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	[Shen] (Démon, ) démon. . . Je sais ce que vous êtes. . . [Nande?] (Pourquoi ?). . . pourquoi êtes-vous ici ?	}{	[Shen] (Démon, ) démon. . . Je sais ce que vous êtes. . . [Nande?] (Pourquoi ?). . . pourquoi êtes-vous ici ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Que faites-vous ici ?	}{	Que faites-vous ici ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis mort ici. Et vous ?	}
+{	43	}{	Ca ne me regarde pas. . .	}{	Ca ne me regarde pas. . .	}{	71	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Pour un casse-croûte.	}{	Pour un casse-croûte.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je pensais manger asiatique, aujourd'hui.	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	[Li] (Bien. . .) Je n'ai pas raison de vous tuer, alors.	}{	[Li] (Bien. . .) Je n'ai pas raison de vous tuer, alors.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes perdue ? Le Japon, c'est par là.	}
+{	53	}{	Je me demande encore quoi faire à votre sujet. J'ai faim. . .	}{	Je me demande encore quoi faire à votre sujet. J'ai faim. . .	}{	91	}{	Humanity -8 & G.Yukie_Eat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Il va falloir que je goûte, pour voir si vous êtes vraiment bonne.	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Je parle à un démon alors que je devrais tuer. . . Folle. . . Oui, d'accord.	}{	Je parle à un démon alors que je devrais tuer. . . Folle. . . Oui, d'accord.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Ne nous énervons pas. . . qui êtes-vous ?	}{	Ne nous énervons pas. . . qui êtes-vous ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes perdue ? Le Japon, c'est par là.	}
+{	63	}{	Je parle avec mon déjeuner. . . Je dois perdre la tête.	}{	Je parle avec mon déjeuner. . . Je dois perdre la tête.	}{	91	}{	Humanity -8 & G.Yukie_Eat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Il va falloir que je goûte, pour voir si vous êtes vraiment bonne.	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Je n'espère pas. . .	}{	Je n'espère pas. . .	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Que faites-vous ici ?	}{	Que faites-vous ici ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis morte ici, et vous ?	}
+{	73	}{	Rien qu'une petite gorgée, pour goûter. . .	}{	Rien qu'une petite gorgée, pour goûter. . .	}{	91	}{	Humanity -8 & G.Yukie_Eat == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	O-gami Yukie [desu] (je suis. . .) Je suis [shih] (chasseuse de démon,) chasseuse de démon. . . Je viens dans cette ville pour le sang du démon qui tue mon maître. . . Ne me dérangez pas, ma vengeance vous fauchera s'il le faut.	}{	O-gami Yukie [desu] (je suis. . .) Je suis [shih] (chasseuse de démon, ) chasseuse de démon. . . Je viens dans cette ville pour le sang du démon qui tue mon maître. . . Ne me dérangez pas, ma vengeance vous fauchera s'il le faut.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Quel démon ?	}{	Quel démon ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes dans la bonne ville.	}
+{	83	}{	Les Kuei-Jin ne sont pas mes amis. . .	}{	Les Kuei-Jin ne sont pas mes amis. . .	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les Kuei-jin et moi, on est comme les pommes et les crabes. . .	}
+{	84	}{	Vous êtes une chasseuse ? En général, vous ne parlez pas à des gens comme moi. . .	}{	Vous êtes une chasseuse ? En général, vous ne parlez pas à des gens comme moi. . .	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si vous cherchez ma tête, mon corps en a encore besoin.	}
+{	85	}{	Je vous l'ai déjà dit, je ne suis pas un démon.	}{	Je vous l'ai déjà dit, je ne suis pas un démon.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Un démon ? Moi ? Mais non. . .	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Autre démon dire ça à moi. . . Eux mourir avec faim ?	}{	Autre démon dire ça à moi. . . Eux mourir avec faim ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Yukie_Eat = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Ne nous énervons pas. . . qui êtes-vous ?	}{	Ne nous énervons pas. . . qui êtes-vous ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes perdue ? Le Japon, c'est par là.	}
+{	93	}{	Pour une chasseuse, vous êtes assez sympa. . . Je pense que je vais vous laisser vivre. . . 	}{	Pour une chasseuse, vous êtes assez sympa. . . Je pense que je vais vous laisser vivre. . . 	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ah, c'est marrant. Allez, je ne vous mange pas.	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Je ne chasse pas les Kuei-Jin. . .	}{	Je ne chasse pas les Kuei-Jin. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	(Auto-Link)	}{	(Auto-Link)	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Allez dans un hôpital. . . votre coeur s'est arrêté de battre. . .	}{	Allez dans un hôpital. . . votre coeur s'est arrêté de battre. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Bon. . . alors, qu'est-ce que vous faites à LA ?	}{	Bon. . . alors, qu'est-ce que vous faites à LA ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes sur la piste de. . . quelque chose que mon esprit ne voit pas.	}
+{	113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	Vous en savez trop. . . Je ne peux pas vous laisser partir.	}{	Vous en savez trop. . . Je ne peux pas vous laisser partir.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon cœur qui ne bat plus, voilà la dernière chose que vous n'entendrez pas.	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Démon et homme vivent ensemble dans ce monde. . . C'est pour toujours, peut-être. Je ne peux pas tuer tous les démons, [deki do](mais) je ne peux pas punir beaucoup criminels. Attention. . .	}{	Démon et homme vivent ensemble dans ce monde. . . C'est pour toujours, peut-être. Je ne peux pas tuer tous les démons, [deki do](mais) je ne peux pas punir beaucoup criminels. Attention. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Hunter = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Alors qu'est-ce que vous faites dans la ville ?	}{	Alors qu'est-ce que vous faites dans la ville ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes sur la piste de. . . quelque chose que mon esprit ne voit pas.	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	Vous n'êtes pas comme les autres chasseuses. . .	}{	Vous n'êtes pas comme les autres chasseuses. . .	}{	151	}{	G.Yukie_Flirt == 0	}{	}{	}{	}{	}{	}{	}{	}{	Un chasseur sans pieu contre ma poitrine. . . C'est un problème.	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Je chasse Hengeyôkai. . . Mon sensei a tué démon qui a tué ma famille, et maintenant je tue celui qui tue lui. . . Je suis cadavres depuis Japon à [Rosu Angeresu] (Los Angeles). . . Hengeyôkai ici et va mourir ici.	}{	Je chasse Hengeyôkai. . . Mon sensei a tué démon qui a tué ma famille, et maintenant je tue celui qui tue lui. . . Je suis cadavres depuis Japon à [Rosu Angeresu] (Los Angeles). . . Hengeyôkai ici et va mourir ici.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Heng = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	C'est quoi, un Hengeyôkai ?	}{	C'est quoi, un Hengeyôkai ?	}{	161	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	Votre anglais est affligeant.	}{	Votre anglais est affligeant.	}{	171	}{	not IsClan(pc,"Malkavian") and G.Yukie_Egiru == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	Parlez-moi de ce Henge-machin.	}{	Parlez-moi de ce Henge-machin.	}{	161	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	Ca sent le sapin. . . Ah non, le poisson.	}{	Ca sent le sapin. . . Ah non, le poisson.	}{	541	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Ca sent le sapin. . . Ah non, le poisson.	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Les humains ne devraient pas connaître les démons. . . Je sais qu'ils les craignent. . . [wakarimashta ka] (Compris ?) Compris ?	}{	Les humains ne devraient pas connaître les démons. . . Je sais qu'ils les craignent. . . [wakarimashta ka] (Compris ?) Compris ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Mmhh. . . Je dois pouvoir m'en faire une raison. . . alors, qu'est-ce que vous faites dans cette ville ?	}{	Mmhh. . . Je dois pouvoir m'en faire une raison. . . alors, qu'est-ce que vous faites dans cette ville ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes sur la piste de. . . quelque chose que mon esprit ne voit pas.	}
+{	143	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	Vous n'êtes pas comme les autres chasseuses. . .	}{	Vous n'êtes pas comme les autres chasseuses. . .	}{	151	}{	G.Yukie_Flirt == 0	}{	}{	}{	}{	}{	}{	}{	}{	Un chasseur sans pieu contre ma poitrine. . . C'est un problème.	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	[Kiyuto, ne] (Migonnne, hein ?) Je suis sure que vous dites ça à toutes les chasseuses. Vous ne pouvez pas me charmer, démon.	}{	[Kiyuto, ne] (Migonnne, hein ?) Je suis sure que vous dites ça à toutes les chasseuses. Vous ne pouvez pas me charmer, démon.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Yukie_Flirt = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Dommage. . . alors, que faites-vous dans cette ville ?	}{	Dommage. . . alors, que faites-vous dans cette ville ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dur. Vous êtes sur la piste de. . . quelque chose que mon esprit ne voit pas.	}
+{	153	}{	Vous ne voulez vraiment pas que je goûte ?	}{	Vous ne voulez vraiment pas que je goûte ?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne voulez vraiment pas que je goûte ?	}
+{	154	}{	Je ne peux pas vous charmer, mais je peux vous faire mal. . .	}{	Je ne peux pas vous charmer, mais je peux vous faire mal. . .	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je trouve la mort tout à fait charmante.	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Les Hengeyôkai sont démons qui se cachent dans la peau d'un homme. . . mais sont pas homme.	}{	Les Hengeyôkai sont démons qui se cachent dans la peau d'un homme. . . mais sont pas homme.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Yukie_Heng = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Vous savez où se trouve le démon ?	}{	Vous savez où se trouve le démon ?	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il se cache. . . Je le sais.	}
+{	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	Votre anglais est affligeant.	}{	Votre anglais est affligeant.	}{	171	}{	not IsClan(pc,"Malkavian") and G.Yukie_Egiru == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	Eh, vous devriez retourner à l'école. Vous allez vous faire mal si vous restez dans le coin.	}{	Eh, vous devriez retourner à l'école. Vous allez vous faire mal si vous restez dans le coin.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il faut des gros durs, pas des petites mignonnes, pour ce genre de chose.	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	[Nihongo o hanesemasu ka] (Vous parlez japonais ?) Vous parlez japonais ?	}{	[Nihongo o hanesemasu ka] (Vous parlez japonais ?) Vous parlez japonais ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Je comprends. Parlez-moi de l'Hengeyôkai.	}{	Je comprends. Parlez-moi de l'Hengeyôkai.	}{	161	}{	G.Yukie_Heng == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	Eh bien, au moins, est-ce que vous pouvez être un peu plus spécifique ?	}{	Eh bien, au moins, est-ce que vous pouvez être un peu plus spécifique ?	}{	181	}{	G.Yukie_Heng == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	Eh, vous devriez retourner à l'école. Vous allez vous faire mal si vous restez dans le coin.	}{	Eh, vous devriez retourner à l'école. Vous allez vous faire mal si vous restez dans le coin.	}{	181	}{	G.Yukie_Heng == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Je sais qu'il est tout près. . . [edo] (hmm. . .) j'ai perdu sa trace. Vous croiser Hengeyôkai ?	}{	Je sais qu'il est tout près. . . [edo] (hmm. . .) j'ai perdu sa trace. Vous croiser Hengeyôkai ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Heng = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Non, jamais. Mais je vais ouvrir l'oeil. 	}{	Non, jamais. Mais je vais ouvrir l'oeil. 	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si je le sens, je viendrai vous chercher.	}
+{	183	}{	Comment saurais-je que j'en ai rencontré un ?	}{	Comment saurais-je que j'en ai rencontré un ?	}{	201	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	Je ne peux même pas le prononcer. . .	}{	Je ne peux même pas le prononcer. . .	}{	201	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	[Avec confiance] Pas question. . .	}{	[Avec confiance] Pas question. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Eh bien, si je vois un Hengeyôkai, je vous le dirai.	}{	Eh bien, si je vois un Hengeyôkai, je vous le dirai.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si je le sens, je viendrai vous chercher.	}
+{	193	}{	Vous êtes encore jeune. . . Arrêtez, allez mener une vie normale.	}{	Vous êtes encore jeune. . . Arrêtez, allez mener une vie normale.	}{	221	}{	Humanity 8	}{	}{	}{	}{	}{	}{	}{	}{	Plus on tue, plus on est triste. Rentrez chez vous.	}
+{	194	}{	C'est votre vie. . . Je vous enverrai ce Hengemachin si je le trouve. . .	}{	C'est votre vie. . . Je vous enverrai ce Hengemachin si je le trouve. . .	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais jouer mon rôle dans votre vengeance.	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Je suis sûr que vous pourriez en reconnaître un. . .	}{	Je suis sûr que vous pourriez en reconnaître un. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Ca va bien m'aider, ça. . . Si j'en vois un, je vous le ferai savoir. . .	}{	Ca va bien m'aider, ça. . . Si j'en vois un, je vous le ferai savoir. . .	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	203	}{	Je suis complètement malade de m'impliquer. . . Mais si je le croise, je vous le dirai.	}{	Je suis complètement malade de m'impliquer. . . Mais si je le croise, je vous le dirai.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	Bonne chance. . . Et ne vous faites pas mal avec cette belle lame.	}{	Bonne chance. . . Et ne vous faites pas mal avec cette belle lame.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	Je viens de me rendre compte que je parle à un chasseur. . . Je m'en vais. . .	}{	Je viens de me rendre compte que je parle à un chasseur. . . Je m'en vais. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	[Se prépare pour le conflit]Attention, démon. . . Mon épée est courroucée et a faim de votre sang.	}{	[Se prépare pour le conflit]Attention, démon. . . Mon épée est courroucée et a faim de votre sang.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Pas besoin de faire un truc dans ce goût-là. . . Dites-moi, qu'est-ce que vous faites dans cette ville ?	}{	Pas besoin de faire un truc dans ce goût-là. . . Dites-moi, qu'est-ce que vous faites dans cette ville ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bonne épée, belle épée. . . Tu es bien loin du Japon. Pourquoi ?	}
+{	213	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	Vous avez beaucoup à apprendre avant de me battre. Allez, montrez-moi ce que vous savez faire. . .	}{	Vous avez beaucoup à apprendre avant de me battre. Allez, montrez-moi ce que vous savez faire. . .	}{	0	}{	}{	G.Yukie_Threat = 1; npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Mes dents feront rouler votre épée sous la table ! Allons-y !	}
+{	215	}{	Vous croyez que vous êtes le premier chasseur à essayer de me tuer ? Imbécile. . .	}{	Vous croyez que vous êtes le premier chasseur à essayer de me tuer ? Imbécile. . .	}{	0	}{	}{	G.Yukie_Threat = 1; npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Ces chasseurs, quelles créatures idiotes ! NUL NE PEUT ME TUER !	}
+{	216	}{	Je vais boire votre sang comme du saké chaud.	}{	Je vais boire votre sang comme du saké chaud.	}{	0	}{	}{	G.Yukie_Threat = 1; npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	La mignonne, c'est mon plat favori. Il ne restera rien.	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	[Un peu triste]Je ne peux pas.	}{	[Un peu triste]Je ne peux pas.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Alors. . . si je trouve votre démon, je vous le dirai.	}{	Alors. . . si je trouve votre démon, je vous le dirai.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si je le sens, je viendrai vous chercher.	}
+{	223	}{	Je regrette, mais je refuse de m'impliquer. Je dois partir.	}{	Je regrette, mais je refuse de m'impliquer. Je dois partir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne peux pas, je ne suis plus là.	}
+{	224	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	[Honto, ne] (Vraiment, hein ?) J'apprécie votre souci pour ma vengeance. . . [Arigato gozaimasu] (Merci.) Ne prenez pas un Hengeyôkai en pitié. . . C'est un mauvais démon. Le genre qui transforme petite fille en chasseur.	}{	[Honto, ne](Vraiment, hein) ? J'apprécie votre souci pour ma vengeance. . . [Arigato gozaimasu](Merci). Ne prenez pas un Hengeyôkai en pitié. . . C'est un mauvais démon. Le genre qui transforme petite fille en chasseur.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	G.Yukie_Quest = 1; pc.SetQuest("Yukie",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Avant de partir, j'avais d'autres questions.	}{	Avant de partir, j'avais d'autres questions.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai tant de curiosité.	}
+{	233	}{	Je comprends ce que vous voulez dire. Je vais le trouver.	}{	Je comprends ce que vous voulez dire. Je vais le trouver.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais regretter le jour où nous nous sommes rencontrés.	}
+{	234	}{	Vous êtes réglo, pour une chasseuse. . . Si vous ne me menacez pas, on s'entendra bien.	}{	Vous êtes réglo, pour une chasseuse. . . Si vous ne me menacez pas, on s'entendra bien.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre destin est triste, mais le mien aussi.	}
+{	235	}{	Oui. . . Les méchants démons doivent mourir. . . je suis tout à fait d'accord. . . hé hé. . .	}{	Oui. . . Les méchants démons doivent mourir. . . je suis tout à fait d'accord. . . hé hé. . .	}{	0	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	[Nani] (Quoi ?)	}{	[Nani] (Quoi ?)	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Qu'est-ce que vous savez sur les Kuei-Jin ?	}{	Qu'est-ce que vous savez sur les Kuei-Jin ?	}{	251	}{	G.Yukie_Kuei == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les choses dans le temple. . . Parlez-m'en.	}
+{	243	}{	Autre chose que vous pourriez me dire sur l'Hengeyôkai ?	}{	Autre chose que vous pourriez me dire sur l'Hengeyôkai ?	}{	261	}{	G.Yukie_Fish == 0	}{	}{	}{	}{	}{	}{	}{	}{	Son odeur est forte. Pourquoi ?	}
+{	244	}{	Voila une excellente lame, me la vendriez-vous ?	}{	Voila une excellente lame, me la vendriez-vous ?	}{	271	}{	G.Yukie_Sword == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je vous échange quelques hommes verts contre cette belle lame.	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	Ca ira pour le moment.	}{	Ca ira pour le moment.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Ce sont des fantômes. . . des fantômes dans des personnes. . . Je n'aime pas les Kuei-Jin. Je n'aime pas les démons. . . excusez-moi.	}{	Ce sont des fantômes. . . des fantômes dans des personnes. . . Je n'aime pas les Kuei-Jin. Je n'aime pas les démons. . . excusez-moi.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Yukie_Kuei = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Je ne le prends pas mal. J'avais une autre question.	}{	Je ne le prends pas mal. J'avais une autre question.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	La curiosité ne me quitte pas.	}
+{	253	}{	Oui, ils ne me plaisent pas beaucoup non plus. Une autre question. . .	}{	Oui, ils ne me plaisent pas beaucoup non plus. Une autre question. . .	}{	241	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	Merci, au revoir.	}{	Merci, au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	255	}{	Je leur dirai de votre part. A plus. . .	}{	Je leur dirai de votre part. A plus. . .	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Hengeyôkai sent comme. . . [sakana] (Poisson) - poissons. Je ne sais pas pourquoi. Peut-être d'autres démons savent.	}{	Hengeyôkai sent comme. . .[sakana] (Poisson) - poissons. Je ne sais pas pourquoi. Peut-être d'autres démons savent.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Yukie_Fish = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	J'imagine que c'est une sorte d'indice. J'avais une autre question.	}{	J'imagine que c'est une sorte d'indice. J'avais une autre question.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, je comprends. Mais la curiosité ne me quitte pas.	}
+{	263	}{	Les odeurs, ça ne m'aide pas beaucoup. Je vais essayer une autre approche. A plus.	}{	Les odeurs, ça ne m'aide pas beaucoup. Je vais essayer une autre approche. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je le sens aussi. . . Je vais suivre sa trace.	}
+{	264	}{	D'autres démons ? Je vais me renseigner. A plus.	}{	D'autres démons ? Je vais me renseigner. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Des démons. . . Oui, je sais où trouver des démons.	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	[IEE] (NON !) Ceci appartenait à mon maître. Ca ne coupe pas pour les démons.	}{	[IEE](NON !) Ceci appartenait à mon maître. Ca ne coupe pas pour les démons.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Yukie_Sword = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Bon. Une autre question.	}{	Bon. Une autre question.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oh. . . Mais la curiosité continue à me tarauder. . .	}
+{	273	}{	C'est sans doute de la ferraille, de toute façon. Tant pis. . .	}{	C'est sans doute de la ferraille, de toute façon. Tant pis. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'en voulais pas vraiment, de toute façon. Je pars.	}
+{	274	}{	Je me payerai peut-être un jour sur votre cadavre. A plus.	}{	Je me payerai peut-être un jour sur votre cadavre. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ca pourrait couper si vous me laissiez la tenir. Une autre fois, peut-être.	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	284	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	[Konbanwa] (Bonsoir. . ). démon.	}{	[Konbanwa] (Bonsoir. . .) démon.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	A propos de l'Hengeyôkai. . .	}{	A propos de l'Hengeyôkai. . .	}{	181	}{	G.Yukie_Heng >= 1 and G.Yukie_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le démon que vous poursuivez. . .	}
+{	293	}{	A propos de l'Hengeyôkai. . .	}{	A propos de l'Hengeyôkai. . .	}{	301	}{	G.Yukie_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Le démon que vous poursuivez. . .	}
+{	294	}{	J'avais encore quelques questions. . .	}{	J'avais encore quelques questions. . .	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai tant de curiosité.	}
+{	295	}{	Oui, tout pareil, c'est ça. A plus.	}{	Oui, tout pareil, c'est ça. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Euh. . . Ouais, je m'en vais.	}
+{	296	}{	Chasseur. . .	}{	Chasseur. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	[Doko desu ka] (Où est-il ?) Où ça. . . ?	}{	[Doko desu ka] (Où est-il ?) Où ça. . . ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Il est au marché au poisson. Il ne sait pas que vous le pourchassez.	}{	Il est au marché au poisson. Il ne sait pas que vous le pourchassez.	}{	311	}{	G.Zyg_Yukie == 1 and G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Marché aux poissons. Il ignore qu'il est poursuivi.	}
+{	303	}{	Je lui ai dit de me retrouver au marché au poisson. Nous pourrons l'attaquer par surprise.	}{	Je lui ai dit de me retrouver au marché au poisson. Nous pourrons l'attaquer par surprise.	}{	321	}{	G.Zyg_Meet == 1 and G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Il cache son odeur dans le marché aux poissons. Surprenons-le, comme des ninjas.	}
+{	304	}{	Désolé, mais je l'ai tué au Red Dragon.	}{	Désolé, mais je l'ai tué au Red Dragon.	}{	391	}{	G.Zyg_Human == 1	}{	pc.SetQuest("Yukie",7)	}{	}{	}{	}{	}{	}{	}{	Ca ressemblait à un homme et je l'ai tué.	}
+{	305	}{	Je le cherche encore. Je regrette.	}{	Je le cherche encore. Je regrette.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Celle d'un lieu que j'ignore. Je pars.	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	Vous tromper moi, démon ? Comment trouver Hengeyôkai ?	}{	Vous tromper moi, démon ? Comment trouver Hengeyôkai ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Bon, je vous accompagne. Vous aurez besoin d'aide.	}{	Bon, je vous accompagne. Vous aurez besoin d'aide.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce n'était pas une blague. Allez, emmenez-moi.	}
+{	313	}{	Ce n'est pas une ruse. . . Je déteste ces trucs presque autant que vous, croyez-moi. . .	}{	Ce n'est pas une ruse. . . Je déteste ces trucs presque autant que vous, croyez-moi. . .	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je déteste l'odeur du poisson. Et les démons avec des noms trop longs. Pas de blague.	}
+{	314	}{	Mon sens d'araignée. . . Qu'est-ce que ça peut vous faire ? Je l'ai trouvé, non ?	}{	Mon sens d'araignée. . . Qu'est-ce que ça peut vous faire ? Je l'ai trouvé, non ?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai joué à éviter l'Hengeyôkai dans tout Chinatown.	}
+{	315	}{	Bon. . . C'est une ruse. Il vous attend. Vous ne devriez pas y aller.	}{	Bon. . . C'est une ruse. Il vous attend. Vous ne devriez pas y aller.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'EST UN PIEGE !	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	Vous voulez tuer Hengeyôkai avec moi ? Pourquoi ?	}{	Vous voulez tuer Hengeyôkai avec moi ? Pourquoi ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Je ne lui fais pas confiance. Il avait l'air bien trop pressé d'organiser ce rendez-vous.	}{	Je ne lui fais pas confiance. Il avait l'air bien trop pressé d'organiser ce rendez-vous.	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tout est trop pratique.	}
+{	323	}{	Je pense qu'il travaille avec les Kuei-Jin, et je déteste les Kuei-Jin. . .	}{	Je pense qu'il travaille avec les Kuei-Jin, et je déteste les Kuei-Jin. . .	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ca sent le poisson et le Kuei-jin.	}
+{	324	}{	Pourquoi pas ?	}{	Pourquoi pas ?	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous trouvez que j'ai une tête de menteur ?	}
+{	325	}{	Parce que. . .	}{	Parce que. . .	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai rien de mieux à faire.	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	Si vous me jouez un tour, je vous tue après Hengeyôkai. Ca vous paraît bien, comme marché ?	}{	Si vous me jouez un tour, je vous tue après Hengeyôkai. Ca vous paraît bien, comme marché ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	C'est juste. Allons-y.	}{	C'est juste. Allons-y.	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ca baigne. On y va.	}
+{	333	}{	Pas vraiment, mais je vais le faire. Bon, allons nous tailler du steak d'Hengeyôkai.	}{	Pas vraiment, mais je vais le faire. Bon, allons nous tailler du steak d'Hengeyôkai.	}{	341	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	334	}{	Comme tu veux, petite.	}{	Comme tu veux, petite.	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Eh, vous me faites rire. OK ma mignonne. . .	}
+{	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Marché au poisson [e ikimasu] (allons-y.) A tout à l'heure, démon.	}{	Marché au poisson [e ikimasu] (allons-y.) A tout à l'heure, démon.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Market = 1; pc.SetQuest("Yukie",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	C'est parti.	}{	C'est parti.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Allons pêcher !	}
+{	343	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	344	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	Vous ne devriez pas faire confiance à Hengeyôkai. . . Je n'ai pas le choix. . . Je dois aller.	}{	Vous ne devriez pas faire confiance à Hengeyôkai. . . Je n'ai pas le choix. . . Je dois aller.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	Bon, je vous accompagne. Vous aurez besoin d'aide.	}{	Bon, je vous accompagne. Vous aurez besoin d'aide.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Eh, emmenez-moi avec vous.	}
+{	353	}{	Je viens avec vous. Je veux assister au combat.	}{	Je viens avec vous. Je veux assister au combat.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Démon contre chasseur de démon. Il faut que je voie ça.	}
+{	354	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Hengeyôkai sait moi devoir aller. Vengeance n'attend pas.	}{	Hengeyôkai sait moi devoir aller. Vengeance n'attend pas.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Bon, je vous accompagne. Vous aurez besoin d'aide.	}{	Bon, je vous accompagne. Vous aurez besoin d'aide.	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Eh, emmenez-moi avec vous.	}
+{	363	}{	J'aimerais bien lui mettre une raclée aussi. Je vous accompagne.	}{	J'aimerais bien lui mettre une raclée aussi. Je vous accompagne.	}{	321	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	364	}{	Je viens avec vous. Je veux assister au combat.	}{	Je viens avec vous. Je veux assister au combat.	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Démon contre chasseur de démon. Il faut que je voie ça.	}
+{	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	[Wakarimashta] (Je comprends. . .)	}{	[Wakarimashta] (Je comprends. . .)	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	(Auto-Link)	}{	(Auto-Link)	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	373	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	374	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	O-gami Yukie [desu] (je suis.) Je vous renvoie en Enfer.	}{	O-gami Yukie [desu] (je suis.) Je vous renvoie en Enfer.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	383	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	384	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	385	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	Hengeyôkai est en enfer. Ma vengeance est accomplie. [Domo arigato gozaimashta] (merci beaucoup, démon.)	}{	Hengeyôkai est en enfer. Ma vengeance est accomplie. [Domo arigato gozaimashta] (merci beaucoup, démon.)	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	Qu'allez-vous combattre à présent ?	}{	Qu'allez-vous combattre à présent ?	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelle route suivez-vous à présent ?	}
+{	393	}{	Oh. . . Vous devez être contente que ce truc n'ait pas eu de tentacules, hein ?	}{	Oh. . . Vous devez être contente que ce truc n'ait pas eu de tentacules, hein ?	}{	401	}{	G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	394	}{	Un homme-requin ? Ha, j'aurais tout vu. Et tout tué.	}{	Un homme-requin ? Ha, j'aurais tout vu. Et tout tué.	}{	401	}{	G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je dois avoir des hallucinations. Je viens vraiment de me taper un requin ?	}
+{	395	}{	Eh bien, il est tombé sur une arête. . . vous comprenez ? Une arête ?	}{	Eh bien, il est tombé sur une arête. . . vous comprenez ? Une arête ?	}{	401	}{	not IsClan(pc,"Malkavian") and G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	. . . Défiez votre nature, démon. L'homme peut souffrir sans vous. [Sayonara] (Au revoir.)	}{	. . . Défiez votre nature, démon. L'homme peut souffrir sans vous. [Sayonara] (Au revoir.)	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	Ce fut un plaisir.	}{	Ce fut un plaisir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La souffrance est ma vie.	}
+{	403	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	404	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	405	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	406	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	407	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	[Dozo] (Please. . .)	}{	[Dozo] (Please. . .)	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	D'accord, j'irai d'abord.	}{	D'accord, j'irai d'abord.	}{	0	}{	G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Allons à la pêche !	}
+{	413	}{	Désolé, mais j'ai déjà tué l'Hengeyôkai au Red Dragon.	}{	Désolé, mais j'ai déjà tué l'Hengeyôkai au Red Dragon.	}{	391	}{	G.Zyg_Human == 1	}{	pc.SetQuest("Yukie",7)	}{	}{	}{	}{	}{	}{	}{	Ca ressemblait à un homme et je l'ai tué.	}
+{	414	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	[Namu] (Amen. . .)	}{	[Namu] (Amen. . .)	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Follow = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	Pardon ? Oui, merci pour votre aide ! Vous pouvez me suivre à l'intérieur, mais je vais continuer seul !	}{	Pardon ? Oui, merci pour votre aide ! Vous pouvez me suivre à l'intérieur, mais je vais continuer seule !	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous pouvez aller dedans. Mais je peux y aller sans personne.	}
+{	423	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	Vous tiendrez-vous sage, démon ?	}{	Vous tiendrez-vous sage, démon ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Found = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Qu'est-ce que vous faites ici ?	}{	Qu'est-ce que vous faites ici ?	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce n'est pas encore le Japon.	}
+{	433	}{	Cet endroit va devenir violent. Partez. 	}{	Cet endroit va devenir violent. Partez. 	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il va y avoir du sang sur les murs. Pas pour vous.	}
+{	434	}{	Non. . . Que faites-vous ici ?	}{	Non. . . Que faites-vous ici ?	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ha ha ha. Vous êtes encore là ?	}
+{	435	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	436	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	Moi, [nani] (quoi, ) surveiller temple. Je pense que Hengeyôkai a tué mon maître pour fantômes. . . Il y a encore maléfices à l'intérieur. . .	}{	Moi, [nani] (quoi, ) surveiller temple. Je pense que Hengeyokai a tué mon maître pour fantômes. . . Il y a encore maléfices à l'intérieur. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	Je vais tuer du Kuei-Jin. Vous voulez m'aider ?	}{	Je vais tuer du Kuei-Jin. Vous voulez m'aider ?	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ouaip. On se trouve un coin tranquille ?	}
+{	443	}{	Bon, vous restez ici et assurez-vous que personne ne me suit.	}{	Bon, vous restez ici et assurez-vous que personne ne me suit.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Assis. Restes. Bonne fifille !	}
+{	444	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	445	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	446	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Si vous voulez combattre des fantômes, je combattrai avec vous. . .	}{	Si vous voulez combattre des fantômes, je combattrai avec vous. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Si vous voulez venir, suivez-moi.	}{	Si vous voulez venir, suivez-moi.	}{	0	}{	}{	G.Yukie_Follow = 1	}{	}{	}{	}{	}{	}{	}{	Servez-vous. Faites comme moi.	}
+{	453	}{	Pas question, c'est trop dangereux. Restez ici. Au revoir.	}{	Pas question, c'est trop dangereux. Restez ici. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Charmant. Je suis en retard, mon petit. Ne vous approchez pas.	}
+{	454	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	455	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	[Hai] (Oui !) Mon épée est encore enragée. . . [Ikimasho] (Allons-y) - tuons des fantômes ensemble.	}{	[Hai] (Oui !) Mon épée est encore enragée. . . [Ikimasho] (Allons-y) - tuons des fantômes ensemble.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	Si vous voulez venir, suivez-moi.	}{	Si vous voulez venir, suivez-moi.	}{	0	}{	}{	G.Yukie_Follow = 1	}{	}{	}{	}{	}{	}{	}{	Aidez-vous. Faites comme je fais.	}
+{	463	}{	J'ai changé d'avis. Vous attendez ici.	}{	J'ai changé d'avis. Vous attendez ici.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit change constamment. Vous restez avec votre épée en colère, je vais y aller.	}
+{	464	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	Ya Ta !	}{	Ya Ta !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	473	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	474	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Haa ! [Cri de bataille]	}{	Haa ! [Cri de bataille]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	483	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	484	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	485	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Yaa ! [cri de bataille]	}{	Yaa ! [cri de bataille]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	493	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	494	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	495	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	[Grognement de douleur #1]	}{	[Grognement de douleur #1]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	503	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	504	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	505	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	[Grognement de douleur #2]	}{	[Grognement de douleur #2]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	513	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	514	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	515	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	516	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	517	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	520	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	521	}{	[Râle de mort]	}{	[Râle de mort]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	523	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	524	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	533	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	534	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	536	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	Oui ! Hengeyôkai sentir poisson ! Vous savez ?	}{	Oui ! Hengeyôkai sentir poisson ! Vous savez ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Je sens quelque chose. Quoi donc ?	}{	Je sens quelque chose. Quoi donc ?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	543	}{	Non. . . Pourquoi ça sent le poisson ?	}{	Non. . . Pourquoi ça sent le poisson ?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	544	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	545	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	546	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	547	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	548	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	553	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	554	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	555	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	556	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	558	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	563	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	564	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	565	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	566	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	(Starting Condition)	}{	}{	421	}{	G.Yukie_Follow == 1 and G.Story_State > 100	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	(Starting Condition)	}{	}{	451	}{	G.Yukie_Found == 1 and G.Story_State > 100	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	(Starting Condition)	}{	}{	431	}{	G.Yukie_Leave == 1 and G.Story_State > 100	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	573	}{	(Starting Condition)	}{	}{	391	}{	IsDead("Zygaena") and G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	574	}{	(Starting Condition)	}{	}{	411	}{	G.Yukie_Market == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	575	}{	(Starting Condition)	}{	}{	291	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	576	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

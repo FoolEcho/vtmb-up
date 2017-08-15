@@ -1,0 +1,72 @@
+TerminalDefinition
+{
+	"screen saver"		"Kamikazi Zen"					// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""						// these surround the command prompt (2 characters), changed by wesp
+
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Kamikazi Zen : centre opérations"  
+	}
+	
+	
+	SubDir
+	{
+		"name"			"Alimentation"	//(128 characters)
+		"password"		"gwailo"
+		"description"		"Accéder au réseau électrique"	
+
+		Function
+		{
+			"name"		"hooligan"
+			"description"	"virus"
+			"runtext"	"virus activé : arrêt du système"
+// wesp			"dependency"	"G.Shubs_Botch == 0"
+			"runscript"	"G.Shubfour_Virus = 1"
+			"trigger"	"0"
+
+		}
+
+		Function
+		{
+			"name"		"systemxxx"
+			"description"	"ATTENTION !"
+			"runtext"	"ALIMENTATION COUPEE"
+			"dependency"	"G.Shubfour_Virus == 1"
+
+		}
+
+		Function	// added by wesp
+		{
+			"name"		"goodies!"
+			"description"	"récompense"
+			"runtext"	"Trouver un puissant objet pas loin comme récompense pour votre aide. >m1tn1ck<"
+			"dependency"	"G.Shubfour_Virus == 1 and G.Patch_Plus == 1"
+
+		}
+	}
+
+	SubDir
+	{
+		"name"			"Etat"	//(128 characters)
+		"description"		"Etat actuel du système"	
+
+		Function
+		{
+			"name"		"status1"
+			"description"	"systat"
+			"runtext"	"Système normal"
+			"dependency"	"G.Shubfour_Virus == 0"
+
+		}
+
+		Function
+		{
+			"name"		"status2"
+			"description"	"systat"
+			"runtext"	"Virus détecté !!! Arrêt du système !!!"
+			"dependency"	"G.Shubfour_Virus == 1"
+		}
+	}
+}

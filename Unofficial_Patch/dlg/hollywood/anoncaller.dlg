@@ -1,0 +1,26 @@
+{	1	}{	La lune est une maîtresse bien mystérieuse.	}{	La lune est une maîtresse bien mystérieuse.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Euh. . . Ah bon ?	}{	Euh. . . Ah bon ?	}{	11	}{	G.Flynn_Message == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ah. . . Nous vibrons à l'unisson. . .	}
+{	3	}{	Quoi ? Je crois que j'ai déjà lu ce livre.	}{	Quoi ? Je crois que j'ai déjà lu ce livre.	}{	11	}{	G.Flynn_Message == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ne parlez pas ainsi de ma maîtresse.	}
+{	4	}{	Malade. . .	}{	Malade.	}{	11	}{	G.Flynn_Message == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nul ne le sait mieux que moi.	}
+{	5	}{	Vous avez dû faire un faux numéro.	}{	Vous avez dû faire un faux numéro.	}{	11	}{	G.Flynn_Message == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tous les chiffres sont mélangés. . .	}
+{	6	}{	. . . Qui traverse la nuit avec des démons d'effroi.	}{	. . . Qui traverse la nuit avec des démons d'effroi.	}{	21	}{	G.Flynn_Message == 1	}{	}{	}{	}{	}{	}{	}{	}{	. . . Qui traverse la nuit avec des démons d'effroi.	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[bruit du téléphone qu'on raccroche]. . .	}{	[bruit du téléphone qu'on raccroche]. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	...	}{	...	}{	#	}{	}{	G.No_Idle = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	Allo ?	}{	Allo ?	}{	1	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui ?	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Luckee Star Motel. Chambre 2. Faites vite.	}{	Luckee Star Motel. Chambre 2. Faites vite.	}{	#	}{	}{	G.Lucky_Blood = 1; pc.SetQuest("Tape",6)	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	J'y serai.	}{	J'y serai.	}{	0	}{	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	Je ne reste que tant que ma libido n'est pas satisfaite. Adieu.	}
+{	23	}{	C'est ça.	}{	C'est ça.	}{	0	}{	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	Pourvu que ma bonne étoile ne s'éteigne pas. . .	}
+{	24	}{	Au revoir.	}{	Au revoir.	}{	0	}{	}{	G.No_Idle = 0	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	(Starting Condition)	}{	}{	15	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

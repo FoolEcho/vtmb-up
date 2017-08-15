@@ -1,0 +1,267 @@
+{	1	}{	Bon OK. Regarde-moi bien. Avant qu'on fasse affaire, avant qu'on échange quoi que ce soit, je veux que tu saches : si tu essaies de me doubler, si tu parles de moi aux flics, je te retrouverai, et je te ferai ta fête. Et si t'es un flic. . .	}{	Bon. OK, écoute-moi ma vieille. Cash, d'avance, et dans ton cas ça se négocie pas. Pour que tout soit clair, je n'aurai pas le moindre scrupule à cogner une fille si elle fait n'importe quoi. Compris ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	(Auto-Link)	}{	(Auto-Link)	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Je t'aurai, toi et toute ta famille, et même l'écureuil dans ton jardin. Maintenant que tout est clair, que puis-je faire pour que tu partes d'ici aussi heureux qu'après un vol en première avec une pom-pom girl sur les genoux ?	}{	Ceci étant dit, que puis-je faire pour que le monde te paraisse doux, accueillant et agréable ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Que me proposes-tu ?	}{	Que me proposes-tu ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qu'y a-t-il dans ton petit sac vert ?	}
+{	13	}{	Je cherche de l'Astrolite. Tu en as ?	}{	Je cherche de l'Astrolite. Tu en as ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'astres au litre pour voir le ciel en feu.	}
+{	14	}{	Tu connais un dénommé Mercurio ?	}{	Tu connais un dénommé Mercurio ?	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	Donne-moi l'Astrolite maintenant, et je ne jetterai pas tes bijoux dans le Pacifique.	}{	Donne-moi l'Astrolite maintenant, et je ne jetterai pas tes bijoux dans le Pacifique.	}{	61	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Donne-moi l'astre au litre tout de suite, ou tes bourses dormiront avec les poissons.	}
+{	16	}{	Tu connais le dieu aux pieds ailés ?	}{	Tu connais le dieu aux pieds ailés ?	}{	251	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Tu connais le dieu aux pieds ailés ?	}
+{	17	}{	Mais quel gros baratineur tu fais, crétin !	}{	Tu sais où tu peux te la carrer, ta douceur.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	J'aimerais te tuer, si ça ne te dérange pas.	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Ouais. . . C'est ce que j'aime dans ce boulot. De belles femmes viennent chez moi pour ce que j'ai. Même pas besoin de les appeler ni rien. Alors, mon chou, qu'est-ce que je peux te donner pour ce soir ?	}{	Ouais. . . C'est ce que j'aime dans ce boulot. De belles femmes viennent chez moi pour ce que j'ai. Même pas besoin de les appeler ni rien. Alors, mon chou, qu'est-ce que je peux te donner pour ce soir ?	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Que me proposes-tu ?	}{	Que me proposes-tu ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qu'y a-t-il dans ton petit sac vert ?	}
+{	23	}{	Je cherche de l'Astrolite. Tu en as ?	}{	Je cherche de l'Astrolite. Tu en as ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'astres au litre pour voir le ciel en feu.	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Mon équipe garde en permanence un stock de narcotiques 100 pour cent pur 24 carats, garanti d'enterrer la concurrence. Genre héroïne contre capuccino tiède. Aucune comparaison. Des blancs, des verts, des bleus, des rouges, des noirs. . .	}{	Mon équipe garde en permanence un stock de narcotiques 100 pour cent pur 24 carats, garanti d'enterrer la concurrence. Genre héroïne contre capuccino tiède. Aucune comparaison. Des blancs, des verts, des bleus, des rouges, des noirs. . .	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Je cherche autre chose. Tu as des explosifs ?	}{	Je cherche autre chose. Tu as des explosifs ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'explosions.	}
+{	33	}{	Tu connais un dénommé Mercurio ?	}{	Tu connais un dénommé Mercurio ?	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	Donne-moi l'Astrolite maintenant, et je ne jetterai pas tes bijoux dans le Pacifique.	}{	Donne-moi l'Astrolite maintenant, et je ne jetterai pas tes bijoux dans le Pacifique.	}{	61	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Donne-moi l'astre au litre tout de suite, ou tes bourses dormiront avec les poissons.	}
+{	35	}{	Tu connais le dieu aux pieds ailés ?	}{	Tu connais le dieu aux pieds ailés ?	}{	251	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Si c'est pas une coïncidence, ça ? Tu sais quoi, t'es la deuxième personne à me demander ça ce soir. Ce n'est pas un truc très populaire, alors j'aimerais savoir pourquoi tu t'attends à ce que j'en aie.	}{	Si c'est pas une coïncidence, ça ? Tu sais quoi, t'es la deuxième personne à me demander ça ce soir. Ce n'est pas un truc très populaire, alors j'aimerais savoir pourquoi tu t'attends à ce que j'en aie.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Donne-moi l'Astrolite.	}{	Donne-moi l'Astrolite.	}{	71	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	Rien n'a d'importance. Donne-moi l'astre au litre.	}{	Rien n'a d'importance. Donne-moi l'astre au litre.	}{	71	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Donne-moi l'Astrolite.	}{	Donne-moi l'Astrolite.	}{	71	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	L'Astrolite est parfait pour moi.	}{	L'Astrolite est parfait pour moi.	}{	71	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	Je pourrais essayer de trouver un autre vendeur, mais il paraît que c'est à toi qu'il faut en parler. . .	}{	Je pourrais essayer de trouver un autre vendeur, mais il paraît que c'est à toi qu'il faut en parler. . .	}{	81	}{	Persuasion 3	}{	}{	}{	}{	}{	}{	}{	}{	Des voix m'ont dit que tu aurais ce qu'il me fallait. Mais elles se trompaient peut-être.	}
+{	47	}{	Il paraît que tu en as.	}{	Il paraît que tu en as.	}{	91	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	J'ai entendu ton nom au vent de minuit.	}{	J'ai entendu ton nom au vent de minuit.	}{	261	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	Donne-moi l'Astrolite maintenant, et je ne jetterai pas tes bijoux dans le Pacifique.	}{	Donne-moi l'Astrolite maintenant, et je ne jetterai pas tes bijoux dans le Pacifique.	}{	61	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Donne-moi l'astre au litre tout de suite, ou tes bourses dormiront avec les poissons.	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Mercurio ? Ouais, je le connais. [parle à d'autres dans l'entrepôt]Hein qu'on connaît Mercurio ? Comment va notre ami Mercurio ?	}{	Mercurio ? Ouais, je le connais. [parle à d'autres dans l'entrepôt]Hein qu'on connaît Mercurio ? Comment va notre ami Mercurio ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Pas très bien. Je viens pour l'Astrolite que tu lui as promis.	}{	Pas très bien. Je viens pour l'Astrolite que tu lui as promis.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il porte les cicatrices de ta trahison. Je viens chercher son dû.	}
+{	53	}{	Donne-moi l'Astrolite maintenant, et je ne jetterai pas tes bijoux dans le Pacifique.	}{	Donne-moi l'Astrolite maintenant, et je ne jetterai pas tes bijoux dans le Pacifique.	}{	61	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Donne-moi l'astre au litre tout de suite, ou tes bourses dormiront avec les poissons.	}
+{	54	}{	Il est vivant. Ce qui ne va pas être ton cas. Voilà ce qu'on appelle une vengeance, connard.	}{	Il est vivant. Ce qui ne va pas être ton cas. Voilà ce qu'on appelle une vengeance, connard.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Il ira mieux quand je lui offrirai ton service trois pièces.	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	[rit]Tu touches pas à ça, compris ? C'est dingue, tu dois être une des personnes les plus stupides au monde. Qu'est-ce que je t'ai dit à ton arrivée ? [se tourne vers les autres]Eh, les mecs, préparez le bateau. On part à la pêche au requin.	}{	[rit]Tu touches pas à ça, compris ? C'est dingue, tu dois être une des personnes les plus stupides au monde. Qu'est-ce que je t'ai dit à ton arrivée ? [se tourne vers les autres]Eh, les mecs, préparez le bateau. On part à la pêche au requin.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Ha ha. . . C'est parti.	}{	Ha ha. . . C'est parti.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Des explosifs ? C'est rigolo, ça. On peut faire beaucoup de bruit, comme ça. Pourquoi tu veux trouver des feux d'artifices ?	}{	Des explosifs ? C'est rigolo, ça. On peut faire beaucoup de bruit, comme ça. Pourquoi tu veux trouver des feux d'artifices ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Je vais à la pêche.	}{	Je vais à la pêche.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	La chasse au poisson est ouverte.	}
+{	73	}{	Problèmes d'argent. Je dois faire disparaître une voiture, pour l'assurance.	}{	Problèmes d'argent. Je dois faire disparaître une voiture, pour l'assurance.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je veux voir la nuit brûler de tous ses feux.	}
+{	74	}{	Ma femme a eu la maison, lors de notre divorce.	}{	Mon mari a eu la maison, lors de notre divorce.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il y a de l'or dans leurs collines. . . et mon ex.	}
+{	75	}{	Tu regarderas les infos, ce soir.	}{	Tu regarderas les infos, ce soir.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les infos annonceront mes glorieux exploits !	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Ouais, OK. J'ai ce qu'il te faut. Astrolite. C'est du TNT, mais en plus gros, plus méchant, avec un casier judiciaire. Je n'aime pas stocker ce genre de truc - trop dangereux - alors je te le fais un peu moins cher que le prix normal.	}{	Ouais, OK. J'ai ce qu'il te faut. Astrolite. C'est du TNT, mais en plus gros, plus méchant, avec un casier judiciaire. Je n'aime pas stocker ce genre de truc - trop dangereux - alors je te le fais un peu moins cher que le prix normal.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Pour l'argent, ça me va. Crois-moi, je ne veux pas arnaquer un mec comme toi.	}{	Pour l'argent, ça me va. Crois-moi, je ne veux pas arnaquer un mec comme toi.	}{	241	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Donne-moi l'astre au litre et tes poches seront bientôt pleines de ma parole.	}
+{	83	}{	Alors je t'en donne 300 dollars, si tu veux t'en débarrasser à ce point-là.	}{	Alors je t'en donne 300 dollars, si tu veux t'en débarrasser à ce point-là.	}{	111	}{	Haggle 3 & pc.CurrentMoney() >= 300	}{	pc.MoneyRemove( 300 )	}{	}{	}{	}{	}{	}{	}{	Je te donne 300 brousoufs.	}
+{	84	}{	Je te donne 500 dollars.	}{	Je te donne 500 dollars.	}{	111	}{	Haggle -3 & pc.CurrentMoney() >= 500	}{	pc.MoneyRemove( 500 )	}{	}{	}{	}{	}{	}{	}{	Je te donne cinq cents présidents.	}
+{	85	}{	Tu accepterais autre chose que du cash ?	}{	Tu accepterais autre chose que du cash ?	}{	121	}{	F_Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	L'argent m'ennuie, mon beau. On peut s'arranger autrement, non ?	}
+{	86	}{	Tu accepterais autre chose que du cash ?	}{	Tu accepterais autre chose que du cash ?	}{	151	}{	F_Seduction -3	}{	}{	}{	}{	}{	}{	}{	}{	L'argent m'ennuie, mon beau. On peut s'arranger autrement, non ?	}
+{	87	}{	Je n'ai pas d'argent. 	}{	Je n'ai pas d'argent. 	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes poches sont aussi vides que ma tête.	}
+{	88	}{	Mercurio a déjà payé. Tu te souviens de lui ?	}{	Mercurio a déjà payé. Tu te souviens de lui ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le vif Mercure a déjà payé, l'as-tu oublié ?	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Ah ouais ? Et comment tu sais ça ? C'est bizarre, ton truc. . . Tu sais quoi, je vais te filer l'Astrolite. Dès qu'on sera dans les eaux internationales. [Se tourne vers les autres]Les mecs ! On part à la pêche au requin !	}{	Ah ouais ? Et comment tu sais ça ? C'est bizarre, ton truc. . . Tu sais quoi, je vais te filer l'Astrolite. Dès qu'on sera dans les eaux internationales. [Se tourne vers les autres]Les mecs ! On part à la pêche au requin !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Je ne crois pas.	}{	Je ne crois pas.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	[Surpris]Ah ouais ? Bordel. . . Je vais te dire, si tu arrives à sortir d'ici sans avoir pris une balle dans la tête, tu peux le garder.	}{	[Surpris]Ah ouais ? Bordel. . . Je vais te dire, si tu arrives à sortir d'ici sans avoir pris une balle dans la tête, tu peux le garder.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	J'accepte. 	}{	J'accepte. 	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Tu viens de t'acheter une bombe. Si tu te fais prendre avec, tu ne me connais pas, OK ? Je me fous de savoir si tu leur dis que c'est le Père Noël qui te l'a apporté. Mais lâches mon nom, et tu vas regretter de ne pas avoir explosé avec ce truc.	}{	Tu viens de t'acheter une bombe. Si tu te fais prendre avec, tu ne me connais pas, OK ? Je me fous de savoir si tu leur dis que c'est le Père Noël qui te l'a apporté. Mais lâches mon nom, et tu vas regretter de ne pas avoir explosé avec ce truc.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.GiveItem("item_g_astrolite"); G.Dennis_Astrolite = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	C'est ça. Merci pour les explosifs. Au revoir.	}{	C'est ça. Merci pour les explosifs. Au revoir.	}{	0	}{	pc.GetQuestState("Astrolite") == 1	}{	pc.SetQuest("Astrolite",2)	}{	}{	}{	}{	}{	}{	}{	Ma joie explose en moi.	}
+{	113	}{	Tout bien réfléchi, je préfère partir avec la bombe et l'argent.	}{	Tout bien réfléchi, je préfère partir avec la bombe et l'argent.	}{	101	}{	pc.GetQuestState("Astrolite") == 1	}{	pc.SetQuest("Astrolite",2)	}{	}{	}{	}{	}{	}{	}{	Ma vraie nature est avare. Je prends l'astre au litre et l'argent.	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	C'est ça. Merci pour les explosifs. Au revoir.	}{	C'est ça. Merci pour les explosifs. Au revoir.	}{	0	}{	pc.GetQuestState("Astrolite") == 4	}{	pc.SetQuest("Astrolite",5)	}{	}{	}{	}{	}{	}{	}{	Ma joie explose en moi.	}
+{	120	}{	Tout bien réfléchi, je préfère partir avec la bombe et l'argent.	}{	Tout bien réfléchi, je préfère partir avec la bombe et l'argent.	}{	101	}{	pc.GetQuestState("Astrolite") == 4	}{	pc.SetQuest("Astrolite",5)	}{	}{	}{	}{	}{	}{	}{	Ma vraie nature est avare. Je prends l'astre au litre et l'argent.	}
+{	121	}{	Mmh-hmm. . . On peut négocier. Et toi, t'as l'esprit ouvert ?	}{	Mmh-hmm. . . On peut négocier. Et toi, t'as l'esprit ouvert ?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Si tu fais sortir tes copains, tu vas vite le savoir.	}{	Si tu fais sortir tes copains, tu vas vite le savoir.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Eh, allez vérifier l'odomètre de ma caisse !	}{	Eh, allez vérifier l'odomètre de ma caisse !	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Dennis_Alone = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	(Auto-Link)	}{	(Auto-Link)	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Bon, je vais te donner ce que tu veux. . . Mais j'ai ce dont tu as besoin. . .	}{	Bon, je vais te donner ce que tu veux. . . Mais j'ai ce dont tu as besoin. . .	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Je vais te montrer un tour que je connais. . .	}{	Je vais te montrer un tour que je connais. . .	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Je vais te montrer un tour que je connais. . .	}
+{	143	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Dans ton cas, pas question ! Tous les jours, j'ai des tocards qui viennent me taper un fixe. Je n'accepterais pas même si tu me promettais un van de dope. Non mais. . .	}{	Dans ton cas, pas question ! Tous les jours, j'ai des tocards qui viennent me taper un fixe. Je n'accepterais pas même si tu me promettais un van de dope. Non mais. . .	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Alors je t'en donne 300 dollars, si tu veux tant te débarrasser de l'Astrolite.	}{	Alors je t'en donne 300 dollars, si tu veux tant te débarrasser de l'Astrolite.	}{	111	}{	Haggle 3 & pc.CurrentMoney() >= 300	}{	pc.MoneyRemove( 300 )	}{	}{	}{	}{	}{	}{	}{	Je te donne 300 brousoufs.	}
+{	153	}{	Je te donne 500 dollars pour l'Astrolite.	}{	Je te donne 500 dollars pour l'Astrolite.	}{	111	}{	Haggle -3 & pc.CurrentMoney() >= 500	}{	pc.MoneyRemove( 500 )	}{	}{	}{	}{	}{	}{	}{	Je te donne cinq cents présidents.	}
+{	154	}{	Je n'ai pas d'argent. 	}{	Je n'ai pas d'argent. 	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes poches sont aussi vides que ma tête.	}
+{	155	}{	Mercurio a déjà payé. Tu te souviens de lui ?	}{	Mercurio a déjà payé. Tu te souviens de lui ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mercure aux pieds ailés l'a déjà payé. Tu l'as oublié ?	}
+{	156	}{	Donne-moi l'Astrolite maintenant, et je ne jetterai pas tes bijoux dans le Pacifique.	}{	Donne-moi l'Astrolite maintenant, et je ne jetterai pas tes bijoux dans le Pacifique.	}{	61	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Donne-moi l'astre au litre tout de suite, ou tes bourses dormiront avec les poissons.	}
+{	157	}{	Je suis réglo pour l'argent. Crois-moi, je n'arnaquerai jamais un gars comme toi.	}{	Je suis réglo pour l'argent. Crois-moi, je n'arnaquerai jamais un gars comme toi.	}{	241	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Donne-moi l'astre au litre et bientôt, sur ma parole, vos poches seront pleines.	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Tu veux dire que tu m'as fais perdre mon temps ? Bordel, j'ai horreur de ça. File de chez moi avant que je te fasse bouffer par mes chiens !	}{	Tu veux dire que tu m'as fais perdre mon temps ? Bordel, j'ai horreur de ça. File de chez moi avant que je te fasse bouffer par mes chiens !	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Bon. Au revoir.	}{	Bon. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La lune sera ta visqueuse maîtresse. Adieu.	}
+{	163	}{	Non, je préfère te forcer à me mettre dehors.	}{	Non, je préfère te forcer à me mettre dehors.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Avant ou après que je t'aurai éviscéré ?	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Voilà, c'est fini.	}{	Voilà, c'est fini.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Eh, il y a quelqu'un ici !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Eh, regardez par ici !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	193	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Qu'est-ce qui se passe ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	203	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Que quelqu'un répare les lumières !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	213	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Eh ! Réparez les lumières, bordel !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	223	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	[Meurt]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	233	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	T'as les moyens, c'est sûr ? Parce que pour moi, sinon, c'est juste un petit tour en bateau avec les copains. Pêche au requin, avec toi comme appât. Tiens. Tu gardes ça. Mais si tu ne me paies pas, je te fais la peau.	}{	T'as les moyens, c'est sûr ? Parce que pour moi, sinon, c'est juste un petit tour en bateau avec les copains. Pêche au requin, avec toi comme appât. Tiens. Tu gardes ça. Mais si tu ne me paies pas, je te fais la peau.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	pc.GiveItem("item_g_astrolite"); G.Dennis_Astrolite = 1; G.Dennis_Owe = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Ouais, compris. J'apporte l'argent dès que je peux. Au revoir.	}{	Ouais, compris. J'apporte l'argent dès que je peux. Au revoir.	}{	0	}{	pc.GetQuestState("Astrolite") == 1	}{	pc.SetQuest("Astrolite",2)	}{	}{	}{	}{	}{	}{	}{	Compris. Je n'ai pas ma place dans le ventre de ce grand poisson.	}
+{	243	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	Ouais, compris. J'apporte l'argent dès que je peux. Au revoir.	}{	Ouais, compris. J'apporte l'argent dès que je peux. Au revoir.	}{	0	}{	pc.GetQuestState("Astrolite") == 4	}{	pc.SetQuest("Astrolite",5)	}{	}{	}{	}{	}{	}{	}{	Compris. Je n'ai pas ma place dans le ventre de ce grand poisson.	}
+{	251	}{	Le dieu aux pieds ailés ? De quoi tu parles ? T'as pris des trucs, toi ?	}{	Le dieu aux pieds ailés ? De quoi tu parles ? T'as pris des trucs, toi ?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Mercure, brisé et ensanglanté.	}{	Mercure, brisé et ensanglanté.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	253	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Le vent de minuit ? C'est ça. T'as une tête d'indic, grave. [Se tourne vers les autres]Les gars, démarrez le bateau. On va à la pêche au requin !	}{	Le vent de minuit ? C'est ça. T'as une tête d'indic, grave. [Se tourne vers les autres]Les gars, démarrez le bateau. On va à la pêche au requin !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	HA HA HA. . . Non.	}{	HA HA HA. . . Non.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	263	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	(Starting Condition)	}{	}{	141	}{	G.Dennis_Alone == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	(Starting Condition)	}{	}{	171	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	(Starting Condition)	}{	}{	21	}{	F_Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

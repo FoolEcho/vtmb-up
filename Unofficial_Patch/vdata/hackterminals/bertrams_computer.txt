@@ -1,0 +1,58 @@
+TerminalDefinition
+{
+	"screen saver"		"Du balai !"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+	
+	"email_password"	"tung"		// the user must type this to access email from this terminal
+	"email_username"	"btung"
+	
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Findows, XP"  
+		"line1"		"Che fiens fider fotre bureau"
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+	SubDir
+	{
+		"name"			"Notes"				// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
+		"password"		"obfuscate"			// password required to run commands in this menu (16 characters)
+		"description"		"Notes sur Santa Monica" 	// This is printed each time the user enters this menu (128 characters)
+
+		Function
+		{
+			"name"		"Asylum"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Info sur l'Asylum"		// this is a description of this function  (128 characters)
+			"runtext"	"Géré par des soeurs vampiriques. Je préfère Jeanette à Therese."
+									// this text is printed when the player triggers this function.  (128 characters)
+		}
+
+		Function
+		{
+			"name"		"Gallery Noir"
+			"description"	"Comment y entrer"		
+			"runtext"	"Il y a une entrée par derrière dans l'allée. Les barres entre le parking et l'allée peuvent facilement être détruites."			
+		}
+	}
+
+	Email	// added by wesp
+	{
+		"subject"	"Je meurs d'envie de te voir"
+		"sender"	"Jeanette"		
+		"body"		"Je m'ennuie. On ne pourrait pas s'amuser ? Je suis au club.... XOXOXO"
+	}
+
+	Email
+	{
+		"subject"	"En fuite !"
+		"sender"	"Jeanette"	
+		"body"		"Bertie, elle est folle à lier. Tu ferais mieux de faire profil bas pendant un moment. . ."
+	}
+
+	
+}

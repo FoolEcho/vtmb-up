@@ -1,0 +1,172 @@
+{	1	}{	[RUGISSEMENT]Intrus vampire ! Monstre ! Je vais t'écraser ! Je vais te réduire en bouillie ! T'arracher la peau !	}{	[RUGISSEMENT]Intrus vampire ! Monstre ! Je vais t'écraser ! Je vais te réduire en bouillie ! T'arracher la peau !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Du calme ! Je ne veux pas me battre, simplement parler !	}{	Du calme ! Je ne veux pas me battre, simplement parler !	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Calme la fureur de ton sang ! Les mots seront ma seule arme aujourd'hui.	}
+{	3	}{	Sympa, comme entrée en matière. Je viens juste discuter.	}{	Sympa, comme entrée en matière. Je viens juste discuter.	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Tu dois être la gargouille dont je dois me débarrasser.	}{	Tu dois être la gargouille dont je dois me débarrasser.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Ah ! Le golem de pierre que je viens tuer !	}
+{	5	}{	Hé, t'es encore plus moche que je croyais.	}{	Hé, t'es encore plus moche que je croyais.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Goliath tombe en ce jour, et entre mes mains repose la fronde. . .	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Parler ? Non ! Toujours, les vampires parlent, et complotent, et font mal par leurs mensonges. Monstres ! Abominations ! Pestilence !	}{	Parler ? Non ! Toujours, les vampires parlent, et complotent, et font mal par leurs mensonges. Monstres ! Abominations ! Pestilence !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Attends ! Je viens en paix, j'apporte une offre d'Isaac Abrams !	}{	Attends ! Je viens en paix, j'apporte une offre d'Isaac Abrams !	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Attends, je connais ton maître, Maximillian Strauss !	}{	Attends, je connais ton maître, Maximillian Strauss !	}{	31	}{	not IsClan(pc,"Malkavian") and G.Regent_Gargoyleinside == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Je ne viens pas me battre. Nous pouvons négocier dans la paix.	}{	Je ne viens pas me battre. Nous pouvons négocier dans la paix.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Différents, nous le sommes, et pourtant tout deux damnés et immortels. Que les mots nous servent d'armes !	}
+{	15	}{	C'est moi que tu traites de monstre ? Tu t'es bien regardé, mon vieux ?	}{	C'est moi que tu traites de monstre ? Tu t'es bien regardé, mon vieux ?	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Un miroir fendu te montrera le véritable monstre. . .	}
+{	16	}{	Bon, j'en ai assez entendu. Dis au revoir, pierraille.	}{	Bon, j'en ai assez entendu. Dis au revoir, pierraille.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	On dirait que je vais une fois de plus porter les robes de la mort. Meurs.	}
+{	17	}{	Je t'apporte un rameau d'olivier de la part du baron du sang.	}{	Je t'apporte un rameau d'olivier de la part du baron du sang.	}{	161	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Une proposition ? Quelle proposition ? Un autre mensonge. Il désire me contrôler, m'asservir, tout comme mon maître avant lui. D'abord il envoie ses sous-fifres pour me tuer. Et maintenant, il veut faire la paix ? Non ! Qu'il soit maudit ! Soyez tous maudits !	}{	Une proposition ? Quelle proposition ? Un autre mensonge. Il désire me contrôler, m'asservir, tout comme mon maître avant lui. D'abord il envoie ses sous-fifres pour me tuer. Et maintenant, il veut faire la paix ? Non ! Qu'il soit maudit ! Soyez tous maudits !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Crois-moi, il ne veut pas te contrôler ! Il a dit qu'il voulait ta protection.	}{	Crois-moi, il ne veut pas te contrôler ! Il a dit qu'il voulait ta protection.	}{	51	}{	Persuasion 6	}{	}{	}{	}{	}{	}{	}{	}{	Il ne veut pas d'une poupée, mais d'une montagne de pierre derrière lui.	}
+{	23	}{	Il ne veut pas t'asservir, mais simplement t'engager. . .	}{	Il ne veut pas t'asservir, mais simplement t'engager. . .	}{	41	}{	Persuasion -6	}{	}{	}{	}{	}{	}{	}{	}{	Il ne veut pas d'un esclave, mais d'un Golem travaillant pour lui.	}
+{	24	}{	Bon, eh bien j'aurai essayé. Maintenant, on va résoudre le problème à ma façon. Brutalement.	}{	Bon, eh bien j'aurai essayé. Maintenant, on va résoudre le problème à ma façon. Brutalement.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Lorsque la parole ne donne rien. Broyer de la pierre devient la seule alternative.	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	[RUGISSEMENT]Strauss ! Le démon qui m'a fait ! M'a asservi ! A transformé ma chair en pierre, m'a lié par le sang à son coeur impur ! [RUGISSEMENT] Plus jamais je ne m'inclinerai devant des gens de votre espèce, démon !	}{	[RUGISSEMENT]Strauss ! Le démon qui m'a fait ! M'a asservi ! A transformé ma chair en pierre, m'a lié par le sang à son coeur impur ! [RUGISSEMENT] Plus jamais je ne m'inclinerai devant des gens de votre espèce, démon !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Pas tous. . . Je t'apporte une proposition de paix de la part d'Isaac Abrams !	}{	Pas tous. . . Je t'apporte une proposition de paix de la part d'Isaac Abrams !	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	Nous ne sommes pas obligés de combattre. Isaac Abrams veut que tu travailles pour lui.	}{	Nous ne sommes pas obligés de combattre. Isaac Abrams veut que tu travailles pour lui.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	On dirait un disque rayé. Et maintenant, je vais te rayer de ce monde.	}{	On dirait un disque rayé. Et maintenant, je vais te rayer de ce monde.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	NON ! [RUGISSEMENT] Plus de discussion ! La mort pour toi, démon ! Et les ténèbres, à tout jamais !	}{	NON ! [RUGISSEMENT] Plus de discussion ! La mort pour toi, démon ! Et les ténèbres, à tout jamais !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Non ! Attends ! Il doit bien y avoir un autre moyen !	}{	Non ! Attends ! Il doit bien y avoir un autre moyen !	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Attends ! La mort ne doit pas nécessairement remporter cette sombre journée !	}
+{	43	}{	Très bien. Je vais mettre fin à tes tourments. . . pour toujours.	}{	Très bien. Je vais mettre fin à tes tourments. . . pour toujours.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Le sommeil ultime n'asservit personne. Je t'y envoie. . .	}
+{	44	}{	Si tu veux. Allez, qu'on en finisse.	}{	Si tu veux. Allez, qu'on en finisse.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Ta pierre deviendra cendre, mêlée à mes crachats. . .	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	[Hésite]C'est quoi ça ? Une autre ruse de vampire ? Devrais-je quitter mes chaînes pour en endosser d'autres ? M'incliner devant Abrams au lieu de mon ancien maître ? Jamais !	}{	[Hésite]C'est quoi ça ? Une autre ruse de vampire ? Devrais-je quitter mes chaînes pour en endosser d'autres ? M'incliner devant Abrams au lieu de mon ancien maître ? Jamais !	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Gargoyle_Persuade = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Il y a les soldats et les commandants. Et tu feras un bon soldat.	}{	Il y a les soldats et les commandants. Et tu feras un bon soldat.	}{	141	}{	G.Gargoyle_Pissed == 0	}{	G.Gargoyle_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Certains sont des généraux, d'autres des soldats. Tu parais plus fait pour saluer.	}
+{	53	}{	Il y a les soldats et les commandants. Et tu feras un bon soldat.	}{	Il y a les soldats et les commandants. Et tu feras un bon soldat.	}{	71	}{	G.Gargoyle_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Certains sont des généraux, d'autres des soldats. Tu parais plus fait pour saluer.	}
+{	54	}{	Isaac n'a pas besoin d'un autre serviteur. . . il lui faut un allié contre ses ennemis de la Camarilla.	}{	Isaac n'a pas besoin d'un autre serviteur. . . il lui faut un allié contre ses ennemis de la Camarilla.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Toi, une montagne derrière lui, et le baron du sang affrontera la Camarilla. . .	}
+{	55	}{	Il a besoin d'un ami comme toi. Pour l'aider à conserver son pouvoir. . .	}{	Il a besoin d'un ami comme toi. Pour l'aider à conserver son pouvoir. . .	}{	141	}{	G.Gargoyle_Pissed == 0	}{	G.Gargoyle_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Le pouvoir est une maîtresse capricieuse et tu es son présent précieux. . .	}
+{	56	}{	Il a besoin d'un ami comme toi. Pour l'aider à conserver son pouvoir. . .	}{	Il a besoin d'un ami comme toi. Pour l'aider à conserver son pouvoir. . .	}{	71	}{	G.Gargoyle_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Le pouvoir est une maîtresse capricieuse et tu es son présent précieux. . .	}
+{	57	}{	Eh, faut reconnaître que tu n'as pas beaucoup le choix. . .	}{	Eh, faut reconnaître que tu n'as pas beaucoup le choix. . .	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Choisis prudemment tes mots de pierre. . . Le rameau d'olivier est fragile.	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	La Camarilla ? Qu'est-ce ça veut dire, la Camarilla ?	}{	La Camarilla ? Qu'est-ce ça veut dire, la Camarilla ?	}{	#	}{	}{	G.Gargoyle_Persuade = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Tu n'es pas très malin, hein ?	}{	Tu n'es pas très malin, hein ?	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	On dirait que ta matière grise aussi est pétrifiée. . .	}
+{	63	}{	Ca veut dire que tu devrais commencer à faire tes devoirs. C'est la Camarilla qui a le pouvoir en ce moment.	}{	Ca veut dire que tu devrais commencer à faire tes devoirs. C'est la Camarilla qui a le pouvoir en ce moment.	}{	141	}{	G.Gargoyle_Pissed == 0	}{	G.Gargoyle_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Suis les ficelles vers le haut pour trouver la main du marionnettiste.	}
+{	64	}{	Ca veut dire que tu devrais commencer à faire tes devoirs. C'est la Camarilla qui a le pouvoir en ce moment.	}{	Ca veut dire que tu devrais commencer à faire tes devoirs. C'est la Camarilla qui a le pouvoir en ce moment.	}{	71	}{	G.Gargoyle_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Suis les ficelles vers le haut pour trouver la main du marionnettiste.	}
+{	65	}{	En fait, je travaille un peu pour eux. Ils cherchent à s'emparer de LA. . .	}{	En fait, je travaille un peu pour eux. Ils cherchent à s'emparer de LA. . .	}{	141	}{	G.Gargoyle_Pissed == 0	}{	G.Gargoyle_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Je travaille pour le bouffon. Et il souhaite faire son royaume de cette cité des anges.	}
+{	66	}{	En fait, je travaille un peu pour eux. Ils cherchent à s'emparer de LA. . .	}{	En fait, je travaille un peu pour eux. Ils cherchent à s'emparer de LA. . .	}{	71	}{	G.Gargoyle_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je travaille pour le bouffon. Et il souhaite faire son royaume de cette cité des anges.	}
+{	67	}{	Ce sont des vampires qui veulent dominer les autres vampires. Isaac les combat.	}{	Ce sont des vampires qui veulent dominer les autres vampires. Isaac les combat.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les esclavagistes de notre race et le baron du sang leur mène la guerre. . .	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Démon sans âme. Je ne veux plus rien entendre de toi. La mort, et les ténèbres à jamais !	}{	Démon sans âme. Je ne veux plus rien entendre de toi. La mort, et les ténèbres à jamais !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Attends un peu ! Ce n'est pas ce que je voulais dire !	}{	Attends un peu ! Ce n'est pas ce que je voulais dire !	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Attends ! Les mauvaises paroles ont dévalé de ma langue !	}
+{	73	}{	Bon. . . On ne pourra pas dire que je n'ai pas essayé. . .	}{	Bon. . . On ne pourra pas dire que je n'ai pas essayé. . .	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Tes oreilles aussi sont faites de pierre. Adieu.	}
+{	74	}{	Ca va me faire un de ces biens, de te dérouiller. . .	}{	Ca va me faire un de ces biens, de te dérouiller. . .	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Ce sont les ailes de la colombe qui me portaient, mais je tiens à présent la faux de la camarde !	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Il les combat ? Il combat les siens ?	}{	Il les combat ? Il combat les siens ?	}{	#	}{	}{	G.Gargoyle_Persuade = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Oui, mais seulement parce que cela lui permet d'asseoir son propre pouvoir.	}{	Oui, mais seulement parce que cela lui permet d'asseoir son propre pouvoir.	}{	141	}{	G.Gargoyle_Pissed == 0	}{	G.Gargoyle_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Il combat contre les armées de morts-vivants qui désirent son pouvoir.	}
+{	83	}{	Oui, mais seulement parce que cela lui permet d'asseoir son propre pouvoir.	}{	Oui, mais seulement parce que cela lui permet d'asseoir son propre pouvoir.	}{	71	}{	G.Gargoyle_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Il combat contre les armées de morts-vivants qui désirent son pouvoir.	}
+{	84	}{	Oui. Il combat ceux. . . euh. . . qui t'ont asservi.	}{	Oui. Il combat ceux. . . euh. . . qui t'ont asservi.	}{	91	}{	IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	Oui. Il combat ceux qui t'ont asservi, ainsi que les Tremeres.	}{	Oui. Il combat ceux qui t'ont asservi, ainsi que les Tremeres.	}{	91	}{	not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	Il se dresse contre les sorciers du sang, ceux qui ont forgé vos chaînes. 	}
+{	86	}{	La survie dans ce monde dépend de celui qui te dit quoi faire. . .	}{	La survie dans ce monde dépend de celui qui te dit quoi faire. . .	}{	141	}{	G.Gargoyle_Pissed == 0	}{	G.Gargoyle_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Souvent, la vie dans la mort est définie par l'obéissance à de nouveaux dieux. . .	}
+{	87	}{	La survie dans ce monde dépend de celui qui te dit quoi faire. . .	}{	La survie dans ce monde dépend de celui qui te dit quoi faire. . .	}{	71	}{	G.Gargoyle_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Souvent, la vie dans la mort est définie par l'obéissance à de nouveaux dieux. . .	}
+{	88	}{	Oui. Et malheureusement, je vais te combattre.	}{	Oui. Et malheureusement, je vais te combattre.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Je me lasse de ce verbiage. Prépare-toi à suivre la route solitaire de l'Enfer !	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	[Grognement]Les Tremeres. Je les déteste plus encore que les autres vampires. Des secrets, des sorciers, versés dans la trahison et la magie du sang ! Les vampires sont damnés et les Tremeres plus encore que les autres !	}{	[Grognement]Les Tremeres. Je les déteste plus encore que les autres vampires. Des secrets, des sorciers, versés dans la trahison et la magie du sang ! Les vampires sont damnés et les Tremeres plus encore que les autres !	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Ne dis pas du mal de mon clan, monstre !	}{	Ne dis pas du mal de mon clan, monstre !	}{	101	}{	IsClan(pc,"Tremere")	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Ils ne sont pas tous si mauvais. Prends moi, par exemple. . .	}{	Ils ne sont pas tous si mauvais. Prends moi, par exemple. . .	}{	101	}{	IsClan(pc,"Tremere")	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	Exact. Je ne pourrais pas être plus d'accord. Et Isaac a besoin de toi pour tous les éliminer.	}{	Exact. Je ne pourrais pas être plus d'accord. Et Isaac a besoin de toi pour tous les éliminer.	}{	111	}{	IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	En fait, ils ne sont pas si mauvais quand on les connaît un peu.	}{	En fait, ils ne sont pas si mauvais quand on les connaît un peu.	}{	71	}{	not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	Faiseurs de magie, mystérieux et majestueux. . .	}
+{	96	}{	Oui. Isaac a besoin de ton aide pour éradiquer leur malédiction une bonne fois pour toutes.	}{	Oui. Isaac a besoin de ton aide pour éradiquer leur malédiction une bonne fois pour toutes.	}{	111	}{	not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	Le baron du sang compte guérir cette maladie. . .	}
+{	97	}{	Exact. Les choses seront différentes quand ce sera Isaac qui donnera les ordres.	}{	Exact. Les choses seront différentes quand ce sera Isaac qui donnera les ordres.	}{	71	}{	not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	Les sorciers seront privés de leur magie du sang et le baron sera tout-puissant !	}
+{	98	}{	Eh, on ne peut pas en vouloir à quelqu'un parce qu'il suit les règles du jeu. C'est la vie. Au fait, la tienne est finie.	}{	Eh, on ne peut pas en vouloir à quelqu'un parce qu'il suit les règles du jeu. C'est la vie. Au fait, la tienne est finie.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Tu vas devenir très familier du lac de feu. A MORT !	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Quoi ? Du sang de Tremeres coule dans tes veines ? [RUGISSEMENT] Meurs, vermine !	}{	Quoi ? Du sang de Tremeres coule dans tes veines ? [RUGISSEMENT] Meurs, vermine !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Oui. Je lutterai aux côtés de cet Abrams pour l'aider dans son combat contre cette. . . Camarilla. Tout démon qu'il soit, je jure de m'allier à lui.	}{	Oui. Je lutterai aux côtés de cet Abrams pour l'aider dans son combat contre cette. . . Camarilla. Tout démon qu'il soit, je jure de m'allier à lui.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	C'est une bonne nouvelle. Je vais aller dire à Isaac qu'il a un nouvel allié.	}{	C'est une bonne nouvelle. Je vais aller dire à Isaac qu'il a un nouvel allié.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le baron du sang sera satisfait. Adieu.	}
+{	113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Oui. A présent, laisse-moi. Ce théâtre est mon domaine, et je cherche la paix de la solitude.	}{	Oui. A présent, laisse-moi. Ce théâtre est mon domaine, et je cherche la paix de la solitude.	}{	#	}{	}{	G.Gargoyle_Convinced = 1; pc.SetQuest("Gargoyle",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	A plus tard.	}{	A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Quitte cet endroit, vampire.	}{	Quitte cet endroit, vampire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Ah ! Ces démons de vampires ! Toujours à chercher du pouvoir, des esclaves. Je devrais te tuer tout de suite et en finir avec tout ça !	}{	Ah ! Ces démons de vampires ! Toujours à chercher du pouvoir, des esclaves. Je devrais te tuer tout de suite et en finir avec tout ça !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Je dirais plutôt un allié. Il désire ta force pour l'aider dans son combat contre la Camarilla.	}{	Je dirais plutôt un allié. Il désire ta force pour l'aider dans son combat contre la Camarilla.	}{	61	}{	G.Gargoyle_Persuade == 1	}{	}{	}{	}{	}{	}{	}{	}{	Non ! Le baron a besoin d'un bras droit pour se tenir à sa gauche, et non d'un esclave larmoyant. . .	}
+{	143	}{	Ecoute. Il faut bien suivre les ordres, et tu feras comme tout le monde.	}{	Ecoute. Il faut bien suivre les ordres, et tu feras comme tout le monde.	}{	71	}{	G.Gargoyle_Persuade == 1	}{	}{	}{	}{	}{	}{	}{	}{	Comprends où est ta place et agenouille-toi. . .	}
+{	144	}{	Non ! Attends ! Je ne les aime pas et Isaac non plus ! C'est pour ça qu'on les combat !	}{	Non ! Attends ! Je ne les aime pas et Isaac non plus ! C'est pour ça qu'on les combat !	}{	81	}{	G.Gargoyle_Persuade == 2	}{	}{	}{	}{	}{	}{	}{	}{	Attends ! Mon coeur ne porte pas l'emblème de la Camarilla ! Je les affronte avec le baron du sang. . .	}
+{	145	}{	C'est la Camarilla qui dirige. Je te conseille de changer un peu de ton.	}{	C'est la Camarilla qui dirige. Je te conseille de changer un peu de ton.	}{	71	}{	G.Gargoyle_Persuade == 2	}{	}{	}{	}{	}{	}{	}{	}{	Vie ou mort, les coeurs sombres ont besoin d'ordre. Sers la Camarilla. . .	}
+{	146	}{	Attends ! Isaac ne veut du pouvoir que pour combattre tes anciens ennemis, les Tremeres !	}{	Attends ! Isaac ne veut du pouvoir que pour combattre tes anciens ennemis, les Tremeres !	}{	91	}{	G.Gargoyle_Persuade == 3	}{	}{	}{	}{	}{	}{	}{	}{	Non ! Ce pouvoir seulement pour écraser les maudits magiciens du sang, les Tremeres. . .	}
+{	147	}{	Le pouvoir, c'est comme tout. Certains en ont, d'autres pas.	}{	Le pouvoir, c'est comme tout. Certains en ont, d'autres pas.	}{	71	}{	G.Gargoyle_Persuade == 3	}{	}{	}{	}{	}{	}{	}{	}{	Ceux qui n'en ont pas désirent le pouvoir. Quand ce n'est pas possible, mieux vaut servir ceux qui l'ont.	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	OK. Si tu veux du sang, tu vas en avoir. Allez, approche.	}{	OK. Si tu veux du sang, tu vas en avoir. Allez, approche.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	La tombe t'appelle, golem. Adieu.	}
+{	151	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Baron du sang? Rameau d'olivier? Vous parlez en formules tordues et en mensonges, comme tout ceux de votre espèce!	}{	Baron du sang? Rameau d'olivier? Vous parlez en formules tordues et en mensonges, comme tout ceux de votre espèce!	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Abrams, celui du rêve de celluloïd ? Une proposition, des mains tendues. . .	}{	Abrams, celui du rêve de celluloïd ? Une proposition, des mains tendues. . .	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	(Starting Condition)	}{	}{	131	}{	G.Gargoyle_Convinced == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

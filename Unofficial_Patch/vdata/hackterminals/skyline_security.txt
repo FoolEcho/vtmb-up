@@ -1,0 +1,84 @@
+TerminalDefinition
+{
+	"screen saver"		"On vous regarde !"	// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""		// these surround the command prompt (2 characters), changed by wesp
+	"email_username"	"tom"		// printed at the top of the email window, not used for log in. 
+	"email_password"	"peep"	// printed at the top of the email window, not used for log in. 
+
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Skyeline Apartments"
+		"line1"		"Sécurité"
+
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+
+
+	SubDir
+	{
+		"name"			"Notes appart."
+		"description"		"Notes résidents"	
+
+		Function
+		{
+			"name"		"Apt 1"
+			"description"	""	
+			"runtext"	"Apt 1. Simon Milligan. Un mec de la télé. Il y a de fortes chances que les vidéos de sa piaule aient une valeur un de ces 4. Je garde un oeil sur lui."
+
+		}
+
+		Function
+		{
+			"name"		"Apt 2"
+			"description"	""	
+			"runtext"	"Apt 2. Sean Milton. C'est un gros lard et il n'y a jamais de nanas chez lui. L'autre jour un mec est passé chez lui, mais j'ai pas voulu mater."
+
+		}
+
+		Function
+		{
+			"name"		"Apt 3"
+			"description"	""	
+			"runtext"	"Apt 3. Georgia Welch. Cette grosse pleine aux as est sacrément chaude. Oh, le code de sa porte est 9648, alors peut-être que je vais me faufiler chez elle et lui voler quelques culottes pour les vendre aux enchères sur le Net."
+
+		}
+
+		Function
+		{
+			"name"		"Apt 4"
+			"description"	""	
+			"runtext"	"Apt 4. Libre. Pas besoin de garder un oeil sur cet appart."
+
+		}
+
+		Function
+		{
+			"name"		"Apt 5"
+			"description"	""	
+			"runtext"	"Apt 5. Paul Anderson. Je pensais qu'il ne valait pas le coup, mais je l'ai choppé à l'étage. Je continue à le surveiller."
+		}
+
+		Function
+		{
+			"name"		"Apt 6"
+			"description"	""	
+			"runtext"	"Apt 6. Hannah Glazer. La mine d'or ! Il y a quelque chose de chaud dans cet appart et ce quelque chose est Hannah elle-même."
+
+		}
+
+	}
+
+	Email
+	{
+		"subject"	"Caméras cachées en ligne"				
+		"sender"	"Butch Rider"
+		"body"		"Hé Tom. N'oublie pas notre deal. Tu continues à m'envoyer les vidéos de la sécurité et moi je te paye pour les bons plans. "
+	}
+}

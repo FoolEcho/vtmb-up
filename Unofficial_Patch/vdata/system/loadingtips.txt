@@ -1,0 +1,2706 @@
+LoadingTips
+{
+//
+//
+//	[Loading Tips]
+//
+//
+//		LOCALIZATION:	Localize/Translate the "Text" Fields ***ONLY***!!!
+//
+//
+//
+//
+//
+//	Tip Section Description:	Note that not all fields may be used for a given PopUp.
+//						PopUps may share the same Internal Name, the system will randomly pick one.
+//						PopUps inherit Default information from their group.
+//
+//
+//
+//	Tip
+//	{
+//		"Type"		The tip type (Game/World)
+//		"StoryState"	The Story State # this tip is available to
+//		"Size"		The tip size (Small/Large)
+//		"CharTemplate"	The internal name of a character template (Player_Brujah, etc.) to match
+//						If not specified, works for all characters.
+//
+//		// Translate this:
+//		"Text"		The text to be displayed (must be localized!)
+//	}
+//
+
+/////////////////////////
+/////////////////////////
+//before starting a new game(into character creation): G.Story_State = -6
+//after char creation (into embrace): G.Story_State = -5
+//after embrace (into the courtroom scene): G.Story_State = -4
+//after the courtroom scene (into the tutorial): G.Story_State = -3
+//after the tutorial (into the haven): G.Story_State = -2
+//beginning of the game (before Santa Monica): G.Story_State = -1
+//Once you are in Santa Monica: G.Story_State = 0
+	
+	// Screens before the game
+	Tips_Section
+	{
+		// StoryState -6, before character creation
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"-6"
+			"Size"		"Small"
+
+			"Text"		"Le Monde des Ténèbres est un endroit où des monstres immortels tirent les ficelles de l'humanité. La violence et le désespoir y sont le lot commun. Le monde est sinistre, mais l'évasion est une possibilité toujours présente - peut-être trop. . ."
+		}
+
+		// StoryState -5, before embrace cinematic
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"-5"
+			"Size"		"Small"
+			"Text"		"L'Etreinte :
+			L'acte de transformer un mortel en vampire."
+		}
+
+		// StoryState -4, before the courtroom scene
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"-4"
+			"Size"		"Small"
+			"Text"		"Non seulement les vampires se cachent-ils des mortels, ils se cachent également d'eux-mêmes, faisant semblant de ne pas être les monstres qu'ils sont devenus."
+		}
+	
+		// StoryState -3, before the tutorial
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"-3"
+			"Size"		"Small"
+			"Text"		"Vampire :
+			La race des vampires dans son intégralité (aussi appelée la Famille) ou un vampire lui-même."
+		}
+
+		// StoryState -2, before the haven
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"-2"
+			"Size"		"Small"
+			"Text"		"Votre refuge :
+		Le Prince LaCroix s'est arrangé pour que vous puissiez utiliser un refuge de la Camarilla dans Santa Monica. Vous y trouverez quelques éléments essentiels comme votre ordinateur et votre e-mail. Ce refuge vous servira de base d'opérations."
+		}
+
+		// StoryState -1, before SM proper
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"-1"
+			"Size"		"Small"
+			"Text"		"Si vous enfreignez la Mascarade en révélant des aspects de votre existence surnaturelle aux humains, vous courez le risque d'attirer les chasseurs de vampires et d'attiser la rage de vos frères. Chaque infraction de la Mascarade vous coûte un point de Mascarade. Si votre score tombe à 0 point de Mascarade, vous perdez la partie."
+		}
+
+		// StoryState 2, before first Elyisum
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"2"
+			"Size"		"Small"
+			"Text"		"Elysium : Vous entrez dans l'Elysium. L'Elysium est le domaine d'un vampire puissant. Ici, vous ne pourrez ni attaquer, ni utiliser vos disciplines vampiriques. Vous aurez parfois l'occasion de vous y nourrir toutefois, et tout mortel tué entraînera une perte d'humanité."
+		}
+
+		// StoryState 3, before first Combat
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"3"
+			"Size"		"Small"
+			"Text"		"Zone de combat : Vous entrez dans une zone de combat. Dans ces zones, vous êtes libre d'utiliser toute la force de vos disciplines vampiriques sans que cela n'entraîne une violation de la Mascarade. De même, il n'y a pas d'innocents dans une zone de combat ; vous ne pouvez pas violer la Mascarade ou perdre votre humanité."		
+		}
+////////////////
+	// HelpTips for StoryState 0
+////////////////
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"Les vampires doivent se montrer discrets et toujours penser à la Mascarade ; si les humains dans leur ensemble venaient à se rendre compte de l'existence des vampires, les enfants de Caïn seraient rapidement éliminés. La superstition est la meilleure arme des vampires. En renforçant l'incrédulité des vampires, en cultivant l'assurance crasse de la raison, en rejetant la présence des vampires comme des fariboles d'enfants et de déments, les vampires forcent la masse du bétail à les protéger des rares mortels qui connaissent l'existence des vampires."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"La plus grande secte de vampires en existence, la Camarilla, se préoccupe surtout de la Mascarade, espérant ainsi garder une place aux vampires dans la nuit moderne. La Camarilla est une société ouverte, qui prétend inclure tous les vampires (qu'ils le veuillent ou non), et tout vampire peut décider d'y appartenir, quelle que soit sa lignée."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"Supposé né d'une secte assassine du Moyen Age, le Sabbat est grandement craint par les vampires qui n'y appartiennent pas. La secte est monstrueuse et violente, et ne s'attache plus au moindre élément de croyance ou de moralité mortelle. Ses membres préfèrent se prélasser dans leur existence impie de morts-vivants. Parfois appelé la Main Noire, le Sabbat cherche activement à renverser les traditions, détruire la Camarilla et subjuguer l'humanité."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Prince :
+			Le prince est, pour dire les choses simplement, le vampire qui a assez de pouvoir pour contrôler une ville, codifier les lois de cette ville et maintenir la paix. Cette position est souvent tenue par un ancien, car qui d'autre aurait le charisme et le pouvoir nécessaires pour dominer une métropole ?"
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Clan :
+			Un groupe de vampires qui partagent des caractéristiques communes transmises par le sang. Il existe 13 clans connus, tous censément fondés par des membres de la Troisième Génération."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Humanité :
+			L'humanité est un code moral qui permet aux vampires de conserver leur sensibilité mortelle face à leur transformation en monstres parasites. En essence, c'est ce qui empêche un vampire de devenir un animal sans esprit, asservi par sa soif insatiable. "
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Le sang est essentiel pour les vampires, car c'est à la fois la source de leur existence et la base de leur pouvoir. La nourriture, l'air et l'amour des mortels - tout cela perd son sens pour un vampire. Le sang est la seule passion des vampires, et sans lui, ils flétrissent rapidement et tombent en hibernation."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"Depuis la nuit des temps, on craint les vampires : des rapaces monstrueux, terribles silhouettes noires qui sortent de leur nid pour arracher les enfants de leur couffin et boire le sang des innocents. Les vampires sont aussi des créatures d'une beauté fatale, d'une passion immense et à la sensualité prédatrice. Mais la caractéristique la plus importante commune à tous les vampires est leur damnation. Plus que toute lignée, tout clan, toute secte ou cause, ce qui les unit est que tous les vampires sont des prédateurs morts-vivants. Les loyautés et les devoirs sont secondaires par rapport à la soif dévorante qui les habite."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"Les vampires sont par nature des créatures de la ville, bien que certains assurent que c'est plus un choix qu'une nature. Les milieux urbains offrent tout ce qu'un vampire peut désirer : des réserves de sang presque illimitées, assez de contacts pour satisfaire les plus sociaux des vampires (et assez d'isolement pour plaire aux plus renfermés), et un refuge contre les loups-garous qui rôdent dans les campagnes."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"Les vampires ayant besoin de serviteurs puissants entretiennent souvent des goules. Créées en donnant à un mortel ou à un animal un peu de vitae de vampire sans avoir bu leur sang avant, les goules font généralement office de serviteurs à leur maître vampirique. Bien qu'elles ne soient pas aussi puissantes que leur maître, les goules peuvent utiliser la vitae ingérée pour acquérir une force et une résistance surnaturelles."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"Clan Malkavien :
+			Même les autres damnés craignent les Malkaviens. Le sang maudit de leur clan pollue leur esprit et tous les Malkaviens au monde, sans la moindre exception, sont fous à lier. Pire, la folie d'un Malkavien peut prendre presque n'importe quelle forme, d'une tendance homicide irrépressible à la quasi-catatonie."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"Clan Nosferatu :
+			Si les autres vampires ont toujours une apparence humaine et peuvent se déplacer dans la société mortelle, les Nosferatus sont rendus difformes par la malédiction vampirique. En tant que tels, les Nosferatus sont méprisés et ostracisés par les autres enfants de Caïn, qui les trouvent répugnants et n'interagissent avec eux que contraints et forcés."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Tout vampire qui souhaite se fondre dans la société mortelle doit respecter ses lois. Les actes criminels - coups et blessures, vol, meurtre - sont sanctionnés avec la plus grande force par les représentants de l'ordre humain."
+		}
+
+//		//Game tips
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Vous gagnez de l'expérience en achevant des quêtes. Des points d'expérience supplémentaires peuvent être attribués au cours d'une quête si vous accomplissez des objectifs personnels, si vous trouvez des itinéraires particuliers ou des solutions alternatives."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Reportez-vous à votre journal de quête (touche par défaut : L) pour savoir où vous devez aller et à qui vous devez parler."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Les aptitudes de Défense et d'Absorption de type Contondant améliorent votre défense contre les balles. De plus, tous les dégâts infligés par les balles sont automatiquement réduits de cinquante pour cent."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"Utilisez la touche Nourrir (touche par défaut : F) pour vous nourrir sur une victime non consentante. Si la victime est en train de se battre contre vous, elle aura une chance de se défendre. Autrement, votre tentative réussira automatiquement.
+
+Une aptitude de combat à Mains nues élevée réduira les chances qu'un combattant se défende contre votre tentative de vous nourrir."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"De nouvelles options de dialogue apparaissent si votre aptitude de Persuasion est assez élevée. Ces options seront affichées en texte bleu. Si vous sélectionnez ces répliques de Persuasion, vous aurez de nouvelles options de dialogue, toutes censées vous aider dans vos entreprises."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Vous pouvez utiliser l'aptitude de Séduction dans le dialogue pour vous nourrir ou pousser les gens à faire ce que vous voulez. Si vous séduisez un humain, vous pourrez vous nourrir sans craindre d'enfreindre la Mascarade.
+
+Les répliques de Séduction s'affichent en caractères spéciaux roses."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Un score élevé en Intimidation vous donnera accès à des options de dialogue spéciales. Elles seront affichées en texte vert. Certains personnages sont plus faciles que d'autres à intimider."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"L'aptitude de combat de Mêlée affecte directement la quantité de dégâts que vous pouvez infliger avec des armes de corps à corps. Elle détermine aussi la facilité avec laquelle un adversaire peut parer, esquiver ou contrer vos frappes de mêlée."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"L'aptitude de combat A distance affecte directement la quantité de dégâts que vous pouvez infliger avec des armes à feu. Elle détermine aussi la facilité qu'ont les vampires et autres créatures surnaturelles à se défendre contre vos attaques à distance."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Large"
+
+			"Text"		"Pour utiliser la Discrétion (touche par défaut : CTRL), restez dans l'ombre et observez le compteur de lumière. Plus votre aptitude de Discrétion est élevée, plus il sera dur pour vos ennemis de vous entendre ou de vous voir.
+
+Vous devez vous accroupir pour profiter de votre Discrétion."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Votre aptitude de Défense se déclenche automatiquement chaque fois qu'on vous attaque. En tant que vampire, vous pouvez vous défendre contre les attaques de mêlée, les attaques à mains nues et même les balles grâce à cette aptitude."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"De nombreux facteurs contribuent à votre défense au cours d'un combat. Si vous dépensez de l'expérience pour augmenter vos scores d'Astuce, Esquive ou Vigueur, vous réduirez les dégâts que vous encaissez au combat. Les habits et les protections sont aussi utiles pour cela."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Si vous tuez des humains innocents, vous perdrez des points d'humanité. Si votre niveau d'humanité est bas, vous risquez d'entrer en frénésie. De plus, vos options de dialogue peuvent changer à mesure que vous sombrez dans la monstruosité."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Les humains sont la première source d'alimentation des vampires. Vous pouvez aussi gagner quelques points de sang en vous nourrissant des rats. Les poches de sang sont une autre source possible, si vous en trouvez."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Le corps des vampires guérit toutes ses blessures au fil du temps. Ce processus est plus rapide si vous vous nourrissez."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Dans les zones de Mascarade, vous trouverez des cartes sur les arrêts de bus. Utilisez ces cartes pour avoir une vue aérienne de la zone."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"La frénésie a lieu quand la Bête prend le contrôle. Un vampire frénétique est une machine à tuer féroce, concentrée sur sa seule survie.
+
+La frénésie vous donne un pouvoir de destruction inouï, mais vous perdez tout contrôle de vos actions. "
+		}
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Si les représentants de l'ordre humain vous poursuivent, cachez-vous. La police se lancera à votre poursuite, mais elle abandonnera si elle ne peut pas vous trouver.
+
+Vous recevrez un message déroulant quand la police abandonnera la poursuite.
+"
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+
+			"Text"		"Les égouts offrent une bonne protection aux vampires qui le désirent."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Small"
+			"Text"		"Faites très attention lorsque vous vous nourrissez parmi les mortels. On ne doit pas vous voir sinon vous violez la Mascarade."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Large"
+			"Text"		"Dans la feuille de personnage (touche par défaut : C), passez le pointeur de la souris sur l'aptitude que vous souhaitez augmenter. Les attributs et les capacités contribuant à cette aptitude apparaîtront surlignés. Augmentez ces attributs et capacités pour augmenter l'aptitude."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Large"
+			"Text"		"Vous pouvez trouver ou acheter des tomes de connaissances. Ces manuels augmentent de façon permanente l'une de vos statistiques.
+
+Chaque manuel est soumis à des exigences d'utilisation. Votre aptitude Recherche, ainsi que la statistique associée, doivent répondre à ces exigences avant de pouvoir utiliser le manuel."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"0"
+			"Size"		"Large"
+			"Text"		"Si vous n'arrivez pas à crocheter une serrure, utilisez Puissance du sang. Votre dextérité temporairement accrue améliore votre aptitude Crochetage."
+		}
+	/////////////////////////
+/////////////////////////
+	// HelpTips for StoryState 5
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"5"
+			"Size"		"Large"
+			"Text"		"Le Sabbat a récemment montré les signes d'une recrudescence d'activité, attaquant activement Chicago, Atlanta, Washington DC et d'autres villes contrôlées par des anciens. Composée de membres bestiaux et monstrueux, la secte s'est répandue comme une invasion de sauterelles sur la Côte Est et les frontières sud des Etats-Unis. Son influence au Canada a également augmenté et il semblerait que le Sabbat soit sur le point d'accomplir une grande action, cernant les Etats-Unis et coupant tous les points d'accès à l'exception de ceux qu'il voudra bien ouvrir."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"5"
+			"Size"		"Large"
+			"Text"		"Censément 'père de tous les vampires', Caïn tient plus du mythe que de la réalité en ces temps modernes. Certains des Mathusalems, ainsi que quelques membres du Sabbat, prétendent avoir rencontré un homme qui se faisait appeler Caïn, mais l'histoire est passée par tant d'individus et de couches du Jyhad que personne ne sait vraiment où s'arrête la vérité et où commence la fiction."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"5"
+			"Size"		"Large"
+			"Text"		"Les communautés du Sabbat et les salons de la Camarilla parlent à demi-mot de troubles dans l'Est, d'armées de vauriens sans clan, de vampires dont le sang est si clair qu'ils ne peuvent étreindre, de rencontres avec des anciens mystérieux dont le vaste pouvoir ne ressemble à aucune lignée, d'une lune au croissant noir et de pleines lunes rouges comme le sang. Tout cela, disent les croyants, annonce que les dernières nuits sont proches. Et que la fin des temps l'est tout autant."
+		}
+
+//	//Game Tips
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"5"
+			"Size"		"Small"
+			"CharTemplate"	"Player_Brujah"
+			"Text"		"Utilisez un taxi pour aller d'une ville à l'autre ou vous rendre en des points distants.
+
+A mesure que de nouvelles zones seront disponibles, elles seront ajoutées à la carte du taxi."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"5"
+			"Size"		"Small"
+			"CharTemplate"	"Player_Gangrel"
+			"Text"		"Utilisez un taxi pour aller d'une ville à l'autre ou vous rendre en des points distants.
+
+A mesure que de nouvelles zones seront disponibles, elles seront ajoutées à la carte du taxi."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"5"
+			"Size"		"Small"
+			"CharTemplate"	"Player_Malkavian"
+			"Text"		"Utilisez un taxi pour aller d'une ville à l'autre ou vous rendre en des points distants.
+
+A mesure que de nouvelles zones seront disponibles, elles seront ajoutées à la carte du taxi."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"5"
+			"Size"		"Small"
+			"CharTemplate"	"Player_Toreador"
+			"Text"		"Utilisez un taxi pour aller d'une ville à l'autre ou vous rendre en des points distants.
+
+A mesure que de nouvelles zones seront disponibles, elles seront ajoutées à la carte du taxi."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"5"
+			"Size"		"Small"
+			"CharTemplate"	"Player_Tremere"
+			"Text"		"Utilisez un taxi pour aller d'une ville à l'autre ou vous rendre en des points distants.
+
+A mesure que de nouvelles zones seront disponibles, elles seront ajoutées à la carte du taxi."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"5"
+			"Size"		"Small"
+			"CharTemplate"	"Player_Ventrue"
+			"Text"		"Utilisez un taxi pour aller d'une ville à l'autre ou vous rendre en des points distants.
+
+A mesure que de nouvelles zones seront disponibles, elles seront ajoutées à la carte du taxi."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"5"
+			"Size"		"Small"
+			"CharTemplate"	"Player_Nosferatu"
+			"Text"		"Utilisez les cartes dans les égouts pour vous rendre d'une ville à l'autre ou à un endroit distant.
+
+A mesure que de nouvelles zones deviendront disponibles, elles seront ajoutées aux cartes des égouts."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 10
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Le Sabbat a récemment montré les signes d'une recrudescence d'activité, attaquant activement Chicago, Atlanta, Washington DC et d'autres villes contrôlées par des anciens. Composée de membres bestiaux et monstrueux, la secte s'est répandue comme une invasion de sauterelles sur la Côte Est et les frontières sud des Etats-Unis. Son influence au Canada a également augmenté et il semblerait que le Sabbat soit sur le point d'accomplir une grande action, cernant les Etats-Unis et coupant tous les points d'accès à l'exception de ceux qu'il voudra bien ouvrir."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Censément 'père de tous les vampires', Caïn tient plus du mythe que de la réalité en ces temps modernes. Certains des Mathusalems, ainsi que quelques membres du Sabbat, prétendent avoir rencontré un homme qui se faisait appeler Caïn, mais l'histoire est passée par tant d'individus et de couches du Jyhad que personne ne sait vraiment où s'arrête la vérité et où commence la fiction."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Les communautés du Sabbat et les salons de la Camarilla parlent à demi-mot de troubles dans l'Est, d'armées de vauriens sans clan, de vampires dont le sang est si clair qu'ils ne peuvent étreindre, de rencontres avec des anciens mystérieux dont le vaste pouvoir ne ressemble à aucune lignée, d'une lune au croissant noir et de pleines lunes rouges comme le sang. Tout cela, disent les croyants, annonce que les dernières nuits sont proches. Et que la fin des temps l'est tout autant."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Enfant :
+			Un jeune vampire créé par l'Etreinte. L'enfant est le descendant de son père ou sire. Ce terme est souvent utilisé de façon désobligeante, pour indiquer une certaine inexpérience."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Novice :
+			Un vampire tout juste créé."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Antédiluvien :
+			Un redoutable membre de la Troisième Génération, l'un des plus vieux vampires en existence."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Un prince ne 'règne' pas sur une ville. Son rôle est plutôt celui d'un superviseur ou d'un juge de paix. Il est le magistrat qui règle les querelles entre vampires, l'autorité ultime sur les traditions dans sa ville, et le gardien de la paix. Avant tout, il se soucie de la Mascarade et de sa préservation. "
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"La plupart des mortels, étouffés par la superstition et la science, restent aveugles aux vampires qui évoluent en leur sein - mais certains savent, et ont peur. Les mortels qui chassent les vampires sont appelés des chasseurs de sorcières, ou tout simplement chasseurs, comme les Inquisiteurs d'antan."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Si ce titre implique différentes choses d'une ville à l'autre, la première tâche du shérif est d'être l'exécutant du prince, le vampire qui amène les criminels devant sa cour, impose l'ordre dans les rues et reste toujours prêt à être le bras 'musclé' de la loi."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Les Anarchs sont des vampires qui rejettent les traditions de Caïn et les dictats des anciens qui les appliquent. Le plus ironique est que ces mêmes anciens donnent à contrecoeur un certain statut aux Anarchs, puisque ces derniers sont capables d'obtenir du pouvoir. Les Anarchs sont aussi respectés pour leur passion et leur détermination, que peu d'anciens, lourds de vieillesse et de rancoeur, peuvent comprendre. Mais en fin de compte, les vampires voient souvent les Anarchs comme des chacals, survivant après la mort aux miettes de ce qui échappe aux anciens de la Camarilla. "
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Primogène :
+			Les primogènes sont les anciens assemblés de chaque clan dans une ville. En théorie, les primogènes représentent leur clan dans le corps politique des anciens, mais en pratique les primogènes sont le plus souvent de 'vieux vampires', un nid d'incestes, de traîtrise et de marchandage."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"On murmure dans la société vampire que des clans ou lignées 'inférieures' seraient nées dans la généalogie vampirique au cours des âges."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Caitiff :
+			Les Caitiff sont des vampires sans clan, exclus par les autres vampires et méprisés par ceux qui prennent la peine de les remarquer. Les vampires peuvent être sans clan soit parce qu'ils n'ont pas la moindre idée de l'identité de leur père (et donc aucune idée de leur lignage) ou parce qu'étant d'une génération si faible qu'aucune caractéristique de clan n'est discernable. Les Caitiff sont considérés de manière universelle comme des orphelins ou des bâtards, bien que certains atteignent parfois un certain rang chez les Anarchs."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Certains vampires pensent qu'une Apocalypse est imminente, que les puissances du Ciel se préparent enfin à juger les vampires et ce qu'ils ont fait de la Terre. D'autres parlent de la Géhenne, la nuit où les vampires les plus anciens reviendront pour dévorer leurs descendants, rassasiant leur propre faim dans les veines de leurs inférieurs."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"L'une des propriétés les plus merveilleuses et terribles de la vitae vampirique est qu'elle peut asservir presque toute personne qui en boit trois fois. Chaque absorption du sang du vampire donne à ce dernier une emprise émotionnelle croissante sur celui qui le boit. Si une victime boit trois fois du même vampire, elle succombe à ce que l'on appelle le Lien du Sang, l'une des sensations émotionnelles les plus intenses au monde."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Clan Brujah :
+			Composé en majorité de rebelles ayant la rage de vivre - ou de mourir. Individualistes, expressifs et turbulents, les Brujahs sont très attachés aux changements sociaux et ce clan compte parmi les plus violents de la Camarilla. La plupart des autres vampires voient les Brujahs comme de simples mécréants ou contestataires, mais la vérité est que leurs polémiques sont alimentées par de véritables passions."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Clan Tremere :
+			Qu'ils soient redoutés, méprisés, craints ou surveillés de près, les membres du très secret clan Tremere ne sont jamais ignorés. Ceux qui ont entendu parler des actes du clan sont souvent méfiants, et à juste titre. Par leur propre artifice, ils ont maîtrisé une forme de sorcellerie vampirique, avec rituels et sorts, qui est aussi puissante - si ce n'est plus - que tout pouvoir du sang."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Clan Ventrue :
+			Depuis des âges immémoriaux, les Ventrues sont le clan du pouvoir, faisant respecter les traditions et cherchant à façonner la destinée des vampires. Dans les nuits de l'ancien temps, les Ventrues étaient choisis parmi les nobles, les princes marchands ou autres détenteurs du pouvoir. A notre époque, les recrues viennent plutôt de familles riches et anciennes, d'acteurs prometteurs impitoyables des coulisses du pouvoir ou de l'argent, et du milieu politique. Quelle que soit leur origine, les Ventrues préservent la stabilité et maintiennent l'ordre pour la Camarilla."
+		}
+
+		//Game Tips
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"L'aptitude de combat à Mains nues détermine la facilité avec laquelle vous pourrez vous nourrir d'une victime non consentante. Une aptitude élevée vous aidera à vous nourrir pendant un combat.
+
+L'aptitude de combat à Mains nues affecte aussi directement les dégâts que vous infligez avec vos poings et vos griffes et la facilité avec laquelle un adversaire pourra parer, esquiver ou contrer vos coups."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"L'aptitude Marchandage modifie tous les prix de vente et d'achat. Les prix des vendeurs sont automatiquement ajustés en fonction de votre aptitude Marchandage. Plus cette aptitude sera élevée, plus vous pourrez tirer d'argent de ce que vous vendez et moins vous aurez à dépenser pour acheter autre chose.
+
+Quand les sujets financiers sont abordés, une aptitude de Marchandage élevée vous permettra des options de dialogue spéciales."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"La faim peut entraîner la frénésie, ainsi que la peur ou la rage causées par des blessures reçues.
+
+Le risque de frénésie est directement lié à votre humanité. Un vampire qui reste proche de son humanité passée peut garder le contrôle de la Bête. Un tueur mort-vivant assoiffé de sang succombera plus souvent. Le risque est aggravé par la faim.
+
+Nourrissez-vous souvent et conservez un score d'humanité élevé pour éviter la frénésie."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Si un compteur est déjà en cours pour une discipline, déclenchez-la de nouveau pour rajouter du temps."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Utilisez la touche 'Arrêt de toutes les disciplines' (touche par défaut : F8) pour interrompre une discipline en cours."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"La Vigueur améliore l'aptitude d'Absorption de type Contondant. Pour un vampire, chaque point d'Absorption des dégâts contondants réduit les dégâts que vous infligent les balles et les armes contondantes de mêlée."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Les disciplines ont en général moins d'effet sur les vampires et autres créatures surnaturelles. L'effet varie d'un être à l'autre. Vous pouvez vous attendre à ce que les êtres les plus puissants aient un degré de résistance plus élevé. "
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Pendant un combat de Mêlée, vous pouvez parer (touche par défaut : Tab) pour vous donner un bonus de défense. Ce bonus est égal à votre Dextérité."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"La létalité d'une arme peut être utilisée pour évaluer son efficacité contre les vampires. Plus la létalité est élevée, plus il est difficile pour les vampires de se défendre contre cette arme."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"En appuyant sur les différentes touches directionnelles de mouvement tout en attaquant, vous effectuerez différentes attaques de mêlée. Chaque touche directionnelle déclenche une combinaison d'attaques différentes.
+
+Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendre. Si vous utilisez tout le temps la même attaque, le défenseur apprendra à l'anticiper et aura plus de chances d'éviter vos coups."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Vous pouvez augmenter votre humanité comme n'importe quelle autre caractéristique en dépensant des points d'expérience."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Le potentiel de dégâts d'une arme est la quantité de dégâts qu'une arme peut infliger entre vos mains. Ce nombre est ajusté en fonction de votre aptitude de combat A distance ou de Mêlée. Plus votre aptitude est élevée, plus vous ferez de dégâts."
+		}
+
+		Tip
+		{
+			"Type"		"Game"	// changed by wesp
+			"StoryState"	"10"
+			"Size"		"Large"
+			"Text"		"Les vampires sont extrêmement résistants aux coups de feu. Utilisez des lames et vos disciplines vampiriques pour combattre plus efficacement les vampires et autres êtres surnaturels."
+		}
+
+		Tip
+		{
+			"Type"		"Game"	// changed by wesp
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Revenez souvent à la feuille de personnage (touche pas défaut : C) et dépensez l'expérience acquise pour améliorer votre personnage."
+		}
+
+		Tip
+		{
+			"Type"		"Game"	// changed by wesp
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Les poches de sang fournissent une petite quantité de sang et de soin. Plus difficiles à trouver et moins efficaces que du sang frais, les poches de sang peuvent vous sauver quand vous avez du mal à trouver d'autre nourriture."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Les armes à lames sont aussi mortelles pour les vampires que pour les humains. Les aptitudes de Défense et d'Absorption des dégâts létaux améliorent votre Défense contre les lames."
+		}
+
+		Tip
+		{
+			"Type"		"Game"	// added by wesp
+			"StoryState"	"10"
+			"Size"		"Small"
+			"Text"		"Les e-mails qui vous sont destinés sont envoyés sur l'ordinateur qui se trouve dans votre refuge. Retournez-y pour vérifier vos messages."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 15
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Le Sabbat a récemment montré les signes d'une recrudescence d'activité, attaquant activement Chicago, Atlanta, Washington DC et d'autres villes contrôlées par des anciens. Composée de membres bestiaux et monstrueux, la secte s'est répandue comme une invasion de sauterelles sur la Côte Est et les frontières sud des Etats-Unis. Son influence au Canada a également augmenté et il semblerait que le Sabbat soit sur le point d'accomplir une grande action, cernant les Etats-Unis et coupant tous les points d'accès à l'exception de ceux qu'il voudra bien ouvrir."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Censément 'père de tous les vampires', Caïn tient plus du mythe que de la réalité en ces temps modernes. Certains des Mathusalems, ainsi que quelques membres du Sabbat, prétendent avoir rencontré un homme qui se faisait appeler Caïn, mais l'histoire est passée par tant d'individus et de couches du Jyhad que personne ne sait vraiment où s'arrête la vérité et où commence la fiction."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Les communautés du Sabbat et les salons de la Camarilla parlent à demi-mot de troubles dans l'Est, d'armées de vauriens sans clan, de vampires dont le sang est si clair qu'ils ne peuvent étreindre, de rencontres avec des anciens mystérieux dont le vaste pouvoir ne ressemble à aucune lignée, d'une lune au croissant noir et de pleines lunes rouges comme le sang. Tout cela, disent les croyants, annonce que les dernières nuits sont proches. Et que la fin des temps l'est tout autant."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Enfant :
+			Un jeune vampire créé par l'Etreinte. L'enfant est le descendant de son père ou sire. Ce terme est souvent utilisé de façon désobligeante, pour indiquer une certaine inexpérience."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Novice :
+			Un vampire tout juste créé."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Antédiluvien :
+			Un redoutable membre de la Troisième Génération, l'un des plus vieux vampires en existence."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Un prince ne 'règne' pas sur une ville. Son rôle est plutôt celui d'un superviseur ou d'un juge de paix. Il est le magistrat qui règle les querelles entre vampires, l'autorité ultime sur les traditions dans sa ville, et le gardien de la paix. Avant tout, il se soucie de la Mascarade et de sa préservation. "
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"La plupart des mortels, étouffés par la superstition et la science, restent aveugles aux vampires qui évoluent en leur sein - mais certains savent, et ont peur. Les mortels qui chassent les vampires sont appelés des chasseurs de sorcières, ou tout simplement chasseurs, comme les Inquisiteurs d'antan."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Si ce titre implique différentes choses d'une ville à l'autre, la première tâche du shérif est d'être l'exécutant du prince, le vampire qui amène les criminels devant sa cour, impose l'ordre dans les rues et reste toujours prêt à être le bras 'musclé' de la loi."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Les Anarchs sont des vampires qui rejettent les traditions de Caïn et les dictats des anciens qui les appliquent. Le plus ironique est que ces mêmes anciens donnent à contrecoeur un certain statut aux Anarchs, puisque ces derniers sont capables d'obtenir du pouvoir. Les Anarchs sont aussi respectés pour leur passion et leur détermination, que peu d'anciens, lourds de vieillesse et de rancoeur, peuvent comprendre. Mais en fin de compte, les vampires voient souvent les Anarchs comme des chacals, survivant après la mort aux miettes de ce qui échappe aux anciens de la Camarilla. "
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Primogène :
+			Les primogènes sont les anciens assemblés de chaque clan dans une ville. En théorie, les primogènes représentent leur clan dans le corps politique des anciens, mais en pratique les primogènes sont le plus souvent de 'vieux vampires', un nid d'incestes, de traîtrise et de marchandage."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"On murmure dans la société vampire que des clans ou lignées 'inférieures' seraient nées dans la généalogie vampirique au cours des âges."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Caitiff :
+			Les Caitiff sont des vampires sans clan, exclus par les autres vampires et méprisés par ceux qui prennent la peine de les remarquer. Les vampires peuvent être sans clan soit parce qu'ils n'ont pas la moindre idée de l'identité de leur père (et donc aucune idée de leur lignage) ou parce qu'étant d'une génération si faible qu'aucune caractéristique de clan n'est discernable. Les Caitiff sont considérés de manière universelle comme des orphelins ou des bâtards, bien que certains atteignent parfois un certain rang chez les Anarchs."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Certains vampires pensent qu'une Apocalypse est imminente, que les puissances du Ciel se préparent enfin à juger les vampires et ce qu'ils ont fait de la Terre. D'autres parlent de la Géhenne, la nuit où les vampires les plus anciens reviendront pour dévorer leurs descendants, rassasiant leur propre faim dans les veines de leurs inférieurs."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"L'une des propriétés les plus merveilleuses et terribles de la vitae vampirique est qu'elle peut asservir presque toute personne qui en boit trois fois. Chaque absorption du sang du vampire donne à ce dernier une emprise émotionnelle croissante sur celui qui le boit. Si une victime boit trois fois du même vampire, elle succombe à ce que l'on appelle le Lien du Sang, l'une des sensations émotionnelles les plus intenses au monde."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Clan Brujah :
+			Composé en majorité de rebelles ayant la rage de vivre - ou de mourir. Individualistes, expressifs et turbulents, les Brujahs sont très attachés aux changements sociaux et ce clan compte parmi les plus violents de la Camarilla. La plupart des autres vampires voient les Brujahs comme de simples mécréants ou contestataires, mais la vérité est que leurs polémiques sont alimentées par de véritables passions."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Clan Tremere :
+			Qu'ils soient redoutés, méprisés, craints ou surveillés de près, les membres du très secret clan Tremere ne sont jamais ignorés. Ceux qui ont entendu parler des actes du clan sont souvent méfiants, et à juste titre. Par leur propre artifice, ils ont maîtrisé une forme de sorcellerie vampirique, avec rituels et sorts, qui est aussi puissante - si ce n'est plus - que tout pouvoir du sang."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Clan Ventrue :
+			Depuis des âges immémoriaux, les Ventrues sont le clan du pouvoir, faisant respecter les traditions et cherchant à façonner la destinée des vampires. Dans les nuits de l'ancien temps, les Ventrues étaient choisis parmi les nobles, les princes marchands ou autres détenteurs du pouvoir. A notre époque, les recrues viennent plutôt de familles riches et anciennes, d'acteurs prometteurs impitoyables des coulisses du pouvoir ou de l'argent, et du milieu politique. Quelle que soit leur origine, les Ventrues préservent la stabilité et maintiennent l'ordre pour la Camarilla."
+		}
+
+		//Game Tips
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"L'aptitude de combat à Mains nues détermine la facilité avec laquelle vous pourrez vous nourrir d'une victime non consentante. Une aptitude élevée vous aidera à vous nourrir pendant un combat.
+
+L'aptitude de combat à Mains nues affecte aussi directement les dégâts que vous infligez avec vos poings et vos griffes et la facilité avec laquelle un adversaire pourra parer, esquiver ou contrer vos coups."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"L'aptitude Marchandage modifie tous les prix de vente et d'achat. Les prix des vendeurs sont automatiquement ajustés en fonction de votre aptitude Marchandage. Plus cette aptitude sera élevée, plus vous pourrez tirer d'argent de ce que vous vendez et moins vous aurez à dépenser pour acheter autre chose.
+
+Quand les sujets financiers sont abordés, une aptitude de Marchandage élevée vous permettra des options de dialogue spéciales."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"La faim peut entraîner la frénésie, ainsi que la peur ou la rage causées par des blessures reçues.
+
+Le risque de frénésie est directement lié à votre humanité. Un vampire qui reste proche de son humanité passée peut garder le contrôle de la Bête. Un tueur mort-vivant assoiffé de sang succombera plus souvent. Le risque est aggravé par la faim.
+
+Nourrissez-vous souvent et conservez un score d'humanité élevé pour éviter la frénésie."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Si un compteur est déjà en cours pour une discipline, déclenchez-la de nouveau pour rajouter du temps."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Utilisez la touche 'Arrêt de toutes les disciplines' (touche par défaut : F8) pour interrompre une discipline en cours."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"La Vigueur améliore l'aptitude d'Absorption de type Contondant. Pour un vampire, chaque point d'Absorption des dégâts contondants réduit les dégâts que vous infligent les balles et les armes contondantes de mêlée."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Les disciplines ont en général moins d'effet sur les vampires et autres créatures surnaturelles. L'effet varie d'un être à l'autre. Vous pouvez vous attendre à ce que les êtres les plus puissants aient un degré de résistance plus élevé. "
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Pendant un combat de Mêlée, vous pouvez parer (touche par défaut : Tab) pour vous donner un bonus de défense. Ce bonus est égal à votre Dextérité."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"La létalité d'une arme peut être utilisée pour évaluer son efficacité contre les vampires. Plus la létalité est élevée, plus il est difficile pour les vampires de se défendre contre cette arme."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"En appuyant sur les différentes touches directionnelles de mouvement tout en attaquant, vous effectuerez différentes attaques de mêlée. Chaque touche directionnelle déclenche une combinaison d'attaques différentes.
+
+Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendre. Si vous utilisez tout le temps la même attaque, le défenseur apprendra à l'anticiper et aura plus de chances d'éviter vos coups."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Vous pouvez augmenter votre humanité comme n'importe quelle autre caractéristique en dépensant des points d'expérience."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Le potentiel de dégâts d'une arme est la quantité de dégâts qu'une arme peut infliger entre vos mains. Ce nombre est ajusté en fonction de votre aptitude de combat A distance ou de Mêlée. Plus votre aptitude est élevée, plus vous ferez de dégâts."
+		}
+
+		Tip
+		{
+			"Type"		"Game"	// changed by wesp
+
+			"StoryState"	"15"
+			"Size"		"Large"
+			"Text"		"Les vampires sont extrêmement résistants aux coups de feu. Utilisez des lames et vos disciplines vampiriques pour combattre plus efficacement les vampires et autres êtres surnaturels."
+		}
+
+		Tip
+		{
+			"Type"		"Game"	// changed by wesp
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Revenez souvent à la feuille de personnage (touche pas défaut : C) et dépensez l'expérience acquise pour améliorer votre personnage."
+		}
+
+		Tip
+		{
+			"Type"		"Game"	// changed by wesp
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Les poches de sang fournissent une petite quantité de sang et de soin. Plus difficiles à trouver et moins efficaces que du sang frais, les poches de sang peuvent vous sauver quand vous avez du mal à trouver d'autre nourriture."
+		}
+
+		Tip
+		{
+			"Type"		"Game"	// changed by wesp
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Les armes à lames sont aussi mortelles pour les vampires que pour les humains. Les aptitudes de Défense et d'Absorption des dégâts létaux améliorent votre Défense contre les lames."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"15"
+			"Size"		"Small"
+			"Text"		"Les e-mails qui vous sont destinés sont envoyés sur l'ordinateur qui se trouve dans votre refuge. Retournez-y pour vérifier vos messages."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 20
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Le Sabbat a récemment montré les signes d'une recrudescence d'activité, attaquant activement Chicago, Atlanta, Washington DC et d'autres villes contrôlées par des anciens. Composée de membres bestiaux et monstrueux, la secte s'est répandue comme une invasion de sauterelles sur la Côte Est et les frontières sud des Etats-Unis. Son influence au Canada a également augmenté et il semblerait que le Sabbat soit sur le point d'accomplir une grande action, cernant les Etats-Unis et coupant tous les points d'accès à l'exception de ceux qu'il voudra bien ouvrir."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Censément 'père de tous les vampires', Caïn tient plus du mythe que de la réalité en ces temps modernes. Certains des Mathusalems, ainsi que quelques membres du Sabbat, prétendent avoir rencontré un homme qui se faisait appeler Caïn, mais l'histoire est passée par tant d'individus et de couches du Jyhad que personne ne sait vraiment où s'arrête la vérité et où commence la fiction."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Les communautés du Sabbat et les salons de la Camarilla parlent à demi-mot de troubles dans l'Est, d'armées de vauriens sans clan, de vampires dont le sang est si clair qu'ils ne peuvent étreindre, de rencontres avec des anciens mystérieux dont le vaste pouvoir ne ressemble à aucune lignée, d'une lune au croissant noir et de pleines lunes rouges comme le sang. Tout cela, disent les croyants, annonce que les dernières nuits sont proches. Et que la fin des temps l'est tout autant."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Antédiluvien :
+			Un redoutable membre de la Troisième Génération, l'un des plus vieux vampires en existence."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Un prince ne 'règne' pas sur une ville. Son rôle est plutôt celui d'un superviseur ou d'un juge de paix. Il est le magistrat qui règle les querelles entre vampires, l'autorité ultime sur les traditions dans sa ville, et le gardien de la paix. Avant tout, il se soucie de la Mascarade et de sa préservation. "
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"La plupart des mortels, étouffés par la superstition et la science, restent aveugles aux vampires qui évoluent en leur sein - mais certains savent, et ont peur. Les mortels qui chassent les vampires sont appelés des chasseurs de sorcières, ou tout simplement chasseurs, comme les Inquisiteurs d'antan."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Si ce titre implique différentes choses d'une ville à l'autre, la première tâche du shérif est d'être l'exécutant du prince, le vampire qui amène les criminels devant sa cour, impose l'ordre dans les rues et reste toujours prêt à être le bras 'musclé' de la loi."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Les Anarchs sont des vampires qui rejettent les traditions de Caïn et les dictats des anciens qui les appliquent. Le plus ironique est que ces mêmes anciens donnent à contrecoeur un certain statut aux Anarchs, puisque ces derniers sont capables d'obtenir du pouvoir. Les Anarchs sont aussi respectés pour leur passion et leur détermination, que peu d'anciens, lourds de vieillesse et de rancoeur, peuvent comprendre. Mais en fin de compte, les vampires voient souvent les Anarchs comme des chacals, survivant après la mort aux miettes de ce qui échappe aux anciens de la Camarilla. "
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Primogène :
+			Les primogènes sont les anciens assemblés de chaque clan dans une ville. En théorie, les primogènes représentent leur clan dans le corps politique des anciens, mais en pratique les primogènes sont le plus souvent de 'vieux vampires', un nid d'incestes, de traîtrise et de marchandage."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"On murmure dans la société vampire que des clans ou lignées 'inférieures' seraient nées dans la généalogie vampirique au cours des âges."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Caitiff :
+			Les Caitiff sont des vampires sans clan, exclus par les autres vampires et méprisés par ceux qui prennent la peine de les remarquer. Les vampires peuvent être sans clan soit parce qu'ils n'ont pas la moindre idée de l'identité de leur père (et donc aucune idée de leur lignage) ou parce qu'étant d'une génération si faible qu'aucune caractéristique de clan n'est discernable. Les Caitiff sont considérés de manière universelle comme des orphelins ou des bâtards, bien que certains atteignent parfois un certain rang chez les Anarchs."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Certains vampires pensent qu'une Apocalypse est imminente, que les puissances du Ciel se préparent enfin à juger les vampires et ce qu'ils ont fait de la Terre. D'autres parlent de la Géhenne, la nuit où les vampires les plus anciens reviendront pour dévorer leurs descendants, rassasiant leur propre faim dans les veines de leurs inférieurs."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"L'une des propriétés les plus merveilleuses et terribles de la vitae vampirique est qu'elle peut asservir presque toute personne qui en boit trois fois. Chaque absorption du sang du vampire donne à ce dernier une emprise émotionnelle croissante sur celui qui le boit. Si une victime boit trois fois du même vampire, elle succombe à ce que l'on appelle le Lien du Sang, l'une des sensations émotionnelles les plus intenses au monde."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Clan Brujah :
+			Composé en majorité de rebelles ayant la rage de vivre - ou de mourir. Individualistes, expressifs et turbulents, les Brujahs sont très attachés aux changements sociaux et ce clan compte parmi les plus violents de la Camarilla. La plupart des autres vampires voient les Brujahs comme de simples mécréants ou contestataires, mais la vérité est que leurs polémiques sont alimentées par de véritables passions."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Clan Tremere :
+			Qu'ils soient redoutés, méprisés, craints ou surveillés de près, les membres du très secret clan Tremere ne sont jamais ignorés. Ceux qui ont entendu parler des actes du clan sont souvent méfiants, et à juste titre. Par leur propre artifice, ils ont maîtrisé une forme de sorcellerie vampirique, avec rituels et sorts, qui est aussi puissante - si ce n'est plus - que tout pouvoir du sang."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Clan Ventrue :
+			Depuis des âges immémoriaux, les Ventrues sont le clan du pouvoir, faisant respecter les traditions et cherchant à façonner la destinée des vampires. Dans les nuits de l'ancien temps, les Ventrues étaient choisis parmi les nobles, les princes marchands ou autres détenteurs du pouvoir. A notre époque, les recrues viennent plutôt de familles riches et anciennes, d'acteurs prometteurs impitoyables des coulisses du pouvoir ou de l'argent, et du milieu politique. Quelle que soit leur origine, les Ventrues préservent la stabilité et maintiennent l'ordre pour la Camarilla."
+		}
+
+		//Game Tips
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"L'aptitude de combat à Mains nues détermine la facilité avec laquelle vous pourrez vous nourrir d'une victime non consentante. Une aptitude élevée vous aidera à vous nourrir pendant un combat.
+
+L'aptitude de combat à Mains nues affecte aussi directement les dégâts que vous infligez avec vos poings et vos griffes et la facilité avec laquelle un adversaire pourra parer, esquiver ou contrer vos coups."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"L'aptitude Marchandage modifie tous les prix de vente et d'achat. Les prix des vendeurs sont automatiquement ajustés en fonction de votre aptitude Marchandage. Plus cette aptitude sera élevée, plus vous pourrez tirer d'argent de ce que vous vendez et moins vous aurez à dépenser pour acheter autre chose.
+
+Quand les sujets financiers sont abordés, une aptitude de Marchandage élevée vous permettra des options de dialogue spéciales."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"La faim peut entraîner la frénésie, ainsi que la peur ou la rage causées par des blessures reçues.
+
+Le risque de frénésie est directement lié à votre humanité. Un vampire qui reste proche de son humanité passée peut garder le contrôle de la Bête. Un tueur mort-vivant assoiffé de sang succombera plus souvent. Le risque est aggravé par la faim.
+
+Nourrissez-vous souvent et conservez un score d'humanité élevé pour éviter la frénésie."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Si un compteur est déjà en cours pour une discipline, déclenchez-la de nouveau pour rajouter du temps."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Utilisez la touche 'Arrêt de toutes les disciplines' (touche par défaut : F8) pour interrompre une discipline en cours."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"La Vigueur améliore l'aptitude d'Absorption de type Contondant. Pour un vampire, chaque point d'Absorption des dégâts contondants réduit les dégâts que vous infligent les balles et les armes contondantes de mêlée."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Les disciplines ont en général moins d'effet sur les vampires et autres créatures surnaturelles. L'effet varie d'un être à l'autre. Vous pouvez vous attendre à ce que les êtres les plus puissants aient un degré de résistance plus élevé. "
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Pendant un combat de Mêlée, vous pouvez parer (touche par défaut : Tab) pour vous donner un bonus de défense. Ce bonus est égal à votre Dextérité."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"La létalité d'une arme peut être utilisée pour évaluer son efficacité contre les vampires. Plus la létalité est élevée, plus il est difficile pour les vampires de se défendre contre cette arme."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"En appuyant sur les différentes touches directionnelles de mouvement tout en attaquant, vous effectuerez différentes attaques de mêlée. Chaque touche directionnelle déclenche une combinaison d'attaques différentes.
+
+Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendre. Si vous utilisez tout le temps la même attaque, le défenseur apprendra à l'anticiper et aura plus de chances d'éviter vos coups."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Vous pouvez augmenter votre humanité comme n'importe quelle autre caractéristique en dépensant des points d'expérience."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Le potentiel de dégâts d'une arme est la quantité de dégâts qu'une arme peut infliger entre vos mains. Ce nombre est ajusté en fonction de votre aptitude de combat A distance ou de Mêlée. Plus votre aptitude est élevée, plus vous ferez de dégâts."
+		}
+
+		Tip
+		{
+			"Type"		"Game"	// changed by wesp
+			"StoryState"	"20"
+			"Size"		"Large"
+			"Text"		"Les vampires sont extrêmement résistants aux coups de feu. Utilisez des lames et vos disciplines vampiriques pour combattre plus efficacement les vampires et autres êtres surnaturels."
+		}
+
+		Tip
+		{
+			"Type"		"Game"	// changed by wesp
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Revenez souvent à la feuille de personnage (touche pas défaut : C) et dépensez l'expérience acquise pour améliorer votre personnage."
+		}
+
+		Tip
+		{
+			"Type"		"Game"	// changed by wesp
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Les poches de sang fournissent une petite quantité de sang et de soin. Plus difficiles à trouver et moins efficaces que du sang frais, les poches de sang peuvent vous sauver quand vous avez du mal à trouver d'autre nourriture."
+		}
+
+		Tip
+		{
+			"Type"		"Game"	// changed by wesp
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Les armes à lames sont aussi mortelles pour les vampires que pour les humains. Les aptitudes de Défense et d'Absorption des dégâts létaux améliorent votre Défense contre les lames."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"20"
+			"Size"		"Small"
+			"Text"		"Les e-mails qui vous sont destinés sont envoyés sur l'ordinateur qui se trouve dans votre refuge. Retournez-y pour vérifier vos messages."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 25
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Censément 'père de tous les vampires', Caïn tient plus du mythe que de la réalité en ces temps modernes. Certains des Mathusalems, ainsi que quelques membres du Sabbat, prétendent avoir rencontré un homme qui se faisait appeler Caïn, mais l'histoire est passée par tant d'individus et de couches du Jyhad que personne ne sait vraiment où s'arrête la vérité et où commence la fiction."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Les communautés du Sabbat et les salons de la Camarilla parlent à demi-mot de troubles dans l'Est, d'armées de vauriens sans clan, de vampires dont le sang est si clair qu'ils ne peuvent étreindre, de rencontres avec des anciens mystérieux dont le vaste pouvoir ne ressemble à aucune lignée, d'une lune au croissant noir et de pleines lunes rouges comme le sang. Tout cela, disent les croyants, annonce que les dernières nuits sont proches. Et que la fin des temps l'est tout autant."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Antédiluvien :
+			Un redoutable membre de la Troisième Génération, l'un des plus vieux vampires en existence."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Un prince ne 'règne' pas sur une ville. Son rôle est plutôt celui d'un superviseur ou d'un juge de paix. Il est le magistrat qui règle les querelles entre vampires, l'autorité ultime sur les traditions dans sa ville, et le gardien de la paix. Avant tout, il se soucie de la Mascarade et de sa préservation. "
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"La plupart des mortels, étouffés par la superstition et la science, restent aveugles aux vampires qui évoluent en leur sein - mais certains savent, et ont peur. Les mortels qui chassent les vampires sont appelés des chasseurs de sorcières, ou tout simplement chasseurs, comme les Inquisiteurs d'antan."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Si ce titre implique différentes choses d'une ville à l'autre, la première tâche du shérif est d'être l'exécutant du prince, le vampire qui amène les criminels devant sa cour, impose l'ordre dans les rues et reste toujours prêt à être le bras 'musclé' de la loi."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Les Anarchs sont des vampires qui rejettent les traditions de Caïn et les dictats des anciens qui les appliquent. Le plus ironique est que ces mêmes anciens donnent à contrecoeur un certain statut aux Anarchs, puisque ces derniers sont capables d'obtenir du pouvoir. Les Anarchs sont aussi respectés pour leur passion et leur détermination, que peu d'anciens, lourds de vieillesse et de rancoeur, peuvent comprendre. Mais en fin de compte, les vampires voient souvent les Anarchs comme des chacals, survivant après la mort aux miettes de ce qui échappe aux anciens de la Camarilla. "
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Primogène :
+			Les primogènes sont les anciens assemblés de chaque clan dans une ville. En théorie, les primogènes représentent leur clan dans le corps politique des anciens, mais en pratique les primogènes sont le plus souvent de 'vieux vampires', un nid d'incestes, de traîtrise et de marchandage."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"On murmure dans la société vampire que des clans ou lignées 'inférieures' seraient nées dans la généalogie vampirique au cours des âges."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Caitiff :
+			Les Caitiff sont des vampires sans clan, exclus par les autres vampires et méprisés par ceux qui prennent la peine de les remarquer. Les vampires peuvent être sans clan soit parce qu'ils n'ont pas la moindre idée de l'identité de leur père (et donc aucune idée de leur lignage) ou parce qu'étant d'une génération si faible qu'aucune caractéristique de clan n'est discernable. Les Caitiff sont considérés de manière universelle comme des orphelins ou des bâtards, bien que certains atteignent parfois un certain rang chez les Anarchs."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Certains vampires pensent qu'une Apocalypse est imminente, que les puissances du Ciel se préparent enfin à juger les vampires et ce qu'ils ont fait de la Terre. D'autres parlent de la Géhenne, la nuit où les vampires les plus anciens reviendront pour dévorer leurs descendants, rassasiant leur propre faim dans les veines de leurs inférieurs."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"L'une des propriétés les plus merveilleuses et terribles de la vitae vampirique est qu'elle peut asservir presque toute personne qui en boit trois fois. Chaque absorption du sang du vampire donne à ce dernier une emprise émotionnelle croissante sur celui qui le boit. Si une victime boit trois fois du même vampire, elle succombe à ce que l'on appelle le Lien du Sang, l'une des sensations émotionnelles les plus intenses au monde."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Clan Brujah :
+			Composé en majorité de rebelles ayant la rage de vivre - ou de mourir. Individualistes, expressifs et turbulents, les Brujahs sont très attachés aux changements sociaux et ce clan compte parmi les plus violents de la Camarilla. La plupart des autres vampires voient les Brujahs comme de simples mécréants ou contestataires, mais la vérité est que leurs polémiques sont alimentées par de véritables passions."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Clan Tremere :
+			Qu'ils soient redoutés, méprisés, craints ou surveillés de près, les membres du très secret clan Tremere ne sont jamais ignorés. Ceux qui ont entendu parler des actes du clan sont souvent méfiants, et à juste titre. Par leur propre artifice, ils ont maîtrisé une forme de sorcellerie vampirique, avec rituels et sorts, qui est aussi puissante - si ce n'est plus - que tout pouvoir du sang."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Clan Ventrue :
+			Depuis des âges immémoriaux, les Ventrues sont le clan du pouvoir, faisant respecter les traditions et cherchant à façonner la destinée des vampires. Dans les nuits de l'ancien temps, les Ventrues étaient choisis parmi les nobles, les princes marchands ou autres détenteurs du pouvoir. A notre époque, les recrues viennent plutôt de familles riches et anciennes, d'acteurs prometteurs impitoyables des coulisses du pouvoir ou de l'argent, et du milieu politique. Quelle que soit leur origine, les Ventrues préservent la stabilité et maintiennent l'ordre pour la Camarilla."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Les sectes de la Géhenne :
+			Les sectes de la Géhenne existent pour préparer ou empêcher la fin du monde. Craignant la culmination du Jyhad et le retour des Antédiluviens, les sectes se préparent soit à servir les anciens (pour essayer d'éviter leur propre destruction quand viendra la fin) soit à découvrir les refuges secrets des Antédiluviens (les frappant ainsi par avance pour empêcher la Géhenne)."
+		}
+
+		//Game Tips
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"L'aptitude de combat à Mains nues détermine la facilité avec laquelle vous pourrez vous nourrir d'une victime non consentante. Une aptitude élevée vous aidera à vous nourrir pendant un combat.
+
+L'aptitude de combat à Mains nues affecte aussi directement les dégâts que vous infligez avec vos poings et vos griffes et la facilité avec laquelle un adversaire pourra parer, esquiver ou contrer vos coups."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"L'aptitude Marchandage modifie tous les prix de vente et d'achat. Les prix des vendeurs sont automatiquement ajustés en fonction de votre aptitude Marchandage. Plus cette aptitude sera élevée, plus vous pourrez tirer d'argent de ce que vous vendez et moins vous aurez à dépenser pour acheter autre chose.
+
+Quand les sujets financiers sont abordés, une aptitude de Marchandage élevée vous permettra des options de dialogue spéciales."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"La faim peut entraîner la frénésie, ainsi que la peur ou la rage causées par des blessures reçues.
+
+Le risque de frénésie est directement lié à votre humanité. Un vampire qui reste proche de son humanité passée peut garder le contrôle de la Bête. Un tueur mort-vivant assoiffé de sang succombera plus souvent. Le risque est aggravé par la faim.
+
+Nourrissez-vous souvent et conservez un score d'humanité élevé pour éviter la frénésie."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Si un compteur est déjà en cours pour une discipline, déclenchez-la de nouveau pour rajouter du temps."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Utilisez la touche 'Arrêt de toutes les disciplines' (touche par défaut : F8) pour interrompre une discipline en cours."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"La Vigueur améliore l'aptitude d'Absorption de type Contondant. Pour un vampire, chaque point d'Absorption des dégâts contondants réduit les dégâts que vous infligent les balles et les armes contondantes de mêlée."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Les disciplines ont en général moins d'effet sur les vampires et autres créatures surnaturelles. L'effet varie d'un être à l'autre. Vous pouvez vous attendre à ce que les êtres les plus puissants aient un degré de résistance plus élevé. "
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Pendant un combat de Mêlée, vous pouvez parer (touche par défaut : Tab) pour vous donner un bonus de défense. Ce bonus est égal à votre Dextérité."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"La létalité d'une arme peut être utilisée pour évaluer son efficacité contre les vampires. Plus la létalité est élevée, plus il est difficile pour les vampires de se défendre contre cette arme."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"En appuyant sur les différentes touches directionnelles de mouvement tout en attaquant, vous effectuerez différentes attaques de mêlée. Chaque touche directionnelle déclenche une combinaison d'attaques différentes.
+
+Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendre. Si vous utilisez tout le temps la même attaque, le défenseur apprendra à l'anticiper et aura plus de chances d'éviter vos coups."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Vous pouvez augmenter votre humanité comme n'importe quelle autre caractéristique en dépensant des points d'expérience."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Le potentiel de dégâts d'une arme est la quantité de dégâts qu'une arme peut infliger entre vos mains. Ce nombre est ajusté en fonction de votre aptitude de combat A distance ou de Mêlée. Plus votre aptitude est élevée, plus vous ferez de dégâts."
+		}
+
+		Tip
+		{
+			"Type"		"Game"	// changed by wesp
+			"StoryState"	"25"
+			"Size"		"Large"
+			"Text"		"Les vampires sont extrêmement résistants aux coups de feu. Utilisez des lames et vos disciplines vampiriques pour combattre plus efficacement les vampires et autres êtres surnaturels."
+		}
+
+		Tip
+		{
+			"Type"		"Game"	// changed by wesp
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Revenez souvent à la feuille de personnage (touche pas défaut : C) et dépensez l'expérience acquise pour améliorer votre personnage."
+		}
+
+		Tip
+		{
+			"Type"		"Game"	// changed by wesp
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Les poches de sang fournissent une petite quantité de sang et de soin. Plus difficiles à trouver et moins efficaces que du sang frais, les poches de sang peuvent vous sauver quand vous avez du mal à trouver d'autre nourriture."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Les armes à lames sont aussi mortelles pour les vampires que pour les humains. Les aptitudes de Défense et d'Absorption des dégâts létaux améliorent votre Défense contre les lames."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"25"
+			"Size"		"Small"
+			"Text"		"Les e-mails qui vous sont destinés sont envoyés sur l'ordinateur qui se trouve dans votre refuge. Retournez-y pour vérifier vos messages."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 30
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Le Sabbat a récemment montré les signes d'une recrudescence d'activité, attaquant activement Chicago, Atlanta, Washington DC et d'autres villes contrôlées par des anciens. Composée de membres bestiaux et monstrueux, la secte s'est répandue comme une invasion de sauterelles sur la Côte Est et les frontières sud des Etats-Unis. Son influence au Canada a également augmenté et il semblerait que le Sabbat soit sur le point d'accomplir une grande action, cernant les Etats-Unis et coupant tous les points d'accès à l'exception de ceux qu'il voudra bien ouvrir."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Censément 'père de tous les vampires', Caïn tient plus du mythe que de la réalité en ces temps modernes. Certains des Mathusalems, ainsi que quelques membres du Sabbat, prétendent avoir rencontré un homme qui se faisait appeler Caïn, mais l'histoire est passée par tant d'individus et de couches du Jyhad que personne ne sait vraiment où s'arrête la vérité et où commence la fiction."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Les communautés du Sabbat et les salons de la Camarilla parlent à demi-mot de troubles dans l'Est, d'armées de vauriens sans clan, de vampires dont le sang est si clair qu'ils ne peuvent étreindre, de rencontres avec des anciens mystérieux dont le vaste pouvoir ne ressemble à aucune lignée, d'une lune au croissant noir et de pleines lunes rouges comme le sang. Tout cela, disent les croyants, annonce que les dernières nuits sont proches. Et que la fin des temps l'est tout autant."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Antédiluvien :
+			Un redoutable membre de la Troisième Génération, l'un des plus vieux vampires en existence."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Un prince ne 'règne' pas sur une ville. Son rôle est plutôt celui d'un superviseur ou d'un juge de paix. Il est le magistrat qui règle les querelles entre vampires, l'autorité ultime sur les traditions dans sa ville, et le gardien de la paix. Avant tout, il se soucie de la Mascarade et de sa préservation. "
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"La plupart des mortels, étouffés par la superstition et la science, restent aveugles aux vampires qui évoluent en leur sein - mais certains savent, et ont peur. Les mortels qui chassent les vampires sont appelés des chasseurs de sorcières, ou tout simplement chasseurs, comme les Inquisiteurs d'antan."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Si ce titre implique différentes choses d'une ville à l'autre, la première tâche du shérif est d'être l'exécutant du prince, le vampire qui amène les criminels devant sa cour, impose l'ordre dans les rues et reste toujours prêt à être le bras 'musclé' de la loi."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Les Anarchs sont des vampires qui rejettent les traditions de Caïn et les dictats des anciens qui les appliquent. Le plus ironique est que ces mêmes anciens donnent à contrecoeur un certain statut aux Anarchs, puisque ces derniers sont capables d'obtenir du pouvoir. Les Anarchs sont aussi respectés pour leur passion et leur détermination, que peu d'anciens, lourds de vieillesse et de rancoeur, peuvent comprendre. Mais en fin de compte, les vampires voient souvent les Anarchs comme des chacals, survivant après la mort aux miettes de ce qui échappe aux anciens de la Camarilla. "
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Primogène :
+			Les primogènes sont les anciens assemblés de chaque clan dans une ville. En théorie, les primogènes représentent leur clan dans le corps politique des anciens, mais en pratique les primogènes sont le plus souvent de 'vieux vampires', un nid d'incestes, de traîtrise et de marchandage."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"On murmure dans la société vampire que des clans ou lignées 'inférieures' seraient nées dans la généalogie vampirique au cours des âges."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Caitiff :
+			Les Caitiff sont des vampires sans clan, exclus par les autres vampires et méprisés par ceux qui prennent la peine de les remarquer. Les vampires peuvent être sans clan soit parce qu'ils n'ont pas la moindre idée de l'identité de leur père (et donc aucune idée de leur lignage) ou parce qu'étant d'une génération si faible qu'aucune caractéristique de clan n'est discernable. Les Caitiff sont considérés de manière universelle comme des orphelins ou des bâtards, bien que certains atteignent parfois un certain rang chez les Anarchs."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Certains vampires pensent qu'une Apocalypse est imminente, que les puissances du Ciel se préparent enfin à juger les vampires et ce qu'ils ont fait de la Terre. D'autres parlent de la Géhenne, la nuit où les vampires les plus anciens reviendront pour dévorer leurs descendants, rassasiant leur propre faim dans les veines de leurs inférieurs."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"L'une des propriétés les plus merveilleuses et terribles de la vitae vampirique est qu'elle peut asservir presque toute personne qui en boit trois fois. Chaque absorption du sang du vampire donne à ce dernier une emprise émotionnelle croissante sur celui qui le boit. Si une victime boit trois fois du même vampire, elle succombe à ce que l'on appelle le Lien du Sang, l'une des sensations émotionnelles les plus intenses au monde."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Clan Brujah :
+			Composé en majorité de rebelles ayant la rage de vivre - ou de mourir. Individualistes, expressifs et turbulents, les Brujahs sont très attachés aux changements sociaux et ce clan compte parmi les plus violents de la Camarilla. La plupart des autres vampires voient les Brujahs comme de simples mécréants ou contestataires, mais la vérité est que leurs polémiques sont alimentées par de véritables passions."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Clan Tremere :
+			Qu'ils soient redoutés, méprisés, craints ou surveillés de près, les membres du très secret clan Tremere ne sont jamais ignorés. Ceux qui ont entendu parler des actes du clan sont souvent méfiants, et à juste titre. Par leur propre artifice, ils ont maîtrisé une forme de sorcellerie vampirique, avec rituels et sorts, qui est aussi puissante - si ce n'est plus - que tout pouvoir du sang."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Clan Ventrue :
+			Depuis des âges immémoriaux, les Ventrues sont le clan du pouvoir, faisant respecter les traditions et cherchant à façonner la destinée des vampires. Dans les nuits de l'ancien temps, les Ventrues étaient choisis parmi les nobles, les princes marchands ou autres détenteurs du pouvoir. A notre époque, les recrues viennent plutôt de familles riches et anciennes, d'acteurs prometteurs impitoyables des coulisses du pouvoir ou de l'argent, et du milieu politique. Quelle que soit leur origine, les Ventrues préservent la stabilité et maintiennent l'ordre pour la Camarilla."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Les sectes de la Géhenne :
+			Les sectes de la Géhenne existent pour préparer ou empêcher la fin du monde. Craignant la culmination du Jyhad et le retour des Antédiluviens, les sectes se préparent soit à servir les anciens (pour essayer d'éviter leur propre destruction quand viendra la fin) soit à découvrir les refuges secrets des Antédiluviens (les frappant ainsi par avance pour empêcher la Géhenne)."
+		}
+
+		//Game Tips
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"L'aptitude de combat à Mains nues détermine la facilité avec laquelle vous pourrez vous nourrir d'une victime non consentante. Une aptitude élevée vous aidera à vous nourrir pendant un combat.
+
+L'aptitude de combat à Mains nues affecte aussi directement les dégâts que vous infligez avec vos poings et vos griffes et la facilité avec laquelle un adversaire pourra parer, esquiver ou contrer vos coups."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"L'aptitude Marchandage modifie tous les prix de vente et d'achat. Les prix des vendeurs sont automatiquement ajustés en fonction de votre aptitude Marchandage. Plus cette aptitude sera élevée, plus vous pourrez tirer d'argent de ce que vous vendez et moins vous aurez à dépenser pour acheter autre chose.
+
+Quand les sujets financiers sont abordés, une aptitude de Marchandage élevée vous permettra des options de dialogue spéciales."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"La faim peut entraîner la frénésie, ainsi que la peur ou la rage causées par des blessures reçues.
+
+Le risque de frénésie est directement lié à votre humanité. Un vampire qui reste proche de son humanité passée peut garder le contrôle de la Bête. Un tueur mort-vivant assoiffé de sang succombera plus souvent. Le risque est aggravé par la faim.
+
+Nourrissez-vous souvent et conservez un score d'humanité élevé pour éviter la frénésie."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Si un compteur est déjà en cours pour une discipline, déclenchez-la de nouveau pour rajouter du temps."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Utilisez la touche 'Arrêt de toutes les disciplines' (touche par défaut : F8) pour interrompre une discipline en cours."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"La Vigueur améliore l'aptitude d'Absorption de type Contondant. Pour un vampire, chaque point d'Absorption des dégâts contondants réduit les dégâts que vous infligent les balles et les armes contondantes de mêlée."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Les disciplines ont en général moins d'effet sur les vampires et autres créatures surnaturelles. L'effet varie d'un être à l'autre. Vous pouvez vous attendre à ce que les êtres les plus puissants aient un degré de résistance plus élevé. "
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Pendant un combat de Mêlée, vous pouvez parer (touche par défaut : Tab) pour vous donner un bonus de défense. Ce bonus est égal à votre Dextérité."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"La létalité d'une arme peut être utilisée pour évaluer son efficacité contre les vampires. Plus la létalité est élevée, plus il est difficile pour les vampires de se défendre contre cette arme."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"En appuyant sur les différentes touches directionnelles de mouvement tout en attaquant, vous effectuerez différentes attaques de mêlée. Chaque touche directionnelle déclenche une combinaison d'attaques différentes.
+
+Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendre. Si vous utilisez tout le temps la même attaque, le défenseur apprendra à l'anticiper et aura plus de chances d'éviter vos coups."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Vous pouvez augmenter votre humanité comme n'importe quelle autre caractéristique en dépensant des points d'expérience."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Le potentiel de dégâts d'une arme est la quantité de dégâts qu'une arme peut infliger entre vos mains. Ce nombre est ajusté en fonction de votre aptitude de combat A distance ou de Mêlée. Plus votre aptitude est élevée, plus vous ferez de dégâts."
+		}
+
+		Tip
+		{
+			"Type"		"Game"	// changed by wesp
+			"StoryState"	"30"
+			"Size"		"Large"
+			"Text"		"Les vampires sont extrêmement résistants aux coups de feu. Utilisez des lames et vos disciplines vampiriques pour combattre plus efficacement les vampires et autres êtres surnaturels."
+		}
+
+		Tip
+		{
+			"Type"		"Game"	// changed by wesp
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Revenez souvent à la feuille de personnage (touche pas défaut : C) et dépensez l'expérience acquise pour améliorer votre personnage."
+		}
+
+		Tip
+		{
+			"Type"		"Game"	// changed by wesp
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Les poches de sang fournissent une petite quantité de sang et de soin. Plus difficiles à trouver et moins efficaces que du sang frais, les poches de sang peuvent vous sauver quand vous avez du mal à trouver d'autre nourriture."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Les armes à lames sont aussi mortelles pour les vampires que pour les humains. Les aptitudes de Défense et d'Absorption des dégâts létaux améliorent votre Défense contre les lames."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"30"
+			"Size"		"Small"
+			"Text"		"Les e-mails qui vous sont destinés sont envoyés sur l'ordinateur qui se trouve dans votre refuge. Retournez-y pour vérifier vos messages."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 35
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Small"
+			"Text"		"Baron :
+			Un 'prince' Anarch ; un vampire qui s'approprie un domaine mais appartient au mouvement des Anarchs."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"La civilisation des morts-vivants est une danse manipulatrice et toxique, et rares sont les vampires qui ne sont pas du tout affectés. Depuis les nuits de l'antiquité, les vampires luttent pour le pouvoir, composant les nombreuses couches de ce combat séculaire appelé Jyhad. Les chefs, les cultures, les nations et les armées, tout cela fut autant de pions dans cette guerre secrète, et les conspirations vampiriques ont influencé la majeure partie de l'histoire humaine."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Small"
+			"Text"		"Antédiluviens :
+			Ces anciens vampires, s'ils existent, sont sans doute les créatures les plus puissantes au monde. Membres de la Troisième Génération, ces Antédiluviens ne sont qu'à deux étapes du premier vampire, Caïn. "
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"D'après les rares récits de leurs actes, les Antédiluviens possèdent des pouvoirs presque divins. D'après la légende vampire, il y avait 13 Antédiluviens originels, mais certains ont pu être détruits. Leur combat éternel, le Jyhad, concerne tous les vampires, et des couches sans nombre de manipulation et de tromperie rendent les plans de ces anciens presque insondables. "
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Clan Tzimisce :
+			Emprunt d'une noblesse particulière, associée à un amour du mal qui dépasse la perception humaine, le clan Tzimisce mène le Sabbat dans son rejet de tout ce qui est humain. Plus que tout autre vampire, les Tzimisces se réjouissent de leur propre monstruosité. Ils pratiquent une discipline qui leur permet de 'façonner la chair' afin de défigurer leurs ennemis et de se dessiner une beauté incroyable."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Clan Toréador :
+			De tous les clans, les Toréadors sont ceux qui ont le plus de liens avec le monde mortel. Si d'autres vampires voient le bétail comme des pions ou de simples aliments, les Toréadors évoluent avec élégance et sans effort dans la société des mortels, goûtant aux délices de chaque âge comme un gourmet savoure des mets fins."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Les Caitiff étaient autrefois très peu nombreux, mais la période après la Seconde Guerre mondiale a vu une forte augmentation de leur nombre. Quelques anciens parlent avec effroi de 'l'Age des sangs clairs' qui signifie l'imminence de la Géhenne."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Des rencontres avec des démons, des momies immortelles, des morts-vivants ressemblant à des zombies, des esprits mystiques, des animaux pouvant changer de forme, des gargouilles conscientes, des anges et autres entités moins définissables ont été affirmées et parfois enregistrées. La seule certitude qu'on puisse tirer de ces rumeurs est que le Monde des Ténèbres est aussi terrifiant qu'il est cosmopolite."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Small"
+			"Text"		"La Géhenne, d'après les vampires, annoncera la fin du monde, où les mortels comme les vampires seront avalés par une marée de sang inexorable."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Small"
+			"Text"		"Officiellement, la Camarilla ne reconnaît pas l'existence des Antédiluviens ou de Caïn. Elle pense que ces vampires, s'ils ont jamais existé, ont depuis longtemps subi la Mort Ultime, et ceux qui parlent d'eux sont discrédités en public."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"A la différence de la Camarilla, le Sabbat admet l'existence des Antédiluviens, mais les affronte ardemment. D'après la propagande du Sabbat, les Antédiluviens tirent les ficelles du monde entier et c'est à ce contrôle néfaste qu'ils s'opposent. Ils voient la Camarilla comme des pions des anciens et s'opposent à ses membres de façon politique autant que physique."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Les Nosferatus sont des survivants par excellence. Rares sont les créatures, mortelles ou vampires, qui connaissent les ruelles et les recoins d'une ville comme les Nosferatus. De plus, ils ont parfait l'art de la furtivité et de l'espionnage, et se font une fierté de se tenir au courant de toutes les rumeurs et affaires qui circulent. Pas simplement pour le plaisir, mais pour leur survie. Informateurs hors pair, ils peuvent demander des prix très élevés pour leurs connaissances."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Clan Gangrel :
+			Les Gangrels sont de féroces guerriers. La férocité des Gangrels ne vient pas d'une rage anarchique, mais de leurs instincts animaux. Ils sont parmi les vampires les plus prédateurs et adorent se perdre dans la joie de la chasse. Les Gangrels ont une compréhension intime de la Bête dans leur âme et ils préfèrent passer leurs nuits en communion avec les animaux qu'ils imitent."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Depuis des millénaires, les Tzimisces explorent et raffinent leur compréhension de la condition vampirique, pliant leur corps et leur esprit à de nouveaux impératifs étrangers. Si cela est nécessaire, intéressant ou simplement agréable, un Tzimisce n'hésitera pas à plier ses victimes de la même façon. Si les plus jeunes peuvent être décrits comme impitoyables ou sadiques, les anciens ne comprennent simplement plus la pitié ou la souffrance."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Les choses sont souvent trompeuses dans le monde nocturne des vampires. Un coup politique, un crash économique ou une mode sociale peuvent n'être que la manifestation en surface cachant un conflit qui dure depuis des siècles. Les anciens vampires tirent les ficelles depuis l'ombre, manipulant les mortels et les autres vampires. Et les anciens sont souvent manipulés à leur tour. En fait, la plupart des combattants ne comprennent souvent pas pour qui ils combattent, ni pourquoi."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"35"
+			"Size"		"Small"
+			"Text"		"La plupart des membres du Sabbat expriment un vif mépris pour la Camarilla dont ils considèrent les membres comme des épaves tremblantes incapables d'accepter leur nature prédatrice."
+		}
+
+		//Game Tips
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"35"
+			"Size"		"Large"
+			"Text"		"Vous pouvez changer de mode de tir avec la touche de tir alternatif (touche par défaut : Tab). Certaines armes avec une lunette de visée ont plusieurs niveaux de zoom auxquels vous pouvez accéder avec la touche de tir alternatif.
+
+Toutes les armes à feu n'ont pas forcément un mode de tir alternatif."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"35"
+			"Size"		"Small"
+			"Text"		"L'Ajustement d'aptitude est la différence entre votre compétence (score d'aptitude) et le seuil d'une arme. Cet ajustement est appliqué à la létalité de l'arme."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 40
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Small"
+			"Text"		"Baron :
+			Un 'prince' Anarch ; un vampire qui s'approprie un domaine mais appartient au mouvement des Anarchs."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"La civilisation des morts-vivants est une danse manipulatrice et toxique, et rares sont les vampires qui ne sont pas du tout affectés. Depuis les nuits de l'antiquité, les vampires luttent pour le pouvoir, composant les nombreuses couches de ce combat séculaire appelé Jyhad. Les chefs, les cultures, les nations et les armées, tout cela fut autant de pions dans cette guerre secrète, et les conspirations vampiriques ont influencé la majeure partie de l'histoire humaine."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Small"
+			"Text"		"Antédiluviens :
+			Ces anciens vampires, s'ils existent, sont sans doute les créatures les plus puissantes au monde. Membres de la Troisième Génération, ces Antédiluviens ne sont qu'à deux étapes du premier vampire, Caïn. "
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"D'après les rares récits de leurs actes, les Antédiluviens possèdent des pouvoirs presque divins. D'après la légende vampire, il y avait 13 Antédiluviens originels, mais certains ont pu être détruits. Leur combat éternel, le Jyhad, concerne tous les vampires, et des couches sans nombre de manipulation et de tromperie rendent les plans de ces anciens presque insondables. "
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Clan Tzimisce :
+			Emprunt d'une noblesse particulière, associée à un amour du mal qui dépasse la perception humaine, le clan Tzimisce mène le Sabbat dans son rejet de tout ce qui est humain. Plus que tout autre vampire, les Tzimisces se réjouissent de leur propre monstruosité. Ils pratiquent une discipline qui leur permet de 'façonner la chair' afin de défigurer leurs ennemis et de se dessiner une beauté incroyable."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Clan Toréador :
+			De tous les clans, les Toréadors sont ceux qui ont le plus de liens avec le monde mortel. Si d'autres vampires voient le bétail comme des pions ou de simples aliments, les Toréadors évoluent avec élégance et sans effort dans la société des mortels, goûtant aux délices de chaque âge comme un gourmet savoure des mets fins."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Les Caitiff étaient autrefois très peu nombreux, mais la période après la Seconde Guerre mondiale a vu une forte augmentation de leur nombre. Quelques anciens parlent avec effroi de 'l'Age des sangs clairs' qui signifie l'imminence de la Géhenne."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Des rencontres avec des démons, des momies immortelles, des morts-vivants ressemblant à des zombies, des esprits mystiques, des animaux pouvant changer de forme, des gargouilles conscientes, des anges et autres entités moins définissables ont été affirmées et parfois enregistrées. La seule certitude qu'on puisse tirer de ces rumeurs est que le Monde des Ténèbres est aussi terrifiant qu'il est cosmopolite."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Small"
+			"Text"		"La Géhenne, d'après les vampires, annoncera la fin du monde, où les mortels comme les vampires seront avalés par une marée de sang inexorable."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Small"
+			"Text"		"Officiellement, la Camarilla ne reconnaît pas l'existence des Antédiluviens ou de Caïn. Elle pense que ces vampires, s'ils ont jamais existé, ont depuis longtemps subi la Mort Ultime, et ceux qui parlent d'eux sont discrédités en public."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"A la différence de la Camarilla, le Sabbat admet l'existence des Antédiluviens, mais les affronte ardemment. D'après la propagande du Sabbat, les Antédiluviens tirent les ficelles du monde entier et c'est à ce contrôle néfaste qu'ils s'opposent. Ils voient la Camarilla comme des pions des anciens et s'opposent à ses membres de façon politique autant que physique."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Les Nosferatus sont des survivants par excellence. Rares sont les créatures, mortelles ou vampires, qui connaissent les ruelles et les recoins d'une ville comme les Nosferatus. De plus, ils ont parfait l'art de la furtivité et de l'espionnage, et se font une fierté de se tenir au courant de toutes les rumeurs et affaires qui circulent. Pas simplement pour le plaisir, mais pour leur survie. Informateurs hors pair, ils peuvent demander des prix très élevés pour leurs connaissances."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Clan Gangrel :
+			Les Gangrels sont de féroces guerriers. La férocité des Gangrels ne vient pas d'une rage anarchique, mais de leurs instincts animaux. Ils sont parmi les vampires les plus prédateurs et adorent se perdre dans la joie de la chasse. Les Gangrels ont une compréhension intime de la Bête dans leur âme et ils préfèrent passer leurs nuits en communion avec les animaux qu'ils imitent."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Depuis des millénaires, les Tzimisces explorent et raffinent leur compréhension de la condition vampirique, pliant leur corps et leur esprit à de nouveaux impératifs étrangers. Si cela est nécessaire, intéressant ou simplement agréable, un Tzimisce n'hésitera pas à plier ses victimes de la même façon. Si les plus jeunes peuvent être décrits comme impitoyables ou sadiques, les anciens ne comprennent simplement plus la pitié ou la souffrance."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Les choses sont souvent trompeuses dans le monde nocturne des vampires. Un coup politique, un crash économique ou une mode sociale peuvent n'être que la manifestation en surface cachant un conflit qui dure depuis des siècles. Les anciens vampires tirent les ficelles depuis l'ombre, manipulant les mortels et les autres vampires. Et les anciens sont souvent manipulés à leur tour. En fait, la plupart des combattants ne comprennent souvent pas pour qui ils combattent, ni pourquoi."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"40"
+			"Size"		"Small"
+			"Text"		"La plupart des membres du Sabbat expriment un vif mépris pour la Camarilla dont ils considèrent les membres comme des épaves tremblantes incapables d'accepter leur nature prédatrice."
+		}
+
+		//Game Tips
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"40"
+			"Size"		"Large"
+			"Text"		"Vous pouvez changer de mode de tir avec la touche de tir alternatif (touche par défaut : Tab). Certaines armes avec une lunette de visée ont plusieurs niveaux de zoom auxquels vous pouvez accéder avec la touche de tir alternatif.
+
+Toutes les armes à feu n'ont pas forcément un mode de tir alternatif."
+		}
+
+		Tip
+		{
+			"Type"		"Game"
+			"StoryState"	"40"
+			"Size"		"Small"
+			"Text"		"L'Ajustement d'aptitude est la différence entre votre compétence (score d'aptitude) et le seuil d'une arme. Cet ajustement est appliqué à la létalité de l'arme."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 45
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Small"
+			"Text"		"Le Jyhad :
+			La guerre secrète et destructrice menée entre les générations. Les anciens vampires manipulent les plus jeunes, les utilisant comme des pions dans un affrontement terrible dont les règles défient l'entendement."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Small"
+			"Text"		"Kuei-Jin :
+			Les enfants de Caïn se sont répandus dans le monde entier, mais ils sont repoussés en Orient par les mystérieux Kuei-Jin, des vampires différents originaires de l'Orient."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Small"
+			"Text"		"On dirait que les Kuei-Jin ont peu de points communs avec leurs frères occidentaux. La rumeur prête des pouvoirs démoniaques à ces nouveaux venus asiatiques, et leur comportement énigmatique ainsi que leurs idées étrangères mettent souvent les vampires occidentaux mal à l'aise."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Large"
+			"Text"		"Le Livre de Nod :
+			Un recueil de bric et de broc fait de légendes et de l'histoire des vampires. Le Livre de Nod raconte l'origine des vampires, mais il n'a jamais été publié dans son entier. Des fragments de ce document et de ses nombreuses retranscriptions partielles circulent dans certaines strates de la société des vampires."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Large"
+			"Text"		"L'histoire orale des vampires, bien que certains y voient plus des légendes qu'une histoire, occupe une place de choix dans la société des vampires. Le mythe le plus généralement accepté est celui de Caïn, le premier vampire et assassin de son frère. Un texte mystérieux, le Livre de Nod, rapporte l'exil de Caïn et son voyage vers l'est."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Large"
+			"Text"		"Les loups-garous sont universellement craints par les vampires, qui y voient des tueurs sauvages et efficaces. Plus d'un vampire prétend avoir vu un loup-garou enragé tuer tout un groupe de vampires. Isolationnistes et xénophobes, les loups-garous méprisent les vampires. La raison exacte de cette inimitié est inconnue, mais un vampire surpris par un loup-garou est en bien mauvaise posture."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Large"
+			"Text"		"Triste évolution récente, des vampires au sang clair sont apparus ces dernières années. Le sang de Caïn est si faible en eux qu'ils pourraient supporter la lumière du soleil et manger la même nourriture que les mortels. Beaucoup d'érudits vampires voient l'arrivée de ces vampires avec crainte, se rappelant des passages du Livre de Nod qui parlent de 'l'Age des sangs clairs', devant présager la venue de la Géhenne. "
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Large"
+			"Text"		"Chasse au Sang :
+			Le principe est simple : ceux qui enfreignent les lois seront tués. Un vampire qui viole les traditions et s'attire la colère des anciens est chassé et détruit. Tous ceux qui entendent l'appel doivent participer. Cette action est appelée Chasse au sang."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Large"
+			"Text"		"Fanatiques à outrance, les vampires du Sabbat se jettent volontiers dans le feu pour leur secte, assaillant leurs ennemis par centaines, déchiquetant leurs ennemis comme une meute de loup terrasse sa proie."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 50
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Small"
+			"Text"		"Le Jyhad :
+			La guerre secrète et destructrice menée entre les générations. Les anciens vampires manipulent les plus jeunes, les utilisant comme des pions dans un affrontement terrible dont les règles défient l'entendement."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Small"
+			"Text"		"Kuei-Jin :
+			Les enfants de Caïn se sont répandus dans le monde entier, mais ils sont repoussés en Orient par les mystérieux Kuei-Jin, des vampires différents originaires de l'Orient."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Small"
+			"Text"		"On dirait que les Kuei-Jin ont peu de points communs avec leurs frères occidentaux. La rumeur prête des pouvoirs démoniaques à ces nouveaux venus asiatiques, et leur comportement énigmatique ainsi que leurs idées étrangères mettent souvent les vampires occidentaux mal à l'aise."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Large"
+			"Text"		"Le Livre de Nod :
+			Un recueil de bric et de broc fait de légendes et de l'histoire des vampires. Le Livre de Nod raconte l'origine des vampires, mais il n'a jamais été publié dans son entier. Des fragments de ce document et de ses nombreuses retranscriptions partielles circulent dans certaines strates de la société des vampires."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Large"
+			"Text"		"L'histoire orale des vampires, bien que certains y voient plus des légendes qu'une histoire, occupe une place de choix dans la société des vampires. Le mythe le plus généralement accepté est celui de Caïn, le premier vampire et assassin de son frère. Un texte mystérieux, le Livre de Nod, rapporte l'exil de Caïn et son voyage vers l'est."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Large"
+			"Text"		"Les loups-garous sont universellement craints par les vampires, qui y voient des tueurs sauvages et efficaces. Plus d'un vampire prétend avoir vu un loup-garou enragé tuer tout un groupe de vampires. Isolationnistes et xénophobes, les loups-garous méprisent les vampires. La raison exacte de cette inimitié est inconnue, mais un vampire surpris par un loup-garou est en bien mauvaise posture."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Large"
+			"Text"		"Triste évolution récente, des vampires au sang clair sont apparus ces dernières années. Le sang de Caïn est si faible en eux qu'ils pourraient supporter la lumière du soleil et manger la même nourriture que les mortels. Beaucoup d'érudits vampires voient l'arrivée de ces vampires avec crainte, se rappelant des passages du Livre de Nod qui parlent de 'l'Age des sangs clairs', devant présager la venue de la Géhenne. "
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Large"
+			"Text"		"Chasse au Sang :
+			Le principe est simple : ceux qui enfreignent les lois seront tués. Un vampire qui viole les traditions et s'attire la colère des anciens est chassé et détruit. Tous ceux qui entendent l'appel doivent participer. Cette action est appelée Chasse au sang."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Large"
+			"Text"		"Fanatiques à outrance, les vampires du Sabbat se jettent volontiers dans le feu pour leur secte, assaillant leurs ennemis par centaines, déchiquetant leurs ennemis comme une meute de loup terrasse sa proie."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 55
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"55"
+			"Size"		"Large"
+			"Text"		"Clan Giovanni :
+			Les Giovanni sont autant une famille qu'un clan. Presque tous les nouveaux nés sont étreints parmi les descendants mortels du clan. Ces nécromanciens repliés sur eux-mêmes poursuivent deux objectifs : accumuler la richesse matérielle et apprendre les secrets de la Mort elle-même."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"55"
+			"Size"		"Large"
+			"Text"		"Les Giovanni sont respectueux, doux et bien élevés. Riche au-delà de toute imagination, le clan Giovanni trouve ses racines avant même la Renaissance, dans une famille de princes marchands. Aucun autre clan ne fait autant d'efforts d'humilité et de respectabilité que les Giovanni. Et aucun autre clan ne cache aussi bien ses secrets impies."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"55"
+			"Size"		"Small"
+			"Text"		"D'après ce qu'on raconte tout bas, l'argent des Giovanni a pourri la famille et ils se sont tournés vers la Nécromancie simplement par ennui pervers."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"55"
+			"Size"		"Small"
+			"Text"		"La plupart des Giovanni viennent de la famille vénitienne et ont passé la plupart de leur vie mortelle en tant que goules au service d'un autre membre de la famille."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"55"
+			"Size"		"Small"
+			"Text"		"L'inceste, la nécrophilie, l'échange de faveurs et le culte des ancêtres, ainsi qu'une culpabilité savamment cultivée, sont la loi dans la famille. Quand la plupart des vampires Giovanni sont étreints, ils en ont vu suffisamment pour les endurcir aux aléas de l'existence après la mort."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 60
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"60"
+			"Size"		"Large"
+			"Text"		"Clan Giovanni :
+			Les Giovanni sont autant une famille qu'un clan. Presque tous les nouveaux nés sont étreints parmi les descendants mortels du clan. Ces nécromanciens repliés sur eux-mêmes poursuivent deux objectifs : accumuler la richesse matérielle et apprendre les secrets de la Mort elle-même."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"60"
+			"Size"		"Large"
+			"Text"		"Les Giovanni sont respectueux, doux et bien élevés. Riche au-delà de toute imagination, le clan Giovanni trouve ses racines avant même la Renaissance, dans une famille de princes marchands. Aucun autre clan ne fait autant d'efforts d'humilité et de respectabilité que les Giovanni. Et aucun autre clan ne cache aussi bien ses secrets impies."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"60"
+			"Size"		"Small"
+			"Text"		"D'après ce qu'on raconte tout bas, l'argent des Giovanni a pourri la famille et ils se sont tournés vers la Nécromancie simplement par ennui pervers."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"60"	// changed by wesp
+			"Size"		"Small"
+			"Text"		"La plupart des Giovanni viennent de la famille vénitienne et ont passé la plupart de leur vie mortelle en tant que goules au service d'un autre membre de la famille."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"60"
+			"Size"		"Small"
+			"Text"		"L'inceste, la nécrophilie, l'échange de faveurs et le culte des ancêtres, ainsi qu'une culpabilité savamment cultivée, sont la loi dans la famille. Quand la plupart des vampires Giovanni sont étreints, ils en ont vu suffisamment pour les endurcir aux aléas de l'existence après la mort."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 65
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"65"
+			"Size"		"Large"
+			"Text"		"L'Ordre de Léopold :
+			L'Inquisition existe encore de nos jours, même si aucune archive officielle de l'Eglise n'en parle. L'Inquisition du monde moderne est connue sous le nom d'Ordre de Léopold. Beaucoup de ses membres sont des chercheurs et des occultistes, mais certains sont des chasseurs de vampires fanatiques, qui dans la droite ligne de Torquemada, éradiquent sans merci les 'suppôts de Satan'."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"65"
+			"Size"		"Large"
+			"Text"		"La plupart des inquisiteurs sont des fanatiques mais par leur éducation et leur entraînement plus que limités, ils ne représentent que rarement une menace. De même, la plupart des inquisiteurs ne sont que des mortels, sans le moindre des pouvoirs surnaturels qu'on attribue aux saints. Mais quelques inquisiteurs manifestent assez de foi pour repousser voire blesser les damnés par leur simple aura."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"65"
+			"Size"		"Large"
+			"Text"		"Au Moyen Age, une population alertée des déprédations des vampires, et menée par l'Inquisition, a failli exterminer la société plurimillénaire des vampires. Le Cercle intérieur frémit en imaginant la facilité avec laquelle une population de six milliards d'individus, armés de napalm, de munitions au phosphore et d'armes nucléaires, pourrait éliminer les parasites en son sein. . ."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 70
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"70"
+			"Size"		"Large"
+			"Text"		"Certains vampires du Sabbat touchent ouvertement au satanisme, au paganisme ou à d'autres fois déviantes pour choquer ceux qui s'opposent à eux. La perversion et la brutalité sont les armes du Sabbat, et la secte les utilise avec une adresse sans faille."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"70"
+			"Size"		"Large"
+			"Text"		"Composées de plusieurs vampires du Sabbat, les meutes assurent la loyauté de leurs membres en obligeant chaque membre à ingurgiter régulièrement un mélange du sang des autres membres. Par ce lien mystique, les meutes du Sabbat sont parmi les groupes de vampires les plus cruels et les plus unis au monde."
+		}
+
+/////////////////////////
+	// HelpTips for StoryState 75
+/////////////////////////
+	//World Tips
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"75"
+			"Size"		"Large"
+			"Text"		"Certains vampires du Sabbat touchent ouvertement au satanisme, au paganisme ou à d'autres fois déviantes pour choquer ceux qui s'opposent à eux. La perversion et la brutalité sont les armes du Sabbat, et la secte les utilise avec une adresse sans faille."
+		}
+
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"75"
+			"Size"		"Large"
+			"Text"		"Composées de plusieurs vampires du Sabbat, les meutes assurent la loyauté de leurs membres en obligeant chaque membre à ingurgiter régulièrement un mélange du sang des autres membres. Par ce lien mystique, les meutes du Sabbat sont parmi les groupes de vampires les plus cruels et les plus unis au monde."
+		}
+
+////////////////
+	// Special Tip for when you've lost all 5 masquerade points
+////////////////
+		Tip
+		{
+			"Type"		"World"
+			"StoryState"	"666"
+			"Size"		"Large"
+
+			"Text"		"Vos infractions répétées à la Mascarade sont maintenant notoires. On vous considère comme une menace pour la Famille et on vous demande de répondre de vos transgressions."
+		}
+	}
+}

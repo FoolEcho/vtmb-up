@@ -1,0 +1,49 @@
+TerminalDefinition
+{
+	"screen saver"		"Cybercafé Ground 0"// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt and subdirector names(2 characters), changed by wesp
+
+	"email_password"	"Subarashi"		// the user must type this to access email from this terminal
+	"email_username"	"UcutieU"		// printed at the top of the email window, not used for log in. 
+	"difficulty"		"2"
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Login Ground 0 : UcutieU"	//(any number of characters, but must fit in the screen
+	}
+
+	Email
+	{
+		"subject"	"Hitomi Hello"
+		"sender"	"Ayako33@Jfone.ne.jp"
+		"body"		"Bonjour. Je suis Ayako. Apprenons l'anglais. Ta maison où être ? Amérique doit être trop MIEUX. Tu es dans Hollywood ? Tu es dans un film ?
+Bisous,
+Ayako"
+	}
+
+	Email
+	{
+		"subject"	"Re : Hitomi Hello"
+		"sender"	"Ayako33@Jfone.ne.jp"
+		"body"		"Moment Kenta et moi avons mangé okonomiyaki de Yokohama. C'était bon extrême. Qu'est ce qui est mangé en Amérique ? Vous mangez nourriture japonaise ? Je dois enquêter.
+Au revoir,
+Ayako"
+	}
+
+	Email
+	{
+		"subject"	"Re : Hitomi Hello"
+		"sender"	"Ayako33@Jfone.ne.jp"
+		"body"		"Les Américains ils ont longues jambes ? Toi sortir avec garçon américain ? L'image est envoyée ? C'est joyeux.
+Ayako"
+	}
+	
+	Email
+	{
+		"subject"	"Re : Hitomi Hello"
+		"sender"	"Ayako33@Jfone.ne.jp"
+		"body"		"Ce week-end, je suis allée à la source chaude où ma famille a été attachée. Je suis excitée très. Quand nous sommes enfants, est-ce que Yukie est l'amie souvenue ? Elle aussi demander chose sur Amérique. Le temps agréable est passé ? Envoie plein d'images promises à moi !
+Ayako"
+	}
+}

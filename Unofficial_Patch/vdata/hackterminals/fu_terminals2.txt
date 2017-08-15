@@ -1,0 +1,38 @@
+TerminalDefinition
+{
+	"screen saver"		"Possédez l'impensable"	// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+	"email_username"	"gcass"		// printed at the top of the email window, not used for log in. 
+	"email_password"	"elimination"		// printed at the top of the email window, not used for log in. 
+	"Difficulty"		"7"
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Syndicat Fu"
+		"line1"		"Division recherche"
+
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+	// runscript added by wesp
+
+	Email
+	{
+		"subject"	"Etat"
+		"sender"	"Prêtresse"
+		"body"		"Quel est l'état actuel du projet ? Un nouveau sujet vous a été livré la semaine dernière. Si je ne vois pas de résultat avant la fin du mois, vous comprendrez les conséquences."
+		"runscript"	"G.Silver_Know = 2"
+	}
+
+	Email
+	{
+		"subject"	"RE : Rapport de progression"
+		"sender"	"Prêtresse"
+		"body"		"Article 2, l'élimination de Wong Ho est imminente. Kiki, sa fille, sera aussi liquidée selon l'article 2A."
+		"runscript"	"G.Mandarin_Knows = 1"	// changed by wesp
+	}
+}

@@ -1,0 +1,245 @@
+TerminalDefinition
+{
+	"screen saver"		"Le S I N  B I N"	// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Le Sin Bin"
+		"line1"		"Ménage hebdomadaire !"
+
+	}
+
+	// you can have up to 5 subdirs per terminal
+	// and up to 6 functions per sub dir
+	// there are 8 total outputs per terminal, (0...7)
+	// talk to Brock if you'd like this number increased. 
+
+
+	SubDir
+	{
+		"name"			"Invent."
+		"description"		"Titres, par distributeur"
+
+		Function	// changed by wesp
+		{
+			"name"		"PlayfulRabbit"
+			"runtext"	"Playful Rabbit Video - Erotisme pour couples
+					- Copulation simulée 7 - la caméra brumeuse	Passion tiédasse : la femme du pasteur	- Rêves de femmes	- La veuve et son chauffeur	- Le top hot des scènes sans pénis, par Playful Rabbit	- Scandale ! - Une anthologie de filles qui se regardent dans les yeux, avec du saxo"
+		}
+
+		Function	// changed by wesp
+		{
+			"name"		"Beastmastur"
+			"runtext"	"Dressage Productions - Le meilleur des galipettes à poils et à plumes
+					- National Anthropomorphic : à la Recherche du gourdin sauvage de Madagascar	- Le chien de Lady Chatterly	- Gros gibier 4 : Cramponne-toi aux poils !	- Chasse à l'exotique 19 : Dans les profondeurs humides du Nil	-Scoubi-bout dans : Ca rime avec \"lésée par un chien\"                        - Gobe-yéti"
+		}
+
+		Function	// changed by wesp
+		{
+			"name"		"J Pron"
+			"runtext"	"J Pron ! - Importations les plus chaudes
+					- L'écolière : la totale	- Platoon en string	- Derrière elles dans le train	- Androgyne manga	- Prouvez qu'elle n'a pas 18 ans !	- Mecha-pénétra		- Tentacule cherche orifice	- Lavements automatiques 2004"
+		}
+
+		Function	// changed by wesp
+		{
+			"dependency"	"G.Story_State > 49"
+			"name"		"Manbot"
+			"runtext"	"Manbot - Les vraies machines de sexe
+					- Eclator	- Je rêve de ton gros bou. . . lon	- La vidange	- Conduits à astiquer"
+		}
+
+	}
+
+
+	SubDir
+	{
+		"name"			"Peepshow"	// changed by wesp
+		"description"		"Contrôle fenêtres peepshow"
+		"dependency"		"G.Velvet_Quest != 1"
+
+		Function
+		{
+			"name"		"Etat"
+			"description"	"INFORMATIONS SYSTEME"
+			"runtext"	"Contrôle des fenêtres
+					 Etat logiciel : installé
+					 Etat matériel : dysfonctionnement
+					 Notes : le réparateur vient bientôt. - FB"
+		}
+
+		Function
+		{
+			"name"		"Fermeture"
+			"description"	"Prise de contrôle des fenêtres."
+			"runtext"	"Fenêtre 1 non disponible
+					Fenêtre 2 non disponible
+					Fenêtre 3 non disponible"
+
+		}
+
+	}
+
+
+	SubDir
+	{
+		"name"			"Peepshow"
+		"password"		"sinner"
+		"description"		"Contrôle fenêtres peepshow"
+		"dependency"		"G.Velvet_Quest == 1"
+
+		Function
+		{
+			"name"		"Etat"
+			"description"	"INFORMATIONS SYSTEME"
+			"runtext"	"Fenêtre 1: DYSFONCTIONNEMENT. Contrôle impossible.
+					Fenêtre 2 : opérationnelle
+					Fenêtre 3 : opérationnelle
+					Notes : pièces commandées pour la fenêtre 1. -FB"
+		}
+
+		Function
+		{
+			"name"		"Fermeture"
+			"description"	"Prise de contrôle des fenêtres"
+			"runtext"	"Fenêtre 1 non disponible
+					Fenêtre 2 FERMEE
+					Fenêtre 3 FERMEE."
+			"runscript"	"G.Sinbin_Hackwindow = 1"
+			"trigger"	"0"
+	 		"dependency"	"G.Sinbin_Hackwindow == 0"
+		}
+	
+		Function
+		{
+			"name"		"Ouvrir"
+			"description"	"Réactiver les commandes de paiement par pièces de la fenêtre"
+			"runtext"	"Réinitialisation manuelle nécessaire. Assistance : appeler Globomechawindow."
+	 		"dependency"	"G.Sinbin_Hackwindow == 1"
+
+		}
+	}
+
+	SubDir
+	{
+		"name"			"Journal"
+		"password"		"sinner"
+		"description"		"Total d'hier"
+		"dependency"		"G.Velvet_Quest == 1"
+
+		Function
+		{
+			"name"		"Chastity"
+			"runtext"	"Total de Chastity
+					-PS  120 $
+					"
+		}
+
+		Function
+		{
+			"name"		"Jennifer"
+			"runtext"	"Total de Jen ;-)
+					-SC  100 $
+					-SC  250 $
+					-SC  250 $
+					-SC  150 $
+					-SC  250 $
+					-SC  550 $ (2 clients)
+					-SC  150 $
+					"
+		}
+
+
+		Function
+		{
+			"name"		"Kerri"	// changed by wesp
+			"runtext"	"Total de Kerri
+					-PS  240 $
+					-SC  350 $
+					-SC  750 $ (avec l'âne)
+					-SC  250 $
+					-SC  250 $
+					-SC  350 $
+					-SC  250 $
+					"
+		}
+
+	}
+
+	SubDir
+	{
+		"name"			"Journal"
+		"password"		"sinner"
+		"description"		"Totaux d'hier"
+		"dependency"		"G.Velvet_Quest != 1"
+
+
+
+		Function
+		{
+			"name"		"Chastity"
+			"runtext"	"Total de Chastity
+					-PS  80 $
+					"
+		}
+
+		Function
+		{
+			"name"		"Jennifer"
+			"runtext"	"Total de Jen ;-)
+					-SC  100 $
+					-SC  250 $
+					-SC  250 $
+					-SC  150 $
+					-SC  250 $
+					-SC  2500 $ (soirée de célibataires)
+					-SC  150 $
+					"
+		}
+
+
+		Function
+		{
+			"name"		"Kerri"
+			"runtext"	"Total de Keri
+					-PS  240 $
+					-SC  350 $
+					-SC  250 $
+					-SC  500 $ 
+					-SC  250 $
+					"
+		}
+
+	}
+
+	SubDir
+	{
+		"name"			"PRIVE"
+		"description"		"Infos perso. de Flynn : DEGAGE !"
+		"password"		"dirtydog"
+		"difficulty"		"4"
+
+		Function
+		{
+			"name"		"DMP"
+			"description"	"Infos DMP"
+			"runtext"	"Il faut juste décrocher le téléphone en bas de la rue et 
+dire : \"Qui traverse la nuit avec des démons d'effroi ?\"
+Bon sang, ça fout les jetons. Faut que je me souvienne de ne jamais faire ça. Sauf si on peut se faire de la thune.
+Enfin, de la thune ou des putes. Bien sûr."
+			"runscript"	"gotSecretMessage()"
+			"dependency"	"FindPlayer().GetQuestState(\"Tape\") > 0"
+		}
+
+		Function
+		{
+			"name"		"Fermier Big John"
+			"description"	"Infos Big John"
+			"runtext"	"Finalement, John a arrêté de jouer et commencé à produire des films. Comme on pouvait s'y attendre, il continue dans les trucs de ferme. Il a dit de le contacter au 1(888)555-0101.
+
+Ce gars a besoin d'aide."
+		}
+	}
+}

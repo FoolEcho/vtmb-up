@@ -1,0 +1,177 @@
+{	1	}{	[En colère, servile]T'as besoin d'aide ?	}{	[En colère, servile]T'as besoin d'aide ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Du calme. Je viens acheter 'tu sais quoi' à tu sais qui.	}{	Du calme. Je viens acheter 'tu sais quoi' à tu sais qui.	}{	41	}{	Persuasion 3	}{	}{	}{	}{	}{	}{	}{	}{	Je veux aller au Pays Imaginaire. . .	}
+{	3	}{	Ouais. Commence par t'écarter de mon chemin.	}{	Ouais. Commence par t'écarter de mon chemin.	}{	41	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Bouge, ou je déchire ton ombre.	}
+{	4	}{	Laisse-moi entrer.	}{	Laisse-moi entrer.	}{	41	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Ecarte-toi, portier.	}{	Ecarte-toi, portier.	}{	41	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	Ecarte-toi, portier.	}
+{	6	}{	Tu trouves que j'ai l'air dangereux ? Un grand costaud comme toi n'a pas peur de moi, hein ?	}{	Tu trouves que j'ai l'air dangereux ? Un grand costaud comme toi n'a pas peur de moi, hein ?	}{	71	}{	M_Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	Eh, le plagiste. Tu me laisses entrer, et après on pourra se rouler dans le sable. . .	}
+{	7	}{	Tu trouves que j'ai l'air dangereux ? Un grand costaud comme toi n'a pas peur de moi, hein ?	}{	Tu trouves que j'ai l'air dangereux ? Un grand costaud comme toi n'a pas peur de moi, hein ?	}{	61	}{	F_Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	Eh, le plagiste. Tu me laisses entrer, et après on pourra se rouler dans le sable. . .	}
+{	8	}{	Je dois entrer. Pour acheter de l'Astrolite.	}{	Je dois entrer. Pour acheter de l'Astrolite.	}{	11	}{	Persuasion -3	}{	}{	}{	}{	}{	}{	}{	}{	Je suis ici pour voir les Astres au litre.	}
+{	9	}{	Oui, j'ai toujours voulu savoir si un humain avait vraiment neuf mètres d'intestins dans le ventre.	}{	Oui, j'ai toujours voulu savoir si un humain avait vraiment neuf mètres d'intestins dans le ventre.	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demande quelle couleur aurait ton cerveau, sous cette lumière. . .	}
+{	10	}{	Laisse-moi entrer.	}{	Laisse-moi entrer.	}{	41	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Ah ouais ? T'as appelé pour prévenir. Il t'attend ? Parce qu'il ne m'a pas annoncé de visite.	}{	Ah ouais ? T'as appelé pour prévenir. Il t'attend ? Parce qu'il ne m'a pas annoncé de visite.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Tu peux rester là si tu veux. On verra ce qui se passe.	}{	Tu peux rester là si tu veux. On verra ce qui se passe.	}{	41	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Bouge, ou je déchire ton ombre.	}
+{	13	}{	Laisse-moi entrer.	}{	Laisse-moi entrer.	}{	41	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Ecarte-toi, portier.	}{	Ecarte-toi, portier.	}{	41	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	Ecarte-toi, portier.	}
+{	15	}{	Tu trouves que j'ai l'air dangereux ? Un grand costaud comme toi n'a pas peur de moi, hein ?	}{	Tu trouves que j'ai l'air dangereux ? Un grand costaud comme toi n'a pas peur de moi, hein ?	}{	71	}{	M_Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	Eh, le plagiste. Tu me laisses entrer, et après on pourra se rouler dans le sable. . .	}
+{	16	}{	Tu trouves que j'ai l'air dangereux ? Un grand costaud comme toi n'a pas peur de moi, hein ?	}{	Tu trouves que j'ai l'air dangereux ? Un grand costaud comme toi n'a pas peur de moi, hein ?	}{	61	}{	F_Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	Eh, le plagiste. Tu me laisses entrer, et après on pourra se rouler dans le sable. . .	}
+{	17	}{	Oui, il m'attend.	}{	Oui, il m'attend.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'homme veut me montrer les Astres. . .	}
+{	18	}{	Vraiment ? Il vous a dit de vous attendre à prendre mon pied dans le cul ?	}{	Vraiment ? Il vous a dit de vous attendre à prendre mon pied dans le cul ?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Souhaites-tu connaître la douleur et les saignements ?	}
+{	19	}{	Laisse-moi entrer.	}{	Laisse-moi entrer.	}{	41	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	Au temps pour moi, je ferais mieux de partir.	}{	Au temps pour moi, je ferais mieux de partir.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis déjà ailleurs.	}
+{	21	}{	Bien essayé, enflure. Maintenant fous le camp avant que je teste ma batte sur ta tête.	}{	Bien essayé, enflure. Maintenant fous le camp avant que je teste ma batte sur ta tête.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Viens, on va voir si tu as ce qu'il faut là où il faut.	}{	Viens, on va voir si tu as ce qu'il faut là où il faut.	}{	41	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Bouge, ou je déchire ton ombre.	}
+{	23	}{	Laisse-moi entrer.	}{	Laisse-moi entrer.	}{	41	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Ecarte-toi, portier.	}{	Ecarte-toi, portier.	}{	41	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	Tu trouves que j'ai l'air dangereux ? Un grand costaud comme toi n'a pas peur de moi, hein ?	}{	Tu trouves que j'ai l'air dangereux ? Un grand costaud comme toi n'a pas peur de moi, hein ?	}{	71	}{	M_Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	Eh, le plagiste. Tu me laisses entrer, et après on pourra se rouler dans le sable. . .	}
+{	26	}{	Tu trouves que j'ai l'air dangereux ? Un grand costaud comme toi n'a pas peur de moi, hein ?	}{	Tu trouves que j'ai l'air dangereux ? Un grand costaud comme toi n'a pas peur de moi, hein ?	}{	61	}{	F_Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	Eh, le plagiste. Tu me laisses entrer, et après on pourra se rouler dans le sable. . .	}
+{	27	}{	Trop tard. Tu vas mourir.	}{	Trop tard. Tu vas mourir.	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prépare-toi à voir s'écouler ta force vive.	}
+{	28	}{	Laisse-moi entrer.	}{	Laisse-moi entrer.	}{	41	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	Vous ne pouvez pas m'arrêter, mortel!	}{	Vous ne pouvez pas m'arrêter, mortel!	}{	41	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	Bon, bon, je m'en vais.	}{	Bon, bon, je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis déjà ailleurs.	}
+{	31	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Bon, tu peux entrer. Et surtout ne te gêne pas pour foutre le Bronx à l'intérieur. Ca me ferait tellement plaisir de te sortir de là. . .	}{	Bon, tu peux entrer. Et surtout ne te gêne pas pour foutre le Bronx à l'intérieur. Ca me ferait tellement plaisir de te sortir de là. . .	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Brian_Permission = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Je m'en souviendrai. Merci.	}{	Je m'en souviendrai. Merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tes paroles rebondissent dans le vide de mon crâne. Adieu.	}
+{	43	}{	Je suis sûr que ce n'est pas pour ton charme qu'on t'a engagé.	}{	Je suis sûre que ce n'est pas pour ton charme qu'on t'a engagé.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que le froid te réconforte, chien hargneux. Au revoir.	}
+{	44	}{	J'espère pour toi que ça n'en arrivera pas là.	}{	J'espère pour toi que ça n'en arrivera pas là.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Aucun Bronx ne sera mis.	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Je vais te dire un truc. . . Entre. Si en sortant tu veux conclure un petit accord sympa pour de futurs achats, viens me voir. Je m'appelle Brian.	}{	Je vais te dire un truc. . . Entre. Si en sortant tu veux conclure un petit accord sympa pour de futurs achats, viens me voir. Je m'appelle Brian.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Brian_Permission = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	J'y penserai, Brian. A bientôt.	}{	J'y penserai, Brian. A bientôt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pense à des ballons de plage en m'attendant.	}
+{	63	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	[Dégoûté]Oh la vache ! Entre ! Eurk. . .	}{	[Dégoûté]Oh la vache ! Entre ! Eurk. . .	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	G.Brian_Permission = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Va voir l'homme. Je suis sur le point de changer d'avis.	}{	Va voir l'homme. Je suis sur le point de changer d'avis.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Brian_Permission = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	[choqué]Oh merde !	}{	[choqué]Oh merde !	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Ne t'arrête pas, le monstre. Sérieusement, je ne veux plus te voir.	}{	Ne t'arrête pas, le monstre. Sérieusement, je ne veux plus te voir.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Quoi encore ? Je t'ai dit de foutre le camp !	}{	Quoi encore ? Je t'ai dit de foutre le camp !	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Euhh, non ?	}{	Euhh, non ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma réponse serait négative.	}
+{	113	}{	Oui, mais j'ai décidé de ne pas le faire.	}{	Oui, mais j'ai décidé de ne pas le faire.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma réponse est affirmative.	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	Oui, je pars.	}{	Oui, je pars.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Tout le monde dehors, maintenant !	}{	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	<Grogne de douleur>	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	<Meurt>	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Merci beaucoup, trou du cul !	}{	Merci beaucoup, trou du cul !	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Pareil. . .	}{	Pareil. . .	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	(Starting Condition)	}{	}{	101	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	(Starting Condition)	}{	}{	81	}{	G.Brian_Permission == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	(Starting Condition)	}{	}{	91	}{	not pc.HasWeaponEquipped("item_w_fists") and not pc.HasWeaponEquipped("item_w_unarmed")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	(Starting Condition)	}{	}{	111	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -1,0 +1,73 @@
+{	1	}{	[assis à table, en train de charger ses pistolets, sans regarder le joueur]Wong Ho m'a appelé. Vous cherchez quelqu'un ?	}{	[assis à table, en train de charger ses pistolets, sans regarder le joueur]Wong Ho m'a appelé. Vous cherchez quelqu'un ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Oui, exactement.	}{	Oui, exactement.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai déjà dit ça ? Je dis toujours des trucs comme ça. . .	}
+{	3	}{	C'est vous, Zhao ?	}{	C'est vous, Zhao ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	OUI, jetez cette information dans mon oreille.	}
+{	4	}{	Que faites-vous ici ?	}{	Que faites-vous ici ?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Je ne sais pas où est votre ami, mais je sais que les Tong sont impliqués. Le chef des Tong, Johnny. . . Il pourra vous dire où se trouve votre ami.	}{	Je ne sais pas où est votre ami, mais je sais que les Tong sont impliqués. Le chef des Tong, Johnny. . . Il pourra vous dire où se trouve votre ami.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Et où trouver Johnny ?	}{	Et où trouver Johnny ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où est le nid du rat ?	}
+{	13	}{	Et bien sûr, il me le dira de lui-même ?	}{	Et bien sûr, il me le dira de lui-même ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il s'écoulera de ses lèvres, mêlé de sang s'il le faut. . .	}
+{	14	}{	Dites-moi où il est, et je le ferai parler.	}{	Dites-moi où il est, et je le ferai parler.	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Johnny est au Glaze. . . C'est son club. . . Il va vous falloir un mot de passe pour entrer. Le mot de passe, c'est '725'. . . Il y aura des Tong partout. . . Le bureau de Johnny est à l'étage. . .	}{	Johnny est au Glaze. . . C'est son club. . . Il va vous falloir un mot de passe pour entrer. Le mot de passe, c'est '725'. . . Il y aura des Tong partout. . . Le bureau de Johnny est à l'étage. . .	}{	#	}{	}{	G.Glaze_Password = 1; pc.SetQuest("Gangster",2); pc.SetQuest("Johnny",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Merci. . . Pourquoi m'aidez-vous ?	}{	Merci. . . Pourquoi m'aidez-vous ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre bienveillance reste pour moi un mystère. . .	}
+{	23	}{	Vous m'avez beaucoup facilité la 'vie'.	}{	Vous m'avez beaucoup facilité la 'vie'.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, beaucoup de corps jalonnent le chemin de la vérité. . .	}
+{	24	}{	Du genre vingt, trente Tong à l'intérieur ? Ca commence à me plaire. . .	}{	Du genre vingt, trente Tong à l'intérieur ? Ca commence à me plaire. . .	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Je suis un homme de parole. J'avais une dette envers Wong Ho. En remboursant cette dette, je me suis mis les Tong à dos. Mon ancien gang. . .	}{	Je suis un homme de parole. J'avais une dette envers Wong Ho. En remboursant cette dette, je me suis mis les Tong à dos. Mon ancien gang. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Et qu'allez-vous faire à présent ?	}{	Et qu'allez-vous faire à présent ?	}{	41	}{	}{	tongEntrance()	}{	}{	}{	}{	}{	}{	}{	Attendez. . . Ils arrivent. . .	}
+{	33	}{	Eh bien, merci pour votre aide.	}{	Eh bien, merci pour votre aide.	}{	41	}{	}{	tongEntrance()	}{	}{	}{	}{	}{	}{	}{	Votre vie a enfin trouvé son accomplissement. . . Allez trouver votre destin.	}
+{	34	}{	On dirait que vous les avez beaucoup énervés.	}{	On dirait que vous les avez beaucoup énervés.	}{	41	}{	not IsClan(pc,"Malkavian")	}{	tongEntrance()	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Vous devriez partir.	}{	Vous devriez partir.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Vous avez besoin d'aide contre eux ?	}{	Vous avez besoin d'aide contre eux ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous permettez que j'en éviscère quelques-uns ? Je m'ennuie un peu. . .	}
+{	43	}{	J'allais justement dire la même chose.	}{	J'allais justement dire la même chose.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai disparu de cette scène.	}
+{	44	}{	Pourquoi ? On dirait que la fête ne fait que commencer.	}{	Pourquoi ? On dirait que la fête ne fait que commencer.	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Excusez-moi.	}{	Excusez-moi.	}{	#	}{	}{	G.Zhao_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Si vous voulez trouver votre ami, je vous conseille de vous dépêcher.	}{	Si vous voulez trouver votre ami, je vous conseille de vous dépêcher.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	(Starting Condition)	}{	}{	51	}{	G.Barrabus_Exit == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Starting Condition)	}{	}{	61	}{	G.Zhao_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

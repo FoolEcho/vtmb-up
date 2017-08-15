@@ -1,0 +1,308 @@
+{	1	}{	Eh beauté, tu cherches de la compagnie ?	}{	Eh, salut ma belle. Tu cherches de la compagnie ?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Tout dépend. Combien ?	}{	Tout dépend. Combien ?	}{	21	}{	Appearance 2	}{	G.Whore_Price = 1	}{	}{	}{	}{	}{	}{	}{	De combien ma bourse sera-t-elle allégée ?	}
+{	3	}{	Tout dépend. Combien ?	}{	Tout dépend. Combien ?	}{	71	}{	Appearance -2 & G.Whore_Price == 0	}{	G.Whore_Price = 2	}{	}{	}{	}{	}{	}{	}{	De combien ma bourse sera-t-elle allégée ?	}
+{	4	}{	Tu le sais bien.	}{	Tu le sais bien.	}{	51	}{	G.Whore_Price == 1 and pc.CurrentMoney() >= 40	}{	pc.MoneyRemove( 40 )	}{	}{	}{	}{	}{	}{	}{	Affirmatif.	}
+{	5	}{	Tu le sais bien.	}{	Tu le sais bien.	}{	51	}{	G.Whore_Price == 2 and pc.CurrentMoney() >= 50	}{	pc.MoneyRemove( 50 )	}{	}{	}{	}{	}{	}{	}{	Affirmatif.	}
+{	6	}{	Tu le sais bien.	}{	Tu le sais bien.	}{	51	}{	G.Whore_Price == 3 and pc.CurrentMoney() >= 40	}{	pc.MoneyRemove( 40 )	}{	}{	}{	}{	}{	}{	}{	Affirmatif.	}
+{	7	}{	Tu le sais bien.	}{	Tu le sais bien.	}{	51	}{	G.Whore_Price == 4 and pc.CurrentMoney() >= 30	}{	pc.MoneyRemove( 30 )	}{	}{	}{	}{	}{	}{	}{	Affirmatif.	}
+{	8	}{	Tu le sais bien.	}{	Tu le sais bien.	}{	51	}{	G.Whore_Price == 5 and pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Affirmatif.	}
+{	9	}{	Tout dépend. Combien ?	}{	Tout dépend. Combien ?	}{	71	}{	Appearance -2 & (pc.CalcFeat("haggle") >= 2 and G.Whore_Price != 0)	}{	}{	}{	}{	}{	}{	}{	}{	De combien ma bourse sera-t-elle allégée ?	}
+{	10	}{	Je suis un peu juste en liquide, mais j'adorerais passer du temps avec toi. . .	}{	Je suis un peu juste en liquide, mais j'adorerais passer du temps avec toi. . .	}{	211	}{	Seduction 7	}{	}{	}{	}{	}{	}{	}{	}{	Ma bourse est légère, mais mon désir se porte sur toi.	}
+{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	Oui, mais pas pour moi. Pour un ami.	}{	Oui, mais pas pour moi. Pour un ami.	}{	91	}{	G.Romero_Whore == 1 and G.In_Hollywood == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon calendrier est plein, ma bouche s'ouvre pour quelqu'un d'autre.	}
+{	20	}{	Non merci, sans moi.	}{	Non merci, sans moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu dois parler à quelqu'un d'autre. Moi, je ne suis pas là.	}
+{	21	}{	Ooh ! Pour un canon comme toi, je fais trembler la terre pour quarante. . .	}{	Oh, je ne fais pas souvent de femme - et surtout aussi mignonne que toi. Dis. . . quarante, ça t'ira ?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Je regrette, mais je suis un peu à sec pour l'instant.	}{	Je regrette, mais je suis un peu à sec pour l'instant.	}{	41	}{	pc.CurrentMoney() < 40	}{	}{	}{	}{	}{	}{	}{	}{	Ma bourse est trop légère pour tes courbes.	}
+{	23	}{	Ca me paraît parfait.	}{	Ca me paraît parfait.	}{	61	}{	pc.CalcFeat("haggle") < 2 and pc.CurrentMoney() >= 40	}{	pc.MoneyRemove( 40 )	}{	}{	}{	}{	}{	}{	}{	Ma richesse est à la mesure de ton prix.	}
+{	24	}{	Ca me paraît parfait.	}{	Ca me paraît parfait.	}{	31	}{	pc.CalcFeat("haggle") == 2 and pc.CurrentMoney() >= 40	}{	G.Whore_Price = 3; pc.MoneyRemove( 40 )	}{	}{	}{	}{	}{	}{	}{	Ma richesse est à la mesure de ton prix.	}
+{	25	}{	Et 30 ?	}{	Et 30 ?	}{	31	}{	pc.CalcFeat("haggle") == 3 and pc.CurrentMoney() >= 30	}{	G.Whore_Price = 4; pc.MoneyRemove( 30 )	}{	}{	}{	}{	}{	}{	}{	30, ça sonne bien à l'oreille. . .	}
+{	26	}{	Et 20 ?	}{	Et 20 ?	}{	31	}{	pc.CalcFeat("haggle") >= 4 and pc.CurrentMoney() >= 20	}{	G.Whore_Price = 5; pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	20, ça sonne bien à l'oreille. . .	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	Je ne crois pas.	}{	Je ne crois pas.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu dois parler à quelqu'un d'autre. Moi, je ne suis pas là.	}
+{	31	}{	Eh bien. . . rien que pour toi. . . Et ne vas rien répéter à tes amis. Il faut bien que je gagne ma croûte.	}{	Eh bien. . . rien que pour toi. . . Et ne vas rien répéter à tes amis. Il faut bien que je gagne ma croûte.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	(Auto-Link)	}{	(Auto-Link)	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Dommage. . . Reviens quand tu auras de l'argent. Tu ne le regretteras pas.	}{	Dommage. . . Reviens quand tu auras de l'argent. Tu ne le regretteras pas.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	A bientôt.	}{	A bientôt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes yeux se délecteront de ta silhouette une autre fois.	}
+{	51	}{	Allons quelque part de plus. . . intime. Je te suis.	}{	Allons quelque part de plus. . . intime. Je te suis.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Whore_Follower = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Bon, ça marche.	}{	Bon, ça marche.	}{	0	}{	}{	makeFollower()	}{	}{	}{	}{	}{	}{	}{	Par ici. . .	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Je te promets que tu ne le regretteras pas.	}{	Je te promets que tu ne le regretteras pas.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	(Auto-Link)	}{	(Auto-Link)	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	63	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Pour toi ? Cinquante dollars américains. Et je te promets que tu ne regretteras pas un cent. . .	}{	Pour toi ? Cinquante dollars américains. Et je te promets que tu ne regretteras pas un cent. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Je regrette, mais je suis un peu à sec pour l'instant.	}{	Je regrette, mais je suis un peu à sec pour l'instant.	}{	41	}{	pc.CurrentMoney() < 50	}{	}{	}{	}{	}{	}{	}{	}{	Ma bourse est trop légère pour tes courbes.	}
+{	73	}{	Ca me paraît parfait.	}{	Ca me paraît parfait.	}{	61	}{	pc.CalcFeat("haggle") < 2 and pc.CurrentMoney() >= 50	}{	pc.MoneyRemove( 50)	}{	}{	}{	}{	}{	}{	}{	Ma richesse est à la mesure de ton prix.	}
+{	74	}{	Et 40 ?	}{	Et 40 ?	}{	31	}{	pc.CalcFeat("haggle") == 2 and pc.CurrentMoney() >= 40	}{	G.Whore_Price = 3; pc.MoneyRemove( 40 )	}{	}{	}{	}{	}{	}{	}{	40, ça me paraît bien.	}
+{	75	}{	Et 30 ?	}{	Et 30 ?	}{	31	}{	pc.CalcFeat("haggle") == 3 and pc.CurrentMoney() >= 30	}{	G.Whore_Price = 4; pc.MoneyRemove( 30 )	}{	}{	}{	}{	}{	}{	}{	30, ça sonne bien à l'oreille. . .	}
+{	76	}{	Et 20 ?	}{	Et 20 ?	}{	31	}{	pc.CalcFeat("haggle") >= 4 and pc.CurrentMoney() >= 20	}{	G.Whore_Price = 5; pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	20, ça sonne bien à l'oreille. . .	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	Je ne crois pas.	}{	Je ne crois pas.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu dois parler à quelqu'un d'autre. Moi, je ne suis pas là.	}
+{	81	}{	Pas ici. C'est trop public. Il nous faut un peu d'intimité, mon sucre d'orge.	}{	Pas ici. C'est trop public. Il nous faut un peu d'intimité, mon sucre d'orge.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	J'ai changé d'avis, fiche le camp.	}{	J'ai changé d'avis, fiche le camp.	}{	0	}{	}{	resetHos()	}{	}{	}{	}{	}{	}{	}{	Qui es-tu ? Quelle joie de faire ta connaissance, au revoir.	}
+{	83	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	Bon, ça marche.	}{	Bon, ça marche.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Par ici. . .	}
+{	91	}{	Bon, d'accord. . . Où il est, ton 'ami' ?	}{	Bon, d'accord. . . Où il est, ton 'ami' ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	C'est le gardien du cimetière.	}{	C'est le gardien du cimetière.	}{	101	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	C'est le garde des morts.	}{	C'est le garde des morts.	}{	231	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	Il passe ses nuits à s'occuper d'enfants orphelins.	}{	Il passe ses nuits à s'occuper d'enfants orphelins.	}{	121	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Ah non, pas question que j'aille là-bas. T'es trop zarbi, toi. . .	}{	Ah non, pas question que j'aille là-bas. T'es trop zarbi, toi. . .	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Je t'assure que tu ne risques rien. . .	}{	Je t'assure que tu ne risques rien. . .	}{	111	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	Tu viens avec moi !	}{	Tu viens avec moi !	}{	111	}{	Dominate 2 & IsClan(pc,"Ventrue") and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	Tu peux me faire confiance.	}{	Tu peux me faire confiance.	}{	111	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	Euh. . . Mais lui non.	}{	Euh. . . Mais lui non.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Je ne sais pas pourquoi je devrais te croire. . . Bon, d'accord. Mais je serai très énervée s'il s'avère être un tueur fou. Allons-y.	}{	Je ne sais pas pourquoi je devrais te croire. . . Bon, d'accord. Mais je serai très énervée s'il s'avère être un tueur fou. Allons-y.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Loser",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	Suis-moi.	}{	Suis-moi.	}{	0	}{	}{	G.Whore_Follower = 1; G.Romero_Whore = 2; makeFollower()	}{	}{	}{	}{	}{	}{	}{	Par ici. . .	}
+{	121	}{	Ohh, c'est trop mignon. . . [S'énerve soudain] Et tu essaies de le corrompre en lui amenant une prostituée ? Comment oses-tu !	}{	Ohh, c'est trop mignon. . . [S'énerve soudain] Et tu essaies de le corrompre en lui amenant une prostituée ? Comment oses-tu !	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Je plaisantais. . . Il travaille au cimetière.	}{	Je plaisantais. . . Il travaille au cimetière.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	Eh, du calme. C'est toi la traînée, ici, pas moi.	}{	Eh, du calme. C'est toi la traînée, ici, pas moi.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Ce n'est pas ça du tout. Je fais ça de façon professionnelle, j'ai beaucoup de fierté pour mon travail.	}{	Ce n'est pas ça du tout. Je fais ça de façon professionnelle, j'ai beaucoup de fierté pour mon travail.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Alors tu veux bien aider mon ami ?	}{	Alors tu veux bien aider mon ami ?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	Si tu le dis. Je me casse.	}{	Si tu le dis. Je me casse.	}{	0	}{	}{	G.Whore_Rejection = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Je ne me sentirais pas bien avec une personne aussi exceptionnelle.	}{	Je ne me sentirais pas bien avec une personne aussi exceptionnelle.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Eh bien, en fait, c'est quelqu'un d'assez grossier et repoussant.	}{	Eh bien, en fait, c'est quelqu'un d'assez grossier et repoussant.	}{	151	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	Eh bien, en fait, c'est quelqu'un d'assez grossier et repoussant.	}{	Eh bien, en fait, c'est quelqu'un d'assez grossier et repoussant.	}{	161	}{	Persuasion -4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	Bon, si tu le sens comme ça. A plus tard.	}{	Bon, si tu le sens comme ça. A plus tard.	}{	0	}{	}{	G.Whore_Rejection = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Eh bien dans ce cas, qu'est-ce qu'on attend ? Après toi.	}{	Eh bien dans ce cas, qu'est-ce qu'on attend ? Après toi.	}{	#	}{	}{	G.Romero_Whore = 2; G.Whore_Orphans = 1; G.Whore_Follower = 1; pc.SetQuest("Loser",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	Bon, ça marche.	}{	Bon, ça marche.	}{	0	}{	}{	makeFollower()	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	[dégoûtée] Euh, non, en fait, pas question. Autre chose ?	}{	[dégoûtée] Euh, non, en fait, pas question. Autre chose ?	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	Pas pour l'instant. Je reviendrai.	}{	Pas pour l'instant. Je reviendrai.	}{	0	}{	}{	G.Whore_Rejection = 1	}{	}{	}{	}{	}{	}{	}{	Tu n'as rien d'autre qui puisse retenir mon intérêt.	}
+{	171	}{	Eh, qu'est-ce qu'on fait ici ? Je croyais que ton ami s'occupait d'orphelins ?	}{	Eh, qu'est-ce qu'on fait ici ? Je croyais que ton ami s'occupait d'orphelins ?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Whore_Orphans = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Oh, c'est juste comme ça qu'il appelle les morts. Pas de quoi s'inquiéter.	}{	Oh, c'est juste comme ça qu'il appelle les morts. Pas de quoi s'inquiéter.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	B-bon, d'accord. Où est-il ?	}{	B-bon, d'accord. Où est-il ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	Pas très loin d'ici. Suis-moi.	}{	Pas très loin d'ici. Suis-moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Salut chéri, si tu me montrais ce que tu as.	}{	Salut chérie, si tu me montrais ce que tu as.	}{	#	}{	}{	G.Whore_Follower = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Bien sûr, je vais te montrer.	}{	Bien sûr, je vais te montrer.	}{	0	}{	}{	disbandFeed()	}{	}{	}{	}{	}{	}{	}{	Avec plaisir. Et un peu de moutarde.	}
+{	193	}{	Bon, oublie cela. Je m'en vais.	}{	Bon, oublie cela. Je m'en vais.	}{	0	}{	}{	resetHos()	}{	}{	}{	}{	}{	}{	}{	Je n'ai rien. Je m'en vais.	}
+{	194	}{	Pas encore, c'est un peu plus loin.	}{	Pas encore, c'est un peu plus loin.	}{	0	}{	}{	G.Whore_Follower = 1	}{	}{	}{	}{	}{	}{	}{	Ce que j'ai est ailleurs. Allons là-bas d'abord.	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	[Glousse] On arrive bientôt ?	}{	[Glousse] On arrive bientôt ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Bientôt.	}{	Bientôt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Notre voyage touche à sa fin.	}
+{	203	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Je vais te donner tellement de bon temps que tu me supplieras de te laisser payer.	}{	Je vais te donner tellement de bon temps que tu me supplieras de te laisser payer.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	(Auto-Link)	}{	(Auto-Link)	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	213	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Tu as déjà l'air occupé. . . Viens me voir plus tard, si ça t'intéresse encore.	}{	Tu as déjà l'air occupé. . . Viens me voir plus tard, si ça t'intéresse encore.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	223	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	Gagné.	}{	Gagné.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Gare à tes fesses, beauté.	}
+{	231	}{	Gardien des morts ? De quoi tu parles, malade ?	}{	Gardien des morts ? De quoi tu parles, malade ?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	La peur ne t'approchera pas si tu marches dans mes pas.	}{	La peur ne t'approchera pas si tu marches dans mes pas.	}{	111	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	233	}{	Il s'assure que les morts trouvent le chemin de leur demeure.	}{	Il s'assure que les morts trouvent le chemin de leur demeure.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Oh mon Dieu, pitié, au secours !	}{	Oh mon Dieu, pitié, au secours !	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Mais je voulais juste. . .	}{	Mais je voulais juste. . .	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	243	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	Bon, je pars.	}{	Bon, je pars.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Au secours ! Laisse-moi ! Aaahhhh !	}{	Au secours ! Aaahhhh !	}{	#	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	253	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	263	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	273	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	274	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	284	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	293	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	294	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	(Starting Condition)	}{	}{	0	}{	changeProstituteName(npc.GetName())	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	303	}{	(Starting Condition)	}{	}{	241	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	304	}{	(Starting Condition)	}{	}{	171	}{	G.Whore_Orphans == 1 and G.In_Cemetery == 1 and npc.IsFollowerOf( pc )	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	305	}{	(Starting Condition)	}{	}{	201	}{	G.Romero_Whore == 2 and npc.IsFollowerOf( pc )	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	(Starting Condition)	}{	}{	191	}{	npc.IsFollowerOf( pc ) and G.In_Alley == 1 and G.Whore_Follower == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	(Starting Condition)	}{	}{	81	}{	npc.IsFollowerOf( pc )	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	(Starting Condition)	}{	}{	221	}{	G.Whore_Follower == 1 and not npc.IsFollowerOf( pc )	}{	}{	}{	}{	}{	}{	}{	}{	}

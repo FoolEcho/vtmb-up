@@ -1,0 +1,65 @@
+{	1	}{	[Le balayeur est très bestial, et parle avec beaucoup de grognements entre ses mots.]Arrête-toi là, jeune vampire. J'ai senti ton odeur depuis un kilomètre. Tous les nouveaux vampires qui entrent en ville doivent parler au baron. Il t'attend.	}{	[Le balayeur est très bestial, et parle avec beaucoup de grognements entre ses mots.]Arrête-toi là, jeune vampire. J'ai senti ton odeur depuis un kilomètre. Tous les nouveaux vampires qui entrent en ville doivent parler au baron. Il t'attend.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	Whisper("Threat"); G.Sweeper_Met = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	D'accord, où est-ce que je le trouve ?	}{	D'accord, où est-ce que je le trouve ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est mon prochain arrêt. Tu vas dans les soirées ?	}
+{	3	}{	Ah oui ?	}{	Ah oui ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Regarde, un panneau ambulant.	}
+{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	La bijouterie d'Isaac Abrams se trouve au bout de la rue. Tu peux y aller sans problème.	}{	La bijouterie d'Isaac Abrams se trouve au bout de la rue. Tu peux y aller sans problème.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	J'irai.	}{	J'irai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cette ville m'aime déjà.	}
+{	13	}{	Et si je n'ai pas envie de voir Isaac ?	}{	Et si je n'ai pas envie de voir Isaac ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ha ha ha. . . Pas d'accord.	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	[Rit]Tu iras.	}{	[Rit]Tu iras.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Peu importe.	}{	Peu importe.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	. . . Ce jeu est réglé. Pourquoi pas ?	}
+{	23	}{	C'est censé me faire peur ?	}{	C'est censé me faire peur ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Provoque-moi. . .	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	J'aurais juré de t'avoir dit d'aller voir le baron. Ouais, c'était une blague. . . Sauf que mon sens de l'humour est un peu tordu, tu sais, les conflits ça me fait mourir de rire.	}{	J'aurais juré de t'avoir dit d'aller voir le baron. Ouais, c'était une blague. . . Sauf que mon sens de l'humour est un peu tordu, tu sais, les conflits ça me fait mourir de rire.	}{	#	}{	npc.SetDisposition("Anger", 1); G.Sweeper_Isaac = 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	D'accord, je vais passer le voir.	}{	D'accord, je vais passer le voir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cela devient évident.	}
+{	33	}{	Allons-y !	}{	Allons-y !	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	MOI AUSSI ! Je pourrais me payer une bonne tranche de rire. . .	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Un effort inutile.	}{	Un effort inutile.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Au bout de l'allée. Isaac est à l'intérieur.	}{	Au bout de l'allée. Isaac est à l'intérieur.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	(Starting Condition)	}{	}{	51	}{	G.Sweeper_Isaac == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	(Starting Condition)	}{	}{	31	}{	G.Sweeper_Met == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

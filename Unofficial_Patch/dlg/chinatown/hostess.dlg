@@ -1,0 +1,86 @@
+{	1	}{	Allô ? Salut mon coeur. Non, je suis encore au boulot. Je ne sais pas, POURQUOI je rentrerais en courant, de toute façon ? Vraiment ? Ouais, ça me plaît, ça. Quoi d'autre ? Avec quoi ? [incompréhension]Ohh. . .  t'es dans la cuisine, ouais, elles étaient en solde, alors j'en ai pris. Je sais que tu aimes les courgettes !	}{	Allô ? Salut mon coeur. Non, je suis encore au boulot. Je ne sais pas, POURQUOI je rentrerais en courant, de toute façon ? Vraiment ? Ouais, ça me plaît, ça. Quoi d'autre ? Avec quoi ? [incompréhension]Ohh. . .  t'es dans la cuisine, ouais, elles étaient en solde, alors j'en ai pris. Je sais que tu aimes les courgettes !	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{	Allô ? Eh, mon cœur. . . Blah blah blah blah. . .  Blah blah blah, blah blah blah blah ? Blah blah ?  Blah blah, blah blah blah. . . Blah !	}
+{	2	}{	Salut Andrea. Ouais. . . Quoi ? Non, il n'est. . . Non. . . Non. . . NON ! Attends, Andrea, j'ai un autre appel. Salut, Serena, tu sais que. . . Oui. Oui ! OUI ! Je sais, j'étais en ligne avec Andrea, et j'arrêtais pas de lui dire 'Non'. Mais si !	}{	Salut Andrea. Ouais. . . Quoi ? Non, il n'est. . . Non. . . Non. . . NON ! Attends, Andrea, j'ai un autre appel. Salut, Serena, tu sais que. . . Oui. Oui ! OUI ! Je sais, j'étais en ligne avec Andrea, et j'arrêtais pas de lui dire 'Non'. Mais si !	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{	Salut Andrea. Ouais. . . Quoi ? Le Père Noir revient ? Non, ce n'est pas vrai. . . Non. . . Non. . . NON CE N'EST PAS VRAI ! Attends, Andrea, j'ai un autre appel. Salut, Serena, tu sais que. . . Oui. Oui ! OUI ! Je sais, j'étais en ligne avec Andrea, et j'arrêtais pas de lui dire 'Non'. Mais si !	}
+{	3	}{	Allô. Oh, salut Andrea. Ouais, je suis au boulot. Non, pas ce soir, j'ai des projets, je regrette. Et toi, tu fais quoi ? Hein ? Ouais, je sais qu'elles sont en solde, j'en ai acheté. Je te rappelle, ma puce, OK ?	}{	Allô. Oh, salut Andrea. Ouais, je suis au boulot. Non, pas ce soir, j'ai des projets, je regrette. Et toi, tu fais quoi ? Hein ? Ouais, je sais qu'elles sont en solde, j'en ai acheté. Je te rappelle, ma puce, OK ?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{	Hello? Hey, baby. Blah blah blah blah. Blah blah blah blah blah? Blah, blah blah blah blah! Blah blah blah? Blah blah blah blah, hehe, BLAH!	}
+{	4	}{	Oui ? Oh, salut Milla, comme ça va ? Je regrette, j'ai des projets, je ne peux pas te remplacer demain. C'est une urgence ? Bah. . . Ca n'a pas été soudain, au moins. Il était en réa depuis longtemps. En général, les enterrements sont finis avant cinq heures ? Toi, tu m'as remplacée ? Quand ça ? Mais c'était une urgence ! C'était une TRES mauvaise coupe de cheveux. Milla. . . Bon, d'accord. Au revoir.	}{	Oui ? Oh, salut Milla, comme ça va ? Je regrette, j'ai des projets, je ne peux pas te remplacer demain. C'est une urgence ? Bah. . . Ca n'a pas été soudain, au moins. Il était en réa depuis longtemps. En général, les enterrements sont finis avant cinq heures ? Toi, tu m'as remplacée ? Quand ça ? Mais c'était une urgence ! C'était une TRES mauvaise coupe de cheveux. Milla. . . Bon, d'accord. Au revoir.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{	"Oui ? Oh, salut Milla, je te hais. Je te hais pour tellement de raisons que je ne sais même pas par où commencer. Je n'ai aucune sympathie pour ton drame, du tout, principalement parce que, ben, tu es plus intelligente et plus jolie que moi, ok ? Oh et t'es une lèche-bottes. Et puis quoi si tu m'as aidée avant, je veux qu'une voiture te renverse depuis des semaines. D'accord je le ferai. Au revoir."	}
+{	5	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Euh, je regrette, on ne sert plus le dîner depuis un petit moment. Mais la salle est encore ouverte.	}{	Euh, je regrette, on ne sert plus le dîner depuis un petit moment. Mais la salle est encore ouverte.	}{	#	}{		}{	G.Hostess_Know = 1	}{	}{	}{	}{	}{	}{	}{		}
+{	12	}{	Je viens voir Wong Ho. C'est Ming-Xiao qui m'envoie.	}{	Je viens voir Wong Ho. C'est Ming-Xiao qui m'envoie.	}{	21	}{	G.Ming_Barrabus >= 1	}{		}{	}{	}{	}{	}{	}{	}{	La chose du Temple d'Or m'envoie ici.	}
+{	13	}{	Je passais.	}{	Je passais.	}{	41	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	14	}{	Ooh, des poissons. . .	}{	Ooh, des poissons. . .	}{	0	}{	IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{	Ooh, des poissons. . .	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	J'appelle l'ascenseur.	}{	J'appelle l'ascenseur.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	22	}{	Merci.	}{	Merci.	}{	31	}{		}{		}{	}{	}{	}{	}{	}{	}{	Super, j'aimerais qu'on me dépose. . .	}
+{	23	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Deuxième étage. Bonne nuit.	}{	Deuxième étage. Bonne nuit.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	32	}{	Au revoir.	}{	Au revoir.	}{	0	}{		}{	G.Hostess_Elevator = 1	}{	}{	}{	}{	}{	}{	}{	Vous avez joué votre rôle dans ma légende.	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	N'hésitez pas à visiter notre bar.	}{	N'hésitez pas à visiter notre bar.	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	42	}{	Au revoir.	}{	Au revoir.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Il y avait autre chose ?	}{	Il y avait autre chose ?	}{	#	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	52	}{	Je viens voir Wong Ho.	}{	Je viens voir Wong Ho.	}{	31	}{	G.Ming_Barrabus >= 1 and G.Story_State < 65	}{		}{	}{	}{	}{	}{	}{	}{	Je viens voir le Wong Ho.	}
+{	53	}{	Je ne fais que passer.	}{	Je ne fais que passer.	}{	0	}{	not IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	54	}{	Ooh, des poissons. . .	}{	Ooh, des poissons. . .	}{	0	}{	IsClan(pc,"Malkavian")	}{		}{	}{	}{	}{	}{	}{	}{	Ooh, des poissons. . .	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	[Effrayée au-delà de toute raison]OH - MON - DIEU !	}{	[Effrayée au-delà de toute raison]OH - MON - DIEU !	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Hostess_Nos = G.Hostess_Nos +1	}{	}{	}{	}{	}{	}{	}{		}
+{	62	}{	(Auto-Link)	}{	(Auto-Link)	}{	71	}{	G.Hostess_Nos == 3	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	63	}{	Je viens voir Wong Ho. C'est Ming-Xiao qui m'envoie.	}{	Je viens voir Wong Ho. C'est Ming-Xiao qui m'envoie.	}{	61	}{	G.Ming_Barrabus >= 1	}{		}{	}{	}{	}{	}{	}{	}{		}
+{	64	}{	Une table pour une personne. Près de l'aquarium, si possible !	}{	Une table pour une personne. Près de l'aquarium, si possible !	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	65	}{	Oui, on me le dit souvent.	}{	Oui, on me le dit souvent.	}{	61	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	66	}{	Je regrette. . . Oubliez notre rencontre.	}{	Je regrette. . . Oubliez notre rencontre.	}{	0	}{		}{		}{	}{	}{	}{	}{	}{	}{		}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Appelez la police ! [cri terrifié]	}{	Appelez la police ! [cri terrifié]	}{	#	}{	}{	G.Hostess_Nos == 0	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	(Starting Condition)	}{	}{	71	}{	G.Hostess_Nos >= 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	(Starting Condition)	}{	}{	51	}{	G.Hostess_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	(Starting Condition)	}{	}{	61	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	(Starting Condition)	}{	}{	11	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

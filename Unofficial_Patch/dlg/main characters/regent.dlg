@@ -1,0 +1,1276 @@
+{	1	}{	Bonjour, jeune vampire. Heureux de vous voir arriver jusqu'ici. J'avais hâte de vous rencontrer.	}{	Bonjour, jeune vampire. Heureux de vous voir arriver jusqu'ici. J'avais hâte de vous rencontrer.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Et vous êtes ?	}{	Et vous êtes ?	}{	21	}{	pc.GetQuestState("Strauss") == 1 and not IsClan(pc,"Malkavian")	}{	pc.SetQuest("Strauss",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Magie de sang et trahison ! Et le vrai roi est sur son trône !	}{	Magie de sang et trahison ! Et le vrai roi est sur son trône !	}{	1191	}{	pc.GetQuestState("Strauss") == 1 and IsClan(pc,"Malkavian")	}{	pc.SetQuest("Strauss",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Vous êtes ?	}{	Vous êtes ?	}{	21	}{	pc.GetQuestState("Strauss") == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Magie de sang et trahison ! Et le vrai roi est sur son trône !	}{	Magie de sang et trahison ! Et le vrai roi est sur son trône !	}{	1191	}{	pc.GetQuestState("Strauss") == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Salutations, jeune vampire. Puis-je supposer que vous avez reçu mon invitation ? J'avais envie de vous rencontrer depuis quelque temps déjà.	}{	Salutations, jeune vampire. Puis-je supposer que vous avez reçu mon invitation ? J'avais envie de vous rencontrer depuis quelque temps déjà.	}{	#	}{	}{	pc.SetQuest("Strauss",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Oui, je l'ai eue. Vous devez donc être. . .	}{	Oui, je l'ai eue. Vous devez donc être. . .	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Magie de sang et trahison ! Et le vrai roi est sur son trône !	}{	Magie de sang et trahison ! Et le vrai roi est sur son trône !	}{	1191	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Strauss. Maximillian Strauss. Je suis le Régent de cette fondation. Bienvenue.	}{	Strauss. Maximillian Strauss. Je suis le Régent de cette fondation. Bienvenue.	}{	#	}{	}{	G.Regent_Introduced = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Merci. Quel est cet endroit ?	}{	Merci. Quel est cet endroit ?	}{	61	}{	IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Merci. Qu'est-ce qu'une fondation, exactement ?	}{	Merci. Qu'est-ce qu'une fondation, exactement ?	}{	111	}{	not IsClan(pc,"Tremere") and G.Regent_Chantry == 0	}{	G.Regent_Chantry = 1	}{	}{	}{	}{	}{	}{	}{	La fondation est un mystère pour moi.	}
+{	24	}{	Un régent ? De quoi s'agit-il ?	}{	Un régent ? De quoi s'agit-il ?	}{	121	}{	not IsClan(pc,"Tremere") and G.Regent_Regent == 0	}{	G.Regent_Regent = 1	}{	}{	}{	}{	}{	}{	}{	Le régent est opaque et ténébreux. . .	}
+{	25	}{	Je viens d'arriver. Quelles sont les nouvelles les plus importantes ?	}{	Je viens d'arriver. Quelles sont les nouvelles les plus importantes ?	}{	151	}{	G.PC_Heardepidemic == 0 and G.Regent_Talkedepidemic == 0 and not IsClan(pc,"Tremere") and not IsDead("Bishop_Vick")	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de cette sombre cité des anges. . .	}
+{	26	}{	J'ai entendu parler d'une sorte d'épidémie. On dirait que ça échappe à tout le monde. . .	}{	J'ai entendu parler d'une sorte d'épidémie. On dirait que ça échappe à tout le monde. . .	}{	171	}{	G.PC_Heardepidemic == 1 and G.Regent_Talkedepidemic == 1 and not IsClan(pc,"Tremere") and not IsDead("Bishop_Vick")	}{	}{	}{	}{	}{	}{	}{	}{	La maladie et l'épidémie se répandent chez nos frères. . .	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	Je dois m'en aller. A bientôt.	}{	Je dois m'en aller. A bientôt.	}{	0	}{	not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	31	}{	Bonjour, jeune vampire. Que puis-je faire pour vous ?	}{	Bonjour, jeune vampire. Que puis-je faire pour vous ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Avez-vous quelques minutes pour parler avec moi ?	}{	Avez-vous quelques minutes pour parler avec moi ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pouvons-nous échanger quelques paroles, roi-sorcier ?	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	Dites-moi encore pourquoi je devrais me joindre à votre fondation. . .	}{	Dites-moi encore pourquoi je devrais me joindre à votre fondation. . .	}{	631	}{	G.Regent_Family == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	En fait, il faut que j'y aille.	}{	En fait, il faut que j'y aille.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	41	}{	Bien sûr.	}{	Bien sûr.	}{	#	}{	}{	G.Regent_Questions = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	J'ai quelques questions pour vous.	}{	J'ai quelques questions pour vous.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	43	}{	Je viens d'arriver. Quelles sont les nouvelles les plus importantes ?	}{	Je viens d'arriver. Quelles sont les nouvelles les plus importantes ?	}{	151	}{	G.PC_Heardepidemic == 0 and G.Regent_Questpestilence == 0 and G.Regent_Talkedepidemic == 0 and not IsDead("Bishop_Vick")	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de cette sombre cité des anges. . .	}
+{	44	}{	J'ai entendu parler d'une sorte d'épidémie. On dirait que ça échappe à tout le monde. . .	}{	J'ai entendu parler d'une sorte d'épidémie. On dirait que ça échappe à tout le monde. . .	}{	171	}{	G.PC_Heardepidemic == 1 and G.Regent_Questpestilence == 0 and G.Regent_Talkedepidemic == 0 and not IsDead("Bishop_Vick")	}{	}{	}{	}{	}{	}{	}{	}{	La maladie et l'épidémie se répandent chez nos frères. . .	}
+{	45	}{	Peut-être pourrais-je me pencher sur cette épidémie. . .	}{	Peut-être pourrais-je me pencher sur cette épidémie. . .	}{	191	}{	G.Regent_Pestilence == 1 and G.Jumbles_Enter == 0	}{	}{	}{	}{	}{	}{	}{	}{	Peut-être vais-je explorer le problème de cette peste. . .	}
+{	46	}{	Je cherche toujours la cause de cette épidémie.	}{	Je cherche toujours la cause de cette épidémie.	}{	321	}{	G.Regent_Pestilence == 2 and pc.GetQuestState("AllPlague") < 3 and pc.GetQuestState("Regent") > 1 and pc.GetQuestState("Regent") < 5	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche encore la source de cette sombre maladie. . .	}
+{	47	}{	J'ai résolu le problème de l'épidémie. . .	}{	J'ai résolu le problème de l'épidémie. . .	}{	331	}{	G.Regent_Solvedplague == 0 and pc.GetQuestState("Regent") == 5	}{	G.Regent_Solvedplague = 1	}{	}{	}{	}{	}{	}{	}{	J'ai brisé le cheval flétri de la Pestilence, et son Sombre Evêque est dans la tombe. . .	}
+{	48	}{	J'ai une question à propos des gargouilles. . .	}{	J'ai une question à propos des gargouilles. . .	}{	411	}{	G.Isaac_Gargoyle == 3 and G.Regent_QuestGargoyle < 2 and G.Regent_Gargoyleasked == 0	}{	G.Regent_Gargoyleasked = 1	}{	}{	}{	}{	}{	}{	}{	Je cherche la connaissance des gargouilles, les golems de sang à peau de pierre !	}
+{	49	}{	Je n'ai pas encore réglé votre petit problème avec les gargouilles.	}{	Je n'ai pas encore réglé votre petit problème avec les gargouilles.	}{	601	}{	not IsDead("Gargoyle") and G.Gargoyle_Convinced == 0 and G.Regent_QuestGargoyle == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je dois encore tuer ce golem de sang. . . 	}
+{	50	}{	J'ai réglé votre problème avec les gargouilles, Strauss. . .	}{	J'ai réglé votre problème avec les gargouilles, Strauss. . .	}{	611	}{	(IsDead("Gargoyle") or G.Gargoyle_Convinced == 1) and G.Regent_Gargoyle == 0 and G.Regent_QuestGargoyle >= 1	}{	G.Regent_Gargoyle = 1	}{	}{	}{	}{	}{	}{	}{	J'ai fait en sorte que le golem de sang ne hante plus Hollywood. . . 	}
+{	51	}{	J'ai d'autres questions sur les gargouilles. . .	}{	J'ai d'autres questions sur les gargouilles. . .	}{	421	}{	G.Regent_QuestGargoyle < 2 and G.Regent_Gargoyleasked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche la connaissance des gargouilles. . . 	}
+{	52	}{	Je m'en vais. A plus.	}{	Je m'en vais. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Ah oui, pardonnez-moi, j'oubliais que votre Etreinte ne s'est pas faite dans la pyramide. Nous partageons le même sang, vous et moi, mais vous avez encore beaucoup à apprendre sur notre clan. . .	}{	Ah oui, pardonnez-moi, j'oubliais que votre Etreinte ne s'est pas faite dans la pyramide. Nous partageons le même sang, vous et moi, mais vous avez encore beaucoup à apprendre sur notre clan. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Vous êtes du clan Tremere ?	}{	Vous êtes du clan Tremere ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Oui. Cette nouvelle vie doit vous paraître étrange. Je suis certain que vous avez de nombreuses questions, jeune recrue. Je vous répondrai au mieux de mes capacités.	}{	Oui. Cette nouvelle vie doit vous paraître étrange. Je suis certain que vous avez de nombreuses questions, jeune recrue. Je vous répondrai au mieux de mes capacités.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Quelle est cette pyramide où mon Etreinte aurait dû se faire ?	}{	Quelle est cette pyramide où mon Etreinte aurait dû se faire ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	Qu'est-ce qu'une fondation, exactement ?	}{	Qu'est-ce qu'une fondation, exactement ?	}{	111	}{	G.Regent_Chantry == 0	}{	G.Regent_Chantry = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	Vous êtes un Régent ? En quoi cela consiste-t-il, exactement ?	}{	Vous êtes un Régent ? En quoi cela consiste-t-il, exactement ?	}{	121	}{	G.Regent_Regent == 0	}{	G.Regent_Regent = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	Rien pour l'instant. Autre chose. . .	}{	Rien pour l'instant. Autre chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	La pyramide est la structure sociale de notre clan. Chaque niveau est dominé par le suivant. Il y a des apprentis ici dans la fondation, sur lesquels je veille. Et j'ai un seigneur, qui surveille les autres Régents locaux, et ainsi de suite. 	}{	La pyramide est la structure sociale de notre clan. Chaque niveau est dominé par le suivant. Il y a des apprentis ici dans la fondation, sur lesquels je veille. Et j'ai un seigneur, qui surveille les autres Régents locaux, et ainsi de suite. 	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	(Auto-Link)	}{	(Auto-Link)	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	La plupart du temps, les Tremeres sont très sélectifs quant aux sujets étreints et la façon dont ils les convertissent. Nous respectons certaines lois, certaines traditions. Les conditions de votre Etreinte ont donc été pour le moins atypiques. Vous êtes donc 'en dehors' de la pyramide.	}{	La plupart du temps, les Tremeres sont très sélectifs quant aux sujets étreints et la façon dont ils les convertissent. Nous respectons certaines lois, certaines traditions. Les conditions de votre Etreinte ont donc été pour le moins atypiques. Vous êtes donc 'en dehors' de la pyramide.	}{	#	}{	}{	G.Regent_Apprentice = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Je vois. Et comment entrer 'dans' la pyramide ? Faire partie des apprentis ?	}{	Je vois. Et comment entrer 'dans' la pyramide ? Faire partie des apprentis ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	De telles choses sont possibles, jeune vampire. Mais il vous faudrait vous montrer digne du clan avant que ce soit même envisagé. Les Tremeres gardent leurs secrets. Nous en reparlerons peut-être plus tard.	}{	De telles choses sont possibles, jeune vampire. Mais il vous faudrait vous montrer digne du clan avant que ce soit même envisagé. Les Tremeres gardent leurs secrets. Nous en reparlerons peut-être plus tard.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Je vois. Dites-moi ce qu'est une 'fondation'. . .	}{	Je vois. Dites-moi ce qu'est une 'fondation'. . .	}{	111	}{	G.Regent_Questions == 0 and G.Regent_Chantry == 0	}{	G.Regent_Chantry = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	Vous dites que vous êtes Régent ?	}{	Vous dites que vous êtes Régent ?	}{	121	}{	G.Regent_Questions == 0 and G.Regent_Regent == 0	}{	G.Regent_Regent = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	En fait, j'ai quelques questions en plus. . .	}{	En fait, j'ai quelques questions en plus. . .	}{	141	}{	G.Regent_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	Il y avait autre chose. . .	}{	Il y avait autre chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Une fondation est un lieu de rassemblement local pour le clan Tremere. Je vis ici, ainsi que des apprentis de temps en temps.	}{	Une fondation est un lieu de rassemblement local pour le clan Tremere. Je vis ici, ainsi que des apprentis de temps en temps.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Y a-t-il un moyen pour moi de faire partie des apprentis ?	}{	Y a-t-il un moyen pour moi de faire partie des apprentis ?	}{	81	}{	G.Regent_Apprentice == 0 and IsClan(pc,"Tremere") and G.Regent_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Y a-t-il un moyen pour moi de faire partie des apprentis ?	}
+{	113	}{	Super. Et vous êtes Régent ? En quoi cela consiste-t-il ?	}{	Super. Et vous êtes Régent ? En quoi cela consiste-t-il ?	}{	121	}{	G.Regent_Questions == 0 and G.Regent_Regent == 0	}{	G.Regent_Regent = 1	}{	}{	}{	}{	}{	}{	}{	Le régent est opaque et ténébreux. . .	}
+{	114	}{	Je viens d'arriver. Quelles sont les nouvelles les plus importantes ?	}{	Je viens d'arriver. Quelles sont les nouvelles les plus importantes ?	}{	151	}{	G.PC_Heardepidemic == 0 and G.Regent_Questpestilence == 0 and G.Regent_Talkedepidemic == 0 and not IsDead("Bishop_Vick")	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de cette sombre cité des anges. . .	}
+{	115	}{	J'ai entendu parler d'une sorte d'épidémie. On dirait que ça échappe à tout le monde. . .	}{	J'ai entendu parler d'une sorte d'épidémie. On dirait que ça échappe à tout le monde. . .	}{	171	}{	G.PC_Heardepidemic == 1 and G.Regent_Questpestilence == 0 and G.Regent_Talkedepidemic == 0 and not IsDead("Bishop_Vick")	}{	}{	}{	}{	}{	}{	}{	}{	La maladie et l'épidémie se répandent chez nos frères. . .	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	En fait, j'ai quelques questions en plus. . .	}{	En fait, j'ai quelques questions en plus. . .	}{	141	}{	G.Regent_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	120	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	121	}{	Un Régent dirige la fondation, et enseigne aussi aux jeunes apprentis Tremeres les mystères de notre clan.	}{	Un Régent dirige la fondation, et enseigne aussi aux jeunes apprentis Tremeres les mystères de notre clan.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Ah oui ? Et de quels 'mystères' s'agit-il ?	}{	Ah oui ? Et de quels 'mystères' s'agit-il ?	}{	81	}{	G.Regent_Apprentice == 0 and IsClan(pc,"Tremere") and G.Regent_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	Pouvez-vous me parler de ces mystères ?	}{	Pouvez-vous me parler de ces mystères ?	}{	131	}{	not IsClan(pc,"Tremere") and G.Regent_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi ces mystères, roi-sorcier !	}
+{	124	}{	Super. C'est quoi, une fondation ?	}{	Super. C'est quoi, une fondation ?	}{	111	}{	G.Regent_Questions == 0 and G.Regent_Chantry == 0	}{	G.Regent_Chantry = 1	}{	}{	}{	}{	}{	}{	}{	La fondation est un mystère pour moi.	}
+{	125	}{	Je viens d'arriver. Quelles sont les nouvelles les plus importantes ?	}{	Je viens d'arriver. Quelles sont les nouvelles les plus importantes ?	}{	151	}{	G.PC_Heardepidemic == 0 and G.Regent_Questpestilence == 0 and G.Regent_Talkedepidemic == 0 and not IsDead("Bishop_Vick")	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de cette sombre cité des anges. . .	}
+{	126	}{	J'ai entendu parler d'une sorte d'épidémie. On dirait que ça échappe à tout le monde. . .	}{	J'ai entendu parler d'une sorte d'épidémie. On dirait que ça échappe à tout le monde. . .	}{	171	}{	G.PC_Heardepidemic == 1 and G.Regent_Questpestilence == 0 and G.Regent_Talkedepidemic == 0 and not IsDead("Bishop_Vick")	}{	}{	}{	}{	}{	}{	}{	}{	La maladie et l'épidémie se répandent chez nos frères. . .	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	Encore quelques questions. . .	}{	Encore quelques questions. . .	}{	141	}{	G.Regent_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	130	}{	Je m'en vais. A bientôt.	}{	Je m'en vais. A bientôt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre pèse sur d'autres domaines. Adieu.	}
+{	131	}{	Je suis désolé, jeune vampire. Les secrets des Tremeres sont cachés à tous ceux qui ne partagent pas notre sang. [menaçant] Vous feriez bien de ne plus vous en occuper.	}{	Je suis désolé, jeune vampire. Les secrets des Tremeres sont cachés à tous ceux qui ne partagent pas notre sang. [menaçant] Vous feriez bien de ne plus vous en occuper.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Euh, oui. Bien sûr, oui. Vous pouvez au moins me dire ce qu'est une 'fondation' ?	}{	Euh, oui. Bien sûr, oui. Vous pouvez au moins me dire ce qu'est une 'fondation' ?	}{	111	}{	G.Regent_Questions == 0 and G.Regent_Chantry == 0	}{	G.Regent_Chantry = 1	}{	}{	}{	}{	}{	}{	}{	Alors révélez le mystère de cette 'fondation' !	}
+{	133	}{	D'accord. Allez qu'est-ce que vous pouvez me dire, Max ? Que se passe-t-il en ville ?	}{	D'accord. Allez qu'est-ce que vous pouvez me dire, Max ? Que se passe-t-il en ville ?	}{	151	}{	G.Regent_Questpestilence == 0 and G.PC_Heardepidemic == 0 and G.Regent_Talkedepidemic == 0 and not IsDead("Bishop_Vick")	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de cette sombre cité des anges. . .	}
+{	134	}{	Bon. . . Alors vous pourrez peut-être me parler de cette 'épidémie' en ville ?	}{	Bon. . . Alors vous pourrez peut-être me parler de cette 'épidémie' en ville ?	}{	171	}{	G.Regent_Questpestilence == 0 and G.PC_Heardepidemic == 1 and G.Regent_Talkedepidemic == 0 and not IsDead("Bishop_Vick")	}{	}{	}{	}{	}{	}{	}{	}{	La maladie et l'épidémie se répandent chez nos frères. . .	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	Encore quelques questions. . .	}{	Encore quelques questions. . .	}{	141	}{	G.Regent_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	140	}{	Je dois m'en aller. A bientôt.	}{	Je dois m'en aller. A bientôt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est parti. Mon corps le suit.	}
+{	141	}{	Qu'aimeriez-vous savoir ?	}{	Qu'aimeriez-vous savoir ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Parlez-moi de la Camarilla. . .	}{	Parlez-moi de la Camarilla. . .	}{	221	}{	G.Regent_Camarilla == 0	}{	G.Regent_Camarilla = 1	}{	}{	}{	}{	}{	}{	}{	Révélez-moi cette Camarilla !	}
+{	143	}{	J'ai encore quelques questions sur la Camarilla. . .	}{	J'ai encore quelques questions sur la Camarilla. . .	}{	231	}{	G.Regent_Camarilla == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	Que vouliez-vous dire par 'votre Etreinte ne s'est pas faite dans la pyramide' ?	}{	Que vouliez-vous dire par 'votre Etreinte ne s'est pas faite dans la pyramide' ?	}{	81	}{	G.Regent_Apprentice == 0 and IsClan(pc,"Tremere") and G.Regent_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	Parlez-moi de cette fondation. . .	}{	Parlez-moi de cette fondation. . .	}{	111	}{	G.Regent_Chantry == 0	}{	G.Regent_Chantry = 1	}{	}{	}{	}{	}{	}{	}{	La fondation est un mystère pour moi. . .	}
+{	146	}{	Que savez-vous sur le Sarcophage d'Ankara ?	}{	Que savez-vous sur le Sarcophage d'Ankara ?	}{	1221	}{	G.Story_State >= 15	}{	}{	}{	}{	}{	}{	}{	}{	Que savez-vous du Sarcophage d'Ankara ?	}
+{	147	}{	J'ai une question à propos des gargouilles. . .	}{	J'ai une question à propos des gargouilles. . .	}{	411	}{	G.Isaac_Gargoyle == 3 and G.Regent_QuestGargoyle == 0 and G.Regent_Gargoyleasked == 0	}{	G.Regent_Gargoyleasked = 1	}{	}{	}{	}{	}{	}{	}{	Je cherche la connaissance des gargouilles, les golems de sang à peau de pierre !	}
+{	148	}{	J'ai d'autres questions sur les gargouilles. . .	}{	J'ai d'autres questions sur les gargouilles. . .	}{	421	}{	G.Regent_QuestGargoyle < 2 and G.Regent_Gargoyleasked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche la connaissance des gargouilles. . . 	}
+{	149	}{	Rien pour l'instant. Autre chose. . .	}{	Rien pour l'instant. Autre chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une autre chose. . .	}
+{	150	}{	Rien pour l'instant. Au revoir.	}{	Rien pour l'instant. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Aucune connaissance n'est nécessaire maintenant. Au revoir.	}
+{	151	}{	Laissez-moi vous donner un conseil, jeune vampire. Votre survie dans la société des vampires dépendra de votre capacité à découvrir vous-même ce qui se passe autour de vous. Souvenez-vous en.	}{	Laissez-moi vous donner un conseil, jeune vampire. Votre survie dans la société des vampires dépendra de votre capacité à découvrir vous-même ce qui se passe autour de vous. Souvenez-vous en.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	J'apprécie votre conseil.	}{	J'apprécie votre conseil.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	La mémoire est rarement bonne chez les schizophrènes. . .	}
+{	153	}{	Euh, merci du conseil, PAPA.	}{	Euh, merci du conseil, PAPA.	}{	161	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Quant à ce qui se passe en ville, tout le monde parle d'une épidémie, les mortels comme les vampires.	}{	Quant à ce qui se passe en ville, tout le monde parle d'une épidémie, les mortels comme les vampires.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Ah oui ? Pourquoi ? Que se passe-t-il ?	}{	Ah oui ? Pourquoi ? Que se passe-t-il ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ah ! Un cheval flétri galope en notre sein. . .	}
+{	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Il semble que la maladie se répande à une vitesse alarmante dans la population du centre ville. Considérant nos. . . appétits particuliers, les vampires des environs sont assez soucieux de ces développements.	}{	Il semble que la maladie se répande à une vitesse alarmante dans la population du centre ville. Considérant nos. . . appétits particuliers, les vampires des environs sont assez soucieux de ces développements.	}{	#	}{	}{	G.PC_Heardepidemic = 1; G.Regent_Talkedepidemic = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Intéressant. . .	}{	Intéressant. . .	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le sang souillé nous perdra. . .	}
+{	173	}{	La vache, c'est insensé, ce truc. . .	}{	La vache, c'est insensé, ce truc. . .	}{	181	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Pour le moins. A mon avis, ce sont les Anarchs locaux qui sont responsables de ces contaminations. Certaines passions auxquelles ils s'adonnent mènent souvent à ce genre de chose. D'où leur besoin de l'oeil vigilant de la Camarilla.	}{	Pour le moins. A mon avis, ce sont les Anarchs locaux qui sont responsables de ces contaminations. Certaines passions auxquelles ils s'adonnent mènent souvent à ce genre de chose. D'où leur besoin de l'oeil vigilant de la Camarilla.	}{	#	}{	}{	G.Regent_Pestilence = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	Je cherche justement des renseignements sur cette épidémie pour leur compte. . .	}{	Je cherche juste des renseignements sur cette épidémie pour leur compte. . .	}{	196	}{	G.Damsel_Quest > 0	}{	}{	}{	}{	}{	}{	}{	}{	Les Anarchs m'envoient chercher cette pestilence problématique. . .	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	Je pourrais peut-être enquêter sur l'épidémie pour vous. . .	}{	Je pourrais peut-être enquêter sur l'épidémie pour vous. . .	}{	191	}{	G.Damsel_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Peut-être pourrais-je explorer ce problème de pestilence ?	}
+{	186	}{	La Camarilla ? De quoi s'agit-il ?	}{	La Camarilla ? De quoi s'agit-il ?	}{	221	}{	G.Regent_Camarilla == 0	}{	G.Regent_Camarilla = 1	}{	}{	}{	}{	}{	}{	}{	Révélez-moi cette Camarilla !	}
+{	187	}{	Ouais, c'est ça. J'ai quelques questions pour vous.	}{	Ouais, c'est ça. J'ai quelques questions pour vous.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	188	}{	Il n'y a pas de place pour deux sur ce radeau. Je m'en vais.	}{	Il n'y a pas de place pour deux sur ce radeau. Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre pupitre est étonnamment petit. Adieu.	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Hmmm. La proposition est intéressante. Si vous parvenez à trouver la cause de cette épidémie, et que vous y mettez un terme, je vous récompenserai comme il se doit de vos efforts.	}{	Hmmm. La proposition est intéressante. Si vous parvenez à trouver la cause de cette épidémie, et que vous y mettez un terme, je vous récompenserai comme il se doit de vos efforts.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Je m'en charge. Nous discuterons de ce que vous me devez quand je reviendrai. . .	}{	Je m'en charge. Nous discuterons de ce que vous me devez quand je reviendrai. . .	}{	211	}{	G.Damsel_Quest == 0	}{	G.Regent_Pestilence = 2; pc.SetQuest("Regent",1)	}{	}{	}{	}{	}{	}{	}{	Je m'en occupe.	}
+{	193	}{	Que me proposez-vous ?	}{	Que me proposez-vous ?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Et quant à ma récompense, roi-sorcier ?	}
+{	194	}{	Je m'en charge. Nous discuterons de ce que vous me devez quand je reviendrai. . .	}{	Je m'en charge. Nous discuterons de ce que vous me devez quand je reviendrai. . .	}{	216	}{	G.Damsel_Quest > 0	}{	G.Regent_Pestilence = 2; pc.SetQuest("Regent",8)	}{	}{	}{	}{	}{	}{	}{	Je m'en occupe.	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	Je vois. Fort décevant, jeune vampire. Vous paraissez faire preuve d'une absence totale de bon sens pour le choix de vos associés en cette nouvelle vie. Je prie pour que leurs penchants. . . sans foi ni loi ne finissent pas par affecter votre statut parmi vos différents pairs.	}{	Je vois. Fort décevant, jeune vampire. Vous paraissez faire preuve d'une absence totale de bon sens pour le choix de vos associés en cette nouvelle vie. Je prie pour que leurs penchants. . . sans foi ni loi ne finissent pas par affecter votre statut parmi vos différents pairs.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	Hmmm. . . Je pourrais peut-être enquêter pour la Camarilla. . . discrètement. . .	}{	Hmmm. . . Je pourrais peut-être enquêter pour la Camarilla. . . discrètement. . .	}{	191	}{	pc.GetQuestState("AllPlague") < 3	}{	}{	}{	}{	}{	}{	}{	}{	Je pourrais aussi faire des recherches pour la Camarilla, en secret.	}
+{	198	}{	C'est ça. Je reste avec les Anarchs. Je ne crois pas à vos conneries de Camarilla.	}{	C'est ça. Je reste avec les Anarchs. Je ne crois pas à vos conneries de Camarilla.	}{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis un Anarch ! Enfant de l'Entropie ! Je ne joue pas avec les anciens !	}
+{	199	}{	Je saurai m'en souvenir, Max. Encore quelques questions.	}{	Je saurai m'en souvenir, Max. Encore quelques questions.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	200	}{	Mes penchants sont mon problème, Régent. Je m'en vais.	}{	Mes penchants sont mon problème, Régent. Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre pèse sur d'autres domaines. . .	}
+{	201	}{	Je réfléchirai à la nature de votre paiement pendant que vous agirez. Croyez-moi, je vous traiterai avec justice, jeune vampire. Et je n'oublierai pas ce service rendu à la Camarilla. . .	}{	Je réfléchirai à la nature de votre paiement pendant que vous agirez. Croyez-moi, je vous traiterai avec justice, jeune vampire. Et je n'oublierai pas ce service rendu à la Camarilla. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Très bien. Je m'en charge.	}{	Très bien. Je m'en charge.	}{	211	}{	G.Damsel_Quest == 0	}{	G.Regent_Pestilence = 2; pc.SetQuest("Regent",1)	}{	}{	}{	}{	}{	}{	}{	Je m'en occupe.	}
+{	203	}{	OK. Je vais m'en occuper.	}{	OK. Je vais m'en occuper.	}{	216	}{	G.Damsel_Quest > 0	}{	G.Regent_Pestilence = 2; pc.SetQuest("Regent",8)	}{	}{	}{	}{	}{	}{	}{	Je ferai cela.	}
+{	204	}{	Laissez tomber. Je ne fais pas dans le bénévolat.	}{	Laissez tomber. Je ne fais pas dans le bénévolat.	}{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pas d'or, pas de gloire. . .	}
+{	205	}{	Je vais y réfléchir. Dites-m'en plus sur la Camarilla.	}{	Je vais y réfléchir. Dites-m'en plus sur la Camarilla.	}{	221	}{	G.Regent_Camarilla == 0	}{	G.Regent_Camarilla = 1	}{	}{	}{	}{	}{	}{	}{	Pas vraiment, mais Révélez-moi cette Camarilla !	}
+{	206	}{	En fait, cela ne me dit rien, mais il me reste quelques questions.	}{	En fait, cela ne me dit rien, mais il me reste quelques questions.	}{	141	}{	G.Regent_Camarilla == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pas vraiment, mais puis-je fouiller votre matière grise ?	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	Je m'en vais, Max. A bientôt.	}{	Je m'en vais, Max. A bientôt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre pèse sur d'autres domaines. Adieu.	}
+{	211	}{	Très bien. Une fois de plus, je vous conseille de parler aux Anarchs. Vous les trouverez presque tous au bar du coin, se vautrant dans les vices de leur ancienne existence. Je crois que l'endroit s'appelle le 'Last Round'.	}{	Très bien. Une fois de plus, je vous conseille de parler aux Anarchs. Vous les trouverez presque tous au bar du coin, se vautrant dans les vices de leur ancienne existence. Je crois que l'endroit s'appelle le 'Last Round'.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Je m'en souviendrai. J'ai encore quelques questions pour vous. . .	}{	Je m'en souviendrai. J'ai encore quelques questions pour vous. . .	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	213	}{	Avant de partir, parlez-moi encore un peu de la Camarilla. . .	}{	Avant de partir, parlez-moi encore un peu de la Camarilla. . .	}{	221	}{	G.Regent_Camarilla == 0	}{	G.Regent_Camarilla = 1	}{	}{	}{	}{	}{	}{	}{	Révélez-moi cette Camarilla !	}
+{	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	Je reviendrai vous voir plus tard. . .	}{	Je reviendrai vous voir plus tard. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est parti. Mon corps le suit.	}
+{	216	}{	Très bien.	}{	Très bien.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	Attendez. . . J'ai encore quelques questions à vous poser.	}{	Attendez. . . J'ai encore quelques questions à vous poser.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	218	}{	Avant de partir, parlez-moi encore un peu de la Camarilla. . .	}{	Avant de partir, parlez-moi encore un peu de la Camarilla. . .	}{	221	}{	G.Regent_Camarilla == 0	}{	G.Regent_Camarilla = 1	}{	}{	}{	}{	}{	}{	}{	Révélez-moi cette Camarilla !	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	A plus tard.	}{	A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	221	}{	La Camarilla ? C'est une secte de vampires qui existe pour protéger ses membres du monde extérieur. Il existe des codes de conduite spécifiques que nous appliquons pour assurer la survie de notre espèce. Rien de plus, rien de moins.	}{	La Camarilla ? C'est une secte de vampires qui existe pour protéger ses membres du monde extérieur. Il existe des codes de conduite spécifiques que nous appliquons pour assurer la survie de notre espèce. Rien de plus, rien de moins.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Je vois. Puis-je vous poser d'autres questions sur la Camarilla ?	}{	Je vois. Puis-je vous poser d'autres questions sur la Camarilla ?	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi cette Camarilla !	}
+{	223	}{	Super. En fait, je pensais à autre chose. . .	}{	Super. En fait, je pensais à autre chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une autre chose. . .	}
+{	224	}{	On dirait une autre excuse à la con pour que les vieux comme vous imposent le contrôle. . .	}{	On dirait une autre excuse à la con pour que les vieux comme vous imposent le contrôle. . .	}{	741	}{	G.Damsel_Cape == 1	}{	G.Regent_Anarchs = 1	}{	}{	}{	}{	}{	}{	}{	Vous n'êtes que des marionnettistes fous qui veulent tirer nos ficelles !	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	231	}{	Bien sûr. Que voulez-vous savoir d'autre ?	}{	Bien sûr. Que voulez-vous savoir d'autre ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Tous les vampires font-ils partie de la Camarilla ?	}{	Tous les vampires font-ils partie de la Camarilla ?	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tous les suceurs de sang appartiennent-ils à cette race ?	}
+{	233	}{	Pourquoi les Anarchs refusent-ils la Camarilla ?	}{	Pourquoi les Anarchs refusent-ils la Camarilla ?	}{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi les Anarchs se tiennent-ils à l'écart de cette famille infernale ?	}
+{	234	}{	Que pensez-vous du Prince LaCroix ?	}{	Que pensez-vous du Prince LaCroix ?	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi du prince bouffon. . .	}
+{	235	}{	En fait, il me fallait un autre renseignement. . .	}{	En fait, il me fallait un autre renseignement. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une autre chose. . .	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Non. Il y a des clans très indépendants, en dehors de la Camarilla. Et le Sabbat est une autre secte de différents clans de vampires, aux croyances très différentes de la Camarilla. Assez peu agréables, à vrai dire. J'ai cru comprendre que vous les avez déjà croisés. . . violemment. . .	}{	Non. Il y a des clans très indépendants, en dehors de la Camarilla. Et le Sabbat est une autre secte de différents clans de vampires, aux croyances très différentes de la Camarilla. Assez peu agréables, à vrai dire. J'ai cru comprendre que vous les avez déjà croisés. . . violemment. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Oui. Heureusement que Nines Rodriguez était là pour m'aider.	}{	Oui. Heureusement que Nines Rodriguez était là pour m'aider.	}{	251	}{	G.Regent_Nines == 0	}{	G.Regent_Nines = 1	}{	}{	}{	}{	}{	}{	}{	Rodriguez, le guerrier de minuit, fait planer une ombre longue. . .	}
+{	243	}{	Oui, oui. Ils allaient se faire dérouiller quand Nines Rodriguez est arrivé.	}{	Oui, oui. Ils allaient se faire dérouiller quand Nines Rodriguez est arrivé.	}{	251	}{	G.Regent_Nines == 0 and not IsClan(pc,"Malkavian")	}{	G.Regent_Nines = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	244	}{	J'aimerais vous poser d'autres questions sur la Camarilla.	}{	J'aimerais vous poser d'autres questions sur la Camarilla.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi cette Camarilla !	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre pèse sur d'autres domaines. Adieu.	}
+{	251	}{	Ah oui. Ce triste sire de Rodriguez. Si mes renseignements sont exacts, vous lui devez à présent deux vies. Sans lui, le prince aurait sans doute laissé son chien vous décoller la tête des épaules.	}{	Ah oui. Ce triste sire de Rodriguez. Si mes renseignements sont exacts, vous lui devez à présent deux vies. Sans lui, le prince aurait sans doute laissé son chien vous décoller la tête des épaules.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Vous avez sans doute raison. . .	}{	Vous avez sans doute raison. . .	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sa main pale a été fort appréciée. . .	}
+{	253	}{	Mais. . . J'attendais juste le bon moment. . .	}{	Mais. . . J'attendais juste le bon moment. . .	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'avais besoin de lui pour qu'il suscite cette agitation. . .	}
+{	254	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Quoi qu'il en soit, il est bien triste que Rodriguez ne voie pas la sagesse de la Camarilla. Il ferait un allié puissant. En l'état, il dérange considérablement LaCroix, ce qui me convient tout autant.	}{	Quoi qu'il en soit, il est bien triste que Rodriguez ne voie pas la sagesse de la Camarilla. Il ferait un allié puissant. En l'état, il dérange considérablement LaCroix, ce qui me convient tout autant.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Cela vous convient ? Vous n'êtes pas l'allié du prince ?	}{	Cela vous convient ? Vous n'êtes pas l'allié du prince ?	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le roi-sorcier et le prince bouffon ne partagent-ils pas les mêmes buts ?	}
+{	263	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	LaCroix est un prince, jeune vampire, et qui plus est Ventrue. Même s'il n'était pas aussi jeune et irréfléchi qu'il l'a déjà montré, je. . . mais j'en ai trop dit. Disons simplement que nous ne voyons pas le pouvoir de la même façon.	}{	LaCroix est un prince, jeune vampire, et qui plus est Ventrue. Même s'il n'était pas aussi jeune et irréfléchi qu'il l'a déjà montré, je. . . mais j'en ai trop dit. Disons simplement que nous ne voyons pas le pouvoir de la même façon.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Mais vous pouvez me faire confiance. . . Que pensez-vous vraiment de lui ?	}{	Mais vous pouvez me faire confiance. . . Que pensez-vous vraiment de lui ?	}{	291	}{	Persuasion 5 & G.Regent_Prince == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ayez confiance en ma psyché brisée, roi-sorcier. . .	}
+{	273	}{	Mais vous pouvez me faire confiance. . . Que pensez-vous vraiment de lui ?	}{	Mais vous pouvez me faire confiance. . . Que pensez-vous vraiment de lui ?	}{	281	}{	Persuasion -5	}{	}{	}{	}{	}{	}{	}{	}{	Ayez confiance en ma psyché brisée, roi-sorcier. . .	}
+{	274	}{	Je pense que vos paroles trahissent un manque de loyauté envers LaCroix. . .	}{	Je pense que vos paroles trahissent un manque de loyauté envers LaCroix. . .	}{	741	}{	}{	G.Regent_LaCroix = 1	}{	}{	}{	}{	}{	}{	}{	Vos paroles puent l'infidélité au bouffon !	}
+{	275	}{	Certainement. Encore quelques questions sur la Camarilla. . .	}{	Certainement. Encore quelques questions sur la Camarilla. . .	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi cette Camarilla !	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	Comme c'est machiavélique de votre part. . . A bientôt.	}{	Comme c'est machiavélique de votre part. . . A bientôt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous portez un masque machiavélique. Adieu.	}
+{	281	}{	Non. Je suis allé trop loin. Je ne dis plus rien.	}{	Non. Je suis allé trop loin. Je ne dis plus rien.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Très bien. Dites m'en plus sur la Camarilla. . .	}{	Très bien. Dites m'en plus sur la Camarilla. . .	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi cette Camarilla !	}
+{	283	}{	En fait, il me fallait un autre renseignement. . .	}{	En fait, il me fallait un autre renseignement. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une autre chose. . .	}
+{	284	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	Moi non plus. Au revoir, Max.	}{	Moi non plus. Au revoir, Max.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	286	}{	Les Anarchs pensent ne pas avoir besoin de la structure et de la discipline de la Camarilla. Je pense qu'ils sont un danger, tant pour les loyalistes à la Camarilla que pour eux-mêmes. La plupart ne sont que des enfants, et ont besoin de notre tutelle. . .	}{	Les Anarchs pensent ne pas avoir besoin de la structure et de la discipline de la Camarilla. Je pense qu'ils sont un danger, tant pour les loyalistes à la Camarilla que pour eux-mêmes. La plupart ne sont que des enfants, et ont besoin de notre tutelle. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	Intéressante observation. J'ai encore quelques questions sur la Camarilla. . .	}{	Intéressante observation. J'ai encore quelques questions sur la Camarilla. . .	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi cette Camarilla !	}
+{	288	}{	Peu importe. Je pense que ça va pour les Anarchs. Ils n'ont pas besoin de baby-sitter. . .	}{	Peu importe. Je pense que ça va pour les Anarchs. Ils n'ont pas besoin de baby-sitter. . .	}{	741	}{	}{	G.Regent_Anarchs = 1	}{	}{	}{	}{	}{	}{	}{	Les Anarchs n'ont pas besoin qu'on les materne !	}
+{	289	}{	Autre chose. . .	}{	Autre chose. . .	}{	741	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon destin n'intéresse que moi ! Je suis mon propre chemin d'ombres, roi-sorcier !	}
+{	290	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	291	}{	[réfléchissant]Hmmm, eh bien, sans trop en révéler, je pense que Sebastian LaCroix manque de la discrétion nécessaire pour faire un bon prince. Je vois en lui une soif de pouvoir qui le détourne de son devoir envers la Camarilla.	}{	[réfléchissant]Hmmm, eh bien, sans trop en révéler, je pense que Sebastian LaCroix manque de la discrétion nécessaire pour faire un bon prince. Je vois en lui une soif de pouvoir qui le détourne de son devoir envers la Camarilla.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Vraiment ? Vous sentiriez-vous plus capable que lui ?	}{	Vraiment ? Vous sentiriez-vous plus capable que lui ?	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ah ! Votre couronne de fer commence à étinceler !	}
+{	293	}{	Je pense que vos paroles trahissent un manque de loyauté envers LaCroix. . .	}{	Je pense que vos paroles trahissent un manque de loyauté envers LaCroix. . .	}{	741	}{	}{	G.Regent_LaCroix = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	294	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	[rires]Non, jeune vampire. Je ne désire pas ces sommets mondains. Mon seul intérêt va au clan et à la Camarilla.	}{	[rires]Non, jeune vampire. Je ne désire pas ces sommets mondains. Mon seul intérêt va au clan et à la Camarilla.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Dans cet ordre ?	}{	Dans cet ordre ?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Un ordre d'indication quant à vos intérêts. . .	}
+{	303	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	304	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	[glousse de nouveau, un peu plus menaçant]Vous n'aurez aucun problème dans cette nouvelle vie, jeune vampire. Cela me paraît évident.	}{	[glousse de nouveau, un peu plus menaçant]Vous n'aurez aucun problème dans cette nouvelle vie, jeune vampire. Cela me paraît évident.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Je l'espère. Encore quelques questions sur la Camarilla.	}{	Je l'espère. Encore quelques questions sur la Camarilla.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi cette Camarilla !	}
+{	313	}{	Encore une minute de votre temps. . .	}{	Encore une minute de votre temps. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une autre chose. . .	}
+{	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	Il faut que j'y aille. Au revoir, Max. . .	}{	Il faut que j'y aille. Au revoir, Max. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est parti. Mon corps le suit.	}
+{	321	}{	Je vois. Eh bien, revenez quand vous en saurez davantage.	}{	Je vois. Eh bien, revenez quand vous en saurez davantage.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Très bien. Puis-je vous poser quelques questions avant de partir ?	}{	Très bien. Puis-je vous poser quelques questions avant de partir ?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	323	}{	Comptez sur moi.	}{	Comptez sur moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre pèse sur d'autres domaines. Adieu.	}
+{	324	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	325	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	Vraiment ? Impressionnant. Quelle était la source de l'épidémie ?	}{	Vraiment ? Impressionnant. Quelle était la source de l'épidémie ?	}{	#	}{	}{	G.Regent_Questpestilence = 4; pc.SetQuest("Regent",6)	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Une secte du sang, menée par un vampire du nom d'Evêque Vick, un porteur de peste. . .	}{	Une secte, menée par un vampire du nom d'Evêque Vick, un porteur de peste. . .	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'Evêque Vick chevauchait la monture flétrie. . .	}
+{	333	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	334	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Parlez-moi de celui qu'on appelle l'Evêque.	}{	Parlez-moi de celui qu'on appelle l'Evêque.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	Il s'est prétendu sans clan. Il voulait amener la fin du monde. . .	}{	Il s'est prétendu sans clan. Il voulait amener la fin du monde. . .	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il désirait tirer le rideau sur notre drame maudit. . .	}
+{	343	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	344	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	Hmmm. [soucieux, résigné]Je vois. Cette fin est peut-être imminente. Mais parlons affaires. J'ai une dette envers vous pour ce service. Je vais la payer.	}{	Hmmm. [soucieux, résigné]Je vois. Cette fin est peut-être imminente. Mais parlons affaires. J'ai une dette envers vous pour ce service. Je vais la payer.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	En effet. . .	}{	En effet. . .	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quels trésors ?	}
+{	353	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	354	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	363	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	364	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	Bon choix, jeune vampire. Le véritable pouvoir ne réside pas dans la richesse mais dans les choses que vous pouvez vous procurer.Vous avez bien agi. Votre statut auprès de cette fondation va grandissant. Vous trouverez peut-être place parmi nous dans un avenir proche.	}{	Bon choix, jeune vampire. Le véritable pouvoir ne réside pas dans la richesse mais dans les choses que vous pouvez vous procurer.Vous avez bien agi. Votre statut auprès de cette fondation va grandissant. Vous trouverez peut-être place parmi nous dans un avenir proche.	}{	#	}{	}{	pc.GiveItem("item_p_occult_blood_buff")	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	Je n'y manquerai pas. Encore quelques questions. . .	}{	Je n'y manquerai pas. Encore quelques questions. . .	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	373	}{	Il me fallait autre chose. . .	}{	Il me fallait autre chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	374	}{	Cool. Je m'en vais. A plus tard, Max.	}{	Cool. Je m'en vais. A plus tard, Max.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	Je sens que vous étudiez l'occulte. Si vous le désirez, je peux vous donner un objet qui vous sera utile dans l'avenir. S'il ne vous intéresse pas, je peux vous dédommager en monnaie sonnante et trébuchante. A vous de voir. . .	}{	Je sens que vous étudiez l'occulte. Si vous le désirez, je peux vous donner un objet qui vous sera utile dans l'avenir. S'il ne vous intéresse pas, je peux vous dédommager en monnaie sonnante et trébuchante. A vous de voir. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	Je prendrai l'objet dont vous parlez.	}{	Je prendrai l'objet dont vous parlez.	}{	371	}{	IsClan(pc,"Tremere") and G.Regent_Haven2 == 0	}{	G.Regent_Haven1 = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	383	}{	Je prendrai l'objet dont vous parlez.	}{	Je prendrai l'objet dont vous parlez.	}{	391	}{	IsClan(pc,"Tremere") and G.Regent_Haven2 == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	384	}{	Donnez-moi l'argent, mon vieux. . .	}{	Donnez-moi l'argent, mon vieux. . .	}{	401	}{	IsClan(pc,"Tremere") and pc.CalcFeat("haggle") < 4	}{	pc.MoneyAdd( 250 ); G.Regent_Haven1 = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	385	}{	Donnez-moi l'argent, mon vieux. . .	}{	Donnez-moi l'argent, mon vieux. . .	}{	401	}{	IsClan(pc,"Tremere") and pc.CalcFeat("haggle") == 4	}{	pc.MoneyAdd( 300 ); G.Regent_Haven1 = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	Donnez-moi l'argent, mon vieux. . .	}{	Donnez-moi l'argent, mon vieux. . .	}{	401	}{	IsClan(pc,"Tremere") and pc.CalcFeat("haggle") > 4	}{	pc.MoneyAdd( 350 ); G.Regent_Haven1 = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	Donnez-moi la tune, mon vieux. . .	}{	Donnez-moi la tune, mon vieux. . .	}{	401	}{	not IsClan(pc,"Tremere") and pc.CalcFeat("haggle") < 4	}{	pc.MoneyAdd( 250 )	}{	}{	}{	}{	}{	}{	}{	Vert, c'est la couleur que je préfère. 	}
+{	388	}{	Donnez-moi la tune, mon vieux. . .	}{	Donnez-moi la tune, mon vieux. . .	}{	401	}{	not IsClan(pc,"Tremere") and pc.CalcFeat("haggle") == 4	}{	pc.MoneyAdd( 300 )	}{	}{	}{	}{	}{	}{	}{	Vert, c'est la couleur que je préfère. 	}
+{	389	}{	Donnez-moi la tune, mon vieux. . .	}{	Donnez-moi la tune, mon vieux. . .	}{	401	}{	not IsClan(pc,"Tremere") and pc.CalcFeat("haggle") > 4	}{	pc.MoneyAdd( 350 )	}{	}{	}{	}{	}{	}{	}{	Vert, c'est la couleur que je préfère. 	}
+{	390	}{	Je prendrai l'objet dont vous parlez.	}{	Je prendrai l'objet dont vous parlez.	}{	391	}{	not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	Je prendrais le précieux talisman.	}
+{	391	}{	Sage décision, jeune vampire. Le vrai pouvoir ne réside pas dans l'argent, mais dans ce qu'il vous permet de posséder. J'espère que cet objet vous satisfera.	}{	Sage décision, jeune vampire. Le vrai pouvoir ne réside pas dans l'argent, mais dans ce qu'il vous permet de posséder. J'espère que cet objet vous satisfera.	}{	#	}{	}{	pc.GiveItem("item_p_occult_blood_buff")	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	Merci. J'ai encore quelques questions. . .	}{	Merci. J'ai encore quelques questions. . .	}{	141	}{	not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	393	}{	Il me fallait autre chose. . .	}{	Il me fallait autre chose. . .	}{	41	}{	not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	Une autre chose. . .	}
+{	394	}{	Moi aussi. A bientôt.	}{	Moi aussi. A bientôt.	}{	0	}{	not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	395	}{	Je l'utiliserai pour le bien du Clan.	}{	Je l'utiliserai pour le bien du Clan.	}{	621	}{	IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	Je pense que vous trouverez ceci plus que généreux. Faites-en bon usage, jeune vampire. 	}{	Je pense que vous trouverez ceci plus que généreux. Faites-en bon usage, jeune vampire. 	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	Merci. J'ai encore quelques questions. . .	}{	Merci. J'ai encore quelques questions. . .	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	403	}{	Il me fallait autre chose. . .	}{	Il me fallait autre chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une autre chose. . .	}
+{	404	}{	Moi aussi. A bientôt.	}{	Moi aussi. A bientôt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre pèse sur d'autres domaines. Adieu.	}
+{	405	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	406	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	407	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	[un peu surpris]Des gargouilles ? Pourquoi me parlez-vous de cela ?	}{	[un peu surpris]Des gargouilles ? Pourquoi me parlez-vous de cela ?	}{	#	}{	}{	pc.SetQuest("Gargoyle",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	On dirait que l'une d'elle vit dans un vieux cinéma d'Hollywood. J'ai quelques questions. . .	}{	On dirait que l'une d'elle vit dans un vieux cinéma d'Hollywood. J'ai quelques questions. . .	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il y en a une qui hante un théâtre d'Hollywood ! Dites-m'en plus !	}
+{	413	}{	J'ai entendu dire que le clan Tremere sait beaucoup de choses à leur sujet. Vous pouvez m'aider avec celle d'Hollywood ?	}{	J'ai entendu dire que le clan Tremere sait beaucoup de choses à leur sujet. Vous pouvez m'aider  avec celle d'Hollywood ?	}{	481	}{	IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	414	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	[se reprenant]Que puis-je vous dire à leur sujet ?	}{	[se reprenant]Que puis-je vous dire à leur sujet ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	Qu'est-ce qu'une gargouille ?	}{	Qu'est-ce qu'une gargouille ?	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de ces golems de sang !	}
+{	423	}{	Comment puis-je les combattre ?	}{	Comment puis-je les combattre ?	}{	471	}{	not IsDead("Gargoyle") and G.Gargoyle_Convinced == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment détruire un tel démon ?	}
+{	424	}{	Cette gargouille a-t-elle quelque chose de particulier ? Partagez vos secrets avec moi. . .	}{	Cette gargouille a-t-elle quelque chose de particulier ? Partagez vos secrets avec moi. . .	}{	481	}{	IsClan(pc,"Tremere") and G.Regent_Gargoyleinside == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	425	}{	Allons, Max. . . Vous me cachez quelque chose au sujet de cette gargouille. . .	}{	Allons, Max. . . Vous me cachez quelque chose au sujet de cette gargouille. . .	}{	481	}{	Persuasion 5 & (not IsClan(pc,"Tremere") and G.Regent_Gargoyleinside == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Vos yeux cachent un secret de sang, roi-sorcier ! Parlez-moi de ce golem de sang !	}
+{	426	}{	Allons, Max. . . Vous me cachez quelque chose au sujet de cette gargouille. . .	}{	Allons, Max. . . Vous me cachez quelque chose au sujet de cette gargouille. . .	}{	461	}{	Persuasion -5 & (not IsClan(pc,"Tremere"))	}{	}{	}{	}{	}{	}{	}{	}{	Vos yeux cachent un secret de sang, roi-sorcier ! Parlez-moi de ce golem de sang !	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	Rien. Encore une chose. . .	}{	Rien. Encore une chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une autre chose. . .	}
+{	430	}{	Rien. Au revoir.	}{	Rien. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rien de plus. Au revoir.	}
+{	431	}{	Pour simplifier, une gargouille est un vampire créé dans le seul but de protéger le clan Tremere dans ses jeunes années. Ce sont des créatures très puissantes, qui ne s'abordent pas à la légère.	}{	Pour simplifier, une gargouille est un vampire créé dans le seul but de protéger le clan Tremere dans ses jeunes années. Ce sont des créatures très puissantes, qui ne s'abordent pas à la légère.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Ce sont les Tremeres qui les ont créées ?	}{	Ce sont les Tremeres qui les ont créées ?	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Créé par les sorciers de sang ?	}
+{	433	}{	Les gargouilles servent-elles encore les Tremeres ?	}{	Les gargouilles servent-elles encore les Tremeres ?	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ces démons servent-ils leurs maîtres magiques ?	}
+{	434	}{	Savez-vous qui a créé cette gargouille, Max ?	}{	Savez-vous qui a créé cette gargouille, Max ?	}{	481	}{	IsClan(pc,"Tremere") and G.Regent_Gargoyleinside == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	435	}{	Savez-vous qui a créé cette gargouille, Max ?	}{	Savez-vous qui a créé cette gargouille, Max ?	}{	481	}{	Persuasion 5 & not IsClan(pc,"Tremere") and G.Regent_Gargoyleinside == 0	}{	}{	}{	}{	}{	}{	}{	}{	Qui est le créateur de ce crétin ?	}
+{	436	}{	Savez-vous qui a créé cette gargouille, Max ?	}{	Savez-vous qui a créé cette gargouille, Max ?	}{	461	}{	Persuasion -5 & not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	Qui est le créateur de ce crétin ?	}
+{	437	}{	Encore quelques questions sur les gargouilles. . .	}{	Encore quelques questions sur les gargouilles. . .	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi encore de ces golems de sang !	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	Oui. Nous avons utilisé toutes nos connaissances de la magie du sang pour créer une race de protecteurs. Ils ont bien rempli leur rôle, mais ont aussi causé bien des problèmes. Le sujet est compliqué.	}{	Oui. Nous avons utilisé toutes nos connaissances de la magie du sang pour créer une race de protecteurs. Ils ont bien rempli leur rôle, mais ont aussi causé bien des problèmes. Le sujet est compliqué.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	Compliqué ? A quel point ?	}{	Compliqué ? A quel point ?	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	De quelle couleur est cette complication ?	}
+{	443	}{	Peu importe. Je veux juste savoir comment on les combat.	}{	Peu importe. Je veux juste savoir comment on les combat.	}{	471	}{	not IsDead("Gargoyle") and G.Gargoyle_Convinced == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment détruire un tel démon ?	}
+{	444	}{	Encore quelques questions sur les gargouilles. . .	}{	Encore quelques questions sur les gargouilles. . .	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi encore de ces golems de sang !	}
+{	445	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	446	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	Plus qu'une chose. . .	}{	Plus qu'une chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une autre chose. . .	}
+{	451	}{	Eh bien, beaucoup de gargouilles servent encore leur maître. Mais d'autres se sont rebellées et vivent dans la clandestinité. Ce sont des êtres conscients, mais mal adaptés à la liberté qu'ils désirent. Ils ont besoin des conseils de leur maître. . .	}{	Eh bien, beaucoup de gargouilles servent encore leur maître. Mais d'autres se sont rebellées et vivent dans la clandestinité. Ce sont des êtres conscients, mais mal adaptés à la liberté qu'ils désirent. Ils ont besoin des conseils de leur maître. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	On dirait que vous connaissez bien le sujet, Max. . .	}{	On dirait que vous connaissez bien le sujet, Max. . .	}{	481	}{	IsClan(pc,"Tremere") and G.Regent_Gargoyleinside == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	453	}{	On dirait que vous connaissez bien le sujet, Max. . .	}{	On dirait que vous connaissez bien le sujet, Max. . .	}{	481	}{	Persuasion 5 & not IsClan(pc,"Tremere") and G.Regent_Gargoyleinside == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	454	}{	On dirait que vous connaissez bien le sujet, Max. . .	}{	On dirait que vous connaissez bien le sujet, Max. . .	}{	461	}{	Persuasion -5 & not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	455	}{	Si je veux me débarrasser d'une gargouille, comment m'y prendre ?	}{	Si je veux me débarrasser d'une gargouille, comment m'y prendre ?	}{	471	}{	not IsDead("Gargoyle") and G.Gargoyle_Convinced == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment détruire un tel démon ?	}
+{	456	}{	Encore quelques questions sur les gargouilles. . .	}{	Encore quelques questions sur les gargouilles. . .	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi encore de ces golems de sang !	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	Il est des choses dont on ne doit pas parler, jeune vampire. Ce sont les affaires des Tremeres, et c'est tout ce qu'il vous faut savoir.	}{	Il est des choses dont on ne doit pas parler, jeune vampire. Ce sont les affaires des Tremeres, et c'est tout ce qu'il vous faut savoir.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	Si vous le dites, Max. Expliquez-moi simplement comment m'en débarrasser.	}{	Si vous le dites, Max. Expliquez-moi simplement comment m'en débarrasser.	}{	471	}{	not IsDead("Gargoyle") and G.Gargoyle_Convinced == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment détruire un tel démon ?	}
+{	463	}{	Encore quelques questions sur les gargouilles. . .	}{	Encore quelques questions sur les gargouilles. . .	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi encore de ces golems de sang !	}
+{	464	}{	Plus qu'une chose. . .	}{	Plus qu'une chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une autre chose. . .	}
+{	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	Je m'en vais. A bientôt.	}{	Je m'en vais. A bientôt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est parti. Mon corps le suit.	}
+{	471	}{	C'est très difficile. Les gargouilles sont connues pour leur résistance. Leur peau est faite de pierre, et les armes à feu ne sont pratiquement d'aucune utilité. Elles ne sont sensibles qu'aux armes contondantes.	}{	C'est très difficile. Les gargouilles sont connues pour leur résistance. Leur peau est faite de pierre, et les armes à feu ne sont pratiquement d'aucune utilité. Elles ne sont sensibles qu'aux armes contondantes.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	Super. Encore quelques questions sur les gargouilles. . .	}{	Super. Encore quelques questions sur les gargouilles. . .	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi encore de ces golems de sang !	}
+{	473	}{	Autre chose. . .	}{	Autre chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une autre chose. . .	}
+{	474	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	481	}{	[soupir]Oui. Je connais les gargouilles, et celle-ci en particulier. J'espérais qu'elle serait morte, mais il semble que ma création revienne de nouveau me tourmenter. . .	}{	[soupir]Oui. Je connais les gargouilles, et celle-ci en particulier. J'espérais qu'elle serait morte, mais il semble que ma création revienne de nouveau me tourmenter. . .	}{	#	}{	}{	G.Regent_Gargoyleinside = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	Quoi ? VOTRE création ?!	}{	Quoi ? VOTRE création ?!	}{	491	}{	G.Patch_Plus == 0 }{	}{	}{	}{	}{	}{	}{	}{	Vous avez engendré ce monstre ?	}
+{	483	}{	Quoi ? VOTRE création ?!	}{	Quoi ? VOTRE création ?!	}{	491	}{	G.Patch_Plus == 1 }{	pc.AwardExperience("Gargoyle05")	}{	}{	}{	}{	}{	}{	}{	Vous avez engendré ce monstre ?	}
+{	484	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	485	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Oui. Je suis ici depuis longtemps, jeune vampire. Il y a bien des années, j'ai créé cette gargouille pour protéger cette fondation contre ses ennemis. Ce fut un serviteur fidèle, et il m'a sauvé la vie plus d'une fois.	}{	Oui. Je suis ici depuis longtemps, jeune vampire. Il y a bien des années, j'ai créé cette gargouille pour protéger cette fondation contre ses ennemis. Ce fut un serviteur fidèle, et il m'a sauvé la vie plus d'une fois.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	(Auto-Link)	}{	(Auto-Link)	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	493	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	494	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	495	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	Malheureusement, son rôle de protecteur lui pesait de plus en plus, et il désirait sa liberté. Je la lui ai refusée. [presque triste]Il a fini par fuir dans la nuit, et je ne l'ai jamais revu.	}{	Malheureusement, son rôle de protecteur lui pesait de plus en plus, et il désirait sa liberté. Je la lui ai refusée. [presque triste]Il a fini par fuir dans la nuit, et je ne l'ai jamais revu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	Je vois. Eh bien, Isaac Abrams m'a demandé d'éliminer la gargouille.	}{	Je vois. Eh bien, Isaac Abrams m'a demandé d'éliminer la gargouille.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	503	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	504	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	505	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	513	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	514	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	515	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	516	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	517	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	520	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	523	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	524	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Isaac Abrams ? Son manque de respect pour la Camarilla n'a d'égal que sa haine pour LaCroix. S'il le découvre, ce sera une source de honte immense pour le clan et la Camarilla. Il ne doit pas apprendre que cette gargouille est ma création, vous comprenez ?	}{	Isaac Abrams ? Son manque de respect pour la Camarilla n'a d'égal que sa haine pour LaCroix. S'il le découvre, ce sera une source de honte immense pour le clan et la Camarilla. Il ne doit pas apprendre que cette gargouille est ma création, vous comprenez ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	Tout à fait. Je protégerai les secrets de ce clan. . .	}{	Tout à fait. Je protégerai les secrets de ce clan. . .	}{	541	}{	IsClan(pc,"Tremere")	}{	G.Regent_QuestGargoyle = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	533	}{	Tout à fait. Je ne dirai à personne votre secret. . .	}{	Tout à fait. Je ne dirai à personne votre secret. . .	}{	551	}{	not IsClan(pc,"Tremere")	}{	G.Regent_QuestGargoyle = 2	}{	}{	}{	}{	}{	}{	}{	Je saurai garder ce secret de sorcier. . .	}
+{	534	}{	Je ne sais pas. Que vaut mon silence à vos yeux ?	}{	Je ne sais pas. Que vaut mon silence à vos yeux ?	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai des options à envisager, roi-sorcier. . .	}
+{	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	536	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	[soulagé]Je vois que vous avez appris votre leçon. Malgré les indiscrétions de votre père Anarch, vous êtes une recrue de choix pour le clan. Je vous félicite et vous remercie, jeune vampire.	}{	[soulagé]Je vois que vous avez appris votre leçon. Malgré les indiscrétions de votre père Anarch, vous êtes une recrue de choix pour le clan. Je vous félicite et vous remercie, jeune vampire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Pas de problème. Alors, que dois-je faire ?	}{	Pas de problème. Alors, que dois-je faire ?	}{	581	}{	not IsDead("Gargoyle") and G.Gargoyle_Convinced == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	543	}{	En fait, j'ai réglé votre problème avec la gargouille. . .	}{	En fait, j'ai réglé votre problème avec la gargouille. . ..	}{	611	}{	(IsDead("Gargoyle") or G.Gargoyle_Convinced == 1)	}{	G.Regent_Gargoyle = 1	}{	}{	}{	}{	}{	}{	}{	J'ai fait en sorte que le golem de sang ne hante plus Hollywood. . . 	}
+{	544	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	545	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	546	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	547	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	548	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	J'apprécie votre discrétion à ce sujet, jeune vampire. . .	}{	J'apprécie votre discrétion à ce sujet, jeune vampire. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	Très bien. Bien, que faut-il faire ?	}{	Très bien. Bien, que faut-il faire ?	}{	581	}{	not IsDead("Gargoyle") and G.Gargoyle_Convinced == 0	}{	}{	}{	}{	}{	}{	}{	}{	Que dois-je faire ?	}
+{	553	}{	En fait, j'ai réglé votre problème avec la gargouille. . .	}{	En fait, j'ai réglé votre problème avec la gargouille. . ..	}{	611	}{	(IsDead("Gargoyle") or G.Gargoyle_Convinced == 1)	}{	G.Regent_Gargoyle = 1	}{	}{	}{	}{	}{	}{	}{	J'ai fait en sorte que le golem de sang ne hante plus Hollywood. . . 	}
+{	554	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	555	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	556	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	558	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	[menaçant]Vous y avez intérêt, jeune vampire. Si j'apprends que vous avez divulgué ce secret à quiconque. . . QUICONQUE. . . les portes de cette fondation vous seront à jamais fermées. Me comprenez-vous ?	}{	[menaçant]Vous y avez intérêt, jeune vampire. Si j'apprends que vous avez divulgué ce secret à quiconque. . . QUICONQUE. . . les portes de cette fondation vous seront à jamais fermées. Me comprenez-vous ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	Oui. Vous pouvez me faire confiance. Je protégerai les intérêts du clan. . .	}{	Oui. Vous pouvez me faire confiance. Je protégerai les intérêts du clan. . .	}{	591	}{	IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	563	}{	Oui. Ne vous inquiétez pas. Faites-moi confiance.	}{	Oui. Ne vous inquiétez pas. Faites-moi confiance.	}{	591	}{	not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	Je ne dirai rien contre vous. . .	}
+{	564	}{	Je comprends que votre position est des plus précaires, Max.	}{	Je comprends que votre position est des plus précaires, Max.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous vous retrouvez sur un perchoir précaire, roi-sorcier. . .	}
+{	565	}{	Je vais aller saluer Isaac de votre part. Avant de lui apprendre votre petit secret.	}{	Je vais aller saluer Isaac de votre part. Avant de lui apprendre votre petit secret.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Abrams se délectera de votre sombre secret. . .	}
+{	566	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	Vous jouez un jeu dangereux. J'espère que vous prendrez la bonne décision. Adieu.	}{	Vous jouez un jeu dangereux. J'espère que vous prendrez la bonne décision. Adieu.	}{	#	}{	}{	G.Regent_QuestGargoyle = 4	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	Comment puis-je combattre la Gargouille?	}{	Comment puis-je combattre la Gargouille?	}{	471	}{	not IsDead("Gargoyle") and G.Gargoyle_Convinced == 0 }{	}{	}{	}{	}{	}{	}{	}{	Comment je détruis le démon?	}
+{	573	}{	En fait, j'ai réglé votre problème avec la Gargouille. . .	}{	En fait, j'ai réglé votre problème avec la Gargouille. . ..	}{	611	}{	(IsDead("Gargoyle") or G.Gargoyle_Convinced == 1)	}{	G.Regent_Gargoyle = 1	}{	}{	}{	}{	}{	}{	}{	J'ai fait en sorte que le golem de sang ne hante plus Hollywood. . . 	}
+{	574	}{	Au revoir, Max.	}{	Au revoir, Max.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Adieu, roi-sorcier.	}
+{	575	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	576	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	577	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	Tenez. C'est un ancien charme qui vous aidera dans votre lutte contre la Gargouille. Il vous suffira de le porter sur vous pour bénéficier de sa protection.	}{	Tenez. C'est un ancien charme qui vous aidera dans votre lutte contre la gargouille. Il vous suffira de le porter sur vous pour bénéficier de sa protection.	}{	#	}{	}{	pc.GiveItem("item_p_gargoyle_talisman")	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	Merci, mais comment combattre la Gargouille au mieux?	}{	Merci, mais comment combattre la Gargouille au mieux?	}{	471	}{	not IsDead("Gargoyle") and G.Gargoyle_Convinced == 0 }{	}{	}{	}{	}{	}{	}{	}{	Cadeau appréciable, mais comment je détruis le démon?	}
+{	583	}{	Merci. . .	}{	Merci. . .	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma personne apprécie ce don. . .	}
+{	584	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	585	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	586	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	587	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	Bonne chance, jeune vampire. Quand vous aurez réussi à détruire la gargouille, revenez et je vous récompenserai comme il se doit.	}{	Bonne chance, jeune vampire. Quand vous aurez réussi à détruire la gargouille, revenez et je vous récompenserai comme il se doit.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	Une question encore, comment combattre une gargouille?	}{	Une question encore, comment combattre une gargouille?	}{	471	}{	not IsDead("Gargoyle") and G.Gargoyle_Convinced == 0 }{	}{	}{	}{	}{	}{	}{	}{	Davantage de connaissances nécessaires. Comment je détruis le démon?	}
+{	593	}{	En fait, j'ai réglé votre problème avec la gargouille. . .	}{	En fait, j'ai réglé votre problème avec la gargouille. . ..	}{	611	}{	(IsDead("Gargoyle") or G.Gargoyle_Convinced == 1)	}{	G.Regent_Gargoyle = 1	}{	}{	}{	}{	}{	}{	}{	J'ai fait en sorte que le golem de sang ne hante plus Hollywood. . . 	}
+{	594	}{	Attendez. J'ai besoin d'autre chose. . .	}{	Attendez. J'ai besoin d'autre chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une autre chose. . .	}
+{	595	}{	Sans faute. Au revoir.	}{	Sans faute. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	596	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	597	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	598	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	599	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	600	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	601	}{	Alors revenez quand ce sera fait.	}{	Alors revenez quand ce sera fait.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	Attendez. Encore une chose. . .	}{	Attendez. Encore une chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une autre chose. . .	}
+{	603	}{	Super ! A plus.	}{	Super ! A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit est parti. Mon corps le suit.	}
+{	604	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	605	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	Vraiment ? Bel exploit pour un vampire si jeune. Et avec discrétion, qui plus est. Vous m'impressionnez. . .	}{	Vraiment ? Bel exploit pour un vampire si jeune. Et avec discrétion, qui plus est. Vous m'impressionnez. . .	}{	#	}{	}{	G.Regent_Haven2 = 1; G.Regent_QuestGargoyle = 5	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	Je fais juste ce qui me semble bien.	}{	Je fais juste ce qui me semble bien.	}{	711	}{	G.Patch_Plus == 0 and G.Isaac_Gargoyle == 4	}{	pc.SetQuest("Gargoyle",5); pc.MoneyAdd( 500 )	}{	}{	}{	}{	}{	}{	}{	C'est une action qui demande de la discrétion...	}
+{	613	}{	Je fais juste ce qui me semble bien.	}{	Je fais juste ce qui me semble bien.	}{	711	}{	G.Patch_Plus == 0 and G.Isaac_Gargoyle < 4	}{	pc.SetQuest("Gargoyle",9); pc.MoneyAdd( 500 )	}{	}{	}{	}{	}{	}{	}{	C'est une action qui demande de la discrétion...	}
+{	614	}{	Je fais juste ce qui me semble bien.	}{	Je fais juste ce qui me semble bien.	}{	711	}{	G.Patch_Plus == 1 and G.Isaac_Gargoyle == 4	}{	pc.SetQuest("Gargoyle",5); pc.GiveItem("item_p_occult_dexterity")	}{	}{	}{	}{	}{	}{	}{	Cette tâche demandait de la discrétion.	}
+{	615	}{	Je fais juste ce qui me semble bien.	}{	Je fais juste ce qui me semble bien.	}{	711	}{	G.Patch_Plus == 1 and G.Isaac_Gargoyle < 4	}{	pc.SetQuest("Gargoyle",9); pc.GiveItem("item_p_occult_dexterity")	}{	}{	}{	}{	}{	}{	}{	Cette tâche demandait de la discrétion.	}
+{	616	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	617	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	618	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	619	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	620	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	Tout à fait. Vous avez prouvé votre fidélité au clan. J'ai parlé de vous au seigneur. Nous sommes tous deux d'accord sur le fait que vous feriez une recrue de choix.	}{	Tout à fait. Vous avez prouvé votre fidélité au clan. J'ai parlé de vous au seigneur. Nous sommes tous deux d'accord sur le fait que vous feriez une recrue de choix.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	Ce qui signifie ?	}{	Ce qui signifie ?	}{	631	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	623	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	624	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	625	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	626	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	627	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	628	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	629	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	630	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	631	}{	Que vous pouvez rejoindre cette fondation parmi les autres apprentis. Vous vivrez donc ici, dans une chambre privée, et vous pourrez jouir des luxes et conforts que cela apporte. Acceptez-vous cet honneur, jeune vampire ?	}{	Que vous pouvez rejoindre cette fondation parmi les autres apprentis. Vous vivrez donc ici, dans une chambre privée, et vous pourrez jouir des luxes et conforts que cela apporte. Acceptez-vous cet honneur, jeune vampire ?	}{	#	}{	}{	G.Regent_Family = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	Bien sûr. . .	}{	Bien sûr. . .	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	633	}{	Je ne sais pas, je dois y réfléchir.	}{	Je ne sais pas, je dois y réfléchir.	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	634	}{	Avec tout le respect que je vous dois, je préfère refuser.	}{	Avec tout le respect que je vous dois, je préfère refuser.	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	635	}{	Pas question. Je n'obéis à personne.	}{	Pas question. Je n'obéis à personne.	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	636	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	637	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	638	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	640	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	641	}{	[satisfait]J'étais sûr de ne pas me tromper. Bienvenue dans la pyramide, jeune élève. Vos affaires ont déjà été déménagées de votre refuge de Santa Monica. . . Elles vous attendent à l'étage.	}{	[satisfait]J'étais sûr de ne pas me tromper. Bienvenue dans la pyramide, jeune élève. Vos affaires ont déjà été déménagées de votre refuge de Santa Monica. . . Elles vous attendent à l'étage.	}{	#	}{	}{	G.Regent_Family = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	Merci, Max. Une dernière chose. . .	}{	Merci, Max. Une dernière chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	643	}{	Euh. . . J'ai un, euh, 'ami' qui aime bien sortir avec moi. . .	}{	Euh. . . J'ai un, euh, 'ami' qui aime bien sortir avec moi. . .	}{	646	}{	G.Heather_Drank == 1 and not IsDead("Heather") and G.Heather_Haven == 1 and G.Heather_Gone == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	644	}{	Ca fait plaisir d'appartenir à la famille. A plus tard. . .	}{	Ca fait plaisir d'appartenir à la famille. A plus tard. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	645	}{	Toutes ? J'en doute. Je vais récupérer le reste tout de suite.	}{	Toutes ? J'en doute. Je vais récupérer le reste tout de suite.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	646	}{	Je suis aussi au courant pour votre goule. C'est une distraction douteuse, je trouve, mais elle sera la bienvenue ici.	}{	Je suis aussi au courant pour votre goule. C'est une distraction douteuse, je trouve, mais elle sera la bienvenue ici.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	647	}{	Merci, Max. Une dernière chose. . .	}{	Merci, Max. Une dernière chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	648	}{	Ca fait plaisir d'appartenir à la famille. A plus tard.	}{	Ca fait plaisir d'appartenir à la famille. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	650	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	651	}{	[déçu]Je vois. Eh bien, réfléchissez vite, jeune vampire. Une telle offre ne se fait qu'une fois. Je prie pour que vous preniez la bonne décision.	}{	[déçu]Je vois. Eh bien, réfléchissez vite, jeune vampire. Une telle offre ne se fait qu'une fois. Je prie pour que vous preniez la bonne décision.	}{	#	}{	}{	G.Regent_Family = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	652	}{	Certainement. A bientôt, Max.	}{	Certainement. A bientôt, Max.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	653	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	654	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	655	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	656	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	657	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	658	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	659	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	660	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	661	}{	[déçu]Je vois. C'est fort dommageable, jeune vampire. J'espérais que vous choisiriez avec plus d'à-propos. Nous n'avons plus rien à nous dire pour l'heure. Au revoir.	}{	[déçu]Je vois. C'est fort dommageable, jeune vampire. J'espérais que vous choisiriez avec plus d'à-propos. Nous n'avons plus rien à nous dire pour l'heure. Au revoir.	}{	#	}{	}{	G.Regent_Family = 4	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	A plus tard.	}{	A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	663	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	664	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	665	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	666	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	667	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	668	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	669	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	670	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	671	}{	Oui, vous avez fait preuve de loyauté envers le clan, et nous ne l'oublierons pas. Votre discrétion dans ce domaine a accru votre réputation parmi nous. Bien joué.	}{	Oui, vous avez fait preuve de loyauté envers le clan, et nous ne l'oublierons pas. Votre discrétion dans ce domaine a accru votre réputation parmi nous. Bien joué.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	672	}{	Je ne fais que servir le clan. . .	}{	Je ne fais que servir le clan. . .	}{	681	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	673	}{	Les compliments me font plaisir, mais moins que l'argent. . .	}{	Les compliments me font plaisir, mais moins que l'argent. . .	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	674	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	675	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	676	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	678	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	679	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	680	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	681	}{	Et nous nous en souviendrons. S'il n'y a rien d'autre, je vous souhaite le bonjour. . .	}{	Et nous nous en souviendrons. S'il n'y a rien d'autre, je vous souhaite le bonjour. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	682	}{	En fait, il y avait autre chose. . .	}{	En fait, il y avait autre chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	683	}{	A bientôt.	}{	A bientôt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	684	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	685	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	686	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	687	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	688	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	689	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	690	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	691	}{	Abrams vous a déjà récompensé pour le rôle que vous avez joué. Si vous continuez de nous témoigner votre loyauté, je vous remercierai d'une façon plus précieuse encore. Nous en reparlerons.	}{	Abrams vous a déjà récompensée pour le rôle que vous avez joué. Si vous continuez de nous témoigner votre loyauté, je vous remercierai d'une façon plus précieuse encore. Nous en reparlerons.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	692	}{	Je l'espère. Autre chose. . .	}{	Je l'espère. Autre chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	693	}{	Euh, en fait, je préfère l'argent, je crois. Tout de suite. 	}{	Euh, en fait, je préfère l'argent, je crois. Tout de suite. 	}{	701	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	694	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	695	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	696	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	697	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	698	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	699	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	700	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	701	}{	Je vois. Fort décevant, jeune vampire. Mais je me plierai à vos préférences. Voilà qui fera une somme satisfaisante pour vos efforts. Profitez de votre paiement. . . il vous coûte plus cher que vous l'imaginez.	}{	Je vois. Fort décevant, jeune vampire. Mais je me plierai à vos préférences. Voilà qui fera une somme satisfaisante pour vos efforts. Profitez de votre paiement. . . il vous coûte plus cher que vous l'imaginez.	}{	#	}{	}{	G.Regent_Haven2 = 0; pc.MoneyAdd( 500 )	}{	}{	}{	}{	}{	}{	}{	}
+{	702	}{	Si vous le dites. Une dernière chose. . .	}{	Si vous le dites. Une dernière chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	703	}{	L'argent seul a de l'importance à mes yeux. Merci.	}{	L'argent seul a de l'importance à mes yeux. Merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	704	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	705	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	706	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	707	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	708	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	709	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	710	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	711	}{	Et vos efforts sont appréciés comme il se doit. Veuillez accepter ce présent en paiement de votre aide. Le clan Tremere apprécie votre discrétion.	}{	Et vos efforts sont appréciés comme il se doit. Veuillez accepter ce présent en paiement de votre aide. Le clan Tremere apprécie votre discrétion.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	712	}{	Je vous le dit. Mon intérêt est pour le Clan.	}{	Je vous le dit. Mon intérêt est pour le Clan.	}{	621	}{	IsClan(pc,"Tremere") and G.Regent_Haven1 == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	713	}{	Je vous le dit. Mon intérêt est pour le Clan.	}{	Je vous le dit. Mon intérêt est pour le Clan.	}{	671	}{	IsClan(pc,"Tremere") and G.Regent_Haven1 == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	714	}{	Pas de problème. Une dernière chose. . .	}{	Pas de problème. Une dernière chose. . .	}{	41	}{	not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	Une autre chose. . .	}
+{	715	}{	Super. A plus, Max.	}{	Super. A plus, Max.	}{	0	}{	not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	716	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	717	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	718	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	719	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	720	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	721	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	722	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	723	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	724	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	725	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	726	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	727	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	728	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	729	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	730	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	731	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	732	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	733	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	734	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	735	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	736	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	737	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	738	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	739	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	740	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	741	}{	Quel dommage que vous pensiez ainsi. Peut-être n'avons-nous plus rien à nous dire.	}{	Quel dommage que vous pensiez ainsi. Peut-être n'avons-nous plus rien à nous dire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	742	}{	Super. Mais revenons à nos moutons. . .	}{	Super. Mais revenons à nos moutons. . .	}{	751	}{	}{	}{	}{	}{	}{	}{	}{	}{	Attendez ! Ma langue était peut-être un peu trop irritée. . .	}
+{	743	}{	Vous l'avez dit, vieux. Vive l'Anarchie ! Allez, je me casse !	}{	Vous l'avez dit, vieux. Vive l'Anarchie ! Allez, je me casse !	}{	0	}{	G.Regent_Anarchs == 1	}{	G.Regent_Pissed = G.Regent_Pissed + 1	}{	}{	}{	}{	}{	}{	}{	Je porterai le drapeau Anarch, roi magicien ! Adieu. . .	}
+{	744	}{	Votre loyauté envers LaCroix me paraît douteuse. Pas la mienne. A plus. . .	}{	Votre loyauté envers LaCroix me paraît douteuse. Pas la mienne. A plus. . .	}{	0	}{	G.Regent_LaCroix == 1	}{	G.Regent_Pissed = G.Regent_Pissed + 1	}{	}{	}{	}{	}{	}{	}{	Je ne digère pas votre infidélité au bouffon. Je vous laisse. . .	}
+{	745	}{	Je ne suis les règles de personne, mon vieux. A plus.	}{	Je ne suis les règles de personne, mon vieux. A plus.	}{	0	}{	}{	G.Regent_Pissed = G.Regent_Pissed + 1	}{	}{	}{	}{	}{	}{	}{	Je suivrai cette route sans personne. Adieu. . .	}
+{	746	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	747	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	748	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	749	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	750	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	751	}{	Hmm. . . Bonne décision, jeune vampire. Il vaut toujours mieux écouter et apprendre qu'agir avec impulsivité. Vous pourriez m'être d'une aide précieuse, finalement.	}{	Hmm. . . Bonne décision, jeune vampire. Il vaut toujours mieux écouter et apprendre qu'agir avec impulsivité. Vous pourriez m'être d'une aide précieuse, finalement.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	752	}{	Super. Je peux vous poser d'autres questions ?	}{	Super. Je peux vous poser d'autres questions ?	}{	141	}{	}{	G.Regent_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	Puis-je abuser de votre matière grise ?	}
+{	753	}{	Tout bien réfléchi, je refuse de me vendre à la Camarilla. Je m'en vais.	}{	Tout bien réfléchi, je refuse de me vendre à la Camarilla. Je m'en vais.	}{	761	}{	G.Regent_LaCroix == 0	}{	G.Regent_Pissed = G.Regent_Pissed + 1	}{	}{	}{	}{	}{	}{	}{	Je ne vendrai pas mon âme à votre conspiration de la Camarilla ! Adieu !	}
+{	754	}{	En fait, je ne peux plus tolérer votre subtile insubordination à LaCroix. . .	}{	En fait, je ne peux plus tolérer votre subtile insubordination à LaCroix. . .	}{	761	}{	G.Regent_LaCroix == 1	}{	G.Regent_Pissed = G.Regent_Pissed + 1	}{	}{	}{	}{	}{	}{	}{	Je sers le prince bouffon, et vous paraissez cracher sur son ombre. Adieu.	}
+{	755	}{	Vous savez quoi ? Je fais mes propres règles, mon vieux. A plus.	}{	Vous savez quoi ? Je fais mes propres règles, mon vieux. A plus.	}{	761	}{	}{	G.Regent_Pissed = G.Regent_Pissed + 1	}{	}{	}{	}{	}{	}{	}{	Je n'ai besoin d'aucune compagnie sur ma route longue et solitaire. Je vous quitte. 	}
+{	756	}{	Vous savez quoi ? Laissez tomber. J'en ai ma claque de votre Camarilla. . .	}{	Vous savez quoi ? Laissez tomber. J'en ai ma claque de votre Camarilla. . .	}{	781	}{	G.Regent_Pissed == 2 and G.Regent_LaCroix == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je ne m'incline devant aucun ancêtre de la Camarilla ! Adieu !	}
+{	757	}{	Je ne pense pas. LaCroix est mon prince, et j'obéis à ses ordres.	}{	Je ne pense pas. LaCroix est mon prince, et j'obéis à ses ordres.	}{	781	}{	G.Regent_Pissed == 2 and G.Regent_LaCroix == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vos cicatrices d'infidélité me donnent la nausée, roi-sorcier ! Je sers le prince bouffon. 	}
+{	758	}{	Toute cette idée de société des vampires est NASE. Vous m'entendez ?	}{	Toute cette idée de société des vampires est NASE. Vous m'entendez ?	}{	781	}{	}{	}{	}{	}{	}{	}{	}{	}{	Faites-vous une raison, je ne suis solidaire qu'à moi-même. Je vous quitte. . .	}
+{	759	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	760	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	761	}{	Alors je vous recommande de partir tout de suite.	}{	Alors je vous recommande de partir tout de suite.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	762	}{	Avec plaisir.	}{	Avec plaisir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis déjà ailleurs.	}
+{	763	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	764	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	765	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	766	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	767	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	768	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	769	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	770	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	771	}{	Je pensais que nous avions défini la nature de notre relation lors de notre dernière conversation. J'imagine que vous savez où se trouve la porte ?	}{	Je pensais que nous avions défini la nature de notre relation lors de notre dernière conversation. J'imagine que vous savez où se trouve la porte ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	772	}{	Du calme, Max. J'ai peut-être un peu exagéré tout à l'heure.	}{	Du calme, Max. J'ai peut-être un peu exagéré tout à l'heure.	}{	751	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma langue était peut-être un peu trop irritée. . .	}
+{	773	}{	C'est ça. Je ne sais pas ce que je fais ici. A plus. . .	}{	C'est ça. Je ne sais pas ce que je fais ici. A plus. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
+{	774	}{	Avant que je parte, je voulais que vous sachiez. . . je vais faire s'effondrer la Camarilla.	}{	Avant que je parte, je voulais que vous sachiez. . . je vais faire s'effondrer la Camarilla.	}{	781	}{	}{	}{	}{	}{	}{	}{	}{	}{	La Camarilla et vous alimenterez mon feu de la rage !	}
+{	775	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	776	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	777	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	778	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	779	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	780	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	781	}{	On dirait qu'on ne peut pas raisonner avec vous. Partez. Vous n'entrerez plus jamais dans cette fondation.	}{	On dirait qu'on ne peut pas raisonner avec vous. Partez. Vous n'entrerez plus jamais dans cette fondation.	}{	#	}{	}{	G.Regent_Pissed = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	782	}{	C'est nul, ici. Faites gaffe à vous, Max. A plus. . .	}{	C'est nul, ici. Faites gaffe à vous, Max. A plus. . .	}{	0	}{	pc.GetQuestState("Regent") == 0 or pc.GetQuestState("Regent") == 6	}{	}{	}{	}{	}{	}{	}{	}{	Cette fondation me donne envie de vomir. Adieu. 	}
+{	783	}{	C'est nul, ici. Faites gaffe à vous, Max. A plus. . .	}{	C'est nul, ici. Faites gaffe à vous, Max. A plus. . .	}{	0	}{	pc.GetQuestState("Regent") > 0 and pc.GetQuestState("Regent") != 6	}{	pc.SetQuest("Regent",7)	}{	}{	}{	}{	}{	}{	}{	Cette fondation me donne envie de vomir. Adieu. 	}
+{	784	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	785	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	786	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	787	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	788	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	789	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	790	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	791	}{	Partez. Nous ne parlerons plus jamais.	}{	Partez. Nous ne parlerons plus jamais.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	792	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	793	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	794	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	795	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	796	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	797	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	798	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	799	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	800	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	801	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	802	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	803	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	804	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	805	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	806	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	807	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	808	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	809	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	810	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	811	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	812	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	813	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	814	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	815	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	816	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	817	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	818	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	819	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	820	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	821	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	822	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	823	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	824	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	825	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	826	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	827	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	828	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	829	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	830	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	831	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	832	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	833	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	834	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	835	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	836	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	837	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	838	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	839	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	840	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	841	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	842	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	843	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	844	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	845	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	846	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	847	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	848	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	849	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	850	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	851	}{	Salutations, jeune vampire. J'ai entendu parler de vos récentes difficultés avec LaCroix. Cela ne m'étonne pas. L'amour du pouvoir a toujours mené à la trahison, mais je suis heureux que vous ayez la vie sauve.	}{	Salutations, jeune vampire. J'ai entendu parler de vos récentes difficultés avec LaCroix. Cela ne m'étonne pas. L'amour du pouvoir a toujours mené à la trahison, mais je suis heureux que vous ayez la vie sauve.	}{	#	}{	}{	G.Regent_Ending = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	852	}{	Merci, Max. Le prince a passé des accords avec les Kuei-Jin.	}{	Merci, Max. Le prince a passé des accords avec les Kuei-Jin.	}{	861	}{	G.Story_State == 120	}{	}{	}{	}{	}{	}{	}{	}{	Le bouffon a passé un pacte avec les dévoreurs de vie orientaux. . .	}
+{	853	}{	Merci, Max. Il est temps de finir avec tout ça...	}{	Merci, Max. Il est temps de finir avec tout ça...	}{	0	}{	G.Story_State != 120	}{	}{	}{	}{	}{	}{	}{	}{	Le temps est écoulé, il est temps de s'amuser.	}
+{	854	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	855	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	856	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	857	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	858	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	859	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	860	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	861	}{	Hmm, c'est bien ce que je craignais. La bête prend bien des formes en nous, et il semble que LaCroix se soit abandonné à son pouvoir. Excusez-moi un instant.	}{	Hmm, c'est bien ce que je craignais. La bête prend bien des formes en nous, et il semble que LaCroix se soit abandonné à son pouvoir. Excusez-moi un instant.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	862	}{	(Auto-Link)	}{	(Auto-Link)	}{	871	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	863	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	864	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	865	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	866	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	867	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	868	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	869	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	870	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	871	}{	Oui. Oui, je vois. Bien sûr, mon seigneur. Il en sera fait ainsi.	}{	Oui. Oui, je vois. Bien sûr, mon seigneur. Il en sera fait ainsi.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	872	}{	(Auto-Link)	}{	(Auto-Link)	}{	881	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	873	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	874	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	875	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	876	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	877	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	878	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	879	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	880	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	881	}{	La Camarilla a besoin de votre aide, jeune vampire. Le prince et ses alliés orientaux doivent être châtiés avec autant de sévérité que possible. Vous avez déjà prouvé votre force à maintes reprises dans cette tragédie. Voulez-vous prouver une fois de plus votre loyauté à la Camarilla ?	}{	La Camarilla a besoin de votre aide, jeune vampire. Le prince et ses alliés orientaux doivent être châtiés avec autant de sévérité que possible. Vous avez déjà prouvé votre force à maintes reprises dans cette tragédie. Voulez-vous prouver une fois de plus votre loyauté à la Camarilla ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	882	}{	C'est pour cela que je suis ici.	}{	C'est pour cela que je suis ici.	}{	891	}{	IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	883	}{	C'est pour cela que je suis ici.	}{	C'est pour cela que je suis ici.	}{	901	}{	not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	Je brandis le drapeau de la Camarilla. . .	}
+{	884	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	885	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	886	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	887	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	888	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	889	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	890	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	891	}{	Oui. Il semble que le clan Tremere doive guider la Camarilla en cette période sombre. Agissez avec prudence, jeune vampire. Je crains que cette nuit annonce des choses bien plus sinistres que les machinations d'un prince inconstant.	}{	Oui. Il semble que le clan Tremere doive guider la Camarilla en cette période sombre. Agissez avec prudence, jeune vampire. Je crains que cette nuit annonce des choses bien plus sinistres que les machinations d'un prince inconstant.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	892	}{	Comment cela ?	}{	Comment cela ?	}{	911	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	893	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	894	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	895	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	896	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	897	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	898	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	899	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	900	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	901	}{	Nous nous rappellerons votre loyauté. Mais agissez avec prudence, jeune vampire. Je crains que cette nuit annonce des choses bien plus sinistres que les machinations d'un prince inconstant.	}{	Nous nous rappellerons votre loyauté. Mais agissez avec prudence, jeune vampire. Je crains que cette nuit annonce des choses bien plus sinistres que les machinations d'un prince inconstant.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	902	}{	Comment cela ?	}{	Comment cela ?	}{	911	}{	}{	}{	}{	}{	}{	}{	}{	}{	Clarifiez vos propos. . .	}
+{	903	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	904	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	905	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	906	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	907	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	908	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	909	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	910	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	911	}{	Je l'ignore. Le sarcophage paraît avoir déchaîné un ouragan, attirant ceux qui l'entourent dans son tumulte. Je ne sais quels secrets il abrite, mais sachez qu'une ombre plane sur mon esprit. Il est des pouvoirs qu'il ne faut pas importuner. . .	}{	Je l'ignore. Le sarcophage paraît avoir déchaîné un ouragan, attirant ceux qui l'entourent dans son tumulte. Je ne sais quels secrets il abrite, mais sachez qu'une ombre plane sur mon esprit. Il est des pouvoirs qu'il ne faut pas importuner. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	912	}{	Je pense que les Kuei-Jin ont la clé du sarcophage.	}{	Je pense que les Kuei-Jin ont la clé du sarcophage.	}{	921	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les dévoreurs de vie ont la clé qui ouvre ce secret de pierre. . .	}
+{	913	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	914	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	915	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	916	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	917	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	918	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	919	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	920	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	921	}{	Alors votre chemin vous conduira tout d'abord au Temple Kuei-Jin, où vous devrez éliminer Ming-Xiao et ses serviteurs. Après que vous aurez pris la clé, vous devrez vous tourner contre LaCroix et son chien enragé. Alors seulement la justice sera faite.	}{	Alors votre chemin vous conduira tout d'abord au Temple Kuei-Jin, où vous devrez éliminer Ming-Xiao et ses serviteurs. Après que vous aurez pris la clé, vous devrez vous tourner contre LaCroix et son chien enragé. Alors seulement la justice sera faite.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	922	}{	Je comprends. Et je ferai ce qu'il faut. Pour la Camarilla.	}{	Je comprends. Et je ferai ce qu'il faut. Pour la Camarilla.	}{	931	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je brandis bien haut ma bannière au sein de cette terrible tempête. . .	}
+{	923	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	924	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	925	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	926	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	927	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	928	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	929	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	930	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	931	}{	Je n'en doute pas, jeune vampire. Je vous souhaite bonne chance dans la fin de ce drame. Adieu.	}{	Je n'en doute pas, jeune vampire. Je vous souhaite bonne chance dans la fin de ce drame. Adieu.	}{	#	}{	}{	pc.SetQuest("Ming",7)	}{	}{	}{	}{	}{	}{	}{	}
+{	932	}{	A plus, Max.	}{	A plus, Max.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'attends mon appel. Adieu, roi-sorcier. . .	}
+{	933	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	934	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	935	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	936	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	937	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	938	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	939	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	940	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	941	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	942	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	943	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	944	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	945	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	946	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	947	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	948	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	949	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	950	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	951	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	952	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	953	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	954	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	955	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	956	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	957	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	958	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	959	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	960	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	961	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	962	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	963	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	964	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	965	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	966	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	967	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	968	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	969	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	970	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	971	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	972	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	973	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	974	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	975	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	976	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	977	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	978	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	979	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	980	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	981	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	982	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	983	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	984	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	985	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	986	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	987	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	988	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	989	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	990	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	991	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	992	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	993	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	994	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	995	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	996	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	997	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	998	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	999	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1000	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1001	}{	Bien joué, jeune vampire. Vos pouvoirs sont considérables pour un être si jeune. Vous serez un grand atout pour la Camarilla dans les années à venir et le sarcophage restera en sécurité entre les mains de la Camarilla.	}{	Bien joué, jeune vampire. Vos pouvoirs sont considérables pour un être si jeune. Vous serez un grand atout pour la Camarilla dans les années à venir et le sarcophage restera en sécurité entre les mains de la Camarilla.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1002	}{	Merci, Max. Et le sarcophage ?	}{	Merci, Max. Et le sarcophage ?	}{	1011	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que savez-vous de ce sarcophage secret ?	}
+{	1003	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1004	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1005	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1006	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1007	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1008	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1009	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1010	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1011	}{	Je vous ai déjà dit qu'il est des pouvoirs à ne pas déranger. Je ne sais pas ce que contient ce sarcophage, et je crois qu'il vaut mieux ne pas l'apprendre. Si ce sont les dernières nuits de notre existence, je ne souhaite pas précipiter la Géhenne. Oui, je pense que nous devrions renoncer à élucider ce mystère, et écarter cet artefact là où personne ne pourra succomber à son attraction.	}{	Je vous ai déjà dit qu'il est des pouvoirs à ne pas déranger. Je ne sais pas ce que contient ce sarcophage, et je crois qu'il vaut mieux ne pas l'apprendre. Si ce sont les dernières nuits de notre existence, je ne souhaite pas précipiter la Géhenne. Oui, je pense que nous devrions renoncer à élucider ce mystère, et écarter cet artefact là où personne ne pourra succomber à son attraction.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1012	}{	(Auto-Link)	}{	(Auto-Link)	}{	1021	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1013	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1014	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1015	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1016	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1017	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1018	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1019	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1020	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1021	}{	La Camarilla a toujours excellé à cacher les vérités qu'il faut taire. Que les ombres du temps recouvrent ce sombre trésor, et qu'il finisse par disparaître même de nos mémoires. Certaines choses méritent l'oubli, jeune vampire.	}{	La Camarilla a toujours excellé à cacher les vérités qu'il faut taire. Que les ombres du temps recouvrent ce sombre trésor, et qu'il finisse par disparaître même de nos mémoires. Certaines choses méritent l'oubli, jeune vampire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1022	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1023	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1024	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1025	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1026	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1027	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1028	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1029	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1030	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1031	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1032	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1033	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1034	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1035	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1036	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1037	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1038	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1039	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1040	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1041	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1042	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1043	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1044	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1045	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1046	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1047	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1048	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1049	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1050	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1051	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1052	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1053	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1054	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1055	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1056	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1057	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1058	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1059	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1060	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1061	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1062	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1063	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1064	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1065	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1066	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1067	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1068	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1069	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1070	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1071	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1072	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1073	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1074	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1075	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1076	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1077	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1078	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1079	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1080	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1081	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1082	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1083	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1084	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1085	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1086	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1087	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1088	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1089	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1090	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1091	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1092	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1093	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1094	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1095	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1096	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1097	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1098	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1099	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1102	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1112	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1121	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1122	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1132	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1142	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1143	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1151	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1152	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1162	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1172	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1173	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1182	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1183	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1191	}{	Ah, un enfant de Malkav, rien que cela. Les sombres visions occultent-elles votre vue, jeune vampire ? Des reflets brisés de l'esprit du père de votre clan ?	}{	Ah, un enfant de Malkav, rien que cela. Les sombres visions occultent-elles votre vue, jeune vampire ? Des reflets brisés de l'esprit du père de votre clan ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1192	}{	Le verre est craquelé, mais étrangement clair. . .	}{	Le verre est craquelé, mais étrangement clair. . .	}{	1201	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1193	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1201	}{	Il y a du vrai dans vos paroles, jeune vampire, plus que vous l'imaginez. Votre folie vous permet de voir la vérité de cette existence, de percer le voile sombre et de voir le monde au-delà. . .	}{	Il y a du vrai dans vos paroles, jeune vampire, plus que vous l'imaginez. Votre folie vous permet de voir la vérité de cette existence, de percer le voile sombre et de voir le monde au-delà. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1202	}{	Sur votre tête une couronne de fer, le bouffon danse pour vous. . .	}{	Sur votre tête une couronne de fer, le bouffon danse pour vous. . .	}{	1211	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1203	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1211	}{	Hmmm. Attention quand vous parlez de ces visions, jeune vampire. La vérité est rarement accueillie par ceux qui ne peuvent la voir. Beaucoup de vampires l'accepteront moins bien que moi. . .	}{	Hmmm. Attention quand vous parlez de ces visions, jeune vampire. La vérité est rarement accueillie par ceux qui ne peuvent la voir. Beaucoup de vampires l'accepteront moins bien que moi. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1212	}{	Dites-moi votre nom, roi-sorcier.	}{	Dites-moi votre nom, roi-sorcier.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1213	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1221	}{	Pas plus que vous-même. Mais je sais que LaCroix se concentre trop sur son acquisition. Son besoin évident révèle une faiblesse que ses ennemis pourraient un jour exploiter.	}{	Pas plus que vous-même. Mais je sais que LaCroix se concentre trop sur son acquisition. Son besoin évident révèle une faiblesse que ses ennemis pourraient un jour exploiter.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1222	}{	Que pensez-vous qu'il s'y trouve ?	}{	Que pensez-vous qu'il s'y trouve ?	}{	1231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quel secret se cache sous son couvercle ?	}
+{	1223	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1224	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1231	}{	Je l'ignore, mais j'admets qu'il y a un changement dans l'air, quelque chose de subtil et pas tout à fait agréable. Peut-être l'arrivée du sarcophage annonce-t-elle une chose plus terrible. . .	}{	Je l'ignore, mais j'admets qu'il y a un changement dans l'air, quelque chose de subtil et pas tout à fait agréable. Peut-être l'arrivée du sarcophage annonce-t-elle une chose plus terrible. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1232	}{	Par exemple ?	}{	Par exemple ?	}{	1241	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1233	}{	Une ombre, un lapin curieux, et le pilier étincelant dans la nuit !	}{	Une ombre, un lapin curieux, et le pilier étincelant dans la nuit !	}{	1236	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1236	}{	Vous paraissez savoir plus de choses que moi à ce sujet. Je prie pour que vos visions n'annoncent pas notre fin à tous.	}{	Vous paraissez savoir plus de choses que moi à ce sujet. Je prie pour que vos visions n'annoncent pas notre fin à tous.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1237	}{	Puis-je fouiller votre matière grise ?	}{	Puis-je fouiller votre matière grise ?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1238	}{	Je ne suis plus là.	}{	Je ne suis plus là.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1241	}{	Je n'en dirai pas plus.	}{	Je n'en dirai pas plus.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1242	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	141	}{	G.Regent_Ending == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1243	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1251	}{	Salutations.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1252	}{	Oui ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1253	}{	Que faites-vous ici ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1254	}{	Je ne désire plus vous parler.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1255	}{	Oui.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1256	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1257	}{	Merci.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1258	}{	Qu'est-ce que vous avez dit ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1259	}{	Quoi ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1260	}{	Je ne sais pas.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1261	}{	Je ne peux pas vous aider.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1262	}{	Cela me fait plaisir.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1263	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1264	}{	Prenez ceci.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1265	}{	Je vous enverrai un e-mail à ce sujet.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1270	}{	(Starting Condition)	}{	}{	1241	}{	G.Story_State >= 100 and G.Regent_Ending == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1271	}{	(Starting Condition)	}{	}{	851	}{	G.Story_State >= 100	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1272	}{	(Starting Condition)	}{	}{	791	}{	G.Regent_Pissed == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1273	}{	(Starting Condition)	}{	}{	771	}{	G.Regent_Pissed > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1274	}{	(Starting Condition)	}{	}{	31	}{	G.Regent_Introduced == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1275	}{	(Starting Condition)	}{	}{	11	}{	G.Regent_Invitation == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1276	}{	(Starting Condition)	}{	}{	1	}{	G.Regent_Invitation == 0	}{	}{	}{	}{	}{	}{	}{	}{	}

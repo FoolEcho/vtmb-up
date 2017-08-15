@@ -1,0 +1,99 @@
+TerminalDefinition
+{
+	"screen saver"		"Les aventures de Monacles !"		// Bounces around on the screen when the terminal is not being used. 
+	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Empire Hotel"
+		"line1"		"Réservations suite et services"
+
+	}
+
+	SubDir
+	{
+		"name"			"suites"
+		"password"		"wealth"
+		"description"		"Occupation suite"
+		
+		Function
+		{
+			"name"		"Suite Albany"
+			"description"	"Libre"
+			"runtext"	"La suite Albany (1er étage) est LIBRE. Prochaine réservation : DIMANCHE"		// changed by wesp
+		}
+		
+		Function	// added by wesp
+		{
+			"name"		"Suite de la Reine"
+			"description"	"Occupée"
+			"runtext"	"La suite de la Reine (2ème étage) est OCCUPEE. Client: Anders Johansen. Réservée jusqu'à : PREAVIS"
+		}
+
+		Function
+		{
+			"name"		"Suite Manhattan"
+			"description"	"LIBRE"
+			"runtext"	"La suite Manhattan (3ème étage) est LIBRE. Prochaine réservation : LUNDI"		// changed by wesp
+		}
+
+		Function
+		{
+			"name"		"Suite Ithaca"
+			"description"	"Occupée"
+			"runtext"	"La suite Ithaca (4ème étage) est OCCUPEE. Client : Ashley Jones. Réservée jusqu'à : DEMAIN"		// changed by wesp
+		}
+
+
+		Function
+		{
+			"name"		"Suite Brooklyn"
+			"description"	"LIBRE"
+			"runtext"	"La suite Brooklyn (5ème étage) est OCCUPEE. Client : Jezeble Locke. Réservée jusqu'à : MOIS PROCHAIN"		// changed by wesp
+		"runscript"	"cardPrinterEnablePlus()"
+		}
+
+		Function
+		{
+			"name"		"Suite Buffalo"
+			"description"	"Occupée"
+			"runtext"	"La suite Buffalo (6ème étage) est OCCUPEE. Client : Boris Chekhov. Réservée jusqu'à : INDEFINI"		// changed by wesp
+		}
+	}
+
+	SubDir
+	{
+		"name"			"Registres"
+		"password"		"power"
+		"description"		"Registre transactions"
+		
+		Function
+		{
+			"name"		"Checkov, B"
+			"description"	"Transactions"
+			"runtext"	"Film : 'Planet La Femme' : 10 $. Steak et homard : 80 $."
+		}
+
+		Function	// added by wesp
+		{
+			"name"		"Johansen, A"
+			"description"	"Transactions"
+			"runtext"	"Néant"
+		}
+		
+		Function
+		{
+			"name"		"Jones, A"
+			"description"	"Transactions"
+			"runtext"	"Bouteille de Champe de Chatre : 290 $"
+		}
+
+		Function
+		{
+			"name"		"Locke, J"
+			"description"	"Transactions"
+			"runtext"	"Néant"
+		}
+	}
+}

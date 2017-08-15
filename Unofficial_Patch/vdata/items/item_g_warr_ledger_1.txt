@@ -1,0 +1,77 @@
+
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	
+	"infomodel"	"models/items/dayplanner/info/Info_dayplanner.mdl"
+	"playermodel"	"models/items/dayplanner/ground/dayplanner.mdl"
+	
+	"anim_prefix"	" "
+
+	"printname"	"Journal"
+	"description"	"On dirait le journal hebdomadaire du Département de l'Eau et de l'Electricité de Los Angeles (LADWP), 1972 :
+
+			03/03/72 - Des rapports sur les récents 'fantômes' des égouts ont poussé le maire à demander la tenue d'un journal hebdomadaire des opérations dans les sections inférieures, 453-500. Le journal commence aujourd'hui. Rien à remarquer, mais certaines histoires me paraissent idiotes et sans fondement.
+
+			10/03/72 - Les deux équipes d'investigation de cette semaine n'ont rien rapporté d'exceptionnel, mais l'un des membres (qui n'a pas l'air de boire que de l'eau) a remarqué qu'il a entendu des murmures, faute d'un meilleur mot, lors de sa ronde dans la section 476. Ce devait être l'oeuvre d'une imagination active et imbibée.
+			
+			17/03/72 - Rien à rapporter. Opérations normales.
+			
+			24/03/72 - C'est le chaos, ici, avec les 'apparitions' à la chaîne dans les sections 498 et 499. Bien que la plupart aient décrit des 'silhouettes sombres', ces rapports viennent d'hommes en qui j'ai confiance. Si on élimine les histoires habituelles de communautés souterraines de sans-abri et les animaux sauvages et aveugles, je ne sais pas comment expliquer ces observations. Je vais accompagner les équipes demain pour voir par moi-même ce qui se passe en bas. 
+			
+			01/04/72 - J'ai accompagné une équipe dans les sections en question et je dois reconnaître que j'ai vu et entendu des choses inexplicables. Plusieurs fois, j'ai entendu les murmures déjà rapportés et j'ai poursuivi ce qui m'a paru être une silhouette sombre dans un couloir, pour finir ma course devant un mur de briques. . . On aurait dit une section ancienne des égouts qu'on aurait murée. Il n'y avait personne dans les parages, mais j'aurais juré entendre un rire qui rebondissait dans les ténèbres autour de moi. Je vais être obligé de faire mon rapport au maire lui-même, vendredi. 
+			
+			08/04/72 - Le maire nous a tous fait jurer le silence au sujet de ces observations, mais il a promis de répondre à nos inquiétudes dans la semaine. Des demandes d'anciennes archives et de vieux rapports du LADWP ont rencontré une résistance étrange. . . On dirait qu'on les a classifiées pour raisons officielles. Il y a quelque chose de bizarre. . .
+			
+			15/04/72 - Le maire a annoncé aujourd'hui que les sections 475-500 seront définitivement murées et qu'aucune autre enquête ne sera tolérée sur ce sujet. J'ai quelques contacts au bureau des relations publiques et on dirait que ce genre de chose s'est déjà produit. . . et que le conseil de la ville n'a pas envie de faire trop de bruit. Mon contact a dit qu'il ne pouvait pas m'en apprendre davantage et que si je parlais à qui que ce soit, il nierait me connaître. 
+			
+			22/04/72 - Les sections d'égout ferment demain et les ingénieurs de la ville ont muré les couloirs qui y mènent. Ce bureau se trouve dans la section 482 et il sera donc muré lui aussi. Puisque personne n'a demandé les journaux, toutes les archives concernant ceci seront laissées à moisir avec les fantômes. Je le regrette, mais puisque aucune personne officielle ne lira jamais ces lignes, j'ai pu m'étendre sur les événements de ces derniers jours. Journal terminé.
+			
+			
+	"bucket"		"1"
+	"bucket_position"	"2"
+
+	"camera_class"		"noswitch"
+	"is_wieldable"		"0"
+	"weight"		"1"
+	"item_flags"		"1"
+	"item_type"		"powerup"
+	"item_worth"		"-1"
+	"is_visible_in_hud"		"1"
+
+	SoundData
+	{
+		"pickup"
+		{
+			"sound1"	"items/Magazine/Pickup.wav"
+		}
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	SpriteData
+	{
+		"weapon"
+		{
+			"640"
+			{
+				"file"	"hud/Inventory_Images/General_Items/dayplanner_SEL"
+				"x"		"0"
+				"y"		"0"
+				"width"	"100"
+				"height"	"64"
+			}
+		}
+		"weapon_s"
+		{
+			"640"
+			{
+				"file"	"hud/Inventory_Images/General_Items/dayplanner"
+				"x"		"0"
+				"y"		"0"
+				"width"	"100"
+				"height"	"64"
+			}
+		}
+	}
+}

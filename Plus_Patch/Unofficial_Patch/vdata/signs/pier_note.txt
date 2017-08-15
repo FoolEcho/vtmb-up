@@ -1,0 +1,32 @@
+SignData	// added by wesp
+{
+	// NOTE: Labels get text justification
+	//	 TextBlocks get word wrapping	
+	//	 Font sizes per resolution are defined in vampire/resource/TrackerScheme.res
+
+	// if you don't specify X and Y pos for the background image, it will autocenter. 
+	BackgroundImage
+	{
+		"Name"		"hud/signs/notepad_yellow"
+		"Tiled"		"0"
+//		"XPos"		"100"
+//		"YPos"		"100"
+		"Wide"		"360"
+		"Tall"		"532"
+	}
+
+
+	TextBlock
+	{
+		"Text"		"Beckett, je crois que le Lasombra m'a repéré et m'a peut-être tendu un piège! Au cas où je ne m'en sortirais pas, j'ai trouvé une entrée qui conduit à la cave de la bibliothèque depuis les égouts du centre-ville. J'ai déverrouillé le sas d'entrée. -Scott"
+		"Font"		"Vamp_Handwriting1"
+		"XPos"		"103"
+		"YPos"		"120"
+		"Wide"		"250"
+		"Tall"		"400"
+		"TextRGBA"		"[0,0,0,150]"
+		"BackgroundRGBA"	"[0,0,0,0]"
+	}
+
+}
+

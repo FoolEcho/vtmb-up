@@ -1,0 +1,63 @@
+{	1	}{	Que se passe-t-il, mon frère ? Vous avez vu la lumière ?	}{	Que se passe-t-il, ma soeur ? Vous avez vu la lumière ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Euh, non.	}{	Euh, non.	}{	11	}{	not pc.HasItem("item_g_brotherhood_flyer")	}{	}{	}{	}{	}{	}{	}{	}{	Plus que vous ne pouvez l'imaginer.	}
+{	3	}{	Oui.	}{	Oui.	}{	11	}{	not pc.HasItem("item_g_brotherhood_flyer")	}{	}{	}{	}{	}{	}{	}{	}{	Non, mais j'ai vu les problèmes.	}
+{	4	}{	Oui. [lui montre le flyer.]	}{	Oui. [lui montre le flyer.]	}{	21	}{	pc.HasItem("item_g_brotherhood_flyer")	}{	}{	}{	}{	}{	}{	}{	}{	Alléluia, mon frère, je vois la lumière. [lui montrer le flyer.]	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Désolée, mon frère, revenez quand vous aurez vu la lumière.	}{	Désolée, ma soeur, revenez quand vous aurez vu la lumière.	}{	#	}{	}{	G.Jumbles_Refused = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	13	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Je vois. Bienvenue dans la Confrérie. L'Evêque va vous recevoir à l'étage.	}{	Je vois. Bienvenue dans la Confrérie. L'Evêque va vous recevoir à l'étage.	}{	#	}{	}{	G.Jumbles_Enter = 1; pc.AwardExperience("AllPlague02"); pc.RemoveItem("item_g_brotherhood_flyer")	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	23	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Tous les frères et soeurs qui nous rejoignent doivent aller voir l'Evêque. Montez, il vous attend.	}{	Tous les frères et soeurs qui nous rejoignent doivent aller voir l'Evêque. Montez, il vous attend.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Ca y est, vous avez vu la lumière, mon frère ?	}{	Ca y est, vous avez vu la lumière, ma soeur ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Euh. . . oui ?	}{	Euh. . . oui ?	}{	11	}{	not pc.HasItem("item_g_brotherhood_flyer")	}{	}{	}{	}{	}{	}{	}{	}{	A laquelle de mes personnalités parlez-vous ?	}
+{	43	}{	Je ne crois pas.	}{	Je ne crois pas.	}{	11	}{	not pc.HasItem("item_g_brotherhood_flyer")	}{	}{	}{	}{	}{	}{	}{	}{	Si l'illumination est une déficience psychologique, alors certainement.	}
+{	44	}{	Oui. [lui montrer le flyer.]	}{	Oui. [lui montrer le flyer.]	}{	21	}{	pc.HasItem("item_g_brotherhood_flyer")	}{	}{	}{	}{	}{	}{	}{	}{	Alléluia, mon frère, je vois la lumière. [lui montrer le flyer.]	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	(Starting Condition)	}{	(Starting Condition)	}{	31	}{	G.Jumbles_Enter == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	(Starting Condition)	}{	(Starting Condition)	}{	41	}{	G.Jumbles_Refused == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

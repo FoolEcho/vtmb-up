@@ -1,0 +1,505 @@
+{	1	}{	Salut mon vieux !	}{	Salut mignonne. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Euh, salut. . . t'es qui, toi ?	}{	Euh, salut. . . t'es qui, toi ?	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Je ne suis pas ton vieux, pauvre naze.	}{	Tu calmes tes ardeurs, connard.	}{	11	}{	not IsClan(pc,"Malkavian") and G.Flynn_Extra == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Ah ! Le Prince du Porno !	}{	Ah ! Le Prince du Porno !	}{	371	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Eh, eh, relax ! On dirait que t'es un peu du genre crispé, toi. Remarque, t'es au bon endroit pour te détendre. . .	}{	Eh, eh, relax ! On dirait que t'es un peu du genre crispé, toi. Remarque, t'es au bon endroit pour te détendre. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Ouais, c'est ça. T'es qui ?	}{	Ouais, c'est ça. T'es qui ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Mon seul problème, c'est ta bouche, connard. M'oblige pas à le résoudre.	}{	Mon seul problème, c'est ta bouche, connard. M'oblige pas à le résoudre.	}{	41	}{	Intimidate 6 & G.Flynn_Extra == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Mon seul problème, c'est ta bouche, connard. M'oblige pas à le résoudre.	}{	Mon seul problème, c'est ta bouche, connard. M'oblige pas à le résoudre.	}{	51	}{	Intimidate -6 & G.Flynn_Extra == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Je m'appelle Flynn. Flynn Boyle. Et je suis le propriétaire de cet établissement. Au Sin Bin, ou trouve tout ce qu'on veut. Dépravé, c'est pas déplacé, ici. Tu vois ce que je veux dire ?	}{	Je m'appelle Flynn. Flynn Boyle. Et je suis le propriétaire de cet établissement. Au Sin Bin, ou trouve tout ce qu'on veut. Dépravé, c'est pas déplacé, ici. Tu vois ce que je veux dire ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Flynn_Knows = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Dis-m'en un peu plus.	}{	Dis-m'en un peu plus.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Et cet antre du péché ?	}
+{	23	}{	J'ai quelques questions pour toi, Flynn.	}{	J'ai quelques questions pour toi, Flynn.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'explorer ton crâne. . .	}
+{	24	}{	Tu as une fille qui travaille ici, avec un coeur brisé tatoué dans le dos ?	}{	Tu as une fille qui travaille ici, avec un coeur brisé tatoué dans le dos ?	}{	231	}{	pc.GetQuestState("Strip") > 0 and G.Flynn_Chastity == 0 and not IsDead("Chastity")	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche la fille qui porte le coeur dans son dos.	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	Alors je mets les bouts. Salut, Flynn.	}{	Alors je mets les bouts. Salut, Flynn.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	30	}{	T'as raison, dépravé, c'est pas la même chose que déplacé. Ca veut pas dire la même chose. Allez, je me casse.	}{	T'as raison, dépravé, c'est pas la même chose que déplacé. Ca veut pas dire la même chose. Allez, je me casse.	}{	365	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Qu'est-ce que tu veux, mon pote ?	}{	Qu'est-ce que tu veux, chérie ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	J'ai quelques questions pour toi. . .	}{	J'ai quelques questions pour toi. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'explorer ton crâne. . .	}
+{	33	}{	Tu connais quelqu'un qui s'appelle Ginger Swann ?	}{	Tu connais quelqu'un qui s'appelle Ginger Swann ?	}{	241	}{	G.Ginger_Swan == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche Ginger Swan !	}
+{	34	}{	Tu as une fille qui travaille ici, avec un coeur brisé tatoué dans le dos ?	}{	Tu as une fille qui travaille ici, avec un coeur brisé tatoué dans le dos ?	}{	231	}{	pc.GetQuestState("Strip") > 0 and G.Flynn_Chastity == 0 and not IsDead("Chastity")	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche la fille qui porte le coeur dans son dos. . .	}
+{	35	}{	Peut-être que je peux utiliser un peu de ton matos, montre-moi ce que tu as.	}{	Peut-être que je peux utiliser un peu de ton matos, montre-moi ce que tu as	}{	0	}{	G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Voici mes yeux, montre-leur ta courtoisie.	}
+{	36	}{	Rien pour l'instant, Flynn. A plus.	}{	Rien pour l'instant, Flynn. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	[effrayé]OK, désolé, m'sieur, je ne voulais pas de problème. Qu'est-ce qu'il te faut ?	}{	[effrayé]OK, désolé, miss, je ne voulais pas de problème. Qu'est-ce qu'il te faut ?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Flynn_Bitch = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	J'aime mieux ça. Et puisque tu es bien sage, tu vas me dire ton nom, maintenant.	}{	J'aime mieux ça. Et puisque tu es bien sage, tu vas me dire ton nom, maintenant.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	[ricane]C'est ça. Eh, on est à Hollywood, des taches comme toi j'en vois tout le temps. Tu continues de me parler comme ça, et il n'y a pas que ta salive qui va couler. . .	}{	[ricane]C'est ça. Eh, on est à Hollywood, des taches comme toi j'en vois tout le temps. Tu continues de me parler comme ça, et il n'y a pas que ta salive qui va couler. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Bon, OK. Allez, on se calme, reprenons. Qui es-tu et quelle est cet endroit?	}{	Bon, OK. Allez, on se calme, reprenons. Qui es-tu et quelle est cet endroit?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Ah ouais ? Bah viens, on va régler ça, trouduc.	}{	Ah ouais ? Bah viens, on va régler ça, trouduc.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	C'est nul ici. Je me casse.	}{	C'est nul ici. Je me casse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Ouais ? Qu'est-ce que tu veux, encore ?	}{	Ouais ? Qu'est-ce que tu veux, encore ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Parle-moi de cet endroit.	}{	Parle-moi de cet endroit.	}{	71	}{	G.Flynn_Filth == 0	}{	}{	}{	}{	}{	}{	}{	}{	Et cet antre du péché ?	}
+{	63	}{	Parle-moi un peu d'Hollywood.	}{	Parle-moi un peu d'Hollywood.	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Raconte-moi l'histoire de Celluloid City !	}
+{	64	}{	Tu as déjà entendu parler de Ginger Swan ?	}{	Tu as déjà entendu parler de Ginger Swan ?	}{	241	}{	G.PC_KnowsDMP == 0 and G.Ginger_Swan == 1 and pc.GetQuestState("Courier") < 5	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche Ginger Swan !	}
+{	65	}{	Tu connais Death Mask Productions ?	}{	Tu connais Death Mask Productions ?	}{	91	}{	G.Isaac_Quest == 1 and G.Flynn_HeardDMP == 0 and G.Flynn_Tapeknows == 0 and G.Flynn_Message == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tu as entendu parler de Death Mask ?	}
+{	66	}{	Parle-moi encore de Death Mask Productions.	}{	Parle-moi encore de Death Mask Productions.	}{	121	}{	G.Flynn_HeardDMP == 1 and G.Flynn_Tapeknows == 0 and G.Flynn_Message == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi de Death Mask !	}
+{	67	}{	Flynn, il faut que je trouve Death Mask Productions !	}{	Flynn, il faut que je trouve Death Mask Productions !	}{	171	}{	G.Flynn_Tapeknows == 1 and G.Flynn_Message == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de supprimer Death Mask, prince perverti !	}
+{	68	}{	Je cherche un exemplaire particulier de Guy Magazine. . .	}{	Je cherche un exemplaire particulier de Guy Magazine. . .	}{	401	}{	G.Imalia_Guymag == 1 and G.Flynn_Guymag == 0 and G.Flynn_Sticky == 0	}{	G.Flynn_Guymag = 1	}{	}{	}{	}{	}{	}{	}{	Je cherche un certain magazine.	}
+{	69	}{	J'ai toujours besoin du magazine, Flynn. . .	}{	J'ai toujours besoin du magazine, Flynn. . .	}{	411	}{	G.Flynn_Guymag == 1 and G.Flynn_Sticky == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche encore et toujours ce magazine !	}
+{	70	}{	Rien pour l'instant. A plus.	}{	Rien pour l'instant. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	71	}{	Le Sin Bin ? On a des trucs pour tous les goûts. Tu me dis ce qui te fait du bien, mec, et je t'arrange le coup.	}{	Le Sin Bin ? On a des trucs pour tous les goûts. Tu me dis ce qui te fait du bien, ma chérie, et je t'arrange le coup.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Ah ouais ? Parle-moi un peu de tes, euh. . . produits. . .	}{	Ah ouais ? Parle-moi un peu de tes, euh. . . produits. . .	}{	81	}{	}{	G.Flynn_Filth = 1	}{	}{	}{	}{	}{	}{	}{	Décris-moi tes marchandises de plaisir !	}
+{	73	}{	Une autre fois, peut-être. Il me reste quelques questions à te poser. . .	}{	Une autre fois, peut-être. Il me reste quelques questions à te poser. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'explorer ta matière grise. . .	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	Pour me faire du bien, j'ai pas besoin de toi, gros pervers. A plus.	}{	Pour me faire du bien, j'ai pas besoin de toi, gros pervers. A plus.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon cerveau est déjà parti. Mon corps le suit.	}
+{	81	}{	Je te jure, on a tout ce qu'il te faut. Du soft, du hard, du gay, de l'hétéro, des animaux à poils ou à plumes. On a des trucs qui font gerber, qui font peur, des autolubrifiés, des trucs qui s'attachent. Les chaînes, les cravaches, les cannes, c'est à l'arrière, à côté des gros engins. Comme je te dis, on a de tout.	}{	Je te jure, on a tout ce qu'il te faut. Du soft, du hard, du gay, de l'hétéro, des animaux à poils ou à plumes. On a des trucs qui font gerber, qui font peur, des autolubrifiés, des trucs qui s'attachent. Les chaînes, les cravaches, les cannes, c'est à l'arrière, à côté des gros engins. Comme je te dis, on a de tout.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	On dirait. Il me reste quelques questions pour toi. . .	}{	On dirait. Il me reste quelques questions pour toi. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'explorer ta matière grise. . .	}
+{	83	}{	Peut-être que je peux utiliser un peu de ton matos, montre-moi ce que tu as.	}{	Peut-être que je peux utiliser un peu de ton matos, montre-moi ce que tu as	}{	0	}{	G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Voici mes yeux, montre-leur ta courtoisie.	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	En effet. Allez, je file.	}{	En effet. Allez, je file.	}{	363	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre se pose sur d'autres domaines.	}
+{	91	}{	[Baisse la voix]DMP ? Ouais, je connais de nom. Pourquoi ?	}{	[Baisse la voix]DMP ? Ouais, je connais de nom. Pourquoi ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Ca me dirait bien de trouver un de leurs produits.	}{	Ca me dirait bien de trouver un de leurs produits.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je donne dans les collections curieuses. . .	}
+{	93	}{	Pure curiosité. J'en ai entendu parler dans un magazine.	}{	Pure curiosité. J'en ai entendu parler dans un magazine.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai vu quelque chose dans un magazine macabre. . .	}
+{	94	}{	J'ai une cassette d'eux, et j'aimerais savoir si c'est du vrai.	}{	J'ai une cassette d'eux, et j'aimerais savoir si c'est du vrai.	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai la vilaine vidéo. . .	}
+{	95	}{	Pour rien. Salut.	}{	Pour rien. Salut.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	[soupçonneux]Vraiment ? T'es flic ?	}{	[soupçonneux]Vraiment ? T'es flic ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Tu trouves vraiment que j'ai une tête de poulet ? Je cherche juste des renseignements.	}{	Tu trouves vraiment que j'ai une tête de poulet ? Je cherche juste des renseignements.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis pas un de ces amateurs de beignets. . . J'ai des questions sans réponses. . .	}
+{	103	}{	Ca se pourrait. Donc, tu ferais mieux de te mettre à table, mec.	}{	Ca se pourrait. Donc, tu ferais mieux de te mettre à table, mec.	}{	171	}{	}{	G.Flynn_Cop = 1	}{	}{	}{	}{	}{	}{	}{	Dans ma poche un badge, dans mon estomac un beignet. Parle !	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	Bon, là, ça devient pénible. Je me casse.	}{	Bon, là, ça devient pénible. Je me casse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu ne peux pas me parler, je ne suis plus là. . .	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	[ricane, incrédule]Tu as entendu parler de DMP dans un magazine ? C'est ça. J'ai l'air né de la dernière pluie ? Y a pas moyen que t'aies entendu parler d'eux dans un magazine. . .	}{	[ricane, incrédule]Tu as entendu parler de DMP dans un magazine ? C'est ça. J'ai l'air né de la dernière pluie ? Y a pas moyen que t'aies entendu parler d'eux dans un magazine. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	D'accord, j'ai menti. Je cherche juste des renseignements.	}{	D'accord, j'ai menti. Je cherche juste des renseignements.	}{	101	}{	Persuasion -6	}{	}{	}{	}{	}{	}{	}{	}{	Tu vois la tache des mensonges sur mes lèvres. J'ai des questions sans réponses. . .	}
+{	113	}{	C'est un truc underground. Tu n'as pas dû en entendre parler.	}{	C'est un truc underground. Tu n'as pas dû en entendre parler.	}{	121	}{	Persuasion 6	}{	}{	}{	}{	}{	}{	}{	}{	Son nom est si secret que je ne puis le dire à voix haute. . .	}
+{	114	}{	Continue comme ça, et c'est ta nécro que je vais lire dans un magazine. Allez, salut.	}{	Continue comme ça, et c'est ta nécro que je vais lire dans un magazine. Allez, salut.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	C'est ça. Allez, je me casse.	}{	C'est ça. Allez, je me casse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Bon écoute, je vais te dire deux ou trois trucs, mais si quelqu'un te demande quoi que ce soit, on ne se connaît pas. DMP ne fait que des vidéos très hardcore. Pas du marché noir, plutôt du marché trou noir, tu vois. . . C'est pas le genre de trucs où t'as envie de mettre le doigt.	}{	Bon écoute, je vais te dire deux ou trois trucs, mais si quelqu'un te demande quoi que ce soit, on ne se connaît pas. DMP ne fait que des vidéos très hardcore. Pas du marché noir, plutôt du marché trou noir, tu vois. . . C'est pas le genre de trucs où t'as envie de mettre le doigt.	}{	#	}{	}{	G.Flynn_HeardDMP = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Ah ouais ? Comme quoi ?	}{	Ah ouais ? Comme quoi ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dépeins-moi ce produit !	}
+{	123	}{	Super. Génial. Dis-moi où je peux trouver ces types.	}{	Super. Génial. Dis-moi où je peux trouver ces types.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où puis-je trouver Death Mask ?	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	Tu dois avoir raison. Salut, Flynn.	}{	Tu dois avoir raison. Salut, Flynn.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	131	}{	Le genre de truc qui peut t'envoyer en taule juste pour en avoir parlé, OK ? Les snuffs, ce n'est que le haut de l'iceberg. J'ai vu qu'un seul de leurs films et je n'ai pas pu bouffer pendant une semaine.	}{	Le genre de truc qui peut t'envoyer en taule juste pour en avoir parlé, OK ? Les snuffs, ce n'est que le haut de l'iceberg. J'ai vu qu'un seul de leurs films et je n'ai pas pu bouffer pendant une semaine.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Vraiment ? C'est du vrai, dans leurs vidéos ?	}{	Vraiment ? C'est du vrai, dans leurs vidéos ?	}{	141	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	La réalité réside-t-elle dans cette vilaine vidéo ?	}{	La réalité réside-t-elle dans cette vilaine vidéo ?	}{	136	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	Quoi ? Eh, tu dois planer grave, là. . . eh, tu m'entends ? J'ai eu l'impression que tu étais ailleurs. . . Je sais pas, tu parlais de réalité, je sais pas quoi. . . Tu devrais décrocher un peu, si tu veux mon avis. . .	}{	Quoi ? Eh, tu dois planer grave, là. . . eh, tu m'entends ? J'ai eu l'impression que tu étais ailleurs. . . Je sais pas, tu parlais de réalité, je sais pas quoi. . . Tu devrais décrocher un peu, si tu veux mon avis. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	Non ! C'est réel ? Cette cassette montre la vérité ?	}{	Non ! C'est réel ? Cette cassette montre la vérité ?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Suffisamment pour que tous les flics à la ronde essayent de retrouver ces mecs. DMP, c'est mauvais pour les affaires, tu sais. Si tu veux un conseil, arrête d'y penser, et retourne chez toi.	}{	Suffisamment pour que tous les flics à la ronde essayent de retrouver ces mecs. DMP, c'est mauvais pour les affaires, tu sais. Si tu veux un conseil, arrête d'y penser, et retourne chez toi.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Ecoute, Flynn, j'ai une cassette vidéo incroyable, et j'aimerais savoir si c'est du vrai. . .	}{	Ecoute, Flynn, j'ai une cassette vidéo incroyable, et j'aimerais savoir si c'est du vrai. . .	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je dois savoir si cette terrible cassette montre la vérité !	}
+{	143	}{	Ecoute, Flynn, j'ai besoin de retrouver ces mecs. Où sont-ils ?	}{	Ecoute, Flynn, j'ai besoin de retrouver ces mecs. Où sont-ils ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dis-moi où trouver Death Mask !	}
+{	144	}{	Je ne vais pas te le demander deux fois, Flynn. Dis-moi comment trouver DMP.	}{	Je ne vais pas te le demander deux fois, Flynn. Dis-moi comment trouver DMP.	}{	171	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	Je fous le camp.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	151	}{	Une cassette vidéo ? Tu veux dire LA cassette ? T'en as un exemplaire ? Et tu l'as regardée ?	}{	Une cassette vidéo ? Tu veux dire LA cassette ? T'en as un exemplaire ? Et tu l'as regardée ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	C'est ça. Et alors ?	}{	C'est ça. Et alors ?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelle horreur. Quelle horreur.	}
+{	153	}{	Peut-être.	}{	Peut-être.	}{	161	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	[Nerveux]Bon, écoute. Tu fous le camp, OK ? Je ne veux pas être mêlé à ce truc. Il paraît qu'on n'a jamais revu les gens sur cette bande. Je ne fais pas dans ces conneries, OK ? Alors va voir ailleurs.	}{	[Nerveux]Bon, écoute. Tu fous le camp, OK ? Je ne veux pas être mêlé à ce truc. Il paraît qu'on n'a jamais revu les gens sur cette bande. Je ne fais pas dans ces conneries, OK ? Alors va voir ailleurs.	}{	#	}{	}{	G.Flynn_Tapeknows = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Je croyais que tu avais de tout, ici. Tu dois bien savoir des trucs. . .	}{	Je croyais que tu avais de tout, ici. Tu dois bien savoir des trucs. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Assurément, cet antre du péché abrite quelques secrets. . .	}
+{	163	}{	Ecoute, Flynn. J'ai besoin de trouver Death Mask Productions. Où sont-ils ?	}{	Ecoute, Flynn. J'ai besoin de trouver Death Mask Productions. Où sont-ils ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dis-moi où trouver Death Mask !	}
+{	164	}{	Je ne vais pas te le demander deux fois, Flynn. Dis-moi comment trouver DMP.	}{	Je ne vais pas te le demander deux fois, Flynn. Dis-moi comment trouver DMP.	}{	171	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	Tu es une merveille au foie jaune, Flynn. A plus tard.	}{	Tu es une merveille au foie jaune, Flynn. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre se pose sur d'autres domaines.	}
+{	171	}{	Laisse tomber. Je ne vois même pas de quoi tu parles. Hein ? Quoi ? Qui c'est, DMP ? Sérieux, fous le camp.	}{	Laisse tomber. Je ne vois même pas de quoi tu parles. Hein ? Quoi ? Qui c'est, DMP ? Sérieux, fous le camp.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Ecoute, je collectionne ce genre de trucs. Tu peux tout me dire. . .	}{	Ecoute, je collectionne ce genre de trucs. Tu peux tout me dire. . .	}{	181	}{	Persuasion 6	}{	}{	}{	}{	}{	}{	}{	}{	Je collectionne les dépravations, le déplorable et le débauché. Parle-moi. . .	}
+{	173	}{	Allez, Flynn. Tu me dis tout, et on ira se faire une vidéo rien qu'à nous. . .	}{	Allez, Flynn. Tu me dis tout, et on ira se faire une vidéo rien qu'à nous. . .	}{	181	}{	Seduction 6 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Ouvre-toi à moi et j'en ferai autant pour toi. . .	}
+{	174	}{	T'as intérêt à me parler, Flynn, sinon on ne te reverra jamais non plus.	}{	T'as intérêt à me parler, Flynn, sinon on ne te reverra jamais non plus.	}{	181	}{	Intimidate 6	}{	}{	}{	}{	}{	}{	}{	}{	Parle ou disparais, roi du porno.	}
+{	175	}{	Dis-moi tout ce que tu sais !	}{	Dis-moi tout ce que tu sais !	}{	181	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	Offre-moi Death Mask sur un plateau !	}{	Offre-moi Death Mask sur un plateau !	}{	181	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	OK. Et si on parlait argent, Flynn ?	}{	OK. Et si on parlait argent, Flynn ?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien de billets pour tes conseils ?	}
+{	178	}{	Allez ! Tu ne veux vraiment rien me dire ?	}{	Allez ! Tu ne veux vraiment rien me dire ?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prince du Porno, j'ai besoin de ton aide !	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	181	}{	B-bon. Ecoute. Je sais simplement qu'un type appelle à la cabine dans la rue de temps en temps. Il dit quelque chose du genre 'la lune est une maîtresse terrible', ce genre de conneries. . .	}{	B-bon. Ecoute. Je sais simplement qu'un type appelle à la cabine dans la rue de temps en temps. Il dit quelque chose du genre 'la lune est une maîtresse terrible', ce genre de conneries. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Ouais ? Et après ?	}{	Ouais ? Et après ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Et après ?	}
+{	183	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Et après, il faut répondre 'qui traverse la nuit avec des démons d'effroi'. Ensuite, normalement, on te dit où récupérer le matos. Je ne sais pas vraiment. Je. . . j'ai jamais essayé. Ca me file trop les jetons.	}{	Et après, il faut répondre 'qui traverse la nuit avec des démons d'effroi'. Ensuite, normalement, on te dit où récupérer le matos. Je ne sais pas vraiment. Je. . . j'ai jamais essayé. Ca me file trop les jetons.	}{	#	}{	}{	G.Flynn_Message = 1; pc.SetQuest("Tape",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Ouais, c'est ça. Allez, je me casse.	}{	Ouais, c'est ça. Allez, je me casse.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je pars pour supprimer Death Mask.	}
+{	193	}{	Merci du renseignement. Ne rentre pas chez toi tout seul, ce soir.	}{	Merci du renseignement. Ne rentre pas chez toi tout seul, ce soir.	}{	201	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	194	}{	A plus !	}{	A plus !	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre se pose sur d'autres domaines.	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Eh, attends. Tant qu'à faire, je peux aussi te dire ça. A ce qu'il paraît, ce n'est même pas DMP qui a fait la vidéo. Ils se contentent de la distribuer. Ils ne savent pas d'où elle vient. Je te dis, tu ferais mieux de ne pas rentrer dans ce truc. . .	}{	Eh, attends. Tant qu'à faire, je peux aussi te dire ça. A ce qu'il paraît, ce n'est même pas DMP qui a fait la vidéo. Ils se contentent de la distribuer. Ils ne savent pas d'où elle vient. Je te dis, tu ferais mieux de ne pas rentrer dans ce truc. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Si je pouvais, je le ferais, mais c'est trop tard. A plus.	}{	Si je pouvais, je le ferais, mais c'est trop tard. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Voilà le chemin que le destin m'a pavé. Je te laisse.	}
+{	203	}{	Rentre chez toi et change de sous-vêtements. A plus.	}{	Rentre chez toi et change de sous-vêtements. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu sens la souillure. Adieu.	}
+{	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Pas question. Allez, soit t'achètes quelque chose, soit tu te casses.	}{	Pas question. Allez, soit t'achètes quelque chose, soit tu te casses.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	A plus !	}{	A plus !	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	213	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Tu sens le poulet, et tu viens de te faire griller. Alors puisque ton plan est cuit, tu peux aller ailleurs. Moi, j'ai du lait sur le feu. . .	}{	Tu sens le poulet, et tu viens de te faire griller. Alors puisque ton plan est cuit, tu peux aller ailleurs. Moi, j'ai du lait sur le feu. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Crois-moi, Flynn, je ne suis pas flic. Fais-moi confiance.	}{	Crois-moi, Flynn, je ne suis pas flic. Fais-moi confiance.	}{	331	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	Je ne fréquente pas les plus cruels que moi. Il y a quelque vérité à mon histoire. . .	}
+{	223	}{	Si tu me traites de flic encore une fois, je t'envoie à l'hosto. . .	}{	Si tu me traites de flic encore une fois, je t'envoie à l'hosto. . .	}{	331	}{	Intimidate 7	}{	}{	}{	}{	}{	}{	}{	}{	Si tu me répètes que je sens comme une auge, je transforme tes entrailles en casse-croûte. . .	}
+{	224	}{	Je ne suis pas flic, mais je pourrais te passer les menottes. . .	}{	Je ne suis pas flic, mais je pourrais te passer les menottes. . .	}{	331	}{	Seduction 7 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Dis-moi ce que je veux savoir, et je te laisserai me fouiller au corps. 	}
+{	225	}{	Je ne suis pas de la police. Maintenant, dis-moi ce que tu sais.	}{	Je ne suis pas de la police. Maintenant, dis-moi ce que tu sais.	}{	331	}{	Dominate 4 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	Ne me prends pas pour un amateur de donuts !	}{	Ne me prends pas pour une amatrice de donuts !	}{	331	}{	Dementation 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	OK, je me casse.	}{	OK, je me casse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre se pose sur d'autres domaines.	}
+{	231	}{	Euh, ouais, Chastity. Elle travaille en bas, dans les cabines. Mais si tu cherches quelqu'un pour te, euh, dresser le mât, j'ai des filles plus douées qu'elles. Elle n'est pas très audacieuse, si tu vois ce que je veux dire ?	}{	Euh, ouais, Chastity. Elle travaille en bas, dans les cabines. Mais si tu cherches quelqu'un pour te, euh, tailler la haie, j'ai des filles plus douées qu'elles. Elle n'est pas très audacieuse, si tu vois ce que je veux dire ?	}{	#	}{	}{	G.Flynn_Chastity = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Elle sera très bien, pas de souci.	}{	Elle sera très bien, pas de souci.	}{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce soir, Chastity sera mon seul vice.	}
+{	233	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	OK, c'est ton argent. Mais si tu veux un show privé, il va falloir attendre que les clients quittent les cabines. Les filles ne font pas de particulier avant ça.	}{	OK, c'est ton argent. Mais si tu veux un show privé, il va falloir attendre que les clients quittent les cabines. Les filles ne font pas de particulier avant ça.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	En fait, il me reste quelques questions à te poser.	}{	En fait, il me reste quelques questions à te poser.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller dans ton crâne. . .	}
+{	238	}{	A plus.	}{	A plus !	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Ginger Swan ? Euh, non, ça ne me dit rien. Mais j'ai plein de vidéos de Ginger Twister ! Pff, elle fait des trucs incroyables, cette fille ! J'en ai une nouvelle, ça s'appelle 'Confessions d'une prof de yoga au lycée'. Si mes cours de gym avaient été comme ça. . .	}{	Ginger Swan ? Euh, non, ça ne me dit rien. Mais j'ai plein de vidéos de Ginger Twister ! Pff, elle fait des trucs incroyables, cette fille ! J'en ai une nouvelle, ça s'appelle 'Confessions d'une prof de yoga au lycée'. Si mes cours de gym avaient été comme ça. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	En fait, il me reste quelques questions à te poser.	}{	En fait, il me reste quelques questions à te poser.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller dans ton crâne. . .	}
+{	243	}{	Super. Je m'en souviendrai, Flynn.	}{	Super. Je m'en souviendrai, Flynn.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Hollywood ? Qu'est-ce que tu veux savoir ?	}{	Hollywood ? Qu'est-ce que tu veux savoir ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Parle-moi des endroits sympas.	}{	Parle-moi des endroits sympas.	}{	281	}{	G.Flynn_Hotspot < 3	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi des endroits chauds de Celluloïd City !	}
+{	253	}{	Où est-ce que je pourrais trouver du. . . de la quincaillerie, tu vois. . .	}{	Où est-ce que je pourrais trouver du. . . de la quincaillerie, tu vois. . .	}{	261	}{	G.Flynn_Slater == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de grosse quincaillerie. . .	}
+{	254	}{	Dis-moi où je peux trouver des armes.	}{	Dis-moi où je peux trouver des armes.	}{	271	}{	G.Flynn_Slater == 1	}{	}{	}{	}{	}{	}{	}{	}{	Rappelle-moi où se cache la quincaillerie. . .	}
+{	255	}{	En fait, j'ai encore quelques questions. . .	}{	En fait, j'ai encore quelques questions. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'explorer ta matière grise. . .	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	Pas grand-chose, en fait. A plus tard, Flynn.	}{	Pas grand-chose, en fait. A plus tard, Flynn.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	261	}{	De la quincaillerie ? J'en ai plein, ici. . . Regarde les machins qui font du trente centimètres, là-bas. Tu veux plus. . . Ah, tu parles de quincaillerie qui fait bang, toi. . .	}{	De la quincaillerie ? J'en ai plein, ici. . . Regarde les machins qui font du trente centimètres, là-bas. Tu veux plus. . . Ah, tu parles de quincaillerie qui fait bang, toi. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Pigé.	}{	Pigé.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelle finesse, Prince du Porno !	}
+{	263	}{	Eh, t'es un malin, toi. . .	}{	Eh, t'es un malin, toi. . .	}{	271	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	[Baisse la voix]OK. Je ne t'ai rien dit. Mais Slater, au Red Spot, devrait pouvoir te trouver de quoi t'amuser et te faire du bien.	}{	[Baisse la voix]OK. Je ne t'ai rien dit. Mais Slater, au Red Spot, devrait pouvoir te trouver de quoi t'amuser et te faire du bien.	}{	#	}{	}{	G.Flynn_Slater = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Super. Parle-moi des endroits chauds d'Hollywood.	}{	Super. Parle-moi des endroits chauds d'Hollywood.	}{	281	}{	G.Flynn_Hotspot < 3	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi des endroits chauds de Celluloïd City !	}
+{	273	}{	J'ai encore deux ou trois questions. . .	}{	J'ai encore deux ou trois questions. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'explorer ta matière grise. . .	}
+{	274	}{	C'est cool, j'aime bien me faire du bien. Même tout seul.	}{	C'est cool, j'aime bien me faire du bien. Même toute seule.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je porterai mon costume de syndicat en mousse. Adieu.	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	Lesquels ?	}{	Lesquels ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Le Asp Hole. . .	}{	Le Asp Hole. . .	}{	301	}{	G.Flynn_Asphole == 0	}{	G.Flynn_Hotspot = G.Flynn_Hotspot + 1; G.Flynn_Asphole = 1	}{	}{	}{	}{	}{	}{	}{	Le refuge des aspics. . .	}
+{	283	}{	Vesuvius. . .	}{	Vesuvius. . .	}{	291	}{	G.Flynn_Vesuvius == 0	}{	G.Flynn_Hotspot = G.Flynn_Hotspot + 1; G.Flynn_Vesuvius = 1	}{	}{	}{	}{	}{	}{	}{	Je vois Vesuvius, la montagne de feu. . .	}
+{	284	}{	Le Théâtre Asiatique. . .	}{	Le Théâtre Asiatique. . .	}{	311	}{	G.Flynn_Chinese == 0	}{	G.Flynn_Hotspot = G.Flynn_Hotspot + 1; G.Flynn_Chinese = 1	}{	}{	}{	}{	}{	}{	}{	Un théâtre d'orient, où pèse une ombre de pierre. . .	}
+{	285	}{	En fait, j'ai encore quelques questions. . .	}{	En fait, j'ai encore quelques questions. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'explorer ta matière grise. . .	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	On a tout ce qu'il te faut ici. Mais si tu préfères les trucs de bas étage, va du côté du Vesuvius. Ca appartient à l'une des strip-teaseuses. Tu devrais voir le pare-choc qu'elle se trimballe, celle-la. . .	}{	On a tout ce qu'il te faut ici. Mais si tu préfères les trucs de bas étage, va du côté du Vesuvius. Ca appartient à l'une des strip-teaseuses. Tu devrais voir le pare-choc qu'elle se trimballe, celle-la. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Parle-moi des autres endroits sympas.	}{	Parle-moi des autres endroits sympas.	}{	281	}{	G.Flynn_Hotspot < 3	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi des endroits chauds de Celluloïd City !	}
+{	293	}{	En fait, j'ai encore quelques questions. . .	}{	En fait, j'ai encore quelques questions. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'explorer ta matière grise. . .	}
+{	294	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	Allez Flynn, je mets les bouts.	}{	Allez Flynn, je mets les bouts.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre se pose sur d'autres domaines.	}
+{	301	}{	Le Asp Hole ? C'est juste en face. . . un club chicos d'Hollywood où l'alcool coûte trop cher et les filles sont trop froides. Ce qui me va. La plupart des mecs sortent tout chauds et tout bourrés, et viennent droit chez moi. . .	}{	Le Asp Hole ? C'est juste en face. . . un club chicos d'Hollywood où l'alcool coûte trop cher et les filles sont trop froides. Ce qui me va. La plupart des mecs sortent tout chauds et tout bourrés, et viennent droit chez moi. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Parle-moi des autres endroits sympas.	}{	Parle-moi des autres endroits sympas.	}{	281	}{	G.Flynn_Hotspot < 3	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi des endroits chauds de Celluloïd City !	}
+{	303	}{	En fait, j'ai encore quelques questions. . .	}{	En fait, j'ai encore quelques questions. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'explorer ta matière grise. . .	}
+{	304	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	Allez Flynn, je mets les bouts.	}{	Allez Flynn, je mets les bouts.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	En fait, ça fait quelques minutes que je ne suis plus là.	}
+{	311	}{	Le vieux Théâtre Asiatique ? Il est fermé depuis un moment. Cet endroit me file les jetons. Tout le monde a une histoire de fantôme, dans cette ville, mais cet endroit, quand on le regarde. . . on a l'impression qu'il vous regarde aussi.	}{	Le vieux Théâtre Asiatique ? Il est fermé depuis un moment. Cet endroit me file les jetons. Tout le monde a une histoire de fantôme, dans cette ville, mais cet endroit, quand on le regarde. . . on a l'impression qu'il vous regarde aussi.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Parle-moi des autres endroits sympas.	}{	Parle-moi des autres endroits sympas.	}{	281	}{	G.Flynn_Hotspot < 3	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi des endroits chauds de Celluloïd City !	}
+{	313	}{	En fait, j'ai encore quelques questions. . .	}{	En fait, j'ai encore quelques questions. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'explorer ta matière grise. . .	}
+{	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	Allez Flynn, je mets les bouts.	}{	Allez Flynn, je mets les bouts.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	321	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	323	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	324	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	325	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	Bon, OK. Si tu le dis. Et qu'est-ce que tu veux ?	}{	Bon, OK. Si tu le dis. Et qu'est-ce que tu veux ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	J'ai quelques questions pour toi. . .	}{	J'ai quelques questions pour toi. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller dans ton crâne. . .	}
+{	333	}{	Tu connais quelqu'un qui s'appelle Ginger Swann ?	}{	Tu connais quelqu'un qui s'appelle Ginger Swann ?	}{	241	}{	G.Ginger_Swan == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche Ginger Swan !	}
+{	334	}{	Tu as une fille qui travaille ici, avec un coeur brisé tatoué dans le dos ?	}{	Tu as une fille qui travaille ici, avec un coeur brisé tatoué dans le dos ?	}{	231	}{	pc.GetQuestState("Strip") > 0 and G.Flynn_Chastity == 0 and not IsDead("Chastity")	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche la fille qui porte le coeur dans son dos. . .	}
+{	335	}{	Rien pour l'instant, Flynn. A plus.	}{	Rien pour l'instant, Flynn. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre se pose sur d'autres domaines.	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Du pognon ? Ah, ça change tout. Mais c'est de l'info de première, là. Le genre de truc qui pourrait coûter 500 dollars.	}{	Du pognon ? Ah, ça change tout. Mais c'est de l'info de première, là. Le genre de truc qui pourrait coûter 500 dollars.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	500 ? Allez, Flynn, on dit 400 pour de vieux amis comme nous. . .	}{	500 ? Allez, Flynn, on dit 400 pour de vieux amis comme nous. . .	}{	181	}{	Haggle 6 & pc.CurrentMoney() >= 400	}{	pc.MoneyRemove( 400 )	}{	}{	}{	}{	}{	}{	}{	Quatre cents, peut-être, entre amis ?	}
+{	343	}{	Ca me va. Tiens, voilà ton fric.	}{	Ca me va. Tiens, voilà ton fric.	}{	181	}{	pc.CurrentMoney() >= 500	}{	pc.MoneyRemove( 500 )	}{	}{	}{	}{	}{	}{	}{	Prends le prix du sang, Prince du Porno !	}
+{	344	}{	Quoi ? J'ai pas une somme pareille, moi. . .	}{	Quoi ? J'ai pas une somme pareille, moi. . .	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes poches sont aussi vides que mon crâne.	}
+{	345	}{	Allez ! Tu ne veux vraiment rien me dire ?	}{	Allez ! Tu ne veux vraiment rien me dire ?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je t'en prie. . . J'ai besoin de trouver Death Mask !	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	Alors je n'ai rien d'autre à te dire.	}{	Alors je n'ai rien d'autre à te dire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	J'ai encore quelques questions.	}{	J'ai encore quelques questions.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller dans ton crâne. . .	}
+{	353	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	354	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	Je m'en vais.	}{	Je m'en vais.	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	361	}{	Il faudrait me confirmer le prix d'un tube d'un litre de Sava-Savien. Le prix d'un Sava-Savien.	}{	Il faudrait me confirmer le prix d'un tube d'un litre de Sava-Savien. Le prix d'un Sava-Savien.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	363	}{	Tu sais quoi, on n'a jamais assez de gel chez soi. . . Ouais, ce genre de gel-là. . .	}{	Tu sais quoi, on n'a jamais assez de gel chez soi.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	364	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	365	}{	Hé toi ! Montre tes mains, hein ? Laisse-les au niveau de la poitrine, mec.	}{	Hé toi ! Montre tes mains, hein ? Laisse-les au niveau de la poitrine, chérie.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	[Rit]Prince du Porno ? Ouais ! Flynn Boyle, le Prince du Porno, le Sénateur du Salace, le Duc de la Dépravation ! Tu me plais, gamin ! T'es un peu bizarre, mais bon, on est à Hollywood !	}{	[Rit]Prince du Porno ? Ouais ! Flynn Boyle, le Prince du Porno, le Sénateur du Salace, le Duc de la Dépravation ! Tu me plais, chérie ! T'es un peu bizarre, mais bon, on est à Hollywood !	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
+{	373	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	374	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	383	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	384	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	385	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	393	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	394	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	395	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	Ben tiens. Tu veux le numéro de ce mois-ci. . . Tawni Sessions en couverture. Elle porte rien qu'un peu de scotch et des chaussettes de sport. . .	}{	Ben tiens. Tu veux le numéro de ce mois-ci. . . Tawni Sessions en couverture. Elle porte rien qu'un peu de scotch et des chaussettes de sport. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	Tentant. . . Mais j'ai surtout besoin de celui de l'année dernière, avec Imalia en couverture. . .	}{	Tentant. . . Mais j'ai surtout besoin de celui de l'année dernière, avec Imalia en couverture. . .	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin du magazine où Imalia montre ses avantages !	}
+{	403	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	404	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	405	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	406	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	407	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	Ben tiens. Tout le monde le cherche, celui-là. Elle a disparu l'année dernière, personne ne sait ce qui lui est arrivé. C'est un vrai objet de collection, ça. Ca va te coûter bonbon. 	}{	Ben tiens. Tout le monde le cherche, celui-là. Elle a disparu l'année dernière, personne ne sait ce qui lui est arrivé. C'est un vrai objet de collection, ça. Ca va te coûter bonbon. 	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Super. Euh, à quel point ?	}{	Super. Euh, à quel point ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Un gros bonbon ?	}
+{	413	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	414	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	Je ne sais pas. Cette Imalia, elle avait un de ces popotins. . . C'est la seule fois dans ma vie où j'ai eu envie d'être un emballage de chewing-gum. . . Il faudrait au moins cinq cents billets pour que je m'en sépare. . .	}{	Je ne sais pas. Cette Imalia, elle avait un de ces popotins. . . C'est la seule fois dans ma vie où j'ai eu envie d'être un emballage de chewing-gum. . . Il faudrait au moins cinq cents billets pour que je m'en sépare. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	500 ? Eh, je viens presque tous les jours, Flynn ! 400 ? Allez, donne-moi le magazine. . .	}{	500 ? Eh, je viens presque tous les jours, Flynn ! 400 ? Allez, donne-moi le magazine. . .	}{	431	}{	Haggle 6 & pc.CurrentMoney() >= 400	}{	pc.MoneyRemove( 400 ); pc.GiveItem("item_g_guy_magazine")	}{	}{	}{	}{	}{	}{	}{	Quatre cents, entre vieux amis ? Allez, donne. . .	}
+{	423	}{	C'est du grand banditisme. Prends ton argent et donne-moi la marchandise.	}{	C'est du grand banditisme. Prends ton argent et donne-moi la marchandise.	}{	431	}{	Haggle -6 & pc.CurrentMoney() >= 500	}{	pc.MoneyRemove( 500 ); pc.GiveItem("item_g_guy_magazine")	}{	}{	}{	}{	}{	}{	}{	Prends tes 500 livres de chair et donne-moi ça.	}
+{	424	}{	Allez, Flynn. . . J'ai pas tout ça en cash !	}{	Allez, Flynn. . . J'ai pas tout ça en cash !	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes poches sont aussi vides que mon crâne.	}
+{	425	}{	Trop riche pour mon sang. Mais j'ai encore quelques questions.	}{	Trop riche pour mon sang. Mais j'ai encore quelques questions.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller ta matière grise.	}
+{	426	}{	Pas question. Ca ne vaut pas tout ça. Je mets les bouts.	}{	Pas question. Ca ne vaut pas tout ça. Je mets les bouts.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	Hé hé hé. Tiens. Je suis sûr qu'il te plaira beaucoup.	}{	Hé hé hé. Tiens. Je suis sûr qu'il te plaira beaucoup.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Flynn_Sticky = 1; pc.SetQuest("Guy",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Merci. . . Eh, attends ! Les pages sont toutes collées !	}{	Merci. . . Eh, attends ! Les pages sont toutes collées !	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ces pages sont étrangement collées. . .	}
+{	433	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	434	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	435	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	436	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	Hein ? Eh, euh, oh !! Bizarre, euh, je vois pas comment ça a pu arriver. Quelqu'un a dû, euh, renverser quelque chose dessus. . . Enfin, ouais, bon. . . Désolé, hein.	}{	Hein ? Eh, euh, oh !! Bizarre, euh, je vois pas comment ça a pu arriver. Quelqu'un a dû, euh, renverser quelque chose dessus. . . Enfin, ouais, bon. . . Désolé, hein.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	C'est ça, Flynn. Bon, j'ai encore quelques questions pour toi.	}{	C'est ça, Flynn. Bon, j'ai encore quelques questions pour toi.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller ta matière grise.	}
+{	443	}{	Tu es un petit homme pathétique et malade. A plus.	}{	Tu es un petit homme pathétique et malade. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	444	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	445	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	446	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Trop dur. Reviens quand tu les auras.	}{	Trop dur. Reviens quand tu les auras.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Bon, j'ai encore quelques questions. . .	}{	Bon, j'ai encore quelques questions. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller ta matière grise.	}
+{	453	}{	C'est pas sympa, Flynn. A plus.	}{	C'est pas sympa, Flynn. A plus.	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
+{	454	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	455	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	Comme j'ai dit, cinq cents. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	463	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	464	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	473	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	474	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Eh, ça gaze ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	Pigé ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	483	}{	Que veux-tu ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	484	}{	J'ai rien à te dire !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	485	}{	Oui, bien sûr.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	486	}{	Pas question.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	Merci.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	Qu'est-ce que tu viens de dire ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	Quoi ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	Je sais pas.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Je ne peux rien pour toi.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	Super.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	493	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	494	}{	Prenez ça.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	495	}{	Je t'enverrai un e-mail.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	503	}{	(Starting Condition)	}{	}{	221	}{	G.Flynn_Cop == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	504	}{	(Starting Condition)	}{	}{	31	}{	G.Flynn_Knows == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+

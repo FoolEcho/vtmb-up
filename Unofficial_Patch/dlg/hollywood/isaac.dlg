@@ -1,0 +1,1005 @@
+{	1	}{	Bonsoir, jeune vampire. . . Isaac Abrams. Je vous attendais. On dirait que les pions de la Camarilla entrent un peu trop facilement ces derniers temps. Ce prince LaCroix de pacotille a-t-il quelque chose à me dire ?	}{	Bonsoir, jeune vampire. . . Isaac Abrams. Je vous attendais. On dirait que les pions de la Camarilla entrent un peu trop facilement ces derniers temps. Ce prince LaCroix de pacotille a-t-il quelque chose à me dire ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	A vous de me le dire. C'est un de vos gorilles qui m'envoie ici.	}{	A vous de me le dire. C'est un de vos gorilles qui m'envoie ici.	}{	11	}{	not IsDead("Sweeper") and G.Sweeper_Met == 1	}{	}{	}{	}{	}{	}{	}{	}{	C'est votre messager qui m'a détourné par ici.	}
+{	3	}{	Je cherche les Nosferatus.	}{	Je cherche les Nosferatus.	}{	361	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Je suis sa bouche.	}{	Je suis sa bouche.	}{	11	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Je suis sa bouche.	}
+{	5	}{	Le Prince LaCroix m'envoie, vous n'avez pas besoin d'en Anarch plus.	}{	Le Prince LaCroix m'envoie, vous n'avez pas besoin d'en Anarch plus.	}{	91	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	A vous de me le dire. C'est un de vos gorilles qui m'a envoyé ici, avant que je ne le tue.	}{	A vous de me le dire. C'est un de vos gorilles qui m'a envoyée ici, avant que je ne le tue.	}{	131	}{	IsDead("Sweeper") and G.Sweeper_Met == 1	}{	}{	}{	}{	}{	}{	}{	}{	C'est votre messager qui m'a détourné par ici.	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Vous faites preuve de courtoisie en venant me voir. Tous les vampires qui entrent sur mon domaine sont invités à se présenter. Cela peut paraître démodé, mais c'est une formalité bien utile.	}{	Vous faites preuve de courtoisie en venant me voir. Tous les vampires qui entrent sur mon domaine sont invités à se présenter. Cela peut paraître démodé, mais c'est une formalité bien utile.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Et ça servirait à quoi ?	}{	Et ça servirait à quoi ?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre utilité est un mystère pour votre hôte malade.	}
+{	13	}{	'Votre domaine ?' C'est marrant, je croyais que c'était LaCroix, le prince de cette ville.	}{	'Votre domaine ?' C'est marrant, je croyais que c'était LaCroix, le prince de cette ville.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le La de LaCroix, ça ne veut pas dire LA ?	}
+{	14	}{	Si vous voulez. Eh bien, je vais repartir, alors.	}{	Si vous voulez. Eh bien, je vais repartir, alors.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les présentations sont faites. Fini de jouer. Je vais dériver ailleurs. 	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	[Siffle entre ses crocs dénudés][Acerbe]LaCroix. Ce bouffon mégalomane. LA s'est avéré trop grande pour qu'il puisse la saisir à bras le corps. . .	}{	[Siffle entre ses crocs dénudés][Acerbe]LaCroix. Ce bouffon mégalomane. LA s'est avéré trop grande pour qu'il puisse la saisir à bras le corps. . .	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Isaac_LaCroix = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	(Auto-Link)	}{	(Auto-Link)	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	[Plus acerbe encore]Prince. . . ne me faites pas rire. Prince, ce n'est qu'un titre - dépassé et absurde, donné à tous les idiots qui sont prêts à le rechercher assez ardemment. Je ne le reconnais pas, pas plus que tout autre vampire sous la protection de ma baronie.	}{	[Plus acerbe encore]Prince. . . ne me faites pas rire. Prince, ce n'est qu'un titre - dépassé et absurde, donné à tous les idiots qui sont prêts à le rechercher assez ardemment. Je ne le reconnais pas, pas plus que tout autre vampire sous la protection de ma baronnie.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Vos paroles sont courageuses. Je me demande si vous avez la force nécessaire pour les faire respecter.	}{	Vos paroles sont courageuses. Je me demande si vous avez la force nécessaire pour les faire respecter.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vos mots sont effrayants, mais ne sont-ils pas motivés par l'effroi ?	}
+{	33	}{	Votre politique ne m'intéresse pas. J'aimerais simplement retourner à mes occupations.	}{	Votre politique ne m'intéresse pas. J'aimerais simplement retourner à mes occupations.	}{	81	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	Super. Bon, je vais y aller, alors. . .	}{	Super. Bon, je vais y aller, alors. . .	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez bien répété votre discours, et je vous répète que je veux partir.	}
+{	35	}{	Où se cachent tous les rats des égouts ?	}{	Où se cachent tous les rats des égouts ?	}{	931	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Où se cachent tous les rats des égouts ?	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Je ne crains pas LaCroix, pas plus que ses clowns, ses sycophantes et ses bouffons de cour. Qu'ils viennent à Hollywood - ce serait une séquence de guerre digne d'un Kurosawa.	}{	Je ne crains pas LaCroix, pas plus que ses sbires, ses pantins et ses bouffons de cour. Qu'ils viennent à Hollywood - ce serait une séquence de guerre digne d'un Kurosawa.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Je lui transmettrai l'invitation.	}{	Je lui transmettrai l'invitation.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	C'est ça. Bon, je peux y aller ?	}{	C'est ça. Bon, je peux y aller ?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Je vous en prie. . . Mais qu'est-ce qui vous amène à Hollywood ? Et ne me dites pas que vous voulez devenir vedette de cinéma. . .	}{	Je vous en prie. . . Mais qu'est-ce qui vous amène à Hollywood ? Et ne me dites pas que vous voulez devenir vedette de cinéma. . .	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	En fait, je viens pour trouver les Nosferatus.	}{	En fait, je viens pour trouver les Nosferatus.	}{	361	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	Je suis juste là en touriste.	}{	Je suis juste là en touriste.	}{	71	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	Disons que je viens pour affaires.	}{	Disons que je viens pour affaires.	}{	81	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	Où se cachent tous les rats des égouts ?	}{	Où se cachent tous les rats des égouts ?	}{	931	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Heh, heh. . .exceptionnel. Revenez me voir dans quelque temps, j'aurai quelque chose pour vous.	}{	Heh, heh. . .exceptionnel. Revenez me voir dans quelque temps, j'aurai quelque chose pour vous.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Gift = 1; pc.SetQuest("Kings Way",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Merci, Isaac. Je vous suis reconnaissant. J'avais une autre question.	}{	Merci, Isaac. Je vous suis reconnaissant. J'avais une autre question.	}{	491	}{	G.Player_Anarch == 1	}{	}{	}{	}{	}{	}{	}{	}{	D'autres sujets me rongent l'esprit.	}
+{	63	}{	Ce ne serait quand même pas un pot-de-vin, j'espère ? J'avais une autre question.	}{	Ce ne serait quand même pas un pot-de-vin, j'espère ? J'avais une autre question.	}{	491	}{	G.Player_Anarch == 0	}{	}{	}{	}{	}{	}{	}{	}{	D'autres sujets me rongent l'esprit.	}
+{	64	}{	Je reviendrai le chercher plus tard. Merci, Isaac.	}{	Je reviendrai le chercher plus tard. Merci, Isaac.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je recevrai votre présent en temps voulu.	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Ha, de l'humour. Très bien, cela me plaît. Souvenez-vous simplement que dans mon domaine, il vous faudra suivre mes règles. Il y a assez de poussière comme ça en Californie.	}{	Ha, de l'humour. Très bien, cela me plaît. Souvenez-vous simplement que dans mon domaine, il vous faudra suivre mes règles. Il y a assez de poussière comme ça en Californie.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	'Votre domaine ?' C'est marrant, je croyais que c'était LaCroix, le prince de cette ville.	}{	Votre domaine ?' C'est marrant, je croyais que c'était LaCroix, le prince de cette ville.	}{	21	}{	G.Isaac_LaCroix < 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	C'est ça. Bon, je peux y aller ?	}{	C'est ça. Bon, je peux y aller ?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Vraiment ? Et quel genre d'affaires ?	}{	Vraiment ? Et quel genre d'affaires ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	En fait, je viens pour trouver les Nosferatus.	}{	En fait, je viens pour trouver les Nosferatus.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Le genre qui ne vous regarde pas.	}{	Le genre qui ne vous regarde pas.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	Je pourrais vous le dire. . . Mais après, il faudrait que je vous tue.	}{	Je pourrais vous le dire. . . Mais après, il faudrait que je vous tue.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Vous savez, il y a un acteur qui savait vraiment être intimidant. Edward G. Robinson. Même Kimmy Cagney, ou Brando. . . Vous, vous seriez plus à votre place dans un rôle comique. . .	}{	Vous savez, il y a un acteur qui savait vraiment être intimidant. Edward G. Robinson. Même Kimmy Cagney, ou Brando. . . Vous, vous seriez plus à votre place dans un rôle comique. . .	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	(Auto-Link)	}{	(Auto-Link)	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Gardez vos petits secrets si cela vous flatte l'ego. Mais souvenez-vous, tant que vous êtes dans mon domaine, il faut respecter mes règles. Traitez Hollywood comme une princesse, ou je vous renvoie au prince dans une boîte à café. . .	}{	Gardez vos petits secrets si cela vous flatte l'ego. Mais souvenez-vous, tant que vous êtes dans mon domaine, il faut respecter mes règles. Traitez Hollywood comme une princesse, ou je vous renvoie au prince dans une boîte à café. . .	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	En fait, je viens pour trouver les Nosferatus.	}{	En fait, je viens pour trouver les Nosferatus.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	'Votre domaine ?' C'est marrant, je croyais que c'était LaCroix, le prince de cette ville.	}{	Votre domaine ?' C'est marrant, je croyais que c'était LaCroix, le prince de cette ville.	}{	21	}{	G.Isaac_LaCroix < 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	C'est ça. Bon, je peux y aller ?	}{	C'est ça. Bon, je peux y aller ?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Pas si vite. Avant de partir, il faudrait parler tribut, bien sûr. . .	}{	Pas si vite. Avant de partir, il faudrait parler tribut, bien sûr. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Je n'aime pas la tournure que prend cette conversation.	}{	Je n'aime pas la tournure que prend cette conversation.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ah oui.	}
+{	113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Vous me trouverez peut-être vieux jeu, mais nous sommes dans ma baronnie, et par tradition, il faut me témoigner un certain respect. Matériel.	}{	Vous me trouverez peut-être vieux jeu, mais nous sommes dans ma baronnie, et par tradition, il faut me témoigner un certain respect. Matériel.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Je vois. Et que voulez-vous ?	}{	Je vois. Et que voulez-vous ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'écoute. . .	}
+{	123	}{	Pas question que je vous paie quoi que ce soit.	}{	Pas question que je vous paie quoi que ce soit.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous donne tout ce que j'ai dans les poches. Rien.	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	[Soupir]Ah, les jeunes. . . Tant d'impertinence, de vulgarité. Content de voir que la jeunesse reste rebelle. . . Mais vous auriez dû Anarch que la rébellion n'a pas sa place dans ce bureau. Ecoutez-moi. . . Je pense que ça va vous plaire. . .	}{	[Soupir]Ah, les jeunes. . . Tant d'impertinence, de vulgarité. Content de voir que la jeunesse reste rebelle. . . Mais vous auriez dû Anarch que la rébellion n'a pas sa place dans ce bureau. Ecoutez-moi. . . Je pense que ça va vous plaire. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Bon. Que voulez-vous ?	}{	Bon. Que voulez-vous ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'écoute. . .	}
+{	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	Je vais vous montrer comment je suis quand je deviens vulgaire, pauvre empaffé de mes deux.	}{	Je vais vous montrer comment je suis quand je deviens vulgaire, pauvre empaffé de mes deux.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes oreilles se ferment. Mes poings aussi.	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Si le prince n'a rien de mieux que vous à m'envoyer, il ne va pas durer longtemps. Je dirigeais déjà cette ville bien avant que vos grands-parents apprennent la propreté. Vous croyez vraiment que vous sortirez d'ici en un seul morceau ?	}{	Si le prince n'a rien de mieux que vous à m'envoyer, il ne va pas durer longtemps. Je dirigeais déjà cette ville bien avant que vos grands-parents apprennent la propreté. Vous croyez vraiment que vous sortirez d'ici en un seul morceau ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Isaac_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	(Auto-Link)	}{	(Auto-Link)	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Mais il n'est pas utile d'en arriver là. Je demande simplement que vous me payiez le tribut qui convient, comme tous les autres vampires qui passent par Hollywood. Ni plus, ni moins.	}{	Mais il n'est pas utile d'en arriver là. Je demande simplement que vous me payiez le tribut qui convient, comme tous les autres vampires qui passent par Hollywood. Ni plus, ni moins.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	D'accord. Que voulez-vous ?	}{	D'accord. Que voulez-vous ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'écoute. . .	}
+{	153	}{	Vous pouvez vous coller mon tribut où je pense. Je ne vous paierai rien.	}{	Vous pouvez vous coller mon tribut où je pense. Je ne vous paierai rien.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne vous payerais même pas un taxi. Bla bla bla, vous parlez encore à votre âge ?	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	LaCroix ne vous enverrait pas en territoire anarch s'il n'était pas désespéré - je me trompe peut-être, mais dans votre Camarilla, il peut demander une chasse au sang contre toute personne qui, je cite, enfreint les règles. Si une personne aussi jeune que vous rentre les mains vides, allez Anarch ce qui va se passer. Vous voulez m'écouter, maintenant ?	}{	LaCroix ne vous enverrait pas en territoire anarch s'il n'était pas désespéré - je me trompe peut-être, mais dans votre Camarilla, il peut demander une chasse au sang contre toute personne qui, je cite, enfreint les règles. Si une personne aussi jeune que vous rentre les mains vides, allez Anarch ce qui va se passer. Vous voulez m'écouter, maintenant ?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Isaac_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Pas idiot. Bon, que voulez-vous ?	}{	Pas idiot. Bon, que voulez-vous ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'écoute. . .	}
+{	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	Pas vraiment.	}{	Pas vraiment.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes oreilles sont allergiques à votre voix.	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Je veux simplement un petit échange. La semaine dernière, j'ai payé pour un certain objet - un film - et j'ai reçu ce soir un e-mail me disant que le vendeur est prêt à me l'apporter. Malheureusement, il est devenu un peu paranoïaque, ces derniers temps. . .	}{	Je veux simplement un petit échange. La semaine dernière, j'ai payé pour un certain objet - un film - et j'ai reçu ce soir un e-mail me disant que le vendeur est prêt à me l'apporter. Malheureusement, il est devenu un peu paranoïaque, ces derniers temps. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	(Auto-Link)	}{	(Auto-Link)	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Il ne veut pas qu'on se rencontre, ni le déposer ici. Il ne répond même pas au téléphone. Il enverra ce soir le lieu de livraison par e-mail sur un ordinateur dans un cybercafé à proximité. Vous commencez à comprendre ?	}{	Il ne veut pas qu'on se rencontre, ni le déposer ici. Il ne répond même pas au téléphone. Il enverra ce soir le lieu de livraison par e-mail sur un ordinateur dans un cybercafé à proximité. Vous commencez à comprendre ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Vous voulez que j'aille chercher le colis. Facile.	}{	Vous voulez que j'aille chercher le colis. Facile.	}{	211	}{	G.Isaac_Pissed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous voulez que je fasse le facteur.	}
+{	183	}{	Vous voulez que j'aille chercher le colis. Facile.	}{	Vous voulez que j'aille chercher le colis. Facile.	}{	191	}{	G.Isaac_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous voulez que je fasse le facteur.	}
+{	184	}{	Vous voulez que je le tue pour ne pas avoir apporté le truc ?	}{	Vous voulez que je le tue pour ne pas avoir apporté le truc ?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis votre bourreau.	}
+{	185	}{	Vous craignez un piège, et vous voulez que j'y aille à votre place ?	}{	Vous craignez un piège, et vous voulez que j'y aille à votre place ?	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis votre doublure.	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Bien. Tout n'est pas perdu, alors. Bon, écoutez bien. Voilà ce que je veux que vous fassiez:	}{	Bien. Tout n'est pas perdu, alors. Bon, écoutez bien. Voilà ce que je veux que vous fassiez:	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	(Auto-Link)	}{	(Auto-Link)	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	193	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Pas du tout ! Si vous la jouez western dans ma ville, je veillerai personnellement à ce que vous le regrettiez. Je pensais à quelque chose de plus subtil. Ecoutez-moi bien. Voilà ce que je veux que vous fassiez: 	}{	Pas du tout ! Si vous la jouez western dans ma ville, je veillerai personnellement à ce que vous le regrettiez. Je pensais à quelque chose de plus subtil. Ecoutez-moi bien. Voilà ce que je veux que vous fassiez: 	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	(Auto-Link)	}{	(Auto-Link)	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	203	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Allez au cybercafé Ground Zero, cherchez un répertoire nommé 'Josefk' et utilisez le mot de passe 'Kafka'. Vous trouverez un e-mail qui vous indiquera un endroit proche. Rencontrez le contact, récupérez l'objet et revenez. Ca ne devrait pas être trop dur, non ?	}{	Allez au cybercafé Ground Zero, cherchez un répertoire nommé 'Josefk' et utilisez le mot de passe 'Kafka'. Vous trouverez un e-mail qui vous indiquera un endroit proche. Rencontrez le contact, récupérez l'objet et revenez. Ca ne devrait pas être trop dur, non ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Tribute = 1; pc.SetQuest("Courier",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	J'y vais tout de suite. Après, on discutera de mon problème.	}{	J'y vais tout de suite. Après, on discutera de mon problème.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je disparais, je réapparais, l'objet en main. Puis vous répondrez à mes questions.	}
+{	213	}{	Ca marche. Mais d'abord, je veux vous poser quelques questions.	}{	Ca marche. Mais d'abord, je veux vous poser quelques questions.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est entendu. Mais d'abord, mes esprits se posent une foule de questions. . .	}
+{	214	}{	Ca vous amuse, hein ? De manipuler les gens comme ça. . .	}{	Ca vous amuse, hein ? De manipuler les gens comme ça. . .	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous aimez bien avoir les gens en laisse, hein ?	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Si vous vivez assez longtemps, vous finirez par demander la même chose à une petite créature toute jeune. Et comme je l'ai dit, c'est une simple question de tribut.	}{	Si vous vivez assez longtemps, vous finirez par demander la même chose à une petite créature toute jeune. Et comme je l'ai dit, c'est une simple question de tribut.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	223	}{	Ca marche. Mais d'abord, je veux vous poser quelques questions.	}{	Ca marche. Mais d'abord, je veux vous poser quelques questions.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est entendu. Mais d'abord, mes esprits se posent une foule de questions. . .	}
+{	224	}{	De tribut. D'accord. Bon, j'essaierai de ne pas faire tomber votre colis, Isaac.	}{	De tribut. D'accord. Bon, j'essaierai de ne pas faire tomber votre colis, Isaac.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais ramasser votre courrier.	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	C'est dur. Mais si vous faites cela pour moi, je changerai d'avis et je vous aiderai, bien que vous travailliez pour LaCroix.	}{	C'est dur. Mais si vous faites cela pour moi, je changerai d'avis et je vous aiderai, bien que vous travailliez pour LaCroix.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	(Auto-Link)	}{	(Auto-Link)	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	233	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Nous aurons tout le temps plus tard, pour les questions. Je vous expliquerai tout à votre retour.	}{	Nous aurons tout le temps plus tard, pour les questions. Je vous expliquerai tout à votre retour.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Question = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	243	}{	J'espère bien. Je n'ai jamais encore fait de livraison. Allez, je file.	}{	J'espère bien. Je n'ai jamais encore fait de livraison. Allez, je file.	}{	331	}{	G.Isaac_Leave == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je vais ramasser votre courrier.	}
+{	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	J'espère bien. Je n'ai jamais encore fait de livraison. Allez, je file.	}{	J'espère bien. Je n'ai jamais encore fait de livraison. Allez, je file.	}{	0	}{	G.Isaac_Leave == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je vais ramasser votre courrier.	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Ca, c'est de la paranoïa. Non, je veux juste que vous réceptionniez le colis à ma place.	}{	Ca, c'est de la paranoïa. Non, je veux juste que vous réceptionniez le colis à ma place.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	(Auto-Link)	}{	(Auto-Link)	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	253	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Vous avez fait vite. Donnez-moi l'objet.	}{	Vous avez fait vite. Donnez-moi l'objet.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Item = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Tenez.	}{	Tenez.	}{	401	}{	pc.HasItem("item_g_horrortape_1")	}{	}{	}{	}{	}{	}{	}{	}{	Il est déjà dans votre main.	}
+{	263	}{	Il ne l'avait pas.	}{	Il ne l'avait pas.	}{	281	}{	G.Scared_Meet == 1 and G.Isaac_Swan == 0 and not pc.HasItem("item_g_horrortape_1")	}{	}{	}{	}{	}{	}{	}{	}{	Le film ne l'accompagnait pas dans ses déplacements.	}
+{	264	}{	Je ne l'ai pas eu. Je reviendrai quand ce sera fait.	}{	Je ne l'ai pas eu. Je reviendrai quand ce sera fait.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne l'ai pas. Je réapparaîtrai avec.	}
+{	265	}{	Ah oui, j'ai failli oublier. Je vais vous chercher ça.	}{	Ah oui, j'ai failli oublier. Je vais vous chercher ça.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai oublié cela lors d'un événement pas encore arrivé. J'y vais.	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Vous ne l'avez pas ?	}{	Vous ne l'avez toujours pas, hein ?	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	273	}{	Tout ça pour une cassette ? Vous savez, maintenant, on peut faire ses achats en ligne, hein. . .	}{	Tout ça pour une cassette ? Vous savez, maintenant, on peut faire ses achats en ligne, hein. . .	}{	401	}{	pc.HasItem("item_g_horrortape_1")	}{	}{	}{	}{	}{	}{	}{	}{	Vous vouliez que j'aille vous chercher un film ? Hé hé. . . Elle est bien bonne celle-là. . .	}
+{	274	}{	Il ne l'avait pas.	}{	Il ne l'avait pas.	}{	281	}{	G.Scared_Meet == 1 and G.Isaac_Swan == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le film ne l'accompagnait pas dans ses déplacements.	}
+{	275	}{	Je ne l'ai pas eu. Je reviendrai quand ce sera fait.	}{	Je ne l'ai pas eu. Je reviendrai quand ce sera fait.	}{	0	}{	not pc.HasItem("item_g_horrortape_1")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai oublié cela lors d'un événement pas encore arrivé. J'y vais.	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	Hmm. . . Il avait une bonne excuse, au moins ?	}{	Hmm. . . Il avait une bonne excuse, au moins ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	Il a parlé d'une certaine Ginger Swan. Ca vous dit quelque chose ?	}{	Il a parlé d'une certaine Ginger Swan. Ca vous dit quelque chose ?	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez essayé gingerswan.com ?	}
+{	284	}{	Il pensait que sa vie était en danger. Et figurez-vous qu'il avait raison.	}{	Il pensait que sa vie était en danger. Et figurez-vous qu'il avait raison.	}{	291	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pas trop mauvaise. Il était mort.	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Vous n'avez pas. . .	}{	Vous n'avez pas. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Non. Avant de mourir, il a parlé d'une certaine Ginger Swan.	}{	Non. Avant de mourir, il a parlé d'une certaine Ginger Swan.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non. Vous avez essayé gingerswan.com ?	}
+{	293	}{	Pas cette fois. Ginger Swan, ça vous dit quelque chose ?	}{	Pas cette fois. Ginger Swan, ça vous dit quelque chose ?	}{	301	}{	Humanity -5 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Ce n'était pas moi, cette fois. Ginger Swan, ça vous dit quelque chose ?	}
+{	294	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Ginger Swan ? Swan. . . Ah oui. C'est un vieux souvenir. . . Il y a soixante-dix ans, n'importe quel homme dans cette ville aurait abandonné sa carrière, sa famille et n'importe quoi pour une nuit avec elle. . .	}{	Ginger Swan ? Swan. . . Ah oui. C'est un vieux souvenir. . . Il y a soixante-dix ans, n'importe quel homme dans cette ville aurait abandonné sa carrière, sa famille et n'importe quoi pour une nuit avec elle. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Swan = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Alors où puis-je la trouver ?	}{	Alors où puis-je la trouver ?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où puis-je la débusquer ?	}
+{	303	}{	Où puis-je trouver cette antiquité ?	}{	Où puis-je trouver cette antiquité ?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où trouverai-je ce fossile ?	}
+{	304	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	Cela dépend. Vous croyez au Paradis et à l'Enfer ? Ginger Swan est morte dans les années 50. . . Vingt ans plus tard, on voyait encore des hommes pleurer sur sa tombe. . . Je ne sais pas en quoi ça peut vous aider. . . mais je vous fais confiance pour trouver.	}{	Cela dépend. Vous croyez au Paradis et à l'Enfer ? Ginger Swan est morte dans les années 50. . . Vingt ans plus tard, on voyait encore des hommes pleurer sur sa tombe. . . Je ne sais pas en quoi ça peut vous aider. . . mais je vous fais confiance pour trouver.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Courier",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Je vais voir ce que je peux faire.	}{	Je vais voir ce que je peux faire.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais chercher ce nom. . .	}
+{	313	}{	Une actrice morte. Oui, c'est tout à fait logique.	}{	Une actrice morte. Oui, c'est tout à fait logique.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ca n'a aucun sens ! Parfait. Je m'en vais.	}
+{	314	}{	Quelle plaie ! Vous m'aviez dit que ce serait facile !	}{	Quelle plaie ! Vous m'aviez dit que ce serait facile !	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous aviez dit que ce serait doux comme de la soie, pas du papier de verre.	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	Ah oui ? Tenez-moi au courant quand vous aurez récupéré l'objet, jeune vampire. Si vous voulez bien m'excuser. . .	}{	Ah oui ? Tenez-moi au courant quand vous aurez récupéré l'objet, jeune vampire. Si vous voulez bien m'excuser. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	323	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	324	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	325	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	Parfait. Entre temps, considérez-vous invité dans ma baronnie. Bienvenue à Hollywood.	}{	Parfait. Entre temps, considérez-vous invitée dans ma baronnie. Bienvenue à Hollywood.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Merci.	}{	Merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je rentre.	}
+{	333	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	334	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	[Cette réplique est sans rapport avec Hollywood][Irrité]Un tribunal de kangourous. . .	}{	[Cette réplique est sans rapport avec Hollywood][Irrité]Un tribunal de kangourous. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	HA HA HA. Quoi ?	}{	HA HA HA. Quoi ?	}{	951	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	343	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	344	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	Cela me donne l'occasion d'accueillir personnellement les visiteurs dans mon domaine. Cela aide aussi à établir d'avance un certain accord, pour qu'il n'y ait pas d'accident malheureux pendant qu'ils sont en ville.	}{	Cela me donne l'occasion d'accueillir personnellement les visiteurs dans mon domaine. Cela aide aussi à établir d'avance un certain accord, pour qu'il n'y ait pas d'accident malheureux pendant qu'ils sont en ville.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	Et quel genre 'd'accord' pourrait-il y avoir entre nous ?	}{	Et quel genre 'd'accord' pourrait-il y avoir entre nous ?	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne comprends pas. . .	}
+{	353	}{	Ce n'est pas LaCroix, le prince de Los Angeles ? Pourquoi l'appelez-vous constamment 'votre domaine' ?	}{	Ce n'est pas LaCroix, le prince de Los Angeles ? Pourquoi l'appelez-vous constamment 'votre domaine' ?	}{	21	}{	G.Isaac_LaCroix < 1	}{	}{	}{	}{	}{	}{	}{	}{	Le La de LaCroix, ça ne veut pas dire LA ?	}
+{	354	}{	Eh bien, j'essaierai d'éviter les accidents pendant que je suis en ville. Au revoir.	}{	Eh bien, j'essaierai d'éviter les accidents pendant que je suis en ville. Au revoir.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me suis trompé d'adresse. Je vous laisse vieillir tranquille.	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Alors vous venez échanger des informations avec les rats d'égout ? LaCroix doit être vraiment désespéré s'il s'abaisse à leur parler - [amusé] et à demander mon aide, précisément à moi !	}{	Alors vous venez échanger des informations avec les rats d'égout ? LaCroix doit être vraiment désespéré s'il s'abaisse à leur parler - [amusé] et à demander mon aide, précisément à moi !	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Isaac_Nos = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Vous savez où je peux les trouver ?	}{	Vous savez où je peux les trouver ?	}{	371	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	363	}{	Faisons comme si je n'avait pas entendu les mots rats d'égout. Mais, vous savez où je peux les trouver ?	}{	Faisons comme si je n'avait pas entendu les mots rats d'égout. Mais, vous savez où je peux les trouver ?	}{	371	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	364	}{	Ca c'est sûr. Bon, je file.	}{	Ca c'est sûr. Bon, je file.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	Peut-être. Toutefois, avant votre départ, nous devrions parler de mon tribut.	}{	Peut-être. Toutefois, avant votre départ, nous devrions parler de mon tribut.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	373	}{	Je n'aime pas la tournure que prend cette conversation.	}{	Je n'aime pas la tournure que prend cette conversation.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	374	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	Cette cassette. . . J'aimerais Anarch pourquoi tout le monde en parle, alors installez-vous. J'ai l'impression que ce qu'elle contient pourrait nous intéresser tous les deux. . .	}{	Cette cassette. . . J'aimerais Anarch pourquoi tout le monde en parle, alors installez-vous. J'ai l'impression que ce qu'elle contient pourrait nous intéresser tous les deux. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Movie = 1; pc.SetQuest("Courier",6)	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	383	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	384	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	385	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	C'est plus dérangeant que ce qu'on m'avait dit. . . Vous comprenez mon inquiétude, à présent, n'est-ce pas ?	}{	C'est plus dérangeant que ce qu'on m'avait dit. . . Vous comprenez mon inquiétude, à présent, n'est-ce pas ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Movie = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	393	}{	Marrant. En quoi ça me concerne ?	}{	Marrant. En quoi ça me concerne ?	}{	411	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Bravo. . . Pourquoi ai-je regardé ça ?	}
+{	394	}{	C'était ignoble. En quoi avais-je besoin de le voir ?	}{	C'était ignoble. En quoi avais-je besoin de le voir ?	}{	411	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	. . . Je ne comprends pas.	}
+{	395	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	Je savais que vous le trouveriez - et pardonnez-moi si j'étais un peu trop impérieux à notre dernière conversation. C'est un réflexe. Je vois beaucoup de jeunes qui oublient le respect qui m'est dû. Je vous aiderai aussi raisonnablement que je le peux dans votre tâche. Mais d'abord. . .	}{	Je savais que vous le trouveriez - et pardonnez-moi si j'étais un peu trop impérieux à notre dernière conversation. C'est un réflexe. Je vois beaucoup de jeunes qui oublient le respect qui m'est dû. Je vous aiderai aussi raisonnablement que je le peux dans votre tâche. Mais d'abord. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.RemoveItem("item_g_horrortape_1")	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	(Auto-Link)	}{	(Auto-Link)	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	403	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	404	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	405	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	406	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	407	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	Il se trouve que vers l'époque où ce film a commencé à circuler, les Nosferatus ont disparu - j'ai essayé d'obtenir leur aide pour retrouver la source, et pour la première fois depuis toutes ces années, leur absence m'a étonné.	}{	Il se trouve que vers l'époque où ce film a commencé à circuler, les Nosferatus ont disparu - j'ai essayé d'obtenir leur aide pour retrouver la source, et pour la première fois depuis toutes ces années, leur absence m'a étonné.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Alors vous pensez que cette cassette est en rapport avec leur disparition ?	}{	Alors vous pensez que cette cassette est en rapport avec leur disparition ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cette vidéo nous cache les rats d'égout ?	}
+{	413	}{	Comment les contactez-vous, d'habitude ?	}{	Comment les contactez-vous, d'habitude ?	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelle magie utilisez-vous pour les appeler ?	}
+{	414	}{	Donc en fait, vous ne pouvez pas du tout m'aider. . .	}{	Donc en fait, vous ne pouvez pas du tout m'aider. . .	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il faut me mettre au rebut, tout cela commence à m'user. . .	}
+{	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	Certainement, la coïncidence serait trop grande. . . et ces créatures. . . Je ne connais pas beaucoup de compagnies de trucage qui pourraient les réussir. . . Mais il y a un problème : le film est incomplet, la première moitié est endommagée. Il nous faut une version complète.	}{	Certainement, la coïncidence serait trop grande. . . et ces créatures. . . Je ne connais pas beaucoup de compagnies de trucage qui pourraient les réussir. . . Mais il y a un problème : le film est incomplet, la première moitié est endommagée. Il nous faut une version complète.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Copy = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	Comment en trouver une ?	}{	Comment en trouver une ?	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cette vidéo doit avoir une jumelle quelque part. . .	}
+{	423	}{	J'ai payé mon tribut, maintenant c'est votre problème. On m'a envoyé ici pour trouver les Nosferatus.	}{	J'ai payé mon tribut, maintenant c'est votre problème. On m'a envoyé ici pour trouver les Nosferatus.	}{	441	}{	G.Isaac_Help == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche les rats d'égouts, pas à vous servir encore de coursier. . .	}
+{	424	}{	Bon sang, vous me faites tourner en bourrique, vieillard !	}{	Bon sang, vous me faites tourner en bourrique, vieillard !	}{	441	}{	G.Isaac_Help == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous jouez avec moi !	}
+{	425	}{	J'ai payé mon tribut, maintenant c'est votre problème. On m'a envoyé ici pour trouver les Nosferatus.	}{	J'ai payé mon tribut, maintenant c'est votre problème. On m'a envoyé ici pour trouver les Nosferatus.	}{	451	}{	G.Isaac_Help == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon tribut a été payé pour gagner un rat d'égout. . . Et je n'en vois pas.	}
+{	426	}{	Bon sang, vous me faites tourner en bourrique, vieillard !	}{	Bon sang, vous me faites tourner en bourrique, vieillard !	}{	451	}{	G.Isaac_Help == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous jouez avec moi !	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	En général, je fais Anarch que je les cherche, et tôt ou tard ils apparaissent.	}{	En général, je fais Anarch que je les cherche, et tôt ou tard ils apparaissent.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	Alors vous pensez que cette cassette est en rapport avec leur disparition ?	}{	Alors vous pensez que cette cassette est en rapport avec leur disparition ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cette vidéo nous cache les rats d'égout ?	}
+{	433	}{	Donc en fait, vous ne pouvez pas du tout m'aider. . .	}{	Donc en fait, vous ne pouvez pas du tout m'aider. . .	}{	441	}{	G.Isaac_Help == 0	}{	}{	}{	}{	}{	}{	}{	}{	Il faut me mettre au rebut, tout cela commence à m'user. . .	}
+{	434	}{	Donc en fait, vous ne pouvez pas du tout m'aider. . .	}{	Donc en fait, vous ne pouvez pas du tout m'aider. . .	}{	451	}{	G.Isaac_Help == 1	}{	}{	}{	}{	}{	}{	}{	}{	Il faut me mettre au rebut, tout cela commence à m'user. . .	}
+{	435	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	436	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	Je pense que vous pourrez les trouver sans moi. La porte est là-bas.	}{	Je pense que vous pourrez les trouver sans moi. La porte est là-bas.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Isaac_Help = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	Bon, comment trouver une meilleure copie ?	}{	Bon, comment trouver une meilleure copie ?	}{	461	}{	G.Isaac_Copy == 1	}{	}{	}{	}{	}{	}{	}{	}{	Cette vidéo doit avoir une jumelle quelque part. . .	}
+{	443	}{	Et vous pensez que cette vidéo a un rapport avec leur disparition ?	}{	Et vous pensez que cette vidéo a un rapport avec leur disparition ?	}{	421	}{	G.Isaac_Copy == 0	}{	}{	}{	}{	}{	}{	}{	}{	Cette vidéo nous cache les rats d'égout ?	}
+{	444	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	445	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	446	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	Merci de m'avoir fait perdre mon temps. . .	}{	Merci de m'avoir fait perdre mon temps. . .	}{	0	}{	}{	G.Isaac_Scorn = 1	}{	}{	}{	}{	}{	}{	}{	Vous êtes couvert de rouages de montre. . . Je ne vous laisserai plus me prendre mon temps. . .	}
+{	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	De nouveau. . .	}{	De nouveau. . .	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	(Auto-Link)	}{	(Auto-Link)	}{	441	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	453	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	454	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	455	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	Derrière le vernis de l'usine à rêves d'Hollywood, il y a une autre ville, qui crée un dérivé immonde pour la consommation secrète des débauchés. Je ne doute pas que ce film puisse se retrouver chez d'autres marchands de chair. Si j'étais vous, j'irais me renseigner là-bas.	}{	Derrière le vernis de l'usine à rêves d'Hollywood, il y a une autre ville, qui crée un dérivé immonde pour la consommation secrète des débauchés. Je ne doute pas que ce film puisse se retrouver chez d'autres marchands de chair. Si j'étais vous, j'irais me renseigner là-bas.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Quest = 1; pc.SetQuest("Tape",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	Du cul, hein ? Bon, très bien. Je vais me renseigner.	}{	Du cul, hein ? Bon, très bien. Je vais me renseigner.	}{	0	}{	G.Isaac_Pissed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mon ancienne vie connaissait bien des endroits. . . Je vais retourner les voir.	}
+{	463	}{	Du cul, hein ? Bon, très bien. Je vais me renseigner.	}{	Du cul, hein ? Bon, très bien. Je vais me renseigner.	}{	471	}{	G.Isaac_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ancienne vie connaissait bien des endroits. . . Je vais retourner les voir.	}
+{	464	}{	Alors, Toréador, on ne veut pas se salir les mains ?	}{	Alors, Toréador, on ne veut pas se salir les mains ?	}{	481	}{	not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Les mains des Toréadors sont si propres - je vais révérer les vôtres.	}
+{	465	}{	Avant de commencer à chercher, j'ai quelques questions.	}{	Avant de commencer à chercher, j'ai quelques questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cette cassette sera retrouvée, mais seulement quand vous m'aurez répondu.	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	Pas une brique de cette ville n'appartient à la Camarilla, alors prenez garde. . . C'est tout ce que je demande à mes visiteurs. . .	}{	Pas une brique de cette ville n'appartient à la Camarilla, alors prenez garde. . . C'est tout ce que je demande à mes visiteurs. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	Je vous tiens au courant si je trouve quelque chose. A plus tard, Isaac.	}{	Je vous tiens au courant si je trouve quelque chose. A plus tard, Isaac.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si je trouve votre cassette, je résisterai à l'envie de la détruire. Je pars.	}
+{	473	}{	Le Anarch-vivre est un service oublié. Super.	}{	Le Anarch-vivre est un service oublié. Super.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, oui, le Anarch-vivre. . . Vous vendez des poneys et des débroussailleuses, ici ? Bon, je pars.	}
+{	474	}{	J'ai quelques questions avant de partir.	}{	J'ai quelques questions avant de partir.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cette cassette sera retrouvée, mais seulement quand vous m'aurez répondu.	}
+{	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Je peux me salir énormément pour les jeunes vampires qui oublient leur rang. . .	}{	Je peux me salir énormément pour les jeunes vampires qui oublient leur rang. . .	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	(Auto-Link)	}{	(Auto-Link)	}{	471	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	483	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	484	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	485	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Certainement.	}{	Certainement.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	Je peux faire autre chose dans cette ville ?	}{	Je peux faire autre chose dans cette ville ?	}{	501	}{	G.Isaac_Gargoyle == 0	}{	}{	}{	}{	}{	}{	}{	}{	Que peuvent faire mes mains désoeuvrées dans votre ville.	}
+{	493	}{	Oh, à propos de la gargouille. . .	}{	Oh, à propos de la gargouille. . .	}{	511	}{	G.Isaac_Gargoyle == 1	}{	}{	}{	}{	}{	}{	}{	}{	A propos de l'être de pierre. . .	}
+{	494	}{	Je peux m'occuper de la gargouille, si vous me dites quoi faire. . .	}{	Je peux m'occuper de la gargouille, si vous me dites quoi faire. . .	}{	521	}{	G.Isaac_Gargoyle == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je briserai cette pierre si vous m'expliquez comment.	}
+{	495	}{	Parlez-moi de vous.	}{	Parlez-moi de vous.	}{	571	}{	G.Isaac_Self == 0	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi votre arrivée à Hollywood, Isaac Abrams ?	}
+{	496	}{	Que pouvez-vous me dire sur les Nosferatus ?	}{	Que pouvez-vous me dire sur les Nosferatus ?	}{	541	}{	G.Isaac_Nosferatu == 0 and (not IsClan(pc,"Nosferatu"))	}{	}{	}{	}{	}{	}{	}{	}{	Chantez-moi une chanson sur les rats d'égout.	}
+{	497	}{	Que pouvez-vous me dire sur les Nosferatus ?	}{	Que pouvez-vous me dire sur les Nosferatus ?	}{	551	}{	G.Isaac_Nosferatu == 0 and IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	Que pouvez-vous me dire sur Velvet ?	}{	Que pouvez-vous me dire sur Velvet ?	}{	561	}{	G.Velvet_Know == 1 and G.Isaac_VV == 0	}{	}{	}{	}{	}{	}{	}{	}{	Que pouvez-vous me dire sur la côte de Velvet ?	}
+{	499	}{	Parlez-moi d'Ash.	}{	Parlez-moi d'Ash.	}{	621	}{	G.Ash_Know == 1 and G.Isaac_Ash == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quelle main tordue a pu écrire Ash ?	}
+{	500	}{	Je reviendrai.	}{	Je reviendrai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je peux Anarch ces choses plus tard.	}
+{	501	}{	Il y a quelque chose, bien sûr, mais c'est à propos d'une gargouille. . . Ah, je vois que cela retient votre attention. . .	}{	Il y a quelque chose, bien sûr, mais c'est à propos d'une gargouille. . . Ah, je vois que cela retient votre attention. . .	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Isaac_Gargoyle = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	Oui, parlez-moi de cette gargouille.	}{	Oui, parlez-moi de cette gargouille.	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de l'être de pierre. . .	}
+{	503	}{	Pas vraiment. Mais j'avais une autre question.	}{	Pas vraiment. Mais j'avais une autre question.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demandais autre chose. . .	}
+{	504	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	505	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	Elle a élu domicile dans mon Théâtre asiatique préféré - il est fermé à présent, mais cela n'a rien à voir. J'ai envoyé des gens pour la chasser, et elle me les a renvoyés en plusieurs morceaux. Ce monstre ne peut pas attaquer les vampires dans ma ville.	}{	Elle a élu domicile dans mon Théâtre asiatique préféré - il est fermé à présent, mais cela n'a rien à voir. J'ai envoyé des gens pour la chasser, et elle me les a renvoyés en plusieurs morceaux. Ce monstre ne peut pas attaquer les vampires dans ma ville.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Gargoyle = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	Ca m'intéresse, mais comment peut-on vaincre une gargouille ?	}{	Ca m'intéresse, mais comment peut-on vaincre une gargouille ?	}{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	Comment brise-t-on la pierre ?	}
+{	513	}{	Je vais m'occuper de cette gargouille si vous me dites comment.	}{	Je vais m'occuper de cette gargouille si vous me dites comment.	}{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je briserai cette pierre si vous me fournissez une méthode.	}
+{	514	}{	Le grand méchant Isaac ne peut pas s'occuper d'une petite gargouille ?	}{	Le grand méchant Isaac ne peut pas s'occuper d'une petite gargouille ?	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Un caillou en colère vous fait peur, baron ?	}
+{	515	}{	J'y penserai. J'ai d'autres questions.	}{	J'y penserai. J'ai d'autres questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bien. J'ai d'autres questions. . .	}
+{	516	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	517	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	520	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	521	}{	C'est une pierre qui marche et qui aime le sang. Je vous suggère n'importe quelle méthode qui vous évitera de perdre un bras. En fait, je préférerais l'avoir comme alliée, mais je doute que ce soit possible. Tenez, la clé du théâtre. Je vous laisse faire.	}{	C'est une pierre qui marche et qui aime le sang. Je vous suggère n'importe quelle méthode qui vous évitera de perdre un bras. En fait, je préférerais l'avoir comme alliée, mais je doute que ce soit possible. Tenez, la clé du théâtre. Je vous laisse faire.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	Je vais voir ce que je peux faire. J'ai une autre question.	}{	Je vais voir ce que je peux faire. J'ai une autre question.	}{	491	}{	G.Chantry_Gbook == 0	}{	pc.GiveItem("item_k_chinese_theatre_key"); G.Isaac_Gargoyle = 3; pc.SetQuest("Gargoyle",1)	}{	}{	}{	}{	}{	}{	}{	Je vais déplacer cette pierre. . . Je me demandais autre chose. . .	}
+{	523	}{	Je vais voir ce que je peux faire. J'ai une autre question.	}{	Je vais voir ce que je peux faire. J'ai une autre question.	}{	491	}{	G.Chantry_Gbook == 1	}{	pc.GiveItem("item_k_chinese_theatre_key"); G.Isaac_Gargoyle = 3; pc.SetQuest("Gargoyle",4)	}{	}{	}{	}{	}{	}{	}{	Je vais déplacer cette pierre. . . Je me demandais autre chose. . .	}
+{	524	}{	Une gargouille de moins avant ce soir, vieillard, faites-moi confiance.	}{	Une gargouille de moins avant ce soir, vieillard, faites-moi confiance.	}{	0	}{	G.Chantry_Gbook == 0	}{	pc.GiveItem("item_k_chinese_theatre_key"); G.Isaac_Gargoyle = 3; pc.SetQuest("Gargoyle",1)	}{	}{	}{	}{	}{	}{	}{	Je m'en vais jouer à ciseau-papier, je serai le papier. . .	}
+{	525	}{	Une gargouille de moins avant ce soir, vieillard, faites-moi confiance.	}{	Une gargouille de moins avant ce soir, vieillard, faites-moi confiance.	}{	0	}{	G.Chantry_Gbook == 1	}{	pc.GiveItem("item_k_chinese_theatre_key"); G.Isaac_Gargoyle = 3; pc.SetQuest("Gargoyle",4)	}{	}{	}{	}{	}{	}{	}{	Je m'en vais jouer à ciseau-papier, je serai le papier. . .	}
+{	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Je vais oublier ça, parce que je me rappelle encore très bien l'impertinence. Vous voyez, je suis dans une position, et à un âge, où je peux demander aux autres de s'occuper de ce qui me dérange. Vous voulez m'impressionner ? Occupez-vous de la gargouille. . .	}{	Je vais oublier ça, parce que je me rappelle encore très bien l'impertinence. Vous voyez, je suis dans une position, et à un âge, où je peux demander aux autres de s'occuper de ce qui me dérange. Vous voulez m'impressionner ? Occupez-vous de la gargouille. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Isaac_Gargoyle = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	D'accord, le vieux, je m'en charge. Comment je fais ?	}{	D'accord, le vieux, je m'en charge. Comment je fais ?	}{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	Comment brise-t-on la pierre ?	}
+{	533	}{	Ca ne me convainc pas, et tout cela m'écoeure un peu, alors je vais partir.	}{	Ca ne me convainc pas, et tout cela m'écoeure un peu, alors je vais partir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis en position de dire 'non'. Oh, je viens de le dire. Bon, je file.	}
+{	534	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	536	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	Les Nosferatus ? J'ai pitié d'eux, mais leur présence me déplaît. Je les contacte quand cela est nécessaire, je sais qu'ils sont quelque part sous ma ville, mais eux seuls savent où. Ils respectent mes rues, et je laisse leurs égouts en paix. Mais je ne leur fais pas confiance.	}{	Les Nosferatus ? J'ai pitié d'eux, mais leur présence me déplaît. Je les contacte quand cela est nécessaire, je sais qu'ils sont quelque part sous ma ville, mais eux seuls savent où. Ils respectent mes rues, et je laisse leurs égouts en paix. Mais je ne leur fais pas confiance.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Nosferatu = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	J'avais une autre question.	}{	J'avais une autre question.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demandais autre chose. . .	}
+{	543	}{	Je retourne chercher cette cassette. A plus tard, Isaac.	}{	Je retourne chercher cette cassette. A plus tard, Isaac.	}{	0	}{	G.Isaac_Show < 2	}{	}{	}{	}{	}{	}{	}{	}{	Ma quête continue. Je pars.	}
+{	544	}{	A plus tard, Isaac.	}{	A plus tard, Isaac.	}{	0	}{	G.Isaac_Show == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je pars.	}
+{	545	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	546	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	547	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	548	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	Les Nosferatus. Je les contacte quand cela est nécessaire, Ils sont quelque part sous ma ville, et j'espérais que vous pourriez me dire ce qui leur est arrivé.	}{	Les Nosferatus. Je les contacte quand cela est nécessaire, Ils sont quelque part sous ma ville, et j'espérais que vous pourriez me dire ce qui leur est arrivé.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Nosferatu = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	J'avais une autre question.	}{	J'avais une autre question.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demandais autre chose. . .	}
+{	553	}{	Je retourne chercher cette cassette. A plus tard, Isaac.	}{	Je retourne chercher cette cassette. A plus tard, Isaac.	}{	0	}{	G.Isaac_Show < 2	}{	}{	}{	}{	}{	}{	}{	}{	Ma quête continue. Je pars.	}
+{	554	}{	A plus tard, Isaac.	}{	A plus tard, Isaac.	}{	0	}{	G.Isaac_Show == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je pars.	}
+{	555	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	556	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	558	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	Vous avez rencontré V.V., n'est-ce pas ? De tous les vampires que je connais, c'est elle qui paraît la plus vivante. . . elle est encore jeune, mais déjà adepte. Ce n'est pas mon enfant, mais elle est devenue comme une fille pour moi.	}{	Vous avez rencontré V.V., n'est-ce pas ? De tous les vampires que je connais, c'est elle qui paraît la plus vivante. . . elle est encore jeune, mais déjà adepte. Ce n'est pas mon enfant, mais elle est devenue comme une fille pour moi.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_VV = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	J'avais une autre question.	}{	J'avais une autre question.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demandais autre chose. . .	}
+{	563	}{	Je retourne chercher cette cassette. A plus tard, Isaac.	}{	Je retourne chercher cette cassette. A plus tard, Isaac.	}{	0	}{	G.Isaac_Show < 2	}{	}{	}{	}{	}{	}{	}{	}{	Ma quête continue. Je pars.	}
+{	564	}{	A plus tard, Isaac.	}{	A plus tard, Isaac.	}{	0	}{	G.Isaac_Show == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je pars.	}
+{	565	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	566	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	Dans votre vie, volontairement ou non, vous avez vu une production d'Isaac Abrams. J'ai financé trente pour cent des 100 meilleurs films de l'American Film. Etant le baron d'Hollywood, je peux faire tous les projets que je désire.	}{	Dans votre vie, volontairement ou non, vous avez vu une production d'Isaac Abrams. J'ai financé trente pour cent des 100 meilleurs films de l'American Film. Etant le baron d'Hollywood, je peux faire tous les projets que je désire.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Isaac_Self = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	Ca m'impressionne beaucoup. Quelle est la personne que vous préfériez, dans celles avec qui vous avez travaillé ?	}{	Ca m'impressionne beaucoup. Quelle est la personne que vous préfériez, dans celles avec qui vous avez travaillé ?	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelles étoiles ont gravité autour de vous ?	}
+{	573	}{	C'est vous qui avez produit La Course des Singes 2 et Frère Fantôme ? J'ai adoré !	}{	C'est vous qui avez produit La Course des Singes 2 et Frère Fantôme ? J'ai adoré !	}{	591	}{	G.Isaac_Crap == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les cafards géants font d'excellents premiers rôles.	}
+{	574	}{	Je pourrais jouer dans un film, moi ?	}{	Je pourrais jouer dans un film, moi ?	}{	601	}{	Appearance 5 & G.Isaac_Star == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je pourrais me faire projeter sur trente mètres ?	}
+{	575	}{	Je pourrais jouer dans un film, moi ?	}{	Je pourrais jouer dans un film, moi ?	}{	611	}{	Appearance -5 & G.Isaac_Star == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je pourrais me faire projeter sur trente mètres ?	}
+{	576	}{	J'avais d'autres questions.	}{	J'avais d'autres questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demandais autre chose. . .	}
+{	577	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	Stewart, Lean, Hitchcock, Wilder, Holden, Dean, Scorcese, De Niro, et surtout Ash, mon enfant. [nostalgique] Je me rappelle un cadre de studio qui m'avait dit que Bogart pourrait être déménageur, mais jamais acteur. . .	}{	Stewart, Lean, Hitchcock, Wilder, Holden, Dean, Scorcese, De Niro, et surtout Ash, mon enfant. [nostalgique] Je me rappelle un cadre de studio qui m'avait dit que Bogart pourrait être déménageur, mais jamais acteur. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Isaac_Ash = 1; G.Isaac_Bio = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	Ash ?	}{	Ash ?	}{	621	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que pouvez-vous me dire sur la lettre H ?	}
+{	583	}{	Je pourrais jouer dans un film, moi ?	}{	Je pourrais jouer dans un film, moi ?	}{	601	}{	Appearance 5 & G.Isaac_Star == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je pourrais me faire projeter sur trente mètres ?	}
+{	584	}{	Je pourrais jouer dans un film, moi ?	}{	Je pourrais jouer dans un film, moi ?	}{	611	}{	Appearance -5 & G.Isaac_Star == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je pourrais me faire projeter sur trente mètres ?	}
+{	585	}{	C'est vous qui avez produit Police Donkey 3 ou Time Cake ? C'était génial !	}{	C'est vous qui avez produit Police Donkey 3 ou Time Cake ? C'était génial !	}{	591	}{	G.Isaac_Crap == 0	}{	}{	}{	}{	}{	}{	}{	}{	Il y a si peu de comédies qui se passent sur la lune. Ce serait trop drôle. . .	}
+{	586	}{	J'avais d'autres questions.	}{	J'avais d'autres questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demandais autre chose. . .	}
+{	587	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	Je fais des films exemplaires, pas expiatoires. . .	}{	Je fais des films exemplaires, pas expiatoires. . .	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Isaac_Crap = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	Je pourrais jouer dans un film, moi ?	}{	Je pourrais jouer dans un film, moi ?	}{	601	}{	Appearance 5 & G.Isaac_Star == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je pourrais me faire projeter sur trente mètres ?	}
+{	593	}{	Je pourrais jouer dans un film, moi ?	}{	Je pourrais jouer dans un film, moi ?	}{	611	}{	Appearance -5 & G.Isaac_Star == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je pourrais me faire projeter sur trente mètres ?	}
+{	594	}{	Quelle est la personne que vous préfériez, dans celles avec qui vous avez travaillé ?	}{	Quelle est la personne que vous préfériez, dans celles avec qui vous avez travaillé ?	}{	581	}{	G.Isaac_Bio == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quelles étoiles ont gravité autour de vous ?	}
+{	595	}{	J'avais d'autres questions.	}{	J'avais d'autres questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demandais autre chose. . .	}
+{	596	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	597	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	598	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	599	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	600	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	601	}{	Quelle vanité a la jeune génération. Ce n'est pas parce que vous avez une bonne tête. . . J'imagine que vous voudriez être sur les couvertures des journaux, dans les sites Internet, sur des affiches. Mais l'occasion est morte en même temps que vous. . .	}{	Quelle vanité a la jeune génération. Ce n'est pas parce que vous avez une bonne tête. . . J'imagine que vous voudriez être sur les couvertures des journaux, dans les sites Internet, sur des affiches. Mais l'occasion est morte en même temps que vous. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Star = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	Quelle est la personne que vous préfériez, dans celles avec qui vous avez travaillé ?	}{	Quelle est la personne que vous préfériez, dans celles avec qui vous avez travaillé ?	}{	581	}{	G.Isaac_Bio == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quelles étoiles ont gravité autour de vous ?	}
+{	603	}{	C'est vous qui avez produit Communauté ? C'était trop top !	}{	C'est vous qui avez produit Communauté ? C'était trop top !	}{	591	}{	G.Isaac_Crap == 0	}{	}{	}{	}{	}{	}{	}{	}{	Des marionnettes d'ombre. . . Un drame en ombres chinoises.	}
+{	604	}{	J'avais d'autres questions.	}{	J'avais d'autres questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demandais autre chose. . .	}
+{	605	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	A moins que vous soyez le meilleur acteur de tous les temps, votre tête serait dure à vendre. Mais ne le prenez pas trop mal. Quand on est mort, il vaut mieux éviter la publicité.	}{	A moins que vous soyez la meilleure actrice de tous les temps, votre tête serait dure à vendre. Mais ne le prenez pas trop mal. Quand on est mort, il vaut mieux éviter la publicité.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Star = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	Quelle est la personne que vous préfériez, dans celles avec qui vous avez travaillé ?	}{	Quelle est la personne que vous préfériez, dans celles avec qui vous avez travaillé ?	}{	581	}{	G.Isaac_Bio == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quelles étoiles ont gravité autour de vous ?	}
+{	613	}{	C'est vous qui avez produit Massacrobot Jr. ? J'ai adoré ce film.	}{	C'est vous qui avez produit Massacrobot Jr. ? J'ai adoré ce film.	}{	591	}{	G.Isaac_Crap == 0	}{	}{	}{	}{	}{	}{	}{	}{	La naissance d'un papillon condamné par ses ailes déchirées. . . Je vous raconterai cette histoire.	}
+{	614	}{	J'avais d'autres questions.	}{	J'avais d'autres questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demandais autre chose. . .	}
+{	615	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	616	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	617	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	618	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	619	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	620	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	Ash. Par où commencer ? Il y a sept ans, j'ai vu un casting pour ce qui deviendrait Zéro Négatif. Dès que je l'ai vu - la passion de sa performance - je savais qu'il était bon.	}{	Ash. Par où commencer ? Il y a sept ans, j'ai vu un casting pour ce qui deviendrait Zéro Négatif. Dès que je l'ai vu - la passion de sa performance - je savais qu'il était bon.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Ash = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	Continuez.	}{	Continuez.	}{	631	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui. . . Intéressant. . .	}
+{	623	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	624	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	625	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	626	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	627	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	628	}{	J'avais d'autres questions.	}{	J'avais d'autres questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demande autre chose.	}
+{	629	}{	J'en sais assez. Au revoir.	}{	J'en sais assez. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les mots me lassent, je m'en vais.	}
+{	630	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	631	}{	Je n'avais rien vu de tel depuis Clift ou Dean. Il avait le look, le charisme, le charme. . . Cette qualité indéfinissable qui fait les légendes du cinéma. Mon premier film avec lui a fait sensation. . . et l'a changé. . .	}{	Je n'avais rien vu de tel depuis Clift ou Dean. Il avait le look, le charisme, le charme. . . Cette qualité indéfinissable qui fait les légendes du cinéma. Mon premier film avec lui a fait sensation. . . et l'a changé. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	Comment cela ?	}{	Comment cela ?	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	Changé ?	}
+{	633	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	634	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	635	}{	J'avais d'autres questions.	}{	J'avais d'autres questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demande autre chose.	}
+{	636	}{	J'en sais assez. Au revoir.	}{	J'en sais assez. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les mots me lassent, je m'en vais.	}
+{	637	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	638	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	640	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	641	}{	Une fois qu'il a été connu, je l'avais perdu. Les fêtes, l'alcool, les voitures, les femmes. . . Une nuit, je suis allé chez lui parler de son rôle suivant, et je l'ai trouvé presque mort d'overdose. Je n'ai pas pu. . . le laisser partir.	}{	Ash est né pour jouer la comédie, à la différence de tant d'autres. J'ai aidé à l'introduire dans le métier. Mais une fois qu'il a été connu, je l'avais perdu.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	Vous l'avez changé pour le sauver ?	}{	Vous l'avez changé pour le sauver ?	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il a été défiguré par votre Baiser ?	}
+{	643	}{	Vous n'aviez pas pensé aux conséquences ?	}{	Vous n'aviez pas pensé aux conséquences ?	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le sang fait des choses étranges au Bétail. . . Ha ha ha ! Vous n'étiez pas au courant ?	}
+{	644	}{	Je m'ennuie. J'ai d'autres questions.	}{	Je m'ennuie. J'ai d'autres questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si je respirais, je bâillerais. Je me demande autre chose.	}
+{	645	}{	J'en sais assez. Au revoir.	}{	J'en sais assez. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les mots me lassent, je m'en vais.	}
+{	646	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	647	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	648	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	650	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	651	}{	Non. . .	}{	Non. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	652	}{	(Auto-Link)	}{	(Auto-Link)	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	653	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	654	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	655	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	656	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	657	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	658	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	659	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	660	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	661	}{	J'ai agi sans réfléchir. J'en ai vu tant d'autres mourir avant l'heure, avec Ash, j'avais une chance de l'empêcher.	}{	J'ai agi sans réfléchir. J'en ai vu tant d'autres mourir avant l'heure, avec Ash, j'avais une chance de l'empêcher.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	Et que s'est-il passé ?	}{	Et que s'est-il passé ?	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Et vous avez. . . hé hé. . . ?	}
+{	663	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	664	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	665	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	666	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	667	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	668	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	669	}{	Je m'ennuie. J'ai d'autres questions.	}{	Je m'ennuie. J'ai d'autres questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si je respirais, je bâillerais. Je me demande autre chose.	}
+{	670	}{	J'en sais assez. Au revoir.	}{	J'en sais assez. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les mots me lassent, je m'en vais.	}
+{	671	}{	Ash n'a pas changé - il ne pouvait plus jouer la comédie. Je lui avais volé sa place. Il devait mentir à ses amis sur sa nouvelle vie. Il devait se nourrir. Je lui ai donné un club - une miette de son ancienne gloire. J'ai fait tout mon possible pour faciliter ce changement.	}{	Ash n'a pas changé - il ne pouvait plus jouer la comédie. Je lui avais volé sa place. Il devait mentir à ses amis sur sa nouvelle vie. Il devait se nourrir. Je lui ai donné un club - une miette de son ancienne gloire. J'ai fait tout mon possible pour faciliter ce changement.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	672	}{	Il vous déteste ?	}{	Il vous déteste ?	}{	681	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre Baiser a laissé son amertume dans ses veines ?	}
+{	673	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	674	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	675	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	676	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	678	}{	Je m'ennuie. J'ai d'autres questions.	}{	Je m'ennuie. J'ai d'autres questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si je respirais, je bâillerais. Je me demande autre chose.	}
+{	679	}{	J'en sais assez. Au revoir.	}{	J'en sais assez. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les mots me lassent, je m'en vais.	}
+{	680	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	681	}{	Il se sent redevable envers moi. Je ne pense pas qu'il me déteste. . . Il m'en veut, certes. Je suis son père et lui mon enfant, et il y a une responsabilité et un respect inhérents dans ce lien. Même si nous ne sommes plus aussi amis qu'avant.	}{	Il se sent redevable envers moi. Je ne pense pas qu'il me déteste. . . Il m'en veut, certes. Je suis son père et lui mon enfant, et il y a une responsabilité et un respect inhérents dans ce lien. Même si nous ne sommes plus aussi amis qu'avant.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	682	}{	Où puis-je trouver Ash ?	}{	Où puis-je trouver Ash ?	}{	691	}{	G.Ash_Know == 0	}{	}{	}{	}{	}{	}{	}{	}{	Sur quelle page trouverai-je ce Ash ?	}
+{	683	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	684	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	685	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	686	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	687	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	688	}{	J'avais d'autres questions.	}{	J'avais d'autres questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demande autre chose.	}
+{	689	}{	J'en sais assez. Au revoir.	}{	J'en sais assez. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les mots me lassent, je m'en vais.	}
+{	690	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	691	}{	Il passe presque toutes ses nuits dans le club, le Asp Hole. Je dois dire que je suis trop vieux jeu pour l'apprécier. Pour moi, c'est l'essence concentrée de tout ce qui ne va plus dans le cinéma actuel.	}{	Il passe presque toutes ses nuits dans le club, le Asp Hole. Je dois dire que je suis trop vieux jeu pour l'apprécier. Pour moi, c'est l'essence concentrée de tout ce qui ne va plus dans le cinéma actuel.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	692	}{	Je devrais peut-être aller y faire un tour. J'avais d'autres questions.	}{	Je devrais peut-être aller y faire un tour. J'avais d'autres questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une nuit, je finirai par y entrer. Je me demande autre chose.	}
+{	693	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	694	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	695	}{	Si je passe devant, j'y ferai peut-être un saut. Au revoir. Merci.	}{	Si je passe devant, j'y ferai peut-être un saut. Au revoir. Merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où irai-je ensuite ? Allez Anarch. Peut-être là-bas. . .	}
+{	696	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	697	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	698	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	699	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	700	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	701	}{	Je pensais bien que vous finiriez par revenir par ici. . .	}{	Je pensais bien que vous finiriez par revenir par ici. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Isaac_Scorn = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	702	}{	La cassette. Et les choses qui sont dessus. Tout est vrai.	}{	La cassette. Et les choses qui sont dessus. Tout est vrai.	}{	791	}{	pc.HasItem("item_g_horrortape_2")	}{	}{	}{	}{	}{	}{	}{	}{	Les monstres de la cassette ne sont pas des marionnettes. Les rêves ne sont pas devenus réalité ce soir.	}
+{	703	}{	Bien, où peut-on trouver une meilleure copie ?	}{	Bien, où peut-on trouver une meilleure copie ?	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cette copie doit avoir un double quelque part. . .	}
+{	704	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	705	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	706	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	707	}{	A présent, je me rappelle pourquoi je partais. Allez au diable, Isaac.	}{	A présent, je me rappelle pourquoi je partais. Allez au diable, Isaac.	}{	0	}{	}{	G.Isaac_Scorn = 1	}{	}{	}{	}{	}{	}{	}{	Oh, ce n'est pas le coeur d'Hollywood, ici, c'est son trou du cul. Je m'en vais.	}
+{	708	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	709	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	710	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	711	}{	Alors ? Ca a marché ?	}{	Alors ? Ca a marché ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	712	}{	Oui. Ces choses sur la cassette. . . elles sont réelles.	}{	Oui. Ces choses sur la cassette. . . elles sont réelles.	}{	791	}{	pc.HasItem("item_g_horrortape_2")	}{	}{	}{	}{	}{	}{	}{	}{	Les monstres de la cassette ne sont pas des marionnettes. Les rêves ne sont pas devenus réalité ce soir.	}
+{	713	}{	J'approche. J'avais quelques questions.	}{	J'approche. J'avais quelques questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bientôt. Mais avant, je me demandais quelque chose. . .	}
+{	714	}{	Ash a des ennuis, des chasseurs le poursuivent.	}{	Ash a des ennuis, des chasseurs le poursuivent.	}{	851	}{	G.Isaac_Hunters == 0 and G.Ash_Hunters >= 1	}{	}{	}{	}{	}{	}{	}{	}{	Bientôt, les chasseurs vont effacer le Ash.	}
+{	715	}{	Oh, à propos de la gargouille. . .	}{	Oh, à propos de la gargouille. . .	}{	511	}{	G.Isaac_Gargoyle == 1	}{	}{	}{	}{	}{	}{	}{	}{	A propos de l'être de pierre. . .	}
+{	716	}{	Je peux m'occuper de la gargouille, si vous me dites quoi faire. . .	}{	Je peux m'occuper de la gargouille, si vous me dites quoi faire. . .	}{	521	}{	G.Isaac_Gargoyle == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je briserai cette pierre si vous m'expliquez comment.	}
+{	717	}{	J'ai tué la gargouille.	}{	J'ai tué la gargouille.	}{	731	}{	IsDead("Gargoyle") and G.Isaac_Gargoyle != 4	}{	}{	}{	}{	}{	}{	}{	}{	L'être de pierre est en miettes.	}
+{	718	}{	Au fait, la gargouille. . . Je l'ai convaincue de vous être fidèle.	}{	Au fait, la gargouille. . . Je l'ai convaincue de vous être fidèle.	}{	761	}{	G.Isaac_Gargoyle !=4 and G.Gargoyle_Convinced == 1 and not IsDead("Gargoyle")	}{	}{	}{	}{	}{	}{	}{	}{	L'être de pierre a juré fidélité au baron.	}
+{	719	}{	J'ai appris quelque chose sur cette gargouille.	}{	J'ai appris quelque chose sur cette gargouille.	}{	771	}{	G.Isaac_Regent == 0 and G.Regent_Family < 3 and G.Regent_Gargoyleinside == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je sais quelque chose que je ne dirai pas. . . sans doute.	}
+{	720	}{	Je vous préviens si je trouve quelque chose.	}{	Je vous préviens si je trouve quelque chose.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pas encore. Je cherche toujours.	}
+{	721	}{	Bonsoir. . .	}{	Bonsoir. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	722	}{	King's Way. Il y avait un Tzimisce. Vous remarquerez que ma phrase est au passé.	}{	King's Way. Il y avait un Tzimisce. Vous remarquerez que ma phrase est au passé.	}{	831	}{	IsClan(pc,"Toreador") and G.Isaac_Gift == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	723	}{	King's Way. Il y avait un Tzimisce. Vous remarquerez que ma phrase est au passé.	}{	King's Way. Il y avait un Tzimisce. Vous remarquerez que ma phrase est au passé.	}{	61	}{	not IsClan(pc,"Toreador") and G.Isaac_Gift == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le façonneur de chair qui marchait avec royauté n'est pas si malin maintenant..	}
+{	724	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	921	}{	G.Isaac_Gift == 2 and G.Patch_Plus == 0	}{	pc.MoneyAdd( 500 )	}{	}{	}{	}{	}{	}{	}{	}
+{	725	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	921	}{	G.Isaac_Gift == 2 and G.Patch_Plus == 1	}{	pc.GiveItem("item_w_mingxiao_melee")	}{	}{	}{	}{	}{	}{	}{	}
+{	726	}{	J'avais quelques questions.	}{	J'avais quelques questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demande autre chose.	}
+{	727	}{	Oh, à propos de la gargouille. . .	}{	Oh, à propos de la gargouille. . .	}{	511	}{	G.Isaac_Gargoyle == 1 or G.Isaac_Gargoyle == 2	}{	}{	}{	}{	}{	}{	}{	}{	A propos de l'être de pierre. . .	}
+{	728	}{	J'ai tué la gargouille.	}{	J'ai tué la gargouille.	}{	731	}{	IsDead("Gargoyle") and G.Isaac_Gargoyle != 4	}{	}{	}{	}{	}{	}{	}{	}{	L'être de pierre est en miettes.	}
+{	729	}{	Au fait, la gargouille. . . Je l'ai convaincue de vous être fidèle.	}{	Au fait, la gargouille. . . Je l'ai convaincue de vous être fidèle.	}{	761	}{	G.Isaac_Gargoyle !=4 and G.Gargoyle_Convinced == 1 and not IsDead("Gargoyle")	}{	}{	}{	}{	}{	}{	}{	}{	L'être de pierre a juré fidélité au baron.	}
+{	730	}{	J'ai appris quelque chose sur cette gargouille.	}{	J'ai appris quelque chose sur cette gargouille.	}{	771	}{	G.Isaac_Regent == 0 and G.Regent_Family < 3 and G.Regent_Gargoyleinside == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je sais quelque chose que je ne dirai pas. . . sans doute.	}
+{	731	}{	J'avoue, j'étais convaincu que vous reviendriez avec une pierre dans le derrière, mais je suis heureux de m'être trompé. L'avenir vous réserve de grandes choses. Dommage que vous travailliez encore à plein temps pour le mauvais camp.	}{	J'avoue, j'étais convaincu que vous reviendriez avec une pierre dans le derrière, mais je suis heureux de m'être trompé. L'avenir vous réserve de grandes choses. Dommage que vous travailliez encore à plein temps pour le mauvais camp.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Gargoyle = 4	}{	}{	}{	}{	}{	}{	}{	}
+{	732	}{	Je n'ai rien contre les anarchs.	}{	Je n'ai rien contre les anarchs.	}{	741	}{	G.Patch_Plus == 0 and (G.Regent_QuestGargoyle < 2 or G.Regent_QuestGargoyle == 5)	}{	pc.SetQuest("Gargoyle",5)	}{	}{	}{	}{	}{	}{	}{	Les enfants de la Camarilla sont mes camarades.	}
+{	733	}{	Je n'ai rien contre les anarchs.	}{	Je n'ai rien contre les anarchs.	}{	741	}{	G.Patch_Plus == 0 and G.Regent_QuestGargoyle > 1 and G.Regent_QuestGargoyle < 5	}{	pc.SetQuest("Gargoyle",7)	}{	}{	}{	}{	}{	}{	}{	Les enfants de la Camarilla sont mes camarades.	}
+{	734	}{	Le prince sait quoi faire. C'est pourquoi je suis ici.	}{	Le prince sait quoi faire. C'est pourquoi je suis ici.	}{	751	}{	G.Patch_Plus == 0 and (G.Regent_QuestGargoyle < 2 or G.Regent_QuestGargoyle == 5)	}{	pc.SetQuest("Gargoyle",5)	}{	}{	}{	}{	}{	}{	}{	Tout bouffon qu'il soit, j'aime rire. . . Rire jusque sur la plus haute marche. . .	}
+{	735	}{	Le prince sait quoi faire. C'est pourquoi je suis ici.	}{	Le prince sait quoi faire. C'est pourquoi je suis ici.	}{	751	}{	G.Patch_Plus == 0 and G.Regent_QuestGargoyle > 1 and G.Regent_QuestGargoyle < 5	}{	pc.SetQuest("Gargoyle",7)	}{	}{	}{	}{	}{	}{	}{	Tout bouffon qu'il soit, j'aime rire. . . Rire jusque sur la plus haute marche. . .	}
+{	736	}{	Je n'ai rien contre les anarchs.	}{	Je n'ai rien contre les anarchs.	}{	741	}{	G.Patch_Plus == 1 and (G.Regent_QuestGargoyle < 2 or G.Regent_QuestGargoyle == 5)	}{	pc.AwardExperience("Gargoyle04"); pc.SetQuest("Gargoyle",5); FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	Les enfants de la Camarilla sont mes camarades.	}
+{	737	}{	Je n'ai rien contre les anarchs.	}{	Je n'ai rien contre les anarchs.	}{	741	}{	G.Patch_Plus == 1 and G.Regent_QuestGargoyle > 1 and G.Regent_QuestGargoyle < 5	}{	pc.AwardExperience("Gargoyle04"); pc.SetQuest("Gargoyle",7); FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	Les enfants de la Camarilla sont mes camarades.	}
+{	738	}{	Le prince sait quoi faire. C'est pourquoi je suis ici.	}{	Le prince sait quoi faire. C'est pourquoi je suis ici.	}{	751	}{	G.Patch_Plus == 1 and (G.Regent_QuestGargoyle < 2 or G.Regent_QuestGargoyle == 5)	}{	pc.AwardExperience("Gargoyle04"); pc.SetQuest("Gargoyle",5); FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	Tout bouffon qu'il soit, j'aime rire. . . Rire jusque sur la plus haute marche. . .	}
+{	739	}{	Le prince sait quoi faire. C'est pourquoi je suis ici.	}{	Le prince sait quoi faire. C'est pourquoi je suis ici.	}{	751	}{	G.Patch_Plus == 1 and G.Regent_QuestGargoyle > 1 and G.Regent_QuestGargoyle < 5	}{	pc.AwardExperience("Gargoyle04"); pc.SetQuest("Gargoyle",7); FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	Tout bouffon qu'il soit, j'aime rire. . . Rire jusque sur la plus haute marche. . .	}
+{	740	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	741	}{	Je l'espère. Eh bien, si vous voulez bien m'excuser. . .	}{	Je l'espère. Eh bien, si vous voulez bien m'excuser. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	742	}{	Attendez, et la cassette. . .	}{	Attendez, et la cassette. . .	}{	711	}{	pc.HasItem("item_g_horrortape_2")	}{	}{	}{	}{	}{	}{	}{	}{	Des monstres qui sont sur cette cassette. . .	}
+{	743	}{	OK. A plus.	}{	OK. A plus.	}{	0	}{	G.Isaac_Gargoyle_Conversation == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je pars.	}
+{	744	}{	Et deuxièmement, la gargouille a été créée par le régent Tremere. Il en a perdu le contrôle.	}{	Et deuxièmement, la gargouille a été créée par le régent Tremere. Il en a perdu le contrôle.	}{	781	}{	(pc.GetQuestState("Regent") == 0 or pc.GetQuestState("Regent") == 6) and pc.GetQuestState("Gargoyle") == 5 and G.Isaac_Gargoyle_Conversation == 1	}{	}{	}{	}{	}{	}{	}{	}{	Et enfin, le roi des sorciers du sang était son Frankenstein. Et elle aussi se révolta.	}
+{	745	}{	Et deuxièmement, la gargouille a été créée par le régent Tremere. Il en a perdu le contrôle.	}{	Et deuxièmement, la gargouille a été créée par le régent Tremere. Il en a perdu le contrôle.	}{	781	}{	((pc.GetQuestState("Regent") > 0 and pc.GetQuestState("Regent") < 6) or pc.GetQuestState("Regent") == 8) and pc.GetQuestState("Gargoyle") == 5 and G.Isaac_Gargoyle_Conversation == 1	}{	pc.SetQuest("Regent",7)	}{	}{	}{	}{	}{	}{	}{	Et enfin, le roi des sorciers du sang était son Frankenstein. Et elle aussi se révolta.	}
+{	746	}{	Et deuxièmement, la gargouille a été créée par le régent Tremere. Il en a perdu le contrôle.	}{	Et deuxièmement, la gargouille a été créée par le régent Tremere. Il en a perdu le contrôle.	}{	781	}{	(pc.GetQuestState("Regent") == 0 or pc.GetQuestState("Regent") == 6) and pc.GetQuestState("Gargoyle") == 7 and G.Isaac_Gargoyle_Conversation == 1	}{	pc.SetQuest("Gargoyle",8)	}{	}{	}{	}{	}{	}{	}{	Et enfin, le roi des sorciers du sang était son Frankenstein. Et elle aussi se révolta.	}
+{	747	}{	Et deuxièmement, la gargouille a été créée par le régent Tremere. Il en a perdu le contrôle.	}{	Et deuxièmement, la gargouille a été créée par le régent Tremere. Il en a perdu le contrôle.	}{	781	}{	((pc.GetQuestState("Regent") > 0 and pc.GetQuestState("Regent") < 6) or pc.GetQuestState("Regent") == 8) and pc.GetQuestState("Gargoyle") == 7 and G.Isaac_Gargoyle_Conversation == 1	}{	pc.SetQuest("Regent",7); pc.SetQuest("Gargoyle",8)	}{	}{	}{	}{	}{	}{	}{	Et enfin, le roi des sorciers du sang était son Frankenstein. Et elle aussi se révolta.	}
+{	748	}{	Et deuxièmement... Rien. Oubliez ça. Je dois y aller.	}{	Et deuxièmement... Rien. Oubliez ça. Je dois y aller.	}{	0	}{	G.Isaac_Gargoyle_Conversation == 1	}{	G.Isaac_Regent = 0	}{	}{	}{	}{	}{	}{	}{	Et le secret... Je ne le dirai pas... Je ne le dirai pas...	}
+{	749	}{	J'ai appris quelque chose sur cette gargouille.	}{	J'ai appris quelque chose sur cette gargouille.	}{	771	}{	G.Isaac_Regent == 0 and G.Regent_Family < 3 and G.Regent_Gargoyleinside == 1 and G.Isaac_Gargoyle_Conversation == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je sais quelque chose que je ne dirai pas. . . sans doute.	}
+{	750	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	751	}{	LaCroix sait choisir ses agents, je dois l'admettre. . . mais vous finirez par comprendre qui vous servez vraiment. Pardonnez-moi.	}{	LaCroix sait choisir ses agents, je dois l'admettre. . . mais vous finirez par comprendre qui vous servez vraiment. Pardonnez-moi.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	752	}{	Attendez, et la cassette. . .	}{	Attendez, et la cassette. . .	}{	711	}{	pc.HasItem("item_g_horrortape_2")	}{	}{	}{	}{	}{	}{	}{	}{	Des monstres qui sont sur cette cassette. . .	}
+{	753	}{	OK. A plus.	}{	OK. A plus.	}{	0	}{	G.Isaac_Gargoyle_Conversation == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je pars.	}
+{	754	}{	Et deuxièmement, la gargouille a été créée par le régent Tremere. Il en a perdu le contrôle.	}{	Et deuxièmement, la gargouille a été créée par le régent Tremere. Il en a perdu le contrôle.	}{	781	}{	(pc.GetQuestState("Regent") == 0 or pc.GetQuestState("Regent") == 6) and pc.GetQuestState("Gargoyle") == 5 and G.Isaac_Gargoyle_Conversation == 1	}{	}{	}{	}{	}{	}{	}{	}{	Et enfin, le roi des sorciers du sang était son Frankenstein. Et elle aussi se révolta.	}
+{	755	}{	Et deuxièmement, la gargouille a été créée par le régent Tremere. Il en a perdu le contrôle.	}{	Et deuxièmement, la gargouille a été créée par le régent Tremere. Il en a perdu le contrôle.	}{	781	}{	((pc.GetQuestState("Regent") > 0 and pc.GetQuestState("Regent") < 6) or pc.GetQuestState("Regent") == 8) and pc.GetQuestState("Gargoyle") == 5 and G.Isaac_Gargoyle_Conversation == 1	}{	pc.SetQuest("Regent",7)	}{	}{	}{	}{	}{	}{	}{	Et enfin, le roi des sorciers du sang était son Frankenstein. Et elle aussi se révolta.	}
+{	756	}{	Et deuxièmement, la gargouille a été créée par le régent Tremere. Il en a perdu le contrôle.	}{	Et deuxièmement, la gargouille a été créée par le régent Tremere. Il en a perdu le contrôle.	}{	781	}{	(pc.GetQuestState("Regent") == 0 or pc.GetQuestState("Regent") == 6) and pc.GetQuestState("Gargoyle") == 7 and G.Isaac_Gargoyle_Conversation == 1	}{	pc.SetQuest("Gargoyle",8)	}{	}{	}{	}{	}{	}{	}{	Et enfin, le roi des sorciers du sang était son Frankenstein. Et elle aussi se révolta.	}
+{	757	}{	Et deuxièmement, la gargouille a été créée par le régent Tremere. Il en a perdu le contrôle.	}{	Et deuxièmement, la gargouille a été créée par le régent Tremere. Il en a perdu le contrôle.	}{	781	}{	((pc.GetQuestState("Regent") > 0 and pc.GetQuestState("Regent") < 6) or pc.GetQuestState("Regent") == 8) and pc.GetQuestState("Gargoyle") == 7 and G.Isaac_Gargoyle_Conversation == 1	}{	pc.SetQuest("Regent",7); pc.SetQuest("Gargoyle",8)	}{	}{	}{	}{	}{	}{	}{	Et enfin, le roi des sorciers du sang était son Frankenstein. Et elle aussi se révolta.	}
+{	758	}{	Et deuxièmement... Rien. Oubliez ça. Je dois y aller.	}{	Et deuxièmement... Rien. Oubliez ça. Je dois y aller.	}{	0	}{	G.Isaac_Gargoyle_Conversation == 1	}{	G.Isaac_Regent = 0	}{	}{	}{	}{	}{	}{	}{	Et le secret... Je ne le dirai pas... Je ne le dirai pas...	}
+{	759	}{	J'ai appris quelque chose sur cette gargouille.	}{	J'ai appris quelque chose sur cette gargouille.	}{	771	}{	G.Isaac_Regent == 0 and G.Regent_Family < 3 and G.Regent_Gargoyleinside == 1 and G.Isaac_Gargoyle_Conversation == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je sais quelque chose que je ne dirai pas. . . sans doute.	}
+{	760	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	761	}{	Une gargouille au service d'Hollywood ? Hé hé. . . exceptionnel. Je suis sûr que ce sera une grande surprise pour la première vague d'assaut qui franchira les frontières de la ville. Vous avez un avenir plein de promesses. Dommage que vous travailliez encore à plein temps pour l'autre camp.	}{	Une gargouille au service d'Hollywood ? Hé hé. . . exceptionnel. Je suis sûr que ce sera une grande surprise pour la première vague d'assaut qui franchira les frontières de la ville. Vous avez un avenir plein de promesses. Dommage que vous travailliez encore à plein temps pour l'autre camp.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Gargoyle = 4	}{	}{	}{	}{	}{	}{	}{	}
+{	762	}{	Je n'ai rien contre les anarchs.	}{	Je n'ai rien contre les anarchs.	}{	741	}{	G.Patch_Plus == 0 and (G.Regent_QuestGargoyle < 2 or G.Regent_QuestGargoyle == 5)	}{	pc.SetQuest("Gargoyle",5)	}{	}{	}{	}{	}{	}{	}{	Les enfants de la Camarilla sont mes camarades.	}
+{	763	}{	Je n'ai rien contre les anarchs.	}{	Je n'ai rien contre les anarchs.	}{	741	}{	G.Patch_Plus == 0 and G.Regent_QuestGargoyle > 1 and G.Regent_QuestGargoyle < 5	}{	pc.SetQuest("Gargoyle",7)	}{	}{	}{	}{	}{	}{	}{	Les enfants de la Camarilla sont mes camarades.	}
+{	764	}{	Le prince sait quoi faire. C'est pourquoi je suis ici.	}{	Le prince sait quoi faire. C'est pourquoi je suis ici.	}{	751	}{	G.Patch_Plus == 0 and (G.Regent_QuestGargoyle < 2 or G.Regent_QuestGargoyle == 5)	}{	pc.SetQuest("Gargoyle",5)	}{	}{	}{	}{	}{	}{	}{	Tout bouffon qu'il soit, j'aime rire. . . Rire jusque sur la plus haute marche. . .	}
+{	765	}{	Le prince sait quoi faire. C'est pourquoi je suis ici.	}{	Le prince sait quoi faire. C'est pourquoi je suis ici.	}{	751	}{	G.Patch_Plus == 0 and G.Regent_QuestGargoyle > 1 and G.Regent_QuestGargoyle < 5	}{	pc.SetQuest("Gargoyle",7)	}{	}{	}{	}{	}{	}{	}{	Tout bouffon qu'il soit, j'aime rire. . . Rire jusque sur la plus haute marche. . .	}
+{	766	}{	Je n'ai rien contre les anarchs.	}{	Je n'ai rien contre les anarchs.	}{	741	}{	G.Patch_Plus == 1 and (G.Regent_QuestGargoyle < 2 or G.Regent_QuestGargoyle == 5)	}{	pc.AwardExperience("Gargoyle04"); pc.SetQuest("Gargoyle",5); FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	Les enfants de la Camarilla sont mes camarades.	}
+{	767	}{	Je n'ai rien contre les anarchs.	}{	Je n'ai rien contre les anarchs.	}{	741	}{	G.Patch_Plus == 1 and G.Regent_QuestGargoyle > 1 and G.Regent_QuestGargoyle < 5	}{	pc.AwardExperience("Gargoyle04"); pc.SetQuest("Gargoyle",7); FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	Les enfants de la Camarilla sont mes camarades.	}
+{	768	}{	Le prince sait quoi faire. C'est pourquoi je suis ici.	}{	Le prince sait quoi faire. C'est pourquoi je suis ici.	}{	751	}{	G.Patch_Plus == 1 and (G.Regent_QuestGargoyle < 2 or G.Regent_QuestGargoyle == 5)	}{	pc.AwardExperience("Gargoyle04"); pc.SetQuest("Gargoyle",5); FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	Tout bouffon qu'il soit, j'aime rire. . . Rire jusque sur la plus haute marche. . .	}
+{	769	}{	Le prince sait quoi faire. C'est pourquoi je suis ici.	}{	Le prince sait quoi faire. C'est pourquoi je suis ici.	}{	751	}{	G.Patch_Plus == 1 and G.Regent_QuestGargoyle > 1 and G.Regent_QuestGargoyle < 5	}{	pc.AwardExperience("Gargoyle04"); pc.SetQuest("Gargoyle",7); FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	Tout bouffon qu'il soit, j'aime rire. . . Rire jusque sur la plus haute marche. . .	}
+{	770	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	771	}{	Oui ?	}{	Oui ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Regent = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	772	}{	La gargouille a été créée par le Régent Tremere. Il en a perdu le contrôle.	}{	La gargouille a été créée par le Régent Tremere. Il en a perdu le contrôle.	}{	781	}{	(pc.GetQuestState("Regent") == 0 or pc.GetQuestState("Regent") == 6) and pc.GetQuestState("Gargoyle") == 5	}{	}{	}{	}{	}{	}{	}{	}{	Le roi des sorciers du sang était son créateur. Et cette créature de Frankenstein s'est rebellée.	}
+{	773	}{	La gargouille a été créée par le Régent Tremere. Il en a perdu le contrôle.	}{	La gargouille a été créée par le Régent Tremere. Il en a perdu le contrôle.	}{	781	}{	((pc.GetQuestState("Regent") > 0 and pc.GetQuestState("Regent") < 6) or pc.GetQuestState("Regent") == 8) and pc.GetQuestState("Gargoyle") == 5	}{	pc.SetQuest("Regent",7)	}{	}{	}{	}{	}{	}{	}{	Le roi des sorciers du sang était son créateur. Et cette créature de Frankenstein s'est rebellée.	}
+{	774	}{	La gargouille a été créée par le Régent Tremere. Il en a perdu le contrôle.	}{	La gargouille a été créée par le Régent Tremere. Il en a perdu le contrôle.	}{	781	}{	(pc.GetQuestState("Regent") == 0 or pc.GetQuestState("Regent") == 6) and pc.GetQuestState("Gargoyle") == 7	}{	pc.SetQuest("Gargoyle",8)	}{	}{	}{	}{	}{	}{	}{	Le roi des sorciers du sang était son créateur. Et cette créature de Frankenstein s'est rebellée.	}
+{	775	}{	La gargouille a été créée par le Régent Tremere. Il en a perdu le contrôle.	}{	La gargouille a été créée par le Régent Tremere. Il en a perdu le contrôle.	}{	781	}{	((pc.GetQuestState("Regent") > 0 and pc.GetQuestState("Regent") < 6) or pc.GetQuestState("Regent") == 8) and pc.GetQuestState("Gargoyle") == 7	}{	pc.SetQuest("Regent",7); pc.SetQuest("Gargoyle",8)	}{	}{	}{	}{	}{	}{	}{	Le roi des sorciers du sang était son créateur. Et cette créature de Frankenstein s'est rebellée.	}
+{	776	}{	Désolé, je pense que je vais m'occuper de ça d'abord.	}{	Désolé, je pense que je vais m'occuper de ça d'abord.	}{	0	}{	not (G.Gargoyle_Convinced == 1 or IsDead("Gargoyle"))	}{	G.Isaac_Regent = 0	}{	}{	}{	}{	}{	}{	}{	D'abord la pierre, puis le secret.	}
+{	777	}{	Tout d'abord, j'ai tué la gargouille.	}{	Tout d'abord, j'ai tué la gargouille.	}{	731	}{	IsDead("Gargoyle") and G.Isaac_Gargoyle != 4 and G.Isaac_Gargoyle_Conversation == 0	}{	G.Isaac_Gargoyle_Conversation = 1	}{	}{	}{	}{	}{	}{	}{	Tout d'abord, la pierre est en pièces.	}
+{	778	}{	Tout d'abord, je l'ai convaincue de vous être fidèle.	}{	Tout d'abord, je l'ai convaincue de vous être fidèle.	}{	761	}{	G.Isaac_Gargoyle !=4 and G.Gargoyle_Convinced == 1 and not IsDead("Gargoyle") and G.Isaac_Gargoyle_Conversation == 0	}{	G.Isaac_Gargoyle_Conversation = 1	}{	}{	}{	}{	}{	}{	}{	Tout d'abord, le baron est parvenu à la loyauté de la pierre.	}
+{	779	}{	Ce n'est rien. Tant pis. Je dois partir.	}{	Ce n'est rien. Tant pis. Je dois partir.	}{	0	}{	}{	G.Isaac_Regent = 0	}{	}{	}{	}{	}{	}{	}{	Je ne dirai rien. . . Je ne dirai rien. . .	}
+{	780	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	781	}{	Vraiment ? Ainsi, c'est de là que la gargouille est née. . . Si cela se savait, ce serait très humiliant pour lui. Et si certaines personnes en entendent parler, toute la ville sera au courant avant la fin de la nuit. Bien joué, jeune vampire.	}{	Vraiment ? Ainsi, c'est de là que la gargouille est née. . . Si cela se savait, ce serait très humiliant pour lui. Et si certaines personnes en entendent parler, toute la ville sera au courant avant la fin de la nuit. Bien joué, jeune vampire.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Isaac_Please = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	782	}{	Je vous en prie, Isaac. Que cela vous profite.	}{	Je vous en prie, Isaac. Que cela vous profite.	}{	0	}{	G.Patch_Plus == 0	}{	pc.AwardExperience("Gargoyle03")	}{	}{	}{	}{	}{	}{	}{	C'est un cadeau. Adieu.	}
+{	783	}{	Faites tomber ce bâtard de la Camarilla de son cheval. Bonsoir, Isaac.	}{	Faites tomber ce bâtard de la Camarilla de son cheval. Bonsoir, Isaac.	}{	0	}{	G.Patch_Plus == 0	}{	pc.AwardExperience("Gargoyle03")	}{	}{	}{	}{	}{	}{	}{	Les sorciers du sang me font bouillir. Littéralement. Je pars.	}
+{	784	}{	Oh, et j'ai trouvé un livre Tremere sur les Gargouilles aussi. Amusez-vous bien!	}{	Oh, et j'ai trouvé un livre Tremere sur les Gargouilles aussi. Amusez-vous bien!	}{	0	}{	pc.HasItem("item_g_gargoyle_book") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_gargoyle_book")	}{	}{	}{	}{	}{	}{	}{	Les mages du sang ont écrit au sujet de la chose sanglante aussi. Bonne lecture! 	}
+{	785	}{	Ce n'est rien, Isaac. Faites-en bon usage. }{	Ce n'est rien, Isaac. Faites-en bon usage.	}{	0	}{	G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon cadeau pour vous... Adieu.	}
+{	786	}{	Faites tomber ce bâtard de la Camarilla de son cheval. Bonsoir, Isaac.	}{	Faites tomber ce bâtard de la Camarilla de son cheval. Bonsoir, Isaac.	}{	0	}{	G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Les sorciers du sang me font bouillir. Littéralement. Je pars.	}
+{	787	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	788	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	789	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	790	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	791	}{	Alors c'est sans nul doute l'oeuvre d'un monstre. Donnez-moi la cassette - il y a peut-être quelque chose dessus qui nous dira son motif. . .	}{	Alors c'est sans nul doute l'oeuvre d'un monstre. Donnez-moi la cassette - il y a peut-être quelque chose dessus qui nous dira son motif. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.RemoveItem("item_g_horrortape_2"); G.Isaac_Show = 1; pc.SetQuest("Tape",5); FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	792	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	793	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	794	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	795	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	796	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	797	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	798	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	799	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	800	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	801	}{	La maison dans ce film. . . je la connais. C'est sur les collines. King's Way, si je ne m'abuse. A mon avis, le monstre qui a fait cette cassette utilise ses créatures pour attaquer les Nosferatus. Ce qui expliquerait leur absence : ils sont prisonniers.	}{	La maison dans ce film. . . je la connais. C'est sur les collines. King's Way, si je ne m'abuse. A mon avis, le monstre qui a fait cette cassette utilise ses créatures pour attaquer les Nosferatus. Ce qui expliquerait leur absence : ils sont prisonniers.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Show = 2; pc.SetQuest("Kings Way",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	802	}{	(Auto-Link)	}{	(Auto-Link)	}{	811	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	803	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	804	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	805	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	806	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	807	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	808	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	809	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	810	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	811	}{	Eh bien, il est malheureux que le prince insiste pour que vous voyiez les Nosferatus : on dirait que ce monstre sait où les trouver, et je doute qu'il vous dessine une carte. Je crois que vous n'avez pas le choix : il faut aller à King's Way.	}{	Eh bien, il est malheureux que le prince insiste pour que vous voyiez les Nosferatus : on dirait que ce monstre sait où les trouver, et je doute qu'il vous dessine une carte. Je crois que vous n'avez pas le choix : il faut aller à King's Way.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Taxi = 1; G.Kingsway_Open = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	812	}{	Bon, alors je vais à King's Way. Merci, Isaac.	}{	Bon, alors je vais à King's Way. Merci, Isaac.	}{	821	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me rends vers le chemin des rois, King's Way.	}
+{	813	}{	Je suppose que vous allez rester ici. . .	}{	Je suppose que vous allez rester ici. . .	}{	821	}{	}{	}{	}{	}{	}{	}{	}{	}{	Restez ici, bien à l'aise. . . Je vais m'extraire. . .	}
+{	814	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	815	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	816	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	817	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	818	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	819	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	820	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	821	}{	Je peux mettre une voiture à votre disposition lorsque vous serez prêt. Si je n'ai pas de nouvelles des Nosferatus dans quelques nuits, je dirai à LaCroix qu'il lui faudra un nouveau champion et j'enverrai quelques-unes de mes troupes finir le travail.	}{	Je peux mettre une voiture à votre disposition lorsque vous serez prête. Si je n'ai pas de nouvelles des Nosferatus dans quelques nuits, je dirai à LaCroix qu'il lui faudra un nouveau champion et j'enverrai quelques-unes de mes troupes finir le travail.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	822	}{	Merci, mais je prendrai un Taxi.	}{	Merci, mais je prendrai un Taxi.	}{	881	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	J'irai avec le type dans la voiture jaune.	}
+{	823	}{	Merci, mais j'irai par mes propres moyens.	}{	Merci, mais j'irai par mes propres moyens.	}{	881	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	824	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	825	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	826	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	827	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	828	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	829	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	830	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	831	}{	Impressionnant, jeune Toréador. . . On ne voit pas tous les jours quelqu'un de votre trempe. . . J'aimerais vous donner quelque chose. Ce n'est pas beaucoup, mais c'est pour vous exprimer l'appréciation de la baronnie d'Hollywood.	}{	Impressionnant, jeune Toréador. . . On ne voit pas tous les jours quelqu'un de votre trempe. . . J'aimerais vous donner quelque chose. Ce n'est pas beaucoup, mais c'est pour vous exprimer l'appréciation de la baronnie d'Hollywood.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	832	}{	(Auto-Link)	}{	(Auto-Link)	}{	841	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	833	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	834	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	835	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	836	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	837	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	838	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	839	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	840	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	841	}{	Heureux de voir que le sang de mon clan a enfin su trouver les bonnes personnes. Avec un peu de chance, vous ne le ferez pas couler dans quelque futile démonstration de fidélité à ce maudit LaCroix. . . Revenez me voir dans quelque temps, j'aurai quelque chose pour vous.	}{	Heureux de voir que le sang de mon clan a enfin su trouver les bonnes personnes. Avec un peu de chance, vous ne le ferez pas couler dans quelque futile démonstration de fidélité à ce maudit LaCroix. . . Revenez me voir dans quelque temps, j'aurai quelque chose pour vous.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Gift = 1; pc.SetQuest("Kings Way",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	842	}{	Merci, Isaac. Je vous suis reconnaissant. J'avais une autre question.	}{	Merci, Isaac. Je vous suis reconnaissante. J'avais une autre question.	}{	491	}{	G.Player_Anarch == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	843	}{	Ce ne serait quand même pas un pot-de-vin, j'espère ? J'avais une autre question.	}{	Ce ne serait quand même pas un pot-de-vin, j'espère ? J'avais une autre question.	}{	491	}{	G.Player_Anarch == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	844	}{	Je reviendrai le chercher plus tard. Merci, Isaac.	}{	Je reviendrai le chercher plus tard. Merci, Isaac.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	845	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	846	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	847	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	848	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	849	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	850	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	851	}{	Alors je ne peux rien faire. Si je m'impliquais, ce serait. . . Non, je suis sûr qu'Ash parviendra à se tirer de ce mauvais pas. . .	}{	Alors je ne peux rien faire. Si je m'impliquais, ce serait. . . Non, je suis sûr qu'Ash parviendra à se tirer de ce mauvais pas. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Hunters = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	852	}{	Quoi ? Vous avez peur de quelques chasseurs ?	}{	Quoi ? Vous avez peur de quelques chasseurs ?	}{	861	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez peur ?	}
+{	853	}{	J'avais d'autres questions.	}{	J'avais d'autres questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demande autre chose.	}
+{	854	}{	Je le lui ferai Anarch. Au revoir.	}{	Je le lui ferai Anarch. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Et je vais trouver un moyen de sortir d'ici.	}
+{	855	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	856	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	857	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	858	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	859	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	860	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	861	}{	Le contraire serait idiot. Une fois qu'ils ont trouvé votre piste, ils sont aussi hargneux que des paparazzi meurtriers.	}{	Le contraire serait idiot. Une fois qu'ils ont trouvé votre piste, ils sont aussi hargneux que des paparazzi meurtriers.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	862	}{	Alors ils ne tueront pas Ash, où qu'il aille ?	}{	Alors ils ne tueront pas Ash, où qu'il aille ?	}{	871	}{	}{	}{	}{	}{	}{	}{	}{	}{	Viennent les heures, reste l'assurance que le baron a peur.	}
+{	863	}{	Avant de partir, j'avais d'autres questions.	}{	Avant de partir, j'avais d'autres questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demande autre chose.	}
+{	864	}{	Alors je l'aiderai moi-même. Au revoir.	}{	Alors je l'aiderai moi-même. Au revoir.	}{	0	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Alors j'irai effacer Ash moi-même.	}
+{	865	}{	Je peux reprendre son club s'il meurt ? Enfin bon, je vais tuer des chasseurs. Au revoir.	}{	Je peux reprendre son club s'il meurt ? Enfin bon, je vais tuer des chasseurs. Au revoir.	}{	0	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Votre bureau est très confortable. . . Très tranquille. . . Je quitte son abri.	}
+{	866	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	867	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	868	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	869	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	870	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	871	}{	[calme, pensif]Je ne remets pas en cause la difficulté de cette évasion, mais j'ai foi en mon enfant. Je ne dirai rien de plus.	}{	[calme, pensif]Je ne remets pas en cause la difficulté de cette évasion, mais j'ai foi en mon enfant. Je ne dirai rien de plus.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	872	}{	J'avais d'autres questions.	}{	J'avais d'autres questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demande autre chose.	}
+{	873	}{	Il faudra peut-être que je l'aide moi-même. Au revoir.	}{	Il faudra peut-être que je l'aide moi-même. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors j'irai effacer Ash moi-même.	}
+{	874	}{	Vous n'avez aucun courage. Je ne peux même pas vous regarder. Au revoir.	}{	Vous n'avez aucun courage. Je ne peux même pas vous regarder. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre bureau est très confortable. . . Très tranquille. . . Je quitte son abri.	}
+{	875	}{	J'arracherai une tête de chasseur pour vous. Au revoir.	}{	J'arracherai une tête de chasseur pour vous. Au revoir.	}{	0	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Je ferai crier un chasseur en votre honneur. . . Je m'en vais.	}
+{	876	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	877	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	878	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	879	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	880	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	881	}{	Si je puis me permettre une dernière mise en garde - ne faites pas confiance à LaCroix. Ne jouez pas le jeu politique de la Camarilla. Cette ville n'a plus besoin d'eux depuis longtemps, et j'aimerais que cela reste le cas.	}{	Si je puis me permettre une dernière mise en garde - ne faites pas confiance à LaCroix. Ne jouez pas le jeu politique de la Camarilla. Cette ville n'a plus besoin d'eux depuis longtemps, et j'aimerais que cela reste le cas.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Quest = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	882	}{	Je fais confiance au prince.	}{	Je fais confiance au prince.	}{	891	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il mérite plus de respect que vous l'imaginez.	}
+{	883	}{	Alors à qui devrais-je faire confiance ?	}{	Alors à qui devrais-je faire confiance ?	}{	901	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors où ma confiance sera-t-elle bien placée ?	}
+{	884	}{	Je n'ai plus rien à faire ici.	}{	Je n'ai plus rien à faire ici.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cet endroit a l'habitude de me voir.	}
+{	885	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	886	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	887	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	888	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	889	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	890	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	891	}{	Quand vous ne lui serez plus utile, vous ne pourrez pas revenir sur cette erreur.	}{	Quand vous ne lui serez plus utile, vous ne pourrez pas revenir sur cette erreur.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	892	}{	A qui faire confiance ?	}{	A qui faire confiance ?	}{	901	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors où ma confiance sera-t-elle bien placée ?	}
+{	893	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	894	}{	Je vais aller à cette maison.	}{	Je vais aller à cette maison.	}{	961	}{	}{	}{	}{	}{	}{	}{	}{	}{	Déposez-moi sur les marches du monstre, comme l'enfant abandonné que je suis.	}
+{	895	}{	Je m'en souviendrai. J'ai deux-trois choses à faire avant d'aller dans cette maison.	}{	Je saurai m'en souvenir. Au revoir, Isaac.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	. . . J'y penserai. Je pars mais je reviens bientôt.	}
+{	896	}{	J'en ai fini ici.	}{	J'en ai fini ici.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cet endroit est fatigué de moi.	}
+{	897	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	898	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	899	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	900	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	901	}{	A vous d'en décider. Je sais simplement de qui il faut se méfier.	}{	A vous d'en décider. Je sais simplement de qui il faut se méfier.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	902	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	903	}{	Je m'en souviendrai. Au revoir, Isaac.	}{	Je saurai m'en souvenir. Au revoir, Isaac.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	. . . J'y penserai.	}
+{	904	}{	Moi non plus, je ne vous fais pas confiance. Je pars.	}{	Moi non plus, je ne vous fais pas confiance. Je pars.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je parie ma confiance. Je m'en vais.	}
+{	905	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	906	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	907	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	908	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	909	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	910	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	911	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	912	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	913	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	914	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	915	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	916	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	917	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	918	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	919	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	920	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	921	}{	Tenez. . . Et encore merci pour votre aide. . . Et rappelez-vous ce que j'ai dit sur LaCroix - il ne mérite pas un talent comme le vôtre.	}{	Tenez. . . Et encore merci pour votre aide. . . Et rappelez-vous ce que j'ai dit sur LaCroix - il ne mérite pas un talent comme le vôtre.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Isaac_Gift = 3; pc.SetQuest("Kings Way",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	922	}{	Non, c'est vrai. Merci pour le cadeau, Isaac.	}{	Non, c'est vrai. Merci pour le cadeau, Isaac.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis aussi gaspillé que mon talent. Au revoir.	}
+{	923	}{	J'en déciderai moi-même quand le moment sera venu. Au revoir, Isaac.	}{	J'en déciderai moi-même quand le moment sera venu. Au revoir, Isaac.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le 'mérite' n'a rien à voir là-dedans. Je suis parti.	}
+{	924	}{	Ni lui ni personne. Au revoir, Isaac.	}{	Ni lui ni personne. Au revoir, Isaac.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Etais-je jamais ici?	}
+{	925	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	926	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	927	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	928	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	929	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	930	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	931	}{	Votre clan apprécie l'humour, non ? Vous ne trouvez pas ça drôle que LaCroix vous envoie vers moi, spécifiquement, pour retrouver les Nosferatus ? En est-il réduit à cela ?	}{	Votre clan apprécie l'humour, non ? Vous ne trouvez pas ça drôle que LaCroix vous envoie vers moi, spécifiquement, pour retrouver les Nosferatus ? En est-il réduit à cela ?	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	932	}{	Oui. Quels renseignements êtes-vous prêt à partager ?	}{	Oui. Quels renseignements êtes-vous prêt à partager ?	}{	951	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	933	}{	HILARANT. A HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA. . . !	}{	HILARANT. A HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA. . . !	}{	941	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	934	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	935	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	936	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	937	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	938	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	939	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	940	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	941	}{	. . .	}{	. . .	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	942	}{	Oui. Quels renseignements êtes-vous prêt à partager ?	}{	Oui. Quels renseignements êtes-vous prêt à partager ?	}{	951	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	943	}{	HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA... !	}{	HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA... !	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	944	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	945	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	946	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	947	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	948	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	949	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	950	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	951	}{	Je suis prêt à vous apporter toute ma collaboration, si vous me payez un tribut.	}{	Je suis prêt à vous apporter toute ma collaboration, si vous me payez un tribut.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	952	}{	Payer ? Pour quelqu'un qui vit dans une bijouterie, vous êtes un peu gourmand. Combien ?	}{	Payer ? Pour quelqu'un qui vit dans une bijouterie, vous êtes un peu gourmand. Combien ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	953	}{	Je vous donne tout ce que j'ai dans les poches. Rien.	}{	Je vous donne tout ce que j'ai dans les poches. Rien.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	954	}{	Les Nosferatus viendront peut-être se plaindre quand votre sang inondera les égouts.	}{	Les Nosferatus viendront peut-être se plaindre quand votre sang inondera les égouts.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	955	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	956	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	957	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	958	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	959	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	960	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	961	}{	J'admire votre courage, mon petit. Ne soyez pas tendre pour ce qu'il y a là-haut.	}{	J'admire votre courage, mon petit. Ne soyez pas tendre pour ce qu'il y a là-haut.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	962	}{	Je le ferai.	}{	Je le ferai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Enfer et derrière avec moi!	}
+{	963	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	964	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	965	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	966	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	967	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	968	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	969	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	970	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	971	}{	Vous avez fait le voyage jusqu'à King's Way ?	}{	Vous avez fait le voyage jusqu'à King's Way ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	972	}{	Ca y est, je peux partir.	}{	Ca y est, je peux partir.	}{	961	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ha, ha, ha, ha, ha, ha, ha. . . Oui.	}
+{	973	}{	J'avais quelques questions.	}{	J'avais quelques questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demande autre chose.	}
+{	974	}{	Oh, à propos de la gargouille. . .	}{	Oh, à propos de la gargouille. . .	}{	511	}{	G.Isaac_Gargoyle == 1	}{	}{	}{	}{	}{	}{	}{	}{	A propos de l'être de pierre. . .	}
+{	975	}{	Je peux m'occuper de la gargouille, si vous me dites quoi faire. . .	}{	Je peux m'occuper de la gargouille, si vous me dites quoi faire. . .	}{	521	}{	G.Isaac_Gargoyle == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je briserai cette pierre si vous m'expliquez comment.	}
+{	976	}{	J'ai tué la gargouille.	}{	J'ai tué la gargouille.	}{	731	}{	IsDead("Gargoyle") and G.Isaac_Gargoyle != 4	}{	}{	}{	}{	}{	}{	}{	}{	L'être de pierre est en miettes.	}
+{	977	}{	Au fait, la gargouille. . . Je l'ai convaincue de vous être fidèle.	}{	Au fait, la gargouille. . . Je l'ai convaincue de vous être fidèle.	}{	761	}{	G.Isaac_Gargoyle != 4 and G.Gargoyle_Convinced == 1 and not IsDead("Gargoyle")	}{	}{	}{	}{	}{	}{	}{	}{	L'être de pierre a juré fidélité au baron.	}
+{	978	}{	J'ai appris quelque chose sur cette gargouille.	}{	J'ai appris quelque chose sur cette gargouille.	}{	771	}{	G.Isaac_Regent == 0 and G.Regent_Family < 3 and G.Regent_Gargoyleinside == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je sais quelque chose que je ne dirai pas. . . sans doute.	}
+{	979	}{	Non. Je reviendrai.	}{	Non. Je reviendrai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne devrais plus être ici.	}
+{	980	}{	Ca me fait plaisir de vous revoir.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	981	}{	Vous avez une bonne raison de vous attarder dans ma ville ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	982	}{	Veuillez vous expulser vous-même de mon bureau.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	983	}{	Pigé.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	984	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	985	}{	Merci. Ca me fait plaisir.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	986	}{	Quoi ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	987	}{	Je ne sais pas trop.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	988	}{	Je ne peux rien pour vous.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	989	}{	[Content]Ha ! Quelle surprise !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	990	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	991	}{	Prenez ça.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	992	}{	Je vous envoie un e-mail.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	993	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	994	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	995	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	996	}{	(Starting Condition)	}{	}{	721	}{	G.Story_State >= 40	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	997	}{	(Starting Condition)	}{	}{	971	}{	G.Isaac_Taxi == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	998	}{	(Starting Condition)	}{	}{	721	}{	G.Isaac_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	999	}{	(Starting Condition)	}{	}{	801	}{	G.Isaac_Show == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1000	}{	(Starting Condition)	}{	}{	701	}{	G.Isaac_Scorn == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1001	}{	(Starting Condition)	}{	}{	711	}{	G.Isaac_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1002	}{	(Starting Condition)	}{	}{	391	}{	G.Isaac_Movie == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1003	}{	(Starting Condition)	}{	}{	271	}{	G.Isaac_Item == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1004	}{	(Starting Condition)	}{	}{	261	}{	G.Isaac_Tribute == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1005	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

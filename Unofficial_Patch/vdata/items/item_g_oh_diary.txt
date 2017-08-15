@@ -1,0 +1,76 @@
+
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	
+	"infomodel"	"models/items/Diary/Info/Info_Diary.mdl"
+	"playermodel"	"models/items/Diary/Ground/Diary.mdl"
+	
+	"anim_prefix"	" "
+
+	"printname"	"Journal intime"
+	"description"	"Ce sont les débris calcinés de ce qui ressemble à un journal intime.
+
+			30/05/58 - Venons d'arriver au Ocean House. Pour notre semaine de vacances à Santa Monica, Ed nous a pris une chambre pour l'inauguration. C'est merveilleux, presque magique. Les enfants ont nagé tout l'après-midi.
+
+			31/05/58 - Ces deux jours ont été fabuleux, mais Ed n'arrête pas de me parler du bijou que j'ai reçu de ma mère. Il croit qu'il me vient de quelque admirateur secret. Ed peut être adorable, mais sa jalousie va parfois trop loin. Espérons qu'il se sentira mieux demain.
+			
+			01/06/58 - Grand soleil, pas un nuage. Ed paraît tendu, il ne cesse de me demander qui est mon nouveau fiancé. Chenapan de Ed.
+			
+			03/06/58 - Pique-nique ce matin pour les résidents. Ed fait grise mine. Je ne sais pas comment faire pour le rassurer sur mon amour. Le seul moment où il a paru se dérider, c'est en parlant au préposé à l'entretien. . . Les hommes et le bricolage. . .
+			
+			04/06/58 - Nous n'avons plus que deux jours, et ensuite nous rentrerons. Ed refuse de parler, à moi ou aux enfants, et je l'ai trouvé plusieurs fois dans la salle de bains, à regarder mon bijou. . . J'ai peur qu'il soit au bord de la dépression. Je lui ai dit que nous pourrions rentrer, mais il secoue la tête. Il refuse de me regarder. Je veux rentrer.
+			
+			05/06/58 - Ed est parti tôt ce matin. Je ne l'ai pas revu depuis. S'il n'est pas revenu dans une heure, j'appelle le directeur de l'hôtel. Je le lui avais interdit, mais Ed Jr. est parti à sa recherche à la cave. Je vais envoyer Tiffany le ramener, si. . . Attendez. . . On frappe à la porte.
+
+			Oh mon dieu Ed couvert de sang veut me tuer enfermée dans salle de bains il est fou il crie qu'on sera ensemble à jamais et il ne me laissera jamais partir au secours aidez-moi. . . (l'écriture est effacée à la fin de la page)."
+			
+
+
+	"bucket"		"1"
+	"bucket_position"	"2"
+
+	"camera_class"		"noswitch"
+	"is_wieldable"		"0"
+	"weight"		"1"
+	"item_flags"		"1"
+	"item_type"		"powerup"
+	"item_worth"		"-1"
+	"is_visible_in_hud"		"1"
+
+	SoundData
+	{
+		"pickup"
+		{
+			"sound1"	"items/Book/Pickup.wav"
+		}
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	SpriteData
+	{
+		"weapon"
+		{
+			"640"
+			{
+				"file"	"hud/Inventory_Images/General_Items/Diary_SEL"
+				"x"		"0"
+				"y"		"0"
+				"width"	"100"
+				"height"	"64"
+			}
+		}
+		"weapon_s"
+		{
+			"640"
+			{
+				"file"	"hud/Inventory_Images/General_Items/Diary"
+				"x"		"0"
+				"y"		"0"
+				"width"	"100"
+				"height"	"64"
+			}
+		}
+	}
+}

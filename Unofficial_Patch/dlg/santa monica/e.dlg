@@ -1,0 +1,350 @@
+{	1	}{	Ecoutez, je vous ai déjà dit, à vous tous. . . On sait qu'on ne peut pas chasser par ici, OK ? On s'occupe de nos oignons, pas la peine de vous occuper du menu fretin.	}{	Ecoutez, je vous ai déjà dit, à vous tous. . . On sait qu'on ne peut pas chasser par ici, OK ? On s'occupe de nos oignons, pas la peine de vous occuper du menu fretin.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Vous avez vu des gros bras passer par ici avec des battes ?	}{	Vous avez vu des gros bras passer par ici avec des battes ?	}{	191	}{	G.Mercurio_Quest == 1 and not IsClan(pc,"Malkavian") and G.Beachhouse == 0 and G.E_Demons == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Avez-vous vu des démons des plages armés de battes ?	}{	Avez-vous vu des démons des plages armés de battes ?	}{	301	}{	G.Mercurio_Quest == 1 and IsClan(pc,"Malkavian") and G.Beachhouse == 0 and G.E_Demons == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	De quoi parlez-vous ?	}{	De quoi parlez-vous ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne jetterai pas d'ombre sur votre flamme, petit être faible.	}
+{	5	}{	Eh, tout est cool. Je peux glander avec vous ?	}{	Eh, tout est cool. Je peux glander avec vous ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Echangeons des paroles ici, sous la lune moribonde. . .	}
+{	6	}{	C'est MA plage. Alors foutez le camp d'ici. . .	}{	C'est MA plage. Alors foutez le camp d'ici. . .	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Partez tout de suite, ou j'enfile ma robe noire et je prends ma faux. . .	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Vous ne venez pas nous faire dégager ?	}{	Vous ne venez pas nous faire dégager ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Non, pourquoi pensez-vous ça ?	}{	Non, pourquoi pensez-vous ça ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non. Mais quel dommage d'être prisonnier de murs invisibles. 	}
+{	13	}{	Euh, non. Ca arrive souvent ?	}{	Euh, non. Ca arrive souvent ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cela doit être problématique de fuir souvent.	}
+{	14	}{	Peut-être que si. Mais je vous laisse rester pour cinquante dollars. 	}{	Peut-être que si. Mais je vous laisse rester pour cinquante dollars. 	}{	61	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Cinquante billets verts et vous pourrez danser jusqu'à l'aube. . .	}
+{	15	}{	Ouais. Et alors ?	}{	Ouais. Et alors ?	}{	51	}{	Intimidate -4	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes un intrus sur mon territoire, petit être faible. . .	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Je vous en prie. Mais ce sera une première. La plupart du temps, les gens comme vous nous font décamper, ou dans le cas de certains qu'on a dans le coin, nous tuent à vue.	}{	Je vous en prie. Mais ce sera une première. La plupart du temps, les gens comme vous nous font décamper, ou dans le cas de certains qu'on a dans le coin, nous tuent à vue.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Quoi ? Pourquoi ?	}{	Quoi ? Pourquoi ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi les loups courent-ils après les petits agneaux ?	}
+{	23	}{	Quel est le problème ?	}{	Quel est le problème ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	La peur les pousse à vous haïr ?	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Je ne sais pas. On a tous attrapé la même maladie, on dirait - ah, allez, je ne trompe personne. On est un mauvais spectacle d'horreur. Et nous ressemblons à des bâtards. Des erreurs. Ce que vous appelez des sangs clairs. On est tous foutus.	}{	Je ne sais pas. On a tous attrapé la même maladie, on dirait - ah, allez, je ne trompe personne. On est un mauvais spectacle d'horreur. Et nous ressemblons à des bâtards. Des erreurs. Ce que vous appelez des sangs clairs. On est tous foutus.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.E_Bugfix = 1; G.E_Thin = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Des sangs clairs ? Mais de quel clan venez-vous ?	}{	Des sangs clairs ? Mais de quel clan venez-vous ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quel est le clan dont le sang court dans vos veines ?	}
+{	33	}{	Je ne connais pas ce terme. Qu'est-ce qu'un sang clair ?	}{	Je ne connais pas ce terme. Qu'est-ce qu'un sang clair ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi du sang clair.	}
+{	34	}{	Comment cela vous est-il arrivé ?	}{	Comment cela vous est-il arrivé ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Comment votre sang est-il devenu si clair ?	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	Ca craint, ici. Je me casse.	}{	Ca craint, ici. Je me casse.	}{	0	}{	}{	G.E_Story = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Ca finit par nous user, vraiment. Quelqu'un qui veut prendre son territoire, ou dans les pires cas, qui veut s'amuser.	}{	Ca finit par nous user, vraiment. Quelqu'un qui veut prendre son territoire, ou dans les pires cas, qui veut s'amuser.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Quoi ? Pourquoi ?	}{	Quoi ? Pourquoi ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qui est ce chasseur, et pourquoi ?	}
+{	43	}{	Quel est le problème ?	}{	Quel est le problème ?	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	C'est drôle. J'avais la même idée.	}{	C'est drôle. J'avais la même idée.	}{	51	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Je vais peut-être jouer au même jeu maléfique. . .	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	C'est mort, ici. Je m'en vais.	}{	C'est mort, ici. Je m'en vais.	}{	0	}{	}{	G.E_Story = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	J'en ai assez de courir - comme les autres. On est peut-être faibles, mais nombreux. Laissez-nous tranquilles, on sera bientôt partis.	}{	J'en ai assez de courir - comme les autres. On est peut-être faibles, mais nombreux. Laissez-nous tranquilles, on sera bientôt partis.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.E_Threat = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Je vous laisse rester contre, oh, cinquante dollars.	}{	Je vous laisse rester contre, oh, cinquante dollars.	}{	61	}{	Intimidate 4 & G.E_Extort == 0	}{	}{	}{	}{	}{	}{	}{	}{	Deux billets de vingt et un de dix vous permettront de rester sur ce sable.	}
+{	53	}{	Qui êtes-vous tous ?	}{	Qui êtes-vous tous ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de votre équipage bigarré.	}
+{	54	}{	Ca ne suffit pas. Maintenant, je vais devenir désagréable.	}{	Ca ne suffit pas. Maintenant, je vais devenir désagréable.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Partez avant mon retour ou les flammes vous avaleront.	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	Je m'en vais. Vous feriez bien d'avoir filé quand je reviendrai.	}{	Je m'en vais. Vous feriez bien d'avoir filé quand je reviendrai.	}{	0	}{	}{	G.E_Story = 1	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	61	}{	On a l'air de vivre dans le luxe ? On s'est fait saigner à blanc, quelque part. Ces derniers temps, j'ai du mal à garder un boulot.	}{	On a l'air de vivre dans le luxe ? On s'est fait saigner à blanc, quelque part. Ces derniers temps, j'ai du mal à garder un boulot.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.E_Extort = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Qui êtes-vous tous ?	}{	Qui êtes-vous tous ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de votre équipage bigarré.	}
+{	63	}{	Alors dégagez de ma plage.	}{	Alors dégagez de ma plage.	}{	51	}{	G.E_Threat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Trouvez d'autres sables à arpenter, bâtard.	}
+{	64	}{	Ca veut donc dire que je dois faire usage de la force.	}{	Ca veut donc dire que je dois faire usage de la force.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Votre sang clair va abreuver le sable ce soir.	}
+{	65	}{	Pas d'argent ? Pas cool. Bon, alors je m'en vais.	}{	Pas d'argent ? Pas cool. Bon, alors je m'en vais.	}{	0	}{	}{	G.E_Story = 1	}{	}{	}{	}{	}{	}{	}{	Vos poches vides ne vous coûteront pas la vie. Pour l'instant. Adieu.	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Clan ? Alors j'ai déjà entendu parler de ça, mais je ne sais toujours pas de quoi il est question. J'aimerais bien savoir ce que je suis devenu - comme nous tous, le genre de contrat qu'on a signé, apparemment, quoi. . .	}{	Clan ? Alors j'ai déjà entendu parler de ça, mais je ne sais toujours pas de quoi il est question. J'aimerais bien savoir ce que je suis devenu - comme nous tous, le genre de contrat qu'on a signé, apparemment, quoi. . .	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.E_Clan = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Vous dites qu'on vous appelle sang clair. Qu'est-ce que ça signifie ?	}{	Vous dites qu'on vous appelle sang clair. Qu'est-ce que ça signifie ?	}{	81	}{	G.E_Thin == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi du sang clair.	}
+{	73	}{	Comment cela vous est-il arrivé ?	}{	Comment cela vous est-il arrivé ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Comment votre sang est-il devenu si clair ?	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Si je savais. . . Je sais que ce n'est pas une situation enviable. . . Mais vous, vous pouvez peut-être m'apprendre des choses.	}{	Si je savais. . . Je sais que ce n'est pas une situation enviable. . . Mais vous, vous pouvez peut-être m'apprendre des choses.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Je ne sais pas. Comment ceci vous est-il arrivé ?	}{	Je ne sais pas. Comment ceci vous est-il arrivé ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes pensées sont tout aussi opaques. Comment cette malédiction vous a-t-elle frappé ?	}
+{	83	}{	Pour commencer, de quel clan êtes-vous ?	}{	Pour commencer, de quel clan êtes-vous ?	}{	71	}{	G.E_Clan == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quel clan a enfanté les clairs ?	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	Si j'avais des infos, je ne serais pas là à vous parler. A plus.	}{	Si j'avais des infos, je ne serais pas là à vous parler. A plus.	}{	0	}{	}{	G.E_Story = 1	}{	}{	}{	}{	}{	}{	}{	Je suis sans info. A plus.	}
+{	91	}{	J'étais juste en ville pour une tournée de surf - j'ai l'impression que ça fait des années, mais c'était il y a six mois. Chaque nuit, pendant les finales, j'allais au resto du coin après les fêtes sur la plage. C'est là que je l'ai rencontrée. . .	}{	J'étais juste en ville pour une tournée de surf - j'ai l'impression que ça fait des années, mais c'était il y a six mois. Chaque nuit, pendant les finales, j'allais au resto du coin après les fêtes sur la plage. C'est là que je l'ai rencontrée. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Rencontré qui ?	}{	Rencontré qui ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ah ! Votre sombre muse. . .	}
+{	93	}{	Continuez.	}{	Continuez.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	La fille fleur. . .	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Elle était d'une beauté naturelle, pas comme les poupées plastiques qu'on trouve partout sur le sable. Elle s'appelait Lily. Je me souviens de m'être présenté - ma compagnie avait l'air de lui faire plaisir. Quelques nuits après notre rencontre, on était seuls sur la plage, et. . .	}{	Elle était d'une beauté naturelle, pas comme les poupées plastiques qu'on trouve partout sur le sable. Elle s'appelait Lily. Je me souviens de m'être présenté - ma compagnie avait l'air de lui faire plaisir. Quelques nuits après notre rencontre, on était seuls sur la plage, et. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Continuez.	}{	Continuez.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi votre histoire, petit enfant faible. . .	}
+{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	Hmmmm. . . Oh, c'est l'heure, ça ? Il faut que je file !	}{	Hmmmm. . . Oh, c'est l'heure, ça ? Il faut que je file !	}{	0	}{	}{	G.E_Story = 1	}{	}{	}{	}{	}{	}{	}{	Mon ombre pèse sur d'autres domaines. 	}
+{	111	}{	Elle a essayé de me dire ce qu'elle était, mais je ne comprenais pas. Alors, elle m'a montré. J'étais furieux contre elle quand j'ai compris. Je l'ai maudite et je suis parti, sans vraiment savoir où j'étais. Je sais ce qu'elle ressent maintenant. Et  voilà, je ne sais même pas ce que je suis.	}{	Elle a essayé de me dire ce qu'elle était, mais je ne comprenais pas. Alors, elle m'a montré. J'étais furieux contre elle quand j'ai compris. Je l'ai maudite et je suis parti, sans vraiment savoir où j'étais. Je sais ce qu'elle ressent maintenant. Et  voilà, je ne sais même pas ce que je suis.	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	G.E_Lily = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Lily est morte ?	}{	Lily est morte ?	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre fleur est-elle morte ?	}
+{	113	}{	Je regrette de vous dire ça comme ça, mais nous sommes des vampires.	}{	Je regrette de vous dire ça comme ça, mais nous sommes des vampires.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nous sommes des enfants de la nuit, buveurs de sang et damnés. . .	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	Je devrais peut-être me renseigner sur toute cette histoire de sang clair.	}{	Je devrais peut-être me renseigner sur toute cette histoire de sang clair.	}{	121	}{	G.E_Info == 0	}{	G.E_Quest = 1; pc.SetQuest("Lily",1)	}{	}{	}{	}{	}{	}{	}{	Je peux peut-être m'appesantir sur les mystères de votre sang clair.	}
+{	120	}{	Je vous recontacte si j'apprends quoi que ce soit. A plus.	}{	Je vous recontacte si j'apprends quoi que ce soit. A plus.	}{	0	}{	G.E_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai si j'apprends quoi que ce soit sur votre faiblesse.	}
+{	121	}{	J'espère que vous aurez plus de chance que moi. Personne n'a été très amical avec moi. Si on est à Santa Monica, c'est qu'on ne nous a pas encore flanqués dehors.	}{	J'espère que vous aurez plus de chance que moi. Personne n'a été très amical avec moi. Si on est à Santa Monica, c'est qu'on ne nous a pas encore flanqués dehors.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.E_Info = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Cette Lily. . . elle est morte ?	}{	Cette Lily. . . elle est morte ?	}{	151	}{	G.E_Hope == 0	}{	}{	}{	}{	}{	}{	}{	}{	Votre fleur est-elle morte ?	}
+{	123	}{	Vous savez que vous êtes des vampires, quand même ?	}{	Vous savez que vous êtes des vampires, quand même ?	}{	131	}{	G.E_Vampire == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nous sommes des enfants de la nuit, buveurs de sang et damnés. . .	}
+{	124	}{	Tous ceux-là sont aussi des sangs clairs ?	}{	Tous ceux-là sont aussi des sangs clairs ?	}{	141	}{	G.E_Sabbath == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le sang clair coule-t-il dans chacun de vous ?	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	Je vais poser quelques questions par-ci, par-là, pour voir ce que j'apprends.	}{	Je vais poser quelques questions par-ci, par-là, pour voir ce que j'apprends.	}{	161	}{	G.E_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Les secrets qui vous sont cachés me seront révélés. . .	}
+{	130	}{	Je vous recontacte si j'apprends quoi que ce soit. A plus.	}{	Je vous recontacte si j'apprends quoi que ce soit. A plus.	}{	0	}{	G.E_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai si j'apprends quoi que ce soit sur votre faiblesse.	}
+{	131	}{	C'est ce que Lily a essayé de me dire. Mais je ne comprends pas les règles, les termes, la raison pour laquelle certains nous sautent à la gorge en disant que nous annonçons l'apocalypse. C'est ça que je voudrais savoir.	}{	C'est ce que Lily a essayé de me dire. Mais je ne comprends pas les règles, les termes, la raison pour laquelle certains nous sautent à la gorge en disant que nous annonçons l'apocalypse. C'est ça que je voudrais savoir.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.E_Vampire = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Cette Lily. . . elle est morte ?	}{	Cette Lily. . . elle est morte ?	}{	151	}{	G.E_Hope == 0	}{	}{	}{	}{	}{	}{	}{	}{	Votre fleur est-elle morte ?	}
+{	133	}{	Tous ceux-là sont aussi des sangs clairs ?	}{	Tous ceux-là sont aussi des sangs clairs ?	}{	141	}{	G.E_Sabbath == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le sang clair coule-t-il dans chacun de vous ?	}
+{	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	Je devrais peut-être me renseigner sur toute cette histoire de sang clair.	}{	Je devrais peut-être me renseigner sur toute cette histoire de sang clair.	}{	121	}{	G.E_Info == 0	}{	G.E_Quest = 1; pc.SetQuest("Lily",1)	}{	}{	}{	}{	}{	}{	}{	Je peux peut-être m'appesantir sur les mystères de votre sang clair.	}
+{	140	}{	Je vous recontacte si j'apprends quoi que ce soit.	}{	Je vous recontacte si j'apprends quoi que ce soit.	}{	0	}{	G.E_Info == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai si j'apprends quoi que ce soit sur votre faiblesse.	}
+{	141	}{	Oui. La plupart viennent d'arriver à LA. Se sont faits chasser par le Sabbat ou une autre secte dans le même genre. Ils sont plus dans les ténèbres que moi. Ils sont sympas, mais. . . ils ont eu des sales moments, et ça les a affectés.	}{	Oui. La plupart viennent d'arriver à LA. Se sont faits chasser par le Sabbat ou une autre secte dans le même genre. Ils sont plus dans les ténèbres que moi. Ils sont sympas, mais. . . ils ont eu des sales moments, et ça les a affectés.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.E_Sabbath = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Cette Lily. . . elle est morte ?	}{	Cette Lily. . . elle est morte ?	}{	151	}{	G.E_Hope == 0	}{	}{	}{	}{	}{	}{	}{	}{	Votre fleur est-elle morte ?	}
+{	143	}{	Vous savez que vous êtes des vampires, quand même ?	}{	Vous savez que vous êtes des vampires, quand même ?	}{	131	}{	G.E_Vampire == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nous sommes des enfants de la nuit, buveurs de sang et damnés. . .	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	Je devrais peut-être me renseigner sur toute cette histoire de sang clair. . .	}{	Je devrais peut-être me renseigner sur toute cette histoire de sang clair. . .	}{	121	}{	G.E_Info == 0	}{	G.E_Quest = 1; pc.SetQuest("Lily",1)	}{	}{	}{	}{	}{	}{	}{	Je peux peut-être m'appesantir sur les mystères de votre sang clair.	}
+{	150	}{	Je vous recontacte si j'apprends quoi que ce soit.	}{	Je vous recontacte si j'apprends quoi que ce soit.	}{	0	}{	G.E_Info == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai si j'apprends quoi que ce soit sur votre faiblesse.	}
+{	151	}{	Cliniquement, oui. Mais en fait, je n'en sais rien. Je pense que j'aurais déjà fichu le camp si je ne me disais pas qu'elle peut arriver d'un moment à l'autre. J'ai encore plein de choses à lui dire.	}{	Cliniquement, oui. Mais en fait, je n'en sais rien. Je pense que j'aurais déjà fichu le camp si je ne me disais pas qu'elle peut arriver d'un moment à l'autre. J'ai encore plein de choses à lui dire.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	G.E_Hope = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Vous savez que vous êtes des vampires, quand même ?	}{	Vous savez que vous êtes des vampires, quand même ?	}{	131	}{	G.E_Vampire == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nous sommes des enfants de la nuit, buveurs de sang et damnés. . .	}
+{	153	}{	Tous ceux-là sont aussi des sangs clairs ?	}{	Tous ceux-là sont aussi des sangs clairs ?	}{	141	}{	G.E_Sabbath == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le sang clair coule-t-il dans chacun de vous ?	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	Je devrais peut-être me renseigner sur toute cette histoire de sang clair. . .	}{	Je devrais peut-être me renseigner sur toute cette histoire de sang clair. . .	}{	121	}{	G.E_Info == 0	}{	G.E_Quest = 1; pc.SetQuest("Lily",1)	}{	}{	}{	}{	}{	}{	}{	Je peux peut-être m'appesantir sur les mystères de votre sang clair.	}
+{	160	}{	Je vous recontacte si j'apprends quoi que ce soit.	}{	Je vous recontacte si j'apprends quoi que ce soit.	}{	0	}{	G.E_Info == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai si j'apprends quoi que ce soit sur votre faiblesse.	}
+{	161	}{	Nous apprécierions. Oh, avant que j'oublie, je m'appelle E. La belle aux cheveux noirs, là-bas, c'est Rosa. Elle voit le futur, qu'elle dit. Le nerveux, c'est Copper, et celui qui ne parle pas, c'est Julius. Mollo avec eux, ils en ont bavé.	}{	Nous apprécierions. Oh, avant que j'oublie, je m'appelle E. La belle aux cheveux noirs, là-bas, c'est Rosa. Elle voit le futur, qu'elle dit. Le nerveux, c'est Copper, et celui qui ne parle pas, c'est Julius. Mollo avec eux, ils en ont bavé.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Une idée de l'endroit où je pourrais chercher des renseignements ?	}{	Une idée de l'endroit où je pourrais chercher des renseignements ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où pourrais-je découvrir ces petits secrets ?	}
+{	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	Je vais voir ce que je peux apprendre. Au revoir.	}{	Je vais voir ce que je peux apprendre. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'heure est sombre, le sang est clair, l'oeil du Père Noir est toujours vigilant. Adieu.	}
+{	171	}{	On dirait que personne ne veut en parler. . . Tout a commencé cette nuit-là, au resto. Vous pourriez aller voir là-bas.	}{	On dirait que personne ne veut en parler. . . Tout a commencé cette nuit-là, au resto. Vous pourriez aller voir là-bas.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Cette Lily dont vous parlez. . . elle est morte ?	}{	Cette Lily dont vous parlez. . . elle est morte ?	}{	151	}{	G.E_Hope == 0	}{	}{	}{	}{	}{	}{	}{	}{	Votre fleur est-elle morte ?	}
+{	173	}{	Vous savez que vous êtes des vampires, quand même ?	}{	Vous savez que vous êtes des vampires, quand même ?	}{	131	}{	G.E_Vampire == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nous sommes des enfants de la nuit, buveurs de sang et damnés. . .	}
+{	174	}{	Tous ceux-là sont aussi des sangs clairs ?	}{	Tous ceux-là sont aussi des sangs clairs ?	}{	141	}{	G.E_Sabbath == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le sang clair coule-t-il dans chacun de vous ?	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	Je vais voir ce que je peux faire. Au revoir.	}{	Je vais voir ce que je peux faire. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre plane sur d'autres domaines. Adieu.	}
+{	181	}{	Regardez l'océan. . . Avant, j'adorais nager jusqu'à l'aube.	}{	Regardez l'océan. . . Avant, j'adorais nager jusqu'à l'aube.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.E_Ocean = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Je n'en doute pas. Je peux vous poser quelques questions de plus ?	}{	Je n'en doute pas. Je peux vous poser quelques questions de plus ?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je explorer votre matière grise ?	}
+{	183	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	Je ne recommencerais pas. A plus.	}{	Je ne recommencerais pas. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	191	}{	Vous devriez essayer par là, derrière la grille. Quelques types assez moches en sont sortis de temps en temps, la nuit.	}{	Vous devriez essayer par là, derrière la grille. Quelques types assez moches en sont sortis de temps en temps, la nuit.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Merci. Je peux vous poser quelques questions de plus ?	}{	Merci. Je peux vous poser quelques questions de plus ?	}{	311	}{	G.E_Thin == 1	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je explorer votre matière grise ?	}
+{	193	}{	Cool. Bon et qui êtes-vous exactement ?	}{	Cool. Bon et qui êtes-vous exactement ?	}{	11	}{	G.E_Thin == 0	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi l'histoire ce petit groupe de sang clair. . .	}
+{	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	Merci.	}{	Merci.	}{	0	}{	G.E_Thin == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre plane sur d'autres domaines. Adieu.	}
+{	201	}{	Je ne sais pas. Je crois que c'est arrivé un peu avant qu'on arrive. Beaucoup de méchanceté dans ce monde. Ca finit tôt ou tard par vous rattraper.	}{	Je ne sais pas. Je crois que c'est arrivé un peu avant qu'on arrive. Beaucoup de méchanceté dans ce monde. Ca finit tôt ou tard par vous rattraper.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.E_Murder = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Je peux vous poser quelques questions de plus ?	}{	Je peux vous poser quelques questions de plus ?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je explorer votre matière grise ?	}
+{	203	}{	Je cherche des types qui vivent sur la plage. Vous connaissez un coin comme ça ?	}{	Je cherche des types qui vivent sur la plage. Vous connaissez un coin comme ça ?	}{	191	}{	G.Mercurio_Quest == 1 and not IsClan(pc,"Malkavian") and G.Beachhouse == 0 and G.E_Demons == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	Avez-vous vu des démons des plages armés de battes ?	}{	Avez-vous vu des démons des plages armés de battes ?	}{	301	}{	G.Mercurio_Quest == 1 and IsClan(pc,"Malkavian") and G.Beachhouse == 0 and G.E_Demons == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	Je vois. Au revoir.	}{	Je vois. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les âmes dansent sur une musique sombre et délicieuse. Adieu.	}
+{	211	}{	Vous avez découvert quelque chose ?	}{	Vous avez découvert quelque chose ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Non, rien pour l'instant. Je peux vous poser quelques questions ?	}{	Non, rien pour l'instant. Je peux vous poser quelques questions ?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le voile est toujours opaque. Puis-je explorer votre matière grise ?	}
+{	213	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	Non. Mais je pense que j'ai une piste. Je vous ferai signe s'il se passe quoi que ce soit.	}{	Non. Mais je pense que j'ai une piste. Je vous ferai signe s'il se passe quoi que ce soit.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non. La piste du sang clair est évanescente. Je dois une nouvelle fois tenter de la remonter.	}
+{	221	}{	Vous avez ramené ma Lily. . . elle m'a tout raconté. Je ne sais pas pourquoi vous nous avez aidés, mais. . . votre sang mérite qu'on le mette en bouteille. Je ne la quitterai plus jamais. Merci.	}{	Vous avez ramené ma Lily. . . elle m'a tout raconté. Je ne sais pas pourquoi vous nous avez aidés, mais. . . votre sang mérite qu'on le mette en bouteille. Je ne la quitterai plus jamais. Merci.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	pc.SetQuest("Lily",8)	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Je vous en prie, E. Protégez-la bien.	}{	Je vous en prie, E. Protégez-la bien.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Portez toujours votre fleur contre votre coeur.	}
+{	223	}{	Personne ne méritait de rester dans cet endroit. J'ai fait le nécessaire.	}{	Personne ne méritait de rester dans cet endroit. J'ai fait le nécessaire.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	La fleur avait pris racine dans un jardin malfaisant. . .	}
+{	224	}{	Elle vous a parlé du type qu'elle a tué ? Quel spectacle ? 	}{	Elle vous a parlé du type qu'elle a tué ? Quel spectacle ? 	}{	251	}{	Humanity 3 & G.Lily_Extort == 2	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	Votre petite fleur a de dangereuses épines, bâtard. . .	}
+{	225	}{	Elle vous a parlé du type qu'elle a tué ? Quel spectacle ? 	}{	Elle vous a parlé du type qu'elle a tué ? Quel spectacle ? 	}{	251	}{	Humanity -3 & G.Lily_Extort == 2	}{	}{	}{	}{	}{	}{	}{	}{	Votre petite fleur a de dangereuses épines, bâtard. . .	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Nous allons bientôt quitter LA. C'est trop dangereux - Rosa nous a dit qu'il se préparait quelque chose de gros, et je ne veux pas être là quand le diable va sortir de sa boîte. Vous en faites ce que vous voulez. 	}{	Nous allons bientôt quitter LA. C'est trop dangereux - Rosa nous a dit qu'il se préparait quelque chose de gros, et je ne veux pas être là quand le diable va sortir de sa boîte. Vous en faites ce que vous voulez. 	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.E_Warn = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Je vais y penser. Merci, E. Bonne chance.	}{	Je vais y penser. Merci, E. Bonne chance.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il est déjà sorti de sa boîte, mais il n'a pas encore fait peur à ses enfants. Je m'en vais.	}
+{	233	}{	'Le diable sort de sa boîte' ? Ca ne me plaît pas. Au revoir, E.	}{	'Le diable sort de sa boîte' ? Ca ne me plaît pas. Au revoir, E.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai hâte de voir le diable arriver. 	}
+{	234	}{	Si tout explose, ce sera sans doute de ma faute. A bientôt, E.	}{	Si tout explose, ce sera sans doute de ma faute. A bientôt, E.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La mort nous accompagne tous, petit. Les dernières graines sont en train de tomber. Adieu.	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Bonsoir.	}{	Bonsoir.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Hé. Je peux vous poser quelques questions ?	}{	Hé. Je peux vous poser quelques questions ?	}{	311	}{	G.E_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je explorer votre matière grise ?	}
+{	243	}{	Ca boume, E. Puis-je vous poser quelques questions ?	}{	Ca boume, E. Puis-je vous poser quelques questions ?	}{	311	}{	G.E_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je explorer votre matière grise ?	}
+{	244	}{	Elle vous a parlé du type qu'elle a tué ? Quel spectacle ? 	}{	Elle vous a parlé du type qu'elle a tué ? Quel spectacle ? 	}{	251	}{	Humanity 3 & G.Lily_Extort == 2	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	Votre petite fleur a de dangereuses épines, bâtard. . .	}
+{	245	}{	Elle vous a parlé du type qu'elle a tué ? Quel spectacle ? 	}{	Elle vous a parlé du type qu'elle a tué ? Quel spectacle ? 	}{	251	}{	Humanity -3 & G.Lily_Extort == 2	}{	}{	}{	}{	}{	}{	}{	}{	Votre petite fleur a de dangereuses épines, bâtard. . .	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	Je ne faisais que passer. A plus !	}{	Je ne faisais que passer. A plus !	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	251	}{	Ecoutez, je connais Lily. Et si elle a fait ça, je suis sûr qu'il l'avait bien cherché. On a tous fait des choses qui ne sont pas dans notre nature - surtout à cause de ce satané sang. J'aurais sans doute fait pareil.	}{	Ecoutez, je connais Lily. Et si elle a fait ça, je suis sûr qu'il l'avait bien cherché. On a tous fait des choses qui ne sont pas dans notre nature - surtout à cause de ce satané sang. J'aurais sans doute fait pareil.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.E_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Hmmmm. . . Vous avez peut-être raison. Prenez soin de vous, E.	}{	Hmmmm. . . Vous avez peut-être raison. Prenez soin de vous, E.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles portent le poids de la vérité. Adieu.	}
+{	253	}{	Ce n'était pas la réaction que j'escomptais. Je voulais vous mettre au courant.	}{	Ce n'était pas la réaction que j'escomptais. Je voulais vous mettre au courant.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Petits monstres au sang clair. . .	}
+{	254	}{	Votre copine est une meurtrière.	}{	Votre copine est une meurtrière.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les mains de votre petite fleur sont celles de la faucheuse.	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	. . . Allez vous faire moudre.	}{	. . . Allez vous faire moudre.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	263	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Quoi, maintenant ils envoient les super-moches pour nous balayer ?	}{	Quoi, maintenant ils envoient les super-moches pour nous balayer ?	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Excusez-moi ?	}{	Excusez-moi ?	}{	1	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	273	}{	Que dites-vous ?	}{	Que dites-vous ?	}{	1	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	274	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	283	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	284	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Vous parlez des meurtres sur la jetée ? Je ne sais rien. Ca a dû se passer un peu avant notre arrivée. Le monde est très cruel. Tôt ou tard, ça vous rattrape.	}{	Vous parlez des meurtres sur la jetée ? Je ne sais rien. Ca a dû se passer un peu avant notre arrivée. Le monde est très cruel. Tôt ou tard, ça vous rattrape.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.E_Murder = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Puis-je explorer votre matière grise ?	}{	Puis-je explorer votre matière grise ?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	293	}{	Avez-vous vu des démons des plages armés de battes ?	}{	Avez-vous vu des démons des plages armés de battes ?	}{	301	}{	G.Mercurio_Quest == 1 and IsClan(pc,"Malkavian") and G.Beachhouse == 0 and G.E_Demons == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	294	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	Les âmes dansent sur une musique sombre et délicieuse. Adieu.	}{	Les âmes dansent sur une musique sombre et délicieuse. Adieu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Vous avez une façon de parler drôlement étrange. Mais si vous cherchez les moches qui passent tout le temps dans le coin, vous devriez essayer de l'autre côté de cette grille.	}{	Vous avez une façon de parler drôlement étrange. Mais si vous cherchez les moches qui passent tout le temps dans le coin, vous devriez essayer de l'autre côté de cette grille.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.E_Demons = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Puis-je explorer votre matière grise ?	}{	Puis-je explorer votre matière grise ?	}{	311	}{	G.E_Thin == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	303	}{	Racontez-moi l'histoire ce petit groupe de sang clair. . .	}{	Racontez-moi l'histoire ce petit groupe de sang clair. . .	}{	11	}{	G.E_Thin == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	304	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	Rêvez d'eaux plus chaudes. Adieu.	}{	Rêvez d'eaux plus chaudes. Adieu.	}{	0	}{	G.E_Thin == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	Je vous en prie. . .	}{	Je vous en prie. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Je voulais juste venir vous dire au revoir une dernière fois avant que vous partiez. Alors au revoir. . .	}{	Je voulais juste venir vous dire au revoir une dernière fois avant que vous partiez. Alors au revoir. . .	}{	0	}{	G.E_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	Les adieux sont tristes et déprimants. Et ce sera notre dernier, petit être fragile.	}
+{	313	}{	Avez-vous vu des démons des plages armés de battes ?	}{	Avez-vous vu des démons des plages armés de battes ?	}{	301	}{	G.Mercurio_Quest == 1 and IsClan(pc,"Malkavian") and G.Beachhouse == 0 and G.E_Demons == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	314	}{	Je cherche des types qui vivent sur la plage. Vous connaissez un coin comme ça ?	}{	Je cherche des types qui vivent sur la plage. Vous connaissez un coin comme ça ?	}{	191	}{	G.Mercurio_Quest == 1 and not IsClan(pc,"Malkavian") and G.Beachhouse == 0 and G.E_Demons == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	Vous savez quelque chose sur le meurtre de la jetée ?	}{	Vous savez quelque chose sur le meurtre de la jetée ?	}{	201	}{	G.Know_Murder == 1 and G.E_Murder == 0 and not IsClan(pc,"Malkavian") and G.E_Quest < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	Savez-vous quoi que ce soit sur le tueur drapé d'ombre ?	}{	Savez-vous quoi que ce soit sur le tueur drapé d'ombre ?	}{	291	}{	G.Know_Murder == 1 and G.E_Murder == 0 and IsClan(pc,"Malkavian") and G.E_Quest < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	Et vous. . . vous êtes qui les gars ?	}{	Et vous. . . vous êtes qui les gars ?	}{	11	}{	G.E_Thin == 0	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi l'histoire de ce petit groupe clair.	}
+{	318	}{	Dites moi. . . Comment on devient sang clair ?	}{	Dites moi. . . Comment on devient sang clair ?	}{	91	}{	G.E_Lily == 0 and G.E_Thin == 1 and G.E_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi votre sang est-il si clair ?	}
+{	319	}{	Répétez-moi où en sont les choses entre Lily et vous. . .	}{	Répétez-moi où en sont les choses entre Lily et vous. . .	}{	111	}{	G.E_Lily == 1 and G.E_Thin == 1 and G.E_Quest == 0	}{	G.E_Story = 0	}{	}{	}{	}{	}{	}{	}{	Racontez-moi ce qu'il y a à savoir sur Lily et vous. . .	}
+{	320	}{	Vous savez où je pourrais trouver des renseignements sur les sangs clairs ?	}{	Vous savez où je pourrais trouver des renseignements sur les sangs clairs ?	}{	171	}{	G.E_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Où trouver les secrets de votre plasma déficient ?	}
+{	321	}{	A plus tard.	}{	A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	322	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	323	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	324	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	325	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	333	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	334	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	343	}{	(Starting Condition)	}{	}{	261	}{	G.E_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	344	}{	(Starting Condition)	}{	}{	241	}{	G.E_Warn == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	345	}{	(Starting Condition)	}{	}{	221	}{	G.E_Quest == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	(Starting Condition)	}{	}{	211	}{	G.E_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	(Starting Condition)	}{	}{	181	}{	G.E_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	(Starting Condition)	}{	}{	241	}{	G.E_Story == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	(Starting Condition)	}{	}{	271	}{	npc.times_talked == 1 and IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

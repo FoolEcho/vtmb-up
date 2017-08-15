@@ -1,0 +1,1705 @@
+﻿* Vampire: The Masquerade - Bloodlines Unofficial Patch (version fr)
+
+Voir le vtmbup-readme pour les infos de licence et les détails des corrections.
+
+Il s'agit du patch non-officiel de Werner pour Vampire: The Masquerade - Bloodlines pourvu du sous-titrage français.
+
+Aucune correction supplémentaire n'est (ni ne sera) ajoutée par rapport au contenu originel du patch VTMBup en dehors des coquilles/formulations propres au français. Il s'agit «juste» de fournir une version française sur la base des modifications de Werner qui à l'avenir, je l'espère, pourra servir de base à traduire des mods basés sur ce patch.
+
+Notez que le patch devrait également permettre de passer complétement d'une installation VO à une VF. :-)
+
+N.B. Si vous jouez sur écran large, certaines polices risquent d'être trop petites. Remplacez alors le fichier Vampire/resources/trackerscheme.res par le trackerscheme.res.large fourni (le fichier fourni par défaut, avec trackerscheme.res.orig pour copie, est le réglage adapté au français pour résolution 4:3).
+
+Merci de faire remonter d'éventuels problèmes à FoolEcho <foolecho at gmail dot com>.
+
+Remerciements:
+* Claudia Vonïgner pour nombre des nouvelles traductions (notamment les enregistrements dans le manoir de Grout)
+* Picotin pour ses diverses corrections et traductions (les passages radios entre autres)
+* les précédents travaux du mod clan fr 1.5 de bloodipunk et burgermeister01.
+
+
+*Bugs connus:
+Raccourcis claviers absents. 
+Il suffit d'aller dans options et d'y établir la configuration des touches par défaut, puis de les modifier à votre convenance.
+
+Les raccourcis numériques définis via "k" (par défaut) ne fonctionnent pas.
+Il faut ouvrir la console et taper bind "1" "vhotkey #1" puis bind "2" "vhotkey #2" et ainsi de suite jusqu'à 0. Après avoir fait ça les raccourcis claviers fonctionnent à nouveau (merci à BrennusLodbrok).
+Ou bien supprimer le fichier Vampire/cfg/config.cfg, démarrer le jeu, aller dans les options pour établir les raccourcis par défaut (ou ceux que vous voudrez), puis quitter... supprimer de nouveau le config.cfg et relancer. Cette fois tout devrait être opérationnel. 
+
+
+* 9.8beta3
+	Correction readme.*
+	Mise à niveau
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_mingxiao_melee.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_mingxiao_tentacle.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\stats.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\traiteffects000.txt 
+		Unofficial_Patch\dlg\giovanni\christopher.dlg 
+		Unofficial_Patch\dlg\hollywood\isaac.dlg 
+		Unofficial_Patch\dlg\santa monica\copper.dlg 
+		Unofficial_Patch\vdata\hackterminals\prop_keypad.txt 
+		Unofficial_Patch\vdata\hackterminals\therese_pc.txt 
+		Unofficial_Patch\vdata\items\item_g_drugs_drug_box.txt 
+		Unofficial_Patch\vdata\items\item_g_jumbles_flyer.txt 
+		Unofficial_Patch\vdata\items\item_w_claws_ghoul.txt 
+		Unofficial_Patch\vdata\items\item_w_mingxiao_tentacle.txt 
+		Unofficial_Patch\vdata\items\item_w_tzimisce2_claw.txt 
+		Unofficial_Patch\vdata\system\stats.txt 
+		Unofficial_Patch\vdata\system\traiteffects000.txt 
+		vtmbup-readme.txt
+
+
+* 9.8beta1
+	Mise à niveau
+		Plus_Patch\Unofficial_Patch\resource\gameui_english.txt 
+		Plus_Patch\Unofficial_Patch\vdata\hackterminals\haven_pc.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_mingxiao_tentacle.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_remington_m_700.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\disciplinetgt_001.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\disciplinetgt_004.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\stats.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\traiteffects000.txt 
+		Unofficial_Patch\dlg\downtown la\milligan.dlg 
+		Unofficial_Patch\dlg\downtown la\patty.dlg 
+		Unofficial_Patch\dlg\hollywood\andrei.dlg 
+		Unofficial_Patch\dlg\hollywood\flynn.dlg 
+		Unofficial_Patch\dlg\hollywood\slater.dlg 
+		Unofficial_Patch\dlg\main characters\regent.dlg 
+		Unofficial_Patch\dlg\santa monica\tourette.dlg 
+		Unofficial_Patch\resource\gameui_english.txt 
+		Unofficial_Patch\sound\character\male\citizen_goth\*.lip 
+		Unofficial_Patch\sound\character\male\unique\trip\*.lip
+		Unofficial_Patch\vdata\hackterminals\haven_pc.txt 
+		Unofficial_Patch\vdata\items\item_w_claws_ghoul.txt 
+		Unofficial_Patch\vdata\items\item_w_mingxiao_tentacle.txt 
+		Unofficial_Patch\vdata\items\item_w_rem_m_700_bach.txt 
+		Unofficial_Patch\vdata\items\item_w_tzimisce2_claw.txt 
+		Unofficial_Patch\vdata\system\disciplinetgt_004.txt 
+		Unofficial_Patch\vdata\system\quests_hollywood.txt 
+		Unofficial_Patch\vdata\system\quests_santamonica.txt
+
+* 9.7.2 
+	Mise à niveau (9.7 Final)
+		Unofficial_Patch\sound\character\dlg\chinatown\garyphone\line101_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\chinatown\garyphone\line11_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\chinatown\garyphone\line1_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\chinatown\garyphone\line21_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\chinatown\garyphone\line31_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\chinatown\garyphone\line41_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\chinatown\garyphone\line51_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\chinatown\garyphone\line61_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\chinatown\garyphone\line71_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\chinatown\garyphone\line81_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\chinatown\garyphone\line91_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\downtown la\hannahs_message\line1_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\santa monica\stan_gimble\line11_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\santa monica\stan_gimble\line1_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\santa monica\stan_gimble\line21_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\santa monica\stan_gimble\line31_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\santa monica\stan_gimble\line41_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\santa monica\stan_gimble\line51_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\santa monica\stan_gimble\line61_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\santa monica\stan_gimble\line71_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\santa monica\stan_gimble\line76_col_e.lip
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_avamp_blade.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\clandoc000.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\disciplinetgt_002.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\rules.txt 
+		Unofficial_Patch\dlg\chinatown\garyphone.dlg 
+		Unofficial_Patch\dlg\chinatown\ji.dlg 
+		Unofficial_Patch\dlg\chinatown\lufang.dlg 
+		Unofficial_Patch\dlg\downtown la\boris.dlg 
+		Unofficial_Patch\dlg\downtown la\damsel.dlg 
+		Unofficial_Patch\dlg\downtown la\dirty_cop.dlg 
+		Unofficial_Patch\dlg\downtown la\junkie_girl.dlg 
+		Unofficial_Patch\dlg\downtown la\pisha.dlg 
+		Unofficial_Patch\dlg\downtown la\venus.dlg 
+		Unofficial_Patch\dlg\generic\doll1.dlg 
+		Unofficial_Patch\dlg\generic\doll2.dlg 
+		Unofficial_Patch\dlg\generic\doll3.dlg 
+		Unofficial_Patch\dlg\generic\doll4.dlg 
+		Unofficial_Patch\dlg\generic\doll5.dlg 
+		Unofficial_Patch\dlg\generic\mcfly.dlg 
+		Unofficial_Patch\dlg\generic\sabbat1.dlg 
+		Unofficial_Patch\dlg\generic\sabbat2.dlg 
+		Unofficial_Patch\dlg\generic\sabbat3.dlg 
+		Unofficial_Patch\dlg\giovanni\nadia.dlg 
+		Unofficial_Patch\dlg\hollywood\ash_lookalike.dlg 
+		Unofficial_Patch\dlg\hollywood\courier.dlg 
+		Unofficial_Patch\dlg\hollywood\isaac.dlg 
+		Unofficial_Patch\dlg\hollywood\kerri.dlg 
+		Unofficial_Patch\dlg\hollywood\misti.dlg 
+		Unofficial_Patch\dlg\hollywood\romero.dlg 
+		Unofficial_Patch\dlg\hollywood\tommy.dlg 
+		Unofficial_Patch\dlg\hollywood\vv.dlg 
+		Unofficial_Patch\dlg\main characters\beckett.dlg 
+		Unofficial_Patch\dlg\main characters\heather.dlg 
+		Unofficial_Patch\dlg\main characters\jack_tutorial.dlg 
+		Unofficial_Patch\dlg\main characters\mingxiao2.dlg 
+		Unofficial_Patch\dlg\santa monica\arthur.dlg 
+		Unofficial_Patch\dlg\santa monica\chunk.dlg 
+		Unofficial_Patch\dlg\santa monica\danielle.dlg 
+		Unofficial_Patch\dlg\santa monica\dennis.dlg 
+		Unofficial_Patch\dlg\santa monica\jeanette.dlg 
+		Unofficial_Patch\dlg\santa monica\nurse.dlg 
+		Unofficial_Patch\dlg\santa monica\ocean_house.dlg 
+		Unofficial_Patch\dlg\santa monica\phil.dlg 
+		Unofficial_Patch\dlg\santa monica\smblueblood.dlg 
+		Unofficial_Patch\dlg\santa monica\stan_gimble.dlg 
+		Unofficial_Patch\dlg\santa monica\therese.dlg 
+		Unofficial_Patch\dlg\santa monica\trip.dlg 
+		Unofficial_Patch\vdata\items\item_w_tzimisce2_head.txt 
+		Unofficial_Patch\vdata\system\clandoc000.txt 
+		Unofficial_Patch\vdata\system\disciplinetgt_001.txt 
+		Unofficial_Patch\vdata\system\npctemplate002.txt 
+		Unofficial_Patch\vdata\system\npctemplate007.txt 
+		Unofficial_Patch\vdata\system\rules.txt	
+
+* 9.7.1
+	Mise à niveau
+		Plus_Patch\Unofficial_Patch\vdata\hackterminals\haven_pc.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\loadingtips.txt 
+		Unofficial_Patch\dlg\downtown la\damsel.dlg 
+		Unofficial_Patch\dlg\downtown la\prince1.dlg 
+		Unofficial_Patch\dlg\downtown la\prince2.dlg 
+		Unofficial_Patch\dlg\downtown la\skelter.dlg 
+		Unofficial_Patch\dlg\hollywood\isaac.dlg 
+		Unofficial_Patch\dlg\main characters\beckett.dlg 
+		Unofficial_Patch\dlg\main characters\caine.dlg 
+		Unofficial_Patch\dlg\main characters\jack.dlg 
+		Unofficial_Patch\dlg\main characters\mingxiao2.dlg 
+		Unofficial_Patch\dlg\main characters\nines.dlg 
+		Unofficial_Patch\dlg\main characters\regent.dlg 
+		Unofficial_Patch\dlg\santa monica\bertram.dlg 
+		Unofficial_Patch\dlg\santa monica\copper.dlg 
+		Unofficial_Patch\dlg\santa monica\jeanette.dlg 
+		Unofficial_Patch\dlg\santa monica\mercurio.dlg 
+		Unofficial_Patch\dlg\santa monica\therese.dlg 
+		Unofficial_Patch\dlg\warrens\mitnick.dlg 
+		Unofficial_Patch\vdata\hackterminals\haven_pc.txt 
+		Unofficial_Patch\vdata\system\loadingtips.txt 
+		vtmbup-after.txt 
+		vtmbup-readme.txt
+
+
+* 9.7.0
+	Mise à niveau 
+		Plus_Patch\Unofficial_Patch\resource\gameui_english.txt 
+		Plus_Patch\Unofficial_Patch\vdata\hackterminals\haven_pc.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\loadingtips.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\stats.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\vendors.txt 
+		Unofficial_Patch\dlg\downtown la\damsel.dlg 
+		Unofficial_Patch\dlg\downtown la\skelter.dlg 
+		Unofficial_Patch\dlg\generic\prostitute.dlg 
+		Unofficial_Patch\dlg\giovanni\luca.dlg 
+		Unofficial_Patch\dlg\hollywood\andrei.dlg 
+		Unofficial_Patch\dlg\hollywood\isaac.dlg 
+		Unofficial_Patch\dlg\hollywood\slater.dlg 
+		Unofficial_Patch\dlg\hollywood\tommy.dlg 
+		Unofficial_Patch\dlg\main characters\caine.dlg 
+		Unofficial_Patch\dlg\main characters\gary.dlg 
+		Unofficial_Patch\dlg\main characters\jack.dlg 
+		Unofficial_Patch\dlg\santa monica\arthur.dlg 
+		Unofficial_Patch\dlg\santa monica\bertram.dlg 
+		Unofficial_Patch\dlg\santa monica\therese.dlg 
+		Unofficial_Patch\dlg\warrens\imalia.dlg
+		Unofficial_Patch\resource\gameui_english.txt 
+		Unofficial_Patch\vdata\hackterminals\empire_lobby_computer.txt 
+		Unofficial_Patch\vdata\hackterminals\haven_pc.txt 
+		Unofficial_Patch\vdata\items\item_w_chang_blade.txt 
+		Unofficial_Patch\vdata\system\experience_table.txt 
+		Unofficial_Patch\vdata\system\loadingtips.txt 
+		Unofficial_Patch\vdata\system\mapnames_localized.txt 
+		Unofficial_Patch\vdata\system\quests_hollywood.txt 
+		Unofficial_Patch\vdata\system\quests_santamonica.txt 
+		Unofficial_Patch\vdata\system\stats.txt
+		vtmbup-after.txt
+	Correction bug quête Venus
+		Unofficial_Patch/dlg/downtown la/venus.dlg
+		Unofficial_Patch/sound/character/dlg/downtown la/venus/line201_col_f.lip
+		
+
+
+* 9.6
+		Plus_Patch\Unofficial_Patch\resource\gameui_english.txt 
+		Plus_Patch\Unofficial_Patch\scripts\kb_act.lst 
+		Plus_Patch\Unofficial_Patch\scripts\kb_def.lst 
+		Plus_Patch\Unofficial_Patch\vdata\hackterminals\haven_pc.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_chang_blade.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_crossbow.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_deserteagle.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_remington_m_700.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_sheriff_sword.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_steyr_aug.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\loadingtips.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\vendors.txt 
+		Unofficial_Patch\dlg\chinatown\barabus.dlg 
+		Unofficial_Patch\dlg\chinatown\yukie.dlg 
+		( Unofficial_Patch\dlg\downtown la\boris.dlg )
+		Unofficial_Patch\dlg\downtown la\damsel.dlg 
+		( Unofficial_Patch\dlg\downtown la\dema.dlg )
+		Unofficial_Patch\dlg\downtown la\empire_desk_clerk.dlg 
+		( Unofficial_Patch\dlg\downtown la\igor.dlg )
+		Unofficial_Patch\dlg\downtown la\junkie_girl.dlg 
+		Unofficial_Patch\dlg\downtown la\pisha.dlg 
+		Unofficial_Patch\dlg\downtown la\prince2.dlg 
+		Unofficial_Patch\dlg\hollywood\andrei.dlg 
+		Unofficial_Patch\dlg\main characters\beckett.dlg 
+		Unofficial_Patch\dlg\main characters\gary.dlg 
+		Unofficial_Patch\dlg\main characters\heather.dlg 
+		Unofficial_Patch\dlg\main characters\jack_tutorial.dlg 
+		Unofficial_Patch\dlg\santa monica\bertram.dlg 
+		Unofficial_Patch\dlg\santa monica\copper.dlg 
+		Unofficial_Patch\dlg\santa monica\knox.dlg 
+		Unofficial_Patch\dlg\santa monica\mercurio.dlg 
+		Unofficial_Patch\dlg\santa monica\smblueblood.dlg 
+		Unofficial_Patch\dlg\santa monica\smoke.dlg 
+		Unofficial_Patch\dlg\santa monica\stan_gimble.dlg 
+		Unofficial_Patch\dlg\santa monica\vandal.dlg
+		Unofficial_Patch\resource\gameui_english.txt 
+		Unofficial_Patch\vdata\hackterminals\scott_laptop.txt 
+		Unofficial_Patch\vdata\hackterminals\shrekhub4_terminal1.txt 
+		Unofficial_Patch\vdata\items\item_g_drugs_drug_box.txt 
+		Unofficial_Patch\vdata\items\item_w_avamp_blade.txt 
+		Unofficial_Patch\vdata\items\item_w_chang_blade.txt 
+		Unofficial_Patch\vdata\items\item_w_chang_claw.txt 
+		Unofficial_Patch\vdata\items\item_w_claws_ghoul.txt 
+		Unofficial_Patch\vdata\items\item_w_colt_anaconda.txt 
+		Unofficial_Patch\vdata\items\item_w_crossbow_flaming.txt 
+		Unofficial_Patch\vdata\items\item_w_katana.txt 
+		Unofficial_Patch\vdata\items\item_w_rem_m_700_bach.txt 
+		Unofficial_Patch\vdata\items\item_w_severed_arm.txt 
+		Unofficial_Patch\vdata\items\item_w_sheriff_sword.txt 
+		Unofficial_Patch\vdata\items\item_w_steyr_aug.txt 
+		Unofficial_Patch\vdata\signs\maze_note.txt 
+		Unofficial_Patch\vdata\system\histories000.txt
+		Unofficial_Patch\vdata\system\quests_downtown.txt 
+		vtmbup-install.iss 
+
+* 9.5.4
+		*correction message d'information pour l'option de lancement via steam
+		Plus_Patch\Unofficial_Patch\resource\gameui_english.txt (ajout du numéro de révision fr)
+		Plus_Patch\Unofficial_Patch\sound\radio\radio_loop_1.lip 
+		Plus_Patch\Unofficial_Patch\sound\radio\radio_loop_2.lip 
+		Plus_Patch\Unofficial_Patch\sound\radio\radio_loop_3.lip 
+		Plus_Patch\Unofficial_Patch\sound\radio\radio_loop_4.lip 
+		Plus_Patch\Unofficial_Patch\sound\radio\radio_loop_5.lip
+		Plus_Patch\Unofficial_Patch\vdata\hackterminals\haven_pc.txt 
+		Plus_Patch\Unofficial_Patch\vdata\hackterminals\shortcut_computer.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_deserteagle.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_ithaca_m_37.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_mac_10.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_supershotgun.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_uzi.txt 
+		Plus_Patch\Unofficial_Patch\vdata\signs\pier_note.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\npctemplate012.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\strings.txt		
+		Unofficial_Patch\sound\character\dlg\hollywood\sweeper\line11_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\hollywood\sweeper\line1_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\hollywood\sweeper\line21_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\hollywood\sweeper\line31_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\hollywood\sweeper\line41_col_e.lip 
+		Unofficial_Patch\sound\character\dlg\hollywood\sweeper\line51_col_e.lip 
+		Unofficial_Patch\sound\character\male\unique\clinic_guard\float_1.lip 
+		Unofficial_Patch\sound\character\male\unique\clinic_guard\float_10.lip 
+		Unofficial_Patch\sound\character\male\unique\clinic_guard\float_11.lip 
+		Unofficial_Patch\sound\character\male\unique\clinic_guard\float_12.lip 
+		Unofficial_Patch\sound\character\male\unique\clinic_guard\float_2.lip 
+		Unofficial_Patch\sound\character\male\unique\clinic_guard\float_3.lip 
+		Unofficial_Patch\sound\character\male\unique\clinic_guard\float_4.lip 
+		Unofficial_Patch\sound\character\male\unique\clinic_guard\float_5.lip 
+		Unofficial_Patch\sound\character\male\unique\clinic_guard\float_6.lip 
+		Unofficial_Patch\sound\character\male\unique\clinic_guard\float_7.lip 
+		Unofficial_Patch\sound\character\male\unique\clinic_guard\float_8.lip 
+		Unofficial_Patch\sound\character\male\unique\clinic_guard\float_9.lip 
+		Unofficial_Patch\sound\character\male\unique\copper\float_1.lip 
+		Unofficial_Patch\sound\character\male\unique\copper\float_10.lip 
+		Unofficial_Patch\sound\character\male\unique\copper\float_11.lip 
+		Unofficial_Patch\sound\character\male\unique\copper\float_12.lip 
+		Unofficial_Patch\sound\character\male\unique\copper\float_2.lip 
+		Unofficial_Patch\sound\character\male\unique\copper\float_3.lip 
+		Unofficial_Patch\sound\character\male\unique\copper\float_4.lip 
+		Unofficial_Patch\sound\character\male\unique\copper\float_5.lip 
+		Unofficial_Patch\sound\character\male\unique\copper\float_6.lip 
+		Unofficial_Patch\sound\character\male\unique\copper\float_7.lip 
+		Unofficial_Patch\sound\character\male\unique\copper\float_8.lip 
+		Unofficial_Patch\sound\character\male\unique\copper\float_9.lip
+		Unofficial_Patch\dlg\chinatown\mandarin.dlg 
+		Unofficial_Patch\dlg\chinatown\ox.dlg 
+		Unofficial_Patch\dlg\chinatown\wongho.dlg 
+		Unofficial_Patch\dlg\chinatown\yukie.dlg 
+		Unofficial_Patch\dlg\downtown la\patty.dlg 
+		Unofficial_Patch\dlg\generic\prostitute.dlg 
+		Unofficial_Patch\dlg\giovanni\nadia.dlg 
+		Unofficial_Patch\dlg\giovanni\victor.dlg 
+		Unofficial_Patch\dlg\hollywood\anoncaller.dlg 
+		Unofficial_Patch\dlg\hollywood\gargoyle.dlg 
+		Unofficial_Patch\dlg\main characters\gary.dlg 
+		Unofficial_Patch\dlg\main characters\johansen.dlg 
+		Unofficial_Patch\dlg\main characters\regent.dlg 
+		Unofficial_Patch\dlg\santa monica\brian.dlg 
+		Unofficial_Patch\dlg\santa monica\mercurio.dlg 
+		Unofficial_Patch\dlg\santa monica\smphone.dlg 
+		Unofficial_Patch\dlg\santa monica\stan_gimble.dlg 
+		Unofficial_Patch\resource\gameui_english.txt
+		Unofficial_Patch\vdata\hackterminals\fu_server.txt 
+		Unofficial_Patch\vdata\hackterminals\fu_terminals.txt 
+		Unofficial_Patch\vdata\hackterminals\fu_terminals2.txt 
+		Unofficial_Patch\vdata\hackterminals\haven_pc.txt 
+		Unofficial_Patch\vdata\hackterminals\lucky_pc.txt 
+		Unofficial_Patch\vdata\hackterminals\museum_computer_2.txt 
+		Unofficial_Patch\vdata\hackterminals\scott_laptop.txt 
+		Unofficial_Patch\vdata\hackterminals\shortcut_computer.txt 
+		Unofficial_Patch\vdata\hackterminals\shrekhub2_terminal.txt 
+		Unofficial_Patch\vdata\hackterminals\shrekhub4_terminal5.txt 
+		Unofficial_Patch\vdata\hackterminals\ventruetower2_terminal.txt 
+		Unofficial_Patch\vdata\hackterminals\warrens2_computer.txt
+		Unofficial_Patch\vdata\items\item_g_drugs_drug_box.txt 
+		Unofficial_Patch\vdata\items\item_g_garys_film.txt 
+		Unofficial_Patch\vdata\items\item_g_garys_tape.txt 
+		Unofficial_Patch\vdata\items\item_g_horrortape_1.txt 
+		Unofficial_Patch\vdata\items\item_k_lucky_star_murder_key.txt 
+		Unofficial_Patch\vdata\items\item_w_fireaxe.txt 
+		Unofficial_Patch\vdata\items\item_w_ithaca_m_37.txt 
+		Unofficial_Patch\vdata\items\item_w_unarmed.txt
+
+* 9.5.3
+		Unofficial_Patch\vdata\items\item_g_horrortape_2.txt
+		Unofficial_Patch\vdata\signs\coffee_note.txt (encodage ANSI)
+		Plus_Patch\Unofficial_Patch\sound\whispers\(murmures Malkaviens, .lip)
+		Plus_Patch\Unofficial_Patch\vdata\items\item_g_lockpick.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_glock_17c.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_mac_10.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_steyr_aug.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_supershotgun.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_uzi.txt 
+		Plus_Patch\Unofficial_Patch\vdata\signs\pier_note.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\charcreatewizard.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\histories000.txt
+
+* 9.5.2
+		Unofficial_Patch\materials\interface\pop_ups\dialog_dementation.tth 
+		Unofficial_Patch\materials\interface\pop_ups\dialog_dementation.ttz 
+		Unofficial_Patch\materials\interface\pop_ups\dialog_domination.tth 
+		Unofficial_Patch\materials\interface\pop_ups\dialog_domination.ttz 
+		Unofficial_Patch\materials\interface\pop_ups\dialog_feats.tth 
+		Unofficial_Patch\materials\interface\pop_ups\dialog_feats.ttz 
+		Unofficial_Patch\materials\interface\pop_ups\dialog_feats_nosferatu.tth 
+		Unofficial_Patch\materials\interface\pop_ups\dialog_feats_nosferatu.ttz 
+		Unofficial_Patch\materials\interface\pop_ups\dialog_presence.tth 
+		Unofficial_Patch\materials\interface\pop_ups\dialog_presence.ttz 
+		Plus_Patch\Unofficial_Patch\vdata\signs\tutorial_popup_dementation2.txt 
+		Plus_Patch\Unofficial_Patch\vdata\signs\tutorial_popup_disciplines1.txt 
+		Plus_Patch\Unofficial_Patch\vdata\signs\tutorial_popup_dominate2.txt 
+		Plus_Patch\Unofficial_Patch\vdata\signs\tutorial_popup_fail_dementation_1.txt 
+		Plus_Patch\Unofficial_Patch\vdata\signs\tutorial_popup_fail_dominate_1.txt 
+		Plus_Patch\Unofficial_Patch\vdata\signs\tutorial_popup_moving1.txt 
+		Plus_Patch\Unofficial_Patch\vdata\signs\tutorial_popup_questlog1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_animalism1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_animalism2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_animalism3.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_auspex1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_auspex2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_blood_buff1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_bloodpool1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_brujahdisc1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_celerity1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_celerity2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_computers1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_computers2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_containers1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_containers2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_dementation1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_dementation2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_dementation3.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_detected_1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_dialogue_dementate.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_dialogue_dominate.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_dialogue_feats.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_dialogue_nosferatu.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_dialogue_presence.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_disciplines1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_disciplines2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_dominate1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_dominate2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_dominate3.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_drain_pool_1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_experience_1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_fail_animalism_1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_fail_animalism_2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_fail_auspex_1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_fail_celerity_1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_fail_dementation_1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_fail_dementation_2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_fail_dominate_1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_fail_dominate_2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_fail_fortitude_1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_fail_obfuscate_1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_fail_potence_1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_fail_presence_1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_fail_protean_1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_fail_thaumaturgy_1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_fail_thaumaturgy_2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_feed1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_feed2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_feed_fail_1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_fortitude1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_fortitude2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_frenzy1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_frenzy2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_gangreldisc1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_get1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_health1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_health2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_inspection1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_inspection2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_inventory1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_jump1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_lockpicking1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_lockpicking2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_malkaviandisc1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_masquerade1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_masquerade2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_masquerade3.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_moving1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_nosferatudisc1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_note1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_obfuscate1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_obfuscate2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_obfuscate3.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_obfuscate4.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_physics1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_physics2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_pickup_1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_potence1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_potence2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_presence1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_presence2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_protean1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_protean2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_protean3.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_questlog1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_rangedcombat1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_rangedcombat2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_rats1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_rats2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_sneaking1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_sneaking2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_stealthkill1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_thaumaturgy1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_thaumaturgy2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_thaumaturgy3.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_thirty_eight1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_tireiron1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_toreadordisc1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_tremeredisc1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_unarmedcombat1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_unarmedcombat2.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_use1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_ventruedisc1.txt 
+		Unofficial_Patch\vdata\signs\tutorial_popup_weapons1.txt
+
+* 9.5.1
+
+* 9.5
+		Plus_Patch\Unofficial_Patch\resource\gameui_english.txt 
+		Plus_Patch\Unofficial_Patch\vdata\hackterminals\haven_pc.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_supershotgun.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\npctemplate025.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\stats.txt 
+		Unofficial_Patch\dlg\chinatown\lufang.dlg 
+		Unofficial_Patch\dlg\chinatown\yukie.dlg 
+		Unofficial_Patch\dlg\downtown la\danecopconvo1.dlg 
+		Unofficial_Patch\dlg\downtown la\danecopconvo2.dlg 
+		Unofficial_Patch\dlg\downtown la\danecopconvo3.dlg 
+		Unofficial_Patch\dlg\downtown la\pisha.dlg 
+		Unofficial_Patch\dlg\downtown la\prince1.dlg 
+		Unofficial_Patch\dlg\downtown la\tutorial_security_guard.dlg 
+		Unofficial_Patch\dlg\generic\doll5.dlg 
+		Unofficial_Patch\dlg\hollywood\andrei.dlg 
+		Unofficial_Patch\dlg\hollywood\isaac.dlg 
+		Unofficial_Patch\dlg\hollywood\romero.dlg 
+		Unofficial_Patch\dlg\main characters\beckett.dlg 
+		Unofficial_Patch\dlg\main characters\heather.dlg 
+		Unofficial_Patch\dlg\main characters\jack.dlg 
+		Unofficial_Patch\dlg\main characters\mingxiao.dlg 
+		Unofficial_Patch\dlg\main characters\mingxiao2.dlg 
+		Unofficial_Patch\dlg\main characters\nines.dlg 
+		Unofficial_Patch\dlg\santa monica\asianvampiretest.dlg (non traduit)
+		Unofficial_Patch\dlg\santa monica\smblueblood.dlg 
+		Unofficial_Patch\dlg\santa monica\therese.dlg 
+		Unofficial_Patch\dlg\santa monica\tourette.dlg 
+		Unofficial_Patch\dlg\santa monica\vandal.dlg 
+		Unofficial_Patch\resource\gameui_english.txt 
+		Unofficial_Patch\vdata\hackterminals\haven_pc.txt 
+		Unofficial_Patch\vdata\signs\clinic_phil_note.txt 
+		Unofficial_Patch\vdata\signs\luckystar_note.txt 
+		Unofficial_Patch\vdata\signs\malcolm_password_note.txt 
+		Unofficial_Patch\vdata\signs\malkmansion_clue_1.txt 
+		Unofficial_Patch\vdata\signs\malkmansion_clue_2.txt 
+		Unofficial_Patch\vdata\signs\mercurios_note.txt 
+		Unofficial_Patch\vdata\signs\museum_note.txt 
+		Unofficial_Patch\vdata\signs\museum_note_2.txt 
+		Unofficial_Patch\vdata\signs\museum_note_3.txt 
+		Unofficial_Patch\vdata\signs\newspaper_halloween.txt 
+		Unofficial_Patch\vdata\signs\newspaper_test.txt 
+		Unofficial_Patch\vdata\signs\newspaper_war_1.txt 
+		Unofficial_Patch\vdata\signs\newspaper_war_2.txt 
+		Unofficial_Patch\vdata\signs\regents_invitation.txt 
+		Unofficial_Patch\vdata\signs\sinbin_note.txt 
+		Unofficial_Patch\vdata\signs\tutorial_note.txt 
+		Unofficial_Patch\vdata\system\mapnames_localized.txt 
+		Unofficial_Patch\vdata\system\npctemplate002.txt 
+		Unofficial_Patch\vdata\system\quests_downtown.txt 
+		Unofficial_Patch\vdata\system\quests_santamonica.txt 
+		Unofficial_Patch\vdata\system\stats.txt 
+		vtmbup-install.iss 
+		vtmbup-readme.txt
+
+* 9.4.2
+		Unofficial_Patch\vdata\system\disciplinetgt_000.txt 
+		Unofficial_Patch\vdata\system\histories000.txt 
+		Unofficial_Patch\vdata\system\npctemplate020.txt
+
+* 9.4.1
+	Ajout des dernières modifications de Werner. 
+		Plus_Patch\Unofficial_Patch\resource\gameui_english.txt 
+		Unofficial_Patch\dlg\chinatown\zygaena.dlg 
+		Unofficial_Patch\dlg\downtown la\boris.dlg 
+		Unofficial_Patch\dlg\downtown la\bum.dlg 
+		Unofficial_Patch\dlg\downtown la\bum_disease_female.dlg 
+		Unofficial_Patch\dlg\downtown la\chunk2.dlg 
+		Unofficial_Patch\dlg\downtown la\chunk3.dlg 
+		Unofficial_Patch\dlg\downtown la\dema.dlg 
+		Unofficial_Patch\dlg\downtown la\empire_desk_clerk.dlg 
+		Unofficial_Patch\dlg\downtown la\hannah.dlg 
+		Unofficial_Patch\dlg\downtown la\igor.dlg 
+		Unofficial_Patch\dlg\downtown la\tin_can_bill.dlg 
+		Unofficial_Patch\dlg\downtown la\tutorial_security_guard.dlg 
+		Unofficial_Patch\dlg\generic\mcfly.dlg 
+		Unofficial_Patch\dlg\generic\prostitute.dlg 
+		Unofficial_Patch\dlg\giovanni\christopher.dlg 
+		Unofficial_Patch\dlg\hollywood\dhatter.dlg 
+		Unofficial_Patch\dlg\hollywood\kerri.dlg 
+		Unofficial_Patch\dlg\hollywood\tommy.dlg 
+		Unofficial_Patch\dlg\main characters\heather.dlg 
+		Unofficial_Patch\dlg\santa monica\arthur.dlg 
+		Unofficial_Patch\dlg\santa monica\brian.dlg 
+		Unofficial_Patch\dlg\santa monica\chunk.dlg 
+		Unofficial_Patch\dlg\santa monica\clinic_guard.dlg 
+		Unofficial_Patch\dlg\santa monica\danielle.dlg 
+		Unofficial_Patch\dlg\santa monica\dennis.dlg 
+		Unofficial_Patch\dlg\santa monica\knox.dlg 
+		Unofficial_Patch\dlg\santa monica\nurse.dlg 
+		Unofficial_Patch\dlg\santa monica\phil.dlg 
+		Unofficial_Patch\dlg\santa monica\smblueblood.dlg 
+		Unofficial_Patch\dlg\santa monica\thug.dlg 
+		Unofficial_Patch\dlg\santa monica\trip.dlg 
+		Unofficial_Patch\dlg\santa monica\vandal.dlg 
+		Unofficial_Patch\scripts\kb_def.lst 
+
+* 9.4
+	Mise à niveau 9.4 UP.
+	Localisation:
+		Plus_Patch\Unofficial_Patch\scripts\kb_act.lst 
+		Plus_Patch\Unofficial_Patch\vdata\hackterminals\haven_pc.txt 
+		Plus_Patch\Unofficial_Patch\vdata\items\item_w_remington_m_700.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\disciplinetgt_004.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\stats.txt 
+		Plus_Patch\Unofficial_Patch\vdata\system\traiteffects000.txt 
+		Unofficial_Patch\dlg\downtown la\boris.dlg 
+		Unofficial_Patch\dlg\downtown la\dema.dlg 
+		Unofficial_Patch\dlg\downtown la\prince1.dlg 
+		Unofficial_Patch\dlg\hollywood\isaac.dlg 
+		Unofficial_Patch\dlg\main characters\johansen.dlg 
+		Unofficial_Patch\dlg\main characters\regent.dlg 
+		Unofficial_Patch\dlg\santa monica\copper.dlg 
+		Unofficial_Patch\dlg\santa monica\danielle.dlg 
+		Unofficial_Patch\dlg\santa monica\lily.dlg 
+		Unofficial_Patch\dlg\santa monica\tourette.dlg 
+		Unofficial_Patch\dlg\santa monica\trip.dlg
+		Unofficial_Patch\vdata\hackterminals\asianvamp_laptop.txt 
+		Unofficial_Patch\vdata\hackterminals\empire_lobby_computer.txt 
+		Unofficial_Patch\vdata\hackterminals\haven_pc.txt 
+		Unofficial_Patch\vdata\hackterminals\museum_computer_2.txt 
+		Unofficial_Patch\vdata\items\item_g_pisha_book.txt 
+		Unofficial_Patch\vdata\items\item_g_warr_clipboard.txt 
+		Unofficial_Patch\vdata\items\item_k_key_generic.txt 
+		Unofficial_Patch\vdata\items\item_p_occult_heal_rate.txt 
+		Unofficial_Patch\vdata\items\item_w_baton.txt 
+		Unofficial_Patch\vdata\items\item_w_chang_blade.txt 
+		Unofficial_Patch\vdata\items\item_w_rem_m_700_bach.txt 
+		Unofficial_Patch\vdata\items\item_w_remington_m_700.txt 
+		Unofficial_Patch\vdata\items\item_w_sledgehammer.txt 
+		Unofficial_Patch\vdata\system\experience_table.txt 
+		Unofficial_Patch\vdata\system\quests_downtown.txt 
+		Unofficial_Patch\vdata\system\rules_tables.txt 
+		Unofficial_Patch\vdata\system\stats.txt 
+		Unofficial_Patch\vdata\quotes.txt
+
+* 9.3
+	Mise à niveau 9.3 UP.
+
+* 9.2.2
+	Localisation manquante de textes flottants:
+		Vampire/sound/character/female/unique/{bum_disease_female, damsel, danielle, doris, hannah, jeannette, lily, misti, nurse, therese, venus}
+		Vampire/sound/character/male/{bum, sabbat_thug, young_thug}
+		Vampire/sound/character/male/unique/{ash_looklike, brian, bum, bum_disease_male, cal, chunk, chunk2, clinic_guard, copper, dennis, e, ji, johansen, johnny, julius, larry, lufang, malcolm, miligan, phil, ricky, slater, smblueblood, tin_can_bill, tommy, tseng, vandal, victor}
+
+* 9.2.1
+	Hotfix
+	Localisation:
+		Vampire\dlg\santa monica\therese.dlg
+
+* 9.2
+	Mise à niveau 9.2 UP.
+	Localisation:
+		Plus\Vampire\vdata\hackterminals\nosferatu_shortcut.txt
+		Plus\Vampire\vdata\signs\library_note.txt 
+		Plus\Vampire\vdata\system\feats.txt 
+		Plus\Vampire\vdata\system\loadingtips.txt 
+		Plus\Vampire\vdata\system\stats.txt 
+		Plus\Vampire\vdata\system\strings.txt 
+		Vampire\dlg\downtown la\dirty_cop.dlg 
+		Vampire\dlg\downtown la\prince1.dlg 
+		Vampire\dlg\downtown la\venus.dlg 
+		Vampire\dlg\main characters\heather.dlg 
+		Vampire\dlg\santa monica\bertram.dlg 
+		Vampire\dlg\santa monica\copper.dlg 
+		Vampire\dlg\santa monica\knox.dlg 
+		Vampire\dlg\santa monica\therese.dlg 
+		Vampire\dlg\santa monica\tourette.dlg 
+		Vampire\dlg\santa monica\trip.dlg 
+		Vampire\dlg\santa monica\vandal.dlg
+		Vampire\vdata\hackterminals\morgue_computer.txt 
+		Vampire\vdata\items\item_g_hannahs_appt_book.txt 
+		Vampire\vdata\items\item_g_wallet.txt 
+		Vampire\vdata\items\item_p_occult_obfuscate.txt 
+		Vampire\vdata\items\item_w_gargoyle_fist.txt 
+		Vampire\vdata\items\item_w_hengeyokai_fist.txt 
+		Vampire\vdata\items\item_w_manbat_claw.txt 
+		Vampire\vdata\items\item_w_sabbatleader_attack.txt 
+		Vampire\vdata\items\item_w_tzimisce3_claw.txt 
+		Vampire\vdata\items\item_w_tzimisce_melee.txt 
+		Vampire\vdata\items\item_w_werewolf_attacks.txt 
+		Vampire\vdata\items\item_w_zombie_fists.txt 
+		Vampire\vdata\system\npctemplate001.txt 
+		Vampire\vdata\system\quests_santamonica.txt 
+		Vampire\vdata\system\strings.txt
+	Traductions oubliées:
+		Vampire/dlg/main\ characters/jack_tutorial.dlg
+		Vampire/vdata/items/item_w_tzimisce_melee.txt
+		Vampire/vdata/items/item_w_gargoyle_fist.txt
+		Vampire/vdata/items/item_w_hengeyokai_fist.txt
+
+* 9.1.1
+	Correction du bug sur l'affichage incorrect du bouclier de sang (Tremere - Thaumaturgie niveau 3), cf. http://www.rpgfrance.com/taverne-topic-17660-1-vampire-the-masquerade-bloodlines-unofficial-patch-suivi#post2
+		Plus/Vampire/vdata/system/disciplinetgt_004.txt
+		Vampire/vdata/system/disciplinetgt_004.txt
+	Coquille:
+		Vampire/dlg/santa\ monica/bertram.dlg
+
+* 9.1
+	Mise à niveau 9.1 UP.
+	Localisation:
+		Plus\Vampire\vdata\items\item_g_wireless_camera_3.txt
+		Plus\Vampire\vdata\items\item_p_research_hg_computers.txt
+		Plus\Vampire\vdata\items\item_w_chang_claw.txt
+		Plus\Vampire\vdata\items\item_w_claws_ghoul.txt
+		Plus\Vampire\vdata\system\disciplinetgt_000.txt
+		Plus\Vampire\vdata\system\disciplinetgt_001.txt
+		Plus\Vampire\vdata\system\disciplinetgt_002.txt
+		Plus\Vampire\vdata\system\stats.txt
+		Plus\Vampire\vdata\system\strings.txt
+		Vampire\dlg\chinatown\garyphone.dlg 
+		Vampire\dlg\downtown la\damsel.dlg 
+		Vampire\dlg\downtown la\prince1.dlg 
+		Vampire\dlg\downtown la\prince2.dlg 
+		Vampire\dlg\downtown la\skelter.dlg 
+		Vampire\dlg\downtown la\venus.dlg 
+		Vampire\dlg\generic\doll5.dlg 
+		Vampire\dlg\generic\mcfly.dlg 
+		Vampire\dlg\giovanni\christopher.dlg 
+		Vampire\dlg\main characters\gary.dlg 
+		Vampire\dlg\main characters\jack_tutorial.dlg 
+		Vampire\dlg\main characters\johansen.dlg 
+		Vampire\dlg\main characters\nines.dlg 
+		Vampire\dlg\santa monica\carson.dlg 
+		Vampire\dlg\santa monica\lily.dlg 
+		Vampire\dlg\santa monica\stan_gimble.dlg 
+		Vampire\dlg\santa monica\tourette.dlg 
+		Vampire\dlg\santa monica\trip.dlg 
+		Vampire\dlg\santa monica\vandal.dlg
+		Vampire\vdata\hackterminals\empire_lobby_computer.txt 
+		Vampire\vdata\items\item_w_chang_blade.txt 
+		Vampire\vdata\items\item_w_chang_claw.txt 
+		Vampire\vdata\items\item_w_chang_energy_ball.txt 
+		Vampire\vdata\items\item_w_chang_ghost.txt 
+		Vampire\vdata\items\item_w_claws_ghoul.txt 
+		Vampire\vdata\items\item_w_grenade_frag.txt 
+		Vampire\vdata\items\item_w_mingxiao_melee.txt 
+		Vampire\vdata\items\item_w_mingxiao_spit.txt 
+		Vampire\vdata\items\item_w_mingxiao_tentacle.txt 
+		Vampire\vdata\items\item_w_rem_m_700_bach.txt 
+		Vampire\vdata\items\item_w_sheriff_sword.txt 
+		Vampire\vdata\items\item_w_tzimisce2_claw.txt 
+		Vampire\vdata\items\item_w_tzimisce_melee.txt 
+		Vampire\vdata\system\dispositiontable.txt 
+		Vampire\vdata\system\rules_tables.txt 
+		Vampire\vdata\system\strings.txt
+
+* 9.0.2
+	Coquilles:
+		Plus\Vampire\scripts\kb_act.lst
+		Vampire\scripts\kb_trans.lst
+		Vampire\vdata\system\quests_downtown.txt
+	Modification du Changelog (ajout d'une rubrique de bugs et contournements propres au français)
+
+* 9.0.1
+	Correction des passés à disposition des Malkaviens et Toréadors:
+		Plus\Vampire\vdata\items\strings.txt
+		Vampire\vdata\items\strings.txt
+
+* 9.0
+	Mise à niveau 9.0 UP.
+	Localisation:
+		Plus\Vampire\scripts\kb_act.lst
+		Plus\Vampire\vdata\items\item_p_research_hg_firearms.txt
+		Plus\Vampire\vdata\items\item_w_flamethrower.txt
+		Plus\Vampire\vdata\items\disciplinetgt_000.txt 
+		Plus\Vampire\vdata\items\disciplinetgt_001.txt
+		Plus\Vampire\vdata\items\disciplinetgt_002.txt
+		Plus\Vampire\vdata\items\disciplinetgt_004.txt
+		Plus\Vampire\vdata\items\infobartypes.txt
+		Plus\Vampire\vdata\items\loadingtips.txt
+		Plus\Vampire\vdata\items\npctemplate012.txt
+		Plus\Vampire\vdata\items\stats.txt
+		Plus\Vampire\vdata\items\strings.txt
+		Plus\Vampire\vdata\items\traiteffects000.txt vendors.txt
+		Vampire\scripts\kb_act.lst
+		Vampire\dlg\chinatown\garyphone.dlg 
+		Vampire\dlg\chinatown\ox.dlg 
+		Vampire\dlg\chinatown\yukie.dlg 
+		Vampire\dlg\downtown la\chunk2.dlg 
+		Vampire\dlg\downtown la\damsel.dlg 
+		Vampire\dlg\downtown la\milligan.dlg 
+		Vampire\dlg\downtown la\prince1.dlg 
+		Vampire\dlg\downtown la\prince2.dlg 
+		Vampire\dlg\downtown la\tutorial_security_guard.dlg 
+		Vampire\dlg\downtown la\venus.dlg 
+		Vampire\dlg\giovanni\nadia.dlg 
+		Vampire\dlg\hollywood\andrei.dlg 
+		Vampire\dlg\hollywood\dhatter.dlg 
+		Vampire\dlg\hollywood\flynn.dlg 
+		Vampire\dlg\hollywood\isaac.dlg 
+		Vampire\dlg\hollywood\vv.dlg 
+		Vampire\dlg\main characters\beckett.dlg 
+		Vampire\dlg\main characters\heather.dlg 
+		Vampire\dlg\main characters\heather_dead.dlg 
+		Vampire\dlg\main characters\regent.dlg 
+		Vampire\dlg\santa monica\carson.dlg 
+		Vampire\dlg\santa monica\intercom.dlg 
+		Vampire\dlg\santa monica\knox.dlg 
+		Vampire\dlg\santa monica\lily.dlg 
+		Vampire\dlg\santa monica\therese.dlg 
+		Vampire\dlg\santa monica\thug.dlg 
+		Vampire\dlg\santa monica\trip.dlg
+		Vampire/resources/gameui_english.txt
+		Vampire\sound\cinematic\hollywood\luckystar\serial_killer_muddy_fighting.vcd
+		Vampire\sound\schemes\sm_pier_1.txt
+		Vampire\sound\schemes\sm_warehouse_trainstation.txt
+		Vampire\sound\schemes\sp_tutorial_city.txt
+		Vampire\vdata\hackterminals\empire_lobby_computer.txt 
+		Vampire\vdata\items\item_g_drugs_drug_box.txt 
+		Vampire\vdata\items\item_g_lilly_purse.txt 
+		Vampire\vdata\items\item_p_occult_hacking.txt 
+		Vampire\vdata\items\item_w_gargoyle_fist.txt 
+		Vampire\vdata\items\item_w_hengeyokai_fist.txt 
+		Vampire\vdata\items\item_w_manbat_claw.txt 
+		Vampire\vdata\items\item_w_tzimisce2_claw.txt 
+		Vampire\vdata\items\item_w_tzimisce3_claw.txt 
+		Vampire\vdata\items\item_w_werewolf_attacks.txt 
+		Vampire\vdata\system\disciplinetgt_000.txt 
+		Vampire\vdata\system\disciplinetgt_004.txt 
+		Vampire\vdata\system\experience_table.txt 
+		Vampire\vdata\system\feats.txt 
+		Vampire\vdata\system\histories000.txt 
+		Vampire\vdata\system\infobartypes.txt 
+		Vampire\vdata\system\items.txt 
+		Vampire\vdata\system\loadingtips.txt 
+		Vampire\vdata\system\mapnames_localized.txt 
+		Vampire\vdata\system\npctemplate001.txt 
+		Vampire\vdata\system\npctemplate012.txt 
+		Vampire\vdata\system\quests_downtown.txt 
+		Vampire\vdata\system\quests_santamonica.txt 
+		Vampire\vdata\system\stats.txt 
+		Vampire\vdata\system\strings.txt 
+		Vampire\vdata\system\traiteffects000.txt
+
+* 8.9
+	Non porté.
+
+* 8.8.2
+	Correction du bug au sujet des armures non disponibles au Malkavien:
+		Vampire/vdata/system/clandoc000.txt
+		Plus/Vampire/vdata/system/clandoc000.txt
+
+* 8.8.1
+	Correction du bug au sujet des armures non disponibles au Toréador:
+		Vampire/vdata/system/clandoc000.txt
+		Plus/Vampire/vdata/system/clandoc000.txt
+	Correction des scripts et cartes qui rendaient les PNJs immobiles à Downtown:
+		Vampire/{maps,python}/
+	Oubli d'une modification:
+		Vampire/vdata/system/disciplinegt_000.txt
+	(merci à lordpoupy pour ses remontées)
+
+* 8.8
+	Mise à niveau 8.8 UP.
+	Localisation:
+        	Plus\Vampire\scripts\kb_act.lst
+		Plus\Vampire\vdata\items\item_w_crossbow.txt
+		Plus\Vampire\vdata\system\disciplinetgt_000.txt
+		Plus\Vampire\vdata\system\disciplinetgt_001.txt
+		Plus\Vampire\vdata\system\disciplinetgt_002.txt
+		Plus\Vampire\vdata\system\disciplinetgt_004.txt
+		Plus\Vampire\vdata\system\stats.txt
+		Plus\Vampire\vdata\system\strings.txt
+		Plus\Vampire\vdata\system\traiteffects000.txt
+	        Vampire\dlg\chinatown\ox.dlg
+		Vampire\dlg\main characters\beckett.dlg
+		Vampire\dlg\main characters\heather.dlg
+		Vampire\dlg\santa monica\vandal.dlg
+		Vampire\sound\character\female\unique\jeanette\float_7.lip
+		Vampire\vdata\items\item_g_edane_report.txt
+		Vampire\vdata\items\item_p_occult_hacking.txt
+		Vampire\vdata\items\item_w_werewolf_attacks.txt
+		Vampire\vdata\signs\tutorial_popup_inventory1.txt
+		Vampire\vdata\system\disciplinetgt_000.txt
+		Vampire\vdata\system\disciplinetgt_004.txt
+		Vampire\vdata\system\items.txt
+		Vampire\vdata\system\strings.txt
+	Suppression:
+		Plus\Vampire\dlg\
+		Plus\Vampire\vdata\items\item_w_gargoyle_fist.txt
+		Plus\Vampire\vdata\items\item_w_hengeyokai_fist.txt
+		Plus\Vampire\vdata\items\item_w_manbat_claw.txt
+		Plus\Vampire\vdata\items\item_w_sabbatleader_attack.txt
+		Plus\Vampire\vdata\items\item_w_tzimisce2_claw.txt
+		Plus\Vampire\vdata\items\item_w_tzimisce3_claw.txt
+		Plus\Vampire\vdata\items\item_w_werewolf_attacks.txt
+		Plus\Vampire\vdata\items\item_w_zombie_fists.txt
+
+
+
+* 8.7
+	Mise à niveau 8.7 UP.
+	Localisation:
+		Vampire/dlg/chinatown/kiki.dlg
+		Vampire/dlg/downtown la/bum.dlg
+		Vampire/dlg/downtown la/bum_disease_female.dlg
+		Vampire/dlg/downtown la/bum_disease_male.dlg
+		Vampire/dlg/downtown la/chunk2.dlg
+		Vampire/dlg/downtown la/chunk3.dlg
+		Vampire/dlg/downtown la/damsel.dlg
+		Vampire/dlg/downtown la/larry.dlg
+		Vampire/dlg/downtown la/prince1.dlg
+		Vampire/dlg/downtown la/prince2.dlg
+		Vampire/dlg/downtown la/skelter.dlg
+		Vampire/dlg/hollywood/andrei.dlg
+		Vampire/dlg/hollywood/dhatter.dlg
+		Vampire/dlg/hollywood/flynn.dlg
+		Vampire/dlg/hollywood/isaac.dlg
+		Vampire/dlg/hollywood/romero.dlg
+		Vampire/dlg/main characters/beckett.dlg
+		Vampire/dlg/main characters/caine.dlg
+		Vampire/dlg/main characters/heather.dlg
+		Vampire/dlg/main characters/jack_tutorial.dlg
+		Vampire/dlg/main characters/johansen.dlg
+		Vampire/dlg/main characters/mingxiao2.dlg
+		Vampire/dlg/main characters/regent.dlg
+		Vampire/dlg/santa monica/carson.dlg
+		Vampire/dlg/santa monica/copper.dlg
+		Vampire/dlg/santa monica/knox.dlg
+		Vampire/dlg/santa monica/mercurio.dlg
+		Vampire/dlg/warrens/imalia.dlg
+		Vampire/dlg/warrens/mitnick.dlg
+		Vampire\sound\character\dlg\main characters\beckett\line461_col_e.lip
+		Vampire/vdata/hackterminals/asianvamp_laptop.txt
+		Vampire/vdata/hackterminals/haven_pc.txt
+		Vampire/vdata/hackterminals/jeannette_laptop.txt
+		Vampire/vdata/hackterminals/netcafe_computer_4.txt
+		Vampire/vdata/hackterminals/shrekhub4_terminal2.txt
+		Vampire/vdata/hackterminals/shrekhub4_terminal3.txt
+		Vampire/vdata/hackterminals/shrekhub4_terminal4.txt
+		Vampire/vdata/hackterminals/therese_pc.txt
+		Vampire/vdata/hackterminals/ventruetower2_terminal.txt
+		Vampire/vdata/items/item_g_edane_print_report.txt 
+		Vampire/vdata/items/item_g_edane_report.txt
+		Vampire/vdata/items/item_w_gargoyle_fist.txt
+		Vampire/vdata/items/item_w_hengeyokai_fist.txt
+		Vampire/vdata/items/item_w_manbat_claw.txt
+		Vampire/vdata/items/item_w_sabbatleader_attack.txt
+		Vampire/vdata/items/item_w_tzimisce2_claw.txt
+		Vampire/vdata/items/item_w_tzimisce3_claw.txt
+		Vampire/vdata/items/item_w_werewolf_attacks.txt
+		Vampire/vdata/items/item_w_zombie_fists.txt
+		Vampire/vdata/signs/tutorial_popup_dominate3.txt
+		Vampire/vdata/system/experience_table.txt
+		Vampire/vdata/system/mapnames_localized.txt
+		Vampire/vdata/system/newscaster_side.txt
+		Vampire/vdata/system/npctemplate001.txt
+		Vampire/vdata/system/npctemplate016.txt
+		Vampire/vdata/system/quests_chinatown.txt
+		Vampire/vdata/system/quests_downtown.txt
+		Vampire/vdata/system/quests_santamonica.txt
+		Vampire/vdata/system/strings.txt
+		Plus/Vampire/dlg/main characters\heather.dlg
+		Plus/Vampire/vdata/hackterminals\haven_pc.txt
+		Plus/Vampire/vdata/items/item_g_edane_report.txt
+		Plus/Vampire/vdata/items/item_w_chang_blade.txt
+		Plus/Vampire/vdata/signs/library_note.txt
+		Plus/Vampire/vdata/system/disciplinetgt001.txt
+		Plus/Vampire/vdata/system/disciplinetgt002.txt
+		Vampire\vdata\system\histories000.txt
+		Plus/Vampire/vdata/system/stats.txt
+		Plus/Vampire/vdata/system/strings.txt
+	Additions:
+		Plus\Vampire\cfg\user.cfg
+		Plus\Vampire\particles\firegreen_emitter_2.txt
+		Plus\Vampire\scripts\kb_act.lst
+		Plus\Vampire\vdata\items\item_w_gargoyle_fist.txt
+		Plus\Vampire\vdata\items\item_w_hengeyokai_fist.txt
+		Plus\Vampire\vdata\items\item_w_manbat_claw.txt
+		Plus\Vampire\vdata\items\item_w_sabbatleader_attack.txt
+		Plus\Vampire\vdata\items\item_w_tzimisce2_claw.txt
+		Plus\Vampire\vdata\items\item_w_tzimisce3_claw.txt
+		Plus\Vampire\vdata\items\item_w_werewolf_attacks.txt
+		Plus\Vampire\vdata\items\item_w_zombie_fists.txt
+		Plus\Vampire\vdata\signs\tutorial_popup_dementation2.txt
+		Plus\Vampire\vdata\signs\tutorial_popup_fail_dementation_1.txt
+		Plus\Vampire\vdata\system\histories000.txt
+		Vampire\cfg\user.cfg
+		Vampire\dlg\santa monica\thug.dlg
+		Vampire\materials\debug\debuglightmapzbuffer.vmt
+		Vampire\materials\engine\rendermodelshadow.vmt
+		Vampire\materials\models\character\pc\male\gangrel\armor_0\gngrlm0body.vmt
+		Vampire\materials\wood\braddoora.vmt Vampire\materials\wood\brbdoora.vmt
+		Vampire\models\character\npc\unique\hollywood\and\and.mdl
+		Vampire\sound\character\dlg\downtown la\larry\line91_col_e.mp3
+		Vampire\sound\character\dlg\hollywood\andrei\line177_col_e.lip
+		Vampire\sound\character\dlg\hollywood\andrei\line177_col_e.mp3
+		Vampire\sound\character\dlg\hollywood\andrei\line185_col_e.lip
+		Vampire\sound\character\dlg\hollywood\andrei\line185_col_e.mp3
+		Vampire\sound\character\dlg\hollywood\andrei\line187_col_e.lip
+		Vampire\sound\character\dlg\hollywood\andrei\line187_col_e.mp3
+		Vampire\sound\character\dlg\hollywood\andrei\line197_col_e.lip
+		Vampire\sound\character\dlg\hollywood\andrei\line197_col_e.mp3
+		Vampire\sound\character\dlg\hollywood\andrei\line205_col_e.lip
+		Vampire\sound\character\dlg\hollywood\andrei\line205_col_e.mp3
+		Vampire\sound\character\dlg\hollywood\andrei\line207_col_e.lip
+		Vampire\sound\character\dlg\hollywood\andrei\line207_col_e.mp3
+		Vampire\sound\character\dlg\hollywood\andrei\line215_col_e.lip
+		Vampire\sound\character\dlg\hollywood\andrei\line215_col_e.mp3
+		Vampire\sound\character\dlg\hollywood\andrei\line217_col_e.lip
+		Vampire\sound\character\dlg\hollywood\andrei\line217_col_e.mp3
+		Vampire\sound\character\dlg\hollywood\andrei\line225_col_e.lip
+		Vampire\sound\character\dlg\hollywood\andrei\line225_col_e.mp3
+		Vampire\sound\character\dlg\hollywood\andrei\line227_col_e.lip
+		Vampire\sound\character\dlg\hollywood\andrei\line227_col_e.mp3
+		Vampire\sound\character\dlg\hollywood\andrei\line237_col_e.lip
+		Vampire\sound\character\dlg\hollywood\andrei\line237_col_e.mp3
+		Vampire\sound\character\dlg\hollywood\andrei\line247_col_e.lip
+		Vampire\sound\character\dlg\hollywood\andrei\line247_col_e.mp3
+		Vampire\sound\character\dlg\main characters\beckett\line461_col_e.mp3
+		Vampire\sound\character\dlg\santa monica\thug\line11_col_e.lip
+		Vampire\sound\character\dlg\santa monica\thug\line11_col_e.vcd
+		Vampire\sound\character\dlg\santa monica\thug\line11_col_e.wav
+		Vampire\sound\character\dlg\santa monica\thug\line1_col_e.lip
+		Vampire\sound\character\dlg\santa monica\thug\line1_col_e.vcd
+		Vampire\sound\character\dlg\santa monica\thug\line1_col_e.wav
+		Vampire\sound\character\dlg\santa monica\thug\line21_col_e.lip
+		Vampire\sound\character\dlg\santa monica\thug\line21_col_e.vcd
+		Vampire\sound\character\dlg\santa monica\thug\line21_col_e.wav
+		Vampire\sound\character\dlg\santa monica\thug\line31_col_e.lip
+		Vampire\sound\character\dlg\santa monica\thug\line31_col_e.vcd
+		Vampire\sound\character\dlg\santa monica\thug\line31_col_e.wav
+		Vampire\sound\character\dlg\santa monica\thug\line41_col_e.lip
+		Vampire\sound\character\dlg\santa monica\thug\line41_col_e.vcd
+		Vampire\sound\character\dlg\santa monica\thug\line41_col_e.wav
+		Vampire\sound\character\dlg\ellipses.lip
+		Vampire\sound\cinematic\la\chambers\sabbat_bip1.vcd
+		Vampire\sound\cinematic\la\chambers\sabbat_bip2.vcd
+		Vampire\sound\cinematic\la\chambers\sabbat_part2_bip1.vcd
+		Vampire\sound\cinematic\la\chambers\side with sabbat stereo.wav
+		Vampire\vdata\signs\tutorial_popup_fail_dominate_2.txt
+		Vampire\vdata\quotes.txt
+	Suppression:
+		Plus\Vampire\cfg\autoexec.cfg
+		Plus\Vampire\vdata\items\item_w_tzimisce2_head.txt
+		Plus\Vampire\vdata\system\feats.txt
+		Vampire/materials/wood/libwlla.vmt
+		Vampire/materials/wood/libwllb.vmt
+	Coquilles:
+		Vampire/dlg/generic/prostitute.dlg (l.191)
+
+
+
+* 8.6.0.2
+	Support complet pour passage VO à VF (l'alignement sur le patch de Werner est donc terminé). Localisation des lips:
+		Vampire/sound/character/dlg/main characters/
+		Vampire/sound/character/dlg/santa monica/
+		Vampire/sound/character/dlg/downtown la/
+		Vampire/sound/character/dlg/generic/
+		Vampire/sound/character/dlg/hollywood
+		Vampire/sound/character/dlg/warrens/
+		Vampire/sound/character/dlg/giovanni/
+		Vampire/sound/character/dlg/chinatown/
+	Audios manquants face à PJ féminin (si installation sur VO):
+		Vampire/sound/character/dlg/chinatown/barabus/line11_col_f.lip 
+		Vampire/sound/character/dlg/chinatown/barabus/line11_col_f.vcd 
+		Vampire/sound/character/dlg/chinatown/garyphone/line1_col_f.lip 
+		Vampire/sound/character/dlg/chinatown/garyphone/line1_col_f.vcd 
+		Vampire/sound/character/dlg/chinatown/ji/line31_col_f.lip 
+		Vampire/sound/character/dlg/chinatown/ji/line31_col_f.vcd 
+		Vampire/sound/character/dlg/chinatown/ji/line61_col_f.vcd 
+		Vampire/sound/character/dlg/chinatown/johnny/line21_col_f.vcd 
+		Vampire/sound/character/dlg/chinatown/kiki/line51_col_f.lip 
+		Vampire/sound/character/dlg/chinatown/kiki/line51_col_f.vcd 
+		Vampire/sound/character/dlg/chinatown/mandarin/line451_col_f.lip 
+		Vampire/sound/character/dlg/chinatown/mandarin/line451_col_f.vcd 
+		Vampire/sound/character/dlg/chinatown/ox/line111_col_f.lip 
+		Vampire/sound/character/dlg/chinatown/ox/line111_col_f.vcd 
+		Vampire/sound/character/dlg/chinatown/ox/line181_col_f.lip 
+		Vampire/sound/character/dlg/chinatown/ox/line181_col_f.vcd 
+		Vampire/sound/character/dlg/chinatown/ox/line271_col_f.lip 
+		Vampire/sound/character/dlg/chinatown/ox/line271_col_f.vcd 
+		Vampire/sound/character/dlg/chinatown/ricky/line51_col_f.lip 
+		Vampire/sound/character/dlg/chinatown/ricky/line51_col_f.vcd
+		Vampire/sound/character/dlg/chinatown/wongho/line521_col_f.lip 
+		Vampire/sound/character/dlg/chinatown/wongho/line521_col_f.vcd 
+		Vampire/sound/character/dlg/chinatown/wongho/line651_col_f.lip 
+		Vampire/sound/character/dlg/chinatown/wongho/line651_col_f.vcd
+		Vampire/sound/character/dlg/chinatown/yukie/line21_col_f.lip 
+		Vampire/sound/character/dlg/chinatown/yukie/line21_col_f.vcd 
+		Vampire/sound/character/dlg/chinatown/yukie/line81_col_f.lip 
+		Vampire/sound/character/dlg/chinatown/yukie/line81_col_f.vcd 
+		Vampire/sound/character/dlg/chinatown/yukie/line231_col_f.lip 
+		Vampire/sound/character/dlg/chinatown/yukie/line231_col_f.vcd 
+		Vampire/sound/character/dlg/chinatown/yukie/line261_col_f.lip 
+		Vampire/sound/character/dlg/chinatown/yukie/line261_col_f.vcd 
+		Vampire/sound/character/dlg/chinatown/yukie/line291_col_f.lip 
+		Vampire/sound/character/dlg/chinatown/yukie/line291_col_f.vcd 
+		Vampire/sound/character/dlg/chinatown/yukie/line441_col_f.lip 
+		Vampire/sound/character/dlg/chinatown/yukie/line441_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/boris/line211_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/boris/line211_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/chunk2/line181_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/chunk2/line181_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/chunk2/line351_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/chunk2/line351_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/damsel/line111_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/damsel/line111_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/damsel/line461_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/damsel/line461_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/damsel/line51_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/damsel/line51_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/dirty_cop/line21_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/dirty_cop/line21_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/dirty_cop/line71_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/dirty_cop/line71_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/empire_desk_clerk/line41_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/empire_desk_clerk/line41_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/milligan/line1_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/milligan/line1_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/prince1/line411_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/prince1/line411_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/prince2/line1071_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/prince2/line1071_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/prince2/line1091_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/prince2/line1091_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/prince2/line1141_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/prince2/line1141_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/prince2/line1257_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/prince2/line1257_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/prince2/line101_col_f.lip
+		Vampire/sound/character/dlg/downtown la/prince2/line101_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/prince2/line171_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/prince2/line171_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/prince2/line321_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/prince2/line321_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/prince2/line371_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/prince2/line371_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/prince2/line441_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/prince2/line441_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/prince2/line51_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/prince2/line51_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/prince2/line671_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/prince2/line671_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/prince2/line781_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/prince2/line781_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/prince2/line881_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/prince2/line881_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/skelter/line151_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/skelter/line151_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/skelter/line651_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/skelter/line651_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/skelter/line681_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/skelter/line681_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/venus/line201_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/venus/line201_col_f.vcd 
+		Vampire/sound/character/dlg/downtown la/venus/line341_col_f.lip 
+		Vampire/sound/character/dlg/downtown la/venus/line341_col_f.vcd 
+		Vampire/sound/character/dlg/generic/doll3/line341_col_f.lip 
+		Vampire/sound/character/dlg/generic/doll3/line341_col_f.vcd 
+		Vampire/sound/character/dlg/generic/mcfly/line51_col_f.lip 
+		Vampire/sound/character/dlg/generic/mcfly/line51_col_f.vcd 
+		Vampire/sound/character/dlg/generic/mcfly/line61_col_f.lip 
+		Vampire/sound/character/dlg/generic/mcfly/line61_col_f.vcd 
+		Vampire/sound/character/dlg/generic/newscaster/line381_col_f.lip 
+		Vampire/sound/character/dlg/generic/newscaster/line381_col_f.vcd 
+		Vampire/sound/character/dlg/generic/newscaster/line391_col_f.lip 
+		Vampire/sound/character/dlg/generic/newscaster/line391_col_f.vcd 
+		Vampire/sound/character/dlg/generic/newscaster/line401_col_f.lip 
+		Vampire/sound/character/dlg/generic/newscaster/line401_col_f.vcd 
+		Vampire/sound/character/dlg/generic/newscaster/line421_col_f.lip 
+		Vampire/sound/character/dlg/generic/newscaster/line421_col_f.vcd 
+		Vampire/sound/character/dlg/generic/newscaster/line431_col_f.lip 
+		Vampire/sound/character/dlg/generic/newscaster/line431_col_f.vcd 
+		Vampire/sound/character/dlg/generic/newscaster/line441_col_f.lip 
+		Vampire/sound/character/dlg/generic/newscaster/line441_col_f.vcd 
+		Vampire/sound/character/dlg/generic/newscaster/line451_col_f.lip 
+		Vampire/sound/character/dlg/generic/newscaster/line451_col_f.vcd 
+		Vampire/sound/character/dlg/generic/newscaster/line461_col_f.lip 
+		Vampire/sound/character/dlg/generic/newscaster/line461_col_f.vcd 
+		Vampire/sound/character/dlg/generic/newscaster/line471_col_f.lip 
+		Vampire/sound/character/dlg/generic/newscaster/line471_col_f.vcd 
+		Vampire/sound/character/dlg/generic/prostitute/line251_col_f.lip 
+		Vampire/sound/character/dlg/generic/prostitute/line251_col_f.vcd 
+		Vampire/sound/character/dlg/generic/prostitute/line81_col_f.lip 
+		Vampire/sound/character/dlg/generic/prostitute/line81_col_f.vcd 
+		Vampire/sound/character/dlg/generic/sabbat1/line491_col_f.lip 
+		Vampire/sound/character/dlg/generic/sabbat1/line491_col_f.vcd 
+		Vampire/sound/character/dlg/generic/sabbat1/line492_col_f.lip 
+		Vampire/sound/character/dlg/generic/sabbat1/line492_col_f.vcd 
+		Vampire/sound/character/dlg/giovanni/christopher/line271_col_f.lip 
+		Vampire/sound/character/dlg/giovanni/christopher/line271_col_f.vcd 
+		Vampire/sound/character/dlg/giovanni/mira/line71_col_f.lip 
+		Vampire/sound/character/dlg/giovanni/mira/line71_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/andrei/line31_col_f.lip
+		Vampire/sound/character/dlg/hollywood/andrei/line31_col_f.vcd
+		Vampire/sound/character/dlg/hollywood/andrei/line171_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/andrei/line171_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/ash/line341_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/ash/line341_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/dhatter/line81_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/dhatter/line81_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/flynn/line171_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/flynn/line171_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/flynn/line363_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/flynn/line363_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/isaac/line1_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/isaac/line1_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/isaac/line211_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/isaac/line211_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/isaac/line31_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/isaac/line31_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/isaac/line321_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/isaac/line321_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/isaac/line331_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/isaac/line331_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/isaac/line41_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/isaac/line41_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/isaac/line481_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/isaac/line481_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/isaac/line611_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/isaac/line611_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/isaac/line641_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/isaac/line641_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/isaac/line661_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/isaac/line661_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/isaac/line671_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/isaac/line671_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/isaac/line781_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/isaac/line781_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/isaac/line831_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/isaac/line831_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/kerri/line1_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/kerri/line1_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/romero/line181_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/romero/line181_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/romero/line221_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/romero/line221_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/romero/line551_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/romero/line551_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/romero/line691_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/romero/line691_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/samantha/line11_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/samantha/line11_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/samantha/line1_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/samantha/line1_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/samantha/line31_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/samantha/line31_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/slater/line211_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/slater/line211_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/vv/line11_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/vv/line11_col_f.vcd 
+		Vampire/sound/character/dlg/hollywood/vv/line951_col_f.lip 
+		Vampire/sound/character/dlg/hollywood/vv/line951_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/bach/line111_col_f.lip
+		Vampire/sound/character/dlg/main characters/bach/line111_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/beckett/line1051_col_f.lip
+		Vampire/sound/character/dlg/main characters/beckett/line1051_col_f.vcd
+		Vampire/sound/character/dlg/main characters/beckett/line1091_col_f.lip
+		Vampire/sound/character/dlg/main characters/beckett/line1091_col_f.vcd
+		Vampire/sound/character/dlg/main characters/beckett/line121_col_f.lip
+		Vampire/sound/character/dlg/main characters/beckett/line121_col_f.vcd
+		Vampire/sound/character/dlg/main characters/beckett/line41_col_f.lip
+		Vampire/sound/character/dlg/main characters/beckett/line41_col_f.vcd
+		Vampire/sound/character/dlg/main characters/caine/line101_col_f.lip
+		Vampire/sound/character/dlg/main characters/caine/line101_col_f.vcd
+		Vampire/sound/character/dlg/main characters/caine/line231_col_f.lip
+		Vampire/sound/character/dlg/main characters/caine/line231_col_f.vcd
+		Vampire/sound/character/dlg/main characters/gary/line181_col_f.lip 
+		Vampire/sound/character/dlg/main characters/gary/line181_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/gary/line1_col_f.lip 
+		Vampire/sound/character/dlg/main characters/gary/line1_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/gary/line371_col_f.lip 
+		Vampire/sound/character/dlg/main characters/gary/line371_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/gary/line481_col_f.lip 
+		Vampire/sound/character/dlg/main characters/gary/line481_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/gary/line531_col_f.lip 
+		Vampire/sound/character/dlg/main characters/gary/line531_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/gary/line551_col_f.lip 
+		Vampire/sound/character/dlg/main characters/gary/line551_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/gary/line621_col_f.lip 
+		Vampire/sound/character/dlg/main characters/gary/line621_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/gary/line691_col_f.lip 
+		Vampire/sound/character/dlg/main characters/gary/line691_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/gary/line711_col_f.lip 
+		Vampire/sound/character/dlg/main characters/gary/line711_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/gary/line771_col_f.lip 
+		Vampire/sound/character/dlg/main characters/gary/line771_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/gary/line91_col_f.lip 
+		Vampire/sound/character/dlg/main characters/gary/line91_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/heather/line17_col_f.lip 
+		Vampire/sound/character/dlg/main characters/heather/line17_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/heather/line311_col_f.lip 
+		Vampire/sound/character/dlg/main characters/heather/line311_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/heather/line361_col_f.lip 
+		Vampire/sound/character/dlg/main characters/heather/line361_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/heather/line61_col_f.lip 
+		Vampire/sound/character/dlg/main characters/heather/line61_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/heather/line701_col_f.lip 
+		Vampire/sound/character/dlg/main characters/heather/line701_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/heather/line771_col_f.lip 
+		Vampire/sound/character/dlg/main characters/heather/line771_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/heather/line781_col_f.lip 
+		Vampire/sound/character/dlg/main characters/heather/line781_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/heather/line801_col_f.lip 
+		Vampire/sound/character/dlg/main characters/heather/line801_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/heather/line821_col_f.lip 
+		Vampire/sound/character/dlg/main characters/heather/line821_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/heather/line891_col_f.lip 
+		Vampire/sound/character/dlg/main characters/heather/line891_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/jack/line1111_col_f.lip 
+		Vampire/sound/character/dlg/main characters/jack/line1111_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/jack/line1241_col_f.lip 
+		Vampire/sound/character/dlg/main characters/jack/line1241_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/jack/line711_col_f.lip 
+		Vampire/sound/character/dlg/main characters/jack/line711_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/jack/line721_col_f.lip 
+		Vampire/sound/character/dlg/main characters/jack/line721_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/jack/line761_col_f.lip 
+		Vampire/sound/character/dlg/main characters/jack/line761_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/jack_tutorial/line1011_col_f.lip 
+		Vampire/sound/character/dlg/main characters/jack_tutorial/line1011_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/jack_tutorial/line141_col_f.lip 
+		Vampire/sound/character/dlg/main characters/jack_tutorial/line141_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/jack_tutorial/line391_col_f.lip 
+		Vampire/sound/character/dlg/main characters/jack_tutorial/line391_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/jack_tutorial/line441_col_f.lip 
+		Vampire/sound/character/dlg/main characters/jack_tutorial/line441_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/jack_tutorial/line626_col_f.lip 
+		Vampire/sound/character/dlg/main characters/jack_tutorial/line626_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/jack_tutorial/line926_col_f.lip 
+		Vampire/sound/character/dlg/main characters/jack_tutorial/line926_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/jack_tutorial_col_{101,441,1015}_f.{lip,vcd}
+		Vampire/sound/character/dlg/main characters/johansen/line31_col_f.lip 
+		Vampire/sound/character/dlg/main characters/johansen/line31_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/johansen/line431_col_f.lip 
+		Vampire/sound/character/dlg/main characters/johansen/line431_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/mingxiao/line31_col_f.lip 
+		Vampire/sound/character/dlg/main characters/mingxiao/line31_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/mingxiao/line651_col_f.lip 
+		Vampire/sound/character/dlg/main characters/mingxiao/line651_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/mingxiao/line661_col_f.lip 
+		Vampire/sound/character/dlg/main characters/mingxiao/line661_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/mingxiao/line681_col_f.lip 
+		Vampire/sound/character/dlg/main characters/mingxiao/line681_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/mingxiao/line691_col_f.lip 
+		Vampire/sound/character/dlg/main characters/mingxiao/line691_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/mingxiao/line761_col_f.lip 
+		Vampire/sound/character/dlg/main characters/mingxiao/line761_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/mingxiao/line831_col_f.lip 
+		Vampire/sound/character/dlg/main characters/mingxiao/line831_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/mingxiao2/line101_col_f.lip 
+		Vampire/sound/character/dlg/main characters/mingxiao2/line101_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/mingxiao2/line41_col_f.lip 
+		Vampire/sound/character/dlg/main characters/mingxiao2/line41_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/mingxiao2/line421_col_f.lip 
+		Vampire/sound/character/dlg/main characters/mingxiao2/line421_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/mingxiao2/line91_col_f.lip 
+		Vampire/sound/character/dlg/main characters/mingxiao2/line91_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/nines/line11_col_f.lip 
+		Vampire/sound/character/dlg/main characters/nines/line11_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/nines/line21_col_f.lip 
+		Vampire/sound/character/dlg/main characters/nines/line21_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/nines/line241_col_f.lip 
+		Vampire/sound/character/dlg/main characters/nines/line241_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/nines/line31_col_f.lip 
+		Vampire/sound/character/dlg/main characters/nines/line31_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/nines/line821_col_f.lip 
+		Vampire/sound/character/dlg/main characters/nines/line821_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/nines/line861_col_f.lip 
+		Vampire/sound/character/dlg/main characters/nines/line861_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line1001_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line1001_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line1021_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line1021_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line11_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line11_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line1201_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line1201_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line1211_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line1211_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line131_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line131_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line196_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line196_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line1_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line1_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line201_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line201_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line271_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line271_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line31_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line31_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line371_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line371_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line391_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line391_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line401_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line401_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line461_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line461_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line541_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line541_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line551_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line551_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line561_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line561_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line571_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line571_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line611_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line611_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line631_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line631_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line651_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line651_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line661_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line661_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line691_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line691_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line701_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line701_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line751_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line751_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line81_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line81_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line851_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line851_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line891_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line891_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line901_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line901_col_f.vcd 
+		Vampire/sound/character/dlg/main characters/regent/line931_col_f.lip 
+		Vampire/sound/character/dlg/main characters/regent/line931_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/bertram/line11_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/bertram/line11_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/bertram/line511_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/bertram/line511_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/cal/line111_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/cal/line111_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/cal/line250_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/cal/line250_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/cal/line55_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/cal/line55_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/carson/line51_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/carson/line51_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/chunk/line111_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/chunk/line111_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/chunk/line131_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/chunk/line131_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/e/line21_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/e/line21_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/havenbum/line31_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/havenbum/line31_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/havenbum/line41_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/havenbum/line41_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/jeanette/line151_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/jeanette/line151_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/jeanette/line71_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/jeanette/line71_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/knox/line731_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/knox/line731_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/mercurio/line441_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/mercurio/line441_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/mercurio/line641_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/mercurio/line641_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/mercurio/line851_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/mercurio/line851_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/tourette/line781_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/tourette/line781_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/tourette/line821_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/tourette/line821_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/trip/line61_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/trip/line61_col_f.vcd 
+		Vampire/sound/character/dlg/santa monica/vandal/line261_col_f.lip 
+		Vampire/sound/character/dlg/santa monica/vandal/line261_col_f.vcd 
+		Vampire/sound/character/dlg/warrens/imalia/line321_col_f.lip 
+		Vampire/sound/character/dlg/warrens/imalia/line321_col_f.vcd
+	Navigation dans les emails corrigée (suivant avec s ; effacer avec e ; quit pour utiliser ESC comme dans la version anglaise du patch).
+		Vampire/vdata/system/strings.txt
+		Plus/Vampire/vdata/system/strings.txt
+	Assistant de création de personnage/patch Plus: "Social vs Stealth vs Intellect #6" traduit.
+		Plus/Vampire/vdata/system/charcreatewizard.txt
+	Incohérences/formulations de quêtes (Tour ou traitement, Thinned Blood, Evasion spirituelle, Pisha, Romero), terminaux et items:
+		Vampire/vdata/system/experience_table.txt
+		Vampire/vdata/system/quests_downtown.txt
+		Vampire/vdata/system/quests_santamonica.txt
+		Vampire/vdata/hackterminals/asianvamp_laptop.txt
+		Vampire/vdata/hackterminals/haven_pc.txt (cd de données -> jouet en bois)
+		Vampire/vdata/hackterminals/museum_computer{,_3,_4}.txt (cohérence accents)
+		Vampire/vdata/hackterminals/shrekhub3_metalop.txt
+		Vampire/vdata/hackterminals/shrekhub3_metasec.txt
+		Vampire/vdata/items/item_g_warr_clipboard.txt (mauvaises dates)
+		Vampire/vdata/items/item_g_warr_ledger_1.txt
+		Vampire/vdata/items/item_g_warr_ledger_2.txt
+		Vampire/vdata/items/itm_p_research_hg_computers.txt
+		Vampire/vdata/items/itm_p_research_lg_dodge.txt
+		Vampire/vdata/items/itm_p_research_mg_brawl (description: augmente bagarre et pas mêlée)
+		Vampire/vdata/items/item_w_occultblade.txt (traduction: dommages aggravés)
+		Vampire/vdata/items/item_w_rem_m_700_bach.txt
+		Plus/Vampire/vdata/hackterminals/haven_pc.txt
+		Plus/Vampire/vdata/items/itm_p_research_hg_computers.txt
+		Plus/Vampire/vdata/items/item_w_uzy.txt (accent)
+	Définitions des touches (affichage azerty correct):
+		Vampire/scripts/kb_trans.lst
+	Définitions des polices. Pas réussi à trouver un compromis donc deux à disposition: modification de celui du Werner pour le français et les écrans larges (juste pour l'affichage dans le HUD). Fournit par défaut le fr d'origine plus adapté pour les résolutions 4:3 (permet de bénéficier des polices du jeu).
+		Vampire/resources/trackerscheme.res
+	Traduction des options de dialogue (image) dans le tutoriel:
+		Vampire/materials/interface/pop_ups/dialog{dementation,domination,feats,feats_nosferatu,presence}.ttz
+	Coquilles, typo:
+		Vampire/dlg/chinatown/barrabus.dlg
+		Vampire/dlg/chinatown/garyphone.dlg (l.91,92)
+		Vampire/dlg/chinatown/hostess.dlg
+		Vampire/dlg/chinatown/mandarin.dlg (l.1,11)
+		Vampire/dlg/chinatown/mugger.dlg
+		Vampire/dlg/chinatown/yukie.dlg (l.244)
+		Vampire/dlg/chinatown/zygaena.dlg
+		Vampire/dlg/downtown la/boris.dlg
+		Vampire/dlg/downtown la/prince1.dlg (l.1021)
+		Vampire/dlg/downtown la/prince2.dlg (l.101, retraduit)
+		Vampire/dlg/downtown la/skelter.dlg (l.494, singulier, l.541)
+		Vampire/dlg/downtown la/tin_can_bill.dlg (l.31,91,141,151)
+		Vampire/dlg/generic/mcfly.dlg
+		Vampire/dlg/generic/newscaster.dlg (l.351)
+		Vampire/dlg/hollywood/andrei.dlg (l.31, l.191)
+		Vampire/dlg/hollywood/tommy.dlg
+		Vampire/dlg/main characters/gary.dlg (l.671)
+		Vampire/dlg/main characters/jack.dlg
+		Vampire/dlg/main characters/jack_tutorial.dlg (l.371)
+		Vampire/dlg/main characters/mingxiao.dlg (l.121)
+		Vampire/dlg/main characters/regent.dlg (l.711 argent/présent, l.271)
+		Vampire/dlg/santa monica/arthur.dlg
+		Vampire/dlg/santa monica/bertram.dlg
+		Vampire/dlg/santa monica/chunk.dlg
+		Vampire/dlg/santa monica/copper.dlg
+		Vampire/dlg/santa monica/intercom.dlg (l.21, retraduit)
+		Vampire/dlg/santa monica/jeannette.dlg (l.321)
+		Vampire/dlg/santa monica/knox.dlg (l.691)
+		Vampire/dlg/santa monica/mercurio.dlg (l.641,721)
+		Vampire/dlg/santa monica/trip.dlg (l.183, féminin)
+		Vampire/sound/area/downtown/malkavian/dictation_message_9.lip (tiret long passe pô)
+		Vampire/sound/character/conversations/parking garage/dirty1.lip (un mauvais octet -- c'était avant le VTMBliphelper :-P )
+		Vampire/sound/character/male/sabbat_thug/ (Voleur du Sabbat -> Voyou)
+		Vampire/sound/character/male/young_thug/ (Voleur du Sabbat -> Voyou)
+		Vampire/vdata/hackterminals/morgue.txt
+		Vampire/vdata/items/item_g_garys_tape.txt
+		Vampire/vdata/items/itm_p_research_hg_melee.txt
+		Vampire/vdata/items/itm_p_research_lg_computers.txt
+		Vampire/vdata/system/charcreatewizard.txt (aptituted -> aptitude)
+		Vampire/vdata/system/infobartypes.txt
+		Vampire/vdata/system/loadingtips.txt
+		Vampire/vdata/system/strings.txt
+		Vampire/vdata/system/histories000 (3 caractères mal encodés...)
+		Plus/Vampire/vdata/items/itm_p_research_lg_computers.txt
+		Plus/Vampire/vdata/system/charcreatewizard.txt (aptituted -> aptitude)
+		Plus/Vampire/vdata/system/loadingtips.txt
+		Plus/Vampire/vdata/system/strings.txt
+
+* 8.6.0.1
+	Correction critique:
+		Vampire/vdata/system/quests_santamonica.txt (coquille empêchant le journal de se remplir normalement à Santa Monica -_-'' )
+	Autres corrections:
+		Vampire/vdata/system/experience_table.txt (mauvaises récompenses due à recopie depuis original)
+		Vampire/vdata/system/quests_downtown.txt (mauvais encodage d'un accent)
+
+* 8.6
+	Mise à niveau Werner.
+	Fichiers localisés concernés:
+		-suppression:
+			Plus/Vampire/vdata/system/npctemplate0001.txt
+		-ajouts: 
+			Plus/Vampire/vdata/signs/tutorial_popup_dominate2.txt
+			Plus/Vampire/vdata/signs/tutorial_popup_fail_dominate_1.txt
+			Plus/Vampire/vdata/signs/tutorial_popup_questlog1.txt
+		-corrections:
+			Plus/Vampire/dlg/main characters/heather.dlg
+			Plus/Vampire/vdata/hackterminals/haven_pc.txt
+			Plus/Vampire/vdata/system/clandoc000.txt
+			Plus/Vampire/vdata/system/disciplinetgt_001.txt
+			Plus/Vampire/vdata/system/disciplinetgt_002.txt
+			Plus/Vampire/vdata/system/infobartypes.txt
+			Plus/Vampire/vdata/system/stats.txt
+			Plus/Vampire/vdata/system/strings.txt
+			Plus/Vampire/vdata/system/traiteffects000.txt
+			Vampire/dlg/downtown la/bum_disease_female.dlg
+			Vampire/dlg/downtown la/empire_desk_clerk.dlg
+			Vampire/dlg/downtown la/hannah.dlg
+			Vampire/dlg/downtown la/tin_can_bill.dlg
+			Vampire/dlg/generic/mcfly.dlg
+			Vampire/dlg/generic/prostitute.dlg
+			Vampire/dlg/hollywood/dhatter.dlg
+			Vampire/dlg/hollywood/kerri.dlg
+			Vampire/dlg/hollywood/tommy.dlg
+			Vampire/dlg/main characters/beckett.dlg
+			Vampire/dlg/main characters/gary.dlg
+			Vampire/dlg/main characters/heather.dlg
+			Vampire/dlg/main characters/jack_tutorial.dlg
+			Vampire/dlg/main characters/regent.dlg
+			Vampire/dlg/santa monica/arthur.dlg
+			Vampire/dlg/santa monica/havenbum.dlg
+			Vampire/dlg/santa monica/knox.dlg
+			Vampire/dlg/santa monica/mercurio.dlg
+			Vampire/dlg/santa monica/phil.dlg
+			Vampire/dlg/santa monica/smblueblood.dlg
+			Vampire/dlg/santa monica/vandal.dlg
+			Vampire/vdata/items/item_g_jumbles_flyer.txt
+			Vampire/vdata/items/item_w_avamp_blade.txt
+			Vampire/vdata/items/item_w_tzimisce2_head.txt
+			Vampire/vdata/system/experience_table.txt
+			Vampire/vdata/system/histories000.txt
+			Vampire/vdata/system/mapnames_localized.txt
+			Vampire/vdata/system/npctemplate001.txt
+			Vampire/vdata/system/npctemplate016.txt
+			Vampire/vdata/system/quests_santamonica.txt
+			Vampire/vdata/system/sndscheme_char.txt
+			Vampire/vdata/system/strings.txt
+			Vampire/vdata/system/traiteffects000.txt
+	Ajouts et traductions spécifiques fr (les .lips et fichiers associés ajoutés par Werner au cours du temps ; une grande partie reprise/adaptée depuis le mod clans fr 1.5 ; l'autre nouvellement traduite):
+			Vampire/sound/area/downtown/malkavian/dictation_message_1.lip
+			Vampire/sound/area/downtown/malkavian/dictation_message_2.lip
+			Vampire/sound/area/downtown/malkavian/dictation_message_3.lip
+			Vampire/sound/area/downtown/malkavian/dictation_message_4.lip
+			Vampire/sound/area/downtown/malkavian/dictation_message_5.lip
+			Vampire/sound/area/downtown/malkavian/dictation_message_6.lip
+			Vampire/sound/area/downtown/malkavian/dictation_message_7.lip
+			Vampire/sound/area/downtown/malkavian/dictation_message_8.lip
+			Vampire/sound/area/downtown/malkavian/dictation_message_9.lip
+			Vampire/sound/area/santa_monica/ocean_house/oceanhouse_ghost/be_careful.lip
+			Vampire/sound/area/santa_monica/ocean_house/oceanhouse_ghost/help_me.lip
+			Vampire/sound/area/santa_monica/ocean_house/oceanhouse_ghost/hes_comming.lip
+			Vampire/sound/area/santa_monica/ocean_house/oceanhouse_ghost/hes_near.lip
+			Vampire/sound/area/santa_monica/ocean_house/oceanhouse_ghost/hes_watching.lip
+			Vampire/sound/area/santa_monica/ocean_house/oceanhouse_ghost/he_wants_to.lip
+			Vampire/sound/area/santa_monica/ocean_house/oceanhouse_ghost/keep_looking.lip
+			Vampire/sound/character/conversations/beach house/kitchen/calldennis.lip
+			Vampire/sound/character/conversations/beach house/kitchen/carl001.lip
+			Vampire/sound/character/conversations/beach house/kitchen/carl002.lip
+			Vampire/sound/character/conversations/beach house/kitchen/dennis001.lip
+			Vampire/sound/character/conversations/beach house/kitchen/mike001.lip
+			Vampire/sound/character/conversations/beach house/kitchen/mikecarlconversation1.lip
+			Vampire/sound/character/conversations/beach house/kitchen/mikedennis.lip
+			Vampire/sound/character/conversations/beach house/living room/al001.lip
+			Vampire/sound/character/conversations/beach house/living room/al002.lip
+			Vampire/sound/character/conversations/beach house/living room/al003.lip
+			Vampire/sound/character/conversations/beach house/living room/al004.lip
+			Vampire/sound/character/conversations/beach house/living room/al005.lip
+			Vampire/sound/character/conversations/beach house/living room/al006.lip
+			Vampire/sound/character/conversations/beach house/living room/al007.lip
+			Vampire/sound/character/conversations/beach house/living room/al009.lip
+			Vampire/sound/character/conversations/beach house/living room/al010.lip
+			Vampire/sound/character/conversations/beach house/living room/al011.lip
+			Vampire/sound/character/conversations/beach house/living room/al012.lip
+			Vampire/sound/character/conversations/elizabeth_dane/copconversation2.lip
+			Vampire/sound/character/conversations/elizabeth_dane/copconversation3.lip
+			Vampire/sound/character/conversations/giovanni/bruno.lip
+			Vampire/sound/character/conversations/murder scene/coptalk.lip
+			Vampire/sound/character/conversations/parking garage/ambush1.lip
+			Vampire/sound/character/conversations/parking garage/dirty1.lip
+			Vampire/sound/character/conversations/parking garage/elevator1.lip
+			Vampire/sound/character/conversations/parking garage/exchange1.lip
+			Vampire/sound/character/conversations/parking garage/gang1.lip
+			Vampire/sound/character/conversations/parking garage/nervous1.lip
+			Vampire/sound/character/conversations/society of leopold/bach_death.lip
+			Vampire/sound/character/conversations/society of leopold/cafeteria guards.lip
+			Vampire/sound/character/conversations/society of leopold/cavesjail.lip
+			Vampire/sound/character/conversations/society of leopold/caves_2.lip
+			Vampire/sound/character/conversations/society of leopold/condotierre_backdoor.lip
+			Vampire/sound/character/conversations/society of leopold/condotierre_clearing.lip
+			Vampire/sound/character/conversations/society of leopold/monastery_guards.lip
+			Vampire/sound/character/conversations/society of leopold/prayer.lip
+			Vampire/sound/character/conversations/trapped.lip
+			Vampire/sound/character/conversations/warehouse/coversations/conversation1.lip
+			Vampire/sound/character/conversations/warehouse/coversations/conversation2.lip
+			Vampire/sound/character/conversations/warehouse/coversations/conversation3.lip
+			Vampire/sound/character/conversations/warehouse/goons/goonconvo.lip
+			Vampire/sound/character/conversations/warehouse/truckbay/fuckup.lip
+			Vampire/sound/character/conversations/warehouse/truckbay/truckbayconvo.lip
+			Vampire/sound/character/male/blue_blood/comfort_5_wesp.lip
+			Vampire/sound/character/male/blue_blood/flee_4_wesp.lip
+			Vampire/sound/character/male/bum/float_1.lip
+			Vampire/sound/character/male/bum/float_2.lip
+			Vampire/sound/character/male/bum/float_3.lip
+			Vampire/sound/character/male/bum/float_4.lip
+			Vampire/sound/character/male/bum/float_5.lip
+			Vampire/sound/character/male/bum/float_6.lip
+			Vampire/sound/character/male/flee.lip
+			Vampire/sound/cinematic/santa_monica/haven/female_sire_whisper2.lip
+			Vampire/sound/cinematic/santa_monica/haven/male_sire_whisper_3.lip
+			Vampire/sound/environmental/people/Police/come_out.lip
+			Vampire/sound/environmental/people/Police/drop_weapon.lip
+			Vampire/sound/environmental/people/Police/under_arrest.lip
+
+			Les tout nouveaux fichiers dans Vampire/sound/character/dlg/ (lip/mp3/vcd)
+
+			Ceux modifiés dans le temps et nécessaires pour le support depuis une installation en VO seront progressivement intégrés dans les prochaines mises à jour de ce patch, début du support:
+			Vampire/sound/character/dlg/downtown la/prince1/
+			Vampire/sound/character/dlg/downtown la/skelter/
+			Vampire/sound/character/dlg/main characters/jack_tutorial/ (+line{101,141,1015}_col_f.{lip,mp3} pour correction de bugs: pas d'audio avec personnage féminin)
+			Vampire/sound/character/dlg/main characters/nines/
+	Corrections spécifiques fr (coquilles, formulations)
+			Vampire/dlg/santa monica/bertram.dlg
+			Vampire/dlg/main characters/nines.dlg
+			Vampire/dlg/hollywood/andrei.dlg
+			Vampire/dlg/hollywood/flynn.dlg
+			Vampire/dlg/downtown la/chunk3.dlg
+			Vampire/dlg/downtown la/skelter.dlg
+
+* 8.5.1
+	Première version.
+	Non distribué.
+	Mise à niveau dialogues/ressources, scripts et vdata depuis la version française originale (parfois en partant du mod clans & histoire 1.5 fr de bloodipunk et burgermeister01, moins les apports de ce patch, pour «moins de travail»).

@@ -1,0 +1,265 @@
+{	1	}{	Ca boume ? Euh, bienvenue au Red Spot, inventeur du maxi-big drink, deux litres de votre boisson préférée pour 89 cents, bla bla. Je peux t'aider ?	}{	Ca boume ? Euh, bienvenue au Red Spot, inventeur du maxi-big drink, deux litres de votre boisson préférée pour 89 cents, bla bla. Je peux t'aider ?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Slater_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Ouais. Qu'est-ce qui se passe d'intéressant par ici ? Rien d'original ?	}{	Ouais. Qu'est-ce qui se passe d'intéressant par ici ? Rien d'original ?	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Tu as entendu parler du tueur en série ?	}{	Tu as entendu parler du tueur en série ?	}{	51	}{	G.Slater_Serial == 0 and not IsClan(pc,"Malkavian") and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Tu peux peut-être m'aider, je cherche une cassette vidéo.	}{	Tu peux peut-être m'aider, je cherche une cassette vidéo.	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Que me cache cette ville. . .	}{	Que me cache cette ville. . .	}{	201	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Que me cache cette ville. . .	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	Non, je fais juste un tour. A plus.	}{	Non, je fais juste un tour. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas besoin d'aide. . . contrairement à toi. Adieu.	}
+{	11	}{	Toujours. Tu devrais venir me voir avec mon groupe, Ebola Cereal. On joue demain soir au Crematorium. Cinq dollars, deux consos minimum. On va tout déchirer grave.	}{	Toujours. Tu devrais venir me voir avec mon groupe, Ebola Cereal. On joue demain soir au Crematorium. Gratuit pour les filles. On va tout déchirer grave.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Slater_Exciting = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Ecoute, je cherche une cassette. . .	}{	Ecoute, je cherche une cassette. . .	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche une vidéo pleine d'atrocités inconnues. . .	}
+{	13	}{	Intéressant. Autre chose ?	}{	Intéressant. Autre chose ?	}{	41	}{	G.Slater_Vesuvius == 0	}{	}{	}{	}{	}{	}{	}{	}{	Y a-t-il d'autres situations dans lesquelles je doive me mettre ?	}
+{	14	}{	Tu as entendu parler du tueur en série ?	}{	Tu as entendu parler du tueur en série ?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	J'imagine. On se voit plus tard. Tcho.	}{	J'imagine. On se voit plus tard. Tcho.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Tu veux dire, un film hard avec deux meufs et un kangourou, ce genre de trucs ? Ouais, mon pote Flynn, au Sin Bin, il me refile des trucs comme ça. Même sur le Net on n'a pas le droit de montrer des trucs pareils, mec.	}{	Tu veux dire, un film hard avec deux meufs et un kangourou, ce genre de trucs ? Ouais, mon pote Flynn, au Sin Bin, il me refile des trucs comme ça. Même sur le Net on n'a pas le droit de montrer des trucs pareils, mec.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	En fait, c'est plutôt du snuff, un truc horrible.	}{	En fait, c'est plutôt du snuff, un truc horrible.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Elle étale le sang des innocents pour les yeux pervertis.	}
+{	23	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Oh, ça ? Bordel, il paraît que c'est du violent. On m'a dit qu'y a un mec, il est mort juste en la matant !	}{	Oh, ça ? Bordel, il paraît que c'est du violent. On m'a dit qu'y a un mec, il est mort juste en la matant !	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Tu sais où je peux en trouver un exemplaire ?	}{	Tu sais où je peux en trouver un exemplaire ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où mes mains pourront-elles s'y poser ?	}
+{	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Ouais ! Le Vesuvius, c'est mortel. J'y suis interdit de séjour maintenant, mais, bon sang, les meufs là-bas, elles sont trop bonnes.	}{	Ouais ! Le Vesuvius, c'est mortel. J'y suis interdit de séjour maintenant, mais, bon sang, les meufs là-bas, elles sont trop bonnes. Euh. . . si c'est ton truc, bien sûr. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Slater_Vesuvius = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Super - je vais aller y jeter un oeil.	}{	Eventuellement.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'entrerai plus tard dans ce volcan.	}
+{	43	}{	Non merci, ce n'est pas mon genre.	}{	Non merci, ce n'est pas mon genre.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le volcan, ça me flanque des éruptions. . . cutanées.	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Euh, ce ne serait pas une question ironique. . . C'est peut-être bien toi qui tues tous ces gens, non ?	}{	Euh, ce ne serait pas une question ironique. . . C'est peut-être bien toi qui tues tous ces gens, non ?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Slater_Serial = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Non. . . Il se passe autre chose, dans le coin ? Quoi que ce soit d'intéressant ?	}{	Non. . . Il se passe autre chose, dans le coin ? Quoi que ce soit d'intéressant ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	La ville des étoiles est en feu ?	}
+{	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	Exactement. Eh bien, je vais y aller, alors.	}{	Exactement. Eh bien, je vais y aller, alors.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu n'as rien à craindre, à part tout sauf moi. Adieu.	}
+{	61	}{	Comme je t'ai dit, Flynn, c'est le champion, pour ça. Tu devrais aller le voir.	}{	Comme je t'ai dit, Flynn, c'est le champion, pour ça. Tu devrais aller le voir.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Slater_Flynn = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Ca marche. Autre chose à savoir ?	}{	Ca marche. Autre chose à savoir ?	}{	41	}{	G.Slater_Vesuvius == 0	}{	}{	}{	}{	}{	}{	}{	}{	Il y a d'autres situations dans lesquelles je dois me mettre. . .	}
+{	63	}{	Merci. Je lui demanderai. Au revoir.	}{	Merci. Je lui demanderai. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je demanderai à ce Flynn, lorsque je ne serais plus ici.	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Eh, tu sais, tu devrais VRAIMENT me demander la suggestion du jour.	}{	Eh, tu sais, tu devrais VRAIMENT me demander la suggestion du jour.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Special_Heard = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	OK, vas-y. C'est quoi, la suggestion du jour ?	}{	OK, vas-y. C'est quoi, la suggestion du jour ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Suggestion ? Qu'est-ce que tu suggères ?	}
+{	73	}{	Tes suggestions ne m'intéressent pas.	}{	Tes suggestions ne m'intéressent pas.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas besoin des boissons 'améliorées' des vivants. . .	}
+{	74	}{	Non, mais j'ai encore quelques questions pour toi.	}{	Non, mais j'ai encore quelques questions pour toi.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche d'autres choses.	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	Non. En fait, je ne suis plus là. Au revoir.	}{	Non. En fait, je ne suis plus là. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Content que tu me poses la question, amigo, parce que tu as l'air fiable. J'ai une suggestion sympa : tu achètes n'importe quel burrito bien cher ou du jus de raisin, et tu as une arme gratuite au choix. Ca te branche ?	}{	Content que tu me poses la question, amiga, parce que tu as l'air fiable. J'ai une suggestion sympa : tu achètes n'importe quel burrito bien cher ou du jus de raisin, et tu as une arme gratuite au choix. Ca te branche ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Slater_Weapons = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Bien sûr. Fais voir la sélection.	}{	Bien sûr. Fais voir la sélection.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Voici mes yeux, montre-leur ton menu.	}
+{	83	}{	Attends. . . Tu vends des armes dans une épicerie ?	}{	Attends. . . Tu vends des armes dans une épicerie ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Biscuits, sandwich, bonbons, vodka, armes. Cherchez l'intrus.	}
+{	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	Pas pour le moment, merci. Je m'en vais.	}{	Pas pour le moment, merci. Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je tue assez facilement comme ça pour l'instant. Je m'en vais.	}
+{	91	}{	Yo, moins fort, bordel. C'est un petit à-côté, tu vois. . . Les amplis neufs, les strip-teases, c'est pas gratuit.	}{	Yo, moins fort, bordel. C'est un petit à-côté, tu vois. . . Les amplis neufs, les strip-teases, c'est pas gratuit.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	OK. Fais voir ce que tu as. . .	}{	OK. Fais voir ce que tu as. . .	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Voici mes yeux, montre-leur ton menu.	}
+{	93	}{	Je reviendrai s'il me faut autre chose.	}{	Je reviendrai s'il me faut autre chose.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai pour refourbir mes instruments de mort.	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	Je pense que je pars. Au revoir.	}{	Je pense que je pars. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas besoin de tout cela. Au revoir.	}
+{	101	}{	Si si, j'insiste, tu devrais VRAIMENT me demander la suggestion du jour. Ca se voit à ta tête.	}{	Si si, j'insiste, tu devrais VRAIMENT me demander la suggestion du jour. Ca se voit à ta tête.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	OK, vas-y. C'est quoi, la suggestion du jour ?	}{	OK, vas-y. C'est quoi, la suggestion du jour ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Suggestion ? Qu'est-ce que tu suggères ?	}
+{	103	}{	Ecoute, je ne veux rien manger ! Fous-moi la paix !	}{	Ecoute, je ne veux rien manger ! Fous-moi la paix !	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu importunes des forces au-delà de ton imagination.	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	Je m'en vais. Au revoir.	}{	Je m'en vais. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu peux m'expliquer ta suggestion, mais je pars.	}
+{	111	}{	Oh, du calme. . . Au temps pour moi.	}{	Oh, du calme. . . Au temps pour moi.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	OK, OK. Je peux te poser une question ?	}{	OK, OK. Je peux te poser une question ?	}{	121	}{	}{	G.Slater_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Je cherche d'autres choses.	}
+{	113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	Je m'en vais.	}{	Je m'en vais.	}{	245	}{	}{	G.Slater_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas besoin de tout cela. Au revoir.	}
+{	121	}{	Ah ouais ? Et c'est quoi ?	}{	Ah ouais ? Et c'est quoi ?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Qu'est-ce qui se passe par ici ? Des trucs sympas ? Inhabituels ?	}{	Qu'est-ce qui se passe par ici ? Des trucs sympas ? Inhabituels ?	}{	11	}{	G.Slater_Exciting == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi un peu plus de la ville des étoiles. . .	}
+{	123	}{	Tu as entendu parler du tueur en série ?	}{	Tu as entendu parler du tueur en série ?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}
+{	124	}{	Je cherche une vidéo. . .	}{	Je cherche une vidéo. . .	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche une vidéo pleine d'atrocités inconnues. . .	}
+{	125	}{	Et c'est quoi, ta suggestion ?	}{	Et c'est quoi, ta suggestion ?	}{	81	}{	G.Special_Heard == 1 and G.Slater_Weapons == 0 and G.Slater_Pissed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Suggestion ? Qu'est-ce que tu suggères ?	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	Rien. Au revoir.	}{	Rien. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas besoin de tout cela. Au revoir.	}
+{	131	}{	Holà !	}{	Holà !	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Qu'est-ce qui se passe par ici ? Des trucs sympas ? Inhabituels ?	}{	Qu'est-ce qui se passe par ici ? Des trucs sympas ? Inhabituels ?	}{	11	}{	G.Slater_Exciting == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi un peu plus de la ville des étoiles. . .	}
+{	133	}{	Tu as entendu parler du tueur en série ?	}{	Tu as entendu parler du tueur en série ?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}
+{	134	}{	Je cherche une vidéo. . .	}{	Je cherche une vidéo. . .	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche une vidéo pleine d'atrocités inconnues. . .	}
+{	135	}{	Et c'est quoi, ta suggestion ?	}{	Et c'est quoi, ta suggestion ?	}{	81	}{	G.Special_Heard == 1 and G.Slater_Weapons == 0	}{	}{	}{	}{	}{	}{	}{	}{	Suggestion ? Qu'est-ce que tu suggères ?	}
+{	136	}{	Je vais prendre la suggestion du jour.	}{	Je vais prendre la suggestion du jour.	}{	0	}{	G.Slater_Weapons == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Suggère-moi un truc. . .	}
+{	137	}{	Pas plus que ça. Et toi ?	}{	Pas plus que ça. Et toi ?	}{	71	}{	G.Slater_Exciting == 1 and G.Slater_Serial == 1 and G.Special_Heard == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les enfants sont debout, et les parents vont venir les coucher.	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	Rien. Je file. Au revoir.	}{	Rien. Je file. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai besoin de rien. Au revoir.	}
+{	141	}{	Déjà de retour ? [Sincère]Ca y est, on t'a retiré l'oursin que tu avais dans le cul ?	}{	Déjà de retour ? [Sincère]Ca y est, t'es plus en période d'ovulation ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	OK, excuse-moi. Je m'énerve un peu vite.	}{	OK, excuse-moi. Je m'énerve un peu vite.	}{	151	}{	}{	G.Slater_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	Des sautes d'humeur, tu sais ce que c'est. . . Je regrette.	}
+{	143	}{	Pourquoi, ça te défrise ?	}{	Pourquoi, ça te défrise ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu veux qu'on aille plus loin que les mots ?	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	Non, ça attendra. Allez, à plus.	}{	Non, ça attendra. Allez, à plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis pas de retour, je m'en retourne.	}
+{	151	}{	Pas de souci.	}{	Pas de souci.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Qu'est-ce qui se passe par ici ? Des trucs sympas ? Inhabituels ?	}{	Qu'est-ce qui se passe par ici ? Des trucs sympas ? Inhabituels ?	}{	11	}{	G.Slater_Exciting == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi un peu plus de la ville des étoiles. . .	}
+{	153	}{	Tu as entendu parler du tueur en série ?	}{	Tu as entendu parler du tueur en série ?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}
+{	154	}{	Je cherche une vidéo. . .	}{	Je cherche une vidéo. . .	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche une vidéo pleine d'atrocités inconnues. . .	}
+{	155	}{	Quelle est exactement ta suggestion du jour ?	}{	Quelle est exactement ta suggestion du jour ?	}{	81	}{	G.Special_Heard == 1 and G.Slater_Weapons == 0	}{	}{	}{	}{	}{	}{	}{	}{	Suggestion ? Qu'est-ce que tu suggères ?	}
+{	156	}{	J'aimerais jeter un oeil à l'inventaire que tu suggères.	}{	J'aimerais jeter un oeil à l'inventaire que tu suggères.	}{	0	}{	G.Slater_Weapons == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Fais-moi une suggestion.	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	Rien. Je file. Au revoir.	}{	Rien. Je file. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas besoin de tout cela. Au revoir.	}
+{	161	}{	[Un peu secoué]Euh, bienvenue au Red Spot, inventeur du maxi-moche, euh, big drink, 2 litres de ta boisson préférée pour 89 - bon sang, ta tête, ça fait un choc !	}{	[Un peu secoué]Euh, bienvenue au Red Spot, inventeur du maxi-moche, euh, big drink, 2 litres de ta boisson préférée pour 89 - bon sang, ta tête, ça fait un choc !	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Slater_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Pas grave, j'ai l'habitude.	}{	Pas grave, j'ai l'habitude.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	163	}{	Je m'énerve facilement quand on parle de mon visage.	}{	Je m'énerve facilement quand on parle de mon visage.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	Je file. A plus.	}{	Je file. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Alors, t'as besoin d'un visage ? Euh je veux dire, qu'est-ce que tu veux ?	}{	Alors, t'as besoin d'un visage ? Euh je veux dire, qu'est-ce que tu veux ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Ouais. Qu'est-ce qui se passe d'intéressant par ici ? Rien d'original ?	}{	Ouais. Qu'est-ce qui se passe d'intéressant par ici ? Rien d'original ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi un peu plus de la ville des étoiles. . .	}
+{	173	}{	Tu as entendu parler du tueur en série ?	}{	Tu as entendu parler du tueur en série ?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}
+{	174	}{	Tu peux peut-être m'aider, je cherche une cassette vidéo.	}{	Tu peux peut-être m'aider, je cherche une cassette vidéo.	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche une vidéo pleine d'atrocités inconnues. . .	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	Non, je fais juste un tour. A plus.	}{	Non, je fais juste un tour. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai besoin de rien. Au revoir.	}
+{	181	}{	Oh, pardon, je ne voulais pas te faire de peine. Bon, je peux t'aider ?	}{	Oh, pardon, je ne voulais pas te faire de peine. Bon, je peux t'aider ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Ouais. Qu'est-ce qui se passe d'intéressant par ici ? Rien d'original ?	}{	Ouais. Qu'est-ce qui se passe d'intéressant par ici ? Rien d'original ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	Tu as entendu parler du tueur en série ?	}{	Tu as entendu parler du tueur en série ?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	Tu peux peut-être m'aider, je cherche une cassette vidéo.	}{	Tu peux peut-être m'aider, je cherche une cassette vidéo.	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	Non, je fais juste un tour. A plus.	}{	Non, je fais juste un tour. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Non. Mais je pense que tu devrais partir. La direction se réserve le droit de refuser les clients indésirables. Et toi mon pote, on te refuse.	}{	Non. Mais je pense que tu devrais partir. La direction se réserve le droit de refuser les clients indésirables. Et toi ma poule, on te refuse.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	OK. Je regrette, je n'aurais pas dû m'énerver.	}{	OK. Je regrette, je n'aurais pas dû m'énerver.	}{	151	}{	}{	G.Slater_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	J'échange mes excuses contre ton acceptation.	}
+{	193	}{	Comme ton statut d'être vivant - refusé !	}{	Comme ton statut d'être vivant - refusé !	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Refusé, trépassé, tout cela se ressemble. Comme tu vas vite le savoir.	}
+{	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	OK, je pars.	}{	OK, je pars.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors je m'en vais.	}
+{	201	}{	Euh, du calme. Un petit jus d'orange pour t'aider à redescendre ?	}{	Euh, du calme. Un petit jus d'orange pour t'aider à redescendre ?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Je ne bois que le sang des vivants. . .	}{	Je ne bois que le sang des vivants. . .	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	203	}{	Je cherche une vidéo pleine d'atrocités inconnues. . .	}{	Je cherche une vidéo pleine d'atrocités inconnues. . .	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Oh. . . T'es du cabinet d'avocats ? Il va falloir parler au manager, pour le truc de harcèlement sexuel. . . Et ne me regarde pas comme ça, ce n'est pas sur moi qu'il s'est excité. . .	}{	Oh. . . T'es du cabinet d'avocats ? Il va falloir parler au manager, pour le truc de harcèlement sexuel. . . Et ne me regarde pas comme ça, ce n'est pas sur moi qu'il s'est excité. . .	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Je cherche une vidéo pleine d'atrocités inconnues. . .	}{	Je cherche une vidéo pleine d'atrocités inconnues. . .	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	213	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	Tu ne peux pas comprendre, alors tu ne peux pas connaître ton erreur. Adieu.	}{	Tu ne peux pas comprendre, alors tu ne peux pas connaître ton erreur. Adieu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Pigé ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	[Un peu agacé]Quoi encore ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	223	}{	Pigé.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	Merci.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	Quoi ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	Je sais pas, moi. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	C'est ça.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	Tenez.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	233	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Il faut être au moins aussi haut que le comptoir pour acheter de l'alcool, du porno et/ou des cigarettes.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Tu n'aimes pas ma révérence ?	}{	Tu n'aimes pas ma révérence ?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	243	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	Tu veux acheter quelque chose ? On n'est pas chez ta mère, on se laisse pas faire gratuit. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	Tu veux acheter quelque chose ? On n'est pas chez ta mère, on se laisse pas faire gratuit. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	[Chante, Death Metal]Rasoirs, framboises, scorpions, marshmallows, cyanure, friandises ! LE DESSERT DE L'ENFER !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	253	}{	[Chante, Death Metal]J'ai des frissons, j'te claque le cul, je t'étrangle à fond. On va avoir un bébé !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	[Chante, Death Metal]Mort mort mort, fric fric fric, sexe sexe sexe, bonne fête des mères !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	(Starting Condition)	}{	}{	141	}{	G.Slater_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	263	}{	(Starting Condition)	}{	}{	131	}{	G.Slater_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	(Starting Condition)	}{	}{	241	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

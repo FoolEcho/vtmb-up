@@ -1,0 +1,128 @@
+{	1	}{	. . .	}{	. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	[Agaçante, superficielle, présomptueuse, angoissée. Parfois anxieuse. Colérique comme une droguée en pleine phase de manque]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Je savais que vous viendriez me parler. Vous êtes tous pareils, vous ne pouvez pas me résister. Mais je ne vous connais pas, vous. . . Pourtant, en général je connais tous les vampires de Los Angeles dans les soirées. Il n'y en a pas beaucoup dehors ce soir. Etonnant, il n'y a pas de fête-	}{	Je savais que vous viendriez me parler. Vous êtes tous pareils, vous ne pouvez pas me résister. Mais je ne vous connais pas, vous. . . Pourtant, en général je connais tous les vampires de Los Angeles dans les soirées. Il n'y en a pas beaucoup dehors ce soir. Etonnant, il n'y a pas de fête-	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Je ne sais pas du tout de quoi vous parlez.	}{	Je ne sais pas du tout de quoi vous parlez.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le magnétisme entre nous n'est qu'une illusion de vos sens.	}
+{	13	}{	Vous devez me confondre avec quelqu'un d'autre. . .	}{	Vous devez me confondre avec quelqu'un d'autre. . .	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne pourriez être plus étrange, étrangère.	}
+{	14	}{	Des vampires, hein ?	}{	Des vampires, hein ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	On n'est pas dans un film. . . si ?	}
+{	15	}{	J'ignore ce que vous pensez savoir, mais. . .	}{	J'ignore ce que vous pensez savoir, mais. . .	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Non, c'est bon. [familière] C'est tout à fait OK. Je m'appelle Patty. Sérieux, tout le monde me connaît. Et puis, je voulais juste vous demander si vous aviez vu quelqu'un.	}{	Non, c'est bon. [familière] C'est tout à fait OK. Je m'appelle Patty. Sérieux, tout le monde me connaît. Et puis, je voulais juste vous demander si vous aviez vu quelqu'un.	}{	#	}{	}{	G.Patty_Known = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Bon. Qui ?	}{	Bon. Qui ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelqu'un ? Toujours. . . partout, avec des noms que j'ignore.	}
+{	23	}{	Qui est ce quelqu'un ?	}{	Qui est ce quelqu'un ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Allez jouer à ce jeu ailleurs. Mon esprit a d'autres intérêts.	}
+{	24	}{	Boooon. OK. . .	}{	Boooon. OK. . .	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	Ecoutez, je dois partir.	}{	Ecoutez, je dois partir.	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Il s'appelle Kent Alan Ryan, c'est un Toréador. Très beau gosse. Très bien habillé, généralement tout en Prada.	}{	Il s'appelle Kent Alan Ryan, c'est un Toréador. Très beau gosse. Très bien habillé, généralement tout en Prada.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Je le connais. Je l'ai vu récemment.	}{	Je le connais. Je l'ai vu récemment.	}{	91	}{	G.Skelter_Quest == 3 or (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Ah oui, un Toréador pomponné comme un chat de concours. Oui, je l'ai vu.	}
+{	33	}{	Non, je ne le connais pas.	}{	Non, je ne le connais pas.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kent ? Non. Alan ? Non. Ryan ? Non.	}
+{	34	}{	Jamais entendu parler. Contente ?	}{	Jamais entendu parler. Contente ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Kent Alan Ryan ? Oui ! Ah ah ah, ce bon vieux. . . oh ho. . . connais pas.	}
+{	35	}{	Le nom ne m'est pas inconnu.	}{	Le nom ne m'est pas inconnu.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce nom a un écho familier.	}
+{	36	}{	Ah oui, il a dit qu'il brûlait pour vous. Il m'a donné cela.	}{	Ah oui, il a dit qu'il brûlait pour vous. Il m'a donné cela.	}{	91	}{	(G.Skelter_Quest == 3 or (G.Vandal_Quest == 1 and G.Patch_Plus == 1)) and pc.HasItem("item_w_tzimisce2_claw") 	}{	pc.RemoveItem("item_w_tzimisce2_claw") 	}{	}{	}{	}{	}{	}{	}{	Il était tout feu tout flamme pour vous. Puis il m'a fait ce cadeau.	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Ah oui ? Eh bien, il est assez puissant. Il doit être trop haut placé pour que vous le connaissiez. Vous connaissez peut-être des gens qui travaillent pour lui.	}{	Ah oui ? Eh bien, il est assez puissant. Il doit être trop haut placé pour que vous le connaissiez. Vous connaissez peut-être des gens qui travaillent pour lui.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Bon écoutez, je dois partir.	}{	Bon écoutez, je dois partir.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cette conversation est terminée depuis une éternité.	}
+{	43	}{	Oui, c'est sans doute un vrai Donald Trump. Au revoir.	}{	Oui, c'est sans doute un vrai Donald Trump. Au revoir.	}{	51	}{	IsClan(pc,"Ventrue") or IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Foutez-moi la paix.	}{	Foutez-moi la paix.	}{	51	}{	not IsClan(pc,"Ventrue") and not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Partez très, très loin.	}
+{	45	}{	Ce fut un plaisir. Au revoir.	}{	Ce fut un plaisir. Au revoir.	}{	51	}{	IsClan(pc,"Ventrue") or IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	[De plus en plus insistante]Non, ne partez pas. J'ai vraiment besoin de le trouver.[Sérieuse]Vraiment. Vous pourriez vous renseigner un peu. . .	}{	[De plus en plus insistante]Non, ne partez pas. J'ai vraiment besoin de le trouver.[Sérieuse]Vraiment. Vous pourriez vous renseigner un peu. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Oh, attendez. Kent ? Si, en fait, je l'ai vu il n'y a pas longtemps.	}{	Oh, attendez. Kent ? Si, en fait, je l'ai vu il n'y a pas longtemps.	}{	91	}{	G.Skelter_Quest == 3 or (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Ah oui, un Toréador pomponné comme un chat de concours. Oui, je l'ai vu.	}
+{	53	}{	Je suis trop occupé.	}{	Je suis trop occupée.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pour l'heure, je ne sais déjà plus où donner de la tête.	}
+{	54	}{	Pourquoi donc ?	}{	Pourquoi donc ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Très bonne idée. Pour quelqu'un d'autre.	}
+{	55	}{	J'ai dit au revoir.	}{	J'ai dit au revoir.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Au revoir - Adieu, à plus, bon débarras. 	}
+{	56	}{	Ah Kent, il disait brûler pour vous. Il m'a donné ceci.	}{	Ah Kent, il disait brûler pour vous. Il m'a donné ceci.	}{	91	}{	(G.Skelter_Quest == 3 or (G.Vandal_Quest == 1 and G.Patch_Plus == 1)) and pc.HasItem("item_w_tzimisce2_claw") 	}{	pc.RemoveItem("item_w_tzimisce2_claw") 	}{	}{	}{	}{	}{	}{	}{	Le chat de race était tout feu tout flamme pour vous. Puis il m'a donné ce cadeau.	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	[Insistante, querelleuse]Non ! Ecoutez, je ne l'ai pas vu depuis des jours. Il avait dit qu'il reviendrait me voir. [très sérieuse]Il avait promis.[voix tremblante, sur le point de craquer] Que je pourrais vieillir. Il avait promis que je n'aurais pas soif.	}{	[Insistante, querelleuse]Non ! Ecoutez, je ne l'ai pas vu depuis des jours. Il avait dit qu'il reviendrait me voir. [très sérieuse]Il avait promis.[voix tremblante, sur le point de craquer] Que je pourrais vieillir. Il avait promis que je n'aurais pas soif.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Eh bien, je ne sais pas quoi vous dire.	}{	Eh bien, je ne sais pas quoi vous dire.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas les mots qui vous apporteraient le réconfort.	}
+{	63	}{	Reprenez-vous !	}{	Reprenez-vous !	}{	71	}{	IsClan(pc,"Ventrue") or IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Vous êtes pathétique.	}{	Vous êtes pathétique.	}{	71	}{	not IsClan(pc,"Ventrue") and not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Une boîte de chenilles moisies ferait une voisine plus agréable que vous.	}
+{	65	}{	Ne m'approchez pas !	}{	Ne m'approchez pas !	}{	71	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	Au revoir.	}{	Au revoir.	}{	71	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	[Vexée, violemment]M- D'accord ! Vous n'êtes qu'un petit froussard de vampire. J'ai fréquenté des vampires beaucoup plus puissants que vous le serez jamais ! Je ne boirais même pas votre sang si vous étiez le dernier vampire sur terre !	}{	[Vexée, violemment]M- D'accord ! Vous n'êtes qu'une petite chauve-souris moche. J'ai fréquenté des vampires beaucoup plus puissants que vous le serez jamais ! Je ne boirais même pas votre sang si vous étiez la dernière vampire sur terre !	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	G.Patty_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Bonne chance, goule.	}{	Bonne chance, goule.	}{	0	}{	G.Knox_Ghoul > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	Vous de m. . . Enfin, voilà, quoi. . .	}{	Vous de m. . . Enfin, voilà, quoi. . .	}{	0	}{	Wits -2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	Oh non, vous ne m'enverrez pas de carte à Noël ? Trop dur. . .	}{	Oh non, vous ne m'enverrez pas de carte à Noël ? Trop dur. . .	}{	0	}{	Wits 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	Taisez-vous avant que je vous arrache le larynx.	}{	Taisez-vous avant que je vous arrache le larynx.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les lèvres en vrac coulent, les navires flottent sur les cadavres des goules bruyantes.	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	Au revoir.	}{	Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis déjà parti.	}
+{	81	}{	[honteuse]Eh. . . Ecoutez, je suis désolée pour tout à l'heure. Je suis quelqu'un de passionné, et. . . Pour tout, pour l'art, la culture, l'amour. . . Kent dit que c'est pour ça qu'il m'a choisie. . .	}{	[honteuse]Eh. . . Ecoutez, je suis désolée pour tout à l'heure. Je suis quelqu'un de passionné, et. . . Pour tout, pour l'art, la culture, l'amour. . . Kent dit que c'est pour ça qu'il m'a choisie. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Pas de problème, Patty. J'ai trouvé Kent Alan Ryan pour vous.	}{	Pas de problème, Patty. J'ai trouvé Kent Alan Ryan pour vous.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai trouvé le Kent Alan Ryan.	}
+{	83	}{	Oui, j'ai bien vu. Je sais où est Kent, au fait.	}{	Oui, j'ai bien vu. Je sais où est Kent, au fait.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Son emplacement n'est plus entouré de mystère.	}
+{	84	}{	Oh, ça va. . . Bon, j'ai trouvé Kent Alan Ryan.	}{	Oh, ça va. . . Bon, j'ai trouvé Kent Alan Ryan.	}{	91	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	Effectivement, Kent disait brûler pour vous. Il m'a donné ceci.	}{	Effectivement, Kent disait brûler pour vous. Il m'a donné ceci.	}{	91	}{	(G.Skelter_Quest == 3 or (G.Vandal_Quest == 1 and G.Patch_Plus == 1)) and pc.HasItem("item_w_tzimisce2_claw") 	}{	pc.RemoveItem("item_w_tzimisce2_claw") 	}{	}{	}{	}{	}{	}{	}{	Effectivement le chat de race était tout feu tout flamme pour vous. Puis il m'a donné ce cadeau.	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	C'est fantastique. Ca montre qu'on n'a pas besoin de bien se fringuer ou d'avoir beaucoup de pouvoir pour être cool. Alors, où est Kent ?	}{	C'est fantastique. Ca montre qu'on n'a pas besoin d'être beau ou de savoir se fringuer pour être cool. Alors, où est Kent ?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Au fond de l'hôpital abandonné. Il y organise une rave.	}{	Au fond de l'hôpital abandonné. Il y organise une rave.	}{	101	}{	Humanity 3 & G.Pisha_Know > 0 and (not IsDead("Pisha"))	}{	G.Patty_Pisha = 1; FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	Il rêve. . . Non, il prépare une rave au sous-sol de l'hôpital abandonné.	}
+{	93	}{	Au fond de l'hôpital abandonné. Il y organise une rave.	}{	Au fond de l'hôpital abandonné. Il y organise une rave.	}{	101	}{	Humanity -3 & G.Pisha_Know > 0 and (not IsDead("Pisha"))	}{	G.Patty_Pisha = 1	}{	}{	}{	}{	}{	}{	}{	Il rêve. . . Non, il prépare une rave au sous-sol de l'hôpital abandonné.	}
+{	94	}{	Je l'ai vu dans l'allée, il était en colère. Il a taché ses mocassins.	}{	Je l'ai vu dans l'allée, il était en colère. Il a taché ses mocassins.	}{	101	}{	}{	G.Patty_Alley = 1	}{	}{	}{	}{	}{	}{	}{	Un caniche l'a trouvé dans l'allée. Il est dehors, et il le maudit.	}
+{	95	}{	Il est allé à San Diego pour affaires, il fallait faire vite.	}{	Il est allé à San Diego pour affaires, il fallait faire vite.	}{	101	}{	Persuasion 5 & G.Skelter_Quest == 3	}{	G.Patty_SD = 1	}{	}{	}{	}{	}{	}{	}{	Il trinque avec les costumes les mieux coupés de San Diego.	}
+{	96	}{	A la "Banque du sang" de Santa Monica. Il y organise une rave.	}{	A la "Banque du sang" de Santa Monica. Il y organise une rave.	}{	101	}{	Humanity 3 & (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	G.Vandal_Quest = 3; G.Patty_SM = 1; FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	Il rêve. . . Non, il prépare une rave à la "Banque du sang" de Santa Monica.	}
+{	97	}{	A la "Banque du sang" de Santa Monica. Il y organise une rave.	}{	A la "Banque du sang" de Santa Monica. Il y organise une rave.	}{	101	}{	Humanity -3 & (G.Vandal_Quest == 1 and G.Patch_Plus == 1)	}{	G.Vandal_Quest = 3; G.Patty_SM = 1	}{	}{	}{	}{	}{	}{	}{	Il rêve. . . Non, il prépare une rave à la "Banque du sang" de Santa Monica.	}
+{	98	}{	Hmmm, J'ai fait erreur. En fait, je ne l'ai pas vu.	}{	Hmmm, J'ai fait erreur. En fait, je ne l'ai pas vu.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes yeux devaient être aveugles et mon esprit stupide, car je ne l'ai pas vu.	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Oh, c'est typique de Kent. Tout à fait lui. Je vais aller le rejoindre, il a besoin de moi pour tout. Encore merci !	}{	Oh, c'est typique de Kent. Tout à fait lui. Je vais aller le rejoindre, il a besoin de moi pour tout. Encore merci !	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Pas de problème. Allez-y, il vous cherchait.	}{	Pas de problème. Allez-y, il vous cherchait.	}{	0	}{	G.Patty_SD == 1	}{	pc.SetQuest("Junky",5)	}{	}{	}{	}{	}{	}{	}{	Si vous le rejoignez, il sera sûrement ravi de récupérer son jouet.	}
+{	103	}{	Pas de problème. Allez-y, il vous cherchait.	}{	Pas de problème. Allez-y, il vous cherchait.	}{	0	}{	G.Patty_Alley == 1	}{	pc.SetQuest("Junky",7)	}{	}{	}{	}{	}{	}{	}{	Le caniche dans la ruelle pourra bien supporter votre courroux à tous les deux.	}
+{	104	}{	Pas de problème. Allez-y, il vous cherchait.	}{	Pas de problème. Allez-y, il vous cherchait.	}{	0	}{	G.Patty_Pisha == 1	}{	pc.SetQuest("Junky",2)	}{	}{	}{	}{	}{	}{	}{	Si vous le rejoignez, il sera sûrement ravi de récupérer son jouet.	}
+{	105	}{	Pas de problème. Allez-y, il vous cherchait.	}{	Pas de problème. Allez-y, il vous cherchait.	}{	0	}{	G.Skelter_Quest < 3 and G.Patty_SM == 1	}{	pc.SetQuest("Danielle",4)	}{	}{	}{	}{	}{	}{	}{	Le caniche dans la ruelle pourra bien supporter votre courroux à tous les deux.	}
+{	106	}{	Pas de problème. Allez-y, il vous cherchait.	}{	Pas de problème. Allez-y, il vous cherchait.	}{	0	}{	G.Skelter_Quest == 3 and G.Patty_SM == 1	}{	pc.SetQuest("Danielle",4); pc.SetQuest("Junky",2)	}{	}{	}{	}{	}{	}{	}{	Le caniche dans la ruelle pourra bien supporter votre courroux à tous les deux.	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	[effrayée]Que faites-vous ici ? Où est Kent ?	}{	[effrayée]Que faites-vous ici ? Où est Kent ?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Patty_Alley = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	[effrayée]Pourquoi vous me regardez comme ça ?	}{	[effrayée]Pourquoi vous me regardez comme ça ?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Patty_Alley = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	. . .	}{	. . .	}{	#	}{	}{	npc.SetRelationship("player D_FR 5"); G.Patty_Alley = 4	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	(Starting Condition)	}{	}{	11	}{	G.Patty_Known == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	(Starting Condition)	}{	}{	111	}{	G.Patty_Alley == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	(Starting Condition)	}{	}{	113	}{	G.Patty_Alley == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	(Starting Condition)	}{	}{	115	}{	G.Patty_Alley == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	(Starting Condition)	}{	}{	81	}{	G.Skelter_Quest == 3 or G.Vandal_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	(Starting Condition)	}{	}{	0	}{	G.Patty_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
