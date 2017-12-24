@@ -3,23 +3,23 @@
 HistoryDataTables
 {
 
-//	UNUSED_HistoryData
-//	{
-//		Text
-//		{
-//			"Name"				"Test Discipline Cost Modifier"
-//			"Description"			"<NEEDS DESCRIPTION.>"
-//			"ShortDescription"		"<NEEDS DESCRIPTION.>"
-//			"ShortPenaltyDescription"	"<NEEDS DESCRIPTION.>"
-//		}
-//
-//		General
-//		{
-//			"InternalName"	"Test_Discipline_Cost_Mod"
-//			"CritterScope"	"ALL()"
-//			"Effect"		"History (TEST Discipline Mods)"
-//		}
-//	}
+	HistoryData	// added by wesp
+	{
+		Text
+		{
+			"Name"				"Homosexuel"
+			"Description"			"Vous avez toujours trouvé votre propre genre beaucoup plus attirant que l'autre sexe, bien que beaucoup de gens aient encore du mal avec cela. Peut-être que la société vampirique est différente..."
+			"ShortDescription"		"Démarrer en tant qu'homosexuel."
+			"ShortPenaltyDescription"	""
+		}
+
+		General
+		{
+			"InternalName"	"Homosexual_Player"
+			"CritterScope"	"ALL()"
+			"Effect"		"History (Homo)"
+		}
+	}
 
 	HistoryData	// added by wesp
 	{
@@ -1475,8 +1475,8 @@ HistoryDataTables
 		{
 			"Name"		"Proche de la Bête"
 			"Description"	"Après votre Etreinte, vous étiez naturellement plus à l'écoute de la Bête intérieure et cette affinité est maintenant physiquement apparente.
-			Vous commencez avec un point de bonus en Protéisme, mais les autres, en particulier le bétail, trouvent votre apparence désagréable."	// changed by wesp
-			"ShortDescription"	"Avantage: +1 en Protéisme."
+			Vous pouvez faire évoluer Protéisme plus facilement, mais les autres, en particulier le bétail, trouvent votre apparence désagréable."	// changed by wesp
+			"ShortDescription"	"Avantage: augmenter Protéisme est moins coûteux."
 			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Apparence."
 		}
 

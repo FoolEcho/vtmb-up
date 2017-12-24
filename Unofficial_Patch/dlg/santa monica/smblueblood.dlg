@@ -38,7 +38,7 @@
 {	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	40	}{	Alors je vais continuer mon chemin.	}{	Alors je vais continuer mon chemin.	}{	0	}{	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	Nous portons tous la nuit comme un châle à dents de scie. Adieu.	}
-{	41	}{	J'ai peur de n'avoir pas de liquide sur moi. Je regrette.	}{	J'ai peur de n'avoir pas de liquide sur moi. Je regrette.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Smblue_Persuade = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	J'ai peur de n'avoir pas de liquide sur moi. Je regrette.	}{	J'ai peur de n'avoir pas de liquide sur moi. Je regrette.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	Quelques dollars ? Je n'ai vraiment pas eu de chance ces derniers temps. Aidez-moi. . .	}{	Quelques dollars ? Je n'ai vraiment pas eu de chance ces derniers temps. Aidez-moi. . .	}{	71	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	La fortune vous sourit. Vous partagerez vos gains. TOUT DE SUITE.	}
 {	43	}{	Alors, on cherche de la compagnie ?	}{	Alors, on cherche de la compagnie ?	}{	61	}{	Seduction 4	}{	G.Smblue_Seduced = 1	}{	}{	}{	}{	}{	}{	}{	Nous pourrions peut-être profiter d'un petit rendez-vous au clair de lune. . .	}
 {	44	}{	Alors, on cherche de la compagnie ?	}{	Alors, on cherche de la compagnie ?	}{	131	}{	Seduction -4 & not (IsClan(pc,"Ventrue") or IsClan(pc,"Toreador"))	}{	}{	}{	}{	}{	}{	}{	}{	Nous pourrions peut-être profiter d'un petit rendez-vous au clair de lune. . .	}

@@ -110,7 +110,7 @@
 {	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	111	}{	Tenez.	}{	Tenez.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	112	}{	Si vous parlez de ce qui s'est passé ce soir. . . je sais où vous vivez. Pas un mot.	}{	Si vous parlez de ce qui s'est passé ce soir. . . je sais où vous vivez. Pas un mot.	}{	0	}{	G.Patch_Plus == 0	}{	FindPlayer().ChangeMasqueradeLevel( -1 ); pc.SetQuest("Necromantic",3)	}{	}{	}{	}{	}{	}{	}{	}
-{	113	}{	Si vous parlez de ce qui s'est passé ce soir. . . je sais où vous vivez. Pas un mot.	}{	Si vous parlez de ce qui s'est passé ce soir. . . je sais où vous vivez. Pas un mot.	}{	0	}{	G.Patch_Plus == 1	}{	FindPlayer().ChangeMasqueradeLevel( -1 ); FindPlayer().HumanityAdd( 1 ); pc.SetQuest("Necromantic",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	Si vous parlez de ce qui s'est passé ce soir. . . je sais où vous vivez. Pas un mot.	}{	Si vous parlez de ce qui s'est passé ce soir. . . je sais où vous vivez. Pas un mot.	}{	0	}{	G.Patch_Plus == 1	}{	FindPlayer().ChangeMasqueradeLevel( -1 ); FindPlayer().HumanityAdd( 1 ); pc.SetQuest("Necromantic",3); pc.GiveItem("item_w_claws_ghoul")	}{	}{	}{	}{	}{	}{	}{	}
 {	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

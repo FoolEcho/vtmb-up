@@ -242,7 +242,7 @@ Jeanette"
 	{
 		"subject"	"Library"
 		"sender"	"beckett@legend.vtm"
-		"body"		"Bonjour jeune homme... Un confrère Gangrel nommé Scott suspecte un LaSombra de recruter pour le Sabbat ici, à Los Angeles. Il l'a vu disparaître à l'intérieur de la bibliothèque municipale. Etant occupé pour le moment, pourriez-vous le rencontrer à la Boutique du Fumeur de Santa Monica pour en savoir plus? Après tout, il n'est souhaitable pour personne que ça ne se sache, n'est-ce pas?
+		"body"		"Bonjour jeune homme... Un confrère Gangrel nommé Scott, qui faisait des recherches pour mon compte à la bibliothèque municipale de LA au sujet de notre infâme cercueil, y a remarqué un LaSombra ! Etant occupé pour le moment, pourriez-vous le rencontrer à ma place à la Boutique du Fumeur de Santa Monica pour en savoir plus? Après tout, le Sabbat signifie toujours des ennuis et nous ne voudrions pas qu'il arrive quelque chose de fâcheux à ce précieux savoir, n'est-ce pas?
 Beckett"
 		"dependency"	"G.Library_Ready == 10"	// basic
 		"runscript"	"librarySetQuest()"
@@ -252,7 +252,7 @@ Beckett"
 	{
 		"subject"	"Excellent"
 		"sender"	"beckett@legend.vtm"
-		"body"		"Bonjour encore... Mon contact m'a dit que vous aviez interrompu un rituel d'initiation du Sabbat à la bibliothèque qui l'a presque tué. Il s'arrangera pour qu'il ne se produise plus rien de tel ici. Inutile de préciser que vous seriez bien avisé de ne pas répandre cet incident auprès de qui que ce soit...
+		"body"	"Rebonjour... Mon ami m'a dit que vous aviez interrompu des procédures de test du Sabbat à la bibliothèque qui l'ont presque tué. Il condamnera l'accès à cette chambre rituelle pour que cela ne se reproduise plus. Inutile de préciser qu'il ne serait pas avisé de parler de ce petit incident à qui que ce soit...
 Beckett"
 		"dependency"	"G.Jumbles_Removed == 20"	// basic
 		"runscript"	"G.Library_Open = 2; librarySetQuest()"
@@ -311,17 +311,9 @@ VV"
 	{
 		"subject"	"Lance-missiles à vendre"
 		"sender"	"gary@schrecknet.vtm"
-		"body"		"Chef, j'ai un autre poster qui prend la poussière, si vous voulez faire l'échange. On dirait qu'une des Anarchs avait fait des photos 'artistiques' avant qu'on l'étreigne. Il est à vous pour la modique somme d'un jouet à tirer en bois de l'Etincelant. Peut-être chez Metal Head Industries. Vous avez parlé à Mitnick, non ? Dans la boîte, comme d'hab."
+		"body"		"Chef, j'ai un autre poster qui prend la poussière, si vous voulez faire l'échange. On dirait qu'une des Anarchs avait fait des photos 'artistiques' avant qu'on l'étreigne. Il est à vous pour la modique somme d'un CD de données. Peut-être chez Metal Head Industries. Vous avez parlé à Mitnick, non ? Dans la boîte, comme d'hab."
 		"dependency"	"G.Gary_Photochop == 1 and G.Gary_Damsel == 0"	// changed by wesp
 // basic		"runscript"	"garySetQuestFour()"	// added by wesp
-	}
-	Email	// added by wesp
-	{
-		"subject"	"Proposition confidentielle du Nigéria"
-		"sender"	"gary@schrecknet.vtm"
-		"body"		"Êtes-vous technophile, boss? Parce que Mitnick veut une plaque spéciale avec une puce transpondeur intégrée. Je ne sais pas ce qu'il veut en faire, mais il la troquera pour une affiche de Tawni Sessions sur laquelle Imalia n'a pas encore passé ses griffes de colère."
-		"dependency"	"G.Gary_Damsel == 1 and G.Gary_Tawni == 10"	// basic
-		"runscript"	"garySetQuestFive()"
 	}
 
 	Email	// added by wesp
