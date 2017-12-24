@@ -1,4 +1,4 @@
-{	1	}{	[Baisse les yeux vers la table, soupçonneuse, s'attend à une attaque, mais reste calme]Ayashi, ne. . . (Étrange, n'est-ce pas ?)	}{	[Baisse les yeux vers la table, soupçonneuse, s'attend à une attaque, mais reste calme]Ayashi, ne. . . (Étrange, n'est-ce pas ?)	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1	}{	[Baisse les yeux vers la table, soupçonneuse, s'attend à une attaque, mais reste calme]Ayashi, ne. . . (Étrange, n'est-ce pas ?)	}{	[Baisse les yeux vers la table, soupçonneuse, s'attend à une attaque, mais reste calme]Ayashii ne. . . (Étrange, n'est-ce pas ?)	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	Quoi ?	}{	Quoi ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	???	}
 {	3	}{	Comment vous venez de m'appeler, là ?	}{	Comment vous venez de m'appeler, là ?	}{	11	}{	G.Ming_Met == 1	}{	}{	}{	}{	}{	}{	}{	}{	Blah, bleh, bleu, blah ?	}
 {	4	}{	Eh, pourquoi une petite fille comme vous a une si grande lame ?	}{	Eh, pourquoi une petite fille comme vous a une si grande lame ?	}{	11	}{	G.Ming_Met == 1	}{	}{	}{	}{	}{	}{	}{	}{	Tu sens comme l'Orient.	}
@@ -420,7 +420,7 @@
 {	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	421	}{	[Namu] (Amen. . .)	}{	[Namu] (Amen. . .)	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Follow = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	422	}{	Pardon ? Oui, merci pour votre aide ! Vous pouvez me suivre à l'intérieur, mais je vais continuer seul !	}{	Pardon ? Oui, merci pour votre aide ! Vous pouvez me suivre à l'intérieur, mais je vais continuer seule !	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous pouvez aller dedans. Mais je peux y aller sans personne.	}
-{	423	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	423	}{	Attendez ! Ming se cache certainement profondément sous le grand temple. Pouvez-vous ouvrir un portail magique de chasseur pour m'y introduire ?	}{	Attendez ! Ming se cache certainement profondément sous le grand temple. Pouvez-vous ouvrir un portail magique de chasseur pour m'y introduire ?	}{	471	}{	Persuasion 10	}{	}{	}{	}{	}{	}{	}{	}{	Pas encore. Pouvez-vous ouvrir une porte de chasseur mumbo jumbo dans le repaire sous sa grande maison ?	}
 {	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -469,7 +469,7 @@
 {	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	471	}{	Ya Ta !	}{	Ya Ta !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	472	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	Génial, je suis curieux de savoir ce que vous pouvez faire.	}{	Génial, je suis curieuse de savoir ce que vous pouvez faire.	}{	0	}{	}{	G.Yukie_Shortcut = 1	}{	}{	}{	}{	}{	}{	}{	Je m'interroge à propos de votre magie.	}
 {	473	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	474	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

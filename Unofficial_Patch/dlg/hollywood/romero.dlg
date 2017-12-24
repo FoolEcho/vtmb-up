@@ -129,10 +129,10 @@
 {	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	131	}{	. . . Euh, vous savez, je sais que techniquement vous n'êtes plus trop en vie, mais. . . vous avez un corps hallucinant. Vous étiez où quand vous étiez en vie ? J'imagine que ça ne vous dirait pas, un petit. . .	}{	. . . Euh, vous savez, je sais que techniquement vous n'êtes plus trop en vie, mais. . . vous avez un corps hallucinant. Vous étiez où quand vous étiez en vie ? J'imagine que ça ne vous dirait pas, un petit. . .	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Romero_Crush = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	132	}{	Je pourrai lubrifier mes parties avec du sang pendant que vous vous frottez contre mon cadavre ? D'accord ?	}{	Je pourrai lubrifier mes parties avec du sang pendant que vous vous frottez contre mon cadavre ? D'accord ?	}{	341	}{	IsClan(pc,"Malkavian")	}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Je pourrai lubrifier mes parties avec du sang pendant que vous vous frottez contre mon cadavre ? D'accord ?	}{	Je pourrai lubrifier mes parties avec du sang pendant que vous vous frottez contre mon cadavre ? D'accord ?	}{	341	}{	IsClan(pc,"Malkavian") and G.Player_Homo == 0	}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{	}
 {	133	}{	On va rester sur le sujet qui nous intéresse, Romero, OK ?	}{	On va rester sur le sujet qui nous intéresse, Romero, OK ?	}{	511	}{	}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{	J'aimerais plutôt parler de votre autre amour pour les morts-vivants.	}
 {	134	}{	Même de mon vivant, j'aurais dit non. Fin de la question.	}{	Même de mon vivant, j'aurais dit non. Fin de la question.	}{	521	}{	not IsClan(pc,"Malkavian")	}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{	}
-{	135	}{	Pourquoi pas, mais pour l'instant, on parle affaires.	}{	Pourquoi pas, mais pour l'instant, on parle affaires.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Plaisir de la chair? On dirait une blague... mais affaire de chair d'abord.	}
+{	135	}{	Pourquoi pas, mais pour l'instant, on parle affaires.	}{	Pourquoi pas, mais pour l'instant, on parle affaires.	}{	531	}{	G.Player_Homo == 0	}{	}{	}{	}{	}{	}{	}{	}{	Plaisir de la chair? On dirait une blague... mais affaire de chair d'abord.	}
 {	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

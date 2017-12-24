@@ -1,7 +1,7 @@
 {	1	}{	Hé, où tu vas, mec ?	}{	Hé, où tu vas, poupée ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	Ce n'est pas tes affaires, fais-moi confiance.	}{	Ce n'est pas tes affaires, fais-moi confiance.	}{	11	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Ton cerveau n'a pas besoin de le savoir.	}
-{	3	}{	Tu veux m'arrêter ou quoi ?	}{	Tu veux m'arrêter ou quoi ?	}{	31	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Don't stop me now, I'm having a good time!	}
-{	4	}{	Ne t'avise pas de me menacer, mortel !	}{	Ne t'avise pas de me menacer, mortel !	}{	31	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1;dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Ce n'est pas important pour vous et vos amis. Ou dois-je appeler les flics avant que quelque chose n'arrive ?	}{	Ce n'est pas important pour vous et vos amis. Ou dois-je appeler les flics avant que quelque chose n'arrive ?	}{	11	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Ton cerveau n'a pas besoin de le savoir, à moins que je demande aux mangeurs de donuts de venir ?	}
+{	3	}{	Vous ressemblez à des types qui évitent les ennuis. Vous feries mieux de ne pas commencer avec moi !	}{	Vous ressemblez à des types qui évitent les ennuis. Vous feries mieux de ne pas commencer avec moi !	}{	31	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Ne m'arrêtez pas maintenant, je m'amuse bien !	}
+{	4	}{	Ne t'avise pas de me parler ainsi, mortel !	}{	Ne t'avise pas de me parler ainsi, mortel !	}{	31	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	5	}{	Je ne me connais pas et vous non plus.	}{	Je ne me connais pas et vous non plus.	}{	11	}{	Dementation 1	}{	}{	}{	}{	}{	}{	}{	}{	 Je ne me connais pas et vous non plus.	}
 {	6	}{	Tu ne me dérangeras pas.	}{	Tu ne me dérangeras pas.	}{	11	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	7	}{	Tu ne me dérangeras pas.	}{	Tu ne me dérangeras pas.	}{	11	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}

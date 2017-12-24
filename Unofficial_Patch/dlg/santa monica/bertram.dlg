@@ -151,11 +151,11 @@
 {	151	}{	Oui. Dites-moi quand vous voudrez y aller, et nous partirons de suite. Mais une fois sur place, je m'arrête. Il faudra aller là-bas sans moi et installer les explosifs dans le bureau du milieu pour effondrer toute la structure.	}{	Oui. Dites-moi quand vous voudrez y aller, et nous partirons de suite. Mais une fois sur place, je m'arrête. Il faudra aller là-bas sans moi et installer les explosifs dans le bureau du milieu pour effondrer toute la structure.	}{	#	}{	}{	G.Bertram_Go = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	152	}{	Puis-je vous poser quelques questions ?	}{	Puis-je vous poser quelques questions ?	}{	161	}{	G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
 {	153	}{	Laissez-moi rassembler quelques affaires, d'abord. . .	}{	Laissez-moi rassembler quelques affaires, d'abord. . .	}{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes poches ont soif de nouvelles charges. . .	}
-{	154	}{	Nous pouvons partir.	}{	Nous pouvons partir.	}{	0	}{	not IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Eclairez mon chemin, votre Grandeur. . .	}
+{	154	}{	Nous pouvons partir.	}{	Nous pouvons partir.	}{	0	}{	not IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite") and G.Patch_Plus == 0	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	Eclairez mon chemin, votre Grandeur. . .	}
 {	155	}{	Nous pouvons partir.	}{	Nous pouvons partir.	}{	511	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 0 and pc.HasItem("item_g_astrolite")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	156	}{	Nous pouvons partir.	}{	Nous pouvons partir.	}{	0	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 1 and pc.HasItem("item_g_astrolite")	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	}
-{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	Nous pouvons partir.	}{	Nous pouvons partir.	}{	0	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 1 and pc.HasItem("item_g_astrolite")and G.Patch_Plus == 0	}{	G.Bertram_Ready = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	Viens me chercher à mon refuge après avoir dormi toute la journée et nous y irons.	}{	Viens me chercher à mon refuge après avoir dormi toute la journée et nous y irons.	}{	0	}{	not IsClan(pc,"Nosferatu") and pc.HasItem("item_g_astrolite") and G.Patch_Plus == 1	}{	G.Bertram_Ready = 2; pc.Bloodloss(1)	}{	}{	}{	}{	}{	}{	}{	Allume le chemin pour moi quand je me réveillerai demain soir, Ton Indifférence.	}
+{	158	}{	Viens me chercher à mon refuge après avoir dormi toute la journée et nous y irons.	}{	Viens me chercher à mon refuge après avoir dormi toute la journée et nous y irons.	}{	0	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 1 and pc.HasItem("item_g_astrolite") and G.Patch_Plus == 1	}{	G.Bertram_Ready = 2; pc.Bloodloss(1)	}{	}{	}{	}{	}{	}{	}{	}
 {	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	161	}{	Quoi, par exemple ?	}{	Quoi, par exemple ?	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -994,5 +994,5 @@
 {	994	}{	(Starting Condition)	}{	}{	531	}{	IsClan(pc,"Nosferatu") and G.CD_Quest == 1 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	995	}{	(Starting Condition)	}{	}{	101	}{	G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	996	}{	(Starting Condition)	}{	}{	631	}{	(G.Story_State >= 5 and G.Story_State < 25) and G.Bertram_Goodjob == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	997	}{	(Starting Condition)	}{	}{	461	}{	G.Bertram_Go == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	997	}{	(Starting Condition)	}{	}{	461	}{	G.Bertram_Go == 1 and G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	998	}{	(Starting Condition)	}{	}{	101	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}
