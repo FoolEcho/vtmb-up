@@ -1,16 +1,16 @@
 ; -- vtmbupinstaller.iss --
 
 [Setup]
-AppName=Vampire: The Masquerade - Bloodlines unofficial patch 9.8 fr
-AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 9.8 fr
+AppName=Vampire: The Masquerade - Bloodlines unofficial patch 9.9 fr
+AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 9.9 fr
 VersionInfoDescription=Vampire: The Masquerade - Bloodlines unofficial patch avec sous-titrage français
-VersionInfoVersion=9.8.1
+VersionInfoVersion=9.9
 AppPublisher=Werner Spahl
 DefaultDirName={reg:HKLM\Software\Activision\Vampire - Bloodlines,InstallPath|{pf}\Steam\steamapps\common\vampire the masquerade - bloodlines}
 AppendDefaultDirName=no
 DirExistsWarning=no
 EnableDirDoesntExistWarning=yes
-OutputBaseFilename=VTMBup98fr
+OutputBaseFilename=VTMBup99fr
 Uninstallable=no
 InfoBeforeFile=vtmbup-readme.txt
 InfoAfterFile=vtmbup-after.txt

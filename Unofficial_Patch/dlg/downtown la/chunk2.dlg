@@ -366,7 +366,7 @@
 {	366	}{	Demandez-vous ce qui est plus important, votre vie ou ce boulot mal payé ?	}{	Demandez-vous ce qui est plus important, votre vie ou ce boulot mal payé ?	}{	0	}{	Persuasion 9	}{	G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	Si la mort vous donnait une seconde chance, préfèreriez-vous fuir ou vous battre ?	}
 {	367	}{	Fuyez.	}{	Fuyez.	}{	0	}{	Dominate 1	}{	G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	368	}{	Eh, ça sent le poulet grillé, non ? Il commence à faire chaud, ici. . .	}{	Eh, ça sent le poulet grillé, non ? Il commence à faire chaud, ici. . .	}{	0	}{	Dementation 1	}{	G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	Eh, ça sent le poulet grillé, non ? Il commence à faire chaud, ici. . .	}
-{	369	}{	Voilà votre grande chance de devenir un héros. Essayez de m'arrêter. 	}{	Voilà votre grande chance de devenir un héros. Essayez de m'arrêter. 	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Soyez un mur si vous voulez. Je vous préviens, vous vous effondrerez.	}
+{	369	}{	Fuis, mortel!	}{	Fuis, mortel!	}{	0	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles(); G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	370	}{	Fuyez.	}{	Fuyez.	}{	0	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles(); G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	371	}{	Pardon, chou - ça n'a rien de personnel, comprenez bien. . . Mais M. LaCroix m'a dit que vous n'aviez plus le droit d'entrer, et euh, je suis censé vous faire sortir. J'espère que vous comprenez. . .	}{	Pardon, chou - ça n'a rien de personnel, comprenez bien. . . Mais M. LaCroix m'a dit que vous n'aviez plus le droit d'entrer, et euh, je suis censé vous faire sortir. J'espère que vous comprenez. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	372	}{	Je ne veux pas vous faire mal. Partez. Maintenant.	}{	Je ne veux pas vous faire mal. Partez. Maintenant.	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous qui aimez tant les beignets, voulez-vous aussi des beignes ?	}
@@ -386,7 +386,7 @@
 {	386	}{	Eh, ça sent le poulet grillé, non ? Il commence à faire chaud, ici. . .	}{	Eh, ça sent le poulet grillé, non ? Il commence à faire chaud, ici. . .	}{	0	}{	Dementation 1	}{	G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	Eh, ça sent le poulet grillé, non ? Il commence à faire chaud, ici. . .	}
 {	387	}{	Fuyez.	}{	Fuyez.	}{	0	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles(); G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	388	}{	Fuis, mortel!	}{	Fuis, mortel!	}{	0	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles(); G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	Voilà votre grande chance de devenir un héros. Essayez de m'arrêter. 	}{	Voilà votre grande chance de devenir un héros. Essayez de m'arrêter. 	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Soyez un mur si vous voulez. Je vous préviens, vous vous effondrerez.	}
 {	390	}{	Vous ferez une belle entrée, avant le plat de résistance.	}{	Vous ferez une belle entrée, avant le plat de résistance.	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	391	}{	Quoi ?	}{	Quoi ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	392	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Chunk_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
@@ -399,8 +399,8 @@
 {	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	401	}{	Si vous ne voulez pas partir, alors je n'ai pas le choix. . .	}{	Si vous ne voulez pas partir, alors je n'ai pas le choix. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	402	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Chunk_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	403	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	Oui, vous avez choisi de mourir.	}{	Oui, vous avez choisi de mourir.	}{	0	}{	}{	G.Chunk_Attack = 1	}{	}{	}{	}{	}{	}{	}{ Mourir pour mourir, telle est la question.	}
+{	403	}{	Et si j'allais juste visiter le toit et non LaCroix ?	}{	Et si j'allais juste visiter le toit et non LaCroix ?	}{	421	}{	Persuasion 10 & G.Patch_Plus == 1	}{	G.Chunk_Skip = 1	}{	}{	}{	}{	}{	}{	}{ Mais si mon esprit aspirait à une vue depuis le toit à la place ?	}
 {	404	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	405	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	406	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -419,8 +419,8 @@
 {	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	421	}{	Eh bien, oui, sans doute. Allez, montez. Pff, j'espère qu'on ne va pas me retirer la responsabilité de la lampe torche pour ça. . .	}{	Eh bien, oui, sans doute. Allez, montez. Pff, j'espère qu'on ne va pas me retirer la responsabilité de la lampe torche pour ça. . .	}{	#	}{	}{	G.Chunk_Open = 6	}{	}{	}{	}{	}{	}{	}{	}
-{	422	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	423	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	Merci !	}{	Merci !	}{	0	}{	G.Chunk_Skip == 0	}{	}{	}{	}{	}{	}{	}{	}{	Merci, merci, merci.	}
+{	423	}{	Merci !	}{	Merci !	}{	0	}{	G.Chunk_Skip == 1	}{G.Chunk_Skip = 2	}{	}{	}{	}{	}{	}{	}{	Merci, merci, merci.	}
 {	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

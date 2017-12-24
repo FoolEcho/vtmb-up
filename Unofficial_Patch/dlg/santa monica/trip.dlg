@@ -261,7 +261,7 @@
 {	261	}{	Je vous dis, des trucs de ouf, ça arrive tout le temps ici, et on s'habitue. On continue comme avant. Mais ça. . . Ces morts, ça me fout les jetons.	}{	Je vous dis, des trucs de ouf, ça arrive tout le temps ici, et on s'habitue. On continue comme avant. Mais ça. . . Ces morts, ça me fout les jetons.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	262	}{	En effet, soyez prudent.	}{	En effet, soyez prudent.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Blindez-vous, Bad Trip. . .	}
 {	263	}{	Peu importe. Qu'avez-vous à vendre ?	}{	Peu importe. Qu'avez-vous à vendre ?	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Cachez-vous dans vos ténèbres, Bad Trip. Bien. . . passons aux marchandises.	}
-{	264	}{	Prudence, Trip. Qu'avez-vous à vendre aujourd'hui ?	}{	Prudence, Trip. Qu'avez-vous à vendre aujourd'hui ?	}{	311	}{	G.Extra_Lines == 1	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Prudence, Marchand de Mort. Et maintenant, échangeons plus que des histoires. . .	}
+{	264	}{	Prudence, Trip. Qu'avez-vous à vendre aujourd'hui ?	}{	Prudence, Trip. Qu'avez-vous à vendre aujourd'hui ?	}{	311	}{	G.Extra_Lines == 1 and G.Trip_Name == 1	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Prudence, Marchand de Mort. Et maintenant, échangeons plus que des histoires. . .	}
 {	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
