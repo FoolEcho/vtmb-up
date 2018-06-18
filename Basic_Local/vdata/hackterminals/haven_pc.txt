@@ -66,7 +66,15 @@ TerminalDefinition
 		"subject"	"L'ouverture"
 		"sender"	"un ami"
 		"body"		"La partie commence. Un pion est joué."
-		"dependency"	"G.Story_State < 2"
+		"dependency"	"G.Story_State < 2 and G.Patch_Plus == 0"	// changed by wesp
+	}
+
+	Email
+	{
+		"subject"	"L'ouverture"
+		"sender"	"un ami"
+		"body"		"La partie commence. Un pion est joué."
+		"dependency"	"G.Story_State < 5 and G.Patch_Plus == 1"	// changed by wesp
 	}
 
 	Email
@@ -74,7 +82,15 @@ TerminalDefinition
 		"subject"	"Le premier pas"
 		"sender"	"un ami"
 		"body"		"Le roi blanc avance pour protéger son pion."
-		"dependency"	"G.Story_State == 5"
+		"dependency"	"G.Story_State == 5 and G.Patch_Plus == 0"	// changed by wesp
+	}
+
+	Email
+	{
+		"subject"	"Le premier pas"
+		"sender"	"un ami"
+		"body"		"Le roi blanc avance pour protéger son pion."
+		"dependency"	"G.Story_State >= 5 and G.Story_State < 20 and G.Patch_Plus == 1"	// changed by wesp
 	}
 
 	Email
@@ -136,9 +152,9 @@ Jeanette"
 		"sender"	"LaCroix"
 		"body"		"J'ai récemment lu la critique acerbe de M. Flayton sur le Cavoletti Cafe dans le Sun et je dois vous dire à quel point je suis heureux de ses conclusions. Vous avez réussi. Veuillez accepter le paiement que j'ai fait porter dans votre boîte aux      lettres. Nous nous reverrons bientôt sans aucun doute. -SL"
 		"dependency"	"G.Tommy_Disgusted == 1 or G.Tommy_Review == 1"
-		//changed by dan_upright 29/11/04
+		// changed by dan_upright 29/11/04
 		"runscript"	"tomSetQuestFour()"
-		//changes end
+		// changes end
 	}
 
 	Email
@@ -154,7 +170,7 @@ Jeanette"
 	"subject"	"Tommy Flayton"
 	"sender"	"LaCroix"
 	"body"	"J'ai lu récemment la nécrologie de M. Flayton dans le Sun, et je dois vous dire que je suis extrêmement mécontent de sa disparition prématurée. Je me souviens vous avoir demandé une critique assassine et non un critique mort. Vous me décevez, nouveau-né. De toute évidence, vous ne pouvez même pas vous acquitter d'une tâche parmi les plus simples. - SL "
-	"dependency"	"G.Tommy_Review == 20"	// basic
+	"dependency"	"G.Tommy_Review == 2 and G.Patch_Plus == 1"
 	"runscript"	"G.Prince_Reaction = G.Prince_Reaction -1"
 	}
 
@@ -244,7 +260,7 @@ Jeanette"
 		"sender"	"beckett@legend.vtm"
 		"body"		"Bonjour jeune homme... Un confrère Gangrel nommé Scott, qui faisait des recherches pour mon compte à la bibliothèque municipale de LA au sujet de notre infâme cercueil, y a remarqué un LaSombra ! Etant occupé pour le moment, pourriez-vous le rencontrer à ma place à la Boutique du Fumeur de Santa Monica pour en savoir plus? Après tout, le Sabbat signifie toujours des ennuis et nous ne voudrions pas qu'il arrive quelque chose de fâcheux à ce précieux savoir, n'est-ce pas?
 Beckett"
-		"dependency"	"G.Library_Ready == 10"	// basic
+		"dependency"	"G.Library_Ready == 1 and G.Patch_Plus == 1"
 		"runscript"	"librarySetQuest()"
 	}
 
@@ -254,7 +270,7 @@ Beckett"
 		"sender"	"beckett@legend.vtm"
 		"body"	"Rebonjour... Mon ami m'a dit que vous aviez interrompu des procédures de test du Sabbat à la bibliothèque qui l'ont presque tué. Il condamnera l'accès à cette chambre rituelle pour que cela ne se reproduise plus. Inutile de préciser qu'il ne serait pas avisé de parler de ce petit incident à qui que ce soit...
 Beckett"
-		"dependency"	"G.Jumbles_Removed == 20"	// basic
+		"dependency"	"G.Jumbles_Removed == 2 and G.Patch_Plus == 1"
 		"runscript"	"G.Library_Open = 2; librarySetQuest()"
 	}
 
@@ -265,7 +281,17 @@ Beckett"
 		"body"		"Si vous lisez ça, vous devez encore faire partie des morts-vivants. J'ai une proposition pour vous, si vous n'avez pas trop à faire. Vous savez où me trouver. Ce ne sera pas trop difficile cette fois.
 
 Bertram"
-		"dependency"	"G.CD_Quest == 1 and __main__.FindPlayer().clan == 5"	// basic
+		"dependency"	"G.CD == 1 and __main__.FindPlayer().clan == 5 and G.PP == 0"	// changed by wesp
+	}
+
+Email
+	{
+		"subject"	"Vous êtes encore là ?"
+		"sender"	"bertram@schrecknet.vtm"
+		"body"		"Si vous lisez ça, vous devez encore faire partie des morts-vivants. J'ai une proposition pour vous, si vous n'avez pas trop à faire. Vous savez où me trouver. Ce ne sera pas trop difficile cette fois.
+
+Bertram"
+		"dependency"	"G.CD == 1 and G.Patch_Plus == 1"	// changed by wesp
 		"runscript"	"bertramSetQuest()"	// added by wesp
 	}
 
@@ -285,8 +311,16 @@ VV"
 		"subject"	"Le prince vous promeut !"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Eh, chef, j'ai fait du nettoyage de printemps - j'ai trouvé quelque chose qui pourrait vous chatouiller. Un gamin vivait ici et il avait un truc pour notre pin-up psycho préférée, Jeanette Voerman. J'ai eu un coup de nostalgie, alors si vous trouvez une copie de Tap Hotel, avec moi, je vous l'échange contre un poster de cette belle malade. Mettez la boîte du film dans votre boîte aux lettres et je l'apporterai à votre refuge."
-		"dependency"	"G.Story_State >= 45 and G.Gary_Voerman == 0"
-// basic		"runscript"	"garySetQuestOne()"	// added by wesp
+		"dependency"	"G.Ball_Taken == 2 and G.Gary_Voerman == 0 and G.PP == 0"	// changed by wesp
+	}
+
+Email
+	{
+		"subject"	"Le prince vous promeut !"
+		"sender"	"gary@schrecknet.vtm"
+		"body"		"Eh, chef, j'ai fait du nettoyage de printemps - j'ai trouvé quelque chose qui pourrait vous chatouiller. Un gamin vivait ici et il avait un truc pour notre pin-up psycho préférée, Jeanette Voerman. J'ai eu un coup de nostalgie, alors si vous trouvez une copie de Tap Hotel, avec moi, je vous l'échange contre un poster de cette belle malade. Mettez la boîte du film dans votre boîte aux lettres et je l'apporterai à votre refuge."
+		"dependency"	"G.Ball_Taken == 2 and G.Gary_Voerman == 0 and G.PP == 1"	// changed by wesp
+		"runscript"	"garySetQuestOne()"	// added by wesp
 	}
 
 	Email
@@ -294,8 +328,16 @@ VV"
 		"subject"	"Codes triche"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Le film est bien, chef, mais je crois que je me suis laissé aller avec les années. Bon, ça a l'air de marcher pour vous, alors voilà le topo. Vous connaissez la Toréador du Vesuvius, 'Ms. Velour' ? Quand elle respirait, c'était plutôt Miss N'importe quoi pour Trois Cents Billets. Et j'ai un poster. Je vous l'échange contre les photos compromettantes que j'ai vues sur Los Angeles hantée."
-		"dependency"	"G.Gary_Voerman == 1 and G.Velvet_Poster == 0"	// changed by wesp
-// basic		"runscript"	"garySetQuestTwo()"	// added by wesp
+		"dependency"	"G.Gary_Voerman == 1 and G.Velvet_Poster == 0 and G.PP == 0"	// changed by wesp
+	}
+
+	Email
+	{
+		"subject"	"Codes triche"
+		"sender"	"gary@schrecknet.vtm"
+		"body"		"Le film est bien, chef, mais je crois que je me suis laissé aller avec les années. Bon, ça a l'air de marcher pour vous, alors voilà le topo. Vous connaissez la Toréador du Vesuvius, 'Ms. Velour' ? Quand elle respirait, c'était plutôt Miss N'importe quoi pour Trois Cents Billets. Et j'ai un poster. Je vous l'échange contre les photos compromettantes que j'ai vues sur Los Angeles hantée."
+		"dependency"	"G.Gary_Voerman == 1 and G.Velvet_Poster == 0 and G.PP == 1"	// changed by wesp
+		"runscript"	"garySetQuestTwo()"	// added by wesp
 	}
 
 	Email
@@ -303,8 +345,16 @@ VV"
 		"subject"	"Qu'est-ce que la vicissitude ?"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Comment ça va, chef ? Comme d'hab. J'ai une photo de surveillance d'une certaine Kuei-Jin. Ce serait mal d'en faire un sale poster avec un petit coup de logiciel, alors je l'ai fait. Je vous l'échange contre une chanson - une cassette, en fait - un truc d'Imalia juste avant que je la morde. J'aime bien tenir mes petits. La séance maillot de bain du magazine Jock Shot de l'année dernière. Deux bonnes raisons bien dures pour qu'ils le retirent de la vente."
-		"dependency"	"G.Velvet_Poster == 1 and G.Gary_Photochop == 0"	// changed by wesp
-// basic		"runscript"	"garySetQuestThree()"	// added by wesp
+		"dependency"	"G.Velvet_Poster == 1 and G.Gary_Photochop == 0 and G.PP == 0"	// changed by wesp
+	}
+
+
+	{
+		"subject"	"Qu'est-ce que la vicissitude ?"
+		"sender"	"gary@schrecknet.vtm"
+		"body"		"Comment ça va, chef ? Comme d'hab. J'ai une photo de surveillance d'une certaine Kuei-Jin. Ce serait mal d'en faire un sale poster avec un petit coup de logiciel, alors je l'ai fait. Je vous l'échange contre une chanson - une cassette, en fait - un truc d'Imalia juste avant que je la morde. J'aime bien tenir mes petits. La séance maillot de bain du magazine Jock Shot de l'année dernière. Deux bonnes raisons bien dures pour qu'ils le retirent de la vente."
+		"dependency"	"G.Velvet_Poster == 1 and G.Gary_Photochop == 0 and G.PP == 1"	// changed by wesp
+		"runscript"	"garySetQuestThree()"	// added by wesp
 	}
 
 	Email
@@ -312,8 +362,16 @@ VV"
 		"subject"	"Lance-missiles à vendre"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Chef, j'ai un autre poster qui prend la poussière, si vous voulez faire l'échange. On dirait qu'une des Anarchs avait fait des photos 'artistiques' avant qu'on l'étreigne. Il est à vous pour la modique somme d'un CD de données. Peut-être chez Metal Head Industries. Vous avez parlé à Mitnick, non ? Dans la boîte, comme d'hab."
-		"dependency"	"G.Gary_Photochop == 1 and G.Gary_Damsel == 0"	// changed by wesp
-// basic		"runscript"	"garySetQuestFour()"	// added by wesp
+		"dependency"	"G.Gary_Photochop == 1 and G.Gary_Damsel == 0 and G.PP == 0"	// changed by wesp
+	}
+
+	Email
+	{
+		"subject"	"Lance-missiles à vendre"
+		"sender"	"gary@schrecknet.vtm"
+		"body"		"Chef, j'ai un autre poster qui prend la poussière, si vous voulez faire l'échange. On dirait qu'une des Anarchs avait fait des photos 'artistiques' avant qu'on l'étreigne. Il est à vous pour la modique somme d'un CD de données. Peut-être chez Metal Head Industries. Vous avez parlé à Mitnick, non ? Dans la boîte, comme d'hab."
+		"dependency"	"G.Gary_Photochop == 1 and G.Gary_Damsel == 0 and G.PP == 1"	// changed by wesp
+		"runscript"	"garySetQuestFour()"	// added by wesp
 	}
 
 	Email	// added by wesp
@@ -321,8 +379,7 @@ VV"
 		"subject"	"Recherche de rencard ?"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Êtes-vous seul, chef ? Alors, peut-être que me dénicher une de ces étranges boules de chair de Tzimisce vous empêchera-t-il de vous apitoyer sur vous-même. Je vous proposerais une affiche d'Imalia dans sa beauté complète, avant de lui avoir appliqué mon traitement spécial."
-
-		"dependency"	"G.Gary_Damsel == 1 and G.Gary_Imalia == 10"	// basic
+		"dependency"	"G.Ball_Taken == 3 and G.Gary_Imalia == 0"
 		"runscript"	"garySetQuestFive()"
 	}
 
@@ -331,7 +388,7 @@ VV"
 		"subject"	"Proposition confidentielle du Nigéria"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Êtes-vous technophile, boss? Parce que Mitnick veut une plaque spéciale avec une puce transpondeur intégrée. Je ne sais pas ce qu'il veut en faire, mais il la troquera pour une affiche de Tawni Sessions sur laquelle Imalia n'a pas encore passé ses griffes de colère."
-		"dependency"	"G.Gary_Imalia == 1 and G.Gary_Tawni == 10"	// basic
+		"dependency"	"G.Gary_Damsel == 1 and G.Gary_Tawni == 0 and G.PP == 1"
 		"runscript"	"garySetQuestSix()"
 	}
 
@@ -340,7 +397,7 @@ VV"
 		"subject"	"Argent facile au Monde des Ténèbres!"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Occupé, boss? Parce que j'ai entendu qu'un autre pilier de film culte avait disparu. Le shuriken du tourbillon dans \"A Touch of Xen\". Je l'échangerai contre le poster d'une fille agréable, que vous ne regarderez certainement pas dans les yeux!"
-		"dependency"	"G.Gary_Tawni == 1 and G.Gary_Blind == 10"	// basic
+		"dependency"	"G.Gary_Tawni == 1 and G.Gary_Blind == 0 and G.PP == 1"
 		"runscript"	"garySetQuestSeven()"
 	}
 
@@ -349,7 +406,7 @@ VV"
 		"subject"	"Réplique aux enchères"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Hé boss, un autre travail pour vous. Un de nos chercheurs versé dans l'occulte aimerait mettre la main sur un calice odieux écrasé vu dans Chinatown. Offrirait une affiche d'Imalia dans sa pleine beauté, avant de lui avoir donné mon traitement spécial! La manière habituelle comme précédemment."
-		"dependency"	"G.Gary_Blind == 1 and G.Gary_Cross == 10"	// basic
+		"dependency"	"G.Gary_Blind == 1 and G.Gary_Cross == 0 and G.PP == 1"
 		"runscript"	"garySetQuestEight()"
 	}
 
@@ -366,7 +423,7 @@ VV"
 		"subject"	"ROLEX PAS CHER..."
 		"sender"	"larry@neighborhood.vtm"
 		"body"		"... n'est pas la seule chose que ce que nous avons, mec! Nous avons beaucoup plus chaud, des trucs beaucoup plus mortels, tu sais? Et comme tous les autres propriétaires de qualité de Los Angeles, nous obtenons de nouveaux articles tout le temps, alors regarde-bien!!!"
-		"dependency"	"G.Story_State >= 450"	// basic
+		"dependency"	"G.Story_State >= 45 and G.Patch_Plus == 1"
 		"autodelete"	"1"
 	}
 

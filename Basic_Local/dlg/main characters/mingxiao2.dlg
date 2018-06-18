@@ -63,7 +63,7 @@
 {	63	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	66	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -148,9 +148,9 @@
 {	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	151	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	152	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	[En tant que Nines]Dehors. Maintenant.	}{	[En tant que Nines]Dehors. Maintenant.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Quoi ? Vous vous penchez aussi sur la disparition de Grout ?	}{	Quoi ? Vous vous penchez aussi sur la disparition de Grout ?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hein ? Tu cherches aussi le Malkavien disparu ?	}
+{	153	}{	Tu te sens bien, mec ?	}{	Tu te sens bien, mec ?	}{	371	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -348,17 +348,17 @@
 {	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	351	}{	[En tant que Ming Xiao]Vous. . . Que faites-vous ici ?	}{	[En tant que Ming Xiao]Vous. . . Que faites-vous ici ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	352	}{	Yo, Nines ! Ca boume ?	}{	Yo, Nines ! Ca boume ?	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le prince des rues !	}
-{	353	}{	Je pourrais vous poser la même question.	}{	Je pourrais vous poser la même question.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'errais dans le labyrinthe mystique de mon esprit. . .	}
-{	354	}{	J'étais dans le quartier. . .	}{	J'étais dans le quartier. . .	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je zonais dans le tier-quar. . .	}
-{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	[En tant que Nines]Vous. . . Que faites-vous ici ?	}{	[En tant que Nines]Vous. . . Que faites-vous ici ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	Yo, Nines ! Ca boume ?	}{	Yo, Nines ! Ca boume ?	}{	361	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le prince des rues !	}
+{	353	}{	Je pourrais vous poser la même question.	}{	Je pourrais vous poser la même question.	}{	361	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'errais dans le labyrinthe mystique de mon esprit. . .	}
+{	354	}{	J'étais dans le quartier. . .	}{	J'étais dans le quartier. . .	}{	361	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je zonais dans le tier-quar. . .	}
+{	355	}{	Yo, Nines ! Ca boume ?	}{	Yo, Nines ! Ca boume ?	}{	151	}{	G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Le prince des rues !	}
+{	356	}{	Je pourrais vous poser la même question.	}{	Je pourrais vous poser la même question.	}{	151	}{	G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'errais dans le labyrinthe mystique de mon esprit. . .	}
+{	357	}{	J'étais dans le quartier. . .	}{	J'étais dans le quartier. . .	}{	151	}{	G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je zonais dans le tier-quar. . .	}
 {	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	361	}{	[En tant que Ming Xiao]Non. . .	}{	[En tant que Ming Xiao]Non. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	[En tant que Nines]Non. . .	}{	[En tant que Nines]Non. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	362	}{	Ma question n'appelait pas vraiment une réponse par oui ou par non.	}{	Ma question n'appelait pas vraiment une réponse par oui ou par non.	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles sont un peu molles. . .	}
 {	363	}{	Vous aussi vous vous penchez sur la disparition de Grout ?	}{	Vous aussi vous vous penchez sur la disparition de Grout ?	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous aussi cherchez le Malkavien disparu ?	}
 {	364	}{	Vous vous sentez bien ?	}{	Vous vous sentez bien ?	}{	371	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -368,7 +368,7 @@
 {	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	371	}{	[En tant que Ming Xiao]Vous ne devriez pas rester ici. . . L'endroit est mauvais. Euh. . . Pardon.	}{	[En tant que Ming Xiao]Vous ne devriez pas rester ici. . . L'endroit est mauvais. Euh. . . Pardon.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	[En tant que Nines]Vous ne devriez pas rester ici. . . L'endroit est mauvais. Euh. . . Pardon.	}{	[En tant que Nines]Vous ne devriez pas rester ici. . . L'endroit est mauvais. Euh. . . Pardon.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	372	}{	Pourquoi ? Qu'y a-t-il à l'intérieur ?	}{	Pourquoi ? Qu'y a-t-il à l'intérieur ?	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quels secrets cachent ces murs ?	}
 {	373	}{	Peut-être pour vous, mais pas pour un fouteur de merde comme moi. . .	}{	Peut-être pour vous, mais pas pour une fouteuse de merde comme moi. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre bouche brasse une purée mystique. . .	}
 {	374	}{	Hein ?	}{	Hein ?	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -138,16 +138,16 @@
 {	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	141	}{	Vous le faites ? Tenez, voici les caméras. Elle vit à Hollywood, dans un immeuble résidentiel juste en face du Luckee Star Hotel. J'ai demandé à quelqu'un de me trouver un double de sa clé. Prenez-la aussi.	}{	Vous le faites ? Tenez, voici les caméras. Elle vit à Hollywood, dans un immeuble résidentiel juste en face du Luckee Star Hotel. J'ai demandé à quelqu'un de me trouver un double de sa clé. Prenez-la aussi.	}{	#	}{	}{	pc.SetQuest("Imalia",1); pc.GiveItem("item_k_tawni_apartment_key"); pc.GiveItem("item_g_wireless_camera_1"); pc.GiveAmmo("item_g_wireless_camera_1",2); G.Imalia_Quest = 2; G.Tawni_Spotted = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Vous le faites ? Tenez, voici les caméras. Elle vit à Hollywood, dans un immeuble résidentiel juste en face du Luckee Star Hotel. J'ai demandé à quelqu'un de me trouver un double de sa clé. Prenez-la aussi.	}{	Vous le faites ? Tenez, voici les caméras. Elle vit à Hollywood, dans un immeuble résidentiel juste en face du Luckee Star Hotel. J'ai demandé à quelqu'un de me trouver un double de sa clé. Prenez-la aussi.	}{	#	}{	}{	pc.SetQuest("Imalia",1); G.Imalia_Quest = 2; G.Tawni_Spotted = 0	}{	}{	}{	}{	}{	}{	}{	}
 {	142	}{	Super. Je peux vous poser d'autres questions ?	}{	Je peux vous poser quelques questions ?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
 {	143	}{	Merci. Je m'en occupe. A plus.	}{	Merci. Je m'en occupe. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre oppresse d'autres domaines.	}
 {	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	146	}{	Bon, je vous revaudrai ça si vous faites bien le coup. Mais écoutez. . . Je ne veux pas qu'elle meure, je veux qu'elle souffre. Vous entrez et vous sortez sans qu'elle soit au courant. Compris ?	}{	Bon, je vous revaudrai ça si vous faites bien le coup. Mais écoutez. . . Je ne veux pas qu'elle meure, je veux qu'elle souffre. Vous entrez et vous sortez sans qu'elle soit au courant. Compris ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	147	}{	Ca marche. Je le fais.	}{	Ca marche. Je le fais.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cet acte, je le commettrai. . .	}
-{	148	}{	J'y réfléchirai. Je peux vous poser d'autres questions ?	}{	J'y réfléchirai. Je peux vous poser d'autres questions ?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
-{	149	}{	Je ne sais pas. On en reparle plus tard. 	}{	Je ne sais pas. On en reparle plus tard. 	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
-{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	Ca marche. Je le fais.	}{	Ca marche. Je le fais.	}{	141	}{	not pc.HasItem("item_g_wireless_camera_1")	}{	pc.GiveItem("item_k_tawni_apartment_key"); pc.GiveItem("item_g_wireless_camera_1"); pc.GiveAmmo("item_g_wireless_camera_1",2)	}{	}{	}{	}{	}{	}{	}{	Cet acte, je le commettrai. . .	}
+{	148	}{	Ca marche. Je le fais.	}{	Ca marche. Je le fais.	}{	141	}{	pc.HasItem("item_g_wireless_camera_1")	}{	pc.GiveItem("item_k_tawni_apartment_key"); pc.GiveAmmo("item_g_wireless_camera_1",3)	}{	}{	}{	}{	}{	}{	}{	Cet acte, je le commettrai. . .	}
+{	149	}{	J'y réfléchirai. Je peux vous poser d'autres questions ?	}{	J'y réfléchirai. Je peux vous poser d'autres questions ?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	150	}{	Je ne sais pas. On en reparle plus tard. 	}{	Je ne sais pas. On en reparle plus tard. 	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	151	}{	Salut.	}{	Salut.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	152	}{	Ca boume, Imalia ? Vous avez cinq minutes pour discuter ?	}{	Ca boume, Imalia ? Vous avez cinq minutes pour discuter ?	}{	161	}{	G.Imalia_Pissed < 2 and pc.GetQuestState("Guy") < 1	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
 {	153	}{	Eh, salut gamine, ça va ?	}{	Eh, salut gamine, ça va ?	}{	371	}{	pc.GetQuestState("Guy") == 1 and not pc.HasItem("item_g_guy_magazine")	}{	}{	}{	}{	}{	}{	}{	}{	Salutations, Cléopâtre !	}

@@ -1028,7 +1028,7 @@
 {	1028	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1029	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1030	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1031	}{	[Sourit, pouffe. Domination]Donnez-moi la clé.	}{	[Sourit, pouffe. Domination]Donnez-moi la clé.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1031	}{	[Sourit, pouffe. Domination]Donnez-moi la clé.	}{	[Sourit, pouffe. Domination]Donnez-moi la clé.	}{	#	}{	}{	dominatePlayer()	}{	}{	}{	}{	}{	}{	}{	}
 {	1032	}{	Non. . .	}{	Non. . .	}{	1041	}{	}{	}{	}{	}{	}{	}{	}{	}{	NON. . .	}
 {	1033	}{	Jamais. . .	}{	Jamais. . .	}{	1041	}{	}{	}{	}{	}{	}{	}{	}{	}{	HA HA HA. . .	}
 {	1034	}{	Allez vous faire mettre. . .	}{	Allez vous faire mettre. . .	}{	1041	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ca ne risque pas. . .	}
@@ -1038,7 +1038,7 @@
 {	1038	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1039	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1040	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1041	}{	[Domination, en colère]J'ai dit, donnez-moi la clé.	}{	[Domination, en colère]J'ai dit, donnez-moi la clé.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1041	}{	[Domination, en colère]J'ai dit, donnez-moi la clé.	}{	[Domination, en colère]J'ai dit, donnez-moi la clé.	}{	#	}{	}{	dominatePlayer()	}{	}{	}{	}{	}{	}{	}{	}
 {	1042	}{	Ne perdez pas votre temps à vouloir me dominer.	}{	Ne perdez pas votre temps à vouloir me dominer.	}{	0	}{	G.Story_State != 120 and G.Story_State != 105	}{	G.Prince_Decision = 1	}{	}{	}{	}{	}{	}{	}{	Oh oh, ça ne va pas marcher.	}
 {	1043	}{	Assis, LaCroix.	}{	Assis, LaCroix.	}{	0	}{	G.Story_State != 120 and G.Story_State != 105	}{	G.Prince_Decision = 1	}{	}{	}{	}{	}{	}{	}{	HA HA HA. . . Assis !	}
 {	1044	}{	Prenez ça !	}{	Prenez ça !	}{	0	}{	G.Story_State != 120 and G.Story_State != 105	}{	G.Prince_Decision = 1	}{	}{	}{	}{	}{	}{	}{	Vous faire une grande blessure au torse ? Avec plaisir !	}

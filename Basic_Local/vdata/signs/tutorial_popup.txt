@@ -1,32 +1,39 @@
 SignData
 {
-	// NOTE: Labels get text justification
-	//	 TextBlocks get word wrapping	
-	//	 Font sizes per resolution are defined in vampire/resource/TrackerScheme.res
-
-	// if you don't specify X and Y pos for the background image, it will autocenter. 
 	BackgroundImage
 	{
-		"Name"		"interface/charactermaintenance/background"
-		"Tiled"		"0"
-//		"XPos"		"100"
-//		"YPos"		"100"
-		"Wide"		"500"
-		"Tall"		"600"
+		"Name"		"interface/Pop_Ups/general"
+//		"Tiled"		"0"
+		"XPos"		""	//1, ws-fix
+		"YPos"		""	//1, ws-fix
+		"Wide"		"2048"	//1024, ws-fix
+		"Tall"		"1024"
 	}
-
 
 	TextBlock
 	{
-		"Text"		"Popup marqueur de tutorial. Cliquez pour sortir. Allez faire tout ce que vous pouvez, puis retrouvez Jack pour progresser."
+		"Text"		"                       Attention !
+Il semble qu'un script Python important n'ait pas été compilé correctement sur votre système !
+Vous jouez probablement sous Wine dans un environnement Linux sans le script loader-linux.
+Veuillez quitter le jeu et le trouver dans le répertoire principal du jeu. Modifiez-le pour l'adapter à votre configuration !"
 		"Font"		"ParagraphText"
-		"XPos"		"50"
-		"YPos"		"150"
-		"Wide"		"300"
-		"Tall"		"200"
-		"TextRGBA"		"[255, 0, 255,200]"
-		"BackgroundRGBA"	"[0,0,0,100]"
+		"XPos"		"836"	//324, ws-fix
+		"YPos"		"310"	//182, ws-fix
+		"Wide"		"375"
+		"Tall"		"375"
+		"TextRGBA"		"[245, 245, 245, 200]"
+		"BackgroundRGBA"		"[0, 0, 0, 100]"
 	}
 
+	TextBlock
+	{
+		"Text"		"Clic gauche pour continuer"
+		"XPos"		"922"	//410, ws-fix
+		"YPos"		"706"	//572, ws-fix
+		"Wide"		"215"
+		"Tall"		"28"
+		"TextRGBA"		"[245, 245, 245, 200]"
+		"BackgroundRGBA"		"[0, 0, 0, 100]"
+		"Font"		"Trebuchet"
+	}
 }
-
