@@ -1,0 +1,856 @@
+{	1	}{	Par le claquement de mes doigts, quelle chose terrible que voilà. Je ne me rappelle pas avoir lu votre nom sur la liste des invités. . . Nous avons une fête de clôture pour les Misfits, avec environ quarante ans de retard. Désolé, c'est juste pour l'équipe du tournage.	}{	Par le claquement de mes doigts, quelle chose terrible que voilà. Je ne me rappelle pas avoir lu votre nom sur la liste des invités. . . Nous avons une fête de clôture pour les Misfits, avec environ quarante ans de retard. Désolé, c'est juste pour l'équipe du tournage.	}{	#	}{	talkGaryMiddle()	}{	G.Story_State = 45; G.CD = 1; pc.SetQuest("Sarcophagus",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Où êtes-vous ?	}{	Où êtes-vous ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Voix ? Je ne vous vois pas.	}
+{	3	}{	Montrez-vous.	}{	Montrez-vous.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Allez, voix, je ne mords pas. . .	}
+{	4	}{	Vous avez peur ? Venez me voir en face, comme un homme.	}{	Vous avez peur ? Venez me voir en face, comme un homme.	}{	731	}{	}{	}{	}{	}{	}{	}{	}{	}{	Voix craintive, qui a peur de tout sauf du noir. Où ?	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Je suis peut-être dans votre tête. Oh. . . vous avez peut-être attrapé une de ces psychoses si courantes chez les nouveaux vampires. . .	}{	Je suis peut-être dans votre tête. Oh. . . vous avez peut-être attrapé une de ces psychoses si courantes chez les nouveaux vampires. . .	}{	#	}{	talkGaryMiddle()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	J'ai juste besoin de vous parler.	}{	J'ai juste besoin de vous parler.	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Ne me forcez pas à venir vous parler.	}{	Ne me forcez pas à venir vous parler.	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Vous ne ressemblez pas aux voix que j'ai dans la tête.	}{	Vous ne ressemblez pas aux voix que j'ai dans la tête.	}{	41	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Nous parlons, mais vous ne m'écoutez pas.	}{	Nous parlons, mais vous ne m'écoutez pas.	}{	#	}{	talkGaryBack()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Où êtes-vous ? Parlons face à face.	}{	Où êtes-vous ? Parlons face à face.	}{	111	}{	not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	51	}{	not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Je n'aime pas les jeux.	}{	Je n'aime pas les jeux.	}{	61	}{	not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	71	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	Je n'aime pas les jeux.	}{	Je n'aime pas les jeux.	}{	71	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	Je vais vous arracher les cordes vocales pour commencer. . .	}{	Je vais vous arracher les cordes vocales pour commencer. . .	}{	81	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	Qu'est-ce qui vous dit que je suis dans le coin ?	}{	Qu'est-ce qui vous dit que je suis dans le coin ?	}{	#	}{	talkGaryLeft()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Où êtes-vous ? Parlons face à face.	}{	Où êtes-vous ? Parlons face à face.	}{	111	}{	not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	51	}{	not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	34	}{	Je n'aime pas les jeux.	}{	Je n'aime pas les jeux.	}{	61	}{	not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	71	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	Je n'aime pas les jeux.	}{	Je n'aime pas les jeux.	}{	71	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	Je vais vous arracher les cordes vocales pour commencer. . .	}{	Je vais vous arracher les cordes vocales pour commencer. . .	}{	81	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Peut-être que j'ai tué les autres voix dans votre tête, hein ?	}{	Peut-être que j'ai tué les autres voix dans votre tête, hein ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	Cette nouvelle voix m'amuse. L'ancienne disait n'importe quoi.	}{	Cette nouvelle voix m'amuse. L'ancienne disait n'importe quoi.	}{	451	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Je suis peut-être un fantôme [glousse] Allez, ne me dites pas que vous êtes là par hasard. Je veux juste savoir ce que vous venez faire ici ?	}{	Je suis peut-être un fantôme [glousse] Allez, ne me dites pas que vous êtes là par hasard. Je veux juste savoir ce que vous venez faire ici ?	}{	#	}{	talkGaryUp()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Parlons face à face.	}{	Parlons face à face.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Où êtes-vous ?	}{	Où êtes-vous ?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	Venez ici et nous parlerons.	}{	Venez ici et nous parlerons.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Je n'aime pas que la pluie s'infiltre dans ma chambre. . . Mais pour empêcher la pluie, il faut tuer tous les nuages. Et je n'aime pas le meurtre.	}{	Je n'aime pas que la pluie s'infiltre dans ma chambre. . . Mais pour empêcher la pluie, il faut tuer tous les nuages. Et je n'aime pas le meurtre.	}{	#	}{	talkGaryLeft()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	63	}{	Vous êtes malade.	}{	Vous êtes malade.	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	64	}{	Montrez-vous.	}{	Montrez-vous.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Vous avez l'habitude qu'on fasse tout ce que vous voulez, hein mon mignon ? Les gens adorent votre charisme, votre visage. . . Ils savourent vos paroles comme des souris aiment le fromage dans leur piège. Mais pour qui vous vous prenez ?	}{	Vous avez l'habitude qu'on fasse tout ce que vous voulez, hein ma mignonne ? Les gens adorent votre charisme, votre visage. . . Ils savourent vos paroles comme des souris aiment le fromage dans leur piège. Mais pour qui vous vous prenez ?	}{	#	}{	talkGaryLeft()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	Vous êtes malade.	}{	Vous êtes malade.	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	Montrez-vous.	}{	Montrez-vous.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	D'abord, il va falloir les trouver, hein. . . Et je n'ai pas trop envie que ça arrive.	}{	D'abord, il va falloir les trouver, hein. . . Et je n'ai pas trop envie que ça arrive.	}{	#	}{	talkGaryBack()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Vous êtes malade.	}{	Vous êtes malade.	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	Montrez-vous, bon sang !	}{	Montrez-vous, bon sang !	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Vous avez peut-être raison. Ou alors, vous parlez tout seul. On ne reconnaît pas assez les mérites de la folie. Les fous ne savent pas ce qu'ils font. . . Et vous ?	}{	Vous avez peut-être raison. Ou alors, vous parlez toute seule. On ne reconnaît pas assez les mérites de la folie. Les fous ne savent pas ce qu'ils font. . . Et vous ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Montrez-vous, bon sang !	}{	Montrez-vous, bon sang !	}{	101	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	94	}{	Où. Etes. Vous.	}{	Où. Etes. Vous.	}{	111	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	Je me lasse de ce jeu. Quand me lasse, je ris aux dépens des autres.	}{	Je me lasse de ce jeu. Quand me lasse, je ris aux dépens des autres.	}{	111	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Jouez cartes sur table, et je vous montrerai ce que j'ai en main.	}{	Jouez cartes sur table, et je vous montrerai ce que j'ai en main.	}{	#	}{	talkGaryMiddle()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	Vous êtes malade.	}{	Vous êtes malade.	}{	761	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	J'ai un as anarch, un valet, un prince, et vous alliez me donner une reine.	}{	J'ai un as anarch, un valet, un prince, et vous alliez me donner une reine.	}{	91	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	Même avec des cartes dans ma manche, je perds.	}{	Même avec des cartes dans ma manche, je perds.	}{	91	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Je suis ici ! Attendez, peut-être plutôt là. . . Ou alors derrière vous, avec une hache à la main. . . Vous vous êtes déjà demandé si votre peur, si elle avait une voix, ne ressemblerait pas à ça ?	}{	Je suis ici ! Attendez, peut-être plutôt là. . . Ou alors derrière vous, avec une hache à la main. . . Vous vous êtes déjà demandé si votre peur, si elle avait une voix, ne ressemblerait pas à ça ?	}{	#	}{	pc.RemoveCamera()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Que voulez-vous ?	}{	Que voulez-vous ?	}{	241	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue") and not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Vous vouliez quelque chose ?	}
+{	113	}{	Que voulez-vous ?	}{	Que voulez-vous ?	}{	231	}{	IsClan(pc,"Toreador") or IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	Que voulez-vous ?	}{	Que voulez-vous ?	}{	121	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	Arrêtez.	}{	Arrêtez.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Arrêtez.	}
+{	117	}{	Vous n'arrangez pas votre cas. Sortez, et je ne vous tuerai pas.	}{	Vous n'arrangez pas votre cas. Sortez, et je ne vous tuerai pas.	}{	221	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	Plus je vous vois, voix, plus je veux vous rendre muette. J'aimerais vous voir. . .	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Vous devriez le savoir, Nosferatu. Que veulent les nôtres ? Nous voulons savoir. Quelle est la première question que vous poseriez, à ma place ?	}{	Vous devriez le savoir, Nosferatu. Que veulent les nôtres ? Nous voulons savoir. Quelle est la première question que vous poseriez, à ma place ?	}{	#	}{	talkGaryUp()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	Y a-t-il du danger ?	}{	Y a-t-il du danger ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	Etes-vous un fantôme ?	}{	Etes-vous un fantôme ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	Que faites-vous ici ?	}{	Que faites-vous ici ?	}{	711	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Perdu. Recommencez.	}{	Perdu. Recommencez.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Ca va ?	}{	Ca va ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	Etes-vous un fantôme ?	}{	Etes-vous un fantôme ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	134	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	Que faites-vous ici ?	}{	Que faites-vous ici ?	}{	711	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	Exactement. Parce que je sais déjà qui vous êtes. Mais je ne sais pas pourquoi vous êtes ici. Et quand j'ignore quelque chose, je veux l'apprendre.	}{	Exactement. Parce que je sais déjà qui vous êtes. Mais je ne sais pas pourquoi vous êtes ici. Et quand j'ignore quelque chose, je veux l'apprendre.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	Je cherche les Nosferatus.	}{	Je cherche les Nosferatus.	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	Je viens pour le Sarcophage d'Ankara.	}{	Je viens pour le Sarcophage d'Ankara.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	Je viens vous tuer.	}{	Je viens vous tuer.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Et pourquoi voulez-vous les trouver ?	}{	Et pourquoi voulez-vous les trouver ?	}{	#	}{	talkGaryRight()	}{	G.Gary_Reason = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Je veux me joindre à eux.	}{	Je veux me joindre à eux.	}{	161	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	Je viens pour le Sarcophage d'Ankara.	}{	Je viens pour le Sarcophage d'Ankara.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	Je viens vous tuer.	}{	Je viens vous tuer.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	C'est pas une bibliothèque, ici, vous savez. On n'accepte pas n'importe qui. Surtout pas quand ce sont des gens qui nous cachent des choses. . . [pause et siffle le mot]boss.	}{	C'est pas une bibliothèque, ici, vous savez. On n'accepte pas n'importe qui. Surtout pas quand ce sont des gens qui nous cachent des choses. . . [pause et siffle le mot]boss.	}{	#	}{	}{	G.Gary_Reason = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	Je viens pour le Sarcophage d'Ankara.	}{	Je viens pour le Sarcophage d'Ankara.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	163	}{	Je viens vous tuer.	}{	Je viens vous tuer.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	[Ricane] Oh le vilain mensonge. . . On ne peut pas tuer ce qu'on ne voit pas. Vous voulez me tuer ? La nuit a des yeux, et ils sont tous à moi. Vous n'aimeriez pas ça. . . Qu'on vous épie, chaque seconde jusqu'à votre mort. . .	}{	[Ricane] Oh le vilain mensonge. . . On ne peut pas tuer ce qu'on ne voit pas. Vous voulez me tuer ? La nuit a des yeux, et ils sont tous à moi. Vous n'aimeriez pas ça. . . Qu'on vous épie, chaque seconde jusqu'à votre mort. . .	}{	#	}{	talkGaryLeft()	}{	G.Gary_Reason = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Je veux rejoindre les Nosferatus.	}{	Je veux rejoindre les Nosferatus.	}{	161	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	Je viens pour le Sarcophage d'Ankara.	}{	Je viens pour le Sarcophage d'Ankara.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je viens pour la vieille boîte. . .	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Vraiment ? Réveillez-vous ! A qui croyez-vous avoir à faire ? Pourquoi sinon LaCroix vous enverrait-il sur cette chasse ? Eh oui, je sais que vous travaillez pour le prince.	}{	Vraiment ? Réveillez-vous ! A qui croyez-vous avoir affaire ? Pourquoi sinon LaCroix vous enverrait-il sur cette chasse ? Eh oui, je sais que vous travaillez pour le prince.	}{	#	}{	talkGaryBack()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	Parlez-moi simplement du sarcophage et je partirai d'ici.	}{	Parlez-moi simplement du sarcophage et je partirai d'ici.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi l'histoire de la boîte.	}
+{	183	}{	Alors pourquoi m'avoir posé la question ?	}{	Alors pourquoi m'avoir posé la question ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi posez-vous des questions auxquelles vous avez la réponse ?	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Parce que j'aime m'entendre parler [grogne]. . . On n'a pas des visiteurs tous les jours, j'avais besoin d'entendre votre réponse. Vous êtes loin de chez vous. Et ni le prince ni Isaac ni Nines n'a la moindre autorité, ici. Faites attention.	}{	Parce que j'aime m'entendre parler [grogne]. . . On n'a pas des visiteurs tous les jours, j'avais besoin d'entendre votre réponse. Vous êtes loin de chez vous. Et ni le prince ni Isaac ni Nines n'a la moindre autorité, ici. Faites attention.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Qui êtes-vous ? Montrez-vous.	}{	Qui êtes-vous ? Montrez-vous.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Laissez-moi vous voir, voix.	}
+{	193	}{	Parlez-moi simplement du sarcophage, et je partirai d'ici.	}{	Parlez-moi simplement du sarcophage, et je partirai d'ici.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi l'histoire de la boîte.	}
+{	194	}{	Vous mettez vraiment ma patience à rude épreuve.	}{	Vous mettez vraiment ma patience à rude épreuve.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je m'impatiente, voix.	}
+{	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Vous auriez dû venir plus tôt. Cette pièce a été vendue.	}{	Vous auriez dû venir plus tôt. Cette pièce a été vendue.	}{	#	}{	talkGaryMiddle()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	Qui l'a achetée ?	}{	Qui l'a achetée ?	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez un double du reçu ?	}
+{	203	}{	Qui êtes-vous ? Montrez-vous.	}{	Qui êtes-vous ? Montrez-vous.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Laissez-moi vous voir, voix.	}
+{	204	}{	Vous mettez vraiment ma patience à rude épreuve.	}{	Vous mettez vraiment ma patience à rude épreuve.	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je m'impatiente, voix.	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	[Glousse]Eh bien, que vous arrive-t-il ? Vous avez peur ? C'est bien. . .  Ca montre que vous m'avez écouté.	}{	[Glousse]Eh bien, que vous arrive-t-il ? Vous avez peur ? C'est bien. . .  Ca montre que vous m'avez écouté.	}{	#	}{	talkGaryLeft()	}{	G.Gary_Scared = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Que voulez-vous ?	}{	Que voulez-vous ?	}{	241	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue") and not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Vous vouliez quelque chose ?	}
+{	213	}{	Que voulez-vous ?	}{	Que voulez-vous ?	}{	231	}{	IsClan(pc,"Toreador") or IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	Que voulez-vous ?	}{	Que voulez-vous ?	}{	121	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	Vous n'arrangez pas votre cas. Sortez, et je ne vous tuerai pas.	}{	Vous n'arrangez pas votre cas. Sortez, et je ne vous tuerai pas.	}{	221	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	Plus je vous vois, voix, plus je veux vous rendre muette. J'aimerais vous voir. . .	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Oh oui, pourquoi pas. . . Vous avez un cerveau, dans votre petit crâne, ou c'est juste de la déco ?	}{	Oh oui, pourquoi pas. . . Vous avez un cerveau, dans votre petit crâne, ou c'est juste de la déco ?	}{	#	}{	}{	G.Gary_Scared = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Que voulez-vous ?	}{	Que voulez-vous ?	}{	241	}{	not IsClan(pc,"Toreador") and not IsClan(pc,"Ventrue") and not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Vous vouliez quelque chose ?	}
+{	223	}{	Que voulez-vous ?	}{	Que voulez-vous ?	}{	231	}{	IsClan(pc,"Toreador") or IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	Que voulez-vous ?	}{	Que voulez-vous ?	}{	121	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	Arrêtez.	}{	Arrêtez.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Arrêtez.	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	[Glousse]Je veux vous mettre votre charmante tête dans un aquarium à piranhas, appliquer un vernis acide sur votre superbe corps, jeter votre miroir de poche sous une moissonneuse-batteuse pour que vous alliez le récupérer. Mais je ne suis pas un boucher. Et vous ?	}{	[Glousse]Je veux vous mettre votre charmante tête dans un aquarium à piranhas, appliquer un vernis acide sur votre superbe corps, jeter votre miroir de poche sous une moissonneuse-batteuse pour que vous alliez le récupérer. Mais je ne suis pas un boucher. Et vous ?	}{	#	}{	talkGaryBack()	}{	G.Gary_Scared = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Je viens pour le Sarcophage d'Ankara.	}{	Je viens pour le Sarcophage d'Ankara.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	233	}{	Je viens vous tuer.	}{	Je viens vous tuer.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	[Glousse]Je ne sais pas, hein. . . Pourquoi vous ne me le diriez pas. Après tout, ce n'est pas moi qui débarque sans être invité.	}{	[Glousse]Je ne sais pas, hein. . . Pourquoi vous ne me le diriez pas. Après tout, ce n'est pas moi qui débarque sans être invité.	}{	#	}{	talkGaryRight()	}{	G.Gary_Scared = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	Je viens pour le Sarcophage d'Ankara.	}{	Je viens pour le Sarcophage d'Ankara.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je viens pour cette vieille boîte.	}
+{	243	}{	Je viens vous tuer.	}{	Je viens vous tuer.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je viens pour vos yeux. Et vos oreilles et votre visage et votre sang.	}
+{	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	J'aime parler affaires face à face.	}{	J'aime parler affaires face à face.	}{	#	}{	talkGaryLeft()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	Montrez-vous.	}{	Montrez-vous.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors faites-moi face.	}
+{	253	}{	Alors montrez-vous, monstre.	}{	Alors montrez-vous, monstre.	}{	271	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	J'apprécie la laideur, de temps en temps.	}
+{	254	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Je fais de mon mieux, vous savez.	}{	Je fais de mon mieux, vous savez.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Qui êtes-vous ? Montrez-vous.	}{	Qui êtes-vous ? Montrez-vous.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Faites-moi face.	}
+{	263	}{	Sortez. . . Je vous mets au défi de me dire ça en face.	}{	Sortez. . . Je vous mets au défi de me dire ça en face.	}{	271	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	Prouvez-moi en face ce que vous me dites.	}
+{	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Vraiment ? Vous ne voulez pas avoir ma tête qui flotte dans votre inconscient. C'est un vrai cauchemar.	}{	Vraiment ? Vous ne voulez pas avoir ma tête qui flotte dans votre inconscient. C'est un vrai cauchemar.	}{	#	}{	talkGaryBack()	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	Oui. Venez.	}{	Oui. Venez.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ouiiii. . .	}
+{	273	}{	Toute cette attente me tue.	}{	Toute cette attente me tue.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les cauchemars, voilà tout ce qu'il me reste.	}
+{	274	}{	J'aime regarder mes victimes dans les yeux avant de les démembrer.	}{	J'aime regarder mes victimes dans les yeux avant de les démembrer.	}{	281	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Laissez-moi voir vos yeux, pour que je puisse vous les enfoncer dans la gorge.	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	Attention à ce que vous voulez, on pourrait vous exaucer. . . [Glousse]	}{	Attention à ce que vous voulez, on pourrait vous exaucer. . . [Glousse]	}{	#	}{	pc.RemoveCamera()	}{	G.Gary_Emerge = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Ouais?	}{	Ouais?	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je le veux !	}
+{	283	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	284	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Derrière vous !	}{	Derrière vous !	}{	#	}{	}{	G.Gary_Emerge = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	(Auto-Link)	}{	(Auto-Link)	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	293	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	294	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Bouh !	}{	Bouh !	}{	#	}{	pc.SetCamera("Dynamic1"); npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	341	}{	not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	. . . Bonjour. C'est quoi votre nom ?	}
+{	303	}{	Vous êtes la chose la plus laide et la plus repoussante que j'aie jamais vue.	}{	Vous êtes la chose la plus laide et la plus repoussante que j'aie jamais vue.	}{	311	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	304	}{	Vous êtes laid, vous alors. . .	}{	Vous êtes laid, vous alors. . .	}{	331	}{	Humanity -8 & not IsClan(pc,"Nosferatu") and not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Intéressant visage.	}
+{	305	}{	Bon sang, même votre mère doit avoir peur de vous. Si vous avez une mère.	}{	Bon sang, même votre mère doit avoir peur de vous. Si vous avez une mère.	}{	331	}{	Humanity -8 & not IsClan(pc,"Nosferatu") and not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai vu pire. 	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	En garde, Toréador. Assez de vos fanfaronnades et de votre morgue ! Je déteste votre détermination à cacher votre nature sous les dernières modes de Paris. Vous êtes une créature morte - une créature de l'ombre. Il serait temps de vous comporter comme tel.	}{	En garde, Toréador. Assez de vos fanfaronnades et de votre morgue ! Je déteste votre détermination à cacher votre nature sous les dernières modes de Paris. Vous êtes une créature morte - une créature de l'ombre. Il serait temps de vous comporter comme tel.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	313	}{	On est jaloux ? La surface vous manque ? Ou le fait d'avoir un visage ?	}{	On est jaloux ? La surface vous manque ? Ou le fait d'avoir un visage ?	}{	521	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	314	}{	Où est le sarcophage ?	}{	Où est le sarcophage ?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	[Rit]Vous n'avez pas compris, hein ? Vous êtes juste un élément décoratif. Faites comme si vous étiez encore en vie. Faites du dessin. Quel gâchis de sang. . .	}{	[Rit]Vous n'avez pas compris, hein ? Vous êtes juste un élément décoratif. Faites comme si vous étiez encore en vie. Faites du dessin. Quel gâchis de sang. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	323	}{	Où est le sarcophage ?	}{	Où est le sarcophage ?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	324	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	325	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	[Rit]Atroce, n'est-ce pas ? J'aime me regarder dans le miroir - ça forge le caractère.	}{	[Rit]Atroce, n'est-ce pas ? J'aime me regarder dans le miroir - ça forge le caractère.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quel est votre nom, visage ?	}
+{	333	}{	Où est le sarcophage ?	}{	Où est le sarcophage ?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où est la boîte ?	}
+{	334	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	Quoi ? Vous ne me reconnaissez pas ? Avec tous les films que j'ai tournés ? Le Grand Gary Golden ? Mais si, Ville Pirate, ou Hôtel des Claquettes. . . Ca remonte, c'est vrai. . . Bah, cette époque est révolue. Aujourd'hui, on m'appelle simplement Gary.	}{	Quoi ? Vous ne me reconnaissez pas ? Avec tous les films que j'ai tournés ? Le Grand Gary Golden ? Mais si, Ville Pirate, ou Hôtel des Claquettes. . . Ca remonte, c'est vrai. . . Bah, cette époque est révolue. Aujourd'hui, on m'appelle simplement Gary.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Gary_Known = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	Où est le sarcophage ?	}{	Où est le sarcophage ?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où est la boîte ?	}
+{	343	}{	C'est un plaisir de vous rencontrer. Bon, où est le sarcophage ?	}{	C'est un plaisir de vous rencontrer. Bon, où est le sarcophage ?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Charmant. La boîte ?	}
+{	344	}{	Dites-moi juste où est le sarcophage, monstruosité. 	}{	Dites-moi juste où est le sarcophage, monstruosité. 	}{	351	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	Ne parlez que de la boîte !	}
+{	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	Où, mais où ai-je bien pu l'envoyer ? Ce truc change plus souvent de mains que Mae West. . . Au fait, pourquoi je vous le dirais ?	}{	Où, mais où ai-je bien pu l'envoyer ? Ce truc change plus souvent de mains que Mae West. . . Au fait, pourquoi je vous le dirais ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	Je travaille pour le prince.	}{	Je travaille pour le prince.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Un type dans une tour m'a demandé de le trouver, je ne sais pas.	}
+{	353	}{	Parce que je vous ai débarrassé de ce Tzimisce.	}{	Parce que je vous ai débarrassé de ce Tzimisce.	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai sauvé une voix des enfants du monstre.	}
+{	354	}{	J'ai nettoyé vos égouts du Tzimisce et vous ai aussi apporté des objets mettant en danger la Masquerade.	}{	J'ai nettoyé vos égouts du Tzimisce et vous ai aussi apporté des objets mettant en danger la Masquerade.	}{	371	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_warr_clipboard") and pc.HasItem("item_g_warr_ledger_1") and pc.HasItem("item_g_warr_ledger_2") and pc.HasItem("item_g_warrens4_passkey")	}{	pc.RemoveItem("item_g_warr_clipboard"); pc.RemoveItem("item_g_warr_ledger_1"); pc.RemoveItem("item_g_warr_ledger_2"); pc.RemoveItem("item_g_warrens4_passkey")		}{	}{	}{	}{	}{	}{	}{	Je suis allé à travers les tunnels, tuant des choses et collectant des trucs pour vous.	}
+{	355	}{	Parce que si vous ne le faites pas, je vais écraser ce qui vous reste de visage avec mes pieds.	}{	Parce que si vous ne le faites pas, je vais écraser ce qui vous reste de visage avec mes pieds.	}{	381	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	A présent que je vois un visage, j'ai quelque chose à faire saigner.	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Oh, il commande toujours, à la surface ? A votre avis, combien de temps ça va durer ? Il paraît qu'il était furieux - j'aurais aimé voir ça. Bon, je vais être sympa. . .	}{	Oh, il commande toujours, à la surface ? A votre avis, combien de temps ça va durer ? Il paraît qu'il était furieux - j'aurais aimé voir ça. Bon, je vais être sympa. . .	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	(Auto-Link)	}{	(Auto-Link)	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	363	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	364	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	Oh, oui, quel sauvetage. Sans ce terrible Tzimisce, vous seriez encore en train de nous chercher. Ce n'était pas vraiment un service. Mais. . .	}{	Oh, oui, quel sauvetage. Sans ce terrible Tzimisce, vous seriez encore en train de nous chercher. Ce n'était pas vraiment un service. Mais. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	(Auto-Link)	}{	(Auto-Link)	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	373	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	374	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	Epargnez-vous, vous allez avoir besoin de forces pour récupérer le sarcophage. Voyez-vous. . .	}{	Epargnez-vous, vous allez avoir besoin de forces pour récupérer le sarcophage. Voyez-vous. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	(Auto-Link)	}{	(Auto-Link)	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	383	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	384	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	385	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	393	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	394	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	395	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	403	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	404	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	405	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	406	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	407	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	413	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	414	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	423	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	433	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	434	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	435	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	436	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	443	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	444	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	445	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	446	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Dites-moi, la voix dans votre tête, pourquoi vous êtes ici. Vous pouvez me faire confiance, boss. . .	}{	Dites-moi, la voix dans votre tête, pourquoi vous êtes ici. Vous pouvez me faire confiance, boss. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Si vous êtes dans ma tête, alors vous devez déjà le savoir. Dites-le moi.	}{	Si vous êtes dans ma tête, alors vous devez déjà le savoir. Dites-le moi.	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	453	}{	Vous m'avez dit de. . . non. . . une autre voix. . . celle dans la tour. . .	}{	Vous m'avez dit de. . . non. . . une autre voix. . . celle dans la tour. . .	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	454	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	455	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	Réfléchissez bien. . . Pour qui êtes vous ici ? Et pourquoi ?	}{	Réfléchissez bien. . . Pour qui êtes vous ici ? Et pourquoi ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	Hé hé, c'est vous. Bonne blague. Allez, venez jouer.	}{	Hé hé, c'est vous. Bonne blague. Allez, venez jouer.	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	463	}{	Ma maman m'a dit de ne pas parler aux amis imaginaires.	}{	Ma maman m'a dit de ne pas parler aux amis imaginaires.	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	464	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	473	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	474	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Voyons. . . pour un frère rat d'égout, je peux faire un prix. . .	}{	Voyons. . . pour une soeur rat d'égout, je peux faire un prix. . .	}{	#	}{	}{	pc.GiveItem("item_g_eldervitaepack")	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	483	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	484	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	485	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	Voyons ce que nous avons là. . .	}{	Voyons ce que nous avons là. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	}{	pc.GiveItem("item_g_bluebloodpack")	}{	}{	}{	}{	}{	}{	}{	}
+{	493	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	494	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	495	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	Voyons un peu. Pour quelqu'un comme vous, ça ne va pas être donné.	}{	Voyons un peu. Pour quelqu'un comme vous, ça ne va pas être donné.	}{	#	}{	}{	pc.GiveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	503	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	504	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	505	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	Alors, on a perdu son chemin ?	}{	Alors, on a perdu son chemin ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	Comme toujours.	}{	Comme toujours.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	513	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	514	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	515	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	516	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	517	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	520	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	521	}{	Je vous ai manqué ?	}{	Je vous ai manqué ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	Toi aussi ?	}{	Toi aussi ?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	523	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	524	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Je sais où est le jouet de votre prince. Ici, tout se sait, ou presque. Dites-moi, vous avez déjà affronté un Kuei-Jin ?	}{	Je sais où est le jouet de votre prince. Ici, tout se sait, ou presque. Dites-moi, vous avez déjà affronté un Kuei-Jin ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	Non.	}{	Non.	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Peut-être. . . Ce sont les choses qui sortent d'un trou et qu'on frappe avec un marteau ?	}
+{	533	}{	Un Kuei-Jin ? C'est quoi ?	}{	Un Kuei-Jin ? C'est quoi ?	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	???	}
+{	534	}{	Quel rapport avec le sarcophage ?	}{	Quel rapport avec le sarcophage ?	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Et la boîte ?	}
+{	535	}{	Oui, des centaines. Je suis une machine à tuer des Kuei-jin. . .	}{	Oui, des centaines. Je suis une machine à tuer des Kuei-jin. . .	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, des centaines. Je suis une machine à tuer des Kuei-jin. . .	}
+{	536	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	Les Kuei-Jin sont des vampires, mais pas comme nous. On les appelle parfois des vampires d'Orient, mais ce n'est pas vraiment ça. C'est juste un truc de plus qui peut vous donner la Mort Ultime si vous ne faites pas gaffe. . .	}{	Les Kuei-Jin sont des vampires, mais pas comme nous. On les appelle parfois des vampires d'Orient, mais ce n'est pas vraiment ça. C'est juste un truc de plus qui peut vous donner la Mort Ultime si vous ne faites pas gaffe. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Mais encore. . .	}{	Mais encore. . .	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ouiiii. . .	}
+{	543	}{	Dites, vous pourriez vous presser un peu ? J'ai un sarcophage à récupérer, moi.	}{	Dites, vous pourriez vous presser un peu ? J'ai un sarcophage à récupérer, moi.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je devrais secourir la boîte. . .	}
+{	544	}{	Je crois en avoir tué un à Santa Monica. Quoi d'autre à leur sujet ?	}{	Je crois en avoir tué un à Santa Monica. Quoi d'autre à leur sujet ?	}{	571	}{	G.Knox_Done == 1	}{	}{	}{	}{	}{	}{	}{	}{	Les voix prétendent que j'en ai pourfendu un chez la dame de la mer. Alors ?	}
+{	545	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	546	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	547	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	548	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	Je ne suis pas du genre à parler pour ne rien dire, comme ce petit péteux de LaCroix. Vous voulez savoir ? Bon, je pense que quelqu'un est en train d'en parler. . .  Eh, mais c'est moi !	}{	Je ne suis pas du genre à parler pour ne rien dire, comme ce petit péteux de LaCroix. Vous voulez savoir ? Bon, je pense que quelqu'un est en train d'en parler. . .  Eh, mais c'est moi !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	Bon, j'écoute.	}{	Bon, j'écoute.	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, voix, je vous entends.	}
+{	553	}{	Vous avez de la chance de me servir à quelque chose. Pour l'instant.	}{	Vous avez de la chance de me servir à quelque chose. Pour l'instant.	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez, voix, ou taisez-vous à jamais.	}
+{	554	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	555	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	556	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	558	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	[Rire]Elle est bonne, celle-là. Vous avez encore mangé quelqu'un de pas frais, vous, hein ?	}{	[Rire]Elle est bonne, celle-là. Vous avez encore mangé quelqu'un de pas frais, vous, hein ?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	(Auto-Link)	}{	(Auto-Link)	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	563	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	564	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	565	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	566	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	Même pour ce vieux Gary, il n'y a pas grand-chose de plus à dire. Vous voyez, j'ai envoyé un agent, Barrabus, pour fouiner dans Chinatown. . . pirater, se faire quelques contacts. . . mais il ne m'appelle plus, et ça me fend le coeur.	}{	Même pour ce vieux Gary, il n'y a pas grand-chose de plus à dire. Vous voyez, j'ai envoyé un agent, Barrabus, pour fouiner dans Chinatown. . . pirater, se faire quelques contacts. . . mais il ne m'appelle plus, et ça me fend le coeur.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	Je vois. Continuez.	}{	Je vois. Continuez.	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous connaissez les téléphones portables, dans cette ville. . .	}
+{	573	}{	Et laissez-moi deviner, vous voulez que j'aille le retrouver ?	}{	Et laissez-moi deviner, vous voulez que j'aille le retrouver ?	}{	751	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous voulez que je m'occupe de cette affaire. . . parce que je ne respecte aucune règle.	}
+{	574	}{	Bon sang, mais chaque fois que j'ai besoin de quelque chose, on me demande un service !	}{	Bon sang, mais chaque fois que j'ai besoin de quelque chose, on me demande un service !	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	POURQUOI LES MOTS NE SONT-ILS JAMAIS CEUX QUE JE VEUX ENTENDRE ?	}
+{	575	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	576	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	577	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	Un petit voyage à Chinatown, ça vous dit ? Vous ne courrez aucun danger, là-bas. Quant à moi. . . Le mieux, ce sera de ne pas mentionner mon nom. C'est le prix de mes renseignements, pour l'instant. Vous faites sortir notre ami de Chinatown, et je vous donne ce qu'il vous faut.	}{	Un petit voyage à Chinatown, ça vous dit ? Vous ne courrez aucun danger, là-bas. Quant à moi. . . Le mieux, ce sera de ne pas mentionner mon nom. C'est le prix de mes renseignements, pour l'instant. Vous faites sortir notre ami de Chinatown, et je vous donne ce qu'il vous faut.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	Ca marche. Dites-moi ce que je dois faire. 	}{	Ca marche. Dites-moi ce que je dois faire. 	}{	611	}{	}{	}{	}{	}{	}{	}{	}{	}{	A quoi dois-je me soumettre ?	}
+{	583	}{	J'y vais, si ça vaut la peine que je me déplace. 	}{	J'y vais, si ça vaut la peine que je me déplace. 	}{	601	}{	}{	}{	}{	}{	}{	}{	}{	}{	PLUS que ce dont j'ai besoin !	}
+{	584	}{	Pas question. Débrouillez-vous, moi je pars.	}{	Pas question. Débrouillez-vous, moi je pars.	}{	601	}{	}{	}{	}{	}{	}{	}{	}{	}{	Faites porter votre voix jusque là. Je ne serai pas votre bouche.	}
+{	585	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	586	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	587	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	[Ricane]Bienvenue à la vie après la mort. On s'éclate, hein ?	}{	[Ricane]Bienvenue à la vie après la mort. On s'éclate, hein ?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	(Auto-Link)	}{	(Auto-Link)	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	593	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	594	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	595	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	596	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	597	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	598	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	599	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	600	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	601	}{	[Irrité]Eh, faites-nous gagner du temps, OK ? Vous n'avez aucun moyen de négocier. Je sais que le prince vous met la pression. Fermez-la, ravalez votre ressentiment, et ouvrez les oreilles.	}{	[Irrité]Eh, faites-nous gagner du temps, OK ? Vous n'avez aucun moyen de négocier. Je sais que le prince vous met la pression. Fermez-la, ravalez votre ressentiment, et ouvrez les oreilles.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	(Auto-Link)	}{	(Auto-Link)	}{	611	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	603	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	604	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	605	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	Le Temple doré de Chinatown - c'est une pâle copie d'un vrai palais. . . On dirait plutôt un truc de parc d'attraction. C'est là que vous trouverez la chef des Kuei-Jin de LA. Elle s'appelle Ming Xiao.	}{	Le Temple doré de Chinatown - c'est une pâle copie d'un vrai palais. . . On dirait plutôt un truc de parc d'attraction. C'est là que vous trouverez la chef des Kuei-Jin de LA. Elle s'appelle Ming Xiao.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	(Auto-Link)	}{	(Auto-Link)	}{	621	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	613	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	614	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	615	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	616	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	617	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	618	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	619	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	620	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	Ca paraît dangereux ? Non, c'est pas une mission suicide. Vous serez plus une curiosité qu'une menace. . . parlez à Xiao. Demandez-lui où est mon gars et ramenez-le moi. Une fois qu'il sera à l'abri, je vous dirai tout ce qu'il y a à savoir sur le sarcophage.	}{	Ca paraît dangereux ? Non, c'est pas une mission suicide. Vous serez plus une curiosité qu'une menace. . . parlez à Xiao. Demandez-lui où est mon gars et ramenez-le moi. Une fois qu'il sera à l'abri, je vous dirai tout ce qu'il y a à savoir sur le sarcophage.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Chinatown_Open = 1; G.Gary_Quest = 1; pc.SetQuest("Barabus",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	Les vampires ne sont pas en guerre avec les Kuei-Jin ?	}{	Les vampires ne sont pas en guerre avec les Kuei-Jin ?	}{	631	}{	}{	}{	}{	}{	}{	}{	}{	}{	Notre sang n'est-il pas en querelle ?	}
+{	623	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	481	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Comment entrer dans le champ de mines sans exploser ?	}
+{	624	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	491	}{	not IsClan(pc,"Nosferatu") and not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Comment entrer dans le champ de mines sans exploser ?	}
+{	625	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	501	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	626	}{	Pourquoi vous n'y allez pas en personne ?	}{	Pourquoi vous n'y allez pas en personne ?	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi votre voix ne porte-t-elle pas jusqu'ici ?	}
+{	627	}{	Bon, j'y vais, mais ne cherchez pas à me doubler après coup.	}{	Bon, j'y vais, mais ne cherchez pas à me doubler après coup.	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mmm. . . Je vais aller en Chine. . . mais ne m'entravez pas, voix. . .	}
+{	628	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	629	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	630	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	631	}{	Pas que je sache. Pour l'instant, c'est l'oeil du cyclone, là-bas. Alors ne semez pas le vent, hein. . .	}{	Pas que je sache. Pour l'instant, c'est l'oeil du cyclone, là-bas. Alors ne semez pas le vent, hein. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	481	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Comment entrer dans le champ de mines sans exploser ?	}
+{	633	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	491	}{	not IsClan(pc,"Nosferatu") and not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	Comment entrer dans le champ de mines sans exploser ?	}
+{	634	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	501	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	635	}{	Pourquoi vous n'y allez pas en personne ?	}{	Pourquoi vous n'y allez pas en personne ?	}{	661	}{	G.Gary_Homage == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi votre voix ne porte-t-elle pas jusqu'ici ?	}
+{	636	}{	Bon, j'y vais, mais ne cherchez pas à me doubler après coup.	}{	Bon, j'y vais, mais ne cherchez pas à me doubler après coup.	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mmm. . . Je vais aller en Chine. . . mais ne m'entravez pas, voix. . .	}
+{	637	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	638	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	640	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	641	}{	Utilisez votre tête. Et vos yeux. Chinatown est plus dangereuse que dix Hollywood. Sauf si vous agissez intelligemment. 	}{	Utilisez votre tête. Et vos yeux. Chinatown est plus dangereuse que dix Hollywood. Sauf si vous agissez intelligemment. 	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	Les vampires ne sont pas en guerre avec les Kuei-Jin ?	}{	Les vampires ne sont pas en guerre avec les Kuei-Jin ?	}{	631	}{	}{	}{	}{	}{	}{	}{	}{	}{	Notre sang n'est-il pas en querelle ?	}
+{	643	}{	Pourquoi vous n'y allez pas en personne ?	}{	Pourquoi vous n'y allez pas en personne ?	}{	661	}{	G.Gary_Homage == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi votre voix ne porte-t-elle pas jusqu'ici ?	}
+{	644	}{	Bon, j'y vais, mais ne cherchez pas à me doubler après coup.	}{	Bon, j'y vais, mais ne cherchez pas à me doubler après coup.	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mmm. . . Je vais aller en Chine. . . mais ne m'entravez pas, voix. . .	}
+{	645	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	646	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	647	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	648	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	650	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	651	}{	Le truc derrière votre beau petit visage, c'est un cerveau. Si vous voulez survivre dans Chinatown, il va falloir vous en servir. Ou si ça ne marche pas, frappez-les avec votre miroir de poche [glousse].	}{	Le truc derrière votre beau petit visage, c'est un cerveau. Si vous voulez survivre dans Chinatown, il va falloir vous en servir. Ou si ça ne marche pas, frappez-les avec votre miroir de poche [glousse].	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	652	}{	Les vampires ne sont pas en guerre avec les Kuei-Jin ?	}{	Les vampires ne sont pas en guerre avec les Kuei-Jin ?	}{	631	}{	}{	}{	}{	}{	}{	}{	}{	}{	Notre sang n'est-il pas en querelle ?	}
+{	653	}{	Pourquoi vous n'y allez pas en personne ?	}{	Pourquoi vous n'y allez pas en personne ?	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi votre voix ne porte-t-elle pas jusqu'ici ?	}
+{	654	}{	Bon, j'y vais, mais ne cherchez pas à me doubler après coup.	}{	Bon, j'y vais, mais ne cherchez pas à me doubler après coup.	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mmm. . . Je vais aller en Chine. . . mais ne m'entravez pas, voix. . .	}
+{	655	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	656	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	657	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	658	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	659	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	660	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	661	}{	Pas question. . . C'est Chinatown.	}{	Pas question. . . C'est Chinatown.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Gary_Homage = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	Les vampires ne sont pas en guerre avec les Kuei-Jin ?	}{	Les vampires ne sont pas en guerre avec les Kuei-Jin ?	}{	631	}{	}{	}{	}{	}{	}{	}{	}{	}{	Notre sang n'est-il pas en querelle ?	}
+{	663	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	481	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Comment entrer dans le champ de mines sans exploser ?	}
+{	664	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	491	}{	not IsClan(pc,"Nosferatu") and not IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	665	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	501	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	666	}{	Bon, j'y vais, mais ne cherchez pas à me doubler après coup.	}{	Bon, j'y vais, mais ne cherchez pas à me doubler après coup.	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mmm. . . Je vais aller en Chine. . . mais ne m'entravez pas, voix. . .	}
+{	667	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	668	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	669	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	670	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	671	}{	Bien sûr. Pour quel genre de monstre vous me prenez ? [Rit]Il y a une méthode dans mon délire. Il y a une cabine téléphonique à Chinatown. Je vous appellerai là-bas une fois que Barrabus sera à l'abri. Jusque là, vous ne saurez jamais où je me trouve.	}{	Bien sûr. Pour quel genre de monstre vous me prenez ? [Rit]Il y a une méthode dans mon délire. Il y a une cabine téléphonique à Chinatown. Je vous appellerai là-bas une fois que Barrabus sera à l'abri. Jusque là, vous ne saurez jamais où je me trouve.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	672	}{	Comme si c'était fait. Au revoir.	}{	Comme si c'était fait. Au revoir.	}{	0	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	J'ai fini avant même de commencer.	}
+{	673	}{	Oui, retournez dans l'ombre. C'est votre place. Au revoir. 	}{	Oui, retournez dans l'ombre. C'est votre place. Au revoir. 	}{	0	}{	not IsClan(pc,"Nosferatu")	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Voix, fondez-vous dans les ténèbres.	}
+{	674	}{	Si vous me grugez, vous en mourrez. Au revoir.	}{	Si vous me grugez, vous en mourrez. Au revoir.	}{	0	}{	Humanity -7	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	Si je fais ce que la voix ordonne, la voix FERA ce qu'elle a promis.	}
+{	675	}{	Les Kuei-Jin vont regretter d'avoir débarqué en ville.	}{	Les Kuei-Jin vont regretter d'avoir débarqué en ville.	}{	721	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Voix, vous envoyez le chaos même sur ces terres.	}
+{	676	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	678	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	679	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	680	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	681	}{	Souvenez-vous, hein, vous serez chez eux. Ramenez-le nous. Si vous les énervez, leur réaction pourrait bien vous déplaire.	}{	Souvenez-vous, hein, vous serez chez eux. Ramenez-le nous. Si vous les énervez, leur réaction pourrait bien vous déplaire.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	682	}{	Je m'en souviendrai. Au revoir.	}{	Je m'en souviendrai. Au revoir.	}{	0	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	J'ai fini avant même de commencer.	}
+{	683	}{	On verra. . . Au revoir.	}{	On verra. . . Au revoir.	}{	0	}{	}{	G.Gary_Disappear = 1; garyDisappear(); garyInteractionEnd()	}{	}{	}{	}{	}{	}{	}{	. . . Hé hé. . .	}
+{	684	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	685	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	686	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	687	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	688	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	689	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	690	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	691	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	692	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	693	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	694	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	695	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	696	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	697	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	698	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	699	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	700	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	701	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	702	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	703	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	704	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	705	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	706	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	707	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	708	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	709	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	710	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	711	}{	Vous en avez dans la tête, n'est-ce pas ?	}{	Vous en avez dans la tête, n'est-ce pas ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	712	}{	(Auto-Link)	}{	(Auto-Link)	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	713	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	714	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	715	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	716	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	717	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	718	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	719	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	720	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	721	}{	Si tu veux.	}{	Si tu veux.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	722	}{	(Auto-Link)	}{	(Auto-Link)	}{	681	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	723	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	724	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	725	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	726	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	727	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	728	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	729	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	730	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	731	}{	Voilà, vous dites ça rien que pour m'énerver.	}{	Voilà, vous dites ça rien que pour m'énerver.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	732	}{	Où êtes-vous?	}{	Où êtes-vous?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Voix? Je ne te vois pas.	}
+{	733	}{	Montrez-vous.	}{	Montrez-vous.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Venez voir, voix, je ne vais pas mordre.	}
+{	734	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	735	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	736	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	737	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	738	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	739	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	740	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	741	}{	[se moque du joueur, pense que c'est un imbécile]	}{	[se moque du joueur, pense que c'est un imbécile]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	742	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	743	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	744	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	745	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	746	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	747	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	748	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	749	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	750	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	751	}{	Waouh, c'est original. Et vous avez pensé à ça sans l'aide de personne ?	}{	Waouh, c'est original. Et vous avez pensé à ça sans l'aide de personne ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	752	}{	(Auto-Link)	}{	(Auto-Link)	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	753	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	754	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	755	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	756	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	757	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	758	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	759	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	760	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	761	}{	On se reparle très bientôt. . .	}{	On se reparle très bientôt. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	762	}{	(Auto-Link)	}{	(Auto-Link)	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	763	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	764	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	765	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	766	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	767	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	768	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	769	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	770	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	771	}{	[Voix modifiée]Vous avez des pieds de porc ? [Voix de Gary]Ah ben, ça doit pas être facile pour marcher. . . [Rit]J'ai vos renseignements. . .	}{	[Voix modifiée]Vous avez des pieds de porc ? [Voix de Gary]Ah ben, ça doit pas être facile pour marcher. . . [Rit]J'ai vos renseignements. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	772	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	773	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	774	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	775	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	776	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	777	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	778	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	779	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	780	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	781	}{	[Gloussement menaçant]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	782	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	783	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	784	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	785	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	786	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	787	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	788	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	789	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	790	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	791	}{	[Rire glaçant]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	792	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	793	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	794	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	795	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	796	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	797	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	798	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	799	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	800	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	801	}{	[Caquètement inquiétant]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	802	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	803	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	804	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	805	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	806	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	807	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	808	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	809	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	810	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	811	}{	[Glousse in petto]Je suis le seul qui s'y attendait ou quoi ?	}{	[Glousse in petto]Je suis le seul qui s'y attendait ou quoi ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	812	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	813	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	814	}{	Je vous enverrai un e-mail.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	815	}{	Regardez qui voilà. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	816	}{	Oh, la personne que je préfère parmi toutes.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	817	}{	[Hostile]Disparaissez, boss.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	818	}{	Ouaip.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	819	}{	Nan.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	820	}{	Merci.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	821	}{	QUOI ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	822	}{	Je ne sais pas. . . Quoi que. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	823	}{	J'y peux rien.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	824	}{	[Excité]Ca alors !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	825	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	826	}{	[Donne quelque chose au joueur]Tenez.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	827	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	828	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	829	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	830	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	831	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	832	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	833	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	834	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	835	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	836	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	837	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	838	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	839	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	840	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	841	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	842	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	843	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	844	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	845	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	846	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	847	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	848	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	849	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	850	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	851	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	852	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	853	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	854	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	855	}{	(Starting Condition)	}{	}{	291	}{	G.Gary_Emerge == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	856	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

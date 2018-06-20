@@ -1,0 +1,42 @@
+// Choreo version 1
+actor "Flynn"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 3.208526
+      param "character/dlg/hollywood/flynn/line363_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 0.680000 0.890000
+      param "0.210"
+    }
+    event silence "Silence"
+    {
+      time 2.870000 3.220000
+      param "0.350"
+    }
+    event loud "Loud"
+    {
+      time 1.530000 1.640000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

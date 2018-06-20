@@ -1,0 +1,62 @@
+// Choreo version 1
+actor "Mandarin"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 16.414898
+      param "character/dlg/chinatown/mandarin/line451_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 3.820000 4.290000
+      param "0.470"
+    }
+    event silence "Silence"
+    {
+      time 7.590000 8.179999
+      param "0.590"
+    }
+    event silence "Silence"
+    {
+      time 11.240000 11.840000
+      param "0.600"
+    }
+    event silence "Silence"
+    {
+      time 13.719999 14.210000
+      param "0.490"
+    }
+    event loud "Loud"
+    {
+      time 4.550000 4.660000
+      param "0.110"
+    }
+    event loud "Loud"
+    {
+      time 4.890000 5.020000
+      param "0.130"
+    }
+    event loud "Loud"
+    {
+      time 7.290000 7.400000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

@@ -1,0 +1,62 @@
+// Choreo version 1
+actor "Johansen"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 14.918821
+      param "character/dlg/main characters/johansen/line431_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 2.260000 2.750000
+      param "0.490"
+    }
+    event silence "Silence"
+    {
+      time 6.250000 6.460000
+      param "0.210"
+    }
+    event silence "Silence"
+    {
+      time 11.700000 11.840000
+      param "0.140"
+    }
+    event silence "Silence"
+    {
+      time 12.139999 12.259999
+      param "0.120"
+    }
+    event silence "Silence"
+    {
+      time 14.240000 14.400000
+      param "0.160"
+    }
+    event silence "Silence"
+    {
+      time 14.730000 14.960000
+      param "0.230"
+    }
+    event loud "Loud"
+    {
+      time 6.710000 6.820000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

@@ -1,0 +1,62 @@
+// Choreo version 1
+actor "Empire_Desk_Clerk"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 10.251610
+      param "character/dlg/downtown la/empire_desk_clerk/line41_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 0.960000 1.790000
+      param "0.830"
+    }
+    event silence "Silence"
+    {
+      time 4.700000 5.080000
+      param "0.380"
+    }
+    event silence "Silence"
+    {
+      time 6.920000 7.380000
+      param "0.460"
+    }
+    event silence "Silence"
+    {
+      time 8.670000 9.059999
+      param "0.390"
+    }
+    event silence "Silence"
+    {
+      time 10.110000 10.280000
+      param "0.170"
+    }
+    event loud "Loud"
+    {
+      time 5.150000 5.270000
+      param "0.120"
+    }
+    event loud "Loud"
+    {
+      time 6.280000 6.390000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

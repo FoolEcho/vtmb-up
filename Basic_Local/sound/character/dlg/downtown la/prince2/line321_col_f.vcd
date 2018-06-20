@@ -1,0 +1,87 @@
+// Choreo version 1
+actor "prince2"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 18.744308
+      param "character/dlg/downtown la/prince2/line321_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 3.640000 4.290000
+      param "0.650"
+    }
+    event silence "Silence"
+    {
+      time 5.240000 5.690000
+      param "0.450"
+    }
+    event silence "Silence"
+    {
+      time 6.080000 6.270000
+      param "0.190"
+    }
+    event silence "Silence"
+    {
+      time 7.250000 7.620000
+      param "0.370"
+    }
+    event silence "Silence"
+    {
+      time 7.710000 7.850000
+      param "0.140"
+    }
+    event silence "Silence"
+    {
+      time 9.809999 10.490000
+      param "0.680"
+    }
+    event silence "Silence"
+    {
+      time 11.610000 11.719999
+      param "0.110"
+    }
+    event silence "Silence"
+    {
+      time 11.740000 12.080000
+      param "0.340"
+    }
+    event silence "Silence"
+    {
+      time 12.330000 12.679999
+      param "0.350"
+    }
+    event silence "Silence"
+    {
+      time 15.710000 16.709999
+      param "1.000"
+    }
+    event loud "Loud"
+    {
+      time 0.080000 0.200000
+      param "0.120"
+    }
+    event loud "Loud"
+    {
+      time 7.940000 8.050000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

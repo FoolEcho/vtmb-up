@@ -1,0 +1,47 @@
+// Choreo version 1
+actor "sabbat1"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 8.650748
+      param "character/dlg/generic/sabbat1/line491_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 2.930000 3.110000
+      param "0.180"
+    }
+    event silence "Silence"
+    {
+      time 6.830000 6.960000
+      param "0.130"
+    }
+    event silence "Silence"
+    {
+      time 7.360000 7.510000
+      param "0.150"
+    }
+    event loud "Loud"
+    {
+      time 8.470000 8.599999
+      param "0.130"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

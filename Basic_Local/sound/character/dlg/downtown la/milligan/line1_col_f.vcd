@@ -1,0 +1,68 @@
+// Choreo version 1
+actor "Milligan"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 9.526712
+      param "character/dlg/downtown la/milligan/line1_col_e.wav"
+      param2 "60dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 0.250000 0.390000
+      param "0.140"
+    }
+    event silence "Silence"
+    {
+      time 3.770000 4.020000
+      param "0.250"
+    }
+    event silence "Silence"
+    {
+      time 6.120000 6.290000
+      param "0.170"
+    }
+    event silence "Silence"
+    {
+      time 6.440000 6.570000
+      param "0.130"
+    }
+    event silence "Silence"
+    {
+      time 7.630000 8.010000
+      param "0.380"
+    }
+    event silence "Silence"
+    {
+      time 8.210000 8.389999
+      param "0.180"
+    }
+    event silence "Silence"
+    {
+      time 9.440000 9.550000
+      param "0.110"
+    }
+    event loud "Loud"
+    {
+      time 1.570000 1.690000
+      param "0.120"
+    }
+    event loud "Loud"
+    {
+      time 2.680000 2.790000
+      param "0.110"
+    }
+  }
+}
+
+fps 60
+snap off

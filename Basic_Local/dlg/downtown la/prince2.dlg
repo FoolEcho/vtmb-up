@@ -1,0 +1,1326 @@
+{	1	}{	La folie des chefs est de savoir que quoi qu'on fasse, dans notre dos, des centaines sont convaincus que leur solution est meilleure, et que la vôtre n'a été prise que par un capricieux coup du sort.	}{	La folie des chefs est de savoir que quoi qu'on fasse, dans notre dos, des centaines sont convaincus que leur solution est meilleure, et que la vôtre n'a été prise que par un capricieux coup du sort.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	(Auto-Link)	}{	(Auto-Link)	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	Je décide de lancer la bombe, et je supporte les retombées. Je prends les décisions que personne d'autre ne veut prendre. Le pouvoir. Je porte l'albatros et la cible. 	}{	Je décide de lancer la bombe, et je supporte les retombées. Je prends les décisions que personne d'autre ne veut prendre. Le pouvoir. Je porte l'albatros et la cible. 	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	De quoi vous parlez ?	}{	De quoi vous parlez ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm, quelle est ma part. . . Oh ? Qu'est-ce qui vous trouble, mon Prince ?	}
+{	13	}{	Tout le monde vous respecte pour vos décisions, dans cette ville.	}{	Tout le monde vous respecte pour vos décisions, dans cette ville.	}{	31	}{	Persuasion 6	}{	}{	}{	}{	}{	}{	}{	}{	Non! Vous portez le pantalon dans cette famille! La ville, elle vous adore!	}
+{	14	}{	Si vous preniez de bonnes décisions une fois de temps en temps, personne ne se plaindrait.	}{	Si vous preniez de bonnes décisions une fois de temps en temps, personne ne se plaindrait.	}{	41	}{	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	Et le chapeau du bouffon. Ne l'oubliez pas.	}
+{	15	}{	Bon, je vous écoute. De quoi parlez-vous ?	}{	Bon, je vous écoute. De quoi parlez-vous ?	}{	21	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	Encore ! Encore ! Faites encore des soliloques dramatiques. . . Quel plaisir. J'applaudis !	}{	Encore ! Encore ! Faites encore des soliloques dramatiques. . . Quel plaisir. J'applaudis !	}{	1191	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	La chasse contre Nines Rodriguez va être lancée pour le meurtre d'Alistair Grout. L'exécution de Rodriguez n'est qu'une question de temps. J'ai allumé la mèche - si une guerre éclate, ce sera pour ma tête qu'on aiguisera les piques.	}{	La chasse contre Nines Rodriguez va être lancée pour le meurtre d'Alistair Grout. L'exécution de Rodriguez n'est qu'une question de temps. J'ai allumé la mèche - si une guerre éclate, ce sera pour ma tête qu'on aiguisera les piques.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	(Auto-Link)	}{	(Auto-Link)	}{	51	}{	G.Prince_Reaction >= 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	(Auto-Link)	}{	(Auto-Link)	}{	61	}{	G.Prince_Reaction < -3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	(Auto-Link)	}{	(Auto-Link)	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	J'en ai assez, des sycophantes. J'ai besoin d'assistants en qui je puisse avoir confiance.	}{	J'en ai assez, des sycophantes. J'ai besoin d'assistants en qui je puisse avoir confiance.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	32	}{	Tout le monde vous respecte. De quoi vous parlez ?	}{	Tout le monde vous respecte. De quoi vous parlez ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Faux. . . Hmm, quelle est ma part. . . Oh ? Qu'est-ce qui vous trouble, mon Prince ?	}
+{	33	}{	Je n'ai rencontré personne qui dise du bien de vous. Que vous arrive-t-il ?	}{	Je n'ai rencontré personne qui dise du bien de vous. Que vous arrive-t-il ?	}{	21	}{	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Prince, c'est un gros mot, ces temps-ci. . . Alors pourquoi avez-vous la couleur de la douleur ?	}
+{	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	Alors vous pourrez rejoindre les corbeaux sur la rambarde quand nous en aurons fini.	}{	Alors vous pourrez rejoindre les corbeaux sur la rambarde quand nous en aurons fini.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	Au moins, je pourrai me reposer en sachant que vous, mon meilleur atout, m'avez délivré ce soir d'une grande gêne. Avez-vous besoin d'aide pour apporter le sarcophage dans mon bureau ?	}{	Au moins, je pourrai me reposer en sachant que vous, mon meilleur atout, m'avez délivré ce soir d'une grande gêne. Avez-vous besoin d'aide pour apporter le sarcophage dans mon bureau ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Pour le sarcophage. . . Apparemment, il a été volé.	}{	Pour le sarcophage. . . Apparemment, il a été volé.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	On l'a volé, mais il y avait plein de dinosaures, c'était très intéressant.	}
+{	53	}{	Je ne l'ai pas rapporté. Quelqu'un l'avait volé.	}{	Je ne l'ai pas rapporté. Quelqu'un l'avait volé.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	On l'a volé, ou alors il n'a jamais été là. . .	}
+{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Vue mon humeur du moment, j'espère que vous avez rapporté le sarcophage. Ou qu'au moins tout est réglé.	}{	Vue mon humeur du moment, j'espère que vous avez rapporté le sarcophage. Ou qu'au moins tout est réglé.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Pour le sarcophage. . . Apparemment, il a été volé.	}{	Pour le sarcophage. . . Apparemment, il a été volé.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	On l'a volé, mais il y avait plein de dinosaures, c'était très intéressant.	}
+{	63	}{	Je ne l'ai pas rapporté. Quelqu'un l'avait volé.	}{	Je ne l'ai pas rapporté. Quelqu'un l'avait volé.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	On l'a volé, ou alors il n'a jamais été là. . .	}
+{	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Bien, pour le sarcophage. Vous avez besoin d'aide pour le monter ?	}{	Bien, pour le sarcophage. Vous avez besoin d'aide pour le monter ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	Pour le sarcophage. . . Apparemment, il a été volé.	}{	Pour le sarcophage. . . Apparemment, il a été volé.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	On l'a volé, mais il y avait plein de dinosaures, c'était très intéressant.	}
+{	73	}{	Je ne l'ai pas rapporté. Quelqu'un l'avait volé.	}{	Je ne l'ai pas rapporté. Quelqu'un l'avait volé.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	On l'a volé, ou alors il n'a jamais été là. . .	}
+{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Volé ?	}{	Volé ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Je. . .	}{	Je. . .	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je. . .	}
+{	83	}{	Vo. . .	}{	Vo. . .	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vol. . .	}
+{	84	}{	Je. . .	}{	Je. . .	}{	1257	}{	G.Prince_Reaction < -3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	Vol. . .	}{	Vol. . .	}{	1257	}{	G.Prince_Reaction < -3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	[Furieux]VOLE ? COMMENT ? [Grogne de frustration/rage]Qui a pu. . . ? [Marque une pause en comprenant]Gary. Gary, sale traître ! J'aurais dû prévoir ta trahison, rat d'égout.	}{	[Furieux]VOLE ? COMMENT ? [Grogne de frustration/rage]Qui a pu. . . ? [Marque une pause en comprenant]Gary. Gary, sale traître ! J'aurais dû prévoir ta trahison, rat d'égout.	}{	#	}{	}{	G.Story_State = 35; pc.SetQuest("Museum",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Gary ?	}{	Gary ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Moi aussi. Qui est Gary ?	}
+{	93	}{	Vous pourriez me dire qui est Gary, au juste ?	}{	Vous pourriez me dire qui est Gary, au juste ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Gary. . . Gary. . . Ce nom ne me dit rien.	}
+{	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Le Primogène Nosferatu. Les Nosferatus étaient responsables de localiser le sarcophage après le Dane, et d'obtenir les clés du musée. Ils étaient les seuls à savoir ! C'est évident pour moi maintenant, erreur de ma part.	}{	Le Primogène Nosferatu. Les Nosferatus étaient responsables de localiser le sarcophage après le Dane, et d'obtenir les clés du musée. Ils étaient les seuls à savoir ! C'est évident pour moi maintenant, erreur de ma part.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Les Nos. . .	}{	Les Nos. . .	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nos. . .	}
+{	103	}{	Mais. . .	}{	Mais. . .	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mais. . .	}
+{	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Je veux qu'on le retrouve ! Je veux qu'on le [s'arrête avant de dire 'tue']. . . retrouve. Le sarcophage pourrait être exploité - et cela provoquerait sans doute une catastrophe dans cette ville. S'il tombait entre de mauvaises mains. . .	}{	Je veux qu'on le retrouve ! Je veux qu'on le [s'arrête avant de dire 'tue']. . . retrouve. Le sarcophage pourrait être exploité - et cela provoquerait sans doute une catastrophe dans cette ville. S'il tombait entre de mauvaises mains. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Je vais retrouver Gary et le sarcophage.	}{	Je vais retrouver Gary et le sarcophage.	}{	141	}{	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Laissez-moi chercher ce Gary.	}
+{	113	}{	Quand vous dites 'on', vous parlez de moi, j'imagine ?	}{	Quand vous dites 'on', vous parlez de moi, j'imagine ?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	D'abord un mort, puis une vieille boîte, après un Gary. . . C'est une chasse au trésor ?	}
+{	114	}{	Qu'est-ce que vous donneriez en échange du sarcophage ? Je pourrais peut-être le trouver. . .	}{	Qu'est-ce que vous donneriez en échange du sarcophage ? Je pourrais peut-être le trouver. . .	}{	121	}{	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	Bonne chance. Moi, je pars.	}{	Bonne chance. Moi, je pars.	}{	131	}{	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Vous allez trouver le sarcophage parce que je vous ai déjà confié la mission de le retrouver, et que vous avez échoué. . .	}{	Vous allez trouver le sarcophage parce que je vous ai déjà confié la mission de le retrouver, et que vous avez échoué. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Oui, mais. . .	}{	Oui, mais. . .	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une tâche difficile. . .	}
+{	123	}{	Soyez raison. . .	}{	Soyez raison. . .	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm. . .	}
+{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Vous n'avez pas fini votre mission. Je n'ai toujours pas le sarcophage.	}{	Vous n'avez pas fini votre mission. Je n'ai toujours pas le sarcophage.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Que dois-je faire ?	}{	Que dois-je faire ?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vers quelle case me jouez-vous ?	}
+{	133	}{	Ce n'est pas ma faute.	}{	Ce n'est pas ma faute.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Techniquement.	}
+{	134	}{	Envoyez votre gorille, moi je pars.	}{	Envoyez votre gorille, moi je pars.	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si. . . Elle est invisible. Du coup, vous ne voyez rien, et pourtant. . . Alors je peux partir.	}
+{	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	[avec irritation et impatience][Soupir]Les Nosferatus rôdent sous les rues d'Hollywood, mais même moi, j'ignore où ils se cachent. Malheureusement, Hollywood n'a aucune loyauté envers la Camarilla. . .	}{	[avec irritation et impatience][Soupir]Les Nosferatus rôdent sous les rues d'Hollywood, mais même moi, j'ignore où ils se cachent. Malheureusement, Hollywood n'a aucune loyauté envers la Camarilla. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	(Auto-Link)	}{	(Auto-Link)	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	151	}{	Le baron d'Hollywood est un Anarch dénommé Isaac. Il est plus civil que nos propres Anarchs, mais se méfie de moi. Il saura peut-être comment contacter les Nosferatus.	}{	Le baron d'Hollywood est un Anarch dénommé Isaac. Il est plus civil que nos propres Anarchs, mais se méfie de moi. Il saura peut-être comment contacter les Nosferatus.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	(Auto-Link)	}{	(Auto-Link)	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Trouvez Gary et faites-le parler. Ce sarcophage pourrait être utilisé contre nous. Ne revenez pas avant de l'avoir. A présent, je dois annoncer la chasse - et en supporter les conséquences. [Au shérif]Escortez-le jusqu'à la porte.	}{	Trouvez Gary et faites-le parler. Ce sarcophage pourrait être utilisé contre nous. Ne revenez pas avant de l'avoir. A présent, je dois annoncer la chasse - et en supporter les conséquences. [Au shérif]Escortez-la jusqu'à la porte.	}{	#	}{	}{	Whisper("Quest"); G.Chunk_Open = 0; G.Prince_Gary = 1; G.Hollywood_Open = 1; G.Prince_Escort = 1; pc.SetQuest("Sarcophagus",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	. . .	}{	. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	[Plein de joie]Le retour de l'enfant prodigue ! Dans toute ma cour, je savais qu'une seule personne pouvait remplir cette mission ! Enfin, le sarcophage d'Ankara est à nous !	}{	[Plein de joie]Le retour de l'enfant prodigue ! Dans toute ma cour, je savais qu'une seule personne pouvait remplir cette mission ! Enfin, le sarcophage d'Ankara est à nous !	}{	#	}{	}{	G.Prince_Reaction = G.Prince_Reaction +2; G.Story_State = 65; pc.SetQuest("Sarcophagus",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	(Auto-Link)	}{	(Auto-Link)	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Magnifique ! Certains membres de ma cour doutaient de vos capacités, mais je savais que vous ne me décevriez pas. Enfin, le sarcophage d'Ankara est à nous !	}{	Magnifique ! Certains membres de ma cour doutaient de vos capacités, mais je savais que vous ne me décevriez pas. Enfin, le sarcophage d'Ankara est à nous !	}{	#	}{	}{	G.Prince_Reaction = G.Prince_Reaction +2; G.Story_State = 65; pc.SetQuest("Sarcophagus",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	(Auto-Link)	}{	(Auto-Link)	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Venez - J'ai permis à Beckett d'étudier et de répertorier les inscriptions sur le sarcophage. Vous connaissez déjà Beckett, n'est-ce pas ? Allons jeter un oeil, et voyons pourquoi la ville était tellement agitée.	}{	Venez - J'ai permis à Beckett d'étudier et de répertorier les inscriptions sur le sarcophage. Vous connaissez déjà Beckett, n'est-ce pas ? Allons jeter un oeil, et voyons pourquoi la ville était tellement agitée.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Oui, allons-y.	}{	Oui, allons-y.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, elle est sous l'arbre depuis si longtemps, je n'y tiens plus.	}
+{	193	}{	S'il y a des objets précieux à l'intérieur, j'en mérite quelques-uns.	}{	S'il y a des objets précieux à l'intérieur, j'en mérite quelques-uns.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chocolat ou or, j'en mettrai dans mes poches.	}
+{	194	}{	Avant cela, il me faudrait une réponse. Etes-vous allié aux Kuei-Jin ?	}{	Avant cela, il me faudrait une réponse. Etes-vous alliée aux Kuei-Jin ?	}{	211	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	195	}{	Comment avez-vous pu vous allier aux Kuei-Jin ?	}{	Comment avez-vous pu vous allier aux Kuei-Jin ?	}{	211	}{	not IsClan(pc,"Malkavian")	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	}
+{	196	}{	JE SAIS. JE SAIS. JE SAIS. JE SAIS. JE SAIS. JE SAIS. JE SAIS. 	}{	JE SAIS. JE SAIS. JE SAIS. JE SAIS. JE SAIS. JE SAIS. JE SAIS. 	}{	1201	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Votre récompense sera à la hauteur de votre travail, je vous le promets. Allons ouvrir le sarcophage.	}{	Votre récompense sera à la hauteur de votre travail, je vous le promets. Allons ouvrir le sarcophage.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	D'accord.	}{	D'accord.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, il a été assis sous l'arbre pendant si longtemps. J'ai hâte.	}
+{	203	}{	Avant cela, il me faudrait une réponse. Etes-vous allié aux Kuei-Jin ?	}{	Avant cela, il me faudrait une réponse. Etes-vous alliée aux Kuei-Jin ?	}{	211	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	Comment avez-vous pu vous allier aux Kuei-Jin ?	}{	Comment avez-vous pu vous allier aux Kuei-Jin ?	}{	211	}{	not IsClan(pc,"Malkavian")	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	JE SAIS. JE SAIS. JE SAIS. JE SAIS. JE SAIS. JE SAIS. JE SAIS. 	}{	JE SAIS. JE SAIS. JE SAIS. JE SAIS. JE SAIS. JE SAIS. JE SAIS. 	}{	1201	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Quoi ? [Léger]Ridicule. Aucun vampire ne peut leur faire confiance, ni l'inverse. C'est Jack qui vous a dit ça ? Parce qu'on dirait que quelqu'un se paie votre tête.	}{	Quoi ? [Léger]Ridicule. Aucun vampire ne peut leur faire confiance, ni l'inverse. C'est Jack qui vous a dit ça ? Parce qu'on dirait que quelqu'un se paie votre tête.	}{	#	}{	}{	G.Prince_Alliance = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Non. Ce sont les agents Kuei-Jin qui avaient volé le sarcophage.	}{	Non. Ce sont les agents Kuei-Jin qui avaient volé le sarcophage.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelqu'un m'a fait faire un tour.	}
+{	213	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Et vous les avez cru ? Cela fait des années qu'ils essaient de prendre LA. C'est une ruse. Un mensonge répandu pour saper mon autorité et retourner les vampires les uns contre les autres. Pour réduire notre nombre. Ce sont des créatures doubles et maléfiques. Après tout, ils ont essayé de vous tuer, non ?	}{	Et vous les avez cru ? Cela fait des années qu'ils essaient de prendre LA. C'est une ruse. Un mensonge répandu pour saper mon autorité et retourner les vampires les uns contre les autres. Pour réduire notre nombre. Ce sont des créatures doubles et maléfiques. Après tout, ils ont essayé de vous tuer, non ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Oui, mais. . .	}{	Oui, mais. . .	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Comme beaucoup de gens.	}
+{	223	}{	En effet.	}{	En effet.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bien sûr.	}
+{	224	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	C'était une assurance. Ils vous ont menti au cas où vous survivriez à la rencontre. Ils espéraient créer une dissension dans les rangs, des rumeurs. C'est une astuce vieille comme le monde.	}{	C'était une assurance. Ils vous ont menti au cas où vous survivriez à la rencontre. Ils espéraient créer une dissension dans les rangs, des rumeurs. C'est une astuce vieille comme le monde.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	232	}{	Je vous crois. Allons ouvrir le sarcophage.	}{	Je vous crois. Allons ouvrir le sarcophage.	}{	0	}{	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Encore de la paranoïa. Ouvrons la boîte.	}
+{	233	}{	Je ne sais toujours pas si je dois vous croire. Allons ouvrir le sarcophage.	}{	Je ne sais toujours pas si je dois vous croire. Allons ouvrir le sarcophage.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm. La boîte attend.	}
+{	234	}{	Je ne vous crois pas.	}{	Je ne vous crois pas.	}{	1260	}{	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	Mensonges ! Vos paroles, je veux dire.	}
+{	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	[A Beckett]Qu'avez-vous appris pour l'instant ?	}{	[A Beckett]Qu'avez-vous appris pour l'instant ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	243	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	251	}{	[A Beckett]Je vois. Aucune raison de ne pas l'ouvrir, alors.[Bruits du prince qui essaie d'ouvrir le sarcophage]Ca ne bouge pas. Beckett, vous voyez un mécanisme pour ouvrir ?	}{	[A Beckett]Je vois. Aucune raison de ne pas l'ouvrir, alors.[Bruits du prince qui essaie d'ouvrir le sarcophage]Ca ne bouge pas. Beckett, vous voyez un mécanisme pour ouvrir ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	253	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	[agacé]Pourquoi. . . [force pour ouvrir le coffre] ça ne s'ouvre pas, Beckett ? [Une pause pour écouter la moitié de la réponse de Beckett]Et vous, vous avez dit qu'il paraissait ouvert sur le Dane. . . [Grognement dégoûté]Je veux qu'on l'ouvre !	}{	[agacé]Pourquoi. . . [force pour ouvrir le coffre] ça ne s'ouvre pas, Beckett ? [Une pause pour écouter la moitié de la réponse de Beckett]Et vous, vous avez dit qu'il paraissait ouvert sur le Dane. . . [Grognement dégoûté]Je veux qu'on l'ouvre !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	263	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Vous ! Avec Beckett, trouvez un moyen de l'ouvrir ! J'ai besoin de savoir ce qu'il y a à l'intérieur. J'ai d'autres choses à faire. Venez me trouver quand vous aurez une solution.	}{	Vous ! Avec Beckett, trouvez un moyen de l'ouvrir ! J'ai besoin de savoir ce qu'il y a à l'intérieur. J'ai d'autres choses à faire. Venez me trouver quand vous aurez une solution.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	273	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	274	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	281	}{	[Excité]Vous avez trouvé un moyen d'ouvrir le sarcophage ?	}{	[Excité]Vous avez trouvé un moyen d'ouvrir le sarcophage ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Non, mais j'ai une question.	}{	Non, mais j'ai une question.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non, mais je me demandais quelque chose.	}
+{	283	}{	Ca m'a coûté cher, de rapporter le sarcophage.	}{	Ca m'a coûté cher, de rapporter le sarcophage.	}{	371	}{	Persuasion 6 & G.Prince_Pay == 0 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Le sarcophage est à l'abri, j'aimerais que mon compte en banque puisse en dire autant.	}
+{	284	}{	J'ai rapporté le sarcophage. Ca mérite bien quelque chose.	}{	J'ai rapporté le sarcophage. Ca mérite bien quelque chose.	}{	371	}{	Persuasion -6 & G.Prince_Pay == 0 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Les sarcophages, ce n'est pas donné.	}
+{	285	}{	Ca m'a coûté cher, de rapporter le sarcophage.	}{	Ca m'a coûté cher, de rapporter le sarcophage.	}{	361	}{	Persuasion 6 & G.Prince_Pay == 0 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	Le sarcophage est à l'abri, j'aimerais que mon compte en banque puisse en dire autant.	}
+{	286	}{	J'ai rapporté le sarcophage. Ca mérite bien quelque chose.	}{	J'ai rapporté le sarcophage. Ca mérite bien quelque chose.	}{	361	}{	Persuasion -6 & G.Prince_Pay == 0 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	Les sarcophages, ce n'est pas donné.	}
+{	287	}{	Non, pas encore.	}{	Non, pas encore.	}{	291	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi ferais-je une chose pareille ?	}
+{	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	291	}{	Revenez quand ce sera fait.	}{	Revenez quand ce sera fait.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	(Auto-Link)	}{	(Auto-Link)	}{	1216	}{	G.Prince_Reaction >= 4 and G.Prince_Skyline == 0 and not IsClan(pc,"Nosferatu") and not IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	293	}{	(Auto-Link)	}{	(Auto-Link)	}{	1236	}{	G.Prince_Hardwarn == 0 and pc.masquerade == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	294	}{	(Auto-Link)	}{	(Auto-Link)	}{	1226	}{	G.Prince_Lightwarn == 0 and pc.masquerade > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	295	}{	Je le ferais.	}{	Je le ferais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui.	}
+{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	301	}{	Par exemple ?	}{	Par exemple ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Que savez-vous sur les Kuei-Jin ?	}{	Que savez-vous sur les Kuei-Jin ?	}{	311	}{	G.Prince_Kuei == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi des vampires d'Orient, qui ne sont pas des vampires.	}
+{	303	}{	A votre avis, qu'y a-t-il dans le sarcophage ?	}{	A votre avis, qu'y a-t-il dans le sarcophage ?	}{	331	}{	G.Prince_Box == 0	}{	}{	}{	}{	}{	}{	}{	}{	Qu'y a-t-il dans la boîte ?	}
+{	304	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	305	}{	Peu importe.	}{	Peu importe.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Aucun.	}
+{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	Par tradition, les Kuei-Jin restaient en territoire asiatique, et nous en Europe puis en Amérique du Nord. Mais ces derniers temps, ils ont envahi la côte ouest et tué beaucoup d'Anarchs. Ils n'ont aucune organisation comme celle de la Camarilla et ne se soucient pas d'enfreindre la Mascarade.	}{	Par tradition, les Kuei-Jin restaient en territoire asiatique, et nous en Europe puis en Amérique du Nord. Mais ces derniers temps, ils ont envahi la côte ouest et tué beaucoup d'Anarchs. Ils n'ont aucune organisation comme celle de la Camarilla et ne se soucient pas d'enfreindre la Mascarade.	}{	#	}{	}{	G.Prince_Kuei = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	(Auto-Link)	}{	(Auto-Link)	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	313	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	Bien que nous ayons des points communs, il n'y a aucune fraternité entre nous. Nous étreignons, eux sortent de la tombe. Ils ne connaissent pas le plaisir du sang. Ils n'ont pas de clan. Et ils nous croient inférieurs, bien sûr. Ils sont aussi dangereux que les loups.	}{	Bien que nous ayons des points communs, il n'y a aucune fraternité entre nous. Nous Etreignons, eux sortent de la tombe. Ils ne connaissent pas le plaisir du sang. Ils n'ont pas de clan. Et ils nous croient inférieurs, bien sûr. Ils sont aussi dangereux que les loups.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	322	}{	Les loups ?	}{	Les loups ?	}{	1211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Des loups ?	}
+{	323	}{	J'avais une autre question.	}{	J'avais une autre question.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demandais autre chose.	}
+{	324	}{	Ce sera tout pour l'instant.	}{	Ce sera tout pour l'instant.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me satisfais de ces réponses.	}
+{	325	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	Si vous n'aviez pas pris le temps de me poser la question, nous serions peut-être fixés. Comme je l'ai déjà dit, je crains qu'il contienne quelque chose de surnaturel, même si Beckett a totalement abandonné cette théorie. La ville est morte de peur. Peut-être un Antédiluvien ?	}{	Si vous n'aviez pas pris le temps de me poser la question, nous serions peut-être fixés. Comme je l'ai déjà dit, je crains qu'il contienne quelque chose de surnaturel, même si Beckett a totalement abandonné cette théorie. La ville est morte de peur. Peut-être un Antédiluvien ?	}{	#	}{	}{	G.Prince_Box = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Un Antédiluvien ?	}{	Un Antédiluvien ?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Antédiluvien. . . ?	}
+{	333	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	334	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	341	}{	C'est une plaisanterie. Les Antédiluviens sont les géniteurs mythiques de chacun des clans, à qui la lignée remonte. D'après la mythologie, ils seraient descendants de Caïn, le légendaire premier vampire.	}{	C'est une plaisanterie. Les Antédiluviens sont les géniteurs mythiques de chacun des clans, à qui la lignée remonte. D'après la mythologie, ils seraient descendants de Caïn, le légendaire premier vampire.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	Caïn ?	}{	Caïn ?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce nom. . . paraît étrangement familier.	}
+{	343	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	344	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	La Bible ? Caïn et Abel ? Avant de vous laisser emporter, rendez-vous compte que l'Eglise et tous ses mythes sont des créations de vampires et d'humains - des fouets pour dominer les esprits faibles. C'est Beckett, l'expert, dans ce domaine. Si vous voulez une leçon, demandez-lui.	}{	La Bible ? Caïn et Abel ? Avant de vous laisser emporter, rendez-vous compte que l'Eglise et tous ses mythes sont des créations de vampires et d'humains - des fouets pour dominer les esprits faibles. C'est Beckett, l'expert, dans ce domaine. Si vous voulez une leçon, demandez-lui.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	352	}{	J'avais une autre question.	}{	J'avais une autre question.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demandais autre chose.	}
+{	353	}{	Je n'y manquerai pas.	}{	Je n'y manquerai pas.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais aller embêter Beckett.	}
+{	354	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	355	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	356	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	357	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Je comprends. Je suis certain que cette récompense vous comblera.	}{	Je comprends. Je suis certain que cette récompense vous comblera.	}{	#	}{	}{	pc.MoneyAdd(300); G.Prince_Pay = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	Merci. J'avais une question.	}{	Merci. J'avais une question.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui ! Je me demande quelque chose. . .	}
+{	363	}{	Ca ira, merci.	}{	Ca ira, merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bien. Adieu.	}
+{	364	}{	Je l'ai bien méritée.	}{	Je l'ai bien méritée.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes travaux méritent ces trésors.	}
+{	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	371	}{	Je ne peux pas tolérer que mes protégés paraissent miséreux, n'est-ce pas ? Vous apprendrez que je peux être très généreux pour ceux qui me servent bien.	}{	Je ne peux pas tolérer que mon enfant prodige paraisse miséreux, n'est-ce pas ? Vous apprendrez que je peux être très généreux pour ceux qui me servent bien.	}{	#	}{	}{	pc.MoneyAdd(500); G.Prince_Pay = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	Merci. J'avais une question.	}{	Merci. J'avais une question.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui ! Je me demande quelque chose. . .	}
+{	373	}{	Je vous ai dit que j'ai dû traverser les égouts, Chinatown, combattre un Tzimisce. . .	}{	Je vous ai dit que j'ai dû traverser les égouts, Chinatown, combattre un Tzimisce. . .	}{	381	}{	Persuasion 8	}{	}{	}{	}{	}{	}{	}{	}{	J'ai combattu des monstres au-delà de toute imagination. J'ai plongé dans la crasse du bétail !	}
+{	374	}{	J'ai remarqué. Merci.	}{	J'ai remarqué. Merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cela, je le sais. Je pars.	}
+{	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	379	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	381	}{	Je comprends.	}{	Je comprends.	}{	#	}{	}{	pc.MoneyAdd(200)	}{	}{	}{	}{	}{	}{	}{	}
+{	382	}{	Merci. J'avais une question.	}{	Merci. J'avais une question.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui ! Je me demande quelque chose. . .	}
+{	383	}{	Vous avez fait un bon investissement. Il est temps que je vous le rembourse.	}{	Vous avez fait un bon investissement. Il est temps que je vous le rembourse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Avec les têtes de présidents morts dans mes poches, je suis une hydre invincible.	}
+{	384	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	385	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	[Rires]A qui croient-ils avoir à faire ? [Rires]M'attaquer, chez moi ? Ils sont désespérés. . . Ils ont montré leur faiblesse. Une dernière tentative pour me voler mon bien. . .	}{	[Rires]A qui croient-ils avoir à faire ? [Rires]M'attaquer, chez moi ? Ils sont désespérés. . . Ils ont montré leur faiblesse. Une dernière tentative pour me voler mon bien. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	392	}{	Qui est responsable ?	}{	Qui est responsable ?	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qui donc. . . Ha ha ha ! De qui parlions-nous ?	}
+{	393	}{	Quelqu'un a mis du désordre en dessous.	}{	Quelqu'un a mis du désordre en dessous.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il y a des empreintes de mains noires partout.	}
+{	394	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	395	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	397	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	398	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	401	}{	Le Sabbat. Un groupe de maniaques avec des petits pistolets, voilà tout ce qu'ils ont pu envoyer. Deux sont montés, mais je me suis occupé d'eux. Et mon Shérif a donné aux autres la Mort Ultime dans l'entrée. Des animaux du Sabbat.	}{	Le Sabbat. Un groupe de maniaques avec des petits pistolets, voilà tout ce qu'ils ont pu envoyer. Deux sont montés, mais je me suis occupé d'eux. Et mon Shérif a donné aux autres la Mort Ultime dans l'entrée. Des animaux du Sabbat.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	Le Sabbat vous a attaqué ? Pourquoi ?	}{	Le Sabbat a attaqué ? Pourquoi ?	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous leur avez craché dessus depuis le toit ? C'est pour ça qu'ils ont attaqué ?	}
+{	403	}{	Donc, plus besoin de s'inquiéter du Sabbat ?	}{	Donc, plus besoin de s'inquiéter du Sabbat ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	A plus tard, Sabbat. . . Ensuite, nous nous attaquerons à notre plus grand ennemi. . . le soleil !	}
+{	404	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	405	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	406	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	407	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	408	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	411	}{	A votre avis ? Comme tous les vampires dans la ville ces dernières nuits. . . Le sarcophage. Ils pensent qu'il contient un ancien endormi - leur festin le plus convoité. . . Diabolistes. . .	}{	A votre avis ? Comme tous les vampires dans la ville ces dernières nuits. . . Le sarcophage. Ils pensent qu'il contient un ancien endormi - leur festin le plus convoité. . . Diabolistes. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	412	}{	Ils boivent le sang d'autres vampires ?	}{	Ils boivent le sang d'autres vampires ?	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm. . . Vampire Cola. . . Pourquoi quelqu'un adopterait-il cette marque ?	}
+{	413	}{	Des diabolistes ?	}{	Des diabolistes ?	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	La diablerie. . . ce mot est un mystère pour moi.	}
+{	414	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	417	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	On croit les éliminer, et ils finissent toujours par revenir. Cette fois, ils visaient le sarcophage. Ils ne s'arrêteront qu'une fois dévoré l'ancien qu'ils pensent y trouver.	}{	On croit les éliminer, et ils finissent toujours par revenir. Cette fois, ils visaient le sarcophage. Ils ne s'arrêteront qu'une fois dévoré l'ancien qu'ils pensent y trouver.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	Ils boivent le sang d'autres vampires ?	}{	Ils boivent le sang d'autres vampires ?	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm. . . Vampire Cola. . . Pourquoi quelqu'un adopterait-il cette marque ?	}
+{	423	}{	Des diabolistes ?	}{	Des diabolistes ?	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	La diablerie. . . ce mot est un mystère pour moi.	}
+{	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	428	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	429	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	430	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	431	}{	L'infamie du Sabbat est due en grande partie à leur pratique de la diablerie, c'est-à-dire l'absorption du sang d'autres vampires, particulièrement des plus anciens, jusqu'à ce que cela les tue. Les diabolistes gagnent le pouvoir de ceux dont ils se nourrissent. Dans la Camarilla, cet acte est passible de mort.	}{	L'infamie du Sabbat est due en grande partie à leur pratique de la diablerie, c'est-à-dire l'absorption du sang d'autres vampires, particulièrement des plus anciens, jusqu'à ce que cela les tue. Les diabolistes gagnent le pouvoir de ceux dont ils se nourrissent. Dans la Camarilla, cet acte est passible de mort.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	432	}{	(Auto-Link)	}{	(Auto-Link)	}{	441	}{	G.Prince_Reaction >= 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	433	}{	(Auto-Link)	}{	(Auto-Link)	}{	451	}{	G.Prince_Reaction < -3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	434	}{	(Auto-Link)	}{	(Auto-Link)	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	435	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	436	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	437	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	Pour le moment, nous avons fait croire à la presse que c'était une attaque terroriste. Leurs soldats ne sont pas dangereux pour moi, mais pour la Mascarade, ils sont redoutables. En tant qu'agent de choc, vous devinerez sans peine ce que je vais vous demander.	}{	Pour le moment, nous avons fait croire à la presse que c'était une attaque terroriste. Leurs soldats ne sont pas dangereux pour moi, mais pour la Mascarade, ils sont redoutables. En tant qu'agent de choc, vous devinerez sans peine ce que je vais vous demander.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	442	}{	Tuer tous ceux du Sabbat ? C'est parti.	}{	Tuer tous ceux du Sabbat ? C'est parti.	}{	501	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	La cendre de Sabbat va tant alourdir l'air que le soleil ne saura pas que nous sommes ici.	}
+{	443	}{	Je comprends. Eh, feignasse de Shérif ! Va trucider le Sabbat !	}{	Je comprends. Eh, feignasse de Shérif ! Va trucider le Sabbat !	}{	471	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Je suis le Prince, mes paroles sont 'Shérif, élimine le Sabbat, et plus vite que ça.'	}
+{	444	}{	Vous voulez que j'aille détruire le Sabbat sans aide ? Envoyez plutôt votre gorille !	}{	Vous voulez que j'aille détruire le Sabbat sans aide ? Envoyez plutôt votre gorille !	}{	471	}{	Humanity 5	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	C'est à cela que sert votre monstre. Je pourrais me briser sous le poids du Sabbat.	}
+{	445	}{	Vous voulez que j'élimine le Sabbat. Avec plaisir.	}{	Vous voulez que j'élimine le Sabbat. Avec plaisir.	}{	501	}{	Humanity 5	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Ils ont été méchants avec moi quand j'étais faible, mais je vais revenir jouer avec eux. . . avec de gros jouets. . .	}
+{	446	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	447	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Vous ne m'aimez pas, mais nous avons un ennemi commun, le Sabbat. Leur façon de nous menacer directement ainsi que la Mascarade rend leur destruction impérative. Vous pensez que cela vous sera possible ?	}{	Vous ne m'aimez pas, mais nous avons un ennemi commun, le Sabbat. Leur façon de nous menacer directement ainsi que la Mascarade rend leur destruction impérative. Vous pensez que cela vous sera possible ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	452	}{	Tuer tous ceux du Sabbat ? C'est parti.	}{	Tuer tous ceux du Sabbat ? C'est parti.	}{	501	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	La cendre de Sabbat va tant alourdir l'air que le soleil ne saura pas que nous sommes ici.	}
+{	453	}{	Je voulais leur tomber dessus depuis longtemps. . .	}{	Je voulais leur tomber dessus depuis longtemps. . .	}{	501	}{	Humanity 5	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Ils ont été méchants avec moi quand j'étais faible, mais je vais revenir jouer avec eux. . . avec de gros jouets. . .	}
+{	454	}{	Je ne risquerai ma vie que contre une grosse montagne d'argent.	}{	Je ne risquerai ma vie que contre une grosse montagne d'argent.	}{	481	}{	Humanity 5	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	Je veux une récompense plus verte que les salades les plus fraîches. . .	}
+{	455	}{	Vous voulez que j'aille détruire le Sabbat sans aide ? Envoyez plutôt votre gorille !	}{	Vous voulez que j'aille détruire le Sabbat sans aide ? Envoyez plutôt votre gorille !	}{	471	}{	Humanity 5	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	C'est à cela que sert votre monstre. Je pourrais me briser sous le poids du Sabbat.	}
+{	456	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	457	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	Pour le moment, nous avons fait croire à la presse que c'était une attaque terroriste. Leurs soldats ne sont pas dangereux pour moi, mais pour la Mascarade, ils sont redoutables. Il faut les détruire. Pouvez-vous vous en charger ?	}{	Pour le moment, nous avons fait croire à la presse que c'était une attaque terroriste. Leurs soldats ne sont pas dangereux pour moi, mais pour la Mascarade, ils sont redoutables. Il faut les détruire. Pouvez-vous vous en charger ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	Tuer tous ceux du Sabbat ? C'est parti.	}{	Tuer tous ceux du Sabbat ? C'est parti.	}{	501	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	La cendre de Sabbat va tant alourdir l'air que le soleil ne saura pas que nous sommes ici.	}
+{	463	}{	Je voulais leur tomber dessus depuis longtemps. . .	}{	Je voulais leur tomber dessus depuis longtemps. . .	}{	501	}{	Humanity 5	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Ils ont été méchants avec moi quand j'étais faible, mais je vais revenir jouer avec eux. . . avec de gros jouets. . .	}
+{	464	}{	Je ne risquerai ma vie que contre une grosse montagne d'argent.	}{	Je ne risquerai ma vie que contre une grosse montagne d'argent.	}{	481	}{	Humanity 5	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	Je veux une récompense plus verte que les salades les plus fraîches. . .	}
+{	465	}{	Vous voulez que j'aille détruire le Sabbat sans aide ? Envoyez plutôt votre gorille !	}{	Vous voulez que j'aille détruire le Sabbat sans aide ? Envoyez plutôt votre gorille !	}{	471	}{	Humanity 5	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	C'est à cela que sert votre monstre. Je pourrais me briser sous le poids du Sabbat.	}
+{	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	467	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	468	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	471	}{	Il doit rester ici en cas d'une nouvelle attaque et pour garder le sarcophage. Pour cette urgence, j'ai besoin de quelqu'un de votre calibre afin de garantir mon succès. Le Sabbat nous menace depuis trop longtemps.	}{	Il doit rester ici en cas d'une nouvelle attaque et pour garder le sarcophage. Pour cette urgence, j'ai besoin de quelqu'un de votre calibre afin de garantir mon succès. Le Sabbat nous menace depuis trop longtemps.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	472	}{	Très bien. Où sont-ils ?	}{	Très bien. Où sont-ils ?	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	De quel trou se déverse le Sabbat ?	}
+{	473	}{	Je ne risquerai ma vie que contre une grosse montagne d'argent.	}{	Je ne risquerai ma vie que contre une grosse montagne d'argent.	}{	481	}{	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	Je veux une récompense plus verte que les salades les plus fraîches. . .	}
+{	474	}{	Oubliez ça. Trop dangereux. Trouvez quelqu'un d'autre.	}{	Oubliez ça. Trop dangereux. Trouvez quelqu'un d'autre.	}{	491	}{	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	Bonne blague ! Digne de quelqu'un de notre sang !	}
+{	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	481	}{	Une attitude de mercenaire ne vous aidera pas beaucoup dans cette organisation. Mais si c'est ce qu'il faut dans cette situation, j'accepte.	}{	Une attitude de mercenaire ne vous aidera pas beaucoup dans cette organisation. Mais si c'est ce qu'il faut dans cette situation, j'accepte.	}{	#	}{	}{	G.Prince_Merc = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	Où sont-ils ?	}{	Où sont-ils ?	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	De quel trou se déverse le Sabbat ?	}
+{	483	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	484	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	485	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	491	}{	[Domination]Allez détruire la présence du Sabbat. 	}{	[Domination]Allez détruire la présence du Sabbat. 	}{	#	}{	}{	dominatePlayer()	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	Je vais détruire la présence du Sabbat.	}{	Je vais détruire la présence du Sabbat.	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais détruire la présence du Sabbat.	}
+{	493	}{	Je vais détruire la présence du Sabbat.	}{	Je vais détruire la présence du Sabbat.	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais détruire la présence du Sabbat.	}
+{	494	}{	Je vais détruire la présence du Sabbat.	}{	Je vais détruire la présence du Sabbat.	}{	501	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais détruire la présence du Sabbat.	}
+{	495	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	501	}{	Le Sabbat se cache à l'hôtel Hollowbrook. . . Sous notre nez, ici dans le centre ville. Tuez leur chef. . . Les autres fuiront la ville. C'est la dernière fois qu'ils mettent les pieds à Los Angeles. . .	}{	Le Sabbat se cache à l'hôtel Hollowbrook. . . Sous notre nez, ici dans le centre ville. Tuez leur chef. . . Les autres fuiront la ville. C'est la dernière fois qu'ils mettent les pieds à Los Angeles. . .	}{	#	}{	}{	G.Prince_Sabbat = 1; pc.SetQuest("Shangrila",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	(Auto-Link)	}{	(Auto-Link)	}{	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	503	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	504	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	505	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	511	}{	Avant de partir - Beckett m'a dit que vous aviez rendu visite à l'Ordre de Leopold. Avez-vous appris comment on ouvre le sarcophage ?	}{	Avant de partir - Beckett m'a dit que vous aviez rendu visite à l'Ordre de Leopold. Avez-vous appris comment on ouvre le sarcophage ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	Oui.	}{	Oui.	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	. . . hé hé, ouais.	}
+{	513	}{	Avant de vous dire quoi que ce soit, je veux voir ma récompense.	}{	Avant de vous dire quoi que ce soit, je veux voir ma récompense.	}{	521	}{	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	Je ne réponds aux questions que contre une. . . contrepartie.	}
+{	514	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	515	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	516	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	517	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	520	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	521	}{	Prenez votre argent. Dites-moi, qu'avez-vous appris ?	}{	Prenez votre argent. Dites-moi, qu'avez-vous appris ?	}{	#	}{	}{	pc.MoneyAdd(300); G.Prince_Socpay = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	522	}{	La caisse manquante du Dane. C'est la clé du sarcophage.	}{	La caisse manquante du Dane. C'est la clé du sarcophage.	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	La caisse disparue du Dane. . . A l'intérieur, la clé de cette vieille boîte.	}
+{	523	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	524	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	530	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Quoi ? Qu'avez-vous appris ?	}{	Quoi ? Qu'avez-vous appris ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	La caisse manquante du Dane. C'est la clé du sarcophage.	}{	La caisse manquante du Dane. C'est la clé du sarcophage.	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	La caisse disparue du Dane. . . A l'intérieur, la clé de cette vieille boîte.	}
+{	533	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	534	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	536	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	Une clé ? Où ça ? Vous l'avez ?	}{	Une clé ? Où ça ? Vous l'avez ?	}{	#	}{	}{	G.Story_State = 75; pc.SetQuest("Johansen",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	542	}{	Non. C'est tout ce que je sais. Mais j'ai d'autres bonnes nouvelles. Bach est mort.	}{	Non. C'est tout ce que je sais. Mais j'ai d'autres bonnes nouvelles. Bach est mort.	}{	551	}{	G.Prince_Reaction >= -3	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Non. Mais j'ai tué le pape. Bach, c'était bien le pape, non ?	}
+{	543	}{	Aucune idée. Mais vous serez heureux d'apprendre que j'ai tué Bach.	}{	Aucune idée. Mais vous serez heureux d'apprendre que j'ai tué Bach.	}{	551	}{	G.Prince_Reaction >= -3	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Je n'ai aucune clé, mais j'ai ouvert la porte de l'autre monde pour Bach.	}
+{	544	}{	Non. C'est tout ce que je sais. Oh, et j'ai tué Bach. . .	}{	Non. C'est tout ce que je sais. Oh, et j'ai tué Bach. . .	}{	1262	}{	G.Prince_Reaction < -3	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Non. Mais j'ai tué le pape. Bach, c'était bien le pape, non ?	}
+{	545	}{	Non. Et, euh, ce n'était pas pour vous rendre service, mais. . . J'ai tué Bach.	}{	Non. Et, euh, ce n'était pas pour vous rendre service, mais. . . J'ai tué Bach.	}{	1262	}{	G.Prince_Reaction < -3	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Non. Mais si vous le sentez par-dessus la puanteur de vos excès, vous respirerez le sang de Bach.	}
+{	546	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	547	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	548	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	551	}{	[Rires]Non seulement vous avez infiltré l'Ordre de Leopold, mais en plus vous avez tué leur plus grand chasseur ? Vous êtes en train de vous bâtir une sacrée légende. Superbe. A votre santé. . . Et à votre victoire sur le Sabbat. Quant à mon Bach - que tous ses descendants connaissent le même sort.	}{	[Rires]Non seulement vous avez infiltré l'Ordre de Leopold, mais en plus vous avez tué leur plus grand chasseur ? Vous êtes en train de vous bâtir une sacrée légende. Superbe. A votre santé. . . Et à votre victoire sur le Sabbat. Quant à mon Bach - que tous ses descendants connaissent le même sort.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	Si je l'ai tué, c'est que je n'avais pas le choix. Je dois faire de même avec le Sabbat.	}{	Si je l'ai tué, c'est que je n'avais pas le choix. Je dois faire de même avec le Sabbat.	}{	571	}{	Humanity 8	}{	}{	}{	}{	}{	}{	}{	}{	C'était un obstacle que rien d'autre n'aurait pu déplacer. Comme le Sabbat.	}
+{	553	}{	Tous les chasseurs mourront s'ils croisent ma route. Et c'est aussi vrai pour le Sabbat.	}{	Tous les chasseurs mourront s'ils croisent ma route. Et c'est aussi vrai pour le Sabbat.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si les chasseurs ont besoin de leur sang, ils feraient bien de ne pas m'approcher. Comme le Sabbat, d'ailleurs.	}
+{	554	}{	Je vous ai rendu service en éliminant Bach. Vous ne croyez pas que ça vaut quelque chose ?	}{	Je vous ai rendu service en éliminant Bach. Vous ne croyez pas que ça vaut quelque chose ?	}{	561	}{	G.Prince_Socpay == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le sang de Bach est sur mes mains, et vous ne voulez pas me donner quelques billets pour les essuyer ?	}
+{	555	}{	Je n'ai pas seulement tué Bach, j'ai également découvert son journal. Le voulez-vous?	}{	Je n'ai pas seulement tué Bach, j'ai également découvert son journal. Le voulez-vous?	}{	561	}{	pc.HasItem("item_g_bach_journal") and G.Prince_Socpay == 0 and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_bach_journal")	}{	}{	}{	}{	}{	}{	}{	J'ai trouvé les paroles du défunt Bach sur du papier. Cela vaut-il d'autres feuilles vertes pour vous?	}
+{	556	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	558	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	560	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	Tenez. Dommage que vous n'ayez pas sa tête. Je l'aurais envoyée au Grand Inquisiteur.	}{	Tenez. Dommage que vous n'ayez pas sa tête. Je l'aurais envoyée au Grand Inquisiteur.	}{	#	}{	}{	pc.MoneyAdd(300); G.Prince_Socpay = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	562	}{	Je vais me préparer pour le Sabbat. . .	}{	Je vais me préparer pour le Sabbat. . .	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je m'enroule pour l'instant, mais très bientôt, je frapperai le Sabbat. 	}
+{	563	}{	Oui. Et maintenant, le Sabbat.	}{	Oui. Et maintenant, le Sabbat.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Avec ceci, je peux enlever les taches de Sabbat de mon enveloppe extérieure. 	}
+{	564	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	565	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	566	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	567	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	568	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	Le Sabbat doit être éliminé avant l'aube. Quand vous reviendrez, nous commencerons à chercher la clé.	}{	Le Sabbat doit être éliminé avant l'aube. Quand vous reviendrez, nous commencerons à chercher la clé.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	572	}{	(Auto-Link)	}{	(Auto-Link)	}{	1236	}{	G.Prince_Hardwarn == 0 and pc.masquerade == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	573	}{	(Auto-Link)	}{	(Auto-Link)	}{	1226	}{	G.Prince_Lightwarn == 0 and pc.masquerade > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	574	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui.	}
+{	575	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	576	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	577	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	581	}{	Eliminez-les. . .Avant qu'ils nous perdent tous.	}{	Eliminez-les. . .Avant qu'ils nous perdent tous.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	583	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	584	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	585	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	586	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	587	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	Le Sabbat.	}{	Le Sabbat.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	592	}{	C'est fait.	}{	C'est fait.	}{	601	}{	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Historique.	}
+{	593	}{	N'existe plus dans cette ville.	}{	N'existe plus dans cette ville.	}{	601	}{	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Il reste un Sabbat ?	}
+{	594	}{	En cendres.	}{	En cendres.	}{	601	}{	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	A classer avec les dinosaures, du côté de l'extinction. . .	}
+{	595	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	596	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	597	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	598	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	599	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	600	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	601	}{	Un obstacle de moins. Nous allons rétablir un ordre nouveau. Et en grande partie grâce à vos services. [Au shérif]Le Sabbat est mort. Toi, tu n'as jamais pu t'en débarrasser. [au joueur]Continuez, et vous pourriez avoir son poste.	}{	Un obstacle de moins. Nous allons rétablir un ordre nouveau. Et en grande partie grâce à vos services. [Au shérif]Le Sabbat est mort. Toi, tu n'as jamais pu t'en débarrasser. [au joueur]Continuez, et vous pourriez avoir son poste.	}{	#	}{	}{	pc.SetQuest("Shangrila",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	(Auto-Link)	}{	(Auto-Link)	}{	611	}{	G.Prince_Reaction >= 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	603	}{	(Auto-Link)	}{	(Auto-Link)	}{	621	}{	G.Prince_Reaction < -3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	604	}{	(Auto-Link)	}{	(Auto-Link)	}{	631	}{	G.Prince_Reaction < 4 and G.Prince_Reaction >= -3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	605	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	610	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	611	}{	Ma machine de guerre. . . Mes victoires dans cette ville sont en grande partie dues à vos actes. Vous avez fait ce que je disais sans poser de question, et vous avez toujours bien fait. Prenez ceci en témoignage de mon affection. Nous règnerons sur cette ville côte à côte.	}{	Ma machine de guerre. . . Mes victoires dans cette ville sont en grande partie dues à vos actes. Vous avez fait ce que je disais sans poser de question, et vous avez toujours bien fait. Prenez ceci en témoignage de mon affection. Nous règnerons sur cette ville côte à côte.	}{	#	}{	}{	pc.MoneyAdd(800)	}{	}{	}{	}{	}{	}{	}{	}
+{	612	}{	Je sais où se trouve la clé du sarcophage.	}{	Je sais où se trouve la clé du sarcophage.	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	La clé de cette boîte vous intéresse encore ?	}
+{	613	}{	J'ai trouvé comment obtenir la clé.	}{	J'ai trouvé comment obtenir la clé.	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je sais quelque chose que je ne veux pas dire. . . Ca concerne la clé. . . Oups. . .	}
+{	614	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	615	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	616	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	617	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	618	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	619	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	620	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	621	}{	Quel dommage que nous soyons toujours opposés. Avec mes contacts et votre talent, nous pourrions aller très loin. Voici un aperçu de ce que donnerait une telle alliance. Pensez-y.	}{	Quel dommage que nous soyons toujours opposés. Avec mes contacts et votre talent, nous pourrions aller très loin. Voici un aperçu de ce que donnerait une telle alliance. Pensez-y.	}{	#	}{	}{	pc.MoneyAdd(800)	}{	}{	}{	}{	}{	}{	}{	}
+{	622	}{	Je sais où se trouve la clé du sarcophage.	}{	Je sais où se trouve la clé du sarcophage.	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	La clé de cette boîte vous intéresse encore ?	}
+{	623	}{	J'ai trouvé comment obtenir la clé.	}{	J'ai trouvé comment obtenir la clé.	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je sais quelque chose que je ne veux pas dire. . . Ca concerne la clé. . . Oups. . .	}
+{	624	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	625	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	626	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	627	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	628	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	629	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	630	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	631	}{	Continuez dans cette voie, et vous deviendrez bientôt un élément incontournable de ma cour. Voici un témoignage de ma gratitude. Servez-moi bien, et nous conquerrons cette ville côte à côte.	}{	Continuez dans cette voie, et vous deviendrez bientôt un élément incontournable de ma cour. Voici un témoignage de ma gratitude. Servez-moi bien, et nous conquerrons cette ville côte à côte.	}{	#	}{	}{	pc.MoneyAdd(800)	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	Je sais où se trouve la clé du sarcophage.	}{	Je sais où se trouve la clé du sarcophage.	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	La clé de cette boîte vous intéresse encore ?	}
+{	633	}{	J'ai trouvé comment obtenir la clé.	}{	J'ai trouvé comment obtenir la clé.	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je sais quelque chose que je ne veux pas dire. . . Ca concerne la clé. . . Oups. . .	}
+{	634	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	635	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	636	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	637	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	638	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	640	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	641	}{	Vous avez trouvé la clé ? Où ça ? Qui l'a ?	}{	Vous avez trouvé la clé ? Où ça ? Qui l'a ?	}{	#	}{	}{	G.Story_State = 85	}{	}{	}{	}{	}{	}{	}{	}
+{	642	}{	C'est Ming Xiao qui l'a. Elle m'a aussi dit que votre alliance était rompue.	}{	C'est Ming Xiao qui l'a. Elle m'a aussi dit que votre alliance était rompue.	}{	661	}{	G.Prince_Alliance == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hmm. . . Avec qui avez-vous passé une alliance, déjà ? Ah oui, Ming Xiao.	}
+{	643	}{	Ming Xiao. Elle n'a pas dû vous le dire quand vous vous êtes alliés.	}{	Ming Xiao. Elle n'a pas dû vous le dire quand vous vous êtes alliés.	}{	661	}{	G.Prince_Alliance == 0	}{	}{	}{	}{	}{	}{	}{	}{	La main de la plus froide des Kuei-Jin. . . La main que vous avez serrée pour conclure cette alliance.	}
+{	644	}{	Ming Xiao, espèce de sous-merde ! Et dire que tu t'es allié à elle !	}{	Ming Xiao, espèce de sous-merde ! Et dire que tu t'es allié à elle !	}{	671	}{	G.Prince_Alliance == 0	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	La reine mangouste, Xiao, votre alliée, roi serpent. A qui vous vendez vos frères !	}
+{	645	}{	C'est Ming Xiao qui l'a. Elle m'a aussi dit que votre alliance était rompue.	}{	C'est Ming Xiao qui l'a. Elle m'a aussi dit que votre alliance était rompue.	}{	651	}{	G.Prince_Alliance == 1	}{	}{	}{	}{	}{	}{	}{	}{	Hmm. . . Avec qui avez-vous passé une alliance, déjà ? Ah oui, Ming Xiao.	}
+{	646	}{	Une alliance avec les Kuei-Jin ? Pourquoi ?	}{	Une alliance avec les Kuei-Jin ? Pourquoi ?	}{	651	}{	G.Prince_Alliance == 1	}{	}{	}{	}{	}{	}{	}{	}{	La main de la plus froide des Kuei-Jin. . . La main que vous avez serrée pour conclure cette alliance.	}
+{	647	}{	Sale fils de pute ! Comment avez-vous pu vous allier avec les Kuei-Jin ?	}{	Sale pute ! Comment avez-vous pu vous allier avec les Kuei-Jin ?	}{	651	}{	G.Prince_Alliance == 1	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	La reine mangouste, Xiao, votre alliée, roi serpent. A qui vous vendez vos frères !	}
+{	648	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	650	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	651	}{	Encore ces âneries. . . Je vous l'ai dit, aucun vampire ne s'allierait avec ces démons. C'est un subterfuge pour lancer une guerre civile. . . Et on dirait que ça marche. . .	}{	Encore ces âneries. . . Je vous l'ai dit, aucun vampire ne s'allierait avec ces démons. C'est un subterfuge pour lancer une guerre civile. . . Et on dirait que ça marche. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	652	}{	Vous étiez obligé. Pour mater les Anarchs de LA.	}{	Vous étiez obligé. Pour mater les Anarchs de LA.	}{	681	}{	G.Prince_Reaction >= 4	}{	}{	}{	}{	}{	}{	}{	}{	Je l'ai entendu murmurer dans ma tête. . . Il y a une méthode dans cette folie, comme moi. . .	}
+{	653	}{	Vous étiez obligé. Pour mater les Anarchs de LA.	}{	Vous étiez obligé. Pour mater les Anarchs de LA.	}{	691	}{	G.Prince_Reaction < 4	}{	}{	}{	}{	}{	}{	}{	}{	Je l'ai entendu murmurer dans ma tête. . . Il y a une méthode dans cette folie, comme moi. . .	}
+{	654	}{	Alors Nines est innocent. Elle a pris son apparence pour tuer Grout.	}{	Alors Nines est innocent. Elle a pris son apparence pour tuer Grout.	}{	711	}{	}{	}{	}{	}{	}{	}{	}{	}{	Xiao porte la peau de ses caprices. Dans celle de Nines, elle a tué notre primogène.	}
+{	655	}{	Ming Xiao a toujours été honnête avec moi. Tout s'éclaire.	}{	Ming Xiao a toujours été honnête avec moi. Tout s'éclaire.	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je peux détester mes ennemis, mais je peux respecter leur honnêteté.	}
+{	656	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	657	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	658	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	659	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	660	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	661	}{	Une alliance ? Entre un prince de la Camarilla et ces diables étrangers ? Ridicule. Vous ne comprenez pas ? On vous a raconté ce mensonge - cette tromperie impossible - pour fausser votre loyauté et répandre la dissension dans nos rangs.	}{	Une alliance ? Entre un prince de la Camarilla et ces diables étrangers ? Ridicule. Vous ne comprenez pas ? On vous a raconté ce mensonge - cette tromperie impossible - pour fausser votre loyauté et répandre la dissension dans nos rangs.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	Vous étiez obligé. Pour mater les Anarchs de LA.	}{	Vous étiez obligé. Pour mater les Anarchs de LA.	}{	681	}{	G.Prince_Reaction >= 4	}{	}{	}{	}{	}{	}{	}{	}{	Je l'ai entendu murmurer dans ma tête. . . Il y a une méthode dans cette folie, comme moi. . .	}
+{	663	}{	Vous étiez obligé. Pour mater les Anarchs de LA.	}{	Vous étiez obligé. Pour mater les Anarchs de LA.	}{	691	}{	G.Prince_Reaction < 4	}{	}{	}{	}{	}{	}{	}{	}{	Je l'ai entendu murmurer dans ma tête. . . Il y a une méthode dans cette folie, comme moi. . .	}
+{	664	}{	Alors Nines est innocent. Elle a pris son apparence pour tuer Grout.	}{	Alors Nines est innocent. Elle a pris son apparence pour tuer Grout.	}{	711	}{	}{	}{	}{	}{	}{	}{	}{	}{	Xiao porte la peau de ses caprices. Dans celle de Nines, elle a tué notre primogène.	}
+{	665	}{	Ming Xiao a toujours été honnête avec moi. Tout s'éclaire.	}{	Ming Xiao a toujours été honnête avec moi. Tout s'éclaire.	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je peux détester mes ennemis, mais je peux respecter leur honnêteté.	}
+{	666	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	667	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	668	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	669	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	670	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	671	}{	Quelle naïveté ! Les Kuei-Jin sont des démons - ils vous ont trompé, ils ont besoin que vous vous retourniez contre moi. Ils veulent cette ville depuis leur arrivée - et s'ils peuvent nous pousser à nous entretuer, ce sera d'autant plus facile pour eux.	}{	Quelle naïveté ! Les Kuei-Jin sont des démons - c'était un piège, ils ont besoin que vous vous retourniez contre moi. Ils veulent cette ville depuis leur arrivée - et s'ils peuvent nous pousser à nous entretuer, ce sera d'autant plus facile pour eux.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	672	}{	Alors Nines est innocent. Elle a pris son apparence pour tuer Grout.	}{	Alors Nines est innocent. Elle a pris son apparence pour tuer Grout.	}{	711	}{	}{	}{	}{	}{	}{	}{	}{	}{	Xiao porte la peau de ses caprices. Dans celle de Nines, elle a tué notre primogène.	}
+{	673	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	674	}{	Vous avez vendu les Anarchs. Vous êtes un traître à votre propre race.	}{	Vous avez vendu les Anarchs. Vous êtes un traître à votre propre race.	}{	721	}{	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	SERPENT VERMINE CAFARD ! VOUS NOUS VENDEZ A LA MANGOUSTE !	}
+{	675	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	676	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	678	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	679	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	680	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	681	}{	[Marque une pause]Ce fut une décision difficile. Mais je ne l'ai prise que pour le bien de tous. Les Kuei-Jin n'ont pas posé de question, mais j'ai fait tout cela pour ramener les vampires sous l'aile de la Camarilla. Et pour qu'enfin, nous puissions éliminer les Kuei-Jin, tous ensemble !	}{	[Marque une pause]Ce fut une décision difficile. Mais je ne l'ai prise que pour le bien de tous. Les Kuei-Jin n'ont pas posé de question, mais j'ai fait tout cela pour ramener les vampires sous l'aile de la Camarilla. Et pour qu'enfin, nous puissions éliminer les Kuei-Jin, tous ensemble !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	682	}{	J'aurais fait la même chose.	}{	J'aurais fait la même chose.	}{	711	}{	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	GENIAL ! Un plan aussi tordu et complexe que mon esprit !	}
+{	683	}{	Je ne leur aurais jamais fait confiance.	}{	Je ne leur aurais jamais fait confiance.	}{	721	}{	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	HA HA HA ! Vous avez fait confiance aux Kuei-Jin ? HA HA HA HA HA HA HA !	}
+{	684	}{	Ce genre d'information pourrait détruire quelqu'un. Ou pas. Tout dépend du prix.	}{	Ce genre d'information pourrait détruire quelqu'un. Ou pas. Tout dépend du prix.	}{	701	}{	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	Mon esprit parle trop, mais pas quand mes mains sont lestées d'or.	}
+{	685	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	686	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	687	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	688	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	689	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	690	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	691	}{	Ils ont bâti leur mensonge sur des choses probables. Mais cela reste un mensonge.	}{	Ils ont bâti leur mensonge sur des choses probables. Mais cela reste un mensonge.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	692	}{	Alors Nines est innocent. Elle a pris son apparence pour tuer Grout.	}{	Alors Nines est innocent. Elle a pris son apparence pour tuer Grout.	}{	711	}{	}{	}{	}{	}{	}{	}{	}{	}{	Xiao porte la peau de ses caprices. Dans celle de Nines, elle a tué notre primogène.	}
+{	693	}{	Ming Xiao a toujours été honnête avec moi. Tout s'éclaire.	}{	Ming Xiao a toujours été honnête avec moi. Tout s'éclaire.	}{	671	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je peux détester mes ennemis, mais je peux respecter leur honnêteté.	}
+{	694	}{	Vous avez vendu les Anarchs. Vous êtes un traître à votre propre race.	}{	Vous avez vendu les Anarchs. Vous êtes un traître à votre propre race.	}{	721	}{	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	SERPENT VERMINE CAFARD ! VOUS NOUS VENDEZ A LA MANGOUSTE !	}
+{	695	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	696	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	697	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	698	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	699	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	700	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	701	}{	Voilà ce que je vais vous donner.[Au Shérif] Shérif, vous venez d'assister à une tentative d'assassinat. Réglez cela.	}{	Voilà ce que je vais vous donner.[Au Shérif] Shérif, vous venez d'assister à une tentative d'assassinat. Réglez cela.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	702	}{	On se calme... Je ne faisait que plaisanter.	}{	On se calme... Je ne faisait que plaisanter.	}{	721	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non, non, le fou se moquait juste du bouffon.	}
+{	703	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	704	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	705	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	706	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	707	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	708	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	709	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	710	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	711	}{	A compter de cet instant, il n'y a plus de chasse contre Nines Rodriguez. Les Kuei-Jin ont révélé leur jeu - ils veulent que nous partions en guerre les uns contre les autres ? Eh bien à la place, je propose une alliance avec les Anarchs. Ensemble, les vampires chasseront ces étrangers une bonne fois pour toutes !	}{	A compter de cet instant, il n'y a plus de chasse contre Nines Rodriguez. Les Kuei-Jin ont révélé leur jeu - ils veulent que nous partions en guerre les uns contre les autres ? Eh bien à la place, je propose une alliance avec les Anarchs. Ensemble, les vampires chasseront ces étrangers une bonne fois pour toutes !	}{	#	}{	}{	G.Prince_Truce = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	712	}{	Vous croyez vraiment que les Anarchs vont vous faire confiance ?	}{	Vous croyez vraiment que les Anarchs vont vous faire confiance ?	}{	741	}{	G.Player_Anarch == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vraiment ? Ils aiment vos paroles autant qu'un enfant aime ce qui est bon pour lui.	}
+{	713	}{	Vous croyez vraiment que les Anarchs vont vous faire confiance ?	}{	Vous croyez vraiment que les Anarchs vont vous faire confiance ?	}{	731	}{	G.Player_Anarch == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vraiment ? Ils aiment vos paroles autant qu'un enfant aime ce qui est bon pour lui.	}
+{	714	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	715	}{	Les Anarchs n'accepteront jamais une alliance avec vous.	}{	Les Anarchs n'accepteront jamais une alliance avec vous.	}{	741	}{	G.Player_Anarch == 1	}{	}{	}{	}{	}{	}{	}{	}{	Hé hé. . . HA HA HA HA HA. . . Jamais.	}
+{	716	}{	Les Anarchs n'accepteront jamais une alliance avec vous.	}{	Les Anarchs n'accepteront jamais une alliance avec vous.	}{	761	}{	G.Player_Anarch == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hé hé. . . HA HA HA HA HA. . . Jamais.	}
+{	717	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	718	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	719	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	720	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	721	}{	Assez !	}{	Assez !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	722	}{	(Auto-Link)	}{	(Auto-Link)	}{	711	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	723	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	724	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	725	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	726	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	727	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	728	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	729	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	730	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	731	}{	Ce n'est pas une question de confiance. C'est une question de savoir qui ils détestent le plus. La Camarilla, ou les Kuei-Jin. Les Kuei-Jin ont tué leur dernier chef et menacent toute notre race. Je pense qu'ils accepteront cette alliance. 	}{	Ce n'est pas une question de confiance. C'est une question de savoir qui ils détestent le plus. La Camarilla, ou les Kuei-Jin. Les Kuei-Jin ont tué leur dernier chef et menacent toute notre race. Je pense qu'ils accepteront cette alliance. 	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	732	}{	Comment comptez-vous les convaincre ?	}{	Comment comptez-vous les convaincre ?	}{	771	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis perplexe. . . Votre logique est. . . au-delà de toute compréhension.	}
+{	733	}{	Et j'imagine que c'est à moi d'aller leur parler, n'est-ce pas ?	}{	Et j'imagine que c'est à moi d'aller leur parler, n'est-ce pas ?	}{	771	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne gaspillez pas vos mots, alors c'est moi que vous envoyez.	}
+{	734	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	735	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	736	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	737	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	738	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	739	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	740	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	741	}{	Qu'ils me fassent confiance ou non, les Kuei-Jin sont la plus grande menace. Et vous, ils vous font confiance. Après tout, vous travaillez pour eux depuis le début.	}{	Qu'ils me fassent confiance ou non, les Kuei-Jin sont la plus grande menace. Et vous, ils vous font confiance. Après tout, vous travaillez pour eux depuis le début.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	742	}{	Non, je. . .	}{	Non, je. . .	}{	751	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ha ha ha. . . hein ?	}
+{	743	}{	Comment avez-vous. . .	}{	Comment avez-vous. . .	}{	751	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oh non, il sait. . . IL SAIT. . .	}
+{	744	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	745	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	746	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	747	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	748	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	749	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	750	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	751	}{	Epargnez-moi les explications, je ne vous en veux pas. Votre affiliation importe peu, au vu de vos accomplissements - en fait, vous êtez la seule personne capable de faire le lien entre ces deux communautés et de signer l'arrêt de mort des Kuei-Jin. Vous seriez une légende.	}{	Epargnez-moi les explications, je ne vous en veux pas. Votre affiliation importe peu, au vu de vos accomplissements - en fait, vous êtez la seule personne capable de faire le lien entre ces deux communautés et de signer l'arrêt de mort des Kuei-Jin. Vous seriez une légende.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	752	}{	Je vais leur parler. Je leur ferai sans doute voir les avantages d'une alliance. . .	}{	Je vais leur parler. Je leur ferai sans doute voir les avantages d'une alliance. . .	}{	771	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm, je ferai en sorte qu'ils comprennent la blague. . .	}
+{	753	}{	Je suppose que nul autre que moi ne peut faire cela. Mais je ne sais pas comment les Anarchs vont le prendre.	}{	Je suppose que nul autre que moi ne peut faire cela. Mais je ne sais pas comment les Anarchs vont le prendre.	}{	771	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ils. Vont. Adorer.	}
+{	754	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	755	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	756	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	757	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	758	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	759	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	760	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	761	}{	La Camarilla ne menace pas leur vie - et à peine leur mode de vie. Les Kuei-Jin nous éradiqueraient tous, s'ils étaient assez nombreux. C'est pourquoi ils préféreraient créer une guerre civile entre nous.	}{	La Camarilla ne menace pas leur vie - et à peine leur mode de vie. Les Kuei-Jin nous éradiqueraient tous, s'ils étaient assez nombreux. C'est pourquoi ils préféreraient créer une guerre civile entre nous.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	762	}{	Comment comptez-vous les convaincre ?	}{	Comment comptez-vous les convaincre ?	}{	771	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis perplexe. . . Votre logique est. . . au-delà de toute compréhension.	}
+{	763	}{	Et j'imagine que c'est à moi d'aller leur parler, n'est-ce pas ?	}{	Et j'imagine que c'est à moi d'aller leur parler, n'est-ce pas ?	}{	771	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne gaspillez pas vos mots, alors c'est moi que vous envoyez.	}
+{	764	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	765	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	766	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	767	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	768	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	769	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	770	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	771	}{	Allez de suite au Last Round. Dites-leur que les Kuei-Jin ont avoué le meurtre de Grout, et que la chasse contre Nines Rodriguez est annulée. Dites-leur que j'ai compris la vraie menace posée par les Kuei-Jin, et que je désire négocier un pacte.	}{	Allez de suite au Last Round. Dites-leur que les Kuei-Jin ont avoué le meurtre de Grout, et que la chasse contre Nines Rodriguez est annulée. Dites-leur que j'ai compris la vraie menace posée par les Kuei-Jin, et que je désire négocier un pacte.	}{	#	}{	}{	pc.SetQuest("Alliance",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	772	}{	(Auto-Link)	}{	(Auto-Link)	}{	781	}{	G.Prince_Reaction >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	773	}{	(Auto-Link)	}{	(Auto-Link)	}{	1266	}{	G.Prince_Reaction < 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	774	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	775	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	776	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	777	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	778	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	779	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	780	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	781	}{	Vous serez mon émissaire pour cette alliance. Naturellement, vous parlez au nom de la Camarilla - choisissez vos mots avec soin. Je commence à organiser mes plans de guerre. Bonne chance. La prospérité de tous les vampires de la ville repose sur votre succès de ce soir.	}{	Vous serez mon émissaire pour cette alliance. Naturellement, vous parlez au nom de la Camarilla - choisissez vos mots avec soin. Je commence à organiser mes plans de guerre. Bonne chance. La prospérité de tous les vampires de la ville repose sur votre succès de ce soir.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	782	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	783	}{	Ah, donc je n'ai pas à m'inquiéter. . .	}{	Ah, donc je n'ai pas à m'inquiéter. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oh non.	}
+{	784	}{	Je vais voir ce que je peux faire.	}{	Je vais voir ce que je peux faire.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	On ne peut pas arriver au succès sans passer par la case qui porte mon nom.	}
+{	785	}{	Alors leur avenir est entre de bonnes mains.	}{	Alors leur avenir est entre de bonnes mains.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le destin entre mes mains. . . Destin. . . Fragile. . .	}
+{	786	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	787	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	788	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	789	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	790	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	791	}{	Il est essentiel que vous alliez voir de suite les Anarchs.	}{	Il est essentiel que vous alliez voir de suite les Anarchs.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	792	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	793	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	794	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	795	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	796	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	797	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	798	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	799	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	800	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	801	}{	J'avais mis tant d'espoir en vous. . . Vous auriez pu connaître la gloire. Pourquoi avez-vous tué Nines Rodriguez ?	}{	J'avais mis tant d'espoir en vous. . . Vous auriez pu connaître la gloire. Pourquoi avez-vous tué Nines Rodriguez ?	}{	#	}{	}{	G.Prince_Ending = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	802	}{	C'est un loup-garou qui l'a tué. Il y a eu un incendie et des loups-garous nous ont attaqués.	}{	C'est un loup-garou qui l'a tué. Il y a eu un incendie et des loups-garous nous ont attaqués.	}{	851	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce n'était pas moi, c'était un type dans un costume de loup. Ou un loup-garou. C'était la terreur à l'état pur !	}
+{	803	}{	Arrêtez votre cirque. Je sais que c'est vous qui m'avez tendu un piège !	}{	Arrêtez votre cirque. Je sais que c'est vous qui m'avez tendu un piège !	}{	821	}{	Persuasion 10	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez signé ce mystère. Vous m'avait fait un rôle dans votre petit drame, et maintenant vous voulez me couper au montage !	}
+{	804	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	805	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	806	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	807	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	808	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	809	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	810	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	811	}{	Je vous ai demandé d'organiser une trêve, et Nines Rodriguez est mort ? Expliquez-vous !	}{	Je vous ai demandé d'organiser une trêve, et Nines Rodriguez est mort ? Expliquez-vous !	}{	#	}{	}{	G.Prince_Ending = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	812	}{	C'est un loup-garou qui l'a tué. Il y a eu un incendie et des loups-garous nous ont attaqués.	}{	C'est un loup-garou qui l'a tué. Il y a eu un incendie et des loups-garous nous ont attaqués.	}{	851	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce n'était pas moi, c'était un type dans un costume de loup. Ou un loup-garou. C'était la terreur à l'état pur !	}
+{	813	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	814	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	815	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	816	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	817	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	818	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	819	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	820	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	821	}{	[Pause dramatique]Nines était un sacrifice. Sans chef, il y a eu une certaine confusion. Les Anarchs ont besoin de se venger. J'ai demandé une chasse contre vous pour apaiser leur soif de sang, et asseoir mon autorité sur eux. Enfin, les vampires de la ville sont unis. Les Kuei-Jin n'ont aucune chance.	}{	[Pause dramatique]Nines était un sacrifice. Sans chef, il y a eu une certaine confusion. Les Anarchs ont besoin de se venger. J'ai demandé une chasse contre vous pour apaiser leur soif de sang, et asseoir mon autorité sur eux. Enfin, les vampires de la ville sont unis. Les Kuei-Jin n'ont aucune chance.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	822	}{	Et vous voulez que je tombe sans rien dire ? Que je meure pour le bien supérieur de la Camarilla ?	}{	Et vous voulez que je tombe sans rien dire ? Que je meure pour le bien supérieur de la Camarilla ?	}{	831	}{	}{	}{	}{	}{	}{	}{	}{	}{	Personne ne peut me sacrifier !	}
+{	823	}{	Et maintenant, vous allez me tuer, je me trompe ?	}{	Et maintenant, vous allez me tuer, je me trompe ?	}{	831	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si vous voulez vous défaire de moi, je vais vous mordre et vous griffer jusqu'au bout !	}
+{	824	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	825	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	826	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	827	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	828	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	829	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	830	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	831	}{	Comme je l'ai déjà dit, une personne avec vos talents est irremplaçable. Je savais que vous survivriez à cette épreuve. Et maintenant que vous voilà, nous allons simplement dire aux Anarchs ce qui s'est vraiment passé. Les Kuei-Jin ont allumé cet incendie pour enrager les loups-garous qui ont tué Rodriguez.	}{	Comme je l'ai déjà dit, une personne avec vos talents est irremplaçable. Je savais que vous survivriez à cette épreuve. Et maintenant que vous voilà, nous allons simplement dire aux Anarchs ce qui s'est vraiment passé. Les Kuei-Jin ont allumé cet incendie pour enrager les loups-garous qui ont tué Rodriguez.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	832	}{	Je comprends. J'aurais sans doute fait la même chose à votre place.	}{	Je comprends. J'aurais sans doute fait la même chose à votre place.	}{	951	}{	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Hmm. . . alors ça. . . C'est logique ! Bien joué !	}
+{	833	}{	Allez vous faire foutre ! Et si c'était moi qui la disais, la vérité ?	}{	Allez vous faire foutre ! Et si c'était moi qui la disais, la vérité ?	}{	841	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je pourrais le crier depuis les toits. Les rues seraient engorgées de vos assassins !	}
+{	834	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	835	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	836	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	837	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	838	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	839	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	840	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	841	}{	Dans ce cas, l'alliance s'effondrera, il y aura une longue guerre civile, et les Kuei-Jin seront victorieux. Si vous confirmez mon histoire, nous règnerons tous les deux sur la ville. Pour les siècles des siècles.	}{	Dans ce cas, l'alliance s'effondrera, il y aura une longue guerre civile, et les Kuei-Jin seront victorieux. Si vous confirmez mon histoire, nous règnerons tous les deux sur la ville. Pour les siècles des siècles.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	842	}{	Dit comme ça, je n'ai pas beaucoup le choix.	}{	Dit comme ça, je n'ai pas beaucoup le choix.	}{	951	}{	}{	}{	}{	}{	}{	}{	}{	}{	La viande avariée ou une croisière, mes options sont claires.	}
+{	843	}{	Je vais le faire, pour le bien des vampires de cette ville.	}{	Je vais le faire, pour le bien des vampires de cette ville.	}{	951	}{	}{	}{	}{	}{	}{	}{	}{	}{	Notre sang me lie à cette décision.	}
+{	844	}{	Le pouvoir, ça me plait. Si vous me trahissez, j'éparpillerai vos cendres aux quatre vents.	}{	Le pouvoir, ça me plait. Si vous me trahissez, j'éparpillerai vos cendres aux quatre vents.	}{	951	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le pouvoir a un goût agréable, mais j'ai un goût amer dans la bouche. . . Si cette amertume devait revenir, vous mourriez. . . 	}
+{	845	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	846	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	847	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	848	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	849	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	850	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	851	}{	Le feu. . . Je comprends tout. Les Kuei-Jin ont dû vous suivre et allumer le feu. Ce qui a enragé les loups-garous. Rares sont les vampires qui ont réchappé à une attaque de loup-garou - vous vous avérez indispensable.	}{	Le feu. . . Je comprends tout. Les Kuei-Jin ont dû vous suivre et allumer le feu. Ce qui a enragé les loups-garous. Rares sont les vampires qui ont réchappé à une attaque de loup-garou - vous vous avérez indispensable.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	852	}{	Non seulement j'ai survécu, mais j'ai tué un loup-garou.	}{	Non seulement j'ai survécu, mais j'ai tué un loup-garou.	}{	861	}{	IsDead("Werewolf")	}{	}{	}{	}{	}{	}{	}{	}{	Le loup-garou ou moi avons tué l'autre à Griffith Park, vous voulez deviner qui a fait ça ?	}
+{	853	}{	Les loups-garous. J'ai tué ce type à mains nues. J'aurais pu en tuer un deuxième. . .	}{	Les loups-garous. J'ai tué ce type à mains nues. J'aurais pu en tuer un deuxième. . .	}{	861	}{	IsDead("Werewolf")	}{	}{	}{	}{	}{	}{	}{	}{	J'étais, genre, je lui donnais tout, vlan, paf, et le loup-garou, genre, il faisait, 'arrête, tu vas me tuer'.	}
+{	854	}{	Donc, vous annulez la chasse contre moi ?	}{	Donc, vous annulez la chasse contre moi ?	}{	871	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je travaillerais mieux s'il n'y avait pas une chasse lancée après moi. . .	}
+{	855	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	856	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	857	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	858	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	859	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	860	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	861	}{	Incroyable - tout bonnement incroyable.	}{	Incroyable - tout bonnement incroyable.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	862	}{	Donc, vous annulez la chasse contre moi ?	}{	Donc, vous annulez la chasse contre moi ?	}{	871	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je travaillerais mieux s'il n'y avait pas une chasse lancée après moi. . .	}
+{	863	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	864	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	865	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	866	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	867	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	868	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	869	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	870	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	871	}{	Bien sûr, vous n'y êtes pour rien. Vous êtes un atout pour moi, je vais prendre soin de vous. Mais il vous reste un dernier service à me rendre. La dernière affaire avant de dormir tranquilles. Petite merveille - il est temps que je vous parle de véritable pouvoir.	}{	Bien sûr, vous n'y êtes pour rien. Vous êtes un atout pour moi, je vais prendre soin de vous. Mais il vous reste un dernier service à me rendre. La dernière affaire avant de dormir tranquilles. Petite merveille - il est temps que je vous parle de véritable pouvoir.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	872	}{	Continuez.	}{	Continuez.	}{	881	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui. . .	}
+{	873	}{	Le pouvoir ? Je vous écoute.	}{	Le pouvoir ? Je vous écoute.	}{	881	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm ? J'ai entendu le mot 'pouvoir' ?	}
+{	874	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	875	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	876	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	877	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	878	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	879	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	880	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	881	}{	Pour notre race, le pouvoir, c'est la vie. Ceux qui n'en ont pas se désintègrent dans la nuit - des centaines de noms qui inspiraient autrefois la peur et sont aujourd'hui oubliés. Il ne suffit pas d'atteindre un certain pouvoir - il faut aussi le conserver. Et ce sarcophage, c'est le pouvoir.	}{	Pour notre race, le pouvoir, c'est la vie. Ceux qui n'en ont pas se désintègrent dans la nuit - des centaines de noms qui inspiraient autrefois la peur et sont aujourd'hui oubliés. Il ne suffit pas d'atteindre un certain pouvoir - il faut aussi le conserver. Et ce sarcophage, c'est le pouvoir.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	882	}{	(Auto-Link)	}{	(Auto-Link)	}{	891	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	883	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	884	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	885	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	886	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	887	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	888	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	889	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	890	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	891	}{	Son contenu entretiendra notre pouvoir pour les siècles à venir. Je l'ai senti, je le sens depuis son apparition. Mais avant d'avoir la clé, nous sommes vulnérables.	}{	Son contenu entretiendra notre pouvoir pour les siècles à venir. Je l'ai senti, je le sens depuis son apparition. Mais avant d'avoir la clé, nous sommes vulnérables.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	892	}{	(Auto-Link)	}{	(Auto-Link)	}{	901	}{	G.Prince_Reaction >= 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	893	}{	(Auto-Link)	}{	(Auto-Link)	}{	931	}{	G.Prince_Reaction < 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	894	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	895	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	896	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	897	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	898	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	899	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	900	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	901	}{	Je me suis souvent appuyé sur vous, et vous ne m'avez jamais déçu. Il vous reste une dernière tâche à accomplir avant de prendre le pouvoir total. Vous devez reprendre cette clé à Ming Xiao.	}{	Je me suis souvent appuyé sur vous, et vous ne m'avez jamais déçu. Il vous reste une dernière tâche à accomplir avant de prendre le pouvoir total. Vous devez reprendre cette clé à Ming Xiao.	}{	#	}{	}{	G.Prince_Boy = 1; pc.SetQuest("Ming",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	902	}{	C'est entendu. Je reviendrai avec la clé.	}{	C'est entendu. Je reviendrai avec la clé.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si elle n'est pas sous les coussins du canapé, je vérifierai dans les valves de son coeur. . .	}
+{	903	}{	Pas de problème. Mais il va me falloir de l'argent.	}{	Pas de problème. Mais il va me falloir de l'argent.	}{	911	}{	}{	}{	}{	}{	}{	}{	}{	}{	Xiao a besoin de funérailles coûteuses. Vous voulez participer ?	}
+{	904	}{	Si vous la voulez tant, pourquoi ne pas y aller vous-même ? Ou envoyer le gorille ?	}{	Si vous la voulez tant, pourquoi ne pas y aller vous-même ? Ou envoyer le gorille ?	}{	941	}{	}{	}{	}{	}{	}{	}{	}{	}{	Du travail parfait pour un gorille. Va chercher la clé, Donkey Kong !	}
+{	905	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	906	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	907	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	908	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	909	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	910	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	911	}{	N'en dites pas plus.	}{	N'en dites pas plus.	}{	#	}{	}{	pc.MoneyAdd(2000)	}{	}{	}{	}{	}{	}{	}{	}
+{	912	}{	J'ai besoin de matériel coûteux. Vous voulez que je réussisse, n'est-ce pas ?	}{	J'ai besoin de matériel coûteux. Vous voulez que je réussisse, n'est-ce pas ?	}{	921	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	Très coûteuses. . .	}
+{	913	}{	Je reviendrai avec la clé.	}{	Je reviendrai avec la clé.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Achetez-vous un gros porte-clé, je reviens.	}
+{	914	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	915	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	916	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	917	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	918	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	919	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	920	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	921	}{	Bien sûr.	}{	Bien sûr.	}{	#	}{	}{	pc.MoneyAdd(2000)	}{	}{	}{	}{	}{	}{	}{	}
+{	922	}{	Je reviendrai avec la clé.	}{	Je reviendrai avec la clé.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Achetez-vous un gros porte-clé, je reviens.	}
+{	923	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	924	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	925	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	926	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	927	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	928	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	929	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	930	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	931	}{	Je sais que nous n'avons pas toujours été d'accord, mais je sais que nous considérons tous les deux les Kuei-Jin comme une menace. La clé du sarcophage est non seulement celle de leur défaite, mais aussi celle de notre pouvoir. Vous devez la reprendre à Ming Xiao.	}{	Je sais que nous n'avons pas toujours été d'accord, mais je sais que nous considérons tous les deux les Kuei-Jin comme une menace. La clé du sarcophage est non seulement celle de leur défaite, mais aussi celle de notre pouvoir. Vous devez la reprendre à Ming Xiao.	}{	#	}{	}{	G.Prince_Boy = 1; pc.SetQuest("Ming",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	932	}{	C'est entendu. Je reviendrai avec la clé.	}{	C'est entendu. Je reviendrai avec la clé.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si elle n'est pas sous les coussins du canapé, je vérifierai dans les valves de son coeur. . .	}
+{	933	}{	Pas de problème. Mais il va me falloir de l'argent.	}{	Pas de problème. Mais il va me falloir de l'argent.	}{	911	}{	}{	}{	}{	}{	}{	}{	}{	}{	Xiao a besoin de funérailles coûteuses. Vous voulez participer ?	}
+{	934	}{	Si vous la voulez tant, pourquoi ne pas y aller vous-même ? Ou envoyer le gorille ?	}{	Si vous la voulez tant, pourquoi ne pas y aller vous-même ? Ou envoyer le gorille ?	}{	941	}{	}{	}{	}{	}{	}{	}{	}{	}{	Du travail parfait pour un gorille. Va chercher la clé, Donkey Kong !	}
+{	935	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	936	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	937	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	938	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	939	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	940	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	941	}{	Les Anarchs se sont unis derrière moi. S'il devait m'arriver quelque chose, une lutte de pouvoir éclaterait, et les Kuei-Jin nous massacreraient systématiquement. Et je crains que les primogènes tentent de reprendre le sarcophage, si mon Shérif part.	}{	Les Anarchs se sont unis derrière moi. S'il devait m'arriver quelque chose, une lutte de pouvoir éclaterait, et les Kuei-Jin nous massacreraient systématiquement. Et je crains que les primogènes tentent de reprendre le sarcophage, si mon Shérif part.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	942	}{	Bon. Mais il me faut de l'argent pour m'équiper.	}{	Bon. Mais il me faut de l'argent pour m'équiper.	}{	911	}{	}{	}{	}{	}{	}{	}{	}{	}{	Xiao a besoin de funérailles coûteuses. Vous voulez participer ?	}
+{	943	}{	Ca se tient. Je reviens vite avec la clé.	}{	Ca se tient. Je reviens vite avec la clé.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Achetez-vous un gros porte-clé, je reviens.	}
+{	944	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	945	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	946	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	947	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	948	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	949	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	950	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	951	}{	Je suis heureux que vous compreniez. Une leçon d'autorité. A présent, il est temps que je vous parle de pouvoir.	}{	Je suis heureux que vous compreniez. Une leçon d'autorité. A présent, il est temps que je vous parle de pouvoir.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	952	}{	Continuez.	}{	Continuez.	}{	881	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui. . .	}
+{	953	}{	Le pouvoir ? Je vous écoute.	}{	Le pouvoir ? Je vous écoute.	}{	881	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm ? J'ai entendu le mot 'pouvoir' ?	}
+{	954	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	955	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	956	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	957	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	958	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	959	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	960	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	961	}{	[Voit la clé, applaudit lentement]Ainsi, Ming Xiao est morte. Et bientôt, tous ses diables partageront son sort. Los Angeles est enfin à moi. Venez. Tenez-vous à mes côtés quand nous ouvrirons le sarcophage. Vous avez mérité cette place.	}{	[Voit la clé, applaudit lentement]Ainsi, Ming Xiao est morte. Et bientôt, tous ses diables partageront son sort. Los Angeles est enfin à moi. Venez. Tenez-vous à mes côtés quand nous ouvrirons le sarcophage. Vous avez mérité cette place.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	962	}{	(Auto-Link)	}{	(Auto-Link)	}{	971	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	963	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	964	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	965	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	966	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	967	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	968	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	969	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	970	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	971	}{	Le Sarcophage d'Ankara. Qui y dort ? Est-ce Balthazar ? Peut-être Lazare. . . A moins que je rencontre bientôt Ventrue lui-même. . . A moins que l'angoisse qui traversait la ville annonce la présence de notre père légendaire. . . Caïn en personne ?	}{	Le Sarcophage d'Ankara. Qui y dort ? Est-ce Balthazar ? Peut-être Lazare. . . A moins que je rencontre bientôt Ventrue lui-même. . . A moins que l'angoisse qui traversait la ville annonce la présence de notre père légendaire. . . Caïn en personne ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	972	}{	(Auto-Link)	}{	(Auto-Link)	}{	981	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	973	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	974	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	975	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	976	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	977	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	978	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	979	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	980	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	981	}{	Une chose est sûre - il y a du pouvoir. Personne sur cette côte ne pourra contester mon autorité - pas même la Camarilla. Vous avez mérité le droit d'ouvrir le sarcophage.	}{	Une chose est sûre - il y a du pouvoir. Personne sur cette côte ne pourra contester mon autorité - pas même la Camarilla. Vous avez mérité le droit d'ouvrir le sarcophage.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	982	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	983	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	984	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	985	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	986	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	987	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	988	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	989	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	990	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	991	}{	[Hoquet de surprise - le sarcophage est plein d'explosifs]NON ! Impossible ! NOOOON ![Hurle de rage]	}{	[Hoquet de surprise - le sarcophage est plein d'explosifs]NON ! Impossible ! NOOOON ![Hurle de rage]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	992	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	993	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	994	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	995	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	996	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	997	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	998	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	999	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1000	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1001	}{	Vous. . . vous m'avez trahi ! Je vous ai offert mes conseils, des responsabilités, des occasions. . . du pouvoir. . . Et voilà que vous entrez chez moi, que vous brisez mon organisation, que vous tuez mes associés les plus loyaux. . . Sale Judas ! Sale. . . Vous croyez que vous m'avez battu ? Mais j'ai encore le sarcophage !	}{	Vous. . . vous m'avez trahi ! Je vous ai offert mes conseils, des responsabilités, des occasions. . . du pouvoir. . . Et voilà que vous entrez chez moi, que vous brisez mon organisation, que vous tuez mes associés les plus loyaux. . . Sale Judas ! Sale. . . Vous croyez que vous m'avez battu ? Mais j'ai encore le sarcophage !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1002	}{	Mais vous avez besoin de ça pour l'ouvrir.	}{	Mais vous avez besoin de ça pour l'ouvrir.	}{	1021	}{	}{	}{	}{	}{	}{	}{	}{	}{	Et moi j'ai cette clé.	}
+{	1003	}{	Et moi j'ai la clé, enculé !	}{	Et moi j'ai la clé, enculé !	}{	1021	}{	}{	}{	}{	}{	}{	}{	}{	}{	HA HA HA, un serpent avec des gants, mais j'ai vos mains.	}
+{	1004	}{	Vous avez essayé de me faire tuer, LaCroix !	}{	Vous avez essayé de me faire tuer, LaCroix !	}{	1031	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous pouvez essayer de me faire cuire, me faire tomber, me faire dévorer par des loups, mais je suis encore là. . .	}
+{	1005	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1006	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1007	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1008	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1009	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1010	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1011	}{	Tel père, tel enfant. J'aurais dû vous tuer, cette nuit-là. Comment un être aussi vil que vous peut-il me tuer ? Vous croyez que vous m'avez tout pris, mais j'ai encore mon sarcophage.	}{	Tel père, tel enfant. J'aurais dû vous tuer, cette nuit-là. Comment un être aussi vil que vous peut-il me tuer ? Vous croyez que vous m'avez tout pris, mais j'ai encore mon sarcophage.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1012	}{	Mais vous avez besoin de ça pour l'ouvrir.	}{	Mais vous avez besoin de ça pour l'ouvrir.	}{	1021	}{	}{	}{	}{	}{	}{	}{	}{	}{	Et moi j'ai cette clé.	}
+{	1013	}{	Et moi j'ai la clé, enculé !	}{	Et moi j'ai la clé, enculé !	}{	1021	}{	}{	}{	}{	}{	}{	}{	}{	}{	HA HA HA, un serpent avec des gants, mais j'ai vos mains.	}
+{	1014	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1015	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1016	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1017	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1018	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1019	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1020	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1021	}{	[Rit]Vous avez fait tout le travail pour moi, une fois de plus. Il vous reste tant à apprendre. Je croyais que j'avais tout perdu, mais vous avez suivi le vent de la Géhenne, portant mon salut, la clé de mon avenir !	}{	[Rit]Vous avez fait tout le travail pour moi, une fois de plus. Il vous reste tant à apprendre. Je croyais que j'avais tout perdu, mais vous avez suivi le vent de la Géhenne, portant mon salut, la clé de mon avenir !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1022	}{	Qu'est-ce qui vous rend si heureux ?	}{	Qu'est-ce qui vous rend si heureux ?	}{	1031	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes content ? J'ai parlé de ma clé ?	}
+{	1023	}{	Si vous la voulez tant que ça, pourquoi ne pas venir me la prendre ?	}{	Si vous la voulez tant que ça, pourquoi ne pas venir me la prendre ?	}{	1031	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oh, essayez de me la prendre. . . S'il vous plaît !	}
+{	1024	}{	Fermez votre grande gueule, sale snobinard de merde. Tout est fini.	}{	Fermez votre grande gueule, sale snobinard de merde. Tout est fini.	}{	1031	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il paraît que les ventres de princes sont pleins d'or. Voyons cela.	}
+{	1025	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1026	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1027	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1028	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1029	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1030	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1031	}{	[Sourit, pouffe. Domination]Donnez-moi la clé.	}{	[Sourit, pouffe. Domination]Donnez-moi la clé.	}{	#	}{	}{	dominatePlayer()	}{	}{	}{	}{	}{	}{	}{	}
+{	1032	}{	Non. . .	}{	Non. . .	}{	1041	}{	}{	}{	}{	}{	}{	}{	}{	}{	NON. . .	}
+{	1033	}{	Jamais. . .	}{	Jamais. . .	}{	1041	}{	}{	}{	}{	}{	}{	}{	}{	}{	HA HA HA. . .	}
+{	1034	}{	Allez vous faire mettre. . .	}{	Allez vous faire mettre. . .	}{	1041	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ca ne risque pas. . .	}
+{	1035	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1036	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1037	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1038	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1039	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1040	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1041	}{	[Domination, en colère]J'ai dit, donnez-moi la clé.	}{	[Domination, en colère]J'ai dit, donnez-moi la clé.	}{	#	}{	}{	dominatePlayer()	}{	}{	}{	}{	}{	}{	}{	}
+{	1042	}{	Ne perdez pas votre temps à vouloir me dominer.	}{	Ne perdez pas votre temps à vouloir me dominer.	}{	0	}{	G.Story_State != 120 and G.Story_State != 105	}{	G.Prince_Decision = 1	}{	}{	}{	}{	}{	}{	}{	Oh oh, ça ne va pas marcher.	}
+{	1043	}{	Assis, LaCroix.	}{	Assis, LaCroix.	}{	0	}{	G.Story_State != 120 and G.Story_State != 105	}{	G.Prince_Decision = 1	}{	}{	}{	}{	}{	}{	}{	HA HA HA. . . Assis !	}
+{	1044	}{	Prenez ça !	}{	Prenez ça !	}{	0	}{	G.Story_State != 120 and G.Story_State != 105	}{	G.Prince_Decision = 1	}{	}{	}{	}{	}{	}{	}{	Vous faire une grande blessure au torse ? Avec plaisir !	}
+{	1045	}{	Votre bête me défie depuis votre gorge. J'accepte son défi.	}{	Votre bête me défie depuis votre gorge. J'accepte son défi.	}{	0	}{	IsClan(pc,"Gangrel") and G.Story_State != 120 and G.Story_State != 105	}{	G.Prince_Decision = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	1046	}{	Ne perdez pas votre temps à vouloir me dominer.	}{	Ne perdez pas votre temps à vouloir me dominer.	}{	1051	}{	G.Story_State == 120 or G.Story_State == 105	}{	}{	}{	}{	}{	}{	}{	}{	Oh oh, ça ne va pas marcher.	}
+{	1047	}{	Assis, LaCroix.	}{	Assis, LaCroix.	}{	1051	}{	G.Story_State == 120 or G.Story_State == 105	}{	}{	}{	}{	}{	}{	}{	}{	HA HA HA. . . Assis !	}
+{	1048	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1049	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1050	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1051	}{	[Effrayé, sait que tout est fini]La clé ! J'ai besoin de la clé ! Vous ne comprenez pas que cette ville a besoin d'un monarque ? Les Kuei-Jin nous tueront tous. . . Avec le pouvoir dans ce sarcophage, je peux protéger la ville. Donnez-la moi. . .	}{	[Effrayé, sait que tout est fini]La clé ! J'ai besoin de la clé ! Vous ne comprenez pas que cette ville a besoin d'un monarque ? Les Kuei-Jin nous tueront tous. . . Avec le pouvoir dans ce sarcophage, je peux protéger la ville. Donnez-la moi. . .	}{	#	}{	}{	npc.SetDisposition("Damaged", 1)	}{	}{	}{	}{	}{	}{	}{	}
+{	1052	}{	Vous avez trahi la Camarilla. Nous nous reverrons à l'exécution.	}{	Vous avez trahi la Camarilla. Nous nous reverrons à l'exécution.	}{	0	}{	G.Story_State == 120	}{	G.Prince_Regent = 1	}{	}{	}{	}{	}{	}{	}{	Le rideau sera bientôt tiré. . . Quand vous aurez quitté la scène une dernière fois.	}
+{	1053	}{	Cette cité a besoin d'un chef. Il paraît qu'on recrute un nouveau prince.	}{	Cette cité a besoin d'un chef. Il paraît qu'on recrute un nouveau prince.	}{	0	}{	G.Story_State == 120	}{	G.Prince_Regent = 1	}{	}{	}{	}{	}{	}{	}{	Voyons simplement qui vous êtes vraiment.	}
+{	1054	}{	Le Sabbat régnera maintenant sur votre précieuse ville! Et vous finirez bientôt comme une création Tzimisce.	}{	Le Sabbat régnera maintenant sur votre précieuse ville! Et vous finirez bientôt comme une création Tzimisce.	}{	0	}{	G.Story_State == 105	}{	G.Sabbat_Ending = 1	}{	}{	}{	}{	}{	}{	}{	L'épée de Cain règne sur la cité des anges désormais ! Et vous serez formé par le maître de la chair.	}
+{	1055	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1056	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1057	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1058	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1059	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1060	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1061	}{	[Blessé]Ca ne peut pas se terminer comme ça. . . Vous ne comprenez pas, les Kuei-Jin vont tous nous tuer. . . Je ne peux pas perdre. Je vais ouvrir le sarcophage. . . Construire un empire. . . Ca ne peut pas s'arrêter. . .	}{	[Blessé]Ca ne peut pas se terminer comme ça. . . Vous ne comprenez pas, les Kuei-Jin vont tous nous tuer. . . Je ne peux pas perdre. Je vais ouvrir le sarcophage. . . Construire un empire. . . Ca ne peut pas s'arrêter. . .	}{	#	}{	}{	npc.SetDisposition("Damaged", 1)	}{	}{	}{	}{	}{	}{	}{	}
+{	1062	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1063	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1064	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1065	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1066	}{	Prenez la clé. J'espère que vous aurez ce que vous méritez. Adieu, LaCroix.	}{	Prenez la clé. J'espère que vous aurez ce que vous méritez. Adieu, LaCroix.	}{	0	}{	G.Story_State == 125	}{	G.Prince_Givekey = 1	}{	}{	}{	}{	}{	}{	}{	Moi, ouvrir ça ? Hi hi. . . HA HA HA. . . C'est pour vous. Comme vous, je pars.	}
+{	1067	}{	Vous voulez la clé ? Attrapez. Amusez-vous bien, LaCroix, ce sont les Anarchs qui régalent.	}{	Vous voulez la clé ? Attrapez. Amusez-vous bien, LaCroix, ce sont les Anarchs qui régalent.	}{	0	}{	G.Story_State == 115	}{	G.Prince_Givekey = 1	}{	}{	}{	}{	}{	}{	}{	Pour vous, mon PRINCE. Vous le méritez plus que QUICONQUE. Au revoir.	}
+{	1068	}{	Je pense que je vais prendre ma clé pour aller voir ce qu'il y a dans le sarcophage.	}{	Je pense que je vais prendre ma clé pour aller voir ce qu'il y a dans le sarcophage.	}{	0	}{	}{	G.Prince_Keepkey = 1	}{	}{	}{	}{	}{	}{	}{	Hmm. . . Ce qu'il y a dans la boîte ? Comment savoir. . . OH, bien sûr ! J'ai la clé !	}
+{	1069	}{	Il est à moi. Tout est à moi. J'ai gagné. Los Angeles va se prosterner à mes pieds.	}{	Il est à moi. Tout est à moi. J'ai gagné. Los Angeles va se prosterner à mes pieds.	}{	0	}{	}{	G.Prince_Keepkey = 1	}{	}{	}{	}{	}{	}{	}{	J'ai la clé ! J'ai gagné ! Voyons quels trésors m'attendent à l'intérieur !	}
+{	1070	}{	J'ai vu le loup danser une fois, je veux le revoir!	}{	J'ai vu le loup danser une fois, je veux le revoir!	}{	0	}{	G.Patch_Plus == 1 and G.Lucky_Wolf > 0	}{	G.Wolf_Ending = 1	}{	}{	}{	}{	}{	}{	}{	Vous faire danser fou!!!	}
+{	1071	}{	[Stupéfait, heureux]Imbécile ! Vous l'aviez entre les mains - vous aviez Los Angeles à votre portée, et vous l'abandonnez ? C'est pour ça que vous n'êtes pas chef, et que vous resterez toujours esclave ! Je vais bâtir un ordre nouveau ! Dites-le à vos Anarchs ! Leurs jours sont comptés !	}{	[Stupéfait, heureux]Imbécile ! Vous l'aviez entre les mains - vous aviez Los Angeles à votre portée, et vous l'abandonnez ? C'est pour ça que vous n'êtes pas chef, et que vous resterez toujours esclave ! Je vais bâtir un ordre nouveau ! Dites-le à vos Anarchs ! Leurs jours sont comptés !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1072	}{	(Auto-Link)	}{	(Auto-Link)	}{	1081	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1073	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1074	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1075	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1076	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1077	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1078	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1079	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1080	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1081	}{	[Rit]A présent, ma victime, qui es-tu ? [Voit la bombe, éclate d'un rire dément]	}{	[Rit]A présent, ma victime, qui es-tu ? [Voit la bombe, éclate d'un rire dément]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1082	}{	Ha ha ha ha ha ha ha ha ha ha. . .	}{	Ha ha ha ha ha ha ha ha ha ha. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1083	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1084	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1085	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1086	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1087	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1088	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1089	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1090	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1091	}{	[Blessé, parle plus lentement, mais surpris - heureux, rit]Imbécile ! [Rit]Vous auriez dû m'achever ! J'ai la clé ! Dans quelques secondes, je serai assez puissant pour vous écraser comme une mouche ! Toute cette ville !	}{	[Blessé, parle plus lentement, mais surpris - heureux, rit]Imbécile ! [Rit]Vous auriez dû m'achever ! J'ai la clé ! Dans quelques secondes, je serai assez puissant pour vous écraser comme une mouche ! Toute cette ville !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1092	}{	(Auto-Link)	}{	(Auto-Link)	}{	1101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1093	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1094	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1095	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1096	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1097	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1098	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1099	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1101	}{	[Se redresse]Dans quelques secondes. . . tout sera à moi. . . le pouvoir.[Voit la bombe, éclate d'un rire dément]	}{	[Se redresse]Dans quelques secondes. . . tout sera à moi. . . le pouvoir.[Voit la bombe, éclate d'un rire dément]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1102	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1111	}{	NON ! C'est à moi ! J'y ai droit ! Stop !	}{	NON ! C'est à moi ! J'y ai droit ! Stop !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1112	}{	Tenez. Prenez la clé. J'espère que vous aurez ce que vous méritez. Au revoir, LaCroix.	}{	Tenez. Prenez la clé. J'espère que vous aurez ce que vous méritez. Au revoir, LaCroix.	}{	1091	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1113	}{	Vous voulez la clé ? Attrapez. Amusez-vous bien, LaCroix, ce sont les Anarchs qui régalent.	}{	Vous voulez la clé ? Attrapez. Amusez-vous bien, LaCroix, ce sont les Anarchs qui régalent.	}{	1091	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1115	}{	Taisez-vous, maintenant.	}{	Taisez-vous, maintenant.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1116	}{	Ce combat m'a donné soif. Je pense que je vais prendre un apéritif avant le repas.	}{	Ce combat m'a donné soif. Je pense que je vais prendre un apéritif avant le repas.	}{	1121	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1121	}{	NON ! Je vous en prie ! NON !	}{	NON ! Je vous en prie ! NON !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1122	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1131	}{	[Blessé] NON ! C'est à moi ! J'y ai droit ! Stop !	}{	[Blessé] NON ! C'est à moi ! J'y ai droit ! Stop !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1132	}{	Tenez. Prenez la clé. J'espère que vous aurez ce que vous méritez. Au revoir, LaCroix.	}{	Tenez. Prenez la clé. J'espère que vous aurez ce que vous méritez. Au revoir, LaCroix.	}{	1091	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1133	}{	Vous voulez la clé ? Attrapez. Amusez-vous bien, LaCroix, ce sont les Anarchs qui régalent.	}{	Vous voulez la clé ? Attrapez. Amusez-vous bien, LaCroix, ce sont les Anarchs qui régalent.	}{	1091	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1135	}{	Taisez-vous, maintenant.	}{	Taisez-vous, maintenant.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1136	}{	Ce combat m'a donné soif. Je pense que je vais prendre un apéritif avant le repas.	}{	Ce combat m'a donné soif. Je pense que je vais prendre un apéritif avant le repas.	}{	1121	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1141	}{	Sale jaune ! Vous savez ce que vous avez fait ? Vous avez trahi votre race pour ces diables ! Ils vont tous nous tuer ! Vous ne comprenez pas ? Vous avez scellé notre destin !	}{	Sale jaune ! Vous savez ce que vous avez fait ? Vous avez trahi votre race pour ces diables ! Ils vont tous nous tuer ! Vous ne comprenez pas ? Vous avez scellé notre destin !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1142	}{	J'ai passé une alliance avec eux. Ca vous rappelle quelque chose ?	}{	J'ai passé une alliance avec eux. Ca vous rappelle quelque chose ?	}{	1151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pardon, Prince, je comble le vide que vous avez laissé dans son coeur. Jaloux ?	}
+{	1143	}{	J'en avais après vous, LaCroix. Je m'occuperai d'eux plus tard.	}{	J'en avais après vous, LaCroix. Je m'occuperai d'eux plus tard.	}{	1151	}{	}{	}{	}{	}{	}{	}{	}{	}{	D'abord vous, puis eux, puis toute la ville, puis le monde, et après l'univers !	}
+{	1144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1151	}{	Ils ne vous laisseront jamais vivre ! Nous devons ouvrir le sarcophage. C'est la seule façon de. . .	}{	Ils ne vous laisseront jamais vivre ! Nous devons ouvrir le sarcophage. C'est la seule façon de. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1152	}{	[LaCroix prend un air de défaite et d'abandon en voyant quelque chose derrière le joueur. Il comprend et accepte son échec, sachant qu'il mourra bientôt.]Oh. . . C'est trop tard.	}{	[LaCroix prend un air de défaite et d'abandon en voyant quelque chose derrière le joueur. Il comprend et accepte son échec, sachant qu'il mourra bientôt.]Oh. . . C'est trop tard.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1161	}{	[Petit gargouillis quand LaCroix se fait décapiter]	}{	[Petit gargouillis quand LaCroix se fait décapiter]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1162	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1171	}{	[Craque. Rit tout seul, hystérique, se rend compte qu'il a misé tout son pouvoir sur une grosse plaisanterie et qu'il a perdu la tête dans ses dernières secondes de vie.]	}{	[Craque. Rit tout seul, hystérique, se rend compte qu'il a misé tout son pouvoir sur une grosse plaisanterie et qu'il a perdu la tête dans ses dernières secondes de vie.]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1172	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1173	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1174	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1181	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1182	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1183	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1191	}{	Je ne m'attendais pas à ce que vous compreniez. Mais voilà la réalité.	}{	Je ne m'attendais pas à ce que vous compreniez. Mais voilà la réalité.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1192	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1193	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1197	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1201	}{	Savoir quoi. . . ?	}{	Savoir quoi. . . ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1202	}{	Le Prince LaCroix et Ming Xiao dans un arbre. . . à complottttter. . .	}{	Le Prince LaCroix et Ming Xiao dans un arbre. . . à complottttter. . .	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1203	}{	Comment dit-on alliance en chinois ? Les Kuei-Jin ne vous l'ont pas dit ?	}{	Comment dit-on alliance en chinois ? Les Kuei-Jin ne vous l'ont pas dit ?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1211	}{	Les loups-garous. Je me rappelle encore l'époque où les villes étaient entourées de kilomètres de forêts pleines de ces animaux. Mais le progrès a réglé ce problème. 	}{	Les loups-garous. Je me rappelle encore l'époque où les villes étaient entourées de kilomètres de forêts pleines de ces animaux. Mais le progrès a réglé ce problème. 	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1212	}{	J'avais une autre question.	}{	J'avais une autre question.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demandais autre chose.	}
+{	1213	}{	Ce sera tout pour l'instant.	}{	Ce sera tout pour l'instant.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je m'en vais.	}
+{	1214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1216	}{	Oh, pour vous témoigner mon appréciation, je vous ai trouvé un abri non loin, aux Skyeline Apartments. J'espère qu'il vous plaira.	}{	Oh, pour vous témoigner mon appréciation, je vous ai trouvé un abri non loin, aux Skyeline Apartments. J'espère qu'il vous plaira.	}{	#	}{	}{	G.Prince_Skyline = 1; G.Heather_Clothes = 1; pc.GiveItem("item_k_skyline_haven_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	1217	}{	(Auto-Link)	}{	(Auto-Link)	}{	1241	}{	G.Prince_Hardwarn == 0 and pc.masquerade == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1218	}{	(Auto-Link)	}{	(Auto-Link)	}{	1231	}{	G.Prince_Lightwarn == 0 and pc.masquerade > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1219	}{	Merci !	}{	Merci !	}{	0	}{	G.Heather_Drank == 0 or IsDead("Heather") or G.Heather_Haven == 0 or G.Heather_Gone == 1	}{	}{	}{	}{	}{	}{	}{	}{	Oui !	}
+{	1220	}{	Merci! Dites à ma goule de s'y rendre aussi.	}{	Merci! Dites à ma goule de s'y rendre aussi.	}{	0	}{	G.Heather_Drank == 1 and not IsDead("Heather") and G.Heather_Haven == 1 and G.Heather_Gone == 0	}{	}{	}{	}{	}{	}{	}{	}{	Oui! Et apportez-y mon animal de compagnie aussi. 	}
+{	1221	}{	Je savais que vous iriez loin. Je n'avais aucun doute sur vos aptitudes. Mais on ne me trahit pas aussi facilement. Avez déjà pensé à ce que cela demande de vivre aussi longtemps que moi, d'aller aussi loin ? Pensez un peu à votre manque de jugement durant vos dernières secondes.	}{	Je savais que vous iriez loin. Je n'avais aucun doute sur vos aptitudes. Mais on ne me trahit pas aussi facilement. Avez déjà pensé à ce que cela demande de vivre aussi longtemps que moi, d'aller aussi loin ? Pensez un peu à votre manque de jugement durant vos dernières secondes.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1222	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1223	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1224	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1226	}{	Autre chose. . . Vous attirez beaucoup d'attention de la part des mortels, mais je vais passer outre pour l'instant. Mais si vous recommencez à enfreindre la Mascarade, je vous garantis que ce sera la dernière fois.	}{	Autre chose. . . Vous attirez beaucoup d'attention de la part des mortels, mais je vais passer outre pour l'instant. Mais si vous recommencez à enfreindre la Mascarade, je vous garantis que ce sera la dernière fois.	}{	#	}{	}{	G.Prince_Lightwarn = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	1227	}{	Compris.	}{	Compris.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis d'accord.	}
+{	1228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1231	}{	Encore une chose. . . Vous n'avez pas fait très attention à la Mascarade, ces temps-ci. Faites en sorte de ne plus attirer l'attention.	}{	Encore une chose. . . Vous n'avez pas fait très attention à la Mascarade, ces temps-ci. Faites en sorte de ne plus attirer l'attention.	}{	#	}{	}{	G.Prince_Lightwarn = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	1232	}{	D'accord.	}{	D'accord.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est comme si c'était fait.	}
+{	1233	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1236	}{	[Enervé]Une dernière chose. . . Enfreignez la Mascarade encore une fois, et ce sera la dernière. Croyez moi.	}{	[Enervé]Une dernière chose. . . Enfreignez la Mascarade encore une fois, et ce sera la dernière. Croyez moi.	}{	#	}{	}{	G.Prince_Hardwarn = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	1237	}{	Ouais. Ouais.	}{	Ouais. Ouais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Fin de la Partie ?	}
+{	1238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1241	}{	[Un peu agacé]Oh, au fait. . . J'ai passé outre vos précédentes infractions à la Mascarade. Recommencez, et ce sera la dernière fois.	}{	[Un peu agacé]Oh, au fait. . . J'ai passé outre vos précédentes infractions à la Mascarade. Recommencez, et ce sera la dernière fois.	}{	#	}{	}{	G.Prince_Hardwarn = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	1242	}{	C'est cela, oui.	}{	C'est cela, oui.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ha ha ha ha.	}
+{	1243	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1251	}{	[Le prince prend la clé, rampe vers le sarcophage en crachant du sang, tousse, se remet sur ses pieds[blessé par le joueur].]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1252	}{	[Bruits d'efforts de LaCroix malgré ses blessures, tend la main vers le sarcophage de l'autre côté]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1253	}{	[Bruits d'efforts de LaCroix qui essaye d'empêcher le joueur d'ouvrir le sarcophage, bien que son corps soit brisé et l'empêche de faire quoi que ce soit à part marmonner des suppliques noyées de sang]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1254	}{	[Son du prince qu'on frappe]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1255	}{	[Son du prince qui crache beaucoup de sang après un coup très violent.]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1256	}{	[Autre son du prince qui se fait frapper]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1257	}{	Espèce. . .	}{	Vous. . . !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1258	}{	Quoi ? Non ! J'ai dit qu'on l'a volé, pas que je l'ai volé.	}{	Quoi ? Non ! J'ai dit qu'on l'a volé, pas que je l'ai volé.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais vider mes poches pour vous, et vous verrez que je ne l'ai pas volé.	}
+{	1259	}{	Allez vous faire foutre. Pourquoi je commettrais ce vol ?	}{	Allez vous faire foutre. Pourquoi je commettrais ce vol ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	??? Cette accusation est ridicule ! Bonne blague ! Mais ne la répétez jamais.	}
+{	1260	}{	Je refuse d'entretenir plus avant votre paranoïa infondée. Ouvrons le sarcophage, voulez-vous ?	}{	Je refuse d'entretenir plus avant votre paranoïa infondée. Ouvrons le sarcophage, voulez-vous ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1261	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1262	}{	[Sur la mort de Bach] Vraiment ? Vous compensez votre manque de tact par d'autres façons. Au moins, LUI est éliminé.	}{	[Sur la mort de Bach] Vraiment ? Vous compensez votre manque de tact par d'autres façons. Au moins, LUI est éliminé.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1263	}{	Je ne l'ai tué que parce qu'il le fallait. A présent, je dois faire la même chose avec le Sabbat.	}{	Je ne l'ai tué que parce qu'il le fallait. A présent, je dois faire la même chose avec le Sabbat.	}{	571	}{	Humanity 8	}{	}{	}{	}{	}{	}{	}{	}{	C'était un obstacle que rien d'autre n'aurait pu déplacer. Comme le Sabbat.	}
+{	1264	}{	Tous les chasseurs qui croiseront ma route sont morts. Et ça vaut aussi pour le Sabbat.	}{	Tous les chasseurs qui croiseront ma route sont morts. Et ça vaut aussi pour le Sabbat.	}{	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si les chasseurs ont besoin de leur sang, ils feraient bien de ne pas m'approcher. Comme le Sabbat, d'ailleurs.	}
+{	1265	}{	Je vous ai rendu un service en éliminant Bach. Vous ne croyez pas que ça vaut quelque chose ?	}{	Je vous ai rendu un service en éliminant Bach. Vous ne croyez pas que ça vaut quelque chose ?	}{	561	}{	G.Prince_Socpay == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le sang de Bach est sur mes mains, et vous ne voulez pas me donner quelques billets pour les essuyer ?	}
+{	1266	}{	[L'alliance]Vous n'êtes pas la première personne à laquelle on pense quand on cherche un émissaire. Mais votre jeunesse relative et votre naïveté vous feront paraître plus sincère aux yeux des Anarchs. Je vais commencer à organiser des plans de guerre. Concluez cette alliance, tous nos avenirs en dépendent.	}{	[L'alliance]Vous n'êtes pas la première personne à laquelle on pense quand on cherche un émissaire. Mais votre jeunesse relative et votre naïveté vous feront paraître plus sincère aux yeux des Anarchs. Je vais commencer à organiser des plans de guerre. Concluez cette alliance, tous nos avenirs en dépendent.	}{	#	}{	}{	pc.SetQuest("Alliance",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	1267	}{	Pas de pression.	}{	Pas de pression.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oh non.	}
+{	1268	}{	Je verrai ce que je peux faire.	}{	Je verrai ce que je peux faire.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	On ne peut pas arriver au succès sans passer par la case qui porte mon nom.	}
+{	1269	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1270	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1271	}{	[En rapportant le sarcophage]Vous avez réussi à le rapporter. . . Je n'étais pas certain de vous revoir, mais vous voilà, AVEC le sarcophage. [Applaudit deux fois] Bravo.	}{	[En rapportant le sarcophage]Vous avez réussi à le rapporter. . . Je n'étais pas certain de vous revoir, mais vous voilà, AVEC le sarcophage. [Applaudit deux fois] Bravo.	}{	#	}{	}{	G.Prince_Reaction = G.Prince_Reaction +2; G.Story_State = 65; pc.SetQuest("Sarcophagus",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	1272	}{	(Auto-Link)	}{	(Auto-Link)	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1273	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1274	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1275	}{	Vous avez vos ordres.	}{	Vous avez vos ordres.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1276	}{	Mais...	}{	Mais...	}{	1278	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quoi ?	}
+{	1277	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1278	}{	J'ai dit tout ce que j'avais à dire pour l'instant.	}{	J'ai dit tout ce que j'avais à dire pour l'instant.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1279	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1280	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1281	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1282	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1283	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1284	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1285	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1286	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1287	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1288	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1289	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1290	}{	Autre chose ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1291	}{	Quoi ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1292	}{	Oui.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1293	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1294	}{	Merci.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1295	}{	Quoi ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1296	}{	Excellent.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1297	}{	Peut-être. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1298	}{	Je ne peux rien faire.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1299	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1300	}{	Prenez ceci.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1301	}{	Je vous enverrai un e-mail.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1302	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1303	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1304	}{	(Starting Condition)	}{	}{	1061	}{	G.Prince_Decision == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1305	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State == 105 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1306	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State == 105 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1307	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State == 120 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1308	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State == 120 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1309	}{	(Starting Condition)	}{	}{	1275	}{	G.Prince_Boy == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1310	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State == 125 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1311	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State == 125 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1312	}{	(Starting Condition)	}{	}{	1141	}{	G.Story_State == 100	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1313	}{	(Starting Condition)	}{	}{	1011	}{	G.Story_State == 115 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1314	}{	(Starting Condition)	}{	}{	1001	}{	G.Story_State == 115 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1315	}{	(Starting Condition)	}{	}{	1181	}{	G.Story_State == 110 and G.Ming_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1316	}{	(Starting Condition)	}{	}{	811	}{	G.Story_State == 110 and G.Prince_Reaction >= 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1317	}{	(Starting Condition)	}{	}{	801	}{	G.Story_State == 110 and G.Prince_Reaction < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1318	}{	(Starting Condition)	}{	}{	791	}{	G.Story_State == 85	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1319	}{	(Starting Condition)	}{	}{	591	}{	G.Story_State == 80	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1320	}{	(Starting Condition)	}{	}{	581	}{	G.Prince_Sabbat == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1321	}{	(Starting Condition)	}{	}{	391	}{	G.Story_State == 70	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1322	}{	(Starting Condition)	}{	}{	281	}{	G.Society_Open == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1323	}{	(Starting Condition)	}{	}{	1271	}{	G.Story_State == 60 and G.Prince_Reaction < -2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1324	}{	(Starting Condition)	}{	}{	181	}{	G.Story_State == 60 and G.Prince_Reaction < 4 and G.Prince_Reaction >= -2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1325	}{	(Starting Condition)	}{	}{	171	}{	G.Story_State == 60 and G.Prince_Reaction >= 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1326	}{	(Starting Condition)	}{	}{	1	}{	G.Story_State == 30	}{	}{	}{	}{	}{	}{	}{	}{	}
