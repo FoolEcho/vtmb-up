@@ -1,0 +1,100 @@
+// Choreo version 1
+actor "Chunk2"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 14.149660
+      param "character/dlg/downtown la/chunk2/line181_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+    event expression "laugh 01"
+    {
+      time 13.020000 14.146667
+      param "security_guard_expressions"
+      param2 "laugh"
+      event_ramp
+      {
+        0.2579 0.9661
+        0.9453 0.9661
+      }
+    }
+  }
+  channel "Expressions"
+  {
+    event expression "laugh NoDeform 01"
+    {
+      time 11.086667 13.220001
+      param "security_guard_expressions"
+      param2 "laugh NoDeform"
+      event_ramp
+      {
+        0.6895 0.9062
+        1.9544 0.9453
+      }
+    }
+    event expression "Raised Both 01"
+    {
+      time 13.733334 14.086668
+      param "security_guard_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.1316 0.8802
+        0.2246 0.8802
+      }
+    }
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 3.170000 3.550000
+      param "0.380"
+    }
+    event silence "Silence"
+    {
+      time 4.630000 5.310000
+      param "0.680"
+    }
+    event silence "Silence"
+    {
+      time 6.850000 6.960000
+      param "0.110"
+    }
+    event silence "Silence"
+    {
+      time 8.160000 8.300000
+      param "0.140"
+    }
+    event silence "Silence"
+    {
+      time 8.889999 9.020000
+      param "0.130"
+    }
+    event silence "Silence"
+    {
+      time 10.230000 10.520000
+      param "0.290"
+    }
+    event silence "Silence"
+    {
+      time 12.259999 12.380000
+      param "0.120"
+    }
+    event loud "Loud"
+    {
+      time 4.530000 4.670000
+      param "0.140"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

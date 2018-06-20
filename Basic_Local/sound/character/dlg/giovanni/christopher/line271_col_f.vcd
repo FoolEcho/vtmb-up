@@ -1,0 +1,57 @@
+// Choreo version 1
+actor "Christopher"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 7.279456
+      param "character/dlg/giovanni/christopher/line271_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 0.000000 0.110000
+      param "0.110"
+    }
+    event silence "Silence"
+    {
+      time 2.400000 3.060000
+      param "0.660"
+    }
+    event silence "Silence"
+    {
+      time 4.080000 4.360000
+      param "0.280"
+    }
+    event silence "Silence"
+    {
+      time 4.380000 4.550000
+      param "0.170"
+    }
+    event silence "Silence"
+    {
+      time 5.480000 5.900000
+      param "0.420"
+    }
+    event loud "Loud"
+    {
+      time 0.600000 0.710000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

@@ -1,0 +1,52 @@
+// Choreo version 1
+actor "McFly"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 6.860816
+      param "character/dlg/generic/mcfly/line61_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 2.010000 2.240000
+      param "0.230"
+    }
+    event silence "Silence"
+    {
+      time 2.570000 3.040000
+      param "0.470"
+    }
+    event loud "Loud"
+    {
+      time 1.290000 1.400000
+      param "0.110"
+    }
+    event loud "Loud"
+    {
+      time 3.070000 3.210000
+      param "0.140"
+    }
+    event loud "Loud"
+    {
+      time 3.670000 3.780000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

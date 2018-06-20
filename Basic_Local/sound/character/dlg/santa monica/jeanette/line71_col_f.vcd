@@ -1,0 +1,81 @@
+// Choreo version 1
+actor "Jeanette"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 15.917597
+      param "character/dlg/santa monica/jeanette/line71_col_e.wav"
+      param2 "60dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "Jeanette_Line71_Col_E"
+    {
+      time 0.000000 16.166666
+      param "Jeanette_Line71_Col_E"
+    }
+  }
+  channel "Speech Triggers"
+  {
+    event expression "Confused_NoDeform"
+    {
+      time 0.173334 2.386667
+      param "jeanette"
+      param2 "Confused_NoDeform"
+      event_ramp
+      {
+        0.4000 0.9838
+      }
+    }
+    event expression "Fear_NoDeform"
+    {
+      time 8.600001 13.253334
+      param "jeanette"
+      param2 "Fear_NoDeform"
+      event_ramp
+      {
+        0.7143 0.9698
+        3.9448 0.9745
+      }
+    }
+    event expression "Flirtatious_NoDeform"
+    {
+      time 13.493334 16.140001
+      param "jeanette"
+      param2 "Flirtatious_NoDeform"
+      event_ramp
+      {
+        1.0714 0.9791
+        1.4357 1.0000
+        1.5605 0.9954
+      }
+    }
+    event expression "Lowered Left"
+    {
+      time 3.473333 6.326667
+      param "jeanette"
+      param2 "Lowered Left"
+      event_ramp
+      {
+        1.2643 0.9930
+      }
+    }
+    event expression "Raised Right"
+    {
+      time 7.500000 8.500000
+      param "jeanette"
+      param2 "Raised Right"
+      event_ramp
+      {
+        0.4929 0.9814
+      }
+    }
+  }
+}
+
+fps 60
+snap off

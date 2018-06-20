@@ -1,0 +1,42 @@
+// Choreo version 1
+actor "havenbum"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 1.288707
+      param "character/dlg/santa monica/havenbum/line41_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 0.260000 0.480000
+      param "0.220"
+    }
+    event loud "Loud"
+    {
+      time 0.650000 0.760000
+      param "0.110"
+    }
+    event loud "Loud"
+    {
+      time 0.930000 1.040000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

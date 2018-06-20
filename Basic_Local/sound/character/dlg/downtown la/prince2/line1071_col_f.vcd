@@ -1,0 +1,368 @@
+// Choreo version 1
+actor "prince2"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 24.055874
+      param "character/dlg/downtown la/prince2/line1071_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 0.280000 0.550000
+      param "0.270"
+    }
+    event silence "Silence"
+    {
+      time 0.640000 0.890000
+      param "0.250"
+    }
+    event silence "Silence"
+    {
+      time 1.240000 1.360000
+      param "0.120"
+    }
+    event silence "Silence"
+    {
+      time 1.700000 1.820000
+      param "0.120"
+    }
+    event silence "Silence"
+    {
+      time 2.620000 2.983333
+      param "0.170"
+    }
+    event silence "Silence"
+    {
+      time 3.290000 3.430000
+      param "0.140"
+    }
+    event silence "Silence"
+    {
+      time 4.520000 4.740000
+      param "0.220"
+    }
+    event silence "Silence"
+    {
+      time 10.620000 11.099999
+      param "0.480"
+    }
+    event silence "Silence"
+    {
+      time 15.610001 16.580000
+      param "0.970"
+    }
+    event silence "Silence"
+    {
+      time 17.250000 17.820000
+      param "0.570"
+    }
+    event silence "Silence"
+    {
+      time 19.270000 20.219999
+      param "0.950"
+    }
+    event silence "Silence"
+    {
+      time 21.260000 22.070000
+      param "0.810"
+    }
+    event silence "Silence"
+    {
+      time 24.000000 24.109999
+      param "0.110"
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+    event expression "Laugh 01"
+    {
+      time 0.013333 3.566667
+      param "lacroix_expressions"
+      param2 "Laugh"
+      event_ramp
+      {
+        0.2410 0.5410
+        0.2718 0.5363
+        3.3615 0.9672
+        3.4051 0.9625
+      }
+    }
+    event expression "Lowered Both 01"
+    {
+      time 5.706667 6.920001
+      param "lacroix_expressions"
+      param2 "Lowered Both"
+      event_ramp
+      {
+        0.1786 0.9813
+        1.0086 0.9977
+      }
+    }
+    event expression "Raised Both 02"
+    {
+      time 9.546667 10.766666
+      param "lacroix_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.1368 0.9766
+        1.0311 0.9438
+      }
+    }
+    event expression "Anger 01"
+    {
+      time 11.286667 16.573334
+      param "lacroix_expressions"
+      param2 "Anger"
+      event_ramp
+      {
+        0.1763 0.9742
+        2.4474 1.0000
+        2.5763 0.2084
+        3.3619 0.2084
+        3.4540 0.9977
+        4.9304 0.9368
+      }
+    }
+    event expression "Laugh 02"
+    {
+      time 4.346668 5.120001
+      param "lacroix_expressions"
+      param2 "Laugh"
+      event_ramp
+      {
+        0.0816 0.5363
+        0.1316 0.5363
+        0.6011 0.5363
+        0.6596 0.5363
+      }
+    }
+    event expression "Anger 02"
+    {
+      time 20.153334 24.066666
+      param "lacroix_expressions"
+      param2 "Anger"
+      event_ramp
+      {
+        0.1237 0.9649
+        1.7263 0.9532
+        2.0263 0.0328
+        2.9526 0.0000
+        3.2132 0.9953
+        3.6947 0.9789
+      }
+    }
+  }
+  channel "brows"
+  {
+    event expression "Laugh No Deform 01"
+    {
+      time 3.453332 6.000000
+      param "lacroix_expressions"
+      param2 "Laugh No Deform"
+      event_ramp
+      {
+        0.1256 0.9836
+        0.8684 1.0000
+        1.0368 0.3115
+        1.5658 0.3115
+        1.6842 0.6230
+        1.7240 0.6230
+        2.2921 0.6323
+        2.3744 0.6323
+      }
+    }
+    event expression "Lowered Both 02"
+    {
+      time 8.966665 9.640001
+      param "lacroix_expressions"
+      param2 "Lowered Both"
+      event_ramp
+      {
+        0.1632 0.9883
+        0.5314 1.0000
+      }
+    }
+    event expression "shock 02"
+    {
+      time 16.286667 20.306667
+      param "lacroix_expressions"
+      param2 "shock"
+      event_ramp
+      {
+        0.3447 0.9836
+        3.8289 0.9836
+      }
+    }
+    event expression "Raised Both 03"
+    {
+      time 13.780001 14.780001
+      param "lacroix_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.0763 0.9883
+        0.8947 0.9789
+      }
+    }
+    event expression "Insane 01"
+    {
+      time 21.859999 23.326666
+      param "lacroix_expressions"
+      param2 "Insane"
+      event_ramp
+      {
+        0.3632 0.9649
+        1.3107 0.9859
+      }
+    }
+    event expression "Mouth Open 02"
+    {
+      time 6.040000 6.333333
+      param "lacroix_expressions"
+      param2 "Mouth Open"
+      event_ramp
+      {
+        0.1447 0.4567
+      }
+    }
+    event expression "Mouth Open 03"
+    {
+      time 6.893334 7.166667
+      param "lacroix_expressions"
+      param2 "Mouth Open"
+      event_ramp
+      {
+        0.1237 0.4403
+      }
+    }
+    event expression "Mouth Open 04"
+    {
+      time 7.446667 7.660000
+      param "lacroix_expressions"
+      param2 "Mouth Open"
+      event_ramp
+      {
+        0.1026 0.4543
+      }
+    }
+    event expression "Mouth Open 05"
+    {
+      time 8.280000 8.513333
+      param "lacroix_expressions"
+      param2 "Mouth Open"
+      event_ramp
+      {
+        0.1211 0.3560
+      }
+    }
+    event expression "Mouth Open 06"
+    {
+      time 9.673334 10.493334
+      param "lacroix_expressions"
+      param2 "Mouth Open"
+      event_ramp
+      {
+        0.0895 0.3864
+        0.1816 0.0117
+        0.4296 0.0234
+        0.4796 0.4567
+        0.6000 0.0422
+      }
+    }
+    event expression "Mouth Open 07"
+    {
+      time 11.306666 11.559999
+      param "lacroix_expressions"
+      param2 "Mouth Open"
+      event_ramp
+      {
+        0.0789 0.6721
+      }
+    }
+  }
+  channel "mouth"
+  {
+    event expression "Mouth Open 01"
+    {
+      time 0.000000 3.580000
+      param "lacroix_expressions"
+      param2 "Mouth Open"
+      event_ramp
+      {
+        0.1440 0.2881
+        0.1680 0.2881
+        1.0300 0.2881
+        1.0980 0.2881
+        3.0780 0.5269
+        3.3193 0.4918
+      }
+    }
+    event expression "Raised Both 01"
+    {
+      time 5.200000 9.106668
+      param "lacroix_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.1179 0.9602
+        3.7190 1.0000
+      }
+    }
+    event expression "Joy 01"
+    {
+      time 9.566667 11.413334
+      param "lacroix_expressions"
+      param2 "Joy"
+      event_ramp
+      {
+        0.1605 0.9742
+        1.7158 0.9696
+      }
+    }
+    event expression "Mouth Open 08"
+    {
+      time 13.820000 14.113333
+      param "lacroix_expressions"
+      param2 "Mouth Open"
+      event_ramp
+      {
+        0.1342 0.6885
+      }
+    }
+    event expression "Mouth Open 09"
+    {
+      time 14.633335 14.866670
+      param "lacroix_expressions"
+      param2 "Mouth Open"
+      event_ramp
+      {
+        0.1237 0.7330
+      }
+    }
+    event expression "Mouth Open 10"
+    {
+      time 23.206665 23.480000
+      param "lacroix_expressions"
+      param2 "Mouth Open"
+      event_ramp
+      {
+        0.1263 0.6323
+      }
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

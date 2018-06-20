@@ -1,0 +1,67 @@
+// Choreo version 1
+actor "beckett"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 14.512471
+      param "character/dlg/main characters/beckett/line1051_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 5.390000 5.980000
+      param "0.590"
+    }
+    event silence "Silence"
+    {
+      time 7.830000 8.080000
+      param "0.250"
+    }
+    event silence "Silence"
+    {
+      time 10.840000 11.309999
+      param "0.470"
+    }
+    event silence "Silence"
+    {
+      time 12.719999 13.120000
+      param "0.400"
+    }
+    event loud "Loud"
+    {
+      time 8.670000 8.780000
+      param "0.110"
+    }
+    event loud "Loud"
+    {
+      time 10.429999 10.540000
+      param "0.110"
+    }
+    event loud "Loud"
+    {
+      time 11.610000 11.759999
+      param "0.150"
+    }
+    event loud "Loud"
+    {
+      time 13.509999 13.620000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

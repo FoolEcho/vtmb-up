@@ -1,0 +1,120 @@
+// Choreo version 1
+actor "prince2"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 12.538775
+      param "character/dlg/downtown la/prince2/line171_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 1.940000 2.170000
+      param "0.230"
+    }
+    event silence "Silence"
+    {
+      time 7.410000 7.570000
+      param "0.160"
+    }
+    event silence "Silence"
+    {
+      time 7.650000 8.599999
+      param "0.950"
+    }
+    event silence "Silence"
+    {
+      time 9.150000 9.929999
+      param "0.780"
+    }
+    event silence "Silence"
+    {
+      time 12.460000 12.570000
+      param "0.110"
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+    event expression "Flirtatious 01"
+    {
+      time 0.006667 2.806667
+      param "lacroix_expressions"
+      param2 "Flirtatious"
+      event_ramp
+      {
+        0.4612 0.6464
+        0.5812 0.6932
+        0.6131 0.6979
+        2.4373 0.6979
+        2.5100 0.6979
+        2.6440 0.6417
+      }
+    }
+    event expression "Raised Both 01"
+    {
+      time 11.713334 12.246668
+      param "lacroix_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.2250 0.9813
+      }
+    }
+  }
+  channel "brows"
+  {
+    event expression "Raised Both 01"
+    {
+      time 2.599999 5.986667
+      param "lacroix_expressions"
+      param2 "Raised Both"
+      event_ramp
+      {
+        0.2864 1.0000
+        1.4538 0.9906
+        1.9164 0.0000
+        2.1549 0.0281
+        2.3472 0.9766
+        3.1826 0.9672
+      }
+    }
+    event expression "Squint 01"
+    {
+      time 9.720000 11.853333
+      param "lacroix_expressions"
+      param2 "Squint"
+      event_ramp
+      {
+        0.2538 0.9625
+        1.9672 0.9649
+      }
+    }
+  }
+  channel "extras"
+  {
+    event expression "Joy 01"
+    {
+      time 2.613333 8.620000
+      param "lacroix_expressions"
+      param2 "Joy"
+      event_ramp
+      {
+        0.2231 0.9555
+        5.6354 0.8899
+      }
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off

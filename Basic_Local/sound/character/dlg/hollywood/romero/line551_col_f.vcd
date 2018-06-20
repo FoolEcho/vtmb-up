@@ -1,0 +1,47 @@
+// Choreo version 1
+actor "romero"
+{
+  channel "Speech"
+  {
+    event speak "NPC Line"
+    {
+      time 0.000000 13.532539
+      param "character/dlg/hollywood/romero/line551_col_e.wav"
+      param2 "70dB"
+      fixedlength
+    }
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+  channel "Speech Triggers"
+  {
+    event silence "Silence"
+    {
+      time 1.620000 1.730000
+      param "0.110"
+    }
+    event silence "Silence"
+    {
+      time 2.200000 2.360000
+      param "0.160"
+    }
+    event loud "Loud"
+    {
+      time 0.350000 0.460000
+      param "0.110"
+    }
+    event loud "Loud"
+    {
+      time 0.570000 0.680000
+      param "0.110"
+    }
+  }
+  bonerename "Bip01" "Bip01"
+}
+
+fps 60
+snap off
