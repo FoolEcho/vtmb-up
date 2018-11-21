@@ -60,7 +60,7 @@
 {	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	61	}{	Oh ! Qui voilà ! Brute de Chinatown ! Vous vouloir horoscope ? Ou vous vouloir faire un peu argent ?	}{	Oh ! Qui voilà ! Brute de Chinatown ! Vous vouloir horoscope ? Ou vous vouloir faire un peu argent ?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Ji_Badass = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	De l'argent ?	}{	De l'argent ?	}{	71	}{	G.Lu_Ji == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le tout-puissant dollar ?	}
-{	63	}{	Vous êtes Ji Wen Ja ?	}{	Vous êtes Ji Wen Ja ?	}{	301	}{	G.Lu_Ji >= 1	}{	}{	}{	}{	}{	}{	}{	}{	J. N. Ja ? Ja, Schön. . .	}
+{	63	}{	Vous êtes Ji Wen Ja ?	}{	Vous êtes Ji Wen Ja ?	}{	301	}{	G.Lu_Ji >= 1 and G.Ji_Lu < 6	}{	}{	}{	}{	}{	}{	}{	}{	J. N. Ja ? Ja, Schön. . .	}
 {	64	}{	J'aimerais connaître mon futur.	}{	J'aimerais connaître mon futur.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai hâte de connaître mon sort. . .	}
 {	65	}{	La voyance, c'est de la merde.	}{	La voyance, c'est de la merde.	}{	11	}{	G.Lu_Ji == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -557,7 +557,7 @@
 {	557	}{	Je regrette, ça ne m'intéresse pas. Au revoir.	}{	Je regrette, ça ne m'intéresse pas. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je sais déjà. . . je ne veux rien savoir. . .	}
 {	558	}{	Ici voyance, pas renseignements.	}{	Ici voyance, pas renseignements.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	559	}{	J'aimerais connaître mon futur.	}{	J'aimerais connaître mon futur.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai hâte de connaître mon sort. . .	}
-{	560	}{	Vous êtes Ji Wen Ja ?	}{	Vous êtes Ji Wen Ja ?	}{	301	}{	G.Lu_Ji >= 1	}{	}{	}{	}{	}{	}{	}{	}{	J. N. Ja ? Ja, Schön. . .	}
+{	560	}{	Vous êtes Ji Wen Ja ?	}{	Vous êtes Ji Wen Ja ?	}{	301	}{	G.Lu_Ji >= 1 and G.Ji_Lu < 6	}{	}{	}{	}{	}{	}{	}{	}{	J. N. Ja ? Ja, Schön. . .	}
 {	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	562	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	563	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

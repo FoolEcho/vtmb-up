@@ -2,7 +2,7 @@
 
 WeaponData
 {
-	"printname"		"Ithaca M37" // changed by wesp
+	"printname"		"Ithaca M37"	// changed by wesp
 	"description"		"Le M37 calibre .12 est conçu pour un usage à courte portée d'autodéfense domestique. Fréquemment employé par les forces de l'ordre et l'armée, le M37 est entièrement constitué de métal. Il est en outre doté d'un chargement et d'une éjection par le bas pour les droitiers comme pour les gauchers. Son recul modéré et sa légèreté le rendent facile d'utilisation."
 	"viewmodel"		"models/weapons/m37/view/v_m37.mdl"
 	"playermodel"		"models/weapons/m37/world/w_m37.mdl"
@@ -55,8 +55,8 @@ WeaponData
 //Weapon Ammo
 	Magazine
 	{
-		"ammoprintname"		"Cartouches calibre .12" // changed by wesp
-		"ammodescription"	"Une boîte contenant des cartouches pour le Ithaca M37." // changed by wesp
+		"ammoprintname"		"Cartouches calibre .12 pour Ithaca M37" // changed by wesp
+		"ammodescription"	"Une boîte contenant des cartouches calibre .12 pour l'Ithaca M37." // changed by wesp
 		"ammo_worth"		"12" //"18"
 		"ammoinfomodel"		"models/weapons/ammo/shotgun/shotgun_shells.mdl"
 
@@ -127,7 +127,7 @@ WeaponData
 		"MinorKnockbackDist"	"250.0"			// maximum distance to cause minor knockback
 
 		"SpreadAngle"		"10.0"
-		"CriminalLevel"		"3"
+		"CriminalLevel"	"3"
 		"Accuracy"		"1"
 
 		SoundData

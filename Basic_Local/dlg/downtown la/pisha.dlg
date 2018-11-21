@@ -152,10 +152,10 @@
 {	152	}{	Je l'ai laissé partir. Je n'allais pas vous laisser le manger.	}{	Je l'ai laissé partir. Je n'allais pas vous laisser le manger.	}{	161	}{	G.Mill_Loose == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai fait fuir la mouche. Pas de repas pour la méchante veuve, cette nuit.	}
 {	153	}{	Je l'ai dominé. Il ne se rappellera de rien de ce qu'il a vu.	}{	Je l'ai dominé. Il ne se rappellera de rien de ce qu'il a vu.	}{	171	}{	G.Mill_Dominated == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	154	}{	Son esprit ne connaît plus la raison. Personne ne le croira.	}{	Son esprit ne connaît plus la raison. Personne ne le croira.	}{	171	}{	G.Mill_Dementated == 1	}{	}{	}{	}{	}{	}{	}{	}{	Son esprit ne connaît plus la raison. Personne ne le croira.	}
-{	155	}{	J'ai réglé son cas à ma façon. Il ne dira rien. Je lui ai fait peur.	}{	J'ai réglé son cas à ma façon. Il ne dira rien. Je lui ai fait peur.	}{	171	}{	G.Mill_Intimidate == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	156	}{	Le type qui était à l'étage ? J'ai déjà réglé son cas.	}{	Le type qui était à l'étage ? J'ai déjà réglé son cas.	}{	365	}{	IsDead("Milligan")	}{	}{	}{	}{	}{	}{	}{	}{	La mouche est écrasée.	}
-{	157	}{	Je vais m'en occuper.	}{	Je vais m'en occuper.	}{	0	}{	G.Mill_Loose == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je vais étendre mon miel pour la mouche.	}
-{	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	155	}{	J'ai réglé son cas à ma façon. Il ne dira rien. Je lui ai fait peur.	}{	J'ai réglé son cas à ma façon. Il ne dira rien. Je lui ai fait peur.	}{	171	}{	G.Mill_Intimidate == 1 and (G.Patch_Plus == 0 or not pc.HasItem("item_w_claws_ghoul"))	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	156	}{	J'ai réglé son cas à ma façon. Il ne dira rien. Je lui ai fait peur. Si vous ne me croyez pas, vous pouvez le trouver là.	}{	J'ai réglé son cas à ma façon. Il ne dira rien. Je lui ai fait peur. Si vous ne me croyez pas, vous pouvez le trouver là.	}{	171	}{	G.Mill_Intimidate == 1 and G.Patch_Plus == 1 and pc.HasItem("item_w_claws_ghoul")	}{	pc.RemoveItem("item_w_claws_ghoul") }{	}{	}{	}{	}{	}{	}{	}
+{	157	}{	Le type qui était à l'étage ? J'ai déjà réglé son cas.	}{	Le type qui était à l'étage ? J'ai déjà réglé son cas.	}{	365	}{	IsDead("Milligan")	}{	}{	}{	}{	}{	}{	}{	}{	La mouche est écrasée.	}
+{	158	}{	Je vais m'en occuper.	}{	Je vais m'en occuper.	}{	0	}{	G.Mill_Loose == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je vais étendre mon miel pour la mouche.	}
 {	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	161	}{	Décevant. . . Il en ramènera d'autres. . . Des hommes de loi. . . Ce sera gênant. J'aurais dû me douter que ce n'était pas affaire pour une sangsue novice. Je pars.	}{	Décevant. . . Il en ramènera d'autres. . . Des hommes de loi. . . Ce sera gênant. J'aurais dû me douter que ce n'était pas affaire pour une sangsue novice. Je pars.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -260,7 +260,7 @@
 {	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	261	}{	Le 'Voce del Morte'. . . Les Giovanni ne partagent jamais leurs secrets de façon volontaire. . . et j'ai eu peu de succès dans mes tentatives pour m'introduire chez eux. Comment l'avez-vous obtenu ?	}{	Le 'Voce del Morte'. . . Les Giovanni ne partagent jamais leurs secrets de façon volontaire. . . et j'ai eu peu de succès dans mes tentatives pour m'introduire chez eux. Comment l'avez-vous obtenu ?	}{	#	}{	}{	pc.RemoveItem("item_g_pisha_book")	}{	}{	}{	}{	}{	}{	}{	}
 {	262	}{	Ils étaient un peu distraits, j'ai réussi à entrer sans qu'ils s'en rendent compte.	}{	Ils étaient un peu distraits, j'ai réussi à entrer sans qu'ils s'en rendent compte.	}{	271	}{	G.GioBotchedOutside == 0 and G.GioBotchedInside == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ils n'ont rien vu. Et moi non plus. Dans quel endroit étais-je ? 	}
-{	263	}{	Les Giovanni de Californie viennent d'entrer dans la liste des espèces en voie de disparition.	}{	Les Giovanni de Californie viennent d'entrer dans la liste des espèces en voie de disparition.	}{	271	}{	G.GioBotchedOutside == 1 or G.GioBotchedInside == 1	}{	}{	}{	}{	}{	}{	}{	}{	Il reste des Giovanni ? Je pensais les avoir tous envoyés au-delà.	}
+{	263	}{	Les Giovanni de Californie viennent d'entrer dans la liste des espèces en voie de disparition.	}{	Les Giovanni de Californie viennent d'entrer dans la liste des espèces en voie de disparition.	}{	271	}{	G.Bruno_Killed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Il reste des Giovanni ? Je pensais les avoir tous envoyés au-delà.	}
 {	264	}{	Peu importe. Donnez-moi ce que vous avez promis.	}{	Peu importe. Donnez-moi ce que vous avez promis.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où est ma récompense ?	}
 {	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

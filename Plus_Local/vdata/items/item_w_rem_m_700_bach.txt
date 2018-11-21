@@ -3,7 +3,7 @@
 WeaponData
 {
 	"printname"			"Remington M24 SWS" // changed by Wesp
-	"description"			"Un fusil classique employé par les équipes du SWAT. Il est doté d'une lunette 20X pour dégommer les gouttes de sueur sur le front de la cible."
+	"description"			"Un fusil classique employé par les équipes du SWAT. Il est doté d'une lunette 10X pour dégommer les gouttes de sueur sur le front de la cible." // changed by Wesp
 	"viewmodel"			"models/weapons/rifle_rem700/view/v_Rem700_bach.mdl"
 	"playermodel"			"models/weapons/rifle_rem700/ground/g_rifle_rem700_bach.mdl"
 	"wieldmodel_f"			"models/weapons/rifle_rem700/wield/w_f_rifle_rem700_bach.mdl"
@@ -52,8 +52,8 @@ WeaponData
 //Weapon Ammo
 	Magazine
 	{
-		"ammoprintname"			"Munitions ultra-haute vitesse" // changed by Wesp
-		"ammodescription"		"Munitions spéciales de fusil .308, communément utilisées par les snipers."  // changed by Wesp
+		"ammoprintname"			"Munitions haute vitesse 7.62 mm" // changed by Wesp
+		"ammodescription"		"Munitions 7.62 mm de l'OTAN pour tir de précision avec les fusils Remington."  // changed by Wesp
 		"ammo_worth"			"4"	// changed by Wesp
 		"ammoinfomodel"			"models/weapons/ammo/rem_700/i_rem_700_amma.mdl"	// changed by Wesp
 
@@ -114,7 +114,7 @@ WeaponData
 
 
 		"SpreadAngle"			"3.0"
-		"CriminalLevel"			"3"
+		"CriminalLevel"	"3"
 		"Accuracy"			"6"
 
 		"MinorKnockbackDist"	"1500.0"			// maximum distance to cause minor knockback, changed by Wesp

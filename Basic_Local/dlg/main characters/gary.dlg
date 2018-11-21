@@ -479,9 +479,9 @@
 {	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	481	}{	Voyons. . . pour un frère rat d'égout, je peux faire un prix. . .	}{	Voyons. . . pour une soeur rat d'égout, je peux faire un prix. . .	}{	#	}{	}{	pc.GiveItem("item_g_eldervitaepack")	}{	}{	}{	}{	}{	}{	}{	}
-{	482	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	483	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	484	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	G.Patch_Plus == 1 and not pc.HasItem("item_g_eldervitaepack")	}{	pc.GiveItem("item_g_eldervitaepack")	}{	}{	}{	}{	}{	}{	}{	}
+{	483	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_eldervitaepack")	}{	pc.GiveAmmo("item_g_eldervitaepack")	}{	}{	}{	}{	}{	}{	}{	}
+{	484	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	485	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -489,9 +489,9 @@
 {	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	491	}{	Voyons ce que nous avons là. . .	}{	Voyons ce que nous avons là. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	492	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	}{	pc.GiveItem("item_g_bluebloodpack")	}{	}{	}{	}{	}{	}{	}{	}
-{	493	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	494	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	G.Patch_Plus == 1 and not pc.HasItem("item_g_bluebloodpack")	}{	pc.GiveItem("item_g_bluebloodpack")	}{	}{	}{	}{	}{	}{	}{	}
+{	493	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_bluebloodpack")	}{	pc.GiveAmmo("item_g_bluebloodpack")	}{	}{	}{	}{	}{	}{	}{	}
+{	494	}{	(Auto-Link)	}{	(Auto-Link)	}{	641	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	495	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -499,9 +499,9 @@
 {	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	501	}{	Voyons un peu. Pour quelqu'un comme vous, ça ne va pas être donné.	}{	Voyons un peu. Pour quelqu'un comme vous, ça ne va pas être donné.	}{	#	}{	}{	pc.GiveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}
-{	502	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	503	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	504	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	G.Patch_Plus == 1 and not pc.HasItem("item_g_bloodpack")	}{	pc.GiveItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}
+{	503	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_bloodpack")	}{	pc.GiveAmmo("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}
+{	504	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	505	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

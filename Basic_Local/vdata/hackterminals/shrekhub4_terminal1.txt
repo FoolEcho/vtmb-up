@@ -7,7 +7,7 @@ TerminalDefinition
 	LogonScreen	// displayed when the user first logs on
 	{
 		// Any number of lines are acceptable
-		"line0"		"Kamikazi Zen : centre opérations"  
+		"line0"		"Kamikazi Zen : centre opérations"
 	}
 	
 	
@@ -15,7 +15,7 @@ TerminalDefinition
 	{
 		"name"			"Alimentation"	//(128 characters)
 		"password"		"gwailo"
-		"description"		"Accéder au réseau électrique"	
+		"description"		"Accéder au réseau électrique"
 
 		Function
 		{
@@ -32,16 +32,18 @@ TerminalDefinition
 		{
 			"name"		"systemxxx"
 			"description"	"ATTENTION !"
-			"runtext"	"ALIMENTATION COUPEE"
+			"runtext"	"ATTENTION ! ALIMENTATION COUPEE !"	// changed by wesp
 			"dependency"	"G.Shubfour_Virus == 1"
 
 		}
 
 		Function	// added by wesp
 		{
-			"name"		"goodies!"
+			"name"		"goodies"
 			"description"	"récompense"
-			"runtext"	"Trouver un puissant objet pas loin comme récompense pour votre aide. >m1tn1ck<"
+			"runtext"	"Trouver un puissant objet pas loin comme récompense pour votre aide.
+
+>m1tn1ck<"
 			"dependency"	"G.Shubfour_Virus == 1 and G.Patch_Plus == 1"
 
 		}
@@ -54,8 +56,8 @@ TerminalDefinition
 
 		Function
 		{
-			"name"		"status1"
-			"description"	"systat"
+			"name"		"sysstat"	// changed by wesp
+			"description"	"status1"	// changed by wesp
 			"runtext"	"Système normal"
 			"dependency"	"G.Shubfour_Virus == 0"
 
@@ -63,8 +65,8 @@ TerminalDefinition
 
 		Function
 		{
-			"name"		"status2"
-			"description"	"systat"
+			"name"		"sysstat"	// changed by wesp
+			"description"	"status2"	// changed by wesp
 			"runtext"	"Virus détecté !!! Arrêt du système !!!"
 			"dependency"	"G.Shubfour_Virus == 1"
 		}

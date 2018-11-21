@@ -7,7 +7,7 @@ TerminalDefinition
 	LogonScreen	// displayed when the user first logs on
 	{
 		// Any number of lines are acceptable
-		"line0"		"Nocturne Theater"  
+		"line0"		"  Nocturne Theater"	// changed by wesp
 		"line1"		"Qu'est-ce que l'art dramatique"
 
 	}
@@ -20,7 +20,7 @@ TerminalDefinition
 
 		Function
 		{
-			"name"		"aucune caméra"
+			"name"		"net cam"	// changed by wesp
 			"description"	"activation caméra"	
 			"runtext"	"aucune caméra détectée"
 			"dependency"	"G.Shubtwo_Camera == 0"

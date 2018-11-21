@@ -772,7 +772,7 @@
 {	772	}{	Tout se passera bien.	}{	Je garderai mon calme.	}{	801	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous venez de le faire.	}
 {	773	}{	A votre façon, vous êtes une belle charmeuse, Demoiselle.	}{	A votre façon, vous êtes une charmeuse, Damsel.	}{	801	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si vous aviez un jouet à votre effigie, je l'achèterais et je ferais des choses avec. . .	}
 {	774	}{	C'est ça. . .	}{	C'est ça.	}{	801	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi ne suis-je pas encore à l'intérieur ?	}
-{	775	}{	C'est ça. . . Je viens de tuer un loup-garou.	}{	C'est ça. J'ai tué un loup-garou.	}{	811	}{	IsDead("Werewolf")	}{	}{	}{	}{	}{	}{	}{	}{	Hé hé. . . petite friandise, je tue des loups, maintenant. . . Ca équivaut à une centaine de vous. . .	}
+{	775	}{	C'est ça. . . Je viens de tuer un loup-garou.	}{	C'est ça. J'ai tué un loup-garou.	}{	811	}{	IsDead("Werewolf") or G.Werewolf_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	Hé hé. . . petite friandise, je tue des loups, maintenant. . . Ca équivaut à une centaine de vous. . .	}
 {	776	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	777	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	778	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -780,7 +780,7 @@
 {	780	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	781	}{	Ouais, ouais. . . Ne le relancez pas sur le sujet du loup-garou. . . Pff, je pensais qu'il s'arrêterait en me racontant l'histoire deux fois. . .	}{	Ouais, ouais. . . Ne le relancez pas sur le sujet du loup-garou. . . Pff, je pensais qu'il s'arrêterait en me racontant l'histoire deux fois. . .	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	782	}{	J'essayerai de ne pas en parler.	}{	J'essayerai de ne pas en parler.	}{	801	}{	}{	}{	}{	}{	}{	}{	}{	}{	Moi aussi j'ai horreur des rediffusions.	}
-{	783	}{	Ouais ? Vous savez que j'en ai tué un.	}{	Ouais ? Vous savez que j'en ai tué un.	}{	811	}{	IsDead("Werewolf")	}{	}{	}{	}{	}{	}{	}{	}{	Laissez-moi vous raconter une histoire. Il était une fois, un loup-garou de merde que j'ai tué.	}
+{	783	}{	Ouais ? Vous savez que j'en ai tué un.	}{	Ouais ? Vous savez que j'en ai tué un.	}{	811	}{	IsDead("Werewolf") or G.Werewolf_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	Laissez-moi vous raconter une histoire. Il était une fois, un loup-garou de merde que j'ai tué.	}
 {	784	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	785	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	786	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

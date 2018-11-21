@@ -3,11 +3,14 @@ TerminalDefinition
 	"screen saver"		"Chez Kilpatrick"		// Bounces around on the screen when the terminal is not being used. 
 	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
 
+	"email_password"	"freedom"		// the user must type this to access email from this terminal, added by wesp
+	"email_username"	"Arthur"
+
 	LogonScreen	// displayed when the user first logs on
 	{
 		// Any number of lines are acceptable
 		"line0"		"Cautions de Kilpatrick"  
-		"line1"		"Le prix de la liberté"
+		"line1"		" Le prix de la liberté"	// changed by wesp
 	}
 
 	// you can have up to 5 subdirs per terminal
@@ -19,7 +22,7 @@ TerminalDefinition
 	{
 		"name"			"Cautions"				// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
 		"password"		"money"				// password required to run commands in this menu (16 characters)
-		"description"		"cautions impayées" 	// This is printed each time the user enters this menu (128 characters)
+		"description"		"Cautions impayées" 	// This is printed each time the user enters this menu (128 characters)
 
 		Function
 		{
@@ -27,6 +30,17 @@ TerminalDefinition
 			"description"	"Infos sur Muddy"		// this is a description of this function  (128 characters)
 			"runtext"	"Je ne veux pas savoir pourquoi on l'appelle Muddy"
 									// this text is printed when the player triggers this function.  (128 characters)
+		"dependency"		"G.Muddy_Dead == 0"	// added by wesp
+		}
+
+		Function	// added by wesp
+		{
+			"name"		"Muddy"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Infos sur Muddy"		// this is a description of this function  (128 characters)
+			"runtext"	"Je ne veux pas savoir pourquoi on l'appelle Muddy...
+... et je ne le saurais jamais, puisqu'à présent il est mort !"
+									// this text is printed when the player triggers this function.  (128 characters)
+		"dependency"		"G.Muddy_Dead == 1"
 		}
 		
 	}
@@ -35,8 +49,8 @@ TerminalDefinition
 	{
 		"subject"	"Ton père"
 		"sender"	"Maman"	
-		"body"		"Arthur, ton père m'a dit de t'écrire pour te prévenir qu'il a un furoncle de 7 centimètres. Il faut absolument que tu viennes voir ça. Tendrement, maman"
-
+		"body"		"Arthur, ton père m'a dit de t'écrire pour te prévenir qu'il a un furoncle de 7 centimètres. Il faut absolument que tu viennes voir ça. 
+Tendrement, maman"
 	}
 
 }

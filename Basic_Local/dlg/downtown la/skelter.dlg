@@ -258,16 +258,16 @@
 {	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	259	}{	OK. Au revoir.	}{	OK. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
 {	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	261	}{	Pff. Bon, garde ça dans un coin de ta tête, OK ?	}{	Pff. Bon, garde ça dans un coin de ta tête, OK ?	}{	#	}{	}{	G.Skelter_Quest = 2	}{	}{	}{	}{	}{	}{	}{	}
-{	262	}{	Finalement, je pourrais bien faire ça. . .	}{	Finalement, je pourrais bien faire ça. . .	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Attends ! Je vais punir la petite Patty.	}
+{	261	}{	Pff. Bon, garde ça dans un coin de ta tête, OK ?	}{	Pff. Bon, garde ça dans un coin de ta tête, OK ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	Finalement, je pourrais bien faire ça. . .	}{	Finalement, je pourrais bien faire ça. . .	}{	251	}{	G.Skelter_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Attends ! Je vais punir la petite Patty.	}
 {	263	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	270	}{	Bien sûr. Au revoir.	}{	Bien sûr. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il n'y aura que ça dans le coin. Adieu.	}
+{	269	}{	Bien sûr. Au revoir.	}{	Bien sûr. Au revoir.	}{	0	}{	G.Skelter_Quest == 1	}{	G.Skelter_Quest = 2	}{	}{	}{	}{	}{	}{	}{	Il n'y aura que ça dans le coin. Adieu.	}
+{	270	}{	Bien sûr. Au revoir.	}{	Bien sûr. Au revoir.	}{	0	}{	G.Skelter_Quest != 1	}{	}{	}{	}{	}{	}{	}{	}{	Il n'y aura que ça dans le coin. Adieu.	}
 {	271	}{	Bien joué. Les goules, c'est rien que des ennuis, si tu veux mon avis. C'est une faiblesse, tout simplement.	}{	Bien joué. Les goules, c'est rien que des ennuis, si tu veux mon avis. C'est une faiblesse, tout simplement.	}{	#	}{	}{	G.Skelter_Quest = 4; pc.SetQuest("Junky",3)	}{	}{	}{	}{	}{	}{	}{	}
 {	272	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	273	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -510,7 +510,7 @@
 {	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	511	}{	Arrête, c'est du flan ! Je ne sais pas si c'est un coup tordu ou quoi, mais ne va pas dire ces conneries trop fort. Je sais ce qu'il est parti faire, et ça n'a rien à voir avec la Camarilla. On a d'autres problèmes, tu sais.	}{	Arrête, c'est du flan ! Je ne sais pas si c'est un coup tordu ou quoi, mais ne va pas dire ces conneries trop fort. Je sais ce qu'il est parti faire, et ça n'a rien à voir avec la Camarilla. On a d'autres problèmes, tu sais.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	512	}{	C'est ça. Tu as quelques minutes ?	}{	C'est ça. Tu as quelques minutes ?	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	513	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	513	}{	D'accord, mais j'ai aussi trouvé ça. On dirait que Grout a tué le Toreador chéri de Patty.	}{	D'accord, mais j'ai aussi trouvé ça. On dirait que Grout a tué le Toreador chéri de Patty.	}{	261	}{	G.Patty_Known == 1 and pc.HasItem("item_w_tzimisce2_claw") 	}{	pc.RemoveItem("item_w_tzimisce2_claw"); G.Grout_Kent = 1	}{	}{	}{	}{	}{	}{	}{	Okidoki. Et voici l'image de l'étoile de Patty qui a brûlé là-bas.	}
 {	514	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	515	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	516	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

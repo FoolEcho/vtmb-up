@@ -162,9 +162,9 @@
 {	162	}{	Je vous en prie. Je reviendrai avec l'Astrolite. Au revoir.	}{	Je vous en prie. Je reviendrai avec l'Astrolite. Au revoir.	}{	141	}{	G.Mercurio_Astro == 0 and G.Mercurio_Get == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai avec le boum-boum.	}
 {	163	}{	J'ai récupéré l'Astrolite.	}{	J'ai récupéré l'Astrolite.	}{	171	}{	G.Mercurio_Quest == 1 and pc.HasItem("item_g_astrolite")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai le boum-boum.	}
 {	164	}{	J'ai quelques questions sur Santa Monica.	}{	J'ai quelques questions sur Santa Monica.	}{	321	}{	G.Mercurio_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame près de la mer.	}
-{	165	}{	J'espère que ça suffira. Au revoir.	}{	J'espère que ça suffira. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
-{	166	}{	Je vous en prie. Je reviendrai avec l'Astrolite. Au revoir.	}{	Je vous en prie. Je reviendrai avec l'Astrolite. Au revoir.	}{	0	}{	G.Mercurio_Astro == 0 and G.Mercurio_Get == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai avec le boum-boum.	}
-{	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	165	}{	J'espère que ça suffira. Au revoir.	}{	J'espère que ça suffira. Au revoir.	}{	0	}{	 G.Mercurio_Get == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	166	}{	J'espère que ça suffira. Au revoir.	}{	J'espère que ça suffira. Au revoir.	}{	141	}{	 G.Mercurio_Get == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}
+{	167	}{	Je vous en prie. Je reviendrai avec l'Astrolite. Au revoir.	}{	Je vous en prie. Je reviendrai avec l'Astrolite. Au revoir.	}{	0	}{	G.Mercurio_Astro == 0 and G.Mercurio_Get == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai avec le boum-boum.	}
 {	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

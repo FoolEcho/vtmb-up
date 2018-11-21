@@ -3,7 +3,7 @@
 {	3	}{	Je ne bois pas. . . d'alcool.	}{	Je ne bois pas. . . d'alcool.	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	4	}{	Je cherche les filles de Janus.	}{	Je cherche les filles de Janus.	}{	250	}{	IsClan(pc,"Malkavian") and G.Mercurio_Quest == 2 and G.Cal_Permission == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	5	}{	Je cherche Therese. Vous savez où elle est ?	}{	Je cherche Therese. Où est-elle ?	}{	81	}{	G.Mercurio_Quest == 2 and G.Cal_Permission == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	6	}{	Je cherche un type appelé Knox - costaud, les cheveux mi-longs. . .	}{	Je cherche un type appelé Knox - costaud, les cheveux mi-longs. . .	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Knox_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je trouver le fort Knox derrière vos portes ?	}
+{	6	}{	Je cherche un type appelé Knox - costaud, les cheveux mi-longs. . .	}{	Je cherche un type appelé Knox - costaud, les cheveux mi-longs. . .	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Mercurio_Quest >= 2	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je trouver le fort Knox derrière vos portes ?	}
 {	7	}{	Je ne bois pas ce genre de libation. Adieu.	}{	Je ne bois pas ce genre de libation. Adieu.	}{	11	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
