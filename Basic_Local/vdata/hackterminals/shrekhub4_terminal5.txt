@@ -8,14 +8,13 @@ TerminalDefinition
 	{
 		// Any number of lines are acceptable
 		"line0"		"Kamikazi Zen : Admin. réseau"  
-		"line1"		""
 
 	}
 	
 	SubDir
 	{
 		"name"			"Net Security"	//(128 characters)
-		"description"		"HUB RESEAU : connexions dispo."
+		"description"		"HUB RESEAU"	// changed by wesp
 		"password"		"nirvana"
 		"difficulty"		"8"	
 
@@ -24,13 +23,9 @@ TerminalDefinition
 			"name"		"schrecknet"
 			"description"	"Connexions disponibles"	
 			"runtext"	"Hub schrecknet activé :
+Fais ton boulot et dégage d'ici, junior. tic-tac. . . Besoin d'aide ? Trouve le bureau d'un certain Rob Nesler. Je suis connecté. Tu verras le répertoire. Je verrai ce que je peux faire d'ici. Sinon, débrouille-toi.
 
-Fais ton boulot et dégage d'ici, junior. tic-tac. . .
-
-Besoin d'aide ? Trouve le bureau d'un certain Rob Nesler. Je suis connecté. Tu verras le répertoire. Je verrai ce que je peux faire d'ici. Sinon, débrouille-toi. 
-Pas mal pour un toutou de la Cama.
-
->m1tn1ck<"
+>m1tn1ck<" // changed by wesp
 			"runscript"	"mitSetQuestNine()"
 			"trigger"	"0"
 		}

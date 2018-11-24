@@ -10,7 +10,7 @@ TerminalDefinition
 	{
 		// Any number of lines are acceptable
 		"line0"		"Fondation LaCroix"
-		"line1"		"Intranet sécurisé"
+		"line1"		" Intranet sécurisé"	// changed by wesp
 	}
 
 	Email
@@ -311,7 +311,7 @@ VV"
 		"subject"	"Le prince vous promeut !"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Eh, chef, j'ai fait du nettoyage de printemps - j'ai trouvé quelque chose qui pourrait vous chatouiller. Un gamin vivait ici et il avait un truc pour notre pin-up psycho préférée, Jeanette Voerman. J'ai eu un coup de nostalgie, alors si vous trouvez une copie de Tap Hotel, avec moi, je vous l'échange contre un poster de cette belle malade. Mettez la boîte du film dans votre boîte aux lettres et je l'apporterai à votre refuge."
-		"dependency"	"G.Ball_Taken == 2 and G.Gary_Voerman == 0 and G.PP == 0"	// changed by wesp
+		"dependency"	"G.CD == 1 and G.Gary_Voerman == 0 and G.PP == 0"	// changed by wesp
 	}
 
 Email
@@ -319,7 +319,7 @@ Email
 		"subject"	"Le prince vous promeut !"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Eh, chef, j'ai fait du nettoyage de printemps - j'ai trouvé quelque chose qui pourrait vous chatouiller. Un gamin vivait ici et il avait un truc pour notre pin-up psycho préférée, Jeanette Voerman. J'ai eu un coup de nostalgie, alors si vous trouvez une copie de Tap Hotel, avec moi, je vous l'échange contre un poster de cette belle malade. Mettez la boîte du film dans votre boîte aux lettres et je l'apporterai à votre refuge."
-		"dependency"	"G.Ball_Taken == 2 and G.Gary_Voerman == 0 and G.PP == 1"	// changed by wesp
+		"dependency"	"G.CD == 1 and G.Gary_Voerman == 0 and G.PP == 1"	// changed by wesp
 		"runscript"	"garySetQuestOne()"	// added by wesp
 	}
 
@@ -376,28 +376,28 @@ Email
 
 	Email	// added by wesp
 	{
-		"subject"	"Recherche de rencard ?"
-		"sender"	"gary@schrecknet.vtm"
-		"body"		"Êtes-vous seul, chef ? Alors, peut-être que me dénicher une de ces étranges boules de chair de Tzimisce vous empêchera-t-il de vous apitoyer sur vous-même. Je vous proposerais une affiche d'Imalia dans sa beauté complète, avant de lui avoir appliqué mon traitement spécial."
-		"dependency"	"G.Ball_Taken == 3 and G.Gary_Imalia == 0"
-		"runscript"	"garySetQuestFive()"
-	}
-
-	Email	// added by wesp
-	{
 		"subject"	"Proposition confidentielle du Nigéria"
 		"sender"	"gary@schrecknet.vtm"
-		"body"		"Êtes-vous technophile, boss? Parce que Mitnick veut une plaque spéciale avec une puce transpondeur intégrée. Je ne sais pas ce qu'il veut en faire, mais il la troquera pour une affiche de Tawni Sessions sur laquelle Imalia n'a pas encore passé ses griffes de colère."
-		"dependency"	"G.Gary_Damsel == 1 and G.Gary_Tawni == 0 and G.PP == 1"
-		"runscript"	"garySetQuestSix()"
+		"body"		"Êtes-vous technophile, boss? Parce que Mitnick veut une plaque spéciale avec une puce transpondeur intégrée. Je ne sais pas ce qu'il veut en faire, mais il la troquera pour une affiche d'Imalia dans sa beauté complète, avant que je lui ai appliqué mon traitement spécial."
+		"dependency"	"G.Gary_Damsel == 1 and G.Gary_Imalia == 0 and G.PP == 1"
+		"runscript"	"garySetQuestFive()"
 	}
 
 	Email	// added by wesp
 	{
 		"subject"	"Argent facile au Monde des Ténèbres!"
 		"sender"	"gary@schrecknet.vtm"
-		"body"		"Occupé, boss? Parce que j'ai entendu qu'un autre pilier de film culte avait disparu. Le shuriken du tourbillon dans \"A Touch of Xen\". Je l'échangerai contre le poster d'une fille agréable, que vous ne regarderez certainement pas dans les yeux!"
-		"dependency"	"G.Gary_Tawni == 1 and G.Gary_Blind == 0 and G.PP == 1"
+		"body"		"Occupé, boss? Parce que j'ai entendu qu'un autre pilier de film culte avait disparu. Le shuriken du tourbillon dans \"A Touch of Xen\". Je l'échangerai contre le poster Tawni Sessions sur laquelle Imalia n'a pas encore passé ses griffes de colère."
+		"dependency"	"G.Gary_Imalia == 1 and G.Gary_Tawni == 0 and G.PP == 1"
+		"runscript"	"garySetQuestSix()"
+	}
+
+	Email	// added by wesp
+	{
+		"subject"	"Recherche de rencard ?"
+		"sender"	"gary@schrecknet.vtm"
+		"body"		"Êtes-vous seul, chef ? Alors, peut-être que m'envoyer un Calice Odieux vous empêche de vous apitoyer sur vous-même. Barabus en a repéré un au Syndicat Fu. J'installerais un poster dans votre refuge, de Claira Killenbach et sa boisson favorite."
+		"dependency"	"G.Gary_Tawni == 1 and G.Gary_Cross == 0 and G.PP == 1"
 		"runscript"	"garySetQuestSeven()"
 	}
 
@@ -405,8 +405,8 @@ Email
 	{
 		"subject"	"Réplique aux enchères"
 		"sender"	"gary@schrecknet.vtm"
-		"body"		"Hé boss, un autre travail pour vous. Un de nos chercheurs versé dans l'occulte aimerait mettre la main sur un calice odieux écrasé vu dans Chinatown. Offrirait une affiche d'Imalia dans sa pleine beauté, avant de lui avoir donné mon traitement spécial! La manière habituelle comme précédemment."
-		"dependency"	"G.Gary_Blind == 1 and G.Gary_Cross == 0 and G.PP == 1"
+		"body"		"Hé chef, un dernier boulot pour vous. Je recherche une de ces étranges boules de chair de Tzimisce, je parie que vous débusquerais de ces créatures à Hollywood. Je vous donnerais le poster d'une fille que vous ne regarderez certainement pas dans les yeux!"
+		"dependency"	"G.Gary_Cross == 1 and G.Ball_Taken == 1 and G.PP == 1"
 		"runscript"	"garySetQuestEight()"
 	}
 

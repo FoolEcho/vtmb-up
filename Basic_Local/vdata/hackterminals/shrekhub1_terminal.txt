@@ -1,6 +1,7 @@
 TerminalDefinition
 {
-	"screen saver"		"Ordinateurs Megahurtz : ils réfléchissent pour vous"		// Bounces around on the screen when the terminal is not being used. 
+	"screen saver"		"Ordinateurs Megahurtz : 
+				  ils réfléchissent pour vous"		// Bounces around on the screen when the terminal is not being used, changed by wesp
 	"brackets"		""						// these surround the command prompt (2 characters) changed by wesp
 
 
@@ -9,8 +10,6 @@ TerminalDefinition
 		// Any number of lines are acceptable
 		"line0"		"Megahurtz Computing"  
 	}
-	
-
 
 	SubDir
 	{
@@ -30,8 +29,6 @@ bien joué. Je t'enverrai les instructions pour le prochain hub par e-mail.
 			"trigger"	"0"
 			"dependency"	"G.Shubs_Act == 0"	// changed by wesp
 			"runscript"	"mitSetQuestThree()"
-
 		}
-
-
 	}
+}

@@ -281,8 +281,8 @@
 {	281	}{	Saluez la communauté Anarch de ma part.	}{	Saluez la communauté Anarch de ma part.	}{	#	}{	npc.SetDisposition("PrinceSitting",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	282	}{	D'accord.	}{	D'accord.	}{	0	}{	G.Nines_Chat == 0	}{	pc.SetQuest("Dane",4)	}{	}{	}{	}{	}{	}{	}{	Fait comme si c'était.	}
 {	283	}{	C'est ça. . .	}{	C'est ça. . .	}{	0	}{	G.Nines_Chat == 0	}{	pc.SetQuest("Dane",4)	}{	}{	}{	}{	}{	}{	}{	Hé hé. . . très bon.	}
-{	284	}{	C'est ce que j'ai fait. Voilà ce qu'il a dit. . .	}{	C'est ce que j'ai fait. Voilà ce qu'il a dit. . .	}{	291	}{	G.Nines_Chat == 1	}{	}{	}{	}{	}{	}{	}{	}{	Fait. Je vais vous relire le compte-rendu.	}
-{	285	}{	C'est ce que j'ai fait. Il a dit plein d'âneries sur les Anarchs. Je n'ai pas vraiment écouté.	}{	C'est ce que j'ai fait. Il a dit plein d'âneries sur les Anarchs. Je n'ai pas vraiment écouté.	}{	301	}{	G.Nines_Chat == 1	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Fait. Bla, bla, ouaf, ouaf.	}
+{	284	}{	C'est ce que j'ai fait. Voilà ce que Nines a dit. . .	}{	C'est ce que j'ai fait. Voilà ce que Nines a dit. . .	}{	291	}{	G.Nines_Chat == 1	}{	}{	}{	}{	}{	}{	}{	}{	Fait. Je vais vous relire le compte-rendu.	}
+{	285	}{	C'est ce que j'ai fait. Nines a dit plein d'âneries sur les Anarchs. Je n'ai pas vraiment écouté.	}{	C'est ce que j'ai fait. Nines a dit plein d'âneries sur les Anarchs. Je n'ai pas vraiment écouté.	}{	301	}{	G.Nines_Chat == 1	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Fait. Bla, bla, ouaf, ouaf.	}
 {	286	}{	C'est ce que j'ai fait. On ne m'a rien dit d'important.	}{	C'est ce que j'ai fait. On ne m'a rien dit d'important.	}{	311	}{	G.Nines_Chat == 1	}{	}{	}{	}{	}{	}{	}{	}{	Fait. Pas un mot.	}
 {	287	}{	C'est ce que j'ai fait. Ca m'a fait réfléchir.	}{	C'est ce que j'ai fait. Ca m'a fait réfléchir.	}{	321	}{	G.Nines_Chat == 1	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	Fait. Paroles d'or, sage conseil. . . C'était sensé, même au milieu de tout ce bruit. . .	}
 {	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -26,43 +26,49 @@ TerminalDefinition
 		{
 			"name"		"Malibu"			// this is what the player must type in to trigger this function. (16 characters)
 			"description"	"Bulletin surf Malibu"		// this is a description of this function  (128 characters)
-			"runtext"	"0,5-1 m, quelques grosses vagues, température de l'eau 16,7"
-									// this text is printed when the player triggers this function.  (128 characters)
+			"runtext"	"Malibu
+0,5-1 m, quelques grosses vagues, température de l'eau 16,7"
+									// this text is printed when the player triggers this function, changed by wesp.  (128 characters)
 		}
 
 		Function
 		{
 			"name"		"SantaMonica"
 			"description"	"Bulletin surf Santa Monica"		
-			"runtext"	"1-1,5 m, bonnes conditions, température de l'eau 17,2"
+			"runtext"	"SantaMonica
+1-1,5 m, bonnes conditions, température de l'eau 17,2"	// changed by wesp
 		}
 
 		Function
 		{
 			"name"		"Dockweiler"
 			"description"	"Bulletin surf Dockweiler"		
-			"runtext"	"0,5-1 m, courant, température de l'eau 17,8"
+			"runtext"	"Dockweiler
+0,5-1 m, courant, température de l'eau 17,8"	// changed by wesp
 		}
 
 		Function
 		{
 			"name"		"El Porto"
 			"description"	"Bulletin surf El Porto"		
-			"runtext"	"1-1,5 m, courant, température de l'eau 17,8"
+			"runtext"	"El Porto
+1-1,5 m, courant, température de l'eau 17,8"	// changed by wesp
 		}
 
 		Function
 		{
 			"name"		"Hermosa"
 			"description"	"Bulletin surf Hermosa"		
-			"runtext"	"1,5-2 m, excellentes conditions, température de l'eau 17,8"
+			"runtext"	"Hermosa
+1,5-2 m, excellentes conditions, température de l'eau 17,8"	// changed by wesp
 		}
 
 		Function
 		{
 			"name"		"Redondo"
 			"description"	"Bulletin surf Redondo"		
-			"runtext"	"1,5-2 m, excellentes conditions, température de l'eau 18,3"
+			"runtext"	"Redondo
+1,5-2 m, excellentes conditions, température de l'eau 18,3"	// changed by wesp
 		}
 
 
@@ -74,6 +80,5 @@ TerminalDefinition
 		"sender"	"Shark Lube"	
 		"body"		"Avec Shark Lube, vos planches sont lisses en toutes circonstances !"
 	}
-
 	
 }

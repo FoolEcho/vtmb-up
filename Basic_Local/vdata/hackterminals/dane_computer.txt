@@ -6,7 +6,7 @@ TerminalDefinition
 	LogonScreen	// displayed when the user first logs on
 	{
 		// Any number of lines are acceptable
-		"line0"		"EEP Shipping"
+		"line0"		"  EEP Shipping"	// changed by wesp
 		"line1"		"NZ Elizabeth Dane"
 	}
 
@@ -23,95 +23,103 @@ TerminalDefinition
 					Mer       CALME
 					Temp Atm   18 C
 					Temp Eau   6 C
-					"
+					"	// changed by wesp
 		}
 
 		Function
 		{
 			"name"		"Etat"
 			"description"	"ETAT DU NAVIRE"
-			"runtext"	"Moteurs    OFF
+			"runtext"	"ETAT DU NAVIRE
+Moteurs    OFF
 					Caméras pont  OFF
 					Verrous    FER.
 					"
-			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 0 and G.Dane_Engines == 0"
+			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 0 and G.Dane_Engines == 0"	// changed by wesp
 		}
 
 		Function
 		{
 			"name"		"Etat"
 			"description"	"ETAT DU NAVIRE"
-			"runtext"	"Moteurs    OFF
+			"runtext"	"ETAT DU NAVIRE
+Moteurs    OFF
 					Caméras pont  ON
 					Verrous    FER.
 					"
-			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 0 and G.Dane_Engines == 0"
+			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 0 and G.Dane_Engines == 0"	// changed by wesp
 		}
 
 		Function
 		{
 			"name"		"Etat"
 			"description"	"ETAT DU NAVIRE"
-			"runtext"	"Moteurs    OFF
+			"runtext"	"ETAT DU NAVIRE
+Moteurs    OFF
 					Caméras pont  OFF
 					Verrous    OUV.
 					"
-			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 1 and G.Dane_Engines == 0"
+			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 1 and G.Dane_Engines == 0"	// changed by wesp
 		}
 
 		Function
 		{
 			"name"		"Etat"
 			"description"	"ETAT DU NAVIRE"
-			"runtext"	"Moteurs    ON
+			"runtext"	"ETAT DU NAVIRE
+Moteurs    ON
 					Caméras pont  OFF
 					Verrous    FER.
 					"
-			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 0 and G.Dane_Engines == 1"
+			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 0 and G.Dane_Engines == 1"	// changed by wesp
 		}
 
 		Function
 		{
 			"name"		"Etat"
 			"description"	"ETAT DU NAVIRE"
-			"runtext"	"Moteurs    OFF
+			"runtext"	"ETAT DU NAVIRE
+Moteurs    OFF
 					Caméras pont  ON
 					Verrous    OUV.
 					"
-			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 1 and G.Dane_Engines == 0"
+			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 1 and G.Dane_Engines == 0"	// changed by wesp
 		}
 
 		Function
 		{
 			"name"		"Etat"
 			"description"	"ETAT DU NAVIRE"
-			"runtext"	"Moteurs    ON
+			"runtext"	"ETAT DU NAVIRE
+Moteurs    ON
 					Caméras pont  ON
 					Verrous    FER.
 					"
-			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 0 and G.Dane_Engines == 1"
+			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 0 and G.Dane_Engines == 1"	// changed by wesp
 		}
 
 		Function
 		{
 			"name"		"Etat"
 			"description"	"ETAT DU NAVIRE"
-			"runtext"	"Moteurs    ON
+			"runtext"	"ETAT DU NAVIRE
+Moteurs    ON
 					Caméras pont  OFF
 					Verrous    OUV.
 					"
-			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 1 and G.Dane_Engines == 1"
+			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 1 and G.Dane_Engines == 1"	// changed by wesp
 		}
 
 		Function
 		{
 			"name"		"Etat"
 			"description"	"ETAT DU NAVIRE"
-			"runtext"	"Moteurs    ON
+			"runtext"	"ETAT DU NAVIRE
+Moteurs    ON
 					Caméras pont  ON
 					Verrous    OUV.
 					"
-			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 1 and G.Dane_Engines == 1"
+			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 1 and G.Dane_Engines == 1"	// changed by wesp
 		}
 	}
 

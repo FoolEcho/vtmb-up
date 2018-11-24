@@ -578,8 +578,8 @@
 {	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	581	}{	Stewart, Lean, Hitchcock, Wilder, Holden, Dean, Scorcese, De Niro, et surtout Ash, mon enfant. [nostalgique] Je me rappelle un cadre de studio qui m'avait dit que Bogart pourrait être déménageur, mais jamais acteur. . .	}{	Stewart, Lean, Hitchcock, Wilder, Holden, Dean, Scorcese, De Niro, et surtout Ash, mon enfant. [nostalgique] Je me rappelle un cadre de studio qui m'avait dit que Bogart pourrait être déménageur, mais jamais acteur. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Isaac_Ash = 1; G.Isaac_Bio = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	582	}{	Ash ?	}{	Ash ?	}{	621	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que pouvez-vous me dire sur la lettre H ?	}
+{	581	}{	Stewart, Lean, Hitchcock, Wilder, Holden, Dean, Scorcese, De Niro, et surtout Ash, mon enfant. [nostalgique] Je me rappelle un cadre de studio qui m'avait dit que Bogart pourrait être déménageur, mais jamais acteur. . .	}{	Stewart, Lean, Hitchcock, Wilder, Holden, Dean, Scorcese, De Niro, et surtout Ash, mon enfant. [nostalgique] Je me rappelle un cadre de studio qui m'avait dit que Bogart pourrait être déménageur, mais jamais acteur. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Isaac_Bio = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	582	}{	Ash ?	}{	Ash ?	}{	621	}{	G.Isaac_Ash == 0	}{	}{	}{	}{	}{	}{	}{	}{	Que pouvez-vous me dire sur la lettre H ?	}
 {	583	}{	Je pourrais jouer dans un film, moi ?	}{	Je pourrais jouer dans un film, moi ?	}{	601	}{	Appearance 5 & G.Isaac_Star == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je pourrais me faire projeter sur trente mètres ?	}
 {	584	}{	Je pourrais jouer dans un film, moi ?	}{	Je pourrais jouer dans un film, moi ?	}{	611	}{	Appearance -5 & G.Isaac_Star == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je pourrais me faire projeter sur trente mètres ?	}
 {	585	}{	C'est vous qui avez produit Police Donkey 3 ou Time Cake ? C'était génial !	}{	C'est vous qui avez produit Police Donkey 3 ou Time Cake ? C'était génial !	}{	591	}{	G.Isaac_Crap == 0	}{	}{	}{	}{	}{	}{	}{	}{	Il y a si peu de comédies qui se passent sur la lune. Ce serait trop drôle. . .	}
@@ -722,7 +722,7 @@
 {	722	}{	King's Way. Il y avait un Tzimisce. Vous remarquerez que ma phrase est au passé.	}{	King's Way. Il y avait un Tzimisce. Vous remarquerez que ma phrase est au passé.	}{	831	}{	IsClan(pc,"Toreador") and G.Isaac_Gift == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	723	}{	King's Way. Il y avait un Tzimisce. Vous remarquerez que ma phrase est au passé.	}{	King's Way. Il y avait un Tzimisce. Vous remarquerez que ma phrase est au passé.	}{	61	}{	not IsClan(pc,"Toreador") and G.Isaac_Gift == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le façonneur de chair qui marchait avec royauté n'est pas si malin maintenant..	}
 {	724	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	921	}{	G.Isaac_Gift == 2 and G.Patch_Plus == 0	}{	pc.MoneyAdd( 500 )	}{	}{	}{	}{	}{	}{	}{	}
-{	725	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	921	}{	G.Isaac_Gift == 2 and G.Patch_Plus == 1	}{	pc.GiveItem("item_w_mingxiao_melee")	}{	}{	}{	}{	}{	}{	}{	}
+{	725	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	921	}{	G.Isaac_Gift == 2 and G.Patch_Plus == 1	}{	pc.GiveItem("item_g_ring_serial_killer_1")	}{	}{	}{	}{	}{	}{	}{	}
 {	726	}{	J'avais quelques questions.	}{	J'avais quelques questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demande autre chose.	}
 {	727	}{	Oh, à propos de la gargouille. . .	}{	Oh, à propos de la gargouille. . .	}{	511	}{	G.Isaac_Gargoyle == 1 or G.Isaac_Gargoyle == 2	}{	}{	}{	}{	}{	}{	}{	}{	A propos de l'être de pierre. . .	}
 {	728	}{	J'ai tué la gargouille.	}{	J'ai tué la gargouille.	}{	731	}{	IsDead("Gargoyle") and G.Isaac_Gargoyle != 4	}{	}{	}{	}{	}{	}{	}{	}{	L'être de pierre est en miettes.	}

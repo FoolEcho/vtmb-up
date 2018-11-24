@@ -2,8 +2,8 @@
 
 WeaponData
 {
-	"printname"		"Steyr AUG A1."	// changed by wesp 
-	"description"		"Même si le Steyr AUG A1 est une arme qui manque quelque peu d'éclat, elle conserve néanmoins une classe indéniable. Ceci dit, ce fusil mitrailleur autrichien a démontré sa fiabilité et son efficacité, devenant une arme militaire prisée à travers le monde. Elle est dotée d'une lunette 4X pour plus de précision." // changed by wesp 
+	"printname"		"Steyr AUG A1"	// changed by wesp 
+	"description"		"Même si le Steyr AUG A1 est une arme qui manque quelque peu d'éclat, elle conserve néanmoins une classe indéniable. Ceci dit, ce fusil mitrailleur autrichien a démontré sa fiabilité et son efficacité, devenant une arme militaire prisée à travers le monde. Elle est dotée d'une lunette 1.5X pour plus de précision." // changed by wesp 
 	"viewmodel"		"models/weapons/rifle_steyraug/view/v_rifle_steyraug.mdl"
 	"playermodel"		"models/weapons/rifle_steyraug/ground/g_rifle_steyraug_r.mdl"
 	"wieldmodel_f"		"models/weapons/rifle_steyraug/wield/w_f_rifle_steyraug.mdl"
@@ -27,7 +27,7 @@ WeaponData
 	"weight"		"3"
 	"item_flags"		"0"
 	"item_type"		"weapon_firearm"
-	"Scope_Ranges"		"0, 20"          //10, 5", changed by Wesp
+	"Scope_Ranges"		"0, 50"          //10, 5", changed by Wesp
 	"sound_group"	"Assault_Rifle"
 	"uses_accuracycursors"	"1"
 
@@ -51,8 +51,8 @@ WeaponData
 //Weapon Ammo
 	Magazine
 	{
-		"ammoprintname"		"Munitions de l'OTAN"
-		"ammodescription"	"Un chargeur de munitions 5.56 pour le Steyr AUG A1."	// changed by wesp
+		"ammoprintname"		"Munitions 5.56 mm pour Steyr AUG A1"
+		"ammodescription"	"Un chargeur de 30 munitions 5.56 mm de l'OTAN pour le Steyr AUG A1."	// changed by wesp
 		"ammo_worth"		"15"
 		"ammoinfomodel"		"models/weapons/ammo/steyr_aug/i_steyr_aug_ammo.mdl"
 
@@ -121,7 +121,7 @@ WeaponData
 		"CrosshairFirePercent"	"0.15"		//"0.7" // 
 
 		"SpreadAngle"		"3.0"
-		"CriminalLevel"		"4"
+		"CriminalLevel"	"4"
 		"Accuracy"		"6"
 		"BurstMin"		"3"
 		"BurstMax"		"5"

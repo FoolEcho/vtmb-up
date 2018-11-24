@@ -49,8 +49,8 @@
 {	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	51	}{	[Pleure/rit/marmonne, hystérique]Héhéhé. . .	}{	[Pleure/rit/marmonne, hystérique]Héhéhé. . .	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	Ils vous attendent tous dans le sous-sol de l'hôpital. C'était une blague. C'est un masque. Bouh.	}{	Ils vous attendent tous dans le sous-sol de l'hôpital. C'était une blague. C'est un masque. Bouh.	}{	71	}{	Humanity 6 & G.Pisha_Desire == 1	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	Vos amis sont dans les entrailles, mouche. Une magnifique blague faite à vos dépends.	}
-{	53	}{	Ils vous attendent tous dans le sous-sol de l'hôpital. C'était une blague. C'est un masque. Bouh.	}{	Ils vous attendent tous dans le sous-sol de l'hôpital. C'était une blague. C'est un masque. Bouh.	}{	71	}{	Humanity -6 & G.Pisha_Desire == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vos amis sont dans ses entrailles, mouche. Une magnifique blague faite à vos dépends.	}
+{	52	}{	Votre équipe vous attend au sous-sol de l'hôpital. C'était une blague. C'est un masque. Bouh.	}{	Votre équipe vous attend au sous-sol de l'hôpital. C'était une blague. C'est un masque. Bouh.	}{	71	}{	Humanity 6 & G.Pisha_Desire == 1	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	Vos amis sont dans les entrailles, mouche. Une magnifique blague faite à vos dépends.	}
+{	53	}{	Votre équipe vous attend au sous-sol de l'hôpital. C'était une blague. C'est un masque. Bouh.	}{	Votre équipe vous attend au sous-sol de l'hôpital. C'était une blague. C'est un masque. Bouh.	}{	71	}{	Humanity -6 & G.Pisha_Desire == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vos amis sont dans ses entrailles, mouche. Une magnifique blague faite à vos dépends.	}
 {	54	}{	Vos amis sont morts.	}{	Vos amis sont morts.	}{	81	}{	G.Pisha_Desire == 1	}{	}{	}{	}{	}{	}{	}{	}{	La Veuve Noire a dévoré toutes les mouches.	}
 {	55	}{	Fuyez ! Ne revenez jamais dans cette ville.	}{	Fuyez ! Ne revenez jamais dans cette ville.	}{	0	}{	G.Pisha_Desire == 1	}{	G.Mill_Loose = 1; FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Déployez vos ailes et quittez cette ville à tout jamais. Vite !	}
 {	56	}{	Votre maîtresse la lune vous appelle. . . Courez la rejoindre, pour le restant de vos jours.	}{	Votre maîtresse la lune vous appelle. . . Courez la rejoindre, pour le restant de vos jours.	}{	151	}{	Dementation 3 & G.Pisha_Desire == 1	}{	G.Mill_Dementated = 1	}{	}{	}{	}{	}{	}{	}{	Votre maîtresse la lune vous appelle. . . Courez la rejoindre, pour le restant de vos jours.	}
@@ -62,7 +62,7 @@
 {	62	}{	C'était une blague. Ils vous attendent au sous-sol de l'hôpital. Quels farceurs. . .	}{	C'était une blague. Ils vous attendent au sous-sol de l'hôpital. Quels farceurs. . .	}{	71	}{	Persuasion 3 & pc.humanity >= 3	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	}
 {	63	}{	C'était une blague. Ils vous attendent au sous-sol de l'hôpital. Quels farceurs. . .	}{	C'était une blague. Ils vous attendent au sous-sol de l'hôpital. Quels farceurs. . .	}{	71	}{	Persuasion 3 & pc.humanity < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	64	}{	Vous n'avez rien vu. Il ne s'est rien passé. Vous allez tout oublier.	}{	Vous n'avez rien vu. Il ne s'est rien passé. Vous allez tout oublier.	}{	91	}{	Dominate 3	}{	G.Mill_Dominated = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	65	}{	Donnez-moi votre permis de conduire. Je vous laisse partir.	}{	Donnez-moi votre permis de conduire. Je vous laisse partir.	}{	101	}{	Intimidate 6	}{	G.Mill_Intimidate = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	65	}{	Donnez-moi votre permis de conduire. Si vous parlez de ça à qui que ce soit, vous partagerez leur sort.	}{	Donnez-moi votre permis de conduire. Si vous parlez de ça à qui que ce soit, vous partagerez leur sort.	}{	101	}{	Intimidate 6	}{	G.Mill_Intimidate = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	66	}{	Morts ? Oui. Il y a des endroits où les humains ne devraient pas s'aventurer. C'en était un.	}{	Morts ? Oui. Il y a des endroits où les humains ne devraient pas s'aventurer. C'en était un.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	67	}{	Partez d'ici. Courez comme vous n'avez jamais couru. Avant que je change d'avis.	}{	Partez d'ici. Courez comme vous n'avez jamais couru. Avant que je change d'avis.	}{	0	}{	}{	G.Mill_Loose = 1; FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	}
 {	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -79,11 +79,11 @@
 {	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	81	}{	Morts ? Mais. . . comment avez-vous - qu'êtes-vous ?	}{	Morts ? Mais. . . comment avez-vous - qu'êtes-vous ?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	82	}{	La dernière chose que vous verrez.	}{	La dernière chose que vous verrez.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Votre dernier interlocuteur.	}
-{	83	}{	Je suis la personne qui va vous tuer.	}{	Je suis la personne qui va vous tuer.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	La main de la mort.	}
+{	82	}{	Donnez-moi votre permis de conduire. Je vous laisse partir.	}{	Donnez-moi votre permis de conduire. Je vous laisse partir.	}{	101	}{	Intimidate 6	}{	G.Mill_Intimidate = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Vous n'avez rien vu. Il ne s'est rien passé. Vous allez tout oublier.	}{	Vous n'avez rien vu. Il ne s'est rien passé. Vous allez tout oublier.	}{	91	}{	Dominate 3	}{	G.Mill_Dominated = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	84	}{	Fuyez ! Ne revenez jamais dans cette ville.	}{	Fuyez ! Ne revenez jamais dans cette ville.	}{	0	}{	}{	G.Mill_Loose = 1; FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Déployez vos ailes et quittez cette ville à tout jamais. Vite !	}
-{	85	}{	Donnez-moi votre permis de conduire. Je vous laisse partir.	}{	Donnez-moi votre permis de conduire. Je vous laisse partir.	}{	101	}{	Intimidate 6	}{	G.Mill_Intimidate = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	86	}{	Vous n'avez rien vu. Il ne s'est rien passé. Vous allez tout oublier.	}{	Vous n'avez rien vu. Il ne s'est rien passé. Vous allez tout oublier.	}{	91	}{	Dominate 3	}{	G.Mill_Dominated = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	La dernière chose que vous verrez.	}{	La dernière chose que vous verrez.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Votre dernier interlocuteur.	}
+{	86	}{	Je suis la personne qui va vous tuer.	}{	Je suis la personne qui va vous tuer.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	La main de la mort.	}
 {	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

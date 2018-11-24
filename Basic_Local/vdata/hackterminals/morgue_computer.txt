@@ -1,6 +1,7 @@
 TerminalDefinition
 {
-	"screen saver"		"Si vous lisez ceci,           vous n'êtes pas MORT."		// Bounces around on the screen when the terminal is not being used. 
+	"screen saver"		"Si vous lisez ceci,
+				    vous n'êtes pas MORT."		// Bounces around on the screen when the terminal is not being used, changed by wesp
 	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
 
 	LogonScreen	// displayed when the user first logs on
@@ -24,14 +25,16 @@ TerminalDefinition
 		{
 			"name"		"Abobo, G"
 			"description"	"Casier 1A - 18/10/04"
-			"runtext"	"Les blessures indiquent que le sujet a été battu à mort avec une batte de base-ball."
+			"runtext"	"Casier 1A - 18/10/04
+Les blessures indiquent que le sujet a été battu à mort avec une batte de base-ball."	//changed by wesp
 		}
 
 		Function
 		{
 			"name"		"Crumb, V"	// changed by wesp
 			"description"	"Casier 3A - 19/10/04"
-			"runtext"	"Sujet mort d'un arrêt cardiaque. Affaires personnelles dans chambre B."
+			"runtext"	"Casier 3A - 19/10/04
+Sujet mort d'un arrêt cardiaque. Affaires personnelles dans chambre B."
 			"dependency"	"G.Knox_Quest == 5"	//changed by wesp
 		}
 
@@ -39,28 +42,32 @@ TerminalDefinition
 		{
 			"name"		"Jane Doe"
 			"description"	"Casier 2B - 17/10/04"
-			"runtext"	"Sujet mort de causes indéterminées. Note : le cadavre ne contient plus qu'un demi-litre de sang. Acte criminel suspecté."
+			"runtext"	"Casier 2B - 17/10/04
+Sujet mort de causes indéterminées. Note : le cadavre ne contient plus qu'un demi-litre de sang. Acte criminel suspecté."	//changed by wesp
 		}
 
 		Function
 		{
 			"name"		"Falz, D"
 			"description"	"Casier 5B - 18/10/04"
-			"runtext"	"Battu à mort. Je n'ai eu qu'une envie en le voyant, refermer très vite le casier."
+			"runtext"	"Casier 5B - 18/10/04
+Battu à mort. Je n'ai eu qu'une envie en le voyant, refermer très vite le casier."	//changed by wesp
 		}
 
 		Function
 		{
 			"name"		"Perry, D"
 			"description"	"Casier 4A -- 17/10/04"
-			"runtext"	"Sujet apparemment mort d'overdose de jambon-fromage."
+			"runtext"	"Casier 4A -- 17/10/04
+Sujet apparemment mort d'overdose de jambon-fromage."	//changed by wesp
 		}
 
 		Function	// added by wesp
 		{
 			"name"		"Poe, H"
 			"description"	"Casier 3B -- 24/10/04"
-			"runtext"	"Sujet mort de saignements internes. Jolie petite rousse, quel dommage."
+			"runtext"	"Casier 3B -- 24/10/04
+Sujet mort de saignements internes. Jolie petite rousse, quel dommage."	//changed by wesp
 			"dependency"	"G.Heather_Drank == 0 and G.Story_State > 9"
 			"runscript"	"heatherSetQuest()"
 		}
