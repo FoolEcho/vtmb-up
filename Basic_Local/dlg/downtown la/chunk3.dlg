@@ -377,7 +377,7 @@
 {	377	}{	Fuis, mortel!	}{	Fuis, mortel!	}{	0	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles(); G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	378	}{	Voilà votre grande chance de devenir un héros. Essayez de m'arrêter. 	}{	Voilà votre grande chance de devenir un héros. Essayez de m'arrêter. 	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Soyez un mur si vous voulez. Je vous préviens, vous vous effondrerez.	}
 {	379	}{	J'ai peur que ce soit la fin. De votre vie, je veux dire.	}{	J'ai peur que ce soit la fin. De votre vie, je veux dire.	}{	391	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Quand vous vous êtes réveillé ce matin, aviez-vous deviné que vous alliez mourir ?	}
-{	380	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	380	}{	J'ai tué ton frère et je vais te tuer à présent.	}{	J'ai tué ton frère et je vais te tuer à présent.	}{	391	}{	Humanity -5 & G.Chunk_Dead == 1 }{	}{	}{	}{	}{	}{	}{	}{	Je vais maintenant te faire ce que j'ai fait à l'autre donut.	}
 {	381	}{	Allez, partez, d'accord ? Je ne veux pas faire usage de la force, mais j'en ai le droit. M'sieur, ne me forcez pas à faire ça.	}{	Allez, partez, d'accord ? Je ne veux pas faire usage de la force, mais j'en ai le droit. Miss, ne me forcez pas à faire ça.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	382	}{	Je monte. Vous pouvez essayer de m'arrêter ou vous pouvez partir.	}{	Je monte. Vous pouvez essayer de m'arrêter ou vous pouvez partir.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma route est sans issue. Vous pouvez me percuter ou vous pouvez vous écarter.	}
 {	383	}{	Je vous donne dix secondes pour sortir de l'immeuble.	}{	Je vous donne dix secondes pour sortir de l'immeuble.	}{	0	}{	Intimidate 8	}{	G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	Je ne vous épargnerai que pendant les trois secondes à venir. 1. . .	}
@@ -386,7 +386,7 @@
 {	386	}{	Eh, ça sent le poulet grillé, non ? Il commence à faire chaud, ici. . .	}{	Eh, ça sent le poulet grillé, non ? Il commence à faire chaud, ici. . .	}{	0	}{	Dementation 1	}{	G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	387	}{	Fuyez.	}{	Fuyez.	}{	0	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles(); G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	388	}{	Fuis, mortel!	}{	Fuis, mortel!	}{	0	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles(); G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	389	}{J'ai tué ton frère et je vais te tuer à présent.	}{	J'ai tué ton frère et je vais te tuer à présent.	}{	391	}{	Humanity -5 & G.Chunk_Dead == 1 }{	}{	}{	}{	}{	}{	}{	}{	Je vais maintenant te faire ce que j'ai fait à l'autre donut.	}
 {	390	}{	Vous ferez une belle entrée, avant le plat de résistance.	}{	Vous ferez une belle entrée, avant le plat de résistance.	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	391	}{	Quoi ?	}{	Quoi ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	392	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Chunk_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}

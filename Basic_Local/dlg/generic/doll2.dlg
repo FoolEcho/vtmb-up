@@ -339,9 +339,9 @@
 {	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	341	}{	Je vais vous dire - si le pape, le président et mon prof d'histoire au lycée entrent ici dans les cinq minutes, je vous sauterai dessus devant eux.	}{	Je vais vous dire - si le pape, le président et mon prof d'histoire au lycée entrent ici dans les cinq minutes, je vous sauterai dessus devant eux.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	342	}{	Je voudrais que vous rencontriez des amis...!	}{	Je voudrais que vous rencontriez des amis...!	}{	0	}{	Dementation 5 & G.Patch_Plus == 1	}{	npc.SetDisposition("Flirt", 1); G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
-{	343	}{	Connais-je ces gens ? Au revoir.	}{	Connais-je ces gens ? Au revoir.	}{	0	}{	pc.dementation == 5 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	344	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	pc.dementation < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	343	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	344	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

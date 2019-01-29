@@ -521,7 +521,7 @@
 {	521	}{	Pas aussi bon, hein ? Il y a pire. Les rats, par exemple ? Tu crois que je blague ? On peut survivre avec des animaux, si tu ne vomis pas. Immonde.	}{	Pas aussi bon, hein ? Il y a pire. Les rats, par exemple ? Tu crois que je blague ? On peut survivre avec des animaux, si tu ne vomis pas. Immonde.	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	522	}{	Pire qu'un cou de clodo ? Je te raconte pas le goût de son écharpe.	}{	Pire qu'un cou de clodo ? Je te raconte pas le goût de son écharpe.	}{	531	}{	not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Euh, son cou puait autant que ton haleine !	}
 {	523	}{	Il me reste des fils entre les dents.	}{	Il me reste des fils entre les dents.	}{	531	}{	not IsClan(pc,"Malkavian") and not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	524	}{	Mon Clan ne se nourit pas de sang de Rat.	}{	Mon Clan ne se nourit pas de sang de Rat.	}{	541	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	524	}{	Le sang de ce clochard était déjà assez mauvais, je ne me nourrirai pas d'un rat !	}{	Le sang de ce clochard était déjà assez mauvais, je ne me nourrirai pas d'un rat !	}{	541	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

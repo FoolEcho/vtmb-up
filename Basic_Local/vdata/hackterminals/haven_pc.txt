@@ -258,8 +258,7 @@ Jeanette"
 	{
 		"subject"	"Library"
 		"sender"	"beckett@legend.vtm"
-		"body"		"Bonjour jeune homme... Un confrère Gangrel nommé Scott, qui faisait des recherches pour mon compte à la bibliothèque municipale de LA au sujet de notre infâme cercueil, y a remarqué un LaSombra ! Etant occupé pour le moment, pourriez-vous le rencontrer à ma place à la Boutique du Fumeur de Santa Monica pour en savoir plus? Après tout, le Sabbat signifie toujours des ennuis et nous ne voudrions pas qu'il arrive quelque chose de fâcheux à ce précieux savoir, n'est-ce pas?
-Beckett"
+		"body"		"Bonjour jeune homme... LaCroix vante vos mérites, alors peut-être pourriez-vous m'assister sur quelque chose. Un confrère Gangrel nommé Scott, qui faisait des recherches pour mon compte à la bibliothèque municipale de LA, y a remarqué un LaSombra ! Etant occupé pour le moment, pourriez-vous le rencontrer à ma place à la Boutique du Fumeur de Santa Monica pour en savoir plus? Après tout, le Sabbat signifie toujours des ennuis et nous ne voudrions pas qu'il arrive quelque chose de fâcheux à ce précieux savoir, n'est-ce pas? - Beckett"
 		"dependency"	"G.Library_Ready == 1 and G.Patch_Plus == 1"
 		"runscript"	"librarySetQuest()"
 	}
@@ -268,8 +267,7 @@ Beckett"
 	{
 		"subject"	"Excellent"
 		"sender"	"beckett@legend.vtm"
-		"body"	"Rebonjour... Mon ami m'a dit que vous aviez interrompu des procédures de test du Sabbat à la bibliothèque qui l'ont presque tué. Il condamnera l'accès à cette chambre rituelle pour que cela ne se reproduise plus. Inutile de préciser qu'il ne serait pas avisé de parler de ce petit incident à qui que ce soit...
-Beckett"
+		"body"	"Rebonjour... Scott m'a dit que vous aviez interrompu une épreuve du Sabbat à la bibliothèque qui l'a presque tué. Nous vous sommes tous deux très reconnaissants, et il s'assurera de condamner l'accès à cette chambre rituelle. Inutile de préciser qu'il ne serait pas avisé de parler de ce petit incident à qui que ce soit, pas même à Sébastien... - Beckett"
 		"dependency"	"G.Jumbles_Removed == 2 and G.Patch_Plus == 1"
 		"runscript"	"G.Library_Open = 2; librarySetQuest()"
 	}
@@ -311,7 +309,7 @@ VV"
 		"subject"	"Le prince vous promeut !"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Eh, chef, j'ai fait du nettoyage de printemps - j'ai trouvé quelque chose qui pourrait vous chatouiller. Un gamin vivait ici et il avait un truc pour notre pin-up psycho préférée, Jeanette Voerman. J'ai eu un coup de nostalgie, alors si vous trouvez une copie de Tap Hotel, avec moi, je vous l'échange contre un poster de cette belle malade. Mettez la boîte du film dans votre boîte aux lettres et je l'apporterai à votre refuge."
-		"dependency"	"G.CD == 1 and G.Gary_Voerman == 0 and G.PP == 0"	// changed by wesp
+		"dependency"	"G.CD > 0 and G.Gary_Voerman == 0 and G.PP == 0"	// changed by wesp
 	}
 
 Email
@@ -319,7 +317,7 @@ Email
 		"subject"	"Le prince vous promeut !"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Eh, chef, j'ai fait du nettoyage de printemps - j'ai trouvé quelque chose qui pourrait vous chatouiller. Un gamin vivait ici et il avait un truc pour notre pin-up psycho préférée, Jeanette Voerman. J'ai eu un coup de nostalgie, alors si vous trouvez une copie de Tap Hotel, avec moi, je vous l'échange contre un poster de cette belle malade. Mettez la boîte du film dans votre boîte aux lettres et je l'apporterai à votre refuge."
-		"dependency"	"G.CD == 1 and G.Gary_Voerman == 0 and G.PP == 1"	// changed by wesp
+		"dependency"	"G.CD > 0 and G.Gary_Voerman == 0 and G.PP == 1"	// changed by wesp
 		"runscript"	"garySetQuestOne()"	// added by wesp
 	}
 

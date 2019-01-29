@@ -289,11 +289,11 @@
 {	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	291	}{	Cette vie l'est rarement. Je n'aurais jamais dû vous confier cette tâche. La peste soit des amateurs ! Aviez-vous ne serait-ce qu'un instant envisagé les conséquences d'un échec ? Un seul instant ? Si cela vous console, vous n'êtes pas la première personne que Jeanette aura utilisée. 	}{	Cette vie l'est rarement. Je n'aurais jamais dû vous confier cette tâche. La peste soit des amateurs ! Aviez-vous ne serait-ce qu'un instant envisagé les conséquences d'un échec ? Un seul instant ? Si cela vous console, vous n'êtes pas la première personne que Jeanette aura utilisée. 	}{	#	}{	npc.SetDisposition("Anger",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	292	}{	C'est ça. Cela n'a rien à voir avec NOTRE accord. . .	}{	C'est ça. Cela n'a rien à voir avec NOTRE accord. . .	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Portez seule le fardeau de votre soeur et honorez votre accord. . .	}
-{	293	}{	Pourquoi Jeanette vous ferait-elle une chose pareille ?	}{	Pourquoi Jeanette vous ferait-elle une chose pareille ?	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi la maîtresse blanche vous trahirait-elle ?	}
-{	294	}{	Cette garce ! Je savais qu'elle tramait quelque chose !	}{	Cette garce ! Je savais qu'elle tramait quelque chose !	}{	351	}{	}{	G.Therese_Seduce = G.Therese_Seduce + 1	}{	}{	}{	}{	}{	}{	}{	Je n'aurais jamais dû écouter ses mensonges enamourés !	}
-{	295	}{	Vous l'avez bien mérité. Il ne fallait pas la sous-estimer.	}{	Vous l'avez bien mérité. Il ne fallait pas la sous-estimer.	}{	341	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Vous portez votre faiblesse comme un vieux chapeau. Vous l'avez sous-estimée. . .	}
-{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	C'est ça. Cela n'a rien à voir avec NOTRE accord.	}{	C'est ça. Cela n'a rien à voir avec NOTRE accord.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Portez seule le fardeau de votre soeur et honorez votre accord.	}
+{	293	}{	C'est ça. Cela n'a rien à voir avec NOTRE accord. At least I brought you this diary. Au moins je vous ai apporté ce journal	}{	C'est ça. Cela n'a rien à voir avec NOTRE accord. Au moins je vous ai apporté ce journal.	}{	301	}{	pc.HasItem("item_g_oh_diary") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_oh_diary")	}{	}{	}{	}{	}{	}{	}{	Portez seule le fardeau de votre soeur et honorez votre accord. Je vous ai également obtenu de vieux mots de là-bas.	}
+{	294	}{	Pourquoi Jeanette vous ferait-elle une chose pareille ?	}{	Pourquoi Jeanette vous ferait-elle une chose pareille ?	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi la maîtresse blanche vous trahirait-elle ?	}
+{	295	}{	Cette garce ! Je savais qu'elle tramait quelque chose !	}{	Cette garce ! Je savais qu'elle tramait quelque chose !	}{	351	}{	}{	G.Therese_Seduce = G.Therese_Seduce + 1	}{	}{	}{	}{	}{	}{	}{	Je n'aurais jamais dû écouter ses mensonges enamourés !	}
+{	296	}{	Vous l'avez bien mérité. Il ne fallait pas la sous-estimer.	}{	Vous l'avez bien mérité. Il ne fallait pas la sous-estimer.	}{	341	}{	}{	G.Therese_Seduce = G.Therese_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Vous portez votre faiblesse comme un vieux chapeau. Vous l'avez sous-estimée. . .	}
 {	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

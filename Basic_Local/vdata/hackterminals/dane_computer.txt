@@ -20,10 +20,9 @@ TerminalDefinition
 			"name"		"Climat"
 			"description"	"ETAT DU NAVIRE" // RM: Old coordinates had it smack dab in the middle of Long Beach Airport
 			"runtext"	"Emplacement   33.98 N, 118.60 O
-					Mer       CALME
-					Temp Atm   18 C
-					Temp Eau   6 C
-					"	// changed by wesp
+Mer       CALME
+Temp Atm   18 C
+Temp Eau   6 C"	// changed by wesp
 		}
 
 		Function
@@ -32,9 +31,8 @@ TerminalDefinition
 			"description"	"ETAT DU NAVIRE"
 			"runtext"	"ETAT DU NAVIRE
 Moteurs    OFF
-					Caméras pont  OFF
-					Verrous    FER.
-					"
+Caméras pont  OFF
+Verrous    FER."
 			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 0 and G.Dane_Engines == 0"	// changed by wesp
 		}
 
@@ -44,9 +42,8 @@ Moteurs    OFF
 			"description"	"ETAT DU NAVIRE"
 			"runtext"	"ETAT DU NAVIRE
 Moteurs    OFF
-					Caméras pont  ON
-					Verrous    FER.
-					"
+Caméras pont  ON
+Verrous    FER."
 			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 0 and G.Dane_Engines == 0"	// changed by wesp
 		}
 
@@ -56,9 +53,8 @@ Moteurs    OFF
 			"description"	"ETAT DU NAVIRE"
 			"runtext"	"ETAT DU NAVIRE
 Moteurs    OFF
-					Caméras pont  OFF
-					Verrous    OUV.
-					"
+Caméras pont  OFF
+Verrous    OUV."
 			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 1 and G.Dane_Engines == 0"	// changed by wesp
 		}
 
@@ -68,9 +64,8 @@ Moteurs    OFF
 			"description"	"ETAT DU NAVIRE"
 			"runtext"	"ETAT DU NAVIRE
 Moteurs    ON
-					Caméras pont  OFF
-					Verrous    FER.
-					"
+Caméras pont  OFF
+Verrous    FER."
 			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 0 and G.Dane_Engines == 1"	// changed by wesp
 		}
 
@@ -80,9 +75,8 @@ Moteurs    ON
 			"description"	"ETAT DU NAVIRE"
 			"runtext"	"ETAT DU NAVIRE
 Moteurs    OFF
-					Caméras pont  ON
-					Verrous    OUV.
-					"
+Caméras pont  ON
+Verrous    OUV."
 			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 1 and G.Dane_Engines == 0"	// changed by wesp
 		}
 
@@ -92,9 +86,8 @@ Moteurs    OFF
 			"description"	"ETAT DU NAVIRE"
 			"runtext"	"ETAT DU NAVIRE
 Moteurs    ON
-					Caméras pont  ON
-					Verrous    FER.
-					"
+Caméras pont  ON
+Verrous    FER."
 			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 0 and G.Dane_Engines == 1"	// changed by wesp
 		}
 
@@ -104,9 +97,8 @@ Moteurs    ON
 			"description"	"ETAT DU NAVIRE"
 			"runtext"	"ETAT DU NAVIRE
 Moteurs    ON
-					Caméras pont  OFF
-					Verrous    OUV.
-					"
+Caméras pont  OFF
+Verrous    OUV."
 			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 1 and G.Dane_Engines == 1"	// changed by wesp
 		}
 
@@ -116,9 +108,8 @@ Moteurs    ON
 			"description"	"ETAT DU NAVIRE"
 			"runtext"	"ETAT DU NAVIRE
 Moteurs    ON
-					Caméras pont  ON
-					Verrous    OUV.
-					"
+Caméras pont  ON
+Verrous    OUV."
 			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 1 and G.Dane_Engines == 1"	// changed by wesp
 		}
 	}

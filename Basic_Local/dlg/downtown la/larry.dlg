@@ -218,10 +218,10 @@
 {	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	221	}{	Dis, j'ai une copine au Confession, Venus Dare. Elle cherchait quelqu'un de doué pour. . . elle te dira tout ça elle-même. Si ça t'intéresse, je peux lui passer un coup de fil et te recommander.	}{	De toute façon, tu es un peu pâle pour moi. Dis, j'ai une copine au Confession, Venus Dare. Elle cherchait quelqu'un de doué pour. . . elle te dira tout ça elle-même. Si ça t'intéresse, je peux lui passer un coup de fil et te recommander.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Larry_Venus = 1; pc.SetQuest("Confession",1)	}{	}{	}{	}{	}{	}{	}{	}
-{	222	}{	Ouais, je vais aller la voir. Mais d'abord, j'aimerais acheter quelque chose.	}{	Ouais, je vais aller la voir. Mais d'abord, j'aimerais acheter quelque chose.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	OK. Mais je dois faire des emplettes d'abord.	}
-{	223	}{	Alors je vais aller du côté de Confession. A plus.	}{	Alors je vais aller du côté de Confession. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ah, j'irai en pèlerinage au temple de la déesse.	}
-{	224	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	Dis, j'ai une copine au Confession, Venus Dare. Elle cherchait quelqu'un de doué pour. . . elle te dira tout ça elle-même. Si ça t'intéresse, je peux lui passer un coup de fil et te recommander.	}{	De toute façon, tu es un peu pâle pour moi. Dis, j'ai une copine au Confession, Venus Dare. Elle cherchait quelqu'un de doué pour. . . elle te dira tout ça elle-même. Si ça t'intéresse, je peux lui passer un coup de fil et te recommander.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Larry_Venus = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	222	}{	Ouais, je vais aller la voir. Mais d'abord, j'aimerais acheter quelque chose.	}{	Ouais, je vais aller la voir. Mais d'abord, j'aimerais acheter quelque chose.	}{	241	}{	not IsDead("Venus")	}{	pc.SetQuest("Confession",1)	}{	}{	}{	}{	}{	}{	}{	OK. Mais je dois faire des emplettes d'abord.	}
+{	223	}{	Alors je vais aller du côté de Confession. A plus.	}{	Alors je vais aller du côté de Confession. A plus.	}{	0	}{	not IsDead("Venus")	}{	pc.SetQuest("Confession",1)	}{	}{	}{	}{	}{	}{	}{	Ah, j'irai en pèlerinage au temple de la déesse.	}
+{	224	}{	Pas besoin. J'ai entendu dire qu'elle était morte.	}{	Pas besoin. J'ai entendu dire qu'elle était morte.	}{	0	}{	IsDead("Venus")	}{	}{	}{	}{	}{	}{	}{	}{	Je ne ferai aucun travail pour des personnes vraiment mortes.	}
 {	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

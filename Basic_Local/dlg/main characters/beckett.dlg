@@ -918,7 +918,7 @@
 {	918	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	919	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	920	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	921	}{	Peut-être cela vaut-il mieux pour cette meute.	}{	Peut-être cela vaut-il mieux pour cette meute.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	921	}{	Peut-être cela vaut-il mieux pour cette meute.	}{	Peut-être cela vaut-il mieux pour cette meute.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Sabbat_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	922	}{	J'ai rencontré le Dr Johansen.	}{	J'ai rencontré le Dr Johansen.	}{	941	}{	G.Beckett_Johansen == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'ai digéré le cerveau de Johansen.	}
 {	923	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	924	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -930,7 +930,7 @@
 {	930	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	931	}{	C'est simple. Quelqu'un leur a fait croire qu'il y a un Antédiluvien dans cette pièce. Comme la plupart des vampires dans cette ville, ils aimeraient sans doute planter les crocs ou un pieu dans cet occupant imaginaire, puisqu'on ne peut pas l'envoyer sur la lune. . .	}{	C'est simple. Quelqu'un leur a fait croire qu'il y a un Antédiluvien dans cette pièce. Comme la plupart des vampires dans cette ville, ils aimeraient sans doute planter les crocs ou un pieu dans cet occupant imaginaire, puisqu'on ne peut pas l'envoyer sur la lune. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Beckett_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	932	}{	Le professeur n'a rien dit de tout cela.	}{	Le professeur n'a rien dit de tout cela.	}{	941	}{	G.Beckett_Johansen == 0	}{	}{	}{	}{	}{	}{	}{	}{	???	}
-{	933	}{	Je devrais les éliminer à cause de l'attaque.	}{	Je devrais les éliminer à cause de l'attaque.	}{	921	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hmm. J'y penserai en ravageant les rangs de mes ennemis.	}
+{	933	}{	Je devrais les éliminer à cause de l'attaque.	}{	Je devrais les éliminer à cause de l'attaque.	}{	921	}{	G.Sabbat_Attack == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hmm. J'y penserai en ravageant les rangs de mes ennemis.	}
 {	934	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	935	}{	Je ferais mieux de préparer mon assaut contre le Sabbat. Au revoir, Beckett.	}{	Je ferais mieux de préparer mon assaut contre le Sabbat. Au revoir, Beckett.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	A présent, je purge le sang du Sabbat dans cette ville.	}
 {	936	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

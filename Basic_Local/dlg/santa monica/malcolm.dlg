@@ -89,8 +89,8 @@
 {	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	91	}{	Ca marche. Mais je suis en train de travailler. Il faudra que je vous les donne plus tard. Et ne revenez jamais me parler de ça.	}{	Ca marche. Mais je suis en train de travailler. Il faudra que je vous les donne plus tard. Et ne revenez jamais me parler de ça.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Glissez-les dans la boîte aux lettres 508, au-dessus du prêteur sur gages, docteur.	}{	Glissez-les sous la porte dans l'appartement au-dessus du prêteur sur gages, docteur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Déposez mes sous au-dessus de celui qui prête les gages. Adieu.	}
-{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Glissez-les dans la boîte aux lettres 508, au-dessus du prêteur sur gages, docteur.	}{	Glissez-les sous la porte dans l'appartement au-dessus du prêteur sur gages, docteur.	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Déposez mes sous au-dessus de celui qui prête les gages. Adieu.	}
+{	93	}{	Cachez-les derrière les plantes dans le couloir de l'immeuble de l'autre côté de la rue, docteur.	}{	Cachez-les derrière les plantes dans le couloir de l'immeuble de l'autre côté de la rue, docteur.	}{	0	}{	G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Déposez mon oseil derrière les plantes vertes dans la grande maison endormie de l'autre côté de la route. Adieu.	}
 {	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

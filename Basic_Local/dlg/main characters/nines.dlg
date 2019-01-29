@@ -701,8 +701,8 @@
 {	701	}{	D'après la rumeur, tu m'as tué. Désolé, je n'ai pas encore pu t'innocenter. Mais je savais que tu arriverais ici en un seul morceau. Bon sang, t'as réussi à quitter le parc sans bobo ! Bien joué !	}{	D'après la rumeur, tu m'as tué. Désolé, je n'ai pas encore pu t'innocenter. Mais je savais que tu arriverais ici en un seul morceau. Bon sang, t'as réussi à quitter le parc sans bobo ! Bien joué !	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	G.Nines_Ending = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	702	}{	Je croyais que tu étais mort ! Le loup-garou t'a choppé !	}{	Je croyais que tu étais mort ! Le loup-garou t'a choppé !	}{	711	}{	}{	werewolfHeadCamera()	}{	}{	}{	}{	}{	}{	}{	Imposteur ! Le vrai Nines est dans le ventre d'un loup !	}
 {	703	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	704	}{	Il y avait un autre loup, mais je l'ai tué. Et toi ?	}{	Il y avait un autre loup, mais je l'ai tué. Et toi ?	}{	711	}{	Humanity 5 & IsDead("Werewolf")	}{	werewolfHeadCamera()	}{	}{	}{	}{	}{	}{	}{	J'ai battu le loup aux points. . . alors, qui a gagné, le loup ou toi ?	}
-{	705	}{	J'ai massacré mon loup-garou. Et toi ?	}{	J'ai massacré mon loup-garou. Et toi ?	}{	711	}{	Humanity -5 & IsDead("Werewolf")	}{	werewolfHeadCamera()	}{	}{	}{	}{	}{	}{	}{	Le loup-garou que j'ai combattu, tous ses morceaux le regrettent. Et toi ?	}
+{	704	}{	Il y avait un autre loup, mais je l'ai tué. Et toi ?	}{	Il y avait un autre loup, mais je l'ai tué. Et toi ?	}{	711	}{	Humanity 5 & (IsDead("Werewolf") or G.Werewolf_Dead == 1)	}{	werewolfHeadCamera()	}{	}{	}{	}{	}{	}{	}{	J'ai battu le loup aux points. . . alors, qui a gagné, le loup ou toi ?	}
+{	705	}{	J'ai massacré mon loup-garou. Et toi ?	}{	J'ai massacré mon loup-garou. Et toi ?	}{	711	}{	Humanity -5 & (IsDead("Werewolf") or G.Werewolf_Dead == 1)	}{	werewolfHeadCamera()	}{	}{	}{	}{	}{	}{	}{	Le loup-garou que j'ai combattu, tous ses morceaux le regrettent. Et toi ?	}
 {	706	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	707	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	708	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -882,7 +882,7 @@
 {	882	}{	Xiao est morte.	}{	Xiao est morte.	}{	891	}{	IsDead("MingXiao")	}{	}{	}{	}{	}{	}{	}{	}{	Xiao a du mal à exister, maintenant.	}
 {	883	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	884	}{	Repose-toi, Nines. Au revoir.	}{	Repose-toi, Nines. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si les Anarchs te donnent une carte de convalescence, dis-leur de la signer de ma part.	}
-{	885	}{	Ouais, ces loups-garous sont une plaie pour la plupart des vampires. Au revoir.	}{	Ouais, ces loups-garous sont une plaie pour la plupart des vampires. Au revoir.	}{	0	}{	IsDead("Werewolf")	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez quelque chose, là. . . On dirait une dent de loup. Je n'ai pas eu ça, moi. . .	}
+{	885	}{	Ouais, ces loups-garous sont une plaie pour la plupart des vampires. Au revoir.	}{	Ouais, ces loups-garous sont une plaie pour la plupart des vampires. Au revoir.	}{	0	}{	IsDead("Werewolf") or G.Werewolf_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez quelque chose, là. . . On dirait une dent de loup. Je n'ai pas eu ça, moi. . .	}
 {	886	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	887	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	888	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

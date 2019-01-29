@@ -9,58 +9,58 @@ TerminalDefinition
 	LogonScreen	// displayed when the user first logs on
 	{
 		// Any number of lines are acceptable
-		"line0"		"Anarch Stronghold"	// changed by wesp
+		"line0"		"Bastion Anarch"	// changed by wesp
 	}
 
  	SubDir
 	{
 		"name"			"Important"	//(128 characters)
 		"password"		"master"
-		"description"		"Information about the Sabbat"	// changed by wesp
+		"description"		"Informations au sujet du Sabbat"	// changed by wesp
 
 		Function
 		{
 			"name"		"Sabbat1"
-			"description"	"Sabbat Gargoyle"
-			"runtext"	"We suspect the Sabbat have taken over the old Asian Theater, and placed a Gargoyle to guard it."	// changed by wesp
+			"description"	"Gargouille du Sabbat"
+			"runtext"	"Nous pensons que le Sabbat s'est emparé de l'ancien théâtre asiatique et a placé une gargouille pour le protéger."	// changed by wesp
 		}
 
 		Function
 		{
 			"name"		"Sabbat2"
-			"description"	"Gargoyle Weakness"
-			"runtext"	"The Gargoyle seems to be nearly impervious to firearms. Perhaps a blunt instrument would be more effective."
+			"description"	"Faiblesse de la Gargouille"
+			"runtext"	"La gargouille semble être presque imperméable aux armes à feu. Peut-être qu'un instrument contondant serait plus efficace."
 		}
 
 	}
 
 	Email
 	{
-		"subject"	"The Sabbat are here."
+		"subject"	"Le Sabbat est ici."
 		"sender"	"IAbrams@SMMCmail.vtm"
-		"body"		"Rumor has it that the Sabbat are infiltrating Los Angeles. I'll get you more information when I can."
+		"body"		"La rumeur veut que le Sabbat infiltre Los Angeles. Je t'aurai plus d'informations quand je pourrais."
 	}
 
 	Email
 	{
-		"subject"	"Re: The Sabbat are here."
+		"subject"	"Re: Le Sabbat est ici."
 		"sender"	"IAbrams@SMMCmail.vtm"
-		"body"		"It is confirmed. They are located in the old subway tunnels or the sewers."	// changed by wesp
+		"body"		"C'est confirmé. Ils sont localisés dans les anciens tunnels de métro ou dans les égouts."	// changed by wesp
 	}
 
 	Email		// added by wesp
 	{
-		"subject"	"Re: The Sabbat are here."
+		"subject"	"Re: Le Sabbat est ici."
 		"sender"	"IAbrams@SMMCmail.vtm"
-		"body"		"I found someone to clean them out of the underground. They dealt with the Gargoyle too and that wasn't even connected to the Sabbat."
+		"body"		"J'ai trouvé quelqu'un pour nettoyer le sous-sol. Il a aussi affaire à la Gargouille, elle n'était même pas liée au Sabbat."
 		"dependency"	"G.Gargoyle_Convinced == 0"
 	}
 
 	Email		// added by wesp
 	{
-		"subject"	"Re: The Sabbat are here."
+		"subject"	"Re: Le Sabbat est ici."
 		"sender"	"IAbrams@SMMCmail.vtm"
-		"body"		"I found someone to clean them out of the underground. They even persuaded the Gargoyle to join us, as it wasn't connected to the Sabbat."
+		"body"		"J'ai trouvé quelqu'un pour nettoyer le sous-sol. Il a même persuadé la Gargouille de se joindre à nous, elle n'était pas liée au Sabbat."
 		"dependency"	"G.Gargoyle_Convinced == 1"
 	}
 
@@ -68,7 +68,7 @@ TerminalDefinition
 	{
 		"subject"	"Nines Rodriguez"
 		"sender"	"IAbrams@SMMCmail.vtm"
-		"body"		"Nines has been seriously wounded while fighting a werewolf. I have guaranteed to keep him safe so defend the hotel at all cost!"
+		"body"		"Nines a été grièvement blessé alors qu'il se battait avec un loup-garou. Je lui ai garanti la sécurité alors défendez l'hôtel à tout prix !"
 	}
 
 }

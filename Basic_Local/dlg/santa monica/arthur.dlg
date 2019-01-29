@@ -528,7 +528,7 @@
 {	528	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	529	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	530	}{	Je passais comme ça, Arthur. A bientôt.	}{	Je passais comme ça, Arthur. A bientôt.	}{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre diamètre évoque des beignets bien digérés. Adieu.	}
-{	531	}{	Eh, salut. Je suis content que vous passiez. J'ai eu des nouvelles de Muddy Mike. On dirait qu'il s'est fait avoir par un tueur en série. Dingue, non ? Alors vous pouvez arrêter de le chercher, si vous vous en occupiez. . .	}{	Eh, salut. Je suis content que vous passiez. J'ai eu des nouvelles de Muddy Mike. On dirait qu'il s'est fait avoir par un tueur en série. Dingue, non ? Alors vous pouvez arrêter de le chercher, si vous vous en occupiez. . .	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Muddyrecord = 1; G.Arthur_Muddy = 4; G.Arthur_Killer = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	531	}{	Eh, salut. Je suis content que vous passiez. J'ai eu des nouvelles de Muddy Mike. On dirait qu'il s'est fait avoir par un tueur en série. Dingue, non ? Alors vous pouvez arrêter de le chercher, si vous vous en occupiez. . .	}{	Eh, salut. Je suis content que vous passiez. J'ai eu des nouvelles de Muddy Mike. On dirait qu'il s'est fait avoir par un tueur en série. Dingue, non ? Alors vous pouvez arrêter de le chercher, si vous vous en occupiez. . .	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Muddyrecord = 1; G.Arthur_Muddy = 5; G.Arthur_Killer = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	532	}{	Cool. En fait, j'avais d'autres questions à vous poser.	}{	Cool. En fait, j'avais d'autres questions à vous poser.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
 {	533	}{	Merci Arthur.	}{	Merci Arthur.	}{	0	}{	pc.GetQuestState("Bail Jumper") < 3	}{	pc.SetQuest("Bail Jumper", 4)	}{	}{	}{	}{	}{	}{	}{	Je suis déjà ailleurs.	}
 {	534	}{	Cool. En fait, j'avais d'autres questions à vous poser.	}{	Cool. En fait, j'avais d'autres questions à vous poser.	}{	81	}{	pc.GetQuestState("Bail Jumper") == 3	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
@@ -998,8 +998,8 @@
 {	998	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	999	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1000	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1001	}{	(Starting Condition)	}{	}{	511	}{	G.Arthur_Muddy == 4 and G.Arthur_Knoxout == 1 and G.Arthur_Foreign == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1002	}{	(Starting Condition)	}{	}{	521	}{	G.Arthur_Muddy == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1001	}{	(Starting Condition)	}{	}{	511	}{	G.Arthur_Muddy == 5 and G.Arthur_Knoxout == 1 and G.Arthur_Foreign == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1002	}{	(Starting Condition)	}{	}{	521	}{	G.Arthur_Muddy == 5	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1003	}{	(Starting Condition)	}{	}{	481	}{	IsClan(pc,"Nosferatu") and G.Arthur_Talked == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1004	}{	(Starting Condition)	}{	}{	2	}{	G.Arthur_Talked == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1005	}{	(Starting Condition)	}{	}{	851	}{	G.Arthur_Knox >= 4 and G.Arthur_Muddy >= 3	}{	}{	}{	}{	}{	}{	}{	}{	}

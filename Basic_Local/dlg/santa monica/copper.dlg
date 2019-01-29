@@ -109,13 +109,13 @@
 {	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	111	}{	Euh, d'accord. . . Oui, d'accord. Tenez.	}{	Euh, d'accord. . . Oui, d'accord. Tenez.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	112	}{	Ne vous inquiétez pas, je reviens dès que j'ai ce que vous voulez.	}{	Ne vous inquiétez pas, je reviens dès que j'ai ce que vous voulez.	}{	0	}{	G.Copper_Rob == 1	}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	Un idiot mérite d'être ruiné. Adieu.	}
+{	112	}{	Ne vous inquiétez pas, je reviens dès que j'ai ce que vous voulez.	}{	Ne vous inquiétez pas, je reviens dès que j'ai ce que vous voulez.	}{	0	}{	G.Copper_Rob == 1 and G.Patch_Plus == 1	}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	Un idiot mérite d'être ruiné. Adieu.	}
 {	113	}{	Bon. Il vous faut encore du sang de licorne ?	}{	Bon. Il vous faut encore du sang de licorne ?	}{	161	}{	G.Copper_Rob == 0 and G.Copper_Blood >=3 and G.Copper_Uni == 1 and pc.HasItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai encore du sang de cheval à une corne.	}
 {	114	}{	Bon. Il vous faut du sang de licorne ?	}{	Bon. Il te faut du sang de licorne ?	}{	141	}{	G.Copper_Rob == 0 and G.Copper_Blood < 3 and G.Copper_Uni == 1 and pc.HasItem("item_g_bloodpack")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai le sang de l'étalon magique. En voulez-vous ?	}
 {	115	}{	Voici le pieu. Vous avez 100 dollars ?	}{	Voici le pieu. Vous avez 100 dollars ?	}{	121	}{	G.Copper_Rob == 0 and G.Copper_Stake == 1 and pc.HasItem("item_g_stake")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai le Pieu Sacré, si vous avez les 100 dollars consacrés.	}
 {	116	}{	Je reviendrai avec la marchandise. Au revoir.	}{	Je reviendrai avec la marchandise. Au revoir.	}{	0	}{	G.Copper_Rob == 0 and G.Copper_Uni < 2	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai que mes autres personnalités. Adieu.	}
 {	117	}{	Amusez-vous bien. Au revoir.	}{	Amusez-vous bien. Au revoir.	}{	0	}{	G.Copper_Uni == 2 and G.Copper_Stake == 0 and G.Patch_Plus == 1	}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	Bien sûr. . . Je pars.	}
-{	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	118	}{	Ne vous inquiétez pas, je reviens dès que j'ai ce que vous voulez.	}{	Ne vous inquiétez pas, je reviens dès que j'ai ce que vous voulez.	}{	0	}{	G.Copper_Rob == 1 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Un idiot mérite d'être ruiné. Adieu.	}
 {	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	121	}{	Ouais, tenez. Bon, où puis-je trouver le chef des vampires ?	}{	Ouais, tenez. Bon, où puis-je trouver le chef des vampires ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.RemoveItem("item_g_stake"); pc.MoneyAdd(100)	}{	}{	}{	}{	}{	}{	}{	}
@@ -161,8 +161,8 @@
 {	161	}{	Je pense que j'en ai assez pour l'opération, à présent. Merci pour le sang.	}{	Je pense que j'en ai assez pour l'opération, à présent. Merci pour le sang.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Copper_Uni = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	Juste au cas où, il vaut mieux tuer le chef des vampires avec ce pieu sacré. 100 dollars.	}{	Juste au cas où, il vaut mieux tuer le chef des vampires avec ce pieu sacré. 100 dollars.	}{	121	}{	G.Copper_Stake == 1 and pc.HasItem("item_g_stake")	}{	}{	}{	}{	}{	}{	}{	}{	C'est un bon début, mais le coeur du Père Noir nous libérera tous. 100 brouzoufs pour la liberté.	}
 {	163	}{	J'ai aussi le chewing gum spécial pour tes crocs pour $100.	}{	J'ai aussi le chewing gum spécial pour tes crocs pour $100.	}{	111	}{	G.Copper_Gum == 0 and pc.HasItem("item_w_mingxiao_melee") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_w_mingxiao_melee"); G.Copper_Gum = 1; pc.MoneyAdd(100)	}{	}{	}{	}{	}{	}{	}{	J'ai le caoutchouc spécial pour tes crocs pour $100.	}
-{	164	}{	Amusez-vous bien. Au revoir.	}{	Amusez-vous bien. Au revoir.	}{	0	}{	}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	Bien sûr. . . Je pars.	}
-{	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	164	}{	Amusez-vous bien. Au revoir.	}{	Amusez-vous bien. Au revoir.	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Bien sûr. . . Je pars.	}
+{	165	}{	Amusez-vous bien. Au revoir.	}{	Amusez-vous bien. Au revoir.	}{	0	}{	G.Patch_Plus == 1	}{	pc.SetQuest("Copper", 4)	}{	}{	}{	}{	}{	}{	}{	Bien sûr. . . Je pars.	}
 {	166	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

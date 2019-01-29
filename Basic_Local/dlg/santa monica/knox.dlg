@@ -156,13 +156,13 @@
 {	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	157	}{	Tu sais où il est ?	}{	Tu sais où il est ?	}{	161	}{	G.Knox_Outbound == 0	}{	}{	}{	}{	}{	}{	}{	}{	Sais-tu où se trouve l'Affreux ?	}
 {	158	}{	Comment il est ?	}{	Comment il est ?	}{	171	}{	G.Knox_Outbound == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi de l'Affreux.	}
-{	159	}{	Alors, comment ça se passe, ta mission ?	}{	Alors, comment ça se passe, ta mission ?	}{	211	}{	G.Knox_Mission == 2	}{	}{	}{	}{	}{	}{	}{	}{	Et quelles nouvelles de ta chasse secrète ?	}
+{	159	}{	Alors, comment ça se passe, ta mission ?	}{	Alors, comment ça se passe, ta mission ?	}{	211	}{	G.Knox_Mission == 2 and G.Knox_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Et quelles nouvelles de ta chasse secrète ?	}
 {	160	}{	Il faut que je parte, Knox. A bientôt !	}{	Il faut que je parte, Knox. A bientôt !	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	161	}{	Si seulement je savais où il est. C'est dur, de rester là à l'attendre. J'ai des trucs à lui dire. Mais je ne sais pas où il est, où il habite. . . Rien du tout. Quand il a besoin de moi, il apparaît. . .	}{	Si seulement je savais où il est. C'est dur, de rester là à l'attendre. J'ai des trucs à lui dire. Mais je ne sais pas où il est, où il habite. . . Rien du tout. Quand il a besoin de moi, il apparaît. . .	}{	#	}{	}{	G.Knox_Bertram = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	Attends. . . Tu es sa goule ? Qu'est-ce que c'est ?	}{	Attends. . . Tu es sa goule ? Qu'est-ce que c'est ?	}{	131	}{	G.Knox_Ghoul == 1 and G.Knox_Outbound == 1 and G.Knox_Questions == 0	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Parle-moi de cette goulitude. . .	}
 {	163	}{	Que sais-tu de cette condition ?	}{	Que sais-tu de cette condition ?	}{	131	}{	G.Knox_Ghoul == 1 and G.Knox_Outbound == 1 and G.Knox_Questions == 0	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Que sais-tu sur la goulitude ?	}
 {	164	}{	Ca te plaît d'être une goule ?	}{	Ca te plaît d'être une goule ?	}{	141	}{	G.Knox_Outbound == 3 and G.Knox_Questions == 0	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Et tu es heureux, dans ce cas, goule ?	}
-{	165	}{	Alors, comment ça se passe, ta mission ?	}{	Alors, comment ça se passe, ta mission ?	}{	211	}{	G.Knox_Mission == 2	}{	}{	}{	}{	}{	}{	}{	}{	Et quelles nouvelles de ta chasse secrète ?	}
+{	165	}{	Alors, comment ça se passe, ta mission ?	}{	Alors, comment ça se passe, ta mission ?	}{	211	}{	G.Knox_Mission == 2 and G.Knox_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Et quelles nouvelles de ta chasse secrète ?	}
 {	166	}{	Comment est Bertram ?	}{	Comment est Bertram ?	}{	171	}{	G.Knox_Outbound == 0 and G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi de l'Affreux.	}
 {	167	}{	Comment cela, il 'apparaît' ?	}{	Comment cela, il 'apparaît' ?	}{	181	}{	G.Knox_Outbound == 0	}{	}{	}{	}{	}{	}{	}{	}{	L'Affreux 'apparaît' ?	}
 {	168	}{	Que voulais-tu lui dire ?	}{	Que voulais-tu lui dire ?	}{	211	}{	G.Knox_Outbound == 0 and G.Knox_Quest == 0 and G.Knox_Questions == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quelles paroles destinais-tu à l'Affreux ?	}

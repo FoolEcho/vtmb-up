@@ -549,9 +549,9 @@
 {	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	551	}{	[mécontent]Hmm. Je ne m'attendais pas à cela. Je pensais que vous bondiriez sur cette chance d'apprendre auprès d'un ancien.	}{	[mécontent]Hmm. Je ne m'attendais pas à cela. Je pensais que vous bondiriez sur cette chance d'apprendre auprès d'un ancien.	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	552	}{	Vous avez raison. D'accord, je m'en occupe.	}{	Vous avez raison. D'accord, je m'en occupe.	}{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherchais cette Rome.	}
-{	553	}{	Ca ne me dit rien. . .	}{	Ca ne me dit rien. . .	}{	601	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pardon, ce n'est pas mon gobelet d'Earl Grey. . .	}
-{	554	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	Vous avez raison. D'accord, je m'en occupe.	}{	Vous avez raison. D'accord, je m'en occupe.	}{	561	}{	G.CD == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je cherchais cette Rome.	}
+{	553	}{	Ca ne me dit rien. . .	}{	Ca ne me dit rien. . .	}{	601	}{	G.CD == 2	}{	}{	}{	}{	}{	}{	}{	}{	Pardon, ce n'est pas mon gobelet d'Earl Grey. . .	}
+{	554	}{	Peut-être que je pourrai m'en occuper plus tard.	}{	Peut-être que je pourrai m'en occuper plus tard.	}{	0	}{	G.Knox_Killed == 1	}{	G.Knox_Killed = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	555	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	556	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -712,7 +712,7 @@
 {	712	}{	Il n'avait vraiment pas l'air de s'attendre à me voir.	}{	Il n'avait vraiment pas l'air de s'attendre à me voir.	}{	721	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il a feint la surprise.	}
 {	713	}{	Mais il avait besoin de mon aide - j'ai tué un vampire asiatique qui le traquait. . .	}{	Mais il avait besoin de mon aide - j'ai tué un vampire asiatique qui le traquait. . .	}{	731	}{	G.Knox_Quest > 5	}{	}{	}{	}{	}{	}{	}{	}{	Mais j'ai vaincu le cauchemar asiatique à sa place.	}
 {	714	}{	Peu importe. J'ai percé Knox à jour. Il m'a tout dit sur votre plan.	}{	Peu importe. J'ai percé Knox à jour. Il m'a tout dit sur votre plan.	}{	751	}{	G.Knox_Fess == 1	}{	}{	}{	}{	}{	}{	}{	}{	La goule aux oeufs d'or a révélé ses secrets comme un enfant.	}
-{	715	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	715	}{	Alors vous serez probablement navré d'apprendre que je l'ai tué.	}{	Alors vous serez probablement navré d'apprendre que je l'ai tué.	}{	551	}{	IsDead("Knox")	}{	G.Knox_Killed = 1	}{	}{	}{	}{	}{	}{	}{	Désolé, mais je m'en suis nourri jusqu'à la grande mort.	}
 {	716	}{	J'ai d'autres questions. . .	}{	J'ai d'autres questions. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
 {	717	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	718	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
