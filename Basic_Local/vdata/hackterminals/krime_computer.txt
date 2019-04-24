@@ -74,7 +74,7 @@ Notes : local. VOID : corps du sujet identifié. A la morgue de la clinique. Les 
 			"runtext"	"Michael \"Muddy\" Durbin
 Bond written 03/05/04 -- Assault. Prior Conviction for Grand Theft Auto. Prior Conviction for Robbery. Case #777121. Bond Amount: $10,000. Type of Bond: Collateral - 01 Corvega, color: Gray.
 Notes : trois fois coupable, susceptible de s'enfuir. "	// changed by wesp
-		"dependency"		"G.Muddy_Dead == 0 or G.PP == 0"	// added by wesp
+		"dependency"		"G.Muddy_Dead == 0"	// added by wesp
 		}
 
 		Function
@@ -85,7 +85,7 @@ Notes : trois fois coupable, susceptible de s'enfuir. "	// changed by wesp
 Caution 05/03/04 - Agression. Déjà condamné pour trafic de voitures et vol. Affaire 777121. Montant : 10.000 $. Règlement : bien en garantie - Corvega 01 grise.
 Notes : trois fois coupable, susceptible de s'enfuir. 
 Mise à jour 25/10/04 - Décédé. Assassiné par le tueur en série."	// changed by wesp
-		"dependency"		"G.Muddy_Dead == 1 and G.PP == 1"	// added by wesp
+		"dependency"		"G.Muddy_Dead == 1"	// added by wesp
 		}
 	}
 
@@ -148,25 +148,13 @@ Notes : arrêté pour tapage dans une salle d'arcade."	// changed by wesp
 		"password"		""
 		"description"		"Auteurs de délits"
 
-	Function
+		Function
 		{
 			"name"		"Nilson, B"
 			"description"	"Brian Nilson"
 			"runtext"	"Brian Nilson
 Caution 12/01/01 - Coups et blessures. Affaire 245990. Montant : 10,000 $. Règlement : comptant.
 Notes : un malfrat a balancé un mec qui essayait soi-disant de lui acheter de la drogue en bas des escaliers de la plage."	// changed by wesp
-		"dependency"		"not IsDead(\"Brian\") or G.PP == 0"	// added by wesp
-		}
-
-		Function
-		{
-			"name"		"Nilson, B"
-			"description"	"Brian Nilson"
-			"runtext"	"Brian Nilson
-Caution 01/12/01 - Coups et blessures. Affaire 245990. Montant : 10.000 $. Règlement : comptant.
-Notes : un malfrat a balancé un mec qui essayait soi-disant de lui acheter de la drogue en bas des escaliers de la plage.
-Mise à jour 24/10/04 - Décédé.      Tué lors d'une bagarre locale."	// changed by wesp
-		"dependency"		"IsDead(\"Brian\") and G.PP == 1"	// added by wesp
 		}
 
 		Function

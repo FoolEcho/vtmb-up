@@ -1,6 +1,6 @@
 {	1	}{	Regardez qui y est finalement arrivé. Vous pensiez ne jamais me trouver, hein ?	}{	Regardez qui y est finalement arrivée. Vous pensiez ne jamais me trouver, hein beauté ?	}{	#	}{	npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	Vous saviez que je vous cherchais?	}{	Vous saviez que je vous cherchais?	}{	21	}{	G.Patch_Plus == 0	}{	G.Bertram_Check = 1; pc.SetQuest("Warehouse",1)	}{	}{	}{	}{	}{	}{	}{	Votre cerveau festoyait sachant que je vous cherchais?	}
-{	3	}{	Vous saviez que je vous cherchais?	}{	Vous saviez que je vous cherchais?	}{	21	}{	G.Patch_Plus == 1	}{	G.Bertram_Check = 1; pc.SetQuest("Warehouse",8)	}{	}{	}{	}{	}{	}{	}{	Votre cerveau festoyait sachant que je vous cherchais?	}
+{	2	}{	Vous saviez que je vous cherchais?	}{	Vous saviez que je vous cherchais?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre cerveau festoyait sachant que je vous cherchais?	}
+{	3	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -9,8 +9,8 @@
 {	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	11	}{	Le seul et l'unique. Ne vous embarrassez pas de présentations, jeune vampire. Je sais qui vous êtes.	}{	Le seul et l'unique. Ne vous embarrassez pas de présentations, jeune vampire. Je sais qui vous êtes.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	12	}{	Vraiment ?	}{	Vraiment ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vraiment ?	}
-{	13	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Vraiment ?	}{	Vraiment ?	}{	31	}{	G.Patch_Plus == 0	}{	G.Bertram_Check = 1; pc.SetQuest("Warehouse",1)	}{	}{	}{	}{	}{	}{	}{	Alors vous en savez plus que moi.	}
+{	13	}{	Vraiment ?	}{	Vraiment ?	}{	31	}{	G.Patch_Plus == 1	}{	G.Bertram_Check = 1; pc.SetQuest("Warehouse",8)	}{	}{	}{	}{	}{	}{	}{	Alors vous en savez plus que moi.	}
 {	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -996,3 +996,5 @@
 {	996	}{	(Starting Condition)	}{	}{	631	}{	(G.Story_State >= 5 and G.Story_State < 25) and G.Bertram_Goodjob == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	997	}{	(Starting Condition)	}{	}{	461	}{	G.Bertram_Go == 1 and G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	998	}{	(Starting Condition)	}{	}{	101	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	999	}{	(Starting Condition)	}{	}{	11	}{	npc.times_talked == 1 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1000	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

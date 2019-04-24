@@ -83,7 +83,7 @@
 {	83	}{	Laissez tomber, montrez-moi les armes.	}{	Laissez tomber, montrez-moi les armes.	}{	0	}{	G.Guns_Tseng == 0 and G.Tseng_Guns == 1	}{	tsengsShowGuns(); npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Donnez-moi. . .	}
 {	84	}{	Vous connaissez Wong Ho ?	}{	Vous connaissez Wong Ho ?	}{	91	}{	G.Tseng_Wong < 2 and G.Ming_Wongho == 1	}{	}{	}{	}{	}{	}{	}{	}{	Le Red Dragon a un homme appelé Wong Ho infiltré. Vous le saviez ?	}
 {	85	}{	Je cherche un disparu appelé Barrabus. Vous savez quelque chose ?	}{	Je cherche un disparu appelé Barrabus. Vous savez quelque chose ?	}{	111	}{	G.Tseng_Barabus == 0 and G.Story_State < 55	}{	}{	}{	}{	}{	}{	}{	}{	Vous connaissez Barrabus, admettez-le !	}
-{	86	}{	Est-ce que le mot 'hengeyôkai' vous dit quelque chose ?	}{	Est-ce que le mot 'hengeyôkai' vous dit quelque chose ?	}{	121	}{	G.Yukie_Quest == 1 and G.Tseng_Henge == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hengeyokai ! Vous avez déjà dit cela ?	}
+{	86	}{	Est-ce que le mot 'hengeyokai' vous dit quelque chose ?	}{	Est-ce que le mot 'hengeyokai' vous dit quelque chose ?	}{	121	}{	G.Yukie_Quest == 1 and G.Tseng_Henge == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hengeyokai ! Vous avez déjà dit cela ?	}
 {	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	89	}{	Tant pis. A plus tard, Tseng.	}{	Tant pis. A plus tard, Tseng.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Et sur ces mots, je disparais.	}

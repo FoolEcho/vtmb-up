@@ -73,7 +73,7 @@ Plusieurs procès pour erreur médicale pour avoir pratiqué des examens gynécologi
 		"subject"	"Besoin d'aide"
 		"sender"	"Fred Dingo"
 		"body"		"Salut, Danny. J'aurais besoin de ton aide. Peux-tu aller me chercher de la morphine dans la salle des substances contrôlées ? J'ai pas le temps. Merci. F-dog."
-		"dependency"	"G.Werewolf_Quest ==  0"
+		"dependency"	"G.Werewolf_Quest == 0 or G.PP == 1"	// changed by wesp
 	}
 		
 	Email
@@ -81,14 +81,14 @@ Plusieurs procès pour erreur médicale pour avoir pratiqué des examens gynécologi
 		"subject"	"Re : Yo mama"
 		"sender"	"Fred Dingo"
 		"body"		"Non, ce n'est pas pour moi, crétin. . . :) Je ne savais pas qu'ils étaient à l'étage. Tu peux peut-être en trouver dans le bureau de Malcolm. Au fait, ta mère porte des bottes de combat. F-dog."
-		"dependency"	"G.Werewolf_Quest ==  0"
+		"dependency"	"G.Werewolf_Quest == 0 or G.PP == 1"	// changed by wesp
 	}
 	Email
 	{
 		"subject"	"Re : Amnésie"
 		"sender"	"Fred Dingo"
 		"body"		"Oh, bon sang, c'est froid. Mais je penserai à frapper avant d'entrer. Je déteste le trouver en plein milieu d'un 'examen pelvien'. Et au fait. . . dis à ta mère d'arrêter de m'appeler. F-dog."
-		"dependency"	"G.Werewolf_Quest ==  0"
+		"dependency"	"G.Werewolf_Quest == 0 or G.PP == 1"	// changed by wesp
 	}
 
 	Email

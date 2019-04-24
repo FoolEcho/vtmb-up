@@ -6,7 +6,7 @@ TerminalDefinition
 	LogonScreen	// displayed when the user first logs on
 	{
 		// Any number of lines are acceptable
-		"line0"		" Le Sin Bin"	// changed by wesp
+		"line0"		" Le Sin Bin"
 		"line1"		"Ménage hebdomadaire !"
 
 	}
@@ -15,6 +15,7 @@ TerminalDefinition
 	// and up to 6 functions per sub dir
 	// there are 8 total outputs per terminal, (0...7)
 	// talk to Brock if you'd like this number increased. 
+
 
 	SubDir
 	{
@@ -166,101 +167,10 @@ TerminalDefinition
 
 	SubDir
 	{
-		"name"			"Journal"
-		"password"		"sinner"
-		"description"		"Totaux d'hier"
-		"dependency"		"G.Velvet_Quest > 1 and G.Patch_Plus == 0"	// changed by wesp
-
-		Function
-		{
-			"name"		"Chastity"
-			"runtext"	"Total de Chastity
-					-PS  80 $
-					"
-		}
-
-		Function
-		{
-			"name"		"Jennifer"
-			"runtext"	"Total de Jen ;-)
-					-SC  100 $
-					-SC  250 $
-					-SC  250 $
-					-SC  150 $
-					-SC  250 $
-					-SC  2500 $ (soirée de célibataires)
-					-SC  150 $
-					"
-		}
-
-		Function
-		{
-			"name"		"Kerri"
-			"runtext"	"Total de Kerri
-					-PS  240 $
-					-SC  350 $
-					-SC  250 $
-					-SC  500 $
-					-SC  250 $
-					"
-		}
-
-	}
-
-	SubDir
-	{
 		"name"			"Logfile"	// changed by wesp
 		"password"		"sinner"
 		"description"		"Yesterday's Totals"
-		"dependency"		"G.Velvet_Quest > 1 and G.PP == 1 and G.Sin_Innocent == 0"	// changed by wesp
-
-		Function
-		{
-			"name"		"Chastity"
-			"runtext"	"Total de Chastity
-					-PS  80 $
-					"
-		}
-
-		Function
-		{
-			"name"		"Jennifer"
-			"runtext"	"Total de Jen ;-)
-					-SC  100 $
-					-SC  250 $
-					-SC  250 $
-					-SC  150 $
-					-SC  250 $
-					-SC  2500 $ (soirée de célibataires)
-					-SC  150 $
-					"
-		}
-
-		Function
-		{
-			"name"		"Kerri"
-			"runtext"	"Total de Kerri
-					-PS  240 $
-					-SC  350 $
-					-SC  250 $
-					-SC  500 $
-					-SC  250 $
-					"
-		}
-
-		Function
-		{
-			"name"		"Meutre!!!"
-			"runtext"	"Quelqu'un a tué Chastity ! Quel malade ferait ça ? Heureusement, les deux autres vont bien, mais elles veulent prendre un congé maintenant. J'ai un ami à moi pour faire le ménage discrétement. De toute façon, personne ne sait qui était cette chienne prude au faux nom !"	// changed by wesp
-		}
-	}
-
-	SubDir
-	{
-		"name"			"Journal"	// changed by wesp
-		"password"		"sinner"
-		"description"		"Totaux d'hier"
-		"dependency"		"G.Velvet_Quest > 1 and G.PP == 1 and G.Sin_Innocent == 1"	// changed by wesp
+		"dependency"		"G.Velvet_Quest > 1"	// changed by wesp
 
 		Function
 		{
@@ -294,12 +204,6 @@ TerminalDefinition
 					-SC  500 $ 
 					-SC  250 $
 					"
-		}
-
-		Function
-		{
-			"name"		"Meurtre!!!"
-			"runtext"	"Ce fut un bain de sang au rez-de-chaussée du peepshow avec plusieurs morts. Je ne sais pas si je peux couvrir ça sans que ces fichus flics me ferment, mais je vais faire de mon mieux!"	// changed by wesp
 		}
 
 	}

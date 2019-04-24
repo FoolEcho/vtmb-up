@@ -128,8 +128,8 @@
 {	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	131	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	132	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Ne me laisse pas t'empêcher d'entrer.	}{	Ne me laisse pas t'empêcher d'entrer.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	Peut-être une autre fois. Au revoir.	}{	Peut-être une autre fois. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quand on se reverra. Au revoir.	}
 {	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -138,8 +138,8 @@
 {	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	141	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	142	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	141	}{	N'y pense même pas.	}{	N'y pense même pas.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	143	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	144	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	145	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -180,7 +180,7 @@
 {	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	181	}{	Il m'a laissé avec tant de questions. Et j'ai fait la même chose à E. Mais je ne voulais pas quitter E. Il m'a chassée de sa vie. . . Je-je devrais y aller. Il faut que je parte d'ici. Peut-être même de la ville. Bientôt.	}{	Il m'a laissé avec tant de questions. Et j'ai fait la même chose à E. Mais je ne voulais pas quitter E. Il m'a chassée de sa vie. . . Je-je devrais y aller. Il faut que je parte d'ici. Peut-être même de la ville. Bientôt.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	182	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	183	}{	Tu devrais aller voir E. Il a dit qu'il te pardonnait. Il veut te voir.	}{	Tu devrais aller voir E. Il a dit qu'il te pardonnait. Il veut te voir.	}{	201	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Rejoins ton amant au sang clair.	}
+{	183	}{	Tu devrais aller voir E à la plage. Il a dit qu'il te pardonnait. Il veut te voir.	}{	Tu devrais aller voir E à la plage. Il a dit qu'il te pardonnait. Il veut te voir.	}{	201	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Rejoins ton amant au sang clair.	}
 {	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	185	}{	Tu devrais partir. Cette ville est dangereuse.	}{	Tu devrais partir. Cette ville est dangereuse.	}{	191	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Quitte cette ville d'anges ténébreux, petite fleur.	}
 {	186	}{	Comme tu veux. J'ai fait ma B.A. pour la journée. Au revoir.	}{	Comme tu veux. J'ai fait ma B.A. pour la journée. Au revoir.	}{	191	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	Oui, toutes les mouches devraient fuir. Comme moi, petite puce.	}
@@ -252,7 +252,7 @@
 {	252	}{	Comment ça s'est passé, avec E. ?	}{	Comment ça s'est passé, avec E. ?	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Comment se sont passées vos retrouvailles de sangs clairs ?	}
 {	253	}{	Tu te rappelles de tes actes ? Donne-moi de l'argent et je ne dirai rien à E.	}{	Tu te rappelles de tes actes ? Donne-moi de l'argent et je ne dirai rien à E.	}{	271	}{	G.Lily_Extort == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de maille ou E. connaîtra ta faille. . .	}
 {	254	}{	Ca me fait plaisir de voir que tu vas bien. Au revoir.	}{	Ca me fait plaisir de voir que tu vas bien. Au revoir.	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
-{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	Tu veux aller nager ?	}{	Tu veux aller nager ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	Veux goûter l'eau avec moi ?	}
 {	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -263,7 +263,7 @@
 {	263	}{	Tu te rappelles de tes actes ? Donne-moi de l'argent et je ne dirai rien à E.	}{	Tu te rappelles de tes actes ? Donne-moi de l'argent et je ne dirai rien à E.	}{	271	}{	G.Lily_Extort == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de maille ou E. connaîtra ta faille. . .	}
 {	264	}{	Vous voulez probablement vos affaires. Prenez les...	}{	Vous voulez probablement vos affaires. Prenez les...	}{	281	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_lilly_purse") and pc.HasItem("item_g_lilly_photo") and pc.HasItem("item_g_lilly_diary") and pc.HasItem("item_g_bailbond_receipt")	}{	pc.RemoveItem("item_g_lilly_purse"); pc.RemoveItem("item_g_lilly_photo"); pc.RemoveItem("item_g_lilly_diary"); pc.RemoveItem("item_g_bailbond_receipt")	}{	}{	}{	}{	}{	}{	}{	Videz mon sac de vos affaires, svp. Merci !	}
 {	265	}{	Restez bien loin des ennuis. Au revoir.	}{	Restez bien loin des ennuis. Au revoir.	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Que le soleil n'illumine jamais ton visage, petite fleur. Adieu.	}
-{	266	}{	Des vampires amoureux. . . Vous feriez un super roman de gare.	}{	Des vampires amoureux. . . Vous feriez un super roman de gare.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Des vampires amoureux. . . Vous feriez un super roman de gare.	}
+{	266	}{	Des vampires amoureux. . . Vous feriez un super roman de gare.	}{	Des vampires amoureux. . . Vous feriez un super roman de gare.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Des vampires amoureux. . . Vous feriez un super roman de gare.	}
 {	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

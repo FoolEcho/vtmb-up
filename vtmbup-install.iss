@@ -1,16 +1,16 @@
 ; -- vtmbupinstaller.iss --
 
 [Setup]
-AppName=Vampire: The Masquerade - Bloodlines unofficial patch 10.2 fr
-AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 10.2 fr
+AppName=Vampire: The Masquerade - Bloodlines unofficial patch 10.3 fr
+AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 10.3 fr
 VersionInfoDescription=Vampire: The Masquerade - Bloodlines unofficial patch avec sous-titrage français
-VersionInfoVersion=10.2.1
+VersionInfoVersion=10.3
 AppPublisher=Werner Spahl
 DefaultDirName={reg:HKLM\Software\Activision\Vampire - Bloodlines,InstallPath|{pf}\Steam\steamapps\common\vampire the masquerade - bloodlines}
 AppendDefaultDirName=no
 DirExistsWarning=no
 EnableDirDoesntExistWarning=yes
-OutputBaseFilename=VTMBup102fr
+OutputBaseFilename=VTMBup103fr
 Uninstallable=no
 InfoBeforeFile=vtmbup-readme.txt
 InfoAfterFile=vtmbup-after.txt
@@ -68,7 +68,7 @@ Source: "{app}\Unofficial_Patch_fr\cl_dlls\*.dll"; Flags: external dontcopy skip
 Source: "{app}\Unofficial_Patch_fr\dlls\*.dll";    Flags: external dontcopy skipifsourcedoesntexist; Attribs: readonly
 Source: "{app}\Vampire\cl_dlls\*.dll";          Flags: external dontcopy skipifsourcedoesntexist; Attribs: readonly
 Source: "{app}\Vampire\dlls\*.dll";             Flags: external dontcopy skipifsourcedoesntexist; Attribs: readonly
-; disabled Source: "{app}\Bin\*"; DestDir: "{app}"; Components: basic; Flags: external skipifsourcedoesntexist overwritereadonly
+Source: "{app}\Bin\*"; DestDir: "{app}"; Components: basic; Flags: external skipifsourcedoesntexist overwritereadonly
 
 [InstallDelete]
 Type: filesandordirs; Name: "{app}\vampire.dat"

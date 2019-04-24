@@ -174,18 +174,18 @@
 {	174	}{	Ouais, c'est ça.	}{	Ouais, c'est ça.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes un sale monstre immonde !	}
 {	175	}{	Non, parce que vous saviez que je venais pour vous.	}{	Non, parce que vous saviez que je venais pour vous.	}{	181	}{	G.Player_Sabbat == 2	}{	}{	}{	}{	}{	}{	}{	}{	Vous vous souvenez sûrement m'avoir vu il y a seulement quelques meurtres sanglants.	}
 {	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	177	}{	Salutations.	}{	Salutations.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	178	}{	Il semble que j'étais plus puissant que toutes vos créatures dans les égoûts. Ainsi ai-je passé le test et puis-je rejoindre le Sabbat maintenant ?	}{	Il semble que j'étais plus puissante que toutes vos créatures dans les égoûts. Ainsi ai-je passé le test et puis-je rejoindre le Sabbat maintenant ?	}{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je devenir à présent l'Epée de Cain après avoir tué toutes vos petites machines de compagnie sous terre ?	}
+{	177	}{	Je vois la fatigue dans tes yeux - tu te lasses des poussiéreux Anciens de la Camarilla qui s'accrochent à ton dos. Tu perds ton temps en soulevant leur poids mort - et pour quoi ? }{	Je vois la fatigue dans tes yeux - tu te lasses des poussiéreux Anciens de la Camarilla qui s'accrochent à ton dos. Tu perds ton temps en soulevant leur poids mort - et pour quoi ? }{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	178	}{	Vous avez peut-être raison, mais le Sabbat est-il vraiment une meilleure alternative ?	}{	Vous avez peut-être raison, mais le Sabbat est-il vraiment une meilleure alternative ?	}{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous voyez à travers moi, mais l'Epée de Cain est-elle vraiment meilleure ?	}
 {	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	181	}{	Marionnette ! La force de votre sang est la seule chose qui vous a apporté le salut. [rage brisant la façade]Misérable monstre sans esprit ! Votre sang est ruiné. Ruiné !	}{	Marionnette ! La force de votre sang est la seule chose qui vous a apporté le salut. [rage brisant la façade]Misérable monstre sans esprit ! Votre sang est ruiné. Ruiné !	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	182	}{	Ruinée qualifiera bientôt votre vie. . .	}{	Ruinée qualifiera bientôt votre vie. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	La mort vous a jugé et vous ne passez pas l'épreuve. . .	}
 {	183	}{	Que voulez-vous dire ?	}{	Que voulez-vous dire ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles sont imbibées du sang noir de votre coeur. . .	}
 {	184	}{	Marionnette ? Pour qui ? LaCroix ? Nines Rodriguez ?	}{	Marionnette ? Pour qui ? LaCroix ? Nines Rodriguez ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nul ne manipule le pantin que je suis.	}
-{	185	}{	Oui.	}{	Oui.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	186	}{	Super !	}{	Super !	}{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	Heureux, heureux, heureux !	}
-{	187	}{	Que voulez-vous ?	}{	Que voulez-vous ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	188	}{	LaCroix m'envoie vous tuer.	}{	LaCroix m'envoie vous tuer.	}{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis venu ici vous tuer pour le bouffon.	}
+{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	187	}{	Comment gaspillerez-vous une éternité ? Se faufiler dans l'ombre, se cacher du bétail mortel qui habite notre monde ? À genoux devant la Camarilla qui se réclameraient vos maîtres légitimes ? Ou laisserez-vous les Anciens eux-mêmes vous contrôler d'un caprice ? Une fois que vous aurez embrassé la vérité, Cainite, vous verrez l'absurdité de votre question.	}{	Comment gaspillerez-vous une éternité ? Se faufiler dans l'ombre, se cacher du bétail mortel qui habite notre monde ? À genoux devant la Camarilla qui se réclameraient vos maîtres légitimes ? Ou laisserez-vous les Anciens eux-mêmes vous contrôler d'un caprice ? Une fois que vous aurez embrassé la vérité, Cainite, vous verrez l'absurdité de votre question.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	188	}{	Mais LaCroix m'a envoyé pour vous tuer. Devrais-je le défier et rester ici ?	}{	Mais LaCroix m'a envoyé pour vous tuer. Devrais-je le défier et rester ici ?	}{	197	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mais le bouffon m'a dit de vous brûler. Dois-je laisser tomber et rester ici ?	}
 {	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	191	}{	Misérable, ignorant ! Vous êtes aveugle ! Le sarcophage doit être détruit !	}{	Misérable, ignorante ! Vous êtes aveugle ! Le sarcophage doit être détruit !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -194,38 +194,38 @@
 {	194	}{	Je reste ici. Approchez.	}{	Je reste ici. Approchez.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les portes de l'enfer vont vous accueillir.	}
 {	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	196	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	197	}{	Qu'avez-vous dit ?	}{Qu'avez-vous dit ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	198	}{	Détendez-vous, je vais lui dire que j'ai fait le travail.	}{	Détendez-vous, je vais lui dire que j'ai fait le travail.	}{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je lui mentirai comme je l'ai toujours fait à moi-même. }
-{	199	}{	Vous m'avez bien entendu, je vais faire exactement ce qu'il a ordonné.	}{	Vous m'avez bien entendu, je vais faire exactement ce qu'il a ordonné.	}{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	Écouter et d'apprendre, je vais faire ce qu'il veut.	}
+{	197	}{	Non. L’entrée du Sabbat est forgée dans un creuset, votre force trempée, votre loyauté renforcée. Même un être aussi puissant que vous. Votre situation est… étrange. Vous devez d’abord prouver que vous êtes vraiment libre de la servitude de la Camarilla.	}{	Non. L’entrée du Sabbat est forgée dans un creuset, votre force trempée, votre loyauté renforcée. Même un être aussi puissant que vous. Votre situation est… étrange. Vous devez d’abord prouver que vous êtes vraiment libre de la servitude de la Camarilla.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	198	}{	Je pourrais lui mentir, lui dire que je vous ai tué. Est-ce ce que vous voulez ?	}{	Je pourrais lui mentir, lui dire que je vous ai tué. Est-ce ce que vous voulez ?	}{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	Devrais-je raconter au bouffon une jolie histoire dans laquelle vous avez brûlé ?	}
+{	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	201	}{	Je le ferai moi-même s'il le faut. Et vous. . . vous connaîtrez la purification. C'est par le sang qu'il parle, le sang de tous ses pions ! Il faut le purifier !	}{	Je le ferai moi-même s'il le faut. Et vous. . . vous connaîtrez la purification. C'est par le sang qu'il parle, le sang de tous ses pions ! Il faut le purifier !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	202	}{	Eh ! Que va-t-il se passer si on ouvre le sarcophage ?	}{	Eh ! Que va-t-il se passer si on ouvre le sarcophage ?	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	A l'intérieur, un feu d'enfer ! Mourez, faux prophète !	}
 {	203	}{	Enfin. . . C'est parti. . .	}{	Enfin. . . C'est parti. . .	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Votre chemin est celui du sommeil ultime.	}
 {	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	205	}{	Merci.	}{	Merci.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	206	}{	Alors je vais tuer sa chienne Kuei-Jin et vous lui apporter sur un plateau pour vous !	}{	Alors je vais tuer sa chienne Kuei-Jin et lui apporter sur un plateau pour vous !	}{	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	Plus tard, je vais briser sa maîtresse des miroirs et me moquer de lui pour vous!	}
-{	207	}{	Je ne peux pas vous aider pour ça.	}{	Je ne peux pas vous aider pour ça.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	208	}{	Pas de problème, je le ferai seul.	}{	Pas de problème, je le ferai seul.	}{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me battrai à ma façon.	}
+{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	207	}{	Oui ! L'air est en proie à la puissance de votre sang, Cainite. Rejoignez-moi et défiez vos maîtres. Relâchez la bête à l'intérieur. Permettez à votre potentiel réel de circuler librement dans la nuit, agissez en tant qu'Epée de Caïn, ne soyez le serviteur de personne et le frère de tous les vampires qui ont trouvé la vérité du Sabbat.	}{	Oui ! L'air est en proie à la puissance de votre sang, Cainite. Rejoignez-moi et défiez vos maîtres. Relâchez la bête à l'intérieur. Permettez à votre potentiel réel de circuler librement dans la nuit, agissez en tant qu'Epée de Caïn, ne soyez le serviteur de personne et le frère de tous les vampires qui ont trouvé la vérité du Sabbat.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	208	}{	Et pour le sarcophage ?	}{	Et pour le sarcophage ?	}{	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mais la boîte ? }
 {	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	211	}{	N'ayez pas honte de votre apparence. La Bête en nous prend différentes formes, mais toutes sont magnifiques en un sens. Et ce n'est que le début. . .	}{	N'ayez pas honte de votre apparence. La Bête en nous prend différentes formes, mais toutes sont magnifiques en un sens. Et ce n'est que le début. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	212	}{	C'est vous qui avez fait la cassette, n'est-ce pas ?	}{	C'est vous qui avez fait la cassette, n'est-ce pas ?	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	213	}{	Le début de notre avenir ensemble ? Donc, vous avez fait la bande.	}{	Le début de notre avenir ensemble ? Donc, vous avez fait la bande.	}{	131	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	}
 {	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	215	}{	Je suis heureux.	}{	Je suis heureux.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	216	}{	Pourquoi êtes-vous si laconique aujourd'hui ?	}{	Pourquoi êtes-vous si laconique aujourd'hui ?	}{	217	}{	}{	 }{	}{	}{	}{	}{	}{	}{	Vous n'avez pas plus de lignes à dire ?	}
-{	217	}{	Je ne sais pas.	}{	Je ne sais pas.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	218	}{	Alors faisons-le !	}{	Alors faisons-le !	}{	225	}{	}{	 }{	}{	}{	}{	}{	}{	}{	Commençons, MAINTENANT !	}
-{	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	217	}{	Y a-t-il un doute dans l'esprit des vampires de la ville sur ce qui sommeille dans cette tombe maudite ? Pourquoi votre prince impuissant vous pousse-t-il sans relâche à le récupérer ? Avec avidité, avec impatience, il regarde le pouvoir en son sein. Un pouvoir corrompu ! Un pouvoir qui DOIT être vaincu !	}{	Y a-t-il un doute dans l'esprit des vampires de la ville sur ce qui sommeille dans cette tombe maudite ? Pourquoi votre prince impuissant vous pousse-t-il sans relâche à le récupérer ? Avec avidité, avec impatience, il regarde le pouvoir en son sein. Un pouvoir corrompu ! Un pouvoir qui DOIT être vaincu !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	218	}{	D'accord, je me joins au Sabbat pour accomplir cela, mais je garderai ma couverture pour le moment. Avez-vous quelque chose pour m'aider ?	}{	D'accord, je me joins au Sabbat pour accomplir cela, mais je garderai ma couverture pour le moment. Avez-vous quelque chose pour m'aider ? }{ 227	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis une Epée de Cain, mais je resterais dans l'ombre du bouffon. Pouvez-vous m'aider ?	}
+{	219	}{	En parlant de pouvoir corrompu. J'ai changé d'avis après avoir vu ce que vous avez fait à cette fille ici ! Est-ce votre vision de l'humanité et de la mascarade ?	}{	En parlant de pouvoir corrompu. J'ai changé d'avis après avoir vu ce que vous avez fait à cette fille ici ! Est-ce votre vision de l'humanité et de la mascarade ?	}{	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pas avec moi à vos côtés. Mon autre moi n'aime pas ce que vous avez fait à la fleur sur le mur. Quelle en était la raison ?	}
 {	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	221	}{	Ah ! Vous voyez la vérité, n'est-ce pas, enfant de Malkav ? Grâce à vos visions bestiales, vous voyez que le Sabbat est le seul et unique héritier de votre Père Noir.	}{	Ah ! Vous voyez la vérité, n'est-ce pas, enfant de Malkav ? Grâce à vos visions bestiales, vous voyez que le Sabbat est le seul et unique héritier de votre Père Noir.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	222	}{	Non ! Vous ne projetez pas son ombre, prophète de pacotille !	}{	Non ! Vous ne projetez pas son ombre, prophète de pacotille !	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	223	}{	Le Père Noir marche parmi nous, la balance en main. . .	}{	Le Père Noir marche parmi nous, la balance en main. . .	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	224	}{	Cela pourrait être vrai. Donc, vous avez fait la bande ?	}{	Cela pourrait être vrai. Donc, vous avez fait la bande ?	}{	131	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Sabbat_Side = G.Sabbat_Side +1	}{	}{	}{	}{	}{	}{	}{	}
-{	225	}{	Une dernière chose...	}{	Une dernière chose...	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	226	}{	Oui ?	}{	Oui ?	}{	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	227	}{	Prenez ceci.	}{	Prenez ceci.	}{	#	}{	}{	pc.GiveItem("item_w_occultblade"); pc.SetQuest("Shangrila",5); G.Player_Sabbat = 3; G.Clean_Rubble = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	228	}{	Je vais découper nos ennemis avec elle. }{	Je vais découper nos ennemis avec elle. }{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oh, une épée magique pour tuer nos ennemis !	}
+{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	227	}{	Notre destin est entre tes mains, Cainite. En cette heure, tu es Son épée. Ne montre pas de miséricorde envers nos ennemis. Ils souhaitent annoncer l'apocalypse à notre monde ? Montrez-leur l'oubli qu'ils cherchent. Montrez-leur la fureur de la Bête déchaînée.	}{	Notre destin est entre tes mains, Cainite. En cette heure, tu es Son épée. Ne montre pas de miséricorde envers nos ennemis. Ils souhaitent annoncer l'apocalypse à notre monde ? Montrez-leur l'oubli qu'ils cherchent. Montrez-leur la fureur de la Bête déchaînée.	}{	#	}{	}{	pc.GiveItem("item_w_occultblade"); pc.SetQuest("Shangrila",5); G.Player_Sabbat = 3; G.Clean_Rubble = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	228	}{	Merci ! Je serai Son épée en utilisant cette épée.	}{	Merci ! Je serai Son épée en utilisant cette épée.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oh, une épée de Cain magique pour tuer nos ennemis !	}
 {	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	231	}{	Ne me mettez pas à l'épreuve. Vous connaîtrez bientôt la sagesse et la puissance des enfants de Caïn. Votre chair sera mon instrument de destruction. . .	}{	Ne me mettez pas à l'épreuve. Vous connaîtrez bientôt la sagesse et la puissance des enfants de Caïn. Votre chair sera mon instrument de destruction. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -234,8 +234,8 @@
 {	234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	237	}{	Quoi !?!	}{	Quoi !?!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	238	}{	J'ai changé d'avis, après avoir vu ce que vous avez fait à cette fille ici !	}{	J'ai changé d'avis, après avoir vu ce que vous avez fait à cette fille ici !	}{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon autre moi n'aime pas votre comportement envers la fleur sur le mur.	}
+{	237	}{	Se recroqueviller et choyer les vassaux mortels ... cela me rend malheureux ! Nous sommes des bêtes au sang plus fort, destinées à subjuguer toute l'humanité. La seule Mascarade est celle que les anciens jouent sur les membres désemparés de leurs pathétiques tribunaux de la Camarilla. Leurs règles d'engagement mouvantes vis-à-vis de notre nourriture ne sont qu'un outil pour extorquer les jeunes.	}{	Se recroqueviller et choyer les vassaux mortels ... cela me rend malheureux ! Nous sommes des bêtes au sang plus fort, destinées à subjuguer toute l'humanité. La seule Mascarade est celle que les anciens jouent sur les membres désemparés de leurs pathétiques tribunaux de la Camarilla. Leurs règles d'engagement mouvantes vis-à-vis de notre nourriture ne sont qu'un outil pour extorquer les jeunes.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	238	}{	Je maintiendrai la Mascarade, et la première chose que je ferai sera de vous tuer maintenant.	}{	Je maintiendrai la Mascarade, et la première chose que je ferai sera de vous tuer maintenant.	}{	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les gens ne verront pas les choses terribles que vous faites parce que je vais vous brûler.	}
 {	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	241	}{	Je ne crains ni son courroux ni son jugement. Pouvez-vous en dire autant, pion de la Camarilla ? Les machinations pathétiques de votre nouveau prince ne vous sauveront pas tous de la destruction. . .	}{	Je ne crains ni son courroux ni son jugement. Pouvez-vous en dire autant, pion de la Camarilla ? Les machinations pathétiques de votre nouveau prince ne vous sauveront pas tous de la destruction. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -244,8 +244,8 @@
 {	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	247	}{	Je ne veux plus parler avec vous.	}{	Je ne veux plus parler avec vous.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	248	}{	Oui, le temps de la discussion est terminée. Il est temps de mourir, monstre !	}{	Oui, le temps de la discussion est terminée. Il est temps de mourir, monstre !	}{	0	}{	}{	G.Player_Sabbat = 2	}{	}{	}{	}{	}{	}{	}{	Pas plus de discussion. Le temps de la mort est venu, faux prophète!	}
+{	247	}{	Des menaces ?! Avez-vous la force de joindre le geste à la parole cette fois-ci ? Pouvez-vous réduire en poussière une armée entière avec vos deux mains ? Je vous regarderai bientôt fondre en un tas de cendres. Montrez-moi vos dents, Cainite !	}{	Des menaces ?! Avez-vous la force de joindre le geste à la parole cette fois-ci ? Pouvez-vous réduire en poussière une armée entière avec vos deux mains ? Je vous regarderai bientôt fondre en un tas de cendres. Montrez-moi vos dents, Cainite !	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	248	}{	Bien. Je vais tuer tout le monde !	}{	Bien. Je vais tuer tout le monde !	}{	0	}{	}{	G.Player_Sabbat = 2	}{	}{	}{	}{	}{	}{	}{	Ainsi soit-il. L'Epée de Caïn ne sera plus après ce soir.	}
 {	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	251	}{	Salutations.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -274,8 +274,8 @@
 {	274	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	277	}{	Je n'ai aucune patience pour les perdus, les timides et les hésitants. Vous êtes venu ici avec un motif, Cainite. Êtes-vous si impuissant face à votre peur que vous en avez perdu votre détermination ... et avec une telle aisance ? Je peux peut-être vous aider à la retrouver dans les derniers moments fugaces de votre existence.	}{	Je n'ai aucune patience pour les perdus, les timides et les hésitants. Vous êtes venu ici avec un motif, Cainite. Êtes-vous si impuissant face à votre peur que vous en avez perdu votre détermination ... et avec une telle aisance ? Je peux peut-être vous aider à la retrouver dans les derniers moments fugaces de votre existence.	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	278	}{	Enfin. Allons-y.	}{	Enfin. Allons-y.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	La vôtre est le chemin qui mène au dernier sommeil.	}
 {	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	281	}{	[Appel passé à la radio][Rire étrange]Eh, 'Deb', tu ne t'inquiètes jamais de la fin du monde ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -284,7 +284,7 @@
 {	284	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	Ce soir est une victoire, pour le Sabbat, pour tous les enfants de Cain. Ce soir, nous nous reposerons facilement sachant que nous n'annoncerons pas notre perte, qu'un autre soir amènera la Géhenne, mais pas ce soir. Un Ancien de plus tombe face au Sabbat et nous rapproche de la fin de l'oppression du père noir. }{	Ce soir est une victoire, pour le Sabbat, pour tous les enfants de Cain. Ce soir, nous nous reposerons facilement sachant que nous n'annoncerons pas notre perte, qu'un autre soir amènera la Géhenne, mais pas ce soir. Un Ancien de plus tombe face au Sabbat et nous rapproche de la fin de l'oppression du père noir. }{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -309,7 +309,7 @@
 {	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	311	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	312	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	(Starting Condition)	}{	}{	277	}{	G.Player_Sabbat == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	313	}{	(Starting Condition)	}{	}{	1	}{	G.Andrei_Library == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	314	}{	(Starting Condition)	}{	}{	177	}{	G.Player_Sabbat == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	315	}{	(Starting Condition)	}{	}{	171	}{	G.Story_State >= 75	}{	}{	}{	}{	}{	}{	}{	}{	}

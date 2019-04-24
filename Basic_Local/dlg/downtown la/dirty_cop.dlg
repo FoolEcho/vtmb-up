@@ -68,13 +68,13 @@
 {	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	71	}{	Bon, écoutez, je peux vous faire entrer dans le poste de pilotage, mais il faudra faire discret. Si quelqu'un vous coince, on ne se connaît pas. Et pas de photo au flash, le malin.	}{	Bon, écoutez, je peux vous faire entrer dans le poste de pilotage, mais il faudra faire discret. Si quelqu'un vous coince, on ne se connaît pas. Et pas de photo au flash, petite maligne.	}{	#	}{	}{	pc.GiveItem("item_g_edane_report"); G.Dane_Report = 1; daneQuest()	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Bon, écoutez, je peux vous faire entrer dans le poste de pilotage, mais il faudra faire discret. Si quelqu'un vous coince, on ne se connaît pas. Et pas de photo au flash, le malin.	}{	Bon, écoutez, je peux vous faire entrer dans le poste de pilotage, mais il faudra faire discret. Si quelqu'un vous coince, on ne se connaît pas. Et pas de photo au flash, petite maligne.	}{	#	}{	}{	pc.GiveItem("item_g_edane_report"); G.Dane_Report = 1; daneQuest(); SetCellUnhide()	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	Où je vais ?	}{	Où je vais ?	}{	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où ma voie me mène-t-elle ?	}
 {	73	}{	OK.	}{	OK.	}{	76	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	76	}{	Attendez un peu. [dans sa radio]Heinz à Marsh, Heinz à Marsh[pause]...Marsh, on a besoin de toi sur le pont, terminé. [au joueur]Voilà, le poste de pilotage sera désert, comme ça.	}{	Attendez un peu. [dans sa radio]Heinz à Marsh, Heinz à Marsh[pause]...Marsh, on a besoin de toi sur le pont, terminé. [au joueur]Voilà, le poste de pilotage sera désert, comme ça.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	77	}{	OK.	}{	OK.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	La clarté n'est pas mon gobelet d'Earl Grey.	}
+{	77	}{	OK.	}{	OK.	}{	81	}{	SetCellHide()	}{	}{	}{	}{	}{	}{	}{	}{	La clarté n'est pas mon gobelet d'Earl Grey.	}
 {	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

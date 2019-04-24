@@ -72,14 +72,14 @@
 {	72	}{	Vous savez, j'ai tué vos gardes, vous devriez m'écouter.	}{	Vous savez, j'ai tué vos gardes, vous devriez m'écouter.	}{	81	}{	G.Dead_Russians >= 5	}{	G.Boris_Guardsdead = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	73	}{	J'ai réussi à entrer malgré vos gardes, et je sais que je peux vous tuer, Camarade.	}{	J'ai réussi à entrer malgré vos gardes, et je sais que je peux vous tuer, Camarade.	}{	81	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	74	}{	Ce n'est pas très gentil pour vos gardes. Après tout, ils n'ont pas réussi à m'arrêter. . .	}{	Ce n'est pas très gentil pour vos gardes. Après tout, ils n'ont pas réussi à m'arrêter. . .	}{	81	}{	Persuasion 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	75	}{	}{	Vous avez raison. Je suis une petite fille. Mais pas encore assez gâtée. . .	}{	81	}{	Seduction 4 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	Vous avez raison. Je suis une petite fille. Mais pas encore assez gâtée. . .	}{	Vous avez raison. Je suis une petite fille. Mais pas encore assez gâtée. . .	}{	81	}{	Seduction 4 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	76	}{	Je suis plus un homme que vous ne le serez jamais !	}{	Vous ne savez rien de moi !	}{	101	}{	Intimidate -4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	77	}{	Donnez-moi le titre de propriété !	}{	Donnez-moi le titre de propriété !	}{	101	}{	Persuasion -5	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	78	}{	Je me moque de ce que vous pensez !	}{	}{	101	}{	IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	81	}{	Vraiment ? Hmmm [fait une proposition] Ecoutez-moi. Nous pouvons nous arranger. Peut-être moi convaincre vous travailler pour moi plutôt ?	}{	Vraiment ? Hmmm [fait une proposition] Ecoutez-moi petite fille. Nous pouvons nous arranger. Peut-être moi convaincre vous travailler pour moi plutôt ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	82	}{	Si vous me donnez ce titre de propriété, je vous laisserai vivre.	}{	Si vous me donnez ce titre de propriété, je vous laisserai vivre.	}{	141	}{	G.Boris_Guardsdead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Si vous me donnez ce titre de propriété, je vous laisserai vivre.	}{	Si vous me donnez ce titre de propriété, je vous laisserai vivre.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	83	}{	A quoi pensez-vous ?	}{	A quoi pensez-vous ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	84	}{	Je vous écoute.	}{	Je vous écoute.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	85	}{	Non.	}{	Non.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

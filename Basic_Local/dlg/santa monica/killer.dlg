@@ -130,12 +130,12 @@
 {	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	131	}{	Je n'en répondrai à personne, et vous ne me prendrez jamais vivant. On ne me capturera plus jamais. Jamais ! Soit nous nous séparons ici, soit l'un de nous deux meurt.	}{	Je n'en répondrai à personne, et vous ne me prendrez jamais vivant. On ne me capturera plus jamais. Jamais ! Soit nous nous séparons ici, soit l'un de nous deux meurt.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	132	}{	Pensez-vous que votre famille serait fière de vos agissements ?	}{	Pensez-vous que votre famille serait fière de vos agissements ?	}{	151	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	Vos défunts chanteraient-ils encore vos louanges ?	}
-{	133	}{	Rappelez-vous que c'est vous qui m'y forcez.	}{	Rappelez-vous que c'est vous qui m'y forcez.	}{	0	}{	Humanity 5	}{	G.Killer_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	La justice demande votre mort et je serai son bras.	}
-{	134	}{	Silence ! Vous allez mourir.	}{	Silence ! Vous allez mourir.	}{	0	}{	Humanity -5	}{	G.Killer_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	Vos paroles sont en vain, meurtrier ! Mourez !	}
-{	135	}{	Vous ne me ferez plus perdre mon temps. Ne soyez pas étonné de vous réveiller avec un pieu dans le coeur.	}{	Vous ne me ferez plus perdre mon temps. Ne soyez pas étonné de vous réveiller avec un pieu dans le coeur.	}{	0	}{	Humanity 5	}{	G.Killer_Freed = 1; pc.SetQuest("Serial",10)	}{	}{	}{	}{	}{	}{	}{	Je vous laisse suivre votre Bête.	}
-{	136	}{	Hors de ma vue !	}{	Hors de ma vue !	}{	0	}{	Humanity -5	}{	G.Killer_Freed = 1; pc.SetQuest("Serial",10)	}{	}{	}{	}{	}{	}{	}{	Partez et que nos chemins ne se croisent plus jamais.	}
-{	137	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	Rappelez-vous que c'est vous qui m'y forcez.	}{	Rappelez-vous que c'est vous qui m'y forcez.	}{	0	}{	Humanity 5 & G.Patch_Plus == 0	}{	G.Killer_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	La justice demande votre mort et je serai son bras.	}
+{	134	}{	Silence ! Vous allez mourir.	}{	Silence ! Vous allez mourir.	}{	0	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Killer_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	Vos paroles sont en vain, meurtrier ! Mourez !	}
+{	135	}{	Rappelez-vous que c'est vous qui m'y forcez.	}{	Rappelez-vous que c'est vous qui m'y forcez.	}{	0	}{	Humanity 5 & G.Patch_Plus == 1	}{	G.Killer_Hostile = 1; FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	La justice demande votre mort et je serai son bras.	}
+{	136	}{	Silence ! Vous allez mourir.	}{	Silence ! Vous allez mourir.	}{	0	}{	Humanity -5 & G.Patch_Plus == 1	}{	G.Killer_Hostile = 1; FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	Vos paroles sont en vain, meurtrier ! Mourez !	}
+{	137	}{	Vous ne me ferez plus perdre mon temps. Ne soyez pas étonné de vous réveiller avec un pieu dans le coeur.	}{	Vous ne me ferez plus perdre mon temps. Ne soyez pas étonné de vous réveiller avec un pieu dans le coeur.	}{	0	}{	Humanity 5	}{	G.Killer_Freed = 1; pc.SetQuest("Serial",10)	}{	}{	}{	}{	}{	}{	}{	Je vous laisse suivre votre Bête.	}
+{	138	}{	Hors de ma vue !	}{	Hors de ma vue !	}{	0	}{	Humanity -5	}{	G.Killer_Freed = 1; pc.SetQuest("Serial",10)	}{	}{	}{	}{	}{	}{	}{	Partez et que nos chemins ne se croisent plus jamais.	}
 {	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	141	}{	Je devrais allégeance à un clan de vampires que je ne connais pas simplement parce qu'on m'a attaqué ? On m'a laissé pour mort ! C'est par hasard que j'existe tel que je suis. Je fais ce pour quoi je suis fait.	}{	Je devrais allégeance à un clan de vampires que je ne connais pas simplement parce qu'on m'a attaqué ? On m'a laissé pour mort ! C'est par hasard que j'existe tel que je suis. Je fais ce pour quoi je suis fait.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

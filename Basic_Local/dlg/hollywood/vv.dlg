@@ -19,7 +19,7 @@
 {	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	21	}{	Je me disais exactement la même chose.	}{	Je me disais exactement la même chose.	}{	#	}{	}{	G.Velvet_Stairs = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	22	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Montrez le chemin.	}{	Montrez le chemin.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais vous hanter pour le moment.	}
 {	23	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -709,8 +709,8 @@
 {	709	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	710	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	711	}{	[Sombre, froide, méprisante]Sortez ! Bourreau ! Vous avez tué mon cher artiste, mon précieux, mon merveilleux artiste. . . Je ne vous pardonnerai jamais. . .	}{	[Sombre, froide, méprisante]Sortez ! Bourreau ! Vous avez tué mon cher artiste, mon précieux, mon merveilleux artiste. . . Je ne vous pardonnerai jamais. . .	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	712	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	713	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	712	}{	Désolé.	}{	Désolé.	}{	0	}{	Humanity > 5	}{	}{	}{	}{	}{	}{	}{	}{	Ma faute seulement.	}
+{	713	}{	Peu importe.	}{	Peu importe.	}{	0	}{	Humanity < 6	}{	}{	}{	}{	}{	}{	}{	}{	On s'en fout.	}
 {	714	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	715	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	716	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

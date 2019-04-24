@@ -88,7 +88,7 @@
 {	88	}{	J'aime beaucoup ce que vous faites.	}{	J'aime beaucoup ce que vous faites.	}{	181	}{	Seduction 5 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Si mes entrailles n'étaient pas froides et mortes, j'y inviterai notre enfant.	}
 {	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	90	}{	Euh. . . Peu importe. Au revoir.	}{	Euh. . . Peu importe. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne sais pas trop ce que je veux dire. Je pars.	}
-{	91	}{	Oui. . . Je vais écrire un article qui va détruire ce restaurant.	}{	Oui. . . Je vais écrire un article qui va détruire ce restaurant.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	pc.SetQuest("Tommy",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	Oui. . . Je vais écrire un article qui va détruire ce restaurant.	}{	Oui. . . Je vais écrire un article qui va détruire ce restaurant.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Tommy_Review = 1; pc.SetQuest("Tommy",2)	}{	}{	}{	}{	}{	}{	}{	}
 {	92	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -672,7 +672,7 @@
 {	672	}{	Vous ne pouvez pas trouver un autre chasseur de primes ?	}{	Vous connaissez d'autres chasseurs de primes ?	}{	681	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez peut-être besoin de vous trouver d'autres oeufs d'or. . . 	}
 {	673	}{	Alors virez-le.	}{	Alors virez-le.	}{	681	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Flanquez-le dehors, votre chasseur de choc.	}
 {	674	}{	Je pourrais peut-être m'en occuper pour vous. . .	}{	Je pourrais peut-être trouver ce quelqu'un pour vous.	}{	681	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je pourrais peut-être trouver le chasseur chassé. . .	}
-{	675	}{	Vous pourriez utiliser le chasseur que vous aviez avant Carson ?	}{	Vous pourriez utiliser le chasseur que vous aviez avant Carson ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Maybe you need to find the set of brass balls you owned before Carson.	}
+{	675	}{	Utilisez le chasseur que vous aviez avant Carson ?	}{	Utilisez le chasseur que vous aviez avant Carson ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Peut-être avez-vous besoin de trouver le jeu de billes de laiton que vous possédiez avant Carson.	}
 {	676	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	678	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -722,7 +722,7 @@
 {	722	}{	Vous ne pouvez pas trouver un autre chasseur de primes ?	}{	Vous ne pouvez pas trouver un autre chasseur de primes ?	}{	681	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	723	}{	Alors virez-le.	}{	Alors virez-le.	}{	681	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	724	}{	Je pourrais peut-être trouver ce quelqu'un pour vous.	}{	Je pourrais peut-être trouver ce quelqu'un pour vous.	}{	681	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	725	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	725	}{	Utilisez le chasseur de primes que vous aviez avant alors.	}{	Utilisez le chasseur de primes que vous aviez avant alors.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il suffit d'utiliser le jeu de billes de laiton que vous possédiez avant.	}
 {	726	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	727	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	728	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -738,7 +738,7 @@
 {	738	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	739	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	740	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	741	}{	Eh bien. . . Je n'arrive pas à mettre la main sur mon satané chasseur de primes Carson et ça me gonfle, en fait. J'ai vraiment besoin qu'il aille me trouver quelqu'un. Puisque je suis coincé ici, pourquoi vous n'iriez pas me le chercher ? Je vous paierai. . .	}{	Eh bien. . . Je n'arrive pas à mettre la main sur mon satané chasseur de primes Carson et ça me gonfle, en fait. J'ai vraiment besoin qu'il aille me trouver quelqu'un. Puisque je suis coincé ici, pourquoi vous n'iriez pas me le chercher ? Je vous paierai. . .	}{	#	}{	npc.SetDisposition("Anger",1)	}{	G.Arthur_BH = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	741	}{	Eh bien. . . Je n'arrive pas à mettre la main sur mon satané chasseur de primes Carson et ça me gonfle, en fait. J'ai vraiment besoin qu'il aille me trouver quelqu'un. Puisque je suis coincé ici, pourquoi vous n'iriez pas me le chercher ? Je vous paierai. . .	}{	Eh bien. . . Je n'arrive pas à mettre la main sur mon satané chasseur de primes Carson et ça me gonfle, en fait. J'ai vraiment besoin qu'il aille me trouver quelqu'un. Puisque je suis coincé ici, pourquoi vous n'iriez pas me le chercher ? Je vous paierai. . .	}{	#	}{	npc.SetDisposition("Anger",1)	}{	G.Arthur_BJ = 1; G.Arthur_BH = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	742	}{	Je pourrais, mais il y a intérêt à ce que ça vaille la peine.	}{	Oui, je pourrais faire ça.	}{	691	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je vais déterrer ce chasseur.	}
 {	743	}{	Bien sûr. Où ai-je le plus de chances de le trouver ?	}{	Bien sûr. Où ai-je le plus de chances de le trouver ?	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chasserai avec joie le chasseur. . .	}
 {	744	}{	Pas question. J'ai mieux à faire.	}{	Pas question. J'ai mieux à faire.	}{	841	}{	G.Player_Asked == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres grelots à secouer, maître des clés.	}
@@ -1001,11 +1001,14 @@
 {	1001	}{	(Starting Condition)	}{	}{	511	}{	G.Arthur_Muddy == 5 and G.Arthur_Knoxout == 1 and G.Arthur_Foreign == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1002	}{	(Starting Condition)	}{	}{	521	}{	G.Arthur_Muddy == 5	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1003	}{	(Starting Condition)	}{	}{	481	}{	IsClan(pc,"Nosferatu") and G.Arthur_Talked == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1004	}{	(Starting Condition)	}{	}{	2	}{	G.Arthur_Talked == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1004	}{	(Starting Condition)	}{	}{	531	}{	pc.GetQuestState("Serial") >= 6 and pc.GetQuestState("Bail Jumper") > 0 and G.Arthur_Muddy < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1005	}{	(Starting Condition)	}{	}{	851	}{	G.Arthur_Knox >= 4 and G.Arthur_Muddy >= 3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1006	}{	(Starting Condition)	}{	}{	531	}{	pc.GetQuestState("Serial") >= 6 and pc.GetQuestState("Bail Jumper") > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1007	}{	(Starting Condition)	}{	}{	321	}{	G.Arthur_Muddy == 1 or G.Arthur_Muddy == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1008	}{	(Starting Condition)	}{	}{	871	}{	G.Arthur_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1009	}{	(Starting Condition)	}{	}{	861	}{	G.Arthur_Knox > 1 and G.Arthur_Knox < 4	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1010	}{	(Starting Condition)	}{	}{	361	}{	G.Arthur_Muddy == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1011	}{	(Starting Condition)	}{	}{	231	}{	G.Arthur_Talked > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1006	}{	(Starting Condition)	}{	}{	321	}{	G.Arthur_Muddy == 1 or G.Arthur_Muddy == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1007	}{	(Starting Condition)	}{	}{	871	}{	G.Arthur_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1008	}{	(Starting Condition)	}{	}{	861	}{	G.Arthur_Knox > 1 and G.Arthur_Knox < 4	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1009	}{	(Starting Condition)	}{	}{	361	}{	G.Arthur_Muddy == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1010	}{	(Starting Condition)	}{	}{	231	}{	G.Arthur_Talked > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1011	}{	(Starting Condition)	}{	}{	11	}{	G.Arthur_Talked == 0	and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1012	}{	(Starting Condition)	}{	}{	2	}{	G.Arthur_Talked == 0	and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+
+

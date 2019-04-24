@@ -3,7 +3,7 @@
 {	3	}{	Tu as entendu parler du tueur en série ?	}{	Tu as entendu parler du tueur en série ?	}{	51	}{	G.Slater_Serial == 0 and not IsClan(pc,"Malkavian") and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	4	}{	Tu peux peut-être m'aider, je cherche une cassette vidéo.	}{	Tu peux peut-être m'aider, je cherche une cassette vidéo.	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	5	}{	Que me cache cette ville. . .	}{	Que me cache cette ville. . .	}{	201	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Que me cache cette ville. . .	}
-{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	J'ai besoin d'armes et Flynn m'a dit que tu en vendais.	}{	J'ai besoin d'armes et Flynn m'a dit que tu en vendais.	}{	91	}{	G.Flynn_Slater == 1	}{	}{	}{	}{	}{	}{	}{	}{	Le Prince du Porno m'a dit que tu vendais des matraques.	}
 {	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

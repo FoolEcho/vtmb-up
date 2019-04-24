@@ -361,12 +361,12 @@ DisciplineTgt
 
 		"Dmg_Health"		"35%"
 
-		Trigger_Casting
-		{
-			"DisciplineFX"	"Use_Spell"
-			"Source"		"Target"
-			"Affects"		"Self"
-		}
+		//Trigger_Casting
+		//{
+		//	"DisciplineFX"	"Use_Spell"
+		//	"Source"		"Target"
+		//	"Affects"		"Self"
+		//}
 
 		Effect_Tgt_Hit
 		{
@@ -773,6 +773,45 @@ DisciplineTgt
 			Mapping
 			{
 				"HitTable"	"Hit_Invulnerable"
+			}
+		}
+
+           Affects_Table	// added by wesp
+		{
+			Affects_Filters
+			{
+				"CharTemplate"		"Killer"
+			}
+
+			Default_Mapping
+			{
+				"HitTable"	"Hit_Supernatural_NoEffect"
+			}
+		}
+
+           Affects_Table	// added by wesp
+		{
+			Affects_Filters
+			{
+				"CharTemplate"		"ChangBros"
+			}
+
+			Default_Mapping
+			{
+				"HitTable"	"Hit_Supernatural_NoEffect"
+			}
+		}
+
+           Affects_Table	// added by wesp
+		{
+			Affects_Filters
+			{
+				"CharTemplate"		"ChangBrosClaw"
+			}
+
+			Default_Mapping
+			{
+				"HitTable"	"Hit_Supernatural_NoEffect"
 			}
 		}
 
@@ -2031,8 +2070,13 @@ DisciplineTgt
 	{
 // wesp		"AI_Schedule"		"SCHED_TROIKA_DO_THEFTOFVITAE_ACTIVITY"
 		"Duration"			"3"
-// wesp		"Gesture_Anim"		"ACT_THEFTPAIN_PRE_INTO"
-// wesp		"Gesture_Duration"		"1.0"
+		"Gesture_Anim"		"ACT_BLOOD_MALADY_LOOP"	// changed by wesp
+		"Gesture_Duration"		"1.0"
+
+		TraitEffect
+		{
+			"Effect"		"Discipline (Thaumaturgy-Blood Malady)"	// added by wesp
+		}
 
 		Trigger_Casting
 		{
@@ -2586,7 +2630,7 @@ DisciplineTgt
 
 		TraitEffect
 		{
-			"Effect"		"Discipline (Thaumaturgie-Chaudron de sang)"	// Visual FX
+			"Effect"		"Discipline (Thaumaturgy-Bloodboil)"	// Visual FX
 		}
 
 		Effect_Tgt_Hit
@@ -2638,7 +2682,7 @@ DisciplineTgt
 
 		TraitEffect
 		{
-			"Effect"		"Discipline (Thaumaturgie-Chaudron de sang)"	// Visual FX
+			"Effect"		"Discipline (Thaumaturgy-Bloodboil)"	// Visual FX
 		}
 
 		Effect_Tgt_Hit
@@ -3210,10 +3254,10 @@ DisciplineTgt
 		"Duration"		"2.7"
 		"Gesture_Anim"		"ACT_CAST_LAYER_HOLY_LIGHT"
 		"Gesture_Duration"	"2.0"
-		//TraitEffect
-		//{
-		//	"Effect"	"Discipline (Default - use Spell)"
-		//}
+		TraitEffect
+		{
+			"Effect"	"Discipline (Default - use Spell)"
+		}
 	}
 	Brujah
 	{

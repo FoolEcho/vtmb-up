@@ -281,8 +281,8 @@
 {	281	}{	Qu'est-ce que je peux faire pour vous ?	}{	Qu'est-ce que je peux faire pour vous ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	282	}{	Comment appelez-vous votre race ?	}{	Comment appelez-vous votre race ?	}{	251	}{	G.Ming_Kjname == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi davantage de votre peuple, maîtresse des miroirs.	}
 {	283	}{	J'avais quelques questions sur les Kuei-jin.	}{	J'avais quelques questions sur les Kuei-jin.	}{	291	}{	G.Ming_Kjname > 0	}{	}{	}{	}{	}{	}{	}{	}{	Dévoilez cette énigme que sont les Kuei-Jin !	}
-{	284	}{	Connaissez-vous un hengeyôkai dans Chinatown ?	}{	Connaissez-vous un hengeyôkai dans Chinatown ?	}{	461	}{	G.Yukie_Quest == 1 and G.Ming_Ziggy == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche un horrible Hengeyôkai.	}
-{	285	}{	Répétez-moi ce qui est arrivé au hengeyôkai.	}{	Répétez-moi ce qui est arrivé au hengeyôkai.	}{	481	}{	G.Ming_Ziggy == 1 and G.Zyg_Meet == 0 and G.Yukie_Market == 0 and not IsDead("Zygaena")	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de l'horrible Hengeyôkai.	}
+{	284	}{	Connaissez-vous un hengeyokai dans Chinatown ?	}{	Connaissez-vous un hengeyokai dans Chinatown ?	}{	461	}{	G.Yukie_Quest == 1 and G.Ming_Ziggy == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche un horrible Hengeyokai.	}
+{	285	}{	Répétez-moi ce qui est arrivé au hengeyokai.	}{	Répétez-moi ce qui est arrivé au hengeyokai.	}{	481	}{	G.Ming_Ziggy == 1 and G.Zyg_Meet == 0 and G.Yukie_Market == 0 and not IsDead("Zygaena")	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de l'horrible Hengeyokai.	}
 {	286	}{	Je voulais vous parler du Sarcophage d'Ankara.	}{	Je voulais vous parler du Sarcophage d'Ankara.	}{	421	}{	G.Ming_Barrabus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche un enfant de la nuit Nosferatu.	}
 {	287	}{	Je cherche toujours ce Nosferatu. Que dois-je faire encore ?	}{	Je cherche toujours ce Nosferatu. Que dois-je faire encore ?	}{	441	}{	G.Ming_Barrabus > 0 and pc.GetQuestState("Barabus") > 3	}{	}{	}{	}{	}{	}{	}{	}{	Où pourrais-je trouver cet enfant de la nuit Nosferatu ?	}
 {	288	}{	Où puis-je trouver les Tong ?	}{	Où puis-je trouver les Tong ?	}{	581	}{	G.WongHo_Kiki == 1 and G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	Où les Tong peut-on trouver ?	}
@@ -458,7 +458,7 @@
 {	458	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	461	}{	Ah oui, le hengeyôkai, du nom de Zygaena, je crois. Je l'avais presque oublié.	}{	Ah oui, le hengeyôkai, du nom de Zygaena, je crois. Je l'avais presque oublié.	}{	#	}{	}{	G.Ming_Ziggy = 1; G.Ming_Zygaena = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	461	}{	Ah oui, le hengeyokai, du nom de Zygaena, je crois. Je l'avais presque oublié.	}{	Ah oui, le hengeyokai, du nom de Zygaena, je crois. Je l'avais presque oublié.	}{	#	}{	}{	G.Ming_Ziggy = 1; G.Ming_Zygaena = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	462	}{	Alors vous le connaissez ?	}{	Alors vous le connaissez ?	}{	471	}{	}{	}{	}{	}{	}{	}{	}{	}{	Zygaena ? Zuper !	}
 {	463	}{	Il travaille pour vous ?	}{	Il travaille pour vous ?	}{	471	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	464	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -699,7 +699,7 @@
 {	699	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	700	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	701	}{	Je n'ai plus rien à vous dire. Partez.	}{	Je n'ai plus rien à vous dire. Partez.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	702	}{	Je vais faire vite. Vous avez entendu parler d'un Hengeyôkai dans Chinatown ?	}{	Je vais faire vite. Vous avez entendu parler d'un Hengeyôkai dans Chinatown ?	}{	706	}{	G.Yukie_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Que savez-vous d'un horrible Hengeyôkai ?	}
+{	702	}{	Je vais faire vite. Vous avez entendu parler d'un Hengeyokai dans Chinatown ?	}{	Je vais faire vite. Vous avez entendu parler d'un Hengeyokai dans Chinatown ?	}{	706	}{	G.Yukie_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Que savez-vous d'un horrible Hengeyokai ?	}
 {	703	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
 {	704	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	705	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -819,7 +819,7 @@
 {	819	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	820	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	821	}{	En effet, vampire. Mais parlons d'autre chose. Que puis-je faire pour vous aider ? Puis-je vous proposer quelque rafraîchissement ?	}{	En effet, vampire. Mais parlons d'autre chose. Que puis-je faire pour vous aider ? Puis-je vous proposer quelque rafraîchissement ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	822	}{	L'Earl Grey n'a que peu de saveur pour moi.	}{	L'Earl Grey n'a que peu de saveur pour moi.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	822	}{	L'Earl Grey n'a que peu de saveur pour moi, je décline donc.	}{	L'Earl Grey n'a que peu de saveur pour moi, je décline donc.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	823	}{	Parlez-moi davantage de votre peuple, maîtresse des miroirs.	}{	Parlez-moi davantage de votre peuple, maîtresse des miroirs.	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	824	}{	J'ai détruit un mangeur de vie à Santa Monica, la dame près de la mer. 	}{	J'ai détruit un mangeur de vie à Santa Monica, la dame près de la mer. 	}{	741	}{	G.Kjspy_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	825	}{	Le temps est précieux, et vous non. Je cherche un enfant de la nuit des Nosferatus.	}{	Le temps est précieux, et vous non. Je cherche un enfant de la nuit des Nosferatus.	}{	21	}{	}{	G.Ming_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}

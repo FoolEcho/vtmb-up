@@ -219,18 +219,18 @@ L'un des hommes avait une radio à ondes courtes, mais tous les appels à l'aide s
 
 		Function
 		{
-			"name"		"Ouvrir portes"
+			"name"		"Débloquer enregistrements"	// changed by wesp
 			"description"	"Verrous coursives"
-			"runtext"	"Toutes coursives ouvertes."
+			"runtext"	"Salle des enregistrements ouverte."	// changed by wesp
 			"dependency"	"G.Dane_Locks == 0"
 			"runscript"	"daneSetLocks()"
 		}
 
 		Function
 		{
-			"name"		"Fermer portes"
+			"name"		"Bloquer enregistrements"	// changed by wesp
 			"description"	"Verrous coursives"
-			"runtext"	"Toutes coursives fermées."
+			"runtext"	"Salle des enregistrements fermée."	// changed by wesp
 			"dependency"	"G.Dane_Locks == 1"
 			"runscript"	"daneSetLocks()"
 		}

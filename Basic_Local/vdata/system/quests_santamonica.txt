@@ -551,6 +551,13 @@ QuestTable
 			"Description"	"Vous avez laissé le tueur en série filer, le laissant ainsi déverser sa folie meurtrière. J'espère que ça vous fait plaisir."
 			"Type"		"failure"
 		}
+
+		CompletionState
+		{
+			"ID"		"11" // Killer
+			"Description"	"Vous êtes allé à l'embarcadère pour rechercher le meurtrier mentionné dans le journal, mais il n'y avait plus rien de visible. Mieux vaut garder les yeux bien ouverts."
+			"Type"		"incomplete"
+		}
 	}
 
 	Quest
@@ -1111,7 +1118,7 @@ Venez me trouver où brûle le soleil mystique.\""
 		CompletionState
 		{
 			"ID"		"3"
-			"Description"	"Vous avez refusé de donner au sang-clair ce qu'il voulait."
+			"Description"	"Vous avez échoué à donner au sang-clair ce qu'il voulait."
 			"Type"		"failure"
 		}
 

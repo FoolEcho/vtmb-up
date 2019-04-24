@@ -128,8 +128,8 @@
 {	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	131	}{	Je chasse Hengeyôkai. . . Mon sensei a tué démon qui a tué ma famille, et maintenant je tue celui qui tue lui. . . Je suis cadavres depuis Japon à [Rosu Angeresu] (Los Angeles). . . Hengeyôkai ici et va mourir ici.	}{	Je chasse Hengeyôkai. . . Mon sensei a tué démon qui a tué ma famille, et maintenant je tue celui qui tue lui. . . Je suis cadavres depuis Japon à [Rosu Angeresu] (Los Angeles). . . Hengeyôkai ici et va mourir ici.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Heng = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	132	}{	C'est quoi, un Hengeyôkai ?	}{	C'est quoi, un Hengeyôkai ?	}{	161	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Je chasse Hengeyokai. . . Mon sensei a tué démon qui a tué ma famille, et maintenant je tue celui qui tue lui. . . Je suis cadavres depuis Japon à [Rosu Angeresu] (Los Angeles). . . Hengeyokai ici et va mourir ici.	}{	Je chasse Hengeyokai. . . Mon sensei a tué démon qui a tué ma famille, et maintenant je tue celui qui tue lui. . . Je suis cadavres depuis Japon à [Rosu Angeresu] (Los Angeles). . . Hengeyokai ici et va mourir ici.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Heng = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	C'est quoi, un Hengeyokai ?	}{	C'est quoi, un Hengeyokai ?	}{	161	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	133	}{	Votre anglais est affligeant.	}{	Votre anglais est affligeant.	}{	171	}{	not IsClan(pc,"Malkavian") and G.Yukie_Egiru == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	134	}{	Parlez-moi de ce Henge-machin.	}{	Parlez-moi de ce Henge-machin.	}{	161	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	135	}{	Ca sent le sapin. . . Ah non, le poisson.	}{	Ca sent le sapin. . . Ah non, le poisson.	}{	541	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Ca sent le sapin. . . Ah non, le poisson.	}
@@ -158,7 +158,7 @@
 {	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	161	}{	Les Hengeyôkai sont démons qui se cachent dans la peau d'un homme. . . mais sont pas homme.	}{	Les Hengeyôkai sont démons qui se cachent dans la peau d'un homme. . . mais sont pas homme.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Yukie_Heng = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	161	}{	Les Hengeyokai sont démons qui se cachent dans la peau d'un homme. . . mais sont pas homme.	}{	Les Hengeyokai sont démons qui se cachent dans la peau d'un homme. . . mais sont pas homme.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Yukie_Heng = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	Vous savez où se trouve le démon ?	}{	Vous savez où se trouve le démon ?	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il se cache. . . Je le sais.	}
 {	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	164	}{	Votre anglais est affligeant.	}{	Votre anglais est affligeant.	}{	171	}{	not IsClan(pc,"Malkavian") and G.Yukie_Egiru == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -169,7 +169,7 @@
 {	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	171	}{	[Nihongo o hanesemasu ka] (Vous parlez japonais ?) Vous parlez japonais ?	}{	[Nihongo o hanesemasu ka] (Vous parlez japonais ?) Vous parlez japonais ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	172	}{	Je comprends. Parlez-moi de l'Hengeyôkai.	}{	Je comprends. Parlez-moi de l'Hengeyôkai.	}{	161	}{	G.Yukie_Heng == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Je comprends. Parlez-moi de l'Hengeyokai.	}{	Je comprends. Parlez-moi de l'Hengeyokai.	}{	161	}{	G.Yukie_Heng == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	173	}{	Eh bien, au moins, est-ce que vous pouvez être un peu plus spécifique ?	}{	Eh bien, au moins, est-ce que vous pouvez être un peu plus spécifique ?	}{	181	}{	G.Yukie_Heng == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	174	}{	Eh, vous devriez retourner à l'école. Vous allez vous faire mal si vous restez dans le coin.	}{	Eh, vous devriez retourner à l'école. Vous allez vous faire mal si vous restez dans le coin.	}{	181	}{	G.Yukie_Heng == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -178,7 +178,7 @@
 {	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	181	}{	Je sais qu'il est tout près. . . [edo] (hmm. . .) j'ai perdu sa trace. Vous croiser Hengeyôkai ?	}{	Je sais qu'il est tout près. . . [edo] (hmm. . .) j'ai perdu sa trace. Vous croiser Hengeyôkai ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Heng = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	181	}{	Je sais qu'il est tout près. . . [edo] (hmm. . .) j'ai perdu sa trace. Vous croiser Hengeyokai ?	}{	Je sais qu'il est tout près. . . [edo] (hmm. . .) j'ai perdu sa trace. Vous croiser Hengeyokai ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Heng = 3	}{	}{	}{	}{	}{	}{	}{	}
 {	182	}{	Non, jamais. Mais je vais ouvrir l'oeil. 	}{	Non, jamais. Mais je vais ouvrir l'oeil. 	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si je le sens, je viendrai vous chercher.	}
 {	183	}{	Comment saurais-je que j'en ai rencontré un ?	}{	Comment saurais-je que j'en ai rencontré un ?	}{	201	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	184	}{	Je ne peux même pas le prononcer. . .	}{	Je ne peux même pas le prononcer. . .	}{	201	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -189,7 +189,7 @@
 {	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	191	}{	[Avec confiance] Pas question. . .	}{	[Avec confiance] Pas question. . .	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	192	}{	Eh bien, si je vois un Hengeyôkai, je vous le dirai.	}{	Eh bien, si je vois un Hengeyôkai, je vous le dirai.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si je le sens, je viendrai vous chercher.	}
+{	192	}{	Eh bien, si je vois un Hengeyokai, je vous le dirai.	}{	Eh bien, si je vois un Hengeyokai, je vous le dirai.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si je le sens, je viendrai vous chercher.	}
 {	193	}{	Vous êtes encore jeune. . . Arrêtez, allez mener une vie normale.	}{	Vous êtes encore jeune. . . Arrêtez, allez mener une vie normale.	}{	221	}{	Humanity 8	}{	}{	}{	}{	}{	}{	}{	}{	Plus on tue, plus on est triste. Rentrez chez vous.	}
 {	194	}{	C'est votre vie. . . Je vous enverrai ce Hengemachin si je le trouve. . .	}{	C'est votre vie. . . Je vous enverrai ce Hengemachin si je le trouve. . .	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais jouer mon rôle dans votre vengeance.	}
 {	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -228,7 +228,7 @@
 {	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	231	}{	[Honto, ne] (Vraiment, hein ?) J'apprécie votre souci pour ma vengeance. . . [Arigato gozaimasu] (Merci.) Ne prenez pas un Hengeyôkai en pitié. . . C'est un mauvais démon. Le genre qui transforme petite fille en chasseur.	}{	[Honto, ne](Vraiment, hein) ? J'apprécie votre souci pour ma vengeance. . . [Arigato gozaimasu](Merci). Ne prenez pas un Hengeyôkai en pitié. . . C'est un mauvais démon. Le genre qui transforme petite fille en chasseur.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	G.Yukie_Quest = 1; pc.SetQuest("Yukie",1)	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	[Honto, ne] (Vraiment, hein ?) J'apprécie votre souci pour ma vengeance. . . [Arigato gozaimasu] (Merci.) Ne prenez pas un Hengeyokai en pitié. . . C'est un mauvais démon. Le genre qui transforme petite fille en chasseur.	}{	[Honto, ne](Vraiment, hein) ? J'apprécie votre souci pour ma vengeance. . . [Arigato gozaimasu](Merci). Ne prenez pas un Hengeyokai en pitié. . . C'est un mauvais démon. Le genre qui transforme petite fille en chasseur.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	G.Yukie_Quest = 1; pc.SetQuest("Yukie",1)	}{	}{	}{	}{	}{	}{	}{	}
 {	232	}{	Avant de partir, j'avais d'autres questions.	}{	Avant de partir, j'avais d'autres questions.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai tant de curiosité.	}
 {	233	}{	Je comprends ce que vous voulez dire. Je vais le trouver.	}{	Je comprends ce que vous voulez dire. Je vais le trouver.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais regretter le jour où nous nous sommes rencontrés.	}
 {	234	}{	Vous êtes réglo, pour une chasseuse. . . Si vous ne me menacez pas, on s'entendra bien.	}{	Vous êtes réglo, pour une chasseuse. . . Si vous ne me menacez pas, on s'entendra bien.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre destin est triste, mais le mien aussi.	}
@@ -240,7 +240,7 @@
 {	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	241	}{	[Nani] (Quoi ?)	}{	[Nani] (Quoi ?)	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	242	}{	Qu'est-ce que vous savez sur les Kuei-Jin ?	}{	Qu'est-ce que vous savez sur les Kuei-Jin ?	}{	251	}{	G.Yukie_Kuei == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les choses dans le temple. . . Parlez-m'en.	}
-{	243	}{	Autre chose que vous pourriez me dire sur l'Hengeyôkai ?	}{	Autre chose que vous pourriez me dire sur l'Hengeyôkai ?	}{	261	}{	G.Yukie_Fish == 0	}{	}{	}{	}{	}{	}{	}{	}{	Son odeur est forte. Pourquoi ?	}
+{	243	}{	Autre chose que vous pourriez me dire sur l'Hengeyokai ?	}{	Autre chose que vous pourriez me dire sur l'Hengeyokai ?	}{	261	}{	G.Yukie_Fish == 0	}{	}{	}{	}{	}{	}{	}{	}{	Son odeur est forte. Pourquoi ?	}
 {	244	}{	Voila une excellente lame, me la vendriez-vous ?	}{	Voila une excellente lame, me la vendriez-vous ?	}{	271	}{	G.Yukie_Sword == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je vous échange quelques hommes verts contre cette belle lame.	}
 {	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -258,7 +258,7 @@
 {	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	261	}{	Hengeyôkai sent comme. . . [sakana] (Poisson) - poissons. Je ne sais pas pourquoi. Peut-être d'autres démons savent.	}{	Hengeyôkai sent comme. . .[sakana] (Poisson) - poissons. Je ne sais pas pourquoi. Peut-être d'autres démons savent.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Yukie_Fish = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Hengeyokai sent comme. . . [sakana] (Poisson) - poissons. Je ne sais pas pourquoi. Peut-être d'autres démons savent.	}{	Hengeyokai sent comme. . .[sakana] (Poisson) - poissons. Je ne sais pas pourquoi. Peut-être d'autres démons savent.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	G.Yukie_Fish = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	262	}{	J'imagine que c'est une sorte d'indice. J'avais une autre question.	}{	J'imagine que c'est une sorte d'indice. J'avais une autre question.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, je comprends. Mais la curiosité ne me quitte pas.	}
 {	263	}{	Les odeurs, ça ne m'aide pas beaucoup. Je vais essayer une autre approche. A plus.	}{	Les odeurs, ça ne m'aide pas beaucoup. Je vais essayer une autre approche. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je le sens aussi. . . Je vais suivre sa trace.	}
 {	264	}{	D'autres démons ? Je vais me renseigner. A plus.	}{	D'autres démons ? Je vais me renseigner. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Des démons. . . Oui, je sais où trouver des démons.	}
@@ -289,8 +289,8 @@
 {	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	291	}{	[Konbanwa] (Bonsoir. . ). démon.	}{	[Konbanwa] (Bonsoir. . .) démon.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	292	}{	A propos de l'Hengeyôkai. . .	}{	A propos de l'Hengeyôkai. . .	}{	181	}{	G.Yukie_Heng >= 1 and G.Yukie_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le démon que vous poursuivez. . .	}
-{	293	}{	A propos de l'Hengeyôkai. . .	}{	A propos de l'Hengeyôkai. . .	}{	301	}{	G.Yukie_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Le démon que vous poursuivez. . .	}
+{	292	}{	A propos de l'Hengeyokai. . .	}{	A propos de l'Hengeyokai. . .	}{	181	}{	G.Yukie_Heng >= 1 and G.Yukie_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le démon que vous poursuivez. . .	}
+{	293	}{	A propos de l'Hengeyokai. . .	}{	A propos de l'Hengeyokai. . .	}{	301	}{	G.Yukie_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Le démon que vous poursuivez. . .	}
 {	294	}{	J'avais encore quelques questions. . .	}{	J'avais encore quelques questions. . .	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai tant de curiosité.	}
 {	295	}{	Oui, tout pareil, c'est ça. A plus.	}{	Oui, tout pareil, c'est ça. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Euh. . . Ouais, je m'en vais.	}
 {	296	}{	Chasseur. . .	}{	Chasseur. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -308,17 +308,17 @@
 {	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	311	}{	Vous tromper moi, démon ? Comment trouver Hengeyôkai ?	}{	Vous tromper moi, démon ? Comment trouver Hengeyôkai ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	Vous tromper moi, démon ? Comment trouver Hengeyokai ?	}{	Vous tromper moi, démon ? Comment trouver Hengeyokai ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	312	}{	Bon, je vous accompagne. Vous aurez besoin d'aide.	}{	Bon, je vous accompagne. Vous aurez besoin d'aide.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce n'était pas une blague. Allez, emmenez-moi.	}
 {	313	}{	Ce n'est pas une ruse. . . Je déteste ces trucs presque autant que vous, croyez-moi. . .	}{	Ce n'est pas une ruse. . . Je déteste ces trucs presque autant que vous, croyez-moi. . .	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je déteste l'odeur du poisson. Et les démons avec des noms trop longs. Pas de blague.	}
-{	314	}{	Mon sens d'araignée. . . Qu'est-ce que ça peut vous faire ? Je l'ai trouvé, non ?	}{	Mon sens d'araignée. . . Qu'est-ce que ça peut vous faire ? Je l'ai trouvé, non ?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai joué à éviter l'Hengeyôkai dans tout Chinatown.	}
+{	314	}{	Mon sens d'araignée. . . Qu'est-ce que ça peut vous faire ? Je l'ai trouvé, non ?	}{	Mon sens d'araignée. . . Qu'est-ce que ça peut vous faire ? Je l'ai trouvé, non ?	}{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai joué à éviter l'Hengeyokai dans tout Chinatown.	}
 {	315	}{	Bon. . . C'est une ruse. Il vous attend. Vous ne devriez pas y aller.	}{	Bon. . . C'est une ruse. Il vous attend. Vous ne devriez pas y aller.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'EST UN PIEGE !	}
 {	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	321	}{	Vous voulez tuer Hengeyôkai avec moi ? Pourquoi ?	}{	Vous voulez tuer Hengeyôkai avec moi ? Pourquoi ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	Vous voulez tuer Hengeyokai avec moi ? Pourquoi ?	}{	Vous voulez tuer Hengeyokai avec moi ? Pourquoi ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	322	}{	Je ne lui fais pas confiance. Il avait l'air bien trop pressé d'organiser ce rendez-vous.	}{	Je ne lui fais pas confiance. Il avait l'air bien trop pressé d'organiser ce rendez-vous.	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tout est trop pratique.	}
 {	323	}{	Je pense qu'il travaille avec les Kuei-Jin, et je déteste les Kuei-Jin. . .	}{	Je pense qu'il travaille avec les Kuei-Jin, et je déteste les Kuei-Jin. . .	}{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ca sent le poisson et le Kuei-jin.	}
 {	324	}{	Pourquoi pas ?	}{	Pourquoi pas ?	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous trouvez que j'ai une tête de menteur ?	}
@@ -328,9 +328,9 @@
 {	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	331	}{	Si vous me jouez un tour, je vous tue après Hengeyôkai. Ca vous paraît bien, comme marché ?	}{	Si vous me jouez un tour, je vous tue après Hengeyôkai. Ca vous paraît bien, comme marché ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	331	}{	Si vous me jouez un tour, je vous tue après Hengeyokai. Ca vous paraît bien, comme marché ?	}{	Si vous me jouez un tour, je vous tue après Hengeyokai. Ca vous paraît bien, comme marché ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	332	}{	C'est juste. Allons-y.	}{	C'est juste. Allons-y.	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ca baigne. On y va.	}
-{	333	}{	Pas vraiment, mais je vais le faire. Bon, allons nous tailler du steak d'Hengeyôkai.	}{	Pas vraiment, mais je vais le faire. Bon, allons nous tailler du steak d'Hengeyôkai.	}{	341	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	333	}{	Pas vraiment, mais je vais le faire. Bon, allons nous tailler du steak d'Hengeyokai.	}{	Pas vraiment, mais je vais le faire. Bon, allons nous tailler du steak d'Hengeyokai.	}{	341	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	334	}{	Comme tu veux, petite.	}{	Comme tu veux, petite.	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Eh, vous me faites rire. OK ma mignonne. . .	}
 {	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -348,7 +348,7 @@
 {	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	351	}{	Vous ne devriez pas faire confiance à Hengeyôkai. . . Je n'ai pas le choix. . . Je dois aller.	}{	Vous ne devriez pas faire confiance à Hengeyôkai. . . Je n'ai pas le choix. . . Je dois aller.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	Vous ne devriez pas faire confiance à Hengeyokai. . . Je n'ai pas le choix. . . Je dois aller.	}{	Vous ne devriez pas faire confiance à Hengeyokai. . . Je n'ai pas le choix. . . Je dois aller.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	352	}{	Bon, je vous accompagne. Vous aurez besoin d'aide.	}{	Bon, je vous accompagne. Vous aurez besoin d'aide.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Eh, emmenez-moi avec vous.	}
 {	353	}{	Je viens avec vous. Je veux assister au combat.	}{	Je viens avec vous. Je veux assister au combat.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Démon contre chasseur de démon. Il faut que je voie ça.	}
 {	354	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -358,7 +358,7 @@
 {	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	361	}{	Hengeyôkai sait moi devoir aller. Vengeance n'attend pas.	}{	Hengeyôkai sait moi devoir aller. Vengeance n'attend pas.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	361	}{	Hengeyokai sait moi devoir aller. Vengeance n'attend pas.	}{	Hengeyokai sait moi devoir aller. Vengeance n'attend pas.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	362	}{	Bon, je vous accompagne. Vous aurez besoin d'aide.	}{	Bon, je vous accompagne. Vous aurez besoin d'aide.	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Eh, emmenez-moi avec vous.	}
 {	363	}{	J'aimerais bien lui mettre une raclée aussi. Je vous accompagne.	}{	J'aimerais bien lui mettre une raclée aussi. Je vous accompagne.	}{	321	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	364	}{	Je viens avec vous. Je veux assister au combat.	}{	Je viens avec vous. Je veux assister au combat.	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Démon contre chasseur de démon. Il faut que je voie ça.	}
@@ -388,7 +388,7 @@
 {	388	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	391	}{	Hengeyôkai est en enfer. Ma vengeance est accomplie. [Domo arigato gozaimashta] (merci beaucoup, démon.)	}{	Hengeyôkai est en enfer. Ma vengeance est accomplie. [Domo arigato gozaimashta] (merci beaucoup, démon.)	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	391	}{	Hengeyokai est en enfer. Ma vengeance est accomplie. [Domo arigato gozaimashta] (merci beaucoup, démon.)	}{	Hengeyokai est en enfer. Ma vengeance est accomplie. [Domo arigato gozaimashta] (merci beaucoup, démon.)	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	392	}{	Qu'allez-vous combattre à présent ?	}{	Qu'allez-vous combattre à présent ?	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quelle route suivez-vous à présent ?	}
 {	393	}{	Oh. . . Vous devez être contente que ce truc n'ait pas eu de tentacules, hein ?	}{	Oh. . . Vous devez être contente que ce truc n'ait pas eu de tentacules, hein ?	}{	401	}{	G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	394	}{	Un homme-requin ? Ha, j'aurais tout vu. Et tout tué.	}{	Un homme-requin ? Ha, j'aurais tout vu. Et tout tué.	}{	401	}{	G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je dois avoir des hallucinations. Je viens vraiment de me taper un requin ?	}
@@ -410,7 +410,7 @@
 {	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	411	}{	[Dozo] (Please. . .)	}{	[Dozo] (Please. . .)	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	412	}{	D'accord, j'irai d'abord.	}{	D'accord, j'irai d'abord.	}{	0	}{	G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Allons à la pêche !	}
-{	413	}{	Désolé, mais j'ai déjà tué l'Hengeyôkai au Red Dragon.	}{	Désolé, mais j'ai déjà tué l'Hengeyôkai au Red Dragon.	}{	391	}{	G.Zyg_Human == 1	}{	pc.SetQuest("Yukie",7)	}{	}{	}{	}{	}{	}{	}{	Ca ressemblait à un homme et je l'ai tué.	}
+{	413	}{	Désolé, mais j'ai déjà tué l'Hengeyokai au Red Dragon.	}{	Désolé, mais j'ai déjà tué l'Hengeyokai au Red Dragon.	}{	391	}{	G.Zyg_Human == 1	}{	pc.SetQuest("Yukie",7)	}{	}{	}{	}{	}{	}{	}{	Ca ressemblait à un homme et je l'ai tué.	}
 {	414	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -438,7 +438,7 @@
 {	438	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	439	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	441	}{	Moi, [nani] (quoi, ) surveiller temple. Je pense que Hengeyôkai a tué mon maître pour fantômes. . . Il y a encore maléfices à l'intérieur. . .	}{	Moi, [nani] (quoi, ) surveiller temple. Je pense que Hengeyokai a tué mon maître pour fantômes. . . Il y a encore maléfices à l'intérieur. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	441	}{	Moi, [nani] (quoi, ) surveiller temple. Je pense que Hengeyokai a tué mon maître pour fantômes. . . Il y a encore maléfices à l'intérieur. . .	}{	Moi, [nani] (quoi, ) surveiller temple. Je pense que Hengeyokai a tué mon maître pour fantômes. . . Il y a encore maléfices à l'intérieur. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	442	}{	Je vais tuer du Kuei-Jin. Vous voulez m'aider ?	}{	Je vais tuer du Kuei-Jin. Vous voulez m'aider ?	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ouaip. On se trouve un coin tranquille ?	}
 {	443	}{	Bon, vous restez ici et assurez-vous que personne ne me suit.	}{	Bon, vous restez ici et assurez-vous que personne ne me suit.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Assis. Restes. Bonne fifille !	}
 {	444	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -538,7 +538,7 @@
 {	538	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	540	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	541	}{	Oui ! Hengeyôkai sentir poisson ! Vous savez ?	}{	Oui ! Hengeyôkai sentir poisson ! Vous savez ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	541	}{	Oui ! Hengeyokai sentir poisson ! Vous savez ?	}{	Oui ! Hengeyokai sentir poisson ! Vous savez ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	542	}{	Je sens quelque chose. Quoi donc ?	}{	Je sens quelque chose. Quoi donc ?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	543	}{	Non. . . Pourquoi ça sent le poisson ?	}{	Non. . . Pourquoi ça sent le poisson ?	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	544	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
