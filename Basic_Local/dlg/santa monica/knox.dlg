@@ -139,13 +139,13 @@
 {	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	140	}{	C'est mortel, ici. Je me casse.	}{	C'est mortel, ici. Je me casse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai quitté les environs.	}
 {	141	}{	C'est génial. Après avoir goûté du sang de vampire pour la première fois. . . C'est la meilleure drogue, et ça ne m'a pas fait de mal, rien que du bien, pour tout. Je me sentais comme un dieu, juste à sucer le sang au poignet de cet affreux.	}{	C'est génial. Après avoir goûté du sang de vampire pour la première fois. . . C'est la meilleure drogue, et ça ne m'a pas fait de mal, rien que du bien, pour tout. Je me sentais comme un dieu, juste à sucer le sang au poignet de cet affreux.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Likes = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	142	}{	Je peux te poser des questions ?	}{	Je peux te poser des questions ?	}{	931	}{	G.Mercurio_Quest != 2	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui surgissent de mon esprit.	}
-{	143	}{	Qui était cet 'Affreux' ?	}{	Qui était cet 'Affreux' ?	}{	621	}{	G.Mercurio_Quest != 2 and G.Knox_Master == 0	}{	G.Knox_Master = 1	}{	}{	}{	}{	}{	}{	}{	Qui est l'Affreux ?	}
-{	144	}{	Qui est ce 'grand méchant' ?	}{	Qui est ce 'grand méchant' ?	}{	151	}{	G.Knox_Bertram == 0 and G.Mercurio_Quest == 2	}{	G.Knox_Master = 1	}{	}{	}{	}{	}{	}{	}{	Qui est l'Affreux ?	}
-{	145	}{	Sais-tu où se trouve Bertram ?	}{	Sais-tu où se trouve Bertram ?	}{	161	}{	G.Knox_Bertram == 1 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Sais-tu où se trouve l'Affreux ?	}
-{	146	}{	Et Bertram, il est comment ?	}{	Et Bertram, il est comment ?	}{	171	}{	G.Knox_Bertram > 0 and G.Knox_Powerful == 0 and G.Knox_Quest == 0 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi de l'Affreux.	}
-{	147	}{	Comment Bertram prend-il contact avec toi ?	}{	Comment Bertram prend-il contact avec toi ?	}{	181	}{	G.Knox_Bertram > 0 and G.Knox_Appear == 0 and G.Knox_Quest == 0 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment l'Affreux de contacte-t-il ?	}
-{	148	}{	Et qu'est-ce que tu fais par ici ?	}{	Et qu'est-ce que tu fais par ici ?	}{	651	}{	G.Mercurio_Quest != 2	}{	}{	}{	}{	}{	}{	}{	}{	Alors, qu'est-ce qui t'a botté aujourd'hui ?	}
+{	142	}{	Qui était cet 'Affreux' ?	}{	Qui était cet 'Affreux' ?	}{	621	}{	G.Mercurio_Quest != 2 and G.Knox_Master == 0	}{	G.Knox_Master = 1	}{	}{	}{	}{	}{	}{	}{	Qui est l'Affreux ?	}
+{	143	}{	Qui est ce 'grand méchant' ?	}{	Qui est ce 'grand méchant' ?	}{	151	}{	G.Knox_Bertram == 0 and G.Mercurio_Quest == 2	}{	G.Knox_Master = 1	}{	}{	}{	}{	}{	}{	}{	Qui est l'Affreux ?	}
+{	144	}{	Sais-tu où se trouve Bertram ?	}{	Sais-tu où se trouve Bertram ?	}{	161	}{	G.Knox_Bertram == 1 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Sais-tu où se trouve l'Affreux ?	}
+{	145	}{	Et Bertram, il est comment ?	}{	Et Bertram, il est comment ?	}{	171	}{	G.Knox_Bertram > 0 and G.Knox_Powerful == 0 and G.Knox_Quest == 0 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi de l'Affreux.	}
+{	146	}{	Comment Bertram prend-il contact avec toi ?	}{	Comment Bertram prend-il contact avec toi ?	}{	181	}{	G.Knox_Bertram > 0 and G.Knox_Appear == 0 and G.Knox_Quest == 0 and G.Bertram_Check == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment l'Affreux de contacte-t-il ?	}
+{	147	}{	Et qu'est-ce que tu fais par ici ?	}{	Et qu'est-ce que tu fais par ici ?	}{	651	}{	G.Mercurio_Quest != 2	}{	}{	}{	}{	}{	}{	}{	}{	Alors, qu'est-ce qui t'a botté aujourd'hui ?	}
+{	148	}{	Je peux te poser des questions ?	}{	Je peux te poser des questions ?	}{	931	}{	G.Mercurio_Quest != 2	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui surgissent de mon esprit.	}
 {	149	}{	Puis-je te poser encore quelques questions ?	}{	Puis-je te poser encore quelques questions ?	}{	541	}{	G.Knox_Quest > 0 and G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui surgissent de mon esprit.	}
 {	150	}{	Je m'en vais. A plus tard.	}{	Je m'en vais. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis ailleurs. 	}
 {	151	}{	Il s'appelle Bertram Tung. C'est un Nosferatu.	}{	Il s'appelle Bertram Tung. C'est un Nosferatu.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Bertram = 1	}{	}{	}{	}{	}{	}{	}{	}
@@ -153,10 +153,10 @@
 {	153	}{	Que fais-tu pour lui ?	}{	Que fais-tu pour lui ?	}{	211	}{	G.Knox_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Que fais-tu pour l'Affreux ?	}
 {	154	}{	Alors tu es la 'goule' de Bertram ? Qu'est-ce que ça veut dire, exactement ?	}{	Alors tu es la 'goule' de Bertram ? Qu'est-ce que ça veut dire, exactement ?	}{	131	}{	G.Knox_Ghoul == 1 and G.Knox_Outbound == 1	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Que sais-tu sur la goulitude ?	}
 {	155	}{	Ca te plaît d'être une goule ?	}{	Ca te plaît d'être une goule ?	}{	141	}{	G.Knox_Outbound == 3	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Et tu es heureux, dans ce cas, goule ?	}
-{	156	}{	Je peux te poser des questions ?	}{	Je peux te poser des questions ?	}{	931	}{	G.Mercurio_Quest != 2	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui surgissent de mon esprit.	}
-{	157	}{	Tu sais où il est ?	}{	Tu sais où il est ?	}{	161	}{	G.Knox_Outbound == 0	}{	}{	}{	}{	}{	}{	}{	}{	Sais-tu où se trouve l'Affreux ?	}
-{	158	}{	Comment il est ?	}{	Comment il est ?	}{	171	}{	G.Knox_Outbound == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi de l'Affreux.	}
-{	159	}{	Alors, comment ça se passe, ta mission ?	}{	Alors, comment ça se passe, ta mission ?	}{	211	}{	G.Knox_Mission == 2 and G.Knox_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Et quelles nouvelles de ta chasse secrète ?	}
+{	156	}{	Tu sais où il est ?	}{	Tu sais où il est ?	}{	161	}{	G.Knox_Outbound == 0	}{	}{	}{	}{	}{	}{	}{	}{	Sais-tu où se trouve l'Affreux ?	}
+{	157	}{	Comment il est ?	}{	Comment il est ?	}{	171	}{	G.Knox_Outbound == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parle-moi de l'Affreux.	}
+{	158	}{	Alors, comment ça se passe, ta mission ?	}{	Alors, comment ça se passe, ta mission ?	}{	211	}{	G.Knox_Mission == 2 and G.Knox_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Et quelles nouvelles de ta chasse secrète ?	}
+{	159	}{	Je peux te poser des questions ?	}{	Je peux te poser des questions ?	}{	931	}{	G.Mercurio_Quest != 2	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui surgissent de mon esprit.	}
 {	160	}{	Il faut que je parte, Knox. A bientôt !	}{	Il faut que je parte, Knox. A bientôt !	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	161	}{	Si seulement je savais où il est. C'est dur, de rester là à l'attendre. J'ai des trucs à lui dire. Mais je ne sais pas où il est, où il habite. . . Rien du tout. Quand il a besoin de moi, il apparaît. . .	}{	Si seulement je savais où il est. C'est dur, de rester là à l'attendre. J'ai des trucs à lui dire. Mais je ne sais pas où il est, où il habite. . . Rien du tout. Quand il a besoin de moi, il apparaît. . .	}{	#	}{	}{	G.Knox_Bertram = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	Attends. . . Tu es sa goule ? Qu'est-ce que c'est ?	}{	Attends. . . Tu es sa goule ? Qu'est-ce que c'est ?	}{	131	}{	G.Knox_Ghoul == 1 and G.Knox_Outbound == 1 and G.Knox_Questions == 0	}{	G.Knox_Outbound = 0	}{	}{	}{	}{	}{	}{	}{	Parle-moi de cette goulitude. . .	}
@@ -289,13 +289,13 @@
 {	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	290	}{	Ca marche. A plus.	}{	Ca marche. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Adieu, goule aux oeufs d'or.	}
 {	291	}{	Yo, mec ! Tu lui as fait son affaire ?	}{	Yo, mama ! Tu lui as fait son affaire ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	292	}{	Oui. Plus la peine de t'inquiéter.	}{	Oui. Plus la peine de t'inquiéter.	}{	521	}{	(G.Knox_Quest == 6 and G.Knox_Bertfound == 1) or (IsDead("AsianVamp") and G.Knox_Bertfound == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
-{	293	}{	Oui. Plus la peine de t'inquiéter.	}{	Oui. Plus la peine de t'inquiéter.	}{	381	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 0 and G.Knox_Bertfound == 0) or (IsDead("AsianVamp") and G.Knox_Fess == 0 and G.Knox_Bertfound == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
-{	294	}{	Oui. Plus la peine de t'inquiéter.	}{	Oui. Plus la peine de t'inquiéter.	}{	471	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 1 and G.Knox_Bertfound == 0) or (IsDead("AsianVamp") and G.Knox_Fess == 1 and G.Knox_Bertfound == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
-{	295	}{	Non, pas encore.	}{	Non, pas encore.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche encore le dévoreur de vies.	}
-{	296	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	297	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	298	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	292	}{	Oui. Plus la peine de t'inquiéter.	}{	Oui. Plus la peine de t'inquiéter	}{	521	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and G.Knox_Bertfound == 1 and (not pc.HasItem("item_g_driver_license_gimble") or G.Patch_Plus == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le mangeur de vie a apprécié son dernier repas.	}
+{	293	}{	Oui. Plus la peine de t'inquiéter.	}{	Oui. Plus la peine de t'inquiéter.	}{	381	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and G.Knox_Fess == 0 and G.Knox_Bertfound == 0 and (not pc.HasItem("item_g_driver_license_gimble") or G.Patch_Plus == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le mangeur de vie a apprécié son dernier repas.	}
+{	294	}{	Oui. Plus la peine de t'inquiéter.	}{	Oui. Plus la peine de t'inquiéter.	}{	471	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and G.Knox_Fess == 1 and G.Knox_Bertfound == 0 and (not pc.HasItem("item_g_driver_license_gimble") or G.Patch_Plus == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le mangeur de vie a apprécié son dernier repas.	}
+{	295	}{	Oui. Plus la peine de t'inquiéter. Et tu devrais t'en débarrasser.	}{	Oui. Plus la peine de t'inquiéter. Et tu devrais t'en débarrasser.	}{	521	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and G.Knox_Bertfound == 1 and pc.HasItem("item_g_driver_license_gimble") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_driver_license_gimble")	}{	}{	}{	}{	}{	}{	}{Le mangeur de vie a apprécié son dernier repas. Et vous devriez le faire disparaître maintenant.	}
+{	296	}{	Oui. Plus la peine de t'inquiéter. Et tu devrais t'en débarrasser.	}{	Oui. Plus la peine de t'inquiéter. Et tu devrais t'en débarrasser.	}{	381	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and G.Knox_Fess == 0 and G.Knox_Bertfound == 0 and pc.HasItem("item_g_driver_license_gimble") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_driver_license_gimble")	}{	}{	}{	}{	}{	}{	}{	Le mangeur de vie a apprécié son dernier repas. Et tu devrais le faire disparaître maintenant.	}
+{	297	}{	Oui. Plus la peine de t'inquiéter. Et tu devrais t'en débarrasser.	}{	Oui. Plus la peine de t'inquiéter. Et tu devrais t'en débarrasser.	}{	471	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and G.Knox_Fess == 1 and G.Knox_Bertfound == 0 and pc.HasItem("item_g_driver_license_gimble") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_driver_license_gimble")	}{	}{	}{	}{	}{	}{	}{	Le mangeur de vie a apprécié son dernier repas. Et tu devrais le faire disparaître maintenant.	}
+{	298	}{	Non, pas encore.	}{	Non, pas encore.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche encore le mangeur de vie.	}
 {	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	301	}{	C'est moche. J'espérais vraiment que tu aurais eu le temps. Tu me tiens au courant, hein ?	}{	C'est moche. J'espérais vraiment que tu aurais eu le temps. Tu me tiens au courant, hein ?	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -480,39 +480,39 @@
 {	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	481	}{	Eh ! Alors, ça avance, le truc dont on a parlé ?	}{	Eh ! Alors, ça avance, le truc dont on a parlé ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Ghoul = 2; G.Knox_Bertram = 2; G.Knox_Powerful = 1; G.Knox_Appear = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	482	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	483	}{	C'est fait. Plus la peine de t'inquiéter.	}{	Oui. Plus la peine de t'inquiéter.	}{	381	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 0) or (IsDead("AsianVamp") and G.Knox_Fess == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
-{	484	}{	C'est fait. Plus la peine de t'inquiéter.	}{	Oui. Plus la peine de t'inquiéter.	}{	471	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 1) or (IsDead("AsianVamp") and G.Knox_Fess == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
-{	485	}{	J'ai parlé à Bertram. . .	}{	J'ai parlé à Bertram. . .	}{	491	}{	}{	G.Knox_Bertfound = 1	}{	}{	}{	}{	}{	}{	}{	J'ai parlé à l'Affreux !	}
-{	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	487	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	483	}{	C'est fait. Plus la peine de t'inquiéter.	}{	C'est fait. Plus la peine de t'inquiéter.	}{	381	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and G.Knox_Fess == 0 and (not pc.HasItem("item_g_driver_license_gimble") or G.Patch_Plus == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
+{	484	}{	C'est fait. Plus la peine de t'inquiéter.	}{	C'est fait. Plus la peine de t'inquiéter.	}{	471	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and G.Knox_Fess == 1 and (not pc.HasItem("item_g_driver_license_gimble") or G.Patch_Plus == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
+{	485	}{	C'est fait. Plus la peine de t'inquiéter. Et tu devrais t'en débarasser.	}{	C'est fait. Plus la peine de t'inquiéter. Et tu devrais t'en débarasser.	}{	381	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and G.Knox_Fess == 0 and pc.HasItem("item_g_driver_license_gimble") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_driver_license_gimble")	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas. Et tu devrais le faire disparaître à présent.	}
+{	486	}{	C'est fait. Plus la peine de t'inquiéter. Et tu devrais t'en débarasser.	}{	C'est fait. Plus la peine de t'inquiéter. Et tu devrais t'en débarasser.	}{	471	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and G.Knox_Fess == 1 and pc.HasItem("item_g_driver_license_gimble") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_driver_license_gimble")	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas. Et tu devrais le faire disparaître à présent.	}
+{	487	}{	J'ai parlé à Bertram. . .	}{	J'ai parlé à Bertram. . .	}{	491	}{	}{	G.Knox_Bertfound = 1	}{	}{	}{	}{	}{	}{	}{	J'ai parlé à l'Affreux !	}
 {	488	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	490	}{	Je regrette, je n'ai pas encore fini. A plus tard.	}{	Je regrette, je n'ai pas encore fini. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rien n'est fait pour l'instant. Adieu.	}
 {	491	}{	Oh, cool. Il sera content quand on sera débarrassé de son problème.	}{	Oh, cool. Il sera content quand on sera débarrassé de son problème.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	492	}{	C'est déjà fait. Plus la peine de s'inquiéter.	}{	C'est déjà fait. Plus la peine de s'inquiéter.	}{	381	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 0) or (IsDead("AsianVamp") and G.Knox_Fess == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
-{	493	}{	C'est déjà fait. Plus la peine de s'inquiéter.	}{	C'est déjà fait. Plus la peine de s'inquiéter.	}{	521	}{	(G.Knox_Quest == 6 and G.Knox_Fess == 1) or (IsDead("AsianVamp") and G.Knox_Fess == 1)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
-{	494	}{	Je lui ai dit que tu avais tout raconté. Il n'était pas très content.	}{	Je lui ai dit que tu avais tout raconté. Il n'était pas très content.	}{	501	}{	G.Bertram_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai dit à l'Affreux que tu m'avais ouvert ton coeur d'or. . .	}
-{	495	}{	Il a dit que vous aviez des plans pour moi depuis le début.	}{	Il a dit que vous aviez des plans pour moi depuis le début.	}{	511	}{	G.Bertram_Plant == 1 and G.Knox_Fess == 0	}{	}{	}{	}{	}{	}{	}{	}{	Il m'a tout dit de vos petites manigances.	}
-{	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	C'est déjà fait. Plus la peine de s'inquiéter.	}{	C'est déjà fait. Plus la peine de s'inquiéter.	}{	381	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and G.Knox_Fess == 0 and (not pc.HasItem("item_g_driver_license_gimble") or G.Patch_Plus == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
+{	493	}{	C'est déjà fait. Plus la peine de s'inquiéter.	}{	C'est déjà fait. Plus la peine de s'inquiéter.	}{	521	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and G.Knox_Fess == 1 and (not pc.HasItem("item_g_driver_license_gimble") or G.Patch_Plus == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
+{	494	}{	C'est déjà fait. Plus la peine de s'inquiéter. Et tu devrais t'en débarasser.	}{	C'est déjà fait. Plus la peine de s'inquiéter. Et tu devrais t'en débarasser.	}{	381	}{	(G.Knox_Quest == 6 and or IsDead("AsianVamp")) and G.Knox_Fess == 0 and pc.HasItem("item_g_driver_license_gimble") and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas. Et tu devrais le faire disparaître à présent.	}
+{	495	}{	C'est déjà fait. Plus la peine de s'inquiéter. Et tu devrais t'en débarasser.	}{	C'est déjà fait. Plus la peine de s'inquiéter. Et tu devrais t'en débarasser.	}{	521	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and G.Knox_Fess == 1 and pc.HasItem("item_g_driver_license_gimble") and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas. Et tu devrais le faire disparaître à présent.	}
+{	496	}{	Je lui ai dit que tu avais tout raconté. Il n'était pas très content.	}{	Je lui ai dit que tu avais tout raconté. Il n'était pas très content.	}{	501	}{	G.Bertram_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai dit à l'Affreux que tu m'avais ouvert ton coeur d'or. . .	}
+{	497	}{	Il a dit que vous aviez des plans pour moi depuis le début.	}{	Il a dit que vous aviez des plans pour moi depuis le début.	}{	511	}{	G.Bertram_Plant == 1 and G.Knox_Fess == 0	}{	}{	}{	}{	}{	}{	}{	}{	Il m'a tout dit de vos petites manigances.	}
 {	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	500	}{	J'y travaille encore. A plus tard.	}{	J'y travaille encore. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Rien n'est fait pour l'instant. Adieu.	}
 {	501	}{	La vache, c'est dur, ça. Bon sang ! Pourquoi t'as fait ça ? Moi qui nous croyais à la coule !	}{	La vache, c'est dur, ça. Bon sang ! Pourquoi t'as fait ça ? Moi qui nous croyais à la coule !	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	502	}{	Ne t'inquiète pas. J'ai fait ce qu'il fallait.	}{	Ne t'inquiète pas. J'ai fait ce qu'il fallait.	}{	521	}{	G.Knox_Quest == 6 or IsDead("AsianVamp")	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
-{	503	}{	C'est comme ça. Tu croyais que ce serait facile d'être une goule ?	}{	C'est comme ça. Tu croyais que ce serait facile d'être une goule ?	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Porte ta croix, petite goule aux oeufs d'or. . .	}
-{	504	}{	Qui sème le vent. . .	}{	Qui sème le vent. . .	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce qui se va, revient ... comme mon esprit!	}
-{	505	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	Ne t'inquiète pas. J'ai fait ce qu'il fallait.	}{	Ne t'inquiète pas. J'ai fait ce qu'il fallait.	}{	521	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and (not pc.HasItem("item_g_driver_license_gimble") or G.Patch_Plus == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
+{	503	}{	Ne t'inquiète pas. J'ai fait ce qu'il fallait. Et tu devrais t'en débarasser.	}{	Ne t'inquiète pas. J'ai fait ce qu'il fallait. Et tu devrais t'en débarasser.	}{	521	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and pc.HasItem("item_g_driver_license_gimble") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_driver_license_gimble")	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas. Et tu devrais le faire disparaître à présent.	}
+{	504	}{	C'est comme ça. Tu croyais que ce serait facile d'être une goule ?	}{	C'est comme ça. Tu croyais que ce serait facile d'être une goule ?	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Porte ta croix, petite goule aux oeufs d'or. . .	}
+{	505	}{	Qui sème le vent. . .	}{	Qui sème le vent. . .	}{	531	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce qui se va, revient ... comme mon esprit!	}
 {	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	509	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	511	}{	[souriant, fier et gêné]Ouais, Bertram m'apprend les ficelles, et c'était un petit test, traiter avec toi. Mais ça reste sérieux, comme affaire de vampire. Il faut éliminer l'asiatique. Ca avance, d'ailleurs ?	}{	[souriant, fier et gêné]Ouais, Bertram m'apprend les ficelles, et c'était un petit test, traiter avec toi. Mais ça reste sérieux, comme affaire de vampire. Il faut éliminer l'asiatique. Ca avance, d'ailleurs ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	512	}{	C'est fait.	}{	C'est fait.	}{	521	}{	G.Knox_Quest == 6 or IsDead("AsianVamp")	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
-{	513	}{	Contrairement à toi, j'ai pu mener la tâche à bien.	}{	Contrairement à toi, j'ai pu mener la tâche à bien.	}{	521	}{	G.Knox_Quest == 6 or IsDead("AsianVamp")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai fait ce dont tu étais incapable, petite goule. . .	}
-{	514	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	515	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	512	}{	C'est fait.	}{	C'est fait.	}{	521	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and (not pc.HasItem("item_g_driver_license_gimble") or G.Patch_Plus == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
+{	513	}{	Contrairement à toi, j'ai pu mener la tâche à bien.	}{	Contrairement à toi, j'ai pu mener la tâche à bien.	}{	521	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and (not pc.HasItem("item_g_driver_license_gimble") or G.Patch_Plus == 0)	}{	}{	}{	}{	}{	}{	}{	}{	J'ai fait ce dont tu étais incapable, petite goule. . .	}
+{	514	}{	C'est fait. Tu devrais t'en débarasser à présent.	}{	C'est fait. Tu devrais t'en débarasser à présent.	}{	521	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and pc.HasItem("item_g_driver_license_gimble") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_driver_license_gimble")	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas. Et tu devrais le faire disparaître à présent.	}
+{	515	}{	Contrairement à toi, j'ai pu mener la tâche à bien. Tu devrais t'en débarasser à présent.	}{	Contrairement à toi, j'ai pu mener la tâche à bien. Tu devrais t'en débarasser à présent.	}{	521	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and pc.HasItem("item_g_driver_license_gimble") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_driver_license_gimble")	}{	}{	}{	}{	}{	}{	}{	J'ai fait ce dont tu étais incapable, petite goule. . .. Et tu devrais le faire disparaître à présent.	}
 {	516	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	517	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	518	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -839,7 +839,7 @@
 {	839	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	840	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	841	}{	Merci.	}{	Merci.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	842	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	842	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	843	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	844	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	845	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

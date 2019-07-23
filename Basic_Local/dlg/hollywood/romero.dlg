@@ -588,7 +588,7 @@
 {	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	591	}{	J'aime la tournure que prend la conversation. A quoi vous pensez ?	}{	J'aime la tournure que prend la conversation. A quoi vous pensez ?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Romero_Boink = 3	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	J'aime la tournure que prend la conversation. A quoi vous pensez ?	}{	J'aime la tournure que prend la conversation. A quoi vous pensez ?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	592	}{	Venez ici, je vais vous le chuchoter à l'oreille.	}{	Venez ici, je vais vous le chuchoter à l'oreille.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Tant de voix. . . laissez-moi les ignorer un instant.	}
 {	593	}{	Du dessert.	}{	Du dessert.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Du dessert.	}
 {	594	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -672,7 +672,7 @@
 {	672	}{	Je vais vous épargner le trajet. Je vais vous rapporter quelqu'un. . .	}{	Je vais vous épargner le trajet. Je vais vous rapporter quelqu'un. . .	}{	621	}{	G.Romero_Quest != 4	}{	}{	}{	}{	}{	}{	}{	}{	Ce trajet n'est pas dans votre avenir, il est dans le mien.	}
 {	673	}{	J'vous rapporte quelqu'un.	}{	J'vous rapporte quelqu'un.	}{	621	}{	G.Romero_Quest == 4	}{	}{	}{	}{	}{	}{	}{	}{	J'attraperai quelque proie pour toi.	}
 {	674	}{	Alors vous êtes encore chaud ?	}{	Alors vous êtes encore chaud ?	}{	551	}{	Appearance 2 & G.Romero_Crush == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je vois que vous brûler intérieurement !	}
-{	675	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	675	}{	Je pense savoir ce que tu veux dire.	}{	Je pense savoir ce que tu veux dire.	}{	551	}{	Appearance 2 & not pc.IsMale()	}{	G.Romero_Crush = 1	}{	}{	}{	}{	}{	}{	}{	Je vois ce que tu vois.	}
 {	676	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	678	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

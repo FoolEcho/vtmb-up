@@ -300,7 +300,7 @@
 {	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	301	}{	Ha, encore bonjour monsieur. Trouvé la clé que moi chercher ? [fait bruit de clin d'oeil avec le coin de la bouche]	}{	Ha, encore bonjour madame. Trouvé la clé que moi chercher ? [fait bruit de clin d'oeil avec le coin de la bouche]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	302	}{	Je regrette, mais Ji Wen Ja m'offre trente pour cent contre votre clé.	}{	Je regrette, mais Ji Wen Ja m'offre trente pour cent contre votre clé.	}{	251	}{	G.Ji_Lu == 2 and G.Ji_Killed != 1 and G.Lu_Ji != 2	}{	}{	}{	}{	}{	}{	}{	}{	Contre votre clé, Ji Wen Ja a offert 30 pour cent de son trésor. . .	}
-{	303	}{	J'ai parlé à Ji Wen Ja. . .	}{	J'ai parlé à Ji Wen Ja. . .	}{	231	}{	G.Ji_Lu == 3 and G.Ji_Killed != 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai parlé avec Ji Wen Ja. . .	}
+{	303	}{	J'ai parlé à Ji Wen Ja. . .	}{	J'ai parlé à Ji Wen Ja. . .	}{	231	}{	G.Ji_Lu == 3 and G.Ji_Killed != 1 and G.Lu_Ji != 3	}{	}{	}{	}{	}{	}{	}{	}{	J'ai parlé avec Ji Wen Ja. . .	}
 {	304	}{	On dirait que la valeur de la clé vient d'augmenter. Ji m'en proposait soixante-dix pour cent.	}{	On dirait que la valeur de la clé vient d'augmenter. Ji m'en proposait soixante-dix pour cent.	}{	271	}{	G.Ji_Lu == 4 and G.Ji_Killed != 1 and G.Lu_Ji != 4	}{	}{	}{	}{	}{	}{	}{	}{	Contre votre clé, Ji Wen Ja a offert 70 pour cent de son magot. . .	}
 {	305	}{	Ji va me donner quatre-vingt pour cent contre votre clé.	}{	Ji va me donner quatre-vingt pour cent contre votre clé.	}{	281	}{	G.Ji_Lu == 5 and G.Ji_Killed != 1 and G.Lu_Ji != 5	}{	}{	}{	}{	}{	}{	}{	}{	Contre votre clé, Ji Wen Ja a offert 80 pour cent de son oeuf au nid. . .	}
 {	306	}{	J'ai convaincu Ji Wen Ja de faire la paix avec vous. Vous étiez amis avant. 	}{	J'ai convaincu Ji Wen Ja de faire la paix avec vous. Vous étiez amis avant. 	}{	321	}{	G.Ji_Lu == 6 and G.Ji_Killed != 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai parlé à Ji Wen Ja pour guérir cette meute blessée. . .	}
@@ -322,11 +322,11 @@
 {	322	}{	Il doit bien y avoir autre chose que de la haine entre vous deux.	}{	Il doit bien y avoir autre chose que de la haine entre vous deux.	}{	331	}{	Persuasion 7 & pc.humanity >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Vos liens ne peuvent être si fragiles. . .	}
 {	323	}{	Il doit y avoir une solution qui ne vous coûtera pas la vie, à l'un ou aux deux.	}{	Il doit y avoir une solution qui ne vous coûtera pas la vie, à l'un ou aux deux.	}{	331	}{	Intimidate 7 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Abandonnez cette route, ou vous mangerez tous les deux les rhododendrons par la racine. . .	}
 {	324	}{	Si vous partagez 50-50, ça fait encore beaucoup d'argent, non ?	}{	Si vous partagez 50-50, ça fait encore beaucoup d'argent, non ?	}{	331	}{	Persuasion 7 & pc.humanity < 5	}{	}{	}{	}{	}{	}{	}{	}{	Enterrez la hache et partagez ce trésor. . .	}
-{	325	}{	Vous avez raison. Je le fais pour quarante pour cent. Je reviens avec la clé de Ji Wen Ja.	}{	Vous avez raison. Je le fais pour quarante pour cent. Je reviens avec la clé de Ji Wen Ja.	}{	0	}{	G.Lu_Ji == 1 and G.Ji_Lu != 6	}{	G.Lu_Ji = 2	}{	}{	}{	}{	}{	}{	}{	Je vous rapporte la clé du nid contre 40 pour cent de l'oeuf. Adieu.	}
-{	326	}{	Vous avez raison. Je le fais pour soixante pour cent. Je reviens avec la clé de Ji Wen Ja.	}{	Vous avez raison. Je le fais pour soixante pour cent. Je reviens avec la clé de Ji Wen Ja.	}{	0	}{	G.Lu_Ji == 2 and G.Ji_Lu != 6	}{	G.Lu_Ji = 3	}{	}{	}{	}{	}{	}{	}{	Je vous rapporte la clé du nid contre 60 pour cent de l'oeuf. Adieu.	}
-{	327	}{	Vous avez raison. Je le fais pour quatre-vingt pour cent. Je reviens avec la clé de Ji Wen Ja.	}{	Vous avez raison. Je le fais pour quatre-vingt pour cent. Je reviens avec la clé de Ji Wen Ja.	}{	0	}{	G.Lu_Ji == 3 and G.Ji_Lu != 6	}{	G.Lu_Ji = 4	}{	}{	}{	}{	}{	}{	}{	Je vous rapporte la clé du nid contre 80 pour cent de l'oeuf. Adieu.	}
-{	328	}{	Vous avez raison. Je le fais pour vingt pour cent. Je reviens avec la clé de Ji Wen Ja.	}{	Vous avez raison. Je le fais pour vingt pour cent. Je reviens avec la clé de Ji Wen Ja.	}{	0	}{	G.Lu_Ji == 0 and G.Ji_Lu != 6	}{	G.Lu_Ji = 1	}{	}{	}{	}{	}{	}{	}{	Je vous rapporte la clé du nid contre 80 pour cent de l'oeuf. Adieu.	}
-{	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	325	}{	Vous avez raison. Je le fais pour vingt pour cent. Je reviens avec la clé de Ji Wen Ja.	}{	Vous avez raison. Je le fais pour vingt pour cent. Je reviens avec la clé de Ji Wen Ja.	}{	0	}{	G.Lu_Ji == 0 and G.Ji_Lu != 6	}{	G.Lu_Ji = 1	}{	}{	}{	}{	}{	}{	}{	Je vous rapporte la clé du nid contre 80 pour cent de l'oeuf. Adieu.	}
+{	326	}{	Vous avez raison. Je le fais pour quarante pour cent. Je reviens avec la clé de Ji Wen Ja.	}{	Vous avez raison. Je le fais pour quarante pour cent. Je reviens avec la clé de Ji Wen Ja.	}{	0	}{	G.Lu_Ji == 1 and G.Ji_Lu != 6	}{	G.Lu_Ji = 2	}{	}{	}{	}{	}{	}{	}{	Je vous rapporte la clé du nid contre 40 pour cent de l'oeuf. Adieu.	}
+{	327	}{	Vous avez raison. Je le fais pour soixante pour cent. Je reviens avec la clé de Ji Wen Ja.	}{	Vous avez raison. Je le fais pour soixante pour cent. Je reviens avec la clé de Ji Wen Ja.	}{	0	}{	G.Lu_Ji == 2 and G.Ji_Lu != 6	}{	G.Lu_Ji = 3	}{	}{	}{	}{	}{	}{	}{	Je vous rapporte la clé du nid contre 60 pour cent de l'oeuf. Adieu.	}
+{	328	}{	Vous avez raison. Je le fais pour quatre-vingt pour cent. Je reviens avec la clé de Ji Wen Ja.	}{	Vous avez raison. Je le fais pour quatre-vingt pour cent. Je reviens avec la clé de Ji Wen Ja.	}{	0	}{	G.Lu_Ji == 3 and G.Ji_Lu != 6	}{	G.Lu_Ji = 4	}{	}{	}{	}{	}{	}{	}{	Je vous rapporte la clé du nid contre 80 pour cent de l'oeuf. Adieu.	}
+{	329	}{	Maintenant que vous m'offrez le même pourcentage, l'un de vous doit mourir.	}{	Maintenant que vous m'offrez le même pourcentage, l'un de vous doit mourir.	}{	391	}{	G.Lu_Ji > 3 and G.Ji_Lu != 6	}{	}{	}{	}{	}{	}{	}{	}{	Je vais faire la même chose avec votre pécule à présent, alors l'un de vous doit partir.	}
 {	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	331	}{	Peut-être. Lu Fang pas savoir. Comment faire confiance ? Depuis si longtemps lui vouloir tuer Lu Fang. Maintenant différent ? Non. . . Lu Fang pas convaincu.	}{	Peut-être. Lu Fang pas savoir. Comment faire confiance ? Depuis si longtemps lui vouloir tuer Lu Fang. Maintenant différent ? Non. . . Lu Fang pas convaincu.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	332	}{	Vous voulez le tuer aussi. Ca se défend.	}{	Vous voulez le tuer aussi. Ca se défend.	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre boucherie vous aveugle tous les deux. 	}
@@ -389,7 +389,7 @@
 {	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	391	}{	Pfft. Lu Fang vieux, quand même corriger vous. Rendez-vous dans rue, visage pâle !	}{	Pfft. Lu Fang vieux, quand même corriger vous. Rendez-vous dans rue, visage pâle !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Lu_Kickass = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	392	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	392	}{	Peu importe.	}{	Peu importe.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pas de bottage de cul aujourd'hui.	}
 {	393	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	394	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	395	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -479,7 +479,7 @@
 {	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	481	}{	Rebonjour. . . Bon. . . Lu Fang regretter vous perdre contrat pour tuer vieil homme. C'est juste business, vous comprendre ?	}{	Rebonjour. . . Bon. . . Lu Fang regretter vous perdre contrat pour tuer vieil homme. C'est juste business, vous comprendre ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	482	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	482	}{	Ce n'est rien.	}{	Ce n'est rien.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nous ne sommes pas inquiets.	}
 {	483	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	484	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	485	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -571,7 +571,7 @@
 {	571	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	572	}{	(Starting Condition)	}{	}{	521	}{	G.Lu_Kickass == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	573	}{	(Starting Condition)	}{	}{	471	}{	G.Lu_Ji == 6	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	574	}{	(Starting Condition)	}{	}{	481	}{	G.Lu_Ji == 7 or G.Ji_Lu = 7	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	574	}{	(Starting Condition)	}{	}{	481	}{	G.Lu_Ji == 7 or G.Ji_Lu == 7	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	575	}{	(Starting Condition)	}{	}{	441	}{	G.Lu_Done == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	576	}{	(Starting Condition)	}{	}{	451	}{	G.Lu_Done == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	577	}{	(Starting Condition)	}{	}{	461	}{	G.Lu_Done == 3	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -318,7 +318,7 @@
 {	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	321	}{	[froide, furieuse]Vous m'avez beaucoup déçue. Votre destination n'était pas celle-ci mais votre chemin s'arrête ici et votre but reste inaccompli.	}{	[froide, furieuse]Vous m'avez beaucoup déçue. Votre destination n'était pas celle-ci mais votre chemin s'arrête ici et votre but reste inaccompli.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	[froide, furieuse]Vous m'avez beaucoup déçue. Votre destination n'était pas celle-ci mais votre chemin s'arrête ici et votre but reste inaccompli.	}{	[froide, furieuse]Vous m'avez beaucoup déçue. Votre destination n'était pas celle-ci mais votre chemin s'arrête ici et votre but reste inaccompli.	}{	#	}{	npc.SetDisposition("Anger", 1); pc.SetQuest("Ming", 4)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	322	}{	Ce n'est pas à vous de décider de mon but.	}{	Ce n'est pas à vous de décider de mon but.	}{	331	}{	IsClan(pc,"Ventrue") or IsClan(pc,"Toreador") or pc.humanity > 6	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	323	}{	Ne me racontez pas de salades. Vous n'en savez pas plus que les autres.	}{	Ne me racontez pas de salades. Vous n'en savez pas plus que les autres.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon but est au bout d'un chemin qui vous est inconnu, maîtresse !	}
 {	324	}{	Fermez-la et donnez-moi la clé.	}{	Fermez-la et donnez-moi la clé.	}{	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre vie contre la clé, maîtresse des miroirs.	}

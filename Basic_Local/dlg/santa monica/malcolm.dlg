@@ -33,7 +33,7 @@
 {	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	34	}{	Mais il y a une fille là-bas, je crois qu'elle va mourir.	}{	Mais il y a une fille là-bas, je crois qu'elle va mourir.	}{	11	}{	G.Heather_Know == 1 and G.Heather_Drank == 0 and G.Malcolm_Bother == 0 and not IsClan(pc,"Malkavian")	}{	G.Malcolm_Bother = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	35	}{	Vous êtes Malcolm ? Votre femme sait que vous la trompez ?	}{	Vous êtes Malcolm ? Votre femme sait que vous la trompez ?	}{	61	}{	G.Malcolm_Affair == 3 and G.Malcolm_Wife == 1	}{	}{	}{	}{	}{	}{	}{	}{	C'est vous le docteur qui aime jouer au docteur avec ses infirmières ?	}
-{	36	}{	. . .	}{	. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	S'assoir ou ne pas s'assoir.	}
 {	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -146,8 +146,8 @@
 {	146	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	150	}{	Vous êtes une honte. A mort le Caitiff !	}{	Vous êtes une honte. A mort le Caitiff !	}{	0	}{	}{	G.Killer_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	Alors vous mourrez sans clan !	}
+{	149	}{	Vous êtes dangereux. Mourrez à présent !	}{	Vous êtes dangereux. Mourrez à présent !	}{	0	}{	G.Bertram_Caitiff == 0	}{	G.Killer_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	Mourrez, être dangereux !	}
+{	150	}{	Vous êtes une honte. A mort le Caitiff !	}{	Vous êtes une honte. A mort le Caitiff !	}{	0	}{	G.Bertram_Caitiff == 1	}{	G.Killer_Hostile = 1	}{	}{	}{	}{	}{	}{	}{	Alors vous mourrez sans clan !	}
 {	151	}{	[brisé, terrifié]Non, il faut que ça cesse ! Je ne peux plus vivre comme ça. Vous avez raison. Oh mon dieu, vous avez raison. Je ne recommencerai jamais. Pardonnez-moi.	}{	[brisé, terrifié]Non, il faut que ça cesse ! Je ne peux plus vivre comme ça. Vous avez raison. Oh mon dieu, vous avez raison. Je ne recommencerai jamais. Pardonnez-moi.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	152	}{	Très bien. Je vous laisse la mort sauve.	}{	Très bien. Je vous laisse la mort sauve.	}{	0	}{	Humanity 5	}{	G.Killer_Freed = 1; pc.SetQuest("Serial",9)	}{	}{	}{	}{	}{	}{	}{	Partez et que nos chemins ne se croisent plus jamais.	}
 {	153	}{	Alors déguerpissez. Vous avez de la chance.	}{	Alors déguerpissez. Vous avez de la chance.	}{	0	}{	Humanity -5	}{	G.Killer_Freed = 1; pc.SetQuest("Serial",9)	}{	}{	}{	}{	}{	}{	}{	La chance sourit à votre misérable carcasse. Je vous laisse.	}
@@ -180,7 +180,7 @@
 {	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	181	}{	Je ne vois pas en quoi ça vous regarde.	}{	Je ne vois pas en quoi ça vous regarde.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	182	}{	Pardon, je ne voulais pas me mêler de ce qui ne me regarde pas.	}{	Pardon, je ne voulais pas me mêler de ce qui ne me regarde pas.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sombre et noir, votre fardeau.	}
-{	183	}{	Ah, d'accord. Au revoir.	}{	D'accord, si vous le prenez comme ça.	}{	191	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	183	}{	Ah, d'accord. Au revoir.	}{	D'accord, si vous le prenez comme ça.	}{	201	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -198,7 +198,7 @@
 {	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	201	}{	Vous pourriez me laisser ?	}{	Vous pourriez me laisser ?	}{	#	}{	}{	G.Killer_Freed = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Vous pourriez me laisser ?	}{	Vous pourriez me laisser ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	202	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	203	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

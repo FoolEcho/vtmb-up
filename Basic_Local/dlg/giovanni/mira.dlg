@@ -1,6 +1,6 @@
 {	1	}{	Ca pourrait autant être une soirée costumée. . . tout le monde sourit. Comme si ce n'était pas un concours de beauté organisé par le patriarche. Bon. Mais c'est un concours, et je suis là pour le gagner.	}{	Ca pourrait autant être une soirée costumée. . . tout le monde sourit. Comme si ce n'était pas un concours de beauté organisé par le patriarche. Bon. Mais c'est un concours, et je suis là pour le gagner.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	De quoi parlez-vous ?	}{	De quoi parlez-vous ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'arrive pas à suivre vos pensées. 	}
-{	3	}{	Dites-moi ce que vous savez sur le sarcophage.	}{	Dites-moi ce que vous savez sur le sarcophage.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas votre histoire, je veux le Sarcophage.	}
+{	3	}{	Dites-moi ce que vous savez sur le sarcophage.	}{	Dites-moi ce que vous savez sur le sarcophage.	}{	161	}{	G.Story_State > 55	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas votre histoire, je veux le Sarcophage.	}
 {	4	}{	Je suis Victor. Ravi de faire votre connaissance.	}{	Je suis Maria. Ravie de faire votre connaissance.	}{	11	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Je suis aussi membre de la famille, je suis mmm-mnn hemhem. . . et vous ?	}
 {	5	}{	Que le meilleur gagne.	}{	Que le meilleur gagne.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce trophée est à moi !	}
 {	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -169,7 +169,7 @@
 {	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	171	}{	Si vous ne savez même pas que c'est un concours, alors vous n'avez pas à vous soucier de le gagner.	}{	Si vous ne savez même pas que c'est un concours, alors vous n'avez pas à vous soucier de le gagner.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	172	}{	Dites-moi ce que vous savez sur le sarcophage.	}{	Dites-moi ce que vous savez sur le sarcophage.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas votre histoire, je veux le Sarcophage.	}
+{	172	}{	Dites-moi ce que vous savez sur le sarcophage.	}{	Dites-moi ce que vous savez sur le sarcophage.	}{	161	}{	G.Story_State > 55	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas votre histoire, je veux le Sarcophage.	}
 {	173	}{	Je suis Victor. Ravi de faire votre connaissance.	}{	Je suis Maria. Ravie de faire votre connaissance.	}{	11	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Je suis aussi membre de la famille, je suis mmm-mnn hemhem. . . et vous ?	}
 {	174	}{	C'est ce que vous croyez. J'ai un concours à gagner, excusez-moi.	}{	C'est ce que vous croyez. J'ai un concours à gagner, excusez-moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce trophée est à moi !	}
 {	175	}{	C'est ça. Amusez-vous bien.	}{	C'est ça. Amusez-vous bien.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Inutile, j'irai me renseigner ailleurs. . .	}
@@ -251,7 +251,7 @@
 {	251	}{	Oh. . . rebonjour.	}{	Oh. . . rebonjour.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	252	}{	J'ai oublié de me présenter. Je m'appelle Victor.	}{	J'ai oublié de me présenter. Je m'appelle Maria.	}{	11	}{	G.Mira_Introduce == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je suis aussi membre de la famille, je suis mmm-mnn hemhem. . . et vous ?	}
 {	253	}{	J'ai peut-être entendu quelque chose qui vous intéressera sur votre famille.	}{	J'ai peut-être entendu quelque chose qui vous intéressera sur votre famille.	}{	271	}{	G.Mira_Gossip == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai peut-être des secrets honteux à vendre. . .	}
-{	254	}{	Dites-moi ce que vous savez sur le sarcophage.	}{	Dites-moi ce que vous savez sur le sarcophage.	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas votre histoire, je veux le Sarcophage.	}
+{	254	}{	Dites-moi ce que vous savez sur le sarcophage.	}{	Dites-moi ce que vous savez sur le sarcophage.	}{	161	}{	G.Story_State > 55	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas votre histoire, je veux le Sarcophage.	}
 {	255	}{	Excusez-moi. Je vous ai prise pour quelqu'un d'autre.	}{	Excusez-moi. Je vous ai prise pour quelqu'un d'autre.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est tout. A plus tard.	}
 {	256	}{	Bonjour. Au revoir.	}{	Bonjour. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bonjour. Au revoir.	}
 {	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

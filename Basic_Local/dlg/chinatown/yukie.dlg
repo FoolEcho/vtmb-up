@@ -240,7 +240,7 @@
 {	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	241	}{	[Nani] (Quoi ?)	}{	[Nani] (Quoi ?)	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	242	}{	Qu'est-ce que vous savez sur les Kuei-Jin ?	}{	Qu'est-ce que vous savez sur les Kuei-Jin ?	}{	251	}{	G.Yukie_Kuei == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les choses dans le temple. . . Parlez-m'en.	}
-{	243	}{	Autre chose que vous pourriez me dire sur l'Hengeyokai ?	}{	Autre chose que vous pourriez me dire sur l'Hengeyokai ?	}{	261	}{	G.Yukie_Fish == 0	}{	}{	}{	}{	}{	}{	}{	}{	Son odeur est forte. Pourquoi ?	}
+{	243	}{	Autre chose que vous pourriez me dire sur l'Hengeyokai ?	}{	Autre chose que vous pourriez me dire sur l'Hengeyokai ?	}{	261	}{	G.Yukie_Fish == 0 and G.Yukie_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	Son odeur est forte. Pourquoi ?	}
 {	244	}{	Voila une excellente lame, me la vendriez-vous ?	}{	Voila une excellente lame, me la vendriez-vous ?	}{	271	}{	G.Yukie_Sword == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je vous échange quelques hommes verts contre cette belle lame.	}
 {	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -301,7 +301,7 @@
 {	301	}{	[Doko desu ka] (Où est-il ?) Où ça. . . ?	}{	[Doko desu ka] (Où est-il ?) Où ça. . . ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	302	}{	Il est au marché au poisson. Il ne sait pas que vous le pourchassez.	}{	Il est au marché au poisson. Il ne sait pas que vous le pourchassez.	}{	311	}{	G.Zyg_Yukie == 1 and G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Marché aux poissons. Il ignore qu'il est poursuivi.	}
 {	303	}{	Je lui ai dit de me retrouver au marché au poisson. Nous pourrons l'attaquer par surprise.	}{	Je lui ai dit de me retrouver au marché au poisson. Nous pourrons l'attaquer par surprise.	}{	321	}{	G.Zyg_Meet == 1 and G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Il cache son odeur dans le marché aux poissons. Surprenons-le, comme des ninjas.	}
-{	304	}{	Désolé, mais je l'ai tué au Red Dragon.	}{	Désolé, mais je l'ai tué au Red Dragon.	}{	391	}{	G.Zyg_Human == 1	}{	pc.SetQuest("Yukie",7)	}{	}{	}{	}{	}{	}{	}{	Ca ressemblait à un homme et je l'ai tué.	}
+{	304	}{	Désolé, mais je l'ai tué au Red Dragon.	}{	Désolé, mais je l'ai tué au Red Dragon.	}{	391	}{	G.Zyg_Human == 1	}{	G.Yukie_Quest = 2; pc.SetQuest("Yukie",7)	}{	}{	}{	}{	}{	}{	}{	Ca ressemblait à un homme et je l'ai tué.	}
 {	305	}{	Je le cherche encore. Je regrette.	}{	Je le cherche encore. Je regrette.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Celle d'un lieu que j'ignore. Je pars.	}
 {	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -410,7 +410,7 @@
 {	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	411	}{	[Dozo] (Please. . .)	}{	[Dozo] (Please. . .)	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	412	}{	D'accord, j'irai d'abord.	}{	D'accord, j'irai d'abord.	}{	0	}{	G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Allons à la pêche !	}
-{	413	}{	Désolé, mais j'ai déjà tué l'Hengeyokai au Red Dragon.	}{	Désolé, mais j'ai déjà tué l'Hengeyokai au Red Dragon.	}{	391	}{	G.Zyg_Human == 1	}{	pc.SetQuest("Yukie",7)	}{	}{	}{	}{	}{	}{	}{	Ca ressemblait à un homme et je l'ai tué.	}
+{	413	}{	Désolé, mais j'ai déjà tué l'Hengeyokai au Red Dragon.	}{	Désolé, mais j'ai déjà tué l'Hengeyokai au Red Dragon.	}{	391	}{	G.Zyg_Human == 1	}{	G.Yukie_Quest = 2; pc.SetQuest("Yukie",7)	}{	}{	}{	}{	}{	}{	}{	Ca ressemblait à un homme et je l'ai tué.	}
 {	414	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -459,7 +459,7 @@
 {	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	461	}{	[Hai] (Oui !) Mon épée est encore enragée. . . [Ikimasho] (Allons-y) - tuons des fantômes ensemble.	}{	[Hai] (Oui !) Mon épée est encore enragée. . . [Ikimasho] (Allons-y) - tuons des fantômes ensemble.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	462	}{	Si vous voulez venir, suivez-moi.	}{	Si vous voulez venir, suivez-moi.	}{	0	}{	}{	G.Yukie_Follow = 1	}{	}{	}{	}{	}{	}{	}{	Aidez-vous. Faites comme je fais.	}
+{	462	}{	Si vous voulez venir, suivez-moi.	}{	Si vous voulez venir, suivez-moi.	}{	491	}{	}{	G.Yukie_Follow = 1	}{	}{	}{	}{	}{	}{	}{	Aidez-vous. Faites comme je fais.	}
 {	463	}{	J'ai changé d'avis. Vous attendez ici.	}{	J'ai changé d'avis. Vous attendez ici.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit change constamment. Vous restez avec votre épée en colère, je vais y aller.	}
 {	464	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -469,7 +469,7 @@
 {	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	471	}{	Ya Ta !	}{	Ya Ta !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	472	}{	Génial, je suis curieux de savoir ce que vous pouvez faire.	}{	Génial, je suis curieuse de savoir ce que vous pouvez faire.	}{	0	}{	}{	G.Yukie_Shortcut = 1	}{	}{	}{	}{	}{	}{	}{	Je m'interroge à propos de votre magie.	}
+{	472	}{	Génial, je suis curieux de savoir ce que vous pouvez faire.	}{	Génial, je suis curieuse de savoir ce que vous pouvez faire.	}{	481	}{	}{	G.Yukie_Shortcut = 1	}{	}{	}{	}{	}{	}{	}{	Je m'interroge à propos de votre magie.	}
 {	473	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	474	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -479,7 +479,7 @@
 {	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	481	}{	Haa ! [Cri de bataille]	}{	Haa ! [Cri de bataille]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	482	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	482	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	483	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	484	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	485	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -489,7 +489,7 @@
 {	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	491	}{	Yaa ! [cri de bataille]	}{	Yaa ! [cri de bataille]	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	492	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	493	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	494	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	495	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

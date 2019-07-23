@@ -182,14 +182,14 @@
 {	182	}{	Oui. Le voilà. 	}{	Oui. Le voilà. 	}{	201	}{	G.Patch_Plus == 0 and G.Mercurio_Loot == 1 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250)	}{	}{	}{	}{	}{	}{	}{	Voici votre or, Mercure.	}
 {	183	}{	Votre argent ? Oui ! Oui, bien sûr. Tenez.	}{	Votre argent ? Oui ! Oui, bien sûr. Tenez.	}{	201	}{	G.Patch_Plus == 0 and G.Mercurio_Loot == 0 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250)	}{	}{	}{	}{	}{	}{	}{	Votre or ? OUI ! Voici votre or, Mercure. . .	}
 {	184	}{	Non, je regrette, je ne l'ai pas trouvé.	}{	Non, je regrette, je ne l'ai pas trouvé.	}{	821	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes mains sont aussi vides que mon crâne. . .	}
-{	185	}{	Oui. Le voilà. 	}{	Oui. Le voilà. 	}{	201	}{	G.Patch_Plus == 1 and G.Mercurio_Loot == 1 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250)	}{	}{	}{	}{	}{	}{	}{	Voici votre or, Mercure.	}
+{	185	}{	Oui. Le voilà. 	}{	Oui. Le voilà. 	}{	201	}{	G.Patch_Plus == 1 and G.Mercurio_Loot == 1 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250); pc.AwardExperience("Astro04")	}{	}{	}{	}{	}{	}{	}{	Voici votre or, Mercure.	}
 {	186	}{	Votre argent ? Oui ! Oui, bien sûr. Tenez.	}{	Votre argent ? Oui ! Oui, bien sûr. Tenez.	}{	201	}{	G.Patch_Plus == 1 and G.Mercurio_Loot == 0 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250); FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Votre or ? OUI ! Voici votre or, Mercure. . .	}
 {	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	191	}{	Super, génial - j'espère qu'ils ont eu mal. Vous avez récupéré mon argent.	}{	Super, génial - j'espère qu'ils ont eu mal. Vous avez récupéré mon argent.	}{	#	}{	npc.SetDisposition("lay", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	192	}{	Oui. Le voilà. 	}{	Oui. Le voilà. 	}{	201	}{	G.Patch_Plus == 0 and G.Mercurio_Loot == 1 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250); pc.AwardExperience("Astro04")	}{	}{	}{	}{	}{	}{	}{	Voici votre or, Mercure.	}
+{	192	}{	Oui. Le voilà. 	}{	Oui. Le voilà. 	}{	201	}{	G.Patch_Plus == 0 and G.Mercurio_Loot == 1 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250)	}{	}{	}{	}{	}{	}{	}{	Voici votre or, Mercure.	}
 {	193	}{	Votre argent ? Oui ! Oui, bien sûr. Tenez.	}{	Votre argent ? Oui ! Oui, bien sûr. Tenez.	}{	201	}{	G.Patch_Plus == 0 and G.Mercurio_Loot == 0 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250)	}{	}{	}{	}{	}{	}{	}{	Votre or ? OUI ! Voici votre or, Mercure. . .	}
 {	194	}{	Non, je regrette, je ne l'ai pas trouvé.	}{	Non, je regrette, je ne l'ai pas trouvé.	}{	821	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes mains sont aussi vides que mon crâne. . .	}
 {	195	}{	Oui. Le voilà. 	}{	Oui. Le voilà. 	}{	201	}{	G.Patch_Plus == 1 and G.Mercurio_Loot == 1 and pc.CurrentMoney() >= 250	}{	pc.MoneyRemove(250); pc.AwardExperience("Astro04")	}{	}{	}{	}{	}{	}{	}{	Voici votre or, Mercure.	}
@@ -459,7 +459,7 @@
 {	459	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	461	}{	Voilà ce que j'ai.	}{	Voilà ce que j'ai.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	462	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	462	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	463	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	464	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -949,10 +949,10 @@
 {	949	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	950	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	951	}{	Oh, au fait. . . j'ai rendu visite à nos amis sur la colline ce matin. . . Ca fait mal, une overdose. . . Surtout quand on a les rotules à un mètre des genoux. . . Eh oui, la vengeance, c'est pas toujours drôle. . .	}{	Oh, au fait. . . j'ai rendu visite à nos amis sur la colline ce matin. . . Ca fait mal, une overdose. . . Surtout quand on a les rotules à un mètre des genoux. . . Eh oui, la vengeance, c'est pas toujours drôle. . .	}{	#	}{	npc.SetDisposition("joy", 1)	}{	G.Beach_Dead = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	952	}{	Sans aucun doute. Qu'auriez-vous qui puisse m'être utile ?	}{	Sans aucun doute. Qu'auriez-vous qui puisse m'être utile ?	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de quelques jouets cruels. . .	}
+{	952	}{	Sans aucun doute. Qu'auriez-vous qui puisse m'être utile ?	}{	Sans aucun doute. Qu'auriez-vous qui puisse m'être utile ?	}{	461	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de quelques jouets cruels. . .	}
 {	953	}{	Ah oui. . . Il me faut quelques renseignements.	}{	Hé. Il me faut quelques renseignements.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
-{	954	}{	Je ne pense pas que c'était nécessaire, mais c'est à vous d'en juger. Au revoir, Mercurio. 	}{	Je ne pense pas que c'était nécessaire, mais c'est à vous d'en juger. Au revoir, Mercurio. 	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Courez, courez, petit Mercure. Adieu.	}
-{	955	}{	Ils l'avaient mérité. Au revoir, Mercurio. 	}{	Ils l'avaient mérité. Au revoir, Mercurio. 	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mercure peut aussi être le dieu de la guerre, alors ? Je m'en vais.	}
+{	954	}{	Je ne pense pas que c'était nécessaire, mais c'est à vous d'en juger. Au revoir, Mercurio.	}{	Je ne pense pas que c'était nécessaire, mais c'est à vous d'en juger. Au revoir, Mercurio. 	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Courez, courez, petit Mercure. Adieu.	}
+{	955	}{	Ils l'avaient mérité. Au revoir, Mercurio.	}{	Ils l'avaient mérité. Au revoir, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mercure peut aussi être le dieu de la guerre, alors ? Je m'en vais.	}
 {	956	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	957	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	958	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -961,7 +961,7 @@
 {	961	}{	[Extatique]Eh, vous. . . c'est. . . Vous avez sauvé ma peau. . . J'apprécie vraiment que vous n'ayez rien dit et je veux vous dire que je prends soin des gens à qui je dois quelque chose. Maintenant, si vous voulez de l'équipement, des infos, vous pouvez venir me voir chez moi. Sans hésiter.	}{	[Extatique]Eh, vous. . . c'est. . . Vous avez sauvé ma peau. . . J'apprécie vraiment que vous n'ayez rien dit et je veux vous dire que je prends soin des gens à qui je dois quelque chose. Maintenant, si vous voulez de l'équipement, des infos, vous pouvez venir me voir chez moi. Sans hésiter.	}{	#	}{	npc.SetDisposition("joy", 1)	}{	G.Mercurio_Deal = 1; G.Mercurio_Combat = 0	}{	}{	}{	}{	}{	}{	}{	}
 {	962	}{	On dirait que vous allez mieux.	}{	On dirait que vous allez mieux.	}{	391	}{	G.Mercurio_Health == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment vont les ailes de vos pieds, Mercure ?	}
 {	963	}{	Qu'est-ce que vous faites ici, Mercurio ?	}{	Qu'est-ce que vous faites ici, Mercurio ?	}{	941	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que fait le grand Mercurio près des eaux ?	}
-{	964	}{	J'aurai besoin d'équipement.	}{	J'aurai besoin d'équipement pour ce petit voyage.	}{	0	}{	IsDead("Dennis")	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de vilains jouets.	}
+{	964	}{	J'aurai besoin d'équipement.	}{	J'aurai besoin d'équipement pour ce petit voyage.	}{	461	}{	IsDead("Dennis")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de vilains jouets.	}
 {	965	}{	J'aurai besoin d'équipement.	}{	J'aurai besoin d'équipement pour ce petit voyage.	}{	951	}{	not IsDead("Dennis")	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de vilains jouets.	}
 {	966	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	967	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

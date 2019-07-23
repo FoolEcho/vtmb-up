@@ -22,7 +22,7 @@
 {	22	}{	Mais encore ?	}{	Mais encore ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dites-m'en plus.	}
 {	23	}{	Alors pourquoi vous n'investissez pas dedans ?	}{	Alors pourquoi vous n'investissez pas dedans ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Faites vos jeux.	}
 {	24	}{	Ca ne m'intéresse pas. 	}{	Ca ne m'intéresse pas. 	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Plus j'ai de pièces, plus l'image devient claire. Et horrible. . .	}
-{	25	}{	Peu importe. Dites-moi simplement où se trouve le sarcophage.	}{	Peu importe. Dites-moi simplement où se trouve le sarcophage.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez du sarcophage ou ne dites rien du tout.	}
+{	25	}{	Peu importe. Dites-moi simplement où se trouve le sarcophage.	}{	Peu importe. Dites-moi simplement où se trouve le sarcophage.	}{	61	}{	G.Story_State > 55	}{	}{	}{	}{	}{	}{	}{	}{	Parlez du sarcophage ou ne dites rien du tout.	}
 {	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -41,7 +41,7 @@
 {	41	}{	Je connais quelqu'un dans la boîte. Ce serait ce qu'on appelle un délit d'initié. Je perdrais mon boulot, sur un coup comme ça.	}{	Je connais quelqu'un dans la boîte. Ce serait ce qu'on appelle un délit d'initié. Je perdrais mon boulot, sur un coup comme ça.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	Bon, je vous écoute.	}{	Bon, je vous écoute.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas dit stop.	}
 {	43	}{	Ca ne m'intéresse pas. 	}{	Ca ne m'intéresse pas. 	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Plus j'ai de pièces, plus l'image devient claire. Et horrible. . .	}
-{	44	}{	Laissez tomber. Dites-moi plutôt ce que vous savez sur le sarcophage.	}{	Laissez tomber. Dites-moi plutôt ce que vous savez sur le sarcophage.	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez du sarcophage ou ne dites rien du tout.	}
+{	44	}{	Laissez tomber. Dites-moi plutôt ce que vous savez sur le sarcophage.	}{	Laissez tomber. Dites-moi plutôt ce que vous savez sur le sarcophage.	}{	61	}{	G.Story_State > 55	}{	}{	}{	}{	}{	}{	}{	}{	Parlez du sarcophage ou ne dites rien du tout.	}
 {	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -49,7 +49,7 @@
 {	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	51	}{	Vraiment ? Bon, dites-moi si vous changez d'avis. Vraiment, ça vous plairait de faire partie de ce truc. Pensez-y.	}{	Vraiment ? Bon, dites-moi si vous changez d'avis. Vraiment, ça vous plairait de faire partie de ce truc. Pensez-y.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	J'y penserai.	}{	J'y penserai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais en discuter avec moi-même.	}
 {	53	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -58,7 +58,7 @@
 {	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	61	}{	Sarcophage ? Ca me dit quelque chose. Ce n'est pas une boîte de nanotech ?	}{	Sarcophage ? Ca me dit quelque chose. Ce n'est pas une boîte de nanotech ?	}{	#	}{	}{	G.Adam_Sarcophagus = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Sarcophage ? Ca me dit quelque chose. Ce n'est pas une boîte de nanotech ?	}{	Sarcophage ? Ca me dit quelque chose. Ce n'est pas une boîte de nanotech ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	Peu importe. Parlez-moi de cette société.	}{	Peu importe. Parlez-moi de cette société.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi encore de gros sous. . .	}
 {	63	}{	Ne faites pas le malin. Dites-moi où se trouve le sarcophage et je ne vous ferai rien.	}{	Ne faites pas le malin. Dites-moi où se trouve le sarcophage et je ne vous ferai rien.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les centres de douleur de votre cerveau crient peut-être très fort. . .	}
 {	64	}{	N'y pensez plus. Profitez de la fête.	}{	N'y pensez plus. Profitez de la fête.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cela ne vous est pas connu. . . Je vais chasser ailleurs.	}
@@ -100,7 +100,7 @@
 {	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	101	}{	Bon, d'accord. Si vous changez d'avis, dites-le moi.	}{	Bon, d'accord. Si vous changez d'avis, dites-le moi.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	102	}{	Très bien. Excusez-moi.	}{	Très bien. Excusez-moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où est le punching bol. Hein ? Juste un bol de punch ? Quelle soirée naze. . .	}
-{	103	}{	Avant de partir, dites-moi ce que vous savez sur le sarcophage.	}{	Avant de partir, dites-moi ce que vous savez sur le sarcophage.	}{	61	}{	G.Adam_Sarcophagus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parlez du sarcophage ou ne dites rien du tout.	}
+{	103	}{	Avant de partir, dites-moi ce que vous savez sur le sarcophage.	}{	Avant de partir, dites-moi ce que vous savez sur le sarcophage.	}{	61	}{	G.Story_State > 55	}{	}{	}{	}{	}{	}{	}{	}{	Parlez du sarcophage ou ne dites rien du tout.	}
 {	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -201,7 +201,7 @@
 {	201	}{	Vous avez réfléchi à ma proposition ?	}{	Vous avez réfléchi à ma proposition ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	202	}{	C'était quoi, déjà ?	}{	C'était quoi, déjà ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'opportunité ?	}
 {	203	}{	J'ai parlé à des membres de votre famille.	}{	J'ai parlé à des membres de votre famille.	}{	211	}{	G.Adam_Gossip == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai la lie de la famille dans les oreilles.	}
-{	204	}{	Dites-moi ce que vous savez sur le sarcophage.	}{	Dites-moi ce que vous savez sur le sarcophage.	}{	61	}{	G.Adam_Sarcophagus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parlez du sarcophage ou ne dites rien du tout.	}
+{	204	}{	Dites-moi ce que vous savez sur le sarcophage.	}{	Dites-moi ce que vous savez sur le sarcophage.	}{	61	}{	G.Story_State > 55	}{	}{	}{	}{	}{	}{	}{	}{	Parlez du sarcophage ou ne dites rien du tout.	}
 {	205	}{	Ca ne m'intéresse toujours pas, je regrette.	}{	Ca ne m'intéresse toujours pas, je regrette.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je préférerais que mes pensées soient ailleurs. Tiens, elles y vont.	}
 {	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

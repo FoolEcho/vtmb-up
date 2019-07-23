@@ -59,7 +59,7 @@
 {	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	61	}{	Je dois également protéger ma véritable identité. Vous pouvez m'appeler le Mandarin. Vous cherchez l'un des vôtres, il me semble. C'est moi qui le retiens. Venez au bâtiment du Syndicat Fu. Nous discuterons de sa libération.	}{	Je dois également protéger ma véritable identité. Vous pouvez m'appeler le Mandarin. Vous cherchez l'un des vôtres, il me semble. C'est moi qui le retiens. Venez au bâtiment du Syndicat Fu. Nous discuterons de sa libération.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Mandarin_Fu = 1; pc.SetQuest("Mandarin",1)	}{	}{	}{	}{	}{	}{	}{	}
-{	62	}{	J'arrive.	}{	J'arrive.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous viens.	}
+{	62	}{	J'arrive.	}{	J'arrive.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous viens.	}
 {	63	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -549,7 +549,7 @@
 {	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	551	}{	[Rit dans sa barbe]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	552	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	552	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	553	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	554	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	555	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

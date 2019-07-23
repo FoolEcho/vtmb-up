@@ -219,7 +219,7 @@
 {	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	220	}{	A plus tard.	}{	A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	221	}{	La Camarilla ? C'est une secte de vampires qui existe pour protéger ses membres du monde extérieur. Il existe des codes de conduite spécifiques que nous appliquons pour assurer la survie de notre espèce. Rien de plus, rien de moins.	}{	La Camarilla ? C'est une secte de vampires qui existe pour protéger ses membres du monde extérieur. Il existe des codes de conduite spécifiques que nous appliquons pour assurer la survie de notre espèce. Rien de plus, rien de moins.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	222	}{	Je vois. Puis-je vous poser d'autres questions sur la Camarilla ?	}{	Je vois. Puis-je vous poser d'autres questions sur la Camarilla ?	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi cette Camarilla !	}
+{	222	}{	Je vois. Puis-je vous poser d'autres questions sur la Camarilla ?	}{	Je vois. Puis-je vous poser d'autres questions sur la Camarilla ?	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi davantage de cette Camarilla !	}
 {	223	}{	Super. En fait, je pensais à autre chose. . .	}{	Super. En fait, je pensais à autre chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une autre chose. . .	}
 {	224	}{	On dirait une autre excuse à la con pour que les vieux comme vous imposent le contrôle. . .	}{	On dirait une autre excuse à la con pour que les vieux comme vous imposent le contrôle. . .	}{	741	}{	G.Damsel_Cape == 1	}{	G.Regent_Anarchs = 1	}{	}{	}{	}{	}{	}{	}{	Vous n'êtes que des marionnettistes fous qui veulent tirer nos ficelles !	}
 {	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -241,7 +241,7 @@
 {	241	}{	Non. Il y a des clans très indépendants, en dehors de la Camarilla. Et le Sabbat est une autre secte de différents clans de vampires, aux croyances très différentes de la Camarilla. Assez peu agréables, à vrai dire. J'ai cru comprendre que vous les avez déjà croisés. . . violemment. . .	}{	Non. Il y a des clans très indépendants, en dehors de la Camarilla. Et le Sabbat est une autre secte de différents clans de vampires, aux croyances très différentes de la Camarilla. Assez peu agréables, à vrai dire. J'ai cru comprendre que vous les avez déjà croisés. . . violemment. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	242	}{	Oui. Heureusement que Nines Rodriguez était là pour m'aider.	}{	Oui. Heureusement que Nines Rodriguez était là pour m'aider.	}{	251	}{	G.Regent_Nines == 0	}{	G.Regent_Nines = 1	}{	}{	}{	}{	}{	}{	}{	Rodriguez, le guerrier de minuit, fait planer une ombre longue. . .	}
 {	243	}{	Oui, oui. Ils allaient se faire dérouiller quand Nines Rodriguez est arrivé.	}{	Oui, oui. Ils allaient se faire dérouiller quand Nines Rodriguez est arrivé.	}{	251	}{	G.Regent_Nines == 0 and not IsClan(pc,"Malkavian")	}{	G.Regent_Nines = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	244	}{	J'aimerais vous poser d'autres questions sur la Camarilla.	}{	J'aimerais vous poser d'autres questions sur la Camarilla.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi cette Camarilla !	}
+{	244	}{	J'aimerais vous poser d'autres questions sur la Camarilla.	}{	J'aimerais vous poser d'autres questions sur la Camarilla.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi davantage de cette Camarilla !	}
 {	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -272,19 +272,19 @@
 {	272	}{	Mais vous pouvez me faire confiance. . . Que pensez-vous vraiment de lui ?	}{	Mais vous pouvez me faire confiance. . . Que pensez-vous vraiment de lui ?	}{	291	}{	Persuasion 5 & G.Regent_Prince == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ayez confiance en ma psyché brisée, roi-sorcier. . .	}
 {	273	}{	Mais vous pouvez me faire confiance. . . Que pensez-vous vraiment de lui ?	}{	Mais vous pouvez me faire confiance. . . Que pensez-vous vraiment de lui ?	}{	281	}{	Persuasion -5	}{	}{	}{	}{	}{	}{	}{	}{	Ayez confiance en ma psyché brisée, roi-sorcier. . .	}
 {	274	}{	Je pense que vos paroles trahissent un manque de loyauté envers LaCroix. . .	}{	Je pense que vos paroles trahissent un manque de loyauté envers LaCroix. . .	}{	741	}{	}{	G.Regent_LaCroix = 1	}{	}{	}{	}{	}{	}{	}{	Vos paroles puent l'infidélité au bouffon !	}
-{	275	}{	Certainement. Encore quelques questions sur la Camarilla. . .	}{	Certainement. Encore quelques questions sur la Camarilla. . .	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi cette Camarilla !	}
+{	275	}{	Certainement. Encore quelques questions sur la Camarilla. . .	}{	Certainement. Encore quelques questions sur la Camarilla. . .	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi davantage de cette Camarilla !	}
 {	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	280	}{	Comme c'est machiavélique de votre part. . . A bientôt.	}{	Comme c'est machiavélique de votre part. . . A bientôt.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous portez un masque machiavélique. Adieu.	}
 {	281	}{	Non. Je suis allé trop loin. Je ne dis plus rien.	}{	Non. Je suis allé trop loin. Je ne dis plus rien.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	282	}{	Très bien. Dites m'en plus sur la Camarilla. . .	}{	Très bien. Dites m'en plus sur la Camarilla. . .	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi cette Camarilla !	}
+{	282	}{	Très bien. Dites m'en plus sur la Camarilla. . .	}{	Très bien. Dites m'en plus sur la Camarilla. . .	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi davantage de cette Camarilla !	}
 {	283	}{	En fait, il me fallait un autre renseignement. . .	}{	En fait, il me fallait un autre renseignement. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une autre chose. . .	}
 {	284	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	285	}{	Moi non plus. Au revoir, Max.	}{	Moi non plus. Au revoir, Max.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	286	}{	Les Anarchs pensent ne pas avoir besoin de la structure et de la discipline de la Camarilla. Je pense qu'ils sont un danger, tant pour les loyalistes à la Camarilla que pour eux-mêmes. La plupart ne sont que des enfants, et ont besoin de notre tutelle. . .	}{	Les Anarchs pensent ne pas avoir besoin de la structure et de la discipline de la Camarilla. Je pense qu'ils sont un danger, tant pour les loyalistes à la Camarilla que pour eux-mêmes. La plupart ne sont que des enfants, et ont besoin de notre tutelle. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	287	}{	Intéressante observation. J'ai encore quelques questions sur la Camarilla. . .	}{	Intéressante observation. J'ai encore quelques questions sur la Camarilla. . .	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi cette Camarilla !	}
+{	287	}{	Intéressante observation. J'ai encore quelques questions sur la Camarilla. . .	}{	Intéressante observation. J'ai encore quelques questions sur la Camarilla. . .	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi davantage de cette Camarilla !	}
 {	288	}{	Peu importe. Je pense que ça va pour les Anarchs. Ils n'ont pas besoin de baby-sitter. . .	}{	Peu importe. Je pense que ça va pour les Anarchs. Ils n'ont pas besoin de baby-sitter. . .	}{	741	}{	}{	G.Regent_Anarchs = 1	}{	}{	}{	}{	}{	}{	}{	Les Anarchs n'ont pas besoin qu'on les materne !	}
 {	289	}{	Autre chose. . .	}{	Autre chose. . .	}{	741	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon destin n'intéresse que moi ! Je suis mon propre chemin d'ombres, roi-sorcier !	}
 {	290	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
@@ -309,7 +309,7 @@
 {	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	311	}{	[glousse de nouveau, un peu plus menaçant]Vous n'aurez aucun problème dans cette nouvelle vie, jeune vampire. Cela me paraît évident.	}{	[glousse de nouveau, un peu plus menaçant]Vous n'aurez aucun problème dans cette nouvelle vie, jeune vampire. Cela me paraît évident.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	312	}{	Je l'espère. Encore quelques questions sur la Camarilla.	}{	Je l'espère. Encore quelques questions sur la Camarilla.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi cette Camarilla !	}
+{	312	}{	Je l'espère. Encore quelques questions sur la Camarilla.	}{	Je l'espère. Encore quelques questions sur la Camarilla.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	Révélez-moi davantage de cette Camarilla !	}
 {	313	}{	Encore une minute de votre temps. . .	}{	Encore une minute de votre temps. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une autre chose. . .	}
 {	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -21,7 +21,7 @@
 {	21	}{	Oui, c'est moi. Troisième génération dans la partie. J'ai quelques employés, mais je gère presque toute l'affaire moi-même.	}{	Oui, c'est moi. Troisième génération dans la partie. J'ai quelques employés, mais je gère presque toute l'affaire moi-même.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	22	}{	Je ne vois aucun employé, Arthur.	}{	Je ne vois aucun employé, Arthur.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous paraissez seul ici, ô guerrier à l'ample taille.	}
 {	23	}{	Comment ça va, les affaires ?	}{	Comment ça va, les affaires ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Comment va la chasse des primes ?	}
-{	24	}{	Vous cherchez de l'aide ?	}{	Vous cherchez de l'aide ?	}{	741	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je peux vous aider avec vos primes ?	}
+{	24	}{	Vous cherchez de l'aide ?	}{	Vous cherchez de l'aide ?	}{	741	}{	G.Arthur_Knox < 2	}{	}{	}{	}{	}{	}{	}{	}{	Je peux vous aider avec vos primes ?	}
 {	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -490,7 +490,7 @@
 {	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	491	}{	Ca non. Merci de ne pas l'avoir mal pris. Je m'appelle Arthur Kilpatrick. Bienvenue chez Kilpatrick, Caution en tous genres. Que puis-je pour vous ?	}{	Ca non. Merci de ne pas l'avoir mal pris. Je m'appelle Arthur Kilpatrick. Bienvenue chez Kilpatrick, Caution en tous genres. Que puis-je pour vous ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	492	}{	C'est vous qui gérez cet endroit ?	}{	C'est vous qui gérez cet endroit ?	}{	21	}{	G.Arthur_Run == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	493	}{	Vous avez besoin d'aide, par ici ?	}{	Vous avez besoin d'aide, par ici ?	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	493	}{	Vous avez besoin d'aide, par ici ?	}{	Vous avez besoin d'aide, par ici ?	}{	741	}{	G.Arthur_Knox < 2	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	494	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	495	}{	En fait, je trouve ça très vexant, gros connard.	}{	En fait, je trouve ça très vexant, gros connard.	}{	711	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -520,8 +520,8 @@
 {	520	}{	Je passais dans le coin, Arthur. A plus.	}{	Je passais dans le coin, Arthur. A plus.	}{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ton diamètre parle de beignets bien digérés. Adieu.	}
 {	521	}{	Eh, salut ! Il vous faut quelque chose de particulier, ou vous venez juste tailler le bout de gras ?	}{	Eh, salut ! Il vous faut quelque chose de particulier, ou vous venez juste tailler le bout de gras ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	522	}{	Quelques questions, ça vous dérangerait, Arthur ?	}{	Quelques questions, ça vous dérangerait, Arthur ?	}{	541	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon cerveau a des questions, le vôtre a les réponses.	}
-{	523	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	524	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	523	}{	En fait je suis revenue parce que ta rudesse m'allume.	}{	En fait je suis revenue parce que ta rudesse m'allume	}{	821	}{	Seduction 4 & (not IsMale(pc) and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	524	}{	En fait je suis revenu parce que ta rudesse m'allume.	}{	En fait je suis revenu parce que ta rudesse m'allume.	}{	831	}{	Seduction 4 & (IsMale(pc) and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	527	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -729,7 +729,7 @@
 {	729	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	730	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	731	}{	Eh, attendez un peu, vous allez un peu loin, là.	}{	Eh, attendez un peu, vous allez un peu loin, là.	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	732	}{	Vous avez raison, je regrette. Vous avez besoin d'aide ?	}{	Vous avez raison, je regrette. Vous avez besoin d'aide ?	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	732	}{	Vous avez raison, je regrette. Vous avez besoin d'aide ?	}{	Vous avez raison, je regrette. Vous avez besoin d'aide ?	}{	741	}{	G.Arthur_Knox < 2	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	733	}{	Oh, je vous ai fait de la peine ?	}{	Oh, je vous ai fait de la peine ?	}{	751	}{	}{	G.Arthur_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	734	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	735	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -769,7 +769,7 @@
 {	769	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	770	}{	J'imagine, sans doute.	}{	J'imagine, sans doute.	}{	881	}{	}{	}{	}{	}{	}{	}{	}{	}{	Avant, c'est moi qui étais à cette place.	}
 {	771	}{	Hein ? Oh, bien sûr que non. Qu'est-ce que je peux faire pour vous ?	}{	Hein ? Oh, bien sûr que non. Qu'est-ce que je peux faire pour vous ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
-{	772	}{	Vous avez besoin d'aide, par ici ?	}{	Vous avez besoin d'aide, par ici ?	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Je viens vous aider à payer vos cautions !	}
+{	772	}{	Vous avez besoin d'aide, par ici ?	}{	Vous avez besoin d'aide, par ici ?	}{	741	}{	G.Arthur_Knox < 2	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Je viens vous aider à payer vos cautions !	}
 {	773	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	774	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	775	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -789,7 +789,7 @@
 {	789	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	790	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	791	}{	Payer mes cautions ? [secoue la tête]Ha, ça c'est bizarre. [Comme s'il vous remarquait pour la première fois]Eh salut. Qu'est-ce que je peux faire pour vous ?	}{	Payer mes cautions ? [secoue la tête]Ha, ça c'est bizarre. [Comme s'il vous remarquait pour la première fois]Eh salut. Qu'est-ce que je peux faire pour vous ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
-{	792	}{	Parlez-moi du chasseur.	}{	Parlez-moi du chasseur.	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	792	}{	Parlez-moi du chasseur.	}{	Parlez-moi du chasseur.	}{	741	}{	G.Arthur_Knox < 2	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	793	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	794	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	795	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -799,7 +799,7 @@
 {	799	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	800	}{	Mon corps est parti. Mon esprit suit.	}{	Mon corps est parti. Mon esprit suit.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	801	}{	[Se met presque au garde-à-vous]Bien sûr, m'sieur. Tout ce que vous voudrez. Qu'est-ce que je peux faire pour vous en cette belle soirée ?	}{	[Se met presque au garde-à-vous]Bien sûr, m'dame. Tout ce que vous voudrez. Qu'est-ce que je peux faire pour vous en cette belle soirée ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
-{	802	}{	Vous avez besoin d'aide, par ici ?	}{	Vous avez besoin d'aide, par ici ?	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	802	}{	Vous avez besoin d'aide, par ici ?	}{	Vous avez besoin d'aide, par ici ?	}{	741	}{	G.Arthur_Knox < 2	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	803	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	804	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	805	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -809,7 +809,7 @@
 {	809	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	810	}{	Rien pour l'instant. Au revoir.	}{	Rien pour l'instant. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à l'air que je remplissais il y a peu.	}
 {	811	}{	[Terrifié]Pitié, ne me faites pas de mal. . . Pardonnez-moi si je vous ai fait de la peine. . .	}{	[Terrifié]Pitié, ne me faites pas de mal. . . Pardonnez-moi si je vous ai fait de la peine. . .	}{	#	}{	npc.SetDisposition("Fear",2)	}{	G.Arthur_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
-{	812	}{	Ne vous inquiétez pas. Vous avez besoin d'aide, par ici ?	}{	Ne vous inquiétez pas. Vous avez besoin d'aide, par ici ?	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Je viens vous aider à payer vos cautions !	}
+{	812	}{	Ne vous inquiétez pas. Vous avez besoin d'aide, par ici ?	}{	Ne vous inquiétez pas. Vous avez besoin d'aide, par ici ?	}{	741	}{	G.Arthur_Knox < 2	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Je viens vous aider à payer vos cautions !	}
 {	813	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	814	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	815	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -819,7 +819,7 @@
 {	819	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	820	}{	Que ça ne se reproduise pas. Au revoir.	}{	Que ça ne se reproduise pas. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à l'air que je remplissais il y a peu.	}
 {	821	}{	[rougit]Eh bien, vous savez. . . On me le dit souvent, hé hé.	}{	[rougit]Eh bien, vous savez. . . On me le dit souvent, hé hé.	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	G.Arthur_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
-{	822	}{	C'est certain. Vous avez besoin d'aide, par ici ?	}{	C'est certain. Vous avez besoin d'aide, par ici ?	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Je viens vous aider à payer vos cautions !	}
+{	822	}{	C'est certain. Vous avez besoin d'aide, par ici ?	}{	C'est certain. Vous avez besoin d'aide, par ici ?	}{	741	}{	G.Arthur_Knox < 2	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Je viens vous aider à payer vos cautions !	}
 {	823	}{	Venez par ici, je veux vous montrer quelque chose. . .	}{	Venez par ici, je veux vous montrer quelque chose. . .	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
 {	824	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	825	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -829,7 +829,7 @@
 {	829	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	830	}{	Au revoir, Arthur.	}{	Au revoir, Arthur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à l'air que je remplissais il y a peu.	}
 {	831	}{	Eh, n'allez pas penser que je ne suis pas flatté, mais ce n'est pas mon genre. . .	}{	Eh, n'allez pas penser que je ne suis pas flatté, mais ce n'est pas mon genre. . .	}{	#	}{	npc.SetDisposition("Joy",1)	}{	G.Arthur_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
-{	832	}{	Pas de problème. Vous avez besoin d'aide, par ici ?	}{	Pas de problème. Vous avez besoin d'aide, par ici ?	}{	741	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Je viens vous aider à payer vos cautions !	}
+{	832	}{	Pas de problème. Vous avez besoin d'aide, par ici ?	}{	Pas de problème. Vous avez besoin d'aide, par ici ?	}{	741	}{	G.Arthur_Knox < 2	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Je viens vous aider à payer vos cautions !	}
 {	833	}{	Venez par ici, je veux vous montrer quelque chose. . .	}{	Venez par ici, je veux vous montrer quelque chose. . .	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	}
 {	834	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	835	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1008,7 +1008,7 @@
 {	1008	}{	(Starting Condition)	}{	}{	861	}{	G.Arthur_Knox > 1 and G.Arthur_Knox < 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1009	}{	(Starting Condition)	}{	}{	361	}{	G.Arthur_Muddy == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1010	}{	(Starting Condition)	}{	}{	231	}{	G.Arthur_Talked > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1011	}{	(Starting Condition)	}{	}{	11	}{	G.Arthur_Talked == 0	and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1012	}{	(Starting Condition)	}{	}{	2	}{	G.Arthur_Talked == 0	and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1011	}{	(Starting Condition)	}{	}{	11	}{	G.Arthur_Talked == 0 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1012	}{	(Starting Condition)	}{	}{	2	}{	G.Arthur_Talked == 0 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 
 
