@@ -6,7 +6,7 @@ TerminalDefinition	// added by wesp
 	LogonScreen	// displayed when the user first logs on
 	{
 		// Any number of lines are acceptable
-		"line0"		"Secrets de la Bibliothèque Municipale"  
+		"line0"		"Bibliothèque Municipale de LA"  
 	}
 
 	// you can have up to 5 subdirs per terminal
@@ -17,42 +17,42 @@ TerminalDefinition	// added by wesp
 	SubDir
 	{
 		"name"			"Journal"				// This is what is displayed as the name of this menu, and what the player must type to enter the menu (128 characters)
-		"password"		"gangrel"				// password required to run commands in this menu (16 characters)
-		"description"		"Activités Lasombra" 	// This is printed each time the user enters this menu (128 characters)
+		"password"		"Ankara"				// password required to run commands in this menu (16 characters)
+		"description"		"Activités de la bibliothèque" 	// This is printed each time the user enters this menu (128 characters)
 
 		Function
 		{
 			"name"		"Note 1"		// this is what the player must type in to trigger this function. (16 characters)
 			"description"	"Première entrée"		// this is a description of this function  (128 characters)
-			"runtext"	"Beckett m'a demandé de faire des recherches sur un ancien sarcophage dans la bibliothèque municipale de Los Angeles. Pendant l'une de mes séances nocturnes, j'ai remarqué un autre vampire qui me paraissait être un Lasombra. Heureusement, j'ai récemment appris Obfuscation et ainsi je pouvais éviter d'être repéré. Curieux de savoir ce qu'il faisait ici à Los Angeles et si c'était en relation avec notre cercueil, je l'observerai les prochains jours."
+			"runtext"	"Beckett m'a demandé de faire des recherches pour son compte au sujet d'un ancien sarcophage à la bibliothèque municipale. Boulot plutôt ennuyeux, mais j'ai alors remarqué un autre vampire rôder. Qui semblait marcher d'ombre en ombre comme à travers une porte ! Est-ce un Lasombra ? Mais que fait-il ici à Los Angeles ? Est-ce en rapport avec le sarcophage de Beckett ? Je ferais mieux de le suivre les prochaines nuits, juste pour être en sécurité."
 		}
 		
 		Function
 		{
 			"name"		"Note 2"		// this is what the player must type in to trigger this function. (16 characters)
 			"description"	"Seconde entrée"		// this is a description of this function  (128 characters)
-			"runtext"	"D'abord le Lasombra s'est rendu dans cette vieille maison du centre-ville arborant un symbole rouge. Je l'ai suivi pendant un moment, mais j'ai seulement trouvé un noir qui m'a demandé si je cherchais l'illumination. Je suis parti et quelque temps après, le nouvel agent du prince est entré dans ce bâtiment. Ensuite, le noir est sorti, paniqué, et est descendu dans les égouts où je l'ai perdu."
+			"runtext"	"Le vampire de la bibliothèque s'est rendu ce soir dans cette maison abandonnée au centre-ville, celle avec le symbole rouge tagué à proximité. Je l'ai suivi et j'ai été accueilli par un videur qui m'a demandé si j'avais été éclairé. Je ne l'étais pas, alors il ne m'a pas laissé entrer. Je devais m'y plier. Plus tard, le nouvel agent du prince est entré, peu de temps après, le videur s'est précipité dans les égouts! Je l'ai suivi jusqu'à Santa Monica où il s'est rendu au magasin de tabac pour se détendre."
 		}
 
 		Function
 		{
 			"name"		"Note 3"		// this is what the player must type in to trigger this function. (16 characters)
 			"description"	"Troisième entrée"	// this is a description of this function  (128 characters)
-			"runtext"	"À Santa Monica, j'ai regardé comment les Lasombra sont entrés dans l'ancien dépotoir, probablement pour parler avec les Caitiff qui vivent là. Avant que je puisse faire quoi que ce soit, le nouvel agent du prince est arrivé et soudainement les Lasombra se sont téléportés derrière moi ! J'espère ne pas avoir été repéré. Puis il a pris un taxi vers la bibliothèque de Los Angeles."
+			"runtext"	"Ce soir, j'ai suivi le vampire lui-même à Santa Monica où il est entré dans la casse, probablement pour rencontrer cet homme étrange qui y travaillait. Je surveillais toujours l'endroit quand, encore une fois, l'agent du prince est arrivé. Soudain, le vampire est sorti d'une ombre à proximité ! J'espère ne pas avoir été repéré. Il a pris un taxi pour retourner à la bibliothèque."
 		}
 
 		Function
 		{
 			"name"		"Note 4"		// this is what the player must type in to trigger this function. (16 characters)
 			"description"	"Quatrième entrée"	// this is a description of this function  (128 characters)
-			"runtext"	"Je soupçonne le Lasombra de tenter de recruter des vampires ou des goules pour rejoindre la chair à canon habituelle du Sabbat. Je suis sûr qu'il a échoué à retourner le Caitiff, je ne sais pas pour le black. Cela n'affecte pas la question du sarcophage, mais j'ai encore un mauvais pressentiment avec lui qui revient toujours à la bibliothèque. Comme je ne suis pas un combattant moi-même, je vais contacter Beckett à ce sujet."
+			"runtext"	"Je ne sais pas ce que prépare ce Lasombra. Peut-être recruter pour le Sabbat ? Je suis à peu près sûr qu'il a échoué avec le gars de la casse, mais je ne sais vraiment pas pour le videur. Cela ne concerne pas le sarcophage, mais j'ai toujours un très mauvais pressentiment de le voir retourner à la bibliothèque. Je vais contacter Beckett et demander de l'aide !"
 		}
 
 		Function
 		{
 			"name"		"Note 5"		// this is what the player must type in to trigger this function. (16 characters)
 			"description"	"Cinquième entrée"	// this is a description of this function  (128 characters)
-			"runtext"	"J'ai arrangé un rendez-vous avec Beckett dans le fumoir de Santa Monica pendant que j'y observais le black et qu'il semblait être un client régulier. J'ai entendu dire qu'il voulait rencontrer quelqu'un au bout de la jetée de Santa Monica et cela devrait être le Lasombra. J'espère qu'il partira du fumoir, et qu'ainsi Beckett et moi pourrons facilement le suivre jusqu'au gars !"
+			"runtext"	"J'ai organisé une rencontre avec Beckett dans le magasin de fumée de Santa Monica, car ce videur est un habitué. Nous devrions découvrir ce qu'il sait, Beckett peut être très convaincant. Ensuite, je montrerai à Beckett la vieille trappe d’urgence dans les égouts que j’utilise pour entrer dans la bibliothèque sans être vu. Nous allons y chercher nous-mêmes le repaire du Lasombra !"
 			"runscript"	"G.Library_Coffee = 2; librarySetQuest()"
 		}
 	}
