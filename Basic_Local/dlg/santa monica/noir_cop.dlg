@@ -9,16 +9,16 @@
 {	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	11	}{	Un malade est rentré dans la galerie et a lacéré les tableaux. J'imagine qu'il ne trouvait pas ça très beau. . .	}{	Un malade est rentré dans la galerie et a lacéré les tableaux. J'imagine qu'il ne trouvait pas ça très beau. . .	}{	#	}{	}{	G.Noir_Talk = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	12	}{	Merci monsieur l'agent.	}{	Merci monsieur l'agent.	}{	0	}{	G.Gallery_Slashed == 0 and pc.GetQuestState("Slashterpiece") != 5	}{	pc.SetQuest("Slashterpiece",3)	}{	}{	}{	}{	}{	}{	}{	Lunatique...? Vous êtes bon, détective. Je suis parti.	}
-{	13	}{	Merci monsieur l'agent.	}{	Merci monsieur l'agent.	}{	0	}{	G.Gallery_Slashed == 0 and pc.GetQuestState("Slashterpiece") == 5	}{	}{	}{	}{	}{	}{	}{	}{	Lunatique...? Vous êtes bon, détective. Je suis parti.	}
-{	14	}{	J'espère qu'on va avoir celui, euh. . . la personne qui a fait ça. Au revoir.	}{	J'espère qu'on va avoir celle, euh. . . la personne qui a fait ça. Au revoir.	}{	0	}{	G.Gallery_Slashed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Le poisson tombera dans le filet. Moi je m'en vais.	}
+{	12	}{	Merci monsieur l'agent.	}{	Merci monsieur l'agent.	}{	0	}{	G.Gallery_Slashed == 0 and pc.GetQuestState("Slashterpiece") != 5	}{	pc.SetQuest("Slashterpiece",3)	}{	}{	}{	}{	}{	}{	}{	Le poisson tombera dans le filet. Moi je m'en vais.	}
+{	13	}{	Merci monsieur l'agent.	}{	Merci monsieur l'agent.	}{	0	}{	G.Gallery_Slashed == 0 and pc.GetQuestState("Slashterpiece") == 5	}{	}{	}{	}{	}{	}{	}{	}{	Le poisson tombera dans le filet. Moi je m'en vais.	}
+{	14	}{	J'espère qu'on va avoir celui, euh. . . la personne qui a fait ça. Au revoir.	}{	J'espère qu'on va avoir celle, euh. . . la personne qui a fait ça. Au revoir.	}{	0	}{	G.Gallery_Slashed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Lunatique...? Vous êtes bon, détective. Je suis parti.	}
 {	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	21	}{	Que. . . Oh bon sang, regardez-vous. . . Attendez, je sais, la plupart des gens vous rejettent à cause de votre différence, mais je comprends - ma soeur est un monstre - Alley la fille crocodile, elle est dans un spectacle de monstres dans le Midwest. La pauvre petite fille à écailles. Bon, vous voulez de l'amour ?	}{	Que. . . Oh bon sang, regardez-vous. . . Attendez, je sais, la plupart des gens vous rejettent à cause de votre différence, mais je comprends - ma soeur est un monstre - Alley la fille crocodile, elle est dans un spectacle de monstres dans le Midwest. La pauvre petite fille à écailles. Bon, vous voulez de l'amour ?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Que. . . Oh bon sang, regardez-vous. . . Attendez, je sais, la plupart des gens vous rejettent à cause de votre différence, mais je comprends - ma soeur est un monstre - Alley la fille crocodile, elle est dans un spectacle de monstres dans le Midwest. La pauvre petite fille à écailles. Bon, vous voulez de l'amour ?	}{	Que. . . Oh bon sang, regardez-vous. . . Attendez, je sais, la plupart des gens vous rejettent à cause de votre différence, mais je comprends - ma soeur est un monstre - Alley la fille crocodile, elle est dans un spectacle de monstres dans le Midwest. La pauvre petite fille à écailles. Bon, vous voulez de l'amour ?	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Noir_Talk = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	22	}{	Euh, ça va. Et si vous me disiez ce qui s'est passé à la Gallery ?	}{	Euh, ça va. Et si vous me disiez ce qui s'est passé à la Gallery ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	23	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

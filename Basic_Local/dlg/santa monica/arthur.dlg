@@ -89,8 +89,8 @@
 {	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	90	}{	En fait, je m'en vais. Au revoir.	}{	En fait, je m'en vais. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	91	}{	De quel endroit voulez-vous que je vous parle ?	}{	De quel endroit voulez-vous que je vous parle ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Que savez-vous du club des déments ?	}{	Que savez-vous du club des déments ?	}{	701	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	93	}{	Que savez-vous sur l'Asylum ?	}{	Que savez-vous sur l'Asylum ?	}{	661	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Que savez-vous du club des déments ?	}{	Que savez-vous du club des déments ?	}{	601	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Que savez-vous sur l'Asylum ?	}{	Que savez-vous sur l'Asylum ?	}{	121	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	94	}{	Parlez-moi de la maison des morts.	}{	Parlez-moi de la maison des morts.	}{	611	}{	G.Therese_Quest > 1 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	Que savez-vous sur l'Ocean House Hotel ?	}{	Que savez-vous sur l'Ocean House Hotel ?	}{	131	}{	G.Therese_Quest > 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	96	}{	Que savez-vous sur la galerie de nuit ?	}{	Que savez-vous sur la galerie de nuit ?	}{	621	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -120,10 +120,11 @@
 {	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	121	}{	Oh, le club ? Knox, le chasseur de primes, y va de temps en temps. Moi, je n'y mets jamais les pieds. On a des troubles de l'ordre public, de temps en temps, ou des rafles des stups. Quelques bastons. Mais les propriétaires sont sérieux.	}{	Oh, le club ? Knox, le chasseur de primes, y va de temps en temps. Moi, je n'y mets jamais les pieds. On a des troubles de l'ordre public, de temps en temps, ou des rafles des stups. Quelques bastons. Mais les propriétaires sont sérieux.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	122	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	Je suis curieux à propos de tes affaires.	}{	Je suis curieux à propos de tes affaires.	}{	551	}{	G.Arthur_BH == 0 and G.Arthur_BJ == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	Qui sont les propriétaires ?	}{	Qui sont les propriétaires ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	Je vois. Je voulais te demander au sujet d'un autre endroit.	}{	Je vois. Je voulais te demander au sujet d'un autre endroit.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	126	}{	J'ai une question à propos d'autre chose.	}{	J'ai une question à propos d'autre chose.	}{	81	}{	G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	Merci Arthur. A plus tard.	}{	Merci Arthur. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -600,10 +601,10 @@
 {	600	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	601	}{	Oh, vous parlez du club, l'Asylum ? Knox, le chasseur de primes, il y va de temps en temps. Moi, je n'y ai jamais mis les pieds. De temps en temps, il y a des descentes des stups, ou des troubles de l'ordre public. Quelques bagarres. Mais les proprios sont assez stricts.	}{	Oh, vous parlez du club, l'Asylum ? Knox, le chasseur de primes, il y va de temps en temps. Moi, je n'y ai jamais mis les pieds. De temps en temps, il y a des descentes des stups, ou des troubles de l'ordre public. Quelques bagarres. Mais les proprios sont assez stricts.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	602	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	603	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	604	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	605	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	603	}{	A qui appartient cette maison aux miroirs fissurés ?	}{	A qui appartient cette maison aux miroirs fissurés ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	604	}{	J'ai plus d'endroits qui ont besoin de tes mots pour me montrer.	}{	J'ai plus d'endroits qui ont besoin de tes mots pour me montrer.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	605	}{	J'ai plus de questions qui font exploser mon cerveau.	}{	J'ai plus de questions qui font exploser mon cerveau.	}{	81	}{	G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	606	}{	Tu me fais me sentir comme un yéti à Noël. Adieu.	}{	Tu me fais me sentir comme un yéti à Noël. Adieu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1010,5 +1011,3 @@
 {	1010	}{	(Starting Condition)	}{	}{	231	}{	G.Arthur_Talked > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1011	}{	(Starting Condition)	}{	}{	11	}{	G.Arthur_Talked == 0 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1012	}{	(Starting Condition)	}{	}{	2	}{	G.Arthur_Talked == 0 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-
-

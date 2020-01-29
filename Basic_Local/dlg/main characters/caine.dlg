@@ -592,18 +592,18 @@
 {	592	}{	Il me faut des armes.	}{	Il me faut des armes.	}{	611	}{	(G.Trip_Know > 0 or (not IsDead("Mercurio") and G.Mercurio_Dead != 1)) and G.Caine_Weapons == 0	}{	G.Caine_Weapons = 0	}{	}{	}{	}{	}{	}{	}{	Mon arsenal a besoin d'action.	}
 {	593	}{	Je dois retourner à mon refuge.	}{	Je dois retourner à mon refuge.	}{	0	}{	}{	G.Caine_Haven = 1	}{	}{	}{	}{	}{	}{	}{	On est bien que chez soi.	}
 {	594	}{	Je dois acheter du sang.	}{	Je dois acheter du sang.	}{	0	}{	G.Vandal_Shop == 1 or G.Lily_Free > 0	}{	G.Caine_Vandal = 1	}{	}{	}{	}{	}{	}{	}{	Je dois retirer de l'argent à la banque.	}
-{	595	}{	En route pour Chinatown.	}{	En route pour Chinatown.	}{	0	}{	G.Story_State == 125 and not G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	La fin est proche. . .	}
-{	596	}{	En route pour Chinatown.	}{	En route pour Chinatown.	}{	0	}{	G.Story_State == 120 and G.Regent_Ending == 1 and not G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	La fin est proche. . .	}
-{	597	}{	En route pour Chinatown.	}{	En route pour Chinatown.	}{	0	}{	G.Story_State == 115 and G.Nines_Ending == 1 and not G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	La fin est proche. . .	}
-{	598	}{	En route pour Chinatown.	}{	En route pour Chinatown.	}{	0	}{	G.Story_State == 105 and G.Sabbat_Ending == 1 and not G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	La fin est proche. . .	}
-{	599	}{	Il est temps d'en finir.	}{	Il est temps d'en finir.	}{	291	}{	G.Story_State == 125 and G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	C'est la fin.	}
-{	600	}{	Il est temps d'en finir.	}{	Il est temps d'en finir.	}{	291	}{	G.Story_State == 120 and G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	C'est la fin.	}
-{	601	}{	Il est temps d'en finir.	}{	Il est temps d'en finir.	}{	291	}{	G.Story_State == 115 and G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	C'est la fin.	}
-{	602	}{	Il est temps d'en finir.	}{	Il est temps d'en finir.	}{	291	}{	G.Story_State == 110 and G.Prince_Ending == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	C'est la fin.	}
-{	603	}{	Il est temps d'en finir.	}{	Il est temps d'en finir.	}{	291	}{	G.Story_State == 105 and G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	C'est la fin.	}
-{	604	}{	Il est temps d'en finir.	}{	Il est temps d'en finir.	}{	291	}{	G.Story_State == 100 and G.Ming_Ending == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	C'est la fin.	}
-{	605	}{	Honnêtement, j'ignore où aller.	}{	Honnêtement, j'ignore où aller.	}{	441	}{	G.Nines_Ending == 0 and G.Ming_Ending == 0 and G.Sabbat_Ending == 0 and G.Regent_Ending == 0 and G.Prince_Ending == 0 and G.Caine_Solo == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je. . . ne. . . SAIS PAS !	}
-{	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	595	}{	Laissez-moi consulter Nines une fois de plus.	}{	Laissez-moi consulter Nines une fois de plus.	}{	0	}{	G.Story_State == 115 and G.Ming_Dead == 1 and G.Nines_Second == 0 and G.Patch_Plus == 1	}{	G.Caine_Business = 1; G.Nines_Ending = 0 	}{	}{	}{	}{	}{	}{	}{	Je veux de nouveau rencontrer le numéro neuf.	}
+{	596	}{	En route pour Chinatown.	}{	En route pour Chinatown.	}{	0	}{	G.Story_State == 125 and not G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	La fin est proche. . .	}
+{	597	}{	En route pour Chinatown.	}{	En route pour Chinatown.	}{	0	}{	G.Story_State == 120 and G.Regent_Ending == 1 and not G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	La fin est proche. . .	}
+{	598	}{	En route pour Chinatown.	}{	En route pour Chinatown.	}{	0	}{	G.Story_State == 115 and G.Nines_Ending == 1 and not G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	La fin est proche. . .	}
+{	599	}{	En route pour Chinatown.	}{	En route pour Chinatown.	}{	0	}{	G.Story_State == 105 and G.Sabbat_Ending == 1 and not G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	La fin est proche. . .	}
+{	600	}{	Il est temps d'en finir.	}{	Il est temps d'en finir.	}{	291	}{	G.Story_State == 125 and G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	C'est la fin.	}
+{	601	}{	Il est temps d'en finir.	}{	Il est temps d'en finir.	}{	291	}{	G.Story_State == 120 and G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	C'est la fin.	}
+{	602	}{	Il est temps d'en finir.	}{	Il est temps d'en finir.	}{	291	}{	G.Story_State == 115 and G.Ming_Dead == 1 and G.Nines_Ending == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	C'est la fin.	}
+{	603	}{	Il est temps d'en finir.	}{	Il est temps d'en finir.	}{	291	}{	G.Story_State == 110 and G.Prince_Ending == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	C'est la fin.	}
+{	604	}{	Il est temps d'en finir.	}{	Il est temps d'en finir.	}{	291	}{	G.Story_State == 105 and G.Ming_Dead == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	C'est la fin.	}
+{	605	}{	Il est temps d'en finir.	}{	Il est temps d'en finir.	}{	291	}{	G.Story_State == 100 and G.Ming_Ending == 1	}{	G.Caine_Business = 1	}{	}{	}{	}{	}{	}{	}{	C'est la fin.	}
+{	606	}{	Honnêtement, j'ignore où aller.	}{	Honnêtement, j'ignore où aller.	}{	441	}{	G.Nines_Ending == 0 and G.Ming_Ending == 0 and G.Sabbat_Ending == 0 and G.Regent_Ending == 0 and G.Prince_Ending == 0 and G.Caine_Solo == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je. . . ne. . . SAIS PAS !	}
 {	607	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	608	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	609	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

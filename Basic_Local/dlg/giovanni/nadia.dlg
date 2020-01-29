@@ -40,7 +40,7 @@
 {	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	41	}{	Oh, moi aussi je suis de l'est. Je travaille sur ma maîtrise. Les Giovanni ont eu la gentillesse de me loger pendant que je finissais mes études. J'ai beaucoup appris grâce à eux. Vous n'y croiriez pas.	}{	Oh, moi aussi je suis de l'est. Je travaille sur ma maîtrise. Les Giovanni ont eu la gentillesse de me loger pendant que je finissais mes études. J'ai beaucoup appris grâce à eux. Vous n'y croiriez pas.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	Par exemple ?	}{	Par exemple ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qu'ont vu vos jeunes yeux ?	}
-{	43	}{	Dites, Nadia, vous n'avez pas entendu parler d'un sarcophage ?	}{	Dites, Nadia, vous n'avez pas entendu parler d'un sarcophage ?	}{	211	}{	G.Story_State > 55	}{	}{	}{	}{	}{	}{	}{	}{	Vous croyez au sarcophage ?	}
+{	43	}{	Dites, Nadia, vous n'avez pas entendu parler d'un sarcophage ?	}{	Dites, Nadia, vous n'avez pas entendu parler d'un sarcophage ?	}{	211	}{	G.Story_State < 60	}{	}{	}{	}{	}{	}{	}{	}{	Vous croyez au sarcophage ?	}
 {	44	}{	Amusez-vous bien, Nadia. Excusez-moi.	}{	Amusez-vous bien, Nadia. Excusez-moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je retourne me perdre dans la fête.	}
 {	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -50,7 +50,7 @@
 {	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	51	}{	Je travaille sur ma maîtrise. Je suis de l'est. Les Giovanni ont eu la gentillesse de me loger pendant que je finissais mes études. J'ai beaucoup appris grâce à eux. Vous n'y croiriez pas.	}{	Je travaille sur ma maîtrise. Je suis de l'est. Les Giovanni ont eu la gentillesse de me loger pendant que je finissais mes études. J'ai beaucoup appris grâce à eux. Vous n'y croiriez pas.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	Par exemple ?	}{	Par exemple ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qu'ont vu vos jeunes yeux ?	}
-{	53	}{	Dites, Nadia, vous n'avez pas entendu parler d'un sarcophage ?	}{	Dites, Nadia, vous n'avez pas entendu parler d'un sarcophage ?	}{	211	}{	G.Story_State > 55	}{	}{	}{	}{	}{	}{	}{	}{	Vous croyez au sarcophage ?	}
+{	53	}{	Dites, Nadia, vous n'avez pas entendu parler d'un sarcophage ?	}{	Dites, Nadia, vous n'avez pas entendu parler d'un sarcophage ?	}{	211	}{	G.Story_State < 60	}{	}{	}{	}{	}{	}{	}{	}{	Vous croyez au sarcophage ?	}
 {	54	}{	Amusez-vous bien, Nadia. Excusez-moi.	}{	Amusez-vous bien, Nadia. Excusez-moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je retourne me perdre dans la fête.	}
 {	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -120,7 +120,7 @@
 {	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	121	}{	Euh oui, cousin Victor, je suis Nadia, je ne sais pas si vous vous souvenez. Je loge chez les Giovanni le temps de finir ma maîtrise. Ils ont bien développé mon éducation. . .	}{	Euh oui, cousine Maria, je suis Nadia, je ne sais pas si vous vous souvenez. Je loge chez les Giovanni le temps de finir ma maîtrise. Ils ont bien développé mon éducation. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	122	}{	Par exemple ?	}{	Par exemple ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	123	}{	Dites, Nadia, vous n'avez pas entendu parler d'un sarcophage ?	}{	Dites, Nadia, vous n'avez pas entendu parler d'un sarcophage ?	}{	211	}{	G.Story_State > 55	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	123	}{	Dites, Nadia, vous n'avez pas entendu parler d'un sarcophage ?	}{	Dites, Nadia, vous n'avez pas entendu parler d'un sarcophage ?	}{	211	}{	G.Story_State < 60	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	124	}{	Amusez-vous bien, Nadia. Excusez-moi.	}{	Amusez-vous bien, Nadia. Excusez-moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	126	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -173,7 +173,7 @@
 {	173	}{	Je connais un peu les secrets de la famille. Vous aussi, les morts vous parlent ?	}{	Je connais un peu les secrets de la famille. Vous aussi, les morts vous parlent ?	}{	191	}{	Persuasion 8	}{	}{	}{	}{	}{	}{	}{	}{	Les choses ne meurent pas ici, elles deviennent serviles.	}
 {	174	}{	Allez, dites-le moi, bon sang.	}{	Allez, dites-le moi, bon sang.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vois votre langue d'ici.	}
 {	175	}{	Pourquoi on n'irait pas en parler tous les deux dans un coin ?	}{	Pourquoi on n'irait pas en parler tous les deux dans un coin ?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors emmenez-moi vers un endroit plus adapté aux paroles confidentielles.	}
-{	176	}{	On vous a dit quoi que ce soit sur un sarcophage ?	}{	On vous a dit quoi que ce soit sur un sarcophage ?	}{	211	}{	G.Story_State > 55	}{	}{	}{	}{	}{	}{	}{	}{	Alors dites-moi où un sarcophage pourrait se cacher dans cette maison.	}
+{	176	}{	On vous a dit quoi que ce soit sur un sarcophage ?	}{	On vous a dit quoi que ce soit sur un sarcophage ?	}{	211	}{	G.Story_State < 60	}{	}{	}{	}{	}{	}{	}{	}{	Alors dites-moi où un sarcophage pourrait se cacher dans cette maison.	}
 {	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -500,7 +500,7 @@
 {	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	501	}{	Salut.	}{	Salut.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	502	}{	Alors, vous avez appris des trucs intéressants sur les Giovanni pendant votre séjour ?	}{	Alors, vous avez appris des trucs intéressants sur les Giovanni pendant votre séjour ?	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qu'est-ce que vos jeunes yeux ont vu dans cette maison ?	}
-{	503	}{	Dites, Nadia, vous n'avez pas entendu parler d'un sarcophage ?	}{	Dites, Nadia, vous n'avez pas entendu parler d'un sarcophage ?	}{	211	}{	G.Story_State > 55	}{	}{	}{	}{	}{	}{	}{	}{	Vous croyez au sarcophage ?	}
+{	503	}{	Dites, Nadia, vous n'avez pas entendu parler d'un sarcophage ?	}{	Dites, Nadia, vous n'avez pas entendu parler d'un sarcophage ?	}{	211	}{	G.Story_State < 60	}{	}{	}{	}{	}{	}{	}{	}{	Vous croyez au sarcophage ?	}
 {	504	}{	Amusez-vous bien, Nadia. Excusez-moi.	}{	Amusez-vous bien, Nadia. Excusez-moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je retourne me perdre dans la fête.	}
 {	505	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

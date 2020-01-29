@@ -879,7 +879,7 @@
 {	879	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	880	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	881	}{	Je suis en morceaux. Je ne peux rien faire pour t'aider.	}{	Je suis en morceaux. Je ne peux rien faire pour t'aider.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	882	}{	Xiao est morte.	}{	Xiao est morte.	}{	891	}{	IsDead("MingXiao")	}{	}{	}{	}{	}{	}{	}{	}{	Xiao a du mal à exister, maintenant.	}
+{	882	}{	Xiao est morte.	}{	Xiao est morte.	}{	891	}{	G.Ming_Dead == 1 and G.Nines_Second == 0	}{	}{	}{	}{	}{	}{	}{	}{	Xiao a du mal à exister, maintenant.	}
 {	883	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	884	}{	Repose-toi, Nines. Au revoir.	}{	Repose-toi, Nines. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si les Anarchs te donnent une carte de convalescence, dis-leur de la signer de ma part.	}
 {	885	}{	Ouais, ces loups-garous sont une plaie pour la plupart des vampires. Au revoir.	}{	Ouais, ces loups-garous sont une plaie pour la plupart des vampires. Au revoir.	}{	0	}{	IsDead("Werewolf") or G.Werewolf_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez quelque chose, là. . . On dirait une dent de loup. Je n'ai pas eu ça, moi. . .	}
@@ -888,12 +888,12 @@
 {	888	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	889	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	890	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	891	}{	Je savais que tu dégagerais cette garce. On a coincé le prince dans sa tour. Il est temps d'y aller et de lui faire son sort.	}{	Je savais que tu dégagerais cette garce. On a coincé le prince dans sa tour. Il est temps d'y aller et de lui faire son sort.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	891	}{	Je savais que tu dégagerais cette garce. On a coincé le prince dans sa tour. Il est temps d'y aller et de lui faire son sort.	}{	Je savais que tu dégagerais cette garce. On a coincé le prince dans sa tour. Il est temps d'y aller et de lui faire son sort.	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	G.Nines_Second = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	892	}{	Voulez-vous venir avec moi?	}{	Voulez-vous venir avec moi?	}{	895	}{	}{	}{	}{	}{	}{	}{	}{	}{	Will Nines and me make ten?	}
 {	893	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	894	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	895	}{	Je ne peux rien faire pour toi, gamin.	}{	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	896	}{	Ok.	}{	Ok.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Then I am one.	}
+{	896	}{	Ok.	}{	Ok.	}{	0	}{	}{	G.Nines_Ending = 1 }{	}{	}{	}{	}{	}{	}{	Then I am one.	}
 {	897	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	898	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	899	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

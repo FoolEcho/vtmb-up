@@ -129,8 +129,8 @@
 {	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	131	}{	Vous pourrez sortir sans moi.	}{	Vous pourrez sortir sans moi.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	132	}{	J'ai besoin d'entrer dans la salle des substances contrôlées.	}{	J'ai besoin d'entrer dans la salle des substances contrôlées.	}{	161	}{	Persuasion 3 & G.Guard_Dominated < 1 and OneOfSet(1,2) and G.Guard_CS == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je dois entrer dans les substances contrôlées, ou les ordinateurs resteront cloisonnés.	}
-{	133	}{	J'ai besoin d'entrer dans la salle des substances contrôlées.	}{	J'ai besoin d'entrer dans la salle des substances contrôlées.	}{	171	}{	Persuasion 3 & G.Guard_Dominated < 1 and OneOfSet(2,2) and G.Guard_CS == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je dois entrer dans les substances contrôlées, ou les ordinateurs resteront cloisonnés.	}
+{	132	}{	J'ai besoin d'entrer dans la salle des substances contrôlées.	}{	J'ai besoin d'entrer dans la salle des substances contrôlées.	}{	161	}{	Persuasion 3 & (G.Guard_Dominated < 1 and OneOfSet(1,2) and G.Guard_CS == 0 and G.CS_Key == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Je dois entrer dans les substances contrôlées, ou les ordinateurs resteront cloisonnés.	}
+{	133	}{	J'ai besoin d'entrer dans la salle des substances contrôlées.	}{	J'ai besoin d'entrer dans la salle des substances contrôlées.	}{	171	}{	Persuasion 3 & (G.Guard_Dominated < 1 and OneOfSet(2,2) and G.Guard_CS == 0 and G.CS_Key == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Je dois entrer dans les substances contrôlées, ou les ordinateurs resteront cloisonnés.	}
 {	134	}{	Encore merci.	}{	Encore merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Merci beaucoup.	}
 {	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

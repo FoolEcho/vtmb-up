@@ -218,7 +218,7 @@
 {	218	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	221	}{	[Rapidement, joueuse]Quelle flatterie. . . Non, je suis simplement danseuse. Si vous continuez comme ça, vous aurez peut-être un spectacle privé. . . [séductrice]Je pourrais vous faire battre le coeur de nouveau. . .	}{	[Rapidement, joueuse]Quelle flatterie. . . Non, je suis simplement danseuse. Si vous continuez comme ça, vous aurez peut-être un spectacle privé. . . [séductrice]Je pourrais vous faire battre le coeur de nouveau. . .	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	221	}{	[Rapidement, joueuse]Quelle flatterie. . . Non, je suis simplement danseuse. Si vous continuez comme ça, vous aurez peut-être un spectacle privé. . . [séductrice]Je pourrais vous faire battre le coeur de nouveau. . .	}{	[Rapidement, joueuse]Quelle flatterie. . . Non, je suis simplement danseuse. Si vous continuez comme ça, vous aurez peut-être un spectacle privé. . . [séductrice]Je pourrais vous faire battre le coeur de nouveau. . .	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Velvet_Dance = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	222	}{	Dites-moi autre chose sur vous-même.	}{	Dites-moi autre chose sur vous-même.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	Continuez de parler, ma poupée. . .	}
 {	223	}{	Je n'en doute pas. J'aimerais en savoir plus. . .	}{	Je n'en doute pas. J'aimerais en savoir plus. . .	}{	241	}{	}{	G.Velvet_Like = G.Velvet_Like +1	}{	}{	}{	}{	}{	}{	}{	La mort me plaît, mais je suis d'accord pour risquer ma vie si vous me parlez encore de vous.	}
 {	224	}{	J'en doute. . . Je sais que la vie est derrière moi. Vous avez dû l'oublier.	}{	J'en doute. . . Je sais que la vie est derrière moi. Vous avez dû l'oublier.	}{	231	}{	}{	G.Velvet_Like = G.Velvet_Like -2	}{	}{	}{	}{	}{	}{	}{	Tout le monde est mort, ici. Vous, moi. . . MORTS, MORTS, MORTS. . . N'oublions pas.	}
@@ -751,8 +751,8 @@
 {	751	}{	Je vous adore tout simplement. Votre façon de me protéger est si agréable. Qu'aurais-je fait sans vous ? Pourquoi ne sont-ils pas tous comme vous, le monde serait si. . . si beau. Tenez, prenez ceci, en souvenir de la jolie fille à qui vous avez volé le coeur.	}{	Je vous adore tout simplement. Votre façon de me protéger est si agréable. Qu'aurais-je fait sans vous ? Pourquoi ne sont-ils pas tous comme vous, le monde serait si. . . si beau. Tenez, prenez ceci, en souvenir de la jolie fille à qui vous avez volé le coeur.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	pc.GiveItem("item_g_vv_photo"); G.Velvet_Email = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	752	}{	Voici le script.	}{	Voici le script.	}{	661	}{	pc.HasItem("item_g_Hatters_Screenplay")	}{	}{	}{	}{	}{	}{	}{	}{	Les paroles de Hatter, pour vous.	}
 {	753	}{	Au fait, il a fallu que je tue Hatter.	}{	Au fait, il a fallu que je tue Hatter.	}{	701	}{	IsDead("DHatter")	}{	}{	}{	}{	}{	}{	}{	}{	Oh, et la tête de Hatter a roulé à terre.	}
-{	754	}{	Merci. Tout le plaisir est pour moi.	}{	Merci. Tout le plaisir est pour moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous garde dans mon coeur et la photo dans ma poche.	}
-{	755	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	754	}{	Merci, mais n'aviez-vous pas parlé de m'offrir un show privé ?	}{	Merci, mais n'aviez-vous pas parlé de m'offrir un show privé ?	}{	911	}{	G.Velvet_Dance == 1 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Magnifique, mais ne vouliez-vous pas aussi faire battre mon coeur ?	}
+{	755	}{	Merci. Tout le plaisir est pour moi.	}{	Merci. Tout le plaisir est pour moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous garde dans mon coeur et la photo dans ma poche.	}
 {	756	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	757	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	758	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -909,8 +909,8 @@
 {	909	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	910	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	911	}{	Euh, ça pourrait être intéressant.	}{	Euh, ça pourrait être intéressant.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	912	}{	(Auto-Link)	}{	(Auto-Link)	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	913	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	912	}{	(Auto-Link)	}{	(Auto-Link)	}{	171	}{	G.Velvet_Dance == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	913	}{	J'espère bien.	}{	J'espère bien.	}{	0	}{	G.Velvet_Dance == 1	}{	G.Velvet_Dance = 0; Find("vv_lapdance_cut").Trigger()	}{	}{	}{	}{	}{	}{	}{	J'aime déjà ça.	}
 {	914	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	915	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	916	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -4,14 +4,14 @@
 {	4	}{	Ca vous intéresse encore, des ragots sur la famille ?	}{	Ca vous intéresse encore, des ragots sur la famille ?	}{	161	}{	G.Chris_Gossip == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je croyais avoir des problèmes, puis j'ai parlé à votre famille.	}
 {	5	}{	Bonjour. . . Comment vous vous appelez ?	}{	Bonjour. . . Comment vous vous appelez ?	}{	51	}{	Seduction 7 & (G.Chris_Seduce == 0 and not IsMale(pc))	}{	}{	}{	}{	}{	}{	}{	}{	Salut ! J'ai besoin d'un nom, et le vôtre me conviendrait plus que tout.	}
 {	6	}{	Il y a un souci ?	}{	Il y a un souci ?	}{	11	}{	Humanity 5 & G.Chris_Outdo == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les nuages noirs se rassemblent. Pourquoi ?	}
-{	7	}{	Alors, vous savez où se trouve le sarcophage ?	}{	Alors, vous savez où se trouve le sarcophage ?	}{	91	}{	G.Story_State > 55	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas vous empêcher de bouder, je veux simplement le sarcophage. 	}
+{	7	}{	Alors, vous savez où se trouve le sarcophage ?	}{	Alors, vous savez où se trouve le sarcophage ?	}{	91	}{	G.Story_State < 60	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas vous empêcher de bouder, je veux simplement le sarcophage. 	}
 {	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	11	}{	Des réunions de famille. . . Encore combien comme ça avant qu'on nous prenne un peu au sérieux ? Franchement. . .	}{	Des réunions de famille. . . Encore combien comme ça avant qu'on nous prenne un peu au sérieux ? Franchement. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	De quoi parlez-vous ?	}{	De quoi parlez-vous ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, vraiment. Bien sûr. C'est certain. De quoi on parle ?	}
 {	13	}{	Ouais. . . Franchement !	}{	Ouais. . . Franchement !	}{	141	}{	Persuasion 6	}{	}{	}{	}{	}{	}{	}{	}{	Cela me brûle comme mille soleils.	}
-{	14	}{	Alors, vous savez où se trouve le sarcophage ?	}{	Alors, vous savez où se trouve le sarcophage ?	}{	91	}{	G.Story_State > 55	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas vous empêcher de bouder, je veux simplement le sarcophage. 	}
+{	14	}{	Alors, vous savez où se trouve le sarcophage ?	}{	Alors, vous savez où se trouve le sarcophage ?	}{	91	}{	G.Story_State < 60	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas vous empêcher de bouder, je veux simplement le sarcophage. 	}
 {	15	}{	Super, la fête, hein ?	}{	Super, la fête, hein ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est vraiment une fête. . .	}
 {	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -20,7 +20,7 @@
 {	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	21	}{	Quoi ? Oh, oui, bien sûr !	}{	Quoi ? Oh, oui, bien sûr !	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	22	}{	C'est quoi, votre problème ?	}{	C'est quoi, votre problème ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qu'est-ce qui se prépare ?	}
-{	23	}{	Alors, vous savez où se trouve le sarcophage ?	}{	Alors, vous savez où se trouve le sarcophage ?	}{	91	}{	G.Story_State > 55	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas vous empêcher de bouder, je veux simplement le sarcophage. 	}
+{	23	}{	Alors, vous savez où se trouve le sarcophage ?	}{	Alors, vous savez où se trouve le sarcophage ?	}{	91	}{	G.Story_State < 60	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas vous empêcher de bouder, je veux simplement le sarcophage. 	}
 {	24	}{	C'est sympa comme endroit. . .	}{	C'est sympa comme endroit. . .	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne connaissais pas le mot opulent avant que cette maison me l'apprenne.	}
 {	25	}{	Il y a un souci ?	}{	Il y a un souci ?	}{	11	}{	Humanity 5 & G.Chris_Outdo == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les nuages noirs se rassemblent. Pourquoi ?	}
 {	26	}{	Amusez-vous bien.	}{	Amusez-vous bien.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Au revoir.	}
@@ -29,7 +29,7 @@
 {	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	31	}{	Vous connaissez Oncle Bruno. . .	}{	Vous connaissez Oncle Bruno. . .	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	32	}{	Alors, vous savez où se trouve le sarcophage ?	}{	Alors, vous savez où se trouve le sarcophage ?	}{	91	}{	G.Story_State > 55	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas vous empêcher de bouder, je veux simplement le sarcophage. 	}
+{	32	}{	Alors, vous savez où se trouve le sarcophage ?	}{	Alors, vous savez où se trouve le sarcophage ?	}{	91	}{	G.Story_State < 60	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas vous empêcher de bouder, je veux simplement le sarcophage. 	}
 {	33	}{	C'est quoi, votre problème ?	}{	C'est quoi, votre problème ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qu'est-ce qui se prépare ?	}
 {	34	}{	Qu'est-ce que vous avez vu comme bon film, ces derniers temps ?	}{	Qu'est-ce que vous avez vu comme bon film, ces derniers temps ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oh oui, lui. . . Un grand mec. C'est le type sur la boîte des pizzas ?	}
 {	35	}{	Il y a un souci ?	}{	Il y a un souci ?	}{	11	}{	Humanity 5 & G.Chris_Outdo == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les nuages noirs se rassemblent. Pourquoi ?	}
