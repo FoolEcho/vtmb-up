@@ -404,7 +404,7 @@ Email
 		"subject"	"Réplique aux enchères"
 		"sender"	"gary@schrecknet.vtm"
 		"body"		"Hé chef, un dernier boulot pour vous. Je recherche une de ces étranges boules de chair de Tzimisce, je parie que vous débusquerais de ces créatures à Hollywood. Je vous donnerais le poster d'une fille que vous ne regarderez certainement pas dans les yeux!"
-		"dependency"	"G.Gary_Cross == 1 and G.Ball_Taken == 1 and G.PP == 1"
+		"dependency"	"G.Gary_Cross == 1 and G.Gary_Blind == 0 and G.PP == 1"
 		"runscript"	"garySetQuestEight()"
 	}
 
