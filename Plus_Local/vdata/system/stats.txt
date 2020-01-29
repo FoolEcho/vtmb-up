@@ -2140,7 +2140,7 @@ StatData
 
 			Stat
 			{
-				"Name"		"Vision divine"	//changed by wesp
+				"Name"		"Vision divine"	// changed by wesp
 				"InternalName"	"Divine_Vision"
 				"HelpText"	"La Vision Divine permet au croisé de voir les auras des amis et des ennemis, même ceux cachés. Les auras alliées apparaîtront en bleu, celles des ennemis en rouge. Tous les niveaux de Vision divine coûte un seul point de foi par activation."	// changed by wesp
 				"HelpTextH1"	"Niveau 1:"
@@ -2423,6 +2423,18 @@ StatData
 //					"Predependency"	"Health > 0"
 					"Value"	">0"
 					"Function"	"BloodHealFunc"
+				}
+
+				Action	// added by wesp
+				{
+					"Value"	">0"
+					Particle
+					{
+						Definition 	"d_bloodhealing_view_emitter"
+						Bone		""
+						AttachType	"ScreenCenter"
+						Viewmodel	"1"
+					}
 				}
 
 				Action
@@ -2982,6 +2994,18 @@ StatData
 						Definition 	"D_BloodBuff_Generic"
 						Bone		"Bip01 Spine2"
 						AttachType	"bone"
+					}
+				}
+
+				Action	// added by wesp
+				{
+					"Value"	">0"
+					Particle
+					{
+						Definition 	"d_bloodbuff_view_emitter"
+						Bone		""
+						AttachType	"ScreenCenter"
+						Viewmodel	"1"
 					}
 				}
 			}
