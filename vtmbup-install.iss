@@ -1,16 +1,16 @@
 ; -- vtmbupinstaller.iss --
 
 [Setup]
-AppName=Vampire: The Masquerade - Bloodlines unofficial patch 10.4.2 fr
-AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 10.4.2 fr
+AppName=Vampire: The Masquerade - Bloodlines unofficial patch 10.5 fr
+AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 10.5 fr
 VersionInfoDescription=Vampire: The Masquerade - Bloodlines unofficial patch avec sous-titrage français
-VersionInfoVersion=10.4.2
+VersionInfoVersion=10.5
 AppPublisher=Werner Spahl
 DefaultDirName={reg:HKLM\Software\Activision\Vampire - Bloodlines,InstallPath|{pf}\Steam\steamapps\common\vampire the masquerade - bloodlines}
 AppendDefaultDirName=no
 DirExistsWarning=no
-EnableDirDoesntExistWarning=yes
-OutputBaseFilename=VTMBup104fr
+EnableDirDoesntExistWarning=no
+OutputBaseFilename=VTMBup105fr
 Uninstallable=no
 InfoBeforeFile=vtmbup-readme.txt
 InfoAfterFile=vtmbup-after.txt
@@ -42,12 +42,19 @@ begin
   if RegQueryStringValue(HKLM, 'SOFTWARE\Activision\Vampire - Bloodlines','Version',string) then 
   result := True;
 end;
+function NextButtonClick(PageId: Integer): Boolean;
+begin
+    Result := True;
+    if (PageId = wpSelectDir) and not FileExists(ExpandConstant('{app}\vampire.exe')) then begin
+        MsgBox('Vampire.exe est introuvable dans ce dossier. Veuillez sélectionner le dossier correct.', mbError, MB_OK);
+        Result := False;
+        exit;
+    end;
+end;
 
 [Files]
-Source: "{app}\Unofficial_Patch\save\*"; DestDir: "{app}\Unofficial_Patch_fr\save\old"; Components: basic; Flags: external skipifsourcedoesntexist
-Source: "{app}\Unofficial_Patch\save\auto*"; DestDir: "{app}\Unofficial_Patch_fr\save"; Components: basic; Flags: external deleteafterinstall skipifsourcedoesntexist
-Source: "{app}\Unofficial_Patch\save\quick*"; DestDir: "{app}\Unofficial_Patch_fr\save"; Components: basic; Flags: external deleteafterinstall skipifsourcedoesntexist
-Source: "{app}\Unofficial_Patch\save\Vampire-0*"; DestDir: "{app}\Unofficial_Patch_fr\save"; Components: basic; Flags: external deleteafterinstall skipifsourcedoesntexist
+Source: "{app}\Vampire\cfg\*"; DestDir: "{app}\Vampire\cfg\old"; Components: basic; Flags: external skipifsourcedoesntexist
+Source: "{app}\Unofficial_Patch_fr\save\*"; DestDir: "{app}\Unofficial_Patch_fr\save\old"; Components: basic; Flags: external skipifsourcedoesntexist
 Source: "vtmbup-readme.txt"; DestDir: "{app}"; Components: readme; Flags: isreadme overwritereadonly
 Source: "Official_Patch\*"; DestDir: "{app}"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly
 Source: "Basic_Patch\dlls\*"; DestDir: "{app}\vampire\dlls"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly
