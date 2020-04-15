@@ -1,0 +1,1742 @@
+// Primary History Doc
+
+HistoryDataTables
+{
+
+	HistoryData	// added by wesp
+	{
+		Text
+		{
+			"Name"				"Homosexuel"
+			"Description"			"Vous avez toujours trouvé votre propre genre beaucoup plus attirant que l'autre sexe, bien que beaucoup de gens aient encore du mal avec cela. Peut-être que la société vampirique est différente..."
+			"ShortDescription"		"Démarrer en tant qu'homosexuel."
+			"ShortPenaltyDescription"	""
+		}
+
+		General
+		{
+			"InternalName"	"Homosexual_Player"
+			"CritterScope"	"ALL()"
+			"Effect"		"History (Homo)"
+		}
+	}
+
+	HistoryData	// added by wesp
+	{
+		Text
+		{
+			"Name"				"Activiste environnemental"
+			"Description"			"Vous étiez un membre de Greenpeace dans la vie, toujours en lutte pour protéger l'environnement, nageant avec les baleines et escaladant des réacteurs nucléaires. La connaissance de la cause et de la conséquence était alors importante.
+			Modifie l'ordre de priorité de vos Capacités: Connaissances, Talents puis Compétences."
+
+
+
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Environment_Activist"
+			"CritterScope"		"Kindred(Gangrel)"
+			"Effect"		"History (Stats KTS)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"De la vieille école"
+			"Description"			"Vous êtes du genre \"à l'ancienne\" et vous vous fichez pas mal de toute cette nouvelle technologie. Ainsi, il vous en coûte davantage pour améliorer vos connaissances en Informatique, mais vous commencez avec un bonus en Erudition."	// added by wesp
+
+
+			"ShortDescription"		"Avantage: +1 en Erudition."
+			"ShortPenaltyDescription"	"Pénalité: augmenter Informatique est plus coûteux."
+		}
+
+		General
+		{
+			"InternalName"		"Old_Timer"
+			"CritterScope"		"Kindred(Tremere)"
+// wesp			"Genders_Disallowed"	"Female"
+			"Effect"			"History (Old Timer)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Gardien d'un camp de redressement"
+			"Description"			"Dès l'adolescence, vous aimiez faire preuve de votre influence et de votre pouvoir sur les autres.
+			Modifie l'ordre de priorité de vos Attributs: Physique, Mental puis Social."	// added by wesp
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Juvenile Hall Disciplinarian"
+			"CritterScope"		"Kindred(Ventrue)"	// changed by wesp
+			"Effect"		"History (Stats PMS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Éditeur de jeux vidéos"
+			"Description"			"Vous savourez un triste plaisir à ruiner des studios de développement de jeux prometteurs avec des délais impossibles.
+			Modifie l'ordre de priorité de vos Attributs: Mental, Social puis Physique."	// added by wesp
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Video Game Publisher"
+			"CritterScope"		"Kindred(Nosferatu)"
+			"Genders_Disallowed"	"Female"	// changed by wesp
+			"Effect"		"History (Stats MSP)"
+		}
+	}
+
+// =======-------------- Stat Shufflers -------------========
+//             ----------- Attributes ------------
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Leader syndical"
+			"Description"			"Vous êtes un rêve social pour col bleu, un homme issu du peuple, qui s'est construit tout seul. Le respect de vos employés et la satisfaction du travail bien fait sont tout ce que vous avez toujours souhaité en retour. Les pots-de-vin et l'extorsion de fond, c'était pas votre truc.
+			Modifie l'ordre de priorité de vos Attributs: Physique, Social puis Mental."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Union Boss"
+			"CritterScope"		"Kindred(Ventrue)"
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats PSM)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Routier"
+			"Description"			"Vous croyez en la négociation collective pour apporter la justice aux familles qui travaillent. Et si ça ne marche pas, ils y a toujours les bastonnades collectives.
+			Modifie l'ordre de priorité de vos Attributs: Physique, Social puis Mental."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Teamster"
+			"CritterScope"		"Kindred(Toreador)"	// changed by wesp
+			"Effect"		"History (Stats PSM)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Clown à domicile au rabais"
+			"Description"			"C'était supposé durer le temps que vous arrangiez les choses après qu'Evelyn vous ai quitté. Et vous voilà, 3 ans et 3 246 whiskies plus tard. Vous avez continué ce boulot, sans qu'un client ne vous rappelle jamais. Vraiment, l'Amérique c'est le plus beau pays au monde.
+			Modifie l'ordre de priorité de vos Attributs: Physique, Mental puis Social."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Cut-Rate Party Clown"
+			"CritterScope"		"Kindred(Malkavian)"
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats PMS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Strip-teaseuse ex-gymnaste"
+			"Description"			"Toute votre enfance s'est déroulée entre l'école et l'entraînement. Papa était trop occupé pour vous dire que les gymnastes professionnels, ça n'existe pas. Et maman... et bien maman était trop occupée à chercher un nouveau papa.
+			Modifie l'ordre de priorité de vos Attributs: Physique, Mental puis Social."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Gymnast-turned-Stripper"
+			"CritterScope"		"Kindred(Malkavian)"
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats PMS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Brujah pur"
+			"Description"			"Beaucoup font peser le poids du stéréotype Brujah, rebelle et violent, sur Troile, le Mathusalem impulsif qui a engendré presque toute la lignée actuelle du clan Brujah. Vous ne partagez pas son sang. Vous êtes donc plus enclin à apprendre l'idéalisme que l'iconoclasme belliqueux.
+			Modifie l'ordre de priorité de vos Attributs: Mental, Physique puis Social."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"True Brujah"
+			"CritterScope"		"Kindred(Brujah)"
+			"Effect"		"History (Stats MPS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Païen"
+			"Description"			"Vos croyances sont centrées sur le panthéon gnostique et votre parenté avec la nature est forte. Après votre Etreinte, vous étiez plus naturellement en phase avec la Bête intérieure et cette affinité est maintenant apparente.
+			Modifie l'ordre de priorité de vos Attributs: Mental, Physique puis Social."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Pagan"
+			"CritterScope"		"Kindred(Gangrel)"
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats MPS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Prêtresse païenne"
+			"Description"			"Vous croyez que votre Etreinte par le clan Gangrel était prédestinée. Vous étiez la prêtresse d'une secte païenne dans la vie, et la nature est centrale dans votre esprit, votre corps et votre âme. Après votre Etreinte, vous étiez plus naturellement en phase avec la Bête intérieure et cette affinité est maintenant apparente.
+			Modifie l'ordre de priorité de vos Attributs: Mental, Physique puis Social."
+
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Pagan Priestess"
+			"CritterScope"		"Kindred(Gangrel)"
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats MPS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Joueur invétéré"
+			"Description"			"Vous saviez que vous auriez dû abandonner. Vous étiez tapis. De beaucoup. Mais il fallait relancer aux enchères et avez joué de malchance au dernier tour. Au maudit dernier tour. C'en était trop pour Vegas. Vous pensiez qu'en zonant dans bas-fonds de L.A. vous pourriez gagner assez pour acheter une pile de jetons et recommencer. C'est là que vous l'avez rencontrée...
+			Modifie l'ordre de priorité de vos Attributs: Mental, Physique puis Social."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Degenerate Gambler"
+			"CritterScope"		"Kindred(Toreador)"	// changed by wesp
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats MPS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Gardienne de prison de femmes"
+			"Description"			"Vous êtiez une teigne au coeur de pierre, aimant la violence, de votre vivant, et vous êtes restée une cinglée maléfique dans la non-vie. Vous aviez toujours espéré que ce serait un peu plus comme à la télé. Si seulement.
+			Modifie l'ordre de priorité de vos Attributs: Mental, Physique puis Social."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Women's Prison Guard"
+			"CritterScope"		"Kindred(Malkavian)"
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats MPS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Lobbyiste industriel"
+			"Description"			"Votre égo est énorme. Vous représentiez l'industrie et défendiez ses intérêts dans les coulisses du pouvoir. Quelle industrie? Tout dépend qui paye...
+			Modifie l'ordre de priorité de vos Attributs: Mental, Physique puis Social."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Industry Lobbyist"
+			"CritterScope"		"Kindred(Ventrue)"
+			"Effect"		"History (Stats MSP)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Libertin du Country Club"
+			"Description"			"On vit à l'ère des mamans à plein temps. Et vous le savez trop bien. Oui, papa rapporte des milliers à la maison, mais vous avez un emploi du temps vide et un sourire à faire tomber les petites culottes comme des fruits mûrs.
+			Modifie l'ordre de priorité de vos Attributs: Social, Physique puis Mental."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Country Club Lothario"
+			"CritterScope"		"Kindred(Tremere)"	// changed by wesp
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats SPM)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Jeune première"
+			"Description"			"Vous avez été très pivilégiée et avez reçu une excellente éducation. Maman serait tellement fière si elle savait que vous avez été acceptée dans le *meilleur* clan de vampires des environs!
+			Modifie l'ordre de priorité de vos Attributs: Social, Physique puis Mental."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Southern Debutante"
+			"CritterScope"		"Kindred(Ventrue)"
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats SPM)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Vendeur en télémarketing"
+			"Description"			"Je me suis fait des millions depuis mon petit appartement une pièce, en passant des petites annonces, en achetant et revendant, et avec les numéros surtaxés. Et vous pouvez faire pareil!
+			Modifie l'ordre de priorité de vos Attributs: Social, Physique puis Mental."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Infomercial Huckster"
+			"CritterScope"		"Kindred(Brujah)"
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats SPM)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Revendeuse de médicaments"
+			"Description"			"Des personnes un peu coincées pourraient dire que vendre du Prozac aux enfants, c'est un peu limite. Apparemment, ils n'ont aucune idée de la quantité de pognon qu'on peut se faire avec. Ont-ils déjà passé un peu de temps avec les mômes? Par pitié - qu'ils en mettent dans les aliments pour bébés...
+			Modifie l'ordre de priorité de vos Attributs: Social, Physique puis Mental."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Pharmaceutical Saleswoman"
+			"CritterScope"		"Kindred(Tremere)"
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats SPM)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Mannequin de sites internet coquins"
+			"Description"			"Vous n'étiez peut-être pas la plus jolie de l'école, mais vous arriviez toujours à mettre à genoux les vieux messieurs pour vous supplier. Et ils payaient pour ça. Eh, c'est mieux que de bosser chez Mc Do.
+			Modifie l'ordre de priorité de vos Attributs: Social, Physique puis Mental."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Voyeur Website Model"
+			"CritterScope"		"Kindred(Brujah)"
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats SPM)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Présentateur météo barré"
+			"Description"			"Vos plaisanteries ineptes et votre maîtrise de l'art du calembour ont fait la joie de Triffouilis-les-Oies. Alors vous avez essayé de jouer dans la cour des grands, et voilà-t-y pas que la première poule que vous levez au bar de l'aéroport viens et vous tue.
+			Modifie l'ordre de priorité de vos Attributs: Social, Mental et Physique."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Inoffensively Nutty Weatherman"
+			"CritterScope"		"Kindred(Malkavian)"
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats SMP)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Chroniqueuse mondaine"
+			"Description"			"Un article! Et vous êtes mort! Qui aurait pu penser que tout cela pouvait être vrai? Vous qui adoriez les histoires noires et qui vous considériez comme une spécialiste en occultisme!
+			Modifie l'ordre de priorité de vos Attributs: Social, Mental et Physique."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Gossip Columnist"
+			"CritterScope"		"Kindred(Nosferatu)"	// changed by wesp
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats SMP)"
+		}
+	}
+
+//             ----------- Ability ------------
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Entrepreneur de pompes funèbres"
+			"Description"			"Vous avez bien saisi l'ironie de la chose. Toutes ces nuits passées dans le silence avec des restes d'êtres humains. Vous avez toujours pensé que c'était votre destin que vous fixiez de la sorte. Finallement c'est arrivé. Une nuit. Un d'entre eux s'est réveillé - un beau spécimen, d'ailleurs.
+			Modifie l'ordre de priorité de vos Capacités: Compétences, Connaissances puis Talents."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Mortician"
+			"CritterScope"		"Kindred(Gangrel)"
+			"Effect"		"History (Stats SKT)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Employé de bureau"
+			"Description"			"Il n'y a pas de place dans votre compartiment de bureau pour accrocher votre Diplôme de Commerce. On vous a donné un blâme parce que votre chemise était froisée. Et vous vous êtes moqué de votre pote quand il a décidé de passer une maîtrise en Rhétorique. Maintenant, il écrit des sitcoms et se pointe au boulot en Birkenstocks. Il disait toujours \"la tenue décontractée, c'est l'habit de la défaite\". Vous pourriez peut-être reprendre vos études et passer votre Maîtrise en Administration des Entreprises...
+			Modifie l'ordre de priorité de vos Capacités: Compétences, Connaissances puis Talents."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Corporate Schmo"
+			"CritterScope"		"Kindred(Ventrue)"	// changed by wesp
+			"Effect"		"History (Stats SKT)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Commando"
+			"Description"			"Oui, vous étiez dans les Commandos. Les Forces Spéciales et tout ce genre de trucs. Quelle branche? Vous pourriez le dire... mais il faudrait tuer tous ceux qui ont entendu. Non, ce n'est pas une blague.
+			Modifie l'ordre de priorité de vos Capacités: Compétences, Talents et Connaissances."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Special Forces"
+			"CritterScope"		"Kindred(Brujah)"	// changed by wesp
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats STK)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Arnaqueur"
+			"Description"			"Ordre et discipline: une seule chose compte dans la vie: c'est de les faire signer à l'endroit prévu à cet effet.
+			Modifie l'ordre de priorité de vos Capacités: Compétences, Talents et Connaissances."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Con Artist"
+			"CritterScope"		"Kindred(Tremere)"	// changed by wesp
+			"Genders_Disallowed"	"Female"	// changed by wesp
+			"Effect"		"History (Stats STK)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Profiteur de guerre"
+			"Description"			"Euh, Entrepreneur pour la Défense. Il faut bien quelqu'un pour s'assurer que les troupes reçoivent des plats chauds et puissent parler à leur foyer en visio-conférence. Et si, sur place, vous pouvez aidez les autochtones à développer leur économie avec un petit contrat pétrolier exclusif et bien salé pour vos copains au gouvernement, c'est super! Tout le monde y gagne. Bon, un de vos chauffeurs s'est fait décapiter sur Internet; mais il connaissait bien les risques en signant son contrat, non?
+			Modifie l'ordre de priorité de vos Capacités: Connaissances, Compétences puis Talent."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"War Profiteer"
+			"CritterScope"		"Kindred(Ventrue)"
+			"Effect"		"History (Stats KST)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Pirate éco-terroriste"
+			"Description"			"Vous étiez un pirate informatique expert engagé pour la préservation de l'environnement. Rebelle contre l'autorité, un déni de service à la fois. Votre sire fut attiré par votre dévouement et votre respect pour la nature. Les années passant, vous avez appris beaucoup et vos capacités sont priorisées différemment.
+			Modifie l'ordre de priorité de vos Capacités: Connaissances, Compétences puis Talents."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Eco-Terrorist Hacker"
+			"CritterScope"		"Kindred(Nosferatu)"	// changed by wesp
+			"Genders_Disallowed"	"Female"	// changed by wesp
+			"Effect"		"History (Stats KST)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"La vingtaine, un boulot de merde"
+			"Description"			"Tout est une question de personnes, vous savez. Ici, dans la rue, dans les clubs... C'est là que ça se passe. C'est là que ça se rassemble. Pas dans les salles de conférences. Les gens ne portent pas de cravate. La prochaine génération de décideurs ne viendra pas des beaux quartiers. Quoi? Tu veux aller là-bas? Pourquoi? Ca se gâte ici... Boisson à volonté ? Bon, d'accord...
+			Modifie l'ordre de priorité de vos Capacités: Connaissances, Talents puis Compétences."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Vaguely Unemployed Twenty-Something"
+			"CritterScope"		"Kindred(Toreador)"	// changed by wesp
+			"Genders_Disallowed"	"Male"	// changed by wesp
+			"Effect"		"History (Stats KTS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Conseiller en désintox"
+			"Description"			"Vous aviez toujours une oreille attentive aux problèmes des autres, même si vous aviez à écouter quelques salauds assis au parloir d'une prison.
+			Modifie l'ordre de priorité de vos Capacités: Compétences, Connaissances, puis Talents."	// added by wesp
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Rehab Counselor"
+			"CritterScope"		"Kindred(Toreador)"	// changed by wesp
+			"Effect"		"History (Stats SKT)"		// changed by wesp
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Pédagogue"
+			"Description"			"J'ai toujours dit qu'il tournerait mal, votre honneur. Si on m'avait laissé faire, je l'aurais dressé à coups de ceinture.
+			Modifie l'ordre de priorité de vos Capacités: Talents, Connaissances puis Compétences."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Pedagogue"
+			"CritterScope"		"Kindred(Nosferatu)"	// changed by wesp
+			"Effect"		"History (Stats KTS)"	// changed by wesp
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Agent"
+			"Description"			"Votre performance était toujours plébicitée. Et vous étiez bien dédommagée. Vous avez joué aussi dur que les mecs, parce qu'il faut une sacrée paire pour y arriver dans cette ville. Et bon sang, vous aviez les plus grosses. Vous étiez un puissant concurrent. Une menace. Et la concurrence ne supportait pas de se faire tenir en respect par une femme, alors ils vous ont vendue à un prédateur mort-vivant. Pff... Typique. Cette ville est remplie de haine.
+			Modifie l'ordre de priorité de vos Capacités: Talents, Connaissances puis Compétences."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Agent"
+			"CritterScope"		"Kindred(Tremere)"	// changed by wesp
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats TKS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Dealeuse"
+			"Description"			"Vous aviez quadrillé toutes les rues. Il n'y a rien que vous ne puissiez obtenir. Drogues, flingues, prostituées de toute forme, âge et couleur. Une fois, vous avez eu du faux-filet de girafe en moins de 24 heures... Et apparemment, vous aviez plusieurs clients vampires. Qui aurait su? Vous avez fait bon impression et maintenant vous voilà.
+			Modifie l'ordre de priorité de vos Capacités: Talents, Connaissances puis Compétences."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Fixer"
+			"CritterScope"		"Kindred(Brujah)"	// changed by wesp
+			"Genders_Disallowed"	"Male"	// changed by wesp
+			"Effect"		"History (Stats TKS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Pourvoyeuse de vices"
+			"Description"			"Fumer, boire, se droguer, vous faisiez tout cela alors de votre vivant. Maintenant, dans la mort, il n'y a plus que le sang qui vous enflamme.
+			Modifie l'ordre de priorité de vos Capacités: Compétences, Connaissances puis Talents."	// added by wesp
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Purveyor of Vice"
+			"CritterScope"		"Kindred(Brujah)"	// changed by wesp
+			"Genders_Disallowed"	"Male"	// changed by wesp
+			"Effect"		"History (Stats SKT)"	// changed by wesp
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Clocharde"
+			"Description"			"Votre vie fut un grand désordre qui vous fit échouer dans les rues sans rien d'autre qu'un peu d'alcool bon marché. Et maintenant, vous êtes encore pire à voir!
+			Modifie l'ordre de priorité de vos Capacités: Talents, Connaissances puis Compétences."	// added by wesp
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Baglady"
+			"CritterScope"		"Kindred(Nosferatu)"
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats TKS)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Physionomiste de luxe"
+			"Description"			"Vous façonnez le paysage à l'aide d'une simple liste de nom, une oreillette bon marché, et un profond mépris pour l'humanité.
+			Modifie l'ordre de priorité de vos Capacités: Talents, Compétences puis Connaissances."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Velvet Rope Doorman"
+			"CritterScope"		"Kindred(Toreador)"
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats TSK)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Videur de rade"
+			"Description"			"Personne ne pouvait passer lorsque vous vous teniez devant une porte et vous preniez un malin plaisir à jeter les gens dehors. Désormais, il sera encore plus facile de leur faire mal.
+			Modifie l'ordre de priorité de vos Capacités: Talents, Compétences puis Connaissances."	// added by wesp
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Dive Bar Bouncer"
+			"CritterScope"		"Kindred(Brujah)"	// changed by wesp
+			"Genders_Disallowed"	"Female"
+			"Effect"		"History (Stats TKS)"	// changed by wesp
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"				"Séductrice de piano-bars"
+			"Description"			"Des phrases faciles d'homme d'affaires éméchés, des clés de chambre données par des réceptionnistes à perruque, une poignée de plaintes à votre nom. Tel est l'héritage de votre carrière dans l'industrie du divertissement.
+			Modifie l'ordre de priorité de vos Capacités: Talents, Compétences puis Connaissances."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+		General
+		{
+			"InternalName"		"Lounge Singer Seductress"
+			"CritterScope"		"Kindred(Tremere)"
+			"Genders_Disallowed"	"Male"
+			"Effect"		"History (Stats TSK)"
+		}
+	}
+
+// =======-------------- Common -------------========
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Crocs émoussés"
+			"Description"	"Les choses n'ont jamais été faciles pour vous. Vous avez dû vous battre pour tout ce qu'on a fini par vous voler un jour. Vous chérissez tout ce que vous avez, et savourez les dures leçons que vous avez apprises, tout en vous disant que Dieu vous hait. Cette chance vous a suivi dans la non-vie. Vous crocs sont émoussés.
+			Chaque fois que vous vous nourrissez, vous gagnez 2 points de sang de moins. Mais en tant que perdante congénitale, la vie vous apprend beaucoup plus. Vous avez un bonus d'expérience pour chaque récompense d'expérience de 3 ou plus."
+			"ShortDescription"		"Avantage: davantage de gains d'expérience."
+			"ShortPenaltyDescription"	"Pénalité: moins de sang obtenu en se nourissant."
+		}
+		General
+		{
+			"InternalName"	"Blunt Fangs"
+			"CritterScope"	"Kindred(Nosferatu)"	// changed by wesp
+			"Genders_Disallowed"	"Male"	// changed by wesp
+			"Effect"	"History (Blunt Fangs)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Ex-flic"
+			"Description"			"Vous étiez un bon flic, jusqu'à ce que le couteau d'un camé vous traverse la colonne vertébrale, et vous relègue à un travail de bureau pour le restant de votre carrière.
+			Vous commencez avec 1 point en Armes à feu et 1 point en Intimidation. Cependant votre Vigueur ne peut pas excéder 3."
+			"ShortDescription"		"Avantage: +1 aux Armes à distance, +1 à Initimidation."
+			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Vigueur."
+		}
+		General
+		{
+			"InternalName"	"Ex-Cop"
+			"CritterScope"	"Kindred(Gangrel)"
+			"Effect"	"History (Ex-Cop)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Pervers"
+			"Description"			"Vous aimez les femmes. Dieu tout puissant ce que vous les aimez! Vous aimez leurs moindres coins et recoins. Oooooh oui. Mais cet amour n'a jamais été très réciproque, mais, qu'elles aillent au diable! Vos appétits réprimés se manifestent de nouveau dans la non-vie.
+			Vous gagnez plus de sang quand vous vous nourrissez d'humains du sexe opposé. Malheureusement, votre personnalité ne s'est guère améliorée. Votre Subterfuge ne peut dépasser 1."
+			"ShortDescription"		"Avantage: plus de sang des femmes."
+			"ShortPenaltyDescription"	"Pénalité: 1 maximum en Subterfuge."
+		}
+		General
+		{
+			"InternalName"	"Perv"
+			"CritterScope"	"Kindred(Gangrel)"	// changed by wesp
+			"Genders_Disallowed"	"Female"
+			"Effect"	"History (Perv)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Salope"
+			"Description"			"Bon, d'accord, vous aimez bien les garçons. Et il vous arrive d'essayer d'attirer leur attention. Et éventuellement vous aimez bien coucher à droite à gauche. Mais ça ne donne à personne le droit de vous insulter - ils ne vous connaissent pas!
+			Dans la non-vie, votre appétit sexuel débridé se manifeste d'une façon bien étrange; vous digérez plus facilement les fluides du sexe opposé, ainsi vous gagnez plus de sang quand vous vous nourrissez d'hommes. Malheureusement, ayant passé la moitié de votre vie dans un lit, vous avez plus de mal à apprendre ses petites leçons. Vous devez dépenser plus d'expérience pour augmenter vos Attributs Mentaux."
+			"ShortDescription"		"Avantage: plus de sang des hommes."
+			"ShortPenaltyDescription"	"Pénalité: augmenter le Mental est plus coûteux."
+		}
+		General
+		{
+			"InternalName"	"Slut"
+			"CritterScope"	"Kindred(Toreador)"	// changed by wesp
+			"Genders_Disallowed"	"Male"
+			"Effect"	"History (Slut)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Bercé trop près du mur"
+			"Description"			"Quand on est bête, il faut être coriace. Quand vous étiez gamin, on s'est beaucoup moqué de vous à cause de votre crâne un peu plat. Jusqu'à ce que vos poings commencent à répondre.
+			Vous avez une grande résistance à la douleur et commencez avec deux points supplémentaires de Vigueur. Mais il faut reconnaître que la finesse n'est pas votre spécialité. Il vous faut plus d'expérience pour augmenter vos Attributs Mentaux."
+			"ShortDescription"		"Avantage: +2 à Vigueur."
+			"ShortPenaltyDescription"	"Pénalité: augmenter le Mental est plus coûteux."
+		}
+		General
+		{
+			"InternalName"	"Dropped on Head as a Baby"
+			"CritterScope"	"Kindred(Brujah)"	// changed by wesp
+			"Effect"	"History (Chunk)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Oeil de verre"
+			"Description"			"C'est vrai, ce qu'on dit. Vous avez perdu votre oeil en tirant dessus. Ca a été dur de grandir avec un sinistre oeil de verre, mais à l'âge adulte vous avez appris à vous en servir à votre avantage. Quelque chose dans votre regard fixe pousse les gens à faire ce que vous dites.
+			Vous commencez avec deux points en Intimidation, mais vous ne pourrez jamais augmenter votre Perception au-delà de trois."	// changed by wesp
+			"ShortDescription"		"Avantage: +2 à Intimidation."
+			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Perception."
+		}
+		General
+		{
+			"InternalName"	"Glass Eye"
+			"CritterScope"	"Kindred(Brujah)"	// changed by wesp
+			"Effect"	"History (Glass Eye)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Pied bot et polio"
+			"Description"			"\"Ne m'aidez pas!\" Votre double difformité vous complique la vie, mais vous faites partie de ces gens qui triomphent dans l'adversité, dans ces histoires que les gens avalent.
+			Votre Dextérité ne dépassera jamais 1, mais vous commencez avec un point supplémentaire en Humanité, Charisme et Astuce."
+			"ShortDescription"		"Avantage: +1 en Humanité, Charisme et Astuce."
+			"ShortPenaltyDescription"	"Pénalité: 1 maximum en Dextérité."
+		}
+		General
+		{
+			"InternalName"	"Long Foot Little Foot"
+			"CritterScope"	"Kindred(Malkavian)"
+			"Effect"	"History (Long Foot)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Né dans le caniveau"
+			"Description"			"Ordure, plèbe, racaille - peu importe comment vous appelez ça, vous êtes l'équivalent surnaturel. Vous descendez d'une longue lignée de morts vivants du caniveau, crapules de bas étage. Ainsi, vous avez des prédispositions avec la lie de l'humanitée.
+			Vous gagnez plus de sang quand vous vous nourrissez de clochards et de prostituées. Mais cependant, votre héritage crasseux ne laisse pas beaucoup de place pour l'éducation. Il vous faut plus d'expérience pour augmenter vos Aptitudes de Connaissances."
+			"ShortDescription"		"Avantage: davantage de sang des clochards et prostituées."
+			"ShortPenaltyDescription"	"Pénalité: augmenter Connaissances coûte davantage."
+		}
+		General
+		{
+			"InternalName"	"Lowborn"
+			"CritterScope"	"Kindred(Nosferatu)"	// changed by wesp
+			"Effect"	"History (Lowborn)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Fugueur"
+			"Description"			"Votre vieux père était un salaud. Vous pouvez le dire, maintenant. Il vous a fallu des années pour pouvoir parler de lui. Vous faites des progrès, mais vous évitez encore la confrontation. Vous ne savez pas si vous supporterez un jour qu'on vous touche à nouveau.
+			Vous commencez avec un point de Furtivité, mais il vous faut plus d'expérience pour augmenter votre Aptitude de Bagarre."
+			"ShortDescription"		"Avantage: +1 en Furtivité."
+			"ShortPenaltyDescription"	"Pénalité: augmenter Bagarre est plus coûteux."
+		}
+		General
+		{
+			"InternalName"	"Runaway"
+			"CritterScope"	"Kindred(Ventrue)"	// changed by wesp
+			"Effect"	"History (Runaway)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Gavroche"
+			"Description"			"Vous êtes originaire d'un quartier juste à côté du centre ville de L.A. C'aurait pu tout aussi bien être le Tiers Monde. Et vous n'étiez qu'une pauvre fille essayant de survivre à coups de pieds et de morsures. Entre la faim et les bourreaux en maraude, la vie des gangs, c'était votre vie.
+			Vous commencez avec un point en Armes à feu. Votre vie agitée dans les rues ne vous a pas laissé beaucoup de patience pour l'instruction. Vous devez dépenser plus d'expérience pour augmenter vos Aptitudes de Connaissances."
+			"ShortDescription"		"Avantage: +1 en Armes à feu."
+			"ShortPenaltyDescription"	"Pénalité: augmenter Connaissances est plus coûteux."
+		}
+		General
+		{
+			"InternalName"	"Hard-Ass Chica"
+			"CritterScope"	"Kindred(Gangrel)"	// changed by wesp
+			"Genders_Disallowed"	"Male"
+			"Effect"	"History (Chica)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Vagabond des autoroutes"
+			"Description"			"Entre les petites villes qui parsèment le Midwest, il y a beaucoup d'espaces vides, beaucoup de grandes ombres, et beaucoup d'endroits pour disparaître. Vous le savez bien, vous l'avez fait. Et vous avez sans doute aidé d'autres personnes à le faire.
+			Vous commencez la partie avec un point en Mêlée, mais il vous coûtera plus d'expérience pour gagner en Humanité et vous êtes plus sujet à la frénésie."
+			"ShortDescription"		"Avantage: +1 en Mêlée."
+			"ShortPenaltyDescription"	"Pénalité: augmenter Humanité est plus coûteux, davantage sujet à la frénésie."
+		}
+		General
+		{
+			"InternalName"	"Highway Drifter"
+			"CritterScope"	"Kindred(Tremere)"	// changed by wesp
+			"Genders_Disallowed"	"Female"
+			"Effect"	"History (Drifter)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Neurones grillés"
+			"Description"			"La science n'a pas encore prouvé le lien entre la marijuana et la baisse des capacités mentales. Vous dites que vous avez toujours été un peu long à la détente, mais c'est juste parce que vous êtes vraiment relax.
+			Vous ne pouvez pas augmenter Astuce au-delà de trois, mais vous avez moins de chance de succomber à la frénésie."
+			"ShortDescription"		"Avantage: moins sensible à la frénésie."
+			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Astuce."
+		}
+		General
+		{
+			"InternalName"	"Burnout"
+			"CritterScope"	"Kindred(Malkavian)"	// changed by wesp
+			"Effect"	"History (Burnout)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Chair cadavérique"
+			"Description"			"Chaque manifestation du vampirisme est unique. Il s'avère que la vôtre comporte un malheureux défaut. Votre corps cherche à pourrir. Rien d'insurmontable, mais cela vous épuise constamment.
+			Votre corps guérit plus lentement que la normale, puisqu'il faut plus d'énergie pour ramener votre chair putréfiée à sa condition optimale. L'avantage, c'est que votre chair est malléable. Il vous faut moins d'expérience pour augmenter vos Attributs Physiques. Oh, et vous ne pouvez pas augmenter votre Charisme à plus de trois à cause de... l'odeur, vous savez..."
+			"ShortDescription"		"Avantage: augmenter Physique est moins coûteux."
+			"ShortPenaltyDescription"	"Pénalité: régénération lente, 3 maximum en Charisme."
+		}
+		General
+		{
+			"InternalName"	"Cadaverous Flesh"
+			"CritterScope"	"Kindred(Nosferatu)"	// changed by wesp
+			"Effect"	"History (Cadaverous Flesh)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Présence dérangeante"
+			"Description"			"La plupart des vampires n'ont aucun problème à s'insérer dans la société mortelle. Vous ne savez pas pourquoi, mais quelque chose vous en empêche. Vous faites tout comme eux, mais quelque chose chez vous met les humains mal à l'aise. Parfois, on dirait qu'ils peuvent carrément vous sentir. Vous étiez un humain tout ce qu'il y a de plus affable et intellectuel. Où est le problème?
+			Il vous faut moins d'expérience pour augmenter vos Attributs Mentaux, mais plus pour les Attributs Sociaux et votre Capacité de Furtivité."
+			"ShortDescription"		"Avantage: augmenter Mental est moins coûteux."
+			"ShortPenaltyDescription"	"Pénalité: augmenter Social et Furtivité est plus coûteux."
+		}
+		General
+		{
+			"InternalName"	"Eerie Presence"
+			"CritterScope"	"Kindred(Tremere)"	// changed by wesp
+			"Effect"	"History (Eerie Presence)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Force trompeuse"
+			"Description"			"Vous étiez un modèle de maladresse de votre vivant, mais l'Etreinte vous a donné des réserves inattendues de puissance physique.
+			Vous ne pouvez ni augmenter votre Dextérité ni votre Perception à plus de trois, mais quand vous utilisez Puissance du Sang, elle dure plus longtemps."
+			"ShortDescription"		"Avantage: Puissance du sang dure 150%."
+			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Dextérité et Perception."
+		}
+		General
+		{
+			"InternalName"	"Deceptive Strength"
+			"CritterScope"	"Kindred(Tremere)"	// changed by wesp
+			"Effect"	"History (Transcendental)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Soif de sang vorace"
+			"Description"			"L'Etreinte a réveillé vos bas instincts. Vous luttez toujours contre le besoin de tuer, même quand votre pouvoir de le faire augmente.
+			Vous commencez avec un point supplémentaire en Bagarre et en Force, mais vous avez plus de chances d'entrer en frénésie. Votre comportement impatient vous rend la discrétion plus difficile; il vous faut plus d'expérience pour augmenter votre Capacité de Furtivité."
+			"ShortDescription"		"Avantage: +1 en Force et en Bagarre."
+			"ShortPenaltyDescription"	"Pénalité: davantage sujet à la frénésie, augmenter Furtivité est plus coûteux."
+		}
+		General
+		{
+			"InternalName"	"Rapacious Bloodlust"
+			"CritterScope"	"Kindred(Toreador)"	// changed by wesp
+			"Effect"	"History (Rapacious)"
+		}
+	}
+
+// =======-------------- Clan Specific, Mostly Discipline Related-------------========
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Anguille"
+			"Description"			"L'Etreinte vous a donné la sensation d'être plus léger que l'air, un sentiment qui ne vous a toujours pas quitté.
+			La Célérité dure longtemps, mais il vous faut plus d'expérience pour augmenter votre Puissance."
+			"ShortDescription"		"Avantage: Célérité dure 125%."
+			"ShortPenaltyDescription"	"Pénalité: augmenter Puissance est plus coûteux."
+		}
+		General
+		{
+			"InternalName"	"Quickling"
+			"CritterScope"	"Kindred(Brujah)"
+			"Effect"	"History (Quickling)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Anti-paladin"
+			"Description"			"Vous étiez une brute de votre vivant, la mort a fait de vous un tyran. La nuit vous a doté d'un véritable talent sauvage pour le combat et une inclination à vous en servir. Et quand vous en avez l'occasion, c'est toujours un spectacle effrayant.
+			Il vous faut moins de points d'expérience pour augmenter votre Présence et vous commencez avec un point en Mêlée. Il vous faut toutefois plus d'expérience pour augmenter votre Célérité et votre Humanité."
+			"ShortDescription"		"Avantage: augmenter Présence est moins coûteux, +1 en Mêlée."
+			"ShortPenaltyDescription"	"Pénalité: augmenter Célérité et Humanité est plus coûteux."
+		}
+		General
+		{
+			"InternalName"	"Anti Paladin"
+			"CritterScope"	"Kindred(Brujah)"
+			"Effect"	"History (Anti Paladin)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Chupacabra"
+			"Description"			"D'après la rumeur, vous descendez du légendaire Chupacabra - le démon sanguinaire qui hante la campagne mexicaine depuis des générations. La véracité de cette douteuse supposition est impossible à déterminer, mais vos instincts féroces sont forts.
+			Vous commencez avec un point supplémentaire en Protéisme. Malheureusement, votre ancêtre supposé vous a laissé une déficience - vous ne pouvez pas augmenter votre Discipline Force d'âme au-delà de 3."
+			"ShortDescription"		"Avantage: +1 en Protéisme."
+			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Force d'âme."
+		}
+		General
+		{
+			"InternalName"	"Chupacabra"
+			"CritterScope"	"Kindred(Gangrel)"
+			"Genders_Disallowed"	"Female"
+			"Effect"	"History (Chupacabra)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Dresseuse"
+			"Description"			"Les créatures mortelles perçoivent les vampires comme une abomination, une chose étrangère à l'ordre naturel. Mais votre présence semble apaiser l'esprit animal comme un narcotique enivrant.
+			Vos effets d'Animalisme sont plus longs et plus puissants, mais vous avez du mal à maintenir le moindre effet de Protéisme très longtemps."
+			"ShortDescription"		"Avantage: Animalisme dure 125%, dégâts d'Animalisme à 135%."
+			"ShortPenaltyDescription"	"Pénalité: Protéisme ne dure que 75%."
+		}
+		General
+		{
+			"InternalName"	"Beastmistress"
+			"CritterScope"	"Kindred(Gangrel)"
+			"Genders_Disallowed"	"Male"
+			"Effect"	"History (Beastmistress)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Insectoïde"
+			"Description"			"C'est peut-être la vague envie de tisser une toile, ou les rares fois où vous vous surprenez à utiliser vos antennes imaginaires, mais quelque chose vous dit que votre sang de Gangrel est exceptionnel.
+			Vous pouvez prolonger la durée de Protéisme et Force d'âme. Malheureusement, votre nature est encore plus éloignée de l'humain que les autres Gangrels. Vous ne pouvez pas augmenter Astuce, Charisme et Apparence au-delà de trois."
+			"ShortDescription"		"Avantage: Protéisme et Force d'âme durent 120%."	//changed by wesp
+			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Astuce, Charisme et Apparence."
+		}
+		General
+		{
+			"InternalName"	"Insectoid"
+			"CritterScope"	"Kindred(Gangrel)"
+			"Effect"	"History (Insectoid)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Gangrel Anda"
+			"Description"			"Descendant des guerriers vampires nomades, vous avez été élevé dans des conditions extrêmes d'endurance.
+			Vous commencez avec des points supplémentaires en Vigueur et Force d'âme. Mais le sang Anda n'est pas d'ici, et votre esprit n'est pas lié à la faune endémique, il vous faut donc plus d'expérience pour augmenter votre score d'Animalisme."
+			"ShortDescription"		"Avantage: +1 en Vigueur et Force d'âme."
+			"ShortPenaltyDescription"	"Pénalité: augmenter Animalisme coûte davantage."
+		}
+		General
+		{
+			"InternalName"	"Anda Gangrel"
+			"CritterScope"	"Kindred(Gangrel)"
+			"Effect"	"History (Anda)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Ninja!"
+			"Description"			"Vous vous prenez pour un ninja. Ki-ai!
+			Vous commencez avec un point en Bagarre et en Mêlée, mais vous ne pouvez pas augmenter les Armes à feu au-delà de 0, puisqu'elles sont anathèmes à votre Code de Tueur Silencieux. Les canards aussi. Les canards sont anathèmes aussi."
+			"ShortDescription"		"Avantage: +1 en Bagarre et en Mêlée."
+			"ShortPenaltyDescription"	"Pénalité: 0 maximum en Armes à feu."
+		}
+		General
+		{
+			"InternalName"	"Ninja"
+			"CritterScope"	"Kindred(Malkavian)"
+			"Effect"	"History (Ninja)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Alarmiste"
+			"Description"			"La peur paralysante de la mort éternelle vous taraude sans cesse. La mort guette à chaque coin, pour vous, et pour les autres, et vous le savez. Et vous n'avez pas assez confiance en vos capacités vampiriques. A quoi bon de toutes façons?
+			Vous ne pensez pas que l'Occultation fonctionne et par conséquent ne parvenez pas à maintenir l'effet très longtemps - chaque niveau d'Occultation dure moins longtemps que la normale. Cependant vous êtes toujours sur le qui-vive, et votre Augure dure plus longtemps."
+
+
+			"ShortDescription"		"Avantage: Augure dure 120%."	//changed by wesp
+			"ShortPenaltyDescription"	"Pénalité: Occultation dure 80%."	//changed by wesp
+		}
+		General
+		{
+			"InternalName"	"Doomseer"
+			"CritterScope"	"Kindred(Malkavian)"
+			"Effect"	"History (Doomseer)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Complètement déjanté"
+			"Description"			"La malédiction du Clan Malkavien brûle à blanc dans vos veines. Vous êtes une marmitte débordante de pure folie.
+			Les effets de votre Aliénation sont plus puissants et plus durables que les autres. Mais il est difficile pour votre cerveau tordu d'embrasser le concept d'invisibilité, et il vous faut plus d'expérience pour augmenter votre score d'Occultation."
+			"ShortDescription"		"Avantage: Aliénation dure 200%, dégâts d'Aliénation à 140%."
+			"ShortPenaltyDescription"	"Pénalité: augmenter Occultation est plus coûteux."
+		}
+		General
+		{
+			"InternalName"	"Completely Batshit"
+			"CritterScope"	"Kindred(Malkavian)"
+			"Effect"	"History (Batshit)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Croque-mitaines"
+			"Description"			"L'humanité est vraiment un spectacle fascinant. Tout le monde a souhaité un jour ou l'autre être une petite souris, mais cette idée vous obsédait tout particulièrement. Par chance, vos pères Nosferatu avaient également tous un penchant pour le voyeurisme.
+			Vous descendez d'une longue lignée de pervers et vos effets d'Occultation durent plus longtemps. Cette préoccupation a affaibli d'autres aspects de votre lignée et votre Puissance ne peut s'élever au-delà de 3." //changed by wesp
+			"ShortDescription"		"Avantage: durée d'Occultation 130%."	//changed by wesp
+			"ShortPenaltyDescription"	"Pénalité: maximum de 3 ? Puissance."
+		}
+		General
+		{
+			"InternalName"	"Boogeyman"
+			"CritterScope"	"Kindred(Nosferatu)"
+			"Genders_Disallowed"	"Female"
+			"Effect"	"History (Boogeyman)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Cléopâtre"
+			"Description"			"Il est des sorts pires que la mort. Vous le savez bien. De votre vivant, vous étiez un objet de vénération. Les hommes vous désiraient, les femmes voulaient vous ressembler. Vous avez été transformée en une parodie obscène de vous-même. Ayant particulièrement conscience du confort que peut amener la beauté, vous avez une compréhension unique de la psychologie humaine et vampirique.
+			Vous commencez avec un point en Furtivité. Votre désir intense de ne rien faire que vous cacher (à jamais) donne à votre pouvoir d'Occultation une durée plus longue. N'ayant jamais particulièrement aimé les animaux, il vous faudra plus d'expérience pour faire augmenter votre discipline Animalisme."
+			"ShortDescription"		"Avantage: +1 en Furtivité, Occultation dure 120%."
+			"ShortPenaltyDescription"	"Pénalité: augmenter Animalisme coûte davantage."
+		}
+
+		General
+		{
+			"InternalName"	"Cleopatra"
+			"CritterScope"	"Kindred(Nosferatu)"
+			"Genders_Disallowed"	"Male"
+			"Effect"	"History (Cleopatra)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Face de cuir"
+			"Description"			"Votre renaissance en tant que bête monstrueuse était un rêve devenu réalité. Le pouvoir est enivrant. Et maintenant, vous allez les faire payer - tous.
+			Vous commencez avec un point en Mêlée et un point supplémentaire en Puissance. Vous n'avez jamais ressenti beaucoup d'empathie pour les autres créatures vivantes, il vous faudra donc plus d'expérience pour augmenter votre Humanité, et vous êtes plus sujet à la Frénésie."
+			"ShortDescription"		"Avantage: +1 en Mêlée et Puissance."
+			"ShortPenaltyDescription"	"Désavantage: augmenter Humanité est plus coûteux, frénésie plus fréquente."
+		}
+		General
+		{
+			"InternalName"	"Leatherface"
+			"CritterScope"	"Kindred(Nosferatu)"
+			"Genders_Disallowed"	"Female"
+			"Effect"	"History (Leatherface)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Pasteur des vermines"
+			"Description"			"Comme une créature de légende urbaine, vous communiez avec les rongeurs pestilents et partagez leur domaine crasseux.
+			Vos effets d'Animalisme sont plus puissants et durent plus longtemps. Votre sang malade a du mal à alimenter votre Puissance, dont la durée est diminuée."
+			"ShortDescription"		"Avantage: Animalisme dure 150%, dégâts d'Animalisme à 135%"
+			"ShortPenaltyDescription"	"Pénalité: Puissance dure 75%."
+		}
+		General
+		{
+			"InternalName"	"Shepherd of Vermin"
+			"CritterScope"	"Kindred(Nosferatu)"
+			"Effect"	"History (Shepherd)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Enchanteresse décadente"
+			"Description"			"Belle, blasée et sociopathe. Vous vous amusez en testant les limites de dévotion de vos soupirants, et vous vous délectez de la souffrance qu'ils s'infligent pour obtenir votre affection.
+			Vous commencez avec un point supplémentaire en Apparence et en Subterfuge, mais votre Célérité dure moins longtemps."
+			"ShortDescription"		"Avantage: +1 en Apparence et Subterfuge."
+			"ShortPenaltyDescription"	"Pénalité: Célérité dure 80%."
+		}
+		General
+		{
+			"InternalName"	"Decadent Enchantress"
+			"CritterScope"	"Kindred(Toreador)"
+			"Genders_Disallowed"	"Male"
+			"Effect"	"History (Enchantress)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Monstre superbe"
+			"Description"			"Vous êtes sous le joug de vos passions. Et certaines ne sont pas très élégantes. Les gens vous trouvent absoluement fascinant. Mais vous ne vous souciez que trop de vous-même pour vous avoir le sens normal de la répartie humaine.
+			Votre Présence dure plus longtemps que celle des autres Toréadors, mais vous ne pouvez augmenter votre Astuce au-delà de 3 et êtes plus sujet à la frénésie quand les choses ne se passent pas comme vous le voulez." // changed by wesp
+			"ShortDescription"		"Avantage: Présence dure 120%."	//changed by wesp
+			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Astuce, davantage sujet à la frénésie."
+		}
+		General
+		{
+			"InternalName"	"Beautiful Monster"
+			"CritterScope"	"Kindred(Toreador)"
+			"Genders_Disallowed"	"Female"
+			"Effect"	"History (Monster)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Conscience surnaturelle"
+			"Description"			"Vous jurez devant Dieu que vous pouvez lire l'avenir. Pas l'année prochaine, ni même la semaine prochaine, mais d'un instant à l'autre, vous savez toujours ce qui va se passer. Vous êtes tellement en phase avec votre environnement qu'on dit que vous avez déjà esquivé des balles sans même regarder. Cette capacité se manifeste par une forme supérieure d'Augure.
+			Votre Augure vous donne plus d'avantages et dure plus longtemps. Malheureusement, le volume considérable d'informations vous rends plus prudent que la moyenne; il vous faut plus d'expérience pour augmenter votre Discipline Célérité."
+			"ShortDescription"		"Avantage: Augure dure 120%."	//changed by wesp
+			"ShortPenaltyDescription"	"Pénalité: augmenter Célérité est plus coûteux."
+		}
+		General
+		{
+			"InternalName"	"Uncanny Awareness"
+			"CritterScope"	"Kindred(Toreador)"
+			"Effect"	"History (Awareness)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Féerique"
+			"Description"			"Vous êtes une créature à la beauté délicate et à la grâce éphémère. Comme si vous sortiez des pages de Spenser ou Keats plutôt que Shelley ou Stoker.
+			Votre Présence et votre Célérité ont une durée supérieure, mais vous êtes vraiment de constitution délicate - il vous faut plus d'expérience pour augmenter votre Vigueur, Force, Armes à feu et Intimidation."
+			"ShortDescription"		"Avantage: Présence et Célérité durent 120%."	//changed by wesp
+			"ShortPenaltyDescription"	"Pénalité: augmenter Vigueur, Force, Armes à feu et Initimidation est plus coûteux."
+		}
+		General
+		{
+			"InternalName"	"Faelike"
+			"CritterScope"	"Kindred(Toreador)"
+			"Effect"	"History (Faelike)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Prodige surnaturel"
+			"Description"			"Vous avez un don naturel pour les arts noirs de la Thaumaturgie, et pouvez l'utiliser avec plus d'efficacité que la plupart des Tremeres. La Thaumaturgie est votre passion exclusive, au détriment de toute autre activité ou presque.
+			Vous commencez avec un point supplémentaire en Thaumaturgie, mais vous souffrez d'un malus d'un point à chaque récompense d'expérience de 3 ou plus."
+			"ShortDescription"		"Avantage: +1 en Thaumaturgie."
+			"ShortPenaltyDescription"	"Pénalité: moins d'expérience gagnée."
+		}
+		General
+		{
+			"InternalName"	"Eldritch Prodigy"
+			"CritterScope"	"Kindred(Tremere)"
+			"Effect"	"History (Eldritch Prodigy)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Infernal"
+			"Description"			"Vos ancêtres ont payé un prix terrible dans leur quête de pouvoir. Le contrat tient toujours et vous continuerez de payer pour l'éternité.
+			La progression en Thaumaturgie coûte moins d'expérience, mais Augure dure moitié moins de temps, et vous ne pourrez jamais augmenter Domination au-delà du niveau trois."
+			"ShortDescription"		"Avantage: augmenter Thaumaturgie est moins coûteux."
+			"ShortPenaltyDescription"	"Pénalité: Augure dure 50%, 3 maximum en Domination."
+		}
+		General
+		{
+			"InternalName"	"Infernal"
+			"CritterScope"	"Kindred(Tremere)"
+			"Effect"	"History (Infernal)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Dominatrice"
+			"Description"			"Vous avez toujours su convaincre les gens, mais depuis que vous êtes vampire, peu parviennent à résister à votre volonté.
+			Vous commencez avec un point en Subterfuge et vos effets de Domination sont plus forts et plus durables. Puisque vous avez l'habitude de vous faire servir par les autres, il vous faut plus d'expérience pour augmenter vos Compétences."
+			"ShortDescription"		"Avantage: +1 en Subterfuge, Domination dure 200%, dégats de Domination à 140%."
+			"ShortPenaltyDescription"	"Pénalité: augmenter les Compétences est plus coûteux."
+		}
+		General
+		{
+			"InternalName"	"Dominatrix"
+			"CritterScope"	"Kindred(Ventrue)"
+			"Genders_Disallowed"	"Male"
+			"Effect"	"History (Dominatrix)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Diabolique"
+			"Description"			"En plus de la Bête Intérieure, vous luttez contre une force plus noire encore. Vous ressentez le poids du salut et de la damnation dans chacun de vos actes.
+			Votre Présence a une durée plus grande, mais il vous faut plus d'expérience pour augmenter votre Humanité, et vous êtes plus sujet à la frénésie."
+			"ShortDescription"		"Avantage: Présence dure 120%."	//changed by wesp
+			"ShortPenaltyDescription"	"Pénalité: augmenter Humanité est plus coûteux, frénésie plus fréquente."
+		}
+		General
+		{
+			"InternalName"	"Diabolic"
+			"CritterScope"	"Kindred(Ventrue)"
+			"Effect"	"History (Diabolic)"
+		}
+	}
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Nettoyeur"
+			"Description"			"Tous les Ventrues n'ont pas peur de se salir les mains. Certains problèmes doivent être traités de front, et parfois les sujets sont trop délicats pour y mêler les Gangrels. Bien que votre lignée ne provienne pas du meilleur côté de l'arbre généalogique de la famille Ventrue, on leur a toujours fait confiance pour gérer ce genre de problèmes.
+			Votre Force d'âme a une plus grande durée, mais il vous faut plus d'expérience pour augmenter votre Présence. "
+			"ShortDescription"		"Avantage: Force d'âme dure 120%." //changed by wesp
+			"ShortPenaltyDescription"	"Pénalité: augmenter Présence est plus coûteux."
+		}
+		General
+		{
+			"InternalName"	"Cleaner"
+			"CritterScope"	"Kindred(Ventrue)"
+			"Genders_Disallowed"	"Female"
+			"Effect"	"History (Cleaner)"
+		}
+	}
+// =======-------------- UNUSED-------------========	// restored by wesp
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Mégalomane"
+			"Description"	"Votre égo est énorme. Vu votre confiance en vous-même et vos capacités, soit les gens vous détestent, soit ils vous adorent.
+			Vous commencez avec un point supplémentaire en Charisme mais Subterfuge ne peut dépasser quatre."	// changed by wesp
+			"ShortDescription"	"Avantage: +1 en Charisme."
+			"ShortPenaltyDescription"	"Pénalité: 4 maximum en Subterfuge."
+		}
+
+		General
+		{
+			"InternalName"	"Megalomaniac"
+			"CritterScope"	"Kindred(Ventrue)"	// changed by wesp
+			"Effect"		"History (Megalomaniac)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Athlète All-Star"
+			"Description"	"Vous avez été un excellent athlète qui excellait dans toutes les activités physiques. Cependant, vous n'êtes pas pour ainsi dire l'outil le plus fin de l'établi. Etant donné que vous avez passé la plupart de votre temps et de votre énergie à vous entraîner, vous ne savez vraiment rien faire d'autre.
+			Vous gagnez un bonus en Force mais ne pouvez augmenter votre Intelligence à plus de quatre."	// changed by wesp
+			"ShortDescription"		"Avantage: +1 en Force."
+			"ShortPenaltyDescription"	"Pénalité: 4 maximum en Intelligence."
+		}
+
+		General
+		{
+			"InternalName"	"All-Star Athlete"
+			"CritterScope"	"Kindred(Brujah)"	// changed by wesp
+			"Effect"		"History (All-Star Athlete)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Proche de la Bête"
+			"Description"	"Après votre Etreinte, vous étiez naturellement plus à l'écoute de la Bête intérieure et cette affinité est maintenant physiquement apparente.
+			Vous pouvez faire évoluer Protéisme plus facilement, mais les autres, en particulier le bétail, trouvent votre apparence désagréable."	// changed by wesp
+			"ShortDescription"	"Avantage: augmenter Protéisme est moins coûteux."
+			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Apparence."
+		}
+
+		General
+		{
+			"InternalName"	"Close To the Beast"
+			"CritterScope"	"Kindred(Gangrel)"
+			"Effect"		"History (Close To the Beast)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Subtilement dingue"
+			"Description"	"Votre aliénation mentale n'a pas trop entravé votre capacité à interagir avec les autres. À première vue, la plupart ne serait pas à même de deviner votre instabilité mentale. Votre forme unique de démence se voit plus facilement lors de provocation au combat, et vous ne pouvez jamais élever votre Esquive au-delà de trois."	// changed by wesp
+			"ShortDescription"	"Avantage: +1 en Aliénation."
+			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Esquive."
+		}
+
+		General
+		{
+			"InternalName"	"Subtly Insane"
+			"CritterScope"	"Kindred(Malkavian)"
+			"Effect"		"History (Subtly Insane)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Bien éduqué"
+			"Description"	"Vous avez été très privilégié et avez acquis une excellente éducation. Vous avez un bonus dans diverses capacités, mais votre tempérament est doux et faible. Domination et intimidation ne peuvent dépasser trois points."	// changed by wesp
+			"ShortDescription"		"Avantage: Bonus dans tous les traits de Connaissance."	// changed by wesp
+			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Domination et Intimidation."
+		}
+
+		General
+		{
+			"InternalName"	"Well Educated"
+			"CritterScope"	"Kindred(Ventrue)"	// changed by wesp
+			"Effect"		"History (Well Educated)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Affinité pour la magie"
+			"Description"	"Vous avez toujours aimé l'illusionisme, et avez même effectué quelques tours de magie par vous-même étant enfant. Aujourd'hui vous êtes ébahi de la réalité de la magie et progressez ainsi facilement en Thaumaturgie. D'un autre côté, vous avez des difficultés dans l'apprentissage d'autres choses."	// changed by wesp
+			"ShortDescription"		"Avantage: augmenter Thaumaturgie coûte moins."
+			"ShortPenaltyDescription"	"Pénalité: moins d'expérience gagnée."		}
+
+		General
+		{
+			"InternalName"	"Affinity for Magic"
+			"CritterScope"	"Kindred(Tremere)"
+			"Effect"		"History (Affinity for Magic)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Présentable"
+			"Description"	"Le sang de votre sire Nosferatu était plutôt faible et la malédiction du sang n'a pas trop forte emprise sur vous. Vous êtes seulement difforme lorsque la lune ne brille pas, mais il est une fois et demie plus difficile pour vous d'apprendre la Discipline Occultation de votre clan."	// changed by wesp
+			"ShortDescription"		"Avantage: +1 en Charisme."
+			"ShortPenaltyDescription"	"Pénalité: augmenter Occultation est plus coûteux."		}
+
+		General
+		{
+			"InternalName"	"Presentable"
+			"CritterScope"	"Kindred(Nosferatu)"
+			"Effect"		"History (Presentable)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Artiste famélique"
+			"Description"	"Vous étiez un artiste affamé. Vous avez vécu avec vos seuls vêtements sur le dos et à cause de vos origines modestes, vous n'avez aucun scrupule à porter des vêtements laids. Cependant vous avez le regard affuté et le sens du détail."	// changed by wesp
+			"ShortDescription"	"Avantage: +1 en Perception."
+			"ShortPenaltyDescription"	"Pénalité: 4 maximum en Apparence."
+		}
+
+		General
+		{
+			"InternalName"	"Starving Artist"
+			"CritterScope"	"Kindred(Toreador)"
+			"Effect"		"History (Starving Artist)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Malfaisante"
+			"Description"	"Vous êtiez une teigne au coeur de pierre, aimant la violence, de votre vivant, et vous êtes restée une cinglée maléfique dans la non-vie.
+			Vous avez une Humanité de cinq, mais commencez avec un bonus à votre Compétence Armes à feu."	// changed by wesp
+			"ShortDescription"		"Avantage: +1 en Armes à feu."
+			"ShortPenaltyDescription"	"Pénalité: -2 en Humanité."
+		}
+
+		General
+		{
+			"InternalName"	"Black-Hearted"
+			"CritterScope"	"Kindred(Nosferatu)"	// changed by wesp
+			"Genders_Disallowed"	"Male"	// changed by wesp
+			"Effect"		"History (Black-Hearted)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Dément occulte"
+			"Description"	"Qui aurait pu penser que tout cela pouvait être vrai? Vous qui adoriez les histoires noires et qui vous considériez comme un spécialiste en occultisme! Maintenant que vous êtes parmi les Vampires, vous remarquez que vous connaissez déjà certaines choses et êtes vraiment excité d'en apprendre plus au sujet de votre nouvel état de non-vie.
+			Vous obtenez un bonus en Erudition et sur l'expérience gagnée, mais les autres vous trouvent dédaigneux et leur empathie à votre égard est minorée."	// changed by wesp
+			"ShortDescription"		"Avantage: +1 en Erudition, plus de gain d'expérience."
+			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Charisme."
+		}
+
+		General
+		{
+			"InternalName"	"Occult Nut"
+			"CritterScope"	"Kindred(Malkavian)"	// changed by wesp
+			"Effect"		"History (Occult Nut)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Universitaire"
+			"Description"	"Vous étiez du type académique, comme le fut votre sire Brujah, incarnant l'image ancienne du poète-guerrier Brujah.
+			Vos Attributs ont un ordre de priorité différent, Mental étant le plus important, puis Social, et enfin Physique."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+
+		General
+		{
+			"InternalName"	"Academic"
+			"CritterScope"	"Kindred(Brujah)"
+			"Effect"		"History (Academic)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Généralissime"
+			"Description"	"Ordre et discipline, tactique et guerre: ce sont les raisons pour lesquelles vous aviez rejoint l'armée. Non seulement cela vous convenait parfaitement, mais vous excelliez dans l'armée.
+			Modifie l'ordre de priorité de vos Attributs: Physique, Mental puis Social."
+			"ShortDescription"		"Priorité des traits de départ modifiée."
+			"ShortPenaltyDescription"	""
+		}
+
+		General
+		{
+			"InternalName"	"Generalissimo"
+			"CritterScope"	"Kindred(Tremere)"	// changed by wesp
+			"Effect"		"History (Generalissimo)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Ex-GIGN"	// changed by wesp
+			"Description"	"Dans les Forces de Police, vous aviez développé une grande connaissance des armes à feu. Vous commencez avec un bonus à la Compétence Armes à feu. Cependant, vous avez du quitter les forces de l'ordre après avoir reçu une blessure invalidante dans l'exercice de vos fonctions. Votre Dextérité ne peut dépasser un."
+			"ShortDescription"		"Avantage: +2 en Armes à feu."
+			"ShortPenaltyDescription"	"Pénalité: 1 maximum en Dextérité."
+		}
+
+		General
+		{
+			"InternalName"	"Ex-SWAT"	// changed by wesp
+			"CritterScope"	"Kindred(Toreador)"	// changed by wesp
+			"Effect"		"History (Ex-SWAT)"	// changed by wesp
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Voyeur"	// changed by wesp
+			"Description"	"Ce n'est pas de votre faute si vous êtes né désavantagé physiquement. Puisque personne ne vous aime, vos désirs sexuels inassouvis et refoulés ont fait de vous un petit pervers. Maintenant dans votre non-vie, vous constatez que vous digérez la vitae des membres du sexe opposé plus facilement."
+			"ShortDescription"		"Avantage: davantage de sang des femmes."
+			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Charisme."
+		}
+
+		General
+		{
+			"InternalName"	"Tom"	// changed by wesp
+			"CritterScope"	"Kindred(Nosferatu)"	// changed by wesp
+			"Genders_Disallowed"	"Female"	// changed by wesp
+			"Effect"		"History (Tom)"	// changed by wesp
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Fumeur de haschisch"
+			"Description"	"Les scientifiques disent que fumer de la marijuana peut vous rendre stupide. Ceci explique peut-être votre mémoire épouvantable car vous oubliez souvent les noms et autres détails. Cependant, vous avez une attitude très détendue envers la vie, aussi bien dans la non-vie. Vous gagnez un bonus sur les tests de frénésie."
+			"ShortDescription"		"Avantage: moins sujet à la frénésie."
+			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Intelligence."
+		}
+
+		General
+		{
+			"InternalName"	"Pot Head"
+			"CritterScope"	"Kindred(Gangrel)"	// changed by wesp
+			"Effect"		"History (Pot Head)"
+		}
+	}
+
+
+	HistoryData
+	{
+		Text
+		{
+			"Name"		"Sourd"
+			"Description"	"Vous êtes né pratiquement sourd. Non seulement avez-vous surmonté votre propre handicap, mais vous vous plaisez à aider les autres à faire face et à avancer dans la vie. Vous commencez avec une Humanité de 8. Par ailleurs, sans vouloir être trop présomptueux, vous avez le vague sentiment que Dame Fortune vous sourit."
+			"ShortDescription"		"Avantage: +1 en Humanité."
+			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Perception."
+		}
+
+		General
+		{
+			"InternalName"	"Deaf"
+			"CritterScope"	"Kindred(Malkavian)"	// changed by wesp
+			"Effect"		"History (Deaf)"
+		}
+	}
+}
+

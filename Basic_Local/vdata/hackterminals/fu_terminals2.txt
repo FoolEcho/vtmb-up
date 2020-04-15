@@ -18,14 +18,13 @@ TerminalDefinition
 	// and up to 6 functions per sub dir
 	// there are 8 total outputs per terminal, (0...7)
 	// talk to Brock if you'd like this number increased. 
-	// runscript added by wesp
 
 	Email
 	{
 		"subject"	"Etat"
 		"sender"	"Prêtresse"
 		"body"		"Quel est l'état actuel du projet ? Un nouveau sujet vous a été livré la semaine dernière. Si je ne vois pas de résultat avant la fin du mois, vous comprendrez les conséquences."
-		"runscript"	"G.Silver_Know = 2"
+		"runscript"	"G.Silver_Know = 2"	// added by wesp
 	}
 
 	Email

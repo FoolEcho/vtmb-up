@@ -1243,7 +1243,7 @@ StatData
 				"HelpTextH1"	"Niveau 1 : Corbeaux nocturnes"
 				"HelpTextH2"	"Niveau 2 : Longicorne"
 				"HelpTextH3"	"Niveau 3 : Loup spectral"
-				"HelpTextH4"	"Niveau 4 : Communion des suceurs de sang"
+				"HelpTextH4"	"Niveau 4 : Communion des suceurs de sang"	// changed by wesp
 				"HelpTextH5"	"Niveau 5 : Pestilence"
 				"HelpTextL1"	"Coût d'activation : 1 point de sang. Les Corbeaux nocturnes immobilisent la victime pendant un court moment. Toute action entreprise à l'encontre de la victime dispersera les oiseaux et l'effet prendra fin prématurément."
 				"HelpTextL2"	"Coût d'activation : 1 point de sang. Un longicorne mangeur d'os vole vers la cible et cause des dégâts en s'infiltrant profondément dans le corps de sa victime."
@@ -2141,7 +2141,7 @@ StatData
 
 			Stat
 			{
-				"Name"		"Vision divine"	//changed by wesp
+				"Name"		"Vision divine"
 				"InternalName"	"Divine_Vision"
 				"HelpText"	"La vision divine permet au croisé de voir les auras des amis et des ennemis, même ceux cachés. Les auras alliées apparaîtront en bleu, celles des ennemis en rouge. Tous les niveaux de Vision divine coûte un seul point de foi par activation."	// changed by wesp
 				"HelpTextH1"	"Niveau 1:"
@@ -2178,19 +2178,19 @@ StatData
 
 			Stat
 			{
-				"Name"		"Lumière sacrée"	// changed by wesp
+				"Name"		"Lumière sacrée"
 				"InternalName"	"Holy_Light"
-				"HelpText"		"La Lumière sacrée invoque la gloire de Dieu sur les hérétiques morts-vivants : elle les aveugle temporairement, faisant d'eux une cible facile."
+				"HelpText"		"La Lumière sacrée invoque la gloire de Dieu sur les hérétiques morts-vivants : elle les aveugle temporairement, faisant d'eux une cible facile."	// changed by wesp
 				"HelpTextH1"	"Niveau 1 :"
 				"HelpTextH2"	"Niveau 2 :"
 				"HelpTextH3"	"Niveau 3 :"
 				"HelpTextH4"	"Niveau 4 :"
 				"HelpTextH5"	"Niveau 5 :"
-				"HelpTextL1"	"Niveau 1"
-				"HelpTextL2"	"Niveau 2"
-				"HelpTextL3"	"Niveau 3"
-				"HelpTextL4"	"Niveau 4"
-				"HelpTextL5"	"Niveau 5"
+				"HelpTextL1"	"Coûte 1 point de foi par activation. Dure 4 secondes par activation."	// added by wesp
+				"HelpTextL2"	"Coûte 2 points de foi par activation. Dure 6 secondes par activation."	// added by wesp
+				"HelpTextL3"	"Coûte 3 points de foi par activation. Dure 8 secondes par activation."	// added by wesp
+				"HelpTextL4"	"Coûte 4 points de foi par activation. Dure 10 secondes par activation."	// added by wesp
+				"HelpTextL5"	"Coûte 5 points de foi par activation. Dure 12 secondes par activation."	// added by wesp
 
 				"ShownInFeedback"	"1"
 
@@ -3958,7 +3958,7 @@ StatData
 
 			Stat
 			{
-				"Name"		"Vision divine"	// changed by wesp
+				"Name"		"Vision divine"
 				"InternalName"	"Active_Divine_Vision"
 				"Min"			"0"
 				"Max"			"Divine_Vision"
@@ -4029,7 +4029,7 @@ StatData
 
 			Stat
 			{
-				"Name"		"Lumière divine"	// changed by wesp
+				"Name"		"Lumière sacrée"
 				"InternalName"	"Active_Holy_Light"
 				"Min"			"0"
 				"Max"			"Holy_Light"
