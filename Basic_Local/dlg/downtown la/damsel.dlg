@@ -299,7 +299,7 @@
 {	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	301	}{	[étouffe sa rage]Sachez que ce que j'ai dit sur vous, je le retire ! Vous êtes aussi maléfique que les autres. Retournez dans votre tour d'ivoire - nous nous occuperons nous-même de nos problèmes, à présent !	}{	[étouffe sa rage]Sachez que ce que j'ai dit sur vous, je le retire ! Vous êtes aussi maléfique que les autres. Retournez dans votre tour d'ivoire - nous nous occuperons nous-même de nos problèmes, à présent !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Damsel_Like = G.Damsel_Like -3	}{	}{	}{	}{	}{	}{	}{	}
-{	302	}{	Je doute que tu puisses.	}{	Je doute que tu puisses.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	303	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	304	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -311,8 +311,8 @@
 {	311	}{	Ah oui ?	}{	Ah oui ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	312	}{	J'ai quelques questions.	}{	J'ai quelques questions.	}{	531	}{	G.Damsel_Like < -3	}{	}{	}{	}{	}{	}{	}{	}{	J'aimerais découvrir une chose tapie dans votre esprit.	}
 {	313	}{	Vous savez quelque chose sur le Régent ? Il vous reproche l'épidémie. . .	}{	Vous savez quelque chose sur le Régent ? Il vous reproche l'épidémie. . .	}{	511	}{	G.Regent_Pestilence >= 1 and G.Damsel_Regent == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous connaissez le chef des sorciers ? Il dit que ce sont les enfants comme vous qui répandez la maladie.	}
-{	314	}{	Parlez-moi de Nines.	}{	Parlez-moi de Nines.	}{	321	}{	G.Story_State < 25 and G.Damsel_Nines == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le prince de la rue.	}
-{	315	}{	Parlez-moi de Nines.	}{	Parlez-moi de Nines.	}{	351	}{	G.Story_State >= 25 and G.Damsel_Nines < 2	}{	}{	}{	}{	}{	}{	}{	}{	Le prince de la rue.	}
+{	314	}{	Parlez-moi de Nines.	}{	Parlez-moi de Nines.	}{	321	}{	G.Story_State < 20 and G.Damsel_Nines == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le prince de la rue.	}
+{	315	}{	Parlez-moi de Nines.	}{	Parlez-moi de Nines.	}{	351	}{	G.Story_State >= 20 and G.Damsel_Nines < 2	}{	}{	}{	}{	}{	}{	}{	}{	Le prince de la rue.	}
 {	316	}{	Que pensez-vous de LaCroix ?	}{	Que pensez-vous de LaCroix ?	}{	371	}{	G.Damsel_Prince == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le bouffon dans sa tour d'ivoire.	}
 {	317	}{	Parlez-moi de Smiling Jack.	}{	Parlez-moi de Smiling Jack.	}{	391	}{	G.Damsel_Jack == 0	}{	}{	}{	}{	}{	}{	}{	}{	Jack, le diablotin au sourire figé.	}
 {	318	}{	Parlez-moi des Anarchs.	}{	Parlez-moi des Anarchs.	}{	411	}{	G.Damsel_Anarchs == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les enfants de notre Camarilla.	}
@@ -339,7 +339,7 @@
 {	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	340	}{	Je pars. A plus tard, Damsel.	}{	Je pars. A plus tard, Damsel.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai plus besoin de demoiselle de compagnie. Au revoir.	}
 {	341	}{	Et LaCroix serait comme Nixon, au pouvoir depuis un siècle. Petit aristo européen maniéré. . . Vous méritez votre gouvernement ! Foutez le camp d'ici !	}{	Et LaCroix serait comme Nixon, au pouvoir depuis un siècle. Petit aristo européen maniéré. . . Vous méritez votre gouvernement ! Foutez le camp d'ici !	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	342	}{	J'y vais.	}{	J'y vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	342	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	343	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	344	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -359,7 +359,7 @@
 {	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	361	}{	Je me moque de ce que vous savez. Nines est innocent. Nines ne ferait jamais une chose pareille sans raison. Il ne déclencherait pas une guerre. . . c'est. . . c'est n'importe quoi. Repartez dans votre tour d'ivoire, Cammy, avant qu'il vous arrive malheur !	}{	Je me moque de ce que vous savez. Nines est innocent. Nines ne ferait jamais une chose pareille sans raison. Il ne déclencherait pas une guerre. . . c'est. . . c'est n'importe quoi. Repartez dans votre tour d'ivoire, Cammy, avant qu'il vous arrive malheur !	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	362	}{	J'y vais.	}{	J'y vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	362	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	363	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	364	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -529,7 +529,7 @@
 {	529	}{	J'ai quelques questions. 	}{	J'ai quelques questions. 	}{	311	}{	G.Damsel_Like > -4	}{	}{	}{	}{	}{	}{	}{	}{	J'aimerais découvrir une chose tapie dans votre esprit.	}
 {	530	}{	Je reviens.	}{	Je reviens.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
 {	531	}{	Non, non ! Plus de question ! Chaque fois que je vous parle, j'ai envie de vous gifler. C'est comme parler à un mur qu'on veut abattre.	}{	Non, non ! Plus de question ! Chaque fois que je vous parle, j'ai envie de vous gifler. C'est comme parler à un mur qu'on veut abattre.	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	532	}{	Désolé.	}{	Désolé.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	532	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	533	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	534	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -726,8 +726,8 @@
 {	726	}{	Super.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	727	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	728	}{	Ici.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	729	}{	Fasciste !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	730	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	729	}{	Fasciste !	}{	Fasciste !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	730	}{	Euh, j'y vais.	}{	Euh, j'y vais.	}{	551	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis déjà parti.	}
 {	731	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	732	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	733	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -772,7 +772,7 @@
 {	772	}{	Tout se passera bien.	}{	Je garderai mon calme.	}{	801	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous venez de le faire.	}
 {	773	}{	A votre façon, vous êtes une belle charmeuse, Demoiselle.	}{	A votre façon, vous êtes une charmeuse, Damsel.	}{	801	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si vous aviez un jouet à votre effigie, je l'achèterais et je ferais des choses avec. . .	}
 {	774	}{	C'est ça. . .	}{	C'est ça.	}{	801	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi ne suis-je pas encore à l'intérieur ?	}
-{	775	}{	C'est ça. . . Je viens de tuer un loup-garou.	}{	C'est ça. J'ai tué un loup-garou.	}{	811	}{	IsDead("Werewolf") or G.Werewolf_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	Hé hé. . . petite friandise, je tue des loups, maintenant. . . Ca équivaut à une centaine de vous. . .	}
+{	775	}{	C'est ça. . . Je viens de tuer un loup-garou.	}{	C'est ça. J'ai tué un loup-garou.	}{	811	}{	IsDead("Werewolf")	}{	}{	}{	}{	}{	}{	}{	}{	Hé hé. . . petite friandise, je tue des loups, maintenant. . . Ca équivaut à une centaine de vous. . .	}
 {	776	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	777	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	778	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -904,7 +904,7 @@
 {	904	}{	(Starting Condition)	}{	}{	751	}{	G.Player_Anarch == 1 and G.Story_State == 115	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	905	}{	(Starting Condition)	}{	}{	711	}{	G.Prince_Truce == 1 and G.Player_Anarch == 0 and G.Griffith_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	906	}{	(Starting Condition)	}{	}{	601	}{	G.Player_Anarch == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	907	}{	(Starting Condition)	}{	}{	551	}{	G.Damsel_Hate == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	907	}{	(Starting Condition)	}{	}{	729	}{	G.Damsel_Hate == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	908	}{	(Starting Condition)	}{	}{	541	}{	G.Damsel_Like < -5	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	909	}{	(Starting Condition)	}{	}{	881	}{	G.Damsel_Like < -2 and G.Damsel_Like >= -5	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	910	}{	(Starting Condition)	}{	}{	831	}{	G.Damsel_Like >= 3	}{	}{	}{	}{	}{	}{	}{	}{	}

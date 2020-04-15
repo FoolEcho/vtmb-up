@@ -389,8 +389,8 @@
 {	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	390	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	391	}{	[rapidement, effrayée]Oh, je suis si soulagée que vous alliez bien ! Je voulais vous prévenir que c'était un piège, mais Therese m'a menacée, et je me suis enfermée dans la salle de bain, et elle menace de me tuer, il faut m'aider !	}{	[rapidement, effrayée]Oh, je suis si soulagée que vous alliez bien ! Je voulais vous prévenir que c'était un piège, mais Therese m'a menacée, et je me suis enfermée dans la salle de bain, et elle menace de me tuer, il faut m'aider !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	392	}{	Du calme. Dites-moi ce qui s'est passé.	}{	Du calme. Dites-moi ce qui s'est passé.	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	Patience, maîtresse blanche. Dites-moi ce qui vous perturbe.	}
-{	393	}{	Bien sûr que je vais vous sauver. Mais d'abord, dites-moi ce qui est arrivé.	}{	Bien sûr que je vais vous sauver. Mais d'abord, dites-moi ce qui est arrivé.	}{	411	}{	Seduction 2	}{	G.Jeanette_Seduce = G.Jeanette_Seduce + 1	}{	}{	}{	}{	}{	}{	}{	Je serai votre chevalier blanc, déesse d'ivoire. Racontez-moi d'abord toute l'histoire. . .	}
+{	392	}{	Du calme. Dites-moi ce qui s'est passé.	}{	Du calme. Dites-moi ce qui s'est passé.	}{	411	}{	G.Jeanette_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Patience, maîtresse blanche. Dites-moi ce qui vous perturbe.	}
+{	393	}{	Bien sûr que je vais vous sauver. Mais d'abord, dites-moi ce qui est arrivé.	}{	Bien sûr que je vais vous sauver. Mais d'abord, dites-moi ce qui est arrivé.	}{	411	}{	Seduction 2 & G.Jeanette_Quest == 1	}{	G.Jeanette_Seduce = G.Jeanette_Seduce + 1	}{	}{	}{	}{	}{	}{	}{	Je serai votre chevalier blanc, déesse d'ivoire. Racontez-moi d'abord toute l'histoire. . .	}
 {	394	}{	Pourquoi devrais-je vous aider ?	}{	Pourquoi devrais-je vous aider ?	}{	421	}{	}{	G.Jeanette_Seduce = G.Jeanette_Seduce - 1	}{	}{	}{	}{	}{	}{	}{	Vous connaissez tant de monde bibliquement. Appelez quelqu'un d'autre.	}
 {	395	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	396	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -399,7 +399,7 @@
 {	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	401	}{	[Rapidement, effrayée]C'était un piège. Ecoutez, je sais que nous avons eu nos différends, mais vous devez me faire confiance ! Therese a essayé de vous faire tuer ! J'ai dû m'enfermer dans la salle de bain parce qu'elle a une arme, et. . . vous devez m'aider !	}{	[Rapidement, effrayée]C'était un piège. Ecoutez, je sais que nous avons eu nos différends, mais vous devez me faire confiance ! Therese a essayé de vous faire tuer ! J'ai dû m'enfermer dans la salle de bain parce qu'elle a une arme, et. . . vous devez m'aider !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	402	}{	Du calme. Dites-moi ce qui s'est passé.	}{	Du calme. Dites-moi ce qui s'est passé.	}{	411	}{	}{	}{	}{	}{	}{	}{	}{	}{	Patience, maîtresse blanche. Dites-moi ce qui vous perturbe.	}
+{	402	}{	Du calme. Dites-moi ce qui s'est passé.	}{	Du calme. Dites-moi ce qui s'est passé.	}{	411	}{	G.Jeanette_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Patience, maîtresse blanche. Dites-moi ce qui vous perturbe.	}
 {	403	}{	Pourquoi devrais-je vous aider ?	}{	Pourquoi devrais-je vous aider ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quel besoin aurais-je d'une selle usée ?	}
 {	404	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	405	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

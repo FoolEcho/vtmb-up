@@ -89,8 +89,8 @@
 {	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	90	}{	En fait, je m'en vais. Au revoir.	}{	En fait, je m'en vais. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	91	}{	De quel endroit voulez-vous que je vous parle ?	}{	De quel endroit voulez-vous que je vous parle ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Que savez-vous du club des déments ?	}{	Que savez-vous du club des déments ?	}{	601	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	93	}{	Que savez-vous sur l'Asylum ?	}{	Que savez-vous sur l'Asylum ?	}{	121	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Que savez-vous du club des déments ?	}{	Que savez-vous du club des déments ?	}{	701	}{	IsClan(pc,"Malkavian") and G.Arthur_Knoxold == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Que savez-vous sur l'Asylum ?	}{	Que savez-vous sur l'Asylum ?	}{	661	}{	not IsClan(pc,"Malkavian") and G.Arthur_Knoxold == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	94	}{	Parlez-moi de la maison des morts.	}{	Parlez-moi de la maison des morts.	}{	611	}{	G.Therese_Quest > 1 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	Que savez-vous sur l'Ocean House Hotel ?	}{	Que savez-vous sur l'Ocean House Hotel ?	}{	131	}{	G.Therese_Quest > 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	96	}{	Que savez-vous sur la galerie de nuit ?	}{	Que savez-vous sur la galerie de nuit ?	}{	621	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -103,8 +103,8 @@
 {	103	}{	Que savez-vous sur le restaurant ?	}{	Que savez-vous sur le restaurant ?	}{	151	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	104	}{	Un orgue à vapeur, une roue dans le ciel, l'océan comme un tombeau en contrebas. . .	}{	Un orgue à vapeur, une roue dans le ciel, l'océan comme un tombeau en contrebas. . .	}{	641	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	105	}{	Que pouvez-vous me dire sur la jetée ?	}{	Que pouvez-vous me dire sur la jetée ?	}{	161	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	Que savez-vous du club des déments ?	}{	Que savez-vous du club des déments ?	}{	601	}{	IsClan(pc,"Malkavian") and G.Arthur_Knoxold == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	Que savez-vous sur l'Asylum ?	}{	Que savez-vous sur l'Asylum ?	}{	121	}{	not IsClan(pc,"Malkavian") and G.Arthur_Knoxold == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -125,7 +125,6 @@
 {	125	}{	Je vois. Je voulais te demander au sujet d'un autre endroit.	}{	Je vois. Je voulais te demander au sujet d'un autre endroit.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	126	}{	J'ai une question à propos d'autre chose.	}{	J'ai une question à propos d'autre chose.	}{	81	}{	G.Arthur_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	127	}{	Merci Arthur. A plus tard.	}{	Merci Arthur. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	127	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

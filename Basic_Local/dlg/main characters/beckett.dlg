@@ -399,7 +399,7 @@
 {	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	401	}{	Puisque c'est le premier de ce type que je vois, vous en savez autant que moi.	}{	Puisque c'est le premier de ce type que je vois, vous en savez autant que moi.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	402	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	402	}{	Mais c'est vous le spécialiste.	}{	Mais c'est vous le spécialiste.	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous connaissez de vieux trucs, moi pas.	}
 {	403	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	404	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	405	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -409,7 +409,7 @@
 {	409	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	411	}{	Ah, à quelles bassesses sommes-nous prêts pour avoir raison à tout prix. Les jeunes sont si vifs. . . Heureusement pour. . . Sebastian, c'est ça ? J'ai déjà décidé d'ouvrir le sarcophage, ne serait-ce que pour montrer à la ville que la Géhenne, contrairement à ce que l'on croit, n'a pas commencé.	}{	Ah, à quelles bassesses sommes-nous prêts pour avoir raison à tout prix. Les jeunes sont si vifs. . . Heureusement pour. . . Sebastian, c'est ça ? J'ai déjà décidé d'ouvrir le sarcophage, ne serait-ce que pour montrer à la ville que la Géhenne, contrairement à ce que l'on croit, n'a pas commencé.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	412	}{	Comment on l'ouvre ?	}{	Comment on l'ouvre ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors, comment on ouvre la boîte ?	}
+{	412	}{	Comment on l'ouvre ?	}{	Comment on l'ouvre ?	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors, comment on ouvre la boîte ?	}
 {	413	}{	Vous avez entendu LaCroix, ouvrons-le histoire qu'il nous fiche la paix.	}{	Vous avez entendu LaCroix, ouvrons-le histoire qu'il nous fiche la paix.	}{	601	}{	}{	}{	}{	}{	}{	}{	}{	}{	JE VEUX L'OUVRIR ! Qui je suis ? Qu'est-ce que ça peut me faire ?	}
 {	414	}{	A votre avis, qu'y a-t-il à l'intérieur ?	}{	A votre avis, qu'y a-t-il à l'intérieur ?	}{	611	}{	}{	}{	}{	}{	}{	}{	}{	}{	OHH. . . Il y a quoi dans la boîte ?	}
 {	415	}{	Vous avez de la dynamite ? On fait sauter ce machin, et tout est fini !	}{	Vous avez de la dynamite ? On fait sauter ce machin, et tout est fini !	}{	621	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	TNT et clé ont le même nombre de lettres.	}
@@ -891,7 +891,7 @@
 {	891	}{	On peut toujours compter sur le Sabbat pour faire la mauvaise chose pour la bonne raison. Ils sont irréfléchis, mais essayent en général d'attirer moins d'attention que cela. Cette imprudence mérite une observation. J'espère qu'elle ne va pas se généraliser. . .	}{	On peut toujours compter sur le Sabbat pour faire la mauvaise chose pour la bonne raison. Ils sont irréfléchis, mais essayent en général d'attirer moins d'attention que cela. Cette imprudence mérite une observation. J'espère qu'elle ne va pas se généraliser. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	892	}{	La mauvaise chose pour la bonne raison ? Comment cela ?	}{	La mauvaise chose pour la bonne raison ? Comment cela ?	}{	901	}{	G.Story_State == 75	}{	G.Beckett_Quest = 2	}{	}{	}{	}{	}{	}{	}{	Tout ceci est beaucoup trop clair, je ne comprends rien.	}
 {	893	}{	Et alors ? Je vais les éliminer, de toute façon.	}{	Et alors ? Je vais les éliminer, de toute façon.	}{	921	}{	G.Story_State == 75	}{	G.Beckett_Quest = 2	}{	}{	}{	}{	}{	}{	}{	Des paroles, encore des paroles. . . Mes mains ont déjà tout résolu pour les détruire.	}
-{	894	}{	Le Sabbat? Quoi? Je suppose que je devrais parler au prince en premier. Je reviens dans une minute.	}{	Le Sabbat? Quoi? Je suppose que je devrais parler au prince en premier. Je reviens dans une minute.	}{	0	}{	G.Story_State == 70	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	894	}{	Le Sabbat? Quoi? Je suppose que je devrais parler au prince en premier. Je reviens dans une minute.	}{	Le Sabbat? Quoi? Je suppose que je devrais parler au prince en premier. Je reviens dans une minute.	}{	0	}{	G.Story_State == 70	}{	}{	}{	}{	}{	}{	}{	}{	Qu'est-ce que c'est que cette main noire ? Je vais parler au bouffon maintenant. }
 {	895	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	896	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	897	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

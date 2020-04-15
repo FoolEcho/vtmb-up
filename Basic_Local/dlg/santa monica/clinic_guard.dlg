@@ -29,7 +29,7 @@
 {	29	}{	Vous voulez m'arrêter ?	}{	Vous voulez m'arrêter ?	}{	51	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Un simple mortel ne pourrait m'arrêter.	}
 {	30	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Compris.	}
 {	31	}{	Bon, c'est mon dernier avertissement.	}{	Bon, c'est mon dernier avertissement.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	G.Guard_Warning = G.Guard_Warning + 1	}{	}{	}{	}{	}{	}{	}{	}
-{	32	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	32	}{	Vraiment ?	}{	Vraiment ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est ça ?	}
 {	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -39,8 +39,8 @@
 {	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	41	}{	J'appelle des renforts. Restez où vous êtes !	}{	J'appelle des renforts. Restez où vous êtes !	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	42	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Et si je ne le fais pas ?	}{	Et si je ne le fais pas ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Et si nous bougeons ?	}
+{	43	}{	Ok.	}{	Ok.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Fait.	}
 {	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -59,7 +59,7 @@
 {	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	61	}{	Eh, vous !	}{	Eh, vous !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	62	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	62	}{	Qui, moi ?	}{	Qui, moi ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	63	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -69,7 +69,7 @@
 {	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	71	}{	Vous avez de sérieux problèmes, maintenant. . .	}{	Vous avez de sérieux problèmes, maintenant. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	72	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	72	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -79,7 +79,7 @@
 {	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	81	}{	Si vous venez calmement, je n'aurai pas à utiliser la force.	}{	Si vous venez calmement, je n'aurai pas à utiliser la force.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	82	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	83	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -89,7 +89,7 @@
 {	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	91	}{	Hmm. . .	}{	Hmm. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Tu n'essaies pas de m'arrêter tout seul ?	}{	Tu n'essaies pas de m'arrêter tout seul ?	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu es un lâche qui fuit.	}
 {	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -99,7 +99,7 @@
 {	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	101	}{	Annulez les renforts.	}{	Annulez les renforts.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	102	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Maintenant tu parles.	}{	Maintenant tu parles.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le lâche a trouvé du courage.	}
 {	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

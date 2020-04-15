@@ -9,7 +9,7 @@
 {	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	11	}{	Hein ? [Hoquette, commence à crier]	}{	Hein ? [Hoquette, commence à crier]	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	gio1_victorMariaFlee()	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Quoi ?	}{	Quoi ?	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	13	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -79,8 +79,8 @@
 {	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	81	}{	Tenez. . . Prenez ça. . .	}{	Tenez. . . Prenez ça. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Maria_Dominate = 1; G.Maria_Know = 1; pc.GiveItem("item_g_giovanni_invitation_maria")	}{	}{	}{	}{	}{	}{	}{	}
-{	82	}{	Merci beaucoup pour votre aide. Merci, vraiment.	}{	Merci beaucoup pour votre aide. Merci, vraiment.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	83	}{	Passez une bonne soirée.	}{	Passez une bonne soirée.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Merci beaucoup pour votre aide. Merci, vraiment.	}{	Merci beaucoup pour votre aide. Merci, vraiment.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Passez une bonne soirée.	}{	Passez une bonne soirée.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -89,7 +89,7 @@
 {	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	91	}{	Où est passée cette invitation ? Oh, tant pis. . .	}{	Où est passée cette invitation ? Oh, tant pis. . .	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	(Auto-Link)	}{	(Auto-Link)	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -98,8 +98,8 @@
 {	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	101	}{	Taisez-vous. De toute façon, je voulais pas y aller.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	102	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	101	}{	Taisez-vous. De toute façon, je voulais pas y aller.	}{	Taisez-vous. De toute façon, je voulais pas y aller.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -108,8 +108,8 @@
 {	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	111	}{	Bla bla bla. . . je ne vais pas faire honte à quelqu'un. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	112	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	111	}{	Bla bla bla. . . je ne vais pas faire honte à quelqu'un. . .	}{	Bla bla bla. . . je ne vais pas faire honte à quelqu'un. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -118,8 +118,8 @@
 {	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	121	}{	[Hurle de peur]	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	122	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	[Hurle de peur]	}{	[Hurle de peur] }{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	gio1_victorMariaFlee()	}{	}{	}{	}{	}{	}{	}{	}
 {	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -128,8 +128,8 @@
 {	128	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	131	}{	Où est l'invitation. . . Oh et puis tant pis, et si on rentrait ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	132	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	131	}{	Où est l'invitation. . . Oh et puis tant pis, et si on rentrait ?	}{	Où est l'invitation. . . Oh et puis tant pis, et si on rentrait ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	132	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	133	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	134	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

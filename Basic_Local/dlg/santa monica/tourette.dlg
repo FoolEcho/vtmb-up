@@ -2,45 +2,45 @@
 {	2	}{	(Auto-Link)	}{	(Auto-Link)	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	3	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	[Jeanette] Je ne mettais pas mes doigts dans la tarte de n'importe qui, chère soeur.	}{	[Jeanette] Je ne mettais pas mes doigts dans la tarte de n'importe qui, chère soeur.	}{	#	}{	pc.SetCamera("tJeanette") or npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	(Auto-Link)	}{	(Auto-Link)	}{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	[Therese] Bien sûr que non ! Tout comme tu ne travaillais pas avec lui -	}{	[Therese] Bien sûr que non! Tout comme tu ne travaillais pas avec lui -	}{	#	}{	pc.SetCamera("tTherese") or npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	(Auto-Link)	}{	(Auto-Link)	}{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	11	}{	[Therese]Restez en dehors de tout ça ! Que quelqu'un risque sa vie pour cette saleté, ce sang corrompu et pourri ! Bah, j'aurai encore moins de mal à vous tuer tous les deux.	}{	[Therese]Restez en dehors de tout ça ! Que quelqu'un risque sa vie pour cette saleté, ce sang corrompu et pourri ! Bah, j'aurai encore moins de mal à vous tuer tous les deux.	}{	#	}{	pc.SetCamera("Tourette") or npc.SetDisposition("anger",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	(Auto-Link)	}{	(Auto-Link)	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	13	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	[Therese] Est-ce différent de la façon dont tu as traité papa ?	}{	[Therese] Est-ce différent de la façon dont tu as traité papa ?	}{	#	}{	pc.SetCamera("tTherese") or npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	(Auto-Link)	}{	(Auto-Link)	}{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	[Jeanette] Papa ? Oh, Thérèse... ma pauvre chérie dupée... J'ai traité papa exactement comme il le méritait... et il t'a traité comme une -	}{	[Jeanette] Papa ? Oh, Thérèse... ma pauvre chérie dupée... J'ai traité papa exactement comme il le méritait... et il t'a traité comme une -	}{	#	}{	pc.SetCamera("tJeanette") or npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	(Auto-Link)	}{	(Auto-Link)	}{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	21	}{	[Jeanette]Ne l'écoutez pas ! Elle va nous tuer tous les deux ! Sauvez-moi et je vous aiderai à trouver Bertram, vous vous le promets !	}{	[Jeanette]Ne l'écoutez pas ! Elle va nous tuer tous les deux ! Sauvez-moi et je vous aiderai à trouver Bertram, vous vous le promets !	}{	#	}{	pc.SetCamera("tJeanette") or npc.SetDisposition("fear",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	22	}{	(Auto-Link)	}{	(Auto-Link)	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	23	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	[Therese] Ne parle plus de papa !	}{	[Therese] Ne parle plus de papa !	}{	#	}{	pc.SetCamera("tTherese") or npc.SetDisposition("anger",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	(Auto-Link)	}{	(Auto-Link)	}{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	[Jeanette] Ton coeur appartient toujours à papa après toutes ces années, hein, ma soeur ?	}{	[Jeanette] Ton coeur appartient toujours à papa après toutes ces années, hein, ma soeur ?	}{	#	}{	pc.SetCamera("tJeanette") or npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	(Auto-Link)	}{	(Auto-Link)	}{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	31	}{	[Jeanette]A l'aide ! Sauvez-moi et je vous aiderai à trouver Bertram, vous vous le promets !	}{	[Jeanette]A l'aide ! Sauvez-moi et je vous aiderai à trouver Bertram, vous vous le promets !	}{	#	}{	pc.SetCamera("tJeanette") or npc.SetDisposition("fear",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	32	}{	(Auto-Link)	}{	(Auto-Link)	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	35	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	36	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	[Therese] Au moins il m'aimait.	}{	[Therese] Au moins il m'aimait.	}{	#	}{	pc.SetCamera("tTherese") or npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	36	}{	(Auto-Link)	}{	(Auto-Link)	}{	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	37	}{	[Jeanette] Tu recommences ! Salope !	}{	[Jeanette] Tu recommences ! Salope !	}{	#	}{	pc.SetCamera("tJeanette") or npc.SetDisposition("anger",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	38	}{	(Auto-Link)	}{	(Auto-Link)	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	41	}{	[Therese]La ferme, Jeanette ! Je t'ai prévenue de ne pas t'approcher de Tung - il t'a liguée contre moi ! J'ai toujours pris soin de toi ! Mais tu ne supportais pas ma réussite. . . Il fallait que tu t'en mêles, hein ? Je ne voulais pas que ça se termine comme ça, mais tu m'y as forcée !	}{	[Therese]La ferme, Jeanette ! Je t'ai prévenue de ne pas t'approcher de Tung - il t'a liguée contre moi ! J'ai toujours pris soin de toi ! Mais tu ne supportais pas ma réussite. . . Il fallait que tu t'en mêles, hein ? Je ne voulais pas que ça se termine comme ça, mais tu m'y as forcée !	}{	#	}{	pc.SetCamera("tTherese") or npc.SetDisposition("anger",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	42	}{	(Auto-Link)	}{	(Auto-Link)	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	43	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	(Auto-Link)	}{	(Auto-Link)	}{	51	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	(Auto-Link)	}{	(Auto-Link)	}{	5	}{	G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	44	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -48,7 +48,7 @@
 {	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	51	}{	[Jeanette]A t'entendre, je ne réussissais jamais rien de bon, Therese ! C'est moi qui prenais les décisions ! Je tenais Bertram en laisse ! C'est moi qui t'ai battue. Alors, qu'en dis-tu ?	}{	[Jeanette]A t'entendre, je ne réussissais jamais rien de bon, Therese ! C'est moi qui prenais les décisions ! Je tenais Bertram en laisse ! C'est moi qui t'ai battue. Alors, qu'en dis-tu ?	}{	#	}{	pc.SetCamera("tJeanette") or npc.SetDisposition("sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	51	}{	[Jeanette]A t'entendre, je ne réussissais jamais rien de bon, Therese ! C'est moi qui prenais les décisions ! Je tenais Bertram en laisse ! C'est moi qui t'ai battue. Alors, qu'en dis-tu ?	}{	[Jeanette]A t'entendre, je ne réussissais jamais rien de bon, Therese ! C'est moi qui prenais les décisions ! Je tenais Bertram en laisse ! C'est moi qui t'ai battue. Alors, qu'en dis-tu ?	}{	#	}{	pc.SetCamera("tJeanette") or npc.SetDisposition("anger",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	Que se passe-t-il, ici ?	}{	Que se passe-t-il, ici ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quel étrange rebondissement du destin nous apparaît ?	}
 {	53	}{	Therese ?	}{	Therese ?	}{	281	}{	G.Therese_Seduce >= 5	}{	G.Therese_Side = G.Therese_Side + 1	}{	}{	}{	}{	}{	}{	}{	Douce ténébreuse ?	}
 {	54	}{	Jeanette ?	}{	Jeanette ?	}{	291	}{	G.Jeanette_Seduce >= 8 and G.Patch_Plus == 0	}{	G.Jeanette_Side = G.Jeanette_Side + 1	}{	}{	}{	}{	}{	}{	}{	Princesse d'ivoire ?	}

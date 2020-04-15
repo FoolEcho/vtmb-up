@@ -1,18 +1,18 @@
 {	1	}{	[traduit, Chert voz'mi?] (Mais qu'est-ce que ?)	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	[traduit, Zaydi!] (Venez par ici !)	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	3	}{	[traduit, Ya dumayu ti znaesh' chto ya govoryu ?] (J'imagine que vous comprenez ce que je dis ?)	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	4	}{	[fort accent russe, Chto eto takoe ?](Mais qu'est-ce que ?)	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	Je ne te comprends pas.	}{	Je ne te comprends pas.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, c'est quoi ce bordel ?	}
+{	3	}{	[traduit, Ya dumayu ti znaesh' chto ya govoryu ?] (J'imagine que vous comprenez ce que je dis ?)	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Parfois les voix expliquent.	}{	Parfois les voix expliquent.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parfois les voix expliquent.	}
+{	5	}{	[traduit, Zaydi!] (Venez par ici !)	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	Quoi ?	}{	Quoi ?	}{	1	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'arrive.	}
+{	7	}{	[fort accent russe, Chto eto takoe ?](Mais qu'est-ce que ?)	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	Heu ?	}{	Heu ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est moi.	}
 {	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	11	}{	[traduit, Chto eto takoe? Chert voz'mi? Pochemu ti ego vpustil?](Que se passe-t-il ? Pourquoi le fais-tu entrer ici ?) [anglais] Qui êtes-vous ?	}{	[traduit, Chto eto takoe? Chert voz'mi? Pochemu ti ego vpustil?](Que se passe-t-il ? Pourquoi la fais-tu entrer ici ?) [anglais] Qui êtes-vous ?	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	G.Boris_Talk = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	J'aimerais discuter affaires avec vous.	}{	J'aimerais discuter affaires avec vous.	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	13	}{	Venus m'envoie vous parler.	}{	Venus m'envoie vous parler.	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	14	}{	Je porte la parole de la déesse, un message pour vos oreilles.	}{	Je porte la parole de la déesse, un message pour vos oreilles.	}{	211	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	15	}{	Oh que oui, et comme vous avez raison !	}{	Oh que oui, et comme vous avez raison !	}{	211	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Oh que oui, et comme vous avez raison !	}
+{	15	}{	Oh que oui, et comme vous avez raison !	}{	Oh que oui, et comme vous avez raison !	}{	3	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Oh que oui, et comme vous avez raison !	}
 {	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -230,7 +230,7 @@
 {	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	231	}{	Dans dix secondes, je lui dis faire trou comme balle baseball dans votre tête. Pourquoi vous venir ?	}{	Dans dix secondes, je lui dis faire trou comme balle baseball dans votre tête. Pourquoi vous venir ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	232	}{	La déesse, Venus. . .	}{	La déesse, Venus. . .	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	233	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	233	}{	Votre toutou ne doit pas savoir.	}{	Votre toutou ne doit pas savoir.	}{	271	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	235	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	236	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -268,11 +268,11 @@
 {	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	271	}{	Très bien. Ca te va ? Alors fais vite, d'accord ?	}{	Très bien. Ca te va ? Alors fais vite, d'accord ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	272	}{	C'est Venus qui m'envoie.	}{	C'est Venus qui m'envoie.	}{	51	}{	G.Boris_Dema == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	273	}{	C'est Venus qui m'envoie. Elle veut que vous effaciez la dette et que vous sortiez de sa vie.	}{	C'est Venus qui m'envoie. Elle veut que vous effaciez la dette et que vous sortiez de sa vie.	}{	61	}{	G.Boris_Dema == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	274	}{	Venus veut que vous effaciez la dette et que vous sortiez de sa vie.	}{	Venus veut que vous effaciez la dette et que vous sortiez de sa vie.	}{	61	}{	G.Boris_Dema == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	275	}{	Venus veut que vous annuliez la dette.	}{	Venus veut que vous annuliez la dette.	}{	61	}{	G.Boris_Dema == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Ok, ok. Idi togda (va, alors), Dima. Très bien... heureux ? Maintenant, crache-le. Faites vite, hein.	}{	Ok, ok. Idi togda (va, alors), Dima. Très bien... heureux ? Maintenant, crache-le. Faites vite, hein.	}{	#	}{	}{	G.Dema_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	272	}{	La déesse n'offre plus d'hommage et ne vous laisse pas souiller son temple.	}{	La déesse n'offre plus d'hommage et ne vous laisse pas souiller son temple.	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	273	}{	Vénus ne partage plus sa générosité, vous ne pouvez pas non plus entrer dans son atmosphère.	}{	Vénus ne partage plus sa générosité, vous ne pouvez pas non plus entrer dans son atmosphère.	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	274	}{	Les mots me manquent... alors je vais compter sur la poésie de la violence.	}{	Les mots me manquent... alors je vais compter sur la poésie de la violence	}{	0	}{	}{	npc.SetRelationship("player D_HT 5"); G.Boris_Hostile = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -283,5 +283,5 @@
 {	283	}{	(Starting Condition)	}{	}{	201	}{	G.Boris_Debt == 1 or G.Boris_Venus == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	284	}{	(Starting Condition)	}{	}{	191	}{	G.Boris_Return == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	285	}{	(Starting Condition)	}{	}{	171	}{	G.Boris_Venus > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	286	}{	(Starting Condition)	}{	}{	11	}{	G.Dema_Go == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	287	}{	(Starting Condition)	}{	}{	21	}{	G.Dema_Go != 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	(Starting Condition)	}{	}{	5	}{	G.Dema_Go == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	(Starting Condition)	}{	}{	7	}{	G.Dema_Go != 1	}{	}{	}{	}{	}{	}{	}{	}{	}

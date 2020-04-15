@@ -88,8 +88,8 @@
 {	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	91	}{	[choqué]Oh merde !	}{	[choqué]Oh merde !	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	91	}{	[choqué]Oh merde !	}{	[choqué]Oh merde !	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	(Auto-Link)	}{	(Auto-Link)	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -118,8 +118,8 @@
 {	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	120	}{	Oui, je pars.	}{	Oui, je pars.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	121	}{	Tout le monde dehors, maintenant !	}{	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	122	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	121	}{	Tout le monde dehors, maintenant !	}{	Tout le monde dehors, maintenant !	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	123	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

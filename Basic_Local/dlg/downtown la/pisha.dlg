@@ -198,7 +198,7 @@
 {	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	201	}{	Le muséum d'histoire naturelle en abritait bien un, c'est sûr. J'ai fouillé tout l'édifice, mais on a dû le voler en même temps que le sarcophage.	}{	Le muséum d'histoire naturelle en abritait bien un, c'est sûr. J'ai fouillé tout l'édifice, mais on a dû le voler en même temps que le sarcophage.	}{	#	}{	}{	G.Pisha_Quest = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Le Muséum d'Histoire Naturelle en abritait bien un, c'est sûr. J'ai fouillé tout l'édifice, mais on a dû le voler en même temps que le sarcophage.	}{	Le Muséum d'Histoire Naturelle en abritait bien un, c'est sûr. J'ai fouillé tout l'édifice, mais on a dû le voler en même temps que le sarcophage.	}{	#	}{	}{	G.Pisha_Quest = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	202	}{	Vous parlez de ceci ?	}{	Vous parlez de ceci ?	}{	251	}{	pc.HasItem("item_g_pisha_fetish")	}{	pc.SetQuest("Occult",2)	}{	}{	}{	}{	}{	}{	}{	Oui, j'ai l'homme flétri.	}
 {	203	}{	Sans doute. Que vouliez-vous d'autre ?	}{	Sans doute. Que vouliez-vous d'autre ?	}{	221	}{	G.Extra_Lines == 1 and G.Pisha_Morte == 0	}{	}{	}{	}{	}{	}{	}{	}{	Oui, il y était. Et l'autre ?	}
 {	204	}{	Parlez-moi de l'autre objet.	}{	Parlez-moi de l'autre objet.	}{	221	}{	G.Pisha_Morte == 0	}{	}{	}{	}{	}{	}{	}{	}{	Et l'autre récompense ?	}

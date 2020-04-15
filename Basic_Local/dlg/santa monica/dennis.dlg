@@ -14,7 +14,7 @@
 {	14	}{	Tu connais un dénommé Mercurio ?	}{	Tu connais un dénommé Mercurio ?	}{	51	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	15	}{	Donne-moi l'Astrolite maintenant, et je ne jetterai pas tes bijoux dans le Pacifique.	}{	Donne-moi l'Astrolite maintenant, et je ne jetterai pas tes bijoux dans le Pacifique.	}{	61	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Donne-moi l'astre au litre tout de suite, ou tes bourses dormiront avec les poissons.	}
 {	16	}{	Tu connais le dieu aux pieds ailés ?	}{	Tu connais le dieu aux pieds ailés ?	}{	251	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Tu connais le dieu aux pieds ailés ?	}
-{	17	}{	Mais quel gros baratineur tu fais, crétin !	}{	Tu sais où tu peux te la carrer, ta douceur.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	J'aimerais te tuer, si ça ne te dérange pas.	}
+{	17	}{	Mais quel gros baratineur tu fais, crétin !	}{	Tu sais où tu peux te la carrer, ta douceur.	}{	201	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	J'aimerais te tuer, si ça ne te dérange pas.	}
 {	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -59,7 +59,7 @@
 {	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	61	}{	[rit]Tu touches pas à ça, compris ? C'est dingue, tu dois être une des personnes les plus stupides au monde. Qu'est-ce que je t'ai dit à ton arrivée ? [se tourne vers les autres]Eh, les mecs, préparez le bateau. On part à la pêche au requin.	}{	[rit]Tu touches pas à ça, compris ? C'est dingue, tu dois être une des personnes les plus stupides au monde. Qu'est-ce que je t'ai dit à ton arrivée ? [se tourne vers les autres]Eh, les mecs, préparez le bateau. On part à la pêche au requin.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	62	}{	Ha ha. . . C'est parti.	}{	Ha ha. . . C'est parti.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Ha ha. . . C'est parti.	}{	Ha ha. . . C'est parti.	}{	181	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
 {	63	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	64	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -69,10 +69,10 @@
 {	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	71	}{	Des explosifs ? C'est rigolo, ça. On peut faire beaucoup de bruit, comme ça. Pourquoi tu veux trouver des feux d'artifices ?	}{	Des explosifs ? C'est rigolo, ça. On peut faire beaucoup de bruit, comme ça. Pourquoi tu veux trouver des feux d'artifices ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	72	}{	Je vais à la pêche.	}{	Je vais à la pêche.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	La chasse au poisson est ouverte.	}
-{	73	}{	Problèmes d'argent. Je dois faire disparaître une voiture, pour l'assurance.	}{	Problèmes d'argent. Je dois faire disparaître une voiture, pour l'assurance.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je veux voir la nuit brûler de tous ses feux.	}
-{	74	}{	Ma femme a eu la maison, lors de notre divorce.	}{	Mon mari a eu la maison, lors de notre divorce.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il y a de l'or dans leurs collines. . . et mon ex.	}
-{	75	}{	Tu regarderas les infos, ce soir.	}{	Tu regarderas les infos, ce soir.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les infos annonceront mes glorieux exploits !	}
+{	72	}{	Je vais à la pêche.	}{	Je vais à la pêche.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	La chasse au poisson est ouverte.	}
+{	73	}{	Problèmes d'argent. Je dois faire disparaître une voiture, pour l'assurance.	}{	Problèmes d'argent. Je dois faire disparaître une voiture, pour l'assurance.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je veux voir la nuit brûler de tous ses feux.	}
+{	74	}{	Ma femme a eu la maison, lors de notre divorce.	}{	Mon mari a eu la maison, lors de notre divorce.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il y a de l'or dans leurs collines. . . et mon ex.	}
+{	75	}{	Tu regarderas les infos, ce soir.	}{	Tu regarderas les infos, ce soir.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les infos annonceront mes glorieux exploits !	}
 {	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -89,7 +89,7 @@
 {	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	91	}{	Ah ouais ? Et comment tu sais ça ? C'est bizarre, ton truc. . . Tu sais quoi, je vais te filer l'Astrolite. Dès qu'on sera dans les eaux internationales. [Se tourne vers les autres]Les mecs ! On part à la pêche au requin !	}{	Ah ouais ? Et comment tu sais ça ? C'est bizarre, ton truc. . . Tu sais quoi, je vais te filer l'Astrolite. Dès qu'on sera dans les eaux internationales. [Se tourne vers les autres]Les mecs ! On part à la pêche au requin !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Je ne crois pas.	}{	Je ne crois pas.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Je ne crois pas.	}{	Je ne crois pas.	}{	181	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
 {	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -179,7 +179,7 @@
 {	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	181	}{	Eh, il y a quelqu'un ici !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	182	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	183	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	184	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -188,8 +188,8 @@
 {	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	191	}{	Eh, regardez par ici !	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	192	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Eh, regardez par ici !	}{	Eh, regardez par ici !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	192	}{	Semble fait maison.	}{	Semble fait maison.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu l'as fait toi-même.	}
 {	193	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -199,7 +199,7 @@
 {	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	201	}{	Qu'est-ce qui se passe ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	202	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	202	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	203	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -259,7 +259,7 @@
 {	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	261	}{	Le vent de minuit ? C'est ça. T'as une tête d'indic, grave. [Se tourne vers les autres]Les gars, démarrez le bateau. On va à la pêche au requin !	}{	Le vent de minuit ? C'est ça. T'as une tête d'indic, grave. [Se tourne vers les autres]Les gars, démarrez le bateau. On va à la pêche au requin !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	262	}{	HA HA HA. . . Non.	}{	HA HA HA. . . Non.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	HA HA HA. . . Non.	}{	HA HA HA. . . Non.	}{	181	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
 {	263	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	264	}{	(Starting Condition)	}{	}{	141	}{	G.Dennis_Alone == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	265	}{	(Starting Condition)	}{	}{	171	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -979,7 +979,7 @@
 {	979	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	980	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	981	}{	[Désolé]Oublions que j'en ai parlé, OK ?	}{	[Désolé]Oublions que j'en ai parlé, OK ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	982	}{	(Auto-Link)	}{	(Auto-Link)	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	982	}{	Aucun problème.	}{	Aucun problème.	}{	991	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	983	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	984	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	985	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -988,8 +988,8 @@
 {	988	}{	J'y vais.	}{	J'y vais.	}{	0	}{	G.Misti_Dead == 0 or (G.Misti_Dead == 1 and G.Velvet_Quest == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Je suis déjà parti.	}
 {	989	}{	J'y vais.	}{	J'y vais.	}{	0	}{	G.Misti_Dead == 1 and G.Velvet_Quest > 0 and G.Velvet_Quest < 3	}{	pc.SetQuest("Strip",4)	}{	}{	}{	}{	}{	}{	}{	Je suis déjà parti.	}
 {	990	}{	J'y vais.	}{	J'y vais.	}{	0	}{	G.Misti_Dead == 1 and G.Velvet_Quest >= 3	}{	pc.SetQuest("Writer",11)	}{	}{	}{	}{	}{	}{	}{	Je suis déjà parti.	}
-{	991	}{	Merci!	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	992	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	991	}{	Merci!	}{	Merci!	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	992	}{	(Auto-Link)	}{	(Auto-Link)	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	993	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	994	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	995	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
