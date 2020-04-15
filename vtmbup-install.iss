@@ -1,16 +1,16 @@
 ; -- vtmbupinstaller.iss --
 
 [Setup]
-AppName=Vampire: The Masquerade - Bloodlines unofficial patch 10.5 fr
-AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 10.5 fr
+AppName=Vampire: The Masquerade - Bloodlines unofficial patch 10.6 fr
+AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 10.6 fr
 VersionInfoDescription=Vampire: The Masquerade - Bloodlines unofficial patch avec sous-titrage français
-VersionInfoVersion=10.5
+VersionInfoVersion=10.6
 AppPublisher=Werner Spahl
 DefaultDirName={reg:HKLM\Software\Activision\Vampire - Bloodlines,InstallPath|{pf}\Steam\steamapps\common\vampire the masquerade - bloodlines}
 AppendDefaultDirName=no
 DirExistsWarning=no
 EnableDirDoesntExistWarning=no
-OutputBaseFilename=VTMBup105fr
+OutputBaseFilename=VTMBup106fr
 Uninstallable=no
 InfoBeforeFile=vtmbup-readme.txt
 InfoAfterFile=vtmbup-after.txt
@@ -56,6 +56,7 @@ end;
 Source: "{app}\Vampire\cfg\*"; DestDir: "{app}\Vampire\cfg\old"; Components: basic; Flags: external skipifsourcedoesntexist
 Source: "{app}\Unofficial_Patch_fr\save\*"; DestDir: "{app}\Unofficial_Patch_fr\save\old"; Components: basic; Flags: external skipifsourcedoesntexist
 Source: "vtmbup-readme.txt"; DestDir: "{app}"; Components: readme; Flags: isreadme overwritereadonly
+Source: "vtmbup-small.bmp"; DestDir: "{app}"; Components: basic; Flags: overwritereadonly
 Source: "Official_Patch\*"; DestDir: "{app}"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly
 Source: "Basic_Patch\dlls\*"; DestDir: "{app}\vampire\dlls"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly
 Source: "Basic_Patch\cl_dlls\*"; DestDir: "{app}\vampire\cl_dlls"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly
@@ -90,8 +91,8 @@ Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\vidcfg.bin"
 Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\voice_ban.dt"
 
 [Icons]
-Name: "{userdesktop}\VTM Bloodlines Unofficial Patch (fr)"; Filename: {app}\vampire.exe; Parameters: "-game Unofficial_Patch_fr"
-Name: "{userprograms}\VTM Bloodlines Unofficial Patch (fr)"; Filename: {app}\vampire.exe; Parameters: "-game Unofficial_Patch_fr"
+Name: "{userdesktop}\VTM Bloodlines Unofficial Patch (fr)"; Filename: {app}\vampire.exe; Parameters: "-game Unofficial_Patch_fr"; IconFilename: {app}\vtmbup-small.bmp
+Name: "{userprograms}\VTM Bloodlines Unofficial Patch (fr)"; Filename: {app}\vampire.exe; Parameters: "-game Unofficial_Patch_fr"; IconFilename: {app}\vtmbup-small.bmp
 
 [Run]
 Filename: {app}\vampire.exe; Parameters: "-game Unofficial_Patch_fr"; Description: Démarrer Bloodlines avec le Patch non officiel; Flags: postinstall runascurrentuser nowait skipifsilent
