@@ -111,7 +111,7 @@
 {	111	}{	Je pensais bien que vous accepteriez. Empire Arms Hotel. Dites-lui que je suis à sec. [Rapidement]Vous savez courir, n'est-ce pas ? Peu importe - ne déclenchez pas de bagarre. Ces types sont. . . affranchis. Enfin, il reste beaucoup de gens qui veulent se confesser. A plus tard.	}{	Je pensais bien que vous accepteriez. Empire Arms Hotel. Dites-lui que je suis à sec. [Rapidement]Vous savez courir, n'est-ce pas ? Peu importe - ne déclenchez pas de bagarre. Ces types sont. . . affranchis. Enfin, il reste beaucoup de gens qui veulent se confesser. A plus tard.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Venus_Quest = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	112	}{	Je reviens tout de suite.	}{	Je reviens tout de suite.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je serai rapide comme le vent.	}
 {	113	}{	J'espère que quelqu'un aura un geste prodigieusement malheureux.	}{	J'espère que quelqu'un aura un geste prodigieusement malheureux.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai peine à retenir votre message entre mes lèvres.	}
-{	114	}{	Oh, et vous débarrasser de ce tourniquet ennuyeux, n'est-ce pas ?	}{	Oh, et vous débarrasser de ce tourniquet ennuyeux, n'est-ce pas ?	}{	0	}{	G.Patch_Plus == 1 and G.Turnstile_Gone == 0	}{	G.Turnstile_Gone = 1	}{	}{	}{	}{	}{	}{	}{	Je serai parti comme le tourniquet stupide à votre porte.	}
+{	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -201,7 +201,7 @@
 {	201	}{	Il est à l'Empire Arms Hotel. Toujours avec quelques gros bras autour de lui, qui se la jouent grand mâles. Il a mauvais caractère, et il doit boire depuis plusieurs heures. Tenez - la clé de son appartement.	}{	Il est à l'Empire Arms Hotel. Toujours avec quelques gros bras autour de lui, qui se la jouent grand mâles. Il a mauvais caractère, et il doit boire depuis plusieurs heures. Tenez - la clé de son appartement.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Venus_Quest = 3; pc.GiveItem("item_k_empire_mafia_key"); pc.SetQuest("Venus",1)	}{	}{	}{	}{	}{	}{	}{	}
 {	202	}{	Je reviens quand il ne respirera plus.	}{	Je reviens quand il ne respirera plus.	}{	0	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Oui. Le règne du Tsar s'achève bientôt.	}
 {	203	}{	Quand je reviendrai, nous discuterons dans notre club.	}{	Quand je reviendrai, nous discuterons dans notre club.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai prendre ma place de barman supérieur.	}
-{	204	}{	Merci. Et débarrassez-vous de ce tourniquet ennuyeux, d'accord ?	}{	Merci. Et débarrassez-vous de ce tourniquet ennuyeux, d'accord ?	}{	0	}{	G.Patch_Plus == 1 and G.Turnstile_Gone == 0	}{	G.Turnstile_Gone = 1	}{	}{	}{	}{	}{	}{	}{	Je serai parti comme le tourniquet stupide à votre porte.	}
+{	204	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -251,7 +251,7 @@
 {	251	}{	J'ai de l'argent à nous gagner. Je garde votre part des gains - n'oublie pas de passer les prendre de temps en temps.	}{	J'ai de l'argent à nous gagner. Je garde votre part des gains - n'oublie pas de passer les prendre de temps en temps.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	252	}{	Vous me reverrez bientôt, et souvent, n'ayez crainte. Au revoir, Venus.	}{	Vous me reverrez bientôt, et souvent, n'ayez crainte. Au revoir, Venus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai aussi souvent que les étoiles, déesse.	}
 {	253	}{	En fait, j'ai quelques suggestions pour votre club. . .	}{	En fait, j'ai quelques suggestions pour votre club. . .	}{	261	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les fruits de mes rêves enfiévrés feraient une fort belle décoration. . .	}
-{	254	}{	Je vais le faire. Et débarrassez-vous de ce tourniquet ennuyeux, d'accord ?	}{	Je vais le faire. Et débarrassez-vous de ce tourniquet ennuyeux, d'accord ?	}{	0	}{	G.Patch_Plus == 1 and G.Turnstile_Gone == 0	}{	G.Turnstile_Gone = 1	}{	}{	}{	}{	}{	}{	}{	Je serai parti comme le tourniquet stupide à votre porte.	}
+{	254	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -310,7 +310,7 @@
 {	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	311	}{	J'ai votre part, tenez.	}{	J'ai votre part, tenez.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.MoneyAdd((G.Story_State - G.Pay_Base) * 25)	}{	}{	}{	}{	}{	}{	}{	}
 {	312	}{	Merci, Venus. Je reviendrai en chercher.	}{	Merci, Venus. Je reviendrai en chercher.	}{	0	}{	}{	G.Pay_Base = G.Story_State	}{	}{	}{	}{	}{	}{	}{	Que les pèlerins ne cessent jamais de payer leur tribut à votre temple, déesse.	}
-{	313	}{	Merci. Et débarrassez-vous de ce tourniquet ennuyeux, d'accord ?	}{	Merci. Et débarrassez-vous de ce tourniquet ennuyeux, d'accord ?	}{	0	}{	G.Patch_Plus == 1 and G.Turnstile_Gone == 0	}{	G.Turnstile_Gone = 1; G.Pay_Base = G.Story_State	}{	}{	}{	}{	}{	}{	}{	Je serai parti comme le tourniquet stupide à votre porte.	}
+{	313	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -330,7 +330,7 @@
 {	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	331	}{	Ca faisait longtemps. Votre argent s'accumulait. Tenez, vous allez pouvoir vous payer du bon temps.	}{	Ca faisait longtemps. Votre argent s'accumulait. Tenez, vous allez pouvoir vous payer du bon temps.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.MoneyAdd((G.Story_State - G.Pay_Base) * 25)	}{	}{	}{	}{	}{	}{	}{	}
 {	332	}{	Merci. Je reviendrai.	}{	Merci. Je reviendrai.	}{	0	}{	}{	G.Pay_Base = G.Story_State	}{	}{	}{	}{	}{	}{	}{	Votre bénédiction est toujours plaisante, déesse.	}
-{	333	}{	Merci. Et débarrassez-vous de ce tourniquet ennuyeux, d'accord ?	}{	Merci. Et débarrassez-vous de ce tourniquet ennuyeux, d'accord ?	}{	0	}{	G.Patch_Plus == 1 and G.Turnstile_Gone == 0	}{	G.Turnstile_Gone = 1; G.Pay_Base = G.Story_State	}{	}{	}{	}{	}{	}{	}{	Je serai parti comme le tourniquet stupide à votre porte.	}
+{	333	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	334	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -950,19 +950,19 @@
 {	950	}{	Merci, salut.	}{	Merci, salut.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi tu me parles encore ? Je ne suis plus là.	}
 {	951	}{	Oh ouais, il y a quelque chose. La banque du sang, au sous-sol de cette clinique médicale, là. Ca peut être assez pratique pour les vampires, si tu vois ce que je veux dire. . .	}{	Oh ouais, il y a quelque chose. La banque du sang, au sous-sol de cette clinique médicale, là. Ca peut être assez pratique pour les vampires, si tu vois ce que je veux dire. . .	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	952	}{	Merci, je peux te poser d'autres questions ?	}{	Merci, je peux te poser d'autres questions ?	}{	931	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
-{	953	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	953	}{	Merci, au revoir.	}{	Merci, au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi me parler encore ? Je suis parti.	}
 {	954	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	955	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	956	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	957	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	958	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	959	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	960	}{	Merci, au revoir.	}{	Merci, au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi me parler encore ? Je suis parti.	}
-{	961	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	962	}{	(Starting Condition)	}{	}{	781	}{	G.Knox_Done == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	963	}{	(Starting Condition)	}{	}{	481	}{	G.Bertram_Check == 1 and G.Knox_Bertfound == 0 and G.Knox_Quest == 5	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	964	}{	(Starting Condition)	}{	}{	21	}{	IsClan(pc,"Nosferatu") and G.Knox_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	965	}{	(Starting Condition)	}{	}{	11	}{	G.Knox_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	960	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	961	}{	(Starting Condition)	}{	}{	781	}{	G.Knox_Done == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	962	}{	(Starting Condition)	}{	}{	481	}{	G.Bertram_Check == 1 and G.Knox_Bertfound == 0 and G.Knox_Quest == 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	963	}{	(Starting Condition)	}{	}{	21	}{	IsClan(pc,"Nosferatu") and G.Knox_TT == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	964	}{	(Starting Condition)	}{	}{	611	}{	G.Knox_TT == 0 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	965	}{	(Starting Condition)	}{	}{	11	}{	G.Knox_TT == 0 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	966	}{	(Starting Condition)	}{	}{	291	}{	G.Knox_Quest == 5 or G.Knox_Quest == 6	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	967	}{	(Starting Condition)	}{	}{	81	}{	G.Knox_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	968	}{	(Starting Condition)	}{	}{	361	}{	G.Knox_TT > 0 and G.Knox_Quest == 4	}{	}{	}{	}{	}{	}{	}{	}{	}

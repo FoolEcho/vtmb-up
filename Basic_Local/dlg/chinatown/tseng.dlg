@@ -59,8 +59,8 @@
 {	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	61	}{	Voilà des bons remèdes pour beaucoup de problèmes. Pas de carte de crédit.	}{	Voilà des bons remèdes pour beaucoup de problèmes. Pas de carte de crédit.	}{	#	}{	npc.SetDisposition("BehindBack", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	62	}{	Excellent. Voyons ce que vous avez.	}{	Excellent. Voyons ce que vous avez.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Donnez-moi. . .	}
-{	63	}{	Beaucoup de gens malades, dans cette ville. Il va m'en falloir plusieurs.	}{	Beaucoup de gens malades, dans cette ville. Il va m'en falloir plusieurs.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Les armes n'ont jamais résolu aucun problème. J'en prends douze. 	}
+{	62	}{	Excellent. Voyons ce que vous avez.	}{	Excellent. Voyons ce que vous avez.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0); preBarter("Tseng")	}{	}{	}{	}{	}{	}{	}{	Donnez-moi. . .	}
+{	63	}{	Beaucoup de gens malades, dans cette ville. Il va m'en falloir plusieurs.	}{	Beaucoup de gens malades, dans cette ville. Il va m'en falloir plusieurs.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0); preBarter("Tseng")	}{	}{	}{	}{	}{	}{	}{	Les armes n'ont jamais résolu aucun problème. J'en prends douze. 	}
 {	64	}{	Peut-être plus tard. D'abord, j'ai quelques questions.	}{	Peut-être plus tard. D'abord, j'ai quelques questions.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	D'abord, je vais vous acheter des réponses.	}
 {	65	}{	Je vais chercher de l'argent et je reviens. A bientôt, Tseng.	}{	Je vais chercher de l'argent et je reviens. A bientôt, Tseng.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si j'achète de nouvelles armes, les anciennes seront jalouses. Je m'en vais.	}
 {	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -79,8 +79,8 @@
 {	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	81	}{	[Grognement affirmatif]. . . !	}{	[Grognement affirmatif]. . . !	}{	#	}{	npc.SetDisposition("BehindBack", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	82	}{	Laissez tomber, montrez-moi les armes.	}{	Laissez tomber, montrez-moi les armes.	}{	0	}{	G.Guns_Tseng == 1 and G.Tseng_Guns == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Donnez-moi. . .	}
-{	83	}{	Laissez tomber, montrez-moi les armes.	}{	Laissez tomber, montrez-moi les armes.	}{	0	}{	G.Guns_Tseng == 0 and G.Tseng_Guns == 1	}{	tsengsShowGuns(); npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Donnez-moi. . .	}
+{	82	}{	Laissez tomber, montrez-moi les armes.	}{	Laissez tomber, montrez-moi les armes.	}{	0	}{	G.Guns_Tseng == 1 and G.Tseng_Guns == 1	}{	npc.StartBarter(G.Story_State, 0); preBarter("Tseng")	}{	}{	}{	}{	}{	}{	}{	Donnez-moi. . .	}
+{	83	}{	Laissez tomber, montrez-moi les armes.	}{	Laissez tomber, montrez-moi les armes.	}{	0	}{	G.Guns_Tseng == 0 and G.Tseng_Guns == 1	}{	tsengsShowGuns(); npc.StartBarter(G.Story_State, 0); preBarter("Tseng")	}{	}{	}{	}{	}{	}{	}{	Donnez-moi. . .	}
 {	84	}{	Vous connaissez Wong Ho ?	}{	Vous connaissez Wong Ho ?	}{	91	}{	G.Tseng_Wong < 2 and G.Ming_Wongho == 1	}{	}{	}{	}{	}{	}{	}{	}{	Le Red Dragon a un homme appelé Wong Ho infiltré. Vous le saviez ?	}
 {	85	}{	Je cherche un disparu appelé Barrabus. Vous savez quelque chose ?	}{	Je cherche un disparu appelé Barrabus. Vous savez quelque chose ?	}{	111	}{	G.Tseng_Barabus == 0 and G.Story_State < 55	}{	}{	}{	}{	}{	}{	}{	}{	Vous connaissez Barrabus, admettez-le !	}
 {	86	}{	Est-ce que le mot 'hengeyokai' vous dit quelque chose ?	}{	Est-ce que le mot 'hengeyokai' vous dit quelque chose ?	}{	121	}{	G.Yukie_Quest == 1 and G.Tseng_Henge == 0	}{	}{	}{	}{	}{	}{	}{	}{	Hengeyokai ! Vous avez déjà dit cela ?	}
@@ -131,10 +131,10 @@
 {	131	}{	Content de vous revoir !	}{	Content de vous revoir !	}{	#	}{	npc.SetDisposition("BehindBack", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	132	}{	Vous étiez dans l'armée ?	}{	Vous étiez dans l'armée ?	}{	31	}{	G.Tseng_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	133	}{	J'ai besoin d'un remède. Un virus Tong à guérir. . .	}{	J'ai besoin d'un remède contre une invasion de Tong. . .	}{	41	}{	G.Tseng_Guns == 0 and G.Tong_Known == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	134	}{	J'ai besoin d'un remède. Un gros calibre, peut-être.	}{	J'ai besoin d'un remède. Un gros calibre, peut-être.	}{	0	}{	G.Guns_Tseng == 1 and G.Tseng_Guns == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	}
-{	135	}{	Voyons votre inventaire.	}{	Voyons votre inventaire.	}{	0	}{	G.Guns_Tseng == 1 and G.Tseng_Guns == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Donnez-moi. . .	}
-{	136	}{	J'ai besoin d'un remède. Un gros calibre, peut-être.	}{	J'ai besoin d'un remède. Un gros calibre, peut-être.	}{	0	}{	G.Guns_Tseng == 0 and G.Tseng_Guns == 1	}{	tsengsShowGuns(); npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	}
-{	137	}{	Voyons votre inventaire.	}{	Voyons votre inventaire.	}{	0	}{	G.Guns_Tseng == 0 and G.Tseng_Guns == 1	}{	tsengsShowGuns(); npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Donnez-moi. . .	}
+{	134	}{	J'ai besoin d'un remède. Un gros calibre, peut-être.	}{	J'ai besoin d'un remède. Un gros calibre, peut-être.	}{	0	}{	G.Guns_Tseng == 1 and G.Tseng_Guns == 1	}{	npc.StartBarter(G.Story_State, 0); preBarter("Tseng")	}{	}{	}{	}{	}{	}{	}{	}
+{	135	}{	Voyons votre inventaire.	}{	Voyons votre inventaire.	}{	0	}{	G.Guns_Tseng == 1 and G.Tseng_Guns == 1	}{	npc.StartBarter(G.Story_State, 0); preBarter("Tseng")	}{	}{	}{	}{	}{	}{	}{	Donnez-moi. . .	}
+{	136	}{	J'ai besoin d'un remède. Un gros calibre, peut-être.	}{	J'ai besoin d'un remède. Un gros calibre, peut-être.	}{	0	}{	G.Guns_Tseng == 0 and G.Tseng_Guns == 1	}{	tsengsShowGuns(); npc.StartBarter(G.Story_State, 0); preBarter("Tseng")	}{	}{	}{	}{	}{	}{	}{	}
+{	137	}{	Voyons votre inventaire.	}{	Voyons votre inventaire.	}{	0	}{	G.Guns_Tseng == 0 and G.Tseng_Guns == 1	}{	tsengsShowGuns(); npc.StartBarter(G.Story_State, 0); preBarter("Tseng")	}{	}{	}{	}{	}{	}{	}{	Donnez-moi. . .	}
 {	138	}{	J'avais une question.	}{	J'avais une question.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	D'abord, je vais vous acheter des réponses.	}
 {	139	}{	Je regrette, Tseng, mais je n'ai besoin de rien aujourd'hui. Au revoir.	}{	Je regrette, Tseng, mais je n'ai besoin de rien aujourd'hui. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si j'achète de nouvelles armes, les anciennes seront jalouses. Je m'en vais.	}
 {	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

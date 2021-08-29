@@ -32,7 +32,7 @@
 {	32	}{	J'ai quelques questions pour toi. . .	}{	J'ai quelques questions pour toi. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'explorer ton crâne. . .	}
 {	33	}{	Tu connais quelqu'un qui s'appelle Ginger Swann ?	}{	Tu connais quelqu'un qui s'appelle Ginger Swann ?	}{	241	}{	G.Ginger_Swan == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche Ginger Swan !	}
 {	34	}{	Tu as une fille qui travaille ici, avec un coeur brisé tatoué dans le dos ?	}{	Tu as une fille qui travaille ici, avec un coeur brisé tatoué dans le dos ?	}{	231	}{	pc.GetQuestState("Strip") > 0 and G.Flynn_Chastity == 0 and not IsDead("Chastity")	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche la fille qui porte le coeur dans son dos. . .	}
-{	35	}{	Peut-être que je peux utiliser un peu de ton matos, montre-moi ce que tu as.	}{	Peut-être que je peux utiliser un peu de ton matos, montre-moi ce que tu as	}{	0	}{	G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Voici mes yeux, montre-leur ta courtoisie.	}
+{	35	}{	Peut-être que je peux utiliser un peu de ton matos, montre-moi ce que tu as.	}{	Peut-être que je peux utiliser un peu de ton matos, montre-moi ce que tu as	}{	0	}{	G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0); preBarter("Flynn")	}{	}{	}{	}{	}{	}{	}{	Voici mes yeux, montre-leur ta courtoisie.	}
 {	36	}{	Rien pour l'instant, Flynn. A plus.	}{	Rien pour l'instant, Flynn. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
 {	37	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	38	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -80,7 +80,7 @@
 {	80	}{	Pour me faire du bien, j'ai pas besoin de toi, gros pervers. A plus.	}{	Pour me faire du bien, j'ai pas besoin de toi, gros pervers. A plus.	}{	361	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon cerveau est déjà parti. Mon corps le suit.	}
 {	81	}{	Je te jure, on a tout ce qu'il te faut. Du soft, du hard, du gay, de l'hétéro, des animaux à poils ou à plumes. On a des trucs qui font gerber, qui font peur, des autolubrifiés, des trucs qui s'attachent. Les chaînes, les cravaches, les cannes, c'est à l'arrière, à côté des gros engins. Comme je te dis, on a de tout.	}{	Je te jure, on a tout ce qu'il te faut. Du soft, du hard, du gay, de l'hétéro, des animaux à poils ou à plumes. On a des trucs qui font gerber, qui font peur, des autolubrifiés, des trucs qui s'attachent. Les chaînes, les cravaches, les cannes, c'est à l'arrière, à côté des gros engins. Comme je te dis, on a de tout.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	On dirait. Il me reste quelques questions pour toi. . .	}{	On dirait. Il me reste quelques questions pour toi. . .	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'explorer ta matière grise. . .	}
-{	83	}{	Peut-être que je peux utiliser un peu de ton matos, montre-moi ce que tu as.	}{	Peut-être que je peux utiliser un peu de ton matos, montre-moi ce que tu as	}{	0	}{	G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Voici mes yeux, montre-leur ta courtoisie.	}
+{	83	}{	Peut-être que je peux utiliser un peu de ton matos, montre-moi ce que tu as.	}{	Peut-être que je peux utiliser un peu de ton matos, montre-moi ce que tu as	}{	0	}{	G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0); preBarter("Flynn")	}{	}{	}{	}{	}{	}{	}{	Voici mes yeux, montre-leur ta courtoisie.	}
 {	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

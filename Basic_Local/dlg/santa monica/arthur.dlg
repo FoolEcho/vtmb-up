@@ -1001,7 +1001,7 @@
 {	1001	}{	(Starting Condition)	}{	}{	511	}{	G.Arthur_Muddy == 5 and G.Arthur_Knoxout == 1 and G.Arthur_Foreign == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1002	}{	(Starting Condition)	}{	}{	521	}{	G.Arthur_Muddy == 5	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1003	}{	(Starting Condition)	}{	}{	481	}{	IsClan(pc,"Nosferatu") and G.Arthur_Talked == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1004	}{	(Starting Condition)	}{	}{	531	}{	pc.GetQuestState("Serial") >= 6 and pc.GetQuestState("Bail Jumper") > 0 and G.Arthur_Muddy < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1004	}{	(Starting Condition)	}{	}{	531	}{	pc.GetQuestState("Serial") >= 6 and pc.GetQuestState("Serial") < 11 and pc.GetQuestState("Bail Jumper") > 0 and G.Arthur_Muddy < 5	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1005	}{	(Starting Condition)	}{	}{	851	}{	G.Arthur_Knox >= 4 and G.Arthur_Muddy >= 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1006	}{	(Starting Condition)	}{	}{	321	}{	G.Arthur_Muddy == 1 or G.Arthur_Muddy == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1007	}{	(Starting Condition)	}{	}{	871	}{	G.Arthur_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

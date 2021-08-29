@@ -300,8 +300,8 @@
 {	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	301	}{	Vous pouvez sans doute monter. Il ne vous attendait pas, mais ça ira.	}{	Vous pouvez sans doute monter. Il ne vous attendait pas, mais ça ira.	}{	#	}{	}{	G.Chunk_Open = 5	}{	}{	}{	}{	}{	}{	}{	}
 {	302	}{	Merci.	}{	Merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Bien sûr.	}
-{	303	}{	Ahem. . .	}{	Ahem. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Personne n'attend l'Inquisition Malkavienne.	}
-{	304	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	303	}{	Ahem. . .	}{	Ahem. . .	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	...	}
+{	303	}{	Ahem. . .	}{	Ahem. . .	}{	0	}{	G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Personne n'attend l'Inquisition Malkavienne.	}
 {	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

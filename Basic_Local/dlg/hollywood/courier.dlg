@@ -80,7 +80,7 @@
 {	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	81	}{	Je ne l'ai pas sur moi, je l'ai planquée à l'abri. Il faut que tu ailles voir Ginger Swan. . . Chut ! C'était quoi, ça ? Oh merde ! T'as vu ? Je me casse d'ici. . . !	}{	Je ne l'ai pas sur moi, je l'ai planquée à l'abri. Il faut que tu ailles voir Ginger Swan. . . Chut ! C'était quoi, ça ? Oh merde ! T'as vu ? Je me casse d'ici. . . !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	Voir quoi ?	}{	Voir quoi ?	}{	0	}{	G.GingerSwanKnowledge == 0	}{	G.Ginger_Swan = 1; pc.SetQuest("Courier",3)	}{	}{	}{	}{	}{	}{	}{	Je m'attends à des morts.	}
-{	83	}{	Voir quoi ?	}{	Voir quoi ?	}{	0	}{	G.GingerSwanKnowledge == 1	}{	G.Ginger_Swan = 1; pc.SetQuest("Courier",4)	}{	}{	}{	}{	}{	}{	}{	Je m'attends à des morts.	}
+{	83	}{	Voir quoi ?	}{	Voir quoi ?	}{	0	}{	G.GingerSwanKnowledge == 1	}{	G.Ginger_Swan = 1; pc.SetQuest("Courier",4); pc.AwardExperience("Dead02")	}{	}{	}{	}{	}{	}{	}{	Je m'attends à des morts.	}
 {	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

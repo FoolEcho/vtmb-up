@@ -39,7 +39,7 @@
 {	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	41	}{	Vous devez chercher la clinique, au-dessus. Vous ne devriez pas être ici, je pense.	}{	Vous devez chercher la clinique, au-dessus. Vous ne devriez pas être ici, je pense.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Phil_Start = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	42	}{	Je viens pour la 'sauce spéciale'. Sinon, que ferais-je ici ?	}{	Je viens pour la 'sauce spéciale'. Sinon, que ferais-je ici ?	}{	31	}{	Persuasion 6 & G.Phil_Persuade == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je viens pour la sauce si spéciale. . .	}
+{	42	}{	Je viens pour la 'sauce spéciale'. Sinon, que ferais-je ici ?	}{	Je viens pour la 'sauce spéciale'. Sinon, que ferais-je ici ?	}{	31	}{	Persuasion 4 & G.Phil_Persuade == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je viens pour la sauce si spéciale. . .	}
 {	43	}{	Vous avez sommeil. . .	}{	Vous avez sommeil. . .	}{	11	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	44	}{	Vous avez sommeil....	}{	Vous avez sommeil....	}{	11	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	45	}{	Vous voulez que je parte ? C'est bien ça ?	}{	Vous voulez que je parte ? C'est bien ça ?	}{	51	}{	Seduction 6 & ( not IsMale(pc) and G.Phil_Seduce < 2 and G.Patch_Plus == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Je reviens jouer au docteur. . .	}

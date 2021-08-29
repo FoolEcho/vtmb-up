@@ -283,5 +283,5 @@
 {	283	}{	(Starting Condition)	}{	}{	201	}{	G.Boris_Debt == 1 or G.Boris_Venus == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	284	}{	(Starting Condition)	}{	}{	191	}{	G.Boris_Return == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	285	}{	(Starting Condition)	}{	}{	171	}{	G.Boris_Venus > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	286	}{	(Starting Condition)	}{	}{	5	}{	G.Dema_Go == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	287	}{	(Starting Condition)	}{	}{	7	}{	G.Dema_Go != 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	286	}{	(Starting Condition)	}{	}{	5	}{	G.Dema_Go == 1 and not IsDead("Dema")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	287	}{	(Starting Condition)	}{	}{	7	}{	G.Dema_Go != 1 or IsDead("Dema")	}{	}{	}{	}{	}{	}{	}{	}{	}

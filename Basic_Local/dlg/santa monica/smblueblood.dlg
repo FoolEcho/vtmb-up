@@ -79,8 +79,8 @@
 {	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	80	}{	Vous êtes d'une extrême gentillesse. Bonne nuit.	}{	Vous êtes d'une extrême gentillesse. Bonne nuit.	}{	0	}{	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	Vous avez un coeur d'or que j'ai hâte de goûter. Adieu. 	}
 {	81	}{	Ma montre ? C'est une édition limitée. . . Il n'y en a que cinquante au monde. . . Tout à fait irremplaçable. . . C'était un cadeau de ma femme pour notre anniversaire de mariage. . .	}{	Ma montre ? C'est une édition limitée. . . Il n'y en a que cinquante au monde. . . Tout à fait irremplaçable. . . C'était un cadeau de ma femme pour notre anniversaire de mariage. . .	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	82	}{	Alors ça ne vous fera sans doute rien de l'échanger contre votre vie. . .	}{	Alors ça ne vous fera sans doute rien de l'échanger contre votre vie. . .	}{	91	}{	Intimidate 3 & G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Considérez ça comme un emprunt sur votre mortalité. . .	}
-{	83	}{	Alors ça ne vous fera sans doute rien de l'échanger contre votre vie. . .	}{	Alors ça ne vous fera sans doute rien de l'échanger contre votre vie. . .	}{	91	}{	Intimidate 3 & G.Patch_Plus == 1	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	Considérez ça comme un emprunt sur votre mortalité. . .	}
+{	82	}{	Alors ça ne vous fera sans doute rien de l'échanger contre votre vie. . .	}{	Alors ça ne vous fera sans doute rien de l'échanger contre votre vie. . .	}{	91	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Considérez ça comme un emprunt sur votre mortalité. . .	}
+{	83	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

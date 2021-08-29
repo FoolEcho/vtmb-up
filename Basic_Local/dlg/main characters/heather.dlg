@@ -672,9 +672,9 @@
 {	672	}{	Vous avez fait quoi ? Où est-il ?	}{	Vous avez fait quoi ? Où est-il ?	}{	681	}{	}{	}{	}{	}{	}{	}{	}{	}{	Non non non non non non. Les poissons se déplacent par bancs. Où est-il ?	}
 {	673	}{	Ah, j'adore que le repas soit prêt quand je rentre. Merci ma belle.	}{	Ah, j'adore que le repas soit prêt quand je rentre. Merci ma belle.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	674	}{	Juste à temps, j'ai une faim de loup. Enfin vous vous rendez utile.	}{	Juste à temps, j'ai une faim de loup. Enfin vous vous rendez utile.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Heureusement qu'il était là ou je vous aurais utilisée. Vous êtes gentille, ma petite.	}
-{	675	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	676	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	675	}{	Je l'ai déjà fait. Jette son corps dans un endroit discret, veux-tu ?	}{	Je l'ai déjà fait. Jette son corps dans un endroit discret, veux-tu ?	}{	711	}{	IsDead("McFly") and G.Mcfly_Dump == 0	}{	G.Heather_Lure = 2	}{	}{	}{	}{	}{	}{	}{	Le poisson empeste l'endroit. Nettoyez, voulez-vous.	}
+{	676	}{	Je l'ai déjà remarqué et je l'ai laissé partir. Ne fais plus jamais ça, Heather.	}{	Je l'ai déjà remarqué et je l'ai laissé partir. Ne fais plus jamais ça, Heather.	}{	721	}{	(G.Mcfly_Leave == 1 or G.Mcfly_Dominated == 1 or G.Mcfly_Dementated == 1) and G.Mcfly_Free == 0	}{	G.Mcfly_Free = 1; G.Heather_Lure = 2	}{	}{	}{	}{	}{	}{	}{	J'ai trouvé le poisson et je l'ai remis dans l'étang.	}
+{	677	}{	Je me suis déjà nourri de lui mais je l'ai laissé vivre. Faites-le sortir tant que la transe dure.	}{	Je me suis déjà nourri de lui mais je l'ai laissé vivre. Faites-le sortir tant que la transe dure.	}{	711	}{	not IsDead("McFly") and G.Mcfly_Dump == 0 and G.Mcfly_Feed == 1	}{	G.Heather_Lure = 2	}{	}{	}{	}{	}{	}{	}{	J'ai déjà bu une gorgée, maintenant jette le poisson.	}
 {	678	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	679	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	680	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -699,7 +699,7 @@
 {	699	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	700	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	701	}{	Maître. . . ?	}{	Maîtresse. . . ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	702	}{	Allez jeter son corps dans un endroit discret, voulez-vous ?	}{	Allez jeter son corps dans un endroit discret, voulez-vous ?	}{	711	}{	IsDead("McFly") and G.McFly_Dump == 0	}{	G.Heather_Lure = 2	}{	}{	}{	}{	}{	}{	}{	Le poisson a donné une sale odeur à cet endroit. Nettoyez, voulez-vous ?	}
+{	702	}{	Allez jeter son corps dans un endroit discret, voulez-vous ?	}{	Allez jeter son corps dans un endroit discret, voulez-vous ?	}{	711	}{	IsDead("McFly") and G.Mcfly_Dump == 0	}{	G.Heather_Lure = 2	}{	}{	}{	}{	}{	}{	}{	Le poisson a donné une sale odeur à cet endroit. Nettoyez, voulez-vous ?	}
 {	703	}{	Je l'ai relâché. Ne refaites jamais cela, Heather. Jamais.	}{	Je l'ai relâché. Ne refaites jamais cela, Heather. Jamais.	}{	721	}{	(G.Mcfly_Leave == 1 or G.Mcfly_Dominated == 1 or G.Mcfly_Dementated == 1) and G.Mcfly_Free == 0	}{	G.Mcfly_Free = 1; G.Heather_Lure = 2	}{	}{	}{	}{	}{	}{	}{	Je remets la truite dans sa rivière.	}
 {	704	}{	Je me suis nourri de lui, mais je l'ai laissé vivre. Sortez-le pendant que la transe dure.	}{	Je me suis nourri de lui, mais je l'ai laissé vivre. Sortez-le pendant que la transe dure.	}{	711	}{	not IsDead("McFly") and G.Mcfly_Dump == 0 and G.Mcfly_Feed == 1	}{	G.Heather_Lure = 2	}{	}{	}{	}{	}{	}{	}{	J'ai pris une gorgée, maintenant jette le poisson dehors.	}
 {	705	}{	Votre apparence. . . changez-en.	}{	Votre apparence. . . changez-en.	}{	985	}{	G.Heather_Clothes == 0	}{	}{	}{	}{	}{	}{	}{	}{	Votre peau. . . changez-en.	}
@@ -769,7 +769,7 @@
 {	769	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	770	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	771	}{	Maître ?	}{	Maîtresse ?	}{	#	}{	npc.SetDisposition("Flirt",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	772	}{	Abandonnez son corps quelque part discrétement, voulez-vous?	}{	Abandonnez son corps quelque part discrétement, voulez-vous?	}{	711	}{	IsDead("McFly") and G.McFly_Dump == 0	}{	G.Heather_Lure = 2	}{	}{	}{	}{	}{	}{	}{	Cet endroit empeste le poisson. Nettoyez, voulez-vous.	}
+{	772	}{	Abandonnez son corps quelque part discrétement, voulez-vous?	}{	Abandonnez son corps quelque part discrétement, voulez-vous?	}{	711	}{	IsDead("McFly") and G.Mcfly_Dump == 0	}{	G.Heather_Lure = 2	}{	}{	}{	}{	}{	}{	}{	Cet endroit empeste le poisson. Nettoyez, voulez-vous.	}
 {	773	}{	Je le laisse partir. Ne refaites jamais ça, Heather.	}{	Je le laisse partir. Ne refaites jamais ça, Heather.	}{	721	}{	(G.Mcfly_Leave == 1 or G.Mcfly_Dominated == 1 or G.Mcfly_Dementated == 1) and G.Mcfly_Free == 0	}{	G.Mcfly_Free = 1; G.Heather_Lure = 2	}{	}{	}{	}{	}{	}{	}{	Je remets le poisson dans l'étang.	}
 {	774	}{	Je me suis nourri de lui, mais je l'ai laissé vivre. Sortez-le pendant que la transe dure.	}{	Je me suis nourri de lui, mais je l'ai laissé vivre. Sortez-le pendant que la transe dure.	}{	711	}{	not IsDead("McFly") and G.Mcfly_Dump == 0 and G.Mcfly_Feed == 1	}{	G.Heather_Lure = 2	}{	}{	}{	}{	}{	}{	}{	J'ai pris une gorgée, maintenant jette le poisson dehors.	}
 {	775	}{	J'ai besoin de votre sang.	}{	J'ai besoin de votre sang.	}{	0	}{	G.Heather_Feed == 0	}{	G.Heather_Feed = 1; G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Saignez pour moi.	}

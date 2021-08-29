@@ -63,7 +63,7 @@
 {	63	}{	J'ai besoin que vous apaisiez votre querelle avec Bertram Tung. 	}{	J'ai besoin que vous apaisiez votre querelle avec Bertram Tung. 	}{	91	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	64	}{	Cessez votre querelle.	}{	Cessez votre querelle.	}{	181	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	65	}{	Je pensais que le club était à Jeanette.	}{	Je pensais que le club était à Jeanette.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Cet asile n'est-il pas à la maîtresse blanche ?	}
-{	66	}{	Cessez votre querelle.	}{	Cessez votre querelle.	}{	181	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	66	}{	Cessez votre querelle.	}{	Cessez votre querelle.	}{	181	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -73,7 +73,7 @@
 {	73	}{	J'ai besoin que vous apaisiez votre querelle avec Bertram Tung. 	}{	J'ai besoin que vous apaisiez votre querelle avec Bertram Tung. 	}{	91	}{	IsClan(pc,"Nosferatu") and G.Therese_Bother == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	74	}{	Cessez votre querelle.	}{	Cessez votre querelle.	}{	181	}{	Dominate 1 & G.Therese_Bother == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	75	}{	J'ai encore quelques questions à vous poser.	}{	J'ai encore quelques questions à vous poser.	}{	671	}{	G.Therese_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je extraire d'autres réponses de votre esprit ?	}
-{	76	}{	Cessez votre querelle.	}{	Cessez votre querelle.	}{	181	}{	Thaumaturgy 1 & G.Patch_Plus == 1 and G.Therese_Bother == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	76	}{	Cessez votre querelle.	}{	Cessez votre querelle.	}{	181	}{	Thaumaturgy 1 & G.Patch_Plus == 1 and G.Therese_Bother == 0	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	77	}{	J'ai à faire. A plus tard. 	}{	J'ai à faire. A plus tard. 	}{	0	}{	G.Therese_Questions == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

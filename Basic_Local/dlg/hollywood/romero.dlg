@@ -321,7 +321,7 @@
 {	321	}{	La lune se lève, les morts aussi, et les balles pleuvent. La télé capte plutôt mal. Mais dans l'ensemble, c'est plutôt la belle vie.	}{	La lune se lève, les morts aussi, et les balles pleuvent. La télé capte plutôt mal. Mais dans l'ensemble, c'est plutôt la belle vie.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	322	}{	C'est sympa. Au revoir.	}{	C'est sympa. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est un rêve, n'est-ce pas ? Je vous laisse à votre Nirvana.	}
 {	323	}{	Ca craint. J'peux t'aider pour autre chose ?	}{	Ca craint. J'peux t'aider pour autre chose ?	}{	671	}{	G.Patch_Plus == 1 and G.Romero_Whore != 3 and G.Romero_Boink == 0 and not IsClan(pc,"Nosferatu")	}{	G.Romero_Ally = 0	}{	}{	}{	}{	}{	}{	}{	c'est pareil... et pareil... Besoin de neuf ?	}
-{	324	}{	Aucune chance pour moi de faire un peu de mise à mort de zombies ?	}{	Aucune chance pour moi de faire un peu de mise à mort de zombies ?	}{	161	}{	G.Patch_Plus == 1 and G.Romero_Quest <= 1	}{	G.Romero_Hammer = 2	}{	}{	}{	}{	}{	}{	}{	Puis-je être le marteau ?	}
+{	324	}{	Aucune chance pour moi de faire un peu de mise à mort de zombies ?	}{	Aucune chance pour moi de faire un peu de mise à mort de zombies ?	}{	161	}{	G.Patch_Plus == 1 and G.Romero_Hammer < 1	}{	G.Romero_Hammer = 2	}{	}{	}{	}{	}{	}{	}{	Puis-je être le marteau ?	}
 {	325	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

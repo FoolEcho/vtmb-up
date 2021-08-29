@@ -1,13 +1,13 @@
 {	1	}{	V-vous auriez un peu d'argent à me dépanner, monsieur ?	}{	Eh, m'dame, vous auriez un peu de monnaie pour moi ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	Tenez, ce n'est pas grand-chose, mais j'espère que ça vous rend service. . .	}{	Tenez, ce n'est pas grand-chose, mais j'espère que ça vous rend service. . .	}{	11	}{	pc.CurrentMoney() >= 1 and G.Patch_Plus == 0	}{	pc.MoneyRemove(1)	}{	}{	}{	}{	}{	}{	}{	Tenez, laissez-moi mettre une petite fortune dans votre infortune. . .	}
-{	3	}{	Tenez, ce n'est pas grand-chose, mais j'espère que ça vous rend service. . .	}{	Tenez, ce n'est pas grand-chose, mais j'espère que ça vous rend service. . .	}{	11	}{	pc.CurrentMoney() >= 10 and G.Patch_Plus == 1	}{	pc.MoneyRemove(10); pc.HumanityAdd(1)	}{	}{	}{	}{	}{	}{	}{	Tenez, laissez-moi mettre une petite fortune dans votre infortune. . .	}
-{	4	}{	Oui. Mais pas pour vous.	}{	Oui. Mais pas pour vous.	}{	51	}{	not IsClan(pc,"Ventrue") and not IsClan(pc,"Nosferatu")	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Je suis la plus grosse tirelire du monde, mais je ne me casserai pas pour vous.	}
-{	5	}{	Va bosser !	}{	Va bosser !	}{	21	}{	IsClan(pc,"Ventrue") and pc.IsMale()	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	6	}{	Va bosser !	}{	Va bosser !	}{	31	}{	IsClan(pc,"Ventrue") and not pc.IsMale()	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	7	}{	Oui. Mais pas pour vous.	}{	Oui. Mais pas pour vous.	}{	41	}{	IsClan(pc,"Nosferatu") and not pc.IsMale()	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	8	}{	Oui. Mais pas pour vous.	}{	Oui. Mais pas pour vous.	}{	51	}{	IsClan(pc,"Nosferatu") and pc.IsMale()	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	9	}{	Vous avez faim ? Moi aussi. . . hmmm. . . on dirait que nous sommes seuls dans cette allée. . .	}{	Vous avez faim ? Moi aussi. . . hmmm. . . on dirait que nous sommes seuls dans cette allée. . .	}{	0	}{	not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne pouvez pas étancher votre soif ici dans cet endroit froid et humide. . . Qui le pourrait ? Hmm. . .	}
-{	10	}{	Vous n'êtes pas exactement ce que j'attendais, mais à cheval donné, on montre les dents. . .	}{	Vous n'êtes pas exactement ce que j'attendais, mais à cheval donné, on montre les dents. . .	}{	0	}{	G.Extra_Lines == 1 and not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Qu'est-ce qui peut apparaître d'un coup à ma porte ? Une belle petite mouche juteuse, bien sûr. . .	}
+{	2	}{	Tenez, ce n'est pas grand-chose, mais j'espère que ça vous rend service. . .	}{	Tenez, ce n'est pas grand-chose, mais j'espère que ça vous rend service. . .	}{	11	}{	pc.CurrentMoney() >= 1	}{	pc.MoneyRemove(1)	}{	}{	}{	}{	}{	}{	}{	Tenez, laissez-moi mettre une petite fortune dans votre infortune. . .	}
+{	3	}{	Oui. Mais pas pour vous.	}{	Oui. Mais pas pour vous.	}{	51	}{	not IsClan(pc,"Ventrue") and not IsClan(pc,"Nosferatu")	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	Je suis la plus grosse tirelire du monde, mais je ne me casserai pas pour vous.	}
+{	4	}{	Va bosser !	}{	Va bosser !	}{	21	}{	IsClan(pc,"Ventrue") and pc.IsMale()	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Va bosser !	}{	Va bosser !	}{	31	}{	IsClan(pc,"Ventrue") and not pc.IsMale()	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	Oui. Mais pas pour vous.	}{	Oui. Mais pas pour vous.	}{	41	}{	IsClan(pc,"Nosferatu") and not pc.IsMale()	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	Oui. Mais pas pour vous.	}{	Oui. Mais pas pour vous.	}{	51	}{	IsClan(pc,"Nosferatu") and pc.IsMale()	}{	G.Bum_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	Vous avez faim ? Moi aussi. . . hmmm. . . on dirait que nous sommes seuls dans cette allée. . .	}{	Vous avez faim ? Moi aussi. . . hmmm. . . on dirait que nous sommes seuls dans cette allée. . .	}{	0	}{	not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne pouvez pas étancher votre soif ici dans cet endroit froid et humide. . . Qui le pourrait ? Hmm. . .	}
+{	9	}{	Vous n'êtes pas exactement ce que j'attendais, mais à cheval donné, on montre les dents. . .	}{	Vous n'êtes pas exactement ce que j'attendais, mais à cheval donné, on montre les dents. . .	}{	0	}{	G.Extra_Lines == 1 and not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Qu'est-ce qui peut apparaître d'un coup à ma porte ? Une belle petite mouche juteuse, bien sûr. . .	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	11	}{	C'est très gentil, merci.	}{	C'est très gentil, merci.	}{	#	}{	}{	G.Bum_Gift = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	13	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

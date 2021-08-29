@@ -56,7 +56,7 @@
 {	56	}{	Vous allez me vendre vos armes.	}{	Vous allez me vendre vos armes.	}{	81	}{	Dominate 1 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	57	}{	Merci quand même. J'aimerais voir ce que vous avez à vendre.	}{	Merci quand même. J'aimerais voir ce que vous avez à vendre.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de vos biens ?	}
 {	58	}{	Vous allez me vendre vos armes.	}{	Vous allez me vendre vos armes.	}{	81	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
-{	59	}{	Mais les armes m'aiment.	}{	Mais les armes m'aiment.	}{	81	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1;dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	Ne me refuse pas ce dont j'ai besoin.	}{	Ne me refuse pas ce dont j'ai besoin.	}{	81	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1;dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	60	}{	Dommage. Alors je vais jeter un oeil.	}{	Dommage. Alors je vais jeter un oeil.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais regarder vos produits pour animaux.	}
 {	61	}{	[nerveux, à court d'arguments]Non, j'ai dit. Enfin, je veux dire. . . Je n'en ai pas. D'arme. Pas d'arme. Quoi ?	}{	[nerveux, à court d'arguments]Eh bien. . . Je n'en ai pas. D'arme. Pas d'arme. Quoi ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	Vous allez me vendre vos armes.	}{	Vous allez me vendre vos armes.	}{	71	}{	Dominate 1 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -65,13 +65,13 @@
 {	65	}{	Rien. Mais j'aimerais connaître quelqu'un qui en aurait.	}{	Rien. Mais j'aimerais connaître quelqu'un qui en aurait.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors éclairez mon chemin jusqu'à un Marchand de Mort achalandé. . .	}
 {	66	}{	Tant pis. Qu'avez-vous à vendre ?	}{	Tant pis. Qu'avez-vous à vendre ?	}{	311	}{	not IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de vos biens ?	}
 {	67	}{	Vous allez me vendre vos armes.	}{	Vous allez me vendre vos armes.	}{	71	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
-{	68	}{	Mais les armes m'aiment.	}{	Mais les armes m'aiment.	}{	81	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	68	}{	Ne me refuse pas ce dont j'ai besoin.	}{	Ne me refuse pas ce dont j'ai besoin.	}{	81	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	69	}{	Montrez-moi vos armes et je vous montrerai la mienne. . .	}{	Montrez-moi vos armes et je vous montrerai la mienne. . .	}{	71	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and IsClan(pc,"Malkavian"))	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	70	}{	OK, je voulais juste demander. Je vais regarder un peu dans la boutique.	}{	OK, je voulais juste demander. Je vais regarder un peu dans la boutique.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais regarder vos produits pour animaux.	}
 {	71	}{	Vous savez, vous n'avez vraiment pas la tête d'un assassin ni celle d'un flic en civil.	}{	[Rougit, flatté]Vous savez, vous n'avez vraiment pas une tête à enfreindre la loi.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	Je suis digne de confiance. 	}{	Je suis digne de confiance. 	}{	81	}{	Dominate 1 & IsClan(pc,"Ventrue")	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Je ne porte d'autre insigne que celle des damnés. 	}
 {	73	}{	Tu peux me faire confiance.	}{	Vous pouvez me faire confiance.	}{	81	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Trip_Trust = G.Trip_Trust + 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
-{	74	}{	Oui, je suis du genre fantastique.	}{	Oui, je suis du genre fantastique.	}{	81	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	74	}{	Oui, je suis davantage du genre fantastique.	}{	Oui, je suis davantage du genre fantastique.	}{	81	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	75	}{	Super. Voyons ce que vous avez.	}{	Super. Voyons ce que vous avez.	}{	321	}{	}{	G.Trip_Guns = 3; TripStoryState()	}{	}{	}{	}{	}{	}{	}{	Montrez-moi vos baguettes magiques, Marchand de Mort !	}
 {	76	}{	On a vraiment besoin de s'ouvrir. Toi d'abord.	}{	Nous devons vraiment nous ouvrir l'un à l'autre. Commencez, et je vous imiterai.	}{	81	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and IsClan(pc,"Malkavian"))	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
 {	77	}{	Tu peux me faire confiance, mon gars.	}{	Vous pouvez me faire confiance, mon poussin.	}{	81	}{	Seduction 3 & (not IsMale(pc) and not IsClan(pc,"Nosferatu") and not IsClan(pc,"Malkavian"))	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
@@ -119,7 +119,7 @@
 {	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	120	}{	Je voulais juste demander. Alors je vais jeter un oeil.	}{	Je voulais juste demander. Alors je vais jeter un oeil.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais passer en revue votre opacité.	}
 {	121	}{	Umm... non, non, pas vraiment. Désolé.	}{	Umm... non, non, pas vraiment. Désolé.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	122	}{	Pas vraiment? Il y a une clinique de l'autre côté de la route. Devrais-je vous trouver quelque chose contre un rabais?	}{	Pas vraiment? Il y a une clinique de l'autre côté de la route. Devrais-je vous trouver quelque chose contre un rabais?	}{	191	}{	}{	G.Trip_Discount = 1; pc.SetQuest("Trip Drugs", 1)	}{	}{	}{	}{	}{	}{	}{	Vous êtes sûr? Je pourrais rapporter quelque chose de la maison de soin pour rendre les choses moins chères.	}
+{	122	}{	Pas vraiment? Il y a une clinique de l'autre côté de la rue. Pourrais-je vous trouver quelque chose contre un rabais?	}{	Pas vraiment? Il y a une clinique de l'autre côté de la rue. Pourrais-je vous trouver quelque chose contre un rabais?	}{	191	}{	}{	G.Trip_Discount = 1; pc.SetQuest("Trip Drugs", 1)	}{	}{	}{	}{	}{	}{	}{	Vous êtes sûr? Je pourrais rapporter quelque chose de la maison de soin pour rendre les choses moins chères.	}
 {	123	}{	J'ai juste pensé que je demanderais. Je vais regarder autour alors.	}{	J'ai juste pensé que je demanderais. Je vais regarder autour alors.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais poursuivre votre opacité.	}
 {	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -184,9 +184,9 @@
 {	184	}{	Super. Vous vendez des armes, ici ?	}{	Super. Vous vendez des armes, ici ?	}{	51	}{	G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vendez-vous des baguettes magiques dans ce bazar ?	}
 {	185	}{	Trip, qu'avez-vous à vendre ici ?	}{	Trip, qu'avez-vous à vendre ici ?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de vos biens ?	}
 {	186	}{	Ah ! Bad Trip !	}{	Ah ! Bad Trip !	}{	551	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	188	}{	Ils vous appellent Trip. Faites-vous des drogues?	}{	Ils vous appellent Trip. Faites-vous des drogues?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0	}{	}{	}{	}{	}{	}{	}{	}{	Trip est votre nom et les drogues votre jeu?	}
-{	189	}{	A bientôt. Il faut que je file.	}{	A bientôt. Il faut que je file.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	187	}{	Ils vous appellent Trip. C'est un surnom étrange, faites-vous des drogues?	}{	Ils vous appellent Trip. C'est un surnom étrange, faites-vous des drogues?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0	}{	}{	}{	}{	}{	}{	}{	}{	Trip est votre nom et les drogues votre jeu?	}
+{	188	}{	A bientôt, Trip. Il faut que je file.	}{	A bientôt, Trip. Il faut que je file.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	191	}{	Merci. Vous venez d'arriver à Santa Monica ?	}{	Merci. Vous venez d'arriver à Santa Monica ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Trip_Flatter = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	192	}{	Oui. Ca se voit tant que ça ?	}{	Oui. Ca se voit tant que ça ?	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'avais encore jamais vu la dame près de la mer. 	}
@@ -279,7 +279,7 @@
 {	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	281	}{	Un, deux... ah, putain ! Un, deux, trois, quatre, ah peu importe, mec... ah.	}{	Un, deux... ah, putain ! Un, deux, trois, quatre, ah peu importe, mec... ah.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	282	}{	Toutes les pillules y sont, pas besoin de compter.	}{	Toutes les pillules y sont, pas besoin de compter.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Le compte des pillules est bon, nous le savons.	}
+{	282	}{	Pas besoin de compter, tu auras des nuits plus dures à supporter.	}{	Pas besoin de compter, tu auras des nuits plus dures à supporter.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Ne compte pas le nombre de fois où la dureté t'envahira.	}
 {	283	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	284	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -289,7 +289,7 @@
 {	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	291	}{	Joli pantalon, mec... ah.	}{	Joli pantalon, mec... ah.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	292	}{	Rien comparé à ce que vous obtiendrez.	}{	Rien comparé à ce que vous obtiendrez.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Ton pantalon va se lever comme un mort hors d'une tombe.	}
+{	292	}{	Mieux vaut enlever le vôtre lorsque vous utilisez l'une des pilules.	}{	Mieux vaut enlever le vôtre lorsque vous utilisez l'une des pilules.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Rien de comparable à ce qui se dressera dans le tien.	}
 {	293	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	294	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -300,8 +300,8 @@
 {	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	301	}{	Vraiment ? Montrez-moi ça. . .	}{	Vraiment ? Montrez-moi ça. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	302	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Trip_Discount < 3 or G.Trip_Drugs == 1	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	303	}{	Je sais que ce n'est pas ce que vous vouliez, mais vous aurez du mal avec ça! Maintenant, pour ma remise...	}{	Je sais que ce n'est pas ce que vous vouliez, mais vous aurez du mal avec ça! Maintenant, pour ma remise...	}{	281	}{	G.Trip_Discount == 3 and not IsMale(pc)	}{	pc.RemoveItem("item_g_drugs_drug_box"); pc.SetQuest("Trip Drugs", 3); G.Trip_Delivered = 1; G.Trip_Drugs = 1; pc.BumpStat("finance", 1)	}{	}{	}{	}{	}{	}{	}{	Vous vouliez quelque chose d'autre, mais je vous ai apporté quelques trucs durs! Maintenant rendons tout moins cher...	}
-{	304	}{	Je sais que ce n'est pas ce que vous vouliez, mais vous aurez du mal avec ça! Maintenant, pour ma remise...	}{	Je sais que ce n'est pas ce que vous vouliez, mais vous aurez du mal avec ça! Maintenant, pour ma remise...	}{	291	}{	G.Trip_Discount == 3 and IsMale(pc)	}{	pc.RemoveItem("item_g_drugs_drug_box"); pc.SetQuest("Trip Drugs", 3); G.Trip_Delivered = 1; G.Trip_Drugs = 1; pc.BumpStat("finance", 1)	}{	}{	}{	}{	}{	}{	}{	Vous vouliez quelque chose d'autre, mais je vous ai apporté quelques trucs durs! Maintenant rendons tout moins cher...	}
+{	303	}{	Ce n'est probablement pas que ce vous pensiez, mais vous vous amuserez avec ça ! Maintenant, pour ma remise...	}{	Ce n'est probablement pas que ce vous pensiez, mais vous vous amuserez avec ça ! Maintenant, pour ma remise...	}{	281	}{	G.Trip_Discount == 3 and not IsMale(pc)	}{	pc.RemoveItem("item_g_drugs_drug_box"); pc.SetQuest("Trip Drugs", 3); G.Trip_Delivered = 1; G.Trip_Drugs = 1; pc.BumpStat("finance", 1)	}{	}{	}{	}{	}{	}{	}{	Vous vouliez quelque chose d'autre, mais je vous ai apporté ce dont vous aviez besoin ! Maintenant rendons tout moins cher...	}
+{	304	}{	Ce n'est probablement pas que ce vous pensiez, mais vous vous amuserez avec ça ! Maintenant, pour ma remise...	}{	Ce n'est probablement pas que ce vous pensiez, mais vous vous amuserez avec ça ! Maintenant, pour ma remise...	}{	291	}{	G.Trip_Discount == 3 and IsMale(pc)	}{	pc.RemoveItem("item_g_drugs_drug_box"); pc.SetQuest("Trip Drugs", 3); G.Trip_Delivered = 1; G.Trip_Drugs = 1; pc.BumpStat("finance", 1)	}{	}{	}{	}{	}{	}{	}{	Vous vouliez quelque chose d'autre, mais je vous ai apporté ce dont vous aviez besoin ! Maintenant rendons tout moins cher...	}
 {	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

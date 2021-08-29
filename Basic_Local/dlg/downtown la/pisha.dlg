@@ -234,7 +234,7 @@
 {	234	}{	Vous paraissiez un peu obsédée par la mort.	}{	Vous paraissiez un peu obsédée par la mort.	}{	311	}{	G.Pisha_Death == 0	}{	}{	}{	}{	}{	}{	}{	}{	La veuve souhaite-t-elle prendre la mort à sa toile ?	}
 {	235	}{	Un vampire qui mange de la chair. . . Ca me dégoûte toujours autant.	}{	Un vampire qui mange de la chair. . . Ca me dégoûte toujours autant.	}{	321	}{	G.Pisha_Flesh == 0	}{	}{	}{	}{	}{	}{	}{	}{	Une veuve qui se comporte en mante. Repoussant.	}
 {	236	}{	Parlons des objets que vous voulez.	}{	Parlons des objets que vous voulez.	}{	241	}{	G.Pisha_Desire == 1	}{	}{	}{	}{	}{	}{	}{	}{	Parlons des objets que vous cherchez.	}
-{	237	}{	Je vous ai apporté un petit casse-croûte.	}{	Je vous ai apporté un petit casse-croûte.	}{	321	}{	G.Patch_Plus == 1 and pc.HasItem("item_w_severed_arm")	}{	pc.RemoveItem("item_w_severed_arm"); pc.MoneyAdd(10)	}{	}{	}{	}{	}{	}{	}{	J'ai eu du poulet-qui-n'en-est-pas pour vous!	}
+{	237	}{	Je vous ai apporté un petit casse-croûte gratuit.	}{	Je vous ai apporté un petit casse-croûte gratuit.	}{	321	}{	G.Patch_Plus == 1 and pc.HasItem("item_w_severed_arm")	}{	pc.RemoveItem("item_w_severed_arm")	}{	}{	}{	}{	}{	}{	}{	J'ai eu pour rien du poulet-qui-n'en-est-pas pour vous!	}
 {	238	}{	Tant pis, ce n'est rien. Au revoir.	}{	Tant pis, ce n'est rien. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne voulais pas déranger votre toile. Me voici sur le départ.	}
 {	239	}{	Je vous laisse reprendre votre repas et votre chasse de la mort. Au revoir.	}{	Je vous laisse reprendre votre repas et votre chasse de la mort. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je laisse la veuve achever son sinistre festin.	}
 {	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

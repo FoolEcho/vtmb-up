@@ -79,7 +79,7 @@
 {	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	80	}{	Non. En fait, je ne suis plus là. Au revoir.	}{	Non. En fait, je ne suis plus là. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	81	}{	Content que tu me poses la question, amigo, parce que tu as l'air fiable. J'ai une suggestion sympa : tu achètes n'importe quel burrito bien cher ou du jus de raisin, et tu as une arme gratuite au choix. Ca te branche ?	}{	Content que tu me poses la question, amiga, parce que tu as l'air fiable. J'ai une suggestion sympa : tu achètes n'importe quel burrito bien cher ou du jus de raisin, et tu as une arme gratuite au choix. Ca te branche ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Slater_Weapons = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	82	}{	Bien sûr. Fais voir la sélection.	}{	Bien sûr. Fais voir la sélection.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Voici mes yeux, montre-leur ton menu.	}
+{	82	}{	Bien sûr. Fais voir la sélection.	}{	Bien sûr. Fais voir la sélection.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0); preBarter("Slater")	}{	}{	}{	}{	}{	}{	}{	Voici mes yeux, montre-leur ton menu.	}
 {	83	}{	Attends. . . Tu vends des armes dans une épicerie ?	}{	Attends. . . Tu vends des armes dans une épicerie ?	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Biscuits, sandwich, bonbons, vodka, armes. Cherchez l'intrus.	}
 {	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -89,7 +89,7 @@
 {	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	90	}{	Pas pour le moment, merci. Je m'en vais.	}{	Pas pour le moment, merci. Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je tue assez facilement comme ça pour l'instant. Je m'en vais.	}
 {	91	}{	Yo, moins fort, bordel. C'est un petit à-côté, tu vois. . . Les amplis neufs, les strip-teases, c'est pas gratuit.	}{	Yo, moins fort, bordel. C'est un petit à-côté, tu vois. . . Les amplis neufs, les strip-teases, c'est pas gratuit.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	OK. Fais voir ce que tu as. . .	}{	OK. Fais voir ce que tu as. . .	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Voici mes yeux, montre-leur ton menu.	}
+{	92	}{	OK. Fais voir ce que tu as. . .	}{	OK. Fais voir ce que tu as. . .	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0); preBarter("Slater")	}{	}{	}{	}{	}{	}{	}{	Voici mes yeux, montre-leur ton menu.	}
 {	93	}{	Je reviendrai s'il me faut autre chose.	}{	Je reviendrai s'il me faut autre chose.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai pour refourbir mes instruments de mort.	}
 {	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -133,7 +133,7 @@
 {	133	}{	Tu as entendu parler du tueur en série ?	}{	Tu as entendu parler du tueur en série ?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}
 {	134	}{	Je cherche une vidéo. . .	}{	Je cherche une vidéo. . .	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche une vidéo pleine d'atrocités inconnues. . .	}
 {	135	}{	Et c'est quoi, ta suggestion ?	}{	Et c'est quoi, ta suggestion ?	}{	81	}{	G.Special_Heard == 1 and G.Slater_Weapons == 0	}{	}{	}{	}{	}{	}{	}{	}{	Suggestion ? Qu'est-ce que tu suggères ?	}
-{	136	}{	Je vais prendre la suggestion du jour.	}{	Je vais prendre la suggestion du jour.	}{	0	}{	G.Slater_Weapons == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Suggère-moi un truc. . .	}
+{	136	}{	Je vais prendre la suggestion du jour.	}{	Je vais prendre la suggestion du jour.	}{	0	}{	G.Slater_Weapons == 1	}{	npc.StartBarter(G.Story_State, 0); preBarter("Slater")	}{	}{	}{	}{	}{	}{	}{	Suggère-moi un truc. . .	}
 {	137	}{	Pas plus que ça. Et toi ?	}{	Pas plus que ça. Et toi ?	}{	71	}{	G.Slater_Exciting == 1 and G.Slater_Serial == 1 and G.Special_Heard == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les enfants sont debout, et les parents vont venir les coucher.	}
 {	138	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -153,7 +153,7 @@
 {	153	}{	Tu as entendu parler du tueur en série ?	}{	Tu as entendu parler du tueur en série ?	}{	51	}{	G.Slater_Serial == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	Le tueur qui arpente ces rues s'est-il encore sali les mains ?	}
 {	154	}{	Je cherche une vidéo. . .	}{	Je cherche une vidéo. . .	}{	21	}{	G.Isaac_Movie > 1 and G.Isaac_Show == 0 and G.Slater_Flynn == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche une vidéo pleine d'atrocités inconnues. . .	}
 {	155	}{	Quelle est exactement ta suggestion du jour ?	}{	Quelle est exactement ta suggestion du jour ?	}{	81	}{	G.Special_Heard == 1 and G.Slater_Weapons == 0	}{	}{	}{	}{	}{	}{	}{	}{	Suggestion ? Qu'est-ce que tu suggères ?	}
-{	156	}{	J'aimerais jeter un oeil à l'inventaire que tu suggères.	}{	J'aimerais jeter un oeil à l'inventaire que tu suggères.	}{	0	}{	G.Slater_Weapons == 1	}{	npc.StartBarter(G.Story_State, 0)	}{	}{	}{	}{	}{	}{	}{	Fais-moi une suggestion.	}
+{	156	}{	J'aimerais jeter un oeil à l'inventaire que tu suggères.	}{	J'aimerais jeter un oeil à l'inventaire que tu suggères.	}{	0	}{	G.Slater_Weapons == 1	}{	npc.StartBarter(G.Story_State, 0); preBarter("Slater")	}{	}{	}{	}{	}{	}{	}{	Fais-moi une suggestion.	}
 {	157	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	158	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
