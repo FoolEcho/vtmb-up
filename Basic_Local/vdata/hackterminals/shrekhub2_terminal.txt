@@ -3,24 +3,12 @@ TerminalDefinition
 	"screen saver"		"Nocturne Theater"		// Bounces around on the screen when the terminal is not being used. 
 	"brackets"		""						// these surround the command prompt (2 characters), changed by wesp
 
-	"email_password"	"nose"		// the user must type this to access email from this terminal
-	"email_username"	"Cyrano"		// printed at the top of the email window, not used for log in. 
-	"difficulty"		"3"
-
 	LogonScreen	// displayed when the user first logs on
 	{
 		// Any number of lines are acceptable
 		"line0"		"  Nocturne Theater"	// changed by wesp
 		"line1"		"Qu'est-ce que l'art dramatique"
 
-	}
-
-	Email		// added by wesp
-	{
-		"subject"	"Projecteur !"
-		"sender"	"sksp@company.vtm"
-		"body"		"Avez-vous laissé le projecteur brisé sur la balustrade ? Quelqu'un va trébucher dessus et se briser le cou ! Déposez-le à l'atelier dès que possible, je ne vais pas le ranger pour vous.
-SkSp"
 	}
 
 	SubDir

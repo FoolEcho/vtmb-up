@@ -80,7 +80,7 @@ VendorData
 			"Name"			"item_w_rem_m_700_bach"
 			"InternalName"		"item_w_rem_m_700_bach"
 			"AmmoOnly"			"1"
-			"MinStage"			"40"
+			"MinStage"			"150"	// basic
 		}
 
 		VendorItem
@@ -305,7 +305,7 @@ VendorData
 			"Name"			"item_w_steyr_aug"
 			"InternalName"		"item_w_steyr_aug"
 			"AmmoOnly"			"0"
-			"MinStage"			"55"	// changed by wesp
+			"MinStage"			"60"
 		}
 
 		VendorItem
@@ -402,7 +402,7 @@ VendorData
 			"Name"			"item_w_steyr_aug"
 			"InternalName"		"item_w_steyr_aug"
 			"AmmoOnly"			"1"
-			"MinStage"			"55"	// changed by wesp
+			"MinStage"			"60"
 		}
 
 		VendorItem
@@ -493,15 +493,15 @@ VendorData
 			"Name"			"item_w_supershotgun"
 			"InternalName"		"item_w_supershotgun"
 			"AmmoOnly"			"0"
-			"MinStage"			"150"	// changed by wesp
+			"MinStage"			"50"
 		}
 
-		VendorItem	// changed by wesp
+		VendorItem
 		{
-			"Name"			"item_w_uzi"
-			"InternalName"		"item_w_uzi"
+			"Name"			"item_w_deserteagle"
+			"InternalName"		"item_w_deserteagle"
 			"AmmoOnly"			"0"
-			"MinStage"			"45"
+			"MinStage"			"55"
 		}
 
 		VendorItem
@@ -781,7 +781,7 @@ VendorData
 			"MinStage"			"65"
 		}
 
-		VendorItem // changed by wesp
+		VendorItem // changed by wesp from stake launcher
 		{
 			"Name"			"item_w_crossbow"
 			"InternalName"		"item_w_crossbow"
@@ -897,20 +897,20 @@ VendorData
 			"MinStage"			"0"
 		}
 
+		VendorItem // changed by wesp from stakelauncher
+		{
+			"Name"			"item_w_crossbow"
+			"InternalName"		"item_w_crossbow"
+			"AmmoOnly"			"0"
+			"MinStage"			"150"	// basic
+		}
+
 		VendorItem
 		{
 			"Name"			"item_w_bush_hook"
 			"InternalName"		"item_w_bush_hook"
 			"AmmoOnly"			"0"
 			"MinStage"			"65"
-		}
-
-		VendorItem // added by wesp
-		{
-			"Name"			"item_w_crossbow"
-			"InternalName"		"item_w_crossbow"
-			"AmmoOnly"			"0"
-			"MinStage"			"150"	// basic
 		}
 
 		VendorItem
@@ -986,7 +986,7 @@ VendorData
 			"MinStage"			"65"
 		}
 
-		VendorItem // changed by wesp
+		VendorItem // changed by wesp from stakelauncher
 		{
 			"Name"			"item_w_crossbow"
 			"InternalName"		"item_w_crossbow"
@@ -1081,7 +1081,7 @@ VendorData
 			"Name"			"item_g_eldervitaepack"   //change to elder vitae pack
 			"InternalName"		"item_g_eldervitaepack"
 			"AmmoOnly"			"0"
-			"MinStage"			"0"	// basic
+			"MinStage"			"60"	// basic
 		}
 				
 		// Armor ---------

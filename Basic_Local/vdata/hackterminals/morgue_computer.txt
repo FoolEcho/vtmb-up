@@ -40,18 +40,19 @@ Sujet mort d'un arrêt cardiaque. Affaires personnelles dans chambre B."
 
 		Function
 		{
-			"name"		"Jane Doe"
-			"description"	"Casier 2B - 17/10/04"
-			"runtext"	"Casier 2B - 17/10/04
-Sujet mort de causes indéterminées. Note : le cadavre ne contient plus qu'un demi-litre de sang. Acte criminel suspecté."	//changed by wesp
-		}
-
-		Function
-		{
 			"name"		"Falz, D"
 			"description"	"Casier 5B - 18/10/04"
 			"runtext"	"Casier 5B - 18/10/04
 Battu à mort. Je n'ai eu qu'une envie en le voyant, refermer très vite le casier."	//changed by wesp
+
+		}
+
+		Function
+		{
+			"name"		"Jane Doe"
+			"description"	"Casier 2B - 17/10/04"
+			"runtext"	"Casier 2B - 17/10/04
+Sujet mort de causes indéterminées. Note : le cadavre ne contient plus qu'un demi-litre de sang. Acte criminel suspecté."	//changed by wesp
 		}
 
 		Function
@@ -67,9 +68,19 @@ Sujet apparemment mort d'overdose de jambon-fromage."	//changed by wesp
 			"name"		"Poe, H"
 			"description"	"Casier 3B -- 24/10/04"
 			"runtext"	"Casier 3B -- 24/10/04
-Sujet mort de saignements internes. Jolie petite rousse, quel dommage."	//changed by wesp
-			"dependency"	"G.Heather_Drank == 0 and G.Story_State > 9"
+Cause de la mort: hémorragie interne. Jolie petite rousse, quel dommage de n'avoir pu la sauver."	//changed by wesp
+			"dependency"	"G.Heather_Drank == 0 and G.Story_State > 9 and G.PP == 1"
 			"runscript"	"heatherQuest3()"
+		}
+
+		Function	// added by wesp
+		{
+			"name"		"Wales, D"
+			"description"	"Locker 1B -- 10/24/04"
+			"runtext"	"Locker 1B -- 10/24/04
+Sujet mort d'une attaque cardiaque.
+Note: vieille dame, on dirait qu'elle est littéralement morte de peur."
+			"dependency"	"G.Doris_Scare == 4 and G.PP == 1"
 		}
 	}
 }

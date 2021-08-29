@@ -249,7 +249,7 @@ Jeanette"
 	{
 		"subject"	"Repérage Kamikazi Zen"
 		"sender"	"m1tn1ck@TheFlow.vtm"
-		"body"		"La clé de la porte de devant est dans votre boîte aux lettres. Notre taupe a mis un fichier appelé 'hooligan' sur l'un des terminaux du bureau. C'est un virus. Trouvez-le et exécutez-le. Ca coupera l'électricité pour que vous puissiez franchir la VERITABLE   première porte de sécurité. Je n'ai pas obtenu de plan des lieux, alors une fois que vous aurez franchi cette porte, à vous de trouver la salle du serveur et le coffre-fort. Bonne chance."
+		"body"		"La clé de la porte de devant est dans votre boîte aux lettres. Notre taupe a mis un fichier appelé 'hooligan' sur l'un des terminaux du bureau. C'est un virus. Trouvez-le et exécutez-le. Ca coupera l'électricité pour que vous puissiez franchir la VERITABLE première porte de sécurité. Je n'ai pas obtenu de plan des lieux, alors une fois que vous aurez franchi cette porte, à vous de trouver la salle du serveur et le coffre-fort. Bonne chance."
 		"dependency"	"G.Shubs_Act == 3"
 		"runscript"	"G.Shubs_Email = 4; mitSetQuestEight(); putStuffInMailBox()"
 	}
@@ -258,7 +258,7 @@ Jeanette"
 	{
 		"subject"	"Library"
 		"sender"	"beckett@legend.vtm"
-		"body"		"Bonjour jeune homme... LaCroix vante votre débrouillardise, alors peut-être pourriez-vous m'assister sur un sujet important. Un confrère Gangrel, Scott, qui faisait des recherches pour mon compte à la bibliothèque municipale, y a remarqué un vampire du Sabbat ! Etant occupé pour le moment, pourriez-vous le rencontrer à ma place dans l'ancien magasin de fumée à Santa Monica. Il vous donnera les détails. Scoot insistait beaucoup sur le fait que quelque chose se prépare. Et nous ne voudrions pas qu'il arrive quelque chose à tous ces précieux ouvrages, n'est-ce pas? - Beckett"
+		"body"		"Bonjour jeune homme... LaCroix vante votre débrouillardise, alors peut-être pourriez-vous m'assister sur un sujet important. Un confrère Gangrel, Scott, qui faisait des recherches pour mon compte à la bibliothèque municipale, y a remarqué un vampire du Sabbat. Etant occupé pour le moment, pourriez-vous le rencontrer à ma place dans l'ancien magasin de fumée à Santa Monica. Il vous donnera les détails. Scoot insistait beaucoup sur le fait que quelque chose se prépare. Et nous ne voudrions pas qu'il arrive quelque chose à tous ces précieux ouvrages, n'est-ce pas? - Beckett"
 		"dependency"	"G.Library_Ready == 1 and G.Patch_Plus == 1"
 		"runscript"	"librarySetQuest()"
 	}

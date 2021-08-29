@@ -37,21 +37,21 @@ TerminalDefinition
 	Email
 	{
 		"subject"	"Le Sabbat est ici."
-		"sender"	"IAbrams@SMMCmail.vtm"
+		"sender"	"IAbrams@starmail.vtm"
 		"body"		"La rumeur veut que le Sabbat infiltre Los Angeles. Je t'aurai plus d'informations quand je pourrais."
 	}
 
 	Email
 	{
 		"subject"	"Re: Le Sabbat est ici."
-		"sender"	"IAbrams@SMMCmail.vtm"
+		"sender"	"IAbrams@starmail.vtm"
 		"body"		"C'est confirmé. Ils sont localisés dans les anciens tunnels de métro ou dans les égouts."	// changed by wesp
 	}
 
 	Email		// added by wesp
 	{
 		"subject"	"Re: Le Sabbat est ici."
-		"sender"	"IAbrams@SMMCmail.vtm"
+		"sender"	"IAbrams@starmail.vtm"
 		"body"		"J'ai trouvé quelqu'un pour nettoyer le sous-sol. Il a aussi affaire à la Gargouille, elle n'était même pas liée au Sabbat."
 		"dependency"	"G.Gargoyle_Convinced == 0"
 	}
@@ -59,7 +59,7 @@ TerminalDefinition
 	Email		// added by wesp
 	{
 		"subject"	"Re: Le Sabbat est ici."
-		"sender"	"IAbrams@SMMCmail.vtm"
+		"sender"	"IAbrams@starmail.vtm"
 		"body"		"J'ai trouvé quelqu'un pour nettoyer le sous-sol. Il a même persuadé la Gargouille de se joindre à nous, elle n'était pas liée au Sabbat."
 		"dependency"	"G.Gargoyle_Convinced == 1"
 	}
@@ -67,7 +67,7 @@ TerminalDefinition
 	Email		// added by wesp
 	{
 		"subject"	"Nines Rodriguez"
-		"sender"	"IAbrams@SMMCmail.vtm"
+		"sender"	"IAbrams@starmail.vtm"
 		"body"		"Nines a été grièvement blessé alors qu'il se battait avec un loup-garou. Je lui ai garanti la sécurité alors défendez l'hôtel à tout prix !"
 	}
 

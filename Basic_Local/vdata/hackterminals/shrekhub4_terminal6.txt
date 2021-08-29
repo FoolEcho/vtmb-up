@@ -16,17 +16,17 @@ TerminalDefinition
 		"name"			"mitnick!"	//(128 characters)
 		"description"		"pour tous vos besoins érotiques"
 		"difficulty"		"0"
-		"dependency"		"G.Shubs_Act == 4"	
+		"dependency"		"G.Shubs_Act == 4"
 
 		Function
 		{
 			"name"		"SAUVETAGE"
 			"description"	"Quand ton cul sera cuit."	
-			"runtext"	"Vous avez réussi. Fait un peu chaud quand ton compte est bon, non ? Du calme. Je vais ouvrir l'aération derrière vous.
+			"runtext"	"Vous avez réussi. Fait un peu chaud ici, non ? Du calme. Je vais ouvrir l'aération derrière vous.
 Merci. Prenez soin de vous.
 
 >m1tn1ck<"	// changed by wesp
-			"runscript"	""
+			"runscript"		"G.Shubfour_Virus = 0"	// added by wesp
 			"trigger"	"0"
 			
 		}

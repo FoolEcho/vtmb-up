@@ -1315,7 +1315,7 @@ StatData
 			{
 				"Name"		"Augure"
 				"InternalName"	"Auspex"
-				"HelpText"	"Améliore vos facultés mentales et vous permet de percevoir les auras de ceux qui vous entourent. Tous les niveaux d'Augure coûtent 1 point de sang par activation."
+				"HelpText"	"Améliore vos facultés mentales et vous permet de percevoir les auras de ceux qui vous entourent ainsi que de mieux voir dans le noir. Tous les niveaux d'Augure coûtent 1 point de sang par activation."
 				"HelpTextH1"	"Niveau 1 :"
 				"HelpTextH2"	"Niveau 2 :"
 				"HelpTextH3"	"Niveau 3 :"
@@ -1800,7 +1800,7 @@ StatData
 			{
 				"Name"		"Occultation"
 				"InternalName"	"Obfuscate"
-				"HelpText"		"Invisibilité vampirique. Vous ne pouvez activer l'Occultation que si personne ne peut vous voir. Si vous restez immobile, le chronomètre se fige et l'Occultation peut rester ainsi indéfiniment. Chaque niveau offre les avantages des niveaux précédents et n'entraîne aucun risque de violation de la Mascarade."	// changed by wesp
+				"HelpText"		"Invisibilité vampirique. Vous ne pouvez activer l'Occultation que si personne ne peut vous voir. Si vous restez immobile, le chronomètre se fige et l'Occultation peut rester ainsi indéfiniment. Chaque niveau offre les avantages des niveaux précédents et n'entraîne aucun risque de violation de la Mascarade. Durant la frénésie, les limites de niveau sont ignorés."	// changed by wesp
 				"HelpTextH1"	"Niveau 1 : Camouflage"
 				"HelpTextH2"	"Niveau 2 : Invisibilité limitée"
 				"HelpTextH3"	"Niveau 3 : Tueur camouflé"
@@ -2143,7 +2143,7 @@ StatData
 			{
 				"Name"		"Vision divine"
 				"InternalName"	"Divine_Vision"
-				"HelpText"	"La vision divine permet au croisé de voir les auras des amis et des ennemis, même ceux cachés. Les auras alliées apparaîtront en bleu, celles des ennemis en rouge. Tous les niveaux de Vision divine coûte un seul point de foi par activation."	// changed by wesp
+				"HelpText"	"La vision divine permet au croisé de mieux voir dans le noir et de percevoir les auras des vivants et des morts-vivants. Les auras des vivants apparaitront en blanc, celles des morts-vivants en rouge. Tous les niveaux de Vision divine coûte un seul point de foi par activation."	// changed by wesp
 				"HelpTextH1"	"Niveau 1:"
 				"HelpTextH2"	"Niveau 2:"
 				"HelpTextH3"	"Niveau 3:"
@@ -2154,7 +2154,6 @@ StatData
 				"HelpTextL3"	"Révèle les auras des vivants et des mort-vivants à large distance. Dure 28 secondes par activation."	// added by wesp
 				"HelpTextL4"	"Révèle les auras des vivants et des mort-vivants à grande distance. Dure 32 secondes par activation."	// added by wesp
 				"HelpTextL5"	"Révèle les auras des vivants et des mort-vivants à une énorme distance. Dure 36 secondes par activation."	// added by wesp
-
 
 				"ShownInFeedback"	"1"
 
