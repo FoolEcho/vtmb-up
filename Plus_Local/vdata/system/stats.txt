@@ -83,7 +83,7 @@ StatData
 			{
 				"Name"		"Subpool_Attribute_Primary_Secondary_Tertiary"
 				"InternalName"	"Subpool_Attribute_Primary_Secondary_Tertiary"
-				"Clamping		"1"
+				"Clamping"		"1"
 
 				"0"				"2"
 				"1"				"1"
@@ -1315,7 +1315,7 @@ StatData
 			{
 				"Name"		"Augure"
 				"InternalName"	"Auspex"
-				"HelpText"	"Améliore vos facultés mentales et vous permet de percevoir les auras de ceux qui vous entourent. Tous les niveaux d'Augure coûtent 1 point de sang par activation."
+				"HelpText"	"Améliore vos facultés mentales et vous permet de percevoir les auras de ceux qui vous entourent ainsi que de mieux voir dans le noir. Tous les niveaux d'Augure coûtent 1 point de sang par activation."
 				"HelpTextH1"	"Niveau 1 :"
 				"HelpTextH2"	"Niveau 2 :"
 				"HelpTextH3"	"Niveau 3 :"
@@ -1800,7 +1800,7 @@ StatData
 			{
 				"Name"		"Occultation"
 				"InternalName"	"Obfuscate"
-				"HelpText"		"Invisibilité vampirique. Vous ne pouvez activer l'Occultation que si personne ne peut vous voir. Si vous restez immobile, le chronomètre se fige et l'Occultation peut rester ainsi indéfiniment. Chaque niveau offre les avantages des niveaux précédents et n'entraîne aucun risque de violation de la Mascarade."	// changed by wesp
+				"HelpText"		"Invisibilité vampirique. Vous ne pouvez activer l'Occultation que si personne ne peut vous voir. Si vous restez immobile, le chronomètre se fige et l'Occultation peut rester ainsi indéfiniment. Chaque niveau offre les avantages des niveaux précédents et n'entraîne aucun risque de violation de la Mascarade. Durant la frénésie, les limites de niveau sont ignorées."	// changed by wesp
 				"HelpTextH1"	"Niveau 1 : Camouflage"
 				"HelpTextH2"	"Niveau 2 : Invisibilité limitée"
 				"HelpTextH3"	"Niveau 3 : Tueur camouflé"
@@ -2432,7 +2432,7 @@ StatData
 					{
 						Definition 	"d_bloodhealing_view_emitter"
 						Bone		""
-						AttachType	"ScreenCenter"
+						AttachType	"ScreenBorder"
 						Viewmodel	"1"
 					}
 				}
@@ -2867,6 +2867,18 @@ StatData
 					"Stat"	"BloodPool -1"
 				}
 
+				Action	// added by wesp
+				{
+					"Value"	">0"
+					Particle
+					{
+						Definition 	"d_celerity_view_emitter"
+						Bone		""
+						AttachType	"ScreenBorder"
+						Viewmodel	"1"
+					}
+				}
+
 				Action
 				{
 					"Value"	"1"
@@ -2973,7 +2985,7 @@ StatData
 
 				Action	// added by wesp
 				{
-					"Value"	"1"
+					"Value"	">0"
 					Particle
 					{
 						Definition 	"d_bloodbuff_view_emitter"
@@ -3606,6 +3618,17 @@ StatData
 						Definition 	"D_Potence_5BP_Emitter_Hand"
 						Bone		"Bip01 l Hand"
 						AttachType	"Bone"
+					}
+				}
+				Action	// added by wesp
+				{
+					"Value"	">0"
+					Particle
+					{
+						Definition 	"d_potence_view_emitter"
+						Bone		""
+						AttachType	"ScreenCenter"
+						Viewmodel	"1"
 					}
 				}
 
