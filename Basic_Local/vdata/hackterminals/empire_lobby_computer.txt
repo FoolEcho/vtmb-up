@@ -29,6 +29,7 @@ TerminalDefinition
 			"name"		"Suite de la Reine"
 			"description"	"Occupée"
 			"runtext"	"La suite de la Reine (2ème étage) est OCCUPEE. Client: Anders Johansen. Réservée jusqu'à : PREAVIS"
+		"dependency"	"G.Patch_Plus == 1"		// added by wesp
 		}
 
 		Function
@@ -93,13 +94,14 @@ TerminalDefinition
 			"description"	"Transactions"
 			"runtext"	"Film : 'Planet La Femme' : 10 $. 
 Steak et homard : 80 $."
-		}	// changed by wesp
+		}
 
 		Function	// added by wesp
 		{
 			"name"		"Johansen, A"
 			"description"	"Transactions"
 			"runtext"	"Néant"
+			"dependency"	"G.Patch_Plus == 1"		// added by wesp
 		}
 		
 		Function

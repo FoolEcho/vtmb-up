@@ -137,7 +137,7 @@ Entrée supprimée de la base de données à la demande de l'Eglise de l'Absentologi
 			"description"	"Ash Rivers"
 			"runtext"	"Ash Rivers
 Après sa percée grâce au film 'Zéro Négatif', Rivers s'est attiré un bon accueil critique et commercial dans trois autres films avant une retraite inattendue. Rivers passe presque tout son temps à gérer son club, le Asp Hole, qui se trouve au coeur d'Hollywood."	// changed by wesp
-		"dependency"	"G.Story_State < 65"	// added by wesp
+		"dependency"	"G.Ashlookalike_Dead == 0 or G.PP == 0"		// added by wesp
 		}
 
 		Function
@@ -146,25 +146,7 @@ Après sa percée grâce au film 'Zéro Négatif', Rivers s'est attiré un bon accueil
 			"description"	"Ash Rivers"
 			"runtext"	"Ash Rivers
 Après sa percée grâce au film 'Zéro Négatif', Rivers s'est attiré un bon accueil critique et commercial dans trois autres films avant une retraite inattendue. Rivers passe presque tout son temps à gérer son club, le Asp Hole, jusqu'au jour ou il y fut tué par un fou."	// changed by wesp
-		"dependency"	"G.Ash_Leave == 0 and G.Story_State >= 65"	// added by wesp
-		}
-
-		Function
-		{
-			"name"		"Rivers, Ash"
-			"description"	"Ash Rivers"
-			"runtext"	"Ash Rivers
-Après sa percée grâce au film 'Zéro Négatif', Rivers s'est attiré un bon accueil critique et commercial dans trois autres films avant une retraite inattendue. Rivers passe presque tout son temps à gérer son club, le Asp Hole, jusqu'au jour ou il y fut tué par un fou."	// changed by wesp
-		"dependency"	"G.Ash_Switch == 2 and G.Story_State >= 65"	// added by wesp
-		}
-
-		Function
-		{
-			"name"		"Rivers, Ash"
-			"description"	"Ash Rivers"
-			"runtext"	"Ash Rivers
-Après sa percée grâce au film 'Zéro Négatif', Rivers s'est attiré un bon accueil critique et commercial dans trois autres films avant une retraite inattendue. Rivers passe presque tout son temps à gérer son club, le Asp Hole, jusquà sa mystérieuse disparition il y a peu de temps."	// changed by wesp
-		"dependency"	"G.Ash_Leave == 1 and G.Story_State >= 65"	// added by wesp
+		"dependency"	"G.Ashlookalike_Dead == 1 and G.PP == 1"	// added by wesp
 		}
 
 	}

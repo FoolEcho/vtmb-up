@@ -2,9 +2,9 @@
 
 WeaponData
 {
-	"printname"			"Grenade à fragmentation"
-	"description"			"Tirez la goupille et la fête est finie."
-	"item_worth"			"0"		// changed by wesp
+	"printname"		"Grenade à fragmentation"
+	"description"		"Tirez la goupille et la fête est finie."
+	"item_worth"		"200"		// changed by wesp
 
 	"viewmodel"		"models/weapons/grenade/pineapple/view/v_pineapple.mdl"
 	"playermodel"		"models/weapons/grenade/pineapple/ground/g_pineapple.mdl"
@@ -13,29 +13,23 @@ WeaponData
 	"infomodel"		"models/weapons/grenade/pineapple/info/i_pineapple.mdl"
 
 	// This should match the viewmodel QC file offset:
-	"origin_x"				"3"	// changed by Lenuska
-	"origin_y"				"0"	// changed by Lenuska
-	"origin_z"				"62"	// changed by Lenuska
-	"anim_prefix"				"grenade"
-	"impact_snd_group"			"bullet"	// changed by Lenuska
+	"origin_x"		"0"
+	"origin_y"		"0"
+	"origin_z"		"68"
+	"anim_prefix"		"grenade"
+	"impact_snd_group"	""
 
-	"activation0"				"Single"	// changed by Lenuska
-	"activation1"				"Error"
-	"jammed0"				"Jammed"	// changed by Lenuska
-	"jammed1"				"Jammed"	// changed by Lenuska
-	"bucket"				"1"
-	"bucket_position"			"4"		// changed by Lenuska
-	"camera_class"				"ranged"	// changed by Lenuska
-	"weight"				"3"
-	"item_flags"				"0"
-	"item_type"				"weapon_thrown"	// changed by wesp
-	"impact_force"				"10000"	// changed by wesp
-// Lenuska	"throwing_weapon"			"1"	
-	"sound_group"				"Grenade_Pineapple"
-	"uses_accuracycursors"			"1"
-
-
-	"knockback_chance"			"1.0"
+	"activation0"		"Throw"
+	"activation1"		"Roll"
+	"bucket"		"1"
+	"bucket_position"	"2"
+	"camera_class"		"thrown"
+	"weight"		"3"
+	"item_flags"		"0"
+	"item_type"		"weapon_thrown"
+	"sound_group"	"Grenade_Pineapple"
+	"throwing_weapon" "1"
+	"uses_accuracycursors"	"1"
 
 	SoundData
 	{
@@ -47,7 +41,16 @@ WeaponData
 		}
 		"pickup"
 		{
-			"sound1"	"Weapons\Ranged\Grenade\Deploy.wav"	// changed by wesp
+			"sound1"	"Weapons\Ranged\Grenade\Deploy.wav"
+		}
+		"stealth_kill_success"
+		{
+			"sound1"	"Weapons/Melee/Sledgehammer/Stealth_Sledgehammer.wav"
+		}
+
+		"stealth_kill_failure"
+		{
+			"sound1"	"Weapons/Melee/Fists/Stealth_Kill_Failure.wav"
 		}
 	}
 
@@ -55,16 +58,14 @@ WeaponData
 	Magazine
 	{
 		//printname description and ammo_worth should be the same as in WeaponData
-		"ammoprintname"			"Grenade à fragmentation"
-		"ammodescription"		"Tirez la goupille et la fête est finie."
-		"ammo_worth"			"0"	// changed by wesp
-		"ammoinfomodel"			"models/weapons/grenade/pineapple/info/i_pineapple.mdl"	// changed by Lenuska
+		"printname"		"Grenade à fragmentation"
+		"description"		"Tirez la goupille et la fête est finie."
+		"ammo_worth"		"200"
 
-		"Size"				"1"
-		"Default_Size"			"1"
-		"Type"				"FragGrenade"
-		"ReloadTime"			"3.5"
-
+		"Size"			"-1"
+		"Default_Size"		"5"
+		"Type"			"FragGrenade"
+		"ReloadTime"		"3.5"
 
 		SoundData
 		{
@@ -74,7 +75,7 @@ WeaponData
 			}
 
 			"reload_npc"
-			{
+			{		
 				"sound1"	"Weapons\Ranged\Grenade\Pull_Pin.wav"
 			}
 		}
@@ -83,44 +84,19 @@ WeaponData
 //Primary Attack
 	Activation
 	{
-		"Tag"				"Primary"
-		"Type"				"Attack"
-		"Ammo_Type"			"FragGrenade"
-		"Ammo_Cost"			"1"
-		"Botch_Table"			"Pistols"
-		"Attack_Rate"			"3.5"
-		"Range"				"60"	// changed by Lenuska
+		"Tag"			"Primary"
+		"Type"			"Attack"
+		"Ammo_Type"		"FragGrenade"
+		"Ammo_Cost"		"1"
+		"Botch_Table"		"Pistols"
+		"Attack_Rate"		"3.5"
+		"Range"			"20"
 		"CriminalLevel"	"5"
-// Lenuska		"allow_autofire" 		"1"
+		"allow_autofire" "1"
+		"Accuracy"		"6"
 
-		"Accuracy"			"6"
-
-		"SkillRequirement"		"1"			// min. skill requirement used in dmg calculations, added by Lenuska		
-		"BaseLethality"		"100"			// base lethality used in dmg calculationn, changed by wesp
-		"Dmg"			"100 Aggravated Throwing DMG_BLAST"	// changed by wesp
-
-		// SKS_RANGED, changed by wesp
-		"KickPitchMin"			"0.0"		//"-1.75"
-		"KickPitchMax"			"0.0"		//"-10.00"
-		"KickYawMin"			"0.0"		//"-0.2"
-		"KickYawMax"			"0.0"		//"-2.5"
-		"KickTime"			"0.0"		//"0.02"
-		"CrosshairMinSize"		"1.0"		//"15" smallest crosshair size for this activation [0-99]
-		"CrosshairFireSize"		"1"		//"90" size of the crosshair when the gun is fired [0-99]
-		"CrosshairWalkSizeMin"	"1"			//"15" min size of the crosshair when the player is walking [0-99]
-		"CrosshairWalkSizeMax"	"1"			//"35" max size of the crosshair when the player is walking [0-99]
-		"CrosshairRunSizeMin"	"1"			//"20" min size of the crosshair when the player is running [0-99]
-		"CrosshairRunSizeMax"	"1"			//"55" max size of the crosshair when the player is running [0-99]
-		"CrosshairIncSpeedMin"	"0"			//"40" min speed at which to increase bloom
-		"CrosshairIncSpeedMax"	"0"			//"70" max speed at which to increase bloom
-		"CrosshairDecSpeedMin"	"99"			//"10" min speed at which to decrease bloom
-		"CrosshairDecSpeedMax"	"99"			//"70" max speed at which to decrease bloom
-		"CrosshairFirePercent"	"0.01"			//"0.7" percent to bloom to crosshair upon firing a bullet
-
-		"SpreadAngle"			"3.0"
-
-		"MajorKnockbackDist"	"100.0"			// changed by wesp
-		"MinorKnockbackDist"	"1000.0"		// changed by wesp
+		"Lethality"		"18"
+		"Dmg"			"1 Lethal Throwing DMG_BLAST"
 
 		SoundData
 		{
@@ -136,7 +112,7 @@ WeaponData
 
 			"attack_npc"
 			{
-				"sound1"	"Weapons\Ranged\Grenade\Projectile.wav"	
+				"sound1"	"Weapons\Ranged\Grenade\Projectile.wav"
 			}
 
 			"botch"
@@ -148,67 +124,13 @@ WeaponData
 			{
 				"sound1"	"Weapons\Ranged\Grenade\Pull_Pin.wav"
 			}
-
-			"put_away"
-			{
-				"sound1"	"Weapons/Ranged/Put_Away.wav"
-			}			
-			
-			"fidget"
-			{
-				"sound1"	"Weapons/Ranged/Fidget.wav"
-			}
-		}
-
-		Tables
-		{
-			Table
-			{
-				"Name"          "WeaponRanges"
-				"InternalName"  "WeaponRanges"
-
-				"Clamping"      "1"
-
-				"0"             "400"         // 5 (bonus)
-				"1"             "363"         // 4 (bonus)
-				"2"             "325"         // 3 (bonus)
-				"3"             "288"         // 2 (bonus)
-				"4"             "250"     // 1 (bonus)
-				"5"             "225"     // 0 (neutral)
-				"6"             "200"     //-1 (penalty)
-				"7"             "175"     //-2 (penalty)
-				"8"             "150"     //-3 (penalty)
-				"9"             "1"     //-4 (penalty)
-			}
-			Table
-			{
-				"Name"          "GrossPointBlank"
-				"InternalName"  "GrossPointBlank"
-
-				"Clamping"      "1"
-
-
-				// percentage from 1-12 feet out
-
-				"0"             "10"
-				"1"             "20"
-				"2"             "30"
-				"3"             "40"
-				"4"             "50"
-				"5"             "60"
-				"6"             "70"
-				"7"             "80"
-				"8"             "90"
-				"9"             "100"
-			}
-			
 		}
 	}
 
-//Secondary Attack, restored by wesp
+//Secondary Attack
 	Activation
 	{
-		"Tag"			"Error"	// changed by wesp
+		"Tag"			"PrimaryMode2"
 		"Type"			"Attack"
 		"Ammo_Type"		"FragGrenade"
 		"Ammo_Cost"		"1"
@@ -251,7 +173,7 @@ WeaponData
 		}
 	}
 
-//Toggle Fireing Mode, restored by wesp
+//Toggle Fireing Mode
 	Activation
 	{
 		"Tag"		"Secondary"
@@ -260,20 +182,19 @@ WeaponData
 
 		SoundData
 		{
-			"to_mode1"		// changed by wesp
+			"to-mode1"
 			{
-				"sound1"	"weapons/grenade/empty.wav"	// changed by wesp
+				"sound1"	"sound1"
 			}
 
 			"to_mode2"
 			{
-				"sound1"	"weapons/grenade/empty.wav"	// changed by wesp
+				"sound1"	"sound2"
 
 			}
 
 		}
 	}
-
 
 	SpriteData
 	{
@@ -281,10 +202,10 @@ WeaponData
 		{
 			"640"
 			{
-				"file"	"hud/Inventory_Images/weapons_ranged/grenade_frag_sel"	// changed by wesp
+				"file"	"hud/Inventory_Images/Temp_Inven"
 				"x"		"0"
 				"y"		"0"
-				"width"		"100"
+				"width"	"100"
 				"height"	"64"
 			}
 		}
@@ -292,46 +213,36 @@ WeaponData
 		{
 			"640"
 			{
-				"file"	"hud/Inventory_Images/weapons_ranged/grenade_frag"	// changed by wesp
+				"file"	"hud/Inventory_Images/Temp_Inven"
 				"x"		"0"
 				"y"		"0"
-				"width"		"100"
+				"width"	"100"
 				"height"	"64"
 			}
 		}
-		"ammo"
-		{
-			"640"
-			{
-				"file"	"hud/Inventory_Images/weapons_ranged/grenade_frag"	// changed by wesp
-				"x"		"0"
-				"y"		"0"
-				"width"		"100"
-				"height"	"64"
-			}
-		}
-		"ammo2"
-		{
-			"640"
-			{
-				"file"	"hud/Inventory_Images/weapons_ranged/grenade_frag_sel"	// changed by wesp
-				"x"		"0"
-				"y"		"0"
-				"width"		"100"
-				"height"	"64"
-			}
-		}
-		"zoom"
-		{
-			"640"
-			{
-				"file"		"crosshairs"
-				"x"		"0"
-				"y"		"48"
-				"width"		"48"
-				"height"	"48"
-			}
-		}
+//		"ammo"
+//		{
+//			"640"
+//			{
+//				"file"		"a_icons1"
+//				"x"			"55"
+//				"y"			"60"
+//				"width"		"73"
+//				"height"	"15"
+//			}
+//		}
+
+//		"autoaim"
+//		{
+//			"640"
+//			{
+//				"file"		"crosshairs"
+//				"x"			"0"
+//				"y"			"48"
+//				"width"		"24"
+//				"height"	"24"
+//			}
+//		}
 
 
 // Disabled because it uses Accuracy Crosshairs
@@ -340,8 +251,8 @@ WeaponData
 //			"640"
 //			{
 //				"file"		"crosshairs"
-//				"x"		"0"
-//				"y"		"48"
+//				"x"			"0"
+//				"y"			"48"
 //				"width"		"24"
 //				"height"	"24"
 //			}
@@ -359,6 +270,6 @@ WeaponData
 		"Acc_Crosshair07"		"hud/Crosshairs/Crosshair_08"
 		"Acc_Crosshair08"		"hud/Crosshairs/Crosshair_09"
 		"Acc_Crosshair09"		"hud/Crosshairs/Crosshair_10"
-		"Interactive_Crosshair"		"hud/Crosshairs/Crosshair_Interactive"
-		}
+		"Interactive_Crosshair"	"hud/Crosshairs/Crosshair_Interactive"
+	}
 }

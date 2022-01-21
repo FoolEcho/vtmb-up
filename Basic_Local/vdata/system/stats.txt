@@ -3211,6 +3211,7 @@ StatData
 				"IncPredependency"	"BloodPool > 0"
 				"IncPredependency"	"Health < Max_Health"
 				"IncPredependency"	"ObfuscateCanInc == 1"
+				"IncPredependency"	"Active_Protean < 5" // added by wesp
 
 				Action
 				{
@@ -3662,6 +3663,7 @@ StatData
 
 				"IncPredependency"	"BloodPool > 0"
 				"IncPredependency"	"Health < Max_Health"
+				"IncPredependency"	"Active_Obfuscate < 1" // added by wesp
 
 // Not Implemented Yet
 //				// OR:

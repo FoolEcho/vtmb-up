@@ -32,7 +32,7 @@ Temp Eau   6 C"	// changed by wesp
 			"runtext"	"ETAT DU NAVIRE
 Moteurs    OFF
 Caméras pont  OFF
-Verrous    FER."
+Enregistrements    FER."
 			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 0 and G.Dane_Engines == 0"	// changed by wesp
 		}
 
@@ -43,7 +43,7 @@ Verrous    FER."
 			"runtext"	"ETAT DU NAVIRE
 Moteurs    OFF
 Caméras pont  ON
-Verrous    FER."
+Enregistrements    FER."
 			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 0 and G.Dane_Engines == 0"	// changed by wesp
 		}
 
@@ -54,7 +54,7 @@ Verrous    FER."
 			"runtext"	"ETAT DU NAVIRE
 Moteurs    OFF
 Caméras pont  OFF
-Verrous    OUV."
+Enregistrements    OUV."
 			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 1 and G.Dane_Engines == 0"	// changed by wesp
 		}
 
@@ -65,7 +65,7 @@ Verrous    OUV."
 			"runtext"	"ETAT DU NAVIRE
 Moteurs    ON
 Caméras pont  OFF
-Verrous    FER."
+Enregistrements    FER."
 			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 0 and G.Dane_Engines == 1"	// changed by wesp
 		}
 
@@ -76,7 +76,7 @@ Verrous    FER."
 			"runtext"	"ETAT DU NAVIRE
 Moteurs    OFF
 Caméras pont  ON
-Verrous    OUV."
+Enregistrements    OUV."
 			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 1 and G.Dane_Engines == 0"	// changed by wesp
 		}
 
@@ -87,7 +87,7 @@ Verrous    OUV."
 			"runtext"	"ETAT DU NAVIRE
 Moteurs    ON
 Caméras pont  ON
-Verrous    FER."
+Enregistrements    FER."
 			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 0 and G.Dane_Engines == 1"	// changed by wesp
 		}
 
@@ -98,7 +98,7 @@ Verrous    FER."
 			"runtext"	"ETAT DU NAVIRE
 Moteurs    ON
 Caméras pont  OFF
-Verrous    OUV."
+Enregistrements    OUV."
 			"dependency"	"G.Dane_Cams == 0 and G.Dane_Locks == 1 and G.Dane_Engines == 1"	// changed by wesp
 		}
 
@@ -109,7 +109,7 @@ Verrous    OUV."
 			"runtext"	"ETAT DU NAVIRE
 Moteurs    ON
 Caméras pont  ON
-Verrous    OUV."
+Enregistrements    OUV."
 			"dependency"	"G.Dane_Cams == 1 and G.Dane_Locks == 1 and G.Dane_Engines == 1"	// changed by wesp
 		}
 	}
@@ -120,21 +120,21 @@ Verrous    OUV."
 		"password"		"AntonioBay"
 		"difficulty"		"6"	// changed by wesp from 9
 		"description"		"Journal du capitaine"
-	
+
 		Function
 		{
 			"name"		"10/10/04"
 			"description"	"Journal de bord : 10 oct. 2004"
 			"runtext"	"Mer calme à notre départ d'Istanbul. Le professeur Johansen est inquiet quant à la sécurité du sarcophage et des autres artefacts qu'il a découverts, mais je lui ai garanti que tout irait bien."
 		}
-	
+
 		Function
 		{
 			"name"		"14/10/04"
 			"description"	"Journal de bord : 14 oct. 2004"
 			"runtext"	"Mer agitée la nuit dernière. Opérations normales, mais l'équipage semble agité lui aussi. L'un des Turcs leur a raconté des histoires de fantôme. J'ai pris le Lt Stygian à part pour lui parler."
 		}
-	
+
 		Function
 		{
 			"name"		"15/10/04"
