@@ -1,16 +1,16 @@
 ; -- vtmbupinstaller.iss --
 
 [Setup]
-AppName=Vampire: The Masquerade - Bloodlines unofficial patch 10.9 fr
-AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 10.9 fr
+AppName=Vampire: The Masquerade - Bloodlines unofficial patch 11.0 fr
+AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 11.0 fr
 VersionInfoDescription=Vampire: The Masquerade - Bloodlines unofficial patch avec sous-titrage français
-VersionInfoVersion=10.9
+VersionInfoVersion=11.0
 AppPublisher=Werner Spahl
 DefaultDirName={reg:HKLM\Software\Activision\Vampire - Bloodlines,InstallPath|{pf}\Steam\steamapps\common\vampire the masquerade - bloodlines}
 AppendDefaultDirName=no
 DirExistsWarning=no
 EnableDirDoesntExistWarning=no
-OutputBaseFilename=VTMBup109fr
+OutputBaseFilename=VTMBup110fr
 Uninstallable=no
 InfoBeforeFile=vtmbup-readme.txt
 InfoAfterFile=vtmbup-after.txt
@@ -90,8 +90,8 @@ Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\vidcfg.bin"
 Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\voice_ban.dt"
 
 [Icons]
-Name: "{userdesktop}\VTM Bloodlines Unofficial Patch (fr)"; Filename: {app}\vampire.exe; Parameters: "-game Unofficial_Patch_fr"; IconFilename: {app}\loader.exe
-Name: "{userprograms}\VTM Bloodlines Unofficial Patch (fr)"; Filename: {app}\loader.exe
+Name: "{userdesktop}\VtM Bloodlines Unofficial Patch (fr)"; Filename: {app}\vampire.exe; Parameters: "-game Unofficial_Patch_fr"; IconFilename: {app}\loader.exe
+Name: "{userprograms}\VtM Bloodlines Game Mod Loader (fr)"; Filename: {app}\loader.exe
 
 [Run]
 Filename: {app}\vampire.exe; Parameters: "-game Unofficial_Patch_fr"; Description: Démarrer Bloodlines avec le Patch non officiel; Flags: postinstall runascurrentuser nowait skipifsilent
