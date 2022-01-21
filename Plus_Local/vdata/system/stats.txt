@@ -1649,7 +1649,7 @@ StatData
 				"HelpTextH3"	"Niveau 3 : Sommeil" // changed by wesp
 				"HelpTextH4"	"Niveau 4 : Possession"
 				"HelpTextH5"	"Niveau 5 : Suicide collectif"
-				"HelpTextL1"	"Coût d'activation : 1 point de sang. La cible est plongée dans une transe profonde, commence à danser ou s'enfuit pendant 10 secondes."	// changed by wesp
+				"HelpTextL1"	"Coût d'activation : 1 point de sang. La cible est plongée dans une transe profonde, commence à danser pendant 10 secondes."	// changed by wesp
 				"HelpTextL2"	"Coût d'activation : 2 points de sang. Tous les ennemis se trouvant à proximité penseront que vous avez disparu. L'effet dure 15 secondes."	// changed by wesp
 				"HelpTextL3"	"Coût d'activation : 2 points de sang. La victime s'endort pendant 20 secondes ou plus, pour être complétement neutralisée."	// changed by EntenSchreck and wesp
 				"HelpTextL4"	"Coût d'activation : 3 points de sang. La victime attaquera sans relâche tous ceux qui vous veulent du mal pendant environ 30 secondes, jusqu'à ce qu'elle meure finalement d'un arrêt cardiaque. Peut avoir un effet moindre sur les êtres surnaturels."	// changed by wesp
@@ -1800,7 +1800,7 @@ StatData
 			{
 				"Name"		"Occultation"
 				"InternalName"	"Obfuscate"
-				"HelpText"		"Invisibilité vampirique. Vous ne pouvez activer l'Occultation que si personne ne peut vous voir. Si vous restez immobile, le chronomètre se fige et l'Occultation peut rester ainsi indéfiniment. Chaque niveau offre les avantages des niveaux précédents et n'entraîne aucun risque de violation de la Mascarade. Durant la frénésie, les limites de niveau sont ignorées."	// changed by wesp
+				"HelpText"		"Invisibilité vampirique. Vous ne pouvez activer l'Occultation que si personne ne peut vous voir. Si vous restez immobile, le chronomètre se fige et l'Occultation peut rester ainsi indéfiniment. Chaque niveau offre les avantages des niveaux précédents et n'entraîne aucun risque de violation de la Mascarade."	// changed by wesp
 				"HelpTextH1"	"Niveau 1 : Camouflage"
 				"HelpTextH2"	"Niveau 2 : Invisibilité limitée"
 				"HelpTextH3"	"Niveau 3 : Tueur camouflé"
@@ -3302,6 +3302,7 @@ StatData
 				"IncPredependency"	"BloodPool > 0"
 				"IncPredependency"	"Health < Max_Health"
 				"IncPredependency"	"ObfuscateCanInc == 1"
+				"IncPredependency"	"Active_Protean < 5" // added by wesp
 
 				Action
 				{
@@ -3764,6 +3765,7 @@ StatData
 
 				"IncPredependency"	"BloodPool > 0"
 				"IncPredependency"	"Health < Max_Health"
+				"IncPredependency"	"Active_Obfuscate < 1" // added by wesp
 
 // added by wesp
 				Action
@@ -3801,7 +3803,6 @@ StatData
 					"Value"	"2"
 					"Effect"	"Discipline (Protean-Feral_Claws-Toreador)"
 				}
-
 				Action
 				{
 					"Predependency"	"Clan == Toreador"

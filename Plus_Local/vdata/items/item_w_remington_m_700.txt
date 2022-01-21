@@ -90,8 +90,8 @@ WeaponData
 		"Range"			"200"
 
 		"SkillRequirement"	"4"			// min. skill requirement used in dmg calculations		
-		"BaseLethality"		"10"			// base lethality used in dmg calculations
-		"Dmg"			"5 Lethal Ranged_Combat DMG_BULLET" // changed by Wesp
+		"BaseLethality"		"15"			// base lethality used in dmg calculations, changed by Wesp
+		"Dmg"			"3 Lethal Ranged_Combat DMG_BULLET"
 
 		// SKS_RANGED
 		"KickPitchMin"			"-0.75"
@@ -109,8 +109,8 @@ WeaponData
 		"CrosshairRunSizeMax"	"72"		// max size of the crosshair when the player is running [0-99]
 
 		"CrosshairIncSpeedMin"	"50"	//"60"min speed(10 Firearm Feat) at which to increase bloom -low # slower
-		"CrosshairIncSpeedMax"	"50"	//"60"max speed(1 Firearm Feat) at which to increase bloom -high # faster
-		"CrosshairDecSpeedMin"	"25"	//min speed(1 Firearm Feat) at which to decrease bloom -low # slower
+		"CrosshairIncSpeedMax"	"60"	//"60"max speed(1 Firearm Feat) at which to increase bloom -high # faster, changed by Wesp
+		"CrosshairDecSpeedMin"	"5"	//min speed(1 Firearm Feat) at which to decrease bloom -low # slower, changed by Wesp
 		"CrosshairDecSpeedMax"	"25"	//"40"max speed(10 Firearm Feat) at which to decrease bloom -high # faster
 
 		"CrosshairFirePercent"	"0.9"			// percent to bloom to crosshair upon firing a bullet		

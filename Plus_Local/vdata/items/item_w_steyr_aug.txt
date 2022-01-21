@@ -89,7 +89,7 @@ WeaponData
 
 		"SkillRequirement"	"8"		// min. skill requirement used in dmg calculations
 		"BaseLethality"		"14"		// base lethality used in dmg calculations
-		"Dmg"			"1 Lethal Ranged_Combat DMG_BULLET"
+		"Dmg"			"2 Lethal Ranged_Combat DMG_BULLET"	// changed by wesp
 
 		"Attack_Rate"			"0.10"
 		"NPC_Attack_Rate_Min"		"0.6"	// The range of times for NPCs using this weapon to pause between
@@ -99,10 +99,10 @@ WeaponData
 							//   is 0, the delay will not be scaled based on distance.
 
 		// SKS_RANGED
-		"KickPitchMin"			"-0.2" // changed by Wesp
-		"KickPitchMax"			"-3.5" // changed by Wesp
+		"KickPitchMin"			"-0.5"//"-0.75"
+		"KickPitchMax"			"-6.00"
 		"KickYawMin"			"-0.1"
-		"KickYawMax"			"-2.5" // changed by Wesp
+		"KickYawMax"			"-5.5"
 		"KickTime"				"0.02"
 
 		"CrosshairMinSize"		"10"			// smallest crosshair size for this activation [0-99]
@@ -111,16 +111,15 @@ WeaponData
 		"CrosshairWalkSizeMax"	"10"		// max size of the crosshair when the player is walking [0-99]
 		"CrosshairWalkSizeMin"	"10"		// min size of the crosshair when the player is walking [0-99], changed by wesp
 		"CrosshairRunSizeMax"	"40"		// max size of the crosshair when the player is running [0-99], changed by Wesp
-		"CrosshairRunSizeMin"	"20"		// min size of the crosshair when the player is running [0-99], changed by Wesp
-
+		"CrosshairRunSizeMin"	"20"		// min size of the crosshair when the player is running [0-99]
 
 		"CrosshairIncSpeedMin"	"10"			// min speed(10 Firearm Feat) at which to increase bloom -low # slower
-		"CrosshairIncSpeedMax"	"10"			// max speed(1 Firearm Feat) at which to increase bloom -high # faster, changed by wesp
-		"CrosshairDecSpeedMin"	"12"			// min speed(1 Firearm Feat) at which to decrease bloom -low # slower, changed by Wesp
+		"CrosshairIncSpeedMax"	"25"			// max speed(1 Firearm Feat) at which to increase bloom -high # faster
+		"CrosshairDecSpeedMin"	"2"			// min speed(1 Firearm Feat) at which to decrease bloom -low # slower
 		"CrosshairDecSpeedMax"	"12"			// max speed(10 Firearm Feat) at which to decrease bloom -high # faster
 		"CrosshairFirePercent"	"0.15"		//"0.7" // 
 
-		"SpreadAngle"		"3.0"
+		"SpreadAngle"		"9.0"		// changed by wesp
 		"CriminalLevel"	"4"
 		"Accuracy"		"6"
 		"BurstMin"		"3"
@@ -202,7 +201,7 @@ WeaponData
 		"Dmg"			"2 Lethal Ranged_Combat DMG_BULLET" // changed by Wesp
 
 		"Attack_Rate"			"0.10"
-		"NPC_Attack_Rate_Min"		"0.6"	// The range of times for NPCs using this weapon to pause between
+		"NPC_Attack_Rate_Min"		"1.6"	// The range of times for NPCs using this weapon to pause between, changed by wesp
 		"NPC_Attack_Rate_Max"		"2.2"	//   attacks when at a distance of NPC_Attack_Rate_Base_Range inches. 
 		"NPC_Attack_Rate_Base_Range"	"100"	//   Attack times scale down to Attack_Rate at a range of 0, and up
 							//   proportionally as the range increases. If NPC_Attack_Rate_Base_Range

@@ -90,8 +90,8 @@ WeaponData
 		"Range"				"200"
 
 		"SkillRequirement"	"6"			// min. skill requirement used in dmg calculations		
-		"BaseLethality"		"25"			// base lethality used in dmg calculations // changed by Wesp
-		"Dmg"			"2 Lethal Ranged_Combat DMG_BULLET" // changed by Wesp
+		"BaseLethality"		"20"			// base lethality used in dmg calculations, changed by Wesp
+		"Dmg"			"3 Lethal Ranged_Combat DMG_BULLET" // changed by Wesp
 
 		// SKS_RANGED
 		"KickPitchMin"			"-0.75"
@@ -104,20 +104,19 @@ WeaponData
 		"CrosshairFireSizeMin"		"30"		// MIN size (Firearms 10) of the crosshair when the gun is fired [0-99], changed by Wesp
 		"CrosshairWalkSizeMin"		"8"			// min size of the crosshair when the player is walking [0-99], changed by wesp
 		"CrosshairWalkSizeMax"		"8"			// max size of the crosshair when the player is walking [0-99], changed by Wesp
-		"CrosshairRunSizeMin"		"30"			// min size of the crosshair when the player is running [0-99] changed by Wesp
+		"CrosshairRunSizeMin"		"30"			// min size of the crosshair when the player is running [0-99], changed by Wesp
 		"CrosshairRunSizeMax"		"72"			// max size of the crosshair when the player is running [0-99]
 		"CrosshairIncSpeedMin"		"50"			// min speed at which to increase bloom
-		"CrosshairIncSpeedMax"		"50"			// max speed at which to increase bloom
-		"CrosshairDecSpeedMin"		"25"			// min speed at which to decrease bloom
+		"CrosshairIncSpeedMax"		"60"			// max speed at which to increase bloom, changed by Wesp
+		"CrosshairDecSpeedMin"		"5"			// min speed at which to decrease bloom, changed by Wesp
 		"CrosshairDecSpeedMax"		"25"			// max speed at which to decrease bloom
 		"CrosshairFirePercent"		"0.9"			// percent to bloom to crosshair upon firing a bullet
-
 
 		"SpreadAngle"			"3.0"
 		"CriminalLevel"	"3"
 		"Accuracy"			"6"
 
-		"MinorKnockbackDist"	"1500.0"			// maximum distance to cause minor knockback, changed by Wesp
+		"MinorKnockbackDist"	"1500.0"			// maximum distance to cause minor knockback, added by Wesp
 
 		SoundData
 		{
@@ -209,7 +208,7 @@ WeaponData
 		"Attack_Rate"			"1"	// changed by Wesp
 
 		"SkillRequirement"	"6"			// min. skill requirement used in dmg calculations		
-		"BaseLethality"		"25"			// base lethality used in dmg calculations // changed by Wesp
+		"BaseLethality"		"20"			// base lethality used in dmg calculations
 		"Dmg"			"3 Lethal Ranged_Combat DMG_BULLET" // changed by Wesp
 
 		// SKS_RANGED
@@ -230,6 +229,12 @@ WeaponData
 		"CrosshairDecSpeedMin"		"20"			// min speed at which to decrease bloom
 		"CrosshairDecSpeedMax"		"80"			// max speed at which to decrease bloom
 		"CrosshairFirePercent"		"0.9"			// percent to bloom to crosshair upon firing a bullet
+
+		"SpreadAngle"			"3.0"		// added by Wesp
+		"CriminalLevel"	"3"				// added by Wesp
+		"Accuracy"			"6"			// added by Wesp
+
+		"MinorKnockbackDist"	"1500.0"			// maximum distance to cause minor knockback, added by Wesp
 
 		// Sounds... changed by wesp
 		SoundData

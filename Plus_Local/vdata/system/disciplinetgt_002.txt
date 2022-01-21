@@ -189,60 +189,18 @@ DisciplineTgt
 				"HitTable"	"Hit_Supernatural_NoEffect"
 			}
 		}
-
-		Affects_Table	// added by Entenschreck, disallow "Leave"
-		{
-			Affects_Filters
-			{
-				"CharTemplate"		"TutorialShovelhead"
-			}
-
-			Mapping
-			{
-				"Chance"	"25%"
-				"HitTable"	"Hit_Human_Dance"
-			}
-			Mapping
-			{
-				"Chance"	"25%"
-				"HitTable"	"Hit_Human_Hide"
-			}
-			Mapping
-			{
-				"Chance"	"25%"
-				"HitTable"	"Hit_Human_Calm"
-			}
-			Default_Mapping
-			{
-				"HitTable"	"Hit_Human_Trance"
-			}
-		}
 	
-            Affects_Table
+           Affects_Table
 		{
 			Affects_Filters
 			{
 				"DisciplineStrata"	"0"
 			}
+
 			Mapping
 			{
-				"Chance"	"20%"
+				"Chance"	"50%"
 				"HitTable"	"Hit_Human_Dance"
-			}
-			Mapping
-			{
-				"Chance"	"20%"
-				"HitTable"	"Hit_Human_Hide"
-			}
-			Mapping
-			{
-				"Chance"	"20%"
-				"HitTable"	"Hit_Human_Calm"
-			}
-			Mapping
-			{
-				"Chance"	"20%"
-				"HitTable"	"Hit_Human_Leave"
 			}
 			Default_Mapping
 			{
@@ -256,29 +214,15 @@ DisciplineTgt
 			{
 				"DisciplineStrata"	"1"
 			}
+
 			Mapping
 			{
-				"Chance"	"20%"
-				"HitTable"	"Hit_Strata_1_Dance"
-			}
-			Mapping
-			{
-				"Chance"	"20%"
-				"HitTable"	"Hit_Strata_1_Calm"
-			}
-			Mapping
-			{
-				"Chance"	"20%"
-				"HitTable"	"Hit_Strata_1_Hide"
-			}
-			Mapping
-			{
-				"Chance"	"20%"
-				"HitTable"	"Hit_Strata_1_Leave"
+				"Chance"	"50%"
+				"HitTable"	"Hit_Human_Dance"
 			}
 			Default_Mapping
 			{
-				"HitTable"	"Hit_Strata_1_Trance"
+				"HitTable"	"Hit_Human_Trance"
 			}
 		}		
 
@@ -291,27 +235,12 @@ DisciplineTgt
 
 			Mapping
 			{
-				"Chance"	"20%"
-				"HitTable"	"Hit_Strata_2_Dance"
-			}
-			Mapping
-			{
-				"Chance"	"20%"
-				"HitTable"	"Hit_Strata_2_Calm"
-			}
-			Mapping
-			{
-				"Chance"	"20%"
-				"HitTable"	"Hit_Strata_2_Hide"
-			}
-			Mapping
-			{
-				"Chance"	"20%"
-				"HitTable"	"Hit_Strata_2_Leave"
+				"Chance"	"50%"
+				"HitTable"	"Hit_Human_Dance"
 			}
 			Default_Mapping
 			{
-				"HitTable"	"Hit_Strata_2_Trance"
+				"HitTable"	"Hit_Human_Trance"
 			}
 		}		
 
@@ -393,23 +322,8 @@ DisciplineTgt
 
 			Mapping
 			{
-				"Chance"	"20%"
+				"Chance"	"50%"
 				"HitTable"	"Hit_Human_Dance"
-			}
-			Mapping
-			{
-				"Chance"	"20%"
-				"HitTable"	"Hit_Human_Hide"
-			}
-			Mapping
-			{
-				"Chance"	"20%"
-				"HitTable"	"Hit_Human_Calm"
-			}
-			Mapping
-			{
-				"Chance"	"20%"
-				"HitTable"	"Hit_Human_Leave"
 			}
 			Default_Mapping
 			{
@@ -497,7 +411,7 @@ DisciplineTgt
 	{
 	}
 
-	Hit_Human_Trance //works
+	Hit_Human_Trance // works
 	{
 		"Dmg_Health"		"0%"
 		"AI_Schedule"		"SCHED_TROIKA_D_TRANCE"
@@ -558,8 +472,6 @@ DisciplineTgt
 			}
 		}
 	}
-
-//==================================
 
 	Hit_Human_Dance // works
 	{
@@ -623,12 +535,9 @@ DisciplineTgt
 		}
 	}
 
-//==================================
-
-	Hit_Human_Calm // animation confuses players, changed to Trance
+	Hit_Human_Calm // works, but no reaction confuses players
 	{
-		"AI_Schedule"		"SCHED_TROIKA_D_TRANCE"
-		//"AI_NPCFlag"		"D_CALM"
+		"AI_NPCFlag"		"D_CALM"
 		"Duration"		"10"	// changed by wesp
 
 		Trigger_Casting
@@ -687,9 +596,7 @@ DisciplineTgt
 		}
 	}
 
-//==================================
-
-	Hit_Human_Hide // works
+	Hit_Human_Hide // works, but result can break stealth
 	{
 		"Dmg_Health"		"0%"
 		"AI_Schedule"		"SCHED_TROIKA_FLEE_AND_COWER"
@@ -759,9 +666,7 @@ DisciplineTgt
 		}
 	}
 
-//==================================
-
-	Hit_Human_Leave // works, but players might get confused. Hence it's changed to Trance.
+	Hit_Human_Leave // works, but breaks tutorial and stealth
 	{
 		"Dmg_Health"		"0%"
 		"AI_Schedule"		"SCHED_TROIKA_DO_LEAVE_ACTIVITY"

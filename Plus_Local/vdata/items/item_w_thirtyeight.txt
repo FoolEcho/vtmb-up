@@ -104,11 +104,11 @@ WeaponData
 							//   is 0, the delay will not be scaled based on distance.
 
 		// SKS_RANGED
-		"KickPitchMin"			"0.0"		//"-2.25"		
-		"KickPitchMax"			"0.0"		//"-7.00"		
-		"KickYawMin"			"0.0"		//"-0.2"		//"-0.0"
-		"KickYawMax"			"0.0"		//"-1.0"		//"-0.5"
-		"KickTime"			"0.00"		//"0.02"
+		"KickPitchMax"			"-5.0"		//"-2.25", changed by wesp		
+		"KickPitchMin"			"-1.0"		//"-7.00", changed by wesp		
+		"KickYawMax"			"-0.5"		//"-0.2", changed by wesp
+		"KickYawMin"			"-0.0"		//"-1.0", changed by wesp
+		"KickTime"			"0.02"		//"0.02", changed by wesp
 		"CrosshairMinSize"		"17"		// smallest crosshair size for this activation [0-99]
 		"CrosshairFireSize"		"48"		// MAXIMUM size (Firearms 1) of the crosshair when the gun is fired [0-99] scales to Min as player's firearms increases
 		"CrosshairFireSizeMin"		"40"		// MIN size (Firearms 10) of the crosshair when the gun is fired [0-99], changed by wesp

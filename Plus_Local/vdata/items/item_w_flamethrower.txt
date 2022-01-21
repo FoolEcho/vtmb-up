@@ -47,10 +47,10 @@ WeaponData
 		"ammo_worth"		"75"
 		"ammoinfomodel"		"models/weapons/ammo/flamethrower/i_flamethrower_ammo.mdl"
 
-		"Size"			"150"
+		"Size"			"250"		// changed by wesp
 		"Default_Size"		"0"
-		"Dropped_Ammo"		"150"
-		"Type"			"FlameThrowerRound"
+		"Dropped_Ammo"		"250"		// changed by wesp
+		"Type"			"MediumRound"	// changed by wesp
 		"ReloadTime"		"3.5"
 		SoundData
 		{
@@ -71,7 +71,7 @@ WeaponData
 	{
 		"Tag"			"Primary"
 		"Type"			"Attack"
-		"Ammo_Type"		"FlameThrowerRound"
+		"Ammo_Type"		"MediumRound"	// changed by wesp
 		"Ammo_Cost"		"1"
 
 		"SkillRequirement"	"1"		// min. skill requirement used in dmg calculations, changed by wesp

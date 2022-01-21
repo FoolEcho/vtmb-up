@@ -33,9 +33,8 @@ WeaponData
 	"impact_force"		"1000"	// an impulse measured in kg*in/s, changed by wesp
 	"sound_group"	"Shotgun"
 	"uses_accuracycursors"	"1"
-	
 
-	"projectile_velocity"	"1000"				// changed by wesp
+	"projectile_velocity"	"10000"				// changed by wesp
 	"projectile_particles"	"crossbow_flame_emitter"	// changed by wesp
 	"fires_projectile"	"1"
 	"projectile_sticks"	"0"
@@ -46,7 +45,7 @@ WeaponData
 	"viewmuzzleflash_particle" 	"W_ithaca_m_37_View_Emitter"	// changed by wesp
 	"viewmuzzlesmoke_particle" 	"Blank_emitter"
 
-	"item_worth"		"290"	// changed by wesp
+	"item_worth"		"300"	// changed by wesp
 	"player_sell"		"60"	// added by wesp
 
 	SoundData
@@ -68,8 +67,8 @@ WeaponData
 		"Size"			"2"
 		"Default_Size"		"2"	// changed by wesp
 		"Dropped_Ammo"		"2"
-		"Type"			"MediumRound"	// changed by wesp
-		"ReloadTime"		"1.0"
+		"Type"			"FlameThrowerRound"	// changed by wesp
+		"ReloadTime"		"3.0"	// changed by wesp
 		
 		SoundData
 		{
@@ -90,13 +89,13 @@ WeaponData
 	{
 		"Tag"			"Primary"
 		"Type"			"Attack"
-		"Ammo_Type"		"MediumRound"	// changed by wesp
+		"Ammo_Type"		"FlameThrowerRound"	// changed by wesp
 		"Ammo_Cost"		"1"
 		"Ammo_Fired"		"16"
 
 		"SkillRequirement"	"6"		// min. skill requirement used in dmg calculations		
 		"BaseLethality"		"20"		// base lethality used in dmg calculations
-		"Dmg"			"4 Aggravated Ranged_Combat DMG_BUCKSHOT"	// changed by wesp
+		"Dmg"			"4 Aggravated Ranged_Combat DMG_BURN"	// changed by wesp
 
 		"Botch_Table"		"Shotguns"
 		"Attack_Rate"		"1.0"
@@ -128,11 +127,11 @@ WeaponData
 
 		"CrosshairFirePercent"	"0.9"			// percent to bloom to crosshair upon firing a bullet
 
-		"MajorKnockbackDist"	"50.0"			// maximum distance to cause major knockback, changed by wesp
+		"MajorKnockbackDist"	"105.0"			// maximum distance to cause major knockback
 		"MinorKnockbackDist"	"250.0"			// maximum distance to cause minor knockback
 
 		"SpreadAngle"		"5.0"			// changed by Wesp
-		"CriminalLevel"	"3"
+		"CriminalLevel"	"5"				// changed by Wesp
 		"Accuracy"		"1"
 
 		SoundData
@@ -263,7 +262,6 @@ WeaponData
 			}
 		}
 
-
 // Disabled because it uses Accuracy Crosshairs
 //		"crosshair"
 //		{
@@ -275,8 +273,6 @@ WeaponData
 //				"width"		"24"
 //				"height"	"24"
 //			}
-
-
 
 		// Accuracy Crosshairs
 		"Acc_Crosshair00"		"hud/Crosshairs/Crosshair_01"

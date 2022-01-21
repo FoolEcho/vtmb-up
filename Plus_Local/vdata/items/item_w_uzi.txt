@@ -45,13 +45,12 @@ WeaponData
 		}
 	}
 
-
 //Weapon Ammo
 	Magazine
 	{
 		"ammoprintname"		"Munitions de 9 mm pour Uzi"	// changed by wesp
 		"ammodescription"	"Un chargeur 9 mm contenant 32 munitions." // changed by wesp
-		"ammo_worth"		"13"	// "15" changed by wesp
+		"ammo_worth"		"11"	// "15" changed by wesp
 		"ammoinfomodel"		"models/weapons/ammo/uzi/i_uzi_ammo.mdl"
 
 		"Size"			"32"	// changed by wesp
@@ -98,7 +97,6 @@ WeaponData
 							//   proportionally as the range increases. If NPC_Attack_Rate_Base_Range
 							//   is 0, the delay will not be scaled based on distance.
 
-
 		// SKS_RANGED
 		"KickPitchMin"			"-1.0"
 		"KickPitchMax"			"-10.00"
@@ -108,19 +106,17 @@ WeaponData
 		"CrosshairMinSize"		"15"		// smallest crosshair size for this activation [0-99], changed by wesp
 		"CrosshairFireSize"		"90"		// MAXIMUM size (Firearms 1) of the crosshair when the gun is fired [0-99] scales to Min as player's firearms increases
 		"CrosshairFireSizeMin"		"60"		// MIN size (Firearms 10) of the crosshair when the gun is fired [0-99]
-		"CrosshairWalkSizeMin"	"15"			// min size of the crosshair when the player is walking [0-99], changed by wesp
-		"CrosshairWalkSizeMax"	"15"			// max size of the crosshair when the player is walking [0-99], changed by wesp
+		"CrosshairWalkSizeMin"	"20"			// min size of the crosshair when the player is walking [0-99], changed by wesp
+		"CrosshairWalkSizeMax"	"20"			// max size of the crosshair when the player is walking [0-99]
 		"CrosshairRunSizeMin"	"60"			// min size of the crosshair when the player is running [0-99], changed by wesp
 		"CrosshairRunSizeMax"	"90"			// max size of the crosshair when the player is running [0-99], changed by Wesp
 
 		"CrosshairIncSpeedMin"	"12"	//"60"min speed(10 Firearm Feat) at which to increase bloom -low # slower
-		"CrosshairIncSpeedMax"	"12"	//"60"max speed(1 Firearm Feat) at which to increase bloom -high # faster
-		"CrosshairDecSpeedMin"	"28"	//min speed(1 Firearm Feat) at which to decrease bloom -low # slower
+		"CrosshairIncSpeedMax"	"16"	//"60"max speed(1 Firearm Feat) at which to increase bloom -high # faster, changed by Wesp
+		"CrosshairDecSpeedMin"	"8"	//min speed(1 Firearm Feat) at which to decrease bloom -low # slower, changed by Wesp
 		"CrosshairDecSpeedMax"	"28"	//"40"max speed(10 Firearm Feat) at which to decrease bloom -high # faster
 
 		"CrosshairFirePercent"	"0.06"			// percent to bloom to crosshair upon firing a bullet
-
-
 
 		"SpreadAngle"		"5.0"
 		"CriminalLevel"	"3"
@@ -279,7 +275,11 @@ WeaponData
 //		"CrosshairDecSpeedMax"	"90"			// max speed at which to decrease bloom
 //		"CrosshairFirePercent"	"0.5"			// percent to bloom to crosshair upon firing a bullet
 
-
+		"SpreadAngle"		"5.0"
+		"CriminalLevel"	"3"
+		"Accuracy"		"6"
+		"BurstMin"		"3"
+		"BurstMax"		"5"
 
 		SoundData
 		{

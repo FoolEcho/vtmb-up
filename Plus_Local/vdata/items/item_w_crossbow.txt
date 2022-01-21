@@ -36,7 +36,7 @@ WeaponData
 	"projectile_model"	"models/weapons/projectile/bolt.mdl"
 //	"projectile_particles"	""
 	"projectile_particles"	"crossbow_flame_emitter"
-	"projectile_sticks"	"0"
+	"projectile_sticks"	"1"		// changed by Wesp
 	"can_stakedmg"		"1"
 
 	"muzzleflash_particle"		""
@@ -49,6 +49,7 @@ WeaponData
 	"impact_snd_group"	"bullet"
 
 	"item_worth"		"125"
+	"player_sell"		"30"	// added by wesp
 
 	SoundData
 	{
@@ -69,7 +70,7 @@ WeaponData
 		"Dropped_Ammo"		"1"	// changed by wesp
 		"Type"			"CrossbowBolt"
 		"ReloadTime"		"2.5"
-		"ammo_worth"		"2"	// changed by Wesp
+		"ammo_worth"		"4"	// changed by Wesp
 		"ammoinfomodel"		"models/weapons/ammo/crossbow/i_crossbow_ammo.mdl"	// added by wesp
 
 		SoundData
@@ -99,7 +100,7 @@ WeaponData
 		"Dmg"			"2 Aggravated Ranged_Combat DMG_BURN"	// changed by Wesp
 
 		"Botch_Table"	"Crossbow"
-		"Attack_Rate"		"1.0"
+		"Attack_Rate"		"0.25"	// changed by wesp
 		"NPC_Attack_Rate_Min"		"1.8"		// The range of times for NPCs using this weapon to pause between
 		"NPC_Attack_Rate_Max"		"2.8"		//   attacks when at a distance of NPC_Attack_Rate_Base_Range inches. 
 		"NPC_Attack_Rate_Base_Range"	"120"	//   Attack times scale down to Attack_Rate at a range of 0, and up

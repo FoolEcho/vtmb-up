@@ -1234,6 +1234,13 @@ DisciplineTgt
 	{
 		"Duration"			"3"	// In order to play particles/etc.
 
+		Trigger_Casting
+		{
+			"DisciplineFX"	"Use_Spell"
+			"Source"		"Target"
+			"Affects"		"Self"
+		}
+
 		Effect_Tgt_Hit
 		{
 			Particle_ThirdPerson

@@ -261,7 +261,7 @@ DisciplineTgt
 			"RateMin"		"1.0"
 			"OpacityMin"	"1.0"
 			"SizeMin"		"1.0"
-			"ParticleName"	"D_Presence_Hud_Emitter1"
+			"ParticleName"	"D_Presence_Hud_Emitter2"
 			"AttachType"	"ScreenCenter"
 			"AttachName"	""
 		}
@@ -1555,7 +1555,7 @@ DisciplineTgt
 
 			Mapping	// restored by wesp
 			{
-				"Chance"	"15%"
+				"Chance"	"10%"	// changed by wesp
 				"HitTable"	"Hit_Human_Afraid"
 			}
 
@@ -1922,7 +1922,7 @@ DisciplineTgt
 	{
 		"InheritFrom"		"Hit_Human"
 
-		"AI_Schedule"		"SCHED_TROIKA_D_AFRAID"
+		"AI_Schedule"		"SCHED_TROIKA_FLEE_AND_COWER"	// changed by wesp
 
 		Effect_Tgt_Hit
 		{
@@ -2570,7 +2570,7 @@ DisciplineTgt
 	{
 		"InheritFrom"		"Hit_Human"
 
-		"AI_Schedule"		"SCHED_TROIKA_D_AFRAID"
+		"AI_Schedule"		"SCHED_TROIKA_FLEE_AND_COWER"	// changed by wesp
 
 		Effect_Tgt_Hit
 		{
