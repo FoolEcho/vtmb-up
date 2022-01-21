@@ -50,8 +50,8 @@
 {	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	51	}{	Oui, c'est ça, détache-moi, je vais aller voir les flics dès que je serai parti. Attends un peu que je leur raconte tout !	}{	Oui, c'est ça, détachez-moi, je vais aller voir les flics dès que je serai parti. Attendez un peu que je leur raconte tout !	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Mcfly_Dementated = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	C'est ça. Au revoir. 	}{	C'est ça. Au revoir. 	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	53	}{	C'est ça. Au revoir. 	}{	C'est ça. Au revoir. 	}{	0	}{	Humanity -7 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	54	}{	C'est ça. Au revoir. 	}{	C'est ça. Au revoir. 	}{	0	}{	Humanity 7 & G.Patch_Plus == 1	}{	pc.HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	C'est ça. Au revoir. 	}{	C'est ça. Au revoir. 	}{	0	}{	Humanity -5 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	C'est ça. Au revoir. 	}{	C'est ça. Au revoir. 	}{	0	}{	Humanity 5 & G.Patch_Plus == 1	}{	pc.HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	}
 {	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

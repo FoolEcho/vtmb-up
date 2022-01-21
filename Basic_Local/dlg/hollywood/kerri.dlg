@@ -78,7 +78,7 @@
 {	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	81	}{	Eh ! J'ai passé dix minutes là-dedans à t'attendre ! C'est quoi ton problème ?	}{	Eh ! J'ai passé dix minutes là-dedans à t'attendre ! C'est quoi ton problème ?	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	G.Kerri_Biz = 0; G.Kerri_TimesUp = 0; G.Kerri_Mesmerize = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	81	}{	Eh ! J'ai passé dix minutes là-dedans à t'attendre ! C'est quoi ton problème ?	}{	Eh ! J'ai passé dix minutes là-dedans à t'attendre ! C'est quoi ton problème ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Kerri_Biz = 0; G.Kerri_TimesUp = 0; G.Kerri_Mesmerize = 0	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	Retournes-y, j'arrive dans une seconde.	}{	Retournes-y, j'arrive dans une seconde.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Reviens et je serai ton ombre.	}
 {	83	}{	Je veux que tu quittes cette pièce.	}{	Je veux que tu quittes cette pièce.	}{	11	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	84	}{	Pousse dans une autre pièce, petite fleur !	}{	Pousse dans une autre pièce, petite fleur !	}{	11	}{	Dementation 3	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}

@@ -89,8 +89,8 @@
 {	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	91	}{	Je ne sais pas ce que je fais ici. Il faut que je m'en aille.	}{	Je ne sais pas ce que je fais ici. Il faut que je m'en aille.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Montez dans votre camionnette et partez.	}{	Montez dans votre camionnette et partez.	}{	0	}{	G.Patch_Plus == 0	}{	FindPlayer().ChangeMasqueradeLevel( -1 ); pc.SetQuest("Necromantic",3)	}{	}{	}{	}{	}{	}{	}{	}
-{	93	}{	Montez dans votre camionnette et partez.	}{	Montez dans votre camionnette et partez.	}{	0	}{	G.Patch_Plus == 1	}{	FindPlayer().ChangeMasqueradeLevel( -1 ); pc.SetQuest("Necromantic",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Montez dans votre camionnette et partez.	}{	Montez dans votre camionnette et partez.	}{	0	}{	}{	FindPlayer().ChangeMasqueradeLevel( -1 ); pc.SetQuest("Necromantic",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

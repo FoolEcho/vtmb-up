@@ -198,7 +198,7 @@
 {	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	201	}{	Oui. Je pensais que les Tong étaient presque tous partis. Mais il s'est passé quelque chose. Leurs rangs ont recommencé à grossir, et soudain ils avaient beaucoup d'argent pour acheter des armes. La drogue et la violence ont suivi. C'est presque pire qu'avant.	}{	Oui. Je pensais que les Tong étaient presque tous partis. Mais il s'est passé quelque chose. Leurs rangs ont recommencé à grossir, et soudain ils avaient beaucoup d'argent pour acheter des armes. La drogue et la violence ont suivi. C'est presque pire qu'avant.	}{	#	}{	}{	Whisper("Moaning")	}{	}{	}{	}{	}{	}{	}{	}
+{	201	}{	Oui. Je pensais que les Tong étaient presque tous partis. Mais il s'est passé quelque chose. Leurs rangs ont recommencé à grossir, et soudain ils avaient beaucoup d'argent pour acheter des armes. La drogue et la violence ont suivi. C'est presque pire qu'avant.	}{	Oui. Je pensais que les Tong étaient presque tous partis. Mais il s'est passé quelque chose. Leurs rangs ont recommencé à grossir, et soudain ils avaient beaucoup d'argent pour acheter des armes. La drogue et la violence ont suivi. C'est presque pire qu'avant.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	202	}{	Il doit y avoir quelqu'un derrière tout cela.	}{	Il doit y avoir quelqu'un derrière tout cela.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Qui est la main qui tire les ficelles ?	}
 {	203	}{	Qui les finance ?	}{	Qui les finance ?	}{	211	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	204	}{	C'est triste à entendre. Vous pouvez m'aider avec mon problème, à présent ?	}{	C'est triste à entendre. Vous pouvez m'aider avec mon problème, à présent ?	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Penchons-nous sur mon épreuve. . .	}
@@ -238,7 +238,7 @@
 {	238	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	241	}{	Non ! Je refuse d'en entendre davantage. Ming-Xiao est une conseillère à qui je fais toute confiance depuis qu'elle est arrivée. Je lui confierais ma vie.	}{	Non ! Je refuse d'en entendre davantage. Ming-Xiao est une conseillère à qui je fais toute confiance depuis qu'elle est arrivée. Je lui confierais ma vie.	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	241	}{	Non ! Je refuse d'en entendre davantage. Ming-Xiao est une conseillère à qui je fais toute confiance depuis qu'elle est arrivée. Je lui confierais ma vie.	}{	Non ! Je refuse d'en entendre davantage. Ming-Xiao est une conseillère à qui je fais toute confiance depuis qu'elle est arrivée. Je lui confierais ma vie.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	242	}{	Bon, bon. Mais parlons des renseignements dont j'ai besoin.	}{	Bon, bon. Mais parlons des renseignements dont j'ai besoin.	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors penchons-nous sur mon dilemme. . .	}
 {	243	}{	Gardez la tête dans le sable si vous voulez. Bon, et mon problème à moi ?	}{	Gardez la tête dans le sable si vous voulez. Bon, et mon problème à moi ?	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vois votre tête sur un plateau de jade. A présent, travaillons à mes propres problèmes. . .	}
 {	244	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -448,7 +448,7 @@
 {	448	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	449	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	450	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	451	}{	Je refuse d'entendre de pareils sous-entendus ! Ming-Xiao a fait beaucoup pour mon peuple, et je refuse que vous jetiez le doute sur elle !	}{	Je refuse d'entendre de pareils sous-entendus ! Ming-Xiao a fait beaucoup pour mon peuple, et je refuse que vous jetiez le doute sur elle !	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	451	}{	Je refuse d'entendre de pareils sous-entendus ! Ming-Xiao a fait beaucoup pour mon peuple, et je refuse que vous jetiez le doute sur elle !	}{	Je refuse d'entendre de pareils sous-entendus ! Ming-Xiao a fait beaucoup pour mon peuple, et je refuse que vous jetiez le doute sur elle !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	452	}{	Bon, bon. Il me reste quelques questions sur Chinatown.	}{	Bon, bon. Il me reste quelques questions sur Chinatown.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dépeins-moi Chinatown. . .	}
 {	453	}{	J'ai d'autres questions.	}{	J'ai d'autres questions.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller votre cervelle. . .	}
 {	454	}{	Eh ben, sacrées oeillères. Allez, je m'en vais.	}{	Eh ben, sacrées oeillères. Allez, je m'en vais.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -588,7 +588,7 @@
 {	588	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	591	}{	[hors de lui]Quoi ? Comment est-ce possible ? Ming-Xiao ne se compromettrait jamais avec une telle chose ! Je ne vous crois pas !	}{	[hors de lui]Quoi ? Comment est-ce possible ? Ming-Xiao ne se compromettrait jamais avec une telle chose ! Je ne vous crois pas !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	591	}{	[hors de lui]Quoi ? Comment est-ce possible ? Ming-Xiao ne se compromettrait jamais avec une telle chose ! Je ne vous crois pas !	}{	[hors de lui]Quoi ? Comment est-ce possible ? Ming-Xiao ne se compromettrait jamais avec une telle chose ! Je ne vous crois pas !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	Whisper("Deluded")	}{	}{	}{	}{	}{	}{	}{	}
 {	592	}{	Vous feriez mieux de me croire, Wong Ho. Vous étiez le prochain sur sa liste.	}{	Vous feriez mieux de me croire, Wong Ho. Vous étiez le prochain sur sa liste.	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre âme sera la prochaine à tomber sous la faux.	}
 {	593	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	594	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

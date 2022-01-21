@@ -301,7 +301,7 @@
 {	301	}{	[Doko desu ka] (Où est-il ?) Où ça. . . ?	}{	[Doko desu ka] (Où est-il ?) Où ça. . . ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	302	}{	Il est au marché au poisson. Il ne sait pas que vous le pourchassez.	}{	Il est au marché au poisson. Il ne sait pas que vous le pourchassez.	}{	311	}{	G.Zyg_Yukie == 1 and G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Marché aux poissons. Il ignore qu'il est poursuivi.	}
 {	303	}{	Je lui ai dit de me retrouver au marché au poisson. Nous pourrons l'attaquer par surprise.	}{	Je lui ai dit de me retrouver au marché au poisson. Nous pourrons l'attaquer par surprise.	}{	321	}{	G.Zyg_Meet == 1 and G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Il cache son odeur dans le marché aux poissons. Surprenons-le, comme des ninjas.	}
-{	304	}{	Désolé, mais je l'ai tué au Red Dragon.	}{	Désolé, mais je l'ai tué au Red Dragon.	}{	391	}{	G.Zyg_Human == 1	}{	G.Yukie_Quest = 2; pc.SetQuest("Yukie",7)	}{	}{	}{	}{	}{	}{	}{	Ca ressemblait à un homme et je l'ai tué.	}
+{	304	}{	Désolé, mais je crois l'avoir tué au Red Dragon. Un dur à cuire aux yeux jaunes ?	}{	Désolé, mais je crois l'avoir tué au Red Dragon. Un dur à cuire aux yeux jaunes ?	}{	391	}{	G.Zyg_Human == 1	}{	G.Yukie_Quest = 2; pc.SetQuest("Yukie",7); FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Ca ressemblait à un homme aux yeux jaunes et je l'ai tué.	}
 {	305	}{	Je le cherche encore. Je regrette.	}{	Je le cherche encore. Je regrette.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Celle d'un lieu que j'ignore. Je pars.	}
 {	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -410,7 +410,7 @@
 {	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	411	}{	[Dozo] (Please. . .)	}{	[Dozo] (Please. . .)	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	412	}{	D'accord, j'irai d'abord.	}{	D'accord, j'irai d'abord.	}{	0	}{	G.Zyg_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Allons à la pêche !	}
-{	413	}{	Désolé, mais j'ai déjà tué l'Hengeyokai au Red Dragon.	}{	Désolé, mais j'ai déjà tué l'Hengeyokai au Red Dragon.	}{	391	}{	G.Zyg_Human == 1	}{	G.Yukie_Quest = 2; pc.SetQuest("Yukie",7)	}{	}{	}{	}{	}{	}{	}{	Ca ressemblait à un homme et je l'ai tué.	}
+{	413	}{	Désolé, mais je crois l'avoir tué au Red Dragon. Un dur à cuire aux yeux jaunes ?	}{	Désolé, mais je crois l'avoir tué au Red Dragon. Un dur à cuire aux yeux jaunes ?	}{	391	}{	G.Zyg_Human == 1	}{	G.Yukie_Quest = 2; pc.SetQuest("Yukie",7); FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	Ca ressemblait à un homme aux yeux jaunes et je l'ai tué.	}
 {	414	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	415	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	416	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -377,7 +377,7 @@
 {	377	}{	Fuis, mortel!	}{	Fuis, mortel!	}{	0	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles(); G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	378	}{	J'ai peur que ce soit la fin. De votre vie, je veux dire.	}{	J'ai peur que ce soit la fin. De votre vie, je veux dire.	}{	0	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	Quand vous vous êtes réveillé ce matin, aviez-vous deviné que vous alliez mourir ?	}
 {	379	}{	Voilà votre grande chance de devenir un héros. Essayez de m'arrêter. 	}{	Voilà votre grande chance de devenir un héros. Essayez de m'arrêter. 	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Soyez un mur si vous voulez. Je vous préviens, vous vous effondrerez.	}
-{	380	}{	Et si j'allais juste voir le toit et non LaCroix ?	}{	Et si j'allais juste voir le toit et non LaCroix ?	}{	421	}{	Persuasion 10 & G.Patch_Plus == 1	}{	G.Chunk_Skip = 1	}{	}{	}{	}{	}{	}{	}{ 	Mais si mon esprit désirait une vue depuis le toit à la place ? }
+{	380	}{	Et si j'allais juste voir le toit et non LaCroix ?	}{	Et si j'allais juste voir le toit et non LaCroix ?	}{	421	}{	Persuasion 10 & G.Patch_Plus == 1	}{	G.Chunk_Skip = 1	}{	}{	}{	}{	}{	}{	}{ Mais si mon esprit désirait une vue depuis le toit à la place ? }
 {	381	}{	Allez, partez, d'accord ? Je ne veux pas faire usage de la force, mais j'en ai le droit. M'sieur, ne me forcez pas à faire ça.	}{	Allez, partez, d'accord ? Je ne veux pas faire usage de la force, mais j'en ai le droit. Miss, ne me forcez pas à faire ça.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	382	}{	Je monte. Vous pouvez essayer de m'arrêter ou vous pouvez partir.	}{	Je monte. Vous pouvez essayer de m'arrêter ou vous pouvez partir.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma route est sans issue. Vous pouvez me percuter ou vous pouvez faire un écart.	}
 {	383	}{	Je vous donne dix secondes pour sortir de l'immeuble.	}{	Je vous donne dix secondes pour sortir de l'immeuble.	}{	0	}{	Intimidate 8	}{	G.Chunk_Run = 1	}{	}{	}{	}{	}{	}{	}{	Je ne vous épargnerai que pendant les trois secondes à venir. 1. . .	}
@@ -399,8 +399,8 @@
 {	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	401	}{	Si vous ne voulez pas partir, alors je n'ai pas le choix. . .	}{	Si vous ne voulez pas partir, alors je n'ai pas le choix. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	402	}{	Oui, vous avez choisi de mourir.	}{	Oui, vous avez choisi de mourir.	}{	0	}{	}{	G.Chunk_Attack = 1	}{	}{	}{	}{	}{	}{	}{ Mourir pour mourir, telle est la question.	}
-{	403	}{	Et si j'allais juste visiter le toit et non LaCroix ?	}{	Et si j'allais juste visiter le toit et non LaCroix ?	}{	421	}{	Persuasion 10 & G.Patch_Plus == 1	}{	G.Chunk_Skip = 1	}{	}{	}{	}{	}{	}{	}{ Mais si mon esprit aspirait à une vue depuis le toit à la place ?	}
+{	402	}{	Oui, vous avez choisi de mourir.	}{	Oui, vous avez choisi de mourir.	}{	0	}{	}{	G.Chunk_Attack = 1	}{	}{	}{	}{	}{	}{	}{ Mourir ou mourir, telle est la question.	}
+{	403	}{	Et si j'allais juste visiter le toit et non LaCroix ?	}{	Et si j'allais juste visiter le toit et non LaCroix ?	}{	421	}{	Persuasion 10 & G.Patch_Plus == 1	}{	G.Chunk_Skip = 1	}{	}{	}{	}{	}{	}{	}{	Mais si mon esprit aspirait à une vue depuis le toit à la place ?	}
 {	404	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	405	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	406	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -647,7 +647,7 @@
 {	647	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	648	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	650	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	650	}{	(Starting Condition)	}{	}{	421	}{	G.Chunk_Skip == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	651	}{	(Starting Condition)	}{	}{	621	}{	G.Chunk_Reset == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	652	}{	(Starting Condition)	}{	}{	461	}{	G.Chunk_Spooked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	653	}{	(Starting Condition)	}{	}{	431	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -663,7 +663,7 @@
 {	663	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	664	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	665	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre pèse sur d'autres domaines. Adieu.	}
-{	666	}{	[sombre]Tu ne veux pas aller voir ailleurs ?	}{	[sombre]Tu ne veux pas aller voir ailleurs ?	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	666	}{	[sombre]Tu ne veux pas aller voir ailleurs ?	}{	[sombre]Tu ne veux pas aller voir ailleurs ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	667	}{	Je voulais te poser d'autres questions. . .	}{	Je voulais te poser d'autres questions. . .	}{	1333	}{	G.Jack_Faction >= 0 and G.Jack_Dodged == 0	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
 {	668	}{	Je voulais te poser d'autres questions. . .	}{	Je voulais te poser d'autres questions. . .	}{	391	}{	G.Jack_Faction < 0 and G.Jack_Dodged == 0	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
 {	669	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1058,7 +1058,7 @@
 {	1058	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1059	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1060	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1061	}{	Ne me fais pas marcher. T'as intérêt à changer d'avis vite fait si tu crois pouvoir jambonner un vieux dur comme moi.	}{	Ne me fais pas marcher. T'as intérêt à changer d'avis vite fait si tu crois pouvoir jambonner un vieux dur comme moi.	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1061	}{	Ne me fais pas marcher. T'as intérêt à changer d'avis vite fait si tu crois pouvoir jambonner un vieux dur comme moi.	}{	Ne me fais pas marcher. T'as intérêt à changer d'avis vite fait si tu crois pouvoir jambonner un vieux dur comme moi.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1062	}{	Si tu le sais déjà, pourquoi tu me poses la question ?	}{	Si tu le sais déjà, pourquoi tu me poses la question ?	}{	1066	}{	}{	G.Jack_Faction = G.Jack_Faction - 3	}{	}{	}{	}{	}{	}{	}{	Ton ignorance est transparente, démon.	}
 {	1063	}{	C'est le prince qui l'a.	}{	C'est le prince qui l'a.	}{	1071	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le bouffon détient ce terrible talisman.	}
 {	1064	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

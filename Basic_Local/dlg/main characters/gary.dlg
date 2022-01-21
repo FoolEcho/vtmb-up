@@ -658,7 +658,7 @@
 {	658	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	659	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	660	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	661	}{	Pas question. . . C'est Chinatown.	}{	Pas question. . . C'est Chinatown.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Gary_Homage = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	661	}{	Pas question. . . C'est Chinatown.	}{	Pas question. . . C'est Chinatown.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Gary_Homage = 1; Whisper("Danger")	}{	}{	}{	}{	}{	}{	}{	}
 {	662	}{	Les vampires ne sont pas en guerre avec les Kuei-Jin ?	}{	Les vampires ne sont pas en guerre avec les Kuei-Jin ?	}{	631	}{	}{	}{	}{	}{	}{	}{	}{	}{	Notre sang n'est-il pas en querelle ?	}
 {	663	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	481	}{	IsClan(pc,"Nosferatu") and G.Pack_Given == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment entrer dans le champ de mines sans exploser ?	}
 {	664	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	Ca paraît dangereux. Vous avez quelque chose qui pourrait me servir à me protéger ?	}{	491	}{	not IsClan(pc,"Nosferatu") and not IsClan(pc,"Toreador") and G.Pack_Given == 0	}{	}{	}{	}{	}{	}{	}{	}{	}

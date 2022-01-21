@@ -479,8 +479,8 @@
 {	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	480	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	481	}{	[soupir]Oui. Je connais les gargouilles, et celle-ci en particulier. J'espérais qu'elle serait morte, mais il semble que ma création revienne de nouveau me tourmenter. . .	}{	[soupir]Oui. Je connais les gargouilles, et celle-ci en particulier. J'espérais qu'elle serait morte, mais il semble que ma création revienne de nouveau me tourmenter. . .	}{	#	}{	}{	G.Regent_Gargoyleinside = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	482	}{	Quoi ? VOTRE création ?!	}{	Quoi ? VOTRE création ?!	}{	491	}{	G.Patch_Plus == 0 }{	}{	}{	}{	}{	}{	}{	}{	Vous avez engendré ce monstre ?	}
-{	483	}{	Quoi ? VOTRE création ?!	}{	Quoi ? VOTRE création ?!	}{	491	}{	G.Patch_Plus == 1 }{	pc.AwardExperience("Gargoyle05")	}{	}{	}{	}{	}{	}{	}{	Vous avez engendré ce monstre ?	}
+{	482	}{	Quoi ? VOTRE création ?!	}{	Quoi ? VOTRE création ?!	}{	491	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez engendré ce monstre ?	}
+{	483	}{	Quoi ? VOTRE création ?!	}{	Quoi ? VOTRE création ?!	}{	491	}{	G.Patch_Plus == 1	}{	pc.AwardExperience("Gargoyle05")	}{	}{	}{	}{	}{	}{	}{	Vous avez engendré ce monstre ?	}
 {	484	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	485	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	486	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -569,7 +569,7 @@
 {	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	571	}{	Vous jouez un jeu dangereux. J'espère que vous prendrez la bonne décision. Adieu.	}{	Vous jouez un jeu dangereux. J'espère que vous prendrez la bonne décision. Adieu.	}{	#	}{	}{	G.Regent_QuestGargoyle = 4	}{	}{	}{	}{	}{	}{	}{	}
-{	572	}{	Comment puis-je combattre la Gargouille?	}{	Comment puis-je combattre la Gargouille?	}{	471	}{	not IsDead("Gargoyle") and G.Gargoyle_Convinced == 0 }{	}{	}{	}{	}{	}{	}{	}{	Comment je détruis le démon?	}
+{	572	}{	Comment puis-je combattre la Gargouille?	}{	Comment puis-je combattre la Gargouille?	}{	471	}{	not IsDead("Gargoyle") and G.Gargoyle_Convinced == 0	}{	}{	}{	}{	}{	}{	}{	}{	Comment je détruis le démon?	}
 {	573	}{	En fait, j'ai réglé votre problème avec la Gargouille. . .	}{	En fait, j'ai réglé votre problème avec la Gargouille. . ..	}{	611	}{	(IsDead("Gargoyle") or G.Gargoyle_Convinced == 1)	}{	G.Regent_Gargoyle = 1	}{	}{	}{	}{	}{	}{	}{	J'ai fait en sorte que le golem de sang ne hante plus Hollywood. . . 	}
 {	574	}{	Au revoir, Max.	}{	Au revoir, Max.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Adieu, roi-sorcier.	}
 {	575	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -579,7 +579,7 @@
 {	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	581	}{	Tenez. C'est un ancien charme qui vous aidera dans votre lutte contre la Gargouille. Il vous suffira de le porter sur vous pour bénéficier de sa protection.	}{	Tenez. C'est un ancien charme qui vous aidera dans votre lutte contre la gargouille. Il vous suffira de le porter sur vous pour bénéficier de sa protection.	}{	#	}{	}{	pc.GiveItem("item_p_gargoyle_talisman")	}{	}{	}{	}{	}{	}{	}{	}
-{	582	}{	Merci, mais comment combattre la Gargouille au mieux?	}{	Merci, mais comment combattre la Gargouille au mieux?	}{	471	}{	not IsDead("Gargoyle") and G.Gargoyle_Convinced == 0 }{	}{	}{	}{	}{	}{	}{	}{	Cadeau appréciable, mais comment je détruis le démon?	}
+{	582	}{	Merci, mais comment combattre la Gargouille au mieux?	}{	Merci, mais comment combattre la Gargouille au mieux?	}{	471	}{	not IsDead("Gargoyle") and G.Gargoyle_Convinced == 0	}{	}{	}{	}{	}{	}{	}{	}{	Cadeau appréciable, mais comment je détruis le démon?	}
 {	583	}{	Merci. . .	}{	Merci. . .	}{	591	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ma personne apprécie ce don. . .	}
 {	584	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	585	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -589,7 +589,7 @@
 {	589	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	591	}{	Bonne chance, jeune vampire. Quand vous aurez réussi à détruire la gargouille, revenez et je vous récompenserai comme il se doit.	}{	Bonne chance, jeune vampire. Quand vous aurez réussi à détruire la gargouille, revenez et je vous récompenserai comme il se doit.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	592	}{	Une question encore, comment combattre une gargouille?	}{	Une question encore, comment combattre une gargouille?	}{	471	}{	not IsDead("Gargoyle") and G.Gargoyle_Convinced == 0 }{	}{	}{	}{	}{	}{	}{	}{	Davantage de connaissances nécessaires. Comment je détruis le démon?	}
+{	592	}{	Une question encore, comment combattre une gargouille?	}{	Une question encore, comment combattre une gargouille?	}{	471	}{	not IsDead("Gargoyle") and G.Gargoyle_Convinced == 0	}{	}{	}{	}{	}{	}{	}{	}{	Davantage de connaissances nécessaires. Comment je détruis le démon?	}
 {	593	}{	En fait, j'ai réglé votre problème avec la gargouille. . .	}{	En fait, j'ai réglé votre problème avec la gargouille. . ..	}{	611	}{	(IsDead("Gargoyle") or G.Gargoyle_Convinced == 1)	}{	G.Regent_Gargoyle = 1	}{	}{	}{	}{	}{	}{	}{	J'ai fait en sorte que le golem de sang ne hante plus Hollywood. . . 	}
 {	594	}{	Attendez. J'ai besoin d'autre chose. . .	}{	Attendez. J'ai besoin d'autre chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une autre chose. . .	}
 {	595	}{	Sans faute. Au revoir.	}{	Sans faute. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}

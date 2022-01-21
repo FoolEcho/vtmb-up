@@ -1,9 +1,9 @@
 {	1	}{	[Dans une prison, veut désespérément sortir]LAISSEZ-MOI SORTIR !	}{	[Dans une prison, veut désespérément sortir]LAISSEZ-MOI SORTIR !	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	Attendez...	}{	Attendez...	}{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	Patience...	}
+{	2	}{	(Auto-Link)	}{	(Auto-Link)	}{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	3	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	5	}{	FAITES MOI SORTIR D'ICI !	}{	FAITES MOI SORTIR D'ICI !	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	6	}{	Je ne suis pas l'un d'eux.	}{	Je ne suis pas avec eux.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'appartiens à ton genre de monstre.	}
+{	6	}{	Du calme, je ne suis pas l'un d'eux.	}{	Du calme, je ne suis pas avec eux.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sois sage, je suis ton genre de monstre.	}
 {	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -112,4 +112,5 @@
 {	112	}{	(Starting Condition)	}{	}{	75	}{	G.Barrabus_Exit == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	113	}{	(Starting Condition)	}{	}{	61	}{	G.Files_Deleted == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	114	}{	(Starting Condition)	}{	}{	88	}{	G.Barrabus_Hacker == 1 or G.Barrabus_Defender == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	115	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	(Starting Condition)	}{	}{	11	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	116	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

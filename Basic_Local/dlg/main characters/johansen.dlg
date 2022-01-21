@@ -1,4 +1,4 @@
-{	1	}{	Je vous ai tout dit - vous n'avez aucune raison de me garder ici ! Relâchez-moi !	}{	Je vous ai tout dit - vous n'avez aucune raison de me garder ici ! Relâchez-moi !	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	G.Story_State = 70	}{	}{	}{	}{	}{	}{	}{	}
+{	1	}{	Je vous ai tout dit - vous n'avez aucune raison de me garder ici ! Relâchez-moi !	}{	Je vous ai tout dit - vous n'avez aucune raison de me garder ici ! Relâchez-moi !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Story_State = 70	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	Dr Johansen ?	}{	Dr Johansen ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Eh, quoi d'neuf, docteur ?	}
 {	3	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	4	}{	Parlez-moi du Sarcophage d'Ankara.	}{	Parlez-moi du Sarcophage d'Ankara.	}{	71	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -460,7 +460,7 @@
 {	460	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	461	}{	Merci. Je ne sais pas d'où vous venez, mais je n'oublierai jamais votre bonté. Vous avez mon amitié.	}{	Merci. Je ne sais pas d'où vous venez, mais je n'oublierai jamais votre bonté. Vous avez mon amitié.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	462	}{	Ca va.	}{	Ca va.	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ca va. Ca vient.	}
-{	463	}{	Ca va.	}{	Ca va.	}{	0	}{	G.Patch_Plus == 1	}{	FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	N'en parlez pas! Ou au contraire, parlez-en...	}
+{	463	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	464	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	465	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	466	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

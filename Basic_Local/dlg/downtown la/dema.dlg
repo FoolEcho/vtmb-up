@@ -38,7 +38,7 @@
 {	38	}{	Bizarre. Il ne vous a pas dit que j'arrivais ?	}{	Bizarre. Il ne vous a pas dit que j'arrivais ?	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez peut-être oublié le message annonçant mon arrivée ?	}
 {	39	}{	Je suis de l'entretien - vous avez des fuites.	}{	Je suis de l'entretien - vous avez des fuites.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous n'entendez pas les tuyaux qui tremblent ? Ils doivent être pleins de serpents.	}
 {	40	}{	Service d'étage. J'ai le caviar qu'il a commandé.	}{	Service d'étage. J'ai le caviar qu'il a commandé.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai dans mes poches des oeufs de poisson pour l'homme derrière la porte.	}
-{	41	}{	[menaçant]Donnez-moi ce message. Je lui transmettrai.	}{	[menaçant]Donnez-moi ce message. Je lui transmettrai.	}{	#	}{	npc.SetDisposition("Angry", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	41	}{	[menaçant]Donnez-moi ce message. Je lui transmettrai.	}{	[menaçant]Donnez-moi ce message. Je lui transmettrai.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	Laissez moi entrer.	}{	Laissez moi entrer.	}{	3	}{	Dominate 1	}{	G.Dema_Go = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	43	}{	Tu n'es qu'une clef, fait ce qui t'es naturel.	}{	Tu n'es qu'une clef, fait ce qui t'es naturel.	}{	3	}{	Dementation 1	}{	G.Dema_Go = 1	}{	}{	}{	}{	}{	}{	}{	You are a key. Do what comes naturally.	}
 {	44	}{	Laissez moi entrer.	}{	Laissez moi entrer.	}{	3	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Dema_Go = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}

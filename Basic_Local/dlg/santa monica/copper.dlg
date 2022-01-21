@@ -79,7 +79,7 @@
 {	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	81	}{	J'achète, j'achète. . . Il va me falloir de l'argent. Revenez dans un petit moment.	}{	J'achète, j'achète. . . Il va me falloir de l'argent. Revenez dans un petit moment.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Copper_Quest = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	82	}{	Ouais, je pourrais aussi te trouver des chewing gum spéciaux pour éroder tes crocs.	}{	Ouais, je pourrais aussi te trouver des chewing gum spéciaux pour éroder tes crocs.	}{	0	}{	G.Patch_Plus == 1	}{ pc.SetQuest("Copper", 1)	}{	}{	}{	}{	}{	}{	}{	Je pourrais aussi produire un caoutchouc spécial pour faire tomber tes crocs.	}
+{	82	}{	Ouais, je pourrais aussi te trouver des chewing gum spéciaux pour éroder tes crocs.	}{	Ouais, je pourrais aussi te trouver des chewing gum spéciaux pour éroder tes crocs.	}{	0	}{	G.Patch_Plus == 1	}{	pc.SetQuest("Copper", 1)	}{	}{	}{	}{	}{	}{	}{	Je pourrais aussi produire un caoutchouc spécial pour faire tomber tes crocs.	}
 {	83	}{	Je le ferai.	}{	Je le ferai.	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Là et de retour encore.	}
 {	84	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	85	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

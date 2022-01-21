@@ -70,7 +70,7 @@
 {	70	}{	Je fais partie des plus grands humanistes. Je vous ferai savoir ce que je trouve.	}{	Je fais partie des plus grands humanistes. Je vous ferai savoir ce que je trouve.	}{	0	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_Knox == 2	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes un homme joufflu et bien aimable. Adieu.	}
 {	71	}{	Bien sûr. Ca fait partie du métier. Dans ce cas-là, on leur lâche un chasseur de primes au train.	}{	Bien sûr. Ca fait partie du métier. Dans ce cas-là, on leur lâche un chasseur de primes au train.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	Ca doit être un boulot intéressant.	}{	Ca doit être un boulot intéressant.	}{	181	}{	G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	73	}{	J'espère que votre chasseur de primes est bon.	}{	J'espère que votre chasseur de primes est bon.	}{	671	}{	G.Arthur_BH == 1 and G.Arthur_Knox < 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	J'espère que votre chasseur de primes est bon.	}{	J'espère que votre chasseur de primes est bon.	}{	671	}{	G.Arthur_BH >= 1 and G.Arthur_Knox < 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	74	}{	Eh, je peux vous poser quelques questions de plus, Arthur ?	}{	Eh, je peux vous poser quelques questions de plus, Arthur ?	}{	81	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon cerveau a des questions, le vôtre a les réponses.	}
 {	75	}{	Je m'en vais. A plus tard.	}{	Je m'en vais. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il est temps de marcher ailleurs.	}
 {	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -234,7 +234,7 @@
 {	234	}{	J'ai trouvé Carson. Malheureusement, il ne reviendra pas.	}{	J'ai trouvé Carson. Malheureusement, il ne reviendra pas.	}{	241	}{	G.Arthur_Knox == 3	}{	}{	}{	}{	}{	}{	}{	}{	J'ai trouvé le chasseur, mais il ne veut plus trouver de primes.	}
 {	235	}{	Votre affaire m'intrigue. . .	}{	Votre affaire m'intrigue. . .	}{	551	}{	G.Arthur_BJ == 0	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi vos histoires de chasse, maître des clés.	}
 {	236	}{	J'avais une question pour vous. . .	}{	J'avais une question pour vous. . .	}{	81	}{	G.Arthur_BJ == 1 and G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	Des questions me rongent la cervelle.	}
-{	237	}{	Vous avez besoin de chasseurs de primes ?	}{	Vous avez besoin de chasseurs de primes ?	}{	721	}{	G.Arthur_BJ == 1 and G.Arthur_BH == 1 and G.Arthur_Knox == 0	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Avez-vous besoin de mes aptitudes de chasseur pour vos primes ?	}
+{	237	}{	Vous avez besoin de chasseurs de primes ?	}{	Vous avez besoin de chasseurs de primes ?	}{	721	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_Knox == 0	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	Avez-vous besoin de mes aptitudes de chasseur pour vos primes ?	}
 {	238	}{	Ca m'a l'air chaud. Vous savez où je pourrais trouver une arme... ou deux ?	}{	Ca m'a l'air chaud. Vous savez où je pourrais trouver une arme... ou deux ?	}{	471	}{	G.Arthur_Muddy == 2 and G.Trip_Know < 4 and not G.Trip_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je pourrais avoir besoin d'un balai qui crache des balles.	}
 {	239	}{	J'avais quelques questions pour vous, Arthur.	}{	J'avais quelques questions pour vous, Arthur.	}{	81	}{	G.Arthur_BJ == 1 and G.Arthur_BH >= 1 and G.Arthur_Knox >= 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
 {	240	}{	Rien pour l'instant, Arthur. Au revoir.	}{	Rien pour l'instant, Arthur. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hé, faut que je m'en aille d'ici vite fait.	}
@@ -259,7 +259,7 @@
 {	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	261	}{	Bordel. Ca me fout vraiment dans la mouise. Ca va coûter bien cher à ce pauvre Arthur.	}{	Bordel. Ca me fout vraiment dans la mouise. Ca va coûter bien cher à ce pauvre Arthur.	}{	#	}{	npc.SetDisposition("Sad",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	262	}{	Qui vouliez-vous que Carson retrouve ?	}{	Qui vouliez-vous que Carson retrouve ?	}{	271	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je peux peut-être retrouver une prime pour vous.	}
+{	262	}{	Qui vouliez-vous que Carson retrouve ?	}{	Qui vouliez-vous que Carson retrouve ?	}{	271	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Qui chauffe ton spa?	}
 {	263	}{	Quel est le problème ?	}{	Quel est le problème ?	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le destin vous a-t-il nui ?	}
 {	264	}{	Je regrette, mais vous pourriez me payer ?	}{	Je regrette, mais vous pourriez me payer ?	}{	301	}{	G.Arthur_Knoxpay == 0	}{	G.Arthur_Knoxpay = 2	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fraîche pour trouver de l'or. . .	}
 {	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -551,7 +551,7 @@
 {	551	}{	Les cautions ? Que voulez-vous savoir ?	}{	Les cautions ? Que voulez-vous savoir ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	552	}{	C'est vous qui gérez cet endroit ?	}{	C'est vous qui gérez cet endroit ?	}{	21	}{	G.Arthur_Run == 0	}{	}{	}{	}{	}{	}{	}{	}{	Etes-vous le seul à détenir les clés de la liberté ?	}
 {	553	}{	Vous avez beaucoup de personnes qui disparaissent alors qu'elles sont sous caution ?	}{	Vous avez beaucoup de personnes qui disparaissent alors qu'elles sont sous caution ?	}{	71	}{	G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	Y a-t-il beaucoup de primes à chasser ?	}
-{	554	}{	Votre chasseur de primes, il est bon ?	}{	Votre chasseur de primes, il est bon ?	}{	671	}{	G.Arthur_BH == 1 and G.Arthur_Knox < 1	}{	}{	}{	}{	}{	}{	}{	}{	Avez-vous un chasseur de primes talentueux ?	}
+{	554	}{	Votre chasseur de primes, il est bon ?	}{	Votre chasseur de primes, il est bon ?	}{	671	}{	G.Arthur_BH >= 1 and G.Arthur_Knox < 1	}{	}{	}{	}{	}{	}{	}{	}{	Avez-vous un chasseur de primes talentueux ?	}
 {	555	}{	En fait, j'aimerais vous poser des questions sur autre chose. . .	}{	En fait, j'aimerais vous poser des questions sur autre chose. . .	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
 {	556	}{	Rien. A plus tard.	}{	Rien. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis quelque part ailleurs qu'ici.	}
 {	557	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -590,7 +590,7 @@
 {	590	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	591	}{	Vous parlez des gens qui s'enfuient ? Oui, en fait, j'en ai plein. C'est pour ça que j'ai un chasseur de primes.	}{	Vous parlez des gens qui s'enfuient ? Oui, en fait, j'en ai plein. C'est pour ça que j'ai un chasseur de primes.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	592	}{	La chasse des primes, cela me paraît excitant. . .	}{	La chasse des primes, cela me paraît excitant. . .	}{	181	}{	G.Arthur_BH == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	593	}{	Votre chasseur est-il doué pour retrouver des primes ?	}{	Votre chasseur est-il doué pour retrouver des primes ?	}{	671	}{	G.Arthur_BH == 1 and G.Arthur_Knox < 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	593	}{	Votre chasseur est-il doué pour retrouver des primes ?	}{	Votre chasseur est-il doué pour retrouver des primes ?	}{	671	}{	G.Arthur_BH >= 1 and G.Arthur_Knox < 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	594	}{	Mon cerveau a des questions, le vôtre a les réponses.	}{	Mon cerveau a des questions, le vôtre a les réponses.	}{	81	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	595	}{	Je ne suis plus là.	}{	Je ne suis plus là.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	596	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

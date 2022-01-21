@@ -51,7 +51,7 @@
 {	51	}{	Mercurio ? Ouais, je le connais. [parle à d'autres dans l'entrepôt]Hein qu'on connaît Mercurio ? Comment va notre ami Mercurio ?	}{	Mercurio ? Ouais, je le connais. [parle à d'autres dans l'entrepôt]Hein qu'on connaît Mercurio ? Comment va notre ami Mercurio ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	Pas très bien. Je viens pour l'Astrolite que tu lui as promis.	}{	Pas très bien. Je viens pour l'Astrolite que tu lui as promis.	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il porte les cicatrices de ta trahison. Je viens chercher son dû.	}
 {	53	}{	Donne-moi l'Astrolite maintenant, et je ne jetterai pas tes bijoux dans le Pacifique.	}{	Donne-moi l'Astrolite maintenant, et je ne jetterai pas tes bijoux dans le Pacifique.	}{	61	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Donne-moi l'astre au litre tout de suite, ou tes bourses dormiront avec les poissons.	}
-{	54	}{	Il est vivant. Ce qui ne va pas être ton cas. Voilà ce qu'on appelle une vengeance, connard.	}{	Il est vivant. Ce qui ne va pas être ton cas. Voilà ce qu'on appelle une vengeance, connard.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Il ira mieux quand je lui offrirai ton service trois pièces.	}
+{	54	}{	Il est vivant. Ce qui ne va pas être ton cas. Voilà ce qu'on appelle une vengeance, connard.	}{	Il est vivant. Ce qui ne va pas être ton cas. Voilà ce qu'on appelle une vengeance, connard.	}{	191	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	Il ira mieux quand je lui offrirai ton service trois pièces.	}
 {	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -69,10 +69,10 @@
 {	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	71	}{	Des explosifs ? C'est rigolo, ça. On peut faire beaucoup de bruit, comme ça. Pourquoi tu veux trouver des feux d'artifices ?	}{	Des explosifs ? C'est rigolo, ça. On peut faire beaucoup de bruit, comme ça. Pourquoi tu veux trouver des feux d'artifices ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	72	}{	Je vais à la pêche.	}{	Je vais à la pêche.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	La chasse au poisson est ouverte.	}
-{	73	}{	Problèmes d'argent. Je dois faire disparaître une voiture, pour l'assurance.	}{	Problèmes d'argent. Je dois faire disparaître une voiture, pour l'assurance.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je veux voir la nuit brûler de tous ses feux.	}
-{	74	}{	Ma femme a eu la maison, lors de notre divorce.	}{	Mon mari a eu la maison, lors de notre divorce.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il y a de l'or dans leurs collines. . . et mon ex.	}
-{	75	}{	Tu regarderas les infos, ce soir.	}{	Tu regarderas les infos, ce soir.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les infos annonceront mes glorieux exploits !	}
+{	72	}{	Je vais à la pêche.	}{	Je vais à la pêche.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	La chasse au poisson est ouverte.	}
+{	73	}{	Problèmes d'argent. Je dois faire disparaître une voiture, pour l'assurance.	}{	Problèmes d'argent. Je dois faire disparaître une voiture, pour l'assurance.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je veux voir la nuit brûler de tous ses feux.	}
+{	74	}{	Ma femme a eu la maison, lors de notre divorce.	}{	Mon mari a eu la maison, lors de notre divorce.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il y a de l'or dans leurs collines. . . et mon ex.	}
+{	75	}{	Tu regarderas les infos, ce soir.	}{	Tu regarderas les infos, ce soir.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les infos annonceront mes glorieux exploits !	}
 {	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -89,7 +89,7 @@
 {	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	91	}{	Ah ouais ? Et comment tu sais ça ? C'est bizarre, ton truc. . . Tu sais quoi, je vais te filer l'Astrolite. Dès qu'on sera dans les eaux internationales. [Se tourne vers les autres]Les mecs ! On part à la pêche au requin !	}{	Ah ouais ? Et comment tu sais ça ? C'est bizarre, ton truc. . . Tu sais quoi, je vais te filer l'Astrolite. Dès qu'on sera dans les eaux internationales. [Se tourne vers les autres]Les mecs ! On part à la pêche au requin !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Je ne crois pas.	}{	Je ne crois pas.	}{	181	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Je ne crois pas.	}{	Je ne crois pas.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
 {	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -189,7 +189,7 @@
 {	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	191	}{	Eh, regardez par ici !	}{	Eh, regardez par ici !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	192	}{	Semble fait maison.	}{	Semble fait maison.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu l'as fait toi-même.	}
+{	192	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	193	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	195	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -259,7 +259,7 @@
 {	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	261	}{	Le vent de minuit ? C'est ça. T'as une tête d'indic, grave. [Se tourne vers les autres]Les gars, démarrez le bateau. On va à la pêche au requin !	}{	Le vent de minuit ? C'est ça. T'as une tête d'indic, grave. [Se tourne vers les autres]Les gars, démarrez le bateau. On va à la pêche au requin !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	262	}{	HA HA HA. . . Non.	}{	HA HA HA. . . Non.	}{	181	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
+{	262	}{	HA HA HA. . . Non.	}{	HA HA HA. . . Non.	}{	0	}{	}{	npc.SetRelationship("player D_HT 5")	}{	}{	}{	}{	}{	}{	}{	}
 {	263	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	264	}{	(Starting Condition)	}{	}{	141	}{	G.Dennis_Alone == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	265	}{	(Starting Condition)	}{	}{	171	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	}

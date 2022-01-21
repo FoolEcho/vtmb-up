@@ -149,7 +149,7 @@
 {	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	151	}{	Salut. Ca va bien ?	}{	Salut. Ca va bien ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	152	}{	J'ai eu quelque chose de la clinique. Allez-y!	}{	J'ai eu quelque chose de la clinique. Allez-y!	}{	301	}{	G.Trip_Discount > 0 and pc.HasItem("item_g_drugs_drug_box")	}{	G.Trip_Discount = 3 }{	}{	}{	}{	}{	}{	}{	J'ai eu une pochette surprise de la maison de soins!	}
+{	152	}{	J'ai eu quelque chose de la clinique. Allez-y!	}{	J'ai eu quelque chose de la clinique. Allez-y!	}{	301	}{	G.Trip_Discount > 0 and pc.HasItem("item_g_drugs_drug_box")	}{	G.Trip_Discount = 3	}{	}{	}{	}{	}{	}{	}{	J'ai eu une pochette surprise de la maison de soins!	}
 {	153	}{	Quelqu'un m'a dit de but en blanc que vous étiez le meilleur marchand d'armes de Santa Monica.	}{	Quelqu'un m'a dit de but en blanc que vous étiez le meilleur marchand d'armes de Santa Monica.	}{	21	}{	G.Trip_Know > 0 and G.Trip_Know < 4 and G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les voix m'ont dit que vous auriez une baguette magique avec mon nom marqué dessus.	}
 {	154	}{	Je voulais vous demander où trouver certaines armes.	}{	Je voulais vous demander où trouver certaines armes.	}{	161	}{	G.Trip_Know == 0 and G.Trip_Trust < 5 and G.Trip_Guns == 1 and G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Vous savez où je pourrais trouver une baguette magique ?	}
 {	155	}{	Trip, j'ai vraiment besoin d'armes. Vous connaissez peut-être quelqu'un, au moins ?	}{	Trip, j'ai vraiment besoin d'armes. Vous connaissez peut-être quelqu'un, au moins ?	}{	171	}{	G.Trip_Name == 1 and G.Trip_Know == 0 and G.Trip_Trust > 3 and G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Bad Trip, vous savez où je pourrais trouver une baguette magique ?	}
@@ -596,7 +596,7 @@
 {	596	}{	Qu'y a-t-il à faire par ici ?	}{	Qu'y a-t-il à faire par ici ?	}{	211	}{	G.Trip_SM == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous pouvez me parler de la dame et de ses recoins ?	}
 {	597	}{	Je me demandais si vous aviez entendu parler du tueur en série.	}{	Je me demandais si vous aviez entendu parler du tueur en série.	}{	231	}{	G.Know_Murder == 1 and G.Trip_Killer == 0 and pc.GetQuestState("Serial") < 8	}{	}{	}{	}{	}{	}{	}{	}{	Avez-vous entendu parler du tueur drapé d'ombre ?	}
 {	598	}{	J'aimerais acheter quelque chose.	}{	J'aimerais acheter quelque chose.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de vos biens ?	}
-{	599	}{	Et j'ai quelque chose de la clinique. Allez-y!	}{	Et j'ai quelque chose de la clinique. Allez-y!	}{	301	}{	G.Trip_Discount > 0 and pc.HasItem("item_g_drugs_drug_box")	}{	G.Trip_Discount = 3 }{	}{	}{	}{	}{	}{	}{	J'ai eu une pochette surprise de la maison de soins!	}
+{	599	}{	Et j'ai quelque chose de la clinique. Allez-y!	}{	Et j'ai quelque chose de la clinique. Allez-y!	}{	301	}{	G.Trip_Discount > 0 and pc.HasItem("item_g_drugs_drug_box")	}{	G.Trip_Discount = 3	}{	}{	}{	}{	}{	}{	}{	J'ai eu une pochette surprise de la maison de soins!	}
 {	600	}{	Je ne fais que regarder, merci.	}{	Je ne fais que regarder, merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
 {	601	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	602	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
