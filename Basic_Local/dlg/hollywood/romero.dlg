@@ -223,12 +223,12 @@
 {	223	}{	FRANCHEMENT, je m'en fous. Je n'ai fait ça que pour me faire payer.	}{	FRANCHEMENT, je m'en fous. Je n'ai fait ça que pour me faire payer.	}{	241	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aime beaucoup la générosité. Et les foules qui crient de peur.	}
 {	224	}{	Vous pourriez sûrement m'apprendre un truc ou deux sur l'utilisation des armes.	}{	Vous pourriez sûrement m'apprendre un truc ou deux sur l'utilisation des armes.	}{	231	}{	Firearms -3 & G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Laissez-moi tenir votre arme pendant que vous guidez mes doigts.	}
 {	225	}{	Oh, je sais me servir d'une arme. Je peux garder le fusil ?	}{	Oh, je sais me servir d'une arme. Je peux garder le fusil ?	}{	261	}{	Firearms 3 & G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mon pauvre flingue a faim, mon chou. . . Avec quoi je peux le fourrer ?	}
-{	226	}{	Vous pourriez sûrement m'apprendre un truc ou deux sur l'utilisation des armes.	}{	Vous pourriez sûrement m'apprendre un truc ou deux sur l'utilisation des armes.	}{	231	}{	Firearms -4 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Laissez-moi tenir votre arme pendant que vous guidez mes doigts.	}
-{	227	}{	Oh, je sais me servir d'une arme. Je peux garder le fusil ?	}{	Oh, je sais me servir d'une arme. Je peux garder le fusil ?	}{	261	}{	Firearms 4 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon pauvre flingue a faim, mon chou. . . Avec quoi je peux le fourrer ?	}
+{	226	}{	Vous pourriez sûrement m'apprendre un truc ou deux sur l'utilisation des armes.	}{	Vous pourriez sûrement m'apprendre un truc ou deux sur l'utilisation des armes.	}{	231	}{	Firearms -4 & (G.Patch_Plus == 1 and G.Romero_Reward == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Laissez-moi tenir votre arme pendant que vous guidez mes doigts.	}
+{	227	}{	Oh, je sais me servir d'une arme. Je peux garder le fusil ?	}{	Oh, je sais me servir d'une arme. Je peux garder le fusil ?	}{	261	}{	Firearms 4 & (G.Patch_Plus == 1 and G.Romero_Reward == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Mon pauvre flingue a faim, mon chou. . . Avec quoi je peux le fourrer ?	}
 {	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	230	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	231	}{	Si c'est ce que vous voulez. . . Attendez, je vais voir ce que je peux faire pour vous apprendre à viser.	}{	Si c'est ce que vous voulez. . . Attendez, je vais voir ce que je peux faire pour vous apprendre à viser.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	pc.BumpStat("firearms", 1); G.Romero_Quest = 4	}{	}{	}{	}{	}{	}{	}{	}
+{	231	}{	Si c'est ce que vous voulez. . . Attendez, je vais voir ce que je peux faire pour vous apprendre à viser.	}{	Si c'est ce que vous voulez. . . Attendez, je vais voir ce que je peux faire pour vous apprendre à viser.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	pc.BumpStat("firearms", 1); G.Romero_Quest = 4; G.Romero_Reward = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	232	}{	(Auto-Link)	}{	(Auto-Link)	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	233	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	234	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -241,9 +241,9 @@
 {	241	}{	[In petto]Qu'est-ce que je peux lui donner ? Je peux vous filer quelques boîtes de munitions. . . Ou alors, vous apprendre à mieux tirer avec un flingue.	}{	[In petto]Qu'est-ce que je peux lui donner ? Je peux vous filer quelques boîtes de munitions. . . Ou alors, vous apprendre à mieux tirer avec un flingue.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	242	}{	Je sais déjà utiliser une arme à feu. Je peux garder le fusil ?	}{	Je sais déjà utiliser une arme à feu. Je peux garder le fusil ?	}{	261	}{	Firearms 3 & G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	De la nourriture pour mon arme !	}
 {	243	}{	Je n'ai pas besoin de munitions, je ne sais pas tirer. Apprenez-moi à viser.	}{	Je n'ai pas besoin de munitions, je ne sais pas tirer. Apprenez-moi à viser.	}{	271	}{	Firearms -3 & G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quel côté tourne-t-on vers ce qu'on veut tuer ?	}
-{	244	}{	Je sais déjà utiliser une arme à feu. Je peux garder le fusil ?	}{	Je sais déjà utiliser une arme à feu. Je peux garder le fusil ?	}{	261	}{	Firearms 4 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	De la nourriture pour mon arme !	}
-{	245	}{	Je n'ai pas besoin de munitions, je ne sais pas tirer. Apprenez-moi à viser.	}{	Je n'ai pas besoin de munitions, je ne sais pas tirer. Apprenez-moi à viser.	}{	271	}{	Firearms -4 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Quel côté tourne-t-on vers ce qu'on veut tuer ?	}
-{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	244	}{	Je sais déjà utiliser une arme à feu. Je peux garder le fusil ?	}{	Je sais déjà utiliser une arme à feu. Je peux garder le fusil ?	}{	261	}{	Firearms 4 & (G.Patch_Plus == 1 and G.Romero_Reward == 0)	}{	}{	}{	}{	}{	}{	}{	}{	De la nourriture pour mon arme !	}
+{	245	}{	Je n'ai pas besoin de munitions, je ne sais pas tirer. Apprenez-moi à viser.	}{	Je n'ai pas besoin de munitions, je ne sais pas tirer. Apprenez-moi à viser.	}{	271	}{	Firearms -4 & (G.Patch_Plus == 1 and G.Romero_Reward == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Quel côté tourne-t-on vers ce qu'on veut tuer ?	}
+{	246	}{	Je ne pense pas avoir besoin de quoi que ce soit pour le moment, merci.	}{	Je ne pense pas avoir besoin de quoi que ce soit pour le moment, merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis bien comme je suis.	}
 {	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -258,7 +258,7 @@
 {	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	261	}{	La vieille Jamie Sue ? Personnellement, je préfère la baguette à boum, mais qu'importe, elle est à vous.	}{	La vieille Jamie Sue ? Personnellement, je préfère la baguette à boum, mais qu'importe, elle est à vous.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.GiveItem("item_w_remington_m_700"); G.Romero_Quest = 4	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	La vieille Jamie Sue ? Personnellement, je préfère la baguette à boum, mais qu'importe, elle est à vous.	}{	La vieille Jamie Sue ? Personnellement, je préfère la baguette à boum, mais qu'importe, elle est à vous.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.GiveItem("item_w_remington_m_700"); G.Romero_Quest = 4; G.Romero_Reward = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	262	}{	(Auto-Link)	}{	(Auto-Link)	}{	551	}{	G.Romero_Crush == 1 and G.Romero_Whore != 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	263	}{	(Auto-Link)	}{	(Auto-Link)	}{	281	}{	G.Romero_Crush == 0 and G.Romero_Whore != 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	264	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	G.Romero_Whore == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -268,7 +268,7 @@
 {	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	271	}{	Quand vous tirez, continuez de regarder la cible après avoir tiré. Et utilisez la mire, elle sert à ça. Et le style, ça ne sert à rien quand on ne sait pas tirer. Alors le flingue à l'horizontale, on laisse ça pour les films.	}{	Quand vous tirez, continuez de regarder la cible après avoir tiré. Et utilisez la mire, elle sert à ça. Et le style, ça ne sert à rien quand on ne sait pas tirer. Alors le flingue à l'horizontale, on laisse ça pour les films.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.BumpStat("firearms", 1); G.Romero_Quest = 4	}{	}{	}{	}{	}{	}{	}{	}
+{	271	}{	Quand vous tirez, continuez de regarder la cible après avoir tiré. Et utilisez la mire, elle sert à ça. Et le style, ça ne sert à rien quand on ne sait pas tirer. Alors le flingue à l'horizontale, on laisse ça pour les films.	}{	Quand vous tirez, continuez de regarder la cible après avoir tiré. Et utilisez la mire, elle sert à ça. Et le style, ça ne sert à rien quand on ne sait pas tirer. Alors le flingue à l'horizontale, on laisse ça pour les films.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.BumpStat("firearms", 1); G.Romero_Quest = 4; G.Romero_Reward = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	272	}{	(Auto-Link)	}{	(Auto-Link)	}{	551	}{	G.Romero_Crush == 1 and G.Romero_Whore != 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	273	}{	(Auto-Link)	}{	(Auto-Link)	}{	281	}{	G.Romero_Crush == 0 and G.Romero_Whore != 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	274	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	G.Romero_Whore == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -642,8 +642,8 @@
 {	642	}{	L'argent, c'est toujours bien.	}{	L'argent, c'est toujours bien.	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	De l'argent dans ma paume.	}
 {	643	}{	Le fusil, ça ne me ferait pas de mal.	}{	Le fusil, ça ne me ferait pas de mal.	}{	261	}{	Firearms 3 & G.Patch_Plus == 0 and G.Romero_Quest != 4	}{	}{	}{	}{	}{	}{	}{	}{	De la nourriture pour mon arme !	}
 {	644	}{	Vous pourriez m'aider à mieux me servir d'une arme à feu ?	}{	Vous pourriez m'aider à mieux me servir d'une arme à feu ?	}{	271	}{	Firearms -3 & G.Patch_Plus == 0 and G.Romero_Quest != 4	}{	}{	}{	}{	}{	}{	}{	}{	Quel côté tourne-t-on vers ce qu'on veut tuer ?	}
-{	645	}{	Le fusil, ça ne me ferait pas de mal.	}{	Le fusil, ça ne me ferait pas de mal.	}{	261	}{	Firearms 4 & G.Patch_Plus == 1 and G.Romero_Quest != 4	}{	}{	}{	}{	}{	}{	}{	}{	De la nourriture pour mon arme !	}
-{	646	}{	Vous pourriez m'aider à mieux me servir d'une arme à feu ?	}{	Vous pourriez m'aider à mieux me servir d'une arme à feu ?	}{	271	}{	Firearms -4 & G.Patch_Plus == 1 and G.Romero_Quest != 4	}{	}{	}{	}{	}{	}{	}{	}{	Quel côté tourne-t-on vers ce qu'on veut tuer ?	}
+{	645	}{	Le fusil, ça ne me ferait pas de mal.	}{	Le fusil, ça ne me ferait pas de mal.	}{	261	}{	Firearms 4 & (G.Patch_Plus == 1 and G.Romero_Reward == 0)	}{	}{	}{	}{	}{	}{	}{	}{	De la nourriture pour mon arme !	}
+{	646	}{	Vous pourriez m'aider à mieux me servir d'une arme à feu ?	}{	Vous pourriez m'aider à mieux me servir d'une arme à feu ?	}{	271	}{	Firearms -4 & (G.Patch_Plus == 1 and G.Romero_Reward == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Quel côté tourne-t-on vers ce qu'on veut tuer ?	}
 {	647	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	648	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -672,7 +672,7 @@
 {	672	}{	Je vais vous épargner le trajet. Je vais vous rapporter quelqu'un. . .	}{	Je vais vous épargner le trajet. Je vais vous rapporter quelqu'un. . .	}{	621	}{	G.Romero_Quest != 4	}{	}{	}{	}{	}{	}{	}{	}{	Ce trajet n'est pas dans votre avenir, il est dans le mien.	}
 {	673	}{	J'vous rapporte quelqu'un.	}{	J'vous rapporte quelqu'un.	}{	621	}{	G.Romero_Quest == 4	}{	}{	}{	}{	}{	}{	}{	}{	J'attraperai quelque proie pour toi.	}
 {	674	}{	Alors vous êtes encore chaud ?	}{	Alors vous êtes encore chaud ?	}{	551	}{	Appearance 2 & G.Romero_Crush == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je vois que vous brûler intérieurement !	}
-{	675	}{	Je pense savoir ce que tu veux dire.	}{	Je pense savoir ce que tu veux dire.	}{	551	}{	Appearance 2 & not pc.IsMale()	}{	G.Romero_Crush = 1	}{	}{	}{	}{	}{	}{	}{	Je vois ce que tu vois.	}
+{	675	}{	Je pense savoir ce que tu veux dire.	}{	Je pense savoir ce que tu veux dire.	}{	551	}{	Appearance 2 & not pc.IsMale() and G.Player_Homo == 0	}{	G.Romero_Crush = 1	}{	}{	}{	}{	}{	}{	}{	Je vois ce que tu vois.	}
 {	676	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	678	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

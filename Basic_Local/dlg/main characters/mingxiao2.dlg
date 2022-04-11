@@ -308,9 +308,9 @@
 {	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	311	}{	Allez donc, sauvez-nous. Je dois rester ici pour protéger la clé, mais je vous rejoindrai. Que votre poing porte la fureur de mille enfers.	}{	Allez donc, sauvez-nous. Je dois rester ici pour protéger la clé, mais je vous rejoindrai. Que votre poing porte la fureur de mille enfers.	}{	#	}{	}{	G.Ming_Ending = 1; pc.SetQuest("Prince",3)	}{	}{	}{	}{	}{	}{	}{	}
-{	312	}{	Oui.	}{	Oui.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'irai en enfer.	}
-{	313	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	311	}{	Allez donc, sauvez-nous. Je dois rester ici pour protéger la clé, mais je vous rejoindrai. Que votre poing porte la fureur de mille enfers.	}{	Allez donc, sauvez-nous. Je dois rester ici pour protéger la clé, mais je vous rejoindrai. Que votre poing porte la fureur de mille enfers.	}{	#	}{	}{	G.Ming_Ending = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	312	}{	Oui.	}{	Oui.	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'irai en enfer.	}
+{	313	}{	Oui.	}{	Oui.	}{	0	}{	G.Patch_Plus == 1	}{	pc.SetQuest("Prince",3)	}{	}{	}{	}{	}{	}{	}{	J'irai en enfer.	}
 {	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -184,7 +184,7 @@
 {	184	}{	Super. Vous vendez des armes, ici ?	}{	Super. Vous vendez des armes, ici ?	}{	51	}{	G.Trip_Guns == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vendez-vous des baguettes magiques dans ce bazar ?	}
 {	185	}{	Trip, qu'avez-vous à vendre ici ?	}{	Trip, qu'avez-vous à vendre ici ?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de vos biens ?	}
 {	186	}{	Ah ! Bad Trip !	}{	Ah ! Bad Trip !	}{	551	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	187	}{	Ils vous appellent Trip. C'est un surnom étrange, faites-vous des drogues?	}{	Ils vous appellent Trip. C'est un surnom étrange, faites-vous des drogues?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0	}{	}{	}{	}{	}{	}{	}{	}{	Trip est votre nom et les drogues votre jeu?	}
+{	187	}{	Ils vous appellent Trip. C'est un surnom étrange, faites-vous des drogues?	}{	Ils vous appellent Trip. C'est un surnom étrange, faites-vous des drogues?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Guns == 3	}{	}{	}{	}{	}{	}{	}{	}{	Trip est votre nom et les drogues votre jeu?	}
 {	188	}{	A bientôt, Trip. Il faut que je file.	}{	A bientôt, Trip. Il faut que je file.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -194,7 +194,7 @@
 {	194	}{	Non, ça m'étonne qu'on ne se soit jamais rencontrés.	}{	Non, ça m'étonne qu'on ne se soit jamais rencontrés.	}{	201	}{	}{	}{	}{	}{	}{	}{	}{	}{	La dame et moi nous connaissons depuis longtemps. Il est étonnant que ce ne soit pas aussi le cas pour vous et moi.	}
 {	195	}{	Oui. Quel est votre nom?	}{	Oui. Quel est votre nom?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Oui. Quel est ton véritable nom, Trafiquant de Mort ?	}
 {	196	}{	Oui, mais j'ai effectivement déjà visité la clinique ici et je vous ai apporté quelques trucs.	}{	Oui, mais j'ai effectivement déjà visité la clinique ici et je vous ai apporté quelques trucs.	}{	301	}{	pc.HasItem("item_g_drugs_drug_box") and G.Trip_Discount > 0	}{	G.Trip_Discount = 3	}{	}{	}{	}{	}{	}{	}{	Je suis nouveau ici mais pas à la maison de soins où j'ai trouvé une pochette surprise.	}
-{	197	}{	Oui. Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	Oui. Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	Nouveau à la dame je suis, alors Trip est votre nom et les drogues sont votre jeu ?	}
+{	197	}{	Oui. Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	Oui. Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1 and G.Trip_Guns == 3	}{	}{	}{	}{	}{	}{	}{	}{	Nouveau à la dame je suis, alors Trip est votre nom et les drogues sont votre jeu ?	}
 {	198	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	199	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	200	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -203,7 +203,7 @@
 {	203	}{	Ca ne vous fait pas peur tous ces nouveaux, avec le serial killer qui traîne dans les parages ?	}{	Ca ne vous fait pas peur tous ces nouveaux, avec le serial killer qui traîne dans les parages ?	}{	231	}{	G.Know_Murder == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ca ne vous fait pas peur ces nouvelles têtes, avec le serial killer qui traîne dans les parages ?	}
 {	204	}{	Je vois. J'aimerais vous acheter quelque chose.	}{	Je vois. J'aimerais vous acheter quelque chose.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de vos biens ?	}
 {	205	}{	Ah. Alors, quel est votre nom ?	}{	Ah. Alors, quel est votre nom ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je sais. Quel est ton véritable nom, Revendeur de Mort ?	}
-{	206	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	Alors Trip est votre nom et les drogues sont votre jeu ?	}
+{	206	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1 and G.Trip_Guns == 3	}{	}{	}{	}{	}{	}{	}{	}{	Alors Trip est votre nom et les drogues sont votre jeu ?	}
 {	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	208	}{	Intéressant. Je reviendrai vous parler un peu plus tard. 	}{	Intéressant. Je reviendrai vous parler un peu plus tard. 	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -213,7 +213,7 @@
 {	213	}{	Vous avez peur du tueur en série ?	}{	Vous avez peur du tueur en série ?	}{	231	}{	G.Know_Murder == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez peur du tueur en série ?	}
 {	214	}{	Je vois. J'aimerais vous acheter quelque chose.	}{	Je vois. J'aimerais vous acheter quelque chose.	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien d'or en échange de vos biens ?	}
 {	215	}{	Ah. Alors, quel est votre nom ?	}{	Ah. Alors, quel est votre nom ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je sais. Quel est ton véritable nom, Revendeur de Mort ?	}
-{	216	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	Alors Trip est votre nom et les drogues sont votre jeu ?	}
+{	216	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1 and G.Trip_Guns == 3	}{	}{	}{	}{	}{	}{	}{	}{	Alors Trip est votre nom et les drogues sont votre jeu ?	}
 {	217	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	218	}{	Je dois partir.	}{	Je dois partir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -223,7 +223,7 @@
 {	223	}{	Ca vous fait peur ?	}{	Ca vous fait peur ?	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	224	}{	Ce n'est vraiment pas moi. Si je faisais ce genre de truc, je m'en rappellerai.	}{	Ce n'est vraiment pas moi. Si je faisais ce genre de truc, je m'en rappellerai.	}{	81	}{	G.Trip_Guns == 3	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	}
 {	225	}{	Peu importe... Je ne vous ai jamais demandé, quel est votre nom ?	}{	Peu importe... Je ne vous ai jamais demandé, quel est votre nom ?	}{	181	}{	G.Trip_Name == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quel est votre vrai nom, Revendeur de Mort ?	}
-{	226	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	Alors Trip est votre nom et les drogues sont votre jeu ?	}
+{	226	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1 and G.Trip_Guns == 3	}{	}{	}{	}{	}{	}{	}{	}{	Alors Trip est votre nom et les drogues sont votre jeu ?	}
 {	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	228	}{	Merci du renseignement.	}{	Merci du renseignement.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce Trip m'a appris bien des choses.	}
 {	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -233,7 +233,7 @@
 {	233	}{	Vous avez entendu quelque chose de nouveau à son sujet ?	}{	Vous avez entendu quelque chose de nouveau à ce sujet ?	}{	251	}{	G.Story_State >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Les voix vous en ont-elles appris davantage sur le tueur drapé dans l'ombre ?	}
 {	234	}{	Eh bien, ne prenez pas de risque inconsidéré. Je peux voir vos armes. 	}{	Eh bien, ne prenez pas de risque inconsidéré, Trip. Je peux voir vos armes. 	}{	0	}{	G.Trip_Guns == 3	}{	G.Trip_Trust = G.Trip_Trust + 1; npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Cachez-vous dans vos ténèbres, Bad Trip. Bien. Et ces baguettes magiques ?	}
 {	235	}{	Eh bien, ne prenez pas de risque inconsidéré. Que vendez-vous aujourd'hui ?	}{	Eh bien, ne prenez pas de risque inconsidéré, Trip. Que vendez-vous aujourd'hui ?	}{	311	}{	G.Trip_Guns < 3	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Prudence, Marchand de Mort. Et maintenant, échangeons plus que des histoires. . .	}
-{	236	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1	}{	}{	}{	}{	}{	}{	}{	}{	Alors Trip est votre nom et les drogues sont votre jeu ?	}
+{	236	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	Alors, ils vous appellent Trip. Faites-vous des drogues ?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1 and G.Trip_Guns == 3	}{	}{	}{	}{	}{	}{	}{	}{	Alors Trip est votre nom et les drogues sont votre jeu ?	}
 {	237	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	238	}{	Je vois. Au revoir.	}{	Je vois. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -289,7 +289,7 @@
 {	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	290	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	291	}{	Joli pantalon, mec... ah.	}{	Joli pantalon, mec... ah.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	292	}{	Mieux vaut enlever le vôtre lorsque vous utilisez l'une des pilules.	}{	Mieux vaut enlever le vôtre lorsque vous utilisez l'une des pilules.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Rien de comparable à ce qui se dressera dans le tien.	}
+{	292	}{	Mieux vaut enlever le vôtre lorsque vous utilisez les pilules.	}{	Mieux vaut enlever le vôtre lorsque vous utilisez les pilules.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0, G.Trip_Drugs)	}{	}{	}{	}{	}{	}{	}{	Rien de comparable à ce qui se dressera dans le tien.	}
 {	293	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	294	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	295	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

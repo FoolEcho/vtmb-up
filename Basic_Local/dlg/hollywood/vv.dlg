@@ -1,4 +1,4 @@
-{	1	}{	[Provocante]Oh, regardez-moi ce qui arrive. Je ne vous imagine pas vous amuser beaucoup au Vesuvius. . . Etant ce que vous êtes. J'aurais peut-être plus de chance avec vous. . .	}{	[Provocante]Oh, regardez-moi ce qui arrive. Je ne vous imagine pas vous amuser beaucoup au Vesuvius. . . Etant ce que vous êtes. J'aurais peut-être plus de chance avec vous. . .	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	Whisper("Ambiguous"); G.Velvet_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	1	}{	[Provocante]Oh, regardez-moi ce qui arrive. Je ne vous imagine pas vous amuser beaucoup au Vesuvius. . . Etant ce que vous êtes. J'aurais peut-être plus de chance avec vous. . .	}{	[Provocante]Oh, regardez-moi ce qui arrive. Je ne vous imagine pas vous amuser beaucoup au Vesuvius. . . Etant ce que vous êtes. J'aurais peut-être plus de chance avec vous. . .	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	Whisper("Ambiguous")	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	Pourquoi on n'irait pas dans un endroit plus tranquille ?	}{	Pourquoi on n'irait pas dans un endroit plus tranquille ?	}{	21	}{	Seduction 5	}{	G.Velvet_Like = G.Velvet_Like +1	}{	}{	}{	}{	}{	}{	}{	Sécrétez vos secrets en secret. . .	}
 {	3	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je sens presque votre texture. De quoi s'agit-il ?	}
 {	4	}{	Comment ça ?	}{	Comment ça ?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	HA HA HA. . . La séduction ? Vous ne devriez même pas essayer. . .	}
@@ -168,7 +168,7 @@
 {	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	171	}{	Je suis Velvet. . .	}{	Je suis Velvet. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	171	}{	Je suis Velvet. . .	}{	Je suis Velvet. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Know = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	172	}{	(Auto-Link)	}{	(Auto-Link)	}{	181	}{	G.Velvet_Like > 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	173	}{	(Auto-Link)	}{	(Auto-Link)	}{	191	}{	G.Velvet_Like < 4 and G.Velvet_Like > -1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	174	}{	(Auto-Link)	}{	(Auto-Link)	}{	201	}{	G.Velvet_Like < 0	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -672,8 +672,8 @@
 {	672	}{	Hatter est mort. . .	}{	Hatter est mort. . .	}{	701	}{	IsDead("DHatter")	}{	}{	}{	}{	}{	}{	}{	}{	La tête du Hatter est tombée à terre.	}
 {	673	}{	J'ai appris le nom de sa source.	}{	J'ai appris le nom de sa source.	}{	721	}{	G.David_Julius == 1 and G.Velvet_Quest < 4	}{	}{	}{	}{	}{	}{	}{	}{	Je connais le nom du bavard de Hatter. . .	}
 {	674	}{	Ouais, Hatter n'a rien voulu dire. Je crois que nous sommes fâchés.	}{	Ouais, Hatter n'a rien voulu dire. Je crois que nous sommes fâchés.	}{	761	}{	G.David_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Hatter va se taire. Parfois, je fais des plaisanteries et personne ne rit.	}
-{	675	}{	Je reviens.	}{	Je reviens.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je m'en vais.	}
-{	676	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	675	}{	Alors, vous n'avez pas dit quelque chose à propos de me donner un show privé ?	}{	Alors, vous n'avez pas dit quelque chose à propos de me donner un show privé ?	}{	911	}{	G.Velvet_Dance == 1 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ma Belle, ne voulais-tu pas faire battre mon coeur à nouveau ?	}
+{	676	}{	Je reviens.	}{	Je reviens.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je m'en vais.	}
 {	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	678	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	679	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -682,8 +682,8 @@
 {	682	}{	Hatter est mort. . .	}{	Hatter est mort. . .	}{	701	}{	IsDead("DHatter")	}{	}{	}{	}{	}{	}{	}{	}{	La tête du Hatter est tombée à terre.	}
 {	683	}{	J'ai appris le nom de sa source.	}{	J'ai appris le nom de sa source.	}{	721	}{	G.David_Julius == 1 and G.Velvet_Quest < 4	}{	}{	}{	}{	}{	}{	}{	}{	Je connais le nom du bavard de Hatter. . .	}
 {	684	}{	Ouais, Hatter n'a rien voulu dire. Je crois que nous sommes fâchés.	}{	Ouais, Hatter n'a rien voulu dire. Je crois que nous sommes fâchés.	}{	761	}{	G.David_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Hatter va se taire. Parfois, je fais des plaisanteries et personne ne rit.	}
-{	685	}{	Je reviens.	}{	Je reviens.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je m'en vais.	}
-{	686	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	685	}{	Désolé, maos vous n'avez pas dit quelque chose à propos de me donner un show privé ?	}{	Désolé, mais vous n'avez pas dit quelque chose à propos de me donner un show privé ?	}{	911	}{	G.Velvet_Dance == 1 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mes excuses mais ne voulais-tu pas faire battre mon coeur à nouveau ?	}
+{	686	}{	Je reviens.	}{	Je reviens.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je m'en vais.	}
 {	687	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	688	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	689	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -692,8 +692,8 @@
 {	692	}{	Hatter est mort. . .	}{	Hatter est mort. . .	}{	701	}{	IsDead("DHatter")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	693	}{	J'ai appris le nom de sa source.	}{	J'ai appris le nom de sa source.	}{	721	}{	G.David_Julius == 1 and G.Velvet_Quest < 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	694	}{	Ouais, Hatter n'a rien voulu dire. Je crois que nous sommes fâchés.	}{	Ouais, Hatter n'a rien voulu dire. Je crois que nous sommes fâchés.	}{	761	}{	G.David_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	695	}{	Je reviens.	}{	Je reviens.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	696	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	695	}{	Merci, et vous n'avez pas dit quelque chose à propos de me donner un show privé ?	}{	Merci, et vous n'avez pas dit quelque chose à propos de me donner un show privé ?	}{	911	}{	G.Velvet_Dance == 1 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Bien, et ne voulais-tu pas faire battre mon coeur à nouveau ?	}
+{	696	}{	Je reviens.	}{	Je reviens.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je m'en vais.	}
 {	697	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	698	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	699	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

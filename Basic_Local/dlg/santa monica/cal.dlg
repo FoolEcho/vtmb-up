@@ -3,7 +3,7 @@
 {	3	}{	Je ne bois pas. . . d'alcool.	}{	Je ne bois pas. . . d'alcool.	}{	11	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	4	}{	Je cherche les filles de Janus.	}{	Je cherche les filles de Janus.	}{	250	}{	IsClan(pc,"Malkavian") and G.Mercurio_Quest == 2 and G.Cal_Permission == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	5	}{	Je cherche Therese. Vous savez où elle est ?	}{	Je cherche Therese. Où est-elle ?	}{	81	}{	G.Mercurio_Quest == 2 and G.Cal_Permission == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	6	}{	Je cherche un type appelé Knox - costaud, les cheveux mi-longs. . .	}{	Je cherche un type appelé Knox - costaud, les cheveux mi-longs. . .	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Mercurio_Quest >= 2 and G.Cal_Knox == 0	}{	G.Cal_Knox = 1	}{	}{	}{	}{	}{	}{	}{	Puis-je trouver le fort Knox derrière vos portes ?	}
+{	6	}{	Je cherche un type appelé Knox - carrure maigre, comportement étourdi. . .	}{	Je cherche un type appelé Knox - carrure maigre, comportement étourdi. . .	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Mercurio_Quest >= 2 and G.Cal_Knox == 0	}{	G.Cal_Knox = 1	}{	}{	}{	}{	}{	}{	}{	Puis-je trouver le fort Knox derrière vos portes ?	}
 {	7	}{	Je ne bois pas ce genre de libation. Adieu.	}{	Je ne bois pas ce genre de libation. Adieu.	}{	11	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -23,7 +23,7 @@
 {	23	}{	Je ne bois pas. . . d'alcool.	}{	Je ne bois pas. . . d'alcool.	}{	31	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	24	}{	Je cherche les filles de Janus.	}{	Je cherche les filles de Janus.	}{	250	}{	IsClan(pc,"Malkavian") and G.Mercurio_Quest == 2 and G.Cal_Permission == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	25	}{	Je cherche Therese. Où est-elle ?	}{	Je cherche Therese. Où est-elle ?	}{	81	}{	G.Mercurio_Quest == 2 and G.Cal_Permission == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	26	}{	Je cherche un type appelé Knox - costaud, les cheveux mi-longs. . .	}{	Je cherche un type appelé Knox - costaud, les cheveux mi-longs. . .	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Mercurio_Quest >= 2 and G.Cal_Knox == 0	}{	G.Cal_Knox = 1	}{	}{	}{	}{	}{	}{	}{	Puis-je trouver le fort Knox derrière vos portes ?	}
+{	26	}{	Je cherche un type appelé Knox - carrure maigre, comportement étourdi. . .	}{	Je cherche un type appelé Knox - carrure maigre, comportement étourdi. . .	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Mercurio_Quest >= 2 and G.Cal_Knox == 0	}{	G.Cal_Knox = 1	}{	}{	}{	}{	}{	}{	}{	Puis-je trouver le fort Knox derrière vos portes ?	}
 {	27	}{	Je ne bois pas ce genre de libation. Adieu.	}{	Je ne bois pas ce genre de libation. Adieu.	}{	0	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -130,7 +130,7 @@
 {	130	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	131	}{	[surprise]Qu'est-ce que. . . qu'est-ce que vous avez au visage ? On tourne un film, ou quoi ? Bon sang, enlevez votre masque, vous faites peur aux clients. 	}{	[surprise]Qu'est-ce que. . . qu'est-ce que vous avez au visage ? On tourne un film, ou quoi ? Bon sang, enlevez votre masque, vous faites peur aux clients. 	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	132	}{	Je regrette, mais ce n'est pas possible pour l'instant. Vous pouvez me dire où est Therese ?	}{	Je regrette, mais ce n'est pas possible pour l'instant. Vous pouvez me dire où est Therese ?	}{	81	}{	G.Mercurio_Quest == 2 and G.Cal_Permission == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	133	}{	Je cherche un type appelé Knox - costaud, les cheveux mi-longs. . .	}{	Je cherche un type appelé Knox - costaud, les cheveux mi-longs. . .	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Mercurio_Quest >= 2 and G.Cal_Knox == 0	}{	G.Cal_Knox = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	133	}{	Je cherche un type appelé Knox - carrure maigre, comportement étourdi. . .	}{	Je cherche un type appelé Knox - carrure maigre, comportement étourdi. . .	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Mercurio_Quest >= 2 and G.Cal_Knox == 0	}{	G.Cal_Knox = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	134	}{	Alors je vais disparaître un moment. Au revoir.	}{	Alors je vais disparaître un moment. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	135	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	136	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -164,7 +164,7 @@
 {	164	}{	Je cherche les filles de Janus.	}{	Je cherche les filles de Janus.	}{	250	}{	IsClan(pc,"Malkavian") and G.Mercurio_Quest == 2 and G.Cal_Permission == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	165	}{	Que savez-vous des filles du dieu à deux têtes ?	}{	Que savez-vous des filles du dieu à deux têtes ?	}{	291	}{	G.Cal_Permission == 1 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	166	}{	Que savez-vous sur Therese et Jeanette ?	}{	Que savez-vous sur Therese et Jeanette ?	}{	181	}{	G.Cal_Permission == 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	167	}{	Je cherche un type appelé Knox - costaud, les cheveux mi-longs. . .	}{	Je cherche un type appelé Knox - costaud, les cheveux mi-longs. . .	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Mercurio_Quest >= 2 and G.Cal_Knox == 0	}{	G.Cal_Knox = 1	}{	}{	}{	}{	}{	}{	}{	Puis-je trouver le fort Knox derrière vos portes ?	}
+{	167	}{	Je cherche un type appelé Knox - carrure maigre, comportement étourdi. . .	}{	Je cherche un type appelé Knox - carrure maigre, comportement étourdi. . .	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Mercurio_Quest >= 2 and G.Cal_Knox == 0	}{	G.Cal_Knox = 1	}{	}{	}{	}{	}{	}{	}{	Puis-je trouver le fort Knox derrière vos portes ?	}
 {	168	}{	J'ai juste besoin de quelqu'un à qui raconter mes malheurs.	}{	J'ai juste besoin de quelqu'un à qui raconter mes malheurs.	}{	191	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	169	}{	Non. Au revoir.	}{	Non. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Etre ailleurs.	}
 {	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

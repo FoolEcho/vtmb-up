@@ -201,15 +201,15 @@
 {	201	}{	Ce sont des mécontents. Ils se font mousser en agitant la lie autour d'eux, comme si c'était difficile. Rien n'apparaît plus rapidement que le mécontentement, et c'est la seule chose qui intéresse les Brujahs. La jalousie et le mépris.	}{	Ce sont des mécontents. Ils se font mousser en agitant la lie autour d'eux, comme si c'était difficile. Rien n'apparaît plus rapidement que le mécontentement, et c'est la seule chose qui intéresse les Brujahs. La jalousie et le mépris.	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	202	}{	Votre tête sera-t-elle jalouse quand je collerais mon pied dans votre derrière méprisable ?	}{	Votre tête sera-t-elle jalouse quand je collerais mon pied dans votre derrière méprisable ?	}{	211	}{	IsClan(pc,"Brujah")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	203	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
-{	204	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
-{	205	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	204	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	451	}{	G.Bertram_Sects == 0	}{	G.Bertram_Sects = 1	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	205	}{	Je voulais en savoir plus à propos des sectes.	}{	Je voulais en savoir plus à propos des sectes.	}{	191	}{	G.Bertram_Sects == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
 {	206	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	207	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	210	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
 {	211	}{	Vous voyez ? Vous sortez à peine de l'Etreinte, aucune réelle attache clanique, et vous vous sentez déjà obligé de rugir et de menacer parce que je dis ce que je pense. Super, votre liberté de pensée. [moqueur] Ouais, Anarchie, c'est ça ? Pff, pauvre mec.	}{	Vous voyez ? Vous sortez à peine de l'Etreinte, aucune réelle attache clanique, et vous vous sentez déjà obligée de rugir et de menacer parce que je dis ce que je pense. Super, votre liberté de pensée. [moqueur] Ouais, Anarchie, c'est ça ? Pff, pauvre fille.	}{	#	}{	npc.SetDisposition("anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	212	}{	Restons polis. Dites-moi. . .	}{	Restons polis. Dites-moi. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	212	}{	Restons polis. Dites-moi. . .	}{	Restons polis. Dites-moi. . .	}{	161	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	213	}{	Vous allez payer pour ça, ver !	}{	Vous allez payer pour ça, ver !	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -221,8 +221,8 @@
 {	221	}{	Ils se prennent pour des loups solitaires, des vagabonds, courant dans la campagne et hurlant à la lune. Pff, c'est du flan. Les Gangrels peuvent marcher sur deux pattes, mais ils préfèrent agir comme ça.	}{	Ils se prennent pour des loups solitaires, des vagabonds, courant dans la campagne et hurlant à la lune. Pff, c'est du flan. Les Gangrels peuvent marcher sur deux pattes, mais ils préfèrent agir comme ça.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	222	}{	Avez-vous choisi votre apparence ? C'est la même chose.	}{	Avez-vous choisi votre apparence ? C'est la même chose.	}{	231	}{	IsClan(pc,"Gangrel")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	223	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
-{	224	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
-{	225	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	224	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	451	}{	G.Bertram_Sects == 0	}{	G.Bertram_Sects = 1	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	225	}{	Je voulais en savoir plus à propos des sectes.	}{	Je voulais en savoir plus à propos des sectes.	}{	191	}{	G.Bertram_Sects == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
 {	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -240,10 +240,10 @@
 {	240	}{	J'en ai marre de vos conneries. A plus.	}{	J'en ai marre de vos conneries. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	241	}{	Les Malkaviens sont intéressants. Ils ont quelque chose. Apprendre à faire le tri entre leur sagesse et leurs délires peut être fatigant, et tous ne méritent pas qu'on les écoute, mais ils sont divertissants, si vous voulez mon avis.	}{	Les Malkaviens sont intéressants. Ils ont quelque chose. Apprendre à faire le tri entre leur sagesse et leurs délires peut être fatigant, et tous ne méritent pas qu'on les écoute, mais ils sont divertissants, si vous voulez mon avis.	}{	#	}{	npc.SetDisposition("sad",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	242	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
-{	243	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
-{	244	}{	Comme Therese Voerman ? Elle est gentille ?	}{	Therese Voerman est-elle vraiment gentille ?	}{	41	}{	G.Bertram_Feud == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	245	}{	Amusante comme la sombre fille de Janus ?	}{	Amusante comme la sombre fille de Janus ?	}{	861	}{	G.Bertram_Feud == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	243	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	451	}{	G.Bertram_Sects == 0	}{	G.Bertram_Sects = 1	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	244	}{	Je voulais en savoir plus à propos des sectes.	}{	Je voulais en savoir plus à propos des sectes.	}{	191	}{	G.Bertram_Sects == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	245	}{	Comme Therese Voerman ? Elle est gentille ?	}{	Therese Voerman est-elle vraiment gentille ?	}{	41	}{	G.Bertram_Feud == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	246	}{	Amusante comme la sombre fille de Janus ?	}{	Amusante comme la sombre fille de Janus ?	}{	861	}{	G.Bertram_Feud == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -252,8 +252,8 @@
 {	252	}{	Quelle chance.	}{	Quelle chance.	}{	261	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	253	}{	Vous avez de la chance.	}{	Vous avez de la chance.	}{	261	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	Le destin est doux pour votre visage endiablé.	}
 {	254	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
-{	255	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
-{	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	255	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	451	}{	G.Bertram_Sects == 0	}{	G.Bertram_Sects = 1	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	256	}{	Je voulais en savoir plus à propos des sectes.	}{	Je voulais en savoir plus à propos des sectes.	}{	191	}{	G.Bertram_Sects == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
 {	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -262,8 +262,8 @@
 {	262	}{	Alors, vous pourriez aider un frère qui a des ennuis ?	}{	Alors, vous pourriez aider une fille qui a des ennuis ?	}{	501	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 0	}{	G.Bertram_M = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	263	}{	Les Nosferatus font-ils partie de la Camarilla ?	}{	Les Nosferatus font-ils partie de la Camarilla ?	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les vers rampants sont-ils de la famille du bouffon ?	}
 {	264	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
-{	265	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
-{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	451	}{	G.Bertram_Sects == 0	}{	G.Bertram_Sects = 1	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	266	}{	Je voulais en savoir plus à propos des sectes.	}{	Je voulais en savoir plus à propos des sectes.	}{	191	}{	G.Bertram_Sects == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
 {	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -273,16 +273,16 @@
 {	273	}{	Ce n'était pas une déclaration très enthousiaste.	}{	Ce n'était pas une déclaration très enthousiaste.	}{	371	}{	pc.charisma > 2 or pc.perception > 2 or pc.intelligence > 2 or pc.manipulation > 2	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles paraissent trop grandes pour votre bouche.	}
 {	274	}{	Vous les aimez ?	}{	Vous les aimez ?	}{	371	}{	pc.charisma < 3 and pc.perception < 3 and pc.intelligence < 3 and pc.manipulation < 3	}{	}{	}{	}{	}{	}{	}{	}{	Aimez-vous la famille du bouffon ?	}
 {	275	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
-{	276	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
-{	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	276	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	451	}{	G.Bertram_Sects == 0	}{	G.Bertram_Sects = 1	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	277	}{	Je voulais en savoir plus à propos des sectes.	}{	Je voulais en savoir plus à propos des sectes.	}{	191	}{	G.Bertram_Sects == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
 {	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	280	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
 {	281	}{	Pff. Nous ne fréquentons pas beaucoup ces jolis suceurs de sang, mais je les ai vus manipuler des gens comme des marionnettes. Admirable. Si seulement ils voulaient se bouger un peu et utiliser leur talent pour autre chose que satisfaire leur ego. . .	}{	Pff. Nous ne fréquentons pas beaucoup ces jolis suceurs de sang, mais je les ai vus manipuler des gens comme des marionnettes. Admirable. Si seulement ils voulaient se bouger un peu et utiliser leur talent pour autre chose que satisfaire leur ego. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	282	}{	Observation judicieuse, faite depuis l'abri d'un trou à rat.	}{	Observation judicieuse, faite depuis l'abri d'un trou à rat.	}{	291	}{	IsClan(pc,"Toreador")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	283	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
-{	284	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
-{	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	284	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	451	}{	G.Bertram_Sects == 0	}{	G.Bertram_Sects = 1	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	285	}{	Je voulais en savoir plus à propos des sectes.	}{	Je voulais en savoir plus à propos des sectes.	}{	191	}{	G.Bertram_Sects == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
 {	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -301,8 +301,8 @@
 {	301	}{	[méprisant]Des mages. Je n'ai aucune raison de leur faire confiance. Ils sont inquiétants, et je pense que ça leur plaît. Mais à vrai dire, je n'entends pas souvent parler des Tremeres. Il y en a quelques uns à LA, mais dans l'ensemble ils ne sont pas très nombreux.	}{	[méprisant]Des mages. Je n'ai aucune raison de leur faire confiance. Ils sont inquiétants, et je pense que ça leur plaît. Mais à vrai dire, je n'entends pas souvent parler des Tremeres. Il y en a quelques uns à LA, mais dans l'ensemble ils ne sont pas très nombreux.	}{	#	}{	npc.SetDisposition("anger",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	302	}{	Alors ne me faites pas confiance non plus.	}{	Alors ne me faites pas confiance non plus.	}{	311	}{	IsClan(pc,"Tremere")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	303	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
-{	304	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
-{	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	304	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	451	}{	G.Bertram_Sects == 0	}{	G.Bertram_Sects = 1	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	305	}{	Je voulais en savoir plus à propos des sectes.	}{	Je voulais en savoir plus à propos des sectes.	}{	191	}{	G.Bertram_Sects == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
 {	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -310,8 +310,8 @@
 {	310	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
 {	311	}{	Eh bien, à ce qu'on m'a dit, vous faites partie d'une fin de race.	}{	Eh bien, à ce qu'on m'a dit, vous faites partie d'une fin de race.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	312	}{	C'est bon à savoir. Je voulais vous poser des questions sur un autre clan. . .	}{	C'est bon à savoir. Je voulais vous poser des questions sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	313	}{	Pourriez-vous me parler des sectes ?	}{	Pourriez-vous me parler des sectes ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	314	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	313	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	451	}{	G.Bertram_Sects == 0	}{	G.Bertram_Sects = 1	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	314	}{	Je voulais en savoir plus à propos des sectes.	}{	Je voulais en savoir plus à propos des sectes.	}{	191	}{	G.Bertram_Sects == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
 {	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -321,8 +321,8 @@
 {	321	}{	On leur casse beaucoup de sucre sur le dos. Tout le monde aime accabler les gens au pouvoir, mais quand il faut faire quelque chose, les Ventrues savent agir. Ils supportent la pression.	}{	On leur casse beaucoup de sucre sur le dos. Tout le monde aime accabler les gens au pouvoir, mais quand il faut faire quelque chose, les Ventrues savent agir. Ils supportent la pression.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	322	}{	Vous dites ça juste parce que je suis Ventrue ?	}{	Vous dites ça juste parce que je suis Ventrue ?	}{	331	}{	IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	323	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
-{	324	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
-{	325	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	324	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	451	}{	G.Bertram_Sects == 0	}{	G.Bertram_Sects = 1	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	325	}{	Je voulais en savoir plus à propos des sectes.	}{	Je voulais en savoir plus à propos des sectes.	}{	191	}{	G.Bertram_Sects == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
 {	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -330,8 +330,8 @@
 {	330	}{	A plus.	}{	Merci pour votre temps. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
 {	331	}{	C'est ça. . . Non, je parle des Ventrues puissants. Vous êtes encore trop jeune.	}{	C'est ça. . . Non, je parle des Ventrues puissants. Vous êtes encore trop jeune.	}{	#	}{	npc.SetDisposition("joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	332	}{	Tout vient à point. . . Je voulais vous interroger sur un autre clan. . .	}{	Tout vient à point. . . Je voulais vous interroger sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	333	}{	Tout à fait. Je voulais aussi que vous me parliez des sectes.	}{	Tout à fait. Je voulais aussi que vous me parliez des sectes.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	334	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	333	}{	Tout à fait. Je voulais aussi que vous me parliez des sectes.	}{	Tout à fait. Je voulais aussi que vous me parliez des sectes.	}{	451	}{	G.Bertram_Sects == 0	}{	G.Bertram_Sects = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	334	}{	Je voulais en savoir plus à propos des sectes.	}{	Je voulais en savoir plus à propos des sectes.	}{	191	}{	G.Bertram_Sects == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
 {	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -340,9 +340,9 @@
 {	340	}{	Paix.	}{	Paix.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	341	}{	Les Anarchs. . . Je respecte ce qu'ils font, la liberté avant tout, tout ça. Mais ils se voilent la face. Partout où l'on peut avoir le moindre pouvoir, les gens sont prêts à s'entretuer. Vous pensez que c'est une création de la Camarilla ?	}{	Les Anarchs. . . Je respecte ce qu'ils font, la liberté avant tout, tout ça. Mais ils se voilent la face. Partout où l'on peut avoir le moindre pouvoir, les gens sont prêts à s'entretuer. Vous pensez que c'est une création de la Camarilla ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	342	}{	Que savez-vous sur Nines Rodriguez ?	}{	Que savez-vous sur Nines Rodriguez ?	}{	961	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que savez-vous sur le prince des rues ?	}
-{	343	}{	Je comprends. J'aimerais vous interroger sur les clans.	}{	Je vois ce que vous voulez dire. J'aimerais vous interroger sur les clans.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	343	}{	Je comprends. J'aimerais vous interroger sur les clans.	}{	Je vois ce que vous voulez dire. J'aimerais vous interroger sur les clans.	}{	171	}{	G.Bertram_Clans == 1	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
 {	344	}{	Je vois ce que voulez dire. Et les autres sectes ?	}{	Je comprends. Et les autres sectes ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
-{	345	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	345	}{	Je voulais en savoir plus à propos des clans.	}{	Je voulais en savoir plus à propos des clans.	}{	441	}{	G.Bertram_Clans == 0	}{	G.Bertram_Clans = 1	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
 {	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -359,9 +359,9 @@
 {	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	361	}{	A mon avis, le Sabbat n'a aucun sens. Ils se moquent complètement de la Mascarade, et encore plus d'eux-mêmes. Du genre : 'Eh, on va répandre l'Enfer sur Terre pour pouvoir se sentir coupable et, oups, je suis mort. Ben pourquoi ?'	}{	A mon avis, le Sabbat n'a aucun sens. Ils se moquent complètement de la Mascarade, et encore plus d'eux-mêmes. Du genre : 'Eh, on va répandre l'Enfer sur Terre pour pouvoir se sentir coupable et, oups, je suis mort. Ben pourquoi ?'	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	362	}{	Je voulais vous poser des questions sur un clan. . .	}{	Je voulais vous poser des questions sur un clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	362	}{	Je voulais vous poser des questions sur un clan. . .	}{	Je voulais vous poser des questions sur un clan. . .	}{	171	}{	G.Bertram_Clans == 1	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
 {	363	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
-{	364	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	364	}{	J'avais des questions au sujet des clans.	}{	J'avais des questions au sujet des clans.	}{	441	}{	G.Bertram_Clans == 0	}{	G.Bertram_Clans = 1	}{	}{	}{	}{	}{	}{	}{	Fais briller la lumière sur les clans.	}
 {	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -374,9 +374,9 @@
 {	374	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	378	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
-{	379	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	377	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	378	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	451	}{	G.Bertram_Sects == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	379	}{	Je voulais en savoir plus à propos des sectes.	}{	Je voulais en savoir plus à propos des sectes.	}{	191	}{	G.Bertram_Sects == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
 {	380	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
 {	381	}{	Les caitiff sont un genre de vampires de bas étage qui ne sait rien sur la société des vampires, ni sur leur clan. Des vampires errants. Ce que vous auriez eu toutes les chances de devenir sans l'intervention de LaCroix.	}{	Les caitiff sont un genre de vampires de bas étage qui ne sait rien sur la société des vampires, ni sur leur clan. Des vampires errants. Ce que vous auriez eu toutes les chances de devenir sans l'intervention de LaCroix.	}{	#	}{	}{	G.Bertram_Caitiff = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	382	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -489,9 +489,9 @@
 {	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	490	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	491	}{	Un peu. Ils ont envahi la Californie il y a quelques années. Ils ont flanqué une dérouillée aux Anarchs. Heureusement pour eux, la Camarilla est arrivée à ce moment là. Avec un peu de chance, nous allons nous organiser et repousser les Kuei-Jin.	}{	Un peu. Ils ont envahi la Californie il y a quelques années. Ils ont flanqué une dérouillée aux Anarchs. Heureusement pour eux, la Camarilla est arrivée à ce moment là. Avec un peu de chance, nous allons nous organiser et repousser les Kuei-Jin.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	492	}{	Je comprends. J'aimerais vous interroger sur les clans.	}{	Je vois ce que vous voulez dire. J'aimerais vous interroger sur les clans.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	492	}{	Je comprends. J'aimerais vous interroger sur les clans.	}{	Je vois ce que vous voulez dire. J'aimerais vous interroger sur les clans.	}{	171	}{	G.Bertram_Clans == 1	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
 {	493	}{	OK. Et les autres sectes ?	}{	OK. Et les autres sectes ?	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
-{	494	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	494	}{	J'avais des questions au sujet des clans.	}{	J'avais des questions au sujet des clans.	}{	441	}{	G.Bertram_Clans == 0	}{	G.Bertram_Clans = 1	}{	}{	}{	}{	}{	}{	}{	Fais briller la lumière sur les clans.	}
 {	495	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -959,7 +959,7 @@
 {	959	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	960	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	961	}{	A ce qu'on m'a dit, il est plutôt agréable, et c'est un problème. Nines Rodriguez est un type qu'on veut avoir dans son camp, et les Anarchs sont de plus en plus nombreux à se rallier à lui.	}{	A ce qu'on m'a dit, il est plutôt agréable, et c'est un problème. Nines Rodriguez est un type qu'on veut avoir dans son camp, et les Anarchs sont de plus en plus nombreux à se rallier à lui.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	962	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	494	}{	J'avais des questions au sujet des clans.	}{	J'avais des questions au sujet des clans.	}{	441	}{	G.Bertram_Clans == 0	}{	G.Bertram_Clans = 1	}{	}{	}{	}{	}{	}{	}{	Fais briller la lumière sur les clans.	}
 {	963	}{	Je peux vous demander de me parler de quelqu'un d'autre ?	}{	Je peux vous demander de me parler de quelqu'un d'autre ?	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vois quelqu'un dans mon esprit. . .	}
 {	964	}{	Je vois ce que vous voulez dire. J'aimerais vous interroger sur les clans.	}{	Je vois ce que vous voulez dire. J'aimerais vous interroger sur les clans.	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
 {	965	}{	Je vois. Et les autres sectes. . .	}{	Je vois. Et les autres sectes. . .	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}

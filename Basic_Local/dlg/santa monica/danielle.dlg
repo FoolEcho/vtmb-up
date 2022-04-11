@@ -79,7 +79,7 @@
 {	79	}{	Vous voulez jouer avec moi ?	}{	Vous voulez jouer avec moi ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	80	}{	Comme je disais, oui.	}{	Comme je disais, oui.	}{	0	}{	}{	G.Seductive_Feed = 1; pc.SeductiveFeed(npc)	}{	}{	}{	}{	}{	}{	}{	Miam, jouer veut dire goûter.	}
 {	81	}{	Ooooh. Intéressant. Quoi, tu te prends pour un philosophe de comptoirs ? A moins que ce soit ta technique de drague ?	}{	Ooooh. Intéressant. Quoi, tu te prends pour un philosophe de comptoirs ? A moins que ce soit ta façon de parler entre copines ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	82	}{	La banque de sang offre une autre illusion, ma beauté. . .	}{	La banque de sang offre une autre illusion, ma beauté. . .	}{	121	}{	G.Vandal_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	La "banque de sang" offre une autre illusion, ma beauté. . .	}{	La "banque de sang" offre une autre illusion, ma beauté. . .	}{	121	}{	G.Vandal_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	83	}{	Je vais te cueillir et te plonger dans un délicieux délire d'ombre. . .	}{	Quand je parle avec mes copines, c'est mes lèvres dans leur cou, ma belle. . .	}{	91	}{	Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	84	}{	Réflexion, séduction. . . il y a une différence, ma chère ?	}{	Réflexion, séduction. . . il y a une différence, ma chère ?	}{	51	}{	Seduction -3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	85	}{	J'essaye juste de deviner ta direction. Que fais-tu ici ?	}{	J'essaye juste de deviner ta direction. Que fais-tu ici ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -109,7 +109,7 @@
 {	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	111	}{	Euh, tu veux bien me laisser tranquille ? Maniaque. . .	}{	Euh, tu veux bien me laisser tranquille ? Maniaque. . .	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	112	}{	Attends ! La banque du sang offre une autre illusion, ma beauté. . .	}{	Attends ! La banque du sang offre une autre illusion, ma beauté. . .	}{	121	}{	G.Vandal_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Attends ! La "banque du sang" offre une autre illusion, ma beauté. . .	}{	Attends ! La "banque du sang" offre une autre illusion, ma beauté. . .	}{	121	}{	G.Vandal_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	113	}{	Jusqu'à notre prochaine danse au seuil de la mort. Adieu. . .	}{	Jusqu'à notre prochaine danse au seuil de la mort. Adieu. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -123,7 +123,7 @@
 {	123	}{	Non, vous allez y aller !	}{	Non, vous allez y aller !	}{	71	}{	Dominate 1 & IsClan(pc,"Ventrue") and pc.humanity >= 3 and G.Patch_Plus == 1	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	}
 {	124	}{	Oh, pardon. Je t'ai confondue avec quelqu'un qui vit dangereusement.	}{	Oh, pardon. Je t'ai confondue avec quelqu'un qui vit dangereusement.	}{	71	}{	Persuasion 3 & pc.humanity < 3	}{	}{	}{	}{	}{	}{	}{	}{	J'ai peut-être mal jugé ta façon d'être. . .	}
 {	125	}{	Non, vous allez y aller !	}{	Non, vous allez y aller !	}{	71	}{	Dominate 1 & IsClan(pc,"Ventrue") and pc.humanity < 3 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	126	}{	Attends ! Tu ne me crois pas ? Tu vas adorer. . .	}{	Attends ! Tu ne me crois pas ? Tu vas adorer. . .	}{	51	}{	Persuasion -3	}{	}{	}{	}{	}{	}{	}{	}{	Crois-moi ! La banque du sang, c'est, euh. . . ça le fait grave ?	}
+{	126	}{	Attends ! Tu ne me crois pas ? Tu vas adorer. . .	}{	Attends ! Tu ne me crois pas ? Tu vas adorer. . .	}{	51	}{	Persuasion -3	}{	}{	}{	}{	}{	}{	}{	}{	Crois-moi ! La "banque du sang", c'est, euh. . . ça le fait grave ?	}
 {	127	}{	De toute façon, on ne te laisserait sans doute pas rentrer.	}{	De toute façon, on ne te laisserait sans doute pas rentrer.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tu n'es pas une VIP, petite séductrice. Adieu.	}
 {	128	}{	Non, vous allez y aller !	}{	Non, vous allez y aller !	}{	71	}{	Thaumaturgy 1 & pc.humanity < 3 and G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	129	}{	Pas effrayant. Aussi étonnant que moi!	}{	Pas effrayant. Aussi étonnant que moi!	}{	71	}{	Presence 1 & pc.humanity < 3 and G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}

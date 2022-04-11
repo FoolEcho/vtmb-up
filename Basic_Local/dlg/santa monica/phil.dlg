@@ -51,7 +51,7 @@
 {	51	}{	Eh bien, je. . . [à lui-même]OK, Phil, du calme. . . Je ne sais pas si vous avez le droit d'être ici. . .	}{	Eh bien, je. . . [à lui-même]OK, Phil, du calme. . . Je ne sais pas si vous avez le droit d'être ici. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	Regardez-moi. J'ai une tête à vous mentir ?	}{	Regardez-moi. J'ai une tête à vous mentir ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'adore faire ce que l'on m'interdit. . .	}
 {	53	}{	Et alors ?	}{	Et alors ?	}{	41	}{	}{	G.Phil_Seduce = 2	}{	}{	}{	}{	}{	}{	}{	Trouvez-vous du nerf, petite méduse. . .	}
-{	54	}{	Mes yeux sont là-haut, mec. . .	}{	Mes yeux sont là-haut, mec. . .	}{	41	}{	not IsClan(pc,"Malkavian")	}{	G.Phil_Seduce = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	54	}{	Arrête de regarder ma bite, mec. . .	}{	Mes yeux sont là-haut, mec. . .	}{	41	}{	not IsClan(pc,"Malkavian")	}{	G.Phil_Seduce = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	55	}{	Vous voulez simplement que je me retourne, c'est ça ?	}{	Vous voulez simplement que je me retourne, c'est ça ?	}{	61	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
