@@ -125,26 +125,18 @@ VendorData
 
 		VendorItem
 		{
-			"Name"			"item_w_remington_m_700"
-			"InternalName"		"item_w_remington_m_700"
-			"AmmoOnly"			"1"
-			"MinStage"			"40"
-		}
-
-		VendorItem // added by wesp
-		{
-			"Name"			"item_w_rem_m_700_bach"
-			"InternalName"		"item_w_rem_m_700_bach"
-			"AmmoOnly"			"1"
-			"MinStage"			"40"
-		}
-
-		VendorItem
-		{
 			"Name"			"item_w_supershotgun"
 			"InternalName"		"item_w_supershotgun"
 			"AmmoOnly"			"0"
 			"MinStage"			"65"
+		}
+
+		VendorItem	// added by wesp
+		{
+			"Name"			"item_w_glock_17c"
+			"InternalName"		"item_w_glock_17c"
+			"AmmoOnly"			"0"
+			"MinVendorState"	"1"
 		}
 		
 		// Ammo ----------
@@ -169,7 +161,7 @@ VendorData
 			"Name"			"item_w_glock_17c"
 			"InternalName"		"item_w_glock_17c"
 			"AmmoOnly"			"1"
-			"MinStage"			"10"
+			"MinStage"			"5"	// changed by wesp
 		}
 
 		VendorItem
@@ -218,6 +210,14 @@ VendorData
 			"InternalName"		"item_w_remington_m_700"
 			"AmmoOnly"			"1"
 			"MinStage"			"40"
+		}
+
+		VendorItem // added by wesp
+		{
+			"Name"			"item_w_rem_m_700_bach"
+			"InternalName"		"item_w_rem_m_700_bach"
+			"AmmoOnly"			"1"
+			"MinStage"			"45"
 		}
 
 		VendorItem
@@ -538,8 +538,8 @@ VendorData
 
 		VendorItem
 		{
-			"Name"			"item_w_mac_10"
-			"InternalName"		"item_w_mac_10"
+			"Name"			"item_w_uzi"	// changed by wesp
+			"InternalName"		"item_w_uzi"	// changed by wesp
 			"AmmoOnly"			"0"
 			"MinVendorState"		"1"
 		}
@@ -549,15 +549,15 @@ VendorData
 			"Name"			"item_w_supershotgun"
 			"InternalName"		"item_w_supershotgun"
 			"AmmoOnly"			"0"
-			"MinStage"			"150"	// changed by wesp
+			"MinStage"			"50"
 		}
 
-		VendorItem	// changed by wesp
+		VendorItem
 		{
-			"Name"			"item_w_uzi"
-			"InternalName"		"item_w_uzi"
+			"Name"			"item_w_deserteagle"
+			"InternalName"		"item_w_deserteagle"
 			"AmmoOnly"			"0"
-			"MinStage"			"45"
+			"MinStage"			"55"
 		}
 
 		VendorItem
@@ -646,7 +646,7 @@ VendorData
 			"Name"			"item_w_uzi"
 			"InternalName"		"item_w_uzi"
 			"AmmoOnly"			"1"
-			"MinStage"			"45"
+			"MinStage"			"10"	// changed by wesp
 		}
 
 		VendorItem
@@ -686,7 +686,7 @@ VendorData
 			"Name"			"item_w_rem_m_700_bach"
 			"InternalName"		"item_w_rem_m_700_bach"
 			"AmmoOnly"			"1"
-			"MinStage"			"40"
+			"MinStage"			"45"
 		}
 
 		VendorItem
@@ -858,7 +858,7 @@ VendorData
 			"Name"			"item_w_rem_m_700_bach"
 			"InternalName"		"item_w_rem_m_700_bach"
 			"AmmoOnly"			"1"
-			"MinStage"			"40"
+			"MinStage"			"45"
 		}
 
 		VendorItem
@@ -982,7 +982,7 @@ VendorData
 			"Name"			"item_w_supershotgun"
 			"InternalName"		"item_w_supershotgun"
 			"AmmoOnly"			"0"
-			"MinStage"			"45"	// changed by wesp
+			"MinStage"			"45"	// changed by wesp from 65
 		}
 
 		// Ammo ----------
@@ -1063,7 +1063,7 @@ VendorData
 			"Name"			"item_w_rem_m_700_bach"
 			"InternalName"		"item_w_rem_m_700_bach"
 			"AmmoOnly"			"1"
-			"MinStage"			"40"
+			"MinStage"			"45"
 		}
 
 		VendorItem
