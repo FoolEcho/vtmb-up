@@ -494,7 +494,7 @@
 {	494	}{	Super. J'aime bien la déco de votre magasin.	}{	Super. J'aime bien la déco de votre magasin.	}{	181	}{	G.Trip_Name == 0 and G.Trip_Flatter == 0	}{	G.Trip_Trust = G.Trip_Trust + 1	}{	}{	}{	}{	}{	}{	}{	Quel est votre vrai nom, Marchand de Mort ?	}
 {	495	}{	Je me demandais si vous aviez entendu parler du tueur en série.	}{	Je me demandais si vous aviez entendu parler du tueur en série.	}{	231	}{	G.Know_Murder == 1 and G.Trip_Killer == 0 and pc.GetQuestState("Serial") < 8	}{	G.Trip_Know = 4	}{	}{	}{	}{	}{	}{	}{	Avez-vous entendu parler du tueur drapé d'ombre ?	}
 {	496	}{	Et j'ai quelque chose de la clinique. Allez-y!	}{	Et j'ai quelque chose de la clinique. Allez-y!	}{	301	}{	G.Trip_Discount > 0 and pc.HasItem("item_g_drugs_drug_box")	}{	}{	}{	}{	}{	}{	}{	}{	Et j'ai eu une pochette surprise de la maison de soins!	}
-{	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	497	}{	Alors on t'appelle Trip. Prends-tu de la drogue ?	}{	Alors on t'appelle Trip. Prends-tu de la drogue ?	}{	121	}{	G.Patch_Plus == 1 and G.Trip_Discount == 0 and G.Trip_Name == 1 and G.Trip_Guns == 3	}{	}{	}{	}{	}{	}{	}{	}{	Alors Trip est ton nom et la drogue ton jeu ?	}
 {	498	}{	Je m'en souviendrai. A plus tard.	}{	Je m'en souviendrai. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus ici.	}
 {	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

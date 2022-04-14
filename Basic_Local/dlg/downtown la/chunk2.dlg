@@ -420,7 +420,7 @@
 {	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	421	}{	Eh bien, oui, sans doute. Allez, montez. Pff, j'espère qu'on ne va pas me retirer la responsabilité de la lampe torche pour ça. . .	}{	Eh bien, oui, sans doute. Allez, montez. Pff, j'espère qu'on ne va pas me retirer la responsabilité de la lampe torche pour ça. . .	}{	#	}{	}{	G.Chunk_Open = 6	}{	}{	}{	}{	}{	}{	}{	}
 {	422	}{	Merci !	}{	Merci !	}{	0	}{	G.Chunk_Skip == 0	}{	}{	}{	}{	}{	}{	}{	}{	Merci, merci, merci.	}
-{	423	}{	Merci !	}{	Merci !	}{	0	}{	G.Chunk_Skip == 1	}{	G.Chunk_Skip = 2	}{	}{	}{	}{	}{	}{	}{	Merci, merci, merci.	}
+{	423	}{	Merci !	}{	Merci !	}{	0	}{	G.Chunk_Skip > 0	}{	G.Chunk_Skip = 2	}{	}{	}{	}{	}{	}{	}{	Merci, merci, merci.	}
 {	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
