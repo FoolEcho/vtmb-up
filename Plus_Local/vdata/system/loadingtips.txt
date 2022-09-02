@@ -117,7 +117,7 @@ LoadingTips
 			"StoryState"	"3"
 			"Size"		"Small"
 			"Text"		"Zone de combat : Vous entrez dans une zone de combat. Dans ces zones, vous êtes libre d'utiliser toute la force de vos disciplines vampiriques sans que cela n'entraîne une violation de la Mascarade. De même, il n'y a pas d'innocents dans une zone de combat ; vous ne pouvez pas violer la Mascarade ou perdre votre humanité."		
-		}
+		}	// basic
 ////////////////
 	// HelpTips for StoryState 0
 ////////////////
@@ -240,7 +240,7 @@ LoadingTips
 			"StoryState"	"0"
 			"Size"		"Small"
 
-			"Text"		"Tout vampire qui souhaite se fondre dans la société mortelle doit respecter ses lois. Les actes criminels - coups et blessures, vol, meurtre ou brandir des armes en public - sont sanctionnés avec la plus grande force par les représentants de l'ordre humain."
+			"Text"		"Tout vampire qui souhaite se fondre dans la société mortelle doit respecter ses lois. Les actes criminels - coups et blessures, vol, meurtre - sont sanctionnés avec la plus grande force par les représentants de l'ordre humain."
 		}
 
 //		//Game tips
@@ -269,7 +269,7 @@ LoadingTips
 			"StoryState"	"0"
 			"Size"		"Small"
 
-			"Text"		"Les aptitudes de Défense au combat et d'Absorption de type Contondant améliorent votre défense contre les balles. De plus, tous les dégâts infligés par les balles sont automatiquement réduits de cinquante pour cent."	// changed by wesp
+			"Text"		"Les aptitudes de Défense au combat et d'Absorption de type Contondant améliorent votre défense contre les balles. De plus, tous les dégâts infligés par les balles sont automatiquement réduits de cinquante pour cent."
 		}
 
 		Tip
@@ -318,7 +318,7 @@ Les répliques de Séduction s'affichent en caractères spéciaux roses."
 			"StoryState"	"0"
 			"Size"		"Small"
 
-			"Text"		"L'aptitude de Combat au corps à corps affecte directement la quantité de dégâts que vous pouvez infliger avec des armes de corps à corps. Elle détermine aussi la facilité avec laquelle un adversaire peut parer, esquiver ou contrer vos frappes de mêlée."	// changed by wesp
+			"Text"		"L'aptitude de Combat au corps à corps affecte directement la quantité de dégâts que vous pouvez infliger avec des armes de corps à corps. Elle détermine aussi la facilité avec laquelle un adversaire peut parer, esquiver ou contrer vos frappes de mêlée."
 		}
 
 		Tip
@@ -327,7 +327,7 @@ Les répliques de Séduction s'affichent en caractères spéciaux roses."
 			"StoryState"	"0"
 			"Size"		"Small"
 
-			"Text"		"L'aptitude de Combat à distance affecte directement la quantité de dégâts que vous pouvez infliger avec des armes à feu. Elle détermine aussi la facilité qu'ont les vampires et autres créatures surnaturelles à se défendre contre vos attaques à distance."	// changed by wesp
+			"Text"		"L'aptitude de Combat à distance affecte directement la quantité de dégâts que vous pouvez infliger avec des armes à feu. Elle détermine aussi la facilité qu'ont les vampires et autres créatures surnaturelles à se défendre contre vos attaques à distance."
 		}
 
 		Tip
@@ -347,7 +347,7 @@ Vous devez vous accroupir pour profiter de votre Discrétion."
 			"StoryState"	"0"
 			"Size"		"Small"
 
-			"Text"		"Votre aptitude de Défense au combat se déclenche automatiquement chaque fois qu'on vous attaque. En tant que vampire, vous pouvez vous défendre contre les attaques de mêlée, les attaques à mains nues et même les balles grâce à cette aptitude."	// changed by wesp
+			"Text"		"Votre aptitude de Défense au combat se déclenche automatiquement chaque fois qu'on vous attaque. En tant que vampire, vous pouvez vous défendre contre les attaques de mêlée, les attaques à mains nues et même les balles grâce à cette aptitude."
 		}
 
 		Tip
@@ -383,7 +383,7 @@ Vous devez vous accroupir pour profiter de votre Discrétion."
 			"StoryState"	"0"
 			"Size"		"Small"
 
-			"Text"		"Le corps des vampires guérit toutes ses blessures au fil du temps. Ce processus est plus rapide si vous vous nourrissez."
+			"Text"		"Le corps des vampires guérit toutes ses blessures au fil du temps. Ce processus est plus rapide si vous vous nourrissez."	// basic
 		}
 
 		Tip
@@ -392,7 +392,7 @@ Vous devez vous accroupir pour profiter de votre Discrétion."
 			"StoryState"	"0"
 			"Size"		"Small"
 
-			"Text"		"Dans les zones de Mascarade, vous trouverez des cartes sur les arrêts de bus. Utilisez ces cartes pour avoir une vue aérienne de la zone."
+			"Text"		"Dans les zones de Mascarade, vous trouverez des cartes sur les arrêts de bus. Utilisez ces cartes pour avoir une vue aérienne de la zone."	// changed by wesp
 		}
 
 		Tip
@@ -740,7 +740,7 @@ Pour éviter les ennuis en arrivant, sélectionnez l'endroit sur la carte avec un 
 			"Size"		"Large"
 			"Text"		"L'aptitude de Combat à mains nues détermine la facilité avec laquelle vous pourrez vous nourrir d'une victime non consentante. Une aptitude élevée vous aidera à vous nourrir pendant un combat.
 
-L'aptitude de Combat à mains nues affecte aussi directement les dégâts que vous infligez avec vos poings et vos griffes et la facilité avec laquelle un adversaire pourra parer, esquiver ou contrer vos coups."	// changed by wesp
+L'aptitude de Combat à mains nues affecte aussi directement les dégâts que vous infligez avec vos poings et vos griffes et la facilité avec laquelle un adversaire pourra parer, esquiver ou contrer vos coups."
 		}
 
 		Tip
@@ -786,7 +786,7 @@ Nourrissez-vous souvent et conservez un score d'humanité élevé pour éviter la fr
 			"Type"		"Game"
 			"StoryState"	"10"
 			"Size"		"Small"
-			"Text"		"La Vigueur améliore l'aptitude d'Absorption de type Contondant. Pour un vampire, chaque point d'Absorption des dégâts contondants réduit les dégâts que vous infligent les balles et les armes contondantes de mêlée."	// changed by wesp
+			"Text"		"La Vigueur améliore l'aptitude d'Absorption de type Contondant. Pour un vampire, chaque point d'Absorption des dégâts contondants réduit les dégâts que vous infligent les balles et les armes contondantes de mêlée."
 		}
 
 		Tip
@@ -802,7 +802,7 @@ Nourrissez-vous souvent et conservez un score d'humanité élevé pour éviter la fr
 			"Type"		"Game"
 			"StoryState"	"10"
 			"Size"		"Small"
-			"Text"		"Pendant un combat de Mêlée, vous pouvez parer (touche par défaut : Tab) pour vous donner un bonus de Défense au combat. Ce bonus est égal à votre Dextérité."	// changed by wesp
+			"Text"		"Pendant un combat de Mêlée, vous pouvez parer (touche par défaut : Tab) pour vous donner un bonus de Défense. Ce bonus est égal à votre Dextérité."
 		}
 
 		Tip
@@ -836,7 +836,7 @@ Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendr
 			"Type"		"Game"
 			"StoryState"	"10"
 			"Size"		"Large"
-			"Text"		"Le potentiel de dégâts d'une arme est la quantité de dégâts qu'une arme peut infliger entre vos mains. Ce nombre est ajusté en fonction de votre aptitude de Combat à distance ou au corps à corps. Plus votre aptitude est élevée, plus vous ferez de dégâts."	// changed by wesp
+			"Text"		"Le potentiel de dégâts d'une arme est la quantité de dégâts qu'une arme peut infliger entre vos mains. Ce nombre est ajusté en fonction de votre aptitude de Combat à distance ou au corps à corps. Plus votre aptitude est élevée, plus vous ferez de dégâts."
 		}
 
 		Tip
@@ -868,7 +868,7 @@ Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendr
 			"Type"		"Game"
 			"StoryState"	"10"
 			"Size"		"Small"
-			"Text"		"Les armes à lames sont aussi mortelles pour les vampires que pour les humains. Les aptitudes de Défense au combat et d'Absorption des dégâts létaux améliorent votre défense contre les lames."	// changed by wesp
+			"Text"		"Les armes à lames sont aussi mortelles pour les vampires que pour les humains. Les aptitudes de Défense et d'Absorption des dégâts létaux améliorent votre défense contre les lames."
 		}
 
 		Tip
@@ -1045,7 +1045,7 @@ Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendr
 			"Size"		"Large"
 			"Text"		"L'aptitude de Combat à mains nues détermine la facilité avec laquelle vous pourrez vous nourrir d'une victime non consentante. Une aptitude élevée vous aidera à vous nourrir pendant un combat.
 
-L'aptitude de Combat à mains nues affecte aussi directement les dégâts que vous infligez avec vos poings et vos griffes et la facilité avec laquelle un adversaire pourra parer, esquiver ou contrer vos coups."	// changed by wesp
+L'aptitude de Combat à mains nues affecte aussi directement les dégâts que vous infligez avec vos poings et vos griffes et la facilité avec laquelle un adversaire pourra parer, esquiver ou contrer vos coups."
 		}
 
 		Tip
@@ -1107,7 +1107,7 @@ Nourrissez-vous souvent et conservez un score d'humanité élevé pour éviter la fr
 			"Type"		"Game"
 			"StoryState"	"15"
 			"Size"		"Small"
-			"Text"		"Le potentiel de dégâts d'une arme est la quantité de dégâts qu'une arme peut infliger entre vos mains. Ce nombre est ajusté en fonction de votre aptitude de Combat à distance ou au corps à corps. Plus votre aptitude est élevée, plus vous ferez de dégâts."	// changed by wesp
+			"Text"		"Le potentiel de dégâts d'une arme est la quantité de dégâts qu'une arme peut infliger entre vos mains. Ce nombre est ajusté en fonction de votre aptitude de Combat à distance ou au corps à corps. Plus votre aptitude est élevée, plus vous ferez de dégâts."
 		}
 
 		Tip
@@ -1141,7 +1141,7 @@ Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendr
 			"Type"		"Game"
 			"StoryState"	"15"
 			"Size"		"Large"
-			"Text"		"Le potentiel de dégâts d'une arme est la quantité de dégâts qu'une arme peut infliger entre vos mains. Ce nombre est ajusté en fonction de votre aptitude de Combat à distance ou au corps à corps. Plus votre aptitude est élevée, plus vous ferez de dégâts."	// changed by wesp
+			"Text"		"Le potentiel de dégâts d'une arme est la quantité de dégâts qu'une arme peut infliger entre vos mains. Ce nombre est ajusté en fonction de votre aptitude de Combat à distance ou au corps à corps. Plus votre aptitude est élevée, plus vous ferez de dégâts."
 		}
 
 		Tip
@@ -1174,7 +1174,7 @@ Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendr
 			"Type"		"Game"	// changed by wesp
 			"StoryState"	"15"
 			"Size"		"Small"
-			"Text"		"Les armes à lames sont aussi mortelles pour les vampires que pour les humains. Les aptitudes de Défense au combat et d'Absorption des dégâts létaux améliorent votre défense contre les lames."	// changed by wesp
+			"Text"		"Les armes à lames sont aussi mortelles pour les vampires que pour les humains. Les aptitudes de Défense et d'Absorption des dégâts létaux améliorent votre défense contre les lames."
 		}
 
 		Tip
@@ -1333,7 +1333,7 @@ Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendr
 			"Size"		"Large"
 			"Text"		"L'aptitude de Combat à mains nues détermine la facilité avec laquelle vous pourrez vous nourrir d'une victime non consentante. Une aptitude élevée vous aidera à vous nourrir pendant un combat.
 
-L'aptitude de Combat à mains nues affecte aussi directement les dégâts que vous infligez avec vos poings et vos griffes et la facilité avec laquelle un adversaire pourra parer, esquiver ou contrer vos coups."	// changed by wesp
+L'aptitude de Combat à mains nues affecte aussi directement les dégâts que vous infligez avec vos poings et vos griffes et la facilité avec laquelle un adversaire pourra parer, esquiver ou contrer vos coups."
 		}
 
 		Tip
@@ -1395,7 +1395,7 @@ Nourrissez-vous souvent et conservez un score d'humanité élevé pour éviter la fr
 			"Type"		"Game"
 			"StoryState"	"20"
 			"Size"		"Small"
-			"Text"		"Pendant un combat de Mêlée, vous pouvez parer (touche par défaut : Tab) pour vous donner un bonus de Défense au combat. Ce bonus est égal à votre Dextérité."	// changed by wesp
+			"Text"		"Pendant un combat de Mêlée, vous pouvez parer (touche par défaut : Tab) pour vous donner un bonus de Défense. Ce bonus est égal à votre Dextérité."
 		}
 
 		Tip
@@ -1429,7 +1429,7 @@ Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendr
 			"Type"		"Game"
 			"StoryState"	"20"
 			"Size"		"Large"
-			"Text"		"Le potentiel de dégâts d'une arme est la quantité de dégâts qu'une arme peut infliger entre vos mains. Ce nombre est ajusté en fonction de votre aptitude de Combat à distance ou au corps à corps. Plus votre aptitude est élevée, plus vous ferez de dégâts."	// changed by wesp
+			"Text"		"Le potentiel de dégâts d'une arme est la quantité de dégâts qu'une arme peut infliger entre vos mains. Ce nombre est ajusté en fonction de votre aptitude de Combat à distance ou au corps à corps. Plus votre aptitude est élevée, plus vous ferez de dégâts."
 		}
 
 		Tip
@@ -1461,7 +1461,7 @@ Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendr
 			"Type"		"Game"	// changed by wesp
 			"StoryState"	"20"
 			"Size"		"Small"
-			"Text"		"Les armes à lames sont aussi mortelles pour les vampires que pour les humains. Les aptitudes de Défense au combat et d'Absorption des dégâts létaux améliorent votre défense contre les lames."	// changed by wesp
+			"Text"		"Les armes à lames sont aussi mortelles pour les vampires que pour les humains. Les aptitudes de Défense et d'Absorption des dégâts létaux améliorent votre défense contre les lames."
 		}
 
 		Tip
@@ -1621,7 +1621,7 @@ Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendr
 			"Size"		"Large"
 			"Text"		"L'aptitude de Combat à mains nues détermine la facilité avec laquelle vous pourrez vous nourrir d'une victime non consentante. Une aptitude élevée vous aidera à vous nourrir pendant un combat.
 
-L'aptitude de Combat à mains nues affecte aussi directement les dégâts que vous infligez avec vos poings et vos griffes et la facilité avec laquelle un adversaire pourra parer, esquiver ou contrer vos coups."	// changed by wesp
+L'aptitude de Combat à mains nues affecte aussi directement les dégâts que vous infligez avec vos poings et vos griffes et la facilité avec laquelle un adversaire pourra parer, esquiver ou contrer vos coups."
 		}
 
 		Tip
@@ -1683,7 +1683,7 @@ Nourrissez-vous souvent et conservez un score d'humanité élevé pour éviter la fr
 			"Type"		"Game"
 			"StoryState"	"25"
 			"Size"		"Small"
-			"Text"		"Pendant un combat de Mêlée, vous pouvez parer (touche par défaut : Tab) pour vous donner un bonus de Défense au combat. Ce bonus est égal à votre Dextérité."	// changed by wesp
+			"Text"		"Pendant un combat de Mêlée, vous pouvez parer (touche par défaut : Tab) pour vous donner un bonus de Défense. Ce bonus est égal à votre Dextérité."
 		}
 
 		Tip
@@ -1717,7 +1717,7 @@ Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendr
 			"Type"		"Game"
 			"StoryState"	"25"
 			"Size"		"Large"
-			"Text"		"Le potentiel de dégâts d'une arme est la quantité de dégâts qu'une arme peut infliger entre vos mains. Ce nombre est ajusté en fonction de votre aptitude de Combat à distance ou au corps à corps. Plus votre aptitude est élevée, plus vous ferez de dégâts."	// changed by wesp
+			"Text"		"Le potentiel de dégâts d'une arme est la quantité de dégâts qu'une arme peut infliger entre vos mains. Ce nombre est ajusté en fonction de votre aptitude de Combat à distance ou au corps à corps. Plus votre aptitude est élevée, plus vous ferez de dégâts."
 		}
 
 		Tip
@@ -1917,7 +1917,7 @@ Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendr
 			"Size"		"Large"
 			"Text"		"L'aptitude de Combat à mains nues détermine la facilité avec laquelle vous pourrez vous nourrir d'une victime non consentante. Une aptitude élevée vous aidera à vous nourrir pendant un combat.
 
-L'aptitude de Combat à mains nues affecte aussi directement les dégâts que vous infligez avec vos poings et vos griffes et la facilité avec laquelle un adversaire pourra parer, esquiver ou contrer vos coups."	// changed by wesp
+L'aptitude de Combat à mains nues affecte aussi directement les dégâts que vous infligez avec vos poings et vos griffes et la facilité avec laquelle un adversaire pourra parer, esquiver ou contrer vos coups."
 		}
 
 		Tip
@@ -1979,7 +1979,7 @@ Nourrissez-vous souvent et conservez un score d'humanité élevé pour éviter la fr
 			"Type"		"Game"
 			"StoryState"	"30"
 			"Size"		"Small"
-			"Text"		"Pendant un combat de Mêlée, vous pouvez parer (touche par défaut : Tab) pour vous donner un bonus de Défense au combat. Ce bonus est égal à votre Dextérité."	// changed by wesp
+			"Text"		"Pendant un combat de Mêlée, vous pouvez parer (touche par défaut : Tab) pour vous donner un bonus de Défense. Ce bonus est égal à votre Dextérité."
 		}
 
 		Tip
@@ -2013,7 +2013,7 @@ Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendr
 			"Type"		"Game"
 			"StoryState"	"30"
 			"Size"		"Large"
-			"Text"		"Le potentiel de dégâts d'une arme est la quantité de dégâts qu'une arme peut infliger entre vos mains. Ce nombre est ajusté en fonction de votre aptitude de Combat à distance ou au corps à corps. Plus votre aptitude est élevée, plus vous ferez de dégâts."	// changed by wesp
+			"Text"		"Le potentiel de dégâts d'une arme est la quantité de dégâts qu'une arme peut infliger entre vos mains. Ce nombre est ajusté en fonction de votre aptitude de Combat à distance ou au corps à corps. Plus votre aptitude est élevée, plus vous ferez de dégâts."
 		}
 
 		Tip
@@ -2045,7 +2045,7 @@ Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendr
 			"Type"		"Game"
 			"StoryState"	"30"
 			"Size"		"Small"
-			"Text"		"Les armes à lames sont aussi mortelles pour les vampires que pour les humains. Les aptitudes de Défense au combat et d'Absorption des dégâts létaux améliorent votre défense contre les lames."	// changed by wesp
+			"Text"		"Les armes à lames sont aussi mortelles pour les vampires que pour les humains. Les aptitudes de Défense et d'Absorption des dégâts létaux améliorent votre défense contre les lames."
 		}
 
 		Tip
@@ -2203,7 +2203,7 @@ Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendr
 			"Size"		"Large"
 			"Text"		"Vous pouvez changer de mode de tir avec la touche de tir alternatif (touche par défaut : Tab). Certaines armes avec une lunette de visée ont plusieurs niveaux de zoom auxquels vous pouvez accéder avec la touche de tir alternatif.
 
-Toutes les armes à feu n'ont pas forcément un mode de tir alternatif."
+Toutes les armes à feu n'ont pas forcément un mode de tir alternatif."	// basic
 		}
 
 		Tip
@@ -2211,7 +2211,7 @@ Toutes les armes à feu n'ont pas forcément un mode de tir alternatif."
 			"Type"		"Game"
 			"StoryState"	"35"
 			"Size"		"Small"
-			"Text"		"L'Ajustement d'aptitude est la différence entre votre compétence (score d'aptitude) et le seuil d'une arme. Cet ajustement est ajouté à la létalité de l'arme."
+			"Text"		"L'Ajustement d'aptitude est la différence entre votre compétence (score d'aptitude) et le seuil d'une arme. Cet ajustement est appliqué à la létalité de l'arme."
 		}
 
 /////////////////////////
@@ -2361,7 +2361,7 @@ Toutes les armes à feu n'ont pas forcément un mode de tir alternatif."
 			"Size"		"Large"
 			"Text"		"Vous pouvez changer de mode de tir avec la touche de tir alternatif (touche par défaut : Tab). Certaines armes avec une lunette de visée ont plusieurs niveaux de zoom auxquels vous pouvez accéder avec la touche de tir alternatif.
 
-Toutes les armes à feu n'ont pas forcément un mode de tir alternatif."
+Toutes les armes à feu n'ont pas forcément un mode de tir alternatif."	// basic
 		}
 
 		Tip
@@ -2369,22 +2369,13 @@ Toutes les armes à feu n'ont pas forcément un mode de tir alternatif."
 			"Type"		"Game"
 			"StoryState"	"40"
 			"Size"		"Small"
-			"Text"		"L'Ajustement d'aptitude est la différence entre votre compétence (score d'aptitude) et le seuil d'une arme. Cet ajustement est ajouté à la létalité de l'arme."
+			"Text"		"L'Ajustement d'aptitude est la différence entre votre compétence (score d'aptitude) et le seuil d'une arme. Cet ajustement est appliqué à la létalité de l'arme."
 		}
 
 /////////////////////////
 	// HelpTips for StoryState 45
 /////////////////////////
 	//World Tips
-
-		Tip	// added by wesp
-		{
-			"Type"		"World"
-			"StoryState"	"45"
-			"Size"		"Large"
-			"Text"		"Clan Lasombra:
-			Fidèles croyants dans la dignité de l'autorité et l'indignité de la servitude, le clan Lasombras a maintenu ses anciennes traditions en dirigeant le Sabbat à ses propres fins. En raison de leur penchant pour l'obscurité et le contrôle des ombres, les Lasombras ne projettent aucun reflet. Leurs atrocités irréfléchies accréditent l'idée qu'il est plus facile de vivre avec vos actions lorsque vous n'avez pas à vous faire face dans le mirror."
-		}
 
 		Tip
 		{
@@ -2466,15 +2457,6 @@ Toutes les armes à feu n'ont pas forcément un mode de tir alternatif."
 	// HelpTips for StoryState 50
 /////////////////////////
 	//World Tips
-
-		Tip	// added by wesp
-		{
-			"Type"		"World"
-			"StoryState"	"50"
-			"Size"		"Large"
-			"Text"		"Clan Lasombra:
-			Fidèles croyants dans la dignité de l'autorité et l'indignité de la servitude, le clan Lasombras a maintenu ses anciennes traditions en dirigeant le Sabbat à ses propres fins. En raison de leur penchant pour l'obscurité et le contrôle des ombres, les Lasombras ne projettent aucun reflet. Leurs atrocités irréfléchies accréditent l'idée qu'il est plus facile de vivre avec vos actions lorsque vous n'avez pas à vous faire face dans le mirror."
-		}
 
 		Tip
 		{
