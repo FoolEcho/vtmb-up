@@ -613,7 +613,7 @@
 {	613	}{	Les Kuei-Jin m'ont dit qu'ils avaient une alliance avec LaCroix.	}{	Les Kuei-Jin m'ont dit qu'ils avaient une alliance avec LaCroix.	}{	621	}{	G.Story_State >= 60 and G.Damsel_Chang == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix courtise la dame d'Orient. Je pense qu'ils sont faits l'un pour l'autre.	}
 {	614	}{	Le chef des Kuei-Jin m'a récemment parlé d'une alliance passée avec LaCroix. 	}{	Le chef des Kuei-Jin m'a récemment parlé d'une alliance passée avec LaCroix. 	}{	641	}{	G.Story_State >= 80 and G.Damsel_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	Des lèvres de la dame elle-même - ils ont dansé ensemble sous notre nez. . .	}
 {	615	}{	LaCroix veut entrer en guerre contre les Kuei-Jin. Il a besoin d'une alliance avec les Anarchs.	}{	LaCroix veut entrer en guerre contre les Kuei-Jin. Il a besoin d'une alliance avec les Anarchs.	}{	651	}{	G.Prince_Truce == 1 and G.Griffith_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix veut danser avec nous à présent, danser sur la tombe de la dame. . .	}
-{	616	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	616	}{	J'ai quelques questions.	}{	J'ai quelques questions.	}{	311	}{	G.Damsel_Like > -4	}{	}{	}{	}{	}{	}{	}{	}{	Je me demande quelque chose de ton esprit.	}
 {	617	}{	Je vous tiendrai au courant.	}{	Je vous tiendrai au courant.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Beaucoup de voix qui parlent fort pour ne rien dire.	}
 {	618	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	619	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -630,10 +630,10 @@
 {	630	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	631	}{	[pleine de rage]Ce. . . aaah !. . . Je n'arrive pas à croire que LaCroix tomberait si bas. Mais ouvre l'oeil. S'il y a une chose dont j'ai plus horreur que la Cama, ce sont ces satanés Kuei-Jin. 	}{	[pleine de rage]Ce. . . aaah !. . . Je n'arrive pas à croire que LaCroix tomberait si bas. Mais ouvre l'oeil. S'il y a une chose dont j'ai plus horreur que la Cama, ce sont ces satanés Kuei-Jin. 	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Damsel_Chang = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	632	}{	Le prince a surtout envie de prendre le Sarcophage d'Ankara.	}{	Le prince a surtout envie de prendre le Sarcophage d'Ankara.	}{	611	}{	G.Story_State > 30 and G.Damsel_Rolls == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix veut la vieille boîte du bateau. Il y tient.	}
-{	633	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	634	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	635	}{	Le chef des Kuei-Jin m'a récemment parlé d'une alliance entre elle et LaCroix.	}{	Le chef des Kuei-Jin m'a récemment parlé d'une alliance entre elle et LaCroix.	}{	641	}{	G.Story_State >= 80 and G.Damsel_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	Des lèvres de la dame elle-même - ils ont dansé ensemble sous notre nez. . .	}
-{	636	}{	LaCroix veut entrer en guerre contre les Kuei-Jin. Il a besoin d'une alliance avec les Anarchs.	}{	LaCroix veut entrer en guerre contre les Kuei-Jin. Il a besoin d'une alliance avec les Anarchs.	}{	651	}{	G.Prince_Truce == 1 and G.Griffith_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix veut danser avec nous à présent, danser sur la tombe de la dame. . .	}
+{	633	}{	Le chef des Kuei-Jin m'a récemment parlé d'une alliance entre elle et LaCroix.	}{	Le chef des Kuei-Jin m'a récemment parlé d'une alliance entre elle et LaCroix.	}{	641	}{	G.Story_State >= 80 and G.Damsel_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	Des lèvres de la dame elle-même - ils ont dansé ensemble sous notre nez. . .	}
+{	634	}{	LaCroix veut entrer en guerre contre les Kuei-Jin. Il a besoin d'une alliance avec les Anarchs.	}{	LaCroix veut entrer en guerre contre les Kuei-Jin. Il a besoin d'une alliance avec les Anarchs.	}{	651	}{	G.Prince_Truce == 1 and G.Griffith_Open == 0	}{	}{	}{	}{	}{	}{	}{	}{	LaCroix veut danser avec nous à présent, danser sur la tombe de la dame. . .	}
+{	635	}{	J'ai quelques questions.	}{	J'ai quelques questions.	}{	311	}{	G.Damsel_Like > -4	}{	}{	}{	}{	}{	}{	}{	}{	Je me demande quelque chose de ton esprit.	}
+{	636	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	637	}{	Je vous tiendrai au courant.	}{	Je vous tiendrai au courant.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Beaucoup de voix qui parlent fort pour ne rien dire.	}
 {	638	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -699,8 +699,8 @@
 {	699	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	700	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	701	}{	J'ai compris. Allez, bon courage.	}{	J'ai compris. Allez, bon courage.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	702	}{	Ca marche. Je reviens.	}{	Ca marche. Je reviens.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous apporterai d'autres secrets plus tard.	}
-{	703	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	702	}{	J'ai quelques questions.	}{	J'ai quelques questions.	}{	311	}{	G.Damsel_Like > -4	}{	}{	}{	}{	}{	}{	}{	}{	Je me demande quelque chose de ton esprit.	}
+{	703	}{	Ca marche. Je reviens.	}{	Ca marche. Je reviens.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous apporterai d'autres secrets plus tard.	}
 {	704	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	705	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	706	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

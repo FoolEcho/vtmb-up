@@ -24,35 +24,35 @@ TerminalDefinition	// added by wesp
 		{
 			"name"		"Note 1"		// this is what the player must type in to trigger this function. (16 characters)
 			"description"	"Première entrée"		// this is a description of this function  (128 characters)
-			"runtext"	"Beckett m'a demandé de faire des recherches pour son compte au sujet d'un ancien sarcophage à la bibliothèque municipale. Boulot plutôt ennuyeux, mais j'ai alors remarqué un autre vampire rôder. Qui semblait marcher d'ombre en ombre comme à travers une porte ! Est-ce un Lasombra ? Mais que fait-il ici à Los Angeles ? Est-ce en rapport avec le sarcophage de Beckett ? Je ferais mieux de le suivre les prochaines nuits, juste pour être en sécurité."
+			"runtext"	"Beckett m'a demandé de faire des recherches sur un ancien sarcophage à la bibliothèque municipale. Plutôt ennuyeux, jusqu'à ce que je remarque un autre Vampire se déplaçant d'ombre en ombre. Un Lasombra ! Que fait le Sabbat à LA ? Je ferais mieux de le surveiller les nuits suivantes pour plus de sûreté..."
 		}
 		
 		Function
 		{
 			"name"		"Note 2"		// this is what the player must type in to trigger this function. (16 characters)
 			"description"	"Seconde entrée"		// this is a description of this function  (128 characters)
-			"runtext"	"Le vampire de la bibliothèque s'est rendu ce soir dans cette maison abandonnée au centre-ville, celle avec le symbole rouge tagué à proximité. Je l'ai suivi et j'ai été accueilli par un videur qui m'a demandé si j'avais été éclairé. Je ne l'étais pas, alors il ne m'a pas laissé entrer. Je devais m'y plier. Plus tard, le nouvel agent du prince est entré, peu de temps après, le videur s'est précipité dans les égouts! Je l'ai suivi jusqu'à Santa Monica où il s'est rendu au magasin de tabac pour se détendre."
+			"runtext"	"Le Lasombra est entré dans une maison du centre-ville avec un symbole rouge ce soir. Le videur ne m'a pas laissé entrer, alors j'ai attendu dehors jusqu'à ce que le nouvel agent du prince entre. Soudain, le videur est sorti paniqué et je l'ai suivi jusqu'à Santa Monica où il s'est rendu dans un fumoir pour se détendre."
 		}
 
 		Function
 		{
 			"name"		"Note 3"		// this is what the player must type in to trigger this function. (16 characters)
 			"description"	"Troisième entrée"	// this is a description of this function  (128 characters)
-			"runtext"	"Ce soir, j'ai suivi le vampire lui-même à Santa Monica où il est entré dans la casse, probablement pour rencontrer cet homme étrange qui y travaillait. Je surveillais toujours l'endroit quand, encore une fois, l'agent du prince est arrivé. Soudain, le vampire est sorti d'une ombre à proximité ! J'espère ne pas avoir été repéré. Il a pris un taxi pour retourner à la bibliothèque."
+			"runtext"	"Ce soir, le Lasombra a visité la casse de Santa Monica, probablement pour rencontrer le veilleur de nuit qui y travaillait. J'observais toujours l'endroit quand l'agent du prince est arrivé, encore une fois, et le Lasombra a surgi d'une ombre derrière moi ! J'espère qu'il ne m'a pas repéré."
 		}
 
 		Function
 		{
 			"name"		"Note 4"		// this is what the player must type in to trigger this function. (16 characters)
 			"description"	"Quatrième entrée"	// this is a description of this function  (128 characters)
-			"runtext"	"Je ne sais pas ce que prépare ce Lasombra. Peut-être recruter pour le Sabbat ? Je suis à peu près sûr qu'il a échoué avec le gars de la casse, mais je ne sais vraiment pas pour le videur. Cela ne concerne pas le sarcophage, mais j'ai toujours un très mauvais pressentiment de le voir retourner à la bibliothèque. Je vais contacter Beckett et demander de l'aide !"
+			"runtext"	"Il ne s'est rien passé de spécial ce soir, alors que prépare le Lasombra ? Est-ce qu'il recrute pour le Sabbat ? Je suis presque sûr qu'il a échoué avec le gars de la casse, mais je ne sais vraiment pas pour le videur. Pourquoi retourne-t-il toujours à la bibliothèque ? Je vais contacter Beckett pour m'aider..."
 		}
 
 		Function
 		{
 			"name"		"Note 5"		// this is what the player must type in to trigger this function. (16 characters)
 			"description"	"Cinquième entrée"	// this is a description of this function  (128 characters)
-			"runtext"	"J'ai organisé une rencontre avec Beckett dans le magasin de fumée de Santa Monica, car ce videur est un habitué. Nous devrions découvrir ce qu'il sait, Beckett peut être très convaincant. Ensuite, je montrerai à Beckett la vieille trappe d’urgence dans les égouts que j’utilise pour entrer dans la bibliothèque sans être vu. Nous allons y chercher nous-mêmes le repaire du Lasombra !"
+			"runtext"	"J'ai organisé une rencontre avec Beckett au fumoir de Santa Monica car le videur y est un habitué. Nous découvrirons ce qu'il sait et après je montrerai à Beckett la vieille trappe de secours de la bibliothèque dans les égouts. Nous trouverons le repaire des Lasombras et arrêterons le Sabbat !"
 			"runscript"	"G.Library_Coffee = 2; librarySetQuest()"
 		}
 	}

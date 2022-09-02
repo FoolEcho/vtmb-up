@@ -258,13 +258,13 @@
 {	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	261	}{	Super ! Génial ! OK, alors voilà, c'est un vampire asiatique. . . Genre. Le seul indice que j'ai, c'est son permis de conduire. Il l'a lâché, une fois, pendant que je le suivais. J'ai eu tellement les boules que je n'ai pas eu l'occasion de m'en servir. . .	}{	Super ! Génial ! OK, alors voilà, c'est un vampire asiatique. . . Genre. Le seul indice que j'ai, c'est son permis de conduire. Il l'a lâché, une fois, pendant que je le suivais. J'ai eu tellement les boules que je n'ai pas eu l'occasion de m'en servir. . .	}{	#	}{	npc.SetDisposition("Joy",1)	}{	pc.GiveItem("item_g_driver_license_gimble")	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Super ! Génial ! OK, alors voilà, c'est un vampire asiatique. . . Genre. Le seul indice que j'ai, c'est son permis de conduire. Il l'a lâché, une fois, pendant que je le suivais. J'ai eu tellement les boules que je n'ai pas eu l'occasion de m'en servir. . .	}{	Super ! Génial ! OK, alors voilà, c'est un vampire asiatique. . . Genre. Le seul indice que j'ai, c'est son permis de conduire. Il l'a lâché, une fois, pendant que je le suivais. J'ai eu tellement les boules que je n'ai pas eu l'occasion de m'en servir. . .	}{	#	}{	npc.SetDisposition("Joy",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	262	}{	Un permis de conduire ? Alors on sait qui c'est ?	}{	Un permis de conduire ? Alors on sait qui c'est ?	}{	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le permis ne nous apprend-il pas où il se trouve ?	}
-{	263	}{	Je m'en occupe pour vous.	}{	Je m'en occupe pour vous.	}{	281	}{	G.VirgilCrumbKnowledge == 0	}{	G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 1)	}{	}{	}{	}{	}{	}{	}{	Je commettrai ce crime.	}
-{	264	}{	Je m'en occupe pour vous.	}{	Je m'en occupe pour vous.	}{	281	}{	G.VirgilCrumbKnowledge == 1	}{	G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 10)	}{	}{	}{	}{	}{	}{	}{	Je commettrai ce crime.	}
+{	263	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	266	}{	Non. La photo sur le permis, ce n'est pas lui. Je ne sais pas pourquoi il l'avait, mais ça nous aidera peut-être à savoir où il est et ce qu'il fait. Tiens, prends-le.	}{	Non. La photo sur le permis, ce n'est pas lui. Je ne sais pas pourquoi il l'avait, mais ça nous aidera peut-être à savoir où il est et ce qu'il fait. Tiens, prends-le.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	267	}{	Bon, je m'en occupe.	}{	Bon, je m'en occupe.	}{	281	}{	G.VirgilCrumbKnowledge == 0	}{	G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 1)	}{	}{	}{	}{	}{	}{	}{	Je vais faire pleuvoir le sang sur ce cauchemar oriental.	}
+{	266	}{	Non. La photo sur le permis, ce n'est pas lui. Je ne sais pas pourquoi il l'avait, mais ça nous aidera peut-être à savoir où il est et ce qu'il fait. Tiens, prends-le.	}{	Non. La photo sur le permis, ce n'est pas lui. Je ne sais pas pourquoi il l'avait, mais ça nous aidera peut-être à savoir où il est et ce qu'il fait. Tiens, prends-le.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	pc.GiveItem("item_g_driver_license_gimble")	}{	}{	}{	}{	}{	}{	}{	}
+{	267	}{	Je m'en occupe pour vous.	}{	Je m'en occupe pour vous.	}{	281	}{	G.VirgilCrumbKnowledge == 0	}{	G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 1)	}{	}{	}{	}{	}{	}{	}{	Je commettrai ce crime.	}
 {	268	}{	Bon, je m'en occupe.	}{	Bon, je m'en occupe.	}{	281	}{	G.VirgilCrumbKnowledge == 1	}{	G.Knox_Quest = 5; pc.SetQuest("Knox Asian", 10)	}{	}{	}{	}{	}{	}{	}{	Je vais faire pleuvoir le sang sur ce cauchemar oriental.	}
 {	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

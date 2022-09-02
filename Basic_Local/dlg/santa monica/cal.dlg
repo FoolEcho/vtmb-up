@@ -149,7 +149,7 @@
 {	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	151	}{	De toute façon, j'ai toujours détesté ce boulot de merde.	}{	De toute façon, j'ai toujours détesté ce boulot de merde.	}{	#	}{	npc.SetDisposition("Bartender", 1)	}{	Whisper("Moaning")	}{	}{	}{	}{	}{	}{	}{	}
-{	152	}{	Navré.	}{	Navré.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ca fait mal aussi.	}
+{	152	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -166,20 +166,20 @@
 {	166	}{	Que savez-vous sur Therese et Jeanette ?	}{	Que savez-vous sur Therese et Jeanette ?	}{	181	}{	G.Cal_Permission == 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	167	}{	Je cherche un type appelé Knox - carrure maigre, comportement étourdi. . .	}{	Je cherche un type appelé Knox - carrure maigre, comportement étourdi. . .	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Mercurio_Quest >= 2 and G.Cal_Knox == 0	}{	G.Cal_Knox = 1	}{	}{	}{	}{	}{	}{	}{	Puis-je trouver le fort Knox derrière vos portes ?	}
 {	168	}{	J'ai juste besoin de quelqu'un à qui raconter mes malheurs.	}{	J'ai juste besoin de quelqu'un à qui raconter mes malheurs.	}{	191	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	169	}{	Non. Au revoir.	}{	Non. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Etre ailleurs.	}
-{	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	169	}{	Désolé pour votre travail.	}{	Désolé pour votre travail.	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je pleure toujours pour toi.	}
+{	170	}{	Non. Au revoir.	}{	Non. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Etre ailleurs.	}
 {	171	}{	Ne le prenez pas mal, mais. . . même en ayant bu, ce n'est pas à ce point-là, vous savez. Je veux dire, si vous comptiez trouver quelqu'un d'assez saoul pour rentrer avec vous. . .	}{	Ne le prenez pas mal, mais. . . même en ayant bu, ce n'est pas à ce point-là, vous savez. Je veux dire, si vous comptiez trouver quelqu'un d'assez saoul pour rentrer avec vous. . .	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	172	}{	J'ai besoin de voir Jeanette ou Therese.	}{	J'ai besoin de voir Jeanette ou Therese.	}{	231	}{	G.Jeanette_Refuse > 0 and G.Jeanette_Fire == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	173	}{	Je cherche Therese. Vous savez où elle est ?	}{	Je cherche Therese. Où est-elle ?	}{	81	}{	G.Mercurio_Quest == 2 and G.Cal_Permission == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	174	}{	Que savez-vous sur Therese et Jeanette ?	}{	Que savez-vous sur Therese et Jeanette ?	}{	181	}{	G.Cal_Permission == 1 and G.Jeanette_Refuse == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	175	}{	J'ai juste besoin de quelqu'un pour écouter mes problèmes.	}{	J'ai juste besoin de quelqu'un pour écouter mes problèmes.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	J'ai juste besoin de quelqu'un pour écouter mes problèmes.	}{	J'ai juste besoin de quelqu'un pour écouter mes problèmes.	}{	191	}{	G.Cal_Troubles == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	176	}{	Je cherche un type appelé Knox - costaud, les cheveux longs. . .	}{	Je cherche un type appelé Knox - costaud, les cheveux longs. . .	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Mercurio_Quest >= 2 and G.Cal_Knox == 0	}{	G.Cal_Knox = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	177	}{	Je pense que je vais aller dépenser mon argent ailleurs. Au revoir.	}{	Je pense que je vais aller dépenser mon argent ailleurs. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	178	}{	Tu dois le savoir mieux que personne, gros lard. Au revoir.	}{	Tu dois le savoir mieux que personne, gros lard. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	181	}{	Elles me donnent un chèque toutes les deux semaines. Fin de la discussion.	}{	Elles me donnent un chèque toutes les deux semaines. Fin de la discussion.	}{	#	}{	npc.SetDisposition("Bartender", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	182	}{	J'ai besoin de quelqu'un à qui raconter mes malheurs.	}{	J'ai besoin de quelqu'un à qui raconter mes malheurs.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	J'ai besoin de quelqu'un à qui raconter mes malheurs.	}{	J'ai besoin de quelqu'un à qui raconter mes malheurs.	}{	191	}{	G.Cal_Troubles == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	183	}{	Je cherche un type appelé Knox - costaud, les cheveux longs. . .	}{	Je cherche un type appelé Knox - costaud, les cheveux longs. . .	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Mercurio_Quest >= 2 and G.Cal_Knox == 0	}{	G.Cal_Knox = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	184	}{	Compris. Au revoir.	}{	Compris. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -208,7 +208,7 @@
 {	208	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	209	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	211	}{	Ah ben ouais. . .	}{	Ah ben ouais. . .	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	211	}{	Ah ben ouais. . .	}{	Ah ben ouais. . .	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	G.Cal_Troubles = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	212	}{	. . . Je vais retrouver ma blanche amie.	}{	. . . Je vais retrouver ma blanche amie.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	213	}{	. . . Maintenant je sais que Dieu n'existe pas. C'est pas possible.	}{	. . . Maintenant je sais que Dieu n'existe pas. C'est pas possible.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	214	}{	. . . La seule bonne chose qui m'attend, c'est la mort.	}{	. . . La seule bonne chose qui m'attend, c'est la mort.	}{	221	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -340,8 +340,8 @@
 {	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	341	}{	(Starting Condition)	}{	}{	141	}{	G.Cal_Permission == 1 and G.Therese_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	342	}{	(Starting Condition)	}{	}{	171	}{	G.Cal_Known == 1 and IsClan(pc,"Nosferatu") and G.Cal_Quits == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	343	}{	(Starting Condition)	}{	}{	161	}{	G.Cal_Known == 1 and G.Cal_Quits == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	344	}{	(Starting Condition)	}{	}{	151	}{	G.Cal_Quits == 1 and G.Therese_Quest < 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	343	}{	(Starting Condition)	}{	}{	161	}{	G.Cal_Known == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	344	}{	(Starting Condition)	}{	}{	151	}{	G.Cal_Quits == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	345	}{	(Starting Condition)	}{	}{	131	}{	G.Cal_Known == 0 and IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	346	}{	(Starting Condition)	}{	}{	21	}{	npc.times_talked >= 1 and not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	347	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked >= 1 and IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -259,7 +259,7 @@
 {	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	261	}{	Le 'Voce del Morte'. . . Les Giovanni ne partagent jamais leurs secrets de façon volontaire. . . et j'ai eu peu de succès dans mes tentatives pour m'introduire chez eux. Comment l'avez-vous obtenu ?	}{	Le 'Voce del Morte'. . . Les Giovanni ne partagent jamais leurs secrets de façon volontaire. . . et j'ai eu peu de succès dans mes tentatives pour m'introduire chez eux. Comment l'avez-vous obtenu ?	}{	#	}{	}{	pc.RemoveItem("item_g_pisha_book")	}{	}{	}{	}{	}{	}{	}{	}
-{	262	}{	Ils étaient un peu distraits, j'ai réussi à entrer sans qu'ils s'en rendent compte.	}{	Ils étaient un peu distraits, j'ai réussi à entrer sans qu'ils s'en rendent compte.	}{	271	}{	G.GioBotchedOutside == 0 and G.GioBotchedInside == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ils n'ont rien vu. Et moi non plus. Dans quel endroit étais-je ? 	}
+{	262	}{	Ils étaient un peu distraits, j'ai réussi à entrer sans qu'ils s'en rendent compte.	}{	Ils étaient un peu distraits, j'ai réussi à entrer sans qu'ils s'en rendent compte.	}{	271	}{	G.Giovanni_Peacefully == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ils n'ont rien vu. Et moi non plus. Dans quel endroit étais-je ? 	}
 {	263	}{	Les Giovanni de Californie viennent d'entrer dans la liste des espèces en voie de disparition.	}{	Les Giovanni de Californie viennent d'entrer dans la liste des espèces en voie de disparition.	}{	271	}{	G.Bruno_Killed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Il reste des Giovanni ? Je pensais les avoir tous envoyés au-delà.	}
 {	264	}{	Peu importe. Donnez-moi ce que vous avez promis.	}{	Peu importe. Donnez-moi ce que vous avez promis.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où est ma récompense ?	}
 {	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -312,18 +312,18 @@
 {	312	}{	J'avais une autre question.	}{	J'avais une autre question.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aimerais demander autre chose à la veuve.	}
 {	313	}{	Au sujet des objets que vous cherchez.	}{	Au sujet des objets que vous cherchez.	}{	241	}{	G.Pisha_Desire == 1	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi des trésors que vous cherchez.	}
 {	314	}{	Que faites-vous dans une maison abandonnée ?	}{	Que faites-vous dans une maison abandonnée ?	}{	111	}{	G.Pisha_Desire == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi avoir construit votre toile ici, veuve ?	}
-{	315	}{	Vous mangez de la chair et étudiez la mort. Je pense que je vais partir, toute cette excitation, c'est trop pour moi.	}{	Vous mangez de la chair et étudiez la mort. Je pense que je vais partir, toute cette excitation, c'est trop pour moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La vie d'une veuve noire me lasse. Et me chasse.	}
-{	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	315	}{	A propos des objets que vous voulez...	}{	A propos des objets que vous voulez...	}{	181	}{	G.Story_State < 30	}{	}{	}{	}{	}{	}{	}{	}{	A propos des prix que vous cherchez...	}
+{	316	}{	A propos des objets que vous voulez...	}{	A propos des objets que vous voulez...	}{	201	}{	G.Story_State >= 30	}{	G.Pisha_Quest = 1; pc.SetQuest("Occult",1)	}{	}{	}{	}{	}{	}{	}{	A propos des prix que vous cherchez...	}
+{	317	}{	Vous mangez de la chair et étudiez la mort. Je pense que je vais partir, toute cette excitation, c'est trop pour moi.	}{	Vous mangez de la chair et étudiez la mort. Je pense que je vais partir, toute cette excitation, c'est trop pour moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La vie d'une veuve noire me lasse. Et me chasse.	}
 {	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	321	}{	Si cela vous satisfait, je ferai un effort pour n'attaquer que les faibles et les indignes. Consommant leur chair non par haine, mais par besoin de survivre - je meurs sans cela. A ce prix est ma survie.	}{	Si cela vous satisfait, je ferai un effort pour n'attaquer que les faibles et les indignes. Consommant leur chair non par haine, mais par besoin de survivre - je meurs sans cela. A ce prix est ma survie.	}{	#	}{	}{	G.Pisha_Flesh = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	322	}{	J'avais une autre question.	}{	J'avais une autre question.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aimerais demander autre chose à la veuve.	}
 {	323	}{	Parlons des objets que vous cherchez.	}{	Parlons des objets que vous cherchez.	}{	241	}{	G.Pisha_Desire == 1	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi des récompenses que vous cherchez.	}
-{	324	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	325	}{	Cela me dégoûte tout de même. Adieu.	}{	Cela me dégoûte tout de même. Adieu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La vie d'une veuve noire me lasse. Et me chasse.	}
-{	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	324	}{	A propos des objets que vous voulez...	}{	A propos des objets que vous voulez...	}{	181	}{	G.Story_State < 30	}{	}{	}{	}{	}{	}{	}{	}{	A propos des prix que vous cherchez...	}
+{	325	}{	A propos des objets que vous voulez...	}{	A propos des objets que vous voulez...	}{	201	}{	G.Story_State >= 30	}{	G.Pisha_Quest = 1; pc.SetQuest("Occult",1)	}{	}{	}{	}{	}{	}{	}{	A propos des prix que vous cherchez...	}
+{	326	}{	Cela me dégoûte tout de même. Adieu.	}{	Cela me dégoûte tout de même. Adieu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La vie d'une veuve noire me lasse. Et me chasse.	}
 {	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

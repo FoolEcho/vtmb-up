@@ -600,7 +600,7 @@
 {	600	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	601	}{	Vous pensez quitter l'organisation ? Vous briseriez le coeur de ce pauvre Sebastian ? Sérieusement, vous devriez terminer ces âneries autour du sarcophage avant de partir - les princes n'ont pas l'habitude qu'on leur désobéisse.	}{	Vous pensez quitter l'organisation ? Vous briseriez le coeur de ce pauvre Sebastian ? Sérieusement, vous devriez terminer ces âneries autour du sarcophage avant de partir - les princes n'ont pas l'habitude qu'on leur désobéisse.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	602	}{	Comment on l'ouvre ?	}{	Comment on l'ouvre ?	}{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors, comment on ouvre la boîte ?	}
-{	603	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	603	}{	Pouvons-nous utiliser les Disciplines pour regarder à l'intérieur ?	}{	Pouvons-nous utiliser les Disciplines pour regarder à l'intérieur ?	}{	611	}{	Intelligence 5	}{	G.Beckett_Auspex = 1	}{	}{	}{	}{	}{	}{	}{	Y a-t-il de la magie de vampire pour regarder dans la boîte ?	}
 {	604	}{	A votre avis, qu'y a-t-il à l'intérieur ?	}{	A votre avis, qu'y a-t-il à l'intérieur ?	}{	611	}{	}{	}{	}{	}{	}{	}{	}{	}{	OHH. . . Il y a quoi dans la boîte ?	}
 {	605	}{	Vous avez de la dynamite ? On fait sauter ce machin, et tout est fini !	}{	Vous avez de la dynamite ? On fait sauter ce machin, et tout est fini !	}{	621	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	TNT et clé ont le même nombre de lettres.	}
 {	606	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -612,7 +612,7 @@
 {	612	}{	Bon, la question était idiote. Comment on l'ouvre ?	}{	Bon, la question était idiote. Comment on l'ouvre ?	}{	431	}{	Intelligence 2	}{	}{	}{	}{	}{	}{	}{	}{	??? Une meilleure idée ?	}
 {	613	}{	Bonne idée.	}{	Bonne idée.	}{	631	}{	Intelligence -2	}{	}{	}{	}{	}{	}{	}{	}{	BRILLANT ! C'est pour ça qu'on vous a donné votre émission télé.	}
 {	614	}{	Vous avez de la dynamite ? On fait sauter ce machin, et tout est fini !	}{	Vous avez de la dynamite ? On fait sauter ce machin, et tout est fini !	}{	621	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	TNT et clé ont le même nombre de lettres.	}
-{	615	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	615	}{	Donc je suppose qu'on ne peut pas regarder à travers la pierre comme ça. Comment l'ouvrir alors ?	}{	Donc je suppose qu'on ne peut pas regarder à travers la pierre comme ça. Comment l'ouvrir alors ?	}{	431	}{	G.Beckett_Auspex == 1	}{	}{	}{	}{	}{	}{	}{	}{	Donc pas de vision magique à travers cette pierre magique... comment la boîte s'ouvre-t-elle ?	}
 {	616	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	617	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	618	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

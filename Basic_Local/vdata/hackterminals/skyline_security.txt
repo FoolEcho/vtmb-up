@@ -81,6 +81,20 @@ Hannah Glazer. La mine d'or ! Il y a quelque chose de chaud dans cet appart et c
 
 	}
 
+	SubDir	// added by wesp
+	{
+		"name"			"Apt 3 Coffre-fort"
+		"description"		"Le coffre-fort est verrouillé"
+		"dependency"		"G.PP == 1 and G.Safe_Unlocked == 0"
+	}
+
+	SubDir	// added by wesp
+	{
+		"name"			"Apt 3 Coffre-fort"
+		"description"		"Le coffre-fort est déverrouillé"
+		"dependency"		"G.PP == 1 and G.Safe_Unlocked == 1"
+	}
+
 	Email
 	{
 		"subject"	"Caméras cachées en ligne"				

@@ -1,6 +1,6 @@
 {	1	}{	[furieuse]Sale connard ! Je ne peux pas respirer là-dedans !	}{	[furieuse]Sale garce ! Je ne peux pas respirer là-dedans !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	Euh, oui, c'est pour ça que je vous laisse sortir.	}{	Euh, oui, c'est pour ça que je vous laisse sortir.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je viens vous libérer de ces enfants perdus. . .	}
-{	3	}{	Alors vous devriez être contente que je vous en sorte.	}{	Alors vous devriez être contente que je vous en sorte.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Alors vous devriez être contente que je vous en sorte.	}{	Alors vous devriez être contente que je vous en sorte.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous donnerai bientôt de l'air frais à respirer.	}
 {	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -41,8 +41,8 @@
 {	41	}{	Oh, je suis trop impressionnée. Quoi ? Vous vouliez que je vous remercie ? Rêvez pas, pauvre type.	}{	Oh, je suis trop impressionnée. Quoi ? Vous vouliez que je vous remercie ? Rêvez pas, pauvre tache.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	Bon. On va sortir d'ici.	}{	Bon. On va sortir d'ici.	}{	51	}{	G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	Sortons de cette tanière des enfants perdus. . .	}
 {	43	}{	Continuez de me parler comme ça, et je vous remets dans le congélo.	}{	Continuez de me parler comme ça, et je vous remets dans le congélo.	}{	61	}{	G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	Fermez-la, ou vous retournez dans la cage. . .	}
-{	44	}{	N'avez-vous rien d'autre à dire ? Oubliez que je vous ai sauvé.	}{	N'avez-vous rien d'autre à dire ? Oubliez que je vous ai sauvé.	}{	0	}{	G.Kiki_Rescued == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas vous revoir encore dans mes rêves.	}
-{	45	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	44	}{	Vous êtes vraiment ingrate. La prochaine fois, je réfléchirai à deux fois avant de vous sauver.	}{	Vous êtes vraiment ingrate. La prochaine fois, je réfléchirai à deux fois avant de vous sauver.	}{	0	}{	G.Kiki_Rescued == 1 and G.Story_State < 65}{	}{	}{	}{	}{	}{	}{	}{	Tu parles comme un disque rayé, petite belette.	}
+{	45	}{	Je vous ai encore sauvé la vie et vous me parlez toujours comme ça ? Vous feriez mieux de quitter la ville ou vous subirez le même sort que votre père.	}{	Je vous ai encore sauvé la vie et vous me parlez toujours comme ça ? Vous feriez mieux de quitter la ville ou vous subirez le même sort que votre père.	}{	0	}{	G.Kiki_Rescued == 1 and G.Story_State >= 65	}{	G.Kiki_Ramen = 1; FindPlayer().HumanityAdd( 1 )	}{	}{	}{	}{	}{	}{	}{	}{	C'était la dernière fois que je sors la fouine du trou, maintenant cache-toi loin de ton vieil homme mort.	}
 {	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	47	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

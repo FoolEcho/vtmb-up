@@ -50,8 +50,8 @@
 {	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	51	}{	Oh, je suis Christopher. . . Giovanni. Et vous ?	}{	Oh, je suis Christopher. . . Giovanni. Et vous ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Chris_Seduce = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	Maria Rosselini. Enchantée.	}{	Maria Rosselini. Enchantée.	}{	61	}{	G.Maria_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	Appelez-moi Maria Rosselini, je vous prie.	}
-{	53	}{	Je suis tout ce que vous désirez chez une femme. . .	}{	Je suis tout ce que vous désirez chez une femme. . .	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre succube personnelle.	}
-{	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Maria Rossi. Enchantée.	}{	Maria Rossi. Enchantée.	}{	61	}{	G.Maria_Know == 0	}{	}{	}{	}{	}{	}{	}{	}{	Appelez-moi Maria Rosi, je vous prie.	}
+{	54	}{	Je suis tout ce que vous désirez chez une femme. . .	}{	Je suis tout ce que vous désirez chez une femme. . .	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre succube personnelle.	}
 {	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -70,8 +70,8 @@
 {	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	71	}{	Euh. . . C'est une réunion de famille. Vous ne trouvez pas ça un peu déplacé ? Enfin, on pourrait être cousins. . . Non pas que ça ait jamais arrêté le reste de la famille, mais. . .	}{	Euh. . . C'est une réunion de famille. Vous ne trouvez pas ça un peu déplacé ? Enfin, on pourrait être cousins. . . Non pas que ça ait jamais arrêté le reste de la famille, mais. . .	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	Rosselini. Maria Rosselini.	}{	Rosselini. Maria Rosselini.	}{	61	}{	G.Maria_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	Nos noms de famille ne sont pas comme l'autre. Le mien est Rosselini, on le met après Maria.	}
-{	73	}{	Vous êtes sûr que vous ne voulez pas partir un peu plus loin pour 'discuter' ?	}{	Vous êtes sûr que vous ne voulez pas partir un peu plus loin pour 'discuter' ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous voulez qu'on aille se mettre dans un endroit sombre et si possible humide ?	}
-{	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	Rossi. Maria Rossi.	}{	Rossi. Maria Rossi.	}{	61	}{	G.Maria_Know == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nos noms de famille ne sont pas comme l'autre. Le mien est Rossi, on le met après Maria.	}
+{	74	}{	Vous êtes sûr que vous ne voulez pas partir un peu plus loin pour 'discuter' ?	}{	Vous êtes sûr que vous ne voulez pas partir un peu plus loin pour 'discuter' ?	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous voulez qu'on aille se mettre dans un endroit sombre et si possible humide ?	}
 {	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -169,10 +169,10 @@
 {	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	171	}{	Je ne sais même pas qui vous êtes. Au fait, moi, c'est Chris Giovanni.	}{	Je ne sais même pas qui vous êtes. Au fait, moi, c'est Chris Giovanni.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	172	}{	Victor. Victor Rosselini.	}{	Maria. Maria Rosselini.	}{	181	}{	not IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	173	}{	Mon invitation dit 'Victor Rosselini'.	}{	Mon invitation dit 'Maria Rosselini'.	}{	181	}{	IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	174	}{	Ravi de vous rencontrer, Christopher. Profitez de la fête.	}{	Ravie de vous rencontrer, Christopher. Profitez de la fête.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oubliez ça, je le ferai.	}
-{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	Victor. Victor Rossi.	}{	Maria. Maria Rossi.	}{	181	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	Victor. Victor Rosselini.	}{	Maria. Maria Rosselini.	}{	181	}{	not IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	Mon invitation dit 'Victor Rosselini'.	}{	Mon invitation dit 'Maria Rosselini'.	}{	181	}{	IsClan(pc,"Malkavian") and (G.Victor_Know == 1 or G.Maria_Know == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	Ravi de vous rencontrer, Christopher. Profitez de la fête.	}{	Ravie de vous rencontrer, Christopher. Profitez de la fête.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oubliez ça, je le ferai.	}
 {	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

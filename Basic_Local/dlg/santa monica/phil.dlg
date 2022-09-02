@@ -73,7 +73,7 @@
 {	73	}{	Vous avez sommeil. . .	}{	Vous avez sommeil. . .	}{	11	}{	Dominate 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	74	}{	Vous avez sommeil....	}{	Vous avez sommeil....	}{	11	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	75	}{	Vous voulez que je parte ? C'est bien ça ?	}{	Vous voulez que je parte ? C'est bien ça ?	}{	51	}{	Seduction 6 & ( not IsMale(pc) and G.Phil_Seduce < 2 and G.Patch_Plus == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Je reviens jouer au docteur. . .	}
-{	76	}{	Si vous ne le savez pas, vous ne devriez pas poser de question. . .	}{	Si vous ne le savez pas, vous ne devriez pas poser de question. . .	}{	21	}{	Persuasion 4 & G.Phil_Persuade == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mes raisons sont bonnes et secrètes. . .	}
+{	76	}{	Je ne ferai pas ça, parce que j'ai besoin de quelque chose venant de toi.	}{	Je ne ferai pas ça, parce que j'ai besoin de quelque chose venant de toi.	}{	21	}{	Persuasion 4 & G.Phil_Persuade == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je resterai pour recevoir ton cadeau.	}
 {	77	}{	Bien. Mais je reviendrai peut-être.	}{	Bien. Mais je reviendrai peut-être.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'emporte mon ombre ailleurs. Adieu.	}
 {	78	}{	A présent que vous me connaissez, je ne peux pas vous laisser vivre.	}{	A présent que vous me connaissez, je ne peux pas vous laisser vivre.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Je vais dévorer vos liquides internes, infirmier. . .	}
 {	79	}{	Vous voulez que je parte ? C'est bien ça ?	}{	Vous voulez que je parte ? C'est bien ça ?	}{	51	}{	Seduction 6 & (G.Phil_Seduce < 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	I came back here to play doctor.	}

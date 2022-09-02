@@ -419,9 +419,9 @@
 {	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	421	}{	[Namu] (Amen. . .)	}{	[Namu] (Amen. . .)	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Yukie_Follow = 2	}{	}{	}{	}{	}{	}{	}{	}
-{	422	}{	Pardon ? Oui, merci pour votre aide ! Vous pouvez me suivre à l'intérieur, mais je vais continuer seul !	}{	Pardon ? Oui, merci pour votre aide ! Vous pouvez me suivre à l'intérieur, mais je vais continuer seule !	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous pouvez aller dedans. Mais je peux y aller sans personne.	}
-{	423	}{	Attendez ! Ming se cache certainement profondément sous le grand temple. Pouvez-vous ouvrir un portail magique de chasseur pour m'y introduire ?	}{	Attendez ! Ming se cache certainement profondément sous le grand temple. Pouvez-vous ouvrir un portail magique de chasseur pour m'y introduire ?	}{	471	}{	Persuasion 10	}{	}{	}{	}{	}{	}{	}{	}{	Pas encore. Pouvez-vous ouvrir une porte de chasseur mumbo jumbo dans le repaire sous sa grande maison ?	}
-{	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	422	}{	Pardon ? Oui, merci pour votre aide ! Je vais continuer seul. Vous feriez mieux de rentrer chez vous maintenant, votre maître serait fier.	}{	Pardon ? Oui, merci pour votre aide ! Je vais continuer seul. Vous feriez mieux de rentrer chez vous maintenant, votre maître serait fier	}{	0	}{	G.Yukie_Follow == 1	}{	}{	}{	}{	}{	}{	}{	}{	Oui. Je descends et elle reste en haut.	}
+{	423	}{	Merci encore, pas besoin de rester.	}{	Merci encore, pas besoin de rester.	}{	0	}{	G.Yukie_Follow == 2	}{	}{	}{	}{	}{	}{	}{	}{	La mignonne devrait rentrer à la maison maintenant.	}
+{	424	}{	Attendez ! Ming se cache certainement profondément sous le grand temple. Pouvez-vous ouvrir un portail magique de chasseur pour m'y introduire ?	}{	Attendez ! Ming se cache certainement profondément sous le grand temple. Pouvez-vous ouvrir un portail magique de chasseur pour m'y introduire ?	}{	471	}{	Persuasion 10	}{	}{	}{	}{	}{	}{	}{	}{	Pas encore. Pouvez-vous ouvrir une porte de chasseur mumbo jumbo dans le repaire sous sa grande maison ?	}
 {	425	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	426	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	427	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
