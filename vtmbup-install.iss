@@ -1,19 +1,19 @@
 ; -- vtmbupinstaller.iss --
 
 [Setup]
-AppName=Vampire: The Masquerade - Bloodlines unofficial patch 11.2 fr
-AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 11.2 fr
+AppName=Vampire: The Masquerade - Bloodlines unofficial patch 11.3 fr
+AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 11.3 fr
 VersionInfoDescription=Vampire: The Masquerade - Bloodlines unofficial patch avec sous-titrage français
-VersionInfoVersion=11.2
+VersionInfoVersion=11.3
 AppPublisher=Werner Spahl
 DefaultDirName={reg:HKLM\Software\Activision\Vampire - Bloodlines,InstallPath|{pf}\Steam\steamapps\common\vampire the masquerade - bloodlines}
 AppendDefaultDirName=no
 DirExistsWarning=no
 EnableDirDoesntExistWarning=no
-OutputBaseFilename=VTMBup112fr
+OutputBaseFilename=VTMBup113fr
 Uninstallable=no
-InfoBeforeFile=vtmbup-readme.txt
-InfoAfterFile=vtmbup-after.txt
+InfoBeforeFile=VTMBup-readme.txt
+InfoAfterFile=VTMBup-after.txt
 Compression=lzma2/ultra64
 SolidCompression=true
 InternalCompressLevel=normal
@@ -55,31 +55,28 @@ end;
 [Files]
 Source: "{app}\Vampire\save\*"; DestDir: "{app}\Vampire\save\incompatible"; Components: basic; Flags: external skipifsourcedoesntexist
 Source: "{app}\Unofficial_Patch_fr\save\*"; DestDir: "{app}\Unofficial_Patch_fr\save\incompatible"; Components: basic; Flags: external skipifsourcedoesntexist
-Source: "vtmbup-readme.txt"; DestDir: "{app}"; Components: readme; Flags: isreadme overwritereadonly
+Source: "VTMBup-readme.txt"; DestDir: "{app}"; Components: readme; Flags: overwritereadonly
 Source: "Official_Patch\*"; DestDir: "{app}"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly
-Source: "Basic_Patch\dlls\*"; DestDir: "{app}\vampire\dlls"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly
-Source: "Basic_Patch\cl_dlls\*"; DestDir: "{app}\vampire\cl_dlls"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly
 Source: "Basic_Patch\*"; DestDir: "{app}\Unofficial_Patch_fr"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly
 Source: "Basic_Local\*"; DestDir: "{app}\Unofficial_Patch_fr"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly
 Source: "Plus_Patch\*"; DestDir: "{app}\Unofficial_Patch_fr"; Components: plus; Flags: recursesubdirs ignoreversion overwritereadonly
 Source: "Plus_Local\*"; DestDir: "{app}\Unofficial_Patch_fr"; Components: plus; Flags: recursesubdirs ignoreversion overwritereadonly
 Source: "Patch_Extras\*"; DestDir: "{app}\Patch_Extras"; Components: extras; Flags: recursesubdirs ignoreversion overwritereadonly
-Source: "Patch_Extras\Developer Tools\Game Mod Loader\*"; DestDir: "{app}"; Components: basic; Flags: recursesubdirs ignoreversion; Excludes: "Vampire_4GB_fixed.exe,loader-linux.sh,loader-readme.txt"
-Source: "Patch_Extras\Developer Tools\Game Mod Loader\Vampire_4GB_fixed.exe"; DestDir: "{app}"; DestName: "Vampire.exe"; Flags: ignoreversion overwritereadonly; Check: IsWin64
-Source: "{app}\Bin\*"; DestDir: "{app}"; Components: basic; Flags: external skipifsourcedoesntexist overwritereadonly
-Source: "{app}\*.exe";                          Flags: external dontcopy skipifsourcedoesntexist; Attribs: readonly
-Source: "{app}\*.dll";                          Flags: external dontcopy skipifsourcedoesntexist; Attribs: readonly
-Source: "{app}\Bin\*.dll";                      Flags: external dontcopy skipifsourcedoesntexist; Attribs: readonly
-Source: "{app}\Unofficial_Patch_fr\cl_dlls\*.dll"; Flags: external dontcopy skipifsourcedoesntexist; Attribs: readonly
-Source: "{app}\Unofficial_Patch_fr\dlls\*.dll";    Flags: external dontcopy skipifsourcedoesntexist; Attribs: readonly
-Source: "{app}\Vampire\cl_dlls\*.dll";          Flags: external dontcopy skipifsourcedoesntexist; Attribs: readonly
-Source: "{app}\Vampire\dlls\*.dll";             Flags: external dontcopy skipifsourcedoesntexist; Attribs: readonly
+Source: "Patch_Extras\Developer Tools\Game Mod Loader\*"; DestDir: "{app}"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly
+Source: "{app}\*.exe"; Flags: external dontcopy skipifsourcedoesntexist; Attribs: readonly
+Source: "{app}\Bin\*.dll"; Flags: external dontcopy skipifsourcedoesntexist; Attribs: readonly
+Source: "{app}\Vampire\dlls\*.dll"; Flags: external dontcopy skipifsourcedoesntexist; Attribs: readonly
+Source: "{app}\Vampire\cl_dlls\*.dll"; Flags: external dontcopy skipifsourcedoesntexist; Attribs: readonly
+Source: "{app}\dbghelp.dll.12"; DestDir: "{app}"; DestName: "dbghelp.dll"; Flags: external skipifsourcedoesntexist overwritereadonly
+Source: "{app}\bin\launcher.dll.12"; DestDir: "{app}\bin"; DestName: "launcher.dll"; Flags: external skipifsourcedoesntexist overwritereadonly
 
 [InstallDelete]
+Type: filesandordirs; Name: "{app}\loader-*"
 Type: filesandordirs; Name: "{app}\vampire.dat"
-Type: filesandordirs; Name: "{app}\noseqence.txt"
 Type: filesandordirs; Name: "{app}\dbghelp.dll.12"
+Type: filesandordirs; Name: "{app}\nosequence.txt"
 Type: filesandordirs; Name: "{app}\a_basetexture.tth"
+Type: filesandordirs; Name: "{app}\bin\launcher.dll.12"
 Type: filesandordirs; Name: "{app}\Vampire\hl2.tmp"
 Type: filesandordirs; Name: "{app}\Vampire\stats.txt"
 Type: filesandordirs; Name: "{app}\Vampire\vidcfg.bin"
@@ -88,13 +85,18 @@ Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\hl2.tmp"
 Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\stats.txt"
 Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\vidcfg.bin"
 Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\voice_ban.dt"
+Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\Patch_Extras\Developer Tools\Game Mod Loader\loader-*"
+Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\Patch_Extras\Developer Tools\Game Mod Loader\dbghelp.*"
+Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\Patch_Extras\Developer Tools\Game Mod Loader\Bin\launcher.*"
+Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\Patch_Extras\Developer Tools\Game Mod Loader\Vampire_4GB_fixed.exe"
 
 [Icons]
-Name: "{userdesktop}\VtM Bloodlines Unofficial Patch (fr)"; Filename: {app}\vampire.exe; Parameters: "-game Unofficial_Patch_fr"; IconFilename: {app}\loader.exe
-Name: "{userprograms}\VtM Bloodlines Game Mod Loader (fr)"; Filename: {app}\loader.exe
+Name: "{userdesktop}\VtM Bloodlines Unofficial Patch (fr)"; Filename: {app}\Vampire.exe; Parameters: "-game Unofficial_Patch_fr"; IconFilename: {app}\loader.exe
+Name: "{userprograms}\VtM Bloodlines Unofficial Patch (fr)"; Filename: {app}\Vampire.exe; Parameters: "-game Unofficial_Patch_fr"; IconFilename: {app}\loader.exe
 
 [Run]
 Filename: {app}\vampire.exe; Parameters: "-game Unofficial_Patch_fr"; Description: Démarrer Bloodlines avec le Patch non officiel; Flags: postinstall runascurrentuser nowait skipifsilent
+Filename: {app}\Vampire.exe; Parameters: "-game Vampire"; Description: Démarrer Bloodlines vanilla avec uniquement les correctifs du moteur; Flags: postinstall runascurrentuser nowait skipifsilent unchecked
 
 [Languages]
 Name: "fr"; MessagesFile: "compiler:Languages\French.isl"
