@@ -310,7 +310,7 @@
 {	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	311	}{	Je savais que vous reviendriez. Vous pensiez trop à moi, c'est ça, hein ?	}{	Je savais que vous reviendriez. Vous pensiez trop à moi, c'est ça, hein ?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	312	}{	Bien sûr. Ca va ?	}{	Bien sûr. Ca va ?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous et les intentions du Père Noir. Comment allez-vous ?	}
-{	313	}{	J'ai besoin que vous me donniez quelque chose, cette fois.	}{	J'ai besoin que vous me donniez quelque chose, cette fois.	}{	591	}{	G.Romero_Boink == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	313	}{	J'ai besoin que vous me donniez quelque chose, cette fois.	}{	J'ai besoin que vous me donniez quelque chose, cette fois.	}{	591	}{	G.Romero_Boink == 2	}{	G.Seductive_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}
 {	314	}{	Ouais, c'est ça. Bon, faut que j'y aille. Au revoir.	}{	Ouais, c'est ça. Bon, faut que j'y aille. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je pense que vous pourrez réfléchir pour nous deux. Je m'en vais.	}
 {	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -533,7 +533,7 @@
 {	533	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	534	}{	C'est ça, allez faire ça et moi je m'occupe du reste.	}{	C'est ça, allez faire ça et moi je m'occupe du reste.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je veux jouer avec le mort-vivant. Vous, allez jouer à votre jeu charnel.	}
 {	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	536	}{	Ca a l'air amusant. On joue. . .	}{	Ca a l'air amusant. On joue. . .	}{	561	}{	}{	G.Romero_Ally = 1	}{	}{	}{	}{	}{	}{	}{	Ma petite goule de luxure ... laissons se fondre notre chair.	}
+{	536	}{	Ca a l'air amusant. On joue. . .	}{	Ca a l'air amusant. On joue. . .	}{	561	}{	}{	pc.bloodpool > 1	}{	}{	}{	}{	}{	}{	}{	Ma petite goule de luxure ... laissons se fondre notre chair.	}
 {	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	538	}{	Je vais vous épargner le trajet. Je vais vous rapporter quelqu'un. . .	}{	Je vais vous épargner le trajet. Je vais vous rapporter quelqu'un. . .	}{	621	}{	Persuasion 4	}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{	Le voyage n'est pas votre avenir, c'est le mien.	}
 {	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -568,7 +568,7 @@
 {	568	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	571	}{	Ne me mordez pas, d'accord ? Quoi ? Je parlais de mon cou. . .	}{	Ne me mordez pas, d'accord ? Quoi ? Je parlais de mon cou. . .	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Romero_Boink = 1; pc.Bloodloss(1)	}{	}{	}{	}{	}{	}{	}{	}
+{	571	}{	Ne me mordez pas, d'accord ? Quoi ? Je parlais de mon cou. . .	}{	Ne me mordez pas, d'accord ? Quoi ? Je parlais de mon cou. . .	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Romero_Ally = 1; G.Romero_Boink = 1; pc.Bloodloss(1)	}{	}{	}{	}{	}{	}{	}{	}
 {	572	}{	Je ne vous promets rien. Maintenant, déshabillez-vous, goule. . .	}{	Je ne vous promets rien. Maintenant, déshabillez-vous, goule. . .	}{	0	}{	G.Romero_Quest != 4	}{	pc.AwardExperience("Pimp01")	}{	}{	}{	}{	}{	}{	}{	Taisez-vous, prosternez-vous et vénérez votre maîtresse. Et apportez une corde.	}
 {	573	}{	Je ferai doucement. . . peut-être. . .	}{	Je ferai doucement. . . peut-être. . .	}{	0	}{	G.Romero_Quest != 4	}{	pc.AwardExperience("Pimp01")	}{	}{	}{	}{	}{	}{	}{	Je serai une douce caresse. . . et une gifle au visage.	}
 {	574	}{	Je ne vous promets rien. Maintenant, déshabillez-vous, goule. . .	}{	Je ne vous promets rien. Maintenant, déshabillez-vous, goule. . .	}{	0	}{	G.Romero_Quest == 4	}{	}{	}{	}{	}{	}{	}{	}{	Taisez-vous, prosternez-vous et vénérez votre maîtresse. Et apportez une corde.	}

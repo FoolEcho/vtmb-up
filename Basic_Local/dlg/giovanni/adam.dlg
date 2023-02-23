@@ -169,26 +169,26 @@
 {	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	171	}{	C'est. . . super. Et dire que je m'inquiétais qu'on le choisisse lui, juste à cause de son nom. Les choses s'améliorent. Tenez, prenez. Ne vous inquiétez pas, c'est du vrai.	}{	C'est. . . super. Et dire que je m'inquiétais qu'on le choisisse lui, juste à cause de son nom. Les choses s'améliorent. Tenez, prenez. Ne vous inquiétez pas, c'est du vrai.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Adam_Told = 1; G.Chris_Secret = 2; spawnWatch(); pc.AwardExperience("Gio01")	}{	}{	}{	}{	}{	}{	}{	}
-{	172	}{	(Auto-Link)	}{	(Auto-Link)	}{	191	}{	G.Mira_Secret == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	173	}{	J'ai parlé à Mira. Elle est séropo à cause de l'héroïne.	}{	J'ai parlé à Mira. Elle est séropo à cause de l'héroïne.	}{	181	}{	G.Mira_Secret == 1 and G.Mira_Told == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mira a mis l'aiguille empoisonnée dans ses veines. Elle est positive.	}
-{	174	}{	Je vais voir ce que je peux apprendre. Si je trouve quelque chose, je viens vous voir.	}{	Je vais voir ce que je peux apprendre. Si je trouve quelque chose, je viens vous voir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais violer les esprits de cette fête et revenir.	}
-{	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	172	}{	(Auto-Link)	}{	(Auto-Link)	}{	191	}{	G.Mira_Secret == 2 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	(Auto-Link)	}{	(Auto-Link)	}{	191	}{	G.Mira_Secret == 2 and G.Patch_Plus == 1	}{	pc.SetQuest("Dirt",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	J'ai parlé à Mira. Elle est séropo à cause de l'héroïne.	}{	J'ai parlé à Mira. Elle est séropo à cause de l'héroïne.	}{	181	}{	G.Mira_Secret == 1 and G.Mira_Told == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mira a mis l'aiguille empoisonnée dans ses veines. Elle est positive.	}
+{	175	}{	Je vais voir ce que je peux apprendre. Si je trouve quelque chose, je viens vous voir.	}{	Je vais voir ce que je peux apprendre. Si je trouve quelque chose, je viens vous voir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais violer les esprits de cette fête et revenir.	}
 {	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	177	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	178	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	179	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	180	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	181	}{	Mira est. . . Dire que j'étais amoureux d'elle. Dommage. . . Mais les affaires sont les affaires. Merci. Vous pouvez sans doute mettre ça au clou - c'est du 18 carat, qu'ils ne vous racontent pas de salades.	}{	Mira est. . . Dire que j'étais amoureux d'elle. Dommage. . . Mais les affaires sont les affaires. Merci. Vous pouvez sans doute mettre ça au clou - c'est du 18 carat, qu'ils ne vous racontent pas de salades.	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	G.Adam_Told = 1; G.Mira_Secret = 2; spawnGold(); pc.AwardExperience("Gio02")	}{	}{	}{	}{	}{	}{	}{	}
-{	182	}{	(Auto-Link)	}{	(Auto-Link)	}{	191	}{	G.Chris_Secret == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	183	}{	OK. Christopher n'est même pas un vrai Giovanni. Sa mère avait une liaison.	}{	OK. Christopher n'est même pas un vrai Giovanni. Sa mère avait une liaison.	}{	171	}{	G.Chris_Secret == 1 and G.Chris_Told == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le sang de Christopher n'est pas Giovanni. Sa mère est une catin.	}
-{	184	}{	Je vais voir ce que je peux apprendre. Si je trouve quelque chose, je viens vous voir.	}{	Je vais voir ce que je peux apprendre. Si je trouve quelque chose, je viens vous voir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais violer les esprits de cette fête et revenir.	}
-{	185	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	182	}{	(Auto-Link)	}{	(Auto-Link)	}{	191	}{	G.Chris_Secret == 2 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	183	}{	(Auto-Link)	}{	(Auto-Link)	}{	191	}{	G.Chris_Secret == 2 and G.Patch_Plus == 1	}{	pc.SetQuest("Dirt",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	184	}{	OK. Christopher n'est même pas un vrai Giovanni. Sa mère avait une liaison.	}{	OK. Christopher n'est même pas un vrai Giovanni. Sa mère avait une liaison.	}{	171	}{	G.Chris_Secret == 1 and G.Chris_Told == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le sang de Christopher n'est pas Giovanni. Sa mère est une catin.	}
+{	185	}{	Je vais voir ce que je peux apprendre. Si je trouve quelque chose, je viens vous voir.	}{	Je vais voir ce que je peux apprendre. Si je trouve quelque chose, je viens vous voir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais violer les esprits de cette fête et revenir.	}
 {	186	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	187	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	191	}{	Mira et Chris auront de la chance de ne pas se faire répudier quand Oncle Bruno apprendra leur situation. J'en ai envie depuis que j'ai appris le secret de la famille. . . Et si je peux vous faire monter aussi, je ne me gênerai pas. . .	}{	Mira et Chris auront de la chance de ne pas se faire répudier quand Oncle Bruno apprendra leur situation. J'en ai envie depuis que j'ai appris le secret de la famille. . . Et si je peux vous faire monter aussi, je ne me gênerai pas. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Adam_Win = 1; pc.AwardExperience("Gio03"); pc.SetQuest("Dirt",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	Mira et Chris auront de la chance de ne pas se faire répudier quand Oncle Bruno apprendra leur situation. J'en ai envie depuis que j'ai appris le secret de la famille. . . Et si je peux vous faire monter aussi, je ne me gênerai pas. . .	}{	Mira et Chris auront de la chance de ne pas se faire répudier quand Oncle Bruno apprendra leur situation. J'en ai envie depuis que j'ai appris le secret de la famille. . . Et si je peux vous faire monter aussi, je ne me gênerai pas. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Adam_Win = 1; pc.AwardExperience("Gio03")	}{	}{	}{	}{	}{	}{	}{	}
 {	192	}{	Soyez prudent, Adam. Bonne chance.	}{	Soyez prudent, Adam. Bonne chance.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Réparez votre volonté brisée.	}
 {	193	}{	Rappelez-vous simplement à qui vous le devez.	}{	Rappelez-vous simplement à qui vous le devez.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis le plus grand faiseur de rois au monde. Souvenez-vous en.	}
 {	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

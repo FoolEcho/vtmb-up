@@ -221,7 +221,7 @@
 {	221	}{	Il vous faut une dose ?	}{	Il vous faut une dose ?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	222	}{	Ouais. . .	}{	Ouais. . .	}{	0	}{	}{	G.Vandal_Blood = G.Vandal_Blood +1; npc.StartBarter(G.Story_State, 0); preBarter("Vandal")	}{	}{	}{	}{	}{	}{	}{	Donnez-moi la friandise rouge. . .	}
 {	223	}{	J'ai besoin de passer dans la réserve.	}{	J'ai besoin de passer dans la réserve.	}{	421	}{	G.E_Quest == 2 and G.Vandal_Permission == 0 and G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin d'entrer dans cette forteresse sanglante.	}
-{	224	}{	Dites, d'où vous vient votre sang?	}{	Dites, d'où vous vient votre sang?		}{	371	}{	G.Story_State < 100 and G.Vandal_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Alors, qui est votre saignant ?	}
+{	224	}{	Dites, d'où vous vient votre sang?	}{	Dites, d'où vous vient votre sang?		}{	371	}{	G.Story_State < 100 and G.Vandal_Plus == 1	}{	G.Vandal_Extra = 1	}{	}{	}{	}{	}{	}{	}{	Alors, qui est votre saignant ?	}
 {	225	}{	Pas pour l'instant.	}{	Pas pour l'instant.	}{	0	}{	G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -514,7 +514,7 @@
 {	514	}{	(Starting Condition)	}{	}{	221	}{	G.Story_State >= 100	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	515	}{	(Starting Condition)	}{	}{	361	}{	G.Vandal_Quest == 3 and G.Gimble_Vandal == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	516	}{	(Starting Condition)	}{	}{	411	}{	G.Vandal_Quest == 3 and (G.Gimble_Vandal == 0 or G.Gimble_Vandal == 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	517	}{	(Starting Condition)	}{	}{	391	}{	G.Vandal_Quest == 1 or G.Vandal_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	517	}{	(Starting Condition)	}{	}{	391	}{	(G.Vandal_Quest == 1 and G.Vandal_Extra == 0) or G.Vandal_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	518	}{	(Starting Condition)	}{	}{	501	}{	G.Lily_Free == 1 and IsDead("Phil")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	519	}{	(Starting Condition)	}{	}{	61	}{	G.Lily_Free == 1 and not IsDead("Phil")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	520	}{	(Starting Condition)	}{	}{	361	}{	G.Vandal_Blood > 8	}{	}{	}{	}{	}{	}{	}{	}{	}

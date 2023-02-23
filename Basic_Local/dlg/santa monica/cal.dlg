@@ -166,7 +166,7 @@
 {	166	}{	Que savez-vous sur Therese et Jeanette ?	}{	Que savez-vous sur Therese et Jeanette ?	}{	181	}{	G.Cal_Permission == 1 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	167	}{	Je cherche un type appelé Knox - carrure maigre, comportement étourdi. . .	}{	Je cherche un type appelé Knox - carrure maigre, comportement étourdi. . .	}{	241	}{	G.Extra_Lines == 1 and G.Knox_Vamp == 3 and G.Mercurio_Quest >= 2 and G.Cal_Knox == 0	}{	G.Cal_Knox = 1	}{	}{	}{	}{	}{	}{	}{	Puis-je trouver le fort Knox derrière vos portes ?	}
 {	168	}{	J'ai juste besoin de quelqu'un à qui raconter mes malheurs.	}{	J'ai juste besoin de quelqu'un à qui raconter mes malheurs.	}{	191	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	169	}{	Désolé pour votre travail.	}{	Désolé pour votre travail.	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je pleure toujours pour toi.	}
+{	169	}{	Désolé pour votre travail.	}{	Désolé pour votre travail.	}{	151	}{	G.Cal_Quits == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je pleure toujours pour toi.	}
 {	170	}{	Non. Au revoir.	}{	Non. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Etre ailleurs.	}
 {	171	}{	Ne le prenez pas mal, mais. . . même en ayant bu, ce n'est pas à ce point-là, vous savez. Je veux dire, si vous comptiez trouver quelqu'un d'assez saoul pour rentrer avec vous. . .	}{	Ne le prenez pas mal, mais. . . même en ayant bu, ce n'est pas à ce point-là, vous savez. Je veux dire, si vous comptiez trouver quelqu'un d'assez saoul pour rentrer avec vous. . .	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	172	}{	J'ai besoin de voir Jeanette ou Therese.	}{	J'ai besoin de voir Jeanette ou Therese.	}{	231	}{	G.Jeanette_Refuse > 0 and G.Jeanette_Fire == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

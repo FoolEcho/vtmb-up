@@ -282,7 +282,7 @@
 {	282	}{	Des rumeurs ?	}{	Des rumeurs ?	}{	291	}{	IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Quels murmures ?	}
 {	283	}{	Des rumeurs ?	}{	Des rumeurs ?	}{	301	}{	not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Quels murmures ?	}
 {	284	}{	J'ai une question sur autre chose.	}{	J'ai une question sur autre chose.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous brossiez le portrait de quelqu'un d'autre.	}
-{	285	}{	Vous avez parlé de 'sang' tout à l'heure ?	}{	Vous avez parlé de 'sang' tout à l'heure ?	}{	741	}{	G.Mercurio_Blood == 0 and G.Story_State == 0	}{	G.Mercurio_Blood = 1	}{	}{	}{	}{	}{	}{	}{	Dites-m'en plus sur ce 'sang'.	}
+{	285	}{	Vous avez parlé de 'sang' tout à l'heure ?	}{	Vous avez parlé de 'sang' tout à l'heure ?	}{	741	}{	G.Mercurio_Blood == 0 and G.Story_State < 5	}{	G.Mercurio_Blood = 1	}{	}{	}{	}{	}{	}{	}{	Dites-m'en plus sur ce 'sang'.	}
 {	286	}{	Je vois. Merci pour les renseignements. Au revoir.	}{	Je vois. Merci pour les renseignements. Au revoir.	}{	0	}{	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Je vois. Merci pour les renseignements. Au revoir.	}
 {	287	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	288	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -326,7 +326,7 @@
 {	326	}{	Le centre ville de LA. 	}{	Le centre ville de LA. 	}{	711	}{	G.Story_State >= 10	}{	}{	}{	}{	}{	}{	}{	}{	La cour du bouffon. . .	}
 {	327	}{	Hollywood.	}{	Hollywood.	}{	721	}{	G.Story_State >= 35	}{	}{	}{	}{	}{	}{	}{	}{	Un lieu où les rêves sont de celluloïd. . .	}
 {	328	}{	Chinatown.	}{	Chinatown.	}{	731	}{	G.Story_State >= 45	}{	}{	}{	}{	}{	}{	}{	}{	Un avant-poste oriental dans l'occident.	}
-{	329	}{	Vous avez parlé de 'sang' ?	}{	Vous avez parlé de 'sang' ?	}{	741	}{	G.Mercurio_Blood == 0 and G.Story_State == 0	}{	G.Mercurio_Blood = 1	}{	}{	}{	}{	}{	}{	}{	Dites-m'en plus sur ce 'sang'.	}
+{	329	}{	Vous avez parlé de 'sang' ?	}{	Vous avez parlé de 'sang' ?	}{	741	}{	G.Mercurio_Blood == 0 and G.Story_State < 5	}{	G.Mercurio_Blood = 1	}{	}{	}{	}{	}{	}{	}{	Dites-m'en plus sur ce 'sang'.	}
 {	330	}{	Peu importe. Au revoir.	}{	Peu importe. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	331	}{	Qui exactement ?	}{	Qui exactement ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	332	}{	Therese Voerman.	}{	Therese Voerman.	}{	271	}{	G.Mercurio_Therese == 0	}{	}{	}{	}{	}{	}{	}{	}{	La fille noire de Janus. . .	}
@@ -341,7 +341,7 @@
 {	341	}{	Je ne le connais pas personnellement. J'aimerais le rencontrer - c'est un peu une légende locale. Therese et lui s'opposent apparemment pour la ville. Il est doué et intelligent. Je n'ai rien entendu dire de mauvais sur lui. 	}{	Je ne le connais pas personnellement. J'aimerais le rencontrer - c'est un peu une légende locale. Therese et lui s'opposent apparemment pour la ville. Il est doué et intelligent. Je n'ai rien entendu dire de mauvais sur lui. 	}{	#	}{	}{	G.Mercurio_Tung = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	342	}{	J'ai d'autres questions sur d'autres personnes.	}{	J'ai d'autres questions sur d'autres personnes.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame et de son peuple. . .	}
 {	343	}{	J'ai d'autres questions sur d'autres lieux.	}{	J'ai d'autres questions sur d'autres lieux.	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame et de ses recoins.	}
-{	344	}{	Merci du renseignement. Au revoir.	}{	Merci du renseignement. Au revoir.	}{	0	}{	G.Story_State == 0	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Mes pas m'ont mené ailleurs avant que ma bouche ait fini de bouger.	}
+{	344	}{	Merci du renseignement. Au revoir.	}{	Merci du renseignement. Au revoir.	}{	0	}{	G.Story_State < 5	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Mes pas m'ont mené ailleurs avant que ma bouche ait fini de bouger.	}
 {	345	}{	Merci du renseignement. Au revoir.	}{	Merci du renseignement. Au revoir.	}{	0	}{	G.Story_State >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Avant même que ma bouche ait parlé, j'étais déjà loin.	}
 {	346	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	347	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -349,12 +349,12 @@
 {	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	351	}{	Il n'y a rien à dire. Je peux vous avoir ce que vous voulez, n'importe quand. C'est un peu ma vocation. Jusqu'à l'Astrolite, je pouvais tout faire. Enfin, à l'Est, il y a eu des merdes, je ne peux pas retourner à New York. Je déteste LA, mais où aller ?	}{	Il n'y a rien à dire. Je peux vous avoir ce que vous voulez, n'importe quand. C'est un peu ma vocation. Jusqu'à l'Astrolite, je pouvais tout faire. Enfin, à l'Est, il y a eu des merdes, je ne peux pas retourner à New York. Je déteste LA, mais où aller ?	}{	#	}{	}{	G.Mercurio_Self = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	352	}{	Vous avez parlé de 'sang' ?	}{	Vous avez parlé de 'sang' ?	}{	741	}{	G.Mercurio_Blood == 0 and G.Story_State == 0	}{	G.Mercurio_Blood = 1	}{	}{	}{	}{	}{	}{	}{	Dites-m'en plus sur ce 'sang'.	}
+{	352	}{	Vous avez parlé de 'sang' ?	}{	Vous avez parlé de 'sang' ?	}{	741	}{	G.Mercurio_Blood == 0 and G.Story_State < 5	}{	G.Mercurio_Blood = 1	}{	}{	}{	}{	}{	}{	}{	Dites-m'en plus sur ce 'sang'.	}
 {	353	}{	J'ai d'autres questions sur d'autres personnes.	}{	J'ai d'autres questions sur d'autres personnes.	}{	331	}{	G.Story_State < 5	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous brossiez le portrait de quelqu'un d'autre.	}
 {	354	}{	J'ai d'autres questions sur Santa Monica.	}{	J'ai d'autres questions sur Santa Monica.	}{	321	}{	G.Story_State < 5	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame et de ses recoins.	}
 {	355	}{	J'ai d'autres questions sur d'autres personnes.	}{	J'ai d'autres questions sur d'autres personnes.	}{	501	}{	G.Story_State >= 5	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin que vous brossiez le portrait de quelqu'un d'autre.	}
 {	356	}{	Merci du renseignement. Au revoir.	}{	Merci du renseignement. Au revoir.	}{	0	}{	G.Story_State >= 5	}{	}{	}{	}{	}{	}{	}{	}{	Mes pas m'ont mené ailleurs avant que ma bouche ait fini de bouger.	}
-{	357	}{	Merci du renseignement. Au revoir.	}{	Merci du renseignement. Au revoir.	}{	0	}{	G.Story_State == 0	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Mes pas m'ont mené ailleurs avant que ma bouche ait fini de bouger.	}
+{	357	}{	Merci du renseignement. Au revoir.	}{	Merci du renseignement. Au revoir.	}{	0	}{	G.Story_State < 5	}{	npc.SetDisposition("Dead",1)	}{	}{	}{	}{	}{	}{	}{	Mes pas m'ont mené ailleurs avant que ma bouche ait fini de bouger.	}
 {	358	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	359	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	360	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

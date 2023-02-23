@@ -1,0 +1,30 @@
+{	1	}{	Bonjour mon frère, que faites-vous ici tout seul ?	}{	Bonjour ma soeur, que faites-vous ici toute seule ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	2	}{	J'explore juste notre base. Une belle boîte que tu as là, mon frère.	}{	J'explore juste notre base. Une belle boîte que tu as là, mon frère.	}{	11	}{	}{	G.Vendor_Talked = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	C'est ma collection personnelle de choses qui pourraient nous aider dans la guerre contre le mal. Il m'a fallu pas mal d'argent pour l'acquérir, mais il y a des articles que je pourrais être prêt à vendre, si cela vous intéresse.	}{	C'est ma collection personnelle de choses qui pourraient nous aider dans la guerre contre le mal. Il m'a fallu pas mal d'argent pour l'acquérir, mais il y a des articles que je pourrais être prêt à vendre, si cela vous intéresse.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Bien sûr, montrez-moi ce que vous avez.	}{	Bien sûr, montrez-moi ce que vous avez.	}{	0	}{	}{	npc.StartBarter(0, 0)	}{	}{	}{	}{	}{	}{	}{	}
+{	13	}{	Non merci. J'ai déjà tout ce dont j'ai besoin.	}{	Non merci. J'ai déjà tout ce dont j'ai besoin.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	15	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	16	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	21	}{	Alors, voulez-vous acheter quelque chose maintenant ?	}{	Alors, voulez-vous acheter quelque chose maintenant ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Peut-être, laissez-moi jeter un oeil.	}{	Peut-être, laissez-moi jeter un oeil.	}{	0	}{	}{	npc.StartBarter(0, 0)	}{	}{	}{	}{	}{	}{	}{	}
+{	23	}{	Non merci.	}{	Non merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	30	}{	(Starting Condition)	}{	}{	21	}{	G.Vendor_Talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -239,26 +239,26 @@
 {	239	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	240	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	241	}{	J'aurais dû m'en douter. Elle buvait beaucoup quand on était petits, et elle prenait des trucs encore plus durs après. Dommage. . . mais ça ne va pas plaire à Oncle Bruno.	}{	J'aurais dû m'en douter. Elle buvait beaucoup quand on était petits, et elle prenait des trucs encore plus durs après. Dommage. . . mais ça ne va pas plaire à Oncle Bruno.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Chris_Told = 1; G.Mira_Secret = 2; pc.AwardExperience("Gio01")	}{	}{	}{	}{	}{	}{	}{	}
-{	242	}{	(Auto-Link)	}{	(Auto-Link)	}{	261	}{	G.Adam_Secret == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	243	}{	Adam Dunsirn est complètement ruiné. Il quémande quasiment de l'argent.	}{	Adam Dunsirn est complètement ruiné. Il quémande quasiment de l'argent.	}{	251	}{	G.Adam_Secret == 1 and G.Adam_Told == 0	}{	}{	}{	}{	}{	}{	}{	}{	La banque d'Adam est un gouffre. Lancez une pièce, il se lancera à sa poursuite.	}
-{	244	}{	Si j'entends parler d'autre chose, je reviens vous voir.	}{	Si j'entends parler d'autre chose, je reviens vous voir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais violer les esprits de cette fête et revenir.	}
-{	245	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	242	}{	(Auto-Link)	}{	(Auto-Link)	}{	261	}{	G.Adam_Secret == 2 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	243	}{	(Auto-Link)	}{	(Auto-Link)	}{	261	}{	G.Adam_Secret == 2 and G.Patch_Plus == 1	}{	pc.SetQuest("Dirt",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	244	}{	Adam Dunsirn est complètement ruiné. Il quémande quasiment de l'argent.	}{	Adam Dunsirn est complètement ruiné. Il quémande quasiment de l'argent.	}{	251	}{	G.Adam_Secret == 1 and G.Adam_Told == 0	}{	}{	}{	}{	}{	}{	}{	}{	La banque d'Adam est un gouffre. Lancez une pièce, il se lancera à sa poursuite.	}
+{	245	}{	Si j'entends parler d'autre chose, je reviens vous voir.	}{	Si j'entends parler d'autre chose, je reviens vous voir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais violer les esprits de cette fête et revenir.	}
 {	246	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	251	}{	Vraiment ? Adam a toujours paru avoir la tête sur les épaules. Mieux vaut être mort que fauché, dans cette famille. Et dire que j'ai failli lui laisser gérer mes investissements.	}{	Vraiment ? Adam a toujours paru avoir la tête sur les épaules. Mieux vaut être mort que fauché, dans cette famille. Et dire que j'ai failli lui laisser gérer mes investissements.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Chris_Told = 1; G.Adam_Secret = 2; pc.AwardExperience("Gio02")	}{	}{	}{	}{	}{	}{	}{	}
-{	252	}{	(Auto-Link)	}{	(Auto-Link)	}{	261	}{	G.Mira_Secret == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	253	}{	J'ai parlé à Mira. Elle est séropo à cause de l'héroïne.	}{	J'ai parlé à Mira. Elle est séropo à cause de l'héroïne.	}{	241	}{	G.Mira_Secret == 1 and G.Mira_Told == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mira a mis l'aiguille empoisonnée dans ses veines. Elle est positive.	}
-{	254	}{	Si j'entends parler d'autre chose, je reviens vous voir.	}{	Si j'entends parler d'autre chose, je reviens vous voir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais violer les esprits de cette fête et revenir.	}
-{	255	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	252	}{	(Auto-Link)	}{	(Auto-Link)	}{	261	}{	G.Mira_Secret == 2 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	253	}{	(Auto-Link)	}{	(Auto-Link)	}{	261	}{	G.Mira_Secret == 2 and G.Patch_Plus == 1	}{	pc.SetQuest("Dirt",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	254	}{	J'ai parlé à Mira. Elle est séropo à cause de l'héroïne.	}{	J'ai parlé à Mira. Elle est séropo à cause de l'héroïne.	}{	241	}{	G.Mira_Secret == 1 and G.Mira_Told == 0	}{	}{	}{	}{	}{	}{	}{	}{	Mira a mis l'aiguille empoisonnée dans ses veines. Elle est positive.	}
+{	255	}{	Si j'entends parler d'autre chose, je reviens vous voir.	}{	Si j'entends parler d'autre chose, je reviens vous voir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais violer les esprits de cette fête et revenir.	}
 {	256	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	257	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	261	}{	Adam et Mira seront complètement hors de la course si ces renseignements parviennent à l'oncle Bruno. . . Je n'oublierai pas votre coup de main, et vous pouvez compter sur moi pour vous renvoyer l'ascenseur quand je pourrai.	}{	Adam et Mira seront complètement hors de la course si ces renseignements parviennent à l'oncle Bruno. . . Je n'oublierai pas votre coup de main, et vous pouvez compter sur moi pour vous renvoyer l'ascenseur quand je pourrai.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Chris_Win = 1; pc.GiveItem("item_g_ring_03"); pc.AwardExperience("Gio03"); pc.SetQuest("Dirt",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	261	}{	Adam et Mira seront complètement hors de la course si ces renseignements parviennent à l'oncle Bruno. . . Je n'oublierai pas votre coup de main, et vous pouvez compter sur moi pour vous renvoyer l'ascenseur quand je pourrai.	}{	Adam et Mira seront complètement hors de la course si ces renseignements parviennent à l'oncle Bruno. . . Je n'oublierai pas votre coup de main, et vous pouvez compter sur moi pour vous renvoyer l'ascenseur quand je pourrai.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Chris_Win = 1; pc.GiveItem("item_g_ring_03"); pc.AwardExperience("Gio03")	}{	}{	}{	}{	}{	}{	}{	}
 {	262	}{	Bonne chance, Chris.	}{	Bonne chance, Chris.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas me faire refouler, je le suis déjà assez comme ça. . . Mais je pourrais me défouler. . .	}
 {	263	}{	Rappelez-vous qui sont vos amis, Chris.	}{	Rappelez-vous qui sont vos amis, Chris.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	N'oubliez pas. . . J'aime rappeler des choses aux gens. . . à la manière forte.	}
 {	264	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

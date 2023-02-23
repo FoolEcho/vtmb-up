@@ -50,8 +50,8 @@
 {	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	51	}{	[Prise au dépourvu]Ce qui vient de m'arriver. . . Ce n'est pas moi. Je n'ai jamais rien fait de tel avant. Je ne suis pas un monstre !	}{	[Prise au dépourvu]Ce qui vient de m'arriver. . . Ce n'est pas moi. Je n'ai jamais rien fait de tel avant. Je ne suis pas un monstre !	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	Chut. Là, du calme, tout va bien.	}{	Chut. Là, du calme, tout va bien.	}{	81	}{	not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	Tu n'es pas l'obscurité que tu portes comme cape. . .	}
-{	53	}{	Bien sûr que non. Un vrai monstre aurait laissé du sang dans ce type.	}{	Bien sûr que non. Un vrai monstre aurait laissé du sang dans ce type.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	Plus monstrueux eût-il été de lui laisser un peu de sang. . .	}
-{	54	}{	Tu es un monstre bestial et assoiffé de sang. Regarde ce pauvre type. . .	}{	Tu es un monstre bestial et assoiffé de sang. Regarde ce pauvre type. . .	}{	111	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	La Bête a fait de toi sa servante. Contemple le fruit de tes oeuvres !	}
+{	53	}{	Bien sûr que non. Un vrai monstre aurait laissé du sang dans ce type.	}{	Bien sûr que non. Un vrai monstre aurait laissé du sang dans ce type.	}{	111	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Plus monstrueux eût-il été de lui laisser un peu de sang. . .	}
+{	54	}{	Tu es un monstre bestial et assoiffé de sang. Regarde ce pauvre type. . .	}{	Tu es un monstre bestial et assoiffé de sang. Regarde ce pauvre type. . .	}{	111	}{	Humanity 6 & G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	La Bête a fait de toi sa servante. Contemple le fruit de tes oeuvres !	}
 {	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -61,7 +61,7 @@
 {	61	}{	La Bête ? Qu'est-ce que c'est ? Pourquoi je ne pouvais pas m'arrêter ? Pourquoi est-ce que c'était. . . si bon ?	}{	La Bête ? Qu'est-ce que c'est ? Pourquoi je ne pouvais pas m'arrêter ? Pourquoi est-ce que c'était. . . si bon ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	Chut. Là, du calme, tout va bien.	}{	Chut. Là, du calme, tout va bien.	}{	81	}{	Humanity 6 & not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	Tu n'es pas l'obscurité que tu portes comme cape. . .	}
 {	63	}{	Tu pourrais te calmer, s'il te plaît ?	}{	Tu pourrais te calmer, s'il te plaît ?	}{	81	}{	Humanity -6 & not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	Tu n'es pas l'obscurité que tu portes comme cape. . .	}
-{	64	}{	Parce que telle est notre nature.	}{	Parce que telle est notre nature.	}{	111	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	Un chasseur ne voit que le sang qu'il cherche.	}
+{	64	}{	Parce que telle est notre nature.	}{	Parce que telle est notre nature.	}{	111	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Un chasseur ne voit que le sang qu'il cherche.	}
 {	65	}{	Tu es un monstre bestial et assoiffé de sang. Regarde ce pauvre type. . .	}{	Tu es un monstre bestial et assoiffé de sang. Regarde ce pauvre type. . .	}{	111	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	La Bête a fait de toi sa servante. Contemple le fruit de tes oeuvres !	}
 {	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -70,7 +70,7 @@
 {	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	71	}{	C'est horrible ! Tu ne comprends pas ? Je n'ai jamais fait ça, avant. Ce n'est pas moi !	}{	C'est horrible ! Tu ne comprends pas ? Je n'ai jamais fait ça, avant. Ce n'est pas moi !	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	Chut. Là, du calme, tout va bien.	}{	Chut. Là, du calme, tout va bien.	}{	81	}{	Humanity 6 & not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	Tu n'es pas l'obscurité que tu portes comme cape. . .	}
-{	73	}{	Telle est notre nature.	}{	Telle est notre nature.	}{	111	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	Un chasseur ne voit que le sang qu'il cherche.	}
+{	73	}{	Telle est notre nature.	}{	Telle est notre nature.	}{	111	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Un chasseur ne voit que le sang qu'il cherche.	}
 {	74	}{	Tu es un monstre bestial et assoiffé de sang. Regarde ce pauvre type. . .	}{	Tu es un monstre bestial et assoiffé de sang. Regarde ce pauvre type. . .	}{	111	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	La Bête a fait de toi sa servante. Contemple le fruit de tes oeuvres !	}
 {	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -82,7 +82,7 @@
 {	82	}{	Es-tu la belle fleur malade ?	}{	Es-tu la belle fleur malade ?	}{	101	}{	IsClan(pc,"Malkavian") and not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	83	}{	Qui êtes-vous ?	}{	Qui êtes-vous ?	}{	91	}{	not IsClan(pc,"Malkavian") and not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	84	}{	C'est quoi, ton problème ?	}{	C'est quoi, ton problème ?	}{	91	}{	not IsClan(pc,"Malkavian") and G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	85	}{	On dirait que tu as trouvé du sang, oui. . ..	}{	On dirait que tu as trouvé du sang, oui. . ..	}{	111	}{	Humanity -8	}{	}{	}{	}{	}{	}{	}{	}{	La mort du marchand de sang t'emplit encore la gorge de joie, n'est-ce pas ? 	}
+{	85	}{	On dirait que tu as trouvé du sang, oui. . ..	}{	On dirait que tu as trouvé du sang, oui. . ..	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	La mort du marchand de sang t'emplit encore la gorge de joie, n'est-ce pas ? 	}
 {	86	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

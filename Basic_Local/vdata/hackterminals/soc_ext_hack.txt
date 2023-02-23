@@ -1,0 +1,61 @@
+TerminalDefinition	// added by wesp
+{
+	"screen saver"		"Society of Leopold"	// Bounces around on the screen when the terminal is not being used, changed by wesp
+	"brackets"		""				// these surround the command prompt (2 characters), changed by wesp
+	"difficulty"		"5"
+
+	LogonScreen	// displayed when the user first logs on
+	{
+		// Any number of lines are acceptable
+		"line0"		"Société de Leopold"
+	}
+
+	SubDir
+	{
+		"name"			"Allumage"
+		"password"		"soc"
+		"description"		"Activer ou désactiver les charges"
+		
+		Function
+		{
+			"name"		"on"
+			"description"	"Activer les charges"
+			"runtext"	"Charges activées."
+			"trigger"	"0"				// fires entity output 0 when this command is run
+		}
+
+		Function
+		{
+			"name"		"off"
+			"description"	"Désactiver les charges"
+			"runtext"	"Charges désactivées."
+			"trigger"	"1"				// fires entity output 0 when this command is run
+		}
+	}
+
+	SubDir
+	{
+		"name"			"Signature thermique"
+		"password"		"soc"
+		"description"		"Modifier les paramètres de signature thermique"
+
+		Function
+		{
+			"name"		"humain"
+			"description"	"Définit la charge sur les signatures thermiques humaines"
+			"runtext"	"Charges définies sur humain."
+			"trigger"	"3"				// fires entity output 3 when this command is run
+		}
+
+		Function
+		{
+			"name"		"vampire"
+			"description"	"Définit la charge sur les signatures thermiques vampires"
+			"runtext"	"Charges définies sur vampire."
+			"trigger"	"2"				// fires entity output 2 when this command is run
+			"runscript"	"vampireAttack()"
+		}
+
+
+	}
+}

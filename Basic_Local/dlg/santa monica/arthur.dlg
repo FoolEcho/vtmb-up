@@ -210,7 +210,7 @@
 {	210	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	211	}{	Bon, d'accord. Si vous changez d'avis, venez me voir.	}{	Bon, d'accord. Si vous changez d'avis, venez me voir.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	212	}{	Entre temps, vous pourriez répondre à une ou deux questions ?	}{	Entre temps, vous pourriez répondre à une ou deux questions ?	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres questions qui me brûlent la tête. . .	}
-{	213	}{	Je peux le faire, si ça ne prend pas trop longtemps.	}{	En fait, j'ai un peu de temps. OK, je m'en charge.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais retrouver ce chasseur perdu.	}
+{	213	}{	Je peux le faire, si ça ne prend pas trop longtemps.	}{	En fait, j'ai un peu de temps. OK, je m'en charge.	}{	691	}{	G.Arthur_Knox < 2	}{	}{	}{	}{	}{	}{	}{	}{	Je vais retrouver ce chasseur perdu.	}
 {	214	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	215	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	216	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -709,7 +709,7 @@
 {	709	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	710	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	711	}{	[rire sifflant]Je vous aime bien, mon gars. Vous avez des couilles, vous faites un grand chasseur de primes.	}{	[rire sifflant]Je vous aime bien, vous avez des couilles - oups, pardon miss. Enfin, vous faites un super chasseur de primes.	}{	#	}{	npc.SetDisposition("Joy",1)	}{	G.Arthur_BH = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	712	}{	Vraiment ? Vous en cherchez un ?	}{	Vraiment ? Vous en cherchez un ?	}{	721	}{	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	712	}{	Vraiment ? Vous en cherchez un ?	}{	Vraiment ? Vous en cherchez un ?	}{	721	}{	G.Arthur_Knox < 2	}{	G.Player_Asked = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	713	}{	C'est bien, parce que vous, vous n'en avez pas du tout.	}{	C'est bien, parce que vous, vous n'en avez pas du tout.	}{	731	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	714	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	715	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -741,7 +741,7 @@
 {	741	}{	Eh bien. . . Je n'arrive pas à mettre la main sur mon satané chasseur de primes Carson et ça me gonfle, en fait. J'ai vraiment besoin qu'il aille me trouver quelqu'un. Puisque je suis coincé ici, pourquoi vous n'iriez pas me le chercher ? Je vous paierai. . .	}{	Eh bien. . . Je n'arrive pas à mettre la main sur mon satané chasseur de primes Carson et ça me gonfle, en fait. J'ai vraiment besoin qu'il aille me trouver quelqu'un. Puisque je suis coincé ici, pourquoi vous n'iriez pas me le chercher ? Je vous paierai. . .	}{	#	}{	npc.SetDisposition("Anger",1)	}{	G.Arthur_BJ = 1; G.Arthur_BH = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	742	}{	Je pourrais, mais il y a intérêt à ce que ça vaille la peine.	}{	Oui, je pourrais faire ça.	}{	691	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je vais déterrer ce chasseur.	}
 {	743	}{	Bien sûr. Où ai-je le plus de chances de le trouver ?	}{	Bien sûr. Où ai-je le plus de chances de le trouver ?	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chasserai avec joie le chasseur. . .	}
-{	744	}{	Pas question. J'ai mieux à faire.	}{	Pas question. J'ai mieux à faire.	}{	841	}{	G.Player_Asked == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres grelots à secouer, maître des clés.	}
+{	744	}{	Pas question. J'ai mieux à faire.	}{	Pas question. J'ai mieux à faire.	}{	841	}{	G.Arthur_Knox < 2 and G.Player_Asked == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai d'autres grelots à secouer, maître des clés.	}
 {	745	}{	Je n'ai pas le temps pour l'instant. Excusez-moi.	}{	Je n'ai pas le temps pour l'instant. Excusez-moi.	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	La lune éclaire pour moi un autre chemin.	}
 {	746	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	747	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -839,7 +839,7 @@
 {	839	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	840	}{	Au revoir, Arthur.	}{	Au revoir, Arthur.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à l'air que je remplissais il y a peu.	}
 {	841	}{	[Un peu énervé]Alors pourquoi vous me demandez du travail ?	}{	[Un peu énervé]Alors pourquoi vous me demandez du travail ?	}{	#	}{	npc.SetDisposition("Anger",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	842	}{	Juste pour vous embêter, le gros.	}{	Juste pour vous embêter, le gros.	}{	1	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre graisse me procure une grande joie.	}
+{	842	}{	Juste pour vous embêter, le gros.	}{	Juste pour vous embêter, le gros.	}{	751	}{	}{	}{	}{	}{	}{	}{	}{	}{	Votre graisse me procure une grande joie.	}
 {	843	}{	Je plaisante, c'est tout. Où devrais-je le chercher ?	}{	Je plaisante, c'est tout. Où devrais-je le chercher ?	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes plaisanteries ne sont pas sérieuses. Où dois-je chercher le chasseur ?	}
 {	844	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	845	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

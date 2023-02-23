@@ -1,7 +1,7 @@
 {	1	}{	[Baisse les yeux vers la table, soupçonneuse, s'attend à une attaque, mais reste calme]Ayashi, ne. . . (Étrange, n'est-ce pas ?)	}{	[Baisse les yeux vers la table, soupçonneuse, s'attend à une attaque, mais reste calme]Ayashii ne. . . (Étrange, n'est-ce pas ?)	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	Quoi ?	}{	Quoi ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	???	}
-{	3	}{	Comment vous venez de m'appeler, là ?	}{	Comment vous venez de m'appeler, là ?	}{	11	}{	G.Ming_Met == 1	}{	}{	}{	}{	}{	}{	}{	}{	Blah, bleh, bleu, blah ?	}
-{	4	}{	Eh, pourquoi une petite fille comme vous a une si grande lame ?	}{	Eh, pourquoi une petite fille comme vous a une si grande lame ?	}{	11	}{	G.Ming_Met == 1	}{	}{	}{	}{	}{	}{	}{	}{	Tu sens comme l'Orient.	}
+{	3	}{	Comment vous venez de m'appeler, là ?	}{	Comment vous venez de m'appeler, là ?	}{	11	}{	G.Ming_Met >= 1	}{	}{	}{	}{	}{	}{	}{	}{	Blah, bleh, bleu, blah ?	}
+{	4	}{	Eh, pourquoi une petite fille comme vous a une si grande lame ?	}{	Eh, pourquoi une petite fille comme vous a une si grande lame ?	}{	11	}{	G.Ming_Met >= 1	}{	}{	}{	}{	}{	}{	}{	}{	Tu sens comme l'Orient.	}
 {	5	}{	Vous avez dix-huit ans, c'est ça ?	}{	Vous avez dix-huit ans, c'est ça ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors toi, tu es mignonnette. . .	}
 {	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
