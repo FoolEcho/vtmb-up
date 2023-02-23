@@ -3377,6 +3377,82 @@ CharCreateWizard
 					"Height"	"70"
 				}
 			}
+
+			Action	// added by wesp
+			{
+				"Text"		"3. <<< SPOILERS >>> Rejouer certaines missions Bloodlines en tant que chasseur humain de la Société de Léopold ? <<< SPOILERS >>>"
+				"Next"		"Hunter_Selection"
+				"MultiLineText"	"1"
+				"ShowSeparator"	"1"
+
+				Region
+				{
+					"X"		"30"
+					"Y"		"660"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+		}
+
+		Popup		// added by wesp
+		{
+			"Text"		"Vous devez maintenant sélectionner l'une des classes de chasseur. Le mercenaire commence avec une torche, Colt Police Positive Special, IMI Desert Eagle, IMI Uzi et Pyro Crossbow. Le Condotierre commence avec un couteau, GLOCK 19, Franchi SPAS-15, Ingram MAC-10 et Remington M700. L'Inquisiteur commence avec un Shin Gunto, Ithaca M37, Colt Anaconda, Steyr AUG et Remington M700P. Toutes les classes portent des vêtements légers et ont un porte-clés, un portefeuille, un crochet et des poings. Une fois que vous avez choisi, vous serez redirigé vers la feuille de personnage où vous pourrez nommer votre personnage et voir vos statistiques et les redistribuer si vous le souhaitez.
+Alors, à quelle classe de chasseur votre nouveau personnage devrait-il appartenir ? ?"
+
+			"InternalName"	"Hunter_Selection"
+
+			Action
+			{
+				"Text"		"1. Mercenaire (femme)"
+				"CharTemplate"	"mp-mercenary"
+				"Next"		""
+				"MultiLineText"	"1"
+				"ShowSeparator"	"1"
+
+				Region
+				{
+					"X"		"420"
+					"Y"		"500"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
+			Action
+			{
+				"Text"		"2. Condotierre (homme)"
+				"CharTemplate"	"mp-condotierre"
+				"Next"		""
+				"MultiLineText"	"1"
+				"ShowSeparator"	"1"
+
+				Region
+				{
+					"X"		"420"
+					"Y"		"550"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
+			Action
+			{
+				"Text"		"3. Inquisiteur (homme)"
+				"CharTemplate"	"mp-inquisitor"
+				"Next"		""
+				"MultiLineText"	"1"
+				"ShowSeparator"	"1"
+
+				Region
+				{
+					"X"		"420"
+					"Y"		"600"
+					"Width"	"965"
+					"Height"	"70"
+				}
+			}
+
 		}
 
 		Popup

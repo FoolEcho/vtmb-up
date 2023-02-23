@@ -116,8 +116,9 @@ LoadingTips
 			"Type"		"Game"
 			"StoryState"	"3"
 			"Size"		"Small"
-			"Text"		"Zone de combat : Vous entrez dans une zone de combat. Dans ces zones, vous êtes libre d'utiliser toute la force de vos disciplines vampiriques sans que cela n'entraîne une violation de la Mascarade. De même, il n'y a pas d'innocents dans une zone de combat ; vous ne pouvez pas violer la Mascarade ou perdre votre humanité."		
-		}	// basic
+			"Text"		"Zone de combat : 
+			Vous entrez dans une zone de combat. Dans ces zones, vous êtes libre d'utiliser toute la force de vos disciplines vampiriques sans que cela n'entraîne une violation de la Mascarade. De même, il n'y a pas d'innocents dans une zone de combat ; vous ne pouvez pas y violer la Mascarade mais parfois perdre votre Humanité."		
+		}		// changed by wesp
 ////////////////
 	// HelpTips for StoryState 0
 ////////////////
@@ -383,7 +384,7 @@ Vous devez vous accroupir pour profiter de votre Discrétion."
 			"StoryState"	"0"
 			"Size"		"Small"
 
-			"Text"		"Le corps des vampires guérit toutes ses blessures au fil du temps. Ce processus est plus rapide si vous vous nourrissez."	// basic
+			"Text"		"Le corps des vampires guérit toutes ses blessures au fil du temps. Ce processus est plus rapide si vous vous nourrissez ou utilisez le soin du sang."	// basic
 		}
 
 		Tip
@@ -2201,9 +2202,9 @@ Si vous variez vos attaques de mêlée, le défenseur ne saura pas à quoi s'attendr
 			"Type"		"Game"
 			"StoryState"	"35"
 			"Size"		"Large"
-			"Text"		"Vous pouvez changer de mode de tir avec la touche de tir alternatif (touche par défaut : Tab). Certaines armes avec une lunette de visée ont plusieurs niveaux de zoom auxquels vous pouvez accéder avec la touche de tir alternatif.
+			"Text"		"Vous pouvez changer de mode de tir avec la touche de tir alternatif (touche par défaut : Tab). Certaines armes avec une lunette de visée a un niveau de zoom auquel vous pouvez accéder avec la touche de tir alternatif.
 
-Toutes les armes à feu n'ont pas forcément un mode de tir alternatif."	// basic
+Toutes les armes à feu n'ont pas forcément de mode de tir alternatif."
 		}
 
 		Tip
@@ -2359,9 +2360,9 @@ Toutes les armes à feu n'ont pas forcément un mode de tir alternatif."	// basic
 			"Type"		"Game"
 			"StoryState"	"40"
 			"Size"		"Large"
-			"Text"		"Vous pouvez changer de mode de tir avec la touche de tir alternatif (touche par défaut : Tab). Certaines armes avec une lunette de visée ont plusieurs niveaux de zoom auxquels vous pouvez accéder avec la touche de tir alternatif.
+			"Text"		"Vous pouvez changer de mode de tir avec la touche de tir alternatif (touche par défaut : Tab). Certaines armes avec une lunette de visée a un niveau de zoom auquel vous pouvez accéder avec la touche de tir alternatif.
 
-Toutes les armes à feu n'ont pas forcément un mode de tir alternatif."	// basic
+Toutes les armes à feu n'ont pas forcément de mode de tir alternatif."
 		}
 
 		Tip
@@ -2376,6 +2377,15 @@ Toutes les armes à feu n'ont pas forcément un mode de tir alternatif."	// basic
 	// HelpTips for StoryState 45
 /////////////////////////
 	//World Tips
+
+		Tip	// added by wesp
+		{
+			"Type"		"World"
+			"StoryState"	"45"
+			"Size"		"Large"
+			"Text"		"Clan Lasombra:
+			Croyants fermes dans la dignité à dominer et l'indignité à servir, le Clan Lasombra a maintenu ses anciennes traditions tout en dirigeant le Sabbat vers ses propres objectifs. En raison de leur penchant pour les ténèbres et le contrôle des ombres, les Lasombras ne projettent aucun reflet. Leurs atrocités imprudentes donnent du crédit à l'idée qu'il est plus facile de vivre avec vos actions lorsque vous n'avez pas à vous faire face dans le miroir."
+		}
 
 		Tip
 		{
@@ -2457,6 +2467,15 @@ Toutes les armes à feu n'ont pas forcément un mode de tir alternatif."	// basic
 	// HelpTips for StoryState 50
 /////////////////////////
 	//World Tips
+
+		Tip	// added by wesp
+		{
+			"Type"		"World"
+			"StoryState"	"50"
+			"Size"		"Large"
+			"Text"		"Clan Lasombra:
+			Croyants fermes dans la dignité à dominer et l'indignité à servir, le Clan Lasombra a maintenu ses anciennes traditions tout en dirigeant le Sabbat vers ses propres objectifs. En raison de leur penchant pour les ténèbres et le contrôle des ombres, les Lasombras ne projettent aucun reflet. Leurs atrocités imprudentes donnent du crédit à l'idée qu'il est plus facile de vivre avec vos actions lorsque vous n'avez pas à vous faire face dans le miroir."
+		}
 
 		Tip
 		{

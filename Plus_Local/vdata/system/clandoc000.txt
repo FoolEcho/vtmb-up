@@ -1085,7 +1085,7 @@ ClanDataTables
 //			"M_Hands"		"models/hands/male/shared/v_shared_male_hands.mdl"
 			"F_Hands"		"models/hands/female/shared/v_shared_female_hands.mdl"
 			"Gender"		"Male"
-//			"ClanEffect"		""
+			"ClanEffect"		"Clan (Hunter)"	// changed by wesp
 			"Kindred"		"0"
 			"ClanIcon"		"cm_clan_symbol_Condontierre"
 			"Multiplayer"		"1"
@@ -1111,7 +1111,10 @@ ClanDataTables
 			"FaithPoints"		"15"
 			"Starting_Equipment"	"Condotierre"	// changed by wesp
 			"Excluded_Equipment"	"Default"
-			"Experience"		"100"	// changed by wesp
+			"Experience"		"0"
+
+			"CharGen_AutoLevel_Template"	"Blank_Template_CharGen"	// added by wesp
+			"Default_AutoLevel_Template"	"Blank_Template_CharGen"	// added by wesp
 		}
 
 		Abilities	// changed by wesp
@@ -1184,7 +1187,7 @@ ClanDataTables
 //			"M_Hands"		"models/hands/male/shared/v_shared_male_hands.mdl"	// changed by wesp
 			"F_Hands"		"models/hands/female/shared/v_shared_female_hands.mdl"
 			"Gender"		"Male"
-//			"ClanEffect"		""
+			"ClanEffect"		"Clan (Hunter)"	// changed by wesp
 			"Kindred"		"0"
 			"ClanIcon"		"cm_clan_symbol_GladiusDei"
 			"Multiplayer"		"1"
@@ -1210,7 +1213,10 @@ ClanDataTables
 			"FaithPoints"		"15"
 			"Starting_Equipment"	"Inquisitor"	// changed by wesp
 			"Excluded_Equipment"	"Default"
-			"Experience"		"100"	// changed by wesp
+			"Experience"		"0"
+
+			"CharGen_AutoLevel_Template"	"Blank_Template_CharGen"	// added by wesp
+			"Default_AutoLevel_Template"	"Blank_Template_CharGen"	// added by wesp
 		}
 
 		Abilities	// changed by wesp
@@ -1239,7 +1245,7 @@ ClanDataTables
 		{
 			"Shield_of_Faith"	"1"	// changed by wesp
 			"Divine_Vision"		"1"
-			"Holy_Light"		"1"
+			"Holy_Light"		"1"	// changed by wesp
 			"Blood_Healing"		"1"	// changed by wesp
 		}
 
@@ -1283,7 +1289,7 @@ ClanDataTables
 			"M_Hands"		"models/hands/male/shared/v_shared_male_hands.mdl"
 			"F_Hands"		"models/hands/female/shared/v_shared_female_hands.mdl"	// changed by wesp
 			"Gender"		"Female"
-//			"ClanEffect"		""
+			"ClanEffect"		"Clan (Hunter)"	// changed by wesp
 			"Kindred"		"0"
 			"ClanIcon"		"cm_clan_symbol_mercenary"
 			"Multiplayer"		"1"
@@ -1310,7 +1316,10 @@ ClanDataTables
 			"FaithPoints"		"15"
 			"Starting_Equipment"	"Mercenary"	// changed by wesp
 			"Excluded_Equipment"	"Default"
-			"Experience"		"100"	// changed by wesp
+			"Experience"		"0"
+
+			"CharGen_AutoLevel_Template"	"Blank_Template_CharGen"	// added by wesp
+			"Default_AutoLevel_Template"	"Blank_Template_CharGen"	// added by wesp
 		}
 
 		Abilities	// changed by wesp
@@ -1422,7 +1431,7 @@ ClanDataTables
 			"Generation"		"10"
 			"Starting_Equipment"	"Brujah"	// changed by wesp
 			"Excluded_Equipment"	"Default"
-			"Experience"		"100"	// changed by wesp
+			"Experience"		"0"
 
 			"CharGen_AutoLevel_Template"	"Brujah_CharGen"
 			"Default_AutoLevel_Template"	"Brujah_Default"
@@ -1539,7 +1548,7 @@ ClanDataTables
 			"Generation"		"10"
 			"Starting_Equipment"	"Gangrel"	// changed by wesp
 			"Excluded_Equipment"	"Default"
-			"Experience"		"100"	// changed by wesp
+			"Experience"		"0"
 
 			"CharGen_AutoLevel_Template"	"Gangrel_CharGen"
 			"Default_AutoLevel_Template"	"Gangrel_Default"
@@ -1657,7 +1666,7 @@ ClanDataTables
 			"Generation"		"10"
 			"Starting_Equipment"	"Malkavian"	// changed by wesp
 			"Excluded_Equipment"	"Default"
-			"Experience"		"100"	// changed by wesp
+			"Experience"		"0"
 
 			"CharGen_AutoLevel_Template"	"Malkavian_CharGen"
 			"Default_AutoLevel_Template"	"Malkavian_Default"
@@ -1773,7 +1782,7 @@ ClanDataTables
 			"Generation"		"10"
 			"Starting_Equipment"	"Nosferatu"	// changed by wesp
 			"Excluded_Equipment"	"Default"
-			"Experience"		"100"	// changed by wesp
+			"Experience"		"0"
 
 			"CharGen_AutoLevel_Template"	"Nosferatu_CharGen"
 			"Default_AutoLevel_Template"	"Nosferatu_Default"
@@ -1880,7 +1889,7 @@ ClanDataTables
 			"FaithPoints"		"15"
 			"Starting_Equipment"	"Mercenary"	// changed by wesp
 			"Excluded_Equipment"	"Default"
-			"Experience"		"100"	// changed by wesp
+			"Experience"		"0"
 		}
 
 		Abilities	// changed by wesp
@@ -1980,7 +1989,7 @@ ClanDataTables
 			"FaithPoints"		"15"
 			"Starting_Equipment"	"Mercenary"	// changed by wesp
 			"Excluded_Equipment"	"Default"
-			"Experience"		"100"	// changed by wesp
+			"Experience"		"0"
 		}
 
 		Abilities	// changed by wesp
@@ -2092,7 +2101,7 @@ ClanDataTables
 			"Generation"		"10"
 			"Starting_Equipment"	"Brujah"	// changed by wesp
 			"Excluded_Equipment"	"Default"
-			"Experience"		"100"	// changed by wesp
+			"Experience"		"0"
 
 			"CharGen_AutoLevel_Template"	"Brujah_CharGen"
 			"Default_AutoLevel_Template"	"Brujah_Default"
@@ -2209,7 +2218,7 @@ ClanDataTables
 			"Generation"		"10"
 			"Starting_Equipment"	"Gangrel"	// changed by wesp
 			"Excluded_Equipment"	"Default"
-			"Experience"		"100"	// changed by wesp
+			"Experience"		"0"
 
 			"CharGen_AutoLevel_Template"	"Gangrel_CharGen"
 			"Default_AutoLevel_Template"	"Gangrel_Default"
@@ -2327,7 +2336,7 @@ ClanDataTables
 			"Generation"		"10"
 			"Starting_Equipment"	"Malkavian"	// changed by wesp
 			"Excluded_Equipment"	"Default"
-			"Experience"		"100"	// changed by wesp
+			"Experience"		"0"
 
 			"CharGen_AutoLevel_Template"	"Malkavian_CharGen"
 			"Default_AutoLevel_Template"	"Malkavian_Default"
@@ -2443,7 +2452,7 @@ ClanDataTables
 			"Generation"		"10"
 			"Starting_Equipment"	"Nosferatu"	// changed by wesp
 			"Excluded_Equipment"	"Default"
-			"Experience"		"100"	// changed by wesp
+			"Experience"		"0"
 
 			"CharGen_AutoLevel_Template"	"Nosferatu_CharGen"
 			"Default_AutoLevel_Template"	"Nosferatu_Default"
@@ -2561,7 +2570,7 @@ ClanDataTables
 			"Generation"		"10"
 			"Starting_Equipment"	"Toreador"	// changed by wesp
 			"Excluded_Equipment"	"Default"
-			"Experience"		"100"	// changed by wesp
+			"Experience"		"0"
 
 			"CharGen_AutoLevel_Template"	"Toreador_CharGen"
 			"Default_AutoLevel_Template"	"Toreador_Default"
@@ -2679,7 +2688,7 @@ ClanDataTables
 			"Generation"		"10"
 			"Starting_Equipment"	"Tremere"	// changed by wesp
 			"Excluded_Equipment"	"Default"
-			"Experience"		"100"	// changed by wesp
+			"Experience"		"0"
 
 			"CharGen_AutoLevel_Template"	"Tremere_CharGen"
 			"Default_AutoLevel_Template"	"Tremere_Default"
@@ -2797,7 +2806,7 @@ ClanDataTables
 			"Generation"		"10"
 			"Starting_Equipment"	"Ventrue"	// changed by wesp
 			"Excluded_Equipment"	"Default"
-			"Experience"		"100"	// changed by wesp
+			"Experience"		"0"
 
 			"CharGen_AutoLevel_Template"	"Ventrue_CharGen"
 			"Default_AutoLevel_Template"	"Ventrue_Default"

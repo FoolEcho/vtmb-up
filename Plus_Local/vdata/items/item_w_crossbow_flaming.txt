@@ -39,6 +39,7 @@ WeaponData
 	"fires_projectile"	"1"
 	"projectile_sticks"	"0"
 	"can_stakedmg"		"1"
+	"projectile_impact_sound" 	"environmental/fire/fire_hit.wav"	// added by wesp
 
 	"muzzleflash_particle" 		"W_ithaca_m_37_Emitter"		// changed by wesp
 	"muzzlesmoke_particle" 		"Blank_emitter"
@@ -68,7 +69,7 @@ WeaponData
 		"Default_Size"		"2"	// changed by wesp
 		"Dropped_Ammo"		"2"
 		"Type"			"FlameThrowerRound"	// changed by wesp
-		"ReloadTime"		"3.0"	// changed by wesp
+		"ReloadTime"		"1.0"	// changed by wesp
 		
 		SoundData
 		{
@@ -98,7 +99,7 @@ WeaponData
 		"Dmg"			"4 Aggravated Ranged_Combat DMG_BURN"	// changed by wesp
 
 		"Botch_Table"		"Shotguns"
-		"Attack_Rate"		"1.0"
+		"Attack_Rate"		"0.5"		// changed by wesp
 		"NPC_Attack_Rate_Min"		"2.0"		// The range of times for NPCs using this weapon to pause between
 		"NPC_Attack_Rate_Max"		"3.0"		//   attacks when at a distance of NPC_Attack_Rate_Base_Range inches. 
 		"NPC_Attack_Rate_Base_Range"	"120"	//   Attack times scale down to Attack_Rate at a range of 0, and up

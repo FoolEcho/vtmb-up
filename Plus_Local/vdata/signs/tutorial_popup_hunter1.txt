@@ -1,0 +1,41 @@
+SignData	// added by wesp
+{
+	BackgroundImage
+	{
+		"Name"		"interface/Pop_Ups/general"
+//		"Tiled"		"0"
+		"XPos"		""	//1, ws-fix
+		"YPos"		""	//1, ws-fix
+		"Wide"		"2048"	//1024, ws-fix
+		"Tall"		"1024"
+	}
+
+	TextBlock
+	{
+		"Text"		"Vous êtes un chasseur de la Société de Léopold !
+Au lieu du sang, les chasseurs utilisent la foi. Pour élever votre foi, vous devez définir une touche de prière (F par défaut). Vous ne pouvez prier que si vous êtes seul et pas au combat.
+Votre personnage obtiendra maintenant 250 XP pour augmenter vos statistiques et Numina.
+<<< ATTENTION >>> Si votre barre de foi est rouge, quittez Bloodlines, relancez-le et commencez une nouvelle partie ! La même procédure est nécessaire si vous souhaitez redevenir un vampire. <<< ATTENTION >>>"
+		"XPos"		"836"	//324, ws-fix
+		"YPos"		"310"	//182, ws-fix
+		"Wide"		"375"
+		"Tall"		"375"
+		"TextRGBA"		"[245, 245, 245, 200]"
+		"BackgroundRGBA"		"[0, 0, 0, 0]"
+
+		"Font"		"ParagraphText"
+		"Font_640"	"Trebuchet"
+	}
+
+	TextBlock
+	{
+		"Text"		"Clic gauche pour continuer"
+		"XPos"		"922"	//410, ws-fix
+		"YPos"		"706"	//572, ws-fix
+		"Wide"		"215"
+		"Tall"		"28"
+		"TextRGBA"		"[245, 245, 245, 200]"
+		"BackgroundRGBA"		"[0, 0, 0, 0]"
+		"Font"		"Trebuchet"
+	}
+}
