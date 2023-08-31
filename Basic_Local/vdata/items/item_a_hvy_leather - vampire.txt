@@ -1,0 +1,56 @@
+// Armor
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"viewmodel"	"" // changed by wesp
+	"playermodel"	"" // changed by wesp
+	"wieldmodel_f"	"models/weapons/w_null.mdl" // changed by wesp
+	"wieldmodel_m"	"models/weapons/w_null.mdl" // changed by wesp
+	"infomodel"		"models/scenery/misc/armor/LeatherHeavy/LeatherHeavy.mdl"
+	"anim_prefix"	"hvy_leather"
+
+	"printname"		"Cuir épais"
+	"description"	"Il s'agit d'un ensemble de vêtements en cuir épais. Les vêtements en cuir épais ont un indice d'armure de 3, mais gênent les mouvements, ce qui entraîne une pénalité de -1 en Dextérité. Quelques exemples de vêtements en cuir épais sont les vestes en cuir cloutées ou renforcées, les pantalons en cuir ceinturés et les gants et bottes en cuir dur." // changed by wesp
+
+	"bucket"		"0"
+	"bucket_position"	"2"
+
+	"weight"		"0"
+	"item_flags"	"1"
+	"item_type"		"armor"
+	"item_worth"	"285"
+	"item_class_discount" "1"
+	"wield_effect"	"Item (Heavy Leather)"
+	"equip_mask"	"Normal"
+	"permanent_inventory"	"1"	// added by wesp
+	"is_droppable"			"0"
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	SpriteData
+	{
+		// For now, these need to be here to be "correct" armor indexes for the code (clan doesn't matter)
+		"weapon"
+		{
+			"640"
+			{
+				"file"	"hud/Inventory_Images/Armors/BrujahF/Brujah_F_A3"
+				"x"		"0"
+				"y"		"0"
+				"width"	"100"
+				"height"	"64"
+			}
+		}
+		"weapon_s"
+		{
+			"640"
+			{
+				"file"	"hud/Inventory_Images/Armors/BrujahF/Brujah_F_A3"
+				"x"		"0"
+				"y"		"0"
+				"width"	"100"
+				"height"	"64"
+			}
+		}
+	}
+}

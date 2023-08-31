@@ -135,13 +135,14 @@ Coucou ! Devinez qui c'est ! Non, devine ! Parce que c'est plus drôle comme ça, 
 Je vous attends, mon canard.
 Jeanette"
 		"dependency"	"G.Story_State >= 30 and G.Therese_Dead == 1"
+		"runscript"	"G.Jeanette_Mail = 1"		// added by wesp
 	}
 
 	Email
 	{
 		"subject"	"Business à Hollywood"
 		"sender"	"LaCroix"
-		"body"		"J'ai un certain intérêt financier dans un restaurant d'Hollywood, le Cavoletti Cafe. J'ai fait une offre des plus intéressantes pour racheter cet établissement, mais on dirait que les propriétaires hésitent à accepter. J'ai cru comprendre qu'un critique gastronomique appelé Tommy Flayton écrira très bientôt un article sur ce restaurant. Veuillez l'y intercepter et vous assurer que cet article sera défavorable. -SL"
+		"body"		"J'ai un certain intérêt financier dans un restaurant d'Hollywood, le Cavoletti Café. J'ai fait une offre des plus intéressantes pour racheter cet établissement, mais on dirait que les propriétaires hésitent à accepter. J'ai cru comprendre qu'un critique gastronomique appelé Tommy Flayton écrira très bientôt un article sur ce restaurant. Veuillez l'y intercepter et vous assurer que cet article sera défavorable. -SL"
 		"dependency"	"G.Story_State > 30"
 		"runscript"	"tomSetQuest()"
 	}
@@ -150,7 +151,7 @@ Jeanette"
 	{
 		"subject"	"La critique de Tommy Flayton"
 		"sender"	"LaCroix"
-		"body"		"J'ai récemment lu la critique acerbe de M. Flayton sur le Cavoletti Cafe dans le Sun et je dois vous dire à quel point je suis heureux de ses conclusions. Vous avez réussi. Veuillez accepter le paiement que j'ai fait porter dans votre boîte aux      lettres. Nous nous reverrons bientôt sans aucun doute. -SL"
+		"body"		"J'ai récemment lu la critique acerbe de M. Flayton sur le Cavoletti Café dans le Sun et je dois vous dire à quel point je suis heureux de ses conclusions. Vous avez réussi. Veuillez accepter le paiement que j'ai fait porter dans votre boîte aux      lettres. Nous nous reverrons bientôt sans aucun doute. -SL"
 		"dependency"	"G.Tommy_Disgusted == 1 or G.Tommy_Review == 1"
 		// changed by dan_upright 29/11/04
 		"runscript"	"tomSetQuestFour()"
@@ -161,7 +162,7 @@ Jeanette"
 	{
 		"subject"	"La critique de Tommy Flayton"
 		"sender"	"LaCroix"
-		"body"		"J'ai récemment lu la critique dithyrrambique de M. Flayton sur le Cavoletti Cafe dans le Sun et je dois vous dire à quel point je suis déçu de ses conclusions. Vous me décevez, jeune vampire. Apparemment, on ne peut même pas vous confier les tâches les plus simples. -SL"
+		"body"		"J'ai récemment lu la critique dithyrrambique de M. Flayton sur le Cavoletti Café dans le Sun et je dois vous dire à quel point je suis déçu de ses conclusions. Vous me décevez, jeune vampire. Apparemment, on ne peut même pas vous confier les tâches les plus simples. -SL"
 		"dependency"	"G.Tommy_Hostile == 1 or G.Tommy_Fail == 1"	// changed by wesp
 	}
 

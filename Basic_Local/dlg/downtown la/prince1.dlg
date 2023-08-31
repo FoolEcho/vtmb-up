@@ -732,7 +732,7 @@
 {	732	}{	C'était Nines, aucun doute. Ca va être la guerre avec tous les Anarchs, c'est ça ?	}{	C'était Nines, aucun doute. Ca va être la guerre avec tous les Anarchs, c'est ça ?	}{	741	}{	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Son poing est fait d'Anarchs. Nous ne pouvons pas le frapper, car il ripostera.	}
 {	733	}{	Pourquoi ne pas me le dire, Capitaine Pontifiant ?	}{	Pourquoi ne pas me le dire, Capitaine Pontifiant ?	}{	1041	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'aime pas les drames. . . vous pourriez changer de chaîne et nous trouver une comédie ?	}
 {	734	}{	Vous voulez que j'aille le tuer ?	}{	Vous voulez que j'aille le tuer ?	}{	751	}{	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	Je ferai de sa tête un presse-papier pour votre bureau. . .	}
-{	735	}{	Non, et je ne suis pas sûr que c'était Nines non plus. Quelque chose était bizarre.	}{	Non, et je ne suis pas sûre que c'était Nines non plus. Quelque chose était bizarre.	}{	741	}{	(pc.CalcFeat("Inspection") > 2 or IsClan(pc,"Malkavian"))	}{	}{	}{	}{	}{	}{	}{	}{	Celui-ci ne sait pas, mais il sait que quelque chose n'était pas Nines.	}
+{	735	}{	Non, et je ne suis pas sûr que c'était Nines non plus. Quelque chose était bizarre.	}{	Non, et je ne suis pas sûre que c'était Nines non plus. Quelque chose était bizarre.	}{	741	}{	(pc.perception > 2 or IsClan(pc,"Malkavian"))	}{	}{	}{	}{	}{	}{	}{	}{	Celui-ci ne sait pas, mais il sait que quelque chose n'était pas Nines.	}
 {	736	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	737	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	738	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

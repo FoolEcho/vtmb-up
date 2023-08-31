@@ -103,7 +103,7 @@
 {	103	}{	Où sont ces bâtards ?	}{	Où sont ces bâtards ?	}{	761	}{	}{	}{	}{	}{	}{	}{	}{	}{	Où sont les démons qui vous ont attaqué, Mercure ?	}
 {	104	}{	Idiot ! Le prince va être furieux !	}{	Idiot ! Le prince va être furieux !	}{	51	}{	G.Mercurio_Bad == 0	}{	G.Mercurio_Bad = 1	}{	}{	}{	}{	}{	}{	}{	Vous êtes une souris qui joue au milieu des géants. Le prince va l'apprendre.	}
 {	105	}{	Idiot ! Le prince va être furieux !	}{	Idiot ! Le prince va être furieux !	}{	51	}{	G.Mercurio_Bad == 1	}{	G.Mercurio_Bad = 2	}{	}{	}{	}{	}{	}{	}{	Vous êtes une souris qui joue au milieu des géants. Le prince va l'apprendre.	}
-{	106	}{	Du sang de vampire ?	}{	Du sang de vampire ?	}{	741	}{	}{	}{	}{	}{	}{	}{	}{	}{	De quel sang parles-vous ?	}
+{	106	}{	Du sang de vampire ?	}{	Du sang de vampire ?	}{	741	}{	G.Mercurio_Blood == 0 and G.Story_State < 5	}{	G.Mercurio_Blood = 1	}{	}{	}{	}{	}{	}{	}{	De quel sang parles-vous ?	}
 {	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

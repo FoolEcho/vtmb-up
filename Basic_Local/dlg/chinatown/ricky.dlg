@@ -1,10 +1,10 @@
 {	1	}{	Suis-je censé vous connaître?	}{	Suis-je censé vous connaître?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	2	}{	Êtes-vous Johnny?	}{	Êtes-vous Johnny?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que répondez-vous à «Johnny»?	}
-{	3	}{	Où est Johnny?	}{	Où est Johnny?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne sentez pas comme un «Johnny».	}
-{	4	}{	Je suis à la recherche de Johnny, nous avons des affaires à discuter.	}{	Je suis à la recherche de Johnny, nous avons des affaires à discuter.	}{	21	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	Johnny a des secrets à me dire.	}
-{	5	}{	Johnny m'attend, ça ne se voit pas?	}{	Johnny m'attend, ça ne se voit pas?	}{	61	}{	Seduction 7 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Johnny a besoin de quelque chose pour envelopper ses jambes.	}
+{	2	}{	Êtes-vous Johnny?	}{	Êtes-vous Johnny?	}{	11	}{	G.Johnny_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	Que répondez-vous à «Johnny»?	}
+{	3	}{	Où est Johnny?	}{	Où est Johnny?	}{	11	}{	G.Johnny_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne sentez pas comme un «Johnny».	}
+{	4	}{	Je suis à la recherche de Johnny, nous avons des affaires à discuter.	}{	Je suis à la recherche de Johnny, nous avons des affaires à discuter.	}{	21	}{	Persuasion 7 & G.Johnny_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	Johnny a des secrets à me dire.	}
+{	5	}{	Johnny m'attend, ça ne se voit pas?	}{	Johnny m'attend, ça ne se voit pas?	}{	61	}{	Seduction 7 & (not pc.IsMale() and G.Johnny_Dead == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Johnny a besoin de quelque chose pour envelopper ses jambes.	}
 {	6	}{	Oh, salut, je suis le gars qui va te tuer.	}{	Oh, salut, je suis la fille qui va te tuer.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis ton meutrier. SALUT!	}
-{	7	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	Non, et ça n'a plus d'importance.	}{	Non, et ça n'a plus d'importance.	}{	0	}{	G.Johnny_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	Tu ne me connais pas, mais je te connais.	}
 {	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -99,20 +99,20 @@
 {	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	101	}{	Qu'est-ce que vous êtes? Putain ce que tu es moche!	}{	Qu'est-ce que vous êtes? Putain ce que tu es moche!	}{	#	}{	npc.SetDisposition("Disgust", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	102	}{	Es-tu Johnny?	}{	Es-tu Johnny?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Es-tu Johnny?	}{	Es-tu Johnny?	}{	11	}{	G.Johnny_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	104	}{	Je cherche Johnny. Nous avons à discuter affaires.	}{	Je cherche Johnny. Nous avons à discuter affaires.	}{	21	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	104	}{	Je cherche Johnny. Nous avons à discuter affaires.	}{	Je cherche Johnny. Nous avons à discuter affaires.	}{	21	}{	Persuasion 7 & G.Johnny_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	105	}{	Tu as un problème?	}{	Tu as un problème?	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	106	}{	Je suis peut-être moche, mais tu es mort.	}{	Je suis peut-être moche, mais tu es mort.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	107	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	107	}{	Merci, Captain Obvious, je vais y aller maintenant.	}{	Merci, Captain Obvious, je vais y aller maintenant.	}{	0	}{	G.Johnny_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	108	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	111	}{	Ouais ... toujours.	}{	Ouais ... toujours.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	112	}{	Es-tu Johnny?	}{	Es-tu Johnny?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	113	}{	Où est Johnny?	}{	Où est Johnny?	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	114	}{	Je cherche Johnny. Nous avons à parler affaires.	}{	Je cherche Johnny. Nous avons à parler affaires.	}{	21	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Es-tu Johnny?	}{	Es-tu Johnny?	}{	11	}{	G.Johnny_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	Où est Johnny?	}{	Où est Johnny?	}{	11	}{	G.Johnny_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	Je cherche Johnny. Nous avons à parler affaires.	}{	Je cherche Johnny. Nous avons à parler affaires.	}{	21	}{	Persuasion 7 & G.Johnny_Dead == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	Désolé d'entendre ça, je vais partir maintenant.	}{	Désolé d'entendre ça, je vais partir maintenant.	}{	0	}{	G.Johnny_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	116	}{	Vraiment? Moi aussi ... et j'aime résoudre mes problèmes par la violence.	}{	Vraiment? Moi aussi ... et j'aime résoudre mes problèmes par la violence.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vraiment? Moi aussi ... et je tiens à résoudre mes problèmes par la violence.	}
 {	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	118	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

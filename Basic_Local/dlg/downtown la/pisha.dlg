@@ -139,10 +139,10 @@
 {	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	141	}{	Le destin du mortel est scellé depuis qu'il est entré. Ne perdez pas votre temps à débattre des implications morales. Si un homme entre sur le territoire d'un tigre, il peut se faire dévorer. Et tel est le cas.	}{	Le destin du mortel est scellé depuis qu'il est entré. Ne perdez pas votre temps à débattre des implications morales. Si un homme entre sur le territoire d'un tigre, il peut se faire dévorer. Et tel est le cas.	}{	#	}{	}{	G.Pisha_Please = 1; pc.SetQuest("Necromantic",4)	}{	}{	}{	}{	}{	}{	}{	}
-{	142	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	181	}{	G.Story_State < 30	}{	}{	}{	}{	}{	}{	}{	}{	Compris. Parlez-moi encore des récompenses à gagner.	}
-{	143	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	181	}{	Humanity -5 & G.Story_State < 30	}{	}{	}{	}{	}{	}{	}{	}{	La mouche était problématique. Parlez-moi des récompenses.	}
-{	144	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	201	}{	G.Story_State >= 30	}{	G.Pisha_Quest = 1; pc.SetQuest("Occult",1)	}{	}{	}{	}{	}{	}{	}{	Compris. Parlez-moi encore des récompenses à gagner.	}
-{	145	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	201	}{	Humanity -5 & G.Story_State >= 30	}{	G.Pisha_Quest = 1; pc.SetQuest("Occult",1)	}{	}{	}{	}{	}{	}{	}{	La mouche était problématique. Parlez-moi des récompenses.	}
+{	142	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	181	}{	G.Pisha_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Compris. Parlez-moi encore des récompenses à gagner.	}
+{	143	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	181	}{	Humanity -5 & G.Pisha_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	La mouche était problématique. Parlez-moi des récompenses.	}
+{	144	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	201	}{	G.Pisha_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Compris. Parlez-moi encore des récompenses à gagner.	}
+{	145	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	201	}{	Humanity -5 & G.Pisha_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	La mouche était problématique. Parlez-moi des récompenses.	}
 {	146	}{	Et à propos de la Fille que je vous ai envoyée ?	}{	Et à propos de la Fille que je vous ai envoyée ?	}{	331	}{	G.Patty_Pisha == 1 and G.Pisha_Full == 0	}{	}{	}{	}{	}{	}{	}{	}{	Et la petite abeille que je vous ai apportée ?	}
 {	147	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	148	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -312,8 +312,8 @@
 {	312	}{	J'avais une autre question.	}{	J'avais une autre question.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aimerais demander autre chose à la veuve.	}
 {	313	}{	Au sujet des objets que vous cherchez.	}{	Au sujet des objets que vous cherchez.	}{	241	}{	G.Pisha_Desire == 1	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi des trésors que vous cherchez.	}
 {	314	}{	Que faites-vous dans une maison abandonnée ?	}{	Que faites-vous dans une maison abandonnée ?	}{	111	}{	G.Pisha_Desire == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi avoir construit votre toile ici, veuve ?	}
-{	315	}{	A propos des objets que vous voulez...	}{	A propos des objets que vous voulez...	}{	181	}{	G.Story_State < 30	}{	}{	}{	}{	}{	}{	}{	}{	A propos des prix que vous cherchez...	}
-{	316	}{	A propos des objets que vous voulez...	}{	A propos des objets que vous voulez...	}{	201	}{	G.Story_State >= 30	}{	G.Pisha_Quest = 1; pc.SetQuest("Occult",1)	}{	}{	}{	}{	}{	}{	}{	A propos des prix que vous cherchez...	}
+{	315	}{	A propos des objets que vous voulez...	}{	A propos des objets que vous voulez...	}{	181	}{	G.Pisha_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	A propos des prix que vous cherchez...	}
+{	316	}{	A propos des objets que vous voulez...	}{	A propos des objets que vous voulez...	}{	201	}{	G.Pisha_Quest == 1	}{	G.Pisha_Quest = 1; pc.SetQuest("Occult",1)	}{	}{	}{	}{	}{	}{	}{	A propos des prix que vous cherchez...	}
 {	317	}{	Vous mangez de la chair et étudiez la mort. Je pense que je vais partir, toute cette excitation, c'est trop pour moi.	}{	Vous mangez de la chair et étudiez la mort. Je pense que je vais partir, toute cette excitation, c'est trop pour moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La vie d'une veuve noire me lasse. Et me chasse.	}
 {	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -321,8 +321,8 @@
 {	321	}{	Si cela vous satisfait, je ferai un effort pour n'attaquer que les faibles et les indignes. Consommant leur chair non par haine, mais par besoin de survivre - je meurs sans cela. A ce prix est ma survie.	}{	Si cela vous satisfait, je ferai un effort pour n'attaquer que les faibles et les indignes. Consommant leur chair non par haine, mais par besoin de survivre - je meurs sans cela. A ce prix est ma survie.	}{	#	}{	}{	G.Pisha_Flesh = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	322	}{	J'avais une autre question.	}{	J'avais une autre question.	}{	231	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aimerais demander autre chose à la veuve.	}
 {	323	}{	Parlons des objets que vous cherchez.	}{	Parlons des objets que vous cherchez.	}{	241	}{	G.Pisha_Desire == 1	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi des récompenses que vous cherchez.	}
-{	324	}{	A propos des objets que vous voulez...	}{	A propos des objets que vous voulez...	}{	181	}{	G.Story_State < 30	}{	}{	}{	}{	}{	}{	}{	}{	A propos des prix que vous cherchez...	}
-{	325	}{	A propos des objets que vous voulez...	}{	A propos des objets que vous voulez...	}{	201	}{	G.Story_State >= 30	}{	G.Pisha_Quest = 1; pc.SetQuest("Occult",1)	}{	}{	}{	}{	}{	}{	}{	A propos des prix que vous cherchez...	}
+{	324	}{	A propos des objets que vous voulez...	}{	A propos des objets que vous voulez...	}{	181	}{	G.Pisha_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	A propos des prix que vous cherchez...	}
+{	325	}{	A propos des objets que vous voulez...	}{	A propos des objets que vous voulez...	}{	201	}{	G.Pisha_Quest == 1	}{	G.Pisha_Quest = 1; pc.SetQuest("Occult",1)	}{	}{	}{	}{	}{	}{	}{	A propos des prix que vous cherchez...	}
 {	326	}{	Cela me dégoûte tout de même. Adieu.	}{	Cela me dégoûte tout de même. Adieu.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La vie d'une veuve noire me lasse. Et me chasse.	}
 {	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	328	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -333,8 +333,8 @@
 {	333	}{	Voici le livre que vous cherchiez. 	}{	Voici le livre que vous cherchiez. 	}{	261	}{	G.Pisha_Quest > 0 and pc.HasItem("item_g_pisha_book")	}{	}{	}{	}{	}{	}{	}{	}{	Le prix Giovanni.	}
 {	334	}{	Vous paraissiez un peu obsédée par la mort.	}{	Vous paraissiez un peu obsédée par la mort.	}{	311	}{	G.Pisha_Death == 0	}{	}{	}{	}{	}{	}{	}{	}{	La veuve souhaite-t-elle prendre la mort à sa toile ?	}
 {	335	}{	Un vampire qui mange de la chair. . . Ca me dégoûte toujours autant.	}{	Un vampire qui mange de la chair. . . Ca me dégoûte toujours autant.	}{	321	}{	G.Pisha_Flesh == 0	}{	}{	}{	}{	}{	}{	}{	}{	Une veuve qui se comporte en mante. Repoussant.	}
-{	336	}{	Parlons des objets que vous voulez.	}{	Parlons des objets que vous voulez.	}{	181	}{	G.Story_State < 30	}{	}{	}{	}{	}{	}{	}{	}{	Parlons des objets que vous cherchez.	}
-{	337	}{	Parlons des objets que vous voulez.	}{	Parlons des objets que vous voulez.	}{	201	}{	G.Story_State >= 30	}{	G.Pisha_Quest = 1; pc.SetQuest("Occult",1)	}{	}{	}{	}{	}{	}{	}{	Parlons des objets que vous cherchez.	}
+{	336	}{	Parlons des objets que vous voulez.	}{	Parlons des objets que vous voulez.	}{	181	}{	G.Pisha_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parlons des objets que vous cherchez.	}
+{	337	}{	Parlons des objets que vous voulez.	}{	Parlons des objets que vous voulez.	}{	201	}{	G.Pisha_Quest == 1	}{	G.Pisha_Quest = 1; pc.SetQuest("Occult",1)	}{	}{	}{	}{	}{	}{	}{	Parlons des objets que vous cherchez.	}
 {	338	}{	J'espère qu'elle n'a pas laissé d'arrière-goût déplaisant.	}{	J'espère qu'elle n'a pas laissé d'arrière-goût déplaisant.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je laisse la veuve achever son sinistre festin.	}
 {	339	}{	Je vous laisse reprendre votre repas et votre chasse de la mort. Au revoir.	}{	Je vous laisse reprendre votre repas et votre chasse de la mort. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne voulais pas déranger votre toile. Me voici sur le départ.	}
 {	340	}{	Amusez-vous bien. Au revoir.	}{	Amusez-vous bien. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous souhaite un bon diner... Adieu.	}
@@ -363,10 +363,10 @@
 {	363	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	364	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	365	}{	Le destin du mortel est scellé depuis qu'il est entré. Ne perdez pas votre temps à débattre des implications morales. Si un homme entre sur le territoire d'un tigre, il peut se faire dévorer. Et tel est le cas.	}{	Le destin du mortel est scellé depuis qu'il est entré. Ne perdez pas votre temps à débattre des implications morales. Si un homme entre sur le territoire d'un tigre, il peut se faire dévorer. Et tel est le cas.	}{	#	}{	}{	G.Pisha_Please = 1; pc.SetQuest("Necromantic",4)	}{	}{	}{	}{	}{	}{	}{	}
-{	366	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	181	}{	G.Story_State < 30	}{	}{	}{	}{	}{	}{	}{	}{	Compris. Parlez-moi encore des récompenses à gagner.	}
-{	367	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	181	}{	Humanity -5 & G.Story_State < 30	}{	}{	}{	}{	}{	}{	}{	}{	La mouche était problématique. Parlez-moi des récompenses.	}
-{	368	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	201	}{	G.Story_State >= 30	}{	G.Pisha_Quest = 1; pc.SetQuest("Occult",1)	}{	}{	}{	}{	}{	}{	}{	Compris. Parlez-moi encore des récompenses à gagner.	}
-{	369	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	201	}{	Humanity -5 & G.Story_State >= 30	}{	G.Pisha_Quest = 1; pc.SetQuest("Occult",1)	}{	}{	}{	}{	}{	}{	}{	La mouche était problématique. Parlez-moi des récompenses.	}
+{	366	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	181	}{	G.Pisha_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Compris. Parlez-moi encore des récompenses à gagner.	}
+{	367	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	181	}{	Humanity -5 & Pisha_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	La mouche était problématique. Parlez-moi des récompenses.	}
+{	368	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	Je comprends. Revenons à ces artefacts dont vous parliez.	}{	201	}{	G.Pisha_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	Compris. Parlez-moi encore des récompenses à gagner.	}
+{	369	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	Les implications morales ? Qu'il aille se faire voir. Parlons de ces artefacts. . .	}{	201	}{	Humanity -5 & G.Pisha_Quest == 1	}{	}{	}{	}{	}{	}{	}{	}{	La mouche était problématique. Parlez-moi des récompenses.	}
 {	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	371	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	372	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

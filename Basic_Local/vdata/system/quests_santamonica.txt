@@ -1188,5 +1188,178 @@ Venez me trouver où brûle le soleil mystique.\""
 			"Type"		"incomplete"
 		}
 
+		CompletionState
+		{
+			"ID"		"4"
+			"Description"	"Ming-Xiao s'occupera de LaCroix et du sarcophage."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"5"
+			"Description"	"Le Sabbat s'occupera de LaCroix et du sarcophage."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"6"
+			"Description"	"LaCroix et vous ouvrirez le sarcophage ensemble."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"7"
+			"Description"	"Vous avez donné la clé à LaCroix. Laissez-le ouvrir son précieux sarcophage s'il le faut, vous resterez avec les Anarchs."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"8"
+			"Description"	"Le Régent s'occupera de LaCroix et du sarcophage."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"9"
+			"Description"	"Vous avez donné la clé à LaCroix. Laissez-le ouvrir son précieux sarcophage s'il le faut, vous trouverez votre propre non-vie."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"10"
+			"Description"	"Vous avez gardé la clé pour ouvrir vous-même le sarcophage."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"11"
+			"Description"	"Félicitations, vous avez trouvé la fin easter egg."
+			"Type"		"success"
+		}
 	}
+
+	Quest	// added by wesp
+	{
+		"Title"		"Chasseur du Temple"
+		"DisplayName"	"Nettoyage du temple"
+
+		CompletionState
+		{
+			"ID"		"1"
+			"Description"	"Supprimez les fantômes du temple de Chinatown."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2"
+			"Description"	"Vous avez fait une sérieuse chasse aux fantômes au temple."
+			"Type"		"success"
+			"AwardXP"	"Hunter01"
+		}
+
+	}
+
+	Quest	// added by wesp
+	{
+		"Title"		"Chasseur d'Hallowbrook"
+		"DisplayName"	"Service hôtelier"
+
+		CompletionState
+		{
+			"ID"		"1"
+			"Description"	"Tuez les forces du mal à l'intérieur de l'hôtel Hallowbrook."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2"
+			"Description"	"Tu as balayé l'hôtel avec la fureur de Dieu."
+			"Type"		"success"
+			"AwardXP"	"Hunter02"
+		}
+
+	}
+
+	Quest	// added by wesp
+	{
+		"Title"		"Chasseur de Giovanni"
+		"DisplayName"	"Manoir maniaque"
+
+		CompletionState
+		{
+			"ID"		"1"
+			"Description"	"Éliminez les morts-vivants et autres ennemis du manoir italien."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2"
+			"Description"	"Le manoir italien n'est plus qu'une jolie maison de campagne."
+			"Type"		"success"
+			"AwardXP"	"Hunter03"
+		}
+
+	}
+
+	Quest	// added by wesp
+	{
+		"Title"		"Chasseur de chasse au sang"
+		"DisplayName"	"Fête de rue"
+
+		CompletionState
+		{
+			"ID"		"1"
+			"Description"	"Purger tous les vampires qui se déchaînent à Santa Monica."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2"
+			"Description"	"Santa Monica est à nouveau un paradis pour les touristes."
+			"Type"		"success"
+			"AwardXP"	"Hunter04"
+		}
+
+	}
+
+	Quest	// added by wesp
+	{
+		"Title"		"Société du Chasseur"
+		"DisplayName"	"Défense intérieure"
+
+		CompletionState
+		{
+			"ID"		"1"
+			"Description"	"Armez le piège explosif gardant l'entrée principale du monastère. Le mot de passe est soc."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2"
+			"Description"	"Vous avez armé le piège explosif, tuez maintenant tous les démons attaquant votre base.."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"3"
+			"Description"	"Vous avez réussi à arrêter l'assaut vampirique."
+			"Type"		"success"
+			"AwardXP"	"Hunter05"
+		}
+
+	}
+
 }

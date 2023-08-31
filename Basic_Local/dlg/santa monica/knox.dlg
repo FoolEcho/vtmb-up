@@ -219,7 +219,7 @@
 {	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	221	}{	Ce type. . . ce truc. . . m'a repéré. Au lieu que je le suive, c'est lui qui me suit. Je le vois tout le temps apparaître derrière moi, un peu au loin, il me regarde et après il se téléporte, genre, à côté de moi, puis il disparaît.	}{	Ce type. . . ce truc. . . m'a repéré. Au lieu que je le suive, c'est lui qui me suit. Je le vois tout le temps apparaître derrière moi, un peu au loin, il me regarde et après il se téléporte, genre, à côté de moi, puis il disparaît.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	222	}{	Ton histoire ne colle pas tout à fait, Knox. . .	}{	Ton histoire ne colle pas tout à fait, Knox. . .	}{	411	}{	(pc.CalcFeat("Inspection") > 2 or IsClan(pc,"Malkavian")) and G.Bertram_Plant == 0	}{	}{	}{	}{	}{	}{	}{	}{	La vérité ne correspond pas à tous les mots qui sortent de ta bouche. . .	}
+{	222	}{	Ton histoire ne colle pas tout à fait, Knox. . .	}{	Ton histoire ne colle pas tout à fait, Knox. . .	}{	411	}{	(pc.perception > 2 or IsClan(pc,"Malkavian")) and G.Bertram_Plant == 0	}{	}{	}{	}{	}{	}{	}{	}{	La vérité ne correspond pas à tous les mots qui sortent de ta bouche. . .	}
 {	223	}{	Tu veux que je m'en occupe ?	}{	Tu veux que je m'en occupe ?	}{	261	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	224	}{	Je l'ai vu aussi.	}{	Je l'ai vu aussi.	}{	231	}{	G.Asian_Seen == 1	}{	}{	}{	}{	}{	}{	}{	}{	Le mangeur de vie me suit aussi.	}
 {	225	}{	Ca doit être énervant.	}{	Ca doit être énervant.	}{	231	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -229,7 +229,7 @@
 {	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	230	}{	Ton problème, c'est l'incompétence ou la bêtise ?	}{	Ton problème, c'est l'incompétence ou la bêtise ?	}{	741	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	231	}{	Ca fout les boules. Je sais que ce truc est en train de s'amuser. Je voudrais bien lui coller une balle dans la tête, mais allez savoir si ça va marcher. Alors j'attends de parler à Bertram. Mais je ne sais pas où il a filé. C'est la merde.	}{	Ca fout les boules. Je sais que ce truc est en train de s'amuser. Je voudrais bien lui coller une balle dans la tête, mais allez savoir si ça va marcher. Alors j'attends de parler à Bertram. Mais je ne sais pas où il a filé. C'est la merde.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Quest = 2; G.Knox_Questions = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	232	}{	Une partie de ton histoire me paraît bizarre, Knox. . .	}{	Ton histoire ne colle pas tout à fait, Knox. . .	}{	411	}{	(pc.CalcFeat("Inspection") > 2 or IsClan(pc,"Malkavian")) and G.Bertram_Plant == 0	}{	}{	}{	}{	}{	}{	}{	}{	La vérité ne correspond pas à tous les mots qui sortent de ta bouche. . .	}
+{	232	}{	Une partie de ton histoire me paraît bizarre, Knox. . .	}{	Ton histoire ne colle pas tout à fait, Knox. . .	}{	411	}{	(pc.perception > 2 or IsClan(pc,"Malkavian")) and G.Bertram_Plant == 0	}{	}{	}{	}{	}{	}{	}{	}{	La vérité ne correspond pas à tous les mots qui sortent de ta bouche. . .	}
 {	233	}{	Tu veux que je m'en occupe ?	}{	Tu veux que je m'en occupe ?	}{	261	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	234	}{	On dirait que oui, Knox.	}{	On dirait que oui, Knox.	}{	241	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	235	}{	Ma folie va bien au-delà de ce que vous ne pourrez jamais savoir. . .	}{	Ma folie va bien au-delà de ce que vous ne pourrez jamais savoir. . .	}{	241	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}

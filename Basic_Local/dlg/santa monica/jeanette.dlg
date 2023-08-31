@@ -489,20 +489,20 @@
 {	489	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	490	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	491	}{	La marée recule, la marée avance, puis elle vous regarde d'un air vague. Il me faudra quelques années pour réveiller cette ville.	}{	La marée recule, la marée avance, puis elle vous regarde d'un air vague. Il me faudra quelques années pour réveiller cette ville.	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	492	}{	Vous vous sentez seule ?	}{	Vous vous sentez seule ?	}{	511	}{	G.Jeanette_Seduce >= 8 or G.Jeanette_Invite == 1	}{	}{	}{	}{	}{	}{	}{	}{	Nagez-vous dans une mer de solitude, princesse ivoirine ?	}
-{	493	}{	Quelle joie de vous voir. Au revoir.	}{	Quelle joie de vous voir. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est toujours un plaisir pour mes nombreux esprits, ma douce pâleur.	}
-{	494	}{	C'est ça. Au revoir.	}{	C'est ça. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
-{	495	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	492	}{	Vous vous sentez seule ?	}{	Vous vous sentez seule ?	}{	511	}{	G.Jeanette_Seduce >= 8 and G.Jeanette_Mail == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nagez-vous dans une mer de solitude, princesse ivoirine ?	}
+{	493	}{	J'ai reçu votre email. Alors vous êtes seule, hein?	}{	J'ai reçu votre email. Alors vous êtes seule, hein?	}{	511	}{	G.Jeanette_Mail == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ce caneton est revenu en se dandinant. Seule, toujours?	}
+{	494	}{	Quelle joie de vous voir. Au revoir.	}{	Quelle joie de vous voir. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est toujours un plaisir pour mes nombreux esprits, ma douce pâleur.	}
+{	495	}{	C'est ça. Au revoir.	}{	C'est ça. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	500	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	501	}{	La Camarilla a cherché à mettre la main sous ma jupe, et je l'ai giflée. Prince - ha ! Le seul titre que je veux, c'est une Porche rouge. Je suis sûr qu'ils sont sérieux, mais j'ai de nouveaux protecteurs. Nines et Isaac, vous les connaissez ?	}{	La Camarilla a cherché à mettre la main sous ma jupe, et je l'ai giflée. Prince - ha ! Le seul titre que je veux, c'est une Porche rouge. Je suis sûr qu'ils sont sérieux, mais j'ai de nouveaux protecteurs. Nines et Isaac, vous les connaissez ?	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	502	}{	Oui, en effet. Vous n'avez pas rejoint la Camarilla, et c'est tant mieux.	}{	Oui, en effet. Vous n'avez pas rejoint la Camarilla, et c'est tant mieux.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je défends moi aussi le drapeau Anarch. Adieu. . .	}
-{	503	}{	Je pense que vous faites erreur. Vous auriez dû vous allier avec le prince. Au revoir.	}{	Je pense que vous faites erreur. Vous auriez dû vous allier avec le prince. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Suivez la Camarilla, fleur sauvage, ou vous périrez dans les brasiers de vos indiscrétions.	}
-{	504	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	505	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	502	}{	Vous vous sentez seule ?	}{	Vous vous sentez seule ?	}{	511	}{	G.Jeanette_Seduce >= 8 and G.Jeanette_Mail == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nagez-vous dans une mer de solitude, princesse ivoirine ?	}
+{	503	}{	J'ai reçu votre email. Alors vous êtes seule, hein?	}{	J'ai reçu votre email. Alors vous êtes seule, hein?	}{	511	}{	G.Jeanette_Mail == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ce caneton est revenu en se dandinant. Seule, toujours?	}
+{	504	}{	Oui, en effet. Vous n'avez pas rejoint la Camarilla, et c'est tant mieux.	}{	Oui, en effet. Vous n'avez pas rejoint la Camarilla, et c'est tant mieux.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je défends moi aussi le drapeau Anarch. Adieu. . .	}
+{	505	}{	Je pense que vous faites erreur. Vous auriez dû vous allier avec le prince. Au revoir.	}{	Je pense que vous faites erreur. Vous auriez dû vous allier avec le prince. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Suivez la Camarilla, fleur sauvage, ou vous périrez dans les brasiers de vos indiscrétions.	}
 {	506	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	507	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	508	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

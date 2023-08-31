@@ -1,0 +1,58 @@
+// Armor
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"viewmodel"	""
+	"playermodel"	""
+	"wieldmodel_f"	"models/weapons/w_null.mdl"
+	"wieldmodel_m"	"models/weapons/w_null.mdl"
+	"infomodel"		"models\scenery\misc\armor\ClothesHeavy\ClothesHeavy.mdl"
+	"anim_prefix"	"hvy_cloth"
+
+	"printname"		"Vêtements lourds"
+	"description"	"Il s’agit d’un ensemble de vêtements lourds qui font office d’armure. Les vêtements lourds ont un indice d'armure de 1, il n'y a aucune pénalité de statistiques pour les équiper. Des exemples seraient des vestes, des manteaux, des pulls épais et des pantalons robustes."	// changed by wesp
+
+	"bucket"		"1"
+	"bucket_position"	"2"
+
+	"weight"		"0"
+	"item_flags"	"1"
+	"item_type"		"armor"
+	"item_worth"	"215"
+	"item_class_discount" "1"
+	"wield_effect"	"Item (Heavy Cloth)"
+	"equip_mask"	"Normal"
+	"permanent_inventory"	"1"	// added by wesp
+	"is_droppable"			"0"
+
+	"shows_view_model"	"0"
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	SpriteData
+	{
+		// For now, these need to be here to be "correct" armor indexes for the code (clan doesn't matter)
+		"weapon"
+		{
+			"640"
+			{
+				"file"	"hud/Inventory_Images/Armors/BrujahM/Brujah_M_A0_Sel"	// changed by wesp for Condotierre
+				"x"		"0"
+				"y"		"0"
+				"width"	"100"
+				"height"	"64"
+			}
+		}
+		"weapon_s"
+		{
+			"640"
+			{
+				"file"	"hud/Inventory_Images/Armors/BrujahM/Brujah_M_A0"	// changed by wesp for Condotierre
+				"x"		"0"
+				"y"		"0"
+				"width"	"100"
+				"height"	"64"
+			}
+		}
+	}
+}

@@ -261,8 +261,8 @@
 {	261	}{	La vieille Jamie Sue ? Personnellement, je préfère la baguette à boum, mais qu'importe, elle est à vous.	}{	La vieille Jamie Sue ? Personnellement, je préfère la baguette à boum, mais qu'importe, elle est à vous.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.GiveItem("item_w_remington_m_700"); G.Romero_Quest = 4; G.Romero_Reward = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	262	}{	(Auto-Link)	}{	(Auto-Link)	}{	551	}{	G.Romero_Crush == 1 and G.Romero_Whore != 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	263	}{	(Auto-Link)	}{	(Auto-Link)	}{	281	}{	G.Romero_Crush == 0 and G.Romero_Whore != 3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	264	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	G.Romero_Whore == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	265	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	G.Romero_Whore == 3 and G.Romero_Hammer < 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	265	}{	(Auto-Link)	}{	(Auto-Link)	}{	281	}{	G.Romero_Whore == 3 and G.Romero_Hammer >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	266	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -271,8 +271,8 @@
 {	271	}{	Quand vous tirez, continuez de regarder la cible après avoir tiré. Et utilisez la mire, elle sert à ça. Et le style, ça ne sert à rien quand on ne sait pas tirer. Alors le flingue à l'horizontale, on laisse ça pour les films.	}{	Quand vous tirez, continuez de regarder la cible après avoir tiré. Et utilisez la mire, elle sert à ça. Et le style, ça ne sert à rien quand on ne sait pas tirer. Alors le flingue à l'horizontale, on laisse ça pour les films.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.BumpStat("firearms", 1); G.Romero_Quest = 4; G.Romero_Reward = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	272	}{	(Auto-Link)	}{	(Auto-Link)	}{	551	}{	G.Romero_Crush == 1 and G.Romero_Whore != 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	273	}{	(Auto-Link)	}{	(Auto-Link)	}{	281	}{	G.Romero_Crush == 0 and G.Romero_Whore != 3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	274	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	G.Romero_Whore == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	275	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	274	}{	(Auto-Link)	}{	(Auto-Link)	}{	651	}{	G.Romero_Whore == 3 and G.Romero_Hammer < 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	275	}{	(Auto-Link)	}{	(Auto-Link)	}{	281	}{	G.Romero_Whore == 3 and G.Romero_Hammer >= 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	276	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	277	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	278	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -310,7 +310,7 @@
 {	310	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	311	}{	Je savais que vous reviendriez. Vous pensiez trop à moi, c'est ça, hein ?	}{	Je savais que vous reviendriez. Vous pensiez trop à moi, c'est ça, hein ?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	312	}{	Bien sûr. Ca va ?	}{	Bien sûr. Ca va ?	}{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous et les intentions du Père Noir. Comment allez-vous ?	}
-{	313	}{	J'ai besoin que vous me donniez quelque chose, cette fois.	}{	J'ai besoin que vous me donniez quelque chose, cette fois.	}{	591	}{	G.Romero_Boink == 2	}{	G.Seductive_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}
+{	313	}{	J'ai besoin que vous me donniez quelque chose, cette fois.	}{	J'ai besoin que vous me donniez quelque chose, cette fois.	}{	591	}{	G.Romero_Boink == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	314	}{	Ouais, c'est ça. Bon, faut que j'y aille. Au revoir.	}{	Ouais, c'est ça. Bon, faut que j'y aille. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je pense que vous pourrez réfléchir pour nous deux. Je m'en vais.	}
 {	315	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	316	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

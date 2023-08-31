@@ -161,8 +161,8 @@
 {	161	}{	[politesse détachée]Je peux vous aider ?	}{	[politesse détachée]Je peux vous aider ?	}{	#	}{	}{	Whisper("Threat")	}{	}{	}{	}{	}{	}{	}{	}
 {	162	}{	Euh. . . Fait pas chaud, hein ?	}{	Euh. . . Fait pas chaud, hein ?	}{	171	}{	pc.wits < 3	}{	}{	}{	}{	}{	}{	}{	}{	La nuit est aussi froide qu'une femme délaissée. . .	}
 {	163	}{	La vie serait bien plus simple si vous le pouviez, mon ami.	}{	La vie serait bien plus simple si vous le pouviez, mon ami.	}{	171	}{	pc.wits > 2	}{	}{	}{	}{	}{	}{	}{	}{	En devinant les secrets de la vie, peut-être. Le pourrez-vous ?	}
-{	164	}{	Et sinon, ça va ?	}{	Et sinon, ça va ?	}{	181	}{	pc.perception < 3	}{	}{	}{	}{	}{	}{	}{	}{	Salutations.	}
-{	165	}{	Vous paraissez troublé. . . Quelque chose vous dérange ?	}{	Vous paraissez troublé. . . Quelque chose vous dérange ?	}{	181	}{	pc.perception > 2	}{	}{	}{	}{	}{	}{	}{	}{	Un fardeau vous écrase.	}
+{	164	}{	Et sinon, ça va ?	}{	Et sinon, ça va ?	}{	181	}{	pc.perception < 3 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Salutations.	}
+{	165	}{	Vous paraissez troublé. . . Quelque chose vous dérange ?	}{	Vous paraissez troublé. . . Quelque chose vous dérange ?	}{	181	}{	pc.perception > 2 or IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	Un fardeau vous écrase.	}
 {	166	}{	Euh. . . vous aimez Santa Monica ?	}{	Euh. . . vous aimez Santa Monica ?	}{	171	}{	pc.intelligence < 3	}{	}{	}{	}{	}{	}{	}{	}{	Que pensez-vous de la dame près de la mer ?	}
 {	167	}{	Vous ne mangez pas. . . Vous attendez quelqu'un ?	}{	Vous ne mangez pas. . . Vous attendez quelqu'un ?	}{	181	}{	pc.intelligence > 2	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne mangez pas. . . Attendez-vous une compagnie ?	}
 {	168	}{	Non. Rien.	}{	Non. Rien.	}{	191	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}

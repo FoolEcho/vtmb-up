@@ -64,14 +64,16 @@ TerminalDefinition
 			Function
 			{
 				"name"		"Statut res"
-				"runtext"	"Réservoirs 1 et 2 dégagés."
+				"runtext"	Réservoir 1 : erreur
+Réservoir 2 : sans danger"
 				"dependency"	"G.WarrensPump == 0 and G.PumpTransition == 0"
 			}
 
 			Function
 			{
 				"name"		"Statut res"
-				"runtext"	"Réservoirs 1 et 2 inondés"
+				"runtext"	"Réservoir 1 : erreur
+Réservoir 2 : inondé"
 // removed by wesp				"trigger"	"2"	
 				"dependency"	"G.WarrensPump == 1 and G.PumpTransition == 0"
 			}

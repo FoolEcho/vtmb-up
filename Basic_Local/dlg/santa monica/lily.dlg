@@ -109,9 +109,9 @@
 {	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	111	}{	[Mortifiée]Non. . . Non. . . Je ne suis pas un monstre. C'était mon instinct. . . Je n'ai pas pu me contrôler. . . Je ne suis pas responsable de mes actions. . .	}{	[Mortifiée]Non. . . Non. . . Je ne suis pas un monstre. C'était mon instinct. . . Je n'ai pas pu me contrôler. . . Je ne suis pas responsable de mes actions. . .	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	G.Lily_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	112	}{	Es-tu la belle fleur malade ?	}{	Es-tu la belle fleur malade ?	}{	101	}{	IsClan(pc,"Malkavian") and not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	113	}{	Je regrette. Qui es-tu ?	}{	Je regrette. Qui es-tu ?	}{	91	}{	not IsClan(pc,"Malkavian") and not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	114	}{	Si tu arrives à t'en convaincre, ce sera parfait. Ca t'aidera à dormir le jour. . .	}{	Si tu arrives à t'en convaincre, ce sera parfait. Ca t'aidera à dormir le jour. . .	}{	121	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ce sont les petits mensonges qui permettent de se regarder en face.	}
+{	112	}{	Nous sommes désolé. Es-tu la belle fleur malade ?	}{	Nous sommes désolé. Es-tu la belle fleur malade ?	}{	101	}{	IsClan(pc,"Malkavian") and not IsDead("E")	}{	G.Lily_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	113	}{	Je regrette. Qui es-tu ?	}{	Je regrette. Qui es-tu ?	}{	91	}{	not IsClan(pc,"Malkavian") and not IsDead("E")	}{	G.Lily_Pissed = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	Si tu arrives à t'en convaincre, ce sera parfait. Ca t'aidera à dormir le jour. . .	}{	Si tu arrives à t'en convaincre, ce sera parfait. Ca t'aidera à dormir le jour. . .	}{	121	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Ce sont les petits mensonges qui permettent de se regarder en face.	}
 {	115	}{	Accepte tes démons intimes. Tue tant que tu veux. Il y aura toujours de nouveaux mortels. 	}{	Accepte tes démons intimes. Tue tant que tu veux. Il y aura toujours de nouveaux mortels. 	}{	121	}{	Humanity -6	}{	}{	}{	}{	}{	}{	}{	}{	Deviens les ténèbres qui t'entourent, et abreuve-toi, enivre-toi jusqu'à l'aube.	}
 {	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	117	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -119,7 +119,7 @@
 {	119	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	120	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	121	}{	. . . Je ne suis pas une tueuse. Je n'ai pas choisi de devenir ainsi. Je ne suis pas un monstre.	}{	. . . Je ne suis pas une tueuse. Je n'ai pas choisi de devenir ainsi. Je ne suis pas un monstre.	}{	#	}{	npc.SetDisposition("Sad", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	122	}{	Es-tu la belle fleur malade ?	}{	Es-tu la belle fleur malade ?	}{	101	}{	IsClan(pc,"Malkavian") and not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	122	}{	Peu importe. Es-tu la belle fleur malade ?	}{	Peu importe. Es-tu la belle fleur malade ?	}{	101	}{	IsClan(pc,"Malkavian") and not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	123	}{	Ca arrive, parfois. Qui es-tu ?	}{	Ca arrive, parfois. Qui es-tu ?	}{	91	}{	not IsClan(pc,"Malkavian") and not IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	124	}{	Non, tu as la frousse. Sors d'ici, tu me rends malade.	}{	Non, tu as la frousse. Sors d'ici, tu me rends malade.	}{	0	}{	IsDead("E")	}{	}{	}{	}{	}{	}{	}{	}{	Petite fleur flétrie, fane-toi avant que je te cueille.	}
 {	125	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
