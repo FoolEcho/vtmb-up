@@ -29,12 +29,12 @@ WeaponData
 	"weight"		"3"
 	"item_flags"		"0"
 	"item_type"		"weapon_firearm"
-	"reload_single"		"1"	// add in 1 shell at a time
-	"impact_force"		"1000"	// an impulse measured in kg*in/s, changed by wesp
+	"reload_single"		"1"		// add in 1 shell at a time
+	"impact_force"		"3000"	// an impulse measured in kg*in/s, changed by wesp
 	"sound_group"	"Shotgun"
 	"uses_accuracycursors"	"1"
 
-	"projectile_velocity"	"10000"				// changed by wesp
+	"projectile_velocity"		"10000"				// changed by wesp
 	"projectile_particles"	"FlameThrowerFire_Emitter"	// changed by wesp
 	"fires_projectile"	"1"
 	"projectile_sticks"	"0"
@@ -92,11 +92,11 @@ WeaponData
 		"Type"			"Attack"
 		"Ammo_Type"		"FlameThrowerRound"	// changed by wesp
 		"Ammo_Cost"		"1"
-		"Ammo_Fired"		"16"
+		"Ammo_Fired"		"18"		// changed by wesp
 
 		"SkillRequirement"	"6"		// min. skill requirement used in dmg calculations		
 		"BaseLethality"		"20"		// base lethality used in dmg calculations
-		"Dmg"			"4 Aggravated Ranged_Combat DMG_BURN"	// changed by wesp
+		"Dmg"			"4 Aggravated Ranged_Combat DMG_BUCKSHOT"	// changed by wesp
 
 		"Botch_Table"		"Shotguns"
 		"Attack_Rate"		"0.5"		// changed by wesp

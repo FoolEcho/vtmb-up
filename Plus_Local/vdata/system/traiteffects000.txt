@@ -3346,12 +3346,18 @@ TraitEffectsData
 
 		TraitEffectGroup // added by EntenSchreck
 		{
-			"InternalName"	"Discipline (Cast)"	// (Dominate, Dementation, Thaumaturgy 1-3, Animalism 1-4)
+			"InternalName"	"Discipline (Cast_Alt)"	// (Dominate, Dementation, Thaumaturgy 1-3, Animalism 1-4)
 			TraitEffect
 			{
 				"Trait"	"Excluded_Equipment"
 				"Modifier"	"Value Clawed_Form"
 			}
+			TraitEffect
+			{
+				"Trait"	"item_w_fists"
+				"Modifier"	"-1"
+			}
+
 			TraitEffect
 			{
 				"Trait"	"item_w_tzimisce2_head"
@@ -3366,11 +3372,16 @@ TraitEffectsData
 
 		TraitEffectGroup // added by EntenSchreck
 		{
-			"InternalName"	"Discipline (Cast_Alt)" // (Thaumaturgy 4+5, Animalism 5)
+			"InternalName"	"Discipline (Cast)" // (Thaumaturgy 4+5, Animalism 5)
 			TraitEffect
 			{
 				"Trait"	"Excluded_Equipment"
 				"Modifier"	"Value Clawed_Form"
+			}
+			TraitEffect
+			{
+				"Trait"	"item_w_fists"
+				"Modifier"	"-1"
 			}
 			TraitEffect
 			{
