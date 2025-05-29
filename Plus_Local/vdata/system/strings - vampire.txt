@@ -165,7 +165,7 @@ StringData
 
 		MiscStrs
 		{
-			"Name0"		"Aucun(e)"
+			"Name0"		" "			// changed by wesp
 			"Name1"		"Armes de mêlée"
 			"Name2"		"Armes à distance"
 			"Name3"		"Poche de sang"
@@ -388,7 +388,7 @@ StringData
 			"Name3"		"Les talents sont des capacités inhérentes que l'on améliore par l'expérience."
 			"Name4"		"Les compétences sont des capacités qui peuvent être enseignées ou apprises dans des livres."
 			"Name5"		"Les connaissances sont des applications de l'esprit qui dépendent fréquemment des attributs mentaux."
-			"Name6"		"Puissantes capacités vampiriques. Chaque clan a ses propres disciplines de prédilection."	// changed by wesp
+			"Name6"		"Puissantes capacités vampiriques. Chaque clan a ses propres disciplines de prédilection, à l'exception des plus courants comme Soin du Sang, pour reconstituer leur corps brisé, et Puissance du Sang, pour améliorer leurs attributs physiques."	// changed by wesp
 		}
 
 		StatCategoryLine2
@@ -562,8 +562,8 @@ StringData
 			"Name2" "Succès"
 			"Name3" "Echec"
 			"Name4" "Non tenté"
-			"Name5" "Explosif activé"
-			"Name6" "Explosif posé"
+			"Name5" "Armement de l'explosif"		// changed by wesp
+			"Name6" "Explosif armé"		// changed by wesp
 			"Name7"	"CERVELLE !"
 			"Name8" "Evasion !"
 			"Name9" "Crochetage"
@@ -616,8 +616,8 @@ StringData
 			"Name42" "Tapez le menu ou la commande "		// changed by wesp
 			"Name43" "Menu principal" 
 			"Name44" "Menu" 
-			"Name45" "%d e-mails totaux, choisir %d...%d"
-			"Name46" "%s ou %s pour plus d'emails"
+			"Name45" "%d e-mails totaux, choisir %d...%d,"		// changed by wesp
+			"Name46" "%s, %s pour plus d'emails,"		// changed by wesp
 			"Name47" "%s pour quitter."
 		}
 

@@ -1224,8 +1224,8 @@ StatData
 			"New"		"10"
 			"Raise"	"Current_Rating * 5"
 //			// Or:
-//				// "Cost" "0 10"
-//				// "Cost" "1+ 5"
+//				// "Cost"	"0 10"
+//				// "Cost"	"1+ 5"
 ////"Raise_Clan_Discipline"	"Current_Rating * 5"
 ////"Raise_Other_Discipline"	"Current_Rating * 7"
 		}
@@ -1568,11 +1568,11 @@ StatData
 				"Name"		"Aliénation"
 				"InternalName"	"Dementation"
 				"HelpText"	"Héritage unique du clan Malkavien, l'Aliénation canalise la folie et la projette dans l'esprit de ceux qui se trouvent à proximité. Ses effets sont discrets et on ne peut remonter jusqu'à vous et donc vous ne risquez pas de violer la Mascarade."
-				"HelpTextH1"	"Level 1: Hystérie"	// changed by EntenSchreck
+				"HelpTextH1"	"Level 1: Hystérie"
 				"HelpTextH2"	"Level 2: Hallucination collective"
 				"HelpTextH3"	"Level 3: Vision de la mort"
-				"HelpTextH4"	"Level 4: Folie furieuse"	// changed by wesp
-				"HelpTextH5"	"Level 5: Voix de Bedlam"	// changed by wesp
+				"HelpTextH4"	"Level 4: Folie furieuse"
+				"HelpTextH5"	"Level 5: Voix de Bedlam"
 				"HelpTextL1"	"Coût d'activation : 1 point de sang. Les émotions de la victime intensifient jusqu'à ce qu'elle soit neutralisée temporairement soit à cause d'un rire hystérique ou des pleurs compulsifs pendant environ 15 secondes. Toute action à l'encontre de la victime peut mettre fin à l'effet prématurément."	// changed by EntenSchreck and wesp
 				"HelpTextL2"	"Coût d'activation : 2 points de sang. Tous ceux qui se trouvent à proximité de vous sont victimes d'hallucinations et subissent un malus de 2 aux capacités suivantes : Armes à feu, Mêlée, Bagarre, Défense de combat et Défense contre la dévoration pendant 20 secondes."	// changed by wesp
 				"HelpTextL3"	"Coût d'activation : 2 points de sang. La victime subit ces plus grands cauchemars éveillés jusqu'à causer une crise cardiaque. Peut avoir moins d'effet sur les êtres surnaturels."	// changed by wesp
@@ -1644,12 +1644,12 @@ StatData
 				"Name"		"Domination"
 				"InternalName"	"Dominate"
 				"HelpText"	"La force mentale supérieure du vampire permet de contrôler l'esprit des plus faibles parmi le bétail et certains vampires. Les effets sont discrets et rien ne permet de prouver que vous en êtes à l'origine. Ainsi, vous ne violez pas la Mascarade."
-				"HelpTextH1"	"Niveau 1 : Ordre" // changed by wesp
+				"HelpTextH1"	"Niveau 1 : Transe"
 				"HelpTextH2"	"Niveau 2 : Lavage de cerveau"
 				"HelpTextH3"	"Niveau 3 : Sommeil" // changed by wesp
 				"HelpTextH4"	"Niveau 4 : Possession"
 				"HelpTextH5"	"Niveau 5 : Suicide collectif"
-				"HelpTextL1"	"Coût d'activation : 1 point de sang. La cible est plongée dans une transe profonde, commence à danser pendant 10 secondes."	// changed by wesp
+				"HelpTextL1"	"Coût d'activation : 1 point de sang. La cible est momentanément plongée dans une transe profonde pendant 10 secondes. Toute action contre la cible la réveillera prématurément."	// changed by wesp
 				"HelpTextL2"	"Coût d'activation : 2 points de sang. Tous les ennemis se trouvant à proximité penseront que vous avez disparu. L'effet dure 15 secondes."	// changed by wesp
 				"HelpTextL3"	"Coût d'activation : 2 points de sang. La victime s'endort pendant 20 secondes ou plus, pour être complétement neutralisée."	// changed by EntenSchreck and wesp
 				"HelpTextL4"	"Coût d'activation : 3 points de sang. La victime attaquera sans relâche tous ceux qui vous veulent du mal pendant environ 30 secondes, jusqu'à ce qu'elle meure finalement d'un arrêt cardiaque. Peut avoir un effet moindre sur les êtres surnaturels."	// changed by wesp
@@ -1761,7 +1761,7 @@ StatData
 			{
 				"Name"		"Force d'âme"
 				"InternalName"	"Fortitude"
-				"HelpText"	"Force d'âme offre une constitution surnaturelle. Cela vous garantit qu'une certaine quantité de dégâts provenant d'une attaque, quelle qu'en soit la source, sera ignorée. L'utilisation de Force d'âme n'est pas une violation de la Mascarade."
+				"HelpText"	"Force d'âme offre une constitution surnaturelle. Cela vous garantit qu'une certaine quantité de dégâts provenant d'une attaque, quelle qu'en soit la source, à l'exception du feu et de la chaleur sera ignorée. L'utilisation de Force d'âme n'est pas une violation de la Mascarade."
 				"HelpTextH1"	"Niveau 1 :"
 				"HelpTextH2"	"Niveau 2 :"
 				"HelpTextH3"	"Niveau 3 :"
@@ -1800,7 +1800,7 @@ StatData
 			{
 				"Name"		"Occultation"
 				"InternalName"	"Obfuscate"
-				"HelpText"		"Invisibilité vampirique. Vous ne pouvez activer l'Occultation que si personne ne peut vous voir. Si vous restez immobile, le chronomètre se fige et l'Occultation peut rester ainsi indéfiniment. Vous pouvez réaliser des assassinats furtifs tout en restant invisible avec la touche d'attaque. Chaque niveau offre les avantages des niveaux précédents et n'entraîne aucun risque de violation de la Mascarade. Durant la frénésie, les limites de niveau sont ignorés."	// changed by wesp
+				"HelpText"		"Invisibilité vampirique. Vous ne pouvez activer l'Occultation que si personne ne peut vous voir. Si vous restez immobile, le chronomètre se fige et l'Occultation peut rester ainsi indéfiniment. Vous pouvez rester invisible et réaliser des assassinats furtifs tout en restant invisible avec la touche d'attaque."	// changed by wesp
 				"HelpTextH1"	"Niveau 1 : Camouflage"
 				"HelpTextH2"	"Niveau 2 : Invisibilité limitée"
 				"HelpTextH3"	"Niveau 3 : Tueur camouflé"

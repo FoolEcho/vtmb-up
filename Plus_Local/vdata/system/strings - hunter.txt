@@ -165,7 +165,7 @@ StringData
 
 		MiscStrs
 		{
-			"Name0"		"Aucun(e)"
+			"Name0"		" "		// changed by wesp
 			"Name1"		"Armes de mêlée"
 			"Name2"		"Armes à distance"
 			"Name3"		"Poche de sang"
@@ -388,7 +388,7 @@ StringData
 			"Name3"		"Les talents sont des capacités inhérentes que l'on améliore par l'expérience."
 			"Name4"		"Les compétences sont des capacités qui peuvent être enseignées ou apprises dans des livres."
 			"Name5"		"Les connaissances sont des applications de l'esprit qui dépendent fréquemment des attributs mentaux."
-			"Name6"		"De puissantes capacités surnaturelles renforcées par la foi du chasseur."	// changed by wesp, hunter
+			"Name6"		"De puissantes capacités surnaturelles alimentées par la foi du chasseur. Outre celles orientées vers le combat, les chasseurs peuvent soigner leurs blessures et réparer leurs corps brisés en utilisant Soin spirituel. " // modifié par wesp, hunter
 		}
 
 		StatCategoryLine2
@@ -562,8 +562,8 @@ StringData
 			"Name2" "Succès"
 			"Name3" "Echec"
 			"Name4" "Non tenté"
-			"Name5" "Explosif activé"
-			"Name6" "Explosif posé"
+			"Name5" "Armement de l'explosif"		// changed by wesp
+			"Name6" "Explosif armé"		// changed by wesp
 			"Name7"	"CERVELLE !"
 			"Name8" "Evasion !"
 			"Name9" "Crochetage"
@@ -589,7 +589,7 @@ StringData
   			"Name15" "MOT DE PASSE ERRONE"
   			"Name16" "Mot de passe accepté"
   			"Name17" "Accueil"
-			"Name18" "[Appuyez sur 'Entrée' pour continuer]"
+			"Name18" "[Appuyez sur 'Entrée' pour continuer]"	// changed by wesp
   			"Name19" "Mot de passe accepté : <%s>. Accès au menu"
 			"Name20" "Information d'aide"
 			"Name21" "[Appuyez sur 'Entrée' pour revenir.]"
@@ -602,7 +602,7 @@ StringData
 			"Name28" "[q]uitter"
 			"Name29" "A :"
 			"Name30" "E-mail"
-			"Name31" "Vous avez %d e-mail(s), %d non lu(s)"
+			"Name31" "Vous avez %d e-mail(s), %d non lu(s)"					// changed by wesp
 			"Name32" "Entrez 'quit' pour quitter"
 			"Name33" "quit"
 			"Name34" "aide"
@@ -610,14 +610,14 @@ StringData
 			"Name36" "e-mail"
 			"Name37" "Difficulté :"
 			"Name38" "Compétence trop faible pour faire une tentative de piratage de difficulté "	// changed by wesp
-  			"Name39" "Mot de passe accepté : <%s>. Accès au compte e-mail."	// changed by wesp
-			"Name40" "Tentative de piratage avec une compétence de "	// changed by wesp
+  			"Name39" "Mot de passe accepté : <%s>. Accès au compte e-mail."							// changed by wesp
+			"Name40" "Tentative de piratage avec une compétence de "								// changed by wesp
 			"Name41" "Menu actuel"
-			"Name42" "Tapez le menu ou la commande "		// changed by wesp
+			"Name42" "Tapez le menu ou la commande "												// changed by wesp
 			"Name43" "Menu principal" 
 			"Name44" "Menu" 
-			"Name45" "%d e-mails totaux, choisir %d...%d"
-			"Name46" "%s ou %s pour plus d'emails"
+			"Name45" "%d e-mails totaux, choisir %d...%d,"						// changed by wesp
+			"Name46" "%s, %s pour plus d'emails,"								// changed by wesp
 			"Name47" "%s pour quitter."
 		}
 

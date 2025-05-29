@@ -316,6 +316,24 @@ TraitEffectsData
 
 			TraitEffect	// added by wesp
 			{
+				"Trait"	"Excluded_Equipment"
+				"Modifier"	"Value Clawed_Form"
+			}
+
+			TraitEffect	// added by wesp
+			{
+				"Trait"	"item_w_fists"
+				"Modifier"	"-1"
+			}
+
+			TraitEffect	// added by wesp
+			{
+				"Trait"	"item_w_claws"
+				"Modifier"	"+1"
+			}
+
+			TraitEffect	// added by wesp
+			{
 				"Trait"	"Fortitude"
 				Costs
 				{
@@ -1536,8 +1554,13 @@ TraitEffectsData
 					"Raise"	"Table: 6, 8, 12, 18, 24"
 				}	
 			}
-
+			TraitEffect	// added by wesp
+			{
+				"Trait"	"item_w_tzimisce2_claw"
+				"Modifier"	"+1"
+			}
 		}
+
 //		Nos
 		TraitEffectGroup
 		{
@@ -3079,19 +3102,16 @@ TraitEffectsData
 				"Trait"	"Excluded_Equipment"
 				"Modifier"	"Value Clawed_Form"
 			}
-
 			TraitEffect
 			{
 				"Trait"	"item_w_fists"
 				"Modifier"	"-1"
 			}
-
 			TraitEffect
 			{
 				"Trait"	"item_w_claws"
 				"Modifier"	"+1"
 			}
-
 			TraitEffect	// added by wesp
 			{
 				"Trait"	"Wits"
@@ -3110,19 +3130,16 @@ TraitEffectsData
 				"Trait"	"Excluded_Equipment"
 				"Modifier"	"Value Clawed_Form_Toreador"
 			}
-
 			TraitEffect
 			{
 				"Trait"	"item_w_fists"
 				"Modifier"	"-1"
 			}
-
 			TraitEffect
 			{
 				"Trait"	"item_w_claws"
 				"Modifier"	"+1"
 			}
-
 			TraitEffect	// added by wesp
 			{
 				"Trait"	"Wits"
@@ -3140,8 +3157,7 @@ TraitEffectsData
 				"Trait"	"Stamina"
 				"Modifier"	"+2"
 			}
-// added by wesp
-			TraitEffect
+			TraitEffect	// added by wesp
 			{
 				"Trait"	"Wits"
 				"Modifier"	"+1"
@@ -3172,13 +3188,12 @@ TraitEffectsData
 				"Trait"	"Strength"
 				"Modifier"	"+4"
 			}
-// added by wesp
-			TraitEffect
+			TraitEffect	// added by wesp
 			{
 				"Trait"	"Stamina"
 				"Modifier"	"+2"
 			}
-			TraitEffect
+			TraitEffect	// added by wesp
 			{
 				"Trait"	"Wits"
 				"Modifier"	"+1"
@@ -3187,13 +3202,13 @@ TraitEffectsData
 			{
 				"Trait"	"Excluded_Equipment"
 				"Modifier"	"Value Clawed_Form"
-			}
+		}
 			TraitEffect
 			{
 				"Trait"	"item_w_fists"
 				"Modifier"	"-1"
 			}
-			TraitEffect
+			TraitEffect	// changed by wesp
 			{
 				"Trait"	"item_w_claws"
 				"Modifier"	"+1"
@@ -3215,24 +3230,22 @@ TraitEffectsData
 				"Trait"	"Close_Combat_Brawl"
 				"Modifier"	"+8"
 			}
-
 			TraitEffect
 			{
 				"Trait"	"Fx_Model_Wolf"
 				"Modifier"	"+1"
 			}
-// added by wesp
-			TraitEffect
+			TraitEffect	// added by wesp
 			{
 				"Trait"	"Strength"
 				"Modifier"	"+4"
 			}
-			TraitEffect
+			TraitEffect	// added by wesp
 			{
 				"Trait"	"Stamina"
 				"Modifier"	"+2"
 			}
-			TraitEffect
+			TraitEffect	// added by wesp
 			{
 				"Trait"	"Wits"
 				"Modifier"	"+1"
@@ -3247,15 +3260,15 @@ TraitEffectsData
 				"Trait"	"item_w_fists"
 				"Modifier"	"-1"
 			}
-			TraitEffect
+			TraitEffect	// changed by wesp
 			{
 				"Trait"	"item_w_claws"
 				"Modifier"	"+1"
 			}
 
 		}
-// added by wesp
-		TraitEffectGroup
+
+		TraitEffectGroup	// added by wesp
 		{
 			"InternalName"	"Discipline (Protean-Will_of_the_Wolf-Toreador)"
 
@@ -3286,7 +3299,7 @@ TraitEffectsData
 			}
 		}
 
-		TraitEffectGroup
+		TraitEffectGroup	// added by wesp
 		{
 			"InternalName"	"Discipline (Protean-Hunter_of_Night-Toreador)"
 
@@ -3322,7 +3335,7 @@ TraitEffectsData
 			}
 		}
 
-		TraitEffectGroup
+		TraitEffectGroup	// added by wesp
 		{
 			"InternalName"	"Discipline (Protean-Wolf_Form-Toreador)"
 
@@ -3871,7 +3884,7 @@ TraitEffectsData
 			TraitEffect
 			{
 //				"Trait"	"Hacking"	// Feat
-				"Trait"	"Wits"	// changed by wesp
+				"Trait"	"Wits"	// changed by wesp 
 				"Modifier"	"+1"
 			}
 		}

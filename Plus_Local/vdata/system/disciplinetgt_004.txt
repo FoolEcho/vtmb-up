@@ -713,7 +713,7 @@ DisciplineTgt
 		{
 			"Critter"		"1"
 			"No_Self"		"1"
-//			"No_Friends"	"1"	// ???
+			"No_Friends"	"1"	// restored by wesp ???
 		}
 
 
@@ -772,7 +772,20 @@ DisciplineTgt
 
 			Mapping
 			{
-				"HitTable"	"Hit_Invulnerable"
+				"HitTable"	"Hit_Supernatural_NoEffect"
+			}
+		}
+
+		Affects_Table	// added by wesp
+		{
+			Affects_Filters
+			{
+				"CharTemplate"	"Zombie"
+			}
+
+			Default_Mapping
+			{
+				"HitTable"	"Hit_Supernatural_NoEffect"
 			}
 		}
 
@@ -2375,7 +2388,7 @@ DisciplineTgt
 
 			Mapping
 			{
-				"HitTable"	"Hit_Invulnerable"
+				"HitTable"	"Hit_Supernatural_NoEffect"
 			}
 		}
 

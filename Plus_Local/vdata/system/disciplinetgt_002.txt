@@ -11,7 +11,7 @@ DisciplineTgtList
 // Dominate: Level 1, changed by EntenSchreck
 DisciplineTgt
 {
-	"Name"		"Ordre"	// changed by wesp
+	"Name"		"Transe"
 	"InternalName"	"Dominate_Command"
 
 	"Discipline"	"Dominate"
@@ -83,19 +83,6 @@ DisciplineTgt
 //
 // ADD DISCIPLINESTRATA EFFECTS BELOW THIS LINE
 //
-
-		Affects_Table	// added by wesp
-		{
-			Affects_Filters
-			{
-				"CharTemplate"		"Doggie"
-			}
-
-			Mapping
-			{
-				"HitTable"	"Hit_Invulnerable"
-			}
-		}
 
 		Affects_Table	// added by Populism
 		{
@@ -199,7 +186,7 @@ DisciplineTgt
 
 			Mapping
 			{
-				"Chance"	"50%"
+				"Chance"	"0%"
 				"HitTable"	"Hit_Human_Dance"
 			}
 			Default_Mapping
@@ -217,7 +204,7 @@ DisciplineTgt
 
 			Mapping
 			{
-				"Chance"	"50%"
+				"Chance"	"0%"
 				"HitTable"	"Hit_Human_Dance"
 			}
 			Default_Mapping
@@ -235,7 +222,7 @@ DisciplineTgt
 
 			Mapping
 			{
-				"Chance"	"50%"
+				"Chance"	"0%"
 				"HitTable"	"Hit_Human_Dance"
 			}
 			Default_Mapping
@@ -322,7 +309,7 @@ DisciplineTgt
 
 			Mapping
 			{
-				"Chance"	"50%"
+				"Chance"	"0%"
 				"HitTable"	"Hit_Human_Dance"
 			}
 			Default_Mapping
@@ -473,7 +460,7 @@ DisciplineTgt
 		}
 	}
 
-	Hit_Human_Dance // works
+	Hit_Human_Dance // works, but does not triggere OnIncapacitated
 	{
 		"Dmg_Health"		"0%"
 		"AI_Schedule"		"SCHED_TROIKA_DO_DANCE_ACTIVITY"
@@ -603,7 +590,7 @@ DisciplineTgt
 		"Duration"		"10"	// changed by wesp
 
 		//"Gesture_Anim"	""
-		//"Gesture_Duration" "12"
+		//"Gesture_Duration"	"12"
 
 
 		Trigger_Casting
@@ -641,7 +628,7 @@ DisciplineTgt
 			"AI_Schedule"		"SCHED_TROIKA_DISORIENTED"
 	
 			//"Gesture_Anim"	""
-			//"Gesture_Duration" "0.5"
+			//"Gesture_Duration"	"0.5"
 
 		}
 		OnInterrupt
@@ -935,19 +922,6 @@ DisciplineTgt
 //
 // ADD DISCIPLINESTRATA EFFECTS BELOW THIS LINE
 //
-
-		Affects_Table	// added by wesp
-		{
-			Affects_Filters
-			{
-				"CharTemplate"		"Doggie"
-			}
-
-			Mapping
-			{
-				"HitTable"	"Hit_Invulnerable"
-			}
-		}
 
             Affects_Table	// added by Populism
 		{
@@ -1360,7 +1334,6 @@ DisciplineTgt
 		{
 			"Critter"		"1"
 			"No_Self"		"1"
-			"No_Friends"	"1"
 		}
 
 
@@ -1449,7 +1422,20 @@ DisciplineTgt
 
 			Mapping
 			{
-				"HitTable"	"Hit_Invulnerable"
+				"HitTable"	"Hit_Supernatural_NoEffect"
+			}
+		}
+
+		Affects_Table	// added by wesp
+		{
+			Affects_Filters
+			{
+				"CharTemplate"	"Zombie"
+			}
+
+			Default_Mapping
+			{
+				"HitTable"	"Hit_Supernatural_NoEffect"
 			}
 		}
 
@@ -2163,7 +2149,7 @@ DisciplineTgt
 		{
 			"Critter"		"1"
 			"No_Self"		"1"
-			"No_Friends"	"1"
+// wesp			"No_Friends"	"1"
 		}
 
 
@@ -2222,7 +2208,7 @@ DisciplineTgt
 
 			Mapping
 			{
-				"HitTable"	"Hit_Invulnerable"
+				"HitTable"	"Hit_Supernatural_NoEffect"
 			}
 		}
 
@@ -2867,7 +2853,7 @@ DisciplineTgt
 
 			Mapping
 			{
-				"HitTable"	"Hit_Invulnerable"
+				"HitTable"	"Hit_Supernatural_NoEffect"
 			}
 		}
 

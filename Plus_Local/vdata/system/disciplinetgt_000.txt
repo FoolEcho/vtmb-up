@@ -678,18 +678,6 @@ DisciplineTgt
 //
 // ADD DISCIPLINESTRATA EFFECTS BELOW THIS LINE
 //
-		Affects_Table	// added by wesp
-		{
-			Affects_Filters
-			{
-				"CharTemplate"		"Doggie"
-			}
-
-			Mapping
-			{
-				"HitTable"	"Hit_Invulnerable"
-			}
-		}
 
 		Affects_Table
 		{
@@ -1176,7 +1164,7 @@ DisciplineTgt
 
 			Mapping
 			{
-				"HitTable"	"Hit_Invulnerable"
+				"HitTable"	"Hit_Supernatural_NoEffect"
 			}
 		}
 
@@ -1189,7 +1177,7 @@ DisciplineTgt
 
 			Mapping
 			{
-				"HitTable"	"Hit_Invulnerable"
+				"HitTable"	"Hit_Supernatural_NoEffect"
 			}
 		}
 
@@ -2611,6 +2599,32 @@ DisciplineTgt
 //
 // ADD DISCIPLINESTRATA EFFECTS BELOW THIS LINE
 //
+
+		Affects_Table	// added by wesp
+		{
+			Affects_Filters
+			{
+				"CharTemplate"		"Zombie"
+			}
+
+			Mapping
+			{
+				"HitTable"	"Hit_Supernatural_NoEffect"
+			}
+		}
+
+		Affects_Table	// added by wesp
+		{
+			Affects_Filters
+			{
+				"CharTemplate"		"ManBatMinion"
+			}
+
+			Mapping
+			{
+				"HitTable"	"Hit_Supernatural_NoEffect"
+			}
+		}
 
 		Affects_Table
 		{

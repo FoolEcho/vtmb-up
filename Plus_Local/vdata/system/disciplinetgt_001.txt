@@ -11,7 +11,7 @@ DisciplineTgtList
 // Dementation: Level 1
 DisciplineTgt
 {
-	"Name"		"Voile de Folie"	// changed by wesp
+	"Name"		"Hystérie"	// changed by wesp
 	"InternalName"	"Dementation_Hysteria"
 
 	"Discipline"	"Dementation"
@@ -83,19 +83,6 @@ DisciplineTgt
 //
 // ADD DISCIPLINESTRATA EFFECTS BELOW THIS LINE
 //
-
-		Affects_Table	// added by wesp
-		{
-			Affects_Filters
-			{
-				"CharTemplate"		"Doggie"
-			}
-
-			Default_Mapping
-			{
-				"HitTable"	"Hit_Invulnerable"
-			}
-		}
 
 		Affects_Table	// added by Populism
 		{
@@ -650,6 +637,7 @@ DisciplineTgt
 	Hit_Supernatural_NoEffect
 	{
 		"AI_Schedule"		"SCHED_TROIKA_DISORIENTED"	// added by Populism
+		"Duration"			"3"	// added by wesp
 
 		Trigger_Casting
 		{
@@ -834,19 +822,6 @@ DisciplineTgt
 //
 // ADD DISCIPLINESTRATA EFFECTS BELOW THIS LINE
 //
-
-		Affects_Table	// added by wesp
-		{
-			Affects_Filters
-			{
-				"CharTemplate"		"Doggie"
-			}
-
-			Default_Mapping
-			{
-				"HitTable"	"Hit_Invulnerable"
-			}
-		}
 
 		Affects_Table	// added by Populism
 		{
@@ -1192,6 +1167,7 @@ DisciplineTgt
 	Hit_Supernatural_NoEffect
 	{
 		"AI_Schedule"		"SCHED_TROIKA_DISORIENTED"	// added by Populism
+		"Duration"			"3"	// In order to play particles/etc. added by wesp
 
 		Trigger_Casting
 		{
@@ -1395,7 +1371,7 @@ DisciplineTgt
 
 			Default_Mapping
 			{
-				"HitTable"	"Hit_Invulnerable"
+				"HitTable"	"Hit_Supernatural_NoEffect"
 			}
 		}
 
@@ -1872,7 +1848,7 @@ DisciplineTgt
 // Dementation: Level 4
 DisciplineTgt
 {
-	"Name"		"Folie furieuse"
+	"Name"		"Folie furieuse"	// changed by wesp
 	"InternalName"	"Dementation_Berserk"
 
 	"Discipline"	"Dementation"
@@ -1952,7 +1928,7 @@ DisciplineTgt
 
 			Default_Mapping
 			{
-				"HitTable"	"Hit_Invulnerable"
+				"HitTable"	"Hit_Supernatural_NoEffect"
 			}
 		}
 
@@ -2375,7 +2351,6 @@ DisciplineTgt
 	Hit_Supernatural_NoEffect
 	{
 		"AI_Schedule"		"SCHED_TROIKA_DISORIENTED"	// added by Populism	
-
 		"Duration"			"3"	// In order to play particles/etc.
 
 		Trigger_Casting
@@ -2603,7 +2578,26 @@ DisciplineTgt
 
 			Mapping
 			{
-				"HitTable"	"Hit_Invulnerable"
+				"Chance"	"50%"
+				"HitTable"	"Hit_Supernatural_Mass_Hallucination_Primary"
+			}
+
+			Mapping
+			{
+				"Chance"	"0%"
+				"HitTable"	"Hit_Supernatural_Vision_of_Death_Primary"
+			}
+
+			Mapping
+			{
+				"Chance"	"00%"
+				"HitTable"	"Hit_Supernatural_Berserk_Primary"
+			}
+
+			Mapping
+			{
+				"Chance"	"50%"
+				"HitTable"	"Hit_Strata_1_Hysteria_Primary"
 			}
 		}
 
@@ -2616,10 +2610,93 @@ DisciplineTgt
 
 			Mapping
 			{
-				"HitTable"	"Hit_Invulnerable"
+				"Chance"	"50%"
+				"HitTable"	"Hit_Supernatural_Mass_Hallucination_Primary"
+			}
+
+			Mapping
+			{
+				"Chance"	"0%"
+				"HitTable"	"Hit_Supernatural_Vision_of_Death_Primary"
+			}
+
+			Mapping
+			{
+				"Chance"	"00%"
+				"HitTable"	"Hit_Supernatural_Berserk_Primary"
+			}
+
+			Mapping
+			{
+				"Chance"	"50%"
+				"HitTable"	"Hit_Strata_1_Hysteria_Primary"
 			}
 		}
 
+		Affects_Table	// added by wesp
+		{
+			Affects_Filters
+			{
+				"CharTemplate"		"Zombie"
+				"Primary_Target"	"1"
+			}
+
+			Mapping
+			{
+				"Chance"	"50%"
+				"HitTable"	"Hit_Supernatural_Mass_Hallucination_Primary"
+			}
+
+			Mapping
+			{
+				"Chance"	"0%"
+				"HitTable"	"Hit_Supernatural_Vision_of_Death_Primary"
+			}
+
+			Mapping
+			{
+				"Chance"	"00%"
+				"HitTable"	"Hit_Supernatural_Berserk_Primary"
+			}
+
+			Mapping
+			{
+				"Chance"	"50%"
+				"HitTable"	"Hit_Strata_1_Hysteria_Primary"
+			}
+		}
+
+		Affects_Table	// added by wesp
+		{
+			Affects_Filters
+			{
+				"CharTemplate"		"Zombie"
+			}
+
+			Mapping
+			{
+				"Chance"	"50%"
+				"HitTable"	"Hit_Supernatural_Mass_Hallucination_Primary"
+			}
+
+			Mapping
+			{
+				"Chance"	"0%"
+				"HitTable"	"Hit_Supernatural_Vision_of_Death_Primary"
+			}
+
+			Mapping
+			{
+				"Chance"	"00%"
+				"HitTable"	"Hit_Supernatural_Berserk_Primary"
+			}
+
+			Mapping
+			{
+				"Chance"	"50%"
+				"HitTable"	"Hit_Strata_1_Hysteria_Primary"
+			}
+		}
 
 		Affects_Table	// added by Populism
 		{
@@ -3822,6 +3899,7 @@ DisciplineTgt
 	Hit_Boss_NoEffect_Primary
 	{
 		"AI_Schedule"		"SCHED_TROIKA_DISORIENTED"	// added by Populism
+		"Duration"			"3"	// In order to play particles/etc. added by wesp
 
 		Trigger_Casting
 		{
