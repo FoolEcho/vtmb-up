@@ -591,7 +591,7 @@
 {	591	}{	Je vous recommanderai de prendre un taxi plutôt que de marcher. Sebastian ne serait pas contre cette petite dépense, surtout quand il s'agit d'archéologie.	}{	Je vous recommanderai de prendre un taxi plutôt que de marcher. Sebastian ne serait pas contre cette petite dépense, surtout quand il s'agit d'archéologie.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	G.Society_Open = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	592	}{	Je ne prendrai pas de taxi, c'est plus rapide par les égouts.	}{	Je ne prendrai pas de taxi, c'est plus rapide par les égouts.	}{	881	}{	G.Story_State < 70 and IsClan(pc, "Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	593	}{	J'ai quelques questions avant de partir.	}{	J'ai quelques questions avant de partir.	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je veux quelque chose qui se trouve dans votre cerveau.	}
-{	594	}{	En route pour aller voir le professeur.	}{	En route pour aller voir le professeur.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi suis-je encore ici ? Je devrais partir.	}
+{	594	}{	En route pour aller voir le professeur.	}{	En route pour Leopold.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Pourquoi suis-je encore ici ? Je devrais partir.	}
 {	595	}{	Je reviendrai après le monastère.	}{	Je reviendrai après le monastère.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je ne peux pas chasser des chasseurs dans ce triste état, il faut me réparer.	}
 {	596	}{	Je voudrais parler au prince d'abord.	}{	Je voudrais parler au prince d'abord.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je veux d'abord parler à l'homme de la tour....	}
 {	597	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -664,7 +664,7 @@
 {	664	}{	Vous avez parlé de Géhenne. Vous pensez que ce sarcophage en fait partie ?	}{	Vous avez parlé de Géhenne. Vous pensez que ce sarcophage en fait partie ?	}{	691	}{	G.Beckett_Ankaran == 0	}{	}{	}{	}{	}{	}{	}{	}{	La boîte. . . C'est celle de Pandore ?	}
 {	665	}{	Avez-vous appris quoi que ce soit d'autre sur les sangs clairs ?	}{	Avez-vous appris quoi que ce soit d'autre sur les sangs clairs ?	}{	701	}{	G.Beckett_Thin == 2	}{	}{	}{	}{	}{	}{	}{	}{	Et les sangs clairs ?	}
 {	666	}{	Parlez-moi de vous. . .	}{	Parlez-moi de vous. . .	}{	711	}{	G.Beckett_Self == 0	}{	}{	}{	}{	}{	}{	}{	}{	Si j'étais un miroir, qui serait cette personne que vous regardez ?	}
-{	667	}{	En route pour aller voir le professeur.	}{	En route pour aller voir le professeur.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je vais voir Léopold. . .	}
+{	667	}{	En route pour aller voir le professeur.	}{	En route pour Leopold.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je vais voir Léopold. . .	}
 {	668	}{	Je reviendrai après le monastère.	}{	Je reviendrai après le monastère.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je rampe vers Léopold. . .	}
 {	669	}{	Pourquoi le Sabbat attaquerait-il si ouvertement ?	}{	Pourquoi le Sabbat attaquerait-il si ouvertement ?	}{	931	}{	G.Beckett_Attack == 0 and G.Story_State >= 70	}{	}{	}{	}{	}{	}{	}{	}{	La Tour Blanche est toujours debout, mais pas le Sabbat. Pourquoi essayer ?	}
 {	670	}{	Je n'ai pas d'autre question. Il faut que je prépare mon assaut contre le Sabbat.	}{	Je n'ai pas d'autre question. Il faut que je prépare mon assaut contre le Sabbat.	}{	0	}{	G.Story_State >= 70	}{	}{	}{	}{	}{	}{	}{	}{	A présent, je purge le sang du Sabbat dans cette ville.	}
@@ -672,7 +672,7 @@
 {	672	}{	Vous avez parlé de Géhenne. Vous pensez que ce sarcophage en fait partie ?	}{	Vous avez parlé de Géhenne. Vous pensez que ce sarcophage en fait partie ?	}{	691	}{	G.Beckett_Ankaran == 0	}{	}{	}{	}{	}{	}{	}{	}{	La boîte. . . C'est celle de Pandore ?	}
 {	673	}{	Avez-vous appris quoi que ce soit d'autre sur les sangs clairs ?	}{	Avez-vous appris quoi que ce soit d'autre sur les sangs clairs ?	}{	701	}{	G.Beckett_Thin == 2	}{	}{	}{	}{	}{	}{	}{	}{	Et les sangs clairs ?	}
 {	674	}{	Parlez-moi de vous. . .	}{	Parlez-moi de vous. . .	}{	711	}{	G.Beckett_Self == 0	}{	}{	}{	}{	}{	}{	}{	}{	Si j'étais un miroir, qui serait cette personne que vous regardez ?	}
-{	675	}{	En route pour aller voir le professeur.	}{	En route pour aller voir le professeur.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je vais voir Léopold. . .	}
+{	675	}{	En route pour aller voir le professeur.	}{	En route pour Leopold.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je vais voir Léopold. . .	}
 {	676	}{	Je reviendrai après le monastère.	}{	Je reviendrai après le monastère.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je rampe vers Léopold. . .	}
 {	677	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	678	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -682,7 +682,7 @@
 {	682	}{	Vous avez parlé de Géhenne. Vous pensez que ce sarcophage en fait partie ?	}{	Vous avez parlé de Géhenne. Vous pensez que ce sarcophage en fait partie ?	}{	691	}{	G.Beckett_Ankaran == 0	}{	}{	}{	}{	}{	}{	}{	}{	La boîte. . . C'est celle de Pandore ?	}
 {	683	}{	Avez-vous appris quoi que ce soit d'autre sur les sangs clairs ?	}{	Avez-vous appris quoi que ce soit d'autre sur les sangs clairs ?	}{	701	}{	G.Beckett_Thin == 2	}{	}{	}{	}{	}{	}{	}{	}{	Et les sangs clairs ?	}
 {	684	}{	Parlez-moi de vous. . .	}{	Parlez-moi de vous. . .	}{	711	}{	G.Beckett_Self == 0	}{	}{	}{	}{	}{	}{	}{	}{	Si j'étais un miroir, qui serait cette personne que vous regardez ?	}
-{	685	}{	En route pour aller voir le professeur.	}{	En route pour aller voir le professeur.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je vais voir Léopold.	}
+{	685	}{	En route pour aller voir le professeur.	}{	En route pour Leopold.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je vais voir Léopold.	}
 {	686	}{	Je reviendrai après le monastère.	}{	Je reviendrai après le monastère.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je rampe vers Léopold. . .	}
 {	687	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	688	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -693,7 +693,7 @@
 {	693	}{	Vous pouvez me dire quelque chose sur l'Ordre de Léopold ?	}{	Vous pouvez me dire quelque chose sur l'Ordre de Léopold ?	}{	681	}{	(IsClan(pc, "Nosferatu") or IsClan(pc,"Malkavian")) and G.Beckett_Leopold == 0 and G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi encore de ce mystérieux Léopold. . .	}
 {	694	}{	Avez-vous appris quoi que ce soit d'autre sur les sangs clairs ?	}{	Avez-vous appris quoi que ce soit d'autre sur les sangs clairs ?	}{	701	}{	G.Beckett_Thin == 2	}{	}{	}{	}{	}{	}{	}{	}{	Et les sangs clairs ?	}
 {	695	}{	Parlez-moi de vous. . .	}{	Parlez-moi de vous. . .	}{	711	}{	G.Beckett_Self == 0	}{	}{	}{	}{	}{	}{	}{	}{	Si j'étais un miroir, qui serait cette personne que vous regardez ?	}
-{	696	}{	En route pour aller voir le professeur.	}{	En route pour aller voir le professeur.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je vais voir Léopold. . .	}
+{	696	}{	En route pour aller voir le professeur.	}{	En route pour Leopold.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je vais voir Léopold. . .	}
 {	697	}{	Je reviendrai après le monastère.	}{	Je reviendrai après le monastère.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je rampe vers Léopold. . .	}
 {	698	}{	Pourquoi le Sabbat attaquerait-il si ouvertement ?	}{	Pourquoi le Sabbat attaquerait-il si ouvertement ?	}{	931	}{	G.Beckett_Attack == 0 and G.Story_State >= 70	}{	}{	}{	}{	}{	}{	}{	}{	La Tour Blanche est toujours debout, mais pas le Sabbat. Pourquoi essayer ?	}
 {	699	}{	J'ai parlé au professeur.	}{	J'ai parlé au professeur.	}{	941	}{	G.Beckett_Johansen == 0 and G.Story_State >= 70	}{	}{	}{	}{	}{	}{	}{	}{	J'ai digéré le cerveau de Johansen.	}
@@ -703,7 +703,7 @@
 {	703	}{	Vous pouvez me dire quelque chose sur l'Ordre de Léopold ?	}{	Vous pouvez me dire quelque chose sur l'Ordre de Léopold ?	}{	681	}{	(IsClan(pc, "Nosferatu") or IsClan(pc,"Malkavian")) and G.Beckett_Leopold == 0 and G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi encore de ce mystérieux Léopold. . .	}
 {	704	}{	Vous avez parlé de Géhenne. Vous pensez que ce sarcophage en fait partie ?	}{	Vous avez parlé de Géhenne. Vous pensez que ce sarcophage en fait partie ?	}{	691	}{	G.Beckett_Ankaran == 0	}{	}{	}{	}{	}{	}{	}{	}{	La boîte. . . C'est celle de Pandore ?	}
 {	705	}{	Parlez-moi de vous. . .	}{	Parlez-moi de vous. . .	}{	711	}{	G.Beckett_Self == 0	}{	}{	}{	}{	}{	}{	}{	}{	Si j'étais un miroir, qui serait cette personne que vous regardez ?	}
-{	706	}{	En route pour aller voir le professeur.	}{	En route pour aller voir le professeur.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je vais voir Léopold.	}
+{	706	}{	En route pour aller voir le professeur.	}{	En route pour Leopold.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je vais voir Léopold.	}
 {	707	}{	Je reviendrai après le monastère.	}{	Je reviendrai après le monastère.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je rampe vers Léopold. . .	}
 {	708	}{	Pourquoi le Sabbat attaquerait-il si ouvertement ?	}{	Pourquoi le Sabbat attaquerait-il si ouvertement ?	}{	931	}{	G.Beckett_Attack == 0 and G.Story_State >= 70	}{	}{	}{	}{	}{	}{	}{	}{	La Tour Blanche est toujours debout, mais pas le Sabbat. Pourquoi essayer ?	}
 {	709	}{	J'ai parlé au professeur.	}{	J'ai parlé au professeur.	}{	941	}{	G.Beckett_Johansen == 0 and G.Story_State >= 70	}{	}{	}{	}{	}{	}{	}{	}{	J'ai digéré le cerveau de Johansen.	}
@@ -870,7 +870,7 @@
 {	870	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	871	}{	A moins que vous ayez d'autres questions, j'aimerais vraiment retourner auprès du sarcophage.	}{	A moins que vous ayez d'autres questions, j'aimerais vraiment retourner auprès du sarcophage.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	872	}{	J'ai une autre question, en effet.	}{	J'ai une autre question, en effet.	}{	661	}{	}{	}{	}{	}{	}{	}{	}{	}{	Encore un échantillon de votre cerveau.	}
-{	873	}{	Je vais aller chercher le professeur.	}{	Je vais aller chercher le professeur.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je rampe vers Léopold. . .	}
+{	873	}{	Je vais aller chercher le professeur.	}{	En route pour Leopold.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je rampe vers Léopold. . .	}
 {	874	}{	Non, c'est tout. Je reviendrai après le monastère.	}{	Non, c'est tout. Je reviendrai après le monastère.	}{	881	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Ma tête est pleine de rien, pour l'instant. Je m'en vais.	}
 {	875	}{	J'aimerais demander quelque chose au prince d'abord.	}{	J'aimerais demander quelque chose au prince d'abord.	}{	0	}{	G.Story_State < 70	}{	}{	}{	}{	}{	}{	}{	}{	Je veux demander quelque chose à l'homme de la tour d'abord....	}
 {	876	}{	J'ai parlé au professeur.	}{	J'ai parlé au professeur.	}{	941	}{	G.Beckett_Johansen == 0 and G.Story_State >= 70	}{	}{	}{	}{	}{	}{	}{	}{	J'ai digéré le cerveau de Johansen.	}

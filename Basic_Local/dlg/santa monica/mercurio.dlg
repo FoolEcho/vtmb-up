@@ -469,14 +469,14 @@
 {	469	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	471	}{	J'ai récupéré un Spas-15 ce matin. Propre, graissé, il attend qu'on tire sur quelqu'un. Ca vous dit ?	}{	J'ai récupéré un Spas-15 ce matin. Propre, graissé, il attend qu'on tire sur quelqu'un. Ca vous dit ?	}{	#	}{	}{	G.Mercurio_Spas = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	472	}{	Voyons cela.	}{	Voyons cela.	}{	0	}{	G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	Montrez-moi ce Spas de tir.	}
-{	473	}{	Tirer ? Ca m'intéresse toujours.	}{	Tirer ? Ca m'intéresse toujours.	}{	0	}{	Humanity -5 and G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	J'aime les trucs gras avec lesquels on peut tirer.	}
-{	474	}{	Une autre fois, peut-être. J'ai quelques questions.	}{	Une autre fois, peut-être. J'ai quelques questions.	}{	491	}{	G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau.	}
-{	475	}{	Pas maintenant. Je dois partir.	}{	Pas maintenant. Je dois partir.	}{	0	}{	G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
-{	476	}{	Voyons cela.	}{	Voyons cela.	}{	0	}{	G.Patch_Plus == 0	}{	G.Mercurio_Swat = 1; npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	Montrez-moi ce Spas de tir.	}
-{	477	}{	Tirer ? Ca m'intéresse toujours.	}{	Tirer ? Ca m'intéresse toujours.	}{	0	}{	Humanity -5 and G.Patch_Plus == 0	}{	G.Mercurio_Swat = 1; npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	J'aime les trucs gras avec lesquels on peut tirer.	}
-{	478	}{	Une autre fois, peut-être. J'ai quelques questions.	}{	Une autre fois, peut-être. J'ai quelques questions. I had some questions.	}{	491	}{	G.Patch_Plus == 0	}{	G.Mercurio_Swat = 1	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau.	}
-{	479	}{	Pas maintenant. Je dois partir.	}{	Pas maintenant. Je dois partir.	}{	0	}{	G.Patch_Plus == 0	}{	G.Mercurio_Swat = 1	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	472	}{	Voyons cela.	}{	Voyons cela.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	Montrez-moi ce Spas de tir.	}
+{	473	}{	Tirer ? Ca m'intéresse toujours.	}{	Tirer ? Ca m'intéresse toujours.	}{	0	}{	Humanity -5	}{	npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	J'aime les trucs gras avec lesquels on peut tirer.	}
+{	474	}{	Une autre fois, peut-être. J'ai quelques questions.	}{	Une autre fois, peut-être. J'ai quelques questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau.	}
+{	475	}{	Pas maintenant. Je dois partir.	}{	Pas maintenant. Je dois partir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	477	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	478	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	479	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	480	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	481	}{	Je peux faire quelque chose pour vous, ce soir ?	}{	Je peux faire quelque chose pour vous, ce soir ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	482	}{	Vous vous sentez bien ?	}{	Vous vous sentez bien ?	}{	391	}{	G.Mercurio_Health == 0 and G.Story_State < 40	}{	}{	}{	}{	}{	}{	}{	}{	Comment vont les ailes de vos pieds, Mercure ?	}
@@ -520,7 +520,7 @@
 {	520	}{	C'est tout pour l'instant. Merci, Mercurio.	}{	C'est tout pour l'instant. Merci, Mercurio.	}{	0	}{	G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	C'est tout pour l'instant. Merci, Mercurio.	}
 {	521	}{	C'est toujours un plaisir. Il vous faut quelque chose pour ce soir ?	}{	C'est toujours un plaisir. Il vous faut quelque chose pour ce soir ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	522	}{	Il me faut de l'équipement.	}{	Il me faut de l'équipement.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	Des jouets et des baguettes magiques.	}
-{	523	}{	Il me faut des renseignements.	}{	Il me faut des renseignements.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	523	}{	Il me faut des renseignements.	}{	Il me faut des renseignements.	}{	491	}{	G.Credits_Running == 0	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
 {	524	}{	Rien pour l'instant. A bientôt, Mercurio.	}{	Rien pour l'instant. A bientôt, Mercurio.	}{	0	}{	G.Story_State < 100	}{	}{	}{	}{	}{	}{	}{	}{	J'étais ailleurs quand vous avez commencé à parler.	}
 {	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	526	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -629,41 +629,41 @@
 {	629	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	630	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	631	}{	Mon contact de Vegas est venu me voir cet après-midi. Il a ouvert son coffre, et hop ! Un lance-flammes, avec du carburant en rab. Si ça vous intéresse, c'est pour vous. . . Mais. . . vous n'êtes pas inflammable, vous ?	}{	Mon contact de Vegas est venu me voir cet après-midi. Il a ouvert son coffre, et hop ! Un lance-flammes, avec du carburant en rab. Si ça vous intéresse, c'est pour vous. . . Mais. . . vous n'êtes pas inflammable, vous ?	}{	#	}{	}{	G.Mercurio_Flame = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	632	}{	J'ai aussi besoin de balles pour faire brûler ces bâtards.	}{	J'ai aussi besoin de balles pour faire brûler ces bâtards.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	Flamme, en avant. . .	}
-{	633	}{	J'avais des questions, d'abord.	}{	J'avais des questions, d'abord.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
-{	634	}{	Pas vraiment, mais merci, Mercurio.	}{	Pas vraiment, mais merci, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il est temps de partir.	}
-{	635	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	632	}{	J'ai aussi besoin de balles pour faire brûler ces bâtards.	}{	J'ai aussi besoin de balles pour faire brûler ces bâtards.	}{	0	}{	G.Mercurio_Mgun == 1	}{	npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	Flamme, en avant. . .	}
+{	633	}{	J'avais des questions, d'abord.	}{	J'avais des questions, d'abord.	}{	491	}{	G.Mercurio_Mgun == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	634	}{	Ça a l'air génial, quoi d'autre ?	}{	Ça a l'air génial, quoi d'autre ?	}{	661	}{	G.Mercurio_Mgun == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je sais que tu as encore plus de nouveaux bim bam boum.	}
+{	635	}{	Pas vraiment, mais merci, Mercurio.	}{	Pas vraiment, mais merci, Mercurio.	}{	0	}{	G.Mercurio_Mgun == 1	}{	}{	}{	}{	}{	}{	}{	}{	Il est temps de partir.	}
 {	636	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	637	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	638	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	639	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	640	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	641	}{	J'ai préparé un petit Souffle du Dragon. C'est un canon scié modifié pour tirer des balles au phosphore. Moi, c'est la seule arme que j'emporte quand je vais en pays du Sabbat.	}{	J'ai préparé un petit Souffle du Dragon. C'est un canon scié modifié pour tirer des balles au phosphore. Moi, c'est la seule arme que j'emporte quand je vais en pays du Sabbat.	}{	#	}{	}{	G.Mercurio_Dragon = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	642	}{	J'en voudrais un pareil. Laissez-moi voir.	}{	J'en voudrais un pareil. Laissez-moi voir.	}{	0	}{	G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	Je souhaite voir ce terrible lézard.	}
-{	643	}{	J'ai des questions, avant.	}{	J'ai des questions, avant.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	I need to find some answers in the wrinkles of your brain.	}
-{	644	}{	Tu ferais mieux de le garder pour toi, Mercurio. Mais le reste de ton arsenal. . .	}{	Tu ferais mieux de le garder pour toi, Mercurio. Mais le reste de ton arsenal. . .	}{	0	}{	G.Patch_Plus == 0	}{	npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	Garde le lézard à tes côtés, mais montre moi tes autres jouets.	}
-{	645	}{	J'verrais ça plus tard, salut, Mercurio.	}{	J'verrais ça plus tard, salut, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	I am no longer here.	}
+{	642	}{	J'en voudrais un pareil. Laissez-moi voir.	}{	J'en voudrais un pareil. Laissez-moi voir.	}{	0	}{	G.Mercurio_Flame == 1	}{	npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	Je souhaite voir ce terrible lézard.	}
+{	643	}{	J'ai des questions, avant.	}{	J'ai des questions, avant.	}{	491	}{	G.Mercurio_Flame == 1	}{	}{	}{	}{	}{	}{	}{	}{	I need to find some answers in the wrinkles of your brain.	}
+{	644	}{	Trop cool, quoi d'autre ?	}{	Trop cool, quoi d'autre ?	}{	631	}{	G.Mercurio_Flame == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je sais que tu as de nouveaux jouets.	}
+{	645	}{	J'verrais ça plus tard, salut, Mercurio.	}{	J'verrais ça plus tard, salut, Mercurio.	}{	0	}{	G.Mercurio_Flame == 1	}{	}{	}{	}{	}{	}{	}{	}{	I am no longer here.	}
 {	646	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	647	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	648	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	650	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	651	}{	Je suis allé chez un copain, il est chef d'équipe dans un commissariat d'O.C. Il est en colère à cause d'un gel des salaires, alors il a accepté de remplir ma liste de Noël. Je viens de récupérer un fusil S.W.A.T. Ca vous dit ?	}{	Je suis allé chez un copain, il est chef d'équipe dans un commissariat d'O.C. Il est en colère à cause d'un gel des salaires, alors il a accepté de remplir ma liste de Noël. Je viens de récupérer un fusil S.W.A.T. Ca vous dit ?	}{	#	}{	}{	G.Mercurio_Swat = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	652	}{	Non, il m'a l'air en mauvais état, mais faites voir ce que vous avez d'autres.	}{	Non, il m'a l'air en mauvais état, mais faites voir ce que vous avez d'autres.	}{	0	}{	G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	Non, il est cassé... Montrez moi le reste.	}
-{	653	}{	Ce qui me manquait le plus de ma vie était les tirs en pleine tête. Et ils me manquent toujours...	}{	Ce qui me manquait le plus de ma vie était les tirs en pleine tête. Et ils me manquent toujours...	}{	0	}{	Humanity -5 & G.Patch_Plus == 1	}{	npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	Toutes ces petites mouches, dire que j'avais presque une tapette. . .	}
-{	654	}{	J'avais des questions, d'abord.	}{	J'avais des questions, d'abord.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
-{	655	}{	Sniper n'est pas mon style, j'adore la proximité et l'intimité. Mais montre moi le reste de tes trucs.	}{	Sniper n'est pas mon style, j'adore la proximité et l'intimité. Mais montre moi le reste de tes trucs.	}{	0	}{	G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
-{	656	}{	Pas vraiment, mais merci, Mercurio.	}{	Pas vraiment, mais merci, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
-{	657	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	652	}{	Non, il m'a l'air en mauvais état, mais faites voir ce que vous avez d'autres.	}{	Non, il m'a l'air en mauvais état, mais faites voir ce que vous avez d'autres.	}{	0	}{	G.Patch_Plus == 1 and G.Mercurio_Spas == 1	}{	npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	Non, il est cassé... Montrez moi le reste.	}
+{	653	}{	Ce qui me manquait le plus de ma vie était les tirs en pleine tête. Et ils me manquent toujours...	}{	Ce qui me manquait le plus de ma vie était les tirs en pleine tête. Et ils me manquent toujours...	}{	0	}{	Humanity -5 & (G.Patch_Plus == 1 and G.Mercurio_Spas == 1)	}{	npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	Toutes ces petites mouches, dire que j'avais presque une tapette. . .	}
+{	654	}{	J'avais des questions, d'abord.	}{	J'avais des questions, d'abord.	}{	491	}{	G.Mercurio_Spas == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	655	}{	Sniper n'est pas mon style, j'adore la proximité et l'intimité. Mais montre moi le reste de tes trucs.	}{	Sniper n'est pas mon style, j'adore la proximité et l'intimité. Mais montre moi le reste de tes trucs.	}{	0	}{	G.Patch_Plus == 0 and G.Mercurio_Spas == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
+{	656	}{	Ça a l'air génial, quoi d'autre ?	}{	Ça a l'air génial, quoi d'autre ?	}{	471	}{	G.Mercurio_Spas == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je sais que tu as encore plus de nouveaux bim bam boum.	}
+{	657	}{	Pas vraiment, mais merci, Mercurio.	}{	Pas vraiment, mais merci, Mercurio.	}{	0	}{	G.Mercurio_Spas == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	658	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	659	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	660	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	661	}{	Je pense que ça va te plaire. Ce n'est pas un flingue très courant. Réservé à une élite, on pourrait dire. Regarde ça. . .	}{	Je pense que ça va te plaire. Ce n'est pas un flingue très courant. Réservé à une élite, on pourrait dire. Regarde ça. . .	}{	#	}{	}{	G.Mercurio_Mgun = 1; G.Mercurio_Friend = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	662	}{	Ca a l'air mortel. J'en prends un.	}{	Ca a l'air mortel. J'en prends un.	}{	0	}{	}{	npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	Je crois que je vais pleurer. . .	}
-{	663	}{	C'est un rêve qui se réalise. J'en veux !	}{	C'est un rêve qui se réalise. J'en veux !	}{	0	}{	Humanity -5	}{	npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	Ca ne pourrait pas être plus beau, même si ça lançait des requins. . .	}
-{	664	}{	J'avais des questions, d'abord.	}{	J'avais des questions, d'abord.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
-{	665	}{	Je n'en ai pas besoin. Mais merci, Mercurio.	}{	Je n'en ai pas besoin. Mais merci, Mercurio.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	On ne parle pas aux gens qui ne sont pas là. . .	}
-{	666	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	662	}{	Ca a l'air mortel. J'en prends un.	}{	Ca a l'air mortel. J'en prends un.	}{	0	}{	G.Mercurio_Swat == 1	}{	npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	Je crois que je vais pleurer. . .	}
+{	663	}{	C'est un rêve qui se réalise. J'en veux !	}{	C'est un rêve qui se réalise. J'en veux !	}{	0	}{	Humanity -5 & G.Mercurio_Swat == 1	}{	npc.StartBarter(G.Story_State, 0); preBarter("Mercurio")	}{	}{	}{	}{	}{	}{	}{	Ca ne pourrait pas être plus beau, même si ça lançait des requins. . .	}
+{	664	}{	J'avais des questions, d'abord.	}{	J'avais des questions, d'abord.	}{	491	}{	G.Mercurio_Swat == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin des réponses cachées dans les replis de votre cerveau. . .	}
+{	665	}{	Trop cool, quoi d'autre ?	}{	Trop cool, quoi d'autre ?	}{	651	}{	G.Mercurio_Swat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je sais que tu as de nouveaux jouets.	}
+{	666	}{	Je n'en ai pas besoin. Mais merci, Mercurio.	}{	Je n'en ai pas besoin. Mais merci, Mercurio.	}{	0	}{	G.Mercurio_Swat == 1	}{	}{	}{	}{	}{	}{	}{	}{	On ne parle pas aux gens qui ne sont pas là. . .	}
 {	667	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	668	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	669	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1004,7 +1004,7 @@
 {	1004	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1005	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1006	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1007	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1007	}{	(Starting Condition)	}{	}{	521	}{	G.Credits_Running == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1008	}{	(Starting Condition)	}{	}{	911	}{	pc.GetQuestState("Astrolite") == 5	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1009	}{	(Starting Condition)	}{	}{	691	}{	G.Story_State == 125 and G.Mercurio_Anarch == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1010	}{	(Starting Condition)	}{	}{	521	}{	G.Story_State == 120	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1012,11 +1012,11 @@
 {	1012	}{	(Starting Condition)	}{	}{	681	}{	G.Story_State == 110	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1013	}{	(Starting Condition)	}{	}{	691	}{	G.Story_State == 105 and G.Mercurio_Anarch == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1014	}{	(Starting Condition)	}{	}{	671	}{	G.Story_State == 100 and G.Mercurio_Traitor == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1015	}{	(Starting Condition)	}{	}{	641	}{	G.Story_State >= 75 and G.Mercurio_Dragon == 0 and G.Mercurio_Flame == 1 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1016	}{	(Starting Condition)	}{	}{	631	}{	G.Story_State >= 65 and G.Mercurio_Flame == 0 and G.Mercurio_Mgun == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1015	}{	(Starting Condition)	}{	}{	641	}{	G.Story_State >= 75 and G.Mercurio_Dragon == 0 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1016	}{	(Starting Condition)	}{	}{	631	}{	G.Story_State >= 65 and G.Mercurio_Flame == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1017	}{	(Starting Condition)	}{	}{	521	}{	G.Mercurio_Friend == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1018	}{	(Starting Condition)	}{	}{	661	}{	G.Story_State >= 55 and G.Mercurio_Mgun == 0 and G.Mercurio_Swat == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1019	}{	(Starting Condition)	}{	}{	651	}{	G.Story_State >= 45 and G.Mercurio_Swat == 0 and G.Mercurio_Spas == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1018	}{	(Starting Condition)	}{	}{	661	}{	G.Story_State >= 55 and G.Mercurio_Mgun == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1019	}{	(Starting Condition)	}{	}{	651	}{	G.Story_State >= 45 and G.Mercurio_Swat == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1020	}{	(Starting Condition)	}{	}{	471	}{	G.Story_State >= 35 and G.Mercurio_Spas == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1021	}{	(Starting Condition)	}{	}{	621	}{	G.Story_State >= 25 and G.Story_State < 40 and G.Mercurio_Fix == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1022	}{	(Starting Condition)	}{	}{	481	}{	G.Mercurio_Deal == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

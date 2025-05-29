@@ -859,7 +859,7 @@
 {	859	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	860	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	861	}{	[Therese]Je t'en prie.	}{	[Therese]Je t'en prie.	}{	#	}{	pc.SetCamera("tTherese") or npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	862	}{	(Auto-Link)	}{	(Auto-Link)	}{	871	}{	pc.GetQuestState("Release the Spirit") == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	862	}{	(Auto-Link)	}{	(Auto-Link)	}{	871	}{	pc.GetQuestState("Release the Spirit") < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	863	}{	(Auto-Link)	}{	(Auto-Link)	}{	931	}{	pc.GetQuestState("Release the Spirit") == 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	864	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	865	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

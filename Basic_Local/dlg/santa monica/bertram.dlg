@@ -159,11 +159,11 @@
 {	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	161	}{	Quoi, par exemple ?	}{	Quoi, par exemple ?	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	162	}{	J'avais quelques questions sur les clans.	}{	J'avais quelques questions sur les clans.	}{	441	}{	G.Bertram_Clans == 0	}{	G.Bertram_Clans = 1	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
-{	163	}{	Je souhaitais en savoir plus sur les sectes.	}{	Je souhaitais en savoir plus sur les sectes.	}{	451	}{	G.Bertram_Sects == 0	}{	G.Bertram_Sects = 1	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
-{	164	}{	J'avais quelques questions sur les clans.	}{	J'avais quelques questions sur les clans.	}{	171	}{	G.Bertram_Clans == 1	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
-{	165	}{	Je souhaitais en savoir plus sur les sectes.	}{	Je souhaitais en savoir plus sur les sectes.	}{	191	}{	G.Bertram_Sects == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
-{	166	}{	Je voulais en apprendre plus sur quelqu'un.	}{	Je voulais en apprendre plus sur quelqu'un.	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous en savez plus que moi sur quelqu'un.	}
+{	162	}{	J'avais quelques questions sur les clans.	}{	J'avais quelques questions sur les clans.	}{	441	}{	G.Bertram_Clans == 0 and G.Credits_Running == 0	}{	G.Bertram_Clans = 1	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	163	}{	Je souhaitais en savoir plus sur les sectes.	}{	Je souhaitais en savoir plus sur les sectes.	}{	451	}{	G.Bertram_Sects == 0 and G.Credits_Running == 0	}{	G.Bertram_Sects = 1	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	164	}{	J'avais quelques questions sur les clans.	}{	J'avais quelques questions sur les clans.	}{	171	}{	G.Bertram_Clans == 1 and G.Credits_Running == 0	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
+{	165	}{	Je souhaitais en savoir plus sur les sectes.	}{	Je souhaitais en savoir plus sur les sectes.	}{	191	}{	G.Bertram_Sects == 1 and G.Credits_Running == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
+{	166	}{	Je voulais en apprendre plus sur quelqu'un.	}{	Je voulais en apprendre plus sur quelqu'un.	}{	691	}{	G.Credits_Running == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous en savez plus que moi sur quelqu'un.	}
 {	167	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	168	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	169	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -270,8 +270,8 @@
 {	270	}{	A plus.	}{	A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
 {	271	}{	Je suis loyal envers le clan, loyal envers mon primogène, et donc loyal à la Camarilla.	}{	Je suis loyal envers le clan, loyal envers mon primogène, et donc loyal à la Camarilla.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	272	}{	Alors, vous pourriez m'aider ? Nous sommes frères de clan. . .	}{	Alors, vous pourriez m'aider ? Nous sommes frères de clan. . .	}{	501	}{	IsClan(pc,"Nosferatu") and G.Bertram_Map == 0	}{	G.Bertram_M = 2	}{	}{	}{	}{	}{	}{	}{	}
-{	273	}{	Ce n'était pas une déclaration très enthousiaste.	}{	Ce n'était pas une déclaration très enthousiaste.	}{	371	}{	pc.charisma > 2 or pc.perception > 2 or pc.intelligence > 2 or pc.manipulation > 2	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles paraissent trop grandes pour votre bouche.	}
-{	274	}{	Vous les aimez ?	}{	Vous les aimez ?	}{	371	}{	pc.charisma < 3 and pc.perception < 3 and pc.intelligence < 3 and pc.manipulation < 3	}{	}{	}{	}{	}{	}{	}{	}{	Aimez-vous la famille du bouffon ?	}
+{	273	}{	Ce n'était pas une déclaration très enthousiaste.	}{	Ce n'était pas une déclaration très enthousiaste.	}{	371	}{	pc.charisma > 2 or pc.CalcFeat("inspection") > 2 or pc.intelligence > 2 or pc.manipulation > 2	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles paraissent trop grandes pour votre bouche.	}
+{	274	}{	Vous les aimez ?	}{	Vous les aimez ?	}{	371	}{	pc.charisma < 3 and pc.CalcFeat("inspection") < 3 and pc.intelligence < 3 and pc.manipulation < 3	}{	}{	}{	}{	}{	}{	}{	}{	Aimez-vous la famille du bouffon ?	}
 {	275	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	Je voulais en apprendre davantage sur un autre clan. . .	}{	171	}{	}{	}{	}{	}{	}{	}{	}{	}{	Apprenez m'en plus sur les clans. . .	}
 {	276	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	Je voulais aussi que vous me parliez des sectes. . .	}{	451	}{	G.Bertram_Sects == 0	}{	G.Bertram_Sects = 1	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
 {	277	}{	Je voulais en savoir plus à propos des sectes.	}{	Je voulais en savoir plus à propos des sectes.	}{	191	}{	G.Bertram_Sects == 1	}{	}{	}{	}{	}{	}{	}{	}{	Pourriez-vous m'éclairer sur les sectes ?	}
@@ -625,7 +625,7 @@
 {	625	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	626	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	627	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	628	}{	J'ai encore quelques questions pour vous.	}{	J'ai encore quelques questions pour vous.	}{	101	}{	G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
+{	628	}{	Hmmm. Bertram. . . J'ai quelques questions importantes à vous poser. . .	}{	Hmmm. Bertram. . . J'ai quelques questions importantes à vous poser. . .	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
 {	629	}{	A plus.	}{	A plus.	}{	661	}{	G.Bertram_Goodjob == 1 and G.Story_State < 10	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	630	}{	A plus.	}{	A plus.	}{	0	}{	G.Bertram_Goodjob == 1 and G.Story_State >= 10	}{	}{	}{	}{	}{	}{	}{	}{	Vous parlez à quelqu'un qui est déjà parti.	}
 {	631	}{	Beau travail, petit. J'ai senti cette explosion jusqu'ici. Et tout le monde en parle. Ha, les mecs du Sabbat vont être furieux, ce soir. Hé hé hé.	}{	Beau travail, ma belle. J'ai senti cette explosion jusqu'ici. Et tout le monde en parle. Ha, les mecs du Sabbat vont être furieux, ce soir. Hé hé hé.	}{	#	}{	npc.SetDisposition("joy",3)	}{	G.Bertram_Goodjob = 1; pc.SetQuest("Warehouse",7)	}{	}{	}{	}{	}{	}{	}{	}
@@ -651,7 +651,7 @@
 {	651	}{	Vraiment ? Pff. . . Il doit y avoir un gros coup si Lui est en ville.	}{	Vraiment ? Pff. . . Il doit y avoir un gros coup si Lui est en ville.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	652	}{	(Auto-Link)	}{	(Auto-Link)	}{	653	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-Link)	}
 {	653	}{	Beckett est une sorte d'historien. Il a découvert plus de légendes des vampires que n'importe qui. C'est tout ce qu'il fait, chercher la vérité derrière notre. . . condition. 	}{	Beckett est une sorte d'historien. Il a découvert plus de légendes des vampires que n'importe qui. C'est tout ce qu'il fait, chercher la vérité derrière notre. . . condition. 	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	654	}{	Hmmm. Bertram. . . J'ai quelques questions importantes à vous poser. . .	}{	Hmmm. Bertram. . . J'ai quelques questions importantes à vous poser. . .	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
+{	654	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	655	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	656	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	657	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -691,7 +691,7 @@
 {	691	}{	Bien sûr. . .	}{	Bien sûr. . .	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	692	}{	Que pensez-vous du Prince LaCroix ?	}{	Que pensez-vous du Prince LaCroix ?	}{	481	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	693	}{	Emmenez-moi au prince bouffon !	}{	Emmenez-moi au prince bouffon !	}{	921	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	694	}{	Que pouvez-vous me dire sur Nines Rodriguez ?	}{	Que pouvez-vous me dire sur Nines Rodriguez ?	}{	961	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	694	}{	Que pouvez-vous me dire sur Nines Rodriguez ?	}{	Que pouvez-vous me dire sur Nines Rodriguez ?	}{	961	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que savez-vous de celui qui a un numéro pour nom ?	}
 {	695	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	696	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	697	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -942,18 +942,18 @@
 {	942	}{	Que pensez-vous du Prince LaCroix ?	}{	Que pensez-vous du Prince LaCroix ?	}{	481	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	943	}{	Qu'est-ce qu'un Caitiff ?	}{	Qu'est-ce qu'un Caitiff ?	}{	381	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	944	}{	Qu'entendez-vous par 'sangs clairs' ?	}{	Qu'entendez-vous par 'sangs clairs' ?	}{	391	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	945	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	946	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	947	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	948	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	949	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	945	}{	Parlez-moi du bouffon. . .	}{	Parlez-moi du bouffon. . .	}{	921	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	946	}{	Les caitiff, les chiens orphelins. . .	}{	Les caitiff, les chiens orphelins. . .	}{	871	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	947	}{	Sang clair, vie courte. . .	}{	Sang clair, vie courte. . .	}{	881	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	948	}{	Vous parliez de chasseurs...	}{	Vous parliez de chasseurs... 	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	Des chasseurs ! Des démons de Dieu. . .	}
+{	949	}{	A plus.	}{	A plus.	}{	0	}{	G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
 {	950	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	951	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	952	}{	Parlez-moi du bouffon. . .	}{	Parlez-moi du bouffon. . .	}{	921	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	953	}{	Les caitiff, les chiens orphelins. . .	}{	Les caitiff, les chiens orphelins. . .	}{	871	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	954	}{	Sang clair, vie courte. . .	}{	Sang clair, vie courte. . .	}{	881	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	955	}{	Vous parliez de chasseurs...	}{	Vous parliez de chasseurs... 	}{	431	}{	}{	}{	}{	}{	}{	}{	}{	}{	Des chasseurs ! Des démons de Dieu. . .	}
-{	956	}{	A plus.	}{	A plus.	}{	0	}{	G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je vous laisse à vos bains noirs. Adieu.	}
+{	951	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	952	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	953	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	954	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	955	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	956	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	957	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	958	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	959	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

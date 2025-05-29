@@ -64,7 +64,18 @@ Notes : arrêté à la sortie de l'Asylum pour avoir essayé de ramener une mineure 
 			"runtext"	"Virgil Crumb
 Caution 25/03/02 -- Deux chefs d'accusation pour trouble de l'ordre public : état d'ivresse et attentat à la pudeur. Affaire 766141. Montant : 5000 $. Règlement : en espèces, payée. 
 Notes : local. VOID : corps du sujet identifié. A la morgue de la clinique. Les autorités avertissent les parents."	// changed by wesp
+			"dependency"    "G.Knox_Quest >= 5" // added by _xMAX_ and wesp
 			"runscript"	"virgilViewed()"
+		}
+
+		Function	// added by _xMAX_ and wesp
+		{
+			"name"		"Crumb, V"
+			"description"	"Virgil Crumb"
+			"runtext"	"Virgil Crumb
+Caution 25/03/02 -- Deux chefs d'accusation pour trouble de l'ordre public : état d'ivresse et attentat à la pudeur. Affaire 766141. Montant : 5000 $. Règlement : en espèces. 
+Notes: Local."
+			"dependency"    "G.Knox_Quest < 5"
 		}
 
 		Function

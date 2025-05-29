@@ -732,7 +732,7 @@
 {	732	}{	C'était Nines, aucun doute. Ca va être la guerre avec tous les Anarchs, c'est ça ?	}{	C'était Nines, aucun doute. Ca va être la guerre avec tous les Anarchs, c'est ça ?	}{	741	}{	}{	G.Prince_Reaction = G.Prince_Reaction +1	}{	}{	}{	}{	}{	}{	}{	Son poing est fait d'Anarchs. Nous ne pouvons pas le frapper, car il ripostera.	}
 {	733	}{	Pourquoi ne pas me le dire, Capitaine Pontifiant ?	}{	Pourquoi ne pas me le dire, Capitaine Pontifiant ?	}{	1041	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'aime pas les drames. . . vous pourriez changer de chaîne et nous trouver une comédie ?	}
 {	734	}{	Vous voulez que j'aille le tuer ?	}{	Vous voulez que j'aille le tuer ?	}{	751	}{	}{	G.Prince_Reaction = G.Prince_Reaction -1	}{	}{	}{	}{	}{	}{	}{	Je ferai de sa tête un presse-papier pour votre bureau. . .	}
-{	735	}{	Non, et je ne suis pas sûr que c'était Nines non plus. Quelque chose était bizarre.	}{	Non, et je ne suis pas sûre que c'était Nines non plus. Quelque chose était bizarre.	}{	741	}{	(pc.perception > 2 or IsClan(pc,"Malkavian"))	}{	}{	}{	}{	}{	}{	}{	}{	Celui-ci ne sait pas, mais il sait que quelque chose n'était pas Nines.	}
+{	735	}{	Non, et je ne suis pas sûr que c'était Nines non plus. Quelque chose était bizarre.	}{	Non, et je ne suis pas sûre que c'était Nines non plus. Quelque chose était bizarre.	}{	741	}{	(pc.CalcFeat("inspection") > 2 or IsClan(pc,"Malkavian")) and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Celui-ci ne sait pas, mais il sait que quelque chose n'était pas Nines.	}
 {	736	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	737	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	738	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -869,7 +869,7 @@
 {	869	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	870	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	871	}{	[Au Shérif]Faites-le sortir.	}{	[Au Shérif]Faites-la sortir.	}{	#	}{	}{	G.Prince_Refuse = 1; G.Prince_Escort = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	872	}{	Mais -	}{	Mais -	)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	872	}{	Mais -	}{	Mais -	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	873	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	874	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	875	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -962,7 +962,7 @@
 {	962	}{	(Auto-Link)	}{	(Auto-Link)	}{	1011	}{	G.Prince_Hardwarn == 0 and pc.masquerade == 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	963	}{	(Auto-Link)	}{	(Auto-Link)	}{	991	}{	G.Prince_Lightwarn == 0 and pc.masquerade > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	964	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	G.Patch_Plus == 0 or G.Heather_Drank == 0 or IsDead("Heather")	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	965	}{	Merci! Dites à ma goule de se déplacer là-bas aussi.	}{	Merci! Dites à ma goule de se déplacer là-bas aussi.	}{	0	}{	G.Patch_Plus == 1 and G.Heather_Drank == 1 and not IsDead("Heather") and G.Heather_Haven == 1	}{	}{	}{	}{	}{	}{	}{	}{	Oui! Et envoyez-y aussi mon animal de compagnie. 	}
+{	965	}{	Merci! S'il vous plaît, informez ma goule de se déplacer là-bas aussi.	}{	Merci! S'il vous plaît, informez ma goule de se déplacer là-bas aussi.	}{	0	}{	G.Patch_Plus == 1 and G.Heather_Drank == 1 and not IsDead("Heather") and G.Heather_Haven == 1	}{	}{	}{	}{	}{	}{	}{	}{	Oui! Et envoyez-y aussi mon animal de compagnie. 	}
 {	966	}{	Merci! Mais mieux vaut ne pas dire à la fille que j'ai rencontré.	}{	Merci! Mais mieux vaut ne pas dire à la fille que j'ai rencontré.	}{	0	}{	G.Patch_Plus == 1 and G.Heather_Drank == 1 and not IsDead("Heather") and G.Heather_Haven == 0	}{	}{	}{	}{	}{	}{	}{	}{	Oui! Mais ne laissez pas l'animal de compagnie m'y suivre.	}
 {	967	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	968	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

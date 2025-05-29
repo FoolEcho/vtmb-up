@@ -399,7 +399,7 @@
 {	399	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	400	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	401	}{	Trouver et organiser un site, c'est ce qu'il y a de moins intéressant dans le métier d'archéologue. Croyez-moi, pas la peine que je vous en parle.	}{	Trouver et organiser un site, c'est ce qu'il y a de moins intéressant dans le métier d'archéologue. Croyez-moi, pas la peine que je vous en parle.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	402	}{	On dirait que vous cachez quelque chose. Vous pourriez m'en dire un peu plus ?	}{	On dirait que vous cachez quelque chose. Vous pourriez m'en dire un peu plus ?	}{	411	}{	pc.perception > 3 or IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	MENSONGE !	}
+{	402	}{	On dirait que vous cachez quelque chose. Vous pourriez m'en dire un peu plus ?	}{	On dirait que vous cachez quelque chose. Vous pourriez m'en dire un peu plus ?	}{	411	}{	pc.CalcFeat("inspection") >= 5 or IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	MENSONGE !	}
 {	403	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	404	}{	Vous pensez vraiment que c'est Messerach, dans le sarcophage ?	}{	Vous pensez vraiment que c'est Messerach, dans le sarcophage ?	}{	341	}{	G.Prof_Mess == 0	}{	}{	}{	}{	}{	}{	}{	}{	Messerach à l'intérieur, c'est certain ?	}
 {	405	}{	Que savez-vous d'autre sur les vampires ?	}{	Que savez-vous d'autre sur les vampires ?	}{	351	}{	G.Prof_Vamp == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous pouvez me raconter une autre histoire de vampires ?	}

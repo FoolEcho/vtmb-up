@@ -11,7 +11,7 @@
 {	11	}{	Bienvenue, vampire, et merci de respecter nos traditions en annonçant votre présence dans notre domaine. Je suis Ming-Xiao, grande prêtresse du peuple de Chinatown. Vous désirez quelque chose ? Du thé peut-être ?	}{	Bienvenue, vampire, et merci de respecter nos traditions en annonçant votre présence dans notre domaine. Je suis Ming-Xiao, grande prêtresse du peuple de Chinatown. Vous désirez quelque chose ? Du thé peut-être ?	}{	#	}{	}{	G.Ming_Met = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	Non, pas de thé, merci.	}{	Non, pas de thé, merci.	}{	41	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	13	}{	J'aimerais en apprendre davantage sur votre peuple. . .	}{	J'aimerais en apprendre davantage sur votre peuple. . .	}{	251	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	14	}{	Il faut que vous sachiez. . . J'ai tué un de vos espions à Santa Monica.	}{	Il faut que vous sachiez. . . J'ai tué un de vos espions à Santa Monica.	}{	741	}{	not IsClan(pc,"Malkavian") and G.Kjspy_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	14	}{	Il faut que vous sachiez. . . J'ai tué un de vos espions à Santa Monica.	}{	Il faut que vous sachiez. . . J'ai tué un de vos espions à Santa Monica.	}{	741	}{	not IsClan(pc,"Malkavian") and G.Ming_Spy == 0 and G.Kjspy_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	15	}{	Assez de bavardages. Je cherche un vampire Nosferatu. . .	}{	Assez de bavardages. Je cherche un vampire Nosferatu. . .	}{	21	}{	not IsClan(pc,"Malkavian")	}{	G.Ming_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	16	}{	J'ai quelques questions pour vous.	}{	J'ai quelques questions pour vous.	}{	281	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	17	}{	Ah ! La Maîtresse des Miroirs !	}{	Ah ! La Maîtresse des Miroirs !	}{	801	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -121,7 +121,7 @@
 {	121	}{	C'est simplement une autre chance pour nous de trouver notre place dans l'univers, et de nous transcender. Nous ne sommes ni damnés, ni écrasés par le poids d'une ancienne culpabilité, comme dans la légende de votre père biblique. . .	}{	C'est simplement une autre chance pour nous de trouver notre place dans l'univers, et de nous transcender. Nous ne sommes ni damnés, ni écrasés par le poids d'une ancienne culpabilité, comme dans la légende de votre père biblique. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	122	}{	A propos de légendes, avez-vous entendu parler du Sarcophage d'Ankara ?	}{	A propos de légendes, avez-vous entendu parler du Sarcophage d'Ankara ?	}{	351	}{	G.Ming_Bros == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vos oreilles ont-elles vu le Sarcophage d'Ankara ?	}
 {	123	}{	Tous les Kuei-jin partagent-ils cette foi ?	}{	Tous les Kuei-jin partagent-ils cette foi ?	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous croyez vraiment à cette relique prétentieuse ?	}
-{	124	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	124	}{	Il faut que vous sachiez. . . J'ai tué un de vos espions à Santa Monica.	}{	Il faut que vous sachiez. . . J'ai tué un de vos espions à Santa Monica.	}{	741	}{	not IsClan(pc,"Malkavian") and G.Ming_Spy == 0 and G.Kjspy_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	125	}{	Je dois partir.	}{	Je dois partir.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	126	}{	Je dois partir.	}{	Je dois partir.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	127	}{	Oh, je transcende ces conneries. A plus tard. 	}{	Oh, je transcende ces conneries. A plus tard. 	}{	691	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que le destin transcende mon être de cet endroit. Adieu.	}
@@ -139,8 +139,8 @@
 {	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	141	}{	Non. Les Kuei-jin n'ont pas conscience de leur condition après le Second Souffle. Le chemin de l'illumination est toujours long et ardu. Beaucoup subissent la Mort Ultime avant de comprendre ce qu'ils sont devenus.	}{	Non. Les Kuei-jin n'ont pas conscience de leur condition après le Second Souffle. Le chemin de l'illumination est toujours long et ardu. Beaucoup subissent la Mort Ultime avant de comprendre ce qu'ils sont devenus.	}{	#	}{	}{	G.Ming_Unlife = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	142	}{	Votre chemin paraît intimement lié aux mortels. 	}{	Votre chemin paraît intimement lié aux mortels. 	}{	151	}{	pc.perception > 3 and pc.intelligence > 2 and G.Ming_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous paraissez suivre les mêmes routes que vos séides mortels. 	}
-{	143	}{	Quelle est la relation entre les Kuei-jin et les humains ?	}{	Quelle est la relation entre les Kuei-jin et les humains ?	}{	151	}{	pc.perception > 3 and pc.intelligence > 2 and G.Ming_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les Kuei-jin se mêlent-ils au troupeau mortel ?	}
+{	142	}{	Votre chemin paraît intimement lié aux mortels. 	}{	Votre chemin paraît intimement lié aux mortels. 	}{	151	}{	pc.CalcFeat("inspection") > 3 and pc.intelligence > 2 and G.Ming_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Vous paraissez suivre les mêmes routes que vos séides mortels. 	}
+{	143	}{	Quelle est la relation entre les Kuei-jin et les humains ?	}{	Quelle est la relation entre les Kuei-jin et les humains ?	}{	151	}{	pc.CalcFeat("inspection") > 3 and pc.intelligence > 2 and G.Ming_Human == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les Kuei-jin se mêlent-ils au troupeau mortel ?	}
 {	144	}{	Vous dites que vous êtes un secret connu. . . mais vous vous cachez tout de même des mortels.	}{	Vous dites que vous êtes un secret connu. . . mais vous vous cachez tout de même des mortels.	}{	161	}{	G.Ming_Human == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vous vous cachez tout de même du troupeau mortel.	}
 {	145	}{	Vous servez de prêtresse pour les mortels comme pour les autres. Vous devez être très occupée.	}{	Vous servez de prêtresse pour les mortels comme pour les autres. Vous devez être très occupée.	}{	171	}{	G.Ming_Human == 2	}{	}{	}{	}{	}{	}{	}{	}{	Vous guidez des esprits aussi bien mortels que mystiques ?	}
 {	146	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
@@ -286,7 +286,7 @@
 {	286	}{	Je voulais vous parler du Sarcophage d'Ankara.	}{	Je voulais vous parler du Sarcophage d'Ankara.	}{	421	}{	G.Ming_Barrabus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je cherche un enfant de la nuit Nosferatu.	}
 {	287	}{	Je cherche toujours ce Nosferatu. Que dois-je faire encore ?	}{	Je cherche toujours ce Nosferatu. Que dois-je faire encore ?	}{	441	}{	G.Ming_Barrabus > 0 and pc.GetQuestState("Barabus") > 3	}{	}{	}{	}{	}{	}{	}{	}{	Où pourrais-je trouver cet enfant de la nuit Nosferatu ?	}
 {	288	}{	Où puis-je trouver les Tong ?	}{	Où puis-je trouver les Tong ?	}{	581	}{	G.WongHo_Kiki == 1 and G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	Où les Tong peut-on trouver ?	}
-{	289	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	289	}{	Il faut que vous sachiez. . . J'ai tué un de vos espions à Santa Monica.	}{	Il faut que vous sachiez. . . J'ai tué un de vos espions à Santa Monica.	}{	741	}{	not IsClan(pc,"Malkavian") and G.Ming_Spy == 0 and G.Kjspy_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	290	}{	En fait, je pars. Au revoir.	}{	En fait, je pars. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	291	}{	Les vampires ont fort à apprendre de nos coutumes.	}{	Les vampires ont fort à apprendre de nos coutumes.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	292	}{	J'ai quelques questions sur la société Kuei-jin.	}{	J'ai quelques questions sur la société Kuei-jin.	}{	711	}{	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de votre société secrète.	}
@@ -314,7 +314,7 @@
 {	314	}{	Savez-vous qui a ce Sarcophage ?	}{	Savez-vous qui a ce Sarcophage ?	}{	391	}{	G.Ming_Sarcophagus == 2	}{	}{	}{	}{	}{	}{	}{	}{	Qui détient ce secret obscur ?	}
 {	315	}{	Vous aviez des agents qui le cherchaient, n'est-ce pas ?	}{	Vous aviez des agents qui le cherchaient, n'est-ce pas ?	}{	411	}{	G.Ming_Sarcophagus == 3	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez parlé d'agents qui cherchent ce sombre secret ?	}
 {	316	}{	Savez-vous où il pourrait se trouver ?	}{	Savez-vous où il pourrait se trouver ?	}{	411	}{	G.Ming_Sarcophagus == 3	}{	}{	}{	}{	}{	}{	}{	}{	Où est cette terrible boîte ?	}
-{	317	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	317	}{	Il faut que vous sachiez. . . J'ai tué un de vos espions à Santa Monica.	}{	Il faut que vous sachiez. . . J'ai tué un de vos espions à Santa Monica.	}{	741	}{	not IsClan(pc,"Malkavian") and G.Ming_Spy == 0 and G.Kjspy_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	318	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
 {	319	}{	Je m'en vais.	}{	Je m'en vais.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	320	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
@@ -519,7 +519,7 @@
 {	519	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	520	}{	Pas grave. Au revoir.	}{	Pas grave. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	521	}{	J'apporte mes conseils spirituels à tous ceux qui les désirent.	}{	J'apporte mes conseils spirituels à tous ceux qui les désirent.	}{	#	}{	}{	G.Ming_Kindred = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	522	}{	Et cela vous sert bien, n'est-ce pas ?	}{	Et cela vous sert bien, n'est-ce pas ?	}{	531	}{	pc.perception >= 4 or pc.wits >= 4	}{	}{	}{	}{	}{	}{	}{	}{	Vous guidez les gens vers un chemin périlleux. . .	}
+{	522	}{	Et cela vous sert bien, n'est-ce pas ?	}{	Et cela vous sert bien, n'est-ce pas ?	}{	531	}{	pc.CalcFeat("inspection") >= 4 or pc.wits > 3	}{	}{	}{	}{	}{	}{	}{	}{	Vous guidez les gens vers un chemin périlleux. . .	}
 {	523	}{	Sa fille a été kidnappée. Il veut que je la retrouve.	}{	Sa fille a été kidnappée. Il veut que je la retrouve.	}{	561	}{	G.WongHo_Kiki == 1 and G.Kiki_Rescued == 0	}{	}{	}{	}{	}{	}{	}{	}{	Son trésor a été pris, je compte le lui rapporter.	}
 {	524	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
 {	525	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -559,7 +559,7 @@
 {	559	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	560	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	561	}{	J'espère que vous réussirez.	}{	J'espère que vous réussirez.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	562	}{	Il ne m'a demandé cela que parce qu'il pense que je travaille pour vous.	}{	Il ne m'a demandé cela que parce qu'il pense que je travaille pour vous.	}{	531	}{	pc.perception >= 4 or pc.wits >= 4	}{	}{	}{	}{	}{	}{	}{	}{	Sa confiance en moi s'arrête à votre bénédiction.	}
+{	562	}{	Il ne m'a demandé cela que parce qu'il pense que je travaille pour vous.	}{	Il ne m'a demandé cela que parce qu'il pense que je travaille pour vous.	}{	531	}{	pc.CalcFeat("inspection") >= 4 or pc.wits > 3	}{	}{	}{	}{	}{	}{	}{	}{	Sa confiance en moi s'arrête à votre bénédiction.	}
 {	563	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
 {	564	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	565	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -713,17 +713,17 @@
 {	713	}{	En quoi les Kuei-jin sont-ils semblables aux vampires ?	}{	En quoi les Kuei-jin sont-ils semblables aux vampires ?	}{	81	}{	G.Ming_Feed == 0	}{	}{	}{	}{	}{	}{	}{	}{	Les Kuei-jin et les vampires projettent-ils les mêmes ombres ?	}
 {	714	}{	Comment les Kuei-jin apparaissent-ils ?	}{	Comment les Kuei-jin apparaissent-ils ?	}{	91	}{	G.Ming_Breath == 0	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi la création des Kuei-jin. . .	}
 {	715	}{	Votre condition ne paraît pas si différente de la nôtre. . .	}{	Votre condition ne paraît pas si différente de la nôtre. . .	}{	121	}{	G.Ming_Purpose == 1 and G.Ming_Unlife == 0	}{	}{	}{	}{	}{	}{	}{	}{	Votre habit est différent, mais vous êtes toute aussi maudite.	}
-{	716	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	717	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	718	}{	J'ai appris beaucoup en tuant votre espion à Santa Monica.	}{	J'ai appris beaucoup en tuant votre espion à Santa Monica.	}{	741	}{	G.Ming_Spy == 0 and G.Ming_Unlife == 0 and G.Kjspy_Dead == 1	}{	G.Ming_Spy = 1	}{	}{	}{	}{	}{	}{	}{	J'ai appris beaucoup en éliminant votre espion à Santa Monica.	}
-{	719	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	720	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	721	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	722	}{	J'ai oublié. . . Les Kuei-jin sont-ils comme les vampires ?	}{	J'ai oublié. . . Les Kuei-jin sont-ils comme les vampires ?	}{	71	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Les Kuei-jin et les vampires projettent-ils les mêmes ombres ?	}
-{	723	}{	Dites-moi encore comment les Kuei-jin sont créés ?	}{	Dites-moi encore comment les Kuei-jin sont créés ?	}{	91	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi la création des Kuei-jin. . .	}
-{	724	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
-{	725	}{	Je m'en vais.	}{	Je m'en vais.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
-{	726	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	716	}{	J'ai oublié. . . Les Kuei-jin sont-ils comme les vampires ?	}{	J'ai oublié. . . Les Kuei-jin sont-ils comme les vampires ?	}{	71	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Les Kuei-jin et les vampires projettent-ils les mêmes ombres ?	}
+{	717	}{	Dites-moi encore comment les Kuei-jin sont créés ?	}{	Dites-moi encore comment les Kuei-jin sont créés ?	}{	91	}{	G.Ming_Unlife == 1	}{	}{	}{	}{	}{	}{	}{	}{	Racontez-moi la création des Kuei-jin. . .	}
+{	718	}{	J'ai appris beaucoup en tuant votre espion à Santa Monica.	}{	J'ai appris beaucoup en tuant votre espion à Santa Monica.	}{	741	}{	G.Ming_Spy == 0 and G.Ming_Unlife == 0 and G.Kjspy_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai appris beaucoup en éliminant votre espion à Santa Monica.	}
+{	719	}{	J'ai encore quelques questions. . .	}{	J'ai encore quelques questions. . .	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	720	}{	Je m'en vais.	}{	Je m'en vais.	}{	491	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	721	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	npc.times_talked > 1	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrit d'autres domaines.	}
+{	722	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	723	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	724	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	725	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	726	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	727	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	728	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	729	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -739,7 +739,7 @@
 {	739	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	740	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	741	}{	Ah oui, je sais que vous avez fait trépasser l'un de nos agents. Cela a peu d'importance. Et pour lui, la mort était préférable au déshonneur de la défaite face aux vampires.	}{	Ah oui, je sais que vous avez fait trépasser l'un de nos agents. Cela a peu d'importance. Et pour lui, la mort était préférable au déshonneur de la défaite face aux vampires.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	742	}{	Amusant. J'ai quelques questions pour vous.	}{	Amusant. J'ai quelques questions pour vous.	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
+{	742	}{	Amusant. J'ai quelques questions pour vous.	}{	Amusant. J'ai quelques questions pour vous.	}{	281	}{	}{	G.Ming_Spy = 1	}{	}{	}{	}{	}{	}{	}{	Puis-je fouiller votre matière grise ?	}
 {	743	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	744	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	745	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -821,7 +821,7 @@
 {	821	}{	En effet, vampire. Mais parlons d'autre chose. Que puis-je faire pour vous aider ? Puis-je vous proposer quelque rafraîchissement ?	}{	En effet, vampire. Mais parlons d'autre chose. Que puis-je faire pour vous aider ? Puis-je vous proposer quelque rafraîchissement ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	822	}{	L'Earl Grey n'a que peu de saveur pour moi, je décline donc.	}{	L'Earl Grey n'a que peu de saveur pour moi, je décline donc.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	823	}{	Parlez-moi davantage de votre peuple, maîtresse des miroirs.	}{	Parlez-moi davantage de votre peuple, maîtresse des miroirs.	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	824	}{	J'ai détruit un mangeur de vie à Santa Monica, la dame près de la mer. 	}{	J'ai détruit un mangeur de vie à Santa Monica, la dame près de la mer. 	}{	741	}{	G.Kjspy_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	824	}{	J'ai détruit un mangeur de vie à Santa Monica, la dame près de la mer. 	}{	J'ai détruit un mangeur de vie à Santa Monica, la dame près de la mer. 	}{	741	}{	G.Ming_Spy == 0 and G.Kjspy_Dead == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	825	}{	Le temps est précieux, et vous non. Je cherche un enfant de la nuit des Nosferatus.	}{	Le temps est précieux, et vous non. Je cherche un enfant de la nuit des Nosferatus.	}{	21	}{	}{	G.Ming_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	826	}{	Puis-je fouiller votre matière grise ?	}{	Puis-je fouiller votre matière grise ?	}{	281	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	827	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

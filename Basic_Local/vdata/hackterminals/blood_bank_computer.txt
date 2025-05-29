@@ -34,7 +34,7 @@ TerminalDefinition
 		{
 			"name"		"Code"
 			"description"	"Code"
-			"dependency"	"G.E_Quest == 2"
+			"dependency"	"G.E_Quest == 2 or (G.E_Quest > 1 and G.PP == 1)"		// changed by wesp
 			"runtext"	"1969"
 			"runscript"	"freezerCode()"
 		}

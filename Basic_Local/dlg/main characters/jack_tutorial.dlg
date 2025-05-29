@@ -19,7 +19,7 @@
 {	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	21	}{	Moi, c'est Jack. Le plus important, c'est que je veux bien t'aider. Si tu reviens de Santa Monica en un seul morceau, on discutera, OK ? D'ici là, j'ai pas beaucoup de temps. Alors, ça te dit ?	}{	Moi, c'est Jack. Le plus important, c'est que je veux bien t'aider. Si tu reviens de Santa Monica en un seul morceau, on discutera, OK ? D'ici là, j'ai pas beaucoup de temps. Alors, ça te dit ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	22	}{	OK, un peu d'aide serait bienvenue.	}{	OK, un peu d'aide serait bienvenue.	}{	81	}{	G.Patch_Plus == 0	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Je vais suivre tes sinistres cours.	}
+{	22	}{	OK, un peu d'aide serait bienvenue.	}{	OK, un peu d'aide serait bienvenue.	}{	81	}{	G.Patch_Plus == 0	}{	G.Jack_Faction = G.Jack_Faction + 1; G.Tut_Jack = 1	}{	}{	}{	}{	}{	}{	}{	Je vais suivre tes sinistres cours.	}
 {	23	}{	OK, un peu d'aide serait bienvenue.	}{	OK, un peu d'aide serait bienvenue.	}{	81	}{	G.Patch_Plus == 1	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Je vais suivre tes sinistres cours.	}
 {	24	}{	Je n'ai pas beaucoup de temps. . . Apprends-moi juste les bases. . .	}{	Je n'ai pas beaucoup de temps. . . Apprends-moi juste les bases. . .	}{	891	}{	}{	G.Jack_Faction = G.Jack_Faction + 1	}{	}{	}{	}{	}{	}{	}{	Résume-moi les faits essentiels. . .	}
 {	25	}{	Qu'est-ce qui s'est passé là-bas ?	}{	Qu'est-ce qui s'est passé là-bas ?	}{	1015	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai pas compris la scène qui vient de se jouer.	}
@@ -1004,7 +1004,7 @@
 {	1004	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1005	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1006	}{	Ouais. Quand t'auras fini, ma poule, on pourra bouger.	}{	Ouais. Quand t'auras fini, ma poule, on pourra bouger.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1007	}{	Euh, je suis désolé, mais j'aime bien bidouiller...	}{	Euh, je suis désolée, mais j'aime bien bidouiller...	}{	1001	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis perdu pour toujours contemplant l'infini.	}
+{	1007	}{	Euh, je suis désolé, je vais créer un nouveau personnage...	}{	Euh, je suis désolé, je vais créer un nouveau personnage...	}{	0	}{	}{	G.Player_Cheated = 1	}{	}{	}{	}{	}{	}{	}{	Je vais renaître à présent.	}
 {	1008	}{	J'utilise un Mod ou ce genre de truc, laisse moi continuer.	}{	J'utilise un Mod ou ce genre de truc, laisse moi continuer.	}{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	Oui, modifier le jeu, j'ai, laisses moi continuer ma route.	}
 {	1009	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1010	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

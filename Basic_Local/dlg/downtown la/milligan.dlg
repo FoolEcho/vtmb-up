@@ -49,15 +49,15 @@
 {	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	51	}{	[Pleure/rit/marmonne, hystérique]Héhéhé. . .	}{	[Pleure/rit/marmonne, hystérique]Héhéhé. . .	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	Votre équipe vous attend au sous-sol de l'hôpital. C'était une blague. C'est un masque. Bouh.	}{	Votre équipe vous attend au sous-sol de l'hôpital. C'était une blague. C'est un masque. Bouh.	}{	71	}{	Humanity 6 & G.Pisha_Desire == 1	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	Vos amis sont dans les entrailles, mouche. Une magnifique blague faite à vos dépends.	}
-{	53	}{	Votre équipe vous attend au sous-sol de l'hôpital. C'était une blague. C'est un masque. Bouh.	}{	Votre équipe vous attend au sous-sol de l'hôpital. C'était une blague. C'est un masque. Bouh.	}{	71	}{	Humanity -6 & G.Pisha_Desire == 1	}{	}{	}{	}{	}{	}{	}{	}{	Vos amis sont dans ses entrailles, mouche. Une magnifique blague faite à vos dépends.	}
-{	54	}{	Vos amis sont morts.	}{	Vos amis sont morts.	}{	81	}{	G.Pisha_Desire == 1	}{	}{	}{	}{	}{	}{	}{	}{	La Veuve Noire a dévoré toutes les mouches.	}
-{	55	}{	Fuyez ! Ne revenez jamais dans cette ville.	}{	Fuyez ! Ne revenez jamais dans cette ville.	}{	0	}{	G.Pisha_Desire == 1	}{	G.Mill_Loose = 1	}{	}{	}{	}{	}{	}{	}{	Déployez vos ailes et quittez cette ville à tout jamais. Vite !	}
-{	56	}{	Votre maîtresse la lune vous appelle. . . Courez la rejoindre, pour le restant de vos jours.	}{	Votre maîtresse la lune vous appelle. . . Courez la rejoindre, pour le restant de vos jours.	}{	151	}{	Dementation 3 & G.Pisha_Desire == 1	}{	G.Mill_Dementated = 1	}{	}{	}{	}{	}{	}{	}{	Votre maîtresse la lune vous appelle. . . Courez la rejoindre, pour le restant de vos jours.	}
-{	57	}{	Bon, restez ici à marmonner dans votre barbe, je reviens. 	}{	Bon, restez ici à marmonner dans votre barbe, je reviens. 	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La Veuve Noire m'attend. Ne fuyez pas, mouche, je reviendrai.	}
-{	58	}{	Bébé.	}{	Bébé.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pour un être si éloigné de la baleine, vous soufflez beaucoup.	}
-{	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Votre équipe vous attend au sous-sol de l'hôpital. C'était une blague. C'est un masque. Bouh.	}{	Votre équipe vous attend au sous-sol de l'hôpital. C'était une blague. C'est un masque. Bouh.	}{	71	}{	Humanity 6 & (G.Pisha_Desire == 1 and not IsDead("Pisha"))	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	Vos amis sont dans les entrailles, mouche. Une magnifique blague faite à vos dépends.	}
+{	53	}{	Votre équipe vous attend au sous-sol de l'hôpital. C'était une blague. C'est un masque. Bouh.	}{	Votre équipe vous attend au sous-sol de l'hôpital. C'était une blague. C'est un masque. Bouh.	}{	71	}{	Humanity -6 & (G.Pisha_Desire == 1 and not IsDead("Pisha"))	}{	}{	}{	}{	}{	}{	}{	}{	Vos amis sont dans ses entrailles, mouche. Une magnifique blague faite à vos dépends.	}
+{	54	}{	Vos amis sont morts.	}{	Vos amis sont morts.	}{	81	}{	G.Pisha_Desire == 1 or (G.Patch_Plus == 1 and IsDead("Pisha"))	}{	}{	}{	}{	}{	}{	}{	}{	La Veuve Noire a dévoré toutes les mouches.	}
+{	55	}{	Fuyez ! Ne revenez jamais dans cette ville.	}{	Fuyez ! Ne revenez jamais dans cette ville.	}{	0	}{	G.Pisha_Desire == 1 or (G.Patch_Plus == 1 and IsDead("Pisha"))	}{	G.Mill_Loose = 1	}{	}{	}{	}{	}{	}{	}{	Déployez vos ailes et quittez cette ville à tout jamais. Vite !	}
+{	56	}{	Vous n'avez rien vu. Il ne s'est rien passé. Vous allez tout oublier.	}{	Vous n'avez rien vu. Il ne s'est rien passé. Vous allez tout oublier.	}{	91	}{	Dominate 3 & (G.Pisha_Desire == 1 or (G.Patch_Plus == 1 and IsDead("Pisha")))	}{	G.Mill_Dominated = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	57	}{	Votre maîtresse la lune vous appelle. . . Courez la rejoindre, pour le restant de vos jours.	}{	Votre maîtresse la lune vous appelle. . . Courez la rejoindre, pour le restant de vos jours.	}{	151	}{	Dementation 3 & (G.Pisha_Desire == 1 or (G.Patch_Plus == 1 and IsDead("Pisha")))	}{	G.Mill_Dementated = 1	}{	}{	}{	}{	}{	}{	}{	Votre maîtresse la lune vous appelle. . . Courez la rejoindre, pour le restant de vos jours.	}
+{	58	}{	Donnez-moi votre permis de conduire. Je vous laisse partir. Si vous parlez de ça à qui que ce soit, je vous tuerai.	}{	Donnez-moi votre permis de conduire. Je vous laisse partir. Si vous parlez de ça à qui que ce soit, je vous tuerai	}{	101	}{	Intimidate 6 & (G.Pisha_Desire == 1 or (G.Patch_Plus == 1 and IsDead("Pisha")))	}{	G.Mill_Intimidate = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	59	}{	Bon, restez ici à marmonner dans votre barbe, je reviens. 	}{	Bon, restez ici à marmonner dans votre barbe, je reviens. 	}{	0	}{	not IsDead("Pisha")	}{	}{	}{	}{	}{	}{	}{	}{	La Veuve Noire m'attend. Ne fuyez pas, mouche, je reviendrai.	}
+{	60	}{	Bébé.	}{	Bébé.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Pour un être si éloigné de la baleine, vous soufflez beaucoup.	}
 {	61	}{	Vous venez de l'hôpital. Mais le. . . mon équipe. . . Ils. . . ils sont. . .	}{	Vous venez de l'hôpital. Mais le. . . mon équipe. . . Ils. . . ils sont. . .	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	C'était une blague. Ils vous attendent au sous-sol de l'hôpital. Quels farceurs. . .	}{	C'était une blague. Ils vous attendent au sous-sol de l'hôpital. Quels farceurs. . .	}{	71	}{	Persuasion 3 & pc.humanity >= 3	}{	FindPlayer().HumanityAdd( -1 )	}{	}{	}{	}{	}{	}{	}{	}
 {	63	}{	C'était une blague. Ils vous attendent au sous-sol de l'hôpital. Quels farceurs. . .	}{	C'était une blague. Ils vous attendent au sous-sol de l'hôpital. Quels farceurs. . .	}{	71	}{	Persuasion 3 & pc.humanity < 3	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -81,16 +81,16 @@
 {	81	}{	Morts ? Mais. . . comment avez-vous - qu'êtes-vous ?	}{	Morts ? Mais. . . comment avez-vous - qu'êtes-vous ?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	Donnez-moi votre permis de conduire. Je vous laisse partir.	}{	Donnez-moi votre permis de conduire. Je vous laisse partir.	}{	101	}{	Intimidate 6	}{	G.Mill_Intimidate = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	83	}{	Vous n'avez rien vu. Il ne s'est rien passé. Vous allez tout oublier.	}{	Vous n'avez rien vu. Il ne s'est rien passé. Vous allez tout oublier.	}{	91	}{	Dominate 3	}{	G.Mill_Dominated = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	84	}{	Fuyez ! Ne revenez jamais dans cette ville.	}{	Fuyez ! Ne revenez jamais dans cette ville.	}{	0	}{	}{	G.Mill_Loose = 1	}{	}{	}{	}{	}{	}{	}{	Déployez vos ailes et quittez cette ville à tout jamais. Vite !	}
-{	85	}{	La dernière chose que vous verrez.	}{	La dernière chose que vous verrez.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Votre dernier interlocuteur.	}
-{	86	}{	Je suis la personne qui va vous tuer.	}{	Je suis la personne qui va vous tuer.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	La main de la mort.	}
-{	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	84	}{	Votre maîtresse la lune vous appelle. . . Courez la rejoindre, pour le restant de vos jours.	}{	Votre maîtresse la lune vous appelle. . . Courez la rejoindre, pour le restant de vos jours.	}{	151	}{	Dementation 3	}{	G.Mill_Dementated = 1	}{	}{	}{	}{	}{	}{	}{	Votre maîtresse la lune vous appelle. . . Courez la rejoindre, pour le restant de vos jours.	}
+{	85	}{	Fuyez ! Ne revenez jamais dans cette ville.	}{	Fuyez ! Ne revenez jamais dans cette ville.	}{	0	}{	}{	G.Mill_Loose = 1	}{	}{	}{	}{	}{	}{	}{	Déployez vos ailes et quittez cette ville à tout jamais. Vite !	}
+{	86	}{	La dernière chose que vous verrez.	}{	La dernière chose que vous verrez.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	Votre dernier interlocuteur.	}
+{	87	}{	Je suis la personne qui va vous tuer.	}{	Je suis la personne qui va vous tuer.	}{	0	}{	}{	npc.SetRelationship("player D_FR 5")	}{	}{	}{	}{	}{	}{	}{	La main de la mort.	}
 {	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	91	}{	Je ne sais pas ce que je fais ici. Il faut que je m'en aille.	}{	Je ne sais pas ce que je fais ici. Il faut que je m'en aille.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Montez dans votre camionnette et partez.	}{	Montez dans votre camionnette et partez.	}{	0	}{	}{	FindPlayer().ChangeMasqueradeLevel( -1 ); pc.SetQuest("Necromantic",3)	}{	}{	}{	}{	}{	}{	}{	}
-{	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Montez dans votre camionnette et partez.	}{	Montez dans votre camionnette et partez.	}{	0	}{	pc.GetQuestState("Necromantic") == 1 or pc.GetQuestState("Necromantic") == 2 	}{	FindPlayer().ChangeMasqueradeLevel( -1 ); pc.SetQuest("Necromantic",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	Montez dans votre camionnette et partez.	}{	Montez dans votre camionnette et partez.	}{	0	}{	IsDead("Pisha")	}{	FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	}
 {	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -99,7 +99,7 @@
 {	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	101	}{	Quoi ? Pourquoi. . .	}{	Quoi ? Pourquoi. . .	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	102	}{	Votre permis ou votre vie.	}{	Votre permis ou votre vie.	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Votre permis ou votre vie.	}{	Votre permis ou votre vie.	}{	111	}{	}{	pc.GiveItem("item_w_claws_ghoul")	}{	}{	}{	}{	}{	}{	}{	}
 {	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -109,8 +109,8 @@
 {	109	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	110	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	111	}{	Tenez.	}{	Tenez.	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	112	}{	Si vous parlez de ce qui s'est passé ce soir. . . je sais où vous vivez. Pas un mot.	}{	Si vous parlez de ce qui s'est passé ce soir. . . je sais où vous vivez. Pas un mot.	}{	0	}{	}{	FindPlayer().ChangeMasqueradeLevel( -1 ); pc.SetQuest("Necromantic",3)	}{	}{	}{	}{	}{	}{	}{	}
-{	113	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Si vous parlez de ce qui s'est passé ce soir. . . je sais où vous vivez. Pas un mot.	}{	Si vous parlez de ce qui s'est passé ce soir. . . je sais où vous vivez. Pas un mot.	}{	0	}{	pc.GetQuestState("Necromantic") == 1 or pc.GetQuestState("Necromantic") == 2	}{	FindPlayer().ChangeMasqueradeLevel( -1 ); pc.SetQuest("Necromantic",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	112	}{	Si vous parlez de ce qui s'est passé ce soir. . . je sais où vous vivez. Pas un mot.	}{	Si vous parlez de ce qui s'est passé ce soir. . . je sais où vous vivez. Pas un mot.	}{	0	}{	pc.GetQuestState("Necromantic") == 0 or IsDead("Pisha")	}{	FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	}
 {	114	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	115	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	116	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -149,8 +149,8 @@
 {	149	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	150	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	151	}{	La lune ? Oui ! OUI ! IL FAUT QUE J'ATTRAPE LA LUNE, HA HA ! JE DOIS LA TENIR ET LUI DIRE COMME J'ADORE SON ECLAT. LAISSEZ MOI PASSER !	}{	La lune ? Oui ! OUI ! IL FAUT QUE J'ATTRAPE LA LUNE, HA HA ! JE DOIS LA TENIR ET LUI DIRE COMME J'ADORE SON ECLAT. LAISSEZ MOI PASSER !	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	pc.SetQuest("Necromantic",3); FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	}
-{	152	}{	Courez !	}{	Courez !	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Courez !	}
-{	153	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	152	}{	Courez !	}{	Courez !	}{	0	}{	pc.GetQuestState("Necromantic") == 1 or pc.GetQuestState("Necromantic") == 2 	}{	pc.SetQuest("Necromantic",3); FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	Courez !	}
+{	153	}{	Courez !	}{	Courez !	}{	0	}{	IsDead("Pisha")	}{	FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	Courez !	}
 {	154	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	155	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	156	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

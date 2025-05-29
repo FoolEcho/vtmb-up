@@ -58,13 +58,13 @@
 {	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	61	}{	Heh, heh. . .exceptionnel. Revenez me voir dans quelque temps, j'aurai quelque chose pour vous.	}{	Heh, heh. . .exceptionnel. Revenez me voir dans quelque temps, j'aurai quelque chose pour vous.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Gift = 1; pc.SetQuest("Kings Way",3)	}{	}{	}{	}{	}{	}{	}{	}
-{	62	}{	Merci, Isaac. Je vous suis reconnaissant. J'avais une autre question.	}{	Merci, Isaac. Je vous suis reconnaissant. J'avais une autre question.	}{	491	}{	G.Player_Anarch == 1	}{	}{	}{	}{	}{	}{	}{	}{	D'autres sujets me rongent l'esprit.	}
-{	63	}{	Ce ne serait quand même pas un pot-de-vin, j'espère ? J'avais une autre question.	}{	Ce ne serait quand même pas un pot-de-vin, j'espère ? J'avais une autre question.	}{	491	}{	G.Player_Anarch == 0	}{	}{	}{	}{	}{	}{	}{	}{	D'autres sujets me rongent l'esprit.	}
-{	64	}{	Je reviendrai le chercher plus tard. Merci, Isaac.	}{	Je reviendrai le chercher plus tard. Merci, Isaac.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je recevrai votre présent en temps voulu.	}
-{	65	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	66	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	67	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Heh, heh. . .exceptionnel. Revenez me voir dans quelque temps, j'aurai quelque chose pour vous.	}{	Heh, heh. . .exceptionnel. Revenez me voir dans quelque temps, j'aurai quelque chose pour vous.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Gift = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	62	}{	Merci, Isaac. Je vous suis reconnaissant. J'avais une autre question.	}{	Merci, Isaac. Je vous suis reconnaissant. J'avais une autre question.	}{	491	}{	G.Player_Anarch == 1 and G.CD > 0	}{	pc.SetQuest("Kings Way",3)	}{	}{	}{	}{	}{	}{	}{	D'autres sujets me rongent l'esprit.	}
+{	63	}{	Ce ne serait quand même pas un pot-de-vin, j'espère ? J'avais une autre question.	}{	Ce ne serait quand même pas un pot-de-vin, j'espère ? J'avais une autre question.	}{	491	}{	G.Player_Anarch == 0 and G.CD > 0	}{	pc.SetQuest("Kings Way",3)	}{	}{	}{	}{	}{	}{	}{	D'autres sujets me rongent l'esprit.	}
+{	64	}{	Merci, Isaac. Je vous suis reconnaissant. J'avais une autre question.	}{	Merci, Isaac. Je vous suis reconnaissant. J'avais une autre question.	}{	491	}{	G.Player_Anarch == 1 and G.CD == 0	}{	pc.SetQuest("Kings Way",4)	}{	}{	}{	}{	}{	}{	}{	D'autres sujets me rongent l'esprit.	}
+{	65	}{	Ce ne serait quand même pas un pot-de-vin, j'espère ? J'avais une autre question.	}{	Ce ne serait quand même pas un pot-de-vin, j'espère ? J'avais une autre question.	}{	491	}{	G.Player_Anarch == 0 and G.CD == 0	}{	pc.SetQuest("Kings Way",4)	}{	}{	}{	}{	}{	}{	}{	D'autres sujets me rongent l'esprit.	}
+{	66	}{	Je reviendrai le chercher plus tard. Merci, Isaac.	}{	Je reviendrai le chercher plus tard. Merci, Isaac.	}{	0	}{	G.CD > 0	}{	pc.SetQuest("Kings Way",3)	}{	}{	}{	}{	}{	}{	}{	Je recevrai votre présent en temps voulu.	}
+{	67	}{	Je le récupérerai plus tard, après avoir trouvé le Nosferatu.	}{	Je le récupérerai plus tard, après avoir trouvé le Nosferatu.	}{	0	}{	G.CD == 0	}{	pc.SetQuest("Kings Way",4)	}{	}{	}{	}{	}{	}{	}{	Je recevrai ton cadeau après avoir trouvé les rats d'égout.	}
 {	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -721,8 +721,8 @@
 {	721	}{	Bonsoir. . .	}{	Bonsoir. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	722	}{	King's Way. Il y avait un Tzimisce. Vous remarquerez que ma phrase est au passé.	}{	King's Way. Il y avait un Tzimisce. Vous remarquerez que ma phrase est au passé.	}{	831	}{	IsClan(pc,"Toreador") and G.Isaac_Gift == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	723	}{	King's Way. Il y avait un Tzimisce. Vous remarquerez que ma phrase est au passé.	}{	King's Way. Il y avait un Tzimisce. Vous remarquerez que ma phrase est au passé.	}{	61	}{	not IsClan(pc,"Toreador") and G.Isaac_Gift == 0	}{	}{	}{	}{	}{	}{	}{	}{	Le façonneur de chair qui marchait avec royauté n'est pas si malin maintenant..	}
-{	724	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	921	}{	G.Isaac_Gift == 2 and G.Patch_Plus == 0	}{	pc.MoneyAdd( 500 )	}{	}{	}{	}{	}{	}{	}{	}
-{	725	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	921	}{	G.Isaac_Gift == 2 and G.Patch_Plus == 1	}{	pc.GiveItem("item_g_ring_serial_killer_1")	}{	}{	}{	}{	}{	}{	}{	}
+{	724	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	921	}{	G.Isaac_Gift == 2 and G.CD > 0 and G.Patch_Plus == 0	}{	pc.GiveItem("item_p_occult_dexterity")	}{	}{	}{	}{	}{	}{	}{	}
+{	725	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	Au fait, et mon cadeau ? Je peux l'avoir ?	}{	921	}{	G.Isaac_Gift == 2 and G.CD > 0 and G.Patch_Plus == 1	}{	pc.GiveItem("item_g_ring_serial_killer_1")	}{	}{	}{	}{	}{	}{	}{	}
 {	726	}{	J'avais quelques questions.	}{	J'avais quelques questions.	}{	491	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je me demande autre chose.	}
 {	727	}{	Oh, à propos de la gargouille. . .	}{	Oh, à propos de la gargouille. . .	}{	511	}{	G.Isaac_Gargoyle == 1 or G.Isaac_Gargoyle == 2	}{	}{	}{	}{	}{	}{	}{	}{	A propos de l'être de pierre. . .	}
 {	728	}{	J'ai tué la gargouille.	}{	J'ai tué la gargouille.	}{	731	}{	IsDead("Gargoyle") and G.Isaac_Gargoyle != 4	}{	}{	}{	}{	}{	}{	}{	}{	L'être de pierre est en miettes.	}
@@ -829,8 +829,8 @@
 {	829	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	830	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	831	}{	Impressionnant, jeune Toréador. . . On ne voit pas tous les jours quelqu'un de votre trempe. . . J'aimerais vous donner quelque chose. Ce n'est pas beaucoup, mais c'est pour vous exprimer l'appréciation de la baronnie d'Hollywood.	}{	Impressionnant, jeune Toréador. . . On ne voit pas tous les jours quelqu'un de votre trempe. . . J'aimerais vous donner quelque chose. Ce n'est pas beaucoup, mais c'est pour vous exprimer l'appréciation de la baronnie d'Hollywood.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	832	}{	(Auto-Link)	}{	(Auto-Link)	}{	841	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	833	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	832	}{	(Auto-Link)	}{	(Auto-Link)	}{	841	}{	G.CD > 0	}{	pc.SetQuest("Kings Way",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	833	}{	(Auto-Link)	}{	(Auto-Link)	}{	841	}{	G.CD == 0	}{	pc.SetQuest("Kings Way",4)	}{	}{	}{	}{	}{	}{	}{	}
 {	834	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	835	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	836	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -838,11 +838,11 @@
 {	838	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	839	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	840	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	841	}{	Heureux de voir que le sang de mon clan a enfin su trouver les bonnes personnes. Avec un peu de chance, vous ne le ferez pas couler dans quelque futile démonstration de fidélité à ce maudit LaCroix. . . Revenez me voir dans quelque temps, j'aurai quelque chose pour vous.	}{	Heureux de voir que le sang de mon clan a enfin su trouver les bonnes personnes. Avec un peu de chance, vous ne le ferez pas couler dans quelque futile démonstration de fidélité à ce maudit LaCroix. . . Revenez me voir dans quelque temps, j'aurai quelque chose pour vous.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Gift = 1; pc.SetQuest("Kings Way",3)	}{	}{	}{	}{	}{	}{	}{	}
+{	841	}{	Heureux de voir que le sang de mon clan a enfin su trouver les bonnes personnes. Avec un peu de chance, vous ne le ferez pas couler dans quelque futile démonstration de fidélité à ce maudit LaCroix. . . Revenez me voir dans quelque temps, j'aurai quelque chose pour vous.	}{	Heureux de voir que le sang de mon clan a enfin su trouver les bonnes personnes. Avec un peu de chance, vous ne le ferez pas couler dans quelque futile démonstration de fidélité à ce maudit LaCroix. . . Revenez me voir dans quelque temps, j'aurai quelque chose pour vous.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Gift = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	842	}{	Merci, Isaac. Je vous suis reconnaissant. J'avais une autre question.	}{	Merci, Isaac. Je vous suis reconnaissante. J'avais une autre question.	}{	491	}{	G.Player_Anarch == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	843	}{	Ce ne serait quand même pas un pot-de-vin, j'espère ? J'avais une autre question.	}{	Ce ne serait quand même pas un pot-de-vin, j'espère ? J'avais une autre question.	}{	491	}{	G.Player_Anarch == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	844	}{	Je reviendrai le chercher plus tard. Merci, Isaac.	}{	Je reviendrai le chercher plus tard. Merci, Isaac.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	845	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	844	}{	Je reviendrai le chercher plus tard. Merci, Isaac.	}{	Je reviendrai le chercher plus tard. Merci, Isaac.	}{	0	}{	G.CD > 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	845	}{	Je le récupérerai plus tard, après avoir trouvé le Nosferatu.	}{	Je le récupérerai plus tard, après avoir trouvé le Nosferatu.	}{	0	}{	G.CD == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je recevrai ton cadeau après avoir trouvé les rats d'égout.	}
 {	846	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	847	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	848	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -918,7 +918,7 @@
 {	918	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	919	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	920	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	921	}{	Tenez. . . Et encore merci pour votre aide. . . Et rappelez-vous ce que j'ai dit sur LaCroix - il ne mérite pas un talent comme le vôtre.	}{	Tenez. . . Et encore merci pour votre aide. . . Et rappelez-vous ce que j'ai dit sur LaCroix - il ne mérite pas un talent comme le vôtre.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Isaac_Gift = 3; pc.SetQuest("Kings Way",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	921	}{	Tenez. . . Et encore merci pour votre aide. . . Et rappelez-vous ce que j'ai dit sur LaCroix - il ne mérite pas un talent comme le vôtre.	}{	Tenez. . . Et encore merci pour votre aide. . . Et rappelez-vous ce que j'ai dit sur LaCroix - il ne mérite pas un talent comme le vôtre.	}{	#	}{	npc.SetDisposition("Joy", 3)	}{	G.Isaac_Gift = 3; pc.SetQuest("Kings Way",5)	}{	}{	}{	}{	}{	}{	}{	}
 {	922	}{	Non, c'est vrai. Merci pour le cadeau, Isaac.	}{	Non, c'est vrai. Merci pour le cadeau, Isaac.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis aussi gaspillé que mon talent. Au revoir.	}
 {	923	}{	J'en déciderai moi-même quand le moment sera venu. Au revoir, Isaac.	}{	J'en déciderai moi-même quand le moment sera venu. Au revoir, Isaac.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le 'mérite' n'a rien à voir là-dedans. Je suis parti.	}
 {	924	}{	Ni lui ni personne. Au revoir, Isaac.	}{	Ni lui ni personne. Au revoir, Isaac.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Etais-je jamais ici?	}
@@ -978,8 +978,8 @@
 {	978	}{	J'ai appris quelque chose sur cette gargouille.	}{	J'ai appris quelque chose sur cette gargouille.	}{	771	}{	G.Isaac_Regent == 0 and G.Regent_Family < 3 and G.Regent_Gargoyleinside == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je sais quelque chose que je ne dirai pas. . . sans doute.	}
 {	979	}{	Non. Je reviendrai.	}{	Non. Je reviendrai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne devrais plus être ici.	}
 {	980	}{	Ca me fait plaisir de vous revoir.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	981	}{	Vous avez une bonne raison de vous attarder dans ma ville ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	982	}{	Veuillez vous expulser vous-même de mon bureau.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	981	}{	Vous avez une bonne raison de vous attarder dans ma ville ?	}{	Vous avez une bonne raison de vous attarder dans ma ville ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	982	}{	Pas vraiment.	}{	Pas vraiment.	}{	993	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis déjà parti.	}
 {	983	}{	Pigé.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	984	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	985	}{	Merci. Ca me fait plaisir.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -990,9 +990,9 @@
 {	990	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	991	}{	Prenez ça.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	992	}{	Je vous envoie un e-mail.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	993	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	994	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	995	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	993	}{	Veuillez vous expulser vous-même de mon bureau.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	994	}{	Ok.	}{	Ok.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Fait.	}
+{	995	}{	(Starting Condition)	}{	}{	981	}{	G.Credits_Running == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	996	}{	(Starting Condition)	}{	}{	721	}{	G.Story_State >= 40	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	997	}{	(Starting Condition)	}{	}{	971	}{	G.Isaac_Taxi == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	998	}{	(Starting Condition)	}{	}{	721	}{	G.Isaac_Quest == 2	}{	}{	}{	}{	}{	}{	}{	}{	}

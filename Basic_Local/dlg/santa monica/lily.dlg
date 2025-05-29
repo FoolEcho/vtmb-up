@@ -89,8 +89,8 @@
 {	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	91	}{	Je m'appelle Lily. . .	}{	Je m'appelle Lily. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Lily ? Alors c'est de toi dont E. me parlait. . .	}{	Lily ? Alors c'est de toi dont E. me parlait. . .	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	93	}{	J'ai entendu parler de toi par E. 	}{	J'ai entendu parler de toi par E. 	}{	151	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Lily ? Alors c'est de toi dont ce surfeur parlait. . .	}{	Lily ? Alors c'est de toi dont ce surfeur parlait. . .	}{	151	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	93	}{	J'ai entendu parler de toi par un surfeur sur la plage. 	}{	J'ai entendu parler de toi par un surfeur sur la plage. 	}{	151	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -261,10 +261,10 @@
 {	261	}{	[Sourit, marque une pause]La vie lui a joué de sales tours. . . Comme à moi, d'ailleurs. Mais il me pardonne. Nous allons partir. J'ai de la famille au milieu de nulle part, dans l'Oregon. On devrait pouvoir vivre là-bas sans problème. Du moment que nous sommes ensemble.	}{	[Sourit, marque une pause]La vie lui a joué de sales tours. . . Comme à moi, d'ailleurs. Mais il me pardonne. Nous allons partir. J'ai de la famille au milieu de nulle part, dans l'Oregon. On devrait pouvoir vivre là-bas sans problème. Du moment que nous sommes ensemble.	}{	#	}{	npc.SetDisposition("Joy", 2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	262	}{	Bonne chance à tous les deux. Au revoir, Lily.	}{	Bonne chance à tous les deux. Au revoir, Lily.	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Bonne chance à la lettre et la fleur. Au revoir, Lily.	}
 {	263	}{	Tu te rappelles de tes actes ? Donne-moi de l'argent et je ne dirai rien à E.	}{	Tu te rappelles de tes actes ? Donne-moi de l'argent et je ne dirai rien à E.	}{	271	}{	G.Lily_Extort == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de maille ou E. connaîtra ta faille. . .	}
-{	264	}{	Vous voulez probablement vos affaires. Prenez les...	}{	Vous voulez probablement vos affaires. Prenez les...	}{	281	}{	G.Patch_Plus == 1 and (pc.HasItem("item_g_lilly_purse") or pc.HasItem("item_g_lilly_photo") or pc.HasItem("item_g_lilly_diary") or pc.HasItem("item_g_bailbond_receipt"))	}{	pc.RemoveItem("item_g_lilly_purse"); pc.RemoveItem("item_g_lilly_photo"); pc.RemoveItem("item_g_lilly_diary"); pc.RemoveItem("item_g_bailbond_receipt")	}{	}{	}{	}{	}{	}{	}{	Videz mon sac de vos affaires, svp. Merci !	}
-{	265	}{	Restez bien loin des ennuis. Au revoir.	}{	Restez bien loin des ennuis. Au revoir.	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Que le soleil n'illumine jamais ton visage, petite fleur. Adieu.	}
-{	266	}{	Des vampires amoureux. . . Vous feriez un super roman de gare.	}{	Des vampires amoureux. . . Vous feriez un super roman de gare.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Des vampires amoureux. . . Vous feriez un super roman de gare.	}
-{	267	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	264	}{	Vous voulez probablement vos affaires. Prenez les...	}{	Vous voulez probablement vos affaires. Prenez les...	}{	281	}{	G.Patch_Plus == 1 and not IsDead("Vandal") and (pc.HasItem("item_g_lilly_purse") or pc.HasItem("item_g_lilly_photo") or pc.HasItem("item_g_lilly_diary") or pc.HasItem("item_g_bailbond_receipt"))	}{	pc.RemoveItem("item_g_lilly_purse"); pc.RemoveItem("item_g_lilly_photo"); pc.RemoveItem("item_g_lilly_diary"); pc.RemoveItem("item_g_bailbond_receipt")	}{	}{	}{	}{	}{	}{	}{	Videz mon sac de vos affaires, svp. Merci !	}
+{	265	}{	Vous voulez probablement vos affaires. J'ai aussi réussi à tuer le gars qui vous a torturé.	}{	Vous voulez probablement vos affaires. J'ai aussi réussi à tuer le gars qui vous a torturé.	}{	281	}{	G.Patch_Plus == 1 and IsDead("Vandal") and (pc.HasItem("item_g_lilly_purse") or pc.HasItem("item_g_lilly_photo") or pc.HasItem("item_g_lilly_diary") or pc.HasItem("item_g_bailbond_receipt"))	}{	pc.RemoveItem("item_g_lilly_purse"); pc.RemoveItem("item_g_lilly_photo"); pc.RemoveItem("item_g_lilly_diary"); pc.RemoveItem("item_g_bailbond_receipt")	}{	}{	}{	}{	}{	}{	}{	Videz mon sac de vos affaires, svp. Merci ! Aussi, le gars qui a sucé ton sang n'est plus.	}
+{	266	}{	Restez bien loin des ennuis. Au revoir.	}{	Restez bien loin des ennuis. Au revoir.	}{	0	}{	Humanity 6	}{	}{	}{	}{	}{	}{	}{	}{	Que le soleil n'illumine jamais ton visage, petite fleur. Adieu.	}
+{	267	}{	Des vampires amoureux. . . Vous feriez un super roman de gare.	}{	Des vampires amoureux. . . Vous feriez un super roman de gare.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Des vampires amoureux. . . Vous feriez un super roman de gare.	}
 {	268	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	269	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	270	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

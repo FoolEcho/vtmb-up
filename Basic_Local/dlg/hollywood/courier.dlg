@@ -28,7 +28,7 @@
 {	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	31	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	32	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	33	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	34	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -52,8 +52,8 @@
 {	52	}{	Vraiment ? A ce point-là ?	}{	Vraiment ? A ce point-là ?	}{	61	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vois des dents et une terreur, une fille perdue dans une tempête de sang. 	}
 {	53	}{	Ne fais pas ta chochotte, ce n'est qu'une cassette. Ca doit pas être bien terrible.	}{	Ne fais pas ta chochotte, ce n'est qu'une cassette. Ca doit pas être bien terrible.	}{	61	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	54	}{	Je te comprends. Ces derniers temps, j'ai vu plein de trucs incroyables.	}{	Je te comprends. Ces derniers temps, j'ai vu plein de trucs incroyables.	}{	61	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	55	}{	Rien à foutre. Donne-moi la cassette.	}{	Rien à foutre. Donne-moi la cassette.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Débarrasse-toi de cette malédiction et donne-moi cette horreur. . .	}
-{	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	55	}{	Regarde-moi. La vidéo est-elle pire que mon visage ?	}{	Regarde-moi. La vidéo est-elle pire que mon visage ?	}{	61	}{	IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	56	}{	Rien à foutre. Donne-moi la cassette.	}{	Rien à foutre. Donne-moi la cassette.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Débarrasse-toi de cette malédiction et donne-moi cette horreur. . .	}
 {	57	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -170,7 +170,7 @@
 {	170	}{	Je regrette, mais je ne peux pas négocier dans ces conditions.	}{	Je regrette, mais je ne peux pas négocier dans ces conditions.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	171	}{	Alors ? C'est fait ?	}{	Alors ? C'est fait ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	172	}{	Oui. Venus ne vous ennuiera plus jamais.	}{	Oui. Venus ne vous ennuiera plus jamais.	}{	181	}{	IsDead("Venus")	}{	}{	}{	}{	}{	}{	}{	}{	Nul n'adorera plus la déesse.	}
-{	173	}{	Non. Pas encore.	}{	Non. Pas encore.	}{	151	}{	not IsDead("Venus")	}{	G.Boris_Return = G.Boris_Return + 1	}{	}{	}{	}{	}{	}{	}{	Non, elle réside toujours en son temple.	}
+{	173	}{	Non. Pas encore.	}{	Non. Pas encore.	}{	151	}{	not IsDead("Venus")	}{	G.Boris_Return = G.Boris_Return + 0	}{	}{	}{	}{	}{	}{	}{	Non, elle réside toujours en son temple.	}
 {	174	}{	J'ai changé d'avis. Annulez la dette.	}{	J'ai changé d'avis. Annulez la dette.	}{	101	}{	not IsDead("Venus")	}{	G.Boris_Venus = 0	}{	}{	}{	}{	}{	}{	}{	Je ne tuerai pas la déesse en votre nom. Pardonnez ses dettes.	}
 {	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -188,7 +188,7 @@
 {	188	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	189	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	190	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	191	}{	Je vous ai dit de ne pas revenir avant que travail fini. Vous jouez avec moi. Je perds du temps. Je ne veux plus jouer, enfant américain.	}{	Je vous ai dit de ne pas revenir avant que travail fini. Vous jouez avec moi. Je perds du temps. Je ne veux plus jouer, enfant américain.	}{	#	}{	}{	pc.SetQuest("Kill Venus",5)	}{	}{	}{	}{	}{	}{	}{	}
+{	191	}{	[silence] Je vous ai dit de ne pas revenir avant que travail fini. Vous jouez avec moi. Je perds du temps. Je ne veux plus jouer, enfant américain.	}{	[silence] Je vous ai dit de ne pas revenir avant que travail fini. Vous jouez avec moi. Je perds du temps. Je ne veux plus jouer, enfant américain.	}{	#	}{	}{	pc.SetQuest("Kill Venus",5)	}{	}{	}{	}{	}{	}{	}{	}
 {	192	}{	Jouons alors !	}{	Jouons alors !	}{	0	}{	}{	npc.SetRelationship("player D_HT 5"); G.Boris_Hostile = 2	}{	}{	}{	}{	}{	}{	}{	Des jeux et de l'amusement !	}
 {	193	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	194	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

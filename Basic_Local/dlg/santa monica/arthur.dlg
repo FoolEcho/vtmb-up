@@ -360,17 +360,17 @@
 {	360	}{	Je vous ferai savoir si je trouve quelque chose.	}{	Je vous ferai savoir si je trouve quelque chose.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais errer jusque à ce que les mots s'arrachent à moi. Adieu.	}
 {	361	}{	Alors, qu'avez-vous trouvé au sujet de Muddy ?	}{	Alors, qu'avez-vous trouvé au sujet de Muddy ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Arthur_Muddy = 4; pc.SetQuest("Bail Jumper", 3)	}{	}{	}{	}{	}{	}{	}{	}
 {	362	}{	Il a quitté la ville, je ne sais pas où il est allé.	}{	Il a quitté la ville, je ne sais pas où il est allé.	}{	381	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Il a abandonné la femme. . .	}
-{	363	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	364	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	363	}{	Il est parti, je ne sais pas trop où.	}{	Il est parti, je ne sais pas trop où.	}{	381	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Quelque part, ailleurs.	}
+{	364	}{	Il a fui quelque part.	}{	Il a fui quelque part.	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une galaxie très, très lointaine. . .	}
 {	365	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	366	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	371	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	372	}{	Il est parti, je ne sais pas trop où.	}{	Il est parti, je ne sais pas trop où.	}{	381	}{	G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Quelque part, ailleurs.	}
-{	373	}{	Il a fui quelque part.	}{	Il a fui quelque part.	}{	381	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une galaxie très, très lointaine. . .	}
+{	371	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	373	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	374	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -418,7 +418,7 @@
 {	418	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	419	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	420	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	421	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	421	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	422	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	423	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	424	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

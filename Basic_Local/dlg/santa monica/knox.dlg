@@ -219,7 +219,7 @@
 {	219	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	221	}{	Ce type. . . ce truc. . . m'a repéré. Au lieu que je le suive, c'est lui qui me suit. Je le vois tout le temps apparaître derrière moi, un peu au loin, il me regarde et après il se téléporte, genre, à côté de moi, puis il disparaît.	}{	Ce type. . . ce truc. . . m'a repéré. Au lieu que je le suive, c'est lui qui me suit. Je le vois tout le temps apparaître derrière moi, un peu au loin, il me regarde et après il se téléporte, genre, à côté de moi, puis il disparaît.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	222	}{	Ton histoire ne colle pas tout à fait, Knox. . .	}{	Ton histoire ne colle pas tout à fait, Knox. . .	}{	411	}{	(pc.perception > 2 or IsClan(pc,"Malkavian")) and G.Bertram_Plant == 0	}{	}{	}{	}{	}{	}{	}{	}{	La vérité ne correspond pas à tous les mots qui sortent de ta bouche. . .	}
+{	222	}{	Ton histoire ne colle pas tout à fait, Knox. . .	}{	Ton histoire ne colle pas tout à fait, Knox. . .	}{	411	}{	(pc.CalcFeat("inspection") > 2 or IsClan(pc,"Malkavian")) and G.Bertram_Plant == 0	}{	}{	}{	}{	}{	}{	}{	}{	La vérité ne correspond pas à tous les mots qui sortent de ta bouche. . .	}
 {	223	}{	Tu veux que je m'en occupe ?	}{	Tu veux que je m'en occupe ?	}{	261	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	224	}{	Je l'ai vu aussi.	}{	Je l'ai vu aussi.	}{	231	}{	G.Asian_Seen == 1	}{	}{	}{	}{	}{	}{	}{	}{	Le mangeur de vie me suit aussi.	}
 {	225	}{	Ca doit être énervant.	}{	Ca doit être énervant.	}{	231	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -229,7 +229,7 @@
 {	229	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	230	}{	Ton problème, c'est l'incompétence ou la bêtise ?	}{	Ton problème, c'est l'incompétence ou la bêtise ?	}{	741	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	231	}{	Ca fout les boules. Je sais que ce truc est en train de s'amuser. Je voudrais bien lui coller une balle dans la tête, mais allez savoir si ça va marcher. Alors j'attends de parler à Bertram. Mais je ne sais pas où il a filé. C'est la merde.	}{	Ca fout les boules. Je sais que ce truc est en train de s'amuser. Je voudrais bien lui coller une balle dans la tête, mais allez savoir si ça va marcher. Alors j'attends de parler à Bertram. Mais je ne sais pas où il a filé. C'est la merde.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Knox_Quest = 2; G.Knox_Questions = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	232	}{	Une partie de ton histoire me paraît bizarre, Knox. . .	}{	Ton histoire ne colle pas tout à fait, Knox. . .	}{	411	}{	(pc.perception > 2 or IsClan(pc,"Malkavian")) and G.Bertram_Plant == 0	}{	}{	}{	}{	}{	}{	}{	}{	La vérité ne correspond pas à tous les mots qui sortent de ta bouche. . .	}
+{	232	}{	Une partie de ton histoire me paraît bizarre, Knox. . .	}{	Ton histoire ne colle pas tout à fait, Knox. . .	}{	411	}{	(pc.CalcFeat("inspection") > 2 or IsClan(pc,"Malkavian")) and G.Bertram_Plant == 0	}{	}{	}{	}{	}{	}{	}{	}{	La vérité ne correspond pas à tous les mots qui sortent de ta bouche. . .	}
 {	233	}{	Tu veux que je m'en occupe ?	}{	Tu veux que je m'en occupe ?	}{	261	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	234	}{	On dirait que oui, Knox.	}{	On dirait que oui, Knox.	}{	241	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	235	}{	Ma folie va bien au-delà de ce que vous ne pourrez jamais savoir. . .	}{	Ma folie va bien au-delà de ce que vous ne pourrez jamais savoir. . .	}{	241	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -280,7 +280,7 @@
 {	280	}{	Je regrette. Au revoir.	}{	Je regrette. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il faudra que je change plusieurs fois. Adieu.	}
 {	281	}{	Super. Reviens me voir quand ce sera fait, pour que j'arrête de flipper. Et là, je verrai peut-être Bertram.	}{	Super. Reviens me voir quand ce sera fait, pour que j'arrête de flipper. Et là, je verrai peut-être Bertram.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	282	}{	Ca me va, Knox. J'ai quelques questions. 	}{	Ca me va, Knox. J'ai quelques questions. 	}{	541	}{	G.Knox_Knowledge < 5	}{	}{	}{	}{	}{	}{	}{	}{	J'ai encore quelques questions qui bouillonnent sous mon crâne. . .	}
-{	283	}{	Hé, sais-tu où je peux trouver des armes ?	}{	Hé, sais-tu où je peux trouver des armes ?	}{	372	}{	Persuasion 4 & G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Où puis-je acheter une baguette magique qui fait boum ?	}
+{	283	}{	Hé, sais-tu où je peux trouver des armes ?	}{	Hé, sais-tu où je peux trouver des armes ?	}{	371	}{	Persuasion 4 & G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Où puis-je acheter une baguette magique qui fait boum ?	}
 {	284	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	285	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	286	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -318,7 +318,7 @@
 {	318	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	319	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	320	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	321	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	321	}{	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	322	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	323	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	324	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -348,7 +348,7 @@
 {	348	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	349	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	350	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	351	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	351	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	352	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	353	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	354	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -367,12 +367,12 @@
 {	367	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	368	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	369	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	370	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	371	}{	Je ne peux pas discuter, Knox. Il faut que je file.	}{	Je ne peux pas discuter, Knox. Il faut que je file.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon corps n'est plus là.	}
-{	372	}{	Bien vu. Va voir mon pote Trip, le prêteur sur gages. Il ne vend pas à n'importe qui, mais dis-lui que tu me connais, et il sera réglo avec toi.	}{	Bien vu. Va voir mon pote Trip, le prêteur sur gages. Il ne vend pas à n'importe qui, mais dis-lui que tu me connais, et il sera réglo avec toi.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Trip_Know = 2	}{	}{	}{	}{	}{	}{	}{	}
-{	373	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	374	}{	En fait, il me reste quelques questions à te poser. . .	}{	En fait, il me reste quelques questions à te poser. . .	}{	541	}{	G.Knox_Knowledge < 5 and G.Knox_Quest < 7	}{	}{	}{	}{	}{	}{	}{	}{	J'ai encore quelques questions qui bouillonnent sous mon crâne. . .	}
-{	375	}{	Merci, Knox. Sois cool, mec.	}{	Merci, Knox. Sois cool, mec.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis ailleurs. 	}
+{	370	}{	Je ne peux pas discuter, Knox. Il faut que je file.	}{	Je ne peux pas discuter, Knox. Il faut que je file.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon corps n'est plus là.	}
+{	371	}{	Bien vu. Va voir mon pote Trip, le prêteur sur gages. Il ne vend pas à n'importe qui, mais dis-lui que tu me connais, et il sera réglo avec toi.	}{	Bien vu. Va voir mon pote Trip, le prêteur sur gages. Il ne vend pas à n'importe qui, mais dis-lui que tu me connais, et il sera réglo avec toi.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	G.Trip_Know = 2	}{	}{	}{	}{	}{	}{	}{	}
+{	372	}{	En fait, il me reste quelques questions à te poser. . .	}{	En fait, il me reste quelques questions à te poser. . .	}{	541	}{	G.Knox_Knowledge < 5 and G.Knox_Quest < 7	}{	}{	}{	}{	}{	}{	}{	}{	J'ai encore quelques questions qui bouillonnent sous mon crâne. . .	}
+{	373	}{	Merci, Knox. Sois cool, mec.	}{	Merci, Knox. Sois cool, mec.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis ailleurs. 	}
+{	374	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	375	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	376	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	377	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	378	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -381,7 +381,7 @@
 {	381	}{	Oh, merci mon dieu ! Ce truc me collait au train toutes les nuits. Bon, je n'ai toujours aucune nouvelle de Bertram, excuse-moi. Je lui parlerai de toi, mais du coup je n'ai toujours pas moyen de te remercier.	}{	Oh, merci mon dieu ! Ce truc me collait au train toutes les nuits. Bon, je n'ai toujours aucune nouvelle de Bertram, excuse-moi. Je lui parlerai de toi, mais du coup je n'ai toujours pas moyen de te remercier.	}{	#	}{	npc.SetDisposition("Joy",2)	}{	G.Knox_Quest = 7; G.Knox_Done = 1; pc.SetQuest("Knox Asian", 4)	}{	}{	}{	}{	}{	}{	}{	}
 {	382	}{	Le dévoreur de vie était une créature de mort et d'ombre.	}{	Le dévoreur de vie était une créature de mort et d'ombre.	}{	601	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	383	}{	Tu sais ce que c'était ?	}{	As-tu la moindre idée de ce qu'était cette chose ?	}{	391	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	384	}{	Tu sais où je peux me trouver des armes ?	}{	Tu sais peut-être où une fille peut se trouver un gros calibre, dans cette ville ?	}{	372	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Sais-tu où je peux m'acheter une baguette magique calibre douze, ma petite goule ?	}
+{	384	}{	Tu sais où je peux me trouver des armes ?	}{	Tu sais peut-être où une fille peut se trouver un gros calibre, dans cette ville ?	}{	371	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Sais-tu où je peux m'acheter une baguette magique calibre douze, ma petite goule ?	}
 {	385	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	386	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	387	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -389,7 +389,7 @@
 {	389	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	390	}{	Pas de souci. A plus.	}{	Pas de souci. A plus.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Tes bijoux sont peut-être en acier, mais ton coeur est d'or, petit. Adieu.	}
 {	391	}{	Bertram dit que c'est comme un vampire, mais pas pareil. Ce qu'ils ont en Chine à la place des vampires. Il a dit qu'ils sont nombreux à venir en Californie, mais on ne sait pas pourquoi.	}{	Bertram dit que c'est comme un vampire, mais pas pareil. Ce qu'ils ont en Chine à la place des vampires. Il a dit qu'ils sont nombreux à venir en Californie, mais on ne sait pas pourquoi.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	392	}{	Ca m'a l'air grave. Tu sais où je peux me trouver des armes ?	}{	Ca m'a l'air grave. Tu sais où une fille peut se trouver un gros calibre, dans cette ville ?	}{	372	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Où pourrait se trouver l'armement ?	}
+{	392	}{	Ca m'a l'air grave. Tu sais où je peux me trouver des armes ?	}{	Ca m'a l'air grave. Tu sais où une fille peut se trouver un gros calibre, dans cette ville ?	}{	371	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Où pourrait se trouver l'armement ?	}
 {	393	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	394	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	395	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -470,7 +470,7 @@
 {	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	471	}{	Super ! Merci mon pote. Eh, encore désolé pour tout à l'heure. Je n'ai toujours pas de nouvelles de Bertram, mais je lui dirai à quel point tu nous a aidés, et comme tu as été cool.	}{	Super ! Merci ma vieille. Eh, encore désolé pour tout à l'heure. Je n'ai toujours pas de nouvelles de Bertram, mais je lui dirai à quel point tu nous a aidés, et comme tu as été cool.	}{	#	}{	npc.SetDisposition("Joy",1)	}{	G.Knox_Quest = 7; pc.SetQuest("Knox Asian", 4); G.Knox_Done = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	472	}{	Tu sais ce que c'était ?	}{	As-tu la moindre idée de ce qu'était cette chose ?	}{	391	}{	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie était une créature de mort et d'ombre.	}
-{	473	}{	Tu sais où je peux me trouver des armes ?	}{	Tu sais peut-être où une fille peut se trouver un gros calibre, dans cette ville ?	}{	372	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Sais-tu où je peux m'acheter une baguette magique calibre douze, ma petite goule ?	}
+{	473	}{	Tu sais où je peux me trouver des armes ?	}{	Tu sais peut-être où une fille peut se trouver un gros calibre, dans cette ville ?	}{	371	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	Sais-tu où je peux m'acheter une baguette magique calibre douze, ma petite goule ?	}
 {	474	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	475	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	476	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -491,8 +491,8 @@
 {	491	}{	Oh, cool. Il sera content quand on sera débarrassé de son problème.	}{	Oh, cool. Il sera content quand on sera débarrassé de son problème.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	492	}{	C'est déjà fait. Plus la peine de s'inquiéter.	}{	C'est déjà fait. Plus la peine de s'inquiéter.	}{	381	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and G.Knox_Fess == 0 and (not pc.HasItem("item_g_driver_license_gimble") or G.Patch_Plus == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
 {	493	}{	C'est déjà fait. Plus la peine de s'inquiéter.	}{	C'est déjà fait. Plus la peine de s'inquiéter.	}{	521	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and G.Knox_Fess == 1 and (not pc.HasItem("item_g_driver_license_gimble") or G.Patch_Plus == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas.	}
-{	494	}{	C'est déjà fait. Plus la peine de s'inquiéter. Et tu devrais t'en débarasser.	}{	C'est déjà fait. Plus la peine de s'inquiéter. Et tu devrais t'en débarasser.	}{	381	}{	(G.Knox_Quest == 6 and or IsDead("AsianVamp")) and G.Knox_Fess == 0 and pc.HasItem("item_g_driver_license_gimble") and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas. Et tu devrais le faire disparaître à présent.	}
-{	495	}{	C'est déjà fait. Plus la peine de s'inquiéter. Et tu devrais t'en débarasser.	}{	C'est déjà fait. Plus la peine de s'inquiéter. Et tu devrais t'en débarasser.	}{	521	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and G.Knox_Fess == 1 and pc.HasItem("item_g_driver_license_gimble") and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas. Et tu devrais le faire disparaître à présent.	}
+{	494	}{	C'est déjà fait. Plus la peine de s'inquiéter. Et tu devrais t'en débarasser.	}{	C'est déjà fait. Plus la peine de s'inquiéter. Et tu devrais t'en débarasser.	}{	381	}{	(G.Knox_Quest == 6 and or IsDead("AsianVamp")) and G.Knox_Fess == 0 and pc.HasItem("item_g_driver_license_gimble") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_driver_license_gimble")	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas. Et tu devrais le faire disparaître à présent.	}
+{	495	}{	C'est déjà fait. Plus la peine de s'inquiéter. Et tu devrais t'en débarasser.	}{	C'est déjà fait. Plus la peine de s'inquiéter. Et tu devrais t'en débarasser.	}{	521	}{	(G.Knox_Quest == 6 or IsDead("AsianVamp")) and G.Knox_Fess == 1 and pc.HasItem("item_g_driver_license_gimble") and G.Patch_Plus == 1	}{	pc.RemoveItem("item_g_driver_license_gimble")	}{	}{	}{	}{	}{	}{	}{	Le dévoreur de vie a pris son dernier repas. Et tu devrais le faire disparaître à présent.	}
 {	496	}{	Je lui ai dit que tu avais tout raconté. Il n'était pas très content.	}{	Je lui ai dit que tu avais tout raconté. Il n'était pas très content.	}{	501	}{	G.Bertram_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	J'ai dit à l'Affreux que tu m'avais ouvert ton coeur d'or. . .	}
 {	497	}{	Il a dit que vous aviez des plans pour moi depuis le début.	}{	Il a dit que vous aviez des plans pour moi depuis le début.	}{	511	}{	G.Bertram_Plant == 1 and G.Knox_Fess == 0	}{	}{	}{	}{	}{	}{	}{	}{	Il m'a tout dit de vos petites manigances.	}
 {	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -599,7 +599,7 @@
 {	599	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	600	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	601	}{	Ouais ! Bertram dit que c'est comme un vampire, mais pas pareil. Ce qu'ils ont en Chine à la place des vampires. Il a dit qu'ils sont nombreux à venir en Californie, mais on ne sait pas pourquoi.	}{	Ouais ! Bertram dit que c'est comme un vampire, mais pas pareil. Ce qu'ils ont en Chine à la place des vampires. Il a dit qu'ils sont nombreux à venir en Californie, mais on ne sait pas pourquoi.	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	602	}{	Sais-tu où je peux m'acheter une baguette magique calibre douze, ma petite goule ?	}{	Sais-tu où je peux m'acheter une baguette magique calibre douze, ma petite goule ?	}{	372	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	602	}{	Sais-tu où je peux m'acheter une baguette magique calibre douze, ma petite goule ?	}{	Sais-tu où je peux m'acheter une baguette magique calibre douze, ma petite goule ?	}{	371	}{	G.Trip_Know < 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	603	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	604	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	605	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

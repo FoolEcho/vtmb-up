@@ -84,19 +84,6 @@ DisciplineTgt
 // ADD DISCIPLINESTRATA EFFECTS BELOW THIS LINE
 //
 
-		Affects_Table	// added by wesp
-		{
-			Affects_Filters
-			{
-				"CharTemplate"		"Doggie"
-			}
-
-			Mapping
-			{
-				"HitTable"	"Hit_Invulnerable"
-			}
-		}
-
 		Affects_Table	// added by Populism
 		{
 			Affects_Filters
@@ -643,19 +630,6 @@ DisciplineTgt
 //
 // ADD DISCIPLINESTRATA EFFECTS BELOW THIS LINE
 //
-
-		Affects_Table	// added by wesp
-		{
-			Affects_Filters
-			{
-				"CharTemplate"		"Doggie"
-			}
-
-			Mapping
-			{
-				"HitTable"	"Hit_Invulnerable"
-			}
-		}
 
             Affects_Table	// added by Populism
 		{
@@ -2373,7 +2347,7 @@ DisciplineTgt
 
 			Mapping
 			{
-				"HitTable"	"Hit_Invulnerable"
+				"HitTable"	"Hit_Supernatural_NoEffect"
 			}
 		}
 

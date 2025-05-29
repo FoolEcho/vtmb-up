@@ -1,4 +1,4 @@
-TerminalDefinition
+TerminalDefinition	// added by wesp
 {
 	"screen saver"		"Chateau Hotel"		// Bounces around on the screen when the terminal is not being used. 
 	"brackets"		""			// these surround the command prompt (2 characters), changed by wesp
@@ -9,7 +9,7 @@ TerminalDefinition
 	LogonScreen	// displayed when the user first logs on
 	{
 		// Any number of lines are acceptable
-		"line0"		"Bastion Anarch"	// changed by wesp
+		"line0"		"Chateau Hotel"	// changed by wesp
 	}
 
  	SubDir
@@ -71,4 +71,16 @@ TerminalDefinition
 		"body"		"Nines a été grièvement blessé alors qu'il se battait avec un loup-garou. Je lui ai garanti la sécurité alors défendez l'hôtel à tout prix !"
 	}
 
+	SubDir
+	{
+		"name"			"Imprimante"
+		"description"		"Commande de l'imprimante"	
+
+		Function
+		{
+			"name"		"factures"
+			"description"	"imprimer une liste des transactions récentes"	
+			"runtext"		"Envoi de la liste des factures à l'imprimante, veuillez patienter..."
+		}
+	}
 }

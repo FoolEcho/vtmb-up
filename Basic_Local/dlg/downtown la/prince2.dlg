@@ -159,7 +159,7 @@
 {	159	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	160	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	161	}{	Trouvez Gary et faites-le parler. Ce sarcophage pourrait être utilisé contre nous. Ne revenez pas avant de l'avoir. A présent, je dois annoncer la chasse - et en supporter les conséquences. [Au shérif]Escortez-le jusqu'à la porte.	}{	Trouvez Gary et faites-le parler. Ce sarcophage pourrait être utilisé contre nous. Ne revenez pas avant de l'avoir. A présent, je dois annoncer la chasse - et en supporter les conséquences. [Au shérif]Escortez-la jusqu'à la porte.	}{	#	}{	}{	Whisper("Quest"); G.Chunk_Open = 0; G.Prince_Gary = 1; G.Hollywood_Open = 1; G.Prince_Escort = 1; pc.SetQuest("Sarcophagus",1)	}{	}{	}{	}{	}{	}{	}{	}
-{	162	}{	. . .	}{	. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	162	}{	. . .	}{	. . .	}{	0	}{	}{	G.Wesp_Escort = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	163	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	164	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	165	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1276,7 +1276,7 @@
 {	1276	}{	Mais...	}{	Mais...	}{	1278	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quoi ?	}
 {	1277	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1278	}{	J'ai dit tout ce que j'avais à dire pour l'instant.	}{	J'ai dit tout ce que j'avais à dire pour l'instant.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1279	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1279	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	G.Wesp_Escort = 2	}{	}{	}{	}{	}{	}{	}{	}
 {	1280	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1281	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1282	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

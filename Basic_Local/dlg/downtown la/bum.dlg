@@ -50,7 +50,7 @@
 {	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	51	}{	Le mort l'a appelé 'Muddy'.	}{	Le mort l'a appelé 'Muddy'.	}{	#	}{	}{	G.Bum_Muddy = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	Alors, le mort et Muddy, que venaient-ils faire ici ?	}{	Alors, le mort et Muddy, que venaient-ils faire ici ?	}{	41	}{	G.Bum_Story == 1	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi des exactions de ce Muddy et de son camarade sans tête.	}
-{	53	}{	Continuez.	}{	Continuez.	}{	61	}{	G.Extra_Lines == 1 and G.Bum_Story == 2	}{	}{	}{	}{	}{	}{	}{	}{	Poursuivez votre histoire, barrique magique !	}
+{	53	}{	Continuez.	}{	Continuez.	}{	61	}{	G.Bum_Story == 2	}{	}{	}{	}{	}{	}{	}{	}{	Poursuivez votre histoire, barrique magique !	}
 {	54	}{	Tu oublieras ce que tu as vu ici. Pars et ne te retourne pas.	}{	Tu oublieras ce que tu as vu ici. Pars et ne te retourne pas.	}{	101	}{	Dominate 1 & (IsClan(pc,"Ventrue") and G.Bum_Story == 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	55	}{	Tu oublieras ce que tu as vu ici. Pars et ne te retourne pas.	}{	Tu oublieras ce que tu as vu ici. Pars et ne te retourne pas.	}{	101	}{	Thaumaturgy 1 & (G.Patch_Plus == 1 and G.Bum_Story == 3)	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	56	}{	A présent sois un bon garçon et oublie tout ce que tu as vu ici.	}{	A présent sois un bon garçon et oublie tout ce que tu as vu ici.	}{	101	}{	Presence 1 & (G.Patch_Plus == 1 and G.Bum_Story == 3)	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}

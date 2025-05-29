@@ -4,8 +4,8 @@ WeaponData
 {
 	// Weapon data is loaded by both the Game and Client DLLs.
 	"viewmodel"			"models/w_null.mdl"
-	"infomodel"		"models/items/occult_braid/info/info_braid.mdl"
-	"playermodel"		"models/items/occult_braid/ground/braid.mdl"
+	"infomodel"		"models/items/occult_braid/info/info_braid.mdl"	// changed by wesp
+	"playermodel"		"models/items/occult_braid/ground/braid.mdl"	// changed by wesp
 	"wieldmodel_f"		"models/w_null.mdl"
 	"wieldmodel_m"		"models/w_null.mdl"
 	"anim_prefix"		" "
@@ -18,12 +18,10 @@ WeaponData
 	"item_type"			"powerup"
 	"item_worth"		"50"
 	"is_droppable"		"1"
-
+	"is_wieldable"		"0"
 	"occult_min"		"5"
 	"occult_power"		"hacking"
 	"equip_effect"		"Item (Occult Hacking)"
-
-	"is_wieldable"		"0"
 
 	SoundData	// added by wesp
 	{
@@ -40,7 +38,7 @@ WeaponData
 		{
 			"640"
 			{
-				"file"		"hud/Inventory_Images/General_Items/braid_sel"
+				"file"		"hud/Inventory_Images/General_Items/braid_sel"	// changed by wesp
 				"x"		"0"
 				"y"		"0"
 				"width"	"100"
@@ -51,7 +49,7 @@ WeaponData
 		{
 			"640"
 			{
-				"file"		"hud/Inventory_Images/General_Items/braid"
+				"file"		"hud/Inventory_Images/General_Items/braid"	// changed by wesp
 				"x"		"0"
 				"y"		"0"
 				"width"	"100"

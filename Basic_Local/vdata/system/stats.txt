@@ -1224,8 +1224,8 @@ StatData
 			"New"		"10"
 			"Raise"	"Current_Rating * 5"
 //			// Or:
-//				// "Cost" "0 10"
-//				// "Cost" "1+ 5"
+//				// "Cost"	"0 10"
+//				// "Cost"	"1+ 5"
 ////"Raise_Clan_Discipline"	"Current_Rating * 5"
 ////"Raise_Other_Discipline"	"Current_Rating * 7"
 		}
@@ -1761,7 +1761,7 @@ StatData
 			{
 				"Name"		"Force d'âme"
 				"InternalName"	"Fortitude"
-				"HelpText"	"Force d'âme offre une constitution surnaturelle. Cela vous garantit qu'une certaine quantité de dégâts provenant d'une attaque, quelle qu'en soit la source, sera ignorée. L'utilisation de Force d'âme n'est pas une violation de la Mascarade."
+				"HelpText"	"Force d'âme offre une constitution surnaturelle. Cela vous garantit qu'une certaine quantité de dégâts provenant d'une attaque, quelle qu'en soit la source, sera ignorée, à l'exception du feu et de la chaleur. L'utilisation de Force d'âme n'est pas une violation de la Mascarade."	// changed by wesp
 				"HelpTextH1"	"Niveau 1 :"
 				"HelpTextH2"	"Niveau 2 :"
 				"HelpTextH3"	"Niveau 3 :"
@@ -1800,7 +1800,7 @@ StatData
 			{
 				"Name"		"Occultation"
 				"InternalName"	"Obfuscate"
-				"HelpText"		"Invisibilité vampirique. Vous ne pouvez activer l'Occultation que si personne ne peut vous voir. Si vous restez immobile, le chronomètre se fige et l'Occultation peut rester ainsi indéfiniment. Vous pouvez réaliser des assassinats furtifs tout en restant invisible avec la touche d'attaque. Chaque niveau offre les avantages des niveaux précédents et n'entraîne aucun risque de violation de la Mascarade. Durant la frénésie, les limites de niveau sont ignorés."	// changed by wesp
+				"HelpText"		"Invisibilité vampirique. Vous ne pouvez activer l'Occultation que si personne ne peut vous voir. Si vous restez immobile, le chronomètre se fige et l'Occultation peut rester ainsi indéfiniment. Vous pouvez rester invisible et réaliser des assassinats furtifs avec la touche d'attaque."	// changed by wesp
 				"HelpTextH1"	"Niveau 1 : Camouflage"
 				"HelpTextH2"	"Niveau 2 : Invisibilité limitée"
 				"HelpTextH3"	"Niveau 3 : Tueur camouflé"
@@ -1810,7 +1810,7 @@ StatData
 				"HelpTextL2"	"Vous pouvez rester invisible en vous accroupissant. Vous redeviendrez visible si vous touchez quelqu'un, si vous interagissez avec l'environnement. Coûte 1 point de sang et dure 20 secondes par activation."	// changed by wesp
 				"HelpTextL3"	"Vous pouvez rester invisible en vous accroupissant. Faites attention à ne rien toucher, sinon vous redeviendrez visible. De plus, toute attaque de mêlée ou sans arme qui interrompt l'Occultation niveau 3 entraînera 50 pour cent de dégâts supplémentaires. Coûte 1 point de sang et dure 22 secondes par activation."	// changed by wesp
 				"HelpTextL4"	"Vous pouvez vous déplacer librement en étant invisible. Vous redeviendrez visible si vous interagissez avec l'environnement ou si vous touchez quelqu'un. De plus, toute attaque de mêlée ou sans arme qui interrompt l'Occultation niveau 4 entraînera le double de dégâts. Coûte 1 point de sang et dure 24 secondes par activation."	// changed by wesp
-				"HelpTextL5"	"Vous pouvez vous déplacer et interagir avec l'environnement en toute liberté. Vous redeviendrez visible si vous touchez quelqu'un. Vous pouvez réaliser des assassinats furtifs tout en restant invisible avec la touche utiliser. De plus, toute attaque de mêlée ou sans arme qui interrompt l'Occultation niveau 5 entraînera le triple de dégâts. Coûte 1 point de sang et dure 26 secondes par activation."	// changed by wesp
+				"HelpTextL5"	"Vous pouvez vous déplacer et interagir avec l'environnement en toute liberté. Vous redeviendrez visible si vous touchez quelqu'un ou quelque chose. Vous pouvez réaliser des assassinats furtifs tout en restant invisible avec la touche utiliser. De plus, toute attaque de mêlée ou sans arme qui interrompt l'Occultation niveau 5 entraînera le triple de dégâts. Coûte 1 point de sang et dure 26 secondes par activation."	// changed by wesp
 
 				"Min"			"-1"
 				"Max"			"5"

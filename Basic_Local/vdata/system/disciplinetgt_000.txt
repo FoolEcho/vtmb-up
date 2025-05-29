@@ -22,6 +22,7 @@ DisciplineTgtList
 //	"CharTemplate"		"<StatTemplateName>"
 
 
+
 // ---------------------
 
 
@@ -337,25 +338,27 @@ DisciplineTgt
 
 	Effect_Src_Instant
 	{
-		FREEME_Particle_ThirdPerson
+		Particle_ThirdPerson	// changed by wesp
 		{
 			"Entity"		"disc_particle"
 			"RateMin"		"1.0"
 			"OpacityMin"	"1.0"
 			"SizeMin"		"1.0"
 //			"ParticleName"	"D_Animalism_Brood_Src_Emitter"
-			"AttachType"	"BoneTree"
-			"AttachName"	""
+			"ParticleName"	"d_animalism_ravens_cast_emitter"	// added by wesp
+			"AttachType"	"BoneSinglePoint"	// changed by wesp
+			"AttachName"	"Bip01 Head"	// changed by wesp
 		}
 
-		FREEME_Particle_FirstPerson
+		Particle_FirstPerson	// changed by wesp
 		{
 			"Entity"		"disc_particle"
 			"RateMin"		"1.0"
 			"OpacityMin"	"1.0"
 			"SizeMin"		"1.0"
 //			"ParticleName"	"D_Animalism_Brood_Src_View_Emitter"
-			"AttachType"	"ScreenBorder"
+			"ParticleName"	"d_animalism_ravens_hud_emitter"	// added by wesp
+			"AttachType"	"ScreenCenter"	// changed by wesp
 			"AttachName"	""
 		}
 
@@ -391,7 +394,7 @@ DisciplineTgt
 		}
 
 		"AI_Schedule"		"SCHED_TROIKA_D_RAVENS"
-		"Duration"			"7-12"
+		"Duration"			"10"	// changed by wesp
 
 		Effect_Tgt_Hit
 		{
@@ -647,18 +650,6 @@ DisciplineTgt
 //
 // ADD DISCIPLINESTRATA EFFECTS BELOW THIS LINE
 //
-		Affects_Table	// added by wesp
-		{
-			Affects_Filters
-			{
-				"CharTemplate"		"Doggie"
-			}
-
-			Mapping
-			{
-				"HitTable"	"Hit_Invulnerable"
-			}
-		}
 
 		Affects_Table
 		{
@@ -813,7 +804,7 @@ DisciplineTgt
 	{
 		"Speed"		"500"
 		"Model"		"models\character\monster\animalism_beetle\animalism_beetle.mdl"
-		"Particle"	"d_animalism_beetle_emitter"
+		"Particle"		"d_animalism_beetle_emitter"
 		"Particle_Hit"	"D_Animalism_beetle_tgt_emitter"
 	}
 
@@ -1117,7 +1108,7 @@ DisciplineTgt
 
 			Mapping
 			{
-				"HitTable"	"Hit_Invulnerable"
+				"HitTable"	"Hit_Supernatural_NoEffect"
 			}
 		}
 
@@ -1130,7 +1121,7 @@ DisciplineTgt
 
 			Mapping
 			{
-				"HitTable"	"Hit_Invulnerable"
+				"HitTable"	"Hit_Supernatural_NoEffect"
 			}
 		}
 
@@ -1503,25 +1494,27 @@ DisciplineTgt
 
 	Effect_Src_Instant
 	{
-		FREEME_Particle_ThirdPerson
+		Particle_ThirdPerson	// changed by wesp
 		{
 			"Entity"		"disc_particle"
 			"RateMin"		"1.0"
 			"OpacityMin"	"1.0"
 			"SizeMin"		"1.0"
-//			"ParticleName"	"D_Animalism_Spectral_Wolves_Src_Emitter"
-			"AttachType"	"BoneTree"
-			"AttachName"	""
+//			"ParticleName"	"D_Animalism_Spectral_Wolves_Tgt_Emitter"
+			"ParticleName"	"d_animalism_wolves_cast_emitter"	// added by wesp
+			"AttachType"	"BoneSinglePoint"	// changed by wesp
+			"AttachName"	"Bip01 Head"	// changed by wesp
 		}
 
-		FREEME_Particle_FirstPerson
+		Particle_FirstPerson	// changed by wesp
 		{
 			"Entity"		"disc_particle"
 			"RateMin"		"1.0"
 			"OpacityMin"	"1.0"
 			"SizeMin"		"1.0"
 //			"ParticleName"	"D_Animalism_Spectral_Wolves_Src_View_Emitter"
-			"AttachType"	"ScreenBorder"
+			"ParticleName"	"d_animalism_wolves_hud_emitter"	// added by wesp
+			"AttachType"	"ScreenCenter"	// changed by wesp
 			"AttachName"	""
 		}
 
@@ -1534,7 +1527,6 @@ DisciplineTgt
 	Effect_Src_Hit
 	{
 	}
-
 
 	// Effects:
 	Hit_Invulnerable
@@ -1568,6 +1560,30 @@ DisciplineTgt
 				"AttachName"	""
 			}
 
+			// added by EntenSchreck
+			Particle_ThirdPerson
+			{
+				"Entity"		"disc_particle"
+				"RateMin"		"1.0"
+				"OpacityMin"	"1.0"
+				"SizeMin"		"1.0"
+				"ParticleName"	"d_animalism_wolf_into_emitter"
+				"AttachType"	"Origin"
+				"AttachName"	""
+			}
+
+			// added by EntenSchreck
+			Particle_ThirdPerson
+			{
+				"Entity"		"disc_particle"
+				"RateMin"		"1.0"
+				"OpacityMin"	"1.0"
+				"SizeMin"		"1.0"
+				"ParticleName"	"d_animalism_wolf_into_emitter2"
+				"AttachType"	"Origin"
+				"AttachName"	""
+			}
+
 			SoundFX
 			{
 				"Sound"		"Disciplines/Animalism/Wolves/Maul.wav"
@@ -1598,6 +1614,30 @@ DisciplineTgt
 				"SizeMin"		"1.0"
 //				"ParticleName"	"D_Animalism_Spectral_Wolves_Tgt_Emitter"
 				"AttachType"	"BoneTree"
+				"AttachName"	""
+			}
+
+			// added by EntenSchreck
+			Particle_ThirdPerson
+			{
+				"Entity"		"disc_particle"
+				"RateMin"		"1.0"
+				"OpacityMin"	"1.0"
+				"SizeMin"		"1.0"
+				"ParticleName"	"d_animalism_wolf_into_emitter"
+				"AttachType"	"Origin"
+				"AttachName"	""
+			}
+
+			// added by EntenSchreck
+			Particle_ThirdPerson
+			{
+				"Entity"		"disc_particle"
+				"RateMin"		"1.0"
+				"OpacityMin"	"1.0"
+				"SizeMin"		"1.0"
+				"ParticleName"	"d_animalism_wolf_into_emitter2"
+				"AttachType"	"Origin"
 				"AttachName"	""
 			}
 
@@ -1685,7 +1725,7 @@ DisciplineTgt
 	Hit_Strata_2_No_Wolf // TJP- Lesser solution
 	{
 		"InheritFrom"		"Hit_Supernatural_Partial_No_Wolf"
-		"Dmg_Health"		"30%"
+            "Dmg_Health"		"30%"
 	}
 
 
@@ -1991,25 +2031,27 @@ DisciplineTgt
 
 	Effect_Src_Instant
 	{
-		FREEME_Particle_ThirdPerson
+		Particle_ThirdPerson	// changed by wesp
 		{
 			"Entity"		"disc_particle"
 			"RateMin"		"1.0"
 			"OpacityMin"	"1.0"
 			"SizeMin"		"1.0"
 //			"ParticleName"	"D_Animalism_Bloodsuckers_Src_Emitter"
-			"AttachType"	"BoneTree"
-			"AttachName"	""
+			"ParticleName"	"d_animalism_bats_cast_emitter"	// added by wesp
+			"AttachType"	"BoneSinglePoint"	// changed by wesp
+			"AttachName"	"Bip01 Head"	// changed by wesp
 		}
 
-		FREEME_Particle_FirstPerson
+		Particle_FirstPerson	// changed by wesp
 		{
 			"Entity"		"disc_particle"
 			"RateMin"		"1.0"
 			"OpacityMin"	"1.0"
 			"SizeMin"		"1.0"
 //			"ParticleName"	"D_Animalism_Bloodsuckers_Src_View_Emitter"
-			"AttachType"	"ScreenBorder"
+			"ParticleName"	"d_animalism_bats_hud_emitter"	// added by wesp
+			"AttachType"	"ScreenCenter"	// changed by wesp
 			"AttachName"	""
 		}
 
@@ -2094,7 +2136,6 @@ DisciplineTgt
 	{
 		"AI_Schedule"		"SCHED_TROIKA_D_BLOODSUCKERS_COMMUNION"
 		"Duration"			"3"	// changed by wesp
-
 
 		Effect_Tgt_Hit
 		{
@@ -2211,7 +2252,7 @@ DisciplineTgt
 				"RateMin"		"1.0"
 				"OpacityMin"	"1.0"
 				"SizeMin"		"1.0"
-				"ParticleName"	"D_Animalism_Bat_Tgt_Emitter"
+ 				"ParticleName"	"D_Animalism_Bat_Tgt_Emitter"
 				"AttachType"	"BoneSinglePoint"
 				"AttachName"	"Bip01 Spine"
 			}
@@ -2244,13 +2285,15 @@ DisciplineTgt
 		OnEnd
 		{
 			"Clear_Copy_Prop"	"1"
+			"Dmg_Health"		"50-110%"	// added by EntenSchreck
 
-			Trigger_Casting
-			{
-				"DisciplineFX"	"Animalism_Bloodsuckers_Return_Strata_1"
-				"Source"		"Target"
-				"Affects"		"Self"
-			}
+			//Disabled to free up DisciplineFx slot for Thaumaturgy
+			//Trigger_Casting
+			//{
+			//	"DisciplineFX"	"Animalism_Bloodsuckers_Return_Strata_1"
+			//	"Source"		"Target"
+			//	"Affects"		"Self"
+			//}
 
 			SoundFX
 			{
@@ -2263,7 +2306,6 @@ DisciplineTgt
 	{
 		"AI_Schedule"		"SCHED_TROIKA_D_BLOODSUCKERS_COMMUNION"
 		"Duration"			"3"
-
 
 		Effect_Tgt_Hit
 		{
@@ -2445,6 +2487,32 @@ DisciplineTgt
 //
 // ADD DISCIPLINESTRATA EFFECTS BELOW THIS LINE
 //
+
+		Affects_Table	// added by wesp
+		{
+			Affects_Filters
+			{
+				"CharTemplate"		"Zombie"
+			}
+
+			Mapping
+			{
+				"HitTable"	"Hit_Supernatural_NoEffect"
+			}
+		}
+
+		Affects_Table	// added by wesp
+		{
+			Affects_Filters
+			{
+				"CharTemplate"		"ManBatMinion"
+			}
+
+			Mapping
+			{
+				"HitTable"	"Hit_Supernatural_NoEffect"
+			}
+		}
 
 		Affects_Table
 		{
@@ -3116,18 +3184,29 @@ DisciplineTgt
 
 	Effect_Src_Instant
 	{
-// wesp		"ProgBarSnd"	"Disciplines/Animalism/Pestilence_Ramp.wav"
-// wesp		"TargetingSnd"	"Disciplines/Animalism/Pestilence_Hit.wav"
+// wesp				"ProgBarSnd"	"Disciplines/Animalism/Pestilence_Ramp.wav"
+// wesp				"TargetingSnd"	"Disciplines/Animalism/Pestilence_Hit.wav"
 
-		FREEME_Particle_ThirdPerson
+		Particle_ThirdPerson
 		{
 			"Entity"		"disc_particle"
 			"RateMin"		"1.0"
 			"OpacityMin"	"1.0"
 			"SizeMin"		"1.0"
-//			"ParticleName"	"D_Animalism_Pestilence_Emitter"
-			"AttachType"	"BoneSinglePoint"
-			"AttachName"	"Bip01 Spine"
+			"ParticleName"	"d_animalisim_ground_emitter"
+			"AttachType"	"Origin"
+			"AttachName"	""
+		}
+
+		Particle_ThirdPerson
+		{
+			"Entity"		"disc_particle"
+			"RateMin"		"1.0"
+			"OpacityMin"	"1.0"
+			"SizeMin"		"1.0"
+			"ParticleName"	"d_animalisim_bodysmoke_emitter"
+			"AttachType"	"BoneTree"
+			"AttachName"	""
 		}
 
 		Particle_FirstPerson
@@ -3136,7 +3215,7 @@ DisciplineTgt
 			"RateMin"		"1.0"
 			"OpacityMin"	"1.0"
 			"SizeMin"		"1.0"
-			"ParticleName"	"D_Animalism_Beetle_HUD_Emitter"
+			"ParticleName"	"D_Animalism_Pestilence_HUD_Emitter"	// added by wesp
 			"AttachType"	"ScreenCenter"
 			"AttachName"	""
 		}
@@ -3348,7 +3427,7 @@ DisciplineTgt
 	{
 		"Speed"		"200"
 		"Model"		"models\character\monster\animalism_bat\animalism_bat_return.mdl"
-		"Particle"	""
+		"Particle"	"d_animalism_bat_trail_emitter"	// added by EntenSchreck
 	}
 
 	Effect_Src_Instant
@@ -3373,75 +3452,6 @@ DisciplineTgt
 	}
 }
 
-// Animalism: Level 4 Return (Strata 1)
-DisciplineTgt
-{
-	"Name"		"Retour des suceurs de sang (couche 1)"
-	"InternalName"	"Animalism_Bloodsuckers_Return_Strata_1"
 
-	"Discipline"		"Animalism"
-	"Level"				"4"
-
-	"BloodCost"			"0"
-	"Overt"				"0"
-	"SupernaturalLvl"		"0"
-	"RecoveryTime"			"0"
-
-	AoE
-	{
-		"Range"		"0"
-		"Source"	"Self"		// Self/Target
-		"Affects"	"Target"	// Target/Radius:#/Cone:#
-		Affects_Filters
-		{
-			"Critter"		"1"
-			"No_Self"		"1"
-		}
-
-		// Tables:
-		Affects_Table
-		{
-			Affects_Filters
-			{
-				"Supernatural"	"1"
-				"Player"		"1"
-			}
-
-			Default_Mapping
-			{
-				"HitTable"	"Hit_Player_Supernatural"
-			}
-		}
-	}
-
-	Projectile
-	{
-		"Speed"		"500"
-		"Model"		"models\character\monster\animalism_bat\animalism_bat_return.mdl"
-		"Particle"	""
-	}
-
-	Effect_Src_Instant
-	{
-//		"ProgBarSnd"	"Disciplines/Animalism/Bloodsuckers_Return_Ramp.wav"
-//		"TargetingSnd"	"Disciplines/Animalism/Bloodsuckers_Return_Hit.wav"
-	}
-
-	Effect_Src_Hit
-	{
-		SoundFX
-		{
-//			"Sound"		"Disciplines/Animalism/_Hit.wav"
-		}
-	}
-
-	// Effects:
-	Hit_Player_Supernatural
-	{
-		"Blood_Suck"		"40" //percentage of victim's total blood
-		"Duration"		"0"
-		"Dmg_Health_Src"	"50" //damage the victim suffers % (can be range)
-	}
-}
-
+// ---------------------
 }

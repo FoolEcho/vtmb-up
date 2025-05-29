@@ -5,7 +5,7 @@ WeaponData
 	"printname"		"Hache d'incendie"
 	"description"		"C'est un outil de fou. Qui d'autre attaquerait un incendie avec une hache ?"
 	"item_worth"		"180"
-
+	"player_sell"		"60"		// added by wesp
 	"viewmodel"		"models/weapons/w_null.mdl"
 	"playermodel"		"models/weapons/fire_axe/ground/g_fire_axe.mdl"
 	"wieldmodel_f"		"models/weapons/fire_axe/wield/w_f_fire_axe.mdl"
@@ -24,6 +24,9 @@ WeaponData
 	"item_type"		"weapon_melee"
 	"sound_group"		"Bush_Hook"
 	"knockback_chance"	"0.05"
+
+	"is_stackable" "1"	 // added by wesp
+	"stack_limit" "5"	 // added by wesp
 
 	// Sounds...
 	SoundData

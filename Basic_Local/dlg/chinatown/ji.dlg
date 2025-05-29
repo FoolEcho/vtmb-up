@@ -506,8 +506,8 @@
 {	506	}{	[Chante]Lu est mort, Lu est mort, Lu est mort, Lu est mort, plus de soiffard à tête de singe, Lu est mort !	}{	[Chante]Lu est mort, Lu est mort, Lu est mort, Lu est mort, plus de soiffard à tête de singe, Lu est mort !	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	507	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	508	}{	[Chante, saoul]Da da de doy e doy, J'allais tuer Lu, Puis j'ai dis J'aime Lu, Tout va mieux entre Ji et Lu, tout est bien.	}{	[Chante, saoul]Da da de doy e doy, J'allais tuer Lu, Puis j'ai dis J'aime Lu, Tout va mieux entre Ji et Lu, tout est bien.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	509	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
-{	510	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	509	}{	Mon avenir brille-t-il, Ji ?	}{	Mon avenir brille-t-il, Ji ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai hâte de connaître mon sort. . .	}
+{	510	}{	Amuse-toi bien.	}{	Amuse-toi bien.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	La fête...	}
 {	511	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	512	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	513	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -558,7 +558,7 @@
 {	558	}{	Ici voyance, pas renseignements.	}{	Ici voyance, pas renseignements.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	559	}{	J'aimerais connaître mon futur.	}{	J'aimerais connaître mon futur.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai hâte de connaître mon sort. . .	}
 {	560	}{	Vous êtes Ji Wen Ja ?	}{	Vous êtes Ji Wen Ja ?	}{	301	}{	G.Lu_Ji >= 1 and G.Ji_Lu < 6	}{	}{	}{	}{	}{	}{	}{	}{	J. N. Ja ? Ja, Schön. . .	}
-{	561	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	561	}{	N'avez-vous pas parlé de gagner de l'argent ?	}{	N'avez-vous pas parlé de gagner de l'argent ?	}{	71	}{	G.Patch_Plus == 1 and G.Ji_Lu == 0	}{	}{	}{	}{	}{	}{	}{	}{	Il a parlé de gloireux dollars, il l'a fait.	}
 {	562	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	563	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	564	}{	M'intéresse pas. Au revoir.	}{	M'intéresse pas. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je sais déjà. . . je ne veux rien savoir. . .	}

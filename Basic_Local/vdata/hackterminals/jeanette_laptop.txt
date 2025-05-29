@@ -96,7 +96,7 @@ bertram@schrecknet.vtm - **"	// changed by wesp
 		"subject"	"Clandestinité"
 		"sender"	"Bertram"
 		"body"		"Je vais me cacher jusqu'à tant que ta soeur se calme. Dis-lui que je ne suis d'aucune menace et qu'elle peut me contacter."
-		"dependency"	"G.Therese_Quest == 1"
+		"dependency"	"G.Therese_Quest == 1 or (G.Therese_Quest >= 1 and G.PP == 1)"	// changed by wesp
 	}
 
 	Email

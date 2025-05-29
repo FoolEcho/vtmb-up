@@ -89,11 +89,11 @@
 {	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	91	}{	Juste, ce serait le double.	}{	Juste, ce serait le double.	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Très bien. Tenez.	}{	Très bien. Tenez.	}{	81	}{	pc.CurrentMoney() >= 200	}{	pc.MoneyRemove(200); G.E_Missing = 3; G.Vandal_Pissed = 0; pc.AwardExperience("Danielle02"); G.Vandal_Plus = 1	}{	}{	}{	}{	}{	}{	}{	Petite goule avaricieuse. Prenez votre prix du sang.	}
-{	93	}{	Je reviendrai avec le cash. . .	}{	Je reviendrai avec le cash. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai avec de l'or pour effacer votre mémoire. Adieu. 	}
-{	94	}{	Oubliez que j'ai dit quoi que ce soit. Je n'ai pas besoin de votre sang.	}{	Oubliez que j'ai dit quoi que ce soit. Je n'ai pas besoin de votre sang.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez perdu votre or, petit esclave du sang. Je ne suis plus là.	}
-{	95	}{	Tu sais quoi, j'aimerais mieux goûter ton sang.	}{	Tu sais quoi, j'aimerais mieux goûter ton sang.	}{	0	}{	G.Patch_Plus == 1 and G.Vandal_Plus == 0	}{	G.Vandal_Fight = 1	}{	}{	}{	}{	}{	}{	}{	Pas assez juste, car je vais boire le sang de ton corps.	}
-{	96	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Très bien. Tenez.	}{	Très bien. Tenez.	}{	81	}{	pc.CurrentMoney() >= 200 and G.Patch_Plus == 0	}{	pc.MoneyRemove(200); G.E_Missing = 3; G.Vandal_Pissed = 0; pc.AwardExperience("Danielle02")	}{	}{	}{	}{	}{	}{	}{	Petite goule avaricieuse. Prenez votre prix du sang.	}
+{	93	}{	Très bien. Tenez.	}{	Très bien. Tenez.	}{	81	}{	pc.CurrentMoney() >= 200 and G.Patch_Plus == 1	}{	pc.MoneyRemove(200); G.E_Missing = 3; G.Vandal_Pissed = 0; pc.AwardExperience("Danielle02"); G.Vandal_Plus = 1	}{	}{	}{	}{	}{	}{	}{	Petite goule avaricieuse. Prenez votre prix du sang.	}
+{	94	}{	Je reviendrai avec le cash. . .	}{	Je reviendrai avec le cash. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je reviendrai avec de l'or pour effacer votre mémoire. Adieu. 	}
+{	95	}{	Oubliez que j'ai dit quoi que ce soit. Je n'ai pas besoin de votre sang.	}{	Oubliez que j'ai dit quoi que ce soit. Je n'ai pas besoin de votre sang.	}{	0	}{	G.Patch_Plus == 1 and G.Vandal_Plus == 0	}{	G.Vandal_Fight = 1	}{	}{	}{	}{	}{	}{	}{	Vous avez perdu votre or, petit esclave du sang. Je ne suis plus là.	}
+{	96	}{	Tu sais quoi, j'aimerais mieux goûter ton sang.	}{	Tu sais quoi, j'aimerais mieux goûter ton sang.	}{	0	}{	G.Patch_Plus == 1 and G.Vandal_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Pas assez juste, car je vais boire le sang de ton corps.	}
 {	97	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	98	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -396,7 +396,7 @@
 {	396	}{	Ha ha ha. . .	}{	Ha ha ha. . .	}{	481	}{	Dementation 1 & G.Vandal_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	397	}{	Vendez-moi du sang.	}{	Vendez-moi du sang.	}{	111	}{	Thaumaturgy 1 & (G.Patch_Plus == 1 and G.Vandal_Quest == 0)	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	398	}{	Je suis un peu pressé là. Votre sang fera l'affaire.	}{	Je suis un peu pressée là. Votre sang fera l'affaire.	}{	101	}{	G.Story_State >= 100	}{	}{	}{	}{	}{	}{	}{	}{	Peut-être que vos veines pourraient me donner du sang.	}
-{	399	}{	Pourquoi ne pourrais-je pas vous donner 200$ pour oublier la fille ?	}{	Pourquoi ne pourrais-je pas vous donner 200$ pour oublier la fille ?	}{	81	}{	pc.CurrentMoney() >= 200 and G.Vandal_Quest == 0	}{	pc.MoneyRemove(200)	}{	}{	}{	}{	}{	}{	}{	J'ai 200 pièces d'or pour provoquer une petite amnésie.	}
+{	399	}{	Pourquoi ne pourrais-je pas vous donner 200$ pour oublier la fille ?	}{	Pourquoi ne pourrais-je pas vous donner 200$ pour oublier la fille ?	}{	81	}{	G.Patch_Plus == 1 and pc.CurrentMoney() >= 200	}{	pc.MoneyRemove(200); G.Vandal_Shop = 1; G.Vandal_Quest = 4; G.E_Missing = 3; G.Vandal_Pissed = 0; pc.SetQuest("Danielle",6)	}{	}{	}{	}{	}{	}{	}{	J'ai 200 pièces d'or pour provoquer une petite amnésie.	}
 {	400	}{	Ce n'est pas fini, goule.	}{	Ce n'est pas fini, goule.	}{	0	}{	IsClan(pc,"Nosferatu") and G.Story_State < 100 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	401	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	402	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -492,7 +492,7 @@
 {	492	}{	A cause du prix du nectar que vous alliez me vendre.	}{	A cause du prix du nectar que vous alliez me vendre.	}{	0	}{	G.Patch_Plus == 0	}{	G.Vandal_Blood = G.Vandal_Blood +1; npc.StartBarter(G.Story_State, 0); preBarter("Vandal")	}{	}{	}{	}{	}{	}{	}{	}
 {	493	}{	Faut-il vraiment une raison ? Et riez, jusqu'à ce que nous nous revoyions. . .	}{	Faut-il vraiment une raison ? Et riez, jusqu'à ce que nous nous revoyions. . .	}{	0	}{	G.Story_State < 100 and G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	494	}{	A cause du prix du nectar que vous alliez me vendre.	}{	A cause du prix du nectar que vous alliez me vendre.	}{	0	}{	G.Patch_Plus == 1	}{	G.Vandal_Blood = G.Vandal_Blood +1; pc.AwardExperience("Danielle02"); G.Vandal_Plus = 1; npc.StartBarter(G.Story_State, 0); preBarter("Vandal")	}{	}{	}{	}{	}{	}{	}{	}
-{	495	}{	Faut-il vraiment une raison ? Et riez, jusqu'à ce que nous nous revoyions. . .	}{	Faut-il vraiment une raison ? Et riez, jusqu'à ce que nous nous revoyions. . .	}{	0	}{	G.Story_State < 100 and G.Patch_Plus == 0	}{	pc.AwardExperience("Danielle02"); G.Vandal_Plus = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	495	}{	Faut-il vraiment une raison ? Et riez, jusqu'à ce que nous nous revoyions. . .	}{	Faut-il vraiment une raison ? Et riez, jusqu'à ce que nous nous revoyions. . .	}{	0	}{	G.Story_State < 100 and G.Patch_Plus == 0	}{	pc.AwardExperience("Danielle02")	}{	}{	}{	}{	}{	}{	}{	}
 {	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

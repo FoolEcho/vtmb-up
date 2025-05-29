@@ -4,7 +4,7 @@
 {	4	}{	Vous êtes beaucoup trop mignon pour travailler dans un endroit pareil.	}{	Vous êtes beaucoup trop mignon pour travailler dans un endroit pareil.	}{	151	}{	F_Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	Vous devriez être acteur, pas vigile.	}
 {	5	}{	Je suis un porte-clés, donnez-moi à manger ! Ensuite je ne vous importunerai plus.	}{	Je suis un porte-clés, donnez-moi à manger ! Ensuite je ne vous importunerai plus.	}{	131	}{	Dementation 1	}{	G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
 {	6	}{	Donnez-moi vos clés et laissez-moi.	}{	Donnez-moi vos clés et laissez-moi.	}{	131	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
-{	7	}{	Mais je suis d'ici et j'ai besoin de vos clés.	}{	Mais je suis ici et j'ai besoin de vos clés.	}{	131	}{	Presence 1 & G.Patch_Plus == 1	}{	dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	7	}{	J'ai le droit d'être ici et j'ai besoin de vos clés.	}{	J'ai le droit d'être ici et j'ai besoin de vos clés.	}{	131	}{	Presence 1 & G.Patch_Plus == 1	}{	dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
 {	8	}{	Et qui va m'arrêter ? Vous ?	}{	Et qui va m'arrêter ? Vous ?	}{	11	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Un simple mortel ne pourrait m'arrêter.	}
 {	9	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Compris.	}
 {	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -14,7 +14,7 @@
 {	14	}{	Vous êtes beaucoup trop mignon pour travailler dans un endroit pareil.	}{	Vous êtes beaucoup trop mignon pour travailler dans un endroit pareil.	}{	151	}{	F_Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	Vous devriez être acteur, pas vigile.	}
 {	15	}{	Je suis un porte-clés, donnez-moi à manger ! Ensuite je ne vous importunerai plus.	}{	Je suis un porte-clés, donnez-moi à manger ! Ensuite je ne vous importunerai plus.	}{	131	}{	Dementation 1	}{	G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
 {	16	}{	Donnez-moi vos clés et laissez-moi.	}{	Donnez-moi vos clés et laissez-moi.	}{	131	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
-{	17	}{	Mais je suis d'ici et j'ai besoin de vos clés.	}{	Mais je suis ici et j'ai besoin de vos clés.	}{	131	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	J'ai le droit d'être ici et j'ai besoin de vos clés.	}{	J'ai le droit d'être ici et j'ai besoin de vos clés.	}{	131	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
 {	18	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	19	}{	Et qui va m'arrêter ? Vous ?	}{	Et qui va m'arrêter ? Vous ?	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Un simple mortel ne pourrait m'arrêter.	}
 {	20	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Compris.	}
@@ -24,7 +24,7 @@
 {	24	}{	Vous êtes beaucoup trop mignon pour travailler dans un endroit pareil.	}{	Vous êtes beaucoup trop mignon pour travailler dans un endroit pareil.	}{	151	}{	F_Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	Vous devriez être acteur, pas vigile.	}
 {	25	}{	Je suis un porte-clés, donnez-moi à manger ! Ensuite je ne vous importunerai plus.	}{	Je suis un porte-clés, donnez-moi à manger ! Ensuite je ne vous importunerai plus.	}{	131	}{	Dementation 1	}{	G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
 {	26	}{	Donnez-moi vos clés et laissez-moi.	}{	Donnez-moi vos clés et laissez-moi.	}{	131	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
-{	27	}{	Mais je suis d'ici et j'ai besoin de vos clés.	}{	Mais je suis ici et j'ai besoin de vos clés.	}{	131	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	J'ai le droit d'être ici et j'ai besoin de vos clés.	}{	J'ai le droit d'être ici et j'ai besoin de vos clés.	}{	131	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles(); G.Guard_Dominated = 1; G.CS_Key = 1; pc.GiveItem("item_k_clinic_cs_key")	}{	}{	}{	}{	}{	}{	}{	}
 {	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	29	}{	Vous voulez m'arrêter ?	}{	Vous voulez m'arrêter ?	}{	51	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Un simple mortel ne pourrait m'arrêter.	}
 {	30	}{	OK.	}{	OK.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Compris.	}

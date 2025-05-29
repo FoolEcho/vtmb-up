@@ -3,7 +3,7 @@
 WeaponData
 {
 	"printname"				"Poche de sang noble"
-	"description"			"Une poche contenant le sang des plus beaux spécimens humains. En l'utilisant, vous regagnerez des points de sang."
+	"description"			"Une poche contenant le sang des plus beaux spécimens humains. En l'utilisant, vous regagnerez 5 points de sang."	// changed by wesp
 	"item_worth"			"110"
 
 	"viewmodel"			"models/w_null.mdl"
@@ -34,13 +34,13 @@ WeaponData
 	Magazine
 	{
 		"ammoprintname"		"Poche de sang noble"
-		"ammodescription"	"Une poche contenant le sang des plus beaux spécimens humains. En l'utilisant, vous regagnerez des points de sang."
+		"ammodescription"	"Une poche contenant le sang des plus beaux spécimens humains. En l'utilisant, vous regagnerez 5 points de sang."	// changed by wesp
 		"ammo_worth"		"110"
 
 		"Type"				"BlueBloodRound"
 		"Size"				"1"
 		"Default_Size"		"1"
-		"ReloadTime"		"5"
+		"ReloadTime"		"1"	// changed by wesp
 		
 		SoundData
 		{

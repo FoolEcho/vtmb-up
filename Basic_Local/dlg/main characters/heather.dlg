@@ -71,7 +71,7 @@
 {	71	}{	Mais vous avez fait quelque chose. J'ai embrassé votre poignet. . . Je le sens en moi. . . Que m'avez-vous fait ?	}{	Mais vous avez fait quelque chose. J'ai embrassé votre poignet. . . Je le sens en moi. . . Que m'avez-vous fait ?	}{	#	}{	npc.SetDisposition("lay", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	73	}{	Bon, laissez tomber. . . Et ne dites rien. Tout ira bien.	}{	Bon, laissez tomber. . . Et ne dites rien. Tout ira bien.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il est des choses qu'il vaut mieux oublier. . . Effacez-moi de votre esprit.	}
-{	74	}{	Je vous ai fait boire mon sang. Mon sang de vampire. Il peut vous guérir.	}{	Je vous ai fait boire mon sang. Mon sang de vampire. Il peut vous guérir.	}{	101	}{	}{	G.Heather_SM = 1	}{	}{	}{	}{	}{	}{	}{	Je suis un enfant de la nuit, j'ai soif de sang et mon âme damnée vous a soignée. . .	}
+{	74	}{	Je vous ai fait boire mon sang. Mon sang de vampire. Il peut vous guérir.	}{	Je vous ai fait boire mon sang. Mon sang de vampire. Il peut vous guérir.	}{	101	}{	}{	G.Heather_SM = 3	}{	}{	}{	}{	}{	}{	}{	Je suis un enfant de la nuit, j'ai soif de sang et mon âme damnée vous a soignée. . .	}
 {	75	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	76	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	77	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1001,9 +1001,9 @@
 {	1001	}{	(Starting Condition)	}{	}{	891	}{	G.Heather_Armor == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1002	}{	(Starting Condition)	}{	}{	821	}{	G.Story_State >= 70 and G.Heather_Dream == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1003	}{	(Starting Condition)	}{	}{	771	}{	G.Heather_Fix == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1004	}{	(Starting Condition)	}{	}{	781	}{	G.Story_State >= 45 and G.Story_State < 65	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1004	}{	(Starting Condition)	}{	}{	781	}{	G.Story_State >= 55 and G.Story_State < 65	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1005	}{	(Starting Condition)	}{	}{	771	}{	G.Heather_Scared == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1006	}{	(Starting Condition)	}{	}{	731	}{	G.Story_State >= 35 and G.Story_State < 45	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1006	}{	(Starting Condition)	}{	}{	731	}{	G.Story_State >= 35 and G.Story_State < 55	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1007	}{	(Starting Condition)	}{	}{	771	}{	G.Story_State >= 30 and G.Story_State < 35	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1008	}{	(Starting Condition)	}{	}{	661	}{	G.Heather_Loan == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1009	}{	(Starting Condition)	}{	}{	521	}{	G.Story_State >= 25 and G.Story_State < 30	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1011,7 +1011,7 @@
 {	1011	}{	(Starting Condition)	}{	}{	261	}{	G.Heather_Warning == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1012	}{	(Starting Condition)	}{	}{	341	}{	G.Heather_Haven == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1013	}{	(Starting Condition)	}{	}{	121	}{	G.Story_State == 15	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1014	}{	(Starting Condition)	}{	}{	111	}{	G.Heather_Drank == 1 and IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1014	}{	(Starting Condition)	}{	}{	111	}{	G.Heather_Drank == 1 and (IsClan(pc,"Nosferatu") or G.Heather_SM == 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1015	}{	(Starting Condition)	}{	}{	91	}{	G.Heather_Drank == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1016	}{	(Starting Condition)	}{	}{	41	}{	G.Heather_Steve == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1017	}{	(Starting Condition)	}{	}{	31	}{	(G.Knox_Ghoul == 2 or G.Mercurio_Ghoul == 1) and G.Heather_Grandma == 2	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -48,7 +48,7 @@ TerminalDefinition
 		"subject"	"Une faveur"
 		"sender"	"LaCroix"
 		"body"		"Nous avons appris qu'une fiole de sang de loup-garou est parvenue entre les mains d'un journal à scandale local qui l'a envoyée à la clinique de Santa Monica pour l'analyser. Nous nous sommes occupés des responsables (avec grand soin, bien sûr). Mais il faut éviter à tout prix que ce sang soit analysé. Récupérez l'échantillon à la clinique et mettez-le dans votre boite aux lettres. Vous recevrez une indemnisation. -SL"
-		"dependency"	"G.Mercurio_Quest == 2"
+		"dependency"	"G.Mercurio_Quest >= 2"	// changed by wesp
 		"runscript"	"werewolfBloodQuestAssigned()"
 	}
 
@@ -66,15 +66,7 @@ TerminalDefinition
 		"subject"	"L'ouverture"
 		"sender"	"un ami"
 		"body"		"La partie commence. Un pion est joué."
-		"dependency"	"G.Story_State < 2 and G.Patch_Plus == 0"	// changed by wesp
-	}
-
-	Email
-	{
-		"subject"	"L'ouverture"
-		"sender"	"un ami"
-		"body"		"La partie commence. Un pion est joué."
-		"dependency"	"G.Story_State < 5 and G.Patch_Plus == 1"	// changed by wesp
+		"dependency"	"G.Story_State < 2 or G.Patch_Plus == 1"	// changed by wesp
 	}
 
 	Email
@@ -82,15 +74,7 @@ TerminalDefinition
 		"subject"	"Le premier pas"
 		"sender"	"un ami"
 		"body"		"Le roi blanc avance pour protéger son pion."
-		"dependency"	"G.Story_State == 5 and G.Patch_Plus == 0"	// changed by wesp
-	}
-
-	Email
-	{
-		"subject"	"Le premier pas"
-		"sender"	"un ami"
-		"body"		"Le roi blanc avance pour protéger son pion."
-		"dependency"	"G.Story_State >= 5 and G.Story_State < 20 and G.Patch_Plus == 1"	// changed by wesp
+		"dependency"	"G.Story_State == 5 or (G.Story_State >= 5 and G.PP == 1)"	// changed by wesp
 	}
 
 	Email
@@ -115,7 +99,7 @@ TerminalDefinition
 		"subject"	"Un sacrifice"
 		"sender"	"un ami"
 		"body"		"Un fou est sacrifié pour le roi."
-		"dependency"	"G.Story_State >= 20 and G.Story_State < 30"
+		"dependency"	"G.Story_State >= 20 and (G.Story_State < 30 or G.PP == 1)"	// changed by wesp
 	}
 
 	Email
@@ -123,7 +107,7 @@ TerminalDefinition
 		"subject"	"Un gambit"
 		"sender"	"un ami"
 		"body"		"Un gambit a été joué. Le roi reste exposé."
-		"dependency"	"G.Story_State >= 30 and G.Story_State < 40"
+		"dependency"	"G.Story_State >= 30 and (G.Story_State < 40 or G.PP == 1)"	// changed by wesp
 	}
 
 	Email
@@ -180,7 +164,7 @@ Jeanette"
 		"subject"	"Le prix"
 		"sender"	"un ami"
 		"body"		"Le prix d'une attaque se paie souvent plus tard."
-		"dependency"	"G.Story_State >= 40 and G.Story_State < 50"
+		"dependency"	"G.Story_State >= 40 and (G.Story_State < 50 or G.PP == 1)"	// changed by wesp
 	}
 
 	Email
@@ -260,7 +244,7 @@ Jeanette"
 		"subject"	"Library"
 		"sender"	"beckett@legend.vtm"
 		"body"		"Bonjour jeune homme... LaCroix vante votre débrouillardise, alors peut-être pourriez-vous m'assister sur un sujet important. Un confrère Gangrel, Scott, qui faisait des recherches pour mon compte à la bibliothèque municipale, y a remarqué un vampire du Sabbat. Etant occupé pour le moment, pourriez-vous le rencontrer à ma place dans l'ancien magasin de fumée à Santa Monica. Il vous donnera les détails. Scoot insistait beaucoup sur le fait que quelque chose se prépare. Et nous ne voudrions pas qu'il arrive quelque chose à tous ces précieux ouvrages, n'est-ce pas? - Beckett"
-		"dependency"	"G.Library_Ready == 1 and G.Patch_Plus == 1"
+		"dependency"	"G.Library_Ready >= 1 and G.Patch_Plus == 1"
 		"runscript"	"librarySetQuest()"
 	}
 
@@ -414,7 +398,7 @@ Email
 		"subject"	"La reine"
 		"sender"	"un ami"
 		"body"		"Attention à la reine noire"
-		"dependency"	"G.Story_State >= 50 and G.Story_State < 65"
+		"dependency"	"G.Story_State >= 50 and (G.Story_State < 65 or G.PP == 1)"
 	}
 
 	Email	// added by wesp
@@ -445,7 +429,7 @@ VV"
 		"subject"	"La campagne"
 		"sender"	"un ami"
 		"body"		"Le succès d'une campagne est déterminé par l'implication de votre adversaire."
-		"dependency"	"G.Story_State >= 65 and G.Story_State < 70"
+		"dependency"	"G.Story_State >= 65 and (G.Story_State < 70 or G.PP == 1)"
 	}
 
 	Email
@@ -453,7 +437,7 @@ VV"
 		"subject"	"Le fou blanc"
 		"sender"	"un ami"
 		"body"		"Le fou blanc tombe."
-		"dependency"	"G.Story_State >= 70 and G.Story_State < 80"
+		"dependency"	"G.Story_State >= 70 and (G.Story_State < 80 or G.PP == 1)"
 	}
 
 	Email
@@ -485,7 +469,7 @@ Romero"
 		"subject"	"Fin de partie"
 		"sender"	"un ami"
 		"body"		"La position de vos pièces est décisive pour la fin de la partie."
-		"dependency"	"G.Story_State >= 80 and G.Story_State < 90"
+		"dependency"	"G.Story_State >= 80 and (G.Story_State < 90 or G.PP == 1)"
 	}
 
 	Email
@@ -493,7 +477,7 @@ Romero"
 		"subject"	"Le maître"
 		"sender"	"un ami"
 		"body"		"Un véritable maître a joué toute la partie avant même le premier coup."
-		"dependency"	"G.Story_State >= 90 and G.Story_State < 100"
+		"dependency"	"G.Story_State >= 90 and (G.Story_State < 100 or G.PP == 1)"
 	}
 
 	Email

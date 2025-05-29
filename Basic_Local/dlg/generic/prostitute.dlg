@@ -8,7 +8,7 @@
 {	8	}{	Tu le sais bien.	}{	Tu le sais bien.	}{	51	}{	G.Whore_Price == 5 and pc.CurrentMoney() >= 20	}{	pc.MoneyRemove( 20 )	}{	}{	}{	}{	}{	}{	}{	Affirmatif.	}
 {	9	}{	Tout dépend. Combien ?	}{	Tout dépend. Combien ?	}{	71	}{	Appearance -2 & (pc.CalcFeat("haggle") >= 2 and G.Whore_Price != 0)	}{	}{	}{	}{	}{	}{	}{	}{	De combien ma bourse sera-t-elle allégée ?	}
 {	10	}{	Je suis un peu juste en liquide, mais j'adorerais passer du temps avec toi. . .	}{	Je suis un peu juste en liquide, mais j'adorerais passer du temps avec toi. . .	}{	211	}{	Seduction 7	}{	}{	}{	}{	}{	}{	}{	}{	Ma bourse est légère, mais mon désir se porte sur toi.	}
-{	11	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	13	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	14	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

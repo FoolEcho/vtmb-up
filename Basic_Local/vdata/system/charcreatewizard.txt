@@ -869,7 +869,7 @@ CharCreateWizard
 			}
 		}
 
-		Popup // restored by wesp
+		UNUSED_Popup
 		{
 			// Combat vs Non-Combat #5
 			"Text"		"Vous êtes dans un hôpital, à la recherche d'un docteur en retard sur ses livraisons de sang. Une infirmière se met devant vous et vous dit : 'Vous ne pouvez pas entrer ici, c'est réservé au personnel médical'. Vous décidez de. . . "
@@ -933,7 +933,7 @@ CharCreateWizard
 			}
 		}
 
-		Popup // restored by wesp
+		UNUSED_Popup
 		{
 			// Combat vs Non-Combat #6
 			"Text"		"Quelques âmes mortelles vous cherchent des noises dans un bar. Vous préférez. . . "
@@ -1137,7 +1137,7 @@ CharCreateWizard
 			}
 		}
 
-		Popup // restored by wesp
+		UNUSED_Popup
 		{
 			// Social vs Stealth vs Intellect #5
 			"Text"		"Un chasseur de vampires vous poursuit dans une foule de mortels. Vous décidez de. . . "
@@ -1172,10 +1172,10 @@ CharCreateWizard
 			}
 		}
 
-		Popup	// restored by wesp
+		UNUSED_Popup
 		{
 			// Social vs Stealth vs Intellect #6
-			"Text"		"Vous venez de commencer à jouer à ce nouveau jeu informatique sympa, mais il est plein de bugs. Est-ce que vous..."
+			"Text"		""
 
 			"InternalName"	"Trait_Social_vs_Stealth_vs_Intellect"
 
@@ -1187,21 +1187,21 @@ CharCreateWizard
 
 			Action
 			{
-				"Text"	"1. Allez sur plusieurs forums vous plaindre des problèmes."
+				"Text"	""
 				"Trait"	"Social"
 				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
 			}
 
 			Action
 			{
-				"Text"	"2. Envoyez un e-mail aux développeurs eux-mêmes pour qu'ils réparent le jeu."
+				"Text"	""
 				"Trait"	"Stealth"
 				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
 			}
 
 			Action
 			{
-				"Text"	"3. Décidez d'examiner le code vous-même pour le corriger."
+				"Text"	""
 				"Trait"	"Intellect"
 				"Next"	"Trait_Unarmed_vs_Armed_vs_Ranged"
 			}
@@ -1348,7 +1348,7 @@ CharCreateWizard
 			}
 		}
 
-		Popup // restored by wesp
+		UNUSED_Popup
 		{
 			// Unarmed vs Armed vs Ranged #5
 			"Text"		"Vous vous dirigez vers le centre ville. Vous avez rendez-vous avec un Nosferatu dans une ruelle derrière un restaurant chinois. Il a des renseignements précieux à vendre. Vous ne vous attendez pas au moindre problème, mais on ne sait jamais. Vous préférez. . . "
@@ -1383,7 +1383,7 @@ CharCreateWizard
 			}
 		}
 
-		Popup // restored by wesp
+		UNUSED_Popup
 		{
 			// Unarmed vs Armed vs Ranged #6
 			"Text"		"Vous êtes chez un prêteur sur gage ouvert la nuit, vous avez besoin de protection, mais vous êtes un peu à court d'argent. Vous ne pouvez vous offrir qu'un seul objet. Sera-ce. . . "
@@ -3340,7 +3340,7 @@ CharCreateWizard
 
 			TextRegion
 			{
-				"X"		"195"		// changed by wesp
+				"X"		"183"
 				"Y"		"161"
 				"Width"	"648"
 				"Height"	"282"
@@ -3364,7 +3364,7 @@ CharCreateWizard
 
 			Action
 			{
-				"Text"		"2. Aller directement à la feuille de personnage et choisir vous-même le clan, le genre, l'histoire, les attributs, les capacités et les Disciplines de votre personnage ?"	// changed by wesp
+				"Text"		"2. Aller directement à la feuille de personnage et choisir vous-même le clan, les attributs et les capacités de votre personnage ?"	// changed by wesp
 				"Next"		""
 				"MultiLineText"	"1"
 				"ShowSeparator"	"1"
@@ -3377,82 +3377,6 @@ CharCreateWizard
 					"Height"	"70"
 				}
 			}
-
-			Action	// added by wesp
-			{
-				"Text"		"3. <<< SPOILERS >>> Rejouer certaines missions de Bloodlines en tant que chasseur humain de la Société de Léopold ? <<< SPOILERS >>>"
-				"Next"		"Hunter_Selection"
-				"MultiLineText"	"1"
-				"ShowSeparator"	"1"
-
-				Region
-				{
-					"X"		"30"
-					"Y"		"660"
-					"Width"	"965"
-					"Height"	"70"
-				}
-			}
-		}
-
-		Popup		// added by wesp
-		{
-			"Text"		"Vous devez maintenant sélectionner l'une des classes de chasseurs. Le Mercenaire commence avec torche, Colt Police Positive Special, IMI Desert Eagle, IMI Uzi et Pyro Crossbow. Le Condotierre démarre avec couteau, GLOCK 19, Franchi SPAS-15, Ingram MAC-10 et Remington M700. L'Inquisiteur commence avec Shin Gunto, Ithaca M37, Colt Anaconda, Steyr AUG et Remington M700P. Toutes les classes portent une armure et ont un porte-clés, un portefeuille, un crochet et des poings. Une fois que vous avez choisi, vous serez redirigé vers la feuille de personnage où vous pourrez nommer votre personnage, voir vos statistiques et les redistribuer si vous le souhaitez.
-Alors, à quelle classe de chasseurs votre nouveau personnage devrait-il appartenir ?"
-
-			"InternalName"	"Hunter_Selection"
-
-			Action
-			{
-				"Text"		"1. Mercenaire (femme)"
-				"CharTemplate"	"mp-mercenary"
-				"Next"		""
-				"MultiLineText"	"1"
-				"ShowSeparator"	"1"
-
-				Region
-				{
-					"X"		"420"
-					"Y"		"500"
-					"Width"	"965"
-					"Height"	"70"
-				}
-			}
-
-			Action
-			{
-				"Text"		"2. Condotierre (homme)"
-				"CharTemplate"	"mp-condotierre"
-				"Next"		""
-				"MultiLineText"	"1"
-				"ShowSeparator"	"1"
-
-				Region
-				{
-					"X"		"420"
-					"Y"		"550"
-					"Width"	"965"
-					"Height"	"70"
-				}
-			}
-
-			Action
-			{
-				"Text"		"3. Inquisiteur (homme)"
-				"CharTemplate"	"mp-inquisitor"
-				"Next"		""
-				"MultiLineText"	"1"
-				"ShowSeparator"	"1"
-
-				Region
-				{
-					"X"		"420"
-					"Y"		"600"
-					"Width"	"965"
-					"Height"	"70"
-				}
-			}
-
 		}
 
 		Popup

@@ -243,7 +243,7 @@
 {	243	}{	Je n'ai pas besoin de munitions, je ne sais pas tirer. Apprenez-moi à viser.	}{	Je n'ai pas besoin de munitions, je ne sais pas tirer. Apprenez-moi à viser.	}{	271	}{	Firearms -3 & G.Patch_Plus == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quel côté tourne-t-on vers ce qu'on veut tuer ?	}
 {	244	}{	Je sais déjà utiliser une arme à feu. Je peux garder le fusil ?	}{	Je sais déjà utiliser une arme à feu. Je peux garder le fusil ?	}{	261	}{	Firearms 4 & (G.Patch_Plus == 1 and G.Romero_Reward == 0)	}{	}{	}{	}{	}{	}{	}{	}{	De la nourriture pour mon arme !	}
 {	245	}{	Je n'ai pas besoin de munitions, je ne sais pas tirer. Apprenez-moi à viser.	}{	Je n'ai pas besoin de munitions, je ne sais pas tirer. Apprenez-moi à viser.	}{	271	}{	Firearms -4 & (G.Patch_Plus == 1 and G.Romero_Reward == 0)	}{	}{	}{	}{	}{	}{	}{	}{	Quel côté tourne-t-on vers ce qu'on veut tuer ?	}
-{	246	}{	Merci mais je ne pense pas avoir besoin de quoi que ce soit pour le moment.	}{	Merci mais je ne pense pas avoir besoin de quoi que ce soit pour le moment.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis bien comme je suis.	}
+{	246	}{	Merci mais je ne pense pas avoir besoin de quoi que ce soit pour le moment.	}{	Merci mais je ne pense pas avoir besoin de quoi que ce soit pour le moment.	}{	0	}{	}{	G.Romero_Quest = 4	}{	}{	}{	}{	}{	}{	}{	Je suis bien comme je suis.	}
 {	247	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	248	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	249	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -321,7 +321,7 @@
 {	321	}{	La lune se lève, les morts aussi, et les balles pleuvent. La télé capte plutôt mal. Mais dans l'ensemble, c'est plutôt la belle vie.	}{	La lune se lève, les morts aussi, et les balles pleuvent. La télé capte plutôt mal. Mais dans l'ensemble, c'est plutôt la belle vie.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	322	}{	C'est sympa. Au revoir.	}{	C'est sympa. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est un rêve, n'est-ce pas ? Je vous laisse à votre Nirvana.	}
 {	323	}{	Ca craint. J'peux t'aider pour autre chose ?	}{	Ca craint. J'peux t'aider pour autre chose ?	}{	671	}{	G.Patch_Plus == 1 and G.Romero_Whore != 3 and G.Romero_Boink == 0 and not IsClan(pc,"Nosferatu")	}{	G.Romero_Ally = 0	}{	}{	}{	}{	}{	}{	}{	c'est pareil... et pareil... Besoin de neuf ?	}
-{	324	}{	Aucune chance pour moi de faire un peu de mise à mort de zombies ?	}{	Aucune chance pour moi de faire un peu de mise à mort de zombies ?	}{	161	}{	G.Patch_Plus == 1 and G.Romero_Hammer < 1	}{	G.Romero_Hammer = 2	}{	}{	}{	}{	}{	}{	}{	Puis-je être le marteau ?	}
+{	324	}{	Aucune chance pour moi de faire un peu de mise à mort de zombies ?	}{	Aucune chance pour moi de faire un peu de mise à mort de zombies ?	}{	161	}{	G.Patch_Plus == 1 and G.Romero_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	Puis-je être le marteau ?	}
 {	325	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	326	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	327	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -533,7 +533,7 @@
 {	533	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	534	}{	C'est ça, allez faire ça et moi je m'occupe du reste.	}{	C'est ça, allez faire ça et moi je m'occupe du reste.	}{	141	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je veux jouer avec le mort-vivant. Vous, allez jouer à votre jeu charnel.	}
 {	535	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	536	}{	Ca a l'air amusant. On joue. . .	}{	Ca a l'air amusant. On joue. . .	}{	561	}{	}{	pc.bloodpool > 1	}{	}{	}{	}{	}{	}{	}{	Ma petite goule de luxure ... laissons se fondre notre chair.	}
+{	536	}{	Ca a l'air amusant. On joue. . .	}{	Ca a l'air amusant. On joue. . .	}{	561	}{	}{	pc.bloodpool > 1 and G.Romero_Boink == 0	}{	}{	}{	}{	}{	}{	}{	Ma petite goule de luxure ... laissons se fondre notre chair.	}
 {	537	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	538	}{	Je vais vous épargner le trajet. Je vais vous rapporter quelqu'un. . .	}{	Je vais vous épargner le trajet. Je vais vous rapporter quelqu'un. . .	}{	621	}{	Persuasion 4	}{	G.Romero_Crush = 0	}{	}{	}{	}{	}{	}{	}{	Le voyage n'est pas votre avenir, c'est le mien.	}
 {	539	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -549,8 +549,8 @@
 {	549	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	550	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	551	}{	Donc, froide et CHAUDE. . . Bon, c'est réglé, donc je suis libre toute la nuit. Et il faut bien reconnaître qu'il y a quelque chose entre nous. . . Vous avez dix minutes à tuer ?	}{	Donc, froide et CHAUDE. . . Bon, c'est réglé, donc je suis libre toute la nuit. Et il faut bien reconnaître. . . vous avez dix minutes à tuer ?	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	552	}{	Bien sûr, après tout. . .	}{	Bien sûr, après tout. . .	}{	561	}{	pc.bloodpool > 1	}{	}{	}{	}{	}{	}{	}{	}{	Après tout. . .	}
-{	553	}{	Oui.	}{	Oui.	}{	561	}{	pc.bloodpool > 1	}{	}{	}{	}{	}{	}{	}{	}{	Tuons-les ensemble.	}
+{	552	}{	Bien sûr, après tout. . .	}{	Bien sûr, après tout. . .	}{	561	}{	pc.bloodpool > 1 and G.Romero_Boink == 0	}{	}{	}{	}{	}{	}{	}{	}{	Après tout. . .	}
+{	553	}{	Oui.	}{	Oui.	}{	561	}{	pc.bloodpool > 1 and G.Romero_Boink == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tuons-les ensemble.	}
 {	554	}{	Je ne fais plus ce genre de chose. Je regrette.	}{	Je ne fais plus ce genre de chose. Je regrette.	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon corps est un lieu mort et froid.	}
 {	555	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	556	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -569,17 +569,17 @@
 {	569	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	570	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	571	}{	Ne me mordez pas, d'accord ? Quoi ? Je parlais de mon cou. . .	}{	Ne me mordez pas, d'accord ? Quoi ? Je parlais de mon cou. . .	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	G.Romero_Ally = 1; G.Romero_Boink = 1; pc.Bloodloss(1)	}{	}{	}{	}{	}{	}{	}{	}
-{	572	}{	Je ne vous promets rien. Maintenant, déshabillez-vous, goule. . .	}{	Je ne vous promets rien. Maintenant, déshabillez-vous, goule. . .	}{	0	}{	G.Romero_Quest != 4	}{	pc.AwardExperience("Pimp01")	}{	}{	}{	}{	}{	}{	}{	Taisez-vous, prosternez-vous et vénérez votre maîtresse. Et apportez une corde.	}
-{	573	}{	Je ferai doucement. . . peut-être. . .	}{	Je ferai doucement. . . peut-être. . .	}{	0	}{	G.Romero_Quest != 4	}{	pc.AwardExperience("Pimp01")	}{	}{	}{	}{	}{	}{	}{	Je serai une douce caresse. . . et une gifle au visage.	}
-{	574	}{	Je ne vous promets rien. Maintenant, déshabillez-vous, goule. . .	}{	Je ne vous promets rien. Maintenant, déshabillez-vous, goule. . .	}{	0	}{	G.Romero_Quest == 4	}{	}{	}{	}{	}{	}{	}{	}{	Taisez-vous, prosternez-vous et vénérez votre maîtresse. Et apportez une corde.	}
-{	575	}{	Je ferai doucement. . . peut-être. . .	}{	Je ferai doucement. . . peut-être. . .	}{	0	}{	G.Romero_Quest == 4	}{	}{	}{	}{	}{	}{	}{	}{	Je serai une douce caresse. . . et une gifle au visage.	}
+{	572	}{	Je ne vous promets rien. Maintenant, déshabillez-vous, goule. . .	}{	Je ne vous promets rien. Maintenant, déshabillez-vous, goule. . .	}{	0	}{	}{	pc.AwardExperience("Pimp01")	}{	}{	}{	}{	}{	}{	}{	Taisez-vous, prosternez-vous et vénérez votre maîtresse. Et apportez une corde.	}
+{	573	}{	Je ferai doucement. . . peut-être. . .	}{	Je ferai doucement. . . peut-être. . .	}{	0	}{	}{	pc.AwardExperience("Pimp01")	}{	}{	}{	}{	}{	}{	}{	Je serai une douce caresse. . . et une gifle au visage.	}
+{	574	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	575	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	576	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	577	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	580	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	581	}{	Oh. . . vous êtes marié ?	}{	Oh. . . vous êtes marié ?	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	582	}{	Bon, si vous promettez de ne plus jamais demander et que vous n'en parlez à personne, je veux bien faire quelque chose.	}{	Bon, si vous promettez de ne plus jamais demander et que vous n'en parlez à personne, je veux bien faire quelque chose.	}{	561	}{	pc.bloodpool > 1	}{	}{	}{	}{	}{	}{	}{	}{	Si aucun mot ne passe jamais vos lèvres à ce sujet, j'utiliserai les miennes.	}
+{	582	}{	Bon, si vous promettez de ne plus jamais demander et que vous n'en parlez à personne, je veux bien faire quelque chose.	}{	Bon, si vous promettez de ne plus jamais demander et que vous n'en parlez à personne, je veux bien faire quelque chose.	}{	561	}{	pc.bloodpool > 1 and G.Romero_Boink == 0	}{	}{	}{	}{	}{	}{	}{	}{	Si aucun mot ne passe jamais vos lèvres à ce sujet, j'utiliserai les miennes.	}
 {	583	}{	Comme c'est mignon. A plus tard, Romero.	}{	Comme c'est mignon. A plus tard, Romero.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Hilarant. Au revoir, goule.	}
 {	584	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	585	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -799,7 +799,7 @@
 {	799	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	800	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	801	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	802	}{	(Starting Condition)	}{	}{	301	}{	G.Romero_Whore == 3 and G.Romero_Hammer < 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	802	}{	(Starting Condition)	}{	}{	301	}{	G.Romero_Whore == 3 and G.Romero_Quest == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	803	}{	(Starting Condition)	}{	}{	641	}{	G.Romero_Whore == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	804	}{	(Starting Condition)	}{	}{	631	}{	G.Romero_Whore == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	805	}{	(Starting Condition)	}{	}{	331	}{	G.Romero_Quest == 5	}{	}{	}{	}{	}{	}{	}{	}{	}

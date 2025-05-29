@@ -89,7 +89,7 @@
 {	89	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	90	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	91	}{	Vous m'avez entendu ? Vous allez vous retrouver en taule avec cette sale garce, pauvre type !	}{	Vous m'avez entendu ? Vous allez vous retrouver en taule avec cette sale garce, pauvre type !	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	92	}{	Ca vient. . . grogne. . .	}{	Ca vient. . . grogne. . .	}{	101	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	92	}{	Ca vient. . . grogne. . .	}{	Ca vient. . . grogne. . .	}{	101	}{	}{	G.McFly_Coming = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	93	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	94	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	95	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -99,8 +99,8 @@
 {	99	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	100	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	101	}{	[Effrayé]Qu-qu'est-ce qui ne va pas ?	}{	[Effrayé]Qu-qu'est-ce qui ne va pas ?	}{	#	}{	npc.SetDisposition("Fear", 1)	}{	G.Mcfly_Frenzy = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	102	}{	Argh ! RRRRR !	}{	Argh ! RRRRR !	}{	0	}{	}{	pc.FrenzyTrigger()	}{	}{	}{	}{	}{	}{	}{	}
-{	103	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	102	}{	Argh ! RRRRR !	}{	Argh ! RRRRR !	}{	0	}{	G.McFly_Coming == 1	}{	pc.FrenzyTrigger()	}{	}{	}{	}{	}{	}{	}{	}
+{	103	}{	Calme-toi. Il y a eu un malentendu.	}{	Calme-toi. Il y a eu un malentendu.	}{	21	}{	G.McFly_Coming == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	104	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	105	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -139,5 +139,5 @@
 {	139	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	140	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	141	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	142	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	143	}{	(Starting Condition)	}{	}{	1	}{	npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	142	}{	(Starting Condition)	}{	}{	101	}{	IsClan(pc,"Nosferatu") and npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	143	}{	(Starting Condition)	}{	}{	1	}{	not IsClan(pc,"Nosferatu") and npc.times_talked == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

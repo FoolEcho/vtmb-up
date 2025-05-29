@@ -729,7 +729,7 @@
 {	729	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	730	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	731	}{	Mmm. J'imagine que je vais devoir demander à quelqu'un d'autre de terminer le travail. . . Isaac a autorisé le châtiment, mais tout comme vous, je ne suis pas une tueuse.	}{	Mmm. J'imagine que je vais devoir demander à quelqu'un d'autre de terminer le travail. . . Isaac a autorisé le châtiment, mais tout comme vous, je ne suis pas une tueuse.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Velvet_Quest = 5; G.David_Julius = 2; pc.SetQuest("Writer",7); FindPlayer().ChangeMasqueradeLevel( -1 )	}{	}{	}{	}{	}{	}{	}{	}
-{	732	}{	Voici le script.	}{	Voici le script.	}{	661	}{	pc.HasItem("item_g_Hatters_Screenplay")	}{	}{	}{	}{	}{	}{	}{	}{	Les paroles de Hatter, pour vous.	}
+{	732	}{	Voici le script.	}{	Voici le script.	}{	661	}{	pc.HasItem("item_g_hatters_screenplay")	}{	}{	}{	}{	}{	}{	}{	}{	Les paroles de Hatter, pour vous.	}
 {	733	}{	Au fait, il a fallu que je tue Hatter.	}{	Au fait, il a fallu que je tue Hatter.	}{	701	}{	IsDead("DHatter")	}{	}{	}{	}{	}{	}{	}{	}{	Oh, et la tête de Hatter a roulé à terre.	}
 {	734	}{	Alors vous comprenez. J'ai une autre question.	}{	Alors vous comprenez. J'ai une autre question.	}{	791	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ah, la poupée comprend. Dites-moi autre chose.	}
 {	735	}{	C'est malheureux. Au revoir, Velvet.	}{	C'est malheureux. Au revoir, Velvet.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dilemme. Bonne nuit, poupée.	}
@@ -749,7 +749,7 @@
 {	749	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	750	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	751	}{	Je vous adore tout simplement. Votre façon de me protéger est si agréable. Qu'aurais-je fait sans vous ? Pourquoi ne sont-ils pas tous comme vous, le monde serait si. . . si beau. Tenez, prenez ceci, en souvenir de la jolie fille à qui vous avez volé le coeur.	}{	Je vous adore tout simplement. Votre façon de me protéger est si agréable. Qu'aurais-je fait sans vous ? Pourquoi ne sont-ils pas tous comme vous, le monde serait si. . . si beau. Tenez, prenez ceci, en souvenir de la jolie fille à qui vous avez volé le coeur.	}{	#	}{	npc.SetDisposition("Flirt", 1)	}{	pc.GiveItem("item_g_vv_photo"); G.Velvet_Email = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	752	}{	Voici le script.	}{	Voici le script.	}{	661	}{	pc.HasItem("item_g_Hatters_Screenplay")	}{	}{	}{	}{	}{	}{	}{	}{	Les paroles de Hatter, pour vous.	}
+{	752	}{	Voici le script.	}{	Voici le script.	}{	661	}{	pc.HasItem("item_g_hatters_screenplay")	}{	}{	}{	}{	}{	}{	}{	}{	Les paroles de Hatter, pour vous.	}
 {	753	}{	Au fait, il a fallu que je tue Hatter.	}{	Au fait, il a fallu que je tue Hatter.	}{	701	}{	IsDead("DHatter")	}{	}{	}{	}{	}{	}{	}{	}{	Oh, et la tête de Hatter a roulé à terre.	}
 {	754	}{	Merci, mais n'aviez-vous pas parlé de m'offrir un show privé ?	}{	Merci, mais n'aviez-vous pas parlé de m'offrir un show privé ?	}{	911	}{	G.Velvet_Dance == 1 and G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	Magnifique, mais ne vouliez-vous pas aussi faire battre mon coeur ?	}
 {	755	}{	Merci. Tout le plaisir est pour moi.	}{	Merci. Tout le plaisir est pour moi.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vous garde dans mon coeur et la photo dans ma poche.	}
@@ -760,7 +760,7 @@
 {	760	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	761	}{	Vous avez un vrai talent pour énerver les gens. Vous y parvenez très bien avec moi. Le génie de Hatter n'est pas très rentable. . . Pour l'instant. Vous avez essayé de lui proposer de l'argent ? Le pauvre mange des pâtes et du soda générique, je suis certaine qu'il apprécierait.	}{	Vous avez un vrai talent pour énerver les gens. Vous y parvenez très bien avec moi. Le génie de Hatter n'est pas très rentable. . . Pour l'instant. Vous avez essayé de lui proposer de l'argent ? Le pauvre mange des pâtes et du soda générique, je suis certaine qu'il apprécierait.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	762	}{	J'ai dit qu'on était fâchés ? Je voulais dire qu'il est mort. . .	}{	J'ai dit qu'on était fâchés ? Je voulais dire qu'il est mort. . .	}{	701	}{	IsDead("DHatter")	}{	pc.SetQuest("Writer",3)	}{	}{	}{	}{	}{	}{	}{	Hatter ne m'a rien dit parce qu'il a perdu la tête. Elle a roulé à terre.	}
-{	763	}{	Voilà le script. Enfin.	}{	Voilà le script. Enfin.	}{	661	}{	pc.HasItem("item_g_Hatters_Screenplay")	}{	}{	}{	}{	}{	}{	}{	}{	Voici les paroles de Hatter pour vous.	}
+{	763	}{	Voilà le script. Enfin.	}{	Voilà le script. Enfin.	}{	661	}{	pc.HasItem("item_g_hatters_screenplay")	}{	}{	}{	}{	}{	}{	}{	}{	Voici les paroles de Hatter pour vous.	}
 {	764	}{	Au fait, il a fallu que je tue Hatter.	}{	Au fait, il a fallu que je tue Hatter.	}{	701	}{	IsDead("DHatter")	}{	}{	}{	}{	}{	}{	}{	}{	Oh, et la tête de Hatter a roulé à terre.	}
 {	765	}{	Je vais essayer. A plus tard.	}{	Je vais essayer. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je le nourrirai pendant une semaine. Je pars. 	}
 {	766	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -770,7 +770,7 @@
 {	770	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	771	}{	Tenez. . . Ce n'est pas beaucoup, mais. . . Ca devrait vous permettre de vous acheter une tenue plus appropriée quand on est une connaissance de Velvet Velour.	}{	Tenez. . . Ce n'est pas beaucoup, mais. . . Ca devrait vous permettre de vous acheter une tenue plus appropriée quand on est une connaissance de Velvet Velour.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.MoneyAdd( 400 )	}{	}{	}{	}{	}{	}{	}{	}
 {	772	}{	Comme c'est généreux. J'ai une autre question.	}{	Comme c'est généreux. J'ai une autre question.	}{	791	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ca sent le string. Dites-moi autre chose.	}
-{	773	}{	Voilà le script. Enfin.	}{	Voilà le script. Enfin.	}{	661	}{	pc.HasItem("item_g_Hatters_Screenplay")	}{	}{	}{	}{	}{	}{	}{	}{	Voici les paroles de Hatter pour vous.	}
+{	773	}{	Voilà le script. Enfin.	}{	Voilà le script. Enfin.	}{	661	}{	pc.HasItem("item_g_hatters_screenplay")	}{	}{	}{	}{	}{	}{	}{	}{	Voici les paroles de Hatter pour vous.	}
 {	774	}{	Au fait, il a fallu que je tue Hatter.	}{	Au fait, il a fallu que je tue Hatter.	}{	701	}{	IsDead("DHatter")	}{	}{	}{	}{	}{	}{	}{	}{	Oh, et la tête de Hatter a roulé à terre.	}
 {	775	}{	Super. A bientôt, VV.	}{	Super. A bientôt, VV.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'aime la façon dont il se froisse sous ma main. Je vais aller explorer cette sensation.	}
 {	776	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -780,7 +780,7 @@
 {	780	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	781	}{	Je suis prête à oublier tous les efforts que vous avez faits pour me contrarier.	}{	Je suis prête à oublier tous les efforts que vous avez faits pour me contrarier.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	782	}{	Bien. J'ai une autre question.	}{	Bien. J'ai une autre question.	}{	791	}{	}{	}{	}{	}{	}{	}{	}{	}{	Comme vous voudrez. Dites-moi autre chose.	}
-{	783	}{	Voilà le script. Enfin.	}{	Voilà le script. Enfin.	}{	661	}{	pc.HasItem("item_g_Hatters_Screenplay")	}{	}{	}{	}{	}{	}{	}{	}{	Voici les paroles de Hatter pour vous.	}
+{	783	}{	Voilà le script. Enfin.	}{	Voilà le script. Enfin.	}{	661	}{	pc.HasItem("item_g_hatters_screenplay")	}{	}{	}{	}{	}{	}{	}{	}{	Voici les paroles de Hatter pour vous.	}
 {	784	}{	Au fait, il a fallu que je tue Hatter.	}{	Au fait, il a fallu que je tue Hatter.	}{	701	}{	IsDead("DHatter")	}{	}{	}{	}{	}{	}{	}{	}{	Oh, et la tête de Hatter a roulé à terre.	}
 {	785	}{	C'est tout ? Pas question. Je me casse.	}{	C'est tout ? Pas question. Je me casse.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	JE ME FATIGUE DE VOS MANIGANCES ! JE M'EN VAIS, POUPEE QUI PARLE !	}
 {	786	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -879,7 +879,7 @@
 {	879	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	880	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	881	}{	Mmm ?	}{	Mmm ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	882	}{	Tenez, le script de Hatter.	}{	Tenez, le script de Hatter.	}{	661	}{	pc.HasItem("item_g_Hatters_Screenplay")	}{	}{	}{	}{	}{	}{	}{	}{	Les mots de Hatter pour vous.	}
+{	882	}{	Tenez, le script de Hatter.	}{	Tenez, le script de Hatter.	}{	661	}{	pc.HasItem("item_g_hatters_screenplay")	}{	}{	}{	}{	}{	}{	}{	}{	Les mots de Hatter pour vous.	}
 {	883	}{	Hatter est mort. . .	}{	Hatter est mort. . .	}{	701	}{	IsDead("DHatter")	}{	pc.SetQuest("Writer",3)	}{	}{	}{	}{	}{	}{	}{	La tête du Hatter est tombée à terre.	}
 {	884	}{	J'ai appris le nom de sa source.	}{	J'ai appris le nom de sa source.	}{	721	}{	G.David_Julius == 1 and G.Velvet_Quest < 4	}{	}{	}{	}{	}{	}{	}{	}{	Je connais le nom du bavard de Hatter. . .	}
 {	885	}{	Ouais, Hatter n'a rien voulu dire. Je crois que nous sommes fâchés.	}{	Ouais, Hatter n'a rien voulu dire. Je crois que nous sommes fâchés.	}{	761	}{	G.David_Pissed == 1	}{	}{	}{	}{	}{	}{	}{	}{	Hatter va se taire. Parfois, je fais des plaisanteries et personne ne rit.	}
