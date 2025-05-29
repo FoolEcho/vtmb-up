@@ -1,16 +1,16 @@
 ; -- vtmbupinstaller.iss --
 
 [Setup]
-AppName=Vampire: The Masquerade - Bloodlines unofficial patch 11.4 fr
-AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 11.4 fr
+AppName=Vampire: The Masquerade - Bloodlines unofficial patch 11.5 fr
+AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 11.5 fr
 VersionInfoDescription=Vampire: The Masquerade - Bloodlines unofficial patch avec sous-titrage français
-VersionInfoVersion=11.4
+VersionInfoVersion=11.5
 AppPublisher=Werner Spahl
 DefaultDirName={reg:HKLM\Software\Activision\Vampire - Bloodlines,InstallPath|{pf}\Steam\steamapps\common\vampire the masquerade - bloodlines}
 AppendDefaultDirName=no
 DirExistsWarning=no
 EnableDirDoesntExistWarning=no
-OutputBaseFilename=VTMBup114fr
+OutputBaseFilename=VTMBup115fr
 Uninstallable=no
 InfoBeforeFile=VTMBup-readme.txt
 InfoAfterFile=VTMBup-after.txt
@@ -62,21 +62,20 @@ Source: "Basic_Local\*"; DestDir: "{app}\Unofficial_Patch_fr"; Components: basic
 Source: "Plus_Patch\*"; DestDir: "{app}\Unofficial_Patch_fr"; Components: plus; Flags: recursesubdirs ignoreversion overwritereadonly
 Source: "Plus_Local\*"; DestDir: "{app}\Unofficial_Patch_fr"; Components: plus; Flags: recursesubdirs ignoreversion overwritereadonly
 Source: "Patch_Extras\*"; DestDir: "{app}\Patch_Extras"; Components: extras; Flags: recursesubdirs ignoreversion overwritereadonly
-Source: "Patch_Extras\Developer Tools\Game Mod Loader\*"; DestDir: "{app}"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly
-Source: "{app}\*.exe"; Flags: external dontcopy skipifsourcedoesntexist; Attribs: readonly
-Source: "{app}\Bin\*.dll"; Flags: external dontcopy skipifsourcedoesntexist; Attribs: readonly
-Source: "{app}\Vampire\dlls\*.dll"; Flags: external dontcopy skipifsourcedoesntexist; Attribs: readonly
-Source: "{app}\Vampire\cl_dlls\*.dll"; Flags: external dontcopy skipifsourcedoesntexist; Attribs: readonly
+Source: "Patch_Extras\Developer Tools\Game Mod Loader\*"; DestDir: "{app}"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly; Excludes: "*-plus"
+Source: "Patch_Extras\Developer Tools\Game Mod Loader\\bin\loader\vtmb-tweaks.ini-plus"; DestDir: "{app}\bin\loader"; DestName: "vtmb-tweaks.ini"; Components: plus; Flags: ignoreversion overwritereadonly
+Source: "{app}\*.exe"; DestDir: "{app}"; Flags: external overwritereadonly skipifsourcedoesntexist; Attribs: readonly
+Source: "{app}\Bin\*.dll"; DestDir: "{app}\Bin"; Flags: external overwritereadonly skipifsourcedoesntexist; Attribs: readonly
+Source: "{app}\Vampire\dlls\*.dll"; DestDir: "{app}\Vampire\dlls"; Flags: external overwritereadonly skipifsourcedoesntexist; Attribs: readonly
+Source: "{app}\Vampire\cl_dlls\*.dll"; DestDir: "{app}\Vampire\cl_dlls"; Flags: external overwritereadonly skipifsourcedoesntexist; Attribs: readonly
 Source: "{app}\dbghelp.dll.12"; DestDir: "{app}"; DestName: "dbghelp.dll"; Flags: external skipifsourcedoesntexist overwritereadonly
 Source: "{app}\bin\launcher.dll.12"; DestDir: "{app}\bin"; DestName: "launcher.dll"; Flags: external skipifsourcedoesntexist overwritereadonly
 
 [InstallDelete]
-Type: filesandordirs; Name: "{app}\loader-*"
+Type: filesandordirs; Name: "{app}\dbghelp.dll"
 Type: filesandordirs; Name: "{app}\vampire.dat"
-Type: filesandordirs; Name: "{app}\dbghelp.dll.12"
-Type: filesandordirs; Name: "{app}\nosequence.txt"
+Type: filesandordirs; Name: "{app}\noseqence.txt"
 Type: filesandordirs; Name: "{app}\a_basetexture.tth"
-Type: filesandordirs; Name: "{app}\bin\launcher.dll.12"
 Type: filesandordirs; Name: "{app}\Vampire\hl2.tmp"
 Type: filesandordirs; Name: "{app}\Vampire\stats.txt"
 Type: filesandordirs; Name: "{app}\Vampire\vidcfg.bin"
@@ -85,18 +84,17 @@ Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\hl2.tmp"
 Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\stats.txt"
 Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\vidcfg.bin"
 Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\voice_ban.dt"
-Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\Patch_Extras\Developer Tools\Game Mod Loader\loader-*"
-Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\Patch_Extras\Developer Tools\Game Mod Loader\dbghelp.*"
-Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\Patch_Extras\Developer Tools\Game Mod Loader\Bin\launcher.*"
-Type: filesandordirs; Name: "{app}\Unofficial_Patch_fr\Patch_Extras\Developer Tools\Game Mod Loader\Vampire_4GB_fixed.exe"
 
 [Icons]
-Name: "{userdesktop}\VtM Bloodlines Unofficial Patch (fr)"; Filename: {app}\Vampire.exe; Parameters: "-game Unofficial_Patch_fr"; IconFilename: {app}\loader.exe
-Name: "{userprograms}\VtM Bloodlines Unofficial Patch (fr)"; Filename: {app}\Vampire.exe; Parameters: "-game Unofficial_Patch_fr"; IconFilename: {app}\loader.exe
+Name: "{userdesktop}\Game Mod Loader"; Filename: {app}\Loader.exe
+Name: "{userdesktop}\Unofficial Patch (fr)"; Filename: {app}\Vampire.exe; Parameters: "-game Unofficial_Patch_fr"; IconFilename: {app}\loader.exe
+Name: "{userprograms}\Bloodlines Game Mod Loader"; Filename: {app}\Loader.exe
+Name: "{userprograms}\Bloodlines Unofficial Patch (fr)"; Filename: {app}\Vampire.exe; Parameters: "-game Unofficial_Patch_fr"; IconFilename: {app}\loader.exe
 
-[Run]
-Filename: {app}\vampire.exe; Parameters: "-game Unofficial_Patch_fr"; Description: Démarrer Bloodlines avec le Patch non officiel; Flags: postinstall runascurrentuser nowait skipifsilent
-Filename: {app}\Vampire.exe; Parameters: "-game Vampire"; Description: Démarrer Bloodlines vanilla avec uniquement les correctifs du moteur; Flags: postinstall runascurrentuser nowait skipifsilent unchecked
+[Run]                                                                           
+Filename: {app}\Vampire.exe; Parameters: "-game Unofficial_Patch_fr"; Description: Démarrer Bloodlines avec le Patch non officiel; Flags: postinstall runascurrentuser nowait skipifsilent
+Filename: {app}\Loader.exe; Description: Démarrer Bloodlines vanilla ou avec d'autres mods; Flags: postinstall runascurrentuser nowait skipifsilent unchecked
+
 
 [Languages]
 Name: "fr"; MessagesFile: "compiler:Languages\French.isl"
