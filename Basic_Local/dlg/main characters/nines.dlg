@@ -758,7 +758,7 @@
 {	758	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	759	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	760	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	761	}{	J'ai déjà envoyé des troupes foutre le bordel dans la ville. Les Kuei-Jin pensent qu'on est occupés avec la Cama, alors ils ne s'attendent pas à une attaque. Tu sais ce qu'il faut faire, hein ?	}{	J'ai déjà envoyé des troupes foutre le bordel dans la ville. Les Kuei-Jin pensent qu'on est occupés avec la Cama, alors ils ne s'attendent pas à une attaque. Tu sais ce qu'il faut faire, hein ?	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	G.Nines_Killxiao = 1; pc.SetQuest("Ming",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	761	}{	J'ai déjà envoyé des troupes foutre le bordel dans la ville. Les Kuei-Jin pensent qu'on est occupés avec la Cama, alors ils ne s'attendent pas à une attaque. Tu sais ce qu'il faut faire, hein ?	}{	J'ai déjà envoyé des troupes foutre le bordel dans la ville. Les Kuei-Jin pensent qu'on est occupés avec la Cama, alors ils ne s'attendent pas à une attaque. Tu sais ce qu'il faut faire, hein ?	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	G.Nines_Killxiao = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	762	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	763	}{	N'en dis pas plus. Xiao est morte.	}{	N'en dis pas plus. Xiao est morte.	}{	851	}{	}{	}{	}{	}{	}{	}{	}{	}{	Chinatown va bientôt comprendre la blague !	}
 {	764	}{	Tu ne peux pas me demander d'attaquer les Kuei-Jin sans aide.	}{	Tu ne peux pas me demander d'attaquer les Kuei-Jin sans aide.	}{	791	}{	Humanity 5 & G.Nines_FreeState == 0	}{	}{	}{	}{	}{	}{	}{	}{	Ouais ! Bon, restons assis ici et souhaitons qu'ils meurent de toutes nos forces !	}
@@ -848,7 +848,7 @@
 {	848	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	849	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	850	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	851	}{	Xiao est à LA depuis trop longtemps, cette nuit sera sa dernière. 	}{	Xiao est à LA depuis trop longtemps, cette nuit sera sa dernière. 	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	G.Nines_Mission = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	851	}{	Xiao est à LA depuis trop longtemps, cette nuit sera sa dernière. 	}{	Xiao est à LA depuis trop longtemps, cette nuit sera sa dernière. 	}{	#	}{	npc.SetDisposition("PrinceSitting", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	852	}{	S'il faut le faire pour protéger les vampires de la ville, je m'en occupe. 	}{	S'il faut le faire pour protéger les vampires de la ville, je m'en occupe. 	}{	861	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Je me sens comme un super-héros.	}
 {	853	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	854	}{	A moins qu'elle puisse se transformer en char d'assaut, je lui règle son compte.	}{	A moins qu'elle puisse se transformer en char d'assaut, je lui règle son compte.	}{	861	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Elle peut se transformer en soleil, elle ne gagnera jamais.	}
@@ -931,7 +931,7 @@
 {	931	}{	Super.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	932	}{	Au fait. . .	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	933	}{	Tiens.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	934	}{	Suis la rue jusqu'au bout.	}{	Suis la rue jusqu'au bout.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	934	}{	Suis la rue jusqu'au bout.	}{	Suis la rue jusqu'au bout.	}{	#	}{	}{	pc.SetQuest("Ming",2); G.Nines_Mission = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	935	}{	Je le ferai.	}{	Je le ferai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Boum!	}
 {	936	}{	(Starting Condition)	}{	}{	881	}{	G.Nines_Mission == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	937	}{	(Starting Condition)	}{	}{	701	}{	G.Story_State == 115	}{	}{	}{	}{	}{	}{	}{	}{	}

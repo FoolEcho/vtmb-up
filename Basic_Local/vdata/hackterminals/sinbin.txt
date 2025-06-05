@@ -96,6 +96,17 @@ TerminalDefinition
 					Fenêtre 2 : opérationnelle
 					Fenêtre 3 : opérationnelle
 					Notes : pièces commandées pour la fenêtre 1. -FB"	// changed by wesp
+			"dependency"	"G.Sinbin_Hackwindow == 0"	// added by wesp
+		}
+		
+		Function	// added by wesp
+		{
+			"name"		"Etat"
+			"description"	"LECTURE DU SYSTEME"
+			"runtext"	"Fenêtre 1: DYSFONCTIONNEMENT.
+					Fenêtre 2 : Fermée.
+					Fenêtre 3 : fermée."
+	 		"dependency"	"G.Sinbin_Hackwindow == 1"
 		}
 
 		Function
