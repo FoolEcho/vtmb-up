@@ -857,6 +857,16 @@ tr -d '\n' < fichier.dlg > fichier.dlg.newscaster
 mv fichier.dlg{.bak,}
 
 
+----------------------------------------------------------------------------------------------------
+
+Pour vérifier le formatage (à savoir 13 colonnes délimitées par "{}" : 
+
+# se positionner à la racine du répertoire dlg et lancer : 
+
+grep -E -v '^(\{.*\}){13}' -r
+
+# les fichiers et les lignes ne correspondant pas ressortiront.
+
 
 
 
