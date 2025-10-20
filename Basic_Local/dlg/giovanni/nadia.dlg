@@ -279,7 +279,7 @@
 {	279	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	280	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	281	}{	Je ne peux pas vous laisser ici. Si quelqu'un apprend. . .	}{	Je ne peux pas vous laisser ici. Si quelqu'un apprend. . .	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	282	}{	Partez.	}{	Partez.	}{	261	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	282	}{	Partez.	}{	Partez.	}{	261	}{	Dominate 3 | (getattr(pc,"base_dominate") >= 3 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	283	}{	Mais je suis un cadavre. Il n'y a que des choses mortes, ici. . .	}{	Mais je suis un cadavre. Il n'y a que des choses mortes, ici. . .	}{	581	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	Mais je suis un cadavre. Il n'y a que des choses mortes, ici. . .	}
 {	284	}{	Attendez, je veux voir le reste. Promis, je serai sage.	}{	Attendez, je veux voir le reste. Promis, je serai sage.	}{	301	}{	Persuasion 6	}{	}{	}{	}{	}{	}{	}{	}{	Je garde mes tentacules pour moi. Mais faufilons-nous dans cette crypte.	}
 {	285	}{	Personne ne le saura si vous n'êtes plus en vie pour leur dire.	}{	Personne ne le saura si vous n'êtes plus en vie pour leur dire.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Passez cette porte comme si vous aviez vu la mort elle-même.	}
@@ -329,7 +329,7 @@
 {	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	331	}{	Quoi ? Mais je pensais. . .	}{	Quoi ? Mais je pensais. . .	}{	#	}{	npc.SetDisposition("Sad", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	332	}{	Partez.	}{	Partez.	}{	261	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Partez.	}{	Partez.	}{	261	}{	Dominate 3 | (getattr(pc,"base_dominate") >= 3 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	333	}{	Mais je suis un cadavre. Il n'y a que des choses mortes, ici. . .	}{	Mais je suis un cadavre. Il n'y a que des choses mortes, ici. . .	}{	581	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	Mais je suis un cadavre. Il n'y a que des choses mortes, ici. . .	}
 {	334	}{	Sortez d'ici. Tout de suite.	}{	Sortez d'ici. Tout de suite.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Passez cette porte comme si vous aviez vu la mort elle-même.	}
 {	335	}{	Si vous savez ce qui est bon pour vous, sortez.	}{	Si vous savez ce qui est bon pour vous, sortez.	}{	271	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je peux vous montrer quelque chose de plus effrayant que le châtiment.	}

@@ -14,7 +14,7 @@
 {	14	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	15	}{	V-v-vous pouvez appeler ma grand-mère ? S'il vous plaît ?	}{	V-v-vous pouvez appeler ma grand-mère ? S'il vous plaît ?	}{	#	}{	}{	G.Heather_Grandma = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	16	}{	Restez avec moi, je peux vous sauver !	}{	Restez avec moi, je peux vous sauver !	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ne partez pas avant que je ne commence !	}
-{	17	}{	[Lutte contre la douleur]Nnnnnn. . . ahhhh.	}{	Nnnnnn. . . ahhhh.	}{	#	}{	}{	G.Heather_Groan = 0	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	[Lutte contre la douleur]Nnnnnn. . . ahhhh.	}{	Nnnnnn. . . ahhhh.	}{	#	}{	}{	G.Heather_Groan = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	18	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
 {	19	}{	[Râle inconscient de douleur]Ngh. . .	}{	[Râle inconscient de douleur]Ngh. . .	}{	#	}{	}{	G.Heather_Groan = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	20	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
@@ -986,7 +986,7 @@
 {	986	}{	Quand je reviendrai, je m'attends à trouver une surprise agréable.	}{	Quand je reviendrai, je m'attends à trouver une surprise agréable.	}{	0	}{	G.Heather_Outfit == 0 or G.Heather_Outfit == 1	}{	G.Heather_Outfit = 2	}{	}{	}{	}{	}{	}{	}{	Tissez votre cocon, petite chenille. Je veux que vous deveniez un papillon.	}
 {	987	}{	J'aime bien le noir et le gothique.	}{	J'aime bien le noir et le gothique.	}{	0	}{	G.Heather_Outfit == 0 or G.Heather_Outfit == 2	}{	G.Heather_Outfit = 1	}{	}{	}{	}{	}{	}{	}{	J'aime les fringues qui reflètent la noirceur de mon âme.	}
 {	988	}{	On verra ce que vous aurez à mon retour.	}{	On verra ce que vous aurez à mon retour.	}{	0	}{	G.Heather_Outfit == 1 or G.Heather_Outfit == 2	}{	G.Heather_Outfit = 0	}{	}{	}{	}{	}{	}{	}{	On verra ce que vous aurez à mon retour.	}
-{	989	}{	D'autre part, oubliez ça.	}{	D'autre part, oubliez ça.	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	Nevermind my mind.	}
+{	989	}{	D'autre part, oubliez ça.	}{	D'autre part, oubliez ça.	}{	0	}{	}{	G.Heather_Clothes = 0	}{	}{	}{	}{	}{	}{	}{	Nevermind my mind.	}
 {	990	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	991	}{	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	992	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1014,7 +1014,7 @@
 {	1014	}{	(Starting Condition)	}{	}{	111	}{	G.Heather_Drank == 1 and (IsClan(pc,"Nosferatu") or G.Heather_SM == 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1015	}{	(Starting Condition)	}{	}{	91	}{	G.Heather_Drank == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1016	}{	(Starting Condition)	}{	}{	41	}{	G.Heather_Steve == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1017	}{	(Starting Condition)	}{	}{	31	}{	(G.Knox_Ghoul == 2 or G.Mercurio_Ghoul == 1) and G.Heather_Grandma == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	1017	}{	(Starting Condition)	}{	}{	31	}{	(G.Knox_Ghoul == 2 or G.Mercurio_Ghoul == 1) and (G.Heather_Grandma == 2 or G.Patch_Plus == 0)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1018	}{	(Starting Condition)	}{	}{	17	}{	G.Heather_Groan == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1019	}{	(Starting Condition)	}{	}{	19	}{	G.Heather_Grandma == 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1020	}{	(Starting Condition)	}{	}{	15	}{	G.Heather_Know == 1	}{	}{	}{	}{	}{	}{	}{	}{	}

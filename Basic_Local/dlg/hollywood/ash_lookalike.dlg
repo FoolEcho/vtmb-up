@@ -2,7 +2,7 @@
 {	2	}{	Eh, vous ne seriez pas Ash ?	}{	Eh, vous ne seriez pas Ash ?	}{	11	}{	Seduction 5 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes une star ! Je vous ai vu de l'autre côté du bar ! Vous êtes super !	}
 {	3	}{	Eh, vous ne seriez pas Ash ?	}{	Eh, vous ne seriez pas Ash ?	}{	21	}{	Seduction -5 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Je vous ai vu de l'autre côté du bar, vous êtes éblouissant !	}
 {	4	}{	Eh, vous ne seriez pas Ash ? Ce que vous êtes mignon, alors !	}{	Eh, vous ne seriez pas Ash ? Ce que vous êtes mignon, alors !	}{	21	}{	pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Oh, c'est Ash ! J'ai tellement envie de me jeter sur lui pour lui toucher son gros talent.	}
-{	5	}{	Il me faut vos fringues.	}{	Il me faut vos fringues.	}{	231	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	5	}{	Il me faut vos fringues.	}{	Il me faut vos fringues.	}{	231	}{	Dominate 3 | (getattr(pc,"base_dominate") >= 3 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	6	}{	Vous êtes un serpent. Muez.	}{	Vous êtes un serpent. Muez.	}{	231	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes un serpent. Muez.	}
 {	7	}{	Salut, j'anime une super émission où on donne de l'argent aux gens pour leur faire faire des trucs dingues. . .	}{	Salut, j'anime une super émission où on donne de l'argent aux gens pour leur faire faire des trucs dingues. . .	}{	191	}{	Persuasion 4 & G.Al_Persuade == 0	}{	}{	}{	}{	}{	}{	}{	}{	Plein d'argent, et c'est l'éclate ! Rien que pour vous, si vous acceptez. Regardez la caméra !	}
 {	8	}{	Je travaille pour une émission de jeux. Si vous me donnez vos vêtements, vous allez gagner. . . un super gros lot ?	}{	Je travaille pour une émission de jeux. Si vous me donnez vos vêtements, vous allez gagner. . . un super gros lot ?	}{	201	}{	Persuasion -4 & G.Al_Persuade == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je vous donne de l'argent en échange de vos vêtements. C'est pour un jeu. . .	}
@@ -202,7 +202,7 @@
 {	202	}{	Eh, vous ne seriez pas Ash ?	}{	Eh, vous ne seriez pas Ash ?	}{	11	}{	Seduction 5 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes super connu ! Je vous ai vu depuis l'autre côté du bar.	}
 {	203	}{	Eh, vous ne seriez pas Ash ?	}{	Eh, vous ne seriez pas Ash ?	}{	21	}{	Seduction -5 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes une star ! Je vous ai vu depuis l'autre côté du bar.	}
 {	204	}{	Eh, vous ne seriez pas Ash ? Ce que vous êtes mignon, alors !	}{	Eh, vous ne seriez pas Ash ? Ce que vous êtes mignon, alors !	}{	21	}{	pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	Oh, c'est Ash ! Je veux juste me frotter contre vous et caresser votre gros talent. . .	}
-{	205	}{	Il me faut vos fringues.	}{	Il me faut vos fringues.	}{	231	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	205	}{	Il me faut vos fringues.	}{	Il me faut vos fringues.	}{	231	}{	Dominate 3 | (getattr(pc,"base_dominate") >= 3 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	206	}{	Vous êtes un serpent. Muez.	}{	Vous êtes un serpent. Muez.	}{	231	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes un serpent. Muez.	}
 {	207	}{	J'ai besoin de vos vêtements. Donnez-les moi.	}{	J'ai besoin de vos vêtements. Donnez-les moi.	}{	41	}{	Intimidate -3	}{	}{	}{	}{	}{	}{	}{	}{	Reprenez l'habit de votre naissance, et donnez-moi ce que vous ôtez.	}
 {	208	}{	J'ai besoin de vos vêtements. Donnez-les moi.	}{	J'ai besoin de vos vêtements. Donnez-les moi.	}{	61	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Reprenez l'habit de votre naissance, et donnez-moi ce que vous ôtez.	}
@@ -222,7 +222,7 @@
 {	222	}{	Eh, vous ne seriez pas Ash ?	}{	Eh, vous ne seriez pas Ash ?	}{	11	}{	Seduction 5 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	223	}{	Eh, vous ne seriez pas Ash ?	}{	Eh, vous ne seriez pas Ash ?	}{	21	}{	Seduction -5 & not pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	224	}{	Eh, vous ne seriez pas Ash ? Ce que vous êtes mignon, alors !	}{	Eh, vous ne seriez pas Ash ? Ce que vous êtes mignon, alors !	}{	21	}{	pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	225	}{	Il me faut vos fringues.	}{	Il me faut vos fringues.	}{	231	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	Il me faut vos fringues.	}{	Il me faut vos fringues.	}{	231	}{	Dominate 3 | (getattr(pc,"base_dominate") >= 3 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	226	}{	Vous êtes un serpent. Muez.	}{	Vous êtes un serpent. Muez.	}{	231	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	227	}{	Salut, j'anime une super émission où on donne de l'argent aux gens pour leur faire faire des trucs dingues. . .	}{	Salut, j'anime une super émission où on donne de l'argent aux gens pour leur faire faire des trucs dingues. . .	}{	191	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	228	}{	Je travaille pour une émission de jeux. Si vous me donnez vos vêtements, vous allez gagner. . . un super gros lot ?	}{	Je travaille pour une émission de jeux. Si vous me donnez vos vêtements, vous allez gagner. . . un super gros lot ?	}{	201	}{	Persuasion -4	}{	}{	}{	}{	}{	}{	}{	}{	}

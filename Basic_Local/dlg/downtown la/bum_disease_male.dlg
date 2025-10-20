@@ -9,7 +9,7 @@
 {	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	11	}{	Ah ouais ? Eh bien, j'aurais sacrément plus envie de parler si vous me filiez quelques biffetons, hein ? Un beau, de vingt dollars pour me libérer les cordes vocales. . .	}{	Ah ouais ? Eh bien, j'aurais sacrément plus envie de parler si vous me filiez quelques biffetons, hein ? Un beau, de vingt dollars pour me libérer les cordes vocales. . .	}{	#	}{	}{	G.TinCanBill_Heard_M = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	12	}{	Dites-moi tout ce que vous savez !	}{	Dites-moi tout ce que vous savez !	}{	21	}{	Dominate 2 & IsClan(pc, "Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	12	}{	Dites-moi tout ce que vous savez !	}{	Dites-moi tout ce que vous savez !	}{	21	}{	Dominate 2 | (getattr(pc,"base_dominate") >= 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	13	}{	Entonnez le chant de la maladie des ténèbres, sans-âme !	}{	Entonnez le chant de la maladie des ténèbres, sans-âme !	}{	21	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	14	}{	Eh, on s'est rencontrés au centre pour sans-abri. . . Vous pouvez me faire confiance. . .	}{	Eh, on s'est rencontrés au centre pour sans-abri. . . Vous pouvez me faire confiance. . .	}{	21	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne voulez pas rappeler votre histoire à un visage familier et amical ?	}
 {	15	}{	Commencez à parler, ou je vous arrache les cordes vocales pour vous les montrer. . .	}{	Commencez à parler, ou je vous arrache les cordes vocales pour vous les montrer. . .	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Parlez ou je vous rôtis les tripes !	}
@@ -39,7 +39,7 @@
 {	39	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	41	}{	Alors j'ai pas trop envie de parler.	}{	Alors j'ai pas trop envie de parler.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	42	}{	Dites-moi tout ce que vous savez !	}{	Dites-moi tout ce que vous savez !	}{	21	}{	Dominate 2 & IsClan(pc, "Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	42	}{	Dites-moi tout ce que vous savez !	}{	Dites-moi tout ce que vous savez !	}{	21	}{	Dominate 2 | (getattr(pc,"base_dominate") >= 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	43	}{	Entonnez le chant de la maladie des ténèbres, sans-âme !	}{	Entonnez le chant de la maladie des ténèbres, sans-âme !	}{	21	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	44	}{	Vous ne vous souvenez pas de moi ? J'étais dans le vieux quartier. Parlez-moi. . .	}{	Vous ne vous souvenez pas de moi ? J'étais dans le vieux quartier. Parlez-moi. . .	}{	21	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne voulez pas rappeler votre histoire à un visage familier et amical ?	}
 {	45	}{	C'est votre dernière chance, vieillard.	}{	C'est votre dernière chance, vieillard.	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Parlez ou je vous rôtis les tripes !	}
@@ -79,7 +79,7 @@
 {	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	81	}{	Montrez-moi les billets verts.	}{	Montrez-moi les billets verts.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	82	}{	Dites-moi tout ce que vous savez !	}{	Dites-moi tout ce que vous savez !	}{	21	}{	Dominate 2 & IsClan(pc, "Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Dites-moi tout ce que vous savez !	}{	Dites-moi tout ce que vous savez !	}{	21	}{	Dominate 2 | (getattr(pc,"base_dominate") >= 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	83	}{	Entonnez le chant de la maladie des ténèbres, sans-âme !	}{	Entonnez le chant de la maladie des ténèbres, sans-âme !	}{	21	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	84	}{	Allez ! On se connaît depuis longtemps, nous ! On est de vieux amis !	}{	Allez ! On se connaît depuis longtemps, nous ! On est de vieux amis !	}{	21	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Vous ne voulez pas rappeler votre histoire à un visage familier et amical ?	}
 {	85	}{	Non. Mais vous allez bientôt voir rouge si vous ne parlez pas très vite. . .	}{	Non. Mais vous allez bientôt voir rouge si vous ne parlez pas très vite. . .	}{	21	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Parlez ou je vous rôtis les tripes !	}

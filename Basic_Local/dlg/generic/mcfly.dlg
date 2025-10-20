@@ -30,9 +30,9 @@
 {	30	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	31	}{	Dès que je sors d'ici, j'appelle les flics ! On verra ce qu'ils en penseront, hein ? Je vous ferai enfermer tous les deux.	}{	Dès que je sors d'ici, j'appelle les flics ! On verra ce qu'ils en penseront, hein ? Je vous ferai enfermer tous les deux.	}{	#	}{	npc.SetDisposition("Anger", 3)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	32	}{	(Auto-Link)	}{	(Auto-Link)	}{	91	}{	Humanity -3	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	33	}{	Tu ne l'as jamais vue, tu n'es pas venu ici. Retourne d'où tu viens et réveille-toi.	}{	Tu ne l'as jamais vue, tu n'es pas venu ici. Retourne d'où tu viens et réveille-toi.	}{	41	}{	Dominate 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	33	}{	Tu ne l'as jamais vue, tu n'es pas venu ici. Retourne d'où tu viens et réveille-toi.	}{	Tu ne l'as jamais vue, tu n'es pas venu ici. Retourne d'où tu viens et réveille-toi.	}{	41	}{	Dominate 2 | (getattr(pc,"base_dominate") >= 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	34	}{	Tu devrais aller voir les flics tout de suite. Et leur dire 'J'ai un flingue, poulet'.	}{	Tu devrais aller voir les flics tout de suite. Et leur dire 'J'ai un flingue, poulet'.	}{	51	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	35	}{	Vous voulez vraiment faire ça à quelqu'un comme moi?	}{	Vous voulez vraiment faire ça à quelqu'un comme moi?	}{	111	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	35	}{	Vous voulez vraiment faire ça à quelqu'un comme moi?	}{	Vous voulez vraiment faire ça à quelqu'un comme moi?	}{	111	}{	Presence 2 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	36	}{	Comment comptes-tu communiquer avec une mâchoire et des mains brisées ?	}{	Comment comptes-tu communiquer avec une mâchoire et des mains brisées ?	}{	111	}{	Intimidate 5	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	37	}{	Oui, c'est ça. Quand je t'aurai vidé de ton sang, tu ne sauras même plus en quelle année nous sommes.	}{	Oui, c'est ça. Quand je t'aurai vidé de ton sang, tu ne sauras même plus en quelle année nous sommes.	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	38	}{	Je boirais bien un truc, moi. . . Oui, boire un truc. . .	}{	Je boirais bien un truc, moi. . . Oui, boire un truc. . .	}{	131	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

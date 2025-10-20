@@ -1,6 +1,6 @@
 {	1	}{	[Fatigué]Ouais ? Qu'est-ce que tu cherches, chéri ?	}{	[Fatigué]Ouais ? Qu'est-ce que tu cherches, chérie ?	}{	#	}{	npc.SetDisposition("Apathy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	Toi et moi dans une salle privée pendant dix minutes. 	}{	Toi et moi dans une salle privée pendant dix minutes. 	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Une fête privée et provocante. . .	}
-{	3	}{	Je veux que tu quittes cette pièce.	}{	Je veux que tu quittes cette pièce.	}{	11	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	3	}{	Je veux que tu quittes cette pièce.	}{	Je veux que tu quittes cette pièce.	}{	11	}{	Dominate 3 | (getattr(pc,"base_dominate") >= 3 and G.Patch_Plus == 1)	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	4	}{	Pousse dans une autre pièce, petite fleur !	}{	Pousse dans une autre pièce, petite fleur !	}{	11	}{	Dementation 3	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	5	}{	Quelqu'un t'attend dans une autre pièce. Va le voir.	}{	Quelqu'un t'attend dans une autre pièce. Va le voir.	}{	11	}{	Persuasion 6	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	Il faudrait que tu voies quelque chose, mais ce n'est pas ici.	}
 {	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -50,7 +50,7 @@
 {	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	51	}{	Ouais ? Il te fallait autre chose ?	}{	Ouais ? Il te fallait autre chose ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	J'espérais qu'on pourrait passer un peu de temps toutes les deux.	}{	J'espérais qu'on pourrait passer un peu de temps toutes les deux.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Peut-être toi et moi dans une galante galipette ou une grimpette ?	}
-{	53	}{	Je veux que tu quittes cette pièce.	}{	Je veux que tu quittes cette pièce.	}{	11	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	53	}{	Je veux que tu quittes cette pièce.	}{	Je veux que tu quittes cette pièce.	}{	11	}{	Dominate 3 | (getattr(pc,"base_dominate") >= 3 and G.Patch_Plus == 1)	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	54	}{	Pousse dans une autre pièce, petite fleur !	}{	Pousse dans une autre pièce, petite fleur !	}{	11	}{	Dementation 3	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	55	}{	Quelqu'un t'attend dans une autre pièce. Va le voir.	}{	Quelqu'un t'attend dans une autre pièce. Va le voir.	}{	11	}{	Persuasion 6	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	Il faudrait que tu voies quelque chose, mais ce n'est pas ici.	}
 {	56	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -80,9 +80,9 @@
 {	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	81	}{	Eh ! J'ai passé dix minutes là-dedans à t'attendre ! C'est quoi ton problème ?	}{	Eh ! J'ai passé dix minutes là-dedans à t'attendre ! C'est quoi ton problème ?	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Kerri_Biz = 0; G.Kerri_TimesUp = 0; G.Kerri_Mesmerize = 0	}{	}{	}{	}{	}{	}{	}{	}
 {	82	}{	Retournes-y, j'arrive dans une seconde.	}{	Retournes-y, j'arrive dans une seconde.	}{	91	}{	}{	}{	}{	}{	}{	}{	}{	}{	Reviens et je serai ton ombre.	}
-{	83	}{	Je veux que tu quittes cette pièce.	}{	Je veux que tu quittes cette pièce.	}{	11	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Je veux que tu quittes cette pièce.	}{	Je veux que tu quittes cette pièce.	}{	11	}{	Dominate 3 | (getattr(pc,"base_dominate") >= 3 and G.Patch_Plus == 1)	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	84	}{	Pousse dans une autre pièce, petite fleur !	}{	Pousse dans une autre pièce, petite fleur !	}{	11	}{	Dementation 3	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	85	}{	Rejoins-moi dans une salle privée?	}{	Rejoins-moi dans une salle privée?	}{	11	}{	Presence 3 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	85	}{	Rejoins-moi dans une salle privée?	}{	Rejoins-moi dans une salle privée?	}{	11	}{	Presence 3 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	86	}{	Quelqu'un t'attend dans une autre pièce. Va le voir.	}{	Quelqu'un t'attend dans une autre pièce. Va le voir.	}{	11	}{	Persuasion 6	}{	G.Chastity_Attack = 1	}{	}{	}{	}{	}{	}{	}{	Il faudrait que tu voies quelque chose, mais ce n'est pas ici.	}
 {	87	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	88	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

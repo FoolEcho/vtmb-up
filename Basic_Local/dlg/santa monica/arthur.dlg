@@ -761,8 +761,8 @@
 {	761	}{	Je croyais vous avoir dit de foutre le camp !	}{	Je croyais vous avoir dit de foutre le camp !	}{	#	}{	npc.SetDisposition("Anger",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	762	}{	Oh, allez, vous ne m'en voulez pas, quand même ?	}{	Oh, allez, vous ne m'en voulez pas, quand même ?	}{	771	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	Allez, mon visage ne vous dérange pas tant que ça ?	}
 {	763	}{	Nos cerveaux se ressemblent au point que c'en est fascinant.	}{	Nos cerveaux se ressemblent au point que c'en est fascinant.	}{	781	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	764	}{	Parlez-moi avec respect !	}{	Parlez-moi avec respect !	}{	801	}{	Dominate 2 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	765	}{	Comment osez-vous me parler comme ça!	}{	Comment osez-vous me parler comme ça!	}{	801	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	764	}{	Parlez-moi avec respect !	}{	Parlez-moi avec respect !	}{	801	}{	Dominate 2 | (getattr(pc,"base_dominate") >= 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	765	}{	Comment osez-vous me parler comme ça!	}{	Comment osez-vous me parler comme ça!	}{	801	}{	Presence 2 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	766	}{	Continuez de parler comme ça et je vous casse le bras.	}{	Continuez de parler comme ça et je vous casse le bras.	}{	811	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Les fractures, c'est rigolo. Venez, je vais vous montrer !	}
 {	767	}{	Vous êtes sexy quand vous êtes en colère. . .	}{	Vous êtes sexy quand vous êtes en colère. . .	}{	821	}{	Seduction 4 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Vous me réchauffez beaucoup les parties. . .	}
 {	768	}{	Vous êtes sexy quand vous êtes en colère. . .	}{	Vous êtes sexy quand vous êtes en colère. . .	}{	831	}{	Seduction 4 & IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Vous me réchauffez beaucoup les parties. . .	}

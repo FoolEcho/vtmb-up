@@ -79,8 +79,8 @@
 {	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	81	}{	Je ne vois pas vraiment de quoi vous parlez.	}{	Je ne vois pas vraiment de quoi vous parlez.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	82	}{	Vous allez écrire une mauvaise critique. Très mauvaise.	}{	Vous allez écrire une mauvaise critique. Très mauvaise.	}{	91	}{	Dominate 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	83	}{	Les gens comme vous devraient m'alerter d'un mauvais restaurant comme celui-ci.	}{	Les gens comme vous devraient m'alerter d'un mauvais restaurant comme celui-ci.	}{	91	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	82	}{	Vous allez écrire une mauvaise critique. Très mauvaise.	}{	Vous allez écrire une mauvaise critique. Très mauvaise.	}{	91	}{	Dominate 2 | (getattr(pc,"base_dominate") >= 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	83	}{	Les gens comme vous devraient m'alerter d'un mauvais restaurant comme celui-ci.	}{	Les gens comme vous devraient m'alerter d'un mauvais restaurant comme celui-ci.	}{	91	}{	Presence 2 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	84	}{	Les vers sont-ils à votre goût ?	}{	Les vers sont-ils à votre goût ?	}{	61	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	Les vers sont-ils à votre goût ?	}
 {	85	}{	Ce ne serait pas dans votre intérêt de descendre cet endroit ? Vous avez une réputation, quand même.	}{	Ce ne serait pas dans votre intérêt de descendre cet endroit ? Vous avez une réputation, quand même.	}{	51	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	C'est une blague ? Vous, faire la critique de cet endroit ? Je ris. . .	}
 {	86	}{	Il serait dans votre intérêt d'écrire une mauvaise critique de ce restaurant.	}{	Il serait dans votre intérêt d'écrire une mauvaise critique de ce restaurant.	}{	171	}{	Intimidate 4	}{	G.Tommy_Threat = 1	}{	}{	}{	}{	}{	}{	}{	Eloignez-vous de cette auge, porc, et dites aux autres porcs de ne pas manger ici.	}
@@ -111,8 +111,8 @@
 {	111	}{	C'est toujours agréable de rencontrer quelqu'un qui sait apprécier la nourriture. Je peux vous dédicacer une serviette ?	}{	C'est toujours agréable de rencontrer quelqu'un qui sait apprécier la nourriture. Je peux vous dédicacer une serviette ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	112	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	113	}{	Ce ne serait pas dans votre intérêt de descendre cet endroit ? Vous avez une réputation, quand même.	}{	Ce ne serait pas dans votre intérêt de descendre cet endroit ? Vous avez une réputation, quand même.	}{	51	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	C'est une blague ? Vous, faire la critique de cet endroit ? Je ris. . .	}
-{	114	}{	Vous allez écrire une mauvaise critique. Très mauvaise.	}{	Vous allez écrire une mauvaise critique. Très mauvaise.	}{	91	}{	Dominate 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	115	}{	Les gens comme vous devraient m'alerter d'un mauvais restaurant comme celui-ci.	}{	Les gens comme vous devraient m'alerter d'un mauvais restaurant comme celui-ci.	}{	91	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	114	}{	Vous allez écrire une mauvaise critique. Très mauvaise.	}{	Vous allez écrire une mauvaise critique. Très mauvaise.	}{	91	}{	Dominate 2 | (getattr(pc,"base_dominate") >= 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	115	}{	Les gens comme vous devraient m'alerter d'un mauvais restaurant comme celui-ci.	}{	Les gens comme vous devraient m'alerter d'un mauvais restaurant comme celui-ci.	}{	91	}{	Presence 2 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	116	}{	Les vers sont-ils à votre goût ?	}{	Les vers sont-ils à votre goût ?	}{	61	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	Les vers sont-ils à votre goût ?	}
 {	117	}{	Ce serait dans votre intérêt d'écrire une mauvaise critique de ce restaurant.	}{	Ce serait dans votre intérêt d'écrire une mauvaise critique de ce restaurant.	}{	171	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Eloignez-vous de cette auge, porc, et dites aux autres porcs de ne pas manger ici.	}
 {	118	}{	J'aime beaucoup ce que vous faites.	}{	J'aime beaucoup ce que vous faites.	}{	191	}{	Seduction 5 & pc.IsMale()	}{	}{	}{	}{	}{	}{	}{	}{	LE Tommy Flayton ?! Mon coeur a cessé de battre.	}
@@ -170,8 +170,8 @@
 {	170	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	171	}{	Ecoutez, comique. Je ne suis pas devenu le plus grand critique de LA sans me faire quelques amis puissants. La plupart des propriétaires de restaurants sont des criminels, et je mange à leur table quand je passe les voir.	}{	Ecoutez, comique. Je ne suis pas devenu le plus grand critique de LA sans me faire quelques amis puissants. La plupart des propriétaires de restaurants sont des criminels, et je mange à leur table quand je passe les voir.	}{	#	}{	npc.SetDisposition("Anger", 2)	}{	G.Tommy_Pissed = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	172	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	173	}{	Vous allez écrire une mauvaise critique. Très mauvaise.	}{	Vous allez écrire une mauvaise critique. Très mauvaise.	}{	91	}{	Dominate 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	174	}{	Les gens comme vous devraient m'alerter d'un mauvais restaurant comme celui-ci.	}{	Les gens comme vous devraient m'alerter d'un mauvais restaurant comme celui-ci.	}{	91	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	173	}{	Vous allez écrire une mauvaise critique. Très mauvaise.	}{	Vous allez écrire une mauvaise critique. Très mauvaise.	}{	91	}{	Dominate 2 | (getattr(pc,"base_dominate") >= 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	174	}{	Les gens comme vous devraient m'alerter d'un mauvais restaurant comme celui-ci.	}{	Les gens comme vous devraient m'alerter d'un mauvais restaurant comme celui-ci.	}{	91	}{	Presence 2 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	175	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	176	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	177	}{	Les vers sont-ils à votre goût ?	}{	Les vers sont-ils à votre goût ?	}{	61	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	Les vers sont-ils à votre goût ?	}

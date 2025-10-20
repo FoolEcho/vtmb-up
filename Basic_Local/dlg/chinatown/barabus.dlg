@@ -8,7 +8,7 @@
 {	8	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	9	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	10	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	11	}{	[A été battu, torturé, sujet à des expériences au cours des derniers jours et n'est pas dans les meilleures dispositions]Ils vous ont eu aussi ?. . . Je n'ai aucune excuse. . . Un Nosferatu pris par une poignée d'humains. . . Quel coup au moral.	}{	[A été battu, torturé, sujet à des expériences au cours des derniers jours et n'est pas dans les meilleures dispositions]Ils vous ont eue aussi ?. . . Je n'ai aucune excuse. . . Un Nosferatu pris par une poignée d'humains. . . Quel coup au moral.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	pc.SetQuest("Barabus",2); pc.SetQuest("Mandarin",4)	}{	}{	}{	}{	}{	}{	}{	}
+{	11	}{	[A été battu, torturé, sujet à des expériences au cours des derniers jours et n'est pas dans les meilleures dispositions]Ils vous ont eu aussi ?. . . Je n'ai aucune excuse. . . Un Nosferatu pris par une poignée d'humains. . . Quel coup au moral.	}{	[A été battu, torturé, sujet à des expériences au cours des derniers jours et n'est pas dans les meilleures dispositions]Ils vous ont eue aussi ?. . . Je n'ai aucune excuse. . . Un Nosferatu pris par une poignée d'humains. . . Quel coup au moral.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	pc.SetQuest("Mandarin",4)	}{	}{	}{	}{	}{	}{	}{	}
 {	12	}{	Vous devez être Barabus. C'est Gary qui m'envoie. Filons d'ici.	}{	Vous devez être Barabus. C'est Gary qui m'envoie. Filons d'ici.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vous êtes les yeux de Gary à Chinatown ?	}
 {	13	}{	Ne vous en faites pas. Ils m'ont eu aussi. Il faut qu'on se tire.	}{	Ne vous en faites pas. Ils m'ont eue aussi. Il faut qu'on se tire.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Les regrets sont pour les nuits à venir. Cette nuit ne sert qu'aux évasions.	}
 {	14	}{	Ouais, bon travail. Grâce à vous, il a fallu que je retourne Chinatown.	}{	Ouais, bon travail. Grâce à vous, il a fallu que je retourne Chinatown.	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Il a fallu que je retourne toute la ville pour retrouver un petit rat d'égout !	}
@@ -58,7 +58,7 @@
 {	58	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	59	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	60	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	61	}{	Voilà, il n'y en a plus. On fiche le camp.	}{	Voilà, il n'y en a plus. On fiche le camp.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Barabus",2)	}{	}{	}{	}{	}{	}{	}{	}
+{	61	}{	Voilà, il n'y en a plus. On fiche le camp.	}{	Voilà, il n'y en a plus. On fiche le camp.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	62	}{	Vous devez contacter Gary tout de suite. Il faut lui dire que vous allez bien.	}{	Vous devez contacter Gary tout de suite. Il faut lui dire que vous allez bien.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Accélérez votre récit vers les sous-sols ! COUREZ !	}
 {	63	}{	Appelez Gary dès que vous partez. J'ai besoin d'info, et c'est vous le paiement.	}{	Appelez Gary dès que vous partez. J'ai besoin d'info, et c'est vous le paiement.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Souvenez-vous, je vous ai échangé contre ma réussite. Ne gardez pas votre liberté secrète.	}
 {	64	}{	Qu'en est-il des portes?	}{	Qu'en est-il des portes?	}{	77	}{	G.Barrabus_Hacker == 1	}{	}{	}{	}{	}{	}{	}{	}{	Qui laissera les chiens sortir?	}
@@ -68,7 +68,7 @@
 {	68	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	69	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	71	}{	Promis. Et. . . merci.	}{	Promis. Et. . . merci.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Story_State = 55; G.Barrabus_Exit = 1	}{	}{	}{	}{	}{	}{	}{	}
+{	71	}{	Promis. Et. . . merci.	}{	Promis. Et. . . merci.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	pc.SetQuest("Barabus",2); G.Story_State = 55; G.Barrabus_Exit = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	Avec plaisir.	}{	Avec plaisir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Merci à moi aussi.	}
 {	73	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	74	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

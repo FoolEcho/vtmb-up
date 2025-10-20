@@ -19,11 +19,11 @@
 {	19	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	20	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	21	}{	Alors je ne vais pas me rappeler quoi que ce soit sans billet vert. [tousse, tousse]Reviens si tu as de quoi me délier la langue. . .	}{	Alors je ne vais pas me rappeler quoi que ce soit sans billet vert. [tousse, tousse]Reviens si tu as de quoi me délier la langue. . .	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	22	}{	Dis-moi tout !	}{	Dis-moi tout !	}{	41	}{	Dominate 2 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	22	}{	Dis-moi tout !	}{	Dis-moi tout !	}{	41	}{	Dominate 2 | (getattr(pc,"base_dominate") >= 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	23	}{	Tu ne voudrais pas me mettre en colère, vieillard. Dis-moi tout.	}{	Tu ne voudrais pas me mettre en colère, vieillard. Dis-moi tout.	}{	41	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Délie ta langue ou tu la perdras. . .	}
 {	24	}{	Allez, vieillard. Confie-moi ton secret en échange d'un des miens.	}{	Allez, vieillard. Confie-moi ton secret en échange d'un des miens.	}{	51	}{	Seduction 4 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Si tu enlèves ta veste, j'enlèverai ma chemise.	}
 {	25	}{	Très bien. Voilà cinq dollars. Dis-moi ce qui se passe. . .	}{	Très bien. Voilà cinq dollars. Dis-moi ce qui se passe. . .	}{	31	}{	pc.CurrentMoney() >= 5	}{	pc.MoneyRemove(5)	}{	}{	}{	}{	}{	}{	}{	Voici ton or. Parle. 	}
-{	26	}{	Tu vas te souvenir pour moi.	}{	Tu vas te souvenir pour moi.	}{	31	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	Tu vas te souvenir pour moi.	}{	Tu vas te souvenir pour moi.	}{	31	}{	Presence 2 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	27	}{	Peu importe. Je reviendrai.	}{	Peu importe. Je reviendrai.	}{	0	}{	}{	G.Bill_ComeBackLater = 1	}{	}{	}{	}{	}{	}{	}{	Je ne suis déjà plus là.	}
 {	28	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	29	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

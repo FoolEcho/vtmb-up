@@ -14,17 +14,17 @@
 {	14	}{	Les paroles échangées avec mon rédacteur restent entre lui et moi.	}{	Les paroles échangées avec mon rédacteur restent entre lui et moi.	}{	21	}{	Intimidate 3 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	15	}{	Ma folie ne convient-elle pas pour ce navire fantôme ?	}{	Ma folie ne convient-elle pas pour ce navire fantôme ?	}{	31	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	16	}{	Voyez en moi une vision du mercenaire corrompu de Jacobson !	}{	Voyez en moi une vision du mercenaire corrompu de Jacobson !	}{	61	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	17	}{	C'est moi que vous insultez ?	}{	C'est moi que vous insultez ?	}{	21	}{	Persuasion -2 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	17	}{	C'est moi que vous insultez ?	}{	C'est moi que vous insultez ?	}{	21	}{	Persuasion -3 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	18	}{	Euh, eh bien, Jacobson, euh. . .	}{	Euh, eh bien, Jacobson, euh. . .	}{	21	}{	Intimidate -3 & not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	19	}{	Que voulez-vous dire ?	}{	Que voulez-vous dire ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mes oreilles n'arrivent pas à suivre votre histoire.	}
 {	20	}{	Je pense que je vais y aller. . .	}{	Je pense que je vais y aller. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sortie par ici.	}
 {	21	}{	Bon sang, et vous. . . Quel genre de grand reporter vous êtes ? Vous pensez même pas à venir en policier, en garde côte, je ne sais pas, moi. . . vous n'avez jamais vu de série policière ? On donne le diplôme à n'importe qui, ou quoi ?	}{	Bon sang, et vous. . . Quel genre de grand reporter vous êtes ? Vous pensez même pas à venir en policier, en garde côte, je ne sais pas, moi. . . vous n'avez jamais vu de série policière ? Vous avez eu votre diplôme dans une pochette surprise, ou quoi ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	22	}{	Bon, finissons-en avant que l'un de nous deux soit obligé de piquer une tête.	}{	Bon, finissons-en avant que l'un de nous deux soit obligé de piquer une tête.	}{	61	}{	Intimidate 2	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez envie d'un petit plouf ?	}
-{	23	}{	Mes vêtements ne devraient pas vous déranger. Je peux les enlever, vous savez.	}{	Mes vêtements ne devraient pas vous déranger. Je peux les enlever, vous savez.	}{	61	}{	F_Seduction 3	}{	}{	}{	}{	}{	}{	}{	}{	Mes vêtements sont amovibles s'ils ne sont pas appropriés.	}
+{	22	}{	Bon, finissons-en avant que l'un de nous deux soit obligé de piquer une tête.	}{	Bon, finissons-en avant que l'un de nous deux soit obligé de piquer une tête.	}{	61	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Vous avez envie d'un petit plouf ?	}
+{	23	}{	Mes vêtements ne devraient pas vous déranger. Je peux les enlever, vous savez.	}{	Mes vêtements ne devraient pas vous déranger. Je peux les enlever, vous savez.	}{	61	}{	F_Seduction 3 & G.Extra_Lines == 1	}{	}{	}{	}{	}{	}{	}{	}{	Mes vêtements sont amovibles s'ils ne sont pas appropriés.	}
 {	24	}{	Ca suffit. Il faut faire vite, et sans qu'on nous voie.	}{	Ca suffit. Il faut faire vite, et sans qu'on nous voie.	}{	71	}{	Persuasion 3	}{	}{	}{	}{	}{	}{	}{	}{	Notre essence est pressée.	}
-{	25	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	26	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	27	}{	Fermez-la et faites ce que Jacobstein vous a dit de faire pour moi.	}{	Fermez-la et faites ce que Jacobstein vous a dit de faire pour moi.	}{	31	}{	Intimidate -2	}{	}{	}{	}{	}{	}{	}{	}{	Votre orifice doit être fermé. Dois-je le faire pour vous ?	}
+{	25	}{	Vous allez me dire ce que vous savez, maintenant.	}{	Vous allez me dire ce que vous savez, maintenant.	}{	71	}{	Dominate 1 & G.Patch_Plus == 1	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	26	}{	Vous allez me dire ce que vous savez, maintenant	}{	Vous allez me dire ce que vous savez, maintenant.	}{	71	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	27	}{	Fermez-la et faites ce que Jacobstein vous a dit de faire pour moi.	}{	Fermez-la et faites ce que Jacobstein vous a dit de faire pour moi.	}{	31	}{	Intimidate -3	}{	}{	}{	}{	}{	}{	}{	}{	Votre orifice doit être fermé. Dois-je le faire pour vous ?	}
 {	28	}{	Comment osez-vous, je suis super. . . Woodstein.	}{	Comment osez-vous, je suis super. . . Woodstein.	}{	31	}{	Persuasion -3	}{	}{	}{	}{	}{	}{	}{	}{	Je suis la descendance de Woodstein.	}
 {	29	}{	C'est pas la peine.	}{	C'est pas la peine.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne veux pas écouter les lamentations d'un amateur de donuts.	}
 {	30	}{	Quel diplôme ? Mais de quoi parlez-vous ?	}{	Quel diplôme ? Mais de quoi parlez-vous ?	}{	31	}{	}{	}{	}{	}{	}{	}{	}{	}{	Vos paroles me laissent perplexe.	}
@@ -48,8 +48,8 @@
 {	48	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	49	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	50	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	51	}{	C'est pas une grosse surprise. Je vous aurais pris pour une garce. Je suppose que ce n'est pas pour vos études que Jacobson vous a embauchée.	}{	C'est pas une grosse surprise. Je vous aurais pris pour une garce. Je suppose que ce n'est pas pour vos études que Jacobson vous a embauchée.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	52	}{	Allons-y.	}{	Allons-y.	}{	71	}{	Persuasion 3	}{	}{	}{	}{	}{	}{	}{	}{	Sale petit flic. Donnez-moi les renseignements que je cherche.	}
+{	51	}{	[Voix manquante]C'est pas une grosse surprise. Je vous aurais pris pour une garce. Je suppose que ce n'est pas pour vos études que Jacobson vous a embauchée.	}{	[Voix manquante]C'est pas une grosse surprise. Je vous aurais pris pour une garce. Je suppose que ce n'est pas pour vos études que Jacobson vous a embauchée.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	52	}{	Allons-y.	}{	Allons-y.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	Sale petit flic. Donnez-moi les renseignements que je cherche.	}
 {	53	}{	Je n'ai pas besoin de votre aide, poulet.	}{	Je n'ai pas besoin de votre aide, poulet.	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	L'odeur de poulet emplit mes narines.	}
 {	54	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	55	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

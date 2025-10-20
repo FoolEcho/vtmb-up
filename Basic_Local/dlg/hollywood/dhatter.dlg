@@ -70,9 +70,9 @@
 {	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	71	}{	Un bon auteur en a toujours un, dans cette ville. Eh, vous êtes de la partie ? J'ai des centaines d'idées de films, en fait, je devrais vous donner un de mes scénars finis. Celui-ci est encore en chantier.	}{	Un bon auteur en a toujours un, dans cette ville. Eh, vous êtes de la partie ? J'ai des centaines d'idées de films, en fait, je devrais vous donner un de mes scénars finis. Celui-ci est encore en chantier.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	J'ai besoin de tous les exemplaires de votre script sur les vampires.	}{	J'ai besoin de tous les exemplaires de votre script sur les vampires.	}{	81	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je vais tous les prendre, pour les lire à voix haute dans la nuit.	}
-{	73	}{	Donnez-moi votre script de vampires.	}{	Donnez-moi votre script de vampires.	}{	101	}{	Dominate 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	Donnez-moi votre script de vampires.	}{	Donnez-moi votre script de vampires.	}{	101	}{	Dominate 2 | (getattr(pc,"base_dominate") >= 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	74	}{	Je suis un puissant thesaurus ! Donnez-moi votre script ou je vous arrache la tête ! RRRR !	}{	Je suis un puissant thesaurus ! Donnez-moi votre script ou je vous arrache la tête ! RRRR !	}{	101	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	Je suis un puissant thesaurus ! Donnez-moi votre script ou je vous arrache la tête ! RRRR !	}
-{	75	}{	Vous voulez néanmoins me le donner.	}{	Vous voulez néanmoins me le donner.	}{	81	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	75	}{	Vous voulez néanmoins me le donner.	}{	Vous voulez néanmoins me le donner.	}{	81	}{	Presence 2 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	76	}{	Je connais quelques personnes qui voudraient faire un film de vampires.	}{	Je connais quelques personnes qui voudraient faire un film de vampires.	}{	161	}{	Persuasion 5	}{	}{	}{	}{	}{	}{	}{	}{	Je peux mettre le script entre les mains de ceux qui font les rêves. J'en connais beaucoup. . .	}
 {	77	}{	Je trouve les auteurs tellement cool. . . Je peux vous l'emprunter ?	}{	Je trouve les auteurs tellement cool. . . Je peux vous l'emprunter ?	}{	111	}{	F_Seduction 4	}{	}{	}{	}{	}{	}{	}{	}{	Je fonds pour les auteurs. Si vous me le prêtez, je pourrai être votre muse. . .	}
 {	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -122,9 +122,9 @@
 {	122	}{	Allez, à moi, vous pouvez en parler.	}{	Allez, à moi, vous pouvez en parler.	}{	141	}{	F_Seduction 6 & G.David_Threat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je ne le répéterai à personne, pas même à ceux qui partagent mes pensées.	}
 {	123	}{	Vous ne pensez pas qu'il voudrait devenir célèbre ? Comme tout le monde. . .	}{	Vous ne pensez pas qu'il voudrait devenir célèbre ? Comme tout le monde. . .	}{	141	}{	Persuasion 6 & G.David_Threat == 0	}{	}{	}{	}{	}{	}{	}{	}{	Tout le monde dans la ville chercher la gloire. Pas lui ?	}
 {	124	}{	Voilà ce que je vous propose. Je vous laisse les yeux si vous me le dites.	}{	Voilà ce que je vous propose. Je vous laisse les yeux si vous me le dites.	}{	131	}{	Intimidate 3	}{	}{	}{	}{	}{	}{	}{	}{	Vous tenez à vos yeux ? Je vous les offre si vous me dites son nom.	}
-{	125	}{	Vous allez me dire de qui il s'agit, et tout de suite !	}{	Vous allez me dire de qui il s'agit, et tout de suite !	}{	131	}{	Dominate 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	125	}{	Vous allez me dire de qui il s'agit, et tout de suite !	}{	Vous allez me dire de qui il s'agit, et tout de suite !	}{	131	}{	Dominate 2 | (getattr(pc,"base_dominate") >= 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	126	}{	Votre esprit finira par me donner son nom.	}{	Votre esprit finira par me donner son nom.	}{	141	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	Votre esprit finira par me donner son nom.	}
-{	127	}{	Il aimera rencontrer un être tel que moi.	}{	Il aimera rencontrer un être tel que moi.	}{	131	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	127	}{	Il aimera rencontrer un être tel que moi.	}{	Il aimera rencontrer un être tel que moi.	}{	131	}{	Presence 2 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	128	}{	Combien cela me coûtera-t-il de vous faire avouer son nom ?	}{	Combien cela me coûtera-t-il de vous faire avouer son nom ?	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quel est le prix de son secret ?	}
 {	129	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	130	}{	Bon, très bien. Au revoir.	}{	Bon, très bien. Au revoir.	}{	0	}{	}{	G.Money_Tapped = 1	}{	}{	}{	}{	}{	}{	}{	A l'avenir, attendez-vous à me revoir. Je pars.	}
@@ -250,7 +250,7 @@
 {	250	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	251	}{	Ouais, enfin, je sais pas. . .	}{	Ouais, enfin, je sais pas. . .	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	252	}{	Voilà ce que je vous propose. Je vous laisse les yeux si vous me le dites.	}{	Voilà ce que je vous propose. Je vous laisse les yeux si vous me le dites.	}{	131	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	Vous tenez à vos yeux ? Je vous les offre si vous me dites son nom.	}
-{	253	}{	Vous allez me dire de qui il s'agit, et tout de suite !	}{	Vous allez me dire de qui il s'agit, et tout de suite !	}{	131	}{	Dominate 2	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	253	}{	Vous allez me dire de qui il s'agit, et tout de suite !	}{	Vous allez me dire de qui il s'agit, et tout de suite !	}{	131	}{	Dominate 2 | (getattr(pc,"base_dominate") >= 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	254	}{	Votre esprit finira par me donner son nom.	}{	Votre esprit finira par me donner son nom.	}{	141	}{	Dementation 2	}{	}{	}{	}{	}{	}{	}{	}{	Votre esprit finira par me donner son nom.	}
 {	255	}{	50 dollars, ça vous va ?	}{	50 dollars, ça vous va ?	}{	261	}{	pc.CurrentMoney() >= 50	}{	}{	}{	}{	}{	}{	}{	}{	Tous mes doigts, fois cinq dollars. . .	}
 {	256	}{	A mon avis, 500 dollars, ça devrait aller. . .	}{	A mon avis, 500 dollars, ça devrait aller. . .	}{	271	}{	Haggle 3 & pc.CurrentMoney() >= 500	}{	pc.MoneyRemove( 500 )	}{	}{	}{	}{	}{	}{	}{	500, c'est une somme, pour vous, non ?	}

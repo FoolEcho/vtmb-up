@@ -40,7 +40,7 @@
 {	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	41	}{	J'ai dit que j'avais une invitation ? C'est bien ce que je croyais. . . Oui, j'ai une invitation.	}{	J'ai dit que j'avais une invitation ? C'est bien ce que je croyais. . . Oui, j'ai une invitation.	}{	#	}{	npc.SetDisposition("Confused", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	Donnez-moi votre invitation.	}{	Donnez-moi votre invitation.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	POUR MOI !	}
-{	43	}{	Donnez-moi votre invitation.	}{	Donnez-moi votre invitation.	}{	81	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	Donnez-moi votre invitation.	}{	Donnez-moi votre invitation.	}{	81	}{	Dominate 3 | (getattr(pc,"base_dominate") >= 3 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	44	}{	Si vous me donnez votre invitation, j'empêcherai le manège de tourner.	}{	Si vous me donnez votre invitation, j'empêcherai le manège de tourner.	}{	181	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	Si vous me donnez votre invitation, j'empêcherai le manège de tourner.	}
 {	45	}{	Peu importe. Au revoir.	}{	Peu importe. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis pas ici.	}
 {	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

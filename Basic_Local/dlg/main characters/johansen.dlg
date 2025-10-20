@@ -1,7 +1,7 @@
 {	1	}{	Je vous ai tout dit - vous n'avez aucune raison de me garder ici ! Relâchez-moi !	}{	Je vous ai tout dit - vous n'avez aucune raison de me garder ici ! Relâchez-moi !	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	G.Story_State = 70	}{	}{	}{	}{	}{	}{	}{	}
 {	2	}{	Dr Johansen ?	}{	Dr Johansen ?	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Eh, quoi d'neuf, docteur ?	}
 {	3	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	4	}{	Parlez-moi du Sarcophage d'Ankara.	}{	Parlez-moi du Sarcophage d'Ankara.	}{	71	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	4	}{	Parlez-moi du Sarcophage d'Ankara.	}{	Parlez-moi du Sarcophage d'Ankara.	}{	71	}{	Dominate 3 | (getattr(pc,"base_dominate") >= 3 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	5	}{	Un discours sur le sarcophage. . . Discours ! DISCOURS !	}{	Un discours sur le sarcophage. . . Discours ! DISCOURS !	}{	181	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	6	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	7	}{	Silence ! Dites-moi ce que vous savez sur le Sarcophage d'Ankara.	}{	Silence ! Dites-moi ce que vous savez sur le Sarcophage d'Ankara.	}{	21	}{	}{	}{	}{	}{	}{	}{	}{	}{	Finissez ma phrase ou je ne serais pas content.	"Le sarcophage d'Ankara est..."	}
@@ -21,7 +21,7 @@
 {	21	}{	Je suis archéologue ! Vous ne pouvez pas m'enfermer comme ça, je suis un otage ! Je n'ai pas besoin de protection ! Ramenez-moi tout de suite à mon hôtel !	}{	Je suis archéologue ! Vous ne pouvez pas m'enfermer comme ça, je suis un otage ! Je n'ai pas besoin de protection ! Ramenez-moi tout de suite à mon hôtel !	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	22	}{	Il y a un bateau pas loin d'ici. Aidez-moi, et je vous aiderai à vous échapper.	}{	Il y a un bateau pas loin d'ici. Aidez-moi, et je vous aiderai à vous échapper.	}{	61	}{	Persuasion 8 & pc.humanity >= 5	}{	G.Prof_Escape = 1	}{	}{	}{	}{	}{	}{	}{	Je vous emmène en croisière si vous parlez de sarcophages.	}
 {	23	}{	Je viens vous aider, Dr Johansen.	}{	Je viens vous aider, Dr Johansen.	}{	41	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Nous sommes tous les otages de notre destin fou. Mais je ne suis pas votre geôlier.	}
-{	24	}{	Parlez-moi du Sarcophage d'Ankara.	}{	Parlez-moi du Sarcophage d'Ankara.	}{	71	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	24	}{	Parlez-moi du Sarcophage d'Ankara.	}{	Parlez-moi du Sarcophage d'Ankara.	}{	71	}{	Dominate 3 | (getattr(pc,"base_dominate") >= 3 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	25	}{	Un discours sur le sarcophage. . . Discours ! DISCOURS !	}{	Un discours sur le sarcophage. . . Discours ! DISCOURS !	}{	181	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	26	}{	J'ai besoin de renseignements. Si vous m'aidez, je vous laisserai peut-être partir.	}{	J'ai besoin de renseignements. Si vous m'aidez, je vous laisserai peut-être partir.	}{	41	}{	Humanity 5	}{	}{	}{	}{	}{	}{	}{	}{	Réponses égalent liberté, doc.	}
 {	27	}{	Du calme, papy, ou je vais faire quelque chose dont vous aurez vraiment peur.	}{	Du calme, papy, ou je vais faire quelque chose dont vous aurez vraiment peur.	}{	51	}{	Humanity -5	}{	}{	}{	}{	}{	}{	}{	}{	FINISSEZ MA PHRASE ! LE SARCOPHAGE D'ANKARA EST. . .	}
@@ -410,7 +410,7 @@
 {	410	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	411	}{	Je ne sais pas ce qui vous fait croire ça. . . J'ai été tout à fait franc avec vous - Je [rire nerveux] pense que vous ne connaissez pas aussi bien le procédé que moi.	}{	Je ne sais pas ce qui vous fait croire ça. . . J'ai été tout à fait franc avec vous - Je [rire nerveux] pense que vous ne connaissez pas aussi bien le procédé que moi.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	412	}{	Il paraît étrange qu'on l'ait trouvé après autant de temps. . . comme s'il avait voulu qu'on le trouve.	}{	Il paraît étrange qu'on l'ait trouvé après autant de temps. . . comme s'il avait voulu qu'on le trouve.	}{	421	}{	Persuasion 9	}{	}{	}{	}{	}{	}{	}{	}{	Il vous a appelé. Non, il vous a écrit. 	}
-{	413	}{	Dites-moi comment vous avez trouvé ce site.	}{	Dites-moi comment vous avez trouvé ce site.	}{	421	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	413	}{	Dites-moi comment vous avez trouvé ce site.	}{	Dites-moi comment vous avez trouvé ce site.	}{	421	}{	Dominate 3 | (getattr(pc,"base_dominate") >= 3 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	414	}{	Je suis habitué aux menteurs.	}{	Je suis habituée aux menteurs.	}{	421	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	J'ai l'habitude des menteurs.	}
 {	415	}{	Je peux vous arracher le renseignement de force, s'il le faut.	}{	Je peux vous arracher le renseignement de force, s'il le faut.	}{	421	}{	Intimidate 7	}{	}{	}{	}{	}{	}{	}{	}{	Action douloureuse ou vérité ?	}
 {	416	}{	Peu importe. Vous pensez vraiment que Messerach est dans ce sarcophage ?	}{	Peu importe. Vous pensez vraiment que Messerach est dans ce sarcophage ?	}{	341	}{	G.Prof_Mess == 0	}{	}{	}{	}{	}{	}{	}{	}{	Messerach à l'intérieur, c'est certain ?	}

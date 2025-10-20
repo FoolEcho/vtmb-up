@@ -70,11 +70,11 @@
 {	70	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	71	}{	Ah oui ? Enfin non, je ne cache rien. [tousse, tousse] C'est juste que je n'aime pas parler de mes affaires personnelles avec des gens que je ne connais pas.	}{	Ah oui ? Enfin non, je ne cache rien. [tousse, tousse] C'est juste que je n'aime pas parler de mes affaires personnelles avec des gens que je ne connais pas.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	72	}{	Eh, vous pouvez me faire confiance.	}{	Eh, vous pouvez me faire confiance.	}{	81	}{	Persuasion 4	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	73	}{	Dites-moi la vérité !	}{	Dites-moi la vérité !	}{	81	}{	Dominate 2 & IsClan(pc, "Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	73	}{	Dites-moi la vérité !	}{	Dites-moi la vérité !	}{	81	}{	Dominate 2 | (getattr(pc,"base_dominate") >= 2 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	74	}{	Ecoutez, je ne vous demande rien.	}{	Ecoutez, je ne vous demande rien.	}{	81	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	75	}{	Que vous ne connaissez pas ? Moi qui commençais à me sentir proche de vous ?	}{	Que vous ne connaissez pas ? Moi qui commençais à me sentir proche de vous ?	}{	81	}{	Seduction 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	76	}{	Si vous le dites. Maintenant, parlez-moi de cette cliente. . .	}{	Si vous le dites. Maintenant, parlez-moi de cette cliente. . .	}{	111	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	77	}{	S'il vous plaît, partagez ça avec moi.	}{	S'il vous plaît, partagez ça avec moi.	}{	81	}{	Presence 2 & (G.Patch_Plus == 1 and IsClan(pc,"Toreador"))	}{	G.Dialog_Presence = 1;dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
+{	77	}{	S'il vous plaît, partagez ça avec moi.	}{	S'il vous plaît, partagez ça avec moi.	}{	81	}{	Presence 2 & G.Patch_Plus == 1	}{	G.Dialog_Presence = 1;dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	78	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	79	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	80	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

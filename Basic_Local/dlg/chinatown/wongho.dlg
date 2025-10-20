@@ -220,7 +220,7 @@
 {	220	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	221	}{	Je regrette, j'ai trop parlé.	}{	Je regrette, j'ai trop parlé.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	222	}{	Allons, vous pouvez me faire confiance, Wong Ho.	}{	Allons, vous pouvez me faire confiance, Wong Ho.	}{	231	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	Mettez votre confiance dans ma psyché brisée. . .	}
-{	223	}{	Dites-le moi !	}{	Dites-le moi !	}{	231	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	223	}{	Dites-le moi !	}{	Dites-le moi !	}{	231	}{	Dominate 3  | (getattr(pc,"base_dominate") >= 3 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	224	}{	Parlez ou les choses vont se gâter.	}{	Parlez ou les choses vont se gâter.	}{	231	}{	Intimidate 7	}{	}{	}{	}{	}{	}{	}{	}{	Parlez sans contrainte, ou je vous ouvrirai de force. . .	}
 {	225	}{	Bien. J'ai besoin de votre aide.	}{	Bien. J'ai besoin de votre aide.	}{	251	}{	}{	}{	}{	}{	}{	}{	}{	}{	Alors penchons-nous sur mon dilemme. . .	}
 {	226	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -340,7 +340,7 @@
 {	340	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	341	}{	Rien. Ce n'est pas à moi d'en parler.	}{	Rien. Ce n'est pas à moi d'en parler.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	342	}{	Allons, nous sommes amis, non ? Vous pouvez bien m'en parler.	}{	Allons, nous sommes amis, non ? Vous pouvez bien m'en parler.	}{	351	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	Il est facile de se confier à quelqu'un d'aussi dément que moi. . .	}
-{	343	}{	Dites-moi votre secret !	}{	Dites-moi votre secret !	}{	351	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	343	}{	Dites-moi votre secret !	}{	Dites-moi votre secret !	}{	351	}{	Dominate 3 | (getattr(pc,"base_dominate") >= 3 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	344	}{	Non, mais ça va être à vous d'aller à l'hosto si vous ne crachez pas le morceau.	}{	Non, mais ça va être à vous d'aller à l'hosto si vous ne crachez pas le morceau.	}{	351	}{	Intimidate 7	}{	}{	}{	}{	}{	}{	}{	}{	Parlez, ou je vous fais exploser le pancréas. . .	}
 {	345	}{	J'ai d'autres questions à vous poser.	}{	J'ai d'autres questions à vous poser.	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai besoin de fouiller votre cervelle. . .	}
 {	346	}{	Comme vous voulez. Je pars.	}{	Comme vous voulez. Je pars.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Mon ombre assombrira d'autres lieux. . .	}
@@ -470,7 +470,7 @@
 {	470	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	471	}{	Des armes ? Non ! Même si je le savais, je ne vous dirais pas où en trouver. Nous avons assez de problèmes sans dire aux gens où acheter leurs armes. Je regrette.	}{	Des armes ? Non ! Même si je le savais, je ne vous dirais pas où en trouver. Nous avons assez de problèmes sans dire aux gens où acheter leurs armes. Je regrette.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	472	}{	Faites-moi confiance. Si je vous demande ça, c'est pour éviter cet endroit.	}{	Faites-moi confiance. Si je vous demande ça, c'est pour éviter cet endroit.	}{	481	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	J'ai simplement besoin d'éviter ses atrocités. . .	}
-{	473	}{	Où sont les armes ?	}{	Où sont les armes ?	}{	481	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	473	}{	Où sont les armes ?	}{	Où sont les armes ?	}{	481	}{	Dominate 3 | (getattr(pc,"base_dominate") >= 3 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	474	}{	Bon, soit vous me le dites maintenant, soit je reviens avec une arme quand je les aurai trouvées.	}{	Bon, soit vous me le dites maintenant, soit je reviens avec une arme quand je les aurai trouvées.	}{	481	}{	Intimidate 7	}{	}{	}{	}{	}{	}{	}{	}{	Montrez-moi les baguettes à boum, ou devenez une tache. . . de sang.	}
 {	475	}{	Très bien. Encore quelques questions sur Chinatown.	}{	Très bien. Encore quelques questions sur Chinatown.	}{	401	}{	}{	}{	}{	}{	}{	}{	}{	}{	Dépeins-moi Chinatown. . .	}
 {	476	}{	Je pars.	}{	Je pars.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là. . .	}

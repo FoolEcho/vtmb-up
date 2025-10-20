@@ -40,7 +40,7 @@
 {	40	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	41	}{	Bien sûr. Qui êtes-vous ?	}{	Bien sûr. Qui êtes-vous ?	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	Donnez-moi votre invitation.	}{	Donnez-moi votre invitation.	}{	51	}{	}{	}{	}{	}{	}{	}{	}{	}{	POUR MOI !	}
-{	43	}{	Donnez-moi votre invitation.	}{	Donnez-moi votre invitation.	}{	81	}{	Dominate 3	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	43	}{	Donnez-moi votre invitation.	}{	Donnez-moi votre invitation.	}{	81	}{	Dominate 3 | (getattr(pc,"base_dominate") >= 3 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	44	}{	Je suis vous. Vous ne vous reconnaissez pas ?	}{	Je suis vous. Vous ne vous reconnaissez pas ?	}{	181	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	Je suis vous. Vous ne vous reconnaissez pas ?	}
 {	45	}{	Peu importe. Au revoir.	}{	Peu importe. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis pas ici.	}
 {	46	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

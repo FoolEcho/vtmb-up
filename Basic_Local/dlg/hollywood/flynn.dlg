@@ -172,7 +172,7 @@
 {	172	}{	Ecoute, je collectionne ce genre de trucs. Tu peux tout me dire. . .	}{	Ecoute, je collectionne ce genre de trucs. Tu peux tout me dire. . .	}{	181	}{	Persuasion 6	}{	}{	}{	}{	}{	}{	}{	}{	Je collectionne les dépravations, le déplorable et le débauché. Parle-moi. . .	}
 {	173	}{	Allez, Flynn. Tu me dis tout, et on ira se faire une vidéo rien qu'à nous. . .	}{	Allez, Flynn. Tu me dis tout, et on ira se faire une vidéo rien qu'à nous. . .	}{	181	}{	Seduction 6 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Ouvre-toi à moi et j'en ferai autant pour toi. . .	}
 {	174	}{	T'as intérêt à me parler, Flynn, sinon on ne te reverra jamais non plus.	}{	T'as intérêt à me parler, Flynn, sinon on ne te reverra jamais non plus.	}{	181	}{	Intimidate 6	}{	}{	}{	}{	}{	}{	}{	}{	Parle ou disparais, roi du porno.	}
-{	175	}{	Dis-moi tout ce que tu sais !	}{	Dis-moi tout ce que tu sais !	}{	181	}{	Dominate 3 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	175	}{	Dis-moi tout ce que tu sais !	}{	Dis-moi tout ce que tu sais !	}{	181	}{	Dominate 3 | (getattr(pc,"base_dominate") >= 3 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	176	}{	Offre-moi Death Mask sur un plateau !	}{	Offre-moi Death Mask sur un plateau !	}{	181	}{	Dementation 3	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	177	}{	OK. Et si on parlait argent, Flynn ?	}{	OK. Et si on parlait argent, Flynn ?	}{	341	}{	}{	}{	}{	}{	}{	}{	}{	}{	Combien de billets pour tes conseils ?	}
 {	178	}{	Allez ! Tu ne veux vraiment rien me dire ?	}{	Allez ! Tu ne veux vraiment rien me dire ?	}{	211	}{	}{	}{	}{	}{	}{	}{	}{	}{	Prince du Porno, j'ai besoin de ton aide !	}
@@ -222,7 +222,7 @@
 {	222	}{	Crois-moi, Flynn, je ne suis pas flic. Fais-moi confiance.	}{	Crois-moi, Flynn, je ne suis pas flic. Fais-moi confiance.	}{	331	}{	Persuasion 7	}{	}{	}{	}{	}{	}{	}{	}{	Je ne fréquente pas les plus cruels que moi. Il y a quelque vérité à mon histoire. . .	}
 {	223	}{	Si tu me traites de flic encore une fois, je t'envoie à l'hosto. . .	}{	Si tu me traites de flic encore une fois, je t'envoie à l'hosto. . .	}{	331	}{	Intimidate 7	}{	}{	}{	}{	}{	}{	}{	}{	Si tu me répètes que je sens comme une auge, je transforme tes entrailles en casse-croûte. . .	}
 {	224	}{	Je ne suis pas flic, mais je pourrais te passer les menottes. . .	}{	Je ne suis pas flic, mais je pourrais te passer les menottes. . .	}{	331	}{	Seduction 7 & not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Dis-moi ce que je veux savoir, et je te laisserai me fouiller au corps. 	}
-{	225	}{	Je ne suis pas de la police. Maintenant, dis-moi ce que tu sais.	}{	Je ne suis pas de la police. Maintenant, dis-moi ce que tu sais.	}{	331	}{	Dominate 4 & IsClan(pc,"Ventrue")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	225	}{	Je ne suis pas de la police. Maintenant, dis-moi ce que tu sais.	}{	Je ne suis pas de la police. Maintenant, dis-moi ce que tu sais.	}{	331	}{	Dominate 4 | (getattr(pc,"base_dominate") >= 4 and G.Patch_Plus == 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	226	}{	Ne me prends pas pour un amateur de donuts !	}{	Ne me prends pas pour une amatrice de donuts !	}{	331	}{	Dementation 4	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	227	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	228	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
