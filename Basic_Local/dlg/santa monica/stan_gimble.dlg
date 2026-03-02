@@ -253,8 +253,8 @@
 {	253	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	254	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	255	}{	Oh, c'est merveilleux.	}{	Oh, c'est merveilleux.	}{	#	}{	npc.SetDisposition("Joy", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	256	}{	En effet, il suffit de vérifier avec un gars nommé Vandal. Ce sera parfait pour un spécialiste comme vous.	}{	En effet, il suffit de vérifier avec un gars nommé Vandal. Ce sera parfait pour un spécialiste comme vous.	}{	201	}{	pc.humanity >= 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7); FindPlayer().HumanityAdd( -1 ); G.Gimble_Humanity = 1	}{	}{	}{	}{	}{	}{	}{	Un Vandal vous recevra avec plaisir tellement vous êtes spécial.	}
-{	257	}{	En effet, il suffit de vérifier avec un gars nommé Vandal. Ce sera parfait pour un spécialiste comme vous.	}{	En effet, il suffit de vérifier avec un gars nommé Vandal. Ce sera parfait pour un spécialiste comme vous.	}{	201	}{	pc.humanity < 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7)	}{	}{	}{	}{	}{	}{	}{	Un Vandal vous recevra avec plaisir tellement vous êtes spécial.	}
+{	256	}{	En effet, il suffit de vérifier avec un gars nommé Vandal. Ce sera parfait pour un spécialiste comme vous.	}{	En effet, il suffit de vérifier avec un gars nommé Vandal. Ce sera parfait pour un spécialiste comme vous.	}{	201	}{	Humanity 4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7); FindPlayer().HumanityAdd( -1 ); G.Gimble_Humanity = 1	}{	}{	}{	}{	}{	}{	}{	Un Vandal vous recevra avec plaisir tellement vous êtes spécial.	}
+{	257	}{	En effet, il suffit de vérifier avec un gars nommé Vandal. Ce sera parfait pour un spécialiste comme vous.	}{	En effet, il suffit de vérifier avec un gars nommé Vandal. Ce sera parfait pour un spécialiste comme vous.	}{	201	}{	Humanity -4	}{	G.Vandal_Quest = 3; G.Gimble_Vandal = 1; pc.SetQuest("Danielle",7)	}{	}{	}{	}{	}{	}{	}{	Un Vandal vous recevra avec plaisir tellement vous êtes spécial.	}
 {	258	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	259	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	260	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

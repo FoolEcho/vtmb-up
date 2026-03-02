@@ -436,6 +436,13 @@ QuestTable
 			"Type"			"success"
 			"AwardXP"		"Giovanni03"
 		}
+		
+		CompletionState
+		{
+			"ID"			"5" // added by wesp
+			"Description"	"Vous avez tué Bruno Giovanni. Vous devez encore livrer le sarcophage d'Ankara au prince."
+			"Type"			"incomplete"
+		}
 	}
 
 	Quest	// added by wesp
@@ -462,6 +469,89 @@ QuestTable
 			"ID"		"3"
 			"Description"	"Vous n'avez pas réussi à aider l'un des candidats Giovanni à gagner le concours."
 			"Type"		"failure"
+		}
+	}
+	
+	Quest	// added by wesp
+	{
+		"Title"		"Prince"
+		"DisplayName"	"Flush Royal"
+
+		CompletionState
+		{
+			"ID"		"1"
+			"Description"	"Vous devez remettre la clé au prince."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"2"
+			"Description"	"Remettez la clé au prince et occupez-vous de lui."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"3"
+			"Description"	"Achevez le prince pour Ming-Xiao."
+			"Type"		"incomplete"
+		}
+
+		CompletionState
+		{
+			"ID"		"4"
+			"Description"	"Ming-Xiao s'occupera de LaCroix et du sarcophage."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"5"
+			"Description"	"Le Sabbat s'occupera de LaCroix et du sarcophage."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"6"
+			"Description"	"LaCroix et vous ouvrirez le sarcophage ensemble."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"7"
+			"Description"	"Vous avez donné la clé à LaCroix. Laissez-le ouvrir son précieux sarcophage s'il le faut, vous resterez avec les Anarchs."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"8"
+			"Description"	"Le Régent s'occupera de LaCroix et du sarcophage."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"9"
+			"Description"	"Vous avez donné la clé à LaCroix. Laissez-le ouvrir son précieux sarcophage s'il le faut, vous trouverez votre propre non-vie."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"10"
+			"Description"	"Vous avez gardé vous-même la clé pour ouvrir le sarcophage."
+			"Type"		"success"
+		}
+
+		CompletionState
+		{
+			"ID"		"11"
+			"Description"	"Félicitations, vous avez trouvé la fin cachée."
+			"Type"		"success"
 		}
 	}
 }

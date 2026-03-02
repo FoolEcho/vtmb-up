@@ -299,11 +299,11 @@
 {	299	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	300	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	301	}{	[rires]Non, jeune vampire. Je ne désire pas ces sommets mondains. Mon seul intérêt va au clan et à la Camarilla.	}{	[rires]Non, jeune vampire. Je ne désire pas ces sommets mondains. Mon seul intérêt va au clan et à la Camarilla.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	302	}{	Dans cet ordre ?	}{	Dans cet ordre ?	}{	311	}{	}{	}{	}{	}{	}{	}{	}{	}{	Un ordre d'indication quant à vos intérêts. . .	}
-{	303	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	304	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	305	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	306	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	302	}{	Dans cet ordre ?	}{	Dans cet ordre ?	}{	311	}{	G.Credits_Running == 0	}{	}{	}{	}{	}{	}{	}{	}{	Un ordre d'indication quant à vos intérêts. . .	}
+{	303	}{	Quoi qu'il en soit, je quitte la ville de toute façon.	}{	Quoi qu'il en soit, je quitte la ville de toute façon.	}{	0	}{	G.Credits_Running == 1 and G.Story_State == 125	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit s'ennuie et j'ai déjà hâte d'aller ailleurs.	}
+{	304	}{	Donc quelqu'un d'autre emménagera en tant que prince. Bonne chance à eux.	}{	Donc quelqu'un d'autre emménagera en tant que prince. Bonne chance à eux.	}{	0	}{	G.Credits_Running == 1 and G.Story_State == 120	}{	}{	}{	}{	}{	}{	}{	}{	Puis un autre bouffon montera sur le trône. Bonne gouvernance !	}
+{	305	}{	Super, parce que LA appartient à nouveau aux Anarchs.	}{	Super, parce que LA appartient à nouveau aux Anarchs.	}{	0	}{	G.Credits_Running == 1 and G.Story_State == 115	}{	}{	}{	}{	}{	}{	}{	}{	Alors les enfants libres régneront à nouveau.	}
+{	306	}{	Gardez cela à l'esprit lorsque le sabbat vient pour vous.	}{	Gardez cela à l'esprit lorsque le Sabbat vient pour vous.	}{	0	}{	G.Credits_Running == 1 and G.Story_State < 110	}{	}{	}{	}{	}{	}{	}{	}{	Jusqu'à ce que l'épée de Caïn vienne pour ton clan et ton peuple.	}
 {	307	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	308	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	309	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -643,7 +643,7 @@
 {	643	}{	Euh. . . J'ai un, euh, 'ami' qui aime bien sortir avec moi. . .	}{	Euh. . . J'ai un, euh, 'ami' qui aime bien sortir avec moi. . .	}{	646	}{	G.Heather_Drank == 1 and not IsDead("Heather") and G.Heather_Haven == 1 and G.Heather_Gone == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	644	}{	Ca fait plaisir d'appartenir à la famille. A plus tard. . .	}{	Ca fait plaisir d'appartenir à la famille. A plus tard. . .	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	645	}{	Toutes ? J'en doute. Je vais récupérer le reste tout de suite.	}{	Toutes ? J'en doute. Je vais récupérer le reste tout de suite.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	646	}{	Je suis aussi au courant pour votre goule. C'est une distraction douteuse, je trouve, mais elle sera la bienvenue ici.	}{	Je suis aussi au courant pour votre goule. C'est une distraction douteuse, je trouve, mais elle sera la bienvenue ici.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	646	}{	Je suis aussi au courant pour votre goule. C'est une distraction douteuse, je trouve, mais elle sera la bienvenue ici.	}{	Je suis aussi au courant pour votre goule. C'est une distraction douteuse, je trouve, mais elle sera la bienvenue ici.	}{	#	}{	}{	G.Heather_Clothes = 1	}{	}{	}{	}{	}{	}{	}{	}
 {	647	}{	Merci, Max. Une dernière chose. . .	}{	Merci, Max. Une dernière chose. . .	}{	41	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	648	}{	Ca fait plaisir d'appartenir à la famille. A plus tard.	}{	Ca fait plaisir d'appartenir à la famille. A plus tard.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	649	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -789,7 +789,7 @@
 {	789	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	790	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	791	}{	Partez. Nous ne parlerons plus jamais.	}{	Partez. Nous ne parlerons plus jamais.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	792	}{	(Auto-End)	}{	(Auto-End)	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	(Auto-End)	}
+{	792	}{	Mais...	}{	Mais...	}{	1267	}{	}{	}{	}{	}{	}{	}{	}{	}{	Quoi...	}
 {	793	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	794	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	795	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -1251,7 +1251,7 @@
 {	1251	}{	Salutations.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1252	}{	Oui ?	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1253	}{	Que faites-vous ici ?	}{	Que faites-vous ici ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	1254	}{	Je m'amuse juste.	}{	Je m'amuse juste.	}{	1267	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je joue au bouffon.	}
+{	1254	}{	Je voulais juste savoir ce qui allait se passer maintenant que LaCroix est parti. Allez-vous devenir prince ?	}{	Je voulais juste savoir ce qui allait se passer maintenant que LaCroix est parti. Allez-vous devenir prince ?	}{	301	}{	}{	}{	}{	}{	}{	}{	}{	}{	Maintenant que le prince bouffon est tombé, allez-vous diriger la ville d'Angeles ?	}
 {	1255	}{	Oui.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1256	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	1257	}{	Merci.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

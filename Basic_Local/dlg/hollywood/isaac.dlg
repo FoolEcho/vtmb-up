@@ -329,11 +329,11 @@
 {	329	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	330	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	331	}{	Parfait. Entre temps, considérez-vous invité dans ma baronnie. Bienvenue à Hollywood.	}{	Parfait. Entre temps, considérez-vous invitée dans ma baronnie. Bienvenue à Hollywood.	}{	#	}{	npc.SetDisposition("Neutral", 1)	}{	G.Isaac_Leave = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	332	}{	Merci.	}{	Merci.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je rentre.	}
-{	333	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	334	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	335	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	336	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	332	}{	Merci.	}{	Merci.	}{	0	}{	G.Credits_Running == 0	}{	}{	}{	}{	}{	}{	}{	}{	Je rentre.	}
+{	333	}{	Merci encore, mais je vais bientôt quitter Los Angeles.	}{	Merci encore, mais je vais bientôt quitter Los Angeles.	}{	0	}{	G.Credits_Running == 1 and G.Story_State == 125	}{	}{	}{	}{	}{	}{	}{	}{	Mon esprit cherche déjà d'autres endroits.	}
+{	334	}{	Strauss règne sur le centre-ville pour l'instant. J'imagine que vous vous entendrez mieux tous les deux.	}{	Strauss règne sur le centre-ville pour l'instant. J'imagine que vous vous entendrez mieux tous les deux.	}{	0	}{	G.Credits_Running == 1 and G.Story_State == 120	}{	}{	}{	}{	}{	}{	}{	}{	Deux personnes âgées dirigeront ensemble la cité des anges.	}
+{	335	}{	Nines prendra le contrôle du centre-ville. Los Angeles est à nouveau un Etat libre Anarch.	}{	Nines prendra le contrôle du centre-ville. Los Angeles est à nouveau un Etat libre Anarch.	}{	0	}{	G.Credits_Running == 1 and G.Story_State == 115	}{	}{	}{	}{	}{	}{	}{	}{	Celui des numéros libérera la ville d'Angeles avec toi.	}
+{	336	}{	Mieux vaut la chérir tant que vous le pouvez, avant que le Sabbat n'arrive.	}{	Mieux vaut la chérir tant que vous le pouvez, avant que le Sabbat n'arrive.	}{	993	}{	G.Credits_Running == 1 and G.Story_State < 110	}{	}{	}{	}{	}{	}{	}{	}{	Regardez bien avant que l'épée de Caïn ne l'abatte.	}
 {	337	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	338	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	339	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -704,7 +704,7 @@
 {	704	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	705	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	706	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	707	}{	A présent, je me rappelle pourquoi je partais. Allez au diable, Isaac.	}{	A présent, je me rappelle pourquoi je partais. Allez au diable, Isaac.	}{	0	}{	}{	G.Isaac_Scorn = 1	}{	}{	}{	}{	}{	}{	}{	Oh, ce n'est pas le coeur d'Hollywood, ici, c'est son trou du cul. Je m'en vais.	}
+{	707	}{	A présent, je me rappelle pourquoi je partais. Allez au diable, Isaac.	}{	A présent, je me rappelle pourquoi je partais. Allez au diable, Isaac.	}{	993	}{	}{	G.Isaac_Scorn = 1	}{	}{	}{	}{	}{	}{	}{	Oh, ce n'est pas le coeur d'Hollywood, ici, c'est son trou du cul. Je m'en vais.	}
 {	708	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	709	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	710	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -979,7 +979,7 @@
 {	979	}{	Non. Je reviendrai.	}{	Non. Je reviendrai.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne devrais plus être ici.	}
 {	980	}{	Ca me fait plaisir de vous revoir.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	981	}{	Vous avez une bonne raison de vous attarder dans ma ville ?	}{	Vous avez une bonne raison de vous attarder dans ma ville ?	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	982	}{	Pas vraiment.	}{	Pas vraiment.	}{	993	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je suis déjà parti.	}
+{	982	}{	Je voulais juste vous dire que LaCroix est parti.	}{	Je voulais juste vous dire que LaCroix est parti.	}{	331	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'apporte la nouvelle que le prince bouffon est tombé.	}
 {	983	}{	Pigé.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	984	}{	Non.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	985	}{	Merci. Ca me fait plaisir.	}{	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

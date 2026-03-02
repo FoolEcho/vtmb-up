@@ -829,7 +829,7 @@
 {	829	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	830	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	831	}{	[Therese]porter du fard à paupière, et c'est peine perdue.	}{	[Therese]porter du fard à paupière, et c'est peine perdue.	}{	#	}{	pc.SetCamera("tTherese") or npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	832	}{	Que se passe-t-il à Santa Monica ?	}{	Que se passe-t-il à Santa Monica ?	}{	841	}{	G.Story_State >= 20 and G.Tourette_2 == 0	}{	G.Tourette_2 = 1	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame près de la mer. . .	}
+{	832	}{	Que se passe-t-il à Santa Monica ?	}{	Que se passe-t-il à Santa Monica ?	}{	841	}{	G.Story_State >= 20 and G.Tourette_2 == 0 and G.Credits_Running == 0	}{	G.Tourette_2 = 1	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame près de la mer. . .	}
 {	833	}{	Ca me fait plaisir de vous entendre dire ça. Au revoir.	}{	Ca me fait plaisir de vous entendre dire ça. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Ca me fait plaisir de vous entendre dire ça. Au revoir.	}
 {	834	}{	Folles. Au revoir.	}{	Folles. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Si seulement ma folie était plus grande pour avoir une soeur ou un frère. Adieu.	}
 {	835	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

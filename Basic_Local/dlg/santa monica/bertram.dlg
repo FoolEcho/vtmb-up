@@ -103,7 +103,7 @@
 {	103	}{	Qu'y a-t-il entre Therese Voerman et vous ?	}{	Qu'y a-t-il entre Therese Voerman et vous ?	}{	41	}{	G.Bertram_Feud == 0 and not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	104	}{	Avez-vous entendu parler du tueur en série ?	}{	Avez-vous entendu parler du tueur en série ?	}{	681	}{	pc.GetQuestState("Serial") > 0 and pc.GetQuestState("Serial") < 8 and G.Bertram_Serial == 0	}{	G.Bertram_Serial = 1	}{	}{	}{	}{	}{	}{	}{	Voyez-vous le tueur drapé d'ombre ?	}
 {	105	}{	La guerre avec la fille de Janus brûle-t-elle les lèvres de tout le monde ?	}{	La guerre avec la fille de Janus brûle-t-elle les lèvres de tout le monde ?	}{	861	}{	G.Bertram_Feud == 0 and IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	106	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	106	}{	Je voulais juste te dire que LaCroix est parti.	}{	Je voulais juste te dire que LaCroix est parti.	}{	781	}{	G.Credits_Running == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je suis venu te dire que le prince bouffon est tombé.	}
 {	107	}{	J'ai quelques questions. . .	}{	J'ai quelques questions. . .	}{	161	}{	G.Bertram_Ready == 2 and G.Bertram_Goodjob == 1	}{	}{	}{	}{	}{	}{	}{	}{	Je chercher à tirer des questions de votre dôme bouillonnant.	}
 {	108	}{	Rien. A plus.	}{	Rien. A plus.	}{	0	}{	not IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	109	}{	Rien. A plus.	}{	Rien. A plus.	}{	511	}{	G.Bertram_Ready > 0 and G.Bertram_Map == 0 and IsClan(pc,"Nosferatu")	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -572,8 +572,8 @@
 {	572	}{	Oui. Tenez, le voilà.	}{	Oui. Tenez, le voilà.	}{	591	}{	pc.HasItem("item_g_bertrams_cd") and pc.GetQuestState("BertramCD") == 2	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Oui. Acceptez ce tribut de silicone, votre grandeur.	}
 {	573	}{	Je l'ai, le voici.	}{	Je l'ai, le voici.	}{	591	}{	G.Patch_Plus == 0 and pc.HasItem("item_g_bertrams_cd") and pc.GetQuestState("BertramCD") == 1	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Fait. Acceptez ce tribut de silicone, l'Affreux.	}
 {	574	}{	Je l'ai, le voici.	}{	Je l'ai, le voici.	}{	591	}{	G.Patch_Plus == 1 and pc.HasItem("item_g_bertrams_cd") and pc.GetQuestState("BertramCD") == 1	}{	pc.RemoveItem("item_g_bertrams_cd"); pc.SetQuest("BertramCD", 2); pc.SetQuest("BertramCD", 3)	}{	}{	}{	}{	}{	}{	}{	Fait. Acceptez ce tribut de silicone, l'Affreux.	}
-{	575	}{	Pas encore, je regrette.	}{	Pas encore, je regrette.	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas trouvé le chemin qui mène à cette Rome. . .	}
-{	576	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	575	}{	Non, je suis juste venu vous dire que LaCroix est parti.	}{	Non, je suis juste venu vous dire que LaCroix est parti.	}{	781	}{	G.Credits_Running == 1	}{	}{	}{	}{	}{	}{	}{	}{	Non mais je suis venu te dire que le prince bouffon est tombé.	}
+{	576	}{	Pas encore, je regrette.	}{	Pas encore, je regrette.	}{	581	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je n'ai pas trouvé le chemin qui mène à cette Rome. . .	}
 {	577	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	578	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	579	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -591,7 +591,7 @@
 {	591	}{	Hmmm, excellent. Bien écoutez-moi, jeune vampire. Et prenez des notes. . .	}{	Hmmm, excellent. Bien écoutez-moi, jeune vampire. Et prenez des notes. . .	}{	#	}{	npc.SetDisposition("joy",2)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	592	}{	Ouah ! Vous maîtrisez l'informatique ! Je peux vous poser quelques questions ?	}{	Ouah ! Vous maîtrisez l'informatique ! Je peux vous poser quelques questions ?	}{	161	}{	pc.computers < 5	}{	G.Bertram_RAM = 2; pc.BumpStat("computer", 1)	}{	}{	}{	}{	}{	}{	}{	Bits et bytes bouillonnent dans mon cerveau. Il me faut davantage de données.	}
 {	593	}{	BON SANG ! Eh, vous en savez des tonnes sur les ordinateurs ! Merci ! A plus.	}{	BON SANG ! Eh, vous en savez des tonnes sur les ordinateurs ! Merci ! A plus.	}{	0	}{	pc.computers < 5	}{	G.Bertram_RAM = 2; pc.BumpStat("computer", 1)	}{	}{	}{	}{	}{	}{	}{	Hein ? Ah ! Votre connaissance de la boîte binaire est incroyable !	}
-{	594	}{	Pas le temps, j'y vais.	}{	Pas le temps, j'y vais.	}{	0	}{	pc.computers == 5	}{	G.Bertram_RAM = 2	}{	}{	}{	}{	}{	}{	}{	Bits et bytes bouillonnent dans mon cerveau. 0, 1, 0, 1, j'y vais.	}
+{	594	}{	Pas le temps. J'en sais déjà assez sur les ordinateurs. J'y vais.	}{	Pas le temps. J'en sais déjà assez sur les ordinateurs. J'y vais.	}{	0	}{	pc.computers == 5	}{	G.Bertram_RAM = 2	}{	}{	}{	}{	}{	}{	}{	Bits et bytes bouillonnent dans mon cerveau, mais le mien est déjà plein. 0, 1, 0, 1, j'y vais.	}
 {	595	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	596	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	597	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
@@ -689,8 +689,8 @@
 {	689	}{	Je m'en vais.	}{	Je m'en vais.	}{	0	}{	G.Story_State >= 10 or G.Bertram_Ready < 2	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	690	}{	Je m'en vais.	}{	Je m'en vais.	}{	661	}{	G.Story_State < 10 and G.Bertram_Ready == 2	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	691	}{	Bien sûr. . .	}{	Bien sûr. . .	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	692	}{	Que pensez-vous du Prince LaCroix ?	}{	Que pensez-vous du Prince LaCroix ?	}{	481	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	693	}{	Emmenez-moi au prince bouffon !	}{	Emmenez-moi au prince bouffon !	}{	921	}{	IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	692	}{	Que pensez-vous du Prince LaCroix ?	}{	Que pensez-vous du Prince LaCroix ?	}{	481	}{	not IsClan(pc,"Malkavian") and G.Credits_Running == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	693	}{	Emmenez-moi au prince bouffon !	}{	Emmenez-moi au prince bouffon !	}{	921	}{	IsClan(pc,"Malkavian") and G.Credits_Running == 0	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	694	}{	Que pouvez-vous me dire sur Nines Rodriguez ?	}{	Que pouvez-vous me dire sur Nines Rodriguez ?	}{	961	}{	}{	}{	}{	}{	}{	}{	}{	}{	Que savez-vous de celui qui a un numéro pour nom ?	}
 {	695	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	696	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}

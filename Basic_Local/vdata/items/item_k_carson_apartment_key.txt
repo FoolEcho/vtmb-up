@@ -4,8 +4,8 @@ WeaponData
 {
 	// Weapon data is loaded by both the Game and Client DLLs.
 	"viewmodel"	"models/w_null.mdl"
-	"infomodel"	"models/items/Key/Info/Info_Key.mdl"
-	"playermodel"	"models/items/Key/Ground/Key.mdl"
+	"infomodel"	"models/items/Keycard/Info/item_i_keycard.mdl"				// changed by wesp
+	"playermodel"	"models/items/Keycard/Ground/g_keycard.mdl"				// changed by wesp
 	"wieldmodel_f"	"models/w_null.mdl"
 	"wieldmodel_m"	"models/w_null.mdl"
 	"anim_prefix"	" "
@@ -37,7 +37,7 @@ WeaponData
 		{
 			"640"
 			{
-				"file"	"hud/Inventory_Images/General_Items/key_sel"
+				"file"	"hud/Inventory_Images/General_Items/keycard_sel"	// changed by wesp
 				"x"		"0"
 				"y"		"0"
 				"width"	"100"
@@ -48,7 +48,7 @@ WeaponData
 		{
 			"640"
 			{
-				"file"	"hud/Inventory_Images/General_Items/key"
+				"file"	"hud/Inventory_Images/General_Items/keycard"		// changed by wesp
 				"x"		"0"
 				"y"		"0"
 				"width"	"100"

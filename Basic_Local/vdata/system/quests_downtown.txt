@@ -914,10 +914,10 @@ QuestTable
 			"AwardXP"	"Sarc01"
 		}
 
-		CompletionState
+		CompletionState	// changed by wesp
 		{
 			"ID"		"3" // Gary 431
-			"Description"	"Gary vous a dit que le sarcophage se trouve chez les Giovanni. Il vous a même dessiné une carte. Comme c'est gentil."
+			"Description"	"Gary vous a dit où se trouvait le sarcophage. Il vous a même dessiné une carte. Comme c'est gentil."
 			"Type"		"incomplete"
 			"AwardXP"	"Sarc02"
 		}
@@ -930,12 +930,6 @@ QuestTable
 			"AwardXP"	"Sarc03"
 		}
 
-		CompletionState
-		{
-			"ID"		"5" // added by wesp
-			"Description"	"Vous avez tué Bruno Giovanni. Vous devez encore livrer le sarcophage Ankaran au prince."
-			"Type"		"incomplete"
-		}
 	}
 
 	Quest

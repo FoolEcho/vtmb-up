@@ -440,7 +440,7 @@
 {	440	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	441	}{	Bonsoir. J'imagine que vous allez bien. Qu'est-ce qui vous ramène dans mon domaine ?	}{	Bonsoir. J'imagine que vous allez bien. Qu'est-ce qui vous ramène dans mon domaine ?	}{	#	}{	npc.SetDisposition("Neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	442	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
-{	443	}{	Comment vont les choses à Santa Monica ?	}{	Comment vont les choses à Santa Monica ?	}{	451	}{	G.Story_State > 20	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame près de la mer. . .	}
+{	443	}{	Comment vont les choses à Santa Monica ?	}{	Comment vont les choses à Santa Monica ?	}{	451	}{	G.Story_State > 20 and G.Credits_Running == 0	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de la dame près de la mer. . .	}
 {	444	}{	Comment va votre ville ?	}{	Comment va votre ville ?	}{	461	}{	G.Story_State > 35	}{	}{	}{	}{	}{	}{	}{	}{	Parlez-moi de votre royaume, ténébreuse.	}
 {	445	}{	Il est plaisant de vous revoir, Therese, Au revoir.	}{	Il est plaisant de vous revoir, Therese, Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	446	}{	Vous aimez le pouvoir, hein ? Alors savourez-le. Au revoir.	}{	Vous aimez le pouvoir, hein ? Alors savourez-le. Au revoir.	}{	0	}{	not IsClan(pc,"Malkavian")	}{	}{	}{	}{	}{	}{	}{	}{	}

@@ -491,9 +491,9 @@
 {	491	}{	La marée recule, la marée avance, puis elle vous regarde d'un air vague. Il me faudra quelques années pour réveiller cette ville.	}{	La marée recule, la marée avance, puis elle vous regarde d'un air vague. Il me faudra quelques années pour réveiller cette ville.	}{	#	}{	npc.SetDisposition("neutral",1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	492	}{	Vous vous sentez seule ?	}{	Vous vous sentez seule ?	}{	511	}{	G.Jeanette_Seduce >= 8 and G.Jeanette_Mail == 0	}{	}{	}{	}{	}{	}{	}{	}{	Nagez-vous dans une mer de solitude, princesse ivoirine ?	}
 {	493	}{	J'ai reçu votre email. Alors vous êtes seule, hein?	}{	J'ai reçu votre email. Alors vous êtes seule, hein?	}{	511	}{	G.Jeanette_Mail == 1	}{	}{	}{	}{	}{	}{	}{	}{	Ce caneton est revenu en se dandinant. Seule, toujours?	}
-{	494	}{	Quelle joie de vous voir. Au revoir.	}{	Quelle joie de vous voir. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est toujours un plaisir pour mes nombreux esprits, ma douce pâleur.	}
-{	495	}{	C'est ça. Au revoir.	}{	C'est ça. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
-{	496	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
+{	494	}{	Quoi de neuf ?	}{	Quoi de neuf ?	}{	501	}{	G.Story_State > 40 and G.Credits_Running == 0	}{	}{	}{	}{	}{	}{	}{	}{	Quelles nouvelles, déesse blanche ?	}
+{	495	}{	Quelle joie de vous voir. Au revoir.	}{	Quelle joie de vous voir. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	C'est toujours un plaisir pour mes nombreux esprits, ma douce pâleur.	}
+{	496	}{	C'est ça. Au revoir.	}{	C'est ça. Au revoir.	}{	0	}{	}{	}{	}{	}{	}{	}{	}{	}{	Je ne suis plus là.	}
 {	497	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	498	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	499	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
