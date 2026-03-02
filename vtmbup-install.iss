@@ -1,10 +1,10 @@
 ; -- vtmbupinstaller.iss --
 
 [Setup]
-AppName=Vampire: The Masquerade - Bloodlines unofficial patch 11.5.6 fr
-AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 11.5.6 fr
+AppName=Vampire: The Masquerade - Bloodlines unofficial patch 11.5.7 fr
+AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 11.5.7 fr
 VersionInfoDescription=Vampire: The Masquerade - Bloodlines unofficial patch avec sous-titrage français
-VersionInfoVersion=11.5.6
+VersionInfoVersion=11.5.7
 AppPublisher=Werner Spahl
 DefaultDirName={reg:HKLM\Software\Activision\Vampire - Bloodlines,InstallPath|{pf}\Steam\steamapps\common\vampire the masquerade - bloodlines}
 AppendDefaultDirName=no
@@ -31,7 +31,7 @@ Name: "basic"; Description: "Patch non officiel"; Flags: iscustom
 Name: "basic"; Description: "Patch de base"; Types: basic; Flags: fixed checkablealone
 Name: "readme"; Description: "Lisez-moi"; Types: basic; Flags: fixed checkablealone
 Name: "plus"; Description: "Patch Plus (restaurations et ajustements)"; Flags: checkablealone
-Name: "extras"; Description: "Différents Extras (Walkthrough, Shaders, SDK et plus)"; Flags: checkablealone
+Name: "extras"; Description: "Différents Extras (Walkthrough, Shaders, Outils et plus)"; Flags: checkablealone
 
 [Code]
 function retail: Boolean; 
