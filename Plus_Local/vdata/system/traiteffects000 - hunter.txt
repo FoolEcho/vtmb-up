@@ -316,24 +316,6 @@ TraitEffectsData
 
 			TraitEffect	// added by wesp
 			{
-				"Trait"	"Excluded_Equipment"
-				"Modifier"	"Value Clawed_Form"
-			}
-
-			TraitEffect	// added by wesp
-			{
-				"Trait"	"item_w_fists"
-				"Modifier"	"-1"
-			}
-
-			TraitEffect	// added by wesp
-			{
-				"Trait"	"item_w_claws"
-				"Modifier"	"+1"
-			}
-
-			TraitEffect	// added by wesp
-			{
 				"Trait"	"Fortitude"
 				Costs
 				{
@@ -720,11 +702,6 @@ TraitEffectsData
 		TraitEffectGroup	// added by wesp
 		{
 			"InternalName"	"History (Homo)"
-			TraitEffect
-			{
-				"Trait"	"item_w_chang_energy_ball"
-				"Modifier"	"+1"
-			}
 		}
 
 // =======-------------- Stat Shufflers -------------========
@@ -1554,11 +1531,6 @@ TraitEffectsData
 					"Raise"	"Table: 6, 8, 12, 18, 24"
 				}	
 			}
-			TraitEffect	// added by wesp
-			{
-				"Trait"	"item_w_tzimisce2_claw"
-				"Modifier"	"+1"
-			}
 		}
 
 //		Nos
@@ -2049,11 +2021,6 @@ TraitEffectsData
 				"Trait"	"Dodge"
 				"Modifier"	"Max 3"
 			}
-			TraitEffect
-			{
-				"Trait"	"item_w_tzimisce2_head"
-				"Modifier"	"+1"
-			}
 		}
 
 		TraitEffectGroup
@@ -2529,7 +2496,7 @@ TraitEffectsData
 //			}
 //		}
 
-		TraitEffectGroup	// added by wesp, hunter
+		TraitEffectGroup	// added by wesp
 		{
 			"InternalName"	"Discipline (Blood_Heal)"
 			TraitEffect  
@@ -2537,6 +2504,11 @@ TraitEffectsData
 				"Trait"	"item_g_eldervitaepack"
 				"Modifier"	"+1"	
 			}
+//			TraitEffect  
+//			{
+// hunter				"Trait"	"VampHeal_Type"
+//				"Modifier"	"Duration 8%"	
+//			}
 		}
 
 		TraitEffectGroup

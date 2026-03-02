@@ -124,6 +124,17 @@ TraitEffectsData
 				"Modifier"	"Max 3"
 			}
 
+			TraitEffect	// added by wesp
+			{
+				"Trait"	    "vchar_skip_intro"
+				"Modifier"  "Value 1"
+			}
+
+			TraitEffect	// added by wesp
+			{
+				"Trait"	    "vchar_edit_histories"
+				"Modifier"  "Value 1"
+			}
 		}
 
 		TraitEffectGroup
@@ -162,6 +173,17 @@ TraitEffectsData
 				"Modifier"	"Max 3"
 			}
 
+			TraitEffect	// added by wesp
+			{
+				"Trait"	    "vchar_skip_intro"
+				"Modifier"  "Value 1"
+			}
+
+			TraitEffect	// added by wesp
+			{
+				"Trait"	    "vchar_edit_histories"
+				"Modifier"  "Value 1"
+			}
 		}
 
 		TraitEffectGroup
@@ -210,35 +232,6 @@ TraitEffectsData
 				"Modifier"	"+4"
 			}
 		}
-
-//		TraitEffectGroup
-//		{
-//			"InternalName"	"Frenzy (Nosferatu)"
-//
-//			TraitEffect
-//			{
-//				"Trait"	"Strength"
-//				"Modifier"	"+5"
-//			}
-//
-//			TraitEffect
-//			{
-//				"Trait"	"Stamina"
-//				"Modifier"	"+5"
-//			}
-// Nosferatu claws
-//			TraitEffect
-//			{
-//				"Trait"	"Wits"
-//				"Modifier"	"+5"
-//			}
-//
-//			TraitEffect
-//			{
-//				"Trait"	"Excluded_Equipment"
-//				"Modifier"	"Value Clawed_Form"
-//			}
-//		}
 
 		TraitEffectGroup
 		{
@@ -351,18 +344,17 @@ TraitEffectsData
 				"Modifier"	"Max 3"
 			}
 
-//			TraitEffect	// added by wesp
-//			{
-//				"Trait"	"item_w_fists"
-//				"Modifier"	"-1"
-//			}
-// Nosferatu claws
-//			TraitEffect	// added by wesp
-//			{
-//				"Trait"	"item_w_claws"
-//				"Modifier"	"+1"
-//			}
+			TraitEffect	// added by wesp
+			{
+				"Trait"	    "vchar_skip_intro"
+				"Modifier"  "Value 1"
+			}
 
+			TraitEffect	// added by wesp
+			{
+				"Trait"	    "vchar_edit_histories"
+				"Modifier"  "Value 1"
+			}
 		}
 
 		TraitEffectGroup
@@ -432,6 +424,17 @@ TraitEffectsData
 				"Modifier"	"Max 3"
 			}
 
+			TraitEffect	// added by wesp
+			{
+				"Trait"	    "vchar_skip_intro"
+				"Modifier"  "Value 1"
+			}
+
+			TraitEffect	// added by wesp
+			{
+				"Trait"	    "vchar_edit_histories"
+				"Modifier"  "Value 1"
+			}
 		}
 
 		TraitEffectGroup
@@ -504,6 +507,17 @@ TraitEffectsData
 				"Modifier"	"Max 3"
 			}
 
+			TraitEffect	// added by wesp
+			{
+				"Trait"	    "vchar_skip_intro"
+				"Modifier"  "Value 1"
+			}
+
+			TraitEffect	// added by wesp
+			{
+				"Trait"	    "vchar_edit_histories"
+				"Modifier"  "Value 1"
+			}
 		}
 
 		TraitEffectGroup
@@ -579,6 +593,17 @@ TraitEffectsData
 				"Modifier"	"Max 3"
 			}
 
+			TraitEffect	// added by wesp
+			{
+				"Trait"	    "vchar_skip_intro"
+				"Modifier"  "Value 1"
+			}
+
+			TraitEffect	// added by wesp
+			{
+				"Trait"	    "vchar_edit_histories"
+				"Modifier"  "Value 1"
+			}
 		}
 
 		TraitEffectGroup
@@ -627,6 +652,17 @@ TraitEffectsData
 				"Modifier"	"Max 3"
 			}
 
+			TraitEffect	// added by wesp
+			{
+				"Trait"	    "vchar_skip_intro"
+				"Modifier"  "Value 1"
+			}
+
+			TraitEffect	// added by wesp
+			{
+				"Trait"	    "vchar_edit_histories"
+				"Modifier"  "Value 1"
+			}
 		}
 
 		TraitEffectGroup
@@ -639,6 +675,23 @@ TraitEffectsData
 				"Modifier"  "+10"
 			}
 		}
+
+		TraitEffectGroup	// added by wesp
+		{
+			"InternalName"	"Clan (Hunter)"
+
+			TraitEffect
+			{
+				"Trait"	    "vchar_skip_intro"
+				"Modifier"  "Value 0"
+			}
+
+			TraitEffect	// added by wesp
+			{
+				"Trait"	    "vchar_edit_histories"
+				"Modifier"  "Value 0"
+			}
+		}
 	}
 
 	TraitEffectCategory
@@ -649,11 +702,6 @@ TraitEffectsData
 		TraitEffectGroup	// added by wesp
 		{
 			"InternalName"	"History (Homo)"
-			TraitEffect
-			{
-				"Trait"	"item_w_chang_ghost"
-				"Modifier"	"+1"
-			}
 		}
 
 // =======-------------- Stat Shufflers -------------========
@@ -1483,11 +1531,6 @@ TraitEffectsData
 					"Raise"	"Table: 6, 8, 12, 18, 24"
 				}	
 			}
-			TraitEffect	// added by wesp
-			{
-				"Trait"	"item_w_tzimisce2_claw"
-				"Modifier"	"+1"
-			}
 		}
 
 //		Nos
@@ -1978,11 +2021,6 @@ TraitEffectsData
 				"Trait"	"Dodge"
 				"Modifier"	"Max 3"
 			}
-			TraitEffect	// added by wesp
-			{
-				"Trait"	"item_w_tzimisce2_head"
-				"Modifier"	"+1"
-			}
 		}
 
 		TraitEffectGroup
@@ -2461,6 +2499,11 @@ TraitEffectsData
 		TraitEffectGroup	// added by wesp
 		{
 			"InternalName"	"Discipline (Blood_Heal)"
+//			TraitEffect  
+//			{
+// vampire				"Trait"	"item_g_eldervitaepack"
+//				"Modifier"	"+1"	
+//			}
 			TraitEffect  
 			{
 				"Trait"	"VampHeal_Type"
@@ -3026,7 +3069,7 @@ TraitEffectsData
 		{
 			"InternalName"	"Discipline (Protean-Feral_Claws)"
 
-			TraitEffect	// disable for Nosferatu claws
+			TraitEffect
 			{
 				"Trait"	"Excluded_Equipment"
 				"Modifier"	"Value Clawed_Form"
@@ -3054,7 +3097,7 @@ TraitEffectsData
 		{
 			"InternalName"	"Discipline (Protean-Feral_Claws-Toreador)"
 
-			TraitEffect	// disable for Nosferatu claws
+			TraitEffect
 			{
 				"Trait"	"Excluded_Equipment"
 				"Modifier"	"Value Clawed_Form_Toreador"
@@ -3091,7 +3134,7 @@ TraitEffectsData
 				"Trait"	"Wits"
 				"Modifier"	"+1"
 			}
-			TraitEffect	// disable for Nosferatu claws
+			TraitEffect
 			{
 				"Trait"	"Excluded_Equipment"
 				"Modifier"	"Value Clawed_Form"
@@ -3127,7 +3170,7 @@ TraitEffectsData
 				"Trait"	"Wits"
 				"Modifier"	"+1"
 			}
-			TraitEffect	// disable for Nosferatu claws
+			TraitEffect
 			{
 				"Trait"	"Excluded_Equipment"
 				"Modifier"	"Value Clawed_Form"
@@ -3211,7 +3254,7 @@ TraitEffectsData
 				"Trait"	"Wits"
 				"Modifier"	"+1"
 			}
-			TraitEffect	// disable for Nosferatu claws
+			TraitEffect
 			{
 				"Trait"	"Excluded_Equipment"
 				"Modifier"	"Value Clawed_Form_Toreador"
@@ -3247,7 +3290,7 @@ TraitEffectsData
 				"Trait"	"Wits"
 				"Modifier"	"+1"
 			}
-			TraitEffect	// disable for Nosferatu claws
+			TraitEffect
 			{
 				"Trait"	"Excluded_Equipment"
 				"Modifier"	"Value Clawed_Form_Toreador"
@@ -3380,7 +3423,7 @@ TraitEffectsData
 
 		TraitEffectGroup // added by EntenSchreck
 		{
-			"InternalName"	"Discipline (Cast_Alt)"	// (Dominate, Dementation, Thaumaturgy 1-3, Animalism 1-4)
+			"InternalName"	"Discipline (Cast)"	// (Dominate, Dementation, Thaumaturgy 1-3, Animalism 1-4)
 			TraitEffect
 			{
 				"Trait"	"Excluded_Equipment"
@@ -3400,7 +3443,7 @@ TraitEffectsData
 
 		TraitEffectGroup // added by EntenSchreck
 		{
-			"InternalName"	"Discipline (Cast)" // (Thaumaturgy 4+5, Animalism 5)
+			"InternalName"	"Discipline (Cast_Alt)" // (Thaumaturgy 4+5, Animalism 5)
 			TraitEffect
 			{
 				"Trait"	"Excluded_Equipment"
@@ -3434,14 +3477,24 @@ TraitEffectsData
 		"InternalName"	"Numina"
 		"Name"		"Numina"
 
-		TraitEffectGroup
+		TraitEffectGroup	// added by wesp, hunter
+		{
+			"InternalName"	"Numina (Divine_Vision)"
+			TraitEffect
+			{
+				"Trait"	"item_w_chang_energy_ball"
+				"Modifier"	"+1"
+			}
+		}
+
+		TraitEffectGroup	// changed by wesp, hunter
 		{
 			"InternalName"	"Numina (Divine_Vision1)"
 			TraitEffect
 			{
 				"Trait"	"default_fov"
-//				"Modifier"	"Value 75"  // Default  (default_fov)
-				"Modifier"	"+6"
+				"Modifier"	"Value 75"  // Default (default_fov), wesp
+// wesp				"Modifier"	"+6"
 			}
 		}
 
@@ -3451,7 +3504,8 @@ TraitEffectsData
 			TraitEffect
 			{
 				"Trait"	"default_fov"
-				"Modifier"	"+12"
+				"Modifier"	"Value 75"  // Default (default_fov), wesp
+// wesp				"Modifier"	"+12"
 			}
 		}
 
@@ -3461,7 +3515,8 @@ TraitEffectsData
 			TraitEffect
 			{
 				"Trait"	"default_fov"
-				"Modifier"	"+18"
+				"Modifier"	"Value 75"  // Default (default_fov), wesp
+// wesp				"Modifier"	"+18"
 			}
 		}
 
@@ -3471,7 +3526,8 @@ TraitEffectsData
 			TraitEffect
 			{
 				"Trait"	"default_fov"
-				"Modifier"	"+24"
+				"Modifier"	"Value 75"  // Default (default_fov), wesp
+// wesp				"Modifier"	"+24"
 			}
 		}
 
@@ -3481,7 +3537,8 @@ TraitEffectsData
 			TraitEffect
 			{
 				"Trait"	"default_fov"
-				"Modifier"	"+30"
+				"Modifier"	"Value 75"  // Default (default_fov), wesp
+// wesp				"Modifier"	"+30"
 			}
 		}
 
@@ -3491,11 +3548,66 @@ TraitEffectsData
 			TraitEffect
 			{
 				"Trait"	"Soak_Pool"
-				"Modifier"	"+1"
+				"Modifier"	"+2"		// changed by wesp, hunter
 			}
-			TraitEffect	// added by wesp
+			TraitEffect	// added by wesp, hunter
 			{
 				"Trait"	"DisciplineStrata"
+				"Modifier"	"+1"
+			}
+			TraitEffect	// added by wesp, hunter
+			{
+				"Trait"	"item_i_written"
+				"Modifier"	"+1"
+			}
+		}
+
+		TraitEffectGroup	// added by wesp, hunter
+		{
+			"InternalName"	"Numina (Holy_Light)"
+			TraitEffect
+			{
+				"Trait"	"item_d_holy_light"
+				"Modifier"	"+1"
+			}
+		}
+
+		TraitEffectGroup	// added by wesp, hunter
+		{
+			"InternalName"	"Numina (Holy_Light2)"
+			TraitEffect
+			{
+				"Trait"	"item_g_wireless_camera_1"
+				"Modifier"	"+1"
+			}
+		}
+
+		TraitEffectGroup	// added by wesp, hunter
+		{
+			"InternalName"	"Numina (Holy_Light3)"
+			TraitEffect
+			{
+				"Trait"	"item_g_wireless_camera_2"
+				"Modifier"	"+1"
+			}
+		}
+
+		TraitEffectGroup	// added by wesp, hunter
+		{
+			"InternalName"	"Numina (Holy_Light4)"
+			TraitEffect
+			{
+				"Trait"	"item_g_wireless_camera_3"
+				"Modifier"	"+1"
+			}
+		}
+
+		TraitEffectGroup	// added by wesp, hunter
+		{
+			"InternalName"	"Numina (Holy_Light5)"
+			TraitEffect
+			{
+				"Trait"	"item_g_wireless_camera_4"
 				"Modifier"	"+1"
 			}
 		}
@@ -3643,7 +3755,6 @@ TraitEffectsData
 				"Trait"	"Auspex"
 				"Modifier"	"Duration 125%"			
 			}
-
 		}
 
 		TraitEffectGroup
@@ -3772,5 +3883,14 @@ TraitEffectsData
 			}
 		}
 
+		TraitEffectGroup	// added by wesp, hunter
+		{
+			"InternalName"	"Item (Soak Pool)"
+			TraitEffect
+			{
+				"Trait"	"Soak_Pool"
+				"Modifier"	"-2"
+			}
+		}
 	}
 }
