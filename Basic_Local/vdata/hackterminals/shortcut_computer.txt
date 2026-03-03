@@ -18,9 +18,9 @@ TerminalDefinition	// added by wesp
 
 		Function
 		{
-			"name"		"DÃ©verrouiller raccourci"			// this is what the player must type in to trigger this function. (16 characters)
-			"description"	"DÃ©verrouiller raccourci"	// this is a description of this function  (128 characters)
-			"runtext"	"Raccourci dÃ©verrouillÃ©."	// this text is printed when the player triggers this function.  (128 characters)
+			"name"		"Déverrouiller"			// this is what the player must type in to trigger this function. (16 characters)
+			"description"	"Déverrouiller raccourci"	// this is a description of this function  (128 characters)
+			"runtext"	"Raccourci déverrouillé."	// this text is printed when the player triggers this function.  (128 characters)
 			"trigger"	"0"				// fires entity output 0 when this command is run
 			"dependency"	"G.Shortcut_Unlocked == 0"
 			"runscript"	"G.Shortcut_Unlocked = 1"
@@ -28,9 +28,9 @@ TerminalDefinition	// added by wesp
 
 		Function
 		{
-			"name"		"Verrouiller raccourci"
+			"name"		"Verrouiller"
 			"description"	"Verrouiller raccourci"
-			"runtext"	"Raccourci verrouillÃ©."
+			"runtext"	"Raccourci verrouillé."
 			"trigger"	"1"
 			"dependency"	"G.Shortcut_Unlocked == 1"
 			"runscript"	"G.Shortcut_Unlocked = 0"			

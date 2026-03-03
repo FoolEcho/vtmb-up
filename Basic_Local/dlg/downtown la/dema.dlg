@@ -30,7 +30,7 @@
 {	30	}{	Je suis le nouvel ami de ton patron.	}{	Je suis la nouvelle amie de ton patron.	}{	1	}{	not IsMale(pc)	}{	}{	}{	}{	}{	}{	}{	}{	Je suis la nouvelle divinité de l'homme derrière les portes.	}
 {	31	}{	On ne vous attend pas.	}{	On ne vous attend pas.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	32	}{	Laissez moi entrer.	}{	Laissez moi entrer.	}{	3	}{	Dominate 1	}{	G.Dema_Go = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	33	}{	Tu n'es qu'une clef, fait ce qui t'es naturel.	}{	Tu n'es qu'une clef, fait ce qui t'es naturel.	}{	3	}{	Dementation 1	}{	G.Dema_Go = 1	}{	}{	}{	}{	}{	}{	}{	You are a key. Do what comes naturally.	}
+{	33	}{	Tu n'es qu'une clef, fait ce qui t'es naturel.	}{	Tu n'es qu'une clef, fait ce qui t'es naturel.	}{	3	}{	Dementation 1	}{	G.Dema_Go = 1	}{	}{	}{	}{	}{	}{	}{	Vous êtes une clé. Faites ce qui vous vient naturellement.	}
 {	34	}{	Laissez moi entrer.	}{	Laissez moi entrer.	}{	3	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Dema_Go = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	35	}{	Ma présence est requise par votre patron.	}{	Ma présence est requise par votre patron.	}{	3	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dema_Go = 1; G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	36	}{	Je dois parler à Boris. Il sera content d'entendre ce que j'ai à lui dire.	}{	Je dois parler à Boris. Il sera content d'entendre ce que j'ai à lui dire.	}{	41	}{	Persuasion 5	}{	}{	}{	}{	}{	}{	}{	}{	L'homme derrière la porte attend mes paroles.	}
@@ -40,7 +40,7 @@
 {	40	}{	Service d'étage. J'ai le caviar qu'il a commandé.	}{	Service d'étage. J'ai le caviar qu'il a commandé.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	J'ai dans mes poches des oeufs de poisson pour l'homme derrière la porte.	}
 {	41	}{	[menaçant]Donnez-moi ce message. Je lui transmettrai.	}{	[menaçant]Donnez-moi ce message. Je lui transmettrai.	}{	#	}{	npc.SetDisposition("Anger", 1)	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	42	}{	Laissez moi entrer.	}{	Laissez moi entrer.	}{	3	}{	Dominate 1	}{	G.Dema_Go = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	43	}{	Tu n'es qu'une clef, fait ce qui t'es naturel.	}{	Tu n'es qu'une clef, fait ce qui t'es naturel.	}{	3	}{	Dementation 1	}{	G.Dema_Go = 1	}{	}{	}{	}{	}{	}{	}{	You are a key. Do what comes naturally.	}
+{	43	}{	Tu n'es qu'une clef, fait ce qui t'es naturel.	}{	Tu n'es qu'une clef, fait ce qui t'es naturel.	}{	3	}{	Dementation 1	}{	G.Dema_Go = 1	}{	}{	}{	}{	}{	}{	}{	Vous êtes une clé. Faites ce qui vous vient naturellement.	}
 {	44	}{	Laissez moi entrer.	}{	Laissez moi entrer.	}{	3	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Dema_Go = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	45	}{	Ma présence est requise par votre patron.	}{	Ma présence est requise par votre patron.	}{	3	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dema_Go = 1; G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	46	}{	Impossible. Mais c'est important. Il sera en colère s'il ne l'a pas, et ce sera de votre faute.	}{	Impossible. Mais c'est important. Il sera en colère s'il ne l'a pas, et ce sera de votre faute.	}{	13	}{	Persuasion 5	}{	}{	}{	}{	}{	}{	}{	}{	Lui seul est censé entendre ce message. J'ai donné ma parole.	}
@@ -50,7 +50,7 @@
 {	50	}{	Faites-moi confiance. Vous ne voulez pas vous charger vous-même de ces mauvaises nouvelles.	}{	Faites-moi confiance. Vous ne voulez pas vous charger vous-même de ces mauvaises nouvelles.	}{	71	}{	}{	}{	}{	}{	}{	}{	}{	}{	S'il tue le messager, préférez-vous que ce soit moi ?	}
 {	51	}{	Je ne pense pas, non.	}{	Je ne pense pas, non.	}{	#	}{	}{	}{	}{	}{	}{	}{	}{	}{	}
 {	52	}{	Laissez moi entrer.	}{	Laissez moi entrer.	}{	3	}{	Dominate 1	}{	G.Dema_Go = 1	}{	}{	}{	}{	}{	}{	}{	}
-{	53	}{	Tu n'es qu'une clef, fait ce qui t'es naturel.	}{	Tu n'es qu'une clef, fait ce qui t'es naturel.	}{	3	}{	Dementation 1	}{	G.Dema_Go = 1	}{	}{	}{	}{	}{	}{	}{	You are a key. Do what comes naturally.	}
+{	53	}{	Tu n'es qu'une clef, fait ce qui t'es naturel.	}{	Tu n'es qu'une clef, fait ce qui t'es naturel.	}{	3	}{	Dementation 1	}{	G.Dema_Go = 1	}{	}{	}{	}{	}{	}{	}{	Vous êtes une clé. Faites ce qui vous vient naturellement.	}
 {	54	}{	Laissez moi entrer.	}{	Laissez moi entrer.	}{	3	}{	Thaumaturgy 1 & G.Patch_Plus == 1	}{	G.Dema_Go = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	55	}{	Ma présence est requise par votre patron.	}{	Ma présence est requise par votre patron.	}{	3	}{	Presence 1 & G.Patch_Plus == 1	}{	G.Dema_Go = 1; G.Dialog_Presence = 1; dialogParticles()	}{	}{	}{	}{	}{	}{	}{	}
 {	56	}{	Il faut que je parle à Boris. Croyez-moi, il a envie de m'entendre.	}{	Il faut que je parle à Boris. Croyez-moi, il a envie de m'entendre.	}{	61	}{	Intimidate 4	}{	}{	}{	}{	}{	}{	}{	}{	L'homme derrière la porte attend mes paroles.	}
