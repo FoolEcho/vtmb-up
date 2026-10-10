@@ -831,11 +831,14 @@ TraitEffectsData
 					"Raise"	"Table: 2, 3, 6, 10, 12"
 				}
 			}
-			TraitEffect  
+			TraitEffect		// changed by wesp
 			{
 				"Trait"	"Charisma"
-				"Modifier"	"Max 3"	// changed by wesp
-			}  
+				Costs
+				{
+					"Raise"	"Table: 3, 6, 10, 16, 20"
+				}
+			} 
 //			Altered Healing Rate
 			TraitEffect  
 			{
@@ -1062,20 +1065,29 @@ TraitEffectsData
 				"Trait"	"Fortitude"
 				"Modifier"	"Duration 120%"	// changed by wesp
 			}
-			TraitEffect
+			TraitEffect		// changed by wesp
 			{
 				"Trait"	"Wits"
-				"Modifier"	"Max 3"	// changed by wesp
+				Costs
+				{
+					"Raise"	"Table: 3, 6, 10, 16, 20"
+				}
 			}
-			TraitEffect
+			TraitEffect		// changed by wesp
 			{
 				"Trait"	"Charisma"
-				"Modifier"	"Max 3"	// changed by wesp
+				Costs
+				{
+					"Raise"	"Table: 3, 6, 10, 16, 20"
+				}
 			}
-			TraitEffect
+			TraitEffect		// changed by wesp
 			{
 				"Trait"	"Appearance"
-				"Modifier"	"Max 3"	// changed by wesp
+				Costs
+				{
+					"Raise"	"Table: 3, 6, 10, 16, 20"
+				}
 			}
 //			TraitEffect	// changed by wesp
 //			{
@@ -1856,7 +1868,10 @@ TraitEffectsData
 			TraitEffect	// added by wesp
 			{
 				"Trait"	"Charisma"
-				"Modifier"	"Max 3"
+				Costs
+				{
+					"Raise"	"Table: 3, 6, 10, 16, 20"
+				}
 			}
 
 //			TraitEffect
@@ -1927,10 +1942,13 @@ TraitEffectsData
 				"Trait"	"Fx_Feed_Bonus_Opp_Gender"
 				"Modifier"	"+1"
 			}
-			TraitEffect
+			TraitEffect	// added by wesp
 			{
 				"Trait"	"Charisma"
-				"Modifier"	"Max 3"
+				Costs
+				{
+					"Raise"	"Table: 3, 6, 10, 16, 20"
+				}
 			}
 		}
 

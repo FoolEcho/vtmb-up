@@ -972,9 +972,9 @@ HistoryDataTables
 		{
 			"Name"		"Chair cadavérique"
 			"Description"			"Chaque manifestation du vampirisme est unique. Il s'avère que la vôtre comporte un malheureux défaut. Votre corps cherche à pourrir. Rien d'insurmontable, mais cela vous épuise constamment.
-			Votre corps guérit plus lentement que la normale, puisqu'il faut plus d'énergie pour ramener votre chair putréfiée à sa condition optimale. L'avantage, c'est que votre chair est malléable. Il vous faut moins d'expérience pour augmenter vos Attributs Physiques. Oh, et vous ne pouvez pas augmenter votre Charisme à plus de trois à cause de... l'odeur, vous savez..."
+			Votre corps guérit plus lentement que la normale, puisqu'il faut plus d'énergie pour ramener votre chair putréfiée à sa condition optimale. L'avantage, c'est que votre chair est malléable. Il vous faut moins d'expérience pour augmenter vos Attributs Physiques. Oh, et augmenter votre Charisme coûte plus cher à cause de... l'odeur, vous savez..."
 			"ShortDescription"		"Avantage: augmenter Physique est moins coûteux."
-			"ShortPenaltyDescription"	"Pénalité: régénération lente, 3 maximum en Charisme."
+			"ShortPenaltyDescription"	"Pénalité: régénération lente, Charisme coûte davantage."
 		}
 		General
 		{
@@ -1119,9 +1119,9 @@ HistoryDataTables
 		{
 			"Name"		"Insectoïde"
 			"Description"			"C'est peut-être la vague envie de tisser une toile, ou les rares fois où vous vous surprenez à utiliser vos antennes imaginaires, mais quelque chose vous dit que votre sang de Gangrel est exceptionnel.
-			Vous pouvez prolonger la durée de Protéisme et Force d'âme. Malheureusement, votre nature est encore plus éloignée de l'humain que les autres Gangrels. Vous ne pouvez pas augmenter Astuce, Charisme et Apparence au-delà de trois."
-			"ShortDescription"		"Avantage: Protéisme et Force d'âme durent 120%."	//changed by wesp
-			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Astuce, Charisme et Apparence."
+			Vous pouvez prolonger la durée de Protéisme et Force d'âme. Malheureusement, votre nature est encore plus éloignée de l'humain que les autres Gangrels. Il est plus coûteux d'augmenter Astuce, Charisme et Apparence."	// changed by wesp
+			"ShortDescription"		"Avantage: Force d'âme dure 120%."
+			"ShortPenaltyDescription"	"Pénalité: Astuce, Charisme et Apparence coûtent davantage."
 		}
 		General
 		{
@@ -1176,8 +1176,8 @@ HistoryDataTables
 			Vous ne pensez pas que l'Occultation fonctionne et par conséquent ne parvenez pas à maintenir l'effet très longtemps - chaque niveau d'Occultation dure moins longtemps que la normale. Cependant vous êtes toujours sur le qui-vive, et votre Augure dure plus longtemps."
 
 
-			"ShortDescription"		"Avantage: Augure dure 120%."	//changed by wesp
-			"ShortPenaltyDescription"	"Pénalité: Occultation dure 80%."	//changed by wesp
+			"ShortDescription"		"Avantage: Augure dure 120%."
+			"ShortPenaltyDescription"	"Pénalité: Occultation dure 80%."
 		}
 		General
 		{
@@ -1212,8 +1212,8 @@ HistoryDataTables
 			"Name"		"Croque-mitaines"
 			"Description"			"L'humanité est vraiment un spectacle fascinant. Tout le monde a souhaité un jour ou l'autre être une petite souris, mais cette idée vous obsédait tout particulièrement. Par chance, vos pères Nosferatu avaient également tous un penchant pour le voyeurisme.
 			Vous descendez d'une longue lignée de pervers et vos effets d'Occultation durent plus longtemps. Cette préoccupation a affaibli d'autres aspects de votre lignée et votre Puissance ne peut s'élever au-delà de 3." //changed by wesp
-			"ShortDescription"		"Avantage: durée d'Occultation 130%."	//changed by wesp
-			"ShortPenaltyDescription"	"Pénalité: maximum de 3 ? Puissance."
+			"ShortDescription"		"Avantage: durée d'Occultation 130%."
+			"ShortPenaltyDescription"	"Pénalité: maximum de 3 en Puissance."
 		}
 		General
 		{
@@ -1307,7 +1307,7 @@ HistoryDataTables
 			"Name"		"Monstre superbe"
 			"Description"			"Vous êtes sous le joug de vos passions. Et certaines ne sont pas très élégantes. Les gens vous trouvent absolument fascinant. Mais vous ne vous souciez que trop de vous-même pour vous avoir le sens normal de la répartie humaine.
 			Votre Présence dure plus longtemps que celle des autres Toréadors, mais vous ne pouvez augmenter votre Astuce au-delà de 3 et êtes plus sujet à la frénésie quand les choses ne se passent pas comme vous le voulez." // changed by wesp
-			"ShortDescription"		"Avantage: Présence dure 120%."	//changed by wesp
+			"ShortDescription"		"Avantage: Présence dure 120%."
 			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Astuce, davantage sujet à la frénésie."
 		}
 		General
@@ -1326,7 +1326,7 @@ HistoryDataTables
 			"Name"		"Conscience surnaturelle"
 			"Description"			"Vous jurez devant Dieu que vous pouvez lire l'avenir. Pas l'année prochaine, ni même la semaine prochaine, mais d'un instant à l'autre, vous savez toujours ce qui va se passer. Vous êtes tellement en phase avec votre environnement qu'on dit que vous avez déjà esquivé des balles sans même regarder. Cette capacité se manifeste par une forme supérieure d'Augure.
 			Votre Augure vous donne plus d'avantages et dure plus longtemps. Malheureusement, le volume considérable d'informations vous rends plus prudent que la moyenne; il vous faut plus d'expérience pour augmenter votre Discipline Célérité."
-			"ShortDescription"		"Avantage: Augure dure 120%."	//changed by wesp
+			"ShortDescription"		"Avantage: Augure dure 120%."
 			"ShortPenaltyDescription"	"Pénalité: augmenter Célérité est plus coûteux."
 		}
 		General
@@ -1344,7 +1344,7 @@ HistoryDataTables
 			"Name"		"Féerique"
 			"Description"			"Vous êtes une créature à la beauté délicate et à la grâce éphémère. Comme si vous sortiez des pages de Spenser ou Keats plutôt que Shelley ou Stoker.
 			Votre Présence et votre Célérité ont une durée supérieure, mais vous êtes vraiment de constitution délicate - il vous faut plus d'expérience pour augmenter votre Vigueur, Force, Armes à feu et Intimidation."
-			"ShortDescription"		"Avantage: Présence et Célérité durent 120%."	//changed by wesp
+			"ShortDescription"		"Avantage: Présence et Célérité durent 120%."
 			"ShortPenaltyDescription"	"Pénalité: augmenter Vigueur, Force, Armes à feu et Intimidation est plus coûteux."
 		}
 		General
@@ -1417,7 +1417,7 @@ HistoryDataTables
 			"Name"		"Diabolique"
 			"Description"			"En plus de la Bête Intérieure, vous luttez contre une force plus noire encore. Vous ressentez le poids du salut et de la damnation dans chacun de vos actes.
 			Votre Présence a une durée plus grande, mais il vous faut plus d'expérience pour augmenter votre Humanité, et vous êtes plus sujet à la frénésie."
-			"ShortDescription"		"Avantage: Présence dure 120%."	//changed by wesp
+			"ShortDescription"		"Avantage: Présence dure 120%."
 			"ShortPenaltyDescription"	"Pénalité: augmenter Humanité est plus coûteux, frénésie plus fréquente."
 		}
 		General
@@ -1435,7 +1435,7 @@ HistoryDataTables
 			"Name"		"Nettoyeur"
 			"Description"			"Tous les Ventrues n'ont pas peur de se salir les mains. Certains problèmes doivent être traités de front, et parfois les sujets sont trop délicats pour y mêler les Gangrels. Bien que votre lignée ne provienne pas du meilleur côté de l'arbre généalogique de la famille Ventrue, on leur a toujours fait confiance pour gérer ce genre de problèmes.
 			Votre Force d'âme a une plus grande durée, mais il vous faut plus d'expérience pour augmenter votre Présence. "
-			"ShortDescription"		"Avantage: Force d'âme dure 120%." //changed by wesp
+			"ShortDescription"		"Avantage: Force d'âme dure 120%."
 			"ShortPenaltyDescription"	"Pénalité: augmenter Présence est plus coûteux."
 		}
 		General
@@ -1534,7 +1534,7 @@ HistoryDataTables
 			"Name"		"Bien éduqué"
 			"Description"	"Vous avez été très privilégié et avez acquis une excellente éducation. 
 			Vous avez un bonus dans diverses capacités, mais votre tempérament est doux et faible. Domination et intimidation ne peuvent dépasser trois points."	// changed by wesp
-			"ShortDescription"		"Avantage: Bonus dans tous les traits de Connaissance."	// changed by wesp
+			"ShortDescription"		"Avantage: Bonus dans tous les traits de Connaissance."
 			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Domination et Intimidation."
 		}
 
@@ -1634,9 +1634,9 @@ HistoryDataTables
 		{
 			"Name"		"Dément occulte"
 			"Description"	"Qui aurait pu penser que tout cela pouvait être vrai? Vous qui adoriez les histoires noires et qui vous considériez comme un spécialiste en occultisme! Maintenant que vous êtes parmi les Vampires, vous remarquez que vous connaissez déjà certaines choses et êtes vraiment excité d'en apprendre plus au sujet de votre nouvel état de non-vie.
-			Vous obtenez un bonus en Erudition et sur l'expérience gagnée, mais les autres vous trouvent dédaigneux et leur empathie à votre égard est minorée, ainsi votre Charisme ne peut dépasser trois."	// changed by wesp
+			Vous obtenez un bonus en Erudition et sur l'expérience gagnée, mais les autres vous trouvent dédaigneux et leur empathie à votre égard est minorée, ainsi augmenter votre Charisme est plus coûteux."	// changed by wesp
 			"ShortDescription"		"Avantage: +1 en Erudition, plus de gain d'expérience."
-			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Charisme."
+			"ShortPenaltyDescription"	"Pénalité: Charisme côte davatange."
 		}
 
 		General
@@ -1714,9 +1714,9 @@ HistoryDataTables
 		{
 			"Name"		"Voyeur"	// changed by wesp
 			"Description"	"Ce n'est pas de votre faute si vous êtes né désavantagé physiquement. Puisque personne ne vous aime, vos désirs sexuels inassouvis et refoulés ont fait de vous un petit pervers. 
-			Maintenant dans votre non-vie, vous constatez que vous digérez la vitae des membres du sexe opposé plus facilement, mais ne pouvez augmenter votre Charisme à plus de trois."
+			Maintenant dans votre non-vie, vous constatez que vous digérez la vitae des membres du sexe opposé plus facilement, mais augmenter votre Charisme est plus coûteux."	// changed by wesp
 			"ShortDescription"		"Avantage: davantage de sang des femmes."
-			"ShortPenaltyDescription"	"Pénalité: 3 maximum en Charisme."
+			"ShortPenaltyDescription"	"Pénalité: Charisme coûte davantage."
 		}
 
 		General
