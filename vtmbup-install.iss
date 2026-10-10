@@ -1,16 +1,16 @@
 ; -- vtmbupinstaller.iss --
 
 [Setup]
-AppName=Vampire: The Masquerade - Bloodlines unofficial patch 11.5.7 fr
-AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 11.5.7 fr
+AppName=Vampire: The Masquerade - Bloodlines unofficial patch 12.0 fr
+AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 12.0 fr
 VersionInfoDescription=Vampire: The Masquerade - Bloodlines unofficial patch avec sous-titrage français
-VersionInfoVersion=11.5.7
+VersionInfoVersion=12.0
 AppPublisher=Werner Spahl
 DefaultDirName={reg:HKLM\Software\Activision\Vampire - Bloodlines,InstallPath|{pf}\Steam\steamapps\common\vampire the masquerade - bloodlines}
 AppendDefaultDirName=no
 DirExistsWarning=no
 EnableDirDoesntExistWarning=no
-OutputBaseFilename=VTMBup115fr
+OutputBaseFilename=VTMBup120fr
 Uninstallable=no
 InfoBeforeFile=VTMBup-readme.txt
 InfoAfterFile=VTMBup-after.txt
@@ -65,8 +65,8 @@ Source: "Plus_Patch\*"; DestDir: "{app}\Unofficial_Patch_fr"; Components: plus; 
 Source: "Plus_Local\*"; DestDir: "{app}\Unofficial_Patch_fr"; Components: plus; Flags: recursesubdirs ignoreversion overwritereadonly
 Source: "Patch_Extras\*"; DestDir: "{app}\Patch_Extras"; Components: extras; Flags: recursesubdirs ignoreversion overwritereadonly
 Source: "Patch_Extras\Developer Tools\Game Mod Loader\*"; DestDir: "{app}"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly; Excludes: "vtmb-tweaks*, *.7z"
-Source: "Patch_Extras\Developer Tools\Game Mod Loader\bin\loader\vtmb-tweaks*"; DestDir: "{app}\bin\loader"; MinVersion: 6.0; Components: plus; Flags: ignoreversion overwritereadonly
-Source: "Patch_Extras_fr\Developer Tools\Game Mod Loader\bin\loader\localization.ini"; DestDir: "{app}\Unofficial_Patch_fr\cfg"; MinVersion: 6.0; Components: basic; Flags: ignoreversion overwritereadonly
+Source: "Patch_Extras\Developer Tools\Game Mod Loader\bin\loader\vtmb-tweaks*"; DestDir: "{app}\bin\loader"; Components: plus; Flags: ignoreversion overwritereadonly
+Source: "Patch_Extras_fr\Developer Tools\Game Mod Loader\bin\loader\localization.ini"; DestDir: "{app}\Unofficial_Patch_fr\cfg"; Components: basic; Flags: ignoreversion overwritereadonly
 Source: "{app}\*.exe"; DestDir: "{app}"; Flags: external overwritereadonly skipifsourcedoesntexist; Attribs: readonly
 Source: "{app}\Bin\*.dll"; DestDir: "{app}\Bin"; Flags: external overwritereadonly skipifsourcedoesntexist; Attribs: readonly
 Source: "{app}\Vampire\dlls\*.dll"; DestDir: "{app}\Vampire\dlls"; Flags: external overwritereadonly skipifsourcedoesntexist; Attribs: readonly
