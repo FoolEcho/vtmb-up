@@ -1191,10 +1191,13 @@ TraitEffectsData
 					"Raise"	"Table: 2, 3, 6, 10, 12"
 				}
 			}
-			TraitEffect  
+			TraitEffect		// changed by wesp
 			{
 				"Trait"	"Charisma"
-				"Modifier"	"Max 3"	// changed by wesp
+				Costs
+				{
+					"Raise"	"Table: 3, 6, 10, 16, 20"
+				}
 			}  
 //			Altered Healing Rate
 			TraitEffect  
@@ -1424,20 +1427,29 @@ TraitEffectsData
 				"Trait"	"Fortitude"
 				"Modifier"	"Duration 120%"	// changed by wesp
 			}
-			TraitEffect
+			TraitEffect		// changed by wesp
 			{
 				"Trait"	"Wits"
-				"Modifier"	"Max 3"	// changed by wesp
+				Costs
+				{
+					"Raise"	"Table: 3, 6, 10, 16, 20"
+				}
 			}
-			TraitEffect
+			TraitEffect		// changed by wesp
 			{
 				"Trait"	"Charisma"
-				"Modifier"	"Max 3"	// changed by wesp
+				Costs
+				{
+					"Raise"	"Table: 3, 6, 10, 16, 20"
+				}
 			}
-			TraitEffect
+			TraitEffect		// changed by wesp
 			{
 				"Trait"	"Appearance"
-				"Modifier"	"Max 3"	// changed by wesp
+				Costs
+				{
+					"Raise"	"Table: 3, 6, 10, 16, 20"
+				}
 			}
 //			TraitEffect	// changed by wesp
 // removed			{
@@ -2217,7 +2229,10 @@ TraitEffectsData
 			TraitEffect	// added by wesp
 			{
 				"Trait"	"Charisma"
-				"Modifier"	"Max 3"
+				Costs
+				{
+					"Raise"	"Table: 3, 6, 10, 16, 20"
+				}
 			}
 
 //			TraitEffect
@@ -2274,7 +2289,6 @@ TraitEffectsData
 
 		}
 
-
 		TraitEffectGroup	// added by wesp
 		{
 			"InternalName"	"History (Tom)"
@@ -2291,7 +2305,10 @@ TraitEffectsData
 			TraitEffect
 			{
 				"Trait"	"Charisma"
-				"Modifier"	"Max 3"
+				Costs
+				{
+					"Raise"	"Table: 3, 6, 10, 16, 20"
+				}
 			}
 		}
 
@@ -3562,15 +3579,15 @@ TraitEffectsData
 			}
 		}
 
-		TraitEffectGroup	// added by wesp, hunter
-		{
-			"InternalName"	"Numina (Holy_Light)"
-			TraitEffect
-			{
-				"Trait"	"item_d_holy_light"
-				"Modifier"	"+1"
-			}
-		}
+//		TraitEffectGroup	// added by wesp, hunter
+//		{
+//			"InternalName"	"Numina (Holy_Light)"
+//			TraitEffect
+// vampire			{
+//				"Trait"	"item_d_holy_light"
+//				"Modifier"	"+1"
+//			}
+//		}
 
 		TraitEffectGroup	// added by wesp, hunter
 		{
