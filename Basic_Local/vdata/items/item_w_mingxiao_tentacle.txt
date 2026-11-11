@@ -14,7 +14,6 @@ WeaponData
 //	"viewmodel"				"models/w_null.mdl"
 //	"wieldmodel_f"			"models/w_null.mdl"
 //	"wieldmodel_m"			"models/w_null.mdl"
-	"anim_prefix"			" "
 
 	"camera_class"			"noswitch"
 
@@ -26,8 +25,6 @@ WeaponData
 	"item_type"		"generic"
 	"item_worth"		"0"
 	"is_wieldable"		"0"
-
-	"camera_class"		"noswitch"
 
 	SoundData
 	{
@@ -79,7 +76,7 @@ WeaponData
 		"Type"             "Attack"
 		"Ammo_Type"        "None"
 		"Ammo_Cost"        "0"
-		"Botch_Table"      "Fists_Claws_Bite"
+		"Botch_Table"      "Melee_Weapons"	// changed by wesp
 		"Attack_Rate"      "0.5"
 		"Range"            "0"
 

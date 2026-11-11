@@ -1,39 +1,41 @@
-// Claws, changed by wesp
+// Ghoul claws, changed by wesp
 
 WeaponData
 {
-
-	"printname"	"Permis de conduire"	// added by wesp
-	"description"	"Un permis de conduire californien. Le nom sur le permis indique Simon Milligan."	// added by wesp
-
 	// Weapon data is loaded by both the Game and Client DLLs.
-	"infomodel"	"models/items/License/Info/Info_Lisense.mdl"	// added by wesp
-	"playermodel"	"models/items/License/Ground/Lisense.mdl"	// added by wesp
-	"viewmodel"	"models/weapons/w_null.mdl"
-//	"playermodel"	"models/weapons/w_null.mdl"
-	"wieldmodel_f"	"models/weapons/claw/wield/w_f_claws.mdl"
-	"wieldmodel_m"	"models/weapons/claw/wield/w_m_claws.mdl"
-	"anim_prefix"	"claw"
+	"viewmodel"	"models/weapons/Fists/view/v_fists.mdl"
+	"infomodel"		"models/items/occult_braid/info/info_braid.mdl"	// added by wesp
+	"playermodel"		"models/items/occult_braid/ground/braid.mdl"	// changed by wesp
+//	"playermodel"	"models/missing.mdl"
+	"wieldmodel_f"	"models/weapons/w_null.mdl"
+	"wieldmodel_m"	"models/weapons/w_null.mdl"
+	"anim_prefix"	"fist"
+
+	"printname"		"Inconnu"	// changed by wesp
+	"description"	"It isn't a WWJD bracelet, so you have no idea what it could be.
+
+You need a Research skill of at least 8 to use this item."	// added by wesp
 
 	"impact_snd_group"	"fist"
 
-	"bucket"		"0"
-	"bucket_position"	"1"
+	"activation0"	"Attack"
+	"activation1"	""
 
-	"camera_class"		"noswitch"	// changed by wesp
-	"is_wieldable"		"0"	// added by wesp
+	"camera_class"		"melee"
+	"bucket"		"1"
+	"bucket_position"	"2"
+
 	"weight"		"3"	// changed by wesp
-	"item_flags"	"1"	// changed by wesp
-	"item_type"	"generic"	// changed by wesp
-	"item_worth"	"0"
-	"sound_group"	"Claws"
-// wesp	"equip_mask"	"ClawedForm"
+	"item_flags"		"1"	// changed by wesp
+	"item_type"		"powerup"	// changed by wesp
+	"item_worth"		"50"	// changed by wesp
 
 	"is_visible_in_hud"	"1"	// changed by wesp
+	"permanent_inventory"	"0"	// added by wesp
+	"is_droppable"		"0"	// changed by wesp
+	"is_wieldable"		"0"	// added by wesp
 
-	"BitFlag_CantBeLast"	"1"
-
-	"knockback_chance"	"0.1"
+	"knockback_chance" 	"0.3"
 
 	// Sounds...
 	SoundData
@@ -44,9 +46,10 @@ WeaponData
 			"sound2"	"Weapons/Melee/Claws/Swish_2.wav"
 			"sound3"	"Weapons/Melee/Claws/Swish_3.wav"
 		}
-		"pickup"
+
+		"pickup"	// added by wesp
 		{
-			"sound1"	"items/Card/Pickup.wav"	// changed by wesp
+			"sound1"	"items/Book/Pickup.wav"
 		}
 	}
 
@@ -58,7 +61,7 @@ WeaponData
 		"Ammo_Type"	"None"
 		"Ammo_Cost"	"0"
 
-		"Botch_Table"	"Fists_Claws_Bite"
+		"Botch_Table"      "Fists_Claws_Bite"
 		"Attack_Rate"	"0.5"
 		"Range"		"0"
 		"CriminalLevel"	"2"	// changed by wesp
@@ -100,13 +103,13 @@ WeaponData
 	}
 
 	// Weapon Sprite data is loaded by the Client DLL.
-	SpriteData
+	SpriteData	// changed by wesp
 	{
 		"weapon"
 		{
 			"640"
 			{
-				"file"	"hud/Inventory_Images/General_Items/Lisense_SEL"	// changed by wesp
+				"file"	"hud/Inventory_Images/General_Items/braid_sel"
 				"x"		"0"
 				"y"		"0"
 				"width"	"100"
@@ -117,7 +120,7 @@ WeaponData
 		{
 			"640"
 			{
-				"file"	"hud/Inventory_Images/General_Items/Lisense"	// changed by wesp
+				"file"	"hud/Inventory_Images/General_Items/braid"
 				"x"		"0"
 				"y"		"0"
 				"width"	"100"
