@@ -9,13 +9,38 @@ WeaponData
 	"wieldmodel_f"		"models/weapons/rifle_steyraug/wield/w_f_rifle_steyraug.mdl"
 	"wieldmodel_m"		"models/weapons/rifle_steyraug/wield/w_m_rifle_steyraug.mdl"
 	"infomodel"		"models/weapons/rifle_steyraug/info/i_rifle_steyraug.mdl"
+	
 	// This should match the viewmodel QC file offset:
 	"origin_x"		"-1"
 	"origin_y"		"0"
 	"origin_z"		"66"
+
+	// ---- iron sights ----	
+	"IronSight_X" "-6.2" // default 0 right (+) / left (-)
+	"IronSight_Y" "10" // default 0 forward (+) / back (-)
+	"IronSight_Z" "-1.5" // default 0 down (+) / up (-)
+	"IronSight_Pitch" "1" // default 0 Nose up (+) / Nose down (-)
+	"IronSight_Yaw" "-3" // default 0 degrees
+	"IronSight_Roll" "0" // default 0 degrees
+	"IronSight_Crosshair" "0" // default 1 1 = the crosshair stays visible while the iron sights are up, 0 = it is hidden
+	"IronSight_FOV" "50" // default 0 absolute field of view in degrees while sighted (0 = leave the FOV alone)
+	"IronSight_Time" "0.25" // default 0.15 seconds to blend into / out of the sights (0 = instant)
+
+	// ---- animation and motion while the sights are up ----
+	"IronSight_IdleAnim"	"1"		// default 1    1 = idle animation keeps playing, 0 = idle is frozen while sighted
+	"IronSight_FidgetAnim"	"0"		// default 0    0 = fidget is suppressed (idle pose is held), 1 = fidget plays
+	"IronSight_Sway"	"0"		// default 0    the code-driven idle sway (weapon drifting around): 0 = removed while sighted, 1 = unchanged, 0.5 = half of it. Range 0 - 1
+	"IronSight_TurnLag"	"0.3"		// default 0.3  how much of the turn lag (weapon trailing the mouse) is KEPT while  sighted: 0 = none, 0.3 = 30%, 1 = unchanged. Range 0 - 1
+ 	 "IronSight_SpreadMult"	"0.7"		// default 0.7  while the iron sights are up. Range 0 - 10 - 1.0 = no bonus      0.7 = 30% tighter spread      0.5 = 50% tighter      1.2 = 20% worse
+
+	"ScopeTexture1"		"hud/Scopes/Scope_Aug"	// level 1 (here: 50)
+	"ScopeStretch"		"0"		// default 0    0 = centred square with black side bars, 1 = stretched over the screen
+	// "Scope_Ranges" (further down) lists the zoom FOVs. The zoom key cycles through the non-zero numbers and a 0 ends
+	// the scope: "0, 40, 20, 10" = three levels (40, 20, 10) and then back to no scope. "0, 10" = one level. Any FOV works (rev20), e.g. "0, 50".
+	"Scope_SpreadMult"	"1.0"		// default 1.0  while a scope zoom level is active (no bonus by default). Range 0 - 10
+
 	"anim_prefix"		"steyr"
 	"impact_snd_group"	"bullet"
-
 
 	"activation0"		"Attack"
 	"activation1"		"Attack"
@@ -27,7 +52,7 @@ WeaponData
 	"weight"		"3"
 	"item_flags"		"0"
 	"item_type"		"weapon_firearm"
-	"Scope_Ranges"		"0, 50"          //10, 5", changed by Wesp
+	"Scope_Ranges"		"0, 40"          //10, 5", changed by Wesp
 	"sound_group"	"Assault_Rifle"
 	"uses_accuracycursors"	"1"
 
@@ -46,7 +71,6 @@ WeaponData
 			"sound1"	"Weapons\Ranged\Steyr_AUG\Deploy.wav"
 		}
 	}
-
 
 //Weapon Ammo
 	Magazine

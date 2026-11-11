@@ -16,6 +16,24 @@ WeaponData
 	"origin_y"		"10"
 	"origin_z"		"74"
 
+	// ---- iron sights ----
+	"IronSight_X"		"-7.4"		// default 0    right (+) / left (-)
+	"IronSight_Y"		"-7"		// default 0    forward (+) / back (-)
+	"IronSight_Z"		"-6.5"		// default 0    DOWN (+) / UP (-)
+	"IronSight_Pitch"	"-2"		// default 0    degrees, tilts hands + weapon together
+	"IronSight_Yaw"		"2"		// default 0    degrees
+	"IronSight_Roll"	"0"		// default 0    degrees
+	"IronSight_Crosshair" "0" // default 1 1 = the crosshair stays visible while the iron sights are up, 0 = it is hidden
+	"IronSight_FOV"		"50"		// default 0    absolute field of view in degrees while sighted (0 = leave the FOV alone)
+	"IronSight_Time"	"0.25"		// default 0.15 seconds to blend into / out of the sights (0 = instant)
+
+	// ---- animation and motion while the sights are up ----
+	"IronSight_IdleAnim"	"1"		// default 1    1 = idle animation keeps playing, 0 = idle is frozen while sighted
+	"IronSight_FidgetAnim"	"0"		// default 0    0 = fidget is suppressed (idle pose is held), 1 = fidget plays
+	"IronSight_Sway"	"0"		// default 0    the code-driven idle sway (weapon drifting around): 0 = removed while sighted, 1 = unchanged, 0.5 = half of it. Range 0 - 1
+	"IronSight_TurnLag"	"0.3"		// default 0.3  how much of the turn lag (weapon trailing the mouse) is KEPT while  sighted: 0 = none, 0.3 = 30%, 1 = unchanged. Range 0 - 1
+ 	 "IronSight_SpreadMult"	"0.7"		// default 0.7  while the iron sights are up. Range 0 - 10 - 1.0 = no bonus      0.7 = 30% tighter spread      0.5 = 50% tighter      1.2 = 20% worse
+
 	"anim_prefix"		"m37"
 	"impact_snd_group"	"bullet"
 
