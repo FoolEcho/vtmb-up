@@ -1,10 +1,10 @@
 ; -- vtmbupinstaller.iss --
 
 [Setup]
-AppName=Vampire: The Masquerade - Bloodlines unofficial patch 12.0 fr
-AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 12.0 fr
+AppName=Vampire: The Masquerade - Bloodlines unofficial patch 12.0.1 fr
+AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 12.0.1 fr
 VersionInfoDescription=Vampire: The Masquerade - Bloodlines unofficial patch avec sous-titrage français
-VersionInfoVersion=12.0
+VersionInfoVersion=12.0.1
 AppPublisher=Werner Spahl
 DefaultDirName={reg:HKLM\Software\Activision\Vampire - Bloodlines,InstallPath|{pf}\Steam\steamapps\common\vampire the masquerade - bloodlines}
 AppendDefaultDirName=no
@@ -57,15 +57,15 @@ Source: "{app}\Vampire\save\*"; DestDir: "{app}\Vampire\save\incompatible"; Comp
 Source: "{app}\Unofficial_Patch_fr\save\*"; DestDir: "{app}\Unofficial_Patch_fr\save\incompatible"; Components: basic; Flags: external skipifsourcedoesntexist
 Source: "{app}\Vampire\save\*"; DestDir: "{app}\Vampire\save"; Components: basic; Flags: external skipifsourcedoesntexist deleteafterinstall
 Source: "{app}\Unofficial_Patch_fr\save\*"; DestDir: "{app}\Unofficial_Patch_fr\save"; Components: basic; Flags: external skipifsourcedoesntexist deleteafterinstall
-Source: "VTMBup-readme.txt"; DestDir: "{app}"; Components: readme; Flags: overwritereadonly
+Source: "vtmbup-readme.txt"; DestDir: "{app}\Unofficial_Patch_fr"; Components: readme; Flags: overwritereadonly
 Source: "Official_Patch\*"; DestDir: "{app}"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly
 Source: "Basic_Patch\*"; DestDir: "{app}\Unofficial_Patch_fr"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly
 Source: "Basic_Local\*"; DestDir: "{app}\Unofficial_Patch_fr"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly
 Source: "Plus_Patch\*"; DestDir: "{app}\Unofficial_Patch_fr"; Components: plus; Flags: recursesubdirs ignoreversion overwritereadonly
 Source: "Plus_Local\*"; DestDir: "{app}\Unofficial_Patch_fr"; Components: plus; Flags: recursesubdirs ignoreversion overwritereadonly
 Source: "Patch_Extras\*"; DestDir: "{app}\Patch_Extras"; Components: extras; Flags: recursesubdirs ignoreversion overwritereadonly
-Source: "Patch_Extras\Developer Tools\Game Mod Loader\*"; DestDir: "{app}"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly; Excludes: "vtmb-tweaks*, *.7z"
-Source: "Patch_Extras\Developer Tools\Game Mod Loader\bin\loader\vtmb-tweaks*"; DestDir: "{app}\bin\loader"; Components: plus; Flags: ignoreversion overwritereadonly
+Source: "Patch_Extras\Developer Tools\Game Mod Loader\*"; DestDir: "{app}"; Components: basic; Flags: recursesubdirs ignoreversion overwritereadonly; Excludes: "vtmb-*"
+Source: "Patch_Extras\Developer Tools\Game Mod Loader\bin\loader\vtmb-*"; DestDir: "{app}\bin\loader"; Components: plus; Flags: ignoreversion overwritereadonly
 Source: "Patch_Extras_fr\Developer Tools\Game Mod Loader\bin\loader\localization.ini"; DestDir: "{app}\Unofficial_Patch_fr\cfg"; Components: basic; Flags: ignoreversion overwritereadonly
 Source: "{app}\*.exe"; DestDir: "{app}"; Flags: external overwritereadonly skipifsourcedoesntexist; Attribs: readonly
 Source: "{app}\Bin\*.dll"; DestDir: "{app}\Bin"; Flags: external overwritereadonly skipifsourcedoesntexist; Attribs: readonly
@@ -94,9 +94,9 @@ Root: HKCU; Subkey: "Software\Troika\Vampire"; Flags: deletekey noerror
 
 [Icons]
 Name: "{userdesktop}\Game Mod Loader"; Filename: {app}\Loader.exe
-Name: "{userdesktop}\Unofficial Patch (fr)"; Filename: {app}\Vampire.exe; Parameters: "-game Unofficial_Patch_fr"; IconFilename: {app}\loader.exe
+Name: "{userdesktop}\Unofficial Patch (fr)"; Filename: {app}\Vampire.exe; Parameters: "-game Unofficial_Patch_fr"; IconFilename: {app}\Loader.exe
 Name: "{userprograms}\Bloodlines Game Mod Loader"; Filename: {app}\Loader.exe
-Name: "{userprograms}\Bloodlines Unofficial Patch (fr)"; Filename: {app}\Vampire.exe; Parameters: "-game Unofficial_Patch_fr"; IconFilename: {app}\loader.exe
+Name: "{userprograms}\Bloodlines Unofficial Patch (fr)"; Filename: {app}\Vampire.exe; Parameters: "-game Unofficial_Patch_fr"; IconFilename: {app}\Loader.exe
 
 [Run]                                                                           
 Filename: {app}\Vampire.exe; Parameters: "-game Unofficial_Patch_fr"; Description: Démarrer Bloodlines avec le Patch non officiel; Flags: postinstall runascurrentuser nowait skipifsilent
