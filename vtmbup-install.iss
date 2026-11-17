@@ -1,10 +1,10 @@
 ; -- vtmbupinstaller.iss --
 
 [Setup]
-AppName=Vampire: The Masquerade - Bloodlines unofficial patch 12.0.2 fr
-AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 12.0.2 fr
+AppName=Vampire: The Masquerade - Bloodlines unofficial patch 12.0.3 fr
+AppVerName=Vampire: The Masquerade - Bloodlines unofficial patch 12.0.3 fr
 VersionInfoDescription=Vampire: The Masquerade - Bloodlines unofficial patch avec sous-titrage français
-VersionInfoVersion=12.0.2
+VersionInfoVersion=12.0.3
 AppPublisher=Werner Spahl
 DefaultDirName={reg:HKLM\Software\Activision\Vampire - Bloodlines,InstallPath|{pf}\Steam\steamapps\common\vampire the masquerade - bloodlines}
 AppendDefaultDirName=no
